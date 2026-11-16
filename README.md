@@ -42,9 +42,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Computer Networks | 计算机网络 | 359 | 18 | [Read](glossaries/computer-networks.md) | [Download](pdf/computer-networks.pdf) |
 | SQL Database | SQL 数据库 | 394 | 13 | [Read](glossaries/sql-database.md) | [Download](pdf/sql-database.pdf) |
 | Python | Python 编程语言 | 429 | 16 | [Read](glossaries/python.md) | [Download](pdf/python.pdf) |
+| C++ Programming Language | C++ 编程语言 | 357 | 16 | [Read](glossaries/cpp.md) | [Download](pdf/cpp.pdf) |
 | Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
 | Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
-| **Total** | **22 domains** | **7,913** | **331** | | |
+| **Total** | **23 domains** | **8,270** | **347** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -69,7 +70,7 @@ Operating Systems (396), SQL Database (394), Python (429), Junior High School Ma
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **331 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **347 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -145,3 +146,7 @@ The static site is fully committed in `docs/`. Initial Pages enablement requires
 ## University Mathematics / 大学数学
 
 This original handbook contains 627 bilingual terms across 17 chapters plus three appendices. See the [editable HTML source](sources/university-mathematics.html), [Markdown](glossaries/university-mathematics.md), and [PDF](pdf/university-mathematics.pdf). It intentionally overlaps specialized Linear Algebra and Probability Theory collections; collection totals are not globally deduplicated.
+
+## C++ Programming Language / C++ 编程语言
+
+The C++ reference adds **357 curated English–Chinese terms in 16 chapters**, covering object lifetime, value categories, RAII, smart pointers, templates, Concepts, STL/Ranges, concurrency and C++20/23. The authoritative editable source is [data/cpp-glossary.tsv](data/cpp-glossary.tsv); [Markdown](glossaries/cpp.md), [searchable PDF](pdf/cpp.pdf) and the site's JSON/CSV index are kept in sync. The appendix explains 16 commonly confused concept pairs.

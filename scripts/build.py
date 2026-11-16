@@ -25,6 +25,7 @@ CATALOG=[
  ('operating-systems','Operating Systems','操作系统','Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization','server'),
  ('computer-networks','Computer Networks','计算机网络','Layers, Ethernet, Wi-Fi, IPv4/IPv6, routing, TCP, QUIC, DNS, HTTP, TLS and network operations','network'),
  ('sql-database','SQL Database','SQL 数据库','Relational modeling, SQL syntax, indexes, optimizers, transactions and operations','database'),
+ ('cpp','C++ Programming Language','C++ 编程语言','Core language, object lifetime, templates, STL, concurrency and modern C++','code'),
  ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
  ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
  ('parallel-computing','Parallel Computing','并行计算','Parallel algorithm design, communication, performance, MPI, OpenMP, GPU and HPC','cpu'),
@@ -69,11 +70,29 @@ def merge_computer_networks(data):
  additions=load_records(ROOT/'data/computer-networks.tsv')
  return [row for row in data if row['category']!='computer-networks']+additions
 
+def merge_cpp(data):
+ # Canonical authored source; rehydrate the C++ index during normal builds.
+ source=ROOT/'data/cpp-glossary.tsv'
+ chapter=0;topic='';rows=[]
+ for raw in source.read_text(encoding='utf8').splitlines():
+  line=raw.strip()
+  if not line:continue
+  if line.startswith('# '):
+   cols=line[2:].split('|')
+   if len(cols)!=4:raise ValueError('Malformed C++ chapter: '+line)
+   chapter=int(cols[0]);topic=cols[1].strip()
+  else:
+   cols=line.split('|')
+   if len(cols)!=3 or not all(c.strip() for c in cols):raise ValueError('Malformed C++ term: '+line)
+   en,zh,definition=(c.strip() for c in cols)
+   rows.append(dict(category='cpp',chapter=chapter,topic=topic,en=en,zh=zh,abbr='',definition=definition))
+ return [t for t in data if t['category']!='cpp']+rows
+
 def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
-  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing'):
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing', 'cpp'):
    continue  # Preserve independently authored Markdown and appendices.
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
@@ -161,6 +180,7 @@ def run():
  from import_university_mathematics import merge_entries
  data=merge_entries(data)
  data=merge_computer_networks(data)
+ data=merge_cpp(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
@@ -187,6 +207,12 @@ def run():
 
  from render_high_school_pdf import render_pdf as render_hs
  render_hs([t for t in data if t['category']=='high-school-mathematics'])
+ # Render independently authored C++ Markdown and PDF. Keep the existing PDF
+ # if optional CJK/ReportLab dependencies are unavailable.
+ subprocess.run([sys.executable,str(ROOT/'scripts/render_cpp_pdf.py'),
+                 '--source',str(ROOT/'data/cpp-glossary.tsv'),
+                 '--markdown',str(ROOT/'glossaries/cpp.md'),
+                 '--pdf',str(ROOT/'pdf/cpp.pdf')],check=True)
  write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()

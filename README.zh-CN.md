@@ -32,9 +32,10 @@
 | 计算机网络 / Computer Networks | 359 | 18 | [阅读](glossaries/computer-networks.md) | [下载](pdf/computer-networks.pdf) |
 | SQL 数据库 / SQL Database | 394 | 13 | [阅读](glossaries/sql-database.md) | [下载](pdf/sql-database.pdf) |
 | Python 编程语言 / Python | 429 | 16 | [阅读](glossaries/python.md) | [下载](pdf/python.pdf) |
+| C++ 编程语言 / C++ Programming Language | 357 | 16 | [阅读](glossaries/cpp.md) | [下载](pdf/cpp.pdf) |
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
 | 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
-| **合计** | **7,913** | **331** | | |
+| **合计** | **8,270** | **347** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -89,3 +90,7 @@ python3 -m unittest discover -s tests -v
 ## 大学数学手册
 
 已收录 17 章、627 条中英文术语，附易混术语、数学符号与英文缩写表。支持 [HTML 源文件](sources/university-mathematics.html)、[Markdown](glossaries/university-mathematics.md)、[PDF](pdf/university-mathematics.pdf)。与现有线性代数、概率论专题的部分词条交叉，统计按领域分别计算。编辑时请先更新 HTML，再运行 `python3 scripts/build.py` 同步各格式。
+
+## C++ 编程语言 / C++ Programming Language
+
+新增 **357 条中英文术语、16 个专题**，包含对象生存期与值类别、RAII、模板/Concepts、STL、Ranges、异常安全、并发内存模型及 C++20/23。提供 [源 TSV](data/cpp-glossary.tsv)、[Markdown](glossaries/cpp.md)、[可检索 PDF](pdf/cpp.pdf) 和网站全文检索；附录另有 16 组易混淆概念辨析。

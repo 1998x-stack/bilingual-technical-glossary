@@ -71576,5 +71576,3218 @@
     "zh": "分组乱序",
     "abbr": "",
     "definition": "分组抵达顺序与发送顺序不一致的现象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "C++ programming language",
+    "zh": "C++ 编程语言",
+    "abbr": "",
+    "definition": "兼顾系统编程、抽象与性能的通用编译型编程语言。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "ISO C++ standard",
+    "zh": "ISO C++ 标准",
+    "abbr": "",
+    "definition": "规定语言及标准库要求的国际标准。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "C++ implementation",
+    "zh": "C++ 实现",
+    "abbr": "",
+    "definition": "编译器、标准库与运行环境共同实现标准的具体系统。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "hosted implementation",
+    "zh": "宿主实现",
+    "abbr": "",
+    "definition": "提供完整标准库和程序启动环境的实现形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "freestanding implementation",
+    "zh": "独立式实现",
+    "abbr": "",
+    "definition": "面向内核或嵌入式等环境，标准库要求较少的实现形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "translation unit",
+    "zh": "翻译单元",
+    "abbr": "",
+    "definition": "源文件经预处理并展开头文件后的编译输入单位。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "source file",
+    "zh": "源文件",
+    "abbr": "",
+    "definition": "包含 C++ 代码的程序文本文件。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "header file",
+    "zh": "头文件",
+    "abbr": "",
+    "definition": "通常通过包含指令共享声明的文件。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "preprocessing",
+    "zh": "预处理",
+    "abbr": "",
+    "definition": "编译早期处理宏、条件编译与文件包含的阶段。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "preprocessor directive",
+    "zh": "预处理指令",
+    "abbr": "",
+    "definition": "以井号开头的预处理控制语句。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "macro expansion",
+    "zh": "宏展开",
+    "abbr": "",
+    "definition": "将宏调用按预处理规则替换为相应记号序列。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "include guard",
+    "zh": "头文件包含保护",
+    "abbr": "",
+    "definition": "防止同一头文件在单个翻译单元内重复展开的机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "compilation",
+    "zh": "编译",
+    "abbr": "",
+    "definition": "将源程序翻译为目标代码的过程。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "compiler",
+    "zh": "编译器",
+    "abbr": "",
+    "definition": "检查并翻译 C++ 源程序的工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "linker",
+    "zh": "链接器",
+    "abbr": "",
+    "definition": "解析符号与重定位，组合目标文件和库的工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "object file",
+    "zh": "目标文件",
+    "abbr": "",
+    "definition": "保存机器代码、符号及重定位信息的编译产物。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "executable",
+    "zh": "可执行文件",
+    "abbr": "",
+    "definition": "可由运行环境加载并执行的程序文件。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "static library",
+    "zh": "静态库",
+    "abbr": "",
+    "definition": "通常在链接时将所需目标代码纳入最终产物的库。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "shared library",
+    "zh": "共享库",
+    "abbr": "",
+    "definition": "通常在加载或运行时参与符号解析的动态库。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "name mangling",
+    "zh": "名字修饰",
+    "abbr": "",
+    "definition": "实现将函数签名等信息编码进链接符号的惯用方式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "application binary interface (ABI)",
+    "zh": "应用二进制接口",
+    "abbr": "",
+    "definition": "规定调用约定、对象布局、符号等二进制兼容规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "one-definition rule (ODR)",
+    "zh": "单一定义规则",
+    "abbr": "",
+    "definition": "约束实体定义数量及跨翻译单元定义一致性的规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "undefined behavior (UB)",
+    "zh": "未定义行为",
+    "abbr": "",
+    "definition": "标准不对该程序行为施加要求的情况。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "implementation-defined behavior",
+    "zh": "实现定义行为",
+    "abbr": "",
+    "definition": "标准允许实现选择并要求记录的行为。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 1,
+    "topic": "语言基础与翻译构建",
+    "en": "unspecified behavior",
+    "zh": "未指定行为",
+    "abbr": "",
+    "definition": "标准允许多个结果但无需规定选择哪一个的行为。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "fundamental type",
+    "zh": "基本类型",
+    "abbr": "",
+    "definition": "语言内建的算术、void 与 nullptr_t 等基础类型类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "integral type",
+    "zh": "整数类型",
+    "abbr": "",
+    "definition": "可表示整数或字符等离散值的内建类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "floating-point type",
+    "zh": "浮点类型",
+    "abbr": "",
+    "definition": "表示浮点数值的类型，如 float 和 double。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "enumeration",
+    "zh": "枚举类型",
+    "abbr": "",
+    "definition": "由命名枚举值组成的用户定义类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "scoped enumeration",
+    "zh": "有作用域枚举",
+    "abbr": "",
+    "definition": "使用 enum class 或 enum struct 声明的枚举。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "class type",
+    "zh": "类类型",
+    "abbr": "",
+    "definition": "通过 class、struct 或 union 定义的用户类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "compound type",
+    "zh": "复合类型",
+    "abbr": "",
+    "definition": "在基础类型上构成的引用、指针、数组、类等类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "complete type",
+    "zh": "完整类型",
+    "abbr": "",
+    "definition": "在需要其大小或成员信息处已完整定义的类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "incomplete type",
+    "zh": "不完整类型",
+    "abbr": "",
+    "definition": "声明已知但定义尚不可用的类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "type alias",
+    "zh": "类型别名",
+    "abbr": "",
+    "definition": "通过 using 或 typedef 为已有类型引入新名称。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "type deduction",
+    "zh": "类型推导",
+    "abbr": "",
+    "definition": "编译器依据表达式或初始化信息推断类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "auto specifier",
+    "zh": "auto 类型说明符",
+    "abbr": "",
+    "definition": "要求编译器按上下文规则推导声明类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "decltype specifier",
+    "zh": "decltype 类型说明符",
+    "abbr": "",
+    "definition": "依据表达式的类型与值类别推导类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "object",
+    "zh": "对象",
+    "abbr": "",
+    "definition": "具有存储、类型与生存期的存储区域或其关联实体。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "object representation",
+    "zh": "对象表示",
+    "abbr": "",
+    "definition": "对象占用的字节序列。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "value representation",
+    "zh": "值表示",
+    "abbr": "",
+    "definition": "对象表示中用于表示值的位。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "object lifetime",
+    "zh": "对象生存期",
+    "abbr": "",
+    "definition": "对象存在且可按相应规则使用的时间区间。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "storage duration",
+    "zh": "存储期",
+    "abbr": "",
+    "definition": "对象所用存储得以保持的时间属性。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "automatic storage duration",
+    "zh": "自动存储期",
+    "abbr": "",
+    "definition": "典型局部变量在所属作用域执行期间管理的存储期。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "static storage duration",
+    "zh": "静态存储期",
+    "abbr": "",
+    "definition": "程序执行期间持续存在的存储期。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "thread storage duration",
+    "zh": "线程存储期",
+    "abbr": "",
+    "definition": "每个线程分别拥有并在线程期间持续存在的存储期。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "dynamic storage duration",
+    "zh": "动态存储期",
+    "abbr": "",
+    "definition": "由分配与释放操作控制的存储期。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "alignment",
+    "zh": "对齐",
+    "abbr": "",
+    "definition": "对象地址须满足的字节边界约束。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "padding byte",
+    "zh": "填充字节",
+    "abbr": "",
+    "definition": "对象布局中不承载指定成员值的字节。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "trivially copyable type",
+    "zh": "可平凡复制类型",
+    "abbr": "",
+    "definition": "满足标准规定的、可按对象表示复制的类型类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 2,
+    "topic": "类型、对象与存储期",
+    "en": "standard-layout type",
+    "zh": "标准布局类型",
+    "abbr": "",
+    "definition": "满足一组用于对象布局兼容性约束的类类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "declaration",
+    "zh": "声明",
+    "abbr": "",
+    "definition": "向程序引入实体或给出其属性的语法构造。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "definition",
+    "zh": "定义",
+    "abbr": "",
+    "definition": "提供实体完整定义所需信息的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "initialization",
+    "zh": "初始化",
+    "abbr": "",
+    "definition": "在对象创建或引用绑定时赋予初始状态的过程。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "copy initialization",
+    "zh": "复制初始化",
+    "abbr": "",
+    "definition": "使用等号等形式触发的初始化规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "direct initialization",
+    "zh": "直接初始化",
+    "abbr": "",
+    "definition": "使用圆括号或直接构造形式执行初始化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "list initialization",
+    "zh": "列表初始化",
+    "abbr": "",
+    "definition": "使用花括号初始化并遵守窄化限制等规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "aggregate initialization",
+    "zh": "聚合初始化",
+    "abbr": "",
+    "definition": "按聚合成员或元素顺序进行的初始化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "zero initialization",
+    "zh": "零初始化",
+    "abbr": "",
+    "definition": "将标量设零等按标准规则执行的初始化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "value initialization",
+    "zh": "值初始化",
+    "abbr": "",
+    "definition": "按类型采用零初始化和默认初始化等组合规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "default initialization",
+    "zh": "默认初始化",
+    "abbr": "",
+    "definition": "不提供显式初始化器时执行的初始化形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "reference",
+    "zh": "引用",
+    "abbr": "",
+    "definition": "某个实体的别名，不是可重新绑定的独立指针。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "lvalue reference",
+    "zh": "左值引用",
+    "abbr": "",
+    "definition": "使用 T& 声明并按引用绑定规则绑定表达式的引用。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "rvalue reference",
+    "zh": "右值引用",
+    "abbr": "",
+    "definition": "使用 T&& 声明并可绑定特定右值表达式的引用。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "forwarding reference",
+    "zh": "转发引用",
+    "abbr": "",
+    "definition": "特定推导上下文中的 T&&，可依据实参推导左右值。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "const qualifier",
+    "zh": "const 限定符",
+    "abbr": "",
+    "definition": "约束通过相应类型访问对象的修改操作。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "volatile qualifier",
+    "zh": "volatile 限定符",
+    "abbr": "",
+    "definition": "对特定对象访问施加语义限制，不等于线程同步。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "cv-qualification",
+    "zh": "cv 限定",
+    "abbr": "",
+    "definition": "const 和 volatile 对类型的联合限定。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "value category",
+    "zh": "值类别",
+    "abbr": "",
+    "definition": "表达式按对象身份与临时值语义划分的类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "lvalue",
+    "zh": "左值",
+    "abbr": "",
+    "definition": "具有身份、可用于定位某实体等语义的表达式类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "rvalue",
+    "zh": "右值",
+    "abbr": "",
+    "definition": "prvalue 与 xvalue 的统称。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "prvalue",
+    "zh": "纯右值",
+    "abbr": "",
+    "definition": "主要用于计算值或初始化对象的表达式类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "xvalue",
+    "zh": "将亡值",
+    "abbr": "",
+    "definition": "具有对象身份且资源可被重用的表达式类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "glvalue",
+    "zh": "泛左值",
+    "abbr": "",
+    "definition": "lvalue 与 xvalue 的统称。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "temporary object",
+    "zh": "临时对象",
+    "abbr": "",
+    "definition": "按表达式与初始化规则创建并通常在限定时机销毁的对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "temporary materialization",
+    "zh": "临时量实质化",
+    "abbr": "",
+    "definition": "在需要对象身份时把纯右值转为临时对象的转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 3,
+    "topic": "声明、引用和值类别",
+    "en": "lifetime extension",
+    "zh": "生存期延长",
+    "abbr": "",
+    "definition": "某些引用绑定或初始化场景延长临时对象生存期的规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "expression",
+    "zh": "表达式",
+    "abbr": "",
+    "definition": "能产生值、对象指定或副作用的语法结构。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "statement",
+    "zh": "语句",
+    "abbr": "",
+    "definition": "执行控制、声明或表达式操作的语法单位。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "full-expression",
+    "zh": "完整表达式",
+    "abbr": "",
+    "definition": "影响临时量销毁和顺序规则的完整表达式边界。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "side effect",
+    "zh": "副作用",
+    "abbr": "",
+    "definition": "对可观察状态的修改等求值效果。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "sequenced-before",
+    "zh": "先序于",
+    "abbr": "",
+    "definition": "标准定义的同一线程内求值顺序关系。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "unsequenced evaluation",
+    "zh": "无先后顺序求值",
+    "abbr": "",
+    "definition": "两个求值之间没有规定先序关系的情况。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "implicit conversion",
+    "zh": "隐式转换",
+    "abbr": "",
+    "definition": "语言规则自动执行的类型或值转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "explicit conversion",
+    "zh": "显式转换",
+    "abbr": "",
+    "definition": "程序员通过类型转换语法请求的转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "usual arithmetic conversions",
+    "zh": "通常算术转换",
+    "abbr": "",
+    "definition": "二元算术表达式中为操作数选择共同类型的规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "integral promotion",
+    "zh": "整数提升",
+    "abbr": "",
+    "definition": "将小整数类型提升为 int 等类型的转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "narrowing conversion",
+    "zh": "窄化转换",
+    "abbr": "",
+    "definition": "可能丢失值域或精度、在部分列表初始化中受禁止的转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "static_cast",
+    "zh": "static_cast 转换",
+    "abbr": "",
+    "definition": "执行标准允许的显式类型转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "dynamic_cast",
+    "zh": "dynamic_cast 转换",
+    "abbr": "",
+    "definition": "针对多态类层次的运行时检查转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "const_cast",
+    "zh": "const_cast 转换",
+    "abbr": "",
+    "definition": "改变指针或引用表达式的 cv 限定形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "reinterpret_cast",
+    "zh": "reinterpret_cast 转换",
+    "abbr": "",
+    "definition": "执行特定底层指针、整数等重新解释转换。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "operator precedence",
+    "zh": "运算符优先级",
+    "abbr": "",
+    "definition": "决定表达式如何组合的语法约定，不决定求值先后。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "short-circuit evaluation",
+    "zh": "短路求值",
+    "abbr": "",
+    "definition": "逻辑与或按规则跳过不必计算的右操作数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "conditional operator",
+    "zh": "条件运算符",
+    "abbr": "",
+    "definition": "依据条件选择两个操作数结果的 ?: 运算符。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "comma operator",
+    "zh": "逗号运算符",
+    "abbr": "",
+    "definition": "先计算左操作数，再计算右操作数的运算符。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 4,
+    "topic": "表达式、转换与求值",
+    "en": "as-if rule",
+    "zh": "假定规则",
+    "abbr": "",
+    "definition": "允许实现优化，只要保持标准要求的可观察行为。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "function declaration",
+    "zh": "函数声明",
+    "abbr": "",
+    "definition": "说明函数名称、返回类型与形参列表的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "function definition",
+    "zh": "函数定义",
+    "abbr": "",
+    "definition": "提供函数体的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "function signature",
+    "zh": "函数签名",
+    "abbr": "",
+    "definition": "由语言规则用于区分特定函数的相关信息组合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "function overload",
+    "zh": "函数重载",
+    "abbr": "",
+    "definition": "在允许范围内共用名称而参数列表等不同的函数集合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "overload resolution",
+    "zh": "重载决议",
+    "abbr": "",
+    "definition": "为调用选择最佳可行函数的规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "argument-dependent lookup (ADL)",
+    "zh": "实参依赖查找",
+    "abbr": "",
+    "definition": "依据实参关联的命名空间或类补充函数查找。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "parameter",
+    "zh": "形参",
+    "abbr": "",
+    "definition": "在函数声明或定义中出现的参数变量或声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "argument",
+    "zh": "实参",
+    "abbr": "",
+    "definition": "函数调用时提供的表达式或初始值。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "pass by value",
+    "zh": "按值传递",
+    "abbr": "",
+    "definition": "在被调用方构造独立形参对象的传参方式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "pass by reference",
+    "zh": "按引用传递",
+    "abbr": "",
+    "definition": "形参引用绑定到调用方所指定实体的传参方式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "default argument",
+    "zh": "默认实参",
+    "abbr": "",
+    "definition": "调用时省略对应实参所使用的默认表达式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "variadic function",
+    "zh": "可变参数函数",
+    "abbr": "",
+    "definition": "能够接受可变数量实参的函数形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "variadic template",
+    "zh": "可变参数模板",
+    "abbr": "",
+    "definition": "接收类型或非类型参数包的模板。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "function pointer",
+    "zh": "函数指针",
+    "abbr": "",
+    "definition": "保存可调用函数地址的指针类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "member function",
+    "zh": "成员函数",
+    "abbr": "",
+    "definition": "在类中声明且与成员访问相关的函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "inline function",
+    "zh": "内联函数",
+    "abbr": "",
+    "definition": "受 ODR 多定义规则支持的函数；不保证机器码内联。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "noexcept specification",
+    "zh": "noexcept 异常规范",
+    "abbr": "",
+    "definition": "表达函数是否允许异常传播的规范。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "lambda expression",
+    "zh": "Lambda 表达式",
+    "abbr": "",
+    "definition": "生成匿名闭包对象的表达式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 5,
+    "topic": "函数、重载与参数",
+    "en": "closure type",
+    "zh": "闭包类型",
+    "abbr": "",
+    "definition": "编译器为 Lambda 表达式生成的独特类类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "class",
+    "zh": "类",
+    "abbr": "",
+    "definition": "将数据成员和函数等关联为自定义类型的构造。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "struct",
+    "zh": "结构体",
+    "abbr": "",
+    "definition": "默认成员与基类访问权限为 public 的类声明形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "union",
+    "zh": "联合体",
+    "abbr": "",
+    "definition": "成员共享同一存储的特殊类类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "access specifier",
+    "zh": "访问说明符",
+    "abbr": "",
+    "definition": "public、protected、private 等成员可访问性标记。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "encapsulation",
+    "zh": "封装",
+    "abbr": "",
+    "definition": "通过类型接口与访问控制管理内部状态的设计思想。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "data member",
+    "zh": "数据成员",
+    "abbr": "",
+    "definition": "类中声明的成员对象或其相关声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "static data member",
+    "zh": "静态数据成员",
+    "abbr": "",
+    "definition": "属于类而非单个对象的静态成员。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "constructor",
+    "zh": "构造函数",
+    "abbr": "",
+    "definition": "负责类对象初始化过程的特殊成员函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "default constructor",
+    "zh": "默认构造函数",
+    "abbr": "",
+    "definition": "可以在无显式实参时调用的构造函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "copy constructor",
+    "zh": "复制构造函数",
+    "abbr": "",
+    "definition": "从同类型对象初始化新对象的特殊构造函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "move constructor",
+    "zh": "移动构造函数",
+    "abbr": "",
+    "definition": "通常从同类型右值对象转移状态的特殊构造函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "copy assignment operator",
+    "zh": "复制赋值运算符",
+    "abbr": "",
+    "definition": "将一个现有对象的状态按复制语义赋给另一对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "move assignment operator",
+    "zh": "移动赋值运算符",
+    "abbr": "",
+    "definition": "将右值来源状态按移动语义赋给现有对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "destructor",
+    "zh": "析构函数",
+    "abbr": "",
+    "definition": "对象生存期结束时执行清理的特殊成员函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "rule of three",
+    "zh": "三法则",
+    "abbr": "",
+    "definition": "需要自定义析构、复制构造或复制赋值时应审视三者的一致性。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "rule of five",
+    "zh": "五法则",
+    "abbr": "",
+    "definition": "在三法则上同时考虑移动构造与移动赋值。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "rule of zero",
+    "zh": "零法则",
+    "abbr": "",
+    "definition": "优先使用正确管理资源的成员，避免自定义五类特殊成员。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "inheritance",
+    "zh": "继承",
+    "abbr": "",
+    "definition": "派生类基于基类形成类层次关系的机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "virtual function",
+    "zh": "虚函数",
+    "abbr": "",
+    "definition": "支持通过基类接口动态分派的成员函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "abstract class",
+    "zh": "抽象类",
+    "abbr": "",
+    "definition": "含有或继承未实现纯虚函数、不能直接实例化的类。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "virtual destructor",
+    "zh": "虚析构函数",
+    "abbr": "",
+    "definition": "允许通过适当基类指针安全销毁派生对象的重要接口设计。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 6,
+    "topic": "类、继承与对象模型",
+    "en": "object slicing",
+    "zh": "对象切片",
+    "abbr": "",
+    "definition": "将派生对象按值复制成基类对象时丢失派生部分的现象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "resource acquisition is initialization (RAII)",
+    "zh": "资源获取即初始化",
+    "abbr": "",
+    "definition": "将资源获得与对象初始化绑定，并在析构时自动释放资源的惯用法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "resource ownership",
+    "zh": "资源所有权",
+    "abbr": "",
+    "definition": "规定谁负责管理资源释放的设计关系。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "owning pointer",
+    "zh": "拥有型指针",
+    "abbr": "",
+    "definition": "表达负责释放所指资源的指针或包装类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "non-owning pointer",
+    "zh": "非拥有型指针",
+    "abbr": "",
+    "definition": "不负责释放目标对象的指针使用语义。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "raw pointer",
+    "zh": "原始指针",
+    "abbr": "",
+    "definition": "语言内建指针类型，单独并不表达所有权。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "smart pointer",
+    "zh": "智能指针",
+    "abbr": "",
+    "definition": "以类封装指针与所有权管理规则的工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "std::unique_ptr",
+    "zh": "独占所有权智能指针",
+    "abbr": "",
+    "definition": "通过不可复制的所有权语义在析构时管理对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "std::shared_ptr",
+    "zh": "共享所有权智能指针",
+    "abbr": "",
+    "definition": "以共享控制块的引用计数管理所拥有对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "std::weak_ptr",
+    "zh": "弱引用智能指针",
+    "abbr": "",
+    "definition": "观察 shared_ptr 所管理对象且不增加强所有权计数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "reference counting",
+    "zh": "引用计数",
+    "abbr": "",
+    "definition": "通过计数追踪资源拥有者数量的管理方法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "cyclic ownership",
+    "zh": "循环所有权",
+    "abbr": "",
+    "definition": "共享所有权对象成环而导致资源无法自动释放的情况。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "custom deleter",
+    "zh": "自定义删除器",
+    "abbr": "",
+    "definition": "指定智能指针释放资源方式的可调用对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "std::make_unique",
+    "zh": "make_unique 工厂函数",
+    "abbr": "",
+    "definition": "创建对象并返回管理其独占所有权的 unique_ptr。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "std::make_shared",
+    "zh": "make_shared 工厂函数",
+    "abbr": "",
+    "definition": "创建共享所有权对象并通常合并资源与控制块分配。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "allocator",
+    "zh": "分配器",
+    "abbr": "",
+    "definition": "负责容器等组件存储分配与释放的抽象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "std::pmr",
+    "zh": "多态内存资源设施",
+    "abbr": "",
+    "definition": "标准库提供的运行时可配置内存资源接口集合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "placement new",
+    "zh": "定位 new",
+    "abbr": "",
+    "definition": "在指定存储位置构造对象的 new 表达式形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "manual lifetime management",
+    "zh": "手动生存期管理",
+    "abbr": "",
+    "definition": "显式控制对象构造与销毁时机的技术。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "dangling pointer",
+    "zh": "悬空指针",
+    "abbr": "",
+    "definition": "所指对象已失效而仍保留其地址的指针。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "use-after-free",
+    "zh": "释放后使用",
+    "abbr": "",
+    "definition": "访问已被释放或结束生存期资源的错误。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "double deletion",
+    "zh": "重复释放",
+    "abbr": "",
+    "definition": "对同一资源错误地执行多次释放的行为。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 7,
+    "topic": "资源管理与内存安全",
+    "en": "memory leak",
+    "zh": "内存泄漏",
+    "abbr": "",
+    "definition": "不再能正确回收已分配资源的情况。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "template",
+    "zh": "模板",
+    "abbr": "",
+    "definition": "参数化生成类、函数或变量等实体的语言机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "function template",
+    "zh": "函数模板",
+    "abbr": "",
+    "definition": "以模板参数描述一族函数的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "class template",
+    "zh": "类模板",
+    "abbr": "",
+    "definition": "以模板参数描述一族类的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "variable template",
+    "zh": "变量模板",
+    "abbr": "",
+    "definition": "以模板参数描述一族变量的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "alias template",
+    "zh": "别名模板",
+    "abbr": "",
+    "definition": "以模板参数描述一族类型别名的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "template parameter",
+    "zh": "模板形参",
+    "abbr": "",
+    "definition": "在模板声明中引入的类型、常量或模板参数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "template argument",
+    "zh": "模板实参",
+    "abbr": "",
+    "definition": "为模板形参提供的具体参数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "non-type template parameter",
+    "zh": "非类型模板形参",
+    "abbr": "",
+    "definition": "以值而非类型作为模板参数的机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "template instantiation",
+    "zh": "模板实例化",
+    "abbr": "",
+    "definition": "按模板与实参形成具体实体的过程。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "implicit instantiation",
+    "zh": "隐式实例化",
+    "abbr": "",
+    "definition": "编译器因使用需求触发的模板实例化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "explicit instantiation",
+    "zh": "显式实例化",
+    "abbr": "",
+    "definition": "使用显式语法要求实例化模板特化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "template specialization",
+    "zh": "模板特化",
+    "abbr": "",
+    "definition": "针对给定模板实参形成的模板实体。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "full specialization",
+    "zh": "全特化",
+    "abbr": "",
+    "definition": "为模板的特定实参集合提供专门定义。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "partial specialization",
+    "zh": "偏特化",
+    "abbr": "",
+    "definition": "类或变量模板针对一部分实参模式提供专门定义。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "template argument deduction",
+    "zh": "模板实参推导",
+    "abbr": "",
+    "definition": "编译器根据调用或其他上下文推导模板实参。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "substitution failure is not an error (SFINAE)",
+    "zh": "替换失败并非错误",
+    "abbr": "",
+    "definition": "模板候选替换失败时可从重载集合移除候选的规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "constraint",
+    "zh": "约束",
+    "abbr": "",
+    "definition": "限制模板实参或函数可用性的编译期条件。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "concept",
+    "zh": "概念",
+    "abbr": "",
+    "definition": "C++20 中可命名并复用的编译期约束集合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "requires-expression",
+    "zh": "requires 表达式",
+    "abbr": "",
+    "definition": "检验表达式、类型或嵌套条件是否满足要求。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "requires-clause",
+    "zh": "requires 子句",
+    "abbr": "",
+    "definition": "为模板或函数声明附加约束的语法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "constrained template",
+    "zh": "受约束模板",
+    "abbr": "",
+    "definition": "以 concepts 或其他约束限制可用实参的模板。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "std::enable_if",
+    "zh": "enable_if 类型条件工具",
+    "abbr": "",
+    "definition": "按编译期条件启用特定类型或候选的类型特征工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "std::void_t",
+    "zh": "void_t 类型工具",
+    "abbr": "",
+    "definition": "将一组有效类型映射为 void 的元编程工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "type trait",
+    "zh": "类型特征",
+    "abbr": "",
+    "definition": "编译期查询或变换类型属性的工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "std::is_same",
+    "zh": "类型相同判断特征",
+    "abbr": "",
+    "definition": "检查两个模板类型实参是否为相同类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "perfect forwarding",
+    "zh": "完美转发",
+    "abbr": "",
+    "definition": "保留实参值类别等性质向下游传递的泛型技术。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "std::forward",
+    "zh": "条件式转发工具",
+    "abbr": "",
+    "definition": "依据模板参数选择适当值类别的强制转换工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "std::move",
+    "zh": "转右值转换工具",
+    "abbr": "",
+    "definition": "将表达式转换为可移动的右值引用形式；本身不移动资源。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 8,
+    "topic": "模板、泛型与 Concepts",
+    "en": "fold expression",
+    "zh": "折叠表达式",
+    "abbr": "",
+    "definition": "C++17 对参数包应用二元运算符的表达式形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "standard template library (STL)",
+    "zh": "标准模板库",
+    "abbr": "",
+    "definition": "惯常指标准库的容器、迭代器、算法等泛型组件群。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "sequence container",
+    "zh": "序列容器",
+    "abbr": "",
+    "definition": "按线性序列组织元素的标准库容器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "associative container",
+    "zh": "关联容器",
+    "abbr": "",
+    "definition": "按键排序并组织元素的容器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "unordered associative container",
+    "zh": "无序关联容器",
+    "abbr": "",
+    "definition": "通常以哈希组织元素的关联容器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::vector",
+    "zh": "动态数组容器",
+    "abbr": "",
+    "definition": "提供连续存储及尾部高效插入的序列容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::array",
+    "zh": "定长数组容器",
+    "abbr": "",
+    "definition": "以编译期固定长度封装内建数组的容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::deque",
+    "zh": "双端队列容器",
+    "abbr": "",
+    "definition": "支持两端高效插入删除的分段序列容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::list",
+    "zh": "双向链表容器",
+    "abbr": "",
+    "definition": "节点式双向链表容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::forward_list",
+    "zh": "单向链表容器",
+    "abbr": "",
+    "definition": "节点式单向链表容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::map",
+    "zh": "有序映射容器",
+    "abbr": "",
+    "definition": "按键排序、键唯一的关联容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::set",
+    "zh": "有序集合容器",
+    "abbr": "",
+    "definition": "按键排序、元素唯一的关联容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::unordered_map",
+    "zh": "无序映射容器",
+    "abbr": "",
+    "definition": "基于哈希的键唯一关联容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::unordered_set",
+    "zh": "无序集合容器",
+    "abbr": "",
+    "definition": "基于哈希的元素唯一关联容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::span",
+    "zh": "连续序列非拥有视图",
+    "abbr": "",
+    "definition": "C++20 中对一段连续对象序列的轻量非拥有视图。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "std::string_view",
+    "zh": "字符串非拥有视图",
+    "abbr": "",
+    "definition": "对连续字符序列的轻量只读视图；不拥有字符存储。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "iterator",
+    "zh": "迭代器",
+    "abbr": "",
+    "definition": "抽象表示容器或序列中位置与访问操作的对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "input iterator",
+    "zh": "输入迭代器",
+    "abbr": "",
+    "definition": "支持按输入语义读取序列元素的迭代器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "forward iterator",
+    "zh": "前向迭代器",
+    "abbr": "",
+    "definition": "支持多遍遍历的迭代器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "bidirectional iterator",
+    "zh": "双向迭代器",
+    "abbr": "",
+    "definition": "支持递增与递减遍历的迭代器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "random-access iterator",
+    "zh": "随机访问迭代器",
+    "abbr": "",
+    "definition": "支持常数时间位置跳转等操作的迭代器类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "contiguous iterator",
+    "zh": "连续迭代器",
+    "abbr": "",
+    "definition": "保证元素物理连续存储语义的迭代器概念。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "iterator invalidation",
+    "zh": "迭代器失效",
+    "abbr": "",
+    "definition": "容器操作使原有迭代器、指针或引用不再可用的现象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 9,
+    "topic": "标准库容器、迭代器与视图",
+    "en": "container adaptor",
+    "zh": "容器适配器",
+    "abbr": "",
+    "definition": "在底层容器之上提供受限接口的组件，如 stack。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::sort",
+    "zh": "排序算法",
+    "abbr": "",
+    "definition": "对随机访问范围进行比较排序的标准算法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::stable_sort",
+    "zh": "稳定排序算法",
+    "abbr": "",
+    "definition": "排序时保留等价元素相对顺序的标准算法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::find",
+    "zh": "顺序查找算法",
+    "abbr": "",
+    "definition": "在范围中定位第一个等于指定值的元素。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::lower_bound",
+    "zh": "下界查找算法",
+    "abbr": "",
+    "definition": "在已分区范围中定位首个不小于指定值的位置。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::binary_search",
+    "zh": "二分存在性查找",
+    "abbr": "",
+    "definition": "检查已分区范围是否存在等价值。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::transform",
+    "zh": "变换算法",
+    "abbr": "",
+    "definition": "对输入序列应用操作并向输出序列写结果。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::accumulate",
+    "zh": "累积算法",
+    "abbr": "",
+    "definition": "按给定运算从初值顺序累加范围元素。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::reduce",
+    "zh": "归约算法",
+    "abbr": "",
+    "definition": "可在不同求值分组下合并元素，不承诺与 accumulate 相同顺序。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::for_each",
+    "zh": "逐元素操作算法",
+    "abbr": "",
+    "definition": "对范围中每个元素调用函数对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "comparator",
+    "zh": "比较器",
+    "abbr": "",
+    "definition": "决定元素相对顺序或等价关系的可调用对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "strict weak ordering",
+    "zh": "严格弱序",
+    "abbr": "",
+    "definition": "许多排序算法要求比较关系满足的数学性质。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "predicate",
+    "zh": "谓词",
+    "abbr": "",
+    "definition": "返回可解释为布尔值结果的可调用对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "function object",
+    "zh": "函数对象",
+    "abbr": "",
+    "definition": "定义了调用运算符的对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::function",
+    "zh": "类型擦除可调用包装器",
+    "abbr": "",
+    "definition": "用统一接口保存满足签名要求的可调用目标。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::invoke",
+    "zh": "通用调用工具",
+    "abbr": "",
+    "definition": "统一调用函数、成员指针及其他可调用对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "range",
+    "zh": "范围",
+    "abbr": "",
+    "definition": "由起止位置或范围对象描述的可遍历元素序列。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::ranges",
+    "zh": "范围库",
+    "abbr": "",
+    "definition": "C++20 引入的范围概念、算法和视图工具集合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "view",
+    "zh": "视图",
+    "abbr": "",
+    "definition": "通常轻量且可组合的范围抽象，不等于拥有容器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "range adaptor",
+    "zh": "范围适配器",
+    "abbr": "",
+    "definition": "将范围变换为新视图的可组合操作。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::views::filter",
+    "zh": "筛选视图适配器",
+    "abbr": "",
+    "definition": "按谓词从输入范围惰性筛选元素。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 10,
+    "topic": "算法、Ranges 与函数式组件",
+    "en": "std::views::transform",
+    "zh": "映射视图适配器",
+    "abbr": "",
+    "definition": "按可调用操作惰性映射范围元素。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "exception",
+    "zh": "异常",
+    "abbr": "",
+    "definition": "用于非局部传播错误或异常条件的语言机制实体。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "throw expression",
+    "zh": "抛出表达式",
+    "abbr": "",
+    "definition": "创建或重新抛出异常并启动异常传播的表达式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "try block",
+    "zh": "try 语句块",
+    "abbr": "",
+    "definition": "包含受异常处理器监控的代码块。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "catch handler",
+    "zh": "catch 处理器",
+    "abbr": "",
+    "definition": "按类型等规则处理所捕获异常的代码。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "stack unwinding",
+    "zh": "栈展开",
+    "abbr": "",
+    "definition": "异常传播时按规则销毁已构造的自动对象的过程。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "exception safety",
+    "zh": "异常安全",
+    "abbr": "",
+    "definition": "代码在异常发生后保持资源与状态约束的能力。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "no-throw guarantee",
+    "zh": "不抛异常保证",
+    "abbr": "",
+    "definition": "某操作承诺不会让异常向调用方传播。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "strong exception guarantee",
+    "zh": "强异常保证",
+    "abbr": "",
+    "definition": "操作失败时对外可观察状态不变的保证。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "basic exception guarantee",
+    "zh": "基本异常保证",
+    "abbr": "",
+    "definition": "操作失败仍维持有效状态且不泄漏资源的保证。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "std::exception",
+    "zh": "标准异常基类",
+    "abbr": "",
+    "definition": "标准库常见异常类型的基类。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "std::runtime_error",
+    "zh": "运行时错误异常",
+    "abbr": "",
+    "definition": "表达仅在运行时可检测错误的标准异常类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "std::error_code",
+    "zh": "错误码对象",
+    "abbr": "",
+    "definition": "封装错误值与错误类别的标准库类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "std::optional",
+    "zh": "可选值容器",
+    "abbr": "",
+    "definition": "显式表示存在值或不存在值的对象包装器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "std::variant",
+    "zh": "类型安全的可辨识联合",
+    "abbr": "",
+    "definition": "可在多个备选类型中保存一个当前有效值的对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "std::expected",
+    "zh": "期望值或错误容器",
+    "abbr": "",
+    "definition": "C++23 中表示成功值或错误值的类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 11,
+    "topic": "异常、安全保证与错误处理",
+    "en": "assertion",
+    "zh": "断言",
+    "abbr": "",
+    "definition": "程序运行时验证开发假设的检查机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "concurrency",
+    "zh": "并发",
+    "abbr": "",
+    "definition": "多个任务的执行时间在逻辑上重叠的系统性质。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "parallelism",
+    "zh": "并行",
+    "abbr": "",
+    "definition": "多个工作单元在物理计算资源上同时执行。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "thread",
+    "zh": "线程",
+    "abbr": "",
+    "definition": "程序内可独立调度的执行流。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::thread",
+    "zh": "标准线程类",
+    "abbr": "",
+    "definition": "C++11 对执行线程的标准封装。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::jthread",
+    "zh": "自动请求停止的线程类",
+    "abbr": "",
+    "definition": "C++20 在线程析构时可请求停止并合并的封装。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "mutex",
+    "zh": "互斥量",
+    "abbr": "",
+    "definition": "用于控制多个线程对共享资源互斥访问的同步原语。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::lock_guard",
+    "zh": "作用域互斥锁保护器",
+    "abbr": "",
+    "definition": "用 RAII 在作用域开始与结束锁定及解锁互斥量。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::unique_lock",
+    "zh": "可移动灵活锁管理器",
+    "abbr": "",
+    "definition": "支持延迟、条件等多种锁管理策略的包装器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::scoped_lock",
+    "zh": "多互斥量作用域锁",
+    "abbr": "",
+    "definition": "可同时管理一个或多个互斥量的 RAII 包装器。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "condition variable",
+    "zh": "条件变量",
+    "abbr": "",
+    "definition": "线程等待条件并接受通知的同步设施。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::future",
+    "zh": "异步结果对象",
+    "abbr": "",
+    "definition": "表示尚未就绪或可能包含异常的异步计算结果。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::promise",
+    "zh": "异步结果承诺对象",
+    "abbr": "",
+    "definition": "向共享状态设置值或异常的生产端对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::async",
+    "zh": "异步任务启动接口",
+    "abbr": "",
+    "definition": "按启动策略运行函数并返回 future 的标准接口。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "atomic operation",
+    "zh": "原子操作",
+    "abbr": "",
+    "definition": "在标准内存模型中不可被其他线程观察到中间状态的操作。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "std::atomic",
+    "zh": "原子类型模板",
+    "abbr": "",
+    "definition": "提供满足内存模型要求的原子读写与读改写操作。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "memory ordering",
+    "zh": "内存序",
+    "abbr": "",
+    "definition": "规定原子操作之间可见性与重排约束的规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "relaxed ordering",
+    "zh": "宽松内存序",
+    "abbr": "",
+    "definition": "仅提供原子性、不额外建立同步关系的内存序。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "acquire operation",
+    "zh": "获取操作",
+    "abbr": "",
+    "definition": "可与适当释放操作建立同步关系的读侧原子操作。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "release operation",
+    "zh": "释放操作",
+    "abbr": "",
+    "definition": "可将之前的效果发布给相应获取操作的写侧原子操作。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "sequential consistency",
+    "zh": "顺序一致性",
+    "abbr": "",
+    "definition": "对相关原子操作施加全局单一顺序约束的模型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "happens-before",
+    "zh": "先行发生关系",
+    "abbr": "",
+    "definition": "决定线程间可见性与竞争关系的标准偏序关系。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "data race",
+    "zh": "数据竞争",
+    "abbr": "",
+    "definition": "不同线程中冲突访问同一内存位置且不满足同步等条件的情况。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "race condition",
+    "zh": "竞态条件",
+    "abbr": "",
+    "definition": "结果依赖并发执行时序的广义逻辑问题。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "线程互相等待资源或条件而无法继续执行的状态。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 12,
+    "topic": "并发、线程与内存模型",
+    "en": "false sharing",
+    "zh": "伪共享",
+    "abbr": "",
+    "definition": "独立数据共享缓存行导致缓存一致性开销的性能现象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "constant expression",
+    "zh": "常量表达式",
+    "abbr": "",
+    "definition": "满足标准约束、可用于特定编译期语境的表达式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "constexpr variable",
+    "zh": "constexpr 变量",
+    "abbr": "",
+    "definition": "要求按相应规则进行常量初始化的变量。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "constexpr function",
+    "zh": "constexpr 函数",
+    "abbr": "",
+    "definition": "可在符合要求的调用中参与常量求值的函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "consteval function",
+    "zh": "立即函数",
+    "abbr": "",
+    "definition": "C++20 要求按规则在编译期求值的函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "constinit specifier",
+    "zh": "constinit 说明符",
+    "abbr": "",
+    "definition": "C++20 要求变量具备静态初始化的声明说明符。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "if constexpr",
+    "zh": "编译期条件语句",
+    "abbr": "",
+    "definition": "C++17 在实例化时可舍弃不满足条件的分支。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "static_assert",
+    "zh": "静态断言",
+    "abbr": "",
+    "definition": "编译时验证常量条件并在失败时诊断的语句。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "template metaprogramming (TMP)",
+    "zh": "模板元编程",
+    "abbr": "",
+    "definition": "利用模板实例化与类型计算完成编译期逻辑的技术。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "compile-time computation",
+    "zh": "编译期计算",
+    "abbr": "",
+    "definition": "在程序翻译期间完成的值或类型计算。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "constant initialization",
+    "zh": "常量初始化",
+    "abbr": "",
+    "definition": "静态或线程存储期变量按标准规则在静态阶段初始化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "static initialization",
+    "zh": "静态初始化",
+    "abbr": "",
+    "definition": "含常量初始化与零初始化的初始化类别。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "dynamic initialization",
+    "zh": "动态初始化",
+    "abbr": "",
+    "definition": "不属于静态初始化的变量初始化阶段。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "non-type template argument",
+    "zh": "非类型模板实参",
+    "abbr": "",
+    "definition": "作为模板参数传入的值或结构化对象等实参。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "parameter pack",
+    "zh": "参数包",
+    "abbr": "",
+    "definition": "代表零个或多个模板或函数参数的集合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "pack expansion",
+    "zh": "参数包展开",
+    "abbr": "",
+    "definition": "把模式按参数包元素逐项展开的语法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "integer_sequence",
+    "zh": "整数序列模板",
+    "abbr": "",
+    "definition": "在类型层面表示编译期整数序列的库工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 13,
+    "topic": "常量求值与元编程",
+    "en": "feature-test macro",
+    "zh": "特性测试宏",
+    "abbr": "",
+    "definition": "用于检测语言或标准库特性可用性的预定义或标准宏。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "uniform initialization",
+    "zh": "统一初始化",
+    "abbr": "",
+    "definition": "广泛采用花括号语法进行对象初始化的设计方向。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "range-based for loop",
+    "zh": "范围 for 循环",
+    "abbr": "",
+    "definition": "C++11 按元素或引用遍历范围的循环语法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "structured binding",
+    "zh": "结构化绑定",
+    "abbr": "",
+    "definition": "C++17 将数组、元组状对象或成员分解为多个名称的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "initialization statement",
+    "zh": "初始化语句",
+    "abbr": "",
+    "definition": "可在 if 或 switch 条件前引入局部初始化的语法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "if with initializer",
+    "zh": "带初始化语句的 if",
+    "abbr": "",
+    "definition": "C++17 在 if 判断前执行局部初始化的结构。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "class template argument deduction (CTAD)",
+    "zh": "类模板实参推导",
+    "abbr": "",
+    "definition": "C++17 由初始化器推导类模板参数的机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "deduction guide",
+    "zh": "推导指引",
+    "abbr": "",
+    "definition": "影响类模板实参推导的声明。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "inline variable",
+    "zh": "内联变量",
+    "abbr": "",
+    "definition": "C++17 支持跨翻译单元一致定义的变量形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "three-way comparison",
+    "zh": "三路比较",
+    "abbr": "",
+    "definition": "C++20 使用 <=> 建立排序关系的表达式机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "spaceship operator",
+    "zh": "飞船运算符",
+    "abbr": "",
+    "definition": "三路比较运算符 <=> 的俗称。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "std::strong_ordering",
+    "zh": "强序比较类别",
+    "abbr": "",
+    "definition": "表达强等价与有序比较结果的标准类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "module",
+    "zh": "模块",
+    "abbr": "",
+    "definition": "C++20 组织声明与依赖的语言级编译单元机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "module interface unit",
+    "zh": "模块接口单元",
+    "abbr": "",
+    "definition": "含有导出模块声明的翻译单元。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "module implementation unit",
+    "zh": "模块实现单元",
+    "abbr": "",
+    "definition": "定义模块内部实现的模块单元。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "export declaration",
+    "zh": "导出声明",
+    "abbr": "",
+    "definition": "将声明纳入模块对外接口的语法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "header unit",
+    "zh": "头文件单元",
+    "abbr": "",
+    "definition": "可作为可导入单元使用的头文件形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "coroutine",
+    "zh": "协程",
+    "abbr": "",
+    "definition": "能够挂起并恢复其执行的 C++20 函数形式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "co_await expression",
+    "zh": "co_await 表达式",
+    "abbr": "",
+    "definition": "执行可等待对象协议并可能挂起协程的表达式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "co_yield expression",
+    "zh": "co_yield 表达式",
+    "abbr": "",
+    "definition": "向协程消费者产生值并可能挂起的表达式。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "co_return statement",
+    "zh": "co_return 语句",
+    "abbr": "",
+    "definition": "按协程协议完成协程返回的语句。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "coroutine promise type",
+    "zh": "协程承诺类型",
+    "abbr": "",
+    "definition": "定义协程状态与返回行为协议的类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "std::generator",
+    "zh": "生成器",
+    "abbr": "",
+    "definition": "C++23 提供的基于协程的同步序列生成设施。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "explicit object parameter",
+    "zh": "显式对象形参",
+    "abbr": "",
+    "definition": "C++23 允许成员函数显式声明对象形参的机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 14,
+    "topic": "现代 C++ 语言特性",
+    "en": "multidimensional subscript operator",
+    "zh": "多维下标运算符",
+    "abbr": "",
+    "definition": "C++23 允许重载 operator[] 接受多个下标实参。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "input/output stream (iostream)",
+    "zh": "输入输出流",
+    "abbr": "",
+    "definition": "以统一接口处理输入与输出的标准库抽象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::cin",
+    "zh": "标准输入流",
+    "abbr": "",
+    "definition": "通常连接进程标准输入的字符输入流对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::cout",
+    "zh": "标准输出流",
+    "abbr": "",
+    "definition": "通常连接进程标准输出的字符输出流对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::cerr",
+    "zh": "标准错误流",
+    "abbr": "",
+    "definition": "通常连接进程标准错误输出的字符流对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "stream buffer",
+    "zh": "流缓冲区",
+    "abbr": "",
+    "definition": "管理字符传输与缓冲的标准流组件。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "stream state flags",
+    "zh": "流状态标志",
+    "abbr": "",
+    "definition": "记录 eof、fail、bad 等 I/O 状态的标志集合。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::ifstream",
+    "zh": "输入文件流",
+    "abbr": "",
+    "definition": "用于从文件读取字符的流类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::ofstream",
+    "zh": "输出文件流",
+    "abbr": "",
+    "definition": "用于向文件写入字符的流类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::stringstream",
+    "zh": "字符串流",
+    "abbr": "",
+    "definition": "对字符串执行流式读写与格式转换的流类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::filesystem",
+    "zh": "文件系统库",
+    "abbr": "",
+    "definition": "C++17 提供路径、目录和文件操作的标准设施。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::filesystem::path",
+    "zh": "文件系统路径",
+    "abbr": "",
+    "definition": "表示可按平台规则操作的路径对象。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::format",
+    "zh": "格式化函数",
+    "abbr": "",
+    "definition": "C++20 类型安全的格式化字符串接口。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::print",
+    "zh": "格式化打印函数",
+    "abbr": "",
+    "definition": "C++23 直接格式化并输出文本的标准函数。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::string",
+    "zh": "字符串类",
+    "abbr": "",
+    "definition": "通常保存连续 char 元素序列的可拥有字符串类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "std::u8string",
+    "zh": "UTF-8 代码单元字符串",
+    "abbr": "",
+    "definition": "以 char8_t 保存 UTF-8 代码单元序列的字符串类型。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "character encoding",
+    "zh": "字符编码",
+    "abbr": "",
+    "definition": "字符或代码点到代码单元序列的表示规则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "locale",
+    "zh": "区域设置",
+    "abbr": "",
+    "definition": "控制字符分类、数字格式等本地化行为的环境与库概念。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 15,
+    "topic": "输入输出、文本与文件系统",
+    "en": "serialization",
+    "zh": "序列化",
+    "abbr": "",
+    "definition": "将对象状态转换为可存储或传输表示的过程；非统一标准库设施。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "compile-time error",
+    "zh": "编译期错误",
+    "abbr": "",
+    "definition": "编译器在翻译阶段诊断的程序错误。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "linker error",
+    "zh": "链接错误",
+    "abbr": "",
+    "definition": "链接阶段出现的符号解析或目标文件组合失败。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "runtime error",
+    "zh": "运行时错误",
+    "abbr": "",
+    "definition": "程序执行期间出现的错误情况。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "compiler warning",
+    "zh": "编译器警告",
+    "abbr": "",
+    "definition": "编译器报告的潜在问题，并不一定表示程序不合法。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "optimization level",
+    "zh": "优化级别",
+    "abbr": "",
+    "definition": "编译器控制优化策略集合的配置。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "inlining",
+    "zh": "函数内联展开",
+    "abbr": "",
+    "definition": "编译器将调用替换为函数体或等效操作的优化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "copy elision",
+    "zh": "复制消除",
+    "abbr": "",
+    "definition": "按语言规则省去对象复制或移动构造的机制。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "return value optimization (RVO)",
+    "zh": "返回值优化",
+    "abbr": "",
+    "definition": "在允许场景避免创建独立返回临时对象的优化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "named return value optimization (NRVO)",
+    "zh": "具名返回值优化",
+    "abbr": "",
+    "definition": "对具名局部对象返回时可能执行的复制消除。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "small string optimization (SSO)",
+    "zh": "小字符串优化",
+    "abbr": "",
+    "definition": "标准库实现把短字符串存储在对象内部的常见优化。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "small buffer optimization (SBO)",
+    "zh": "小缓冲区优化",
+    "abbr": "",
+    "definition": "将小对象以内嵌缓冲减少动态分配的实现技巧。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "move semantics",
+    "zh": "移动语义",
+    "abbr": "",
+    "definition": "借助右值引用及特殊成员函数转移资源的语言与库惯用语义。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "zero-cost abstraction",
+    "zh": "零开销抽象",
+    "abbr": "",
+    "definition": "目标是在不使用某抽象时无额外成本、使用时可高效实现的设计原则。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "cache locality",
+    "zh": "缓存局部性",
+    "abbr": "",
+    "definition": "数据访问集中有利于缓存命中的性能性质。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "false sharing detection",
+    "zh": "伪共享检测",
+    "abbr": "",
+    "definition": "识别线程访问同一缓存行不同数据引起争用的诊断活动。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "profiling",
+    "zh": "性能剖析",
+    "abbr": "",
+    "definition": "测量运行时热点、调用或资源开销的过程。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "benchmark",
+    "zh": "基准测试",
+    "abbr": "",
+    "definition": "在明确条件下比较性能指标的测试。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "unit testing",
+    "zh": "单元测试",
+    "abbr": "",
+    "definition": "对较小的程序单元独立验证其行为的测试。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "address sanitizer (ASan)",
+    "zh": "地址检查器",
+    "abbr": "",
+    "definition": "检测多类越界与释放后使用错误的运行时检测工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "undefined behavior sanitizer (UBSan)",
+    "zh": "未定义行为检查器",
+    "abbr": "",
+    "definition": "通过编译插桩检测部分未定义行为的工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "thread sanitizer (TSan)",
+    "zh": "线程检查器",
+    "abbr": "",
+    "definition": "检测部分并发数据竞争问题的动态分析工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "CMake",
+    "zh": "CMake 构建系统工具",
+    "abbr": "",
+    "definition": "广泛使用的跨平台项目配置与构建生成工具，非 C++ 标准组件。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "package manager",
+    "zh": "包管理器",
+    "abbr": "",
+    "definition": "用于获取、解析与维护第三方库依赖的工具。"
+  },
+  {
+    "category": "cpp",
+    "chapter": 16,
+    "topic": "性能、诊断与工程实践",
+    "en": "continuous integration (CI)",
+    "zh": "持续集成",
+    "abbr": "",
+    "definition": "在代码变更时自动执行构建和测试等检查的工程流程。"
   }
 ]
