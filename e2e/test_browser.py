@@ -104,7 +104,8 @@ class ExplorerBrowserTests(unittest.TestCase):
         self.page.locator("#menu-btn").click()
         expect(self.page.locator("#sidebar")).to_have_class(re.compile("open"))
         # An open mobile drawer intentionally covers the content: close it first.
-        self.page.locator("#menu-btn").click()
+        # Tap outside the open drawer, as an actual mobile user would.
+        self.page.mouse.click(370, 110)
         expect(self.page.locator("#sidebar")).not_to_have_class(re.compile("open"))
         self.page.locator("#terms-body tr").first.locator("a.term-english").click()
         expect(self.page.locator("#detail-content")).to_be_visible()
