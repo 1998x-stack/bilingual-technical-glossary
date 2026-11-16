@@ -29,6 +29,7 @@
 | 数据结构 / Data Structures | 352 | 14 | [阅读](glossaries/data-structures.md) | [下载](pdf/data-structures.pdf) |
 | Linux 操作系统 / Linux | 394 | 16 | [阅读](glossaries/linux.md) | [下载](pdf/linux.pdf) |
 | 操作系统 / Operating Systems | 396 | 18 | [阅读](glossaries/operating-systems.md) | [下载](pdf/operating-systems.pdf) |
+| 计算机网络 / Computer Networks | 359 | 18 | [阅读](glossaries/computer-networks.md) | [下载](pdf/computer-networks.pdf) |
 | SQL 数据库 / SQL Database | 394 | 13 | [阅读](glossaries/sql-database.md) | [下载](pdf/sql-database.pdf) |
 | Python 编程语言 / Python | 429 | 16 | [阅读](glossaries/python.md) | [下载](pdf/python.pdf) |
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
@@ -48,6 +49,10 @@
 **Kafka 专题新增：**283 条术语、16 个章节，Markdown 原稿和可检索 PDF 均已收录，且同步到网页、JSON 与 CSV 索引。
 
 **数据说明：**此前制作的六本 PDF 均保留原始完整版本，共自述含 2,298 条术语；从版式 PDF 提取的可检索记录有 2,250 条，尚有 48 条因跨行排版未能自动恢复。原始 PDF 才是这些书册完整词条的权威副本。新增的 AI Infra 独立整理了 142 条术语，GPU Kernel 原创手册包含 255 条术语（13 章），现已同步纳入可检索索引；编译原理专题补充 268 条术语（12 章），涵盖词法、语法、SSA、优化与代码生成。网页中所有“词条数”均指真实可搜索索引条目，不将 PDF 封面数字直接冒充完整的数据导入数量。 机器学习新增 447 条原创术语、19 个专题，已同步纳入 Markdown、PDF 和搜索索引。 Linux 手册新增 394 条术语、16 个专题和 18 组概念辨析，原稿 Markdown 与 PDF 均已上传，并完整纳入检索索引。
+
+## 计算机网络 / Computer Networks
+
+新增 **359 条中英文对照术语，分 18 个专题**，覆盖协议分层、以太网、无线通信、IPv4/IPv6、路由、TCP/UDP/QUIC、DNS、HTTP、TLS、QoS、云网络和网络故障排查。同步提供 [Markdown](glossaries/computer-networks.md)、[可检索 PDF](pdf/computer-networks.pdf)、[可编辑 TSV 源数据](data/computer-networks.tsv) 与网站全文搜索。
 
 ## 新增全文检索学科
 
