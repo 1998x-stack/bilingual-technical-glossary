@@ -4,20 +4,24 @@
 
 将原双语词条扩展为独立技术百科文章：精确定义、直观类比、核心机制、工程案例、易混辨析、两道中级面试题及答案、两道中级考试题及解析、权威参考资料。
 
-**状态说明：** Batch 01 的 20 篇正文已写入本次候审分支；Batch 02–08 只是计划，尚未完成研究。内容必须经 PR 审核并合并后才视为正式发布。
+**状态说明：** Batch 01–02 共 **40 篇已发布**，Batch 03–08 共 102 篇待研究；已完成 **40/142（28.2%）**。每批独立审阅与校验后合并，计划条目不算完成。
 
 ## 批次总览
 
 | Batch | 编号 | 主题 | 篇数 | 状态 |
 |---|---|---|---:|---|
-| 01 | 001–020 | 计算硬件与加速器 | 20 | 草稿完成，待 PR 合并 |
-| 02 | 021–040 | 互连与网络、分布式训练 | 20 | 待研究 |
+| 01 | 001–020 | 计算硬件与加速器 | 20 | 已发布 |
+| 02 | 021–040 | 互连与网络、分布式训练 | 20 | 已发布 |
 | 03 | 041–060 | 分布式训练、推理与服务 | 20 | 待研究 |
 | 04 | 061–080 | 推理与服务、调度与容器 | 20 | 待研究 |
 | 05 | 081–100 | 调度与容器、存储与数据 | 20 | 待研究 |
 | 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 待研究 |
 | 07 | 121–140 | 可靠性与可观测性、成本治理 | 20 | 待研究 |
 | 08 | 141–142 | 成本、能效与资源治理 | 2 | 待研究 |
+
+## Batch 02 综合学习路径
+
+阅读 [Batch 02：互连与网络 → 数据并行训练](BATCH-02.md)，串起硬件互连、网络拓扑、集合通信与 DDP 性能调优。
 
 ## 逐批术语清单
 
@@ -46,26 +50,26 @@
 
 ### Batch 02: 互连与网络、分布式训练
 
-21. Peripheral Component Interconnect Express（高速外设互连） · `PCIe` · 未编写
-22. NVLink（高速 GPU 互连） · `NVLink` · 未编写
-23. NVSwitch（GPU 互连交换芯片） · `NVSwitch` · 未编写
-24. InfiniBand（无限带宽网络） · `IB` · 未编写
-25. Remote Direct Memory Access（远程直接内存访问） · `RDMA` · 未编写
-26. RDMA over Converged Ethernet（融合以太网上的 RDMA） · `RoCE` · 未编写
-27. Ethernet（以太网） · 未编写
-28. Network Interface Card（网络接口卡） · `NIC` · 未编写
-29. Data Processing Unit（数据处理单元） · `DPU` · 未编写
-30. SmartNIC（智能网卡） · 未编写
-31. Leaf-Spine Topology（叶脊网络拓扑） · 未编写
-32. Fat-Tree Topology（胖树拓扑） · 未编写
-33. Bisection Bandwidth（二分带宽） · 未编写
-34. Network Latency（网络延迟） · 未编写
-35. Network Throughput（网络吞吐量） · 未编写
-36. All-Reduce（全归约通信） · 未编写
-37. All-to-All（全互换通信） · 未编写
-38. Collective Communication（集合通信） · 未编写
-39. NVIDIA Collective Communications Library（NVIDIA 集合通信库） · `NCCL` · 未编写
-40. Data Parallelism（数据并行） · `DP` · 未编写
+21. [Peripheral Component Interconnect Express（高速外设互连）](021-peripheral-component-interconnect-express.md) · `PCIe` · 已发布
+22. [NVLink（高速 GPU 互连）](022-nvlink.md) · `NVLink` · 已发布
+23. [NVSwitch（GPU 互连交换芯片）](023-nvswitch.md) · `NVSwitch` · 已发布
+24. [InfiniBand（无限带宽网络）](024-infiniband.md) · `IB` · 已发布
+25. [Remote Direct Memory Access（远程直接内存访问）](025-remote-direct-memory-access.md) · `RDMA` · 已发布
+26. [RDMA over Converged Ethernet（融合以太网上的 RDMA）](026-rdma-over-converged-ethernet.md) · `RoCE` · 已发布
+27. [Ethernet（以太网）](027-ethernet.md) · 已发布
+28. [Network Interface Card（网络接口卡）](028-network-interface-card.md) · `NIC` · 已发布
+29. [Data Processing Unit（数据处理单元）](029-data-processing-unit.md) · `DPU` · 已发布
+30. [SmartNIC（智能网卡）](030-smartnic.md) · 已发布
+31. [Leaf-Spine Topology（叶脊网络拓扑）](031-leaf-spine-topology.md) · 已发布
+32. [Fat-Tree Topology（胖树拓扑）](032-fat-tree-topology.md) · 已发布
+33. [Bisection Bandwidth（二分带宽）](033-bisection-bandwidth.md) · 已发布
+34. [Network Latency（网络延迟）](034-network-latency.md) · 已发布
+35. [Network Throughput（网络吞吐量）](035-network-throughput.md) · 已发布
+36. [All-Reduce（全归约通信）](036-all-reduce.md) · 已发布
+37. [All-to-All（全互换通信）](037-all-to-all.md) · 已发布
+38. [Collective Communication（集合通信）](038-collective-communication.md) · 已发布
+39. [NVIDIA Collective Communications Library（NVIDIA 集合通信库）](039-nvidia-collective-communications-library.md) · `NCCL` · 已发布
+40. [Data Parallelism（数据并行）](040-data-parallelism.md) · `DP` · 已发布
 
 ### Batch 03: 分布式训练、推理与服务
 

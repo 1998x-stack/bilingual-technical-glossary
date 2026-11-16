@@ -55,7 +55,9 @@ def main():
             assert heading in body, f"missing {heading}: {canonical}"
         assert body.count("**问：") >= 2 and body.count("**题：") >= 2, f"missing Q&A: {canonical}"
         assert "https://" in body, f"missing reference: {canonical}"
-    assert completed == site["readyInPr"], "Wiki ready count does not match published files"
+    assert completed == site.get("readyArticles", site["readyInPr"]), "Wiki ready count does not match published files"
+    assert len({item["file"] for item in site["terms"] if item["ready"]}) == completed, "Duplicate article file"
+    assert all(item["ready"] == (item["n"] <= completed) for item in site["terms"]), "Unexpected completed ordering"
     print(f"AI Infra Wiki verified: {completed}/{len(rows)} articles, 8 batches, mirrored Pages content.")
 
 

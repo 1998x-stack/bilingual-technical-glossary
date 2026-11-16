@@ -3,7 +3,7 @@
   "source": "data/ai-infrastructure.tsv",
   "total_terms": 142,
   "batch_size": 20,
-  "ready_for_merge": false,
+  "ready_for_merge": true,
   "batches": [
     {
       "batch": 1,
@@ -13,7 +13,7 @@
       "topics": [
         "计算硬件与加速器"
       ],
-      "status": "drafted_in_pr",
+      "status": "merged",
       "terms": [
         {
           "no": 1,
@@ -22,7 +22,7 @@
           "abbr": "GPU",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/001-graphics-processing-unit.md"
         },
         {
@@ -32,7 +32,7 @@
           "abbr": "TPU",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/002-tensor-processing-unit.md"
         },
         {
@@ -42,7 +42,7 @@
           "abbr": "NPU",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/003-neural-processing-unit.md"
         },
         {
@@ -52,7 +52,7 @@
           "abbr": "ASIC",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/004-application-specific-integrated-circuit.md"
         },
         {
@@ -62,7 +62,7 @@
           "abbr": "FPGA",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/005-field-programmable-gate-array.md"
         },
         {
@@ -72,7 +72,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/006-compute-capability.md"
         },
         {
@@ -82,7 +82,7 @@
           "abbr": "SM",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/007-streaming-multiprocessor.md"
         },
         {
@@ -92,7 +92,7 @@
           "abbr": "CUDA",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/008-compute-unified-device-architecture.md"
         },
         {
@@ -102,7 +102,7 @@
           "abbr": "CU",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/009-compute-unit.md"
         },
         {
@@ -112,7 +112,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/010-warp.md"
         },
         {
@@ -122,7 +122,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/011-thread-block.md"
         },
         {
@@ -132,7 +132,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/012-register-file.md"
         },
         {
@@ -142,7 +142,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/013-shared-memory.md"
         },
         {
@@ -152,7 +152,7 @@
           "abbr": "HBM",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/014-high-bandwidth-memory.md"
         },
         {
@@ -162,7 +162,7 @@
           "abbr": "DDR",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/015-double-data-rate-memory.md"
         },
         {
@@ -172,7 +172,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/016-memory-bandwidth.md"
         },
         {
@@ -182,7 +182,7 @@
           "abbr": "",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/017-memory-capacity.md"
         },
         {
@@ -192,7 +192,7 @@
           "abbr": "FLOPS",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/018-peak-flops.md"
         },
         {
@@ -202,7 +202,7 @@
           "abbr": "TDP",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/019-thermal-design-power.md"
         },
         {
@@ -212,7 +212,7 @@
           "abbr": "PUE",
           "topic": "计算硬件与加速器",
           "batch": 1,
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/ai-infrastructure/020-power-usage-effectiveness.md"
         }
       ]
@@ -226,7 +226,7 @@
         "互连与网络",
         "分布式训练"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 21,
@@ -235,8 +235,8 @@
           "abbr": "PCIe",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/021-peripheral-component-interconnect-express.md"
         },
         {
           "no": 22,
@@ -245,8 +245,8 @@
           "abbr": "NVLink",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/022-nvlink.md"
         },
         {
           "no": 23,
@@ -255,8 +255,8 @@
           "abbr": "NVSwitch",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/023-nvswitch.md"
         },
         {
           "no": 24,
@@ -265,8 +265,8 @@
           "abbr": "IB",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/024-infiniband.md"
         },
         {
           "no": 25,
@@ -275,8 +275,8 @@
           "abbr": "RDMA",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/025-remote-direct-memory-access.md"
         },
         {
           "no": 26,
@@ -285,8 +285,8 @@
           "abbr": "RoCE",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/026-rdma-over-converged-ethernet.md"
         },
         {
           "no": 27,
@@ -295,8 +295,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/027-ethernet.md"
         },
         {
           "no": 28,
@@ -305,8 +305,8 @@
           "abbr": "NIC",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/028-network-interface-card.md"
         },
         {
           "no": 29,
@@ -315,8 +315,8 @@
           "abbr": "DPU",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/029-data-processing-unit.md"
         },
         {
           "no": 30,
@@ -325,8 +325,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/030-smartnic.md"
         },
         {
           "no": 31,
@@ -335,8 +335,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/031-leaf-spine-topology.md"
         },
         {
           "no": 32,
@@ -345,8 +345,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/032-fat-tree-topology.md"
         },
         {
           "no": 33,
@@ -355,8 +355,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/033-bisection-bandwidth.md"
         },
         {
           "no": 34,
@@ -365,8 +365,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/034-network-latency.md"
         },
         {
           "no": 35,
@@ -375,8 +375,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/035-network-throughput.md"
         },
         {
           "no": 36,
@@ -385,8 +385,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/036-all-reduce.md"
         },
         {
           "no": 37,
@@ -395,8 +395,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/037-all-to-all.md"
         },
         {
           "no": 38,
@@ -405,8 +405,8 @@
           "abbr": "",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/038-collective-communication.md"
         },
         {
           "no": 39,
@@ -415,8 +415,8 @@
           "abbr": "NCCL",
           "topic": "互连与网络",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/039-nvidia-collective-communications-library.md"
         },
         {
           "no": 40,
@@ -425,8 +425,8 @@
           "abbr": "DP",
           "topic": "分布式训练",
           "batch": 2,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/040-data-parallelism.md"
         }
       ]
     },
