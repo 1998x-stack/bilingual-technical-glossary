@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Markdown, CSV, site indexes, and AI Infra PDF; preserve GPU Kernel PDF."""
+"""Build Markdown, CSV, site indexes, AI Infra and Calculus PDFs; preserve original PDFs."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, json, shutil, re
@@ -14,6 +14,7 @@ CATALOG=[
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('calculus','Calculus','微积分','Limits, differentiation, integration, series and multivariable calculus','sigma'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -48,8 +49,11 @@ def write_markdown(data):
   out+=['---','',f'原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/{slug}.pdf)','', '本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。','']
   (ROOT/'glossaries'/f'{slug}.md').write_text('\n'.join(out),encoding='utf8')
 
-def render_pdf(data):
- dest=ROOT/'pdf/ai-infrastructure.pdf'
+def render_pdf(data,slug='ai-infrastructure'):
+ dest=ROOT/'pdf'/f'{slug}.pdf'
+ meta=META[slug]
+ cover_desc=('覆盖单变量微积分、多元微积分、向量分析、无穷级数及常微分方程。' if slug=='calculus' else '覆盖 GPU 与加速器、集群网络、分布式训练、LLM 推理服务、容器调度、数据存储、可观测性与成本治理。')
+ cover_purpose=('用于微积分课程学习、文献检索、术语校对和科学计算入门。' if slug=='calculus' else '用于 AI Infra 架构学习、论文检索、技术文档和工程面试。')
  try:
   from reportlab.lib import colors
   from reportlab.lib.pagesizes import A4
@@ -74,18 +78,18 @@ def render_pdf(data):
  body=ParagraphStyle('body',fontName='GlossaryCJK',fontSize=8.3,leading=13,textColor=NAVY,spaceAfter=4)
  small=ParagraphStyle('small',fontName='GlossaryCJK',fontSize=7.1,leading=11,textColor=NAVY)
  title=ParagraphStyle('ttl',fontName='GlossaryCJK',fontSize=30,leading=42,textColor=NAVY,spaceAfter=25)
- all_entries=[x for x in data if x['category']=='ai-infrastructure']
+ all_entries=[x for x in data if x['category']==slug]
  def P(s,style=small):
   import html
   return Paragraph(html.escape(str(s)),style)
  def decorate(canv,doc):
   canv.setStrokeColor(colors.HexColor('#DEE4EF'));canv.line(44,43,A4[0]-44,43)
   canv.setFont('GlossaryCJK',8);canv.setFillColor(MUTED)
-  canv.drawString(44,30,'Bilingual Technical Glossary  ·  AI Infra')
+  canv.drawString(44,30,'Bilingual Technical Glossary  /  '+meta['en'])
   canv.drawRightString(A4[0]-44,30,f'{doc.page:02d}')
   canv.setFillColor(BLUE);canv.rect(0,A4[1]-7,A4[0],7,fill=1,stroke=0)
- doc=SimpleDocTemplate(str(dest),pagesize=A4,rightMargin=43,leftMargin=43,topMargin=54,bottomMargin=62,author='1998x-stack',title='AI Infrastructure — Bilingual Technical Glossary')
- story=[Spacer(1,46),P('AI INFRASTRUCTURE  /  REFERENCE HANDBOOK',body),Spacer(1,24),Paragraph('AI 基础设施<br/>中英文专业术语对照表',title),Paragraph('AI Infrastructure · Chinese-English Technical Glossary',sub),Spacer(1,26),Paragraph(f'{len(all_entries)} TERMS    /    {len(set(x["chapter"] for x in all_entries))} TOPICS    /    2026 EDITION',head),Spacer(1,12),Paragraph('覆盖 GPU 与加速器、集群网络、分布式训练、LLM 推理服务、容器调度、数据存储、可观测性与成本治理。',body),Spacer(1,15),P('用于 AI Infra 架构学习、论文检索、技术文档和工程面试。',body),PageBreak()]
+ doc=SimpleDocTemplate(str(dest),pagesize=A4,rightMargin=43,leftMargin=43,topMargin=54,bottomMargin=62,author='1998x-stack',title=meta['en']+' — Bilingual Technical Glossary')
+ story=[Spacer(1,46),P(meta['en'].upper()+'  /  REFERENCE HANDBOOK',body),Spacer(1,24),Paragraph(meta['zh']+'<br/>中英文专业术语对照表',title),Paragraph(meta['en']+' · Chinese-English Technical Glossary',sub),Spacer(1,26),Paragraph(f'{len(all_entries)} TERMS    /    {len(set(x["chapter"] for x in all_entries))} TOPICS    /    2026 EDITION',head),Spacer(1,12),Paragraph(cover_desc,body),Spacer(1,15),P(cover_purpose,body),PageBreak()]
  groups=defaultdict(list)
  for x in all_entries:groups[(x['chapter'],x['topic'])].append(x)
  for (chapter,topic),rows in sorted(groups.items()):
@@ -124,6 +128,6 @@ def run():
  DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
  with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
   writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition']);writer.writeheader();writer.writerows(data)
- write_markdown(data);render_pdf(data);write_site_data(data)
+ write_markdown(data);render_pdf(data);render_pdf(data,'calculus');write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()
