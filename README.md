@@ -90,10 +90,11 @@ The build script generates the AI Infra PDF when a suitable Chinese TTF font is 
 ## Publish on GitHub Pages
 
 1. Go to **Settings → Pages** on this repository.
-2. Under **Build and deployment**, select **Deploy from a branch**, then **main /docs**, and save; or select **GitHub Actions** to use the provided deploy workflow.
-3. Once published, open `https://1998x-stack.github.io/bilingual-technical-glossary/`.
+2. Under **Build and deployment → Source**, choose **GitHub Actions**. The repository already contains `.github/workflows/pages.yml`, so do not generate another workflow.
+3. Open **Actions → Publish TERM/ATLAS to GitHub Pages** and rerun the previously failed workflow (or use **Run workflow**), after enabling Pages.
+4. Once deployment succeeds, open `https://1998x-stack.github.io/bilingual-technical-glossary/`.
 
-The source directory is fully committed, so a build system is not needed for branch-based publishing. See [deployment instructions](docs/PAGES_SETUP.md).
+The static site is fully committed in `docs/`. Initial Pages enablement requires a repository administrator; the workflow cannot enable Pages with its default token. See [deployment instructions](docs/PAGES_SETUP.md).
 
 ## Editorial principles
 

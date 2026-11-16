@@ -33,7 +33,7 @@
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
 
-静态资源位于 `docs/`，无需后端、数据库或付费 API。仓库初次发布后若 Pages 尚未开启，请在 `Settings → Pages → Build and deployment` 选择 `Deploy from a branch`、`main` 和 `/docs`，保存即可；亦可改用仓库中现成的 GitHub Actions 工作流。
+静态资源位于 `docs/`，无需后端、数据库或付费 API。仓库首次发布后，需要仓库管理员在 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。无需生成新的工作流，现有 `.github/workflows/pages.yml` 已配置部署 `docs/`；随后在 **Actions → Publish TERM/ATLAS to GitHub Pages** 中重新运行之前失败的任务（或点击 Run workflow）。网页成功部署后，上方链接才会正常访问。详见 [部署说明](docs/PAGES_SETUP.md)。
 
 ## 更新与质量控制
 
