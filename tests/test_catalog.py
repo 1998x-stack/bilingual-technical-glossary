@@ -4,8 +4,8 @@ from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'data/terms.json').read_text(encoding='utf8'))
 class CatalogTests(unittest.TestCase):
- def test_seven_domains(self):
-  self.assertEqual(len(set(t['category'] for t in DATA)),7)
+ def test_eight_domains(self):
+  self.assertEqual(len(set(t['category'] for t in DATA)),8)
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:
@@ -15,6 +15,12 @@ class CatalogTests(unittest.TestCase):
   chapters=defaultdict(set)
   for t in DATA:chapters[(t['category'],t['chapter'])].add(t['topic'])
   self.assertTrue(all(len(values)==1 for values in chapters.values()))
+ def test_university_mathematics_source(self):
+  records=[t for t in DATA if t['category']=='university-mathematics']
+  self.assertEqual(len(records),627)
+  self.assertEqual(len({t['chapter'] for t in records}),17)
+  self.assertTrue((ROOT/'sources/university-mathematics.html').exists())
+  self.assertIn('derivative',[t['en'] for t in records])
  def test_content_search_cases(self):
   text='\n'.join(t['en']+' '+t['zh'] for t in DATA).lower()
   for phrase in ['transformer','markov','linear','gradient','agent','gpu','缓存']:
