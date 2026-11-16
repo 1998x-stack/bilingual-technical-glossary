@@ -88,5 +88,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "apache-kafka",
+    "en": "Apache Kafka",
+    "zh": "Apache Kafka / 事件流平台",
+    "description": "Event streaming, KRaft, partitions, consumers, transactions and Streams",
+    "icon": "network",
+    "count": 283,
+    "topics": 16
   }
 ]

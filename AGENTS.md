@@ -33,3 +33,6 @@ The GPU Kernel glossary contains 255 independently authored English–Chinese en
 ## Calculus volume
 
 The Calculus volume contains 361 entries across 16 topics. An optional `notation` field holds mathematical examples, while `abbr` remains a true abbreviation. Preserve the Calculus PDF as an independently authored publication and compare it to the source manuscript when making corrections.
+
+## Kafka editorial provenance
+The 283-row, 16-chapter `glossaries/apache-kafka.md` is an original reference with a preface and concept contrasts. The build intentionally preserves this Markdown and renders its indexed rows to `pdf/apache-kafka.pdf` using `scripts/render_kafka_pdf.py`; mirror to `docs/pdf/`.

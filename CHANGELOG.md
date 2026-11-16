@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-16 — Apache Kafka glossary
+
+- Added 283 Kafka terms across 16 chapters in Markdown, PDF, and search indexes.
+- Updated bilingual README navigation and added Kafka regression coverage.
+
 ## Calculus edition — 2026-11-16
 
 - Added 361 Calculus terms across 16 topics with Markdown and PDF download editions.

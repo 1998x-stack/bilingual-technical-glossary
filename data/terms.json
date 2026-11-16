@@ -29843,5 +29843,2552 @@
     "zh": "源码映射",
     "abbr": "",
     "definition": "把生成代码位置映射回原始源码位置的元数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Apache Kafka",
+    "zh": "Apache Kafka 分布式事件流平台",
+    "abbr": "",
+    "definition": "用于发布、持久化、处理和传输事件流的分布式平台。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Event",
+    "zh": "事件",
+    "abbr": "",
+    "definition": "表示一件已发生事实的数据单元；在 Kafka 文档中常与 Record 互用。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Record",
+    "zh": "记录",
+    "abbr": "",
+    "definition": "写入主题分区的基本数据单元，包含键、值、时间戳等。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Message",
+    "zh": "消息",
+    "abbr": "",
+    "definition": "对 Record 的常见称呼；日常讨论中经常互换使用。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Event Streaming",
+    "zh": "事件流处理／事件流传输",
+    "abbr": "",
+    "definition": "持续采集、存储、传输并处理事件的技术范式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Publish/Subscribe",
+    "zh": "发布／订阅",
+    "abbr": "",
+    "definition": "生产者向主题发布记录，消费者订阅并读取记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Producer",
+    "zh": "生产者",
+    "abbr": "",
+    "definition": "向 Kafka 主题写入记录的客户端。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Consumer",
+    "zh": "消费者",
+    "abbr": "",
+    "definition": "从 Kafka 主题分区拉取记录的客户端。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Broker",
+    "zh": "代理节点",
+    "abbr": "",
+    "definition": "承载数据分区、处理客户端读写请求的 Kafka 服务器。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Cluster",
+    "zh": "集群",
+    "abbr": "",
+    "definition": "协同提供 Kafka 服务的一组 Broker 和相关节点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Topic",
+    "zh": "主题",
+    "abbr": "",
+    "definition": "记录的逻辑分类和发布订阅入口，实际由分区组成。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Partition",
+    "zh": "分区",
+    "abbr": "",
+    "definition": "主题的有序日志分片，也是并行处理与复制的单位。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Key",
+    "zh": "消息键",
+    "abbr": "",
+    "definition": "可用于决定分区归属，也用于压缩日志时识别同一键。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Value",
+    "zh": "消息值",
+    "abbr": "",
+    "definition": "记录承载的主要业务内容，可为任意字节序列。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Header",
+    "zh": "消息头",
+    "abbr": "",
+    "definition": "随记录附带的键值元数据集合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Timestamp",
+    "zh": "时间戳",
+    "abbr": "",
+    "definition": "记录携带的创建时间或 Broker 追加时间。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Schema",
+    "zh": "数据模式",
+    "abbr": "",
+    "definition": "约定事件载荷的数据结构与字段类型；常由外部系统管理。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Serialization",
+    "zh": "序列化",
+    "abbr": "",
+    "definition": "将应用对象编码为 Kafka 传输的字节数组。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 1,
+    "topic": "核心概念与事件流",
+    "en": "Deserialization",
+    "zh": "反序列化",
+    "abbr": "",
+    "definition": "将 Kafka 中的字节数组还原为应用对象。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Bootstrap Server",
+    "zh": "引导服务器",
+    "abbr": "",
+    "definition": "客户端初始连接的 Broker 地址；不是固定代理入口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Metadata",
+    "zh": "集群元数据",
+    "abbr": "",
+    "definition": "描述主题、分区、Leader、Broker 等信息的数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Metadata Refresh",
+    "zh": "元数据刷新",
+    "abbr": "",
+    "definition": "客户端重新获取集群拓扑和分区 Leader 信息。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Node ID",
+    "zh": "节点标识",
+    "abbr": "",
+    "definition": "Kafka 节点的数字身份，常见配置项为 node.id。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Broker ID",
+    "zh": "Broker 标识",
+    "abbr": "",
+    "definition": "用于识别 Broker 的编号；新部署通常使用 node.id。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Listener",
+    "zh": "监听器",
+    "abbr": "",
+    "definition": "Broker 接受某类网络连接的端点及协议配置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Advertised Listener",
+    "zh": "对外公布的监听地址",
+    "abbr": "",
+    "definition": "返回给客户端供其后续直连的地址，需可达。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Inter-broker Communication",
+    "zh": "Broker 间通信",
+    "abbr": "",
+    "definition": "副本同步及节点间请求所使用的通信路径。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Controller",
+    "zh": "控制器",
+    "abbr": "",
+    "definition": "负责集群元数据管理、分区领导权等控制任务的角色。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Active Controller",
+    "zh": "活动控制器",
+    "abbr": "",
+    "definition": "当前承担集群控制职责的 Controller。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Controller Quorum",
+    "zh": "控制器法定多数集群",
+    "abbr": "",
+    "definition": "在 KRaft 中复制元数据日志的一组控制器投票节点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Rack Awareness",
+    "zh": "机架感知",
+    "abbr": "",
+    "definition": "按机架拓扑分布副本，降低同机架故障风险。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Rack ID",
+    "zh": "机架标识",
+    "abbr": "",
+    "definition": "用于机架感知分配的逻辑故障域标签。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Request Handler",
+    "zh": "请求处理线程",
+    "abbr": "",
+    "definition": "Broker 处理网络请求的执行资源。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 2,
+    "topic": "集群与网络架构",
+    "en": "Network Thread",
+    "zh": "网络线程",
+    "abbr": "",
+    "definition": "负责处理连接及网络收发的线程资源。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "KRaft",
+    "zh": "Kafka Raft 元数据模式",
+    "abbr": "",
+    "definition": "Kafka 基于 Raft 的元数据管理机制，替代 ZooKeeper 模式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Raft",
+    "zh": "Raft 共识算法",
+    "abbr": "",
+    "definition": "用于维护控制器日志复制和领导者选举的一致性算法。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Metadata Log",
+    "zh": "元数据日志",
+    "abbr": "",
+    "definition": "KRaft 中以复制日志形式记录集群元数据变更。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Metadata Record",
+    "zh": "元数据记录",
+    "abbr": "",
+    "definition": "描述主题、配置、授权等集群状态变更的记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Metadata Snapshot",
+    "zh": "元数据快照",
+    "abbr": "",
+    "definition": "用于压缩状态恢复成本的元数据状态快照。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Quorum",
+    "zh": "法定多数",
+    "abbr": "",
+    "definition": "确保共识决策所需的足够投票者集合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Voter",
+    "zh": "投票节点",
+    "abbr": "",
+    "definition": "参与控制器 Quorum 选举与提交判定的节点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Observer",
+    "zh": "观察者节点",
+    "abbr": "",
+    "definition": "复制元数据但不参与 Quorum 投票的节点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Controller Leader",
+    "zh": "控制器领导者",
+    "abbr": "",
+    "definition": "KRaft Quorum 当前当选的领导控制器。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Leader Epoch",
+    "zh": "领导任期编号",
+    "abbr": "",
+    "definition": "标识领导权更迭的单调递增纪元信息。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Cluster ID",
+    "zh": "集群标识",
+    "abbr": "",
+    "definition": "创建集群时生成的唯一标识。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Storage Formatting",
+    "zh": "存储格式化",
+    "abbr": "",
+    "definition": "初始化 Kafka 数据目录与集群标识的过程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Combined Mode",
+    "zh": "混合角色模式",
+    "abbr": "",
+    "definition": "同一进程同时承担 Broker 与 Controller 角色。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Dedicated Controller",
+    "zh": "独立控制器",
+    "abbr": "",
+    "definition": "只运行 Controller 角色而不承担数据代理职责。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Process Roles",
+    "zh": "进程角色",
+    "abbr": "",
+    "definition": "process.roles 配置决定 broker、controller 或两者。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Static Quorum",
+    "zh": "静态法定多数配置",
+    "abbr": "",
+    "definition": "使用预先指定的控制器投票节点集合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "Dynamic Quorum",
+    "zh": "动态法定多数配置",
+    "abbr": "",
+    "definition": "支持通过管理流程调整控制器投票节点集合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 3,
+    "topic": "KRaft 与元数据管理",
+    "en": "ZooKeeper Mode",
+    "zh": "ZooKeeper 模式（旧）",
+    "abbr": "",
+    "definition": "早期 Kafka 使用 ZooKeeper 管理元数据；Kafka 4.x 已移除。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Topic Name",
+    "zh": "主题名称",
+    "abbr": "",
+    "definition": "标识业务事件流的逻辑名称。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Topic Partition",
+    "zh": "主题分区",
+    "abbr": "",
+    "definition": "由主题名称与分区编号共同唯一标识的日志。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Partition ID",
+    "zh": "分区编号",
+    "abbr": "",
+    "definition": "同一主题下用于区分分区的整数编号。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Partition Count",
+    "zh": "分区数量",
+    "abbr": "",
+    "definition": "影响主题并行度、吞吐能力及键分布的分片数。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Partitioner",
+    "zh": "分区器",
+    "abbr": "",
+    "definition": "生产者决定记录应写入哪个主题分区的逻辑。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Key-based Partitioning",
+    "zh": "按键分区",
+    "abbr": "",
+    "definition": "根据 Key 的哈希或配置策略选择目标分区。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Sticky Partitioning",
+    "zh": "粘性分区",
+    "abbr": "",
+    "definition": "无键记录在一段时间内集中发送到某个分区以利批处理。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Custom Partitioner",
+    "zh": "自定义分区器",
+    "abbr": "",
+    "definition": "实现特定业务路由规则的分区选择逻辑。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Ordering Guarantee",
+    "zh": "顺序保证",
+    "abbr": "",
+    "definition": "同一分区内记录具备确定顺序；跨分区不保证全局顺序。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Partition Reassignment",
+    "zh": "分区重新分配",
+    "abbr": "",
+    "definition": "将分区副本迁移至不同 Broker 的管理操作。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Preferred Leader",
+    "zh": "首选领导副本",
+    "abbr": "",
+    "definition": "副本分配顺序中优先成为 Leader 的副本。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Leader Election",
+    "zh": "领导副本选举",
+    "abbr": "",
+    "definition": "在可用副本中选出处理读写的领导副本。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Topic Configuration",
+    "zh": "主题级配置",
+    "abbr": "",
+    "definition": "覆盖部分 Broker 默认值的主题参数。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Internal Topic",
+    "zh": "内部主题",
+    "abbr": "",
+    "definition": "Kafka 自身用于协调、状态与事务等目的的主题。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 4,
+    "topic": "主题、分区与路由",
+    "en": "Topic Deletion",
+    "zh": "主题删除",
+    "abbr": "",
+    "definition": "删除主题元数据及其相关数据的管理操作。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Append-only Log",
+    "zh": "追加式日志",
+    "abbr": "",
+    "definition": "分区记录按逻辑顺序追加，既有位置不随消费移动。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Offset",
+    "zh": "偏移量",
+    "abbr": "",
+    "definition": "记录在某个分区中的位置标识；不同分区互不比较。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Log End Offset (LEO)",
+    "zh": "日志末端偏移量",
+    "abbr": "LEO",
+    "definition": "本地日志下一条待写记录的位置，并非最后一条的编号。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "High Watermark (HW)",
+    "zh": "高水位",
+    "abbr": "HW",
+    "definition": "副本同步进度相关边界，通常用于限制可见记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Log Start Offset",
+    "zh": "日志起始偏移量",
+    "abbr": "",
+    "definition": "当前仍可读取的最早记录位置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Last Stable Offset (LSO)",
+    "zh": "最后稳定偏移量",
+    "abbr": "LSO",
+    "definition": "read_committed 模式下事务可见范围的上界。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Log Segment",
+    "zh": "日志段",
+    "abbr": "",
+    "definition": "分区日志按大小或时间切分的磁盘文件组。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Active Segment",
+    "zh": "活动日志段",
+    "abbr": "",
+    "definition": "当前正在追加记录的日志段。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Segment Roll",
+    "zh": "日志段滚动",
+    "abbr": "",
+    "definition": "创建新活动日志段以继续追加数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Offset Index",
+    "zh": "偏移量索引",
+    "abbr": "",
+    "definition": "从逻辑 Offset 快速定位日志段内物理位置的索引。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Time Index",
+    "zh": "时间索引",
+    "abbr": "",
+    "definition": "辅助依据时间戳定位记录的索引。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Log Retention",
+    "zh": "日志保留策略",
+    "abbr": "",
+    "definition": "按保留时间或大小清理可删除的数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Retention Time",
+    "zh": "保留时长",
+    "abbr": "",
+    "definition": "数据在满足清理条件前的时间配置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Retention Bytes",
+    "zh": "保留容量",
+    "abbr": "",
+    "definition": "分区日志可保留数据量的配置阈值。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Log Compaction",
+    "zh": "日志压缩清理",
+    "abbr": "",
+    "definition": "依据 Key 保留较新版本记录的后台清理机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Delete Retention",
+    "zh": "删除标记保留时长",
+    "abbr": "",
+    "definition": "压缩主题中 Tombstone 被保留的相关时长。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Tombstone",
+    "zh": "墓碑消息",
+    "abbr": "",
+    "definition": "值为 null、用来表示某 Key 删除语义的记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Cleanup Policy",
+    "zh": "清理策略",
+    "abbr": "",
+    "definition": "常见 delete、compact，亦可按配置组合使用。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Page Cache",
+    "zh": "页缓存",
+    "abbr": "",
+    "definition": "操作系统缓存日志文件页，改善 Kafka 顺序读写性能。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Zero-copy",
+    "zh": "零拷贝",
+    "abbr": "",
+    "definition": "利用系统调用减少从磁盘到网络发送时的数据拷贝。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Tiered Storage",
+    "zh": "分层存储",
+    "abbr": "",
+    "definition": "将部分较旧日志段卸载到远端存储的功能体系。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 5,
+    "topic": "日志、偏移量与存储",
+    "en": "Remote Log Segment",
+    "zh": "远端日志段",
+    "abbr": "",
+    "definition": "启用分层存储后保存在远端层的日志数据段。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Producer API",
+    "zh": "生产者 API",
+    "abbr": "",
+    "definition": "用于向主题发送记录的客户端编程接口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Record Accumulator",
+    "zh": "记录累积器",
+    "abbr": "",
+    "definition": "在 Producer 内部按分区暂存待批量发送记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Producer Batch",
+    "zh": "生产者批次",
+    "abbr": "",
+    "definition": "合并发送至某个分区的多条记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Batch Size",
+    "zh": "批次大小",
+    "abbr": "",
+    "definition": "batch.size 配置的每分区目标批量上限。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Linger",
+    "zh": "等待聚合时间",
+    "abbr": "",
+    "definition": "linger.ms 控制为凑批可增加的发送等待时间。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Buffer Memory",
+    "zh": "发送缓冲内存",
+    "abbr": "",
+    "definition": "buffer.memory 限制 Producer 内部可用缓冲空间。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Compression Type",
+    "zh": "压缩算法类型",
+    "abbr": "",
+    "definition": "例如 gzip、snappy、lz4、zstd 或 none。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Acks",
+    "zh": "确认级别",
+    "abbr": "",
+    "definition": "acks 配置控制生产者请求的成功确认条件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Acks=all",
+    "zh": "全部所需同步副本确认",
+    "abbr": "",
+    "definition": "Leader 在满足当前 ISR 复制条件后确认写入。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Delivery Timeout",
+    "zh": "交付超时",
+    "abbr": "",
+    "definition": "交付重试的总体时间上限，由 delivery.timeout.ms 控制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Request Timeout",
+    "zh": "请求超时",
+    "abbr": "",
+    "definition": "等待单次请求响应的最长时间配置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Retry",
+    "zh": "重试",
+    "abbr": "",
+    "definition": "可恢复错误发生后重新发起发送请求。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Retry Backoff",
+    "zh": "重试退避",
+    "abbr": "",
+    "definition": "在重试之间插入等待，避免持续立即重试。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "In-flight Requests",
+    "zh": "在途请求",
+    "abbr": "",
+    "definition": "已发送但尚未收到结果的请求集合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Callback",
+    "zh": "回调函数",
+    "abbr": "",
+    "definition": "异步发送完成后接收结果或错误的函数。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Future",
+    "zh": "异步结果对象",
+    "abbr": "",
+    "definition": "表示提交的发送操作最终完成状态的对象。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Producer Interceptor",
+    "zh": "生产者拦截器",
+    "abbr": "",
+    "definition": "在发送前后扩展观察或变换逻辑的组件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 6,
+    "topic": "生产者、批处理与发送",
+    "en": "Serialization Error",
+    "zh": "序列化错误",
+    "abbr": "",
+    "definition": "对象编码失败造成的客户端发送问题。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Consumer API",
+    "zh": "消费者 API",
+    "abbr": "",
+    "definition": "用于订阅主题、拉取和处理记录的客户端接口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Consumer Group",
+    "zh": "消费者组",
+    "abbr": "",
+    "definition": "通过同一 group.id 共享分区处理任务的一组消费者。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Group ID",
+    "zh": "组标识",
+    "abbr": "",
+    "definition": "标识消费者组、提交 Offset 命名空间的字符串。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Group Coordinator",
+    "zh": "组协调器",
+    "abbr": "",
+    "definition": "管理消费者组成员、状态及 Offset 提交的 Broker 角色。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Partition Assignment",
+    "zh": "分区分配",
+    "abbr": "",
+    "definition": "将已订阅的主题分区分配给组内消费者。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Assignment Strategy",
+    "zh": "分配策略",
+    "abbr": "",
+    "definition": "决定组内成员各自负责哪些分区的策略。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Rebalance",
+    "zh": "再均衡",
+    "abbr": "",
+    "definition": "成员变化或订阅拓扑变化后重新调整分区归属。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Eager Rebalance",
+    "zh": "全量再均衡",
+    "abbr": "",
+    "definition": "先收回分区，再重新统一分配的流程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Cooperative Rebalance",
+    "zh": "协作式再均衡",
+    "abbr": "",
+    "definition": "以增量方式撤销并迁移部分分区，减少停顿。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Heartbeat",
+    "zh": "心跳",
+    "abbr": "",
+    "definition": "消费者向协调器报告仍然存活的周期性机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Session Timeout",
+    "zh": "会话超时",
+    "abbr": "",
+    "definition": "协调器判定成员失联所允许的时长。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Max Poll Interval",
+    "zh": "最大轮询间隔",
+    "abbr": "",
+    "definition": "消费者调用 poll() 的允许最大间隔限制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Poll",
+    "zh": "轮询",
+    "abbr": "",
+    "definition": "消费者调用 poll() 获取可用记录及驱动相关协调处理。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Fetch",
+    "zh": "拉取请求",
+    "abbr": "",
+    "definition": "消费者向 Broker 请求分区数据的网络操作。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Fetch Minimum Bytes",
+    "zh": "最小拉取字节数",
+    "abbr": "",
+    "definition": "fetch.min.bytes 设定返回拉取请求前期望的数据量。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Auto Offset Reset",
+    "zh": "初始偏移量重置策略",
+    "abbr": "",
+    "definition": "无有效已提交位置时可选 earliest、latest 等处理方式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Auto Commit",
+    "zh": "自动提交偏移量",
+    "abbr": "",
+    "definition": "客户端按配置自动周期性提交处理位置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Manual Commit",
+    "zh": "手动提交偏移量",
+    "abbr": "",
+    "definition": "应用显式控制何时提交消费进度。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Committed Offset",
+    "zh": "已提交偏移量",
+    "abbr": "",
+    "definition": "某组为某分区保存的下次准备读取的位置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Consumer Lag",
+    "zh": "消费滞后量",
+    "abbr": "",
+    "definition": "消费者进度相对分区目标末端位置的差距。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Pause / Resume",
+    "zh": "暂停／恢复拉取",
+    "abbr": "",
+    "definition": "临时控制已分配分区是否继续返回记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Seek",
+    "zh": "定位偏移量",
+    "abbr": "",
+    "definition": "将消费者某个分区的下一次读取位置重置为指定值。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Static Membership",
+    "zh": "静态成员身份",
+    "abbr": "",
+    "definition": "借助 group.instance.id 降低短暂重启造成的分组抖动。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 7,
+    "topic": "消费者、分组与协调",
+    "en": "Consumer Group Protocol",
+    "zh": "消费者组协议",
+    "abbr": "",
+    "definition": "规定成员协调和分区分配的协议；新旧协议行为存在差异。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Replication",
+    "zh": "副本复制",
+    "abbr": "",
+    "definition": "将分区数据复制至多台 Broker 以提高容错能力。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Replication Factor (RF)",
+    "zh": "副本因子",
+    "abbr": "RF",
+    "definition": "一个分区配置的副本总数，含 Leader 副本。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Leader Replica",
+    "zh": "领导副本",
+    "abbr": "",
+    "definition": "处理该分区正常读写请求的副本。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Follower Replica",
+    "zh": "跟随副本",
+    "abbr": "",
+    "definition": "从 Leader 拉取并复制分区数据的副本。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "In-sync Replicas (ISR)",
+    "zh": "同步副本集合",
+    "abbr": "ISR",
+    "definition": "复制进度满足同步条件的副本集合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Out-of-sync Replica",
+    "zh": "失同步副本",
+    "abbr": "",
+    "definition": "因落后等原因不属于当前 ISR 的副本。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Min In-sync Replicas",
+    "zh": "最小同步副本数",
+    "abbr": "",
+    "definition": "min.insync.replicas 为 acks=all 写入规定最低 ISR 要求。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Under-replicated Partition",
+    "zh": "副本同步不足的分区",
+    "abbr": "",
+    "definition": "当前 ISR 副本数少于配置的副本因子。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Under-min-ISR Partition",
+    "zh": "低于最小 ISR 的分区",
+    "abbr": "",
+    "definition": "当前同步副本数量低于 min.insync.replicas 的分区。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Offline Partition",
+    "zh": "离线分区",
+    "abbr": "",
+    "definition": "当前没有可服务的 Leader 的分区。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Unclean Leader Election",
+    "zh": "非同步副本领导选举",
+    "abbr": "",
+    "definition": "允许从 ISR 外选 Leader，可能导致已确认数据丢失。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Leader Failover",
+    "zh": "领导副本故障切换",
+    "abbr": "",
+    "definition": "当前 Leader 不可用后由其他副本接管。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Replica Fetcher",
+    "zh": "副本拉取线程",
+    "abbr": "",
+    "definition": "Follower 使用的分区数据同步机制或线程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Replica Lag",
+    "zh": "副本落后量",
+    "abbr": "",
+    "definition": "Follower 相对 Leader 的复制进度差距。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Availability",
+    "zh": "可用性",
+    "abbr": "",
+    "definition": "发生部分故障时系统继续提供服务的能力。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 8,
+    "topic": "副本、容错与高可用",
+    "en": "Durability",
+    "zh": "持久性",
+    "abbr": "",
+    "definition": "写入成功后数据在故障下保持不丢失的能力。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "At-most-once",
+    "zh": "至多一次",
+    "abbr": "",
+    "definition": "处理可能丢失，但按特定提交方式避免重复交付。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "At-least-once",
+    "zh": "至少一次",
+    "abbr": "",
+    "definition": "通过重试避免遗漏，但发生故障时可能重复处理。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Exactly-once Semantics (EOS)",
+    "zh": "恰好一次语义",
+    "abbr": "EOS",
+    "definition": "在支持的事务性 Kafka 处理链路中避免重复的最终影响。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Idempotent Producer",
+    "zh": "幂等生产者",
+    "abbr": "",
+    "definition": "对单个生产者会话中的重试写入进行去重保护。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Producer ID (PID)",
+    "zh": "生产者标识",
+    "abbr": "PID",
+    "definition": "Broker 用于识别生产者及其幂等状态的编号。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Producer Epoch",
+    "zh": "生产者纪元",
+    "abbr": "",
+    "definition": "用于区分同一事务生产者的不同代，阻止旧实例写入。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Sequence Number",
+    "zh": "序列号",
+    "abbr": "",
+    "definition": "Producer 对分区写入排序并辅助检测重复请求的编号。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Transaction",
+    "zh": "事务",
+    "abbr": "",
+    "definition": "将多个分区写入及可选 Offset 提交组织成原子操作。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Transactional ID",
+    "zh": "事务标识",
+    "abbr": "",
+    "definition": "跨生产者实例恢复并维护事务身份的稳定字符串。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Transaction Coordinator",
+    "zh": "事务协调器",
+    "abbr": "",
+    "definition": "维护事务状态并协调提交或中止的 Broker 角色。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Commit Transaction",
+    "zh": "提交事务",
+    "abbr": "",
+    "definition": "使事务成功写入的数据对已提交读取模式可见。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Abort Transaction",
+    "zh": "中止事务",
+    "abbr": "",
+    "definition": "标记事务失败，使其写入不对 read_committed 读者可见。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Transaction Marker",
+    "zh": "事务标记",
+    "abbr": "",
+    "definition": "写入分区日志以表示事务提交或中止的控制记录。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Read Committed",
+    "zh": "只读已提交数据",
+    "abbr": "",
+    "definition": "消费者隔离级别，屏蔽已中止及未完成事务数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Read Uncommitted",
+    "zh": "允许读取未提交数据",
+    "abbr": "",
+    "definition": "消费者隔离级别，可读取尚未最终完成的事务数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 9,
+    "topic": "一致性、事务与交付语义",
+    "en": "Fencing",
+    "zh": "旧实例隔离",
+    "abbr": "",
+    "definition": "通过 Epoch 等机制拒绝过期生产者或成员继续操作。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Share Group",
+    "zh": "共享组",
+    "abbr": "",
+    "definition": "允许多个成员协作处理同一分区记录的 Kafka 4.x 消费模型。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Share Consumer",
+    "zh": "共享消费者",
+    "abbr": "",
+    "definition": "使用 Share Group 协议拉取、处理并确认记录的客户端。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Record-level Acknowledgement",
+    "zh": "记录级确认",
+    "abbr": "",
+    "definition": "可以按记录而非按分区连续 Offset 进行处理确认。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Acquisition",
+    "zh": "记录获取／占有",
+    "abbr": "",
+    "definition": "共享消费者暂时取得某记录处理权的机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Acquisition Lock",
+    "zh": "获取锁",
+    "abbr": "",
+    "definition": "避免同一时刻多方重复处理同一已占有记录的锁定状态。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Acknowledgement",
+    "zh": "处理确认",
+    "abbr": "",
+    "definition": "共享消费者反馈记录已成功或失败处理等结果。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Delivery Attempt",
+    "zh": "投递尝试次数",
+    "abbr": "",
+    "definition": "统计记录被交付处理的次数以支持失败治理。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Release",
+    "zh": "释放记录",
+    "abbr": "",
+    "definition": "共享消费者放弃处理权，使记录可能被再次交付。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Reject",
+    "zh": "拒绝记录",
+    "abbr": "",
+    "definition": "共享消费者报告记录不应再次正常投递的处理结果。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Renew",
+    "zh": "续期确认",
+    "abbr": "",
+    "definition": "延长共享记录获取锁的有效处理时间，取决于版本支持。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Share Coordinator",
+    "zh": "共享组协调器",
+    "abbr": "",
+    "definition": "负责 Share Group 状态、成员和记录确认的协调角色。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 10,
+    "topic": "Share Group 与队列式消费",
+    "en": "Share Partition",
+    "zh": "共享分区",
+    "abbr": "",
+    "definition": "针对 Share Group 的分区级获取、确认和进度跟踪单元。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Kafka Connect",
+    "zh": "Kafka Connect 数据集成框架",
+    "abbr": "",
+    "definition": "提供可配置的外部系统与 Kafka 之间数据导入导出机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Connector",
+    "zh": "连接器",
+    "abbr": "",
+    "definition": "定义对某一外部系统进行读写的集成组件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Source Connector",
+    "zh": "源连接器",
+    "abbr": "",
+    "definition": "从外部系统读取数据并写入 Kafka 主题。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Sink Connector",
+    "zh": "汇连接器",
+    "abbr": "",
+    "definition": "从 Kafka 主题消费数据并写入外部系统。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Task",
+    "zh": "任务",
+    "abbr": "",
+    "definition": "连接器划分的实际并行执行单元。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Worker",
+    "zh": "工作节点",
+    "abbr": "",
+    "definition": "运行 Connector 和 Task 的 Connect 服务进程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Standalone Mode",
+    "zh": "单机模式",
+    "abbr": "",
+    "definition": "由单个 Worker 执行 Connect 任务的运行方式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Distributed Mode",
+    "zh": "分布式模式",
+    "abbr": "",
+    "definition": "由多个 Worker 协同管理任务的运行方式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Converter",
+    "zh": "数据转换器",
+    "abbr": "",
+    "definition": "在 Kafka 字节数据与 Connect 内部数据模型间转换。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Single Message Transform (SMT)",
+    "zh": "单消息变换",
+    "abbr": "SMT",
+    "definition": "在进入或离开 Connect 管道前对单条消息做轻量变换。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Connect Schema",
+    "zh": "Connect 模式",
+    "abbr": "",
+    "definition": "Connect 内部用于描述数据字段和结构的模式对象。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Source Offset",
+    "zh": "源端进度位置",
+    "abbr": "",
+    "definition": "源连接器记录已读取外部数据位置的检查点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Connector Configuration",
+    "zh": "连接器配置",
+    "abbr": "",
+    "definition": "Connector 的插件类、任务数、连接参数等配置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Connector Plugin",
+    "zh": "连接器插件",
+    "abbr": "",
+    "definition": "用于扩展 Connect 数据源或目标系统的插件包。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Dead Letter Queue (DLQ)",
+    "zh": "死信队列",
+    "abbr": "DLQ",
+    "definition": "用于接收无法正常转换或处理记录的备用主题／管道。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 11,
+    "topic": "Kafka Connect 数据集成",
+    "en": "Exactly-once Source Support",
+    "zh": "源端恰好一次支持",
+    "abbr": "",
+    "definition": "满足指定条件时 Connect Source 侧的事务性传输能力。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Kafka Streams",
+    "zh": "Kafka Streams 流处理库",
+    "abbr": "",
+    "definition": "基于 Kafka 构建客户端流计算应用的 Java/Scala 库。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Topology",
+    "zh": "处理拓扑",
+    "abbr": "",
+    "definition": "定义源、处理节点、状态与输出边之间关系的有向图。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Source Processor",
+    "zh": "源处理器",
+    "abbr": "",
+    "definition": "从输入主题读取记录并送入拓扑的节点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Sink Processor",
+    "zh": "汇处理器",
+    "abbr": "",
+    "definition": "将处理结果写入 Kafka 输出主题的节点。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Processor API",
+    "zh": "处理器 API",
+    "abbr": "",
+    "definition": "定义自定义处理节点及状态交互的低层接口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "DSL",
+    "zh": "领域特定语言",
+    "abbr": "DSL",
+    "definition": "以高层算子描述流过滤、聚合、联结等业务逻辑的 API。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "KStream",
+    "zh": "事件流",
+    "abbr": "",
+    "definition": "表示逐条到达的连续记录流抽象。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "KTable",
+    "zh": "更新表",
+    "abbr": "",
+    "definition": "将相同 Key 的最新值解释为表行更新的抽象。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "GlobalKTable",
+    "zh": "全局表",
+    "abbr": "",
+    "definition": "在每个 Streams 实例维护完整副本的表抽象。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Stream-table Join",
+    "zh": "流表联结",
+    "abbr": "",
+    "definition": "将流事件与表的当前状态按键关联。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Stream-stream Join",
+    "zh": "流流联结",
+    "abbr": "",
+    "definition": "按指定窗口条件联结两条事件流。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Windowing",
+    "zh": "窗口化",
+    "abbr": "",
+    "definition": "按照时间范围将事件分组计算。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Tumbling Window",
+    "zh": "滚动窗口",
+    "abbr": "",
+    "definition": "固定长度且互不重叠的窗口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Hopping Window",
+    "zh": "跳跃窗口",
+    "abbr": "",
+    "definition": "按固定步长推进、允许重叠的窗口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Session Window",
+    "zh": "会话窗口",
+    "abbr": "",
+    "definition": "根据事件间的空闲间隔划分的动态窗口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Event Time",
+    "zh": "事件时间",
+    "abbr": "",
+    "definition": "事件本身产生时刻的时间语义。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Processing Time",
+    "zh": "处理时间",
+    "abbr": "",
+    "definition": "处理程序实际执行某条记录时的时间语义。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Grace Period",
+    "zh": "迟到宽限期",
+    "abbr": "",
+    "definition": "窗口接受一定迟到记录的额外时间。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Aggregation",
+    "zh": "聚合",
+    "abbr": "",
+    "definition": "对分组或窗口中的记录计算累计结果。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "State Store",
+    "zh": "状态存储",
+    "abbr": "",
+    "definition": "用于保存联结、聚合等有状态算子局部状态的组件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "RocksDB State Store",
+    "zh": "RocksDB 状态存储",
+    "abbr": "",
+    "definition": "使用嵌入式 RocksDB 持久化本地状态的常见实现。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Changelog Topic",
+    "zh": "变更日志主题",
+    "abbr": "",
+    "definition": "将状态存储更新写回 Kafka 以支持故障恢复。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Repartition Topic",
+    "zh": "重新分区主题",
+    "abbr": "",
+    "definition": "在按新 Key 分组或联结前重分布记录的内部主题。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Task",
+    "zh": "流处理任务",
+    "abbr": "",
+    "definition": "Streams 中由输入分区组合决定的处理并行单位。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Stream Thread",
+    "zh": "流处理线程",
+    "abbr": "",
+    "definition": "运行 Streams 任务并驱动处理拓扑的线程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 12,
+    "topic": "Kafka Streams 流处理",
+    "en": "Interactive Queries",
+    "zh": "交互式查询",
+    "abbr": "",
+    "definition": "访问 Streams 应用本地状态存储的能力。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Authentication",
+    "zh": "身份认证",
+    "abbr": "",
+    "definition": "验证客户端或服务器连接者身份的过程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Authorization",
+    "zh": "访问授权",
+    "abbr": "",
+    "definition": "判定身份是否被允许执行特定资源操作的过程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Encryption in Transit",
+    "zh": "传输加密",
+    "abbr": "",
+    "definition": "使用 TLS 保护连接传输中的数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "TLS / SSL",
+    "zh": "传输层安全协议",
+    "abbr": "",
+    "definition": "为 Kafka 连接提供加密与可选证书认证。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Mutual TLS (mTLS)",
+    "zh": "双向 TLS",
+    "abbr": "",
+    "definition": "客户端和服务端都通过证书验证对方身份。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "SASL",
+    "zh": "简单认证与安全层",
+    "abbr": "SASL",
+    "definition": "Kafka 支持的可插拔认证协议框架。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "SASL/PLAIN",
+    "zh": "明文口令机制",
+    "abbr": "",
+    "definition": "使用用户名和口令的 SASL 机制，应与 TLS 配合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "SASL/SCRAM",
+    "zh": "加盐挑战响应认证",
+    "abbr": "",
+    "definition": "基于 SCRAM-SHA-256 / 512 的认证方式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "SASL/OAUTHBEARER",
+    "zh": "OAuth 令牌认证",
+    "abbr": "",
+    "definition": "基于 Bearer Token 的 SASL 认证机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Kerberos / GSSAPI",
+    "zh": "Kerberos 认证",
+    "abbr": "",
+    "definition": "面向既有 Kerberos 身份体系的认证机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "ACL",
+    "zh": "访问控制列表",
+    "abbr": "ACL",
+    "definition": "针对资源、操作、主体及来源地址定义权限规则。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Principal",
+    "zh": "安全主体",
+    "abbr": "",
+    "definition": "被认证的用户或服务标识。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Super User",
+    "zh": "超级用户",
+    "abbr": "",
+    "definition": "可绕过常规 ACL 检查的特权主体。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Keystore",
+    "zh": "密钥库",
+    "abbr": "",
+    "definition": "用于保管本地证书和私钥的密钥容器。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 13,
+    "topic": "安全、认证与授权",
+    "en": "Truststore",
+    "zh": "信任库",
+    "abbr": "",
+    "definition": "用于存储受信任 CA 或对端证书的容器。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间内生产或消费的数据量或记录数。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Latency",
+    "zh": "延迟",
+    "abbr": "",
+    "definition": "一次操作从发起至完成所经历的时间。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "End-to-end Latency",
+    "zh": "端到端延迟",
+    "abbr": "",
+    "definition": "从事件产生到下游完成处理的总体耗时。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "P99 Latency",
+    "zh": "第 99 百分位延迟",
+    "abbr": "",
+    "definition": "99% 请求不超过的延迟统计阈值。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Backpressure",
+    "zh": "背压",
+    "abbr": "",
+    "definition": "下游处理能力不足时限制上游供给速度的机制。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Batching",
+    "zh": "批处理",
+    "abbr": "",
+    "definition": "将多条记录合并处理以减少请求和系统开销。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Compression Ratio",
+    "zh": "压缩比",
+    "abbr": "",
+    "definition": "衡量压缩前后数据大小差异的比例。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "JMX Metrics",
+    "zh": "JMX 指标",
+    "abbr": "",
+    "definition": "通过 Java 管理扩展暴露的 Kafka 运行指标。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Bytes In / Out",
+    "zh": "输入／输出字节速率",
+    "abbr": "",
+    "definition": "Broker 入口和出口的流量监测指标。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Messages In",
+    "zh": "消息写入速率",
+    "abbr": "",
+    "definition": "进入 Broker 的记录数量变化率。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Request Queue",
+    "zh": "请求队列",
+    "abbr": "",
+    "definition": "Broker 尚未处理的网络请求积压位置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Fetch Latency",
+    "zh": "拉取延迟",
+    "abbr": "",
+    "definition": "消费者 Fetch 请求在服务端或客户端的耗时。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Consumer Lag Monitoring",
+    "zh": "消费滞后监控",
+    "abbr": "",
+    "definition": "跟踪消费者进度与分区末端之间的差距。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Under-replicated Partitions",
+    "zh": "同步不足分区数",
+    "abbr": "",
+    "definition": "监控当前没有完全保持预期副本同步的分区数量。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Offline Partitions Count",
+    "zh": "离线分区数",
+    "abbr": "",
+    "definition": "监控没有可用 Leader 的分区数量。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 14,
+    "topic": "性能、容量与可观测性",
+    "en": "Disk Utilization",
+    "zh": "磁盘使用率",
+    "abbr": "",
+    "definition": "Broker 日志数据占用存储容量的比例。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "Admin API",
+    "zh": "管理 API",
+    "abbr": "",
+    "definition": "创建、删除、查询主题和其他 Kafka 资源的客户端接口。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "AdminClient",
+    "zh": "管理客户端",
+    "abbr": "",
+    "definition": "实现 Kafka 管理 API 的客户端组件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "server.properties",
+    "zh": "Broker 配置文件",
+    "abbr": "",
+    "definition": "Kafka 服务端使用的典型属性配置文件名。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "bootstrap.servers",
+    "zh": "引导地址配置",
+    "abbr": "",
+    "definition": "客户端启动时用于发现集群的 Broker 地址列表。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "acks",
+    "zh": "写入确认参数",
+    "abbr": "",
+    "definition": "生产者确认策略配置：0、1 或 all 等。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "enable.idempotence",
+    "zh": "启用幂等性",
+    "abbr": "",
+    "definition": "生产者控制重试去重能力的配置项。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "min.insync.replicas",
+    "zh": "最小同步副本配置",
+    "abbr": "",
+    "definition": "与 acks=all 共同影响写入安全性和可用性。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "auto.offset.reset",
+    "zh": "无效位置重置策略",
+    "abbr": "",
+    "definition": "规定没有有效已提交 Offset 时的初始消费位置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "isolation.level",
+    "zh": "隔离级别",
+    "abbr": "",
+    "definition": "可配置 read_uncommitted 或 read_committed。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "retention.ms",
+    "zh": "日志保留时长配置",
+    "abbr": "",
+    "definition": "按时间控制旧数据清理的主题／Broker 参数。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "cleanup.policy",
+    "zh": "清理策略配置",
+    "abbr": "",
+    "definition": "用于指定 delete、compact 或其组合。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "log.segment.bytes",
+    "zh": "日志段大小配置",
+    "abbr": "",
+    "definition": "控制分区日志段滚动的典型参数。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-topics.sh",
+    "zh": "主题管理命令",
+    "abbr": "",
+    "definition": "列出、创建、修改、描述和删除主题的 CLI。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-console-producer.sh",
+    "zh": "命令行生产者",
+    "abbr": "",
+    "definition": "从终端输入或管道读取内容并向主题写入。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-console-consumer.sh",
+    "zh": "命令行消费者",
+    "abbr": "",
+    "definition": "从主题读取记录并打印到终端。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-consumer-groups.sh",
+    "zh": "消费者组管理命令",
+    "abbr": "",
+    "definition": "查询消费者组状态、成员及消费滞后等。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-configs.sh",
+    "zh": "动态配置命令",
+    "abbr": "",
+    "definition": "管理部分可动态调整的 Broker、主题等配置。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-reassign-partitions.sh",
+    "zh": "分区迁移命令",
+    "abbr": "",
+    "definition": "辅助执行和检查分区副本迁移。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-storage.sh",
+    "zh": "存储初始化命令",
+    "abbr": "",
+    "definition": "格式化数据目录并设置 KRaft 存储元数据。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 15,
+    "topic": "配置、管理工具与运维",
+    "en": "kafka-metadata-quorum.sh",
+    "zh": "元数据 Quorum 管理命令",
+    "abbr": "",
+    "definition": "检查和维护 KRaft 控制器法定多数状态。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Change Data Capture (CDC)",
+    "zh": "变更数据捕获",
+    "abbr": "CDC",
+    "definition": "从数据库日志等来源持续提取数据变更事件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Outbox Pattern",
+    "zh": "事务发件箱模式",
+    "abbr": "",
+    "definition": "将业务数据库更新和待发布事件放在同一数据库事务中。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Schema Registry",
+    "zh": "模式注册中心",
+    "abbr": "",
+    "definition": "用于共享和演进事件 Schema 的外部服务类别。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Avro",
+    "zh": "Avro 序列化格式",
+    "abbr": "",
+    "definition": "面向数据序列化及 Schema 演进的常见格式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Protocol Buffers",
+    "zh": "Protocol Buffers 数据格式",
+    "abbr": "",
+    "definition": "基于 .proto 定义的紧凑结构化消息格式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "JSON Schema",
+    "zh": "JSON 模式",
+    "abbr": "",
+    "definition": "定义和验证 JSON 结构的 Schema 规范。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Dead Letter Topic (DLT)",
+    "zh": "死信主题",
+    "abbr": "DLT",
+    "definition": "存放无法正常处理消息的专用 Kafka 主题。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Replay",
+    "zh": "重放",
+    "abbr": "",
+    "definition": "通过重设 Offset 重新读取历史事件。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Event Sourcing",
+    "zh": "事件溯源",
+    "abbr": "",
+    "definition": "以不可变业务事件重建领域对象状态的架构模式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "CQRS",
+    "zh": "命令查询职责分离",
+    "abbr": "CQRS",
+    "definition": "分离写入侧与读取侧数据模型的架构模式。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "MirrorMaker 2",
+    "zh": "MirrorMaker 2 跨集群复制",
+    "abbr": "",
+    "definition": "基于 Connect 的 Kafka 集群之间数据复制工具。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Cross-cluster Replication",
+    "zh": "跨集群复制",
+    "abbr": "",
+    "definition": "在不同 Kafka 集群之间同步主题记录的过程。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Data Contract",
+    "zh": "数据契约",
+    "abbr": "",
+    "definition": "明确事件 Schema、语义、兼容性及生产消费责任的约定。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Idempotent Consumer",
+    "zh": "幂等消费者",
+    "abbr": "",
+    "definition": "重复处理同一事件也不会产生重复业务副作用的消费者。"
+  },
+  {
+    "category": "apache-kafka",
+    "chapter": 16,
+    "topic": "生态组件与工程实践",
+    "en": "Poison Pill",
+    "zh": "毒丸消息（非正式）",
+    "abbr": "",
+    "definition": "持续触发下游解析或处理失败的异常记录。"
   }
 ]

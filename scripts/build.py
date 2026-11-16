@@ -16,6 +16,7 @@ CATALOG=[
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('apache-kafka','Apache Kafka','Apache Kafka / 事件流平台','Event streaming, KRaft, partitions, consumers, transactions and Streams','network'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -52,6 +53,7 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)
@@ -146,6 +148,9 @@ def run():
  write_markdown(data);render_pdf(data)
  from compiler_pdf import render_compiler_pdf
  render_compiler_pdf(data, ROOT/'pdf/compiler-principles.pdf')
+ import subprocess,sys
+ subprocess.run([sys.executable,str(ROOT/'scripts/render_kafka_pdf.py')],check=True)
+
  write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()

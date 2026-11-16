@@ -32,7 +32,8 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Compiler Principles | 编译原理 | 268 | 12 | [Read](glossaries/compiler-principles.md) | [Download](pdf/compiler-principles.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
-| **Total** | **10 domains** | **3,276** | **141** | | |
+| Apache Kafka | Apache Kafka / 事件流平台 | 283 | 16 | [Read](glossaries/apache-kafka.md) | [Download](pdf/apache-kafka.pdf) |
+| **Total** | **11 domains** | **3,559** | **157** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -42,12 +43,12 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 > **Search status:** This publication includes 678 Chinese–English term pairs, 16 terminology distinctions and an abbreviation index. The original 39-page PDF and Markdown are available, but these entries are **not included** in the searchable index counts above until their definitions have been verified.
 
-> **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless.
+> **Data provenance.** The Kafka volume contributes 283 original, fully indexed terms in 16 chapters, with curated Markdown and searchable PDF editions.  The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **141 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **157 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
