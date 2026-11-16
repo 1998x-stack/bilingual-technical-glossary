@@ -62704,6 +62704,2922 @@
     "definition": "向量与坐标轴正向夹角的余弦"
   },
   {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Proposition",
+    "zh": "命题",
+    "abbr": "",
+    "definition": "具有确定真值（真或假）的陈述句。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Truth Value",
+    "zh": "真值",
+    "abbr": "",
+    "definition": "命题的真或假属性。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Propositional Variable",
+    "zh": "命题变元",
+    "abbr": "",
+    "definition": "代表某个命题的符号。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Logical Connective",
+    "zh": "逻辑联结词",
+    "abbr": "",
+    "definition": "把一个或多个命题组合为复合命题的运算符。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Negation",
+    "zh": "否定",
+    "abbr": "",
+    "definition": "将命题真值取反的一元逻辑运算。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Conjunction",
+    "zh": "合取",
+    "abbr": "",
+    "definition": "仅当两个命题均为真时结果为真的运算。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Disjunction",
+    "zh": "析取",
+    "abbr": "",
+    "definition": "至少一个命题为真时结果为真的包容性或。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Exclusive Or",
+    "zh": "异或",
+    "abbr": "XOR",
+    "definition": "恰有一个输入为真时结果为真的逻辑运算。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Implication",
+    "zh": "蕴涵",
+    "abbr": "",
+    "definition": "仅当前件真而后件假时为假的条件命题。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Biconditional",
+    "zh": "双条件",
+    "abbr": "",
+    "definition": "两个命题真值相同时为真的连接方式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Converse",
+    "zh": "逆命题",
+    "abbr": "",
+    "definition": "将条件命题的前件与后件互换。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Inverse",
+    "zh": "否命题",
+    "abbr": "",
+    "definition": "同时否定条件命题的前件与后件。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Contrapositive",
+    "zh": "逆否命题",
+    "abbr": "",
+    "definition": "交换并否定条件命题的前件与后件，且与原命题等价。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Truth Table",
+    "zh": "真值表",
+    "abbr": "",
+    "definition": "穷举输入真值并给出复合命题结果的表。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Tautology",
+    "zh": "重言式",
+    "abbr": "",
+    "definition": "在每一种真值赋值下均为真的公式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Contradiction",
+    "zh": "矛盾式",
+    "abbr": "",
+    "definition": "在每一种真值赋值下均为假的公式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Contingency",
+    "zh": "可满足且非永真式",
+    "abbr": "",
+    "definition": "在某些赋值下为真、另一些赋值下为假的公式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Logical Equivalence",
+    "zh": "逻辑等价",
+    "abbr": "",
+    "definition": "两个公式在所有真值赋值下结果相同。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "De Morgan's Laws",
+    "zh": "德摩根律",
+    "abbr": "",
+    "definition": "否定合取等价于否定的析取，否定析取等价于否定的合取。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Conjunctive Normal Form",
+    "zh": "合取范式",
+    "abbr": "CNF",
+    "definition": "由若干析取子句合取而成的公式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Disjunctive Normal Form",
+    "zh": "析取范式",
+    "abbr": "DNF",
+    "definition": "由若干合取项析取而成的公式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 1,
+    "topic": "命题逻辑与逻辑等价",
+    "en": "Satisfiability",
+    "zh": "可满足性",
+    "abbr": "",
+    "definition": "存在至少一种赋值使公式为真。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Predicate",
+    "zh": "谓词",
+    "abbr": "",
+    "definition": "含变量、在指定论域上取真假的陈述模式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Domain of Discourse",
+    "zh": "论域",
+    "abbr": "",
+    "definition": "量词及变量所讨论对象的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Free Variable",
+    "zh": "自由变量",
+    "abbr": "",
+    "definition": "在公式中未被量词绑定的变量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Bound Variable",
+    "zh": "约束变量",
+    "abbr": "",
+    "definition": "其出现受某个量词作用域约束的变量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Universal Quantifier",
+    "zh": "全称量词",
+    "abbr": "",
+    "definition": "断言论域内所有对象均满足某个性质的量词。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Existential Quantifier",
+    "zh": "存在量词",
+    "abbr": "",
+    "definition": "断言论域内至少一个对象满足某个性质的量词。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Unique Existential Quantifier",
+    "zh": "唯一存在量词",
+    "abbr": "",
+    "definition": "断言恰有一个对象满足性质的记法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Quantifier Scope",
+    "zh": "量词作用域",
+    "abbr": "",
+    "definition": "一个量词约束变量的公式范围。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Nested Quantifier",
+    "zh": "嵌套量词",
+    "abbr": "",
+    "definition": "多个量词按层次排列并共同限定变量的结构。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Quantifier Negation",
+    "zh": "量词否定",
+    "abbr": "",
+    "definition": "否定全称命题转为存在反例，反之亦然。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Universal Instantiation",
+    "zh": "全称实例化",
+    "abbr": "",
+    "definition": "由全称命题推出任意指定对象的相应实例。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Existential Instantiation",
+    "zh": "存在实例化",
+    "abbr": "",
+    "definition": "在适当限制下引入代表存在对象的新符号。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Universal Generalization",
+    "zh": "全称泛化",
+    "abbr": "",
+    "definition": "由任意对象的证明推出全称命题的规则。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Existential Generalization",
+    "zh": "存在泛化",
+    "abbr": "",
+    "definition": "由某个实例成立推出存在命题的规则。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Modus Ponens",
+    "zh": "肯定前件式",
+    "abbr": "",
+    "definition": "由 P 与 P 蕴涵 Q 推出 Q 的有效推理。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Modus Tollens",
+    "zh": "否定后件式",
+    "abbr": "",
+    "definition": "由 P 蕴涵 Q 与非 Q 推出非 P 的有效推理。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Hypothetical Syllogism",
+    "zh": "假言三段论",
+    "abbr": "",
+    "definition": "由 P 蕴涵 Q 与 Q 蕴涵 R 推出 P 蕴涵 R。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Disjunctive Syllogism",
+    "zh": "析取三段论",
+    "abbr": "",
+    "definition": "由 P 或 Q 以及非 P 推出 Q。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Resolution Rule",
+    "zh": "归结规则",
+    "abbr": "",
+    "definition": "对互补文字的子句消解以得到新子句。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 2,
+    "topic": "谓词逻辑与推理规则",
+    "en": "Logical Consequence",
+    "zh": "逻辑后承",
+    "abbr": "",
+    "definition": "在所有使前提为真的解释下结论也为真。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Theorem",
+    "zh": "定理",
+    "abbr": "",
+    "definition": "经逻辑推导证实的重要数学命题。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Lemma",
+    "zh": "引理",
+    "abbr": "",
+    "definition": "通常用于证明其他结果的辅助命题。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Corollary",
+    "zh": "推论",
+    "abbr": "",
+    "definition": "可从已证明结论较直接推出的命题。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Axiom",
+    "zh": "公理",
+    "abbr": "",
+    "definition": "在给定形式系统中作为出发点接受的命题。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Conjecture",
+    "zh": "猜想",
+    "abbr": "",
+    "definition": "尚未得到充分证明的数学断言。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Direct Proof",
+    "zh": "直接证明",
+    "abbr": "",
+    "definition": "从前提出发经推导直接得到结论。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Proof by Contrapositive",
+    "zh": "逆否证明法",
+    "abbr": "",
+    "definition": "通过证明逆否命题来建立原条件命题。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Proof by Contradiction",
+    "zh": "反证法",
+    "abbr": "",
+    "definition": "假设结论不成立并导出矛盾。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Proof by Cases",
+    "zh": "分类讨论证明",
+    "abbr": "",
+    "definition": "覆盖所有可能情况并分别证明结论。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Proof by Exhaustion",
+    "zh": "穷举证明",
+    "abbr": "",
+    "definition": "逐一验证有限个可能情形。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Constructive Proof",
+    "zh": "构造性证明",
+    "abbr": "",
+    "definition": "通过构造对象来证明其存在。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Nonconstructive Proof",
+    "zh": "非构造性证明",
+    "abbr": "",
+    "definition": "不显式给出对象也能证明其存在。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Counterexample",
+    "zh": "反例",
+    "abbr": "",
+    "definition": "一个使普遍性断言不成立的具体实例。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Mathematical Induction",
+    "zh": "数学归纳法",
+    "abbr": "",
+    "definition": "先证初始情形，再证由第 n 步推出第 n+1 步。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Induction Hypothesis",
+    "zh": "归纳假设",
+    "abbr": "",
+    "definition": "归纳证明中暂时假定某个较小规模命题成立。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Strong Induction",
+    "zh": "强归纳法",
+    "abbr": "",
+    "definition": "归纳步骤允许使用所有更小规模情形。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Structural Induction",
+    "zh": "结构归纳法",
+    "abbr": "",
+    "definition": "沿递归定义对象的生成规则进行归纳证明。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Well-Ordering Principle",
+    "zh": "良序原理",
+    "abbr": "",
+    "definition": "每个非空自然数子集都具有最小元。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Invariant",
+    "zh": "不变量",
+    "abbr": "",
+    "definition": "在规定操作或状态转移下保持不变的性质。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 3,
+    "topic": "数学证明方法",
+    "en": "Loop Invariant",
+    "zh": "循环不变量",
+    "abbr": "",
+    "definition": "程序循环每次迭代前后保持成立的断言。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Set",
+    "zh": "集合",
+    "abbr": "",
+    "definition": "由不同对象构成、以成员关系确定的整体。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Element",
+    "zh": "元素",
+    "abbr": "",
+    "definition": "属于给定集合的对象。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Subset",
+    "zh": "子集",
+    "abbr": "",
+    "definition": "一个集合的每个元素都属于另一个集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Proper Subset",
+    "zh": "真子集",
+    "abbr": "",
+    "definition": "被包含且不等于原集合的子集。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Empty Set",
+    "zh": "空集",
+    "abbr": "",
+    "definition": "不包含任何元素的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Universal Set",
+    "zh": "全集",
+    "abbr": "",
+    "definition": "给定讨论范围内全部对象的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Power Set",
+    "zh": "幂集",
+    "abbr": "",
+    "definition": "某个集合的所有子集构成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Union",
+    "zh": "并集",
+    "abbr": "",
+    "definition": "属于至少一个给定集合的元素构成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Intersection",
+    "zh": "交集",
+    "abbr": "",
+    "definition": "同时属于所有给定集合的元素构成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Set Difference",
+    "zh": "差集",
+    "abbr": "",
+    "definition": "属于前一集合但不属于后一集合的元素集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Complement",
+    "zh": "补集",
+    "abbr": "",
+    "definition": "相对于指定全集不属于某集合的元素集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Symmetric Difference",
+    "zh": "对称差",
+    "abbr": "",
+    "definition": "恰属于两个集合之一的元素集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Cartesian Product",
+    "zh": "笛卡尔积",
+    "abbr": "",
+    "definition": "由两个集合分别取元素组成的有序对集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Ordered Pair",
+    "zh": "有序对",
+    "abbr": "",
+    "definition": "位置顺序具有意义的二元对象。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Set Partition",
+    "zh": "集合划分",
+    "abbr": "",
+    "definition": "将集合拆为两两不交、非空且并为全集的子集族。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Disjoint Sets",
+    "zh": "不交集合",
+    "abbr": "",
+    "definition": "交集为空的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Finite Set",
+    "zh": "有限集",
+    "abbr": "",
+    "definition": "能够与某个有限自然数初始段建立双射的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Infinite Set",
+    "zh": "无限集",
+    "abbr": "",
+    "definition": "不是有限集的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Countably Infinite Set",
+    "zh": "可数无限集",
+    "abbr": "",
+    "definition": "能与自然数集合建立双射的无限集。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Uncountable Set",
+    "zh": "不可数集",
+    "abbr": "",
+    "definition": "无法与自然数集合建立双射的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Cardinality",
+    "zh": "基数",
+    "abbr": "",
+    "definition": "描述集合中元素数量的概念。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 4,
+    "topic": "集合与集合运算",
+    "en": "Cantor's Diagonal Argument",
+    "zh": "康托尔对角线论证",
+    "abbr": "",
+    "definition": "通过构造与列表每项不同的对象证明不可数性。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Function",
+    "zh": "函数",
+    "abbr": "",
+    "definition": "将定义域每个元素唯一对应到陪域一个元素的映射。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Domain",
+    "zh": "定义域",
+    "abbr": "",
+    "definition": "函数允许输入的全部元素组成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Codomain",
+    "zh": "陪域",
+    "abbr": "",
+    "definition": "函数输出被规定所属的目标集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Range",
+    "zh": "值域",
+    "abbr": "",
+    "definition": "函数实际取得的输出值集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Image",
+    "zh": "像",
+    "abbr": "",
+    "definition": "某个输入或输入集合经函数映射后的结果。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Preimage",
+    "zh": "原像",
+    "abbr": "",
+    "definition": "映射到给定输出值或输出集合的全部输入。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Injective Function",
+    "zh": "单射",
+    "abbr": "",
+    "definition": "不同输入始终对应不同输出的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Surjective Function",
+    "zh": "满射",
+    "abbr": "",
+    "definition": "陪域中每个元素都至少被一个输入映到的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Bijective Function",
+    "zh": "双射",
+    "abbr": "",
+    "definition": "同时满足单射和满射的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Identity Function",
+    "zh": "恒等函数",
+    "abbr": "",
+    "definition": "把定义域中每个元素映射到自身的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Constant Function",
+    "zh": "常值函数",
+    "abbr": "",
+    "definition": "所有输入都映到同一个输出的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Function Composition",
+    "zh": "函数复合",
+    "abbr": "",
+    "definition": "将一个函数的输出作为另一个函数输入。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Inverse Function",
+    "zh": "反函数",
+    "abbr": "",
+    "definition": "对双射执行反向对应的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Partial Function",
+    "zh": "偏函数",
+    "abbr": "",
+    "definition": "仅在规定输入集合的部分元素上有定义的映射。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Sequence",
+    "zh": "序列",
+    "abbr": "",
+    "definition": "按自然数等指标有序排列的元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Arithmetic Progression",
+    "zh": "等差数列",
+    "abbr": "",
+    "definition": "相邻项差为常数的数列。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 5,
+    "topic": "函数与序列",
+    "en": "Geometric Progression",
+    "zh": "等比数列",
+    "abbr": "",
+    "definition": "相邻项比为常数的数列（分母不为零时）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Binary Relation",
+    "zh": "二元关系",
+    "abbr": "",
+    "definition": "笛卡尔积的子集，用于表示两元素间的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Relation Matrix",
+    "zh": "关系矩阵",
+    "abbr": "",
+    "definition": "以布尔矩阵记录有限集合上关系的表示。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Reflexive Relation",
+    "zh": "自反关系",
+    "abbr": "",
+    "definition": "每个元素都与自身相关的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Irreflexive Relation",
+    "zh": "反自反关系",
+    "abbr": "",
+    "definition": "没有元素与自身相关的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Symmetric Relation",
+    "zh": "对称关系",
+    "abbr": "",
+    "definition": "若 a 与 b 相关，则 b 与 a 也相关。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Antisymmetric Relation",
+    "zh": "反对称关系",
+    "abbr": "",
+    "definition": "若 a 与 b、b 与 a 均相关，则 a=b。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Asymmetric Relation",
+    "zh": "非对称关系",
+    "abbr": "",
+    "definition": "若 a 与 b 相关，则 b 与 a 不相关。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Transitive Relation",
+    "zh": "传递关系",
+    "abbr": "",
+    "definition": "若 a 与 b、b 与 c 相关，则 a 与 c 相关。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Equivalence Relation",
+    "zh": "等价关系",
+    "abbr": "",
+    "definition": "同时满足自反、对称和传递的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Equivalence Class",
+    "zh": "等价类",
+    "abbr": "",
+    "definition": "与某个元素等价的全部元素组成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Quotient Set",
+    "zh": "商集",
+    "abbr": "",
+    "definition": "等价关系的所有等价类构成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Partial Order",
+    "zh": "偏序关系",
+    "abbr": "",
+    "definition": "同时满足自反、反对称和传递的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Poset",
+    "zh": "偏序集",
+    "abbr": "",
+    "definition": "带有偏序关系的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Total Order",
+    "zh": "全序关系",
+    "abbr": "",
+    "definition": "任意两个元素都可比较的偏序。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Hasse Diagram",
+    "zh": "哈斯图",
+    "abbr": "",
+    "definition": "省略可由传递性推得边的有限偏序关系图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Minimal Element",
+    "zh": "极小元",
+    "abbr": "",
+    "definition": "不存在严格小于它的元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Least Element",
+    "zh": "最小元",
+    "abbr": "",
+    "definition": "小于或等于所有元素的元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Upper Bound",
+    "zh": "上界",
+    "abbr": "",
+    "definition": "大于或等于某个子集中每个元素的元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Least Upper Bound",
+    "zh": "最小上界",
+    "abbr": "",
+    "definition": "所有上界中最小的那个，又称上确界。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Greatest Lower Bound",
+    "zh": "最大下界",
+    "abbr": "",
+    "definition": "所有下界中最大的那个，又称下确界。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Lattice",
+    "zh": "格",
+    "abbr": "",
+    "definition": "任意两个元素都有最小上界和最大下界的偏序集。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 6,
+    "topic": "二元关系、偏序与格",
+    "en": "Topological Sorting",
+    "zh": "拓扑排序",
+    "abbr": "",
+    "definition": "将有向无环图顶点排列为符合全部边先后约束的线性序。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Rule of Sum",
+    "zh": "加法原理",
+    "abbr": "",
+    "definition": "互斥情形的计数可以相加。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Rule of Product",
+    "zh": "乘法原理",
+    "abbr": "",
+    "definition": "分阶段选择的选择数相乘得到总数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Pigeonhole Principle",
+    "zh": "鸽巢原理",
+    "abbr": "",
+    "definition": "多于 n 个对象放入 n 个容器，必有容器至少两个对象。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Generalized Pigeonhole Principle",
+    "zh": "广义鸽巢原理",
+    "abbr": "",
+    "definition": "把 N 个对象放入 k 个容器，至少一个容器含不少于 ceil(N/k) 个对象。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Permutation",
+    "zh": "排列",
+    "abbr": "",
+    "definition": "考虑元素顺序的选择或重排。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Combination",
+    "zh": "组合",
+    "abbr": "",
+    "definition": "不考虑选择顺序的子集选取。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Factorial",
+    "zh": "阶乘",
+    "abbr": "",
+    "definition": "正整数从 1 到 n 的连续乘积，约定 0! = 1。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Binomial Coefficient",
+    "zh": "二项式系数",
+    "abbr": "",
+    "definition": "从 n 个元素中选择 k 个的组合数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Multinomial Coefficient",
+    "zh": "多项式系数",
+    "abbr": "",
+    "definition": "按给定组大小划分不同对象的计数系数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Binomial Theorem",
+    "zh": "二项式定理",
+    "abbr": "",
+    "definition": "给出 (a+b)^n 展开式与二项式系数的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Pascal's Identity",
+    "zh": "帕斯卡恒等式",
+    "abbr": "",
+    "definition": "相邻二项式系数之和等于下一行对应系数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Combinations with Repetition",
+    "zh": "可重复组合",
+    "abbr": "",
+    "definition": "允许重复选取且不考虑顺序的选择。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Stars and Bars",
+    "zh": "隔板法",
+    "abbr": "",
+    "definition": "将相同对象分配到多个容器的组合计数方法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Inclusion–Exclusion Principle",
+    "zh": "容斥原理",
+    "abbr": "",
+    "definition": "通过交集规模交替加减计算多个集合的并集规模。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Complementary Counting",
+    "zh": "补集计数法",
+    "abbr": "",
+    "definition": "用全集规模减去不满足条件对象的数量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Bijection Principle",
+    "zh": "双射计数法",
+    "abbr": "",
+    "definition": "通过建立双射证明两个有限集合等势。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Double Counting",
+    "zh": "双重计数",
+    "abbr": "",
+    "definition": "以两种方式统计同一对象集合以建立等式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Combinatorial Identity",
+    "zh": "组合恒等式",
+    "abbr": "",
+    "definition": "涉及组合数量的等式，常可通过计数解释。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Derangement",
+    "zh": "错排",
+    "abbr": "",
+    "definition": "排列中没有元素留在原位置的情况。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Catalan Number",
+    "zh": "卡特兰数",
+    "abbr": "",
+    "definition": "计数平衡括号、二叉树等多类递归组合对象的数列。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 7,
+    "topic": "计数原理与排列组合",
+    "en": "Stirling Number of the Second Kind",
+    "zh": "第二类斯特林数",
+    "abbr": "",
+    "definition": "将 n 个不同元素划分为 k 个非空无标号块的数量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Sample Space",
+    "zh": "样本空间",
+    "abbr": "",
+    "definition": "随机试验全部可能结果的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Event",
+    "zh": "事件",
+    "abbr": "",
+    "definition": "样本空间的一个子集。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Probability Mass Function",
+    "zh": "概率质量函数",
+    "abbr": "PMF",
+    "definition": "给离散随机变量每个可能取值分配概率。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Discrete Random Variable",
+    "zh": "离散随机变量",
+    "abbr": "",
+    "definition": "取值集合有限或可数的随机变量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Uniform Distribution",
+    "zh": "离散均匀分布",
+    "abbr": "",
+    "definition": "有限个可能结果具有相同概率的分布。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Bernoulli Distribution",
+    "zh": "伯努利分布",
+    "abbr": "",
+    "definition": "仅有成功与失败两种结果的分布。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Binomial Distribution",
+    "zh": "二项分布",
+    "abbr": "",
+    "definition": "固定次数独立伯努利试验的成功次数分布。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Geometric Distribution",
+    "zh": "几何分布",
+    "abbr": "",
+    "definition": "独立伯努利试验中首次成功所需试验次数的分布（本表采用 1 起始约定）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Conditional Probability",
+    "zh": "条件概率",
+    "abbr": "",
+    "definition": "在事件 B 已发生条件下事件 A 的概率。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Independence",
+    "zh": "独立性",
+    "abbr": "",
+    "definition": "两个事件满足交集概率等于概率乘积。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Bayes' Theorem",
+    "zh": "贝叶斯定理",
+    "abbr": "",
+    "definition": "利用先验概率与条件概率更新后验概率的公式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Law of Total Probability",
+    "zh": "全概率公式",
+    "abbr": "",
+    "definition": "按完备事件划分加权计算目标事件概率。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Expected Value",
+    "zh": "期望值",
+    "abbr": "",
+    "definition": "随机变量各可能取值按概率加权后的和。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Variance",
+    "zh": "方差",
+    "abbr": "",
+    "definition": "随机变量对其期望的平方偏差的期望。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Linearity of Expectation",
+    "zh": "期望的线性性",
+    "abbr": "",
+    "definition": "随机变量之和的期望等于各自期望之和，不要求独立。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Indicator Random Variable",
+    "zh": "指示随机变量",
+    "abbr": "",
+    "definition": "事件发生取 1、否则取 0 的随机变量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Probabilistic Method",
+    "zh": "概率方法",
+    "abbr": "",
+    "definition": "通过随机对象具有正概率满足性质来证明确定性对象存在。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 8,
+    "topic": "离散概率与概率方法",
+    "en": "Union Bound",
+    "zh": "并集上界",
+    "abbr": "",
+    "definition": "多个事件并集的概率不大于各事件概率之和。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Recurrence Relation",
+    "zh": "递推关系",
+    "abbr": "",
+    "definition": "用前面的项定义序列后续项的等式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Initial Condition",
+    "zh": "初始条件",
+    "abbr": "",
+    "definition": "确定递推序列所需的起始取值。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Linear Recurrence",
+    "zh": "线性递推关系",
+    "abbr": "",
+    "definition": "后续项是若干先前项的线性组合加给定项。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Homogeneous Recurrence",
+    "zh": "齐次递推关系",
+    "abbr": "",
+    "definition": "线性递推式右端不含额外非齐次项。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Characteristic Equation",
+    "zh": "特征方程",
+    "abbr": "",
+    "definition": "由常系数线性递推的系数构造、用于求通解的方程。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Characteristic Root",
+    "zh": "特征根",
+    "abbr": "",
+    "definition": "特征方程的根。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Closed Form",
+    "zh": "闭式表达式",
+    "abbr": "",
+    "definition": "使用有限次标准运算或函数直接表示序列项。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Generating Function",
+    "zh": "生成函数",
+    "abbr": "",
+    "definition": "以形式幂级数形式编码序列系数的工具。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Ordinary Generating Function",
+    "zh": "普通生成函数",
+    "abbr": "OGF",
+    "definition": "用序列项作为 x^n 系数的形式幂级数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Exponential Generating Function",
+    "zh": "指数生成函数",
+    "abbr": "EGF",
+    "definition": "用 a_n/n! 作为 x^n 系数的形式幂级数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Formal Power Series",
+    "zh": "形式幂级数",
+    "abbr": "",
+    "definition": "不以收敛性为前提而按代数规则运算的级数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Coefficient Extraction",
+    "zh": "系数提取",
+    "abbr": "",
+    "definition": "从生成函数中确定指定次数项系数的操作。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Convolution",
+    "zh": "卷积",
+    "abbr": "",
+    "definition": "按下标求和组合两个序列，反映生成函数乘积的系数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Recursion Tree",
+    "zh": "递归树",
+    "abbr": "",
+    "definition": "通过树状展开观察递推各层工作量的分析工具。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Master Theorem",
+    "zh": "主定理",
+    "abbr": "",
+    "definition": "在适当正则条件下估算某类分治递推渐近复杂度的规则。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Fibonacci Sequence",
+    "zh": "斐波那契数列",
+    "abbr": "",
+    "definition": "每项等于前两项之和的典型递推数列。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 9,
+    "topic": "递推关系与生成函数",
+    "en": "Linear Difference Equation",
+    "zh": "线性差分方程",
+    "abbr": "",
+    "definition": "描述离散时间量之间线性变化规律的方程。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Divisibility",
+    "zh": "整除",
+    "abbr": "",
+    "definition": "整数 a 能被整数 b 整除当且仅当存在整数 k 使 a=bk（b 非零）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Prime Number",
+    "zh": "素数",
+    "abbr": "",
+    "definition": "大于 1 且仅有 1 与自身两个正因子的整数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Composite Number",
+    "zh": "合数",
+    "abbr": "",
+    "definition": "大于 1 且不是素数的整数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Greatest Common Divisor",
+    "zh": "最大公约数",
+    "abbr": "GCD",
+    "definition": "同时整除两个整数的最大正整数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Least Common Multiple",
+    "zh": "最小公倍数",
+    "abbr": "LCM",
+    "definition": "同时为两个整数倍数的最小正整数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Euclidean Algorithm",
+    "zh": "欧几里得算法",
+    "abbr": "",
+    "definition": "反复取余求两个整数最大公约数的算法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Extended Euclidean Algorithm",
+    "zh": "扩展欧几里得算法",
+    "abbr": "",
+    "definition": "求最大公约数并计算贝祖系数的算法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Bézout's Identity",
+    "zh": "贝祖等式",
+    "abbr": "",
+    "definition": "两个整数的最大公约数可写成它们的整数线性组合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Coprime Integers",
+    "zh": "互素整数",
+    "abbr": "",
+    "definition": "最大公约数为 1 的两个整数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Congruence Modulo n",
+    "zh": "模 n 同余",
+    "abbr": "",
+    "definition": "两个整数之差能被 n 整除的关系。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Residue Class",
+    "zh": "剩余类",
+    "abbr": "",
+    "definition": "模某个正整数同余的全体整数构成的等价类。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Modular Arithmetic",
+    "zh": "模运算",
+    "abbr": "",
+    "definition": "对整数同余类执行加减乘等运算。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Modular Inverse",
+    "zh": "模逆元",
+    "abbr": "",
+    "definition": "在模 n 下与某数相乘同余于 1 的元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Fermat's Little Theorem",
+    "zh": "费马小定理",
+    "abbr": "",
+    "definition": "若 p 为素数且 p 不整除 a，则 a^(p-1) 模 p 余 1。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Euler's Totient Function",
+    "zh": "欧拉函数",
+    "abbr": "",
+    "definition": "统计 1 到 n 中与 n 互素的正整数个数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Euler's Theorem",
+    "zh": "欧拉定理",
+    "abbr": "",
+    "definition": "当 a 与 n 互素时，a^phi(n) 模 n 余 1。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Chinese Remainder Theorem",
+    "zh": "中国剩余定理",
+    "abbr": "CRT",
+    "definition": "两两互素模数的同余方程组具有模乘积意义下的唯一解。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Fundamental Theorem of Arithmetic",
+    "zh": "算术基本定理",
+    "abbr": "",
+    "definition": "每个大于 1 的整数都有唯一的素因子分解（忽略顺序）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 10,
+    "topic": "初等数论与模运算",
+    "en": "Fast Modular Exponentiation",
+    "zh": "快速模幂",
+    "abbr": "",
+    "definition": "通过重复平方高效计算幂的模值。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Graph",
+    "zh": "图",
+    "abbr": "",
+    "definition": "由顶点集合与边集合组成的离散结构。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Vertex",
+    "zh": "顶点",
+    "abbr": "",
+    "definition": "图中表示对象的节点。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Edge",
+    "zh": "边",
+    "abbr": "",
+    "definition": "连接两个顶点或描述其关系的对象。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Undirected Graph",
+    "zh": "无向图",
+    "abbr": "",
+    "definition": "边没有方向的图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Directed Graph",
+    "zh": "有向图",
+    "abbr": "",
+    "definition": "边具有起点和终点的图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Simple Graph",
+    "zh": "简单图",
+    "abbr": "",
+    "definition": "没有自环和重边的无向图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Multigraph",
+    "zh": "多重图",
+    "abbr": "",
+    "definition": "允许在同一对顶点之间出现平行边的图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Loop",
+    "zh": "自环",
+    "abbr": "",
+    "definition": "起点与终点为同一顶点的边。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Adjacent Vertices",
+    "zh": "相邻顶点",
+    "abbr": "",
+    "definition": "由一条边直接连接的两个顶点。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Incident Edge",
+    "zh": "关联边",
+    "abbr": "",
+    "definition": "以某个顶点为端点的边。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Degree",
+    "zh": "度",
+    "abbr": "",
+    "definition": "无向图中与顶点关联的边数，自环按两次计。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "In-Degree",
+    "zh": "入度",
+    "abbr": "",
+    "definition": "有向图中指向某个顶点的边数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Out-Degree",
+    "zh": "出度",
+    "abbr": "",
+    "definition": "有向图中从某顶点出发的边数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Walk",
+    "zh": "途径",
+    "abbr": "",
+    "definition": "顶点和边交替组成、允许重复的行走序列。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Trail",
+    "zh": "迹",
+    "abbr": "",
+    "definition": "不重复使用边的途径。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Path",
+    "zh": "路径",
+    "abbr": "",
+    "definition": "通常指不重复顶点的行走序列（不同教材术语约定可能不同）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Cycle",
+    "zh": "圈",
+    "abbr": "",
+    "definition": "起终点相同、内部顶点不重复的闭合路径。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Connected Graph",
+    "zh": "连通图",
+    "abbr": "",
+    "definition": "任意两个顶点之间存在路径的无向图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Connected Component",
+    "zh": "连通分量",
+    "abbr": "",
+    "definition": "图的极大连通子图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Complete Graph",
+    "zh": "完全图",
+    "abbr": "",
+    "definition": "每对不同顶点均有边相连的简单无向图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Bipartite Graph",
+    "zh": "二分图",
+    "abbr": "",
+    "definition": "顶点可分成两组且每条边连接不同组的图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Graph Isomorphism",
+    "zh": "图同构",
+    "abbr": "",
+    "definition": "存在保持顶点邻接关系的双射。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Adjacency Matrix",
+    "zh": "邻接矩阵",
+    "abbr": "",
+    "definition": "记录顶点对是否相邻或相应边权的矩阵。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 11,
+    "topic": "图论基础",
+    "en": "Adjacency List",
+    "zh": "邻接表",
+    "abbr": "",
+    "definition": "为每个顶点列出其邻接顶点的表示。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Breadth-First Search",
+    "zh": "广度优先搜索",
+    "abbr": "BFS",
+    "definition": "按到起点边数递增的层次遍历图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Depth-First Search",
+    "zh": "深度优先搜索",
+    "abbr": "DFS",
+    "definition": "沿未访问邻接边尽可能深入后回溯的搜索。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Shortest Path",
+    "zh": "最短路径",
+    "abbr": "",
+    "definition": "给定边权或边数下总长度最小的路径。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Dijkstra's Algorithm",
+    "zh": "迪杰斯特拉算法",
+    "abbr": "",
+    "definition": "在非负边权图中求单源最短路径。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Bellman–Ford Algorithm",
+    "zh": "贝尔曼-福特算法",
+    "abbr": "",
+    "definition": "可处理负边权并检测可达负权圈的单源最短路径算法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Floyd–Warshall Algorithm",
+    "zh": "弗洛伊德-沃舍尔算法",
+    "abbr": "",
+    "definition": "用动态规划求所有顶点对最短路径的算法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Minimum Spanning Tree",
+    "zh": "最小生成树",
+    "abbr": "MST",
+    "definition": "连通带权无向图中边权总和最小的生成树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Kruskal's Algorithm",
+    "zh": "克鲁斯卡尔算法",
+    "abbr": "",
+    "definition": "按边权递增选择不成圈边构造最小生成树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Prim's Algorithm",
+    "zh": "普里姆算法",
+    "abbr": "",
+    "definition": "持续连接树外最近顶点构造最小生成树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Eulerian Circuit",
+    "zh": "欧拉回路",
+    "abbr": "",
+    "definition": "每条边恰经过一次并回到起点的闭合迹。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Hamiltonian Cycle",
+    "zh": "哈密顿圈",
+    "abbr": "",
+    "definition": "恰访问每个顶点一次并回到起点的圈。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Graph Coloring",
+    "zh": "图着色",
+    "abbr": "",
+    "definition": "按约束为顶点或边分配颜色。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Chromatic Number",
+    "zh": "色数",
+    "abbr": "",
+    "definition": "使相邻顶点不同色所需的最少颜色数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Planar Graph",
+    "zh": "平面图",
+    "abbr": "",
+    "definition": "能够在平面上画出且边不相交的图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Euler's Formula for Planar Graphs",
+    "zh": "平面图欧拉公式",
+    "abbr": "",
+    "definition": "连通平面图满足顶点数减边数加面数等于 2。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Matching",
+    "zh": "匹配",
+    "abbr": "",
+    "definition": "任意两条边不共享端点的边集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Maximum Matching",
+    "zh": "最大匹配",
+    "abbr": "",
+    "definition": "边数尽可能多的匹配。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Network Flow",
+    "zh": "网络流",
+    "abbr": "",
+    "definition": "满足容量与流量守恒约束的有向网络流量分配。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Maximum Flow",
+    "zh": "最大流",
+    "abbr": "",
+    "definition": "从源点到汇点的可行流中流值最大的一个。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Minimum Cut",
+    "zh": "最小割",
+    "abbr": "",
+    "definition": "容量总和最小的源汇割。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Max-Flow Min-Cut Theorem",
+    "zh": "最大流最小割定理",
+    "abbr": "",
+    "definition": "可行网络最大流值等于最小源汇割容量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 12,
+    "topic": "图算法与经典定理",
+    "en": "Strongly Connected Component",
+    "zh": "强连通分量",
+    "abbr": "SCC",
+    "definition": "有向图中顶点两两可相互到达的极大子图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Tree",
+    "zh": "树",
+    "abbr": "",
+    "definition": "连通且无圈的无向图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Forest",
+    "zh": "森林",
+    "abbr": "",
+    "definition": "每个连通分量都是树的无向图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Rooted Tree",
+    "zh": "有根树",
+    "abbr": "",
+    "definition": "指定一个根顶点的树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Root",
+    "zh": "根",
+    "abbr": "",
+    "definition": "有根树中指定的起始顶点。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Parent Node",
+    "zh": "父节点",
+    "abbr": "",
+    "definition": "有根树中某节点到根路径上的直接前驱。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Child Node",
+    "zh": "子节点",
+    "abbr": "",
+    "definition": "以某节点为父节点的直接后继。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Leaf Node",
+    "zh": "叶节点",
+    "abbr": "",
+    "definition": "有根树中没有子节点的节点。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Internal Node",
+    "zh": "内部节点",
+    "abbr": "",
+    "definition": "在有根树中至少有一个子节点的节点。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Subtree",
+    "zh": "子树",
+    "abbr": "",
+    "definition": "由某节点及其后代组成的树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Tree Height",
+    "zh": "树高",
+    "abbr": "",
+    "definition": "从根到最深叶节点的最大边数（本表约定）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Depth",
+    "zh": "深度",
+    "abbr": "",
+    "definition": "节点到根的唯一路径长度（以边数计）。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Binary Tree",
+    "zh": "二叉树",
+    "abbr": "",
+    "definition": "每个节点至多有左、右两个有序子节点的树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Full Binary Tree",
+    "zh": "真二叉树",
+    "abbr": "",
+    "definition": "每个内部节点恰有两个子节点的二叉树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Complete Binary Tree",
+    "zh": "完全二叉树",
+    "abbr": "",
+    "definition": "除最后一层外各层全满，最后一层从左到右连续填充。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Binary Search Tree",
+    "zh": "二叉搜索树",
+    "abbr": "BST",
+    "definition": "通常按左子树键较小、右子树键较大的约束组织键的二叉树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Spanning Tree",
+    "zh": "生成树",
+    "abbr": "",
+    "definition": "包含原连通无向图所有顶点的无圈连通子图。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Tree Traversal",
+    "zh": "树遍历",
+    "abbr": "",
+    "definition": "以规定顺序访问树的全部节点。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Preorder Traversal",
+    "zh": "先序遍历",
+    "abbr": "",
+    "definition": "先访问根，再递归访问各子树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Inorder Traversal",
+    "zh": "中序遍历",
+    "abbr": "",
+    "definition": "二叉树中先左子树、再根、后右子树。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 13,
+    "topic": "树与递归结构",
+    "en": "Postorder Traversal",
+    "zh": "后序遍历",
+    "abbr": "",
+    "definition": "先递归访问子树，再访问根。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Boolean Algebra",
+    "zh": "布尔代数",
+    "abbr": "",
+    "definition": "具有与、或、补等运算并满足布尔公理的代数结构。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Boolean Variable",
+    "zh": "布尔变量",
+    "abbr": "",
+    "definition": "仅取真或假等二值的变量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Boolean Function",
+    "zh": "布尔函数",
+    "abbr": "",
+    "definition": "以若干二值变量为输入并输出二值的函数。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Boolean Expression",
+    "zh": "布尔表达式",
+    "abbr": "",
+    "definition": "由布尔变量、常量与逻辑运算构成的式子。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "AND Gate",
+    "zh": "与门",
+    "abbr": "",
+    "definition": "仅全部输入为 1 时输出 1 的逻辑门。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "OR Gate",
+    "zh": "或门",
+    "abbr": "",
+    "definition": "至少一个输入为 1 时输出 1 的逻辑门。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "NOT Gate",
+    "zh": "非门",
+    "abbr": "",
+    "definition": "对单个输入进行取反的逻辑门。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "NAND Gate",
+    "zh": "与非门",
+    "abbr": "",
+    "definition": "与门输出的取反。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "NOR Gate",
+    "zh": "或非门",
+    "abbr": "",
+    "definition": "或门输出的取反。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "XOR Gate",
+    "zh": "异或门",
+    "abbr": "",
+    "definition": "对二输入时，输入不同则输出 1 的逻辑门。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Logic Circuit",
+    "zh": "逻辑电路",
+    "abbr": "",
+    "definition": "以逻辑门实现布尔运算的电路。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Combinational Circuit",
+    "zh": "组合逻辑电路",
+    "abbr": "",
+    "definition": "输出只由当前输入确定的电路。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Sequential Circuit",
+    "zh": "时序逻辑电路",
+    "abbr": "",
+    "definition": "输出依赖当前输入与内部状态的电路。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Multiplexer",
+    "zh": "多路选择器",
+    "abbr": "MUX",
+    "definition": "按选择信号从多个输入中选取一个输出。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Decoder",
+    "zh": "译码器",
+    "abbr": "",
+    "definition": "根据输入编码激活对应输出的组合逻辑部件。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Karnaugh Map",
+    "zh": "卡诺图",
+    "abbr": "",
+    "definition": "用邻接格子排列真值以帮助化简布尔函数的方法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Sum of Products",
+    "zh": "积之和式",
+    "abbr": "SOP",
+    "definition": "若干合取项析取形成的布尔表达式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 14,
+    "topic": "布尔代数与数字逻辑",
+    "en": "Product of Sums",
+    "zh": "和之积式",
+    "abbr": "POS",
+    "definition": "若干析取项合取形成的布尔表达式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Binary Operation",
+    "zh": "二元运算",
+    "abbr": "",
+    "definition": "从某集合的有序元素对映射回该集合的运算。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Closure Property",
+    "zh": "封闭性",
+    "abbr": "",
+    "definition": "集合中元素经运算后仍在该集合中。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Associativity Property",
+    "zh": "结合律",
+    "abbr": "",
+    "definition": "改变同一二元运算的括号分组不改变结果。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Commutativity Property",
+    "zh": "交换律",
+    "abbr": "",
+    "definition": "交换两个操作数不改变运算结果。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Identity Element",
+    "zh": "单位元",
+    "abbr": "",
+    "definition": "与任意元素运算都保持该元素不变的元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Inverse Element",
+    "zh": "逆元",
+    "abbr": "",
+    "definition": "与某元素运算得到单位元的对应元素。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Semigroup",
+    "zh": "半群",
+    "abbr": "",
+    "definition": "带有结合二元运算的非空集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Monoid",
+    "zh": "幺半群",
+    "abbr": "",
+    "definition": "具有单位元的半群。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Group",
+    "zh": "群",
+    "abbr": "",
+    "definition": "每个元素都有逆元的幺半群。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Abelian Group",
+    "zh": "阿贝尔群",
+    "abbr": "",
+    "definition": "运算满足交换律的群。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Subgroup",
+    "zh": "子群",
+    "abbr": "",
+    "definition": "在原群运算下自身也构成群的子集。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Cyclic Group",
+    "zh": "循环群",
+    "abbr": "",
+    "definition": "由一个元素及其整数次幂生成的群。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Group Homomorphism",
+    "zh": "群同态",
+    "abbr": "",
+    "definition": "保持群运算的两个群之间的映射。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Ring",
+    "zh": "环",
+    "abbr": "",
+    "definition": "带有加法与乘法并满足环公理的代数结构。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Field",
+    "zh": "域",
+    "abbr": "",
+    "definition": "非零元素对乘法也形成交换群的交换环。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Finite Field",
+    "zh": "有限域",
+    "abbr": "",
+    "definition": "元素个数有限的域。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Hamming Distance",
+    "zh": "汉明距离",
+    "abbr": "",
+    "definition": "等长符号串在对应位置上不同符号的数量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Error-Correcting Code",
+    "zh": "纠错码",
+    "abbr": "",
+    "definition": "通过引入冗余使传输错误可被检测或纠正的编码。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 15,
+    "topic": "代数结构与编码",
+    "en": "Linear Code",
+    "zh": "线性码",
+    "abbr": "",
+    "definition": "码字集合构成有限域上向量子空间的分组码。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Alphabet",
+    "zh": "字母表",
+    "abbr": "",
+    "definition": "组成符号串的有限非空符号集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "String",
+    "zh": "符号串",
+    "abbr": "",
+    "definition": "由字母表中符号组成的有限序列。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Formal Language",
+    "zh": "形式语言",
+    "abbr": "",
+    "definition": "指定字母表上某些符号串构成的集合。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Regular Language",
+    "zh": "正则语言",
+    "abbr": "",
+    "definition": "能够由有限自动机识别的语言。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Finite-State Machine",
+    "zh": "有限状态机",
+    "abbr": "FSM",
+    "definition": "具有有限状态集合和转换规则的系统模型。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Deterministic Finite Automaton",
+    "zh": "确定有限自动机",
+    "abbr": "DFA",
+    "definition": "每个状态对每个输入符号具有唯一后继状态的有限自动机模型。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Nondeterministic Finite Automaton",
+    "zh": "非确定有限自动机",
+    "abbr": "NFA",
+    "definition": "状态与输入可对应多个后继状态的有限自动机。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Regular Expression",
+    "zh": "正则表达式",
+    "abbr": "",
+    "definition": "用于描述正则语言的一类形式表达式。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Context-Free Grammar",
+    "zh": "上下文无关文法",
+    "abbr": "CFG",
+    "definition": "每条产生式左部恰含一个非终结符的文法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Pushdown Automaton",
+    "zh": "下推自动机",
+    "abbr": "PDA",
+    "definition": "带栈存储的自动机，能够识别上下文无关语言。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Turing Machine",
+    "zh": "图灵机",
+    "abbr": "",
+    "definition": "用无限长的抽象纸带与有限控制描述计算的模型。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Decidability",
+    "zh": "可判定性",
+    "abbr": "",
+    "definition": "是否存在对所有输入都停机并正确回答问题的算法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Computability",
+    "zh": "可计算性",
+    "abbr": "",
+    "definition": "某函数或问题能否由有效算法计算或解决的性质。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Time Complexity",
+    "zh": "时间复杂度",
+    "abbr": "",
+    "definition": "算法运行步骤数随输入规模变化的度量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Space Complexity",
+    "zh": "空间复杂度",
+    "abbr": "",
+    "definition": "算法辅助空间使用量随输入规模变化的度量。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Big O Notation",
+    "zh": "大 O 记号",
+    "abbr": "",
+    "definition": "给函数渐近增长率提供上界的记法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Big Theta Notation",
+    "zh": "大 Θ 记号",
+    "abbr": "",
+    "definition": "给函数渐近增长率提供同阶紧确界的记法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Big Omega Notation",
+    "zh": "大 Ω 记号",
+    "abbr": "",
+    "definition": "给函数渐近增长率提供下界的记法。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Polynomial Time",
+    "zh": "多项式时间",
+    "abbr": "",
+    "definition": "运行时间能被输入规模某个固定次数多项式上界约束。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Complexity Class P",
+    "zh": "复杂性类 P",
+    "abbr": "P",
+    "definition": "可由确定性图灵机在多项式时间内判定的问题类。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Complexity Class NP",
+    "zh": "复杂性类 NP",
+    "abbr": "NP",
+    "definition": "存在多项式长度证据可在多项式时间验证的问题类。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "NP-Completeness",
+    "zh": "NP 完全性",
+    "abbr": "",
+    "definition": "既属于 NP 又是 NP 困难的问题的性质。"
+  },
+  {
+    "category": "discrete-mathematics",
+    "chapter": 16,
+    "topic": "自动机、算法与复杂性",
+    "en": "Reduction",
+    "zh": "归约",
+    "abbr": "",
+    "definition": "将一个问题实例有效转换为另一个问题实例以比较难度。"
+  },
+  {
     "category": "university-mathematics",
     "chapter": 1,
     "topic": "集合、逻辑与数学语言",

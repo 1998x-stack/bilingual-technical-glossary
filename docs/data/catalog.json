@@ -90,6 +90,15 @@
     "topics": 12
   },
   {
+    "slug": "discrete-mathematics",
+    "en": "Discrete Mathematics",
+    "zh": "离散数学",
+    "description": "Logic, proofs, sets, relations, counting, graph theory, number theory and automata",
+    "icon": "grid",
+    "count": 324,
+    "topics": 16
+  },
+  {
     "slug": "compiler-principles",
     "en": "Compiler Principles",
     "zh": "编译原理",
