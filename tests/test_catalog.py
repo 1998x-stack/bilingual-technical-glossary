@@ -17,7 +17,7 @@ class CatalogTests(unittest.TestCase):
   self.assertTrue(all(len(values)==1 for values in chapters.values()))
  def test_content_search_cases(self):
   text='\n'.join(t['en']+' '+t['zh'] for t in DATA).lower()
-  for phrase in ['transformer','markov','linear','gradient','agent','gpu','缓存','Operating System','进程']:
+  for phrase in ['transformer','markov','linear','gradient','agent','gpu','缓存','operating system','进程']:
    self.assertIn(phrase,text)
  def test_publication_files_exist(self):
   for slug in set(t['category'] for t in DATA):
