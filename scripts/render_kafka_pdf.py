@@ -32,6 +32,24 @@ def main():
     pdfmetrics.registerFont(TTFont("KafkaCJK", str(font)))
     entries = [t for t in json.loads(SOURCE.read_text(encoding="utf-8"))
                if t["category"] == "apache-kafka"]
+    # The authored Markdown is independently complete; it also permits PDF
+    # publication before the searchable JSON catalog has been rebuilt.
+    if not entries:
+        import re
+        chapter = None
+        topic = None
+        for line in (ROOT / "glossaries" / "apache-kafka.md").read_text(encoding="utf-8").splitlines():
+            h = re.match(r"^## (\d{2}) (.+?) · ", line)
+            if h:
+                chapter, topic = int(h.group(1)), h.group(2)
+                continue
+            if chapter is None or not line.startswith("| "):
+                continue
+            parts = [x.strip().replace(r"\|", "|") for x in re.split(r"(?<!\\)\|", line.strip("| ")) ]
+            if len(parts) == 3 and parts[0] not in ("English", "---"):
+                entries.append({"category": "apache-kafka", "chapter": chapter,
+                                "topic": topic, "en": parts[0], "zh": parts[1],
+                                "definition": parts[2]})
     if len(entries) != 283:
         raise ValueError(f"Expected 283 curated Kafka terms, got {len(entries)}")
     groups = defaultdict(list)
