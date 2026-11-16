@@ -70,5 +70,14 @@
     "icon": "cpu",
     "count": 255,
     "topics": 13
+  },
+  {
+    "slug": "calculus",
+    "en": "Calculus",
+    "zh": "微积分",
+    "description": "Limits, derivatives, integrals, series and multivariable calculus",
+    "icon": "sigma",
+    "count": 301,
+    "topics": 14
   }
 ]
