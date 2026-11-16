@@ -32,8 +32,11 @@
 | 领域 | 词条数 | 章节 | Markdown | PDF |
 |---|---:|---:|---|---|
 | 计算机组成原理 / Computer Organization & Architecture | 678 | 15 | [阅读](glossaries/computer-organization.md) | [下载](pdf/computer-organization.pdf) |
+| 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
 
 > **检索状态：**手册包含 678 条中英文术语、16 组易混概念辨析和缩写速查，保留原始 39 页 PDF。为避免引入未经核验的释义，这些术语**尚未加入**网站全文检索，也不计入上方结构化数据统计。
+
+**并行计算专题：**以 Grama 等人的《Introduction to Parallel Computing》（第二版）作为知识结构参考，独立整理 205 条术语，覆盖 12 个主题。原版 Markdown 与 PDF 已发布，**暂未纳入网站搜索索引**。
 
 **Kafka 专题新增：**283 条术语、16 个章节，Markdown 原稿和可检索 PDF 均已收录，且同步到网页、JSON 与 CSV 索引。
 
