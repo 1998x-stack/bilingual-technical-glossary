@@ -12,17 +12,18 @@
 
 | 领域 | 结构化词条 | 专题 | Markdown | PDF |
 |---|---:|---:|---|---|
-| AI 基础设施 / AI Infrastructure | 142 | 8 | [阅读](glossaries/ai-infrastructure.md) | [下载](pdf/ai-infrastructure.pdf) |
-| GPU Kernel / GPU 核函数 | 255 | 13 | [阅读](glossaries/gpu-kernel.md) | [下载](pdf/gpu-kernel.pdf) |
+| AI 基础设施 / AI Infrastructure / AI Infra | 142 | 8 | [阅读](glossaries/ai-infrastructure.md) | [下载](pdf/ai-infrastructure.pdf) |
+| GPU Kernel / GPU 核函数 / GPU Kernel Engineering | 255 | 13 | [阅读](glossaries/gpu-kernel.md) | [下载](pdf/gpu-kernel.pdf) |
 | AI 智能体 / AI Agents | 332 | 16 | [阅读](glossaries/ai-agents.md) | [下载](pdf/ai-agents.pdf) |
-| 大语言模型 / LLM | 419 | 16 | [阅读](glossaries/large-language-models.md) | [下载](pdf/large-language-models.pdf) |
+| 大语言模型 LLM / Large Language Models | 419 | 16 | [阅读](glossaries/large-language-models.md) | [下载](pdf/large-language-models.pdf) |
 | 深度学习 / Deep Learning | 500 | 18 | [阅读](glossaries/deep-learning.md) | [下载](pdf/deep-learning.pdf) |
 | 强化学习 / Reinforcement Learning | 305 | 14 | [阅读](glossaries/reinforcement-learning.md) | [下载](pdf/reinforcement-learning.pdf) |
 | 线性代数 / Linear Algebra | 289 | 12 | [阅读](glossaries/linear-algebra.md) | [下载](pdf/linear-algebra.pdf) |
+| 编译原理 / Compiler Principles | 268 | 12 | [阅读](glossaries/compiler-principles.md) | [下载](pdf/compiler-principles.pdf) |
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
-| **合计** | **2,647** | **113** | | |
+| **合计** | **2,915** | **125** | | |
 
-**数据说明：**此前制作的六本 PDF 均保留原始完整版本，共自述含 2,298 条术语；从版式 PDF 提取的可检索记录有 2,250 条，尚有 48 条因跨行排版未能自动恢复。原始 PDF 才是这些书册完整词条的权威副本。新增的 AI Infra 独立整理了 142 条术语，GPU Kernel 原创手册包含 255 条术语（13 章），现已同步纳入可检索索引。网页中所有“词条数”均指真实可搜索索引条目，不将 PDF 封面数字直接冒充完整的数据导入数量。
+**数据说明：**此前制作的六本 PDF 均保留原始完整版本，共自述含 2,298 条术语；从版式 PDF 提取的可检索记录有 2,250 条，尚有 48 条因跨行排版未能自动恢复。原始 PDF 才是这些书册完整词条的权威副本。新增的 AI Infra 独立整理了 142 条术语，GPU Kernel 原创手册包含 255 条术语（13 章），现已同步纳入可检索索引；编译原理专题补充 268 条术语（12 章），涵盖词法、语法、SSA、优化与代码生成。网页中所有“词条数”均指真实可搜索索引条目，不将 PDF 封面数字直接冒充完整的数据导入数量。
 
 ## GitHub Pages 展示
 
@@ -38,7 +39,7 @@
 
 ## 更新与质量控制
 
-编辑 `data/terms.json` 中的词条，字段包含 `category`、`chapter`、`topic`、`en`、`zh`、`abbr`、`definition`，然后执行：
+编译原理词条请编辑 `data/compiler-principles.tsv` 并运行构建脚本；其余词条可按项目约定编辑 `data/terms.json`，字段包含 `category`、`chapter`、`topic`、`en`、`zh`、`abbr`、`definition`，然后执行：
 
 ```bash
 python3 -m pip install -r requirements.txt
