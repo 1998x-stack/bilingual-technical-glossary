@@ -10,9 +10,10 @@ REQUIRED=['category','chapter','topic','en','zh','abbr','definition']
 fail=[]
 def check(test,message):
  if not test:fail.append(message)
-check(len(CATALOG)==8,'Expected eight subject categories')
+check(len(CATALOG)==len({t['category'] for t in TERMS}), 'Catalog and term category sets differ')
 check(len(TERMS)>=2600,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
+check(slugs=={t['category'] for t in TERMS},'Catalog category slugs differ from terms')
 for i,r in enumerate(TERMS):
  check(all(k in r for k in REQUIRED),f'Missing field row {i}')
  if any(k not in r for k in REQUIRED):continue
