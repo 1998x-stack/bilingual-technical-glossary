@@ -29,7 +29,7 @@
 
 本次将前 10 篇的导航统一调整为 `README.md` 并同步原稿与镜像；新增只提供**返回统一 Explorer**链接的 `docs/wiki/ai-infrastructure/README.md` 作为 Markdown 兼容目标。它不展示批次，也不充当独立 Wiki 主页。
 
-扩展了文档检查脚本，对当前公开文章映射中每篇 Markdown 原稿与 Pages 镜像的本地链接进行离线检测。
+扩展了文档检查脚本，对当前公开文章映射中每篇 Markdown 原稿与 Pages 镜像的本地链接进行离线检测。由此进一步发现最早 20 篇的来源注释引用 `../../data/ai-infrastructure.tsv`，但 Pages 下缺少该源数据镜像；已添加 `docs/data/ai-infrastructure.tsv`，并由总构建脚本和校验脚本保证与原始 TSV 字节一致。
 ## 仍需后续处理：不能靠改文档冒充已解决
 
 1. **发布作业并发与直接写 main（P1）：**多个专题出版 Workflow 可能提交自动重新生成的 PDF/Markdown。最新基线提交本身涉及多本 PDF 的同步。建议限制自动化写入范围、对产物做确定性检查、通过 PR 审查及按领域并发串行化。此次不改工作流权限和发布架构。

@@ -188,6 +188,8 @@ def write_site_data(data):
   (d/source).mkdir(parents=True,exist_ok=True)
   for original in (ROOT/source).glob('*'):
    if original.is_file():shutil.copy2(original,d/source/original.name)
+ # Preserve source-data citations in published Wiki Markdown.
+ shutil.copy2(ROOT/'data/ai-infrastructure.tsv', d/'data/ai-infrastructure.tsv')
  for fn in ['index.html','styles.css','app.js','favicon.svg','term.html','term.css','term.js']:
   if (ROOT/'site'/fn).exists():shutil.copy2(ROOT/'site'/fn,d/fn)
  from build_wiki_index import write_index

@@ -27,6 +27,10 @@ class DocumentationTests(unittest.TestCase):
             )
             self.assertEqual(local_link_errors(root, ("README.md",)), [])
 
+    def test_published_ai_infra_tsv_matches_source(self):
+        self.assertEqual((ROOT / "data/ai-infrastructure.tsv").read_bytes(),
+                         (ROOT / "docs/data/ai-infrastructure.tsv").read_bytes())
+
     def test_dataset_counts_are_computed_not_assumed(self):
         catalog = json.loads((ROOT / "docs/data/catalog.json").read_text(encoding="utf-8"))
         terms = json.loads((ROOT / "data/terms.json").read_text(encoding="utf-8"))

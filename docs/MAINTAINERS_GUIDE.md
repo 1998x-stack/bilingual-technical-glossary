@@ -35,6 +35,7 @@ docs/term.html?category=…&chapter=…&en=…&zh=…
 ```
 
 - `term.html` 的查询键由 `category + chapter + en + zh` 构成，不应使用全局行号代替稳定身份。
+- 已发布 Wiki 引用原始 `data/ai-infrastructure.tsv` 时，`docs/data/ai-infrastructure.tsv` 须由 `scripts/build.py` 同步并通过字节级一致性校验。
 - `docs/data/wiki-index.json` 是**公共文章映射，不是内部生产计划**。由 `scripts/build_wiki_index.py` 根据 `docs/wiki/*/manifest.json` 的发布标志、结构化词条身份、原稿及 Pages 镜像生成。
 - AI Infra 当前的 `wiki/ai-infrastructure/batches.json`、`wiki/ai-infrastructure/README.md` 可保留内部生产批次；**对外 UI 不出现批次名称、数字、看板或另建的 `/wiki` 主页**。
 - 历史 `docs/wiki/ai-infrastructure/index.html` 用于旧链接重定向。不要把旧入口再设为站点导航。
