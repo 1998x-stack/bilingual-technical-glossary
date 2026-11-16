@@ -162,6 +162,86 @@
     {
       "path": "wiki/ai-infrastructure/040-data-parallelism.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/041-distributed-data-parallel.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/042-tensor-parallelism.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/043-pipeline-parallelism.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/044-expert-parallelism.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/045-sequence-parallelism.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/046-hybrid-parallelism.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/047-fully-sharded-data-parallel.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/048-zero-redundancy-optimizer.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/049-gradient-accumulation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/050-gradient-checkpointing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/051-activation-recomputation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/052-mixed-precision-training.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/053-loss-scaling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/054-microbatch.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/055-global-batch-size.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/056-checkpoint.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/057-elastic-training.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/058-straggler.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/059-inference-server.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/060-model-serving.md",
+      "status": "pending"
     }
   ]
 }

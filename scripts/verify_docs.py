@@ -30,6 +30,7 @@ DOCUMENTS = (
     "wiki/EDITORIAL_REVIEW.md",
     "wiki/ai-infrastructure/README.md",
     "wiki/ai-infrastructure/BATCH-02.md",
+    "wiki/ai-infrastructure/BATCH-03.md",
     "docs/wiki/ai-infrastructure/README.md",
     "docs/wiki/ai-infrastructure/BATCH-02.md",
 )

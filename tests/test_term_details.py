@@ -21,7 +21,8 @@ class TermDetailTests(unittest.TestCase):
         self.assertEqual(self.index, generate_index(ROOT))
         check_index(ROOT)
         self.assertEqual(self.index["schemaVersion"], 1)
-        self.assertEqual(len(self.index["articles"]), 40)
+        manifest = json.loads((ROOT / "docs/wiki/ai-infrastructure/manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(self.index["articles"]), sum(1 for entry in manifest["terms"] if entry["ready"]))
 
     def test_public_index_uses_real_glossary_identity(self):
         identities = {
@@ -36,7 +37,7 @@ class TermDetailTests(unittest.TestCase):
             self.assertRegex(page["path"], r"^wiki/[a-z0-9-]+/[0-9]{3}-[a-z0-9-]+\.md$")
             self.assertTrue((ROOT / "docs" / page["path"]).is_file())
             self.assertFalse(any(k in page for k in ("batch", "status", "readyInPr")))
-        self.assertEqual(len(seen), 40)
+        self.assertEqual(len(seen), len(self.index['articles']))
 
     def test_reinforcement_learning_and_all_categories_have_clickthrough(self):
         rl = [r for r in self.corpus if r["category"] == "reinforcement-learning"]

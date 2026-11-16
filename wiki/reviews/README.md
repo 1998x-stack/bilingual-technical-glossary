@@ -8,9 +8,9 @@
 2. **自动证据审计：** `verify_wiki_reviews.py --report --check` 扫描链接、空泛引用措辞、题目/定义区段、每篇审稿记录，输出 `wiki-evidence-report.json`（CI Artifact）。
 3. **真实人工专家复核：** 针对定义、原论文/标准的具体条款、版本适用性、工程结论、两类题目和数学推导给出逐条论证，随后在受审查 PR 中做署名签核。
 
-## 40 篇既有 Wiki 的初始状态
+## 全部已发布 Wiki 的复核状态
 
-`wiki/reviews/ai-infrastructure.json` 列出 `docs/data/wiki-index.json` 中全部 40 篇，起始均为 `status: pending`；**不得**将结构检查误称为专业审稿完成。审稿者应依照 [内部编辑清单](../EDITORIAL_REVIEW.md) 对照原论文/标准逐篇核对。对于“官方技术资料”之类宽泛来源、跨技术主题的通用引用和题目中未注明的精度口径，优先要求补正。
+`wiki/reviews/ai-infrastructure.json` 列出 `docs/data/wiki-index.json` 中当前全部 **60 篇**，尚未由真实审稿人签核的条目均为 `status: pending`；**不得**将结构检查误称为专业审稿完成。审稿者应依照 [内部编辑清单](../EDITORIAL_REVIEW.md) 对照原论文/标准逐篇核对。对于“官方技术资料”之类宽泛来源、跨技术主题的通用引用和题目中未注明的精度口径，优先要求补正。
 
 ## 签核流程
 
