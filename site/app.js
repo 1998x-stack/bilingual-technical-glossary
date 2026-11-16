@@ -1,8 +1,8 @@
 /* TERM/ATLAS · a dependency-free, accessible catalog explorer. */
 'use strict';
 const $ = (id) => document.getElementById(id);
-const SUBJECT_COLORS = ['#6d86e8','#7f73d7','#449bd2','#4bb69d','#e5a760','#db7d97','#6195ab'];
-const SUBJECT_GLYPHS = ['⌘','↗','λ','∇','∞','⊞','∑'];
+const SUBJECT_COLORS = ['#6d86e8','#7f73d7','#449bd2','#4bb69d','#e5a760','#db7d97','#6195ab','#84a36b'];
+const SUBJECT_GLYPHS = ['⌘','↗','λ','∇','∞','⊞','∑','∫'];
 const PAGE_SIZE = 28;
 const state={terms:[],catalog:[],category:'all',topic:'all',query:'',sort:'default',page:1};
 function escaped(v){return String(v??'').replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));}
