@@ -126,3 +126,12 @@ python3 -m unittest discover -s tests -v
 - [历史代码审计](docs/QUALITY_AUDIT.md)：保留旧版本基线，不代表目前的页面设计要求。
 
 网站面向读者始终按“**学科 → 术语 → 详情页**”组织，不展示内部 Wiki 生产批次。结构一致性通过 CI 校验；专业定义、题目推导和外部资料仍需要人工审校。
+
+## P0 / P1 / P2 工程质量治理
+
+- **P0 发布安全：**专题 PDF 和索引同步 Action 不再直接 `git push main`；只上传待人工审查的 PDF/补丁 Artifact。正式合并必须通过 PR，Pages 发布前执行数据和文档门禁。
+- **P1 专业审稿：**40 篇已发布 AI Infra 文章已建立 [审稿证据台账](wiki/reviews/README.md)，初始均为 `pending`，只有真实评审人核对权威资料、公式和例题、记录文件 SHA 与来源定位后才能标记 `verified`。自动测试通过不等于专家签核。
+- **P2 浏览器测试：**新增 [Chromium E2E](e2e/README.md)，涵盖桌面与手机、检索、术语跳转、键盘与语义导航、深色模式、Markdown 表格/代码和公式文本的安全可读性，CI 保存截图。
+
+仓库管理员仍需在 GitHub Rulesets 中开启 `main` 必须经 PR/人工审核/必要检查的保护；真正的屏幕阅读器体验与完整数学排版还需专项验收。
+

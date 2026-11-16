@@ -186,3 +186,12 @@ The existing [Explorer](https://1998x-stack.github.io/bilingual-technical-glossa
 - [Historical code audit](docs/QUALITY_AUDIT.md) — earlier baseline, retained for provenance rather than as current site guidance.
 
 The **public Explorer displays concepts rather than production batches**. Internal term-writing batches are tracked only in source documentation and Issues. Automated checks establish structural consistency, not expert verification of every definition or interview answer.
+
+## P0/P1/P2 quality assurance
+
+- **P0 — safe automation:** Domain PDF renderers and index synchronizers have read-only repository permissions. They upload reviewable PDF/patch Artifacts, never commit directly to `main`; GitHub Pages deploys **committed** `docs/` only after a read-only release gate. See [maintainer guide](docs/MAINTAINERS_GUIDE.md).
+- **P1 — evidence-aware Wiki:** Each published article has an internal review-ledger entry; existing AI Infra articles start `pending` until real human technical review with source evidence and content hash is completed. Read [the reviewer policy](wiki/reviews/README.md).
+- **P2 — browser E2E:** A separate Chromium GitHub Actions suite tests desktop/mobile Explorer, term details, accessibility landmarks, keyboard access, dark mode, HTML sanitization and readable formula text. Screenshots are retained as workflow artifacts. See [test coverage and limitations](e2e/README.md).
+
+Branch protection and mandatory human review must also be enabled by a GitHub repository administrator; CI cannot make that permission policy on its own.
+

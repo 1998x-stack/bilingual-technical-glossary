@@ -1,0 +1,32 @@
+# P0 safety: network ingestion proposes a patch; PDF is separately rendered.
+name: Propose Computer Networks corpus changes
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/computer-networks.tsv'
+      - 'scripts/ingest_computer_networks.py'
+      - '.github/workflows/build-computer-networks-pdf.yml'
+permissions:
+  contents: read
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          set -euo pipefail
+          python scripts/ingest_computer_networks.py
+          git add -N .
+          git diff --binary > proposed-computer-networks.patch
+          echo "Review artifact and apply via PR; no remote writes."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: computer-networks-index-proposal-${{ github.sha }}
+          path: proposed-computer-networks.patch

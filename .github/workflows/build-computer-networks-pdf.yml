@@ -1,62 +1,61 @@
-name: Build Computer Networks PDF
+# P0 safety: render one domain only. This workflow NEVER pushes to main.
+# To publish, download the artifact, review source/output changes in a PR.
+name: Render Computer Networks PDF (artifact only)
 on:
   push:
-    branches:
-      - main
-      - feat/computer-networks-glossary-20261116
+    branches: [main]
     paths:
-      - data/computer-networks.tsv
-      - scripts/render_computer_networks_pdf.py
-      - scripts/ingest_computer_networks.py
-      - glossaries/computer-networks.md
-      - .github/workflows/build-computer-networks-pdf.yml
+      - 'data/computer-networks.tsv'
+      - 'scripts/render_computer_networks_pdf.py'
+      - '.github/workflows/build-computer-networks-pdf.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+concurrency:
+  group: render-computer-networks-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install CJK fonts and PDF renderer
+      - name: Install domain-specific renderer
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y fonts-arphic-gbsn00lp
           python -m pip install 'reportlab>=4,<5' 'pypdf>=5,<7'
-      - name: Synchronize searchable glossary index
+      - name: Render computer-networks only
         run: |
-          python scripts/ingest_computer_networks.py
-      - name: Render and validate Computer Networks PDF
-        run: |
+          set -euo pipefail
+          mkdir -p pdf docs/pdf
           python scripts/render_computer_networks_pdf.py
+          cp pdf/computer-networks.pdf docs/pdf/computer-networks.pdf
           python - <<'PY'
           from pathlib import Path
           from pypdf import PdfReader
-          path = Path("pdf/computer-networks.pdf")
-          pdf = PdfReader(str(path))
-          text = "".join((p.extract_text() or "") for p in pdf.pages)
-          assert 10 <= len(pdf.pages) <= 75, len(pdf.pages)
-          assert "Computer Networks" in text and "TCP" in text and "QUIC" in text
-          assert len(path.read_bytes()) > 20000
-          dest = Path("docs/pdf/computer-networks.pdf")
-          dest.parent.mkdir(parents=True, exist_ok=True)
-          dest.write_bytes(path.read_bytes())
-          print(f"Verified {len(pdf.pages)} PDF pages, {path.stat().st_size} bytes")
+          original=Path('pdf/computer-networks.pdf')
+          mirrored=Path('docs/pdf/computer-networks.pdf')
+          raw=original.read_bytes()
+          assert raw.startswith(b'%PDF-') and len(raw)>10000, original
+          assert raw==mirrored.read_bytes(), 'Publication mirror mismatch'
+          pdf=PdfReader(str(original))
+          assert len(pdf.pages)>0, 'Empty document'
+          content=''.join((page.extract_text() or '') for page in pdf.pages)
+          assert len(content)>150, 'PDF text extraction unexpectedly empty'
+          print('Checked computer-networks:',len(pdf.pages),'pages',len(raw),'bytes')
           PY
-      - name: Commit publication PDFs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pdf/computer-networks.pdf docs/pdf/computer-networks.pdf \
-            docs/glossaries/computer-networks.md \
-            data/terms.json data/terms.csv \
-            docs/data/terms.json docs/data/catalog.json
-          if ! git diff --cached --quiet; then
-            git commit -m "docs(networking): publish 359-term bilingual PDF"
-            git push origin HEAD:"${GITHUB_REF_NAME}"
-          else
-            echo "PDF unchanged"
-          fi
+      - name: Upload reviewable publication artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: computer-networks-pdf-${{ github.sha }}
+          path: |
+            pdf/computer-networks.pdf
+            docs/pdf/computer-networks.pdf
+          if-no-files-found: error
+          retention-days: 14

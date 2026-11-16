@@ -1,65 +1,61 @@
-name: Build Kafka glossary PDF
+# P0 safety: render one domain only. This workflow NEVER pushes to main.
+# To publish, download the artifact, review source/output changes in a PR.
+name: Render Kafka PDF (artifact only)
 on:
   push:
     branches: [main]
     paths:
       - 'glossaries/apache-kafka.md'
       - 'scripts/render_kafka_pdf.py'
-      - 'scripts/ingest_kafka.py'
       - '.github/workflows/kafka-pdf.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 concurrency:
-  group: kafka-glossary-publication
-  cancel-in-progress: false
+  group: render-apache-kafka-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  build:
+  render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install publishing dependencies
+      - name: Install domain-specific renderer
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y fonts-arphic-gbsn00lp
-          python -m pip install -r requirements.txt
-      - name: Integrate, validate and publish Kafka assets
-        shell: bash
+          python -m pip install 'reportlab>=4,<5' 'pypdf>=5,<7'
+      - name: Render apache-kafka only
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3 4; do
-            echo "Kafka publication attempt $attempt/4"
-            git fetch origin main
-            git reset --hard origin/main
-            python scripts/ingest_kafka.py
-            python scripts/render_kafka_pdf.py
-            mkdir -p docs/pdf
-            cp pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
-            cmp -s pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
-            python scripts/verify.py
-            python -m unittest discover -s tests -v
-            git add data/terms.json data/terms.csv docs/data/terms.json docs/data/catalog.json
-            git add docs/glossaries/apache-kafka.md pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
-            git add scripts/build.py site/app.js docs/app.js README.md README.zh-CN.md
-            git add tests/test_kafka.py AGENTS.md CHANGELOG.md
-            if git diff --cached --quiet; then
-              echo "Kafka publications and indexes already synchronized."
-              exit 0
-            fi
-            git commit -m "feat(kafka): publish 283 indexed terms, Markdown and PDF"
-            if git push origin HEAD:main; then
-              echo "Kafka publication pushed."
-              exit 0
-            fi
-            echo "main advanced concurrently; rebuilding on the latest branch."
-            sleep 2
-          done
-          echo "Unable to publish after 4 guarded attempts" >&2
-          exit 1
+          mkdir -p pdf docs/pdf
+          python scripts/render_kafka_pdf.py
+          cp pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          original=Path('pdf/apache-kafka.pdf')
+          mirrored=Path('docs/pdf/apache-kafka.pdf')
+          raw=original.read_bytes()
+          assert raw.startswith(b'%PDF-') and len(raw)>10000, original
+          assert raw==mirrored.read_bytes(), 'Publication mirror mismatch'
+          pdf=PdfReader(str(original))
+          assert len(pdf.pages)>0, 'Empty document'
+          content=''.join((page.extract_text() or '') for page in pdf.pages)
+          assert len(content)>150, 'PDF text extraction unexpectedly empty'
+          print('Checked apache-kafka:',len(pdf.pages),'pages',len(raw),'bytes')
+          PY
+      - name: Upload reviewable publication artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: apache-kafka-pdf-${{ github.sha }}
+          path: |
+            pdf/apache-kafka.pdf
+            docs/pdf/apache-kafka.pdf
+          if-no-files-found: error
+          retention-days: 14

@@ -22,6 +22,12 @@ Invoke when the task involves **validation or publication**. Read `AGENTS.md` an
 - Website: the **single Explorer** is the reader-facing entrypoint and term rows link to `term.html`; **never show batch numbers, batch cards or an independent Wiki landing page**. Validate both expanded and not-yet-expanded terms, URL encoding, back navigation, language links, theme, and same-topic browsing. Check relative links under the project subpath, safe Markdown escaping, keyboard/responsive accessibility, and Pages artifact paths. Browser smoke-test deep links if available.
 - Published articles: run `python3 scripts/build_wiki_index.py --check`, confirm only real mirrored Wiki files appear in `docs/data/wiki-index.json`, and keep any former standalone Wiki URL as a backward-compatible redirect.
 
+## Non-negotiable release isolation
+- Run `python3 scripts/verify_workflow_policy.py` before merging workflow changes. No domain job may push/commit/force-write main. Artifact-only output is not publication.
+- Pages must independently validate committed `docs/` before `pages: write` deployment. Require repository Rulesets/branch protection and human PR reviews through an administrator; do not claim YAML alone enforces branch protection.
+- Run `python3 scripts/verify_wiki_reviews.py --check --report`: pending editorial reviews remain pending and a signed SHA must equal actual content.
+- Browser E2E (`e2e/test_browser.py`) covers real Chromium, keyboard, mobile, Markdown safety; passing is not proof of NVDA/VoiceOver or mathematical typesetting correctness.
+
 ## PR, merge and provenance
 1. Create a narrowly scoped branch and PR. Include source files, terminology/provenance decisions, exact executed checks and results, and visible count/coverage effects.
 2. Wait for CI results. Review the failure logs; fix and rerun rather than claiming success from a green check on an unrelated commit.

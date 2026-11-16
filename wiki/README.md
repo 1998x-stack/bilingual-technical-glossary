@@ -27,3 +27,8 @@
 3. 附实际案例、常见误区与至少一条可信参考文献；数值题写明假设与单位。
 4. 源稿与 Pages 镜像相同、`docs/data/wiki-index.json` 映射准确、编号/数量/内链校验通过；PR 合并且部署成功后才称为线上可读。
 5. 发布文章不含 Batch、生产进度、待办清单或 PR 状态；这些属于 [内部审稿流程](EDITORIAL_REVIEW.md)。
+
+## 证据验收与上线边界
+
+专业文章的上线文件检查和人类技术签核是两个不同状态。已发布正文来自 `docs/data/wiki-index.json`，独立专家复核记录在 [reviews/README.md](reviews/README.md) 和审稿台账中；现有 40 篇初始为 pending。不能用结构验证掩盖引用的真实性、数值推导或适用范围缺陷。
+

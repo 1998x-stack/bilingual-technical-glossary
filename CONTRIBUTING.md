@@ -87,3 +87,11 @@ python3 -m unittest discover -s tests -v
 - [ ] `site/` 与 `docs/` 镜像一致，公开 Wiki 索引仅包含实际已发布正文
 - [ ] PDF 若改动，已经检查字体、排版和搜索结果
 - [ ] 所有实际运行的测试及结果写入 PR，无未经核实的“已部署”宣称
+
+## P0 发布隔离 / P1 专业审稿 / P2 浏览器验收
+
+- 专题 PDF 和索引同步工作流**不得直接写入 `main`**。它们仅生成 PDF 或 diff Artifact。下载并检查后，在独立 PR 中提交受影响的源稿及 `docs/` 产物；不可将 CI Artifact 的生成视为发布成功。
+- 合并前运行 `python3 scripts/verify_workflow_policy.py`；专业文章新增/更改还要运行 `python3 scripts/verify_wiki_reviews.py --check --report`。审核证据与签名格式见 [Wiki 复核制度](wiki/reviews/README.md)。
+- 网站/详情页更改必须运行 [Chromium E2E](e2e/README.md)：`python -m unittest discover -s e2e -v`（安装固定版本 Playwright 与 Chromium 后）。运行记录、屏幕截图和未覆盖情况应附 PR。
+- 公开发布不等于专业审稿。需要真正的人类领域评审者逐篇确认来源、计算和适用版本，不得将 `pending` 状态标注为 `verified`。
+

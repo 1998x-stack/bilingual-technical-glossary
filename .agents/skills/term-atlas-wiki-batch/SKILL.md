@@ -33,6 +33,11 @@ Use one numbered, stable-slug Markdown file per term: `wiki/<domain>/<NNN>-<engl
 6. For AI Infra run `python3 scripts/build_wiki_index.py --check`, `python3 scripts/verify_wiki.py`, `python3 scripts/verify_docs.py`, `python3 scripts/verify.py`, and tests. For other domains, create an equivalent corpus-aware validator before declaring coverage.
 7. Open **one focused PR per batch** referencing the tracking Issue. Verify CI and Pages before claiming publication; record what remains planned.
 
+## Evidence and human review integrity
+- Update `wiki/reviews/<domain>.json` whenever the published mapping changes. Newly published articles start `pending` until an actual expert reviewer signs their `sha256` and claim/evidence mappings; never invent the reviewer, date or source locator.
+- Run `python3 scripts/verify_wiki_reviews.py --check --report`. Audit warnings reveal missing review and generic citations; they are not proof of factual verification. A human signature must be invalidated after substantive article edits.
+- Coordinate source/Pages content and run Chromium E2E when the detail reader changes, as documented in `e2e/README.md`.
+
 ## Editorial stop conditions
 Do not fabricate version-specific hardware performance, benchmark results, unavailable official URLs, references, or answers. When a source is uncertain, use an explicit research note and keep that item out of the completed count until vetted.
 

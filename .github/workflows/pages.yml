@@ -1,3 +1,4 @@
+# Release gate: check committed artifacts before granting pages:write.
 name: Publish TERM/ATLAS to GitHub Pages
 on:
   push:
@@ -8,20 +9,44 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check immutable committed site, indexes and documents
+        run: |
+          python scripts/verify.py
+          python scripts/verify_wiki.py
+          python scripts/build_wiki_index.py --check
+          python scripts/verify_docs.py
+          python scripts/verify_workflow_policy.py
+          python scripts/verify_wiki_reviews.py --check
   deploy:
+    needs: verify
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact

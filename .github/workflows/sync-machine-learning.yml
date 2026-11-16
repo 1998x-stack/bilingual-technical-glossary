@@ -1,4 +1,5 @@
-name: Index Machine Learning glossary
+# P0 safety: synchronization produces a reviewable patch, never a bot commit.
+name: Propose Machine Learning index changes
 on:
   push:
     branches: [main]
@@ -8,46 +9,36 @@ on:
       - '.github/workflows/sync-machine-learning.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 concurrency:
-  group: machine-learning-index
-  cancel-in-progress: false
+  group: propose-machine-learning-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  sync:
+  propose:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Merge Machine Learning corpus into latest main
-        shell: bash
+      - name: Generate isolated proposed changes
         run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3 4 5 6 7 8; do
-            echo "Sync attempt $attempt"
-            git fetch origin main
-            git reset --hard
-            git clean -fd
-            git checkout -B main origin/main
-            if ! python scripts/import_machine_learning.py; then
-              sleep 5
-              continue
-            fi
-            git add -A
-            if git diff --cached --quiet; then
-              echo "Already synchronized"
-              exit 0
-            fi
-            git commit -m "feat: index 447 machine learning terms in catalog and site"
-            if git push origin HEAD:main; then
-              echo "Published Machine Learning searchable index"
-              exit 0
-            fi
-            sleep 5
-          done
-          exit 1
+          set -euo pipefail
+          python scripts/import_machine_learning.py
+          git add -N .
+          git diff --binary > proposed-machine-learning.patch
+          if test -s proposed-machine-learning.patch; then
+            echo "Proposed changes require a reviewable PR; nothing was committed or pushed."
+            git diff --stat
+          else
+            echo "No proposed changes."
+          fi
+      - name: Upload suggested diff
+        uses: actions/upload-artifact@v4
+        with:
+          name: machine-learning-proposal-${{ github.sha }}
+          path: proposed-machine-learning.patch
+          retention-days: 14

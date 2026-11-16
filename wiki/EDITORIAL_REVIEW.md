@@ -40,3 +40,8 @@
 - **technical review：**术语与答案经过领域专家复核才可宣称学术质量已验证；自动测试主要覆盖结构、一致性和可访问文件。
 
 本清单由 [Wiki 路线图](README.md) 与 [贡献指南](../CONTRIBUTING.md) 引用。编辑路径可分批，公开阅读体验永远是**学科 → 术语 → 专业知识详情**。
+
+## 5. 独立签核和内容哈希
+
+每篇已发布文章的专业验证记录见 [Review ledger](reviews/README.md) 及 `reviews/ai-infrastructure.json`。审稿人应提交明确的技术主张与权威文档版本/章节对应关系，逐题重算；签核带正文 SHA-256，变动后自动失效。**初始 40 篇均为待复核**，不能将 CI 通过宣称为学术同行评审通过。执行 `python3 scripts/verify_wiki_reviews.py --check --report` 可收集宽泛引用、缺少引用、尚未审核等风险。
+

@@ -75,3 +75,10 @@ The [maintainer architecture guide](MAINTAINERS_GUIDE.md) explains which files a
 **Editorial batches are internal only.** Readers select a subject in the existing `/?category=<slug>#explorer` table and click any English or Chinese name. The canonical public page is `term.html?category=...&chapter=...&en=...&zh=...` (return filters may be included); it shows a published long-form article when available or the curated short definition when not. Never create public batch tabs, batch progress dashboards, or a separate Wiki directory homepage. Legacy Wiki landing URLs redirect to the matching term or Explorer.
 
 After writing a Wiki article and updating its manifest, run `python3 scripts/build_wiki_index.py --write`, then `--check`; the generator verifies the actual source term and Markdown mirror before adding it to `docs/data/wiki-index.json`. `scripts/build.py` also regenerates this public index on a full repository rebuild.
+
+## Release and review gates (P0/P1/P2)
+
+- Publication jobs are read-only and upload reviewer-facing PDF or patch Artifacts. They never update `main` directly: `python3 scripts/verify_workflow_policy.py`.
+- Human technical review requires `wiki/reviews/ai-infrastructure.json` attestations and source-backed claim mapping. Zero pending is not a prerequisite for structural publication, but no pending page may be called expert-reviewed: `python3 scripts/verify_wiki_reviews.py --check --report`.
+- Desktop/mobile Chromium browsing and keyboard semantics use `e2e/test_browser.py` and the independent `browser-e2e.yml` workflow. A passing browser smoke test is not full screen-reader/LaTeX certification.
+

@@ -31,5 +31,9 @@ jobs:
           python scripts/verify_wiki.py
       - name: Validate documentation and local links
         run: python scripts/verify_docs.py
+      - name: Enforce read-only workflows and reviewer evidence
+        run: |
+          python scripts/verify_workflow_policy.py
+          python scripts/verify_wiki_reviews.py --check
       - name: Run regression tests
         run: python -m unittest discover -s tests -v

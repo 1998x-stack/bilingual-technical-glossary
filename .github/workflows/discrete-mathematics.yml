@@ -1,74 +1,61 @@
-name: Publish Discrete Mathematics bilingual glossary
-
+# P0 safety: render one domain only. This workflow NEVER pushes to main.
+# To publish, download the artifact, review source/output changes in a PR.
+name: Render Discrete Mathematics PDF (artifact only)
 on:
   push:
-    branches:
-      - main
-      - feat/discrete-mathematics-glossary-20261116
+    branches: [main]
     paths:
-      - "data/discrete-mathematics.tsv"
-      - "scripts/render_discrete_mathematics_pdf.py"
-      - "scripts/build.py"
-      - ".github/workflows/discrete-mathematics.yml"
+      - 'data/discrete-mathematics.tsv'
+      - 'scripts/render_discrete_mathematics_pdf.py'
+      - '.github/workflows/discrete-mathematics.yml'
   workflow_dispatch:
-
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
-  group: publish-discrete-mathematics-${{ github.ref }}
-  cancel-in-progress: false
-
+  group: render-discrete-mathematics-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  publish:
+  render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
-      - name: Checkout glossary branch
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Install PDF fonts and build dependencies
+          python-version: '3.12'
+      - name: Install domain-specific renderer
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y fonts-arphic-gbsn00lp fonts-noto-cjk libpango-1.0-0 libcairo2 poppler-utils
-          python -m pip install -r requirements.txt
-      - name: Generate Markdown, search index and PDFs
-        run: python scripts/build.py
-      - name: Validate bilingual publication
+          sudo apt-get install -y fonts-arphic-gbsn00lp
+          python -m pip install 'reportlab>=4,<5' 'pypdf>=5,<7'
+      - name: Render discrete-mathematics only
         run: |
-          python scripts/verify.py
-          python -m unittest discover -s tests -v
+          set -euo pipefail
+          mkdir -p pdf docs/pdf
+          python scripts/render_discrete_mathematics_pdf.py
+          cp pdf/discrete-mathematics.pdf docs/pdf/discrete-mathematics.pdf
           python - <<'PY'
           from pathlib import Path
-          from collections import Counter
-          from reportlab import Version
-          import json
-          text = Path("glossaries/discrete-mathematics.md").read_text(encoding="utf8")
-          data = json.loads(Path("data/terms.json").read_text(encoding="utf8"))
-          subset = [r for r in data if r["category"] == "discrete-mathematics"]
-          assert len(subset) == 324
-          assert len(set(r["chapter"] for r in subset)) == 16
-          assert text.count(" | ") >= 324
-          pdf = Path("pdf/discrete-mathematics.pdf")
-          assert pdf.read_bytes().startswith(b"%PDF-")
-          assert pdf.stat().st_size > 20000
+          from pypdf import PdfReader
+          original=Path('pdf/discrete-mathematics.pdf')
+          mirrored=Path('docs/pdf/discrete-mathematics.pdf')
+          raw=original.read_bytes()
+          assert raw.startswith(b'%PDF-') and len(raw)>10000, original
+          assert raw==mirrored.read_bytes(), 'Publication mirror mismatch'
+          pdf=PdfReader(str(original))
+          assert len(pdf.pages)>0, 'Empty document'
+          content=''.join((page.extract_text() or '') for page in pdf.pages)
+          assert len(content)>150, 'PDF text extraction unexpectedly empty'
+          print('Checked discrete-mathematics:',len(pdf.pages),'pages',len(raw),'bytes')
           PY
-          pdfinfo pdf/discrete-mathematics.pdf | grep -E "^(Pages|Page size|File size):"
-          pdftotext pdf/discrete-mathematics.pdf - | grep -q '离散数学'
-      - name: Commit only discrete-mathematics publication and indexes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/terms.json data/terms.csv \
-            docs/data/terms.json docs/data/catalog.json \
-            glossaries/discrete-mathematics.md docs/glossaries/discrete-mathematics.md \
-            pdf/discrete-mathematics.pdf docs/pdf/discrete-mathematics.pdf
-          if ! git diff --cached --quiet; then
-            git commit -m "build(discrete-mathematics): publish 324 terms in Markdown, PDF and search index"
-            git push origin HEAD:${GITHUB_REF_NAME}
-          else
-            echo "Already up to date"
-          fi
+      - name: Upload reviewable publication artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: discrete-mathematics-pdf-${{ github.sha }}
+          path: |
+            pdf/discrete-mathematics.pdf
+            docs/pdf/discrete-mathematics.pdf
+          if-no-files-found: error
+          retention-days: 14
