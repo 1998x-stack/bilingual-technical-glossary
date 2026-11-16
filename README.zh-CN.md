@@ -22,6 +22,7 @@
 | 强化学习 / Reinforcement Learning | 305 | 14 | [阅读](glossaries/reinforcement-learning.md) | [下载](pdf/reinforcement-learning.pdf) |
 | 微积分 / Calculus | 361 | 16 | [阅读](glossaries/calculus.md) | [下载](pdf/calculus.pdf) |
 | 线性代数 / Linear Algebra | 289 | 12 | [阅读](glossaries/linear-algebra.md) | [下载](pdf/linear-algebra.pdf) |
+| 离散数学 / Discrete Mathematics | 324 | 16 | [阅读](glossaries/discrete-mathematics.md) | [下载](pdf/discrete-mathematics.pdf) |
 | 编译原理 / Compiler Principles | 268 | 12 | [阅读](glossaries/compiler-principles.md) | [下载](pdf/compiler-principles.pdf) |
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
 | 大学数学 / University Mathematics | 627 | 17 | [阅读](glossaries/university-mathematics.md) | [下载](pdf/university-mathematics.pdf) |
@@ -34,7 +35,7 @@
 | Python 编程语言 / Python | 429 | 16 | [阅读](glossaries/python.md) | [下载](pdf/python.pdf) |
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
 | 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
-| **合计** | **7,913** | **331** | | |
+| **合计** | **8,237** | **347** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -54,6 +55,10 @@
 
 新增 **359 条中英文对照术语，分 18 个专题**，覆盖协议分层、以太网、无线通信、IPv4/IPv6、路由、TCP/UDP/QUIC、DNS、HTTP、TLS、QoS、云网络和网络故障排查。同步提供 [Markdown](glossaries/computer-networks.md)、[可检索 PDF](pdf/computer-networks.pdf)、[可编辑 TSV 源数据](data/computer-networks.tsv) 与网站全文搜索。
 
+## 离散数学 / Discrete Mathematics
+
+本卷收录 **324 条术语、16 个专题**，覆盖逻辑与证明、集合与关系、计数原理、离散概率、递推、数论、图论、树、布尔代数及自动机与复杂性。同步提供 [可编辑 TSV](data/discrete-mathematics.tsv)、[Markdown](glossaries/discrete-mathematics.md)、[可检索 PDF](pdf/discrete-mathematics.pdf) 与网站全文搜索。
+
 ## 新增全文检索学科
 
 操作系统（396 条）、SQL 数据库（394 条）、Python（429 条）、初中数学（400 条）和并行计算（205 条）已接入结构化检索索引。原始 Markdown、PDF 和附录完整保留。
@@ -63,7 +68,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**22 个学科、331 个专题；
+- **主题选择：**23 个学科、347 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
@@ -74,7 +79,7 @@
 
 ## 更新与质量控制
 
-编译原理词条请编辑 `data/compiler-principles.tsv` 并运行构建脚本；其余词条可按项目约定编辑 `data/terms.json`，字段包含 `category`、`chapter`、`topic`、`en`、`zh`、`abbr`、`definition`，然后执行：
+离散数学词条请编辑 `data/discrete-mathematics.tsv`；编译原理词条请编辑 `data/compiler-principles.tsv` 并运行构建脚本；其余词条可按项目约定编辑 `data/terms.json`，字段包含 `category`、`chapter`、`topic`、`en`、`zh`、`abbr`、`definition`，然后执行：
 
 ```bash
 python3 -m pip install -r requirements.txt
