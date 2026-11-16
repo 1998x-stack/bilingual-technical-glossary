@@ -79,5 +79,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "sql-database",
+    "en": "SQL Database",
+    "zh": "SQL 数据库",
+    "description": "Relational modeling, SQL syntax, indexes, optimizers, transactions and operations",
+    "icon": "database",
+    "count": 394,
+    "topics": 13
   }
 ]

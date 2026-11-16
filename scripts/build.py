@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Markdown, CSV, site indexes, and AI Infra PDF; preserve GPU Kernel PDF."""
+"""Build Markdown, CSV and site indexes; preserve independent PDF editions."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, json, shutil, re
@@ -15,6 +15,7 @@ CATALOG=[
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('sql-database','SQL Database','SQL 数据库','Relational SQL, indexing, transactions and database operations','database'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 

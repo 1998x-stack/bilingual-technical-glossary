@@ -29,3 +29,7 @@ The 6 inherited PDFs collectively report 2,298 terms. The structured extraction 
 
 ## GPU Kernel edition
 The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
+
+## SQL database publication
+
+The SQL Database handbook has 394 structured entries in 13 chapters, preserved in `data/sql-database.json`, `glossaries/sql-database.md`, and `pdf/sql-database.pdf`. The repository PDF is a newly typeset terminology-table edition and is not byte-identical to the prior 22-page publication containing additional example material. Keep the structured index, Markdown, and PDF terminology in sync and do not overclaim fidelity.

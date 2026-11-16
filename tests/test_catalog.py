@@ -20,6 +20,11 @@ class CatalogTests(unittest.TestCase):
   text='\n'.join(t['en']+' '+t['zh'] for t in DATA).lower()
   for phrase in ['transformer','markov','linear','gradient','agent','gpu','缓存']:
    self.assertIn(phrase,text)
+ def test_sql_database_coverage(self):
+  sql=[t for t in DATA if t['category']=='sql-database']
+  self.assertEqual(len(sql),394)
+  self.assertEqual(len(set(t['chapter'] for t in sql)),13)
+  self.assertIn('Multi-Version Concurrency Control (MVCC)',{t['en'] for t in sql})
  def test_publication_files_exist(self):
   for slug in set(t['category'] for t in DATA):
    self.assertTrue((ROOT/'pdf'/f'{slug}.pdf').exists())

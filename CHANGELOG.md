@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2.0 — 2026-11-16
+
+- Added SQL Database bilingual glossary: 394 entries across 13 chapters, downloadable in Markdown and a newly typeset searchable PDF.
+- Updated canonical JSON/CSV, browser search, downloadable Pages assets and documentation to 3,309 indexed entries in 10 domains and 138 topics.
+- Hardened dynamic subject colors/icons and expanded data validation and unit tests.
+
+
 ## v1.1.0 — 2026-11-16
 
 - Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.
