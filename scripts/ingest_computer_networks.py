@@ -55,8 +55,11 @@ def main():
     old = [x for x in old if x["category"] != SLUG]
     data = old + additions
     indexed.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Preserve every existing optional JSON field in CSV, matching corpus_integrity.
+    fields = ["category", "chapter", "topic", "en", "zh", "abbr", "definition"]
+    fields += sorted({key for row in data for key in row} - set(fields))
     with (ROOT / "data/terms.csv").open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=FIELDS, extrasaction="ignore")
+        writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="raise")
         writer.writeheader()
         writer.writerows(data)
 
