@@ -34,6 +34,14 @@ jobs:
       - name: Enforce read-only workflows and reviewer evidence
         run: |
           python scripts/verify_workflow_policy.py
-          python scripts/verify_wiki_reviews.py --check
+          python scripts/verify_wiki_reviews.py --check --report
+      - name: Upload human-review evidence inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wiki-evidence-audit-${{ github.sha }}
+          path: wiki-evidence-report.json
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
