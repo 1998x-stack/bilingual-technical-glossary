@@ -99,6 +99,8 @@ def update_index():
         item["count"] = category_counts[item["slug"]]
         item["topics"] = chapter_counts[item["slug"]]
     keys = ["category", "chapter", "topic", "en", "zh", "abbr", "definition"]
+    extra_keys = sorted({key for entry in data for key in entry} - set(keys))
+    keys += extra_keys
     buffer = StringIO(newline="")
     writer = csv.DictWriter(buffer, fieldnames=keys, lineterminator="\r\n")
     writer.writeheader()
