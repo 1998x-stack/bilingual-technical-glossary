@@ -1,8 +1,8 @@
 /* TERM/ATLAS · a dependency-free, accessible catalog explorer. */
 'use strict';
 const $ = (id) => document.getElementById(id);
-const SUBJECT_COLORS = ['#6d86e8','#7f73d7','#449bd2','#4bb69d','#e5a760','#db7d97','#6195ab'];
-const SUBJECT_GLYPHS = ['⌘','↗','λ','∇','∞','⊞','∑'];
+const SUBJECT_COLORS = ['#6d86e8','#7f73d7','#449bd2','#4bb69d','#e5a760','#db7d97','#6195ab','#7b8db7'];
+const SUBJECT_GLYPHS = ['⌘','↗','λ','∇','∞','⊞','∑','∫'];
 const PAGE_SIZE = 28;
 const state={terms:[],catalog:[],category:'all',topic:'all',query:'',sort:'default',page:1};
 function escaped(v){return String(v??'').replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));}
@@ -16,7 +16,7 @@ function getVisible(){const q=state.query.toLocaleLowerCase().trim();const terms
  if(state.category!=='all'&&t.category!==state.category)return false;
  if(state.topic!=='all'&&t.topic!==state.topic)return false;
  if(!q)return true;
- const hay=[t.en,t.zh,t.abbr,t.definition,t.topic,byId(t.category)?.zh].join(' ').toLocaleLowerCase();
+ const hay=[t.en,t.zh,t.abbr,t.notation,t.definition,t.topic,byId(t.category)?.zh].join(' ').toLocaleLowerCase();
  return q.split(/\s+/).every(token=>hay.includes(token));
 });
 if(state.sort==='az')terms.sort((a,b)=>a.en.localeCompare(b.en,'en'));if(state.sort==='za')terms.sort((a,b)=>b.en.localeCompare(a.en,'en'));
@@ -48,7 +48,7 @@ $('empty-state').hidden=count!==0;$('result-count').textContent=`${locale(count)
 $('page-summary').textContent=count?`显示 ${locale((state.page-1)*PAGE_SIZE+1)}–${locale(Math.min(state.page*PAGE_SIZE,count))} / ${locale(count)} 条`:'没有匹配结果';
 $('page-number').textContent=`${state.page} / ${lastPage}`;$('prev-page').disabled=state.page<=1;$('next-page').disabled=state.page>=lastPage;$('clear-search').hidden=!state.query;}
 async function copyText(text){try{await navigator.clipboard.writeText(text);notify('已复制到剪贴板');}catch(err){const a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.opacity='0';document.body.append(a);a.select();const ok=document.execCommand('copy');a.remove();notify(ok?'已复制到剪贴板':'复制失败，请手动选择文字');}}
-function exportCSV(){const filtered=getVisible();const cols=['category','chapter','topic','en','zh','abbr','definition'];const quote=s=>'"'+String(s??'').replace(/"/g,'""')+'"';const rows=[cols.join(','),...filtered.map(t=>cols.map(k=>quote(t[k])).join(','))];download('glossary-'+(state.category==='all'?'all':state.category)+'.csv','\ufeff'+rows.join('\r\n'),'text/csv;charset=utf-8');notify(`已准备 ${locale(filtered.length)} 条 CSV 记录`);}
+function exportCSV(){const filtered=getVisible();const cols=['category','chapter','topic','en','zh','abbr','definition','notation'];const quote=s=>'"'+String(s??'').replace(/"/g,'""')+'"';const rows=[cols.join(','),...filtered.map(t=>cols.map(k=>quote(t[k])).join(','))];download('glossary-'+(state.category==='all'?'all':state.category)+'.csv','\ufeff'+rows.join('\r\n'),'text/csv;charset=utf-8');notify(`已准备 ${locale(filtered.length)} 条 CSV 记录`);}
 function bind(){const input=$('search-input');let debounce=null;input.addEventListener('input',e=>{clearTimeout(debounce);debounce=setTimeout(()=>{state.query=e.target.value.trim();state.page=1;renderResults();updateURL();},120);});
 $('category-filter').addEventListener('change',e=>chooseCategory(e.target.value));$('topic-filter').addEventListener('change',e=>{state.topic=e.target.value;state.page=1;renderResults();updateURL();});$('sort-select').addEventListener('change',e=>{state.sort=e.target.value;state.page=1;renderResults();});
 $('prev-page').addEventListener('click',()=>{state.page--;renderResults();$('explorer').scrollIntoView({behavior:'smooth'});});$('next-page').addEventListener('click',()=>{state.page++;renderResults();$('explorer').scrollIntoView({behavior:'smooth'});});

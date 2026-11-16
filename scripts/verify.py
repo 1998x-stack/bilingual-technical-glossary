@@ -11,7 +11,7 @@ fail=[]
 def check(test,message):
  if not test:fail.append(message)
 check(len(CATALOG)==len({t['category'] for t in TERMS}), 'Catalog and term category sets differ')
-check(len(TERMS)>=2600,'Dataset unexpectedly truncated')
+check(len(TERMS)>=3276,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
 check(slugs=={t['category'] for t in TERMS},'Catalog category slugs differ from terms')
 for i,r in enumerate(TERMS):
