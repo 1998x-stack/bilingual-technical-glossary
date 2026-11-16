@@ -1,8 +1,18 @@
+# Python execution and local environments
 __pycache__/
 *.py[cod]
-.DS_Store
-.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .venv/
-node_modules/
-.playwright/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local build / editor artifacts
+.DS_Store
+.idea/
+.vscode/
+*.swp
 *.tmp

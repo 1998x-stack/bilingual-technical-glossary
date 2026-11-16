@@ -69,9 +69,11 @@ def main():
     write(DATA, json.dumps(data, ensure_ascii=False, indent=2))
 
     names = ["category", "chapter", "topic", "en", "zh", "abbr", "definition"]
+    # Preserve optional notation and future fields when an authored volume is synced.
+    names.extend(sorted({key for row in data for key in row} - set(names)))
     import io
     out = io.StringIO(newline="")
-    writer = csv.DictWriter(out, fieldnames=names, extrasaction="ignore")
+    writer = csv.DictWriter(out, fieldnames=names, extrasaction="raise")
     writer.writeheader()
     writer.writerows(data)
     write(ROOT / "data" / "terms.csv", out.getvalue())
