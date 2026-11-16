@@ -4,7 +4,7 @@
 
 将原双语词条扩展为独立技术百科文章：精确定义、直观类比、核心机制、工程案例、易混辨析、两道中级面试题及答案、两道中级考试题及解析、权威参考资料。
 
-**状态说明：** Batch 01–04 共 **80 篇已发布**，Batch 05–08 共 62 篇待研究；已完成 **80/142（56.3%）**。每批独立审阅与校验后合并，计划条目不算完成。
+**状态说明：** Batch 01–05 共 **100 篇已发布**，Batch 06–08 共 42 篇待研究；已完成 **100/142（70.4%）**。每批独立审阅与校验后合并，计划条目不算完成。
 
 ## 批次总览
 
@@ -14,7 +14,7 @@
 | 02 | 021–040 | 互连与网络、分布式训练 | 20 | 已发布 |
 | 03 | 041–060 | 分布式训练、推理与服务 | 20 | 已发布 |
 | 04 | 061–080 | 推理与服务、调度与容器 | 20 | 已发布 |
-| 05 | 081–100 | 调度与容器、存储与数据 | 20 | 待研究 |
+| 05 | 081–100 | 调度与容器、存储与数据 | 20 | 已发布 |
 | 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 待研究 |
 | 07 | 121–140 | 可靠性与可观测性、成本治理 | 20 | 待研究 |
 | 08 | 141–142 | 成本、能效与资源治理 | 2 | 待研究 |
@@ -127,26 +127,26 @@
 
 ### Batch 05: 调度与容器、存储与数据
 
-81. Container Image（容器镜像） · 未编写
-82. Docker（Docker 容器平台） · 未编写
-83. Kubernetes（容器编排系统） · `K8s` · 未编写
-84. Pod（容器组） · 未编写
-85. Node（集群节点） · 未编写
-86. GPU Operator（GPU 运维算子） · 未编写
-87. Device Plugin（设备插件） · 未编写
-88. Job（批处理任务） · 未编写
-89. CronJob（定时任务） · 未编写
-90. Horizontal Pod Autoscaler（Pod 水平自动伸缩器） · `HPA` · 未编写
-91. Cluster Autoscaler（集群自动扩缩容器） · `CA` · 未编写
-92. Scheduler（调度器） · 未编写
-93. Resource Quota（资源配额） · 未编写
-94. Node Affinity（节点亲和性） · 未编写
-95. Taint and Toleration（污点与容忍） · 未编写
-96. Gang Scheduling（成组调度） · 未编写
-97. Preemption（抢占） · 未编写
-98. Object Storage（对象存储） · 未编写
-99. Block Storage（块存储） · 未编写
-100. Distributed File System（分布式文件系统） · `DFS` · 未编写
+81. [Container Image（容器镜像）](081-container-image.md) · 已发布
+82. [Docker（Docker 容器平台）](082-docker.md) · 已发布
+83. [Kubernetes（容器编排系统）](083-kubernetes.md) · `K8s` · 已发布
+84. [Pod（容器组）](084-pod.md) · 已发布
+85. [Node（集群节点）](085-node.md) · 已发布
+86. [GPU Operator（GPU 运维算子）](086-gpu-operator.md) · 已发布
+87. [Device Plugin（设备插件）](087-device-plugin.md) · 已发布
+88. [Job（批处理任务）](088-job.md) · 已发布
+89. [CronJob（定时任务）](089-cronjob.md) · 已发布
+90. [Horizontal Pod Autoscaler（Pod 水平自动伸缩器）](090-horizontal-pod-autoscaler.md) · `HPA` · 已发布
+91. [Cluster Autoscaler（集群自动扩缩容器）](091-cluster-autoscaler.md) · `CA` · 已发布
+92. [Scheduler（调度器）](092-scheduler.md) · 已发布
+93. [Resource Quota（资源配额）](093-resource-quota.md) · 已发布
+94. [Node Affinity（节点亲和性）](094-node-affinity.md) · 已发布
+95. [Taint and Toleration（污点与容忍）](095-taint-and-toleration.md) · 已发布
+96. [Gang Scheduling（成组调度）](096-gang-scheduling.md) · 已发布
+97. [Preemption（抢占）](097-preemption.md) · 已发布
+98. [Object Storage（对象存储）](098-object-storage.md) · 已发布
+99. [Block Storage（块存储）](099-block-storage.md) · 已发布
+100. [Distributed File System（分布式文件系统）](100-distributed-file-system.md) · `DFS` · 已发布
 
 ### Batch 06: 存储与数据、可靠性与可观测性
 

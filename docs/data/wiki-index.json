@@ -560,6 +560,146 @@
       "en": "Container",
       "zh": "容器",
       "path": "wiki/ai-infrastructure/080-container.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Container Image",
+      "zh": "容器镜像",
+      "path": "wiki/ai-infrastructure/081-container-image.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Docker",
+      "zh": "Docker 容器平台",
+      "path": "wiki/ai-infrastructure/082-docker.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Kubernetes",
+      "zh": "容器编排系统",
+      "path": "wiki/ai-infrastructure/083-kubernetes.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Pod",
+      "zh": "容器组",
+      "path": "wiki/ai-infrastructure/084-pod.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Node",
+      "zh": "集群节点",
+      "path": "wiki/ai-infrastructure/085-node.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "GPU Operator",
+      "zh": "GPU 运维算子",
+      "path": "wiki/ai-infrastructure/086-gpu-operator.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Device Plugin",
+      "zh": "设备插件",
+      "path": "wiki/ai-infrastructure/087-device-plugin.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Job",
+      "zh": "批处理任务",
+      "path": "wiki/ai-infrastructure/088-job.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "CronJob",
+      "zh": "定时任务",
+      "path": "wiki/ai-infrastructure/089-cronjob.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Horizontal Pod Autoscaler",
+      "zh": "Pod 水平自动伸缩器",
+      "path": "wiki/ai-infrastructure/090-horizontal-pod-autoscaler.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Cluster Autoscaler",
+      "zh": "集群自动扩缩容器",
+      "path": "wiki/ai-infrastructure/091-cluster-autoscaler.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Scheduler",
+      "zh": "调度器",
+      "path": "wiki/ai-infrastructure/092-scheduler.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Resource Quota",
+      "zh": "资源配额",
+      "path": "wiki/ai-infrastructure/093-resource-quota.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Node Affinity",
+      "zh": "节点亲和性",
+      "path": "wiki/ai-infrastructure/094-node-affinity.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Taint and Toleration",
+      "zh": "污点与容忍",
+      "path": "wiki/ai-infrastructure/095-taint-and-toleration.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Gang Scheduling",
+      "zh": "成组调度",
+      "path": "wiki/ai-infrastructure/096-gang-scheduling.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Preemption",
+      "zh": "抢占",
+      "path": "wiki/ai-infrastructure/097-preemption.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Object Storage",
+      "zh": "对象存储",
+      "path": "wiki/ai-infrastructure/098-object-storage.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Block Storage",
+      "zh": "块存储",
+      "path": "wiki/ai-infrastructure/099-block-storage.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Distributed File System",
+      "zh": "分布式文件系统",
+      "path": "wiki/ai-infrastructure/100-distributed-file-system.md"
     }
   ]
 }

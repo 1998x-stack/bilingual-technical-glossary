@@ -322,6 +322,86 @@
     {
       "path": "wiki/ai-infrastructure/080-container.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/081-container-image.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/082-docker.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/083-kubernetes.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/084-pod.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/085-node.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/086-gpu-operator.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/087-device-plugin.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/088-job.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/089-cronjob.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/090-horizontal-pod-autoscaler.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/091-cluster-autoscaler.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/092-scheduler.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/093-resource-quota.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/094-node-affinity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/095-taint-and-toleration.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/096-gang-scheduling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/097-preemption.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/098-object-storage.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/099-block-storage.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/100-distributed-file-system.md",
+      "status": "pending"
     }
   ]
 }

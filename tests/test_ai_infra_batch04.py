@@ -45,18 +45,18 @@ class AIInfraBatch04Tests(unittest.TestCase):
                 self.assertGreaterEqual(len(set(SOURCE_LINK.findall(text))),2)
                 self.assertNotRegex(text,r"(?i)\bbatch[-\s]*0[1-8]\b|生产批次|PR状态")
 
-    def test_index_and_editorial_ledger_are_consistent_with_80_public_pages(self):
+    def test_index_and_editorial_ledger_are_consistent_with_published_pages(self):
         entries=self.index["articles"]
-        self.assertEqual(len(entries),80)
-        self.assertEqual(self.manifest["readyArticles"],80)
-        self.assertEqual(self.manifest["readyInPr"],80)
+        self.assertEqual(len(entries),self.manifest["readyArticles"])
+        self.assertEqual(self.manifest["readyArticles"],len(entries))
+        self.assertEqual(self.manifest["readyInPr"],len(entries))
         self.assertEqual([x["chapter"] for x in entries[60:80]],[4]*19+[5])
         self.assertEqual([x["path"] for x in entries[60:80]],
             ["wiki/ai-infrastructure/"+r["file"] for r in self.manifest["terms"][60:80]])
-        self.assertEqual(len({x["path"] for x in entries}),80)
+        self.assertEqual(len({x["path"] for x in entries}),len(entries))
         ledger={x["path"]:x for x in self.review["articles"]}
-        self.assertEqual(len(ledger),80)
-        for x in entries[60:]:
+        self.assertEqual(len(ledger),len(entries))
+        for x in entries[60:80]:
             self.assertEqual(ledger[x["path"]]["status"],"pending")
             self.assertNotIn("reviewer",ledger[x["path"]])
             self.assertNotIn("sha256",ledger[x["path"]])
