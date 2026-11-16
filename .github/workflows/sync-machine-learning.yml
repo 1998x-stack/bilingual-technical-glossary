@@ -1,0 +1,53 @@
+name: Index Machine Learning glossary
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/import_machine_learning.py'
+      - 'sources/machine-learning.md'
+      - '.github/workflows/sync-machine-learning.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: machine-learning-index
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Merge Machine Learning corpus into latest main
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            echo "Sync attempt $attempt"
+            git fetch origin main
+            git reset --hard
+            git clean -fd
+            git checkout -B main origin/main
+            if ! python scripts/import_machine_learning.py; then
+              sleep 5
+              continue
+            fi
+            git add -A
+            if git diff --cached --quiet; then
+              echo "Already synchronized"
+              exit 0
+            fi
+            git commit -m "feat: index 447 machine learning terms in catalog and site"
+            if git push origin HEAD:main; then
+              echo "Published Machine Learning searchable index"
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1

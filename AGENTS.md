@@ -30,5 +30,19 @@ The 6 inherited PDFs collectively report 2,298 terms. The structured extraction 
 ## GPU Kernel edition
 The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
 
-## Operating Systems edition
-`glossaries/operating-systems.md` is the authored 396-term source handout; `assets/source/operating-systems.html` is its printable HTML source. Update both when terminology changes. `scripts/build.py` does not overwrite the authored Markdown. Reproduce the PDF with `python3 scripts/build_os_pdf.py` (WeasyPrint and Chinese fonts), then inspect rendered pages, links, and bookmarks. All 396 rows are also indexed in `data/terms.json`.
+## Calculus volume
+
+The Calculus volume contains 361 entries across 16 topics. An optional `notation` field holds mathematical examples, while `abbr` remains a true abbreviation. Preserve the Calculus PDF as an independently authored publication and compare it to the source manuscript when making corrections.
+
+## Kafka editorial provenance
+The 283-row, 16-chapter `glossaries/apache-kafka.md` is an original reference with a preface and concept contrasts. The build intentionally preserves this Markdown and renders its indexed rows to `pdf/apache-kafka.pdf` using `scripts/render_kafka_pdf.py`; mirror to `docs/pdf/`.
+
+## High School Mathematics
+The high-school mathematics source is `data/high-school-mathematics.tsv` (351 entries in 16 topics). Build JSON, Markdown and PDF with `scripts/build.py`, which requires a Chinese TrueType font for PDF generation.
+
+## Linux edition
+The 394-term `glossaries/linux.md` is independently authored, with 16 chapters, 18 terminology comparisons and official reference links. `pdf/linux.pdf` is a searchable print edition. `scripts/build.py` intentionally preserves Linux Markdown rather than replacing the manual with a generated table. Keep JSON/CSV, Markdown and PDF aligned for substantive edits.
+
+## University Mathematics edition
+
+The source of truth is `sources/university-mathematics.html` (627 terms, 17 chapters, 3 appendices). Edit this authored original, run `python3 scripts/build.py`, and verify Markdown/PDF/JSON/CSV and website files. Preserve existing independently authored publications.

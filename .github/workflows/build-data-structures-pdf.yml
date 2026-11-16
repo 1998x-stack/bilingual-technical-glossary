@@ -1,0 +1,53 @@
+name: Build Data Structures PDF
+on:
+  push:
+    branches: [main, feat/data-structures-glossary]
+    paths:
+      - 'sources/data-structures.html'
+      - '.github/workflows/build-data-structures-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CJK fonts and WeasyPrint
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core
+          python -m pip install 'weasyprint==68.0' 'pypdf>=5,<7'
+      - name: Render and inspect bilingual PDF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from weasyprint import HTML
+          from pypdf import PdfReader
+          source=Path("sources/data-structures.html")
+          target=Path("pdf/data-structures.pdf")
+          target.parent.mkdir(exist_ok=True)
+          HTML(filename=str(source), base_url=str(source.parent.resolve())).write_pdf(str(target))
+          pages=len(PdfReader(str(target)).pages)
+          assert 14 <= pages <= 40, f"Unexpected PDF pages: {pages}"
+          content=target.read_bytes()
+          assert content.startswith(b"%PDF-") and len(content)>10000
+          public=Path("docs/pdf/data-structures.pdf")
+          public.parent.mkdir(parents=True, exist_ok=True)
+          public.write_bytes(content)
+          print(f"PDF: {pages} pages, {len(content)} bytes")
+          PY
+      - name: Commit generated PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf/data-structures.pdf docs/pdf/data-structures.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: publish data structures bilingual PDF"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          else
+            echo "PDF unchanged"
+          fi

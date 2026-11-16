@@ -1,5 +1,14 @@
 [
   {
+    "slug": "high-school-mathematics",
+    "en": "High School Mathematics",
+    "zh": "高中数学",
+    "description": "Sets, functions, trigonometry, geometry, calculus, statistics and probability",
+    "icon": "book",
+    "count": 351,
+    "topics": 16
+  },
+  {
     "slug": "ai-infrastructure",
     "en": "AI Infrastructure / AI Infra",
     "zh": "AI 基础设施",
@@ -7,6 +16,15 @@
     "icon": "cpu",
     "count": 142,
     "topics": 8
+  },
+  {
+    "slug": "gpu-kernel",
+    "en": "GPU Kernel Engineering",
+    "zh": "GPU Kernel / GPU 核函数",
+    "description": "CUDA, PTX, Triton, GPU programming and kernel performance",
+    "icon": "cpu",
+    "count": 255,
+    "topics": 13
   },
   {
     "slug": "ai-agents",
@@ -36,6 +54,15 @@
     "topics": 18
   },
   {
+    "slug": "machine-learning",
+    "en": "Machine Learning",
+    "zh": "机器学习",
+    "description": "Foundations, classical algorithms, model evaluation, tuning and MLOps",
+    "icon": "target",
+    "count": 447,
+    "topics": 19
+  },
+  {
     "slug": "reinforcement-learning",
     "en": "Reinforcement Learning",
     "zh": "强化学习",
@@ -45,12 +72,30 @@
     "topics": 14
   },
   {
+    "slug": "calculus",
+    "en": "Calculus",
+    "zh": "微积分",
+    "description": "Limits, derivatives, integrals, series, multivariable and vector calculus",
+    "icon": "integral",
+    "count": 361,
+    "topics": 16
+  },
+  {
     "slug": "linear-algebra",
     "en": "Linear Algebra",
     "zh": "线性代数",
     "description": "Vectors, matrices, spaces, eigensystems and factorization",
     "icon": "grid",
     "count": 289,
+    "topics": 12
+  },
+  {
+    "slug": "compiler-principles",
+    "en": "Compiler Principles",
+    "zh": "编译原理",
+    "description": "Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime",
+    "icon": "code",
+    "count": 268,
     "topics": 12
   },
   {
@@ -63,6 +108,42 @@
     "topics": 16
   },
   {
+    "slug": "university-mathematics",
+    "en": "University Mathematics",
+    "zh": "大学数学",
+    "description": "Calculus, analysis, geometry, algebra, probability and differential equations",
+    "icon": "integral",
+    "count": 627,
+    "topics": 17
+  },
+  {
+    "slug": "apache-kafka",
+    "en": "Apache Kafka",
+    "zh": "Apache Kafka / 事件流平台",
+    "description": "Event streaming, KRaft, partitions, consumers, transactions and Streams",
+    "icon": "network",
+    "count": 283,
+    "topics": 16
+  },
+  {
+    "slug": "data-structures",
+    "en": "Data Structures",
+    "zh": "数据结构",
+    "description": "Arrays, linked lists, hashing, trees, graphs and advanced structures",
+    "icon": "network",
+    "count": 352,
+    "topics": 14
+  },
+  {
+    "slug": "linux",
+    "en": "Linux",
+    "zh": "Linux 操作系统",
+    "description": "Kernel, processes, memory, filesystems, networking, containers and performance",
+    "icon": "terminal",
+    "count": 394,
+    "topics": 16
+  },
+  {
     "slug": "operating-systems",
     "en": "Operating Systems",
     "zh": "操作系统",
@@ -70,5 +151,32 @@
     "icon": "server",
     "count": 396,
     "topics": 18
+  },
+  {
+    "slug": "sql-database",
+    "en": "SQL Database",
+    "zh": "SQL 数据库",
+    "description": "Relational modeling, SQL syntax, indexes, optimizers, transactions and operations",
+    "icon": "database",
+    "count": 394,
+    "topics": 13
+  },
+  {
+    "slug": "python",
+    "en": "Python",
+    "zh": "Python 编程语言",
+    "description": "Language, runtime, data model, typing, packaging and performance",
+    "icon": "code",
+    "count": 429,
+    "topics": 16
+  },
+  {
+    "slug": "junior-high-mathematics",
+    "en": "Junior High School Mathematics",
+    "zh": "初中数学",
+    "description": "Grade 7–9 numbers, algebra, functions, geometry, statistics and probability",
+    "icon": "triangle",
+    "count": 400,
+    "topics": 15
   }
 ]

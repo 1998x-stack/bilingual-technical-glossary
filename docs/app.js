@@ -1,8 +1,8 @@
 /* TERM/ATLAS · a dependency-free, accessible catalog explorer. */
 'use strict';
 const $ = (id) => document.getElementById(id);
-const SUBJECT_COLORS = ['#6d86e8','#7f73d7','#449bd2','#4bb69d','#e5a760','#db7d97','#6195ab','#489d82'];
-const SUBJECT_GLYPHS = ['⌘','↗','λ','∇','∞','⊞','∑','⌘'];
+const SUBJECT_COLORS = ['#377AB2','#6d86e8','#4c9e88','#7f73d7','#449bd2','#4bb69d','#5b88c5','#e5a760','#db7d97','#6195ab','#7c8cd6','#6f9d87','#d59875','#2c8c7b'];
+const SUBJECT_GLYPHS = ['π','⌘','⚙','↗','λ','∇','◉','∞','⊞','∑','◇','✦','◎'];
 const PAGE_SIZE = 28;
 const state={terms:[],catalog:[],category:'all',topic:'all',query:'',sort:'default',page:1};
 function escaped(v){return String(v??'').replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));}
@@ -16,25 +16,25 @@ function getVisible(){const q=state.query.toLocaleLowerCase().trim();const terms
  if(state.category!=='all'&&t.category!==state.category)return false;
  if(state.topic!=='all'&&t.topic!==state.topic)return false;
  if(!q)return true;
- const hay=[t.en,t.zh,t.abbr,t.definition,t.topic,byId(t.category)?.zh].join(' ').toLocaleLowerCase();
+ const hay=[t.en,t.zh,t.abbr,t.notation,t.definition,t.topic,byId(t.category)?.zh].join(' ').toLocaleLowerCase();
  return q.split(/\s+/).every(token=>hay.includes(token));
 });
 if(state.sort==='az')terms.sort((a,b)=>a.en.localeCompare(b.en,'en'));if(state.sort==='za')terms.sort((a,b)=>b.en.localeCompare(a.en,'en'));
 return terms;}
 function renderSubjects(){const el=$('side-subjects');el.innerHTML='';state.catalog.forEach((s,i)=>{
-const a=document.createElement('a');a.className='side-link';a.href='#explorer';a.dataset.category=s.slug;a.innerHTML=`<span class="nav-symbol" style="color:${SUBJECT_COLORS[i]}">${SUBJECT_GLYPHS[i]}</span><span>${escaped(s.zh)}</span><span class="subject-count">${s.count}</span>`;
+const a=document.createElement('a');a.className='side-link';a.href='#explorer';a.dataset.category=s.slug;a.innerHTML=`<span class="nav-symbol" style="color:${SUBJECT_COLORS[i%SUBJECT_COLORS.length]}">${SUBJECT_GLYPHS[i%SUBJECT_GLYPHS.length]}</span><span>${escaped(s.zh)}</span><span class="subject-count">${s.count}</span>`;
 a.addEventListener('click',()=>chooseCategory(s.slug));el.append(a);});
 const select=$('category-filter');state.catalog.forEach(s=>{const opt=document.createElement('option');opt.value=s.slug;opt.textContent=`${s.zh} · ${s.en}`;select.add(opt);});}
 function renderCategories(){const grid=$('category-grid');grid.innerHTML='';state.catalog.forEach((s,i)=>{
- const color=SUBJECT_COLORS[i];const el=document.createElement('article');el.className='category-card'+(state.category===s.slug?' selected':'');el.style.cursor='pointer';el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-label',`查看${s.zh}，${s.count}条术语`);
- el.innerHTML=`<div class="cat-indicator" style="background:${color}"></div><div class="cat-icon" style="background:${color}19;color:${color}">${SUBJECT_GLYPHS[i]}</div><div class="cat-title">${escaped(s.zh)}</div><div class="cat-subtitle">${escaped(s.en)}</div><div class="cat-footer"><span>${locale(s.count)} TERMS · ${s.topics} TOPICS</span><span class="cat-arrow">↗</span></div><div class="cat-downloads"><a href="./pdf/${s.slug}.pdf" download>↓ PDF</a><a href="./glossaries/${s.slug}.md" download>↓ Markdown</a></div>`;
+ const color=SUBJECT_COLORS[i%SUBJECT_COLORS.length];const el=document.createElement('article');el.className='category-card'+(state.category===s.slug?' selected':'');el.style.cursor='pointer';el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-label',`查看${s.zh}，${s.count}条术语`);
+ el.innerHTML=`<div class="cat-indicator" style="background:${color}"></div><div class="cat-icon" style="background:${color}19;color:${color}">${SUBJECT_GLYPHS[i%SUBJECT_GLYPHS.length]}</div><div class="cat-title">${escaped(s.zh)}</div><div class="cat-subtitle">${escaped(s.en)}</div><div class="cat-footer"><span>${locale(s.count)} TERMS · ${s.topics} TOPICS</span><span class="cat-arrow">↗</span></div><div class="cat-downloads"><a href="./pdf/${s.slug}.pdf" download>↓ PDF</a><a href="./glossaries/${s.slug}.md" download>↓ Markdown</a></div>`;
  el.querySelectorAll('.cat-downloads a').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
  el.addEventListener('click',()=>{chooseCategory(s.slug);document.getElementById('explorer').scrollIntoView({behavior:'smooth'});});
  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}});
  grid.append(el);
  });}
 function renderCoverage(){const el=$('coverage-chart');el.innerHTML='';const max=Math.max(1,...state.catalog.map(x=>x.count));state.catalog.forEach((s,i)=>{
-const div=document.createElement('div');div.className='bar-row';div.innerHTML=`<span class="bar-label" title="${escaped(s.en)}">${escaped(s.zh)}</span><div class="bar-track"><div class="bar-fill" style="background:${SUBJECT_COLORS[i]};width:${Math.max(3,100*s.count/max)}%"></div></div><span class="bar-value">${locale(s.count)}</span>`;el.append(div);});}
+const div=document.createElement('div');div.className='bar-row';div.innerHTML=`<span class="bar-label" title="${escaped(s.en)}">${escaped(s.zh)}</span><div class="bar-track"><div class="bar-fill" style="background:${SUBJECT_COLORS[i%SUBJECT_COLORS.length]};width:${Math.max(3,100*s.count/max)}%"></div></div><span class="bar-value">${locale(s.count)}</span>`;el.append(div);});}
 function renderTopics(){const select=$('topic-filter');const topics=[...new Set(state.terms.filter(t=>state.category==='all'||t.category===state.category).map(t=>t.topic))];topics.sort((a,b)=>a.localeCompare(b,'zh-Hans-CN'));
 const current=state.topic;select.replaceChildren(new Option('全部专题 · All topics','all'));
 topics.forEach(topic=>select.add(new Option(topic,topic)));if(topics.includes(current))select.value=current;else{state.topic='all';select.value='all';}}
@@ -48,7 +48,7 @@ $('empty-state').hidden=count!==0;$('result-count').textContent=`${locale(count)
 $('page-summary').textContent=count?`显示 ${locale((state.page-1)*PAGE_SIZE+1)}–${locale(Math.min(state.page*PAGE_SIZE,count))} / ${locale(count)} 条`:'没有匹配结果';
 $('page-number').textContent=`${state.page} / ${lastPage}`;$('prev-page').disabled=state.page<=1;$('next-page').disabled=state.page>=lastPage;$('clear-search').hidden=!state.query;}
 async function copyText(text){try{await navigator.clipboard.writeText(text);notify('已复制到剪贴板');}catch(err){const a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.opacity='0';document.body.append(a);a.select();const ok=document.execCommand('copy');a.remove();notify(ok?'已复制到剪贴板':'复制失败，请手动选择文字');}}
-function exportCSV(){const filtered=getVisible();const cols=['category','chapter','topic','en','zh','abbr','definition'];const quote=s=>'"'+String(s??'').replace(/"/g,'""')+'"';const rows=[cols.join(','),...filtered.map(t=>cols.map(k=>quote(t[k])).join(','))];download('glossary-'+(state.category==='all'?'all':state.category)+'.csv','\ufeff'+rows.join('\r\n'),'text/csv;charset=utf-8');notify(`已准备 ${locale(filtered.length)} 条 CSV 记录`);}
+function exportCSV(){const filtered=getVisible();const cols=['category','chapter','topic','en','zh','abbr','definition','notation'];const quote=s=>'"'+String(s??'').replace(/"/g,'""')+'"';const rows=[cols.join(','),...filtered.map(t=>cols.map(k=>quote(t[k])).join(','))];download('glossary-'+(state.category==='all'?'all':state.category)+'.csv','\ufeff'+rows.join('\r\n'),'text/csv;charset=utf-8');notify(`已准备 ${locale(filtered.length)} 条 CSV 记录`);}
 function bind(){const input=$('search-input');let debounce=null;input.addEventListener('input',e=>{clearTimeout(debounce);debounce=setTimeout(()=>{state.query=e.target.value.trim();state.page=1;renderResults();updateURL();},120);});
 $('category-filter').addEventListener('change',e=>chooseCategory(e.target.value));$('topic-filter').addEventListener('change',e=>{state.topic=e.target.value;state.page=1;renderResults();updateURL();});$('sort-select').addEventListener('change',e=>{state.sort=e.target.value;state.page=1;renderResults();});
 $('prev-page').addEventListener('click',()=>{state.page--;renderResults();$('explorer').scrollIntoView({behavior:'smooth'});});$('next-page').addEventListener('click',()=>{state.page++;renderResults();$('explorer').scrollIntoView({behavior:'smooth'});});

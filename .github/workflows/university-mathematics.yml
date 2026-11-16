@@ -1,0 +1,59 @@
+name: Publish University Mathematics glossary and index
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sources/university-mathematics.html"
+      - "scripts/build.py"
+      - "scripts/import_university_mathematics.py"
+      - "requirements.txt"
+      - ".github/workflows/university-mathematics.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-university-mathematics
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install fonts and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk fonts-arphic-gbsn00lp libpango-1.0-0 libcairo2
+          python -m pip install -r requirements.txt
+      - name: Rebuild and publish against the latest main
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout -B publication-main origin/main
+            python scripts/build.py
+            python scripts/verify.py
+            python -m unittest discover -s tests -v
+            git add data/terms.json data/terms.csv docs/data/ docs/glossaries/ docs/pdf/ glossaries/ pdf/
+            if git diff --cached --quiet; then
+              echo "Everything is up-to-date"
+              exit 0
+            fi
+            git commit -m "build(math): sync University Mathematics PDF, Markdown and searchable index"
+            if git push origin HEAD:main; then
+              echo "Published successfully"
+              exit 0
+            fi
+            echo "Main advanced concurrently; rebasing output on the latest data"
+          done
+          echo "Publication not complete after retries" >&2
+          exit 1

@@ -10,9 +10,10 @@ REQUIRED=['category','chapter','topic','en','zh','abbr','definition']
 fail=[]
 def check(test,message):
  if not test:fail.append(message)
-check(len(CATALOG)==8,'Expected eight subject categories')
-check(len(TERMS)>=2600,'Dataset unexpectedly truncated')
+check(len(CATALOG)==len({t['category'] for t in TERMS}),'Catalog does not cover all indexed domains')
+check(len(TERMS)>=7349,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
+check(slugs=={t['category'] for t in TERMS},'Catalog category slugs differ from terms')
 for i,r in enumerate(TERMS):
  check(all(k in r for k in REQUIRED),f'Missing field row {i}')
  if any(k not in r for k in REQUIRED):continue
@@ -26,6 +27,11 @@ for i,r in enumerate(TERMS):
  check(topic_key not in topics or topics[topic_key]==r['topic'],f'Inconsistent topic for {topic_key}')
  topics[topic_key]=r['topic']
 counts=Counter(r['category'] for r in TERMS)
+for slug,expected in {'operating-systems':396,'sql-database':394,'python':429,'junior-high-mathematics':400}.items():
+ check(counts[slug]==expected,f'Unexpected {slug} term count')
+check(counts['university-mathematics']==627,'University Mathematics must have 627 terms')
+check((ROOT/'sources/university-mathematics.html').is_file(),'University Mathematics source HTML missing')
+check(counts['machine-learning']==447,'ML must have 447 terms')
 for cat in CATALOG:
  slug=cat['slug'];check(cat['count']==counts[slug],f'Count mismatch: {slug}')
  check(cat['topics']==len(set(t['topic'] for t in TERMS if t['category']==slug)),f'Topic count mismatch: {slug}')
@@ -38,6 +44,7 @@ for cat in CATALOG:
   with pdf.open('rb') as f:check(f.read(5)==b'%PDF-',f'Invalid PDF header {slug}')
 site=json.loads((ROOT/'docs/data/terms.json').read_text(encoding='utf8'))
 check(site==TERMS,'Pages search index differs from source data')
+check(sum(c['count'] for c in CATALOG)==len(TERMS),'Catalog total differs from indexed terms')
 with (ROOT/'data/terms.csv').open(encoding='utf8',newline='') as f:
  rows=list(csv.DictReader(f));check(len(rows)==len(TERMS),'CSV count differs from JSON')
 for path in ['docs/index.html','docs/styles.css','docs/app.js','docs/favicon.svg','site/index.html','site/styles.css','site/app.js','README.md','README.zh-CN.md','AGENTS.md','.github/workflows/pages.yml']:

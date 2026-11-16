@@ -24,3 +24,22 @@ If GitHub Actions is undesired, you can choose **Deploy from a branch → main �
 - **Opened index.html from disk:** Run `python3 -m http.server 8000 --directory docs` and visit `http://localhost:8000/`; JavaScript `fetch()` does not work reliably over `file://`.
 
 GitHub documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+## Kafka 专题上线检查
+
+Kafka 中英文术语表已并入结构化索引（283 条、16 个专题），可在网站中搜索 `Kafka`、`KRaft`、`Share Group` 等术语，也可以直接使用：
+
+- [Kafka 领域检索](https://1998x-stack.github.io/bilingual-technical-glossary/?category=apache-kafka)
+- [Kafka Markdown](./glossaries/apache-kafka.md)
+- [Kafka PDF](./pdf/apache-kafka.pdf)
+
+本目录由 GitHub Pages 部署工作流发布；新增或修改 `docs/**` 资源后会触发重新部署。
+
+## 数据结构专题上线检查
+
+数据结构中英文术语表提供 **352 条术语、14 个专题**及 **12 组易混淆概念**，已同步到网站的分类导航与中英双语检索索引。
+
+- [数据结构领域检索](https://1998x-stack.github.io/bilingual-technical-glossary/?category=data-structures)
+- [数据结构 Markdown](./glossaries/data-structures.md)
+- [数据结构 PDF](./pdf/data-structures.pdf)
+
+维护原始排版时，请同步更新 `glossaries/data-structures.md`、`sources/data-structures.html`，并运行索引同步工作流，避免检索内容与 PDF 手册不一致。

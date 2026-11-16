@@ -4,7 +4,7 @@
 
 ## 提交流程
 
-1. 在 `data/terms.json` 中定位词条（或新增符合现有字段约定的条目）。
+1. 在 `data/terms.json` 中定位词条（或新增符合现有字段约定的条目）；高中数学优先修改 `data/high-school-mathematics.tsv`。
 2. 推荐写法：英文规范词形、中文常用译名、缩写、一句话说明、适用专题。
 3. 在 PR 描述中给出支持该译法的资料（学术论文、教材、项目官方文档、规范），并解释可疑歧义。
 4. 运行 `python3 scripts/build.py`，同步提交生成的 Markdown、CSV 和 `docs/data`。
@@ -44,6 +44,14 @@
 - [ ] 字符转义及 PDF 中文显示正常
 - [ ] 测试通过、PR 写明来源及变化范围
 
-## 操作系统专题 / Operating Systems
+## 数学记号字段
 
-`glossaries/operating-systems.md` 为独立撰写的正文；`assets/source/operating-systems.html` 为 PDF 排版源。修改术语需同步核对这两处与 `data/terms.json`，使用 `python3 scripts/build_os_pdf.py` 重建 `pdf/operating-systems.pdf` 与 `docs/pdf/operating-systems.pdf`，并运行校验。不要在常规构建中覆盖原始 Markdown。
+`notation` 是可选字段，仅记录典型符号或示例；`abbr` 仅用于标准缩写。校订微积分词条时需同时核对 Markdown、结构化索引和原始 PDF。
+
+## Linux 术语手册维护
+
+`glossaries/linux.md` 为原创版（394 条、16 个章节、18 组术语辨析），构建脚本不会覆盖它。修改 Linux 术语时应同步检查 `data/terms.json`、`pdf/linux.pdf` 与 `docs/` 发布副本；引用 Linux 内核官方文档、man-pages 等可靠来源。
+
+## 大学数学卷编辑流程
+
+请编辑 `sources/university-mathematics.html`，再运行 `python3 scripts/build.py` 同步 Markdown、PDF、JSON/CSV、GitHub Pages 下载副本。随后运行 `python3 scripts/verify.py` 与 `python3 -m unittest discover -s tests -v`；PDF 修改需要人工检查中文字体和分页。

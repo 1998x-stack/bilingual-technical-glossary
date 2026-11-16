@@ -1,0 +1,3548 @@
+[
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Database",
+    "zh": "数据库",
+    "abbr": "",
+    "definition": "按一定结构组织和持久化管理的数据集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Database Management System (DBMS)",
+    "zh": "数据库管理系统",
+    "abbr": "DBMS",
+    "definition": "负责存储、查询、事务、权限和恢复的软件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Relational Database Management System (RDBMS)",
+    "zh": "关系数据库管理系统",
+    "abbr": "RDBMS",
+    "definition": "以关系模型为基础的数据库管理系统。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Structured Query Language (SQL)",
+    "zh": "结构化查询语言",
+    "abbr": "SQL",
+    "definition": "关系数据库中定义、查询和修改数据的语言。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Relational Model",
+    "zh": "关系模型",
+    "abbr": "",
+    "definition": "以关系及其运算描述数据的理论模型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Relation",
+    "zh": "关系",
+    "abbr": "",
+    "definition": "关系模型中的元组集合；实现中通常对应表。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Table",
+    "zh": "表",
+    "abbr": "",
+    "definition": "由行与列组成的数据对象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Row / Record",
+    "zh": "行／记录",
+    "abbr": "",
+    "definition": "表中表示一个实体或事实的一条数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Tuple",
+    "zh": "元组",
+    "abbr": "",
+    "definition": "关系模型中一组属性值组成的元素。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Column / Field",
+    "zh": "列／字段",
+    "abbr": "",
+    "definition": "表中的命名属性；字段有时也指单个值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Attribute",
+    "zh": "属性",
+    "abbr": "",
+    "definition": "关系模型中的列及其含义。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Domain",
+    "zh": "域",
+    "abbr": "",
+    "definition": "属性允许取值的集合或范围。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Schema",
+    "zh": "模式",
+    "abbr": "",
+    "definition": "数据库对象及其结构的命名空间或定义。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Catalog",
+    "zh": "目录／系统目录",
+    "abbr": "",
+    "definition": "保存数据库对象、权限、统计等元数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Metadata",
+    "zh": "元数据",
+    "abbr": "",
+    "definition": "描述表、列、约束及其属性的数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Data Dictionary",
+    "zh": "数据字典",
+    "abbr": "",
+    "definition": "用于管理和查询数据库元数据的集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Instance",
+    "zh": "实例",
+    "abbr": "",
+    "definition": "正在运行的数据库服务及其内存、进程等环境。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Database Server",
+    "zh": "数据库服务器",
+    "abbr": "",
+    "definition": "提供数据库请求处理的服务端程序或主机。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Client",
+    "zh": "客户端",
+    "abbr": "",
+    "definition": "向数据库服务发起请求的程序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Connection",
+    "zh": "连接",
+    "abbr": "",
+    "definition": "客户端和数据库会话的通信通道。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Session",
+    "zh": "会话",
+    "abbr": "",
+    "definition": "连接关联的服务器端交互状态。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Query",
+    "zh": "查询",
+    "abbr": "",
+    "definition": "用于获取或处理数据的请求，常指 SELECT。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Result Set",
+    "zh": "结果集",
+    "abbr": "",
+    "definition": "查询返回的行与列的集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "View",
+    "zh": "视图",
+    "abbr": "",
+    "definition": "由查询定义的逻辑表，通常不单独存储行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Materialized View",
+    "zh": "物化视图",
+    "abbr": "",
+    "definition": "持久化存储查询结果、需要按机制刷新的对象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Temporary Table",
+    "zh": "临时表",
+    "abbr": "",
+    "definition": "在限定作用域或生命周期内存在的表。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "System Table",
+    "zh": "系统表",
+    "abbr": "",
+    "definition": "数据库内部维护的系统信息表。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 1,
+    "topic": "关系数据库与基本概念",
+    "en": "Information Schema",
+    "zh": "信息模式",
+    "abbr": "",
+    "definition": "标准化暴露数据库元数据的一组视图。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Data Definition Language (DDL)",
+    "zh": "数据定义语言",
+    "abbr": "DDL",
+    "definition": "用于创建、改变与删除数据库对象的语句类别。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Data Manipulation Language (DML)",
+    "zh": "数据操作语言",
+    "abbr": "DML",
+    "definition": "用于读取或修改表内数据的语句类别；口径可能不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Data Query Language (DQL)",
+    "zh": "数据查询语言",
+    "abbr": "DQL",
+    "definition": "教学中常用的 SELECT 分类，非严格独立标准子语言。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Data Control Language (DCL)",
+    "zh": "数据控制语言",
+    "abbr": "DCL",
+    "definition": "用于授予或收回权限的命令类别。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Transaction Control Language (TCL)",
+    "zh": "事务控制语言",
+    "abbr": "TCL",
+    "definition": "用于管理事务边界和保存点的语句类别。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "CREATE",
+    "zh": "创建",
+    "abbr": "",
+    "definition": "创建表、视图、索引或其他数据库对象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "ALTER",
+    "zh": "修改定义",
+    "abbr": "",
+    "definition": "修改现有对象的结构或属性。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "DROP",
+    "zh": "删除对象",
+    "abbr": "",
+    "definition": "删除数据库对象及其定义。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "TRUNCATE",
+    "zh": "截断表",
+    "abbr": "",
+    "definition": "快速清空表记录；事务与触发器行为依产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "SELECT",
+    "zh": "查询",
+    "abbr": "",
+    "definition": "从一个或多个数据源获取行与表达式结果。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "INSERT",
+    "zh": "插入",
+    "abbr": "",
+    "definition": "向表写入新行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "UPDATE",
+    "zh": "更新",
+    "abbr": "",
+    "definition": "修改满足条件的已有行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "DELETE",
+    "zh": "删除行",
+    "abbr": "",
+    "definition": "移除满足条件的行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "MERGE",
+    "zh": "合并",
+    "abbr": "",
+    "definition": "基于匹配条件执行插入、更新或删除等动作。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "UPSERT",
+    "zh": "存在则更新否则插入",
+    "abbr": "",
+    "definition": "插入与冲突更新组合的常用统称，语法因产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "RETURNING",
+    "zh": "返回变更行",
+    "abbr": "",
+    "definition": "部分数据库在数据修改后返回受影响的行或字段。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "GRANT",
+    "zh": "授权",
+    "abbr": "",
+    "definition": "将对象权限或角色授予主体。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "REVOKE",
+    "zh": "撤销授权",
+    "abbr": "",
+    "definition": "撤回先前赋予的权限。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "BEGIN / START TRANSACTION",
+    "zh": "开始事务",
+    "abbr": "",
+    "definition": "显式启动事务边界。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "COMMIT",
+    "zh": "提交",
+    "abbr": "",
+    "definition": "结束事务并使写入按持久性规则生效。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "ROLLBACK",
+    "zh": "回滚",
+    "abbr": "",
+    "definition": "撤销尚未提交的事务更改。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "SAVEPOINT",
+    "zh": "保存点",
+    "abbr": "",
+    "definition": "在事务内部建立可回退的位置。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "EXPLAIN",
+    "zh": "解释执行计划",
+    "abbr": "",
+    "definition": "显示优化器规划的执行步骤。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "ANALYZE / UPDATE STATISTICS",
+    "zh": "更新统计信息",
+    "abbr": "",
+    "definition": "收集优化器用于估算成本和基数的统计数据；语法不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Prepared Statement",
+    "zh": "预处理语句",
+    "abbr": "",
+    "definition": "预先解析／规划并使用参数执行的 SQL。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Bind Parameter",
+    "zh": "绑定参数",
+    "abbr": "",
+    "definition": "由应用通过驱动传入 SQL 的参数值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "Stored Procedure",
+    "zh": "存储过程",
+    "abbr": "",
+    "definition": "保存在数据库端供调用的程序化逻辑。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 2,
+    "topic": "SQL 语句与语言分类",
+    "en": "User-Defined Function (UDF)",
+    "zh": "用户自定义函数",
+    "abbr": "UDF",
+    "definition": "扩展数据库表达式或过程能力的函数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Data Type",
+    "zh": "数据类型",
+    "abbr": "",
+    "definition": "列或表达式的取值类型及可用运算。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "INTEGER / INT",
+    "zh": "整数类型",
+    "abbr": "",
+    "definition": "存储有符号整数，范围因具体类型和数据库而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "BIGINT",
+    "zh": "大整数",
+    "abbr": "",
+    "definition": "通常为 64 位有符号整数类型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "SMALLINT",
+    "zh": "小整数",
+    "abbr": "",
+    "definition": "通常存储较小范围的有符号整数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "DECIMAL / NUMERIC",
+    "zh": "定点数／精确数值",
+    "abbr": "",
+    "definition": "以精度和标度定义十进制定点数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Precision",
+    "zh": "精度",
+    "abbr": "",
+    "definition": "数值允许的有效数字总位数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Scale",
+    "zh": "标度",
+    "abbr": "",
+    "definition": "十进制小数点右侧的位数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "FLOAT / REAL / DOUBLE PRECISION",
+    "zh": "浮点数",
+    "abbr": "",
+    "definition": "近似数值类型，存在二进制舍入误差。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "CHAR",
+    "zh": "定长字符",
+    "abbr": "",
+    "definition": "长度固定或按定长语义处理的字符类型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "VARCHAR",
+    "zh": "变长字符",
+    "abbr": "",
+    "definition": "长度可变的字符字符串类型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "TEXT / CLOB",
+    "zh": "大文本",
+    "abbr": "",
+    "definition": "用于较长文本，具体命名和限制因产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "BINARY / VARBINARY",
+    "zh": "二进制类型",
+    "abbr": "",
+    "definition": "用于存储字节序列。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "BLOB",
+    "zh": "二进制大对象",
+    "abbr": "",
+    "definition": "用于保存较大的二进制内容。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "BOOLEAN",
+    "zh": "布尔类型",
+    "abbr": "",
+    "definition": "表示真／假；具体存储和支持程度不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "DATE",
+    "zh": "日期",
+    "abbr": "",
+    "definition": "仅表示日历日期的类型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "TIME",
+    "zh": "时间",
+    "abbr": "",
+    "definition": "表示一天中的时间值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "TIMESTAMP / DATETIME",
+    "zh": "时间戳／日期时间",
+    "abbr": "",
+    "definition": "表示日期和时间，时区语义因类型与产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "TIMESTAMP WITH TIME ZONE",
+    "zh": "带时区时间戳",
+    "abbr": "",
+    "definition": "表示时间点的类型，具体输出方式因产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "INTERVAL",
+    "zh": "时间间隔",
+    "abbr": "",
+    "definition": "表示时长或年月日时分秒区间。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "UUID",
+    "zh": "通用唯一标识符",
+    "abbr": "",
+    "definition": "常见的 128 位标识符；是否原生类型因产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "JSON JSON",
+    "zh": "数据类型",
+    "abbr": "",
+    "definition": "保存 JSON 文档，校验和存储方式不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "JSONB",
+    "zh": "二进制",
+    "abbr": "",
+    "definition": "JSON PostgreSQL 中用于高效处理的二进制 JSON 表示。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "ARRAY",
+    "zh": "数组类型",
+    "abbr": "",
+    "definition": "允许在单个值中保存同类型元素；并非普遍支持。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "ENUM",
+    "zh": "枚举类型",
+    "abbr": "",
+    "definition": "值限定在预先定义的符号集合内。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "NULL",
+    "zh": "空值／未知值标记",
+    "abbr": "",
+    "definition": "表示缺失或未知，不等于 0 或空字符串。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Three-Valued Logic (3VL)",
+    "zh": "三值逻辑",
+    "abbr": "",
+    "definition": "SQL 谓词结果可以为 TRUE、FALSE、UNKNOWN。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "UNKNOWN",
+    "zh": "未知逻辑值",
+    "abbr": "",
+    "definition": "与 NULL 参与比较等运算时常产生的结果。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "IS NULL / IS NOT NULL",
+    "zh": "空值判定",
+    "abbr": "",
+    "definition": "用于检查值是否为 NULL，不能用 = NULL 替代。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "COALESCE",
+    "zh": "取首个非空值",
+    "abbr": "",
+    "definition": "返回参数中第一个非 NULL 的值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "NULLIF",
+    "zh": "相等则返回空值",
+    "abbr": "",
+    "definition": "两个参数相等时返回 NULL，否则返回首参。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "CAST",
+    "zh": "显式类型转换",
+    "abbr": "",
+    "definition": "按指定数据类型转换表达式。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Implicit Cast",
+    "zh": "隐式转换",
+    "abbr": "",
+    "definition": "数据库自动在兼容的数据类型之间转换。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Collation",
+    "zh": "排序规则",
+    "abbr": "",
+    "definition": "定义字符比较、排序与大小写等语义。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Character Set",
+    "zh": "字符集",
+    "abbr": "",
+    "definition": "字符与编码之间的映射集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 3,
+    "topic": "数据类型、NULL 与表达式",
+    "en": "Unicode",
+    "zh": "统一码",
+    "abbr": "",
+    "definition": "跨语言字符编码标准。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Projection",
+    "zh": "投影",
+    "abbr": "",
+    "definition": "选择返回哪些列或表达式。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Selection",
+    "zh": "选择／筛选",
+    "abbr": "",
+    "definition": "按条件保留符合要求的行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "FROM",
+    "zh": "数据来源子句",
+    "abbr": "",
+    "definition": "声明查询所读取的表、视图或派生数据源。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "WHERE",
+    "zh": "行过滤子句",
+    "abbr": "",
+    "definition": "对分组之前的数据行执行条件过滤。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "ORDER BY",
+    "zh": "排序子句",
+    "abbr": "",
+    "definition": "指定输出行的排序键与方向。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "GROUP BY",
+    "zh": "分组子句",
+    "abbr": "",
+    "definition": "按指定字段或表达式形成分组。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "HAVING",
+    "zh": "分组过滤子句",
+    "abbr": "",
+    "definition": "对聚合之后的分组应用筛选条件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "DISTINCT",
+    "zh": "去重关键字",
+    "abbr": "",
+    "definition": "去除投影结果中的重复行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "ALL",
+    "zh": "保留全部",
+    "abbr": "",
+    "definition": "在特定语法中表示不去重。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "LIMIT",
+    "zh": "返回条数上限",
+    "abbr": "",
+    "definition": "限制输出行数；并非所有数据库使用同一语法。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "OFFSET",
+    "zh": "跳过行数",
+    "abbr": "",
+    "definition": "跳过指定数量的结果行；分页需关注稳定排序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "FETCH FIRST / NEXT",
+    "zh": "提取前若干行",
+    "abbr": "",
+    "definition": "标准风格的结果行数限制语法。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "TOP",
+    "zh": "取前若干行",
+    "abbr": "",
+    "definition": "SQL Server 常用行数限制关键字。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Alias (AS)",
+    "zh": "别名",
+    "abbr": "AS",
+    "definition": "为表或输出表达式指定临时名称。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Expression",
+    "zh": "表达式",
+    "abbr": "",
+    "definition": "由字面量、列、运算符与函数组合成的值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Predicate",
+    "zh": "谓词",
+    "abbr": "",
+    "definition": "计算 TRUE、FALSE 或 UNKNOWN 的判断式。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Comparison Operator",
+    "zh": "比较运算符",
+    "abbr": "",
+    "definition": "如 =、<>、<、<=、>、>=。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Logical Operator",
+    "zh": "逻辑运算符",
+    "abbr": "",
+    "definition": "AND、OR、NOT 等逻辑组合运算符。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "BETWEEN",
+    "zh": "区间判断",
+    "abbr": "",
+    "definition": "通常包含上下边界，等价于闭区间比较。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "IN",
+    "zh": "集合成员判断",
+    "abbr": "",
+    "definition": "检查是否匹配给定列表或子查询结果。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "LIKE",
+    "zh": "模糊匹配",
+    "abbr": "",
+    "definition": "通过 % 和 _ 通配符匹配字符模式。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "ESCAPE",
+    "zh": "转义声明",
+    "abbr": "",
+    "definition": "指定 LIKE 模式中特殊字符的转义方式。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "REGEXP / SIMILAR TO",
+    "zh": "正则／模式匹配",
+    "abbr": "",
+    "definition": "可选的高级模式匹配方式，语法不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "CASE",
+    "zh": "条件表达式",
+    "abbr": "",
+    "definition": "按条件分支计算并返回一个值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "EXISTS",
+    "zh": "存在性判断",
+    "abbr": "",
+    "definition": "检查子查询是否至少返回一行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "ANY / SOME",
+    "zh": "任一满足",
+    "abbr": "",
+    "definition": "将比较条件应用于子查询或数组中的任意值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "ALL (quantifier)",
+    "zh": "全部满足",
+    "abbr": "",
+    "definition": "要求比较条件对集合中的所有值成立。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Scalar Function",
+    "zh": "标量函数",
+    "abbr": "",
+    "definition": "对输入返回单个值的函数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "String Function",
+    "zh": "字符串函数",
+    "abbr": "",
+    "definition": "如 LOWER、SUBSTRING、TRIM 等。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Date/Time Function",
+    "zh": "日期时间函数",
+    "abbr": "",
+    "definition": "用于日期计算、提取和格式化。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Aggregate Function",
+    "zh": "聚合函数",
+    "abbr": "",
+    "definition": "对一组输入行计算汇总结果。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Deterministic Function",
+    "zh": "确定性函数",
+    "abbr": "",
+    "definition": "对相同输入总返回相同结果的函数性质。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 4,
+    "topic": "查询子句与条件过滤",
+    "en": "Short-Circuit Evaluation",
+    "zh": "短路求值",
+    "abbr": "",
+    "definition": "部分表达式可能跳过求值；不要依赖未保证的执行顺序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "JOIN",
+    "zh": "连接",
+    "abbr": "",
+    "definition": "按照指定关系组合多个数据源的行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "INNER JOIN",
+    "zh": "内连接",
+    "abbr": "",
+    "definition": "只返回符合连接条件的匹配行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "LEFT OUTER JOIN",
+    "zh": "左外连接",
+    "abbr": "",
+    "definition": "保留左表全部行，未匹配右侧以 NULL 补充。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "RIGHT OUTER JOIN",
+    "zh": "右外连接",
+    "abbr": "",
+    "definition": "保留右表全部行，未匹配左侧以 NULL 补充。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "FULL OUTER JOIN",
+    "zh": "全外连接",
+    "abbr": "",
+    "definition": "保留左右两侧行，未匹配端以 NULL 补充。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "CROSS JOIN",
+    "zh": "交叉连接",
+    "abbr": "",
+    "definition": "生成两个数据源的笛卡儿积。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "SELF JOIN",
+    "zh": "自连接",
+    "abbr": "",
+    "definition": "同一张表通过不同别名与自身连接。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "NATURAL JOIN",
+    "zh": "自然连接",
+    "abbr": "",
+    "definition": "自动用同名列等值连接，模式变化可能改变语义。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Equi-Join",
+    "zh": "等值连接",
+    "abbr": "",
+    "definition": "连接谓词主要使用相等比较。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Non-Equi Join",
+    "zh": "非等值连接",
+    "abbr": "",
+    "definition": "使用范围、不等式等条件关联数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Join Condition (ON)",
+    "zh": "连接条件",
+    "abbr": "ON",
+    "definition": "定义哪些来自不同输入的行能够匹配。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "USING Clause",
+    "zh": "同名列连接子句",
+    "abbr": "",
+    "definition": "按指定同名列连接，并按规则合并输出列。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Cartesian Product",
+    "zh": "笛卡儿积",
+    "abbr": "",
+    "definition": "两组行所有可能的配对集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Subquery",
+    "zh": "子查询",
+    "abbr": "",
+    "definition": "嵌套在另一条 SQL 语句内部的查询。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Scalar Subquery",
+    "zh": "标量子查询",
+    "abbr": "",
+    "definition": "期望返回单行单列的子查询。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Correlated Subquery",
+    "zh": "相关子查询",
+    "abbr": "",
+    "definition": "引用外层查询列的子查询。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Derived Table",
+    "zh": "派生表",
+    "abbr": "",
+    "definition": "FROM 子句中由子查询产生的临时结果。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Common Table Expression (CTE)",
+    "zh": "公用表表达式",
+    "abbr": "CTE",
+    "definition": "WITH 定义的可在单条语句中引用的命名结果。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "WITH RECURSIVE",
+    "zh": "递归公用表表达式",
+    "abbr": "",
+    "definition": "允许递归引用以处理层级或图结构。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "LATERAL",
+    "zh": "横向关联子查询",
+    "abbr": "",
+    "definition": "允许 FROM 子项引用其左侧数据源的列。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "UNION",
+    "zh": "并集去重",
+    "abbr": "",
+    "definition": "组合两个结果并去除重复行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "UNION ALL",
+    "zh": "并集保留重复",
+    "abbr": "",
+    "definition": "组合结果并保留重复行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "INTERSECT",
+    "zh": "交集",
+    "abbr": "",
+    "definition": "返回两个结果中共同的行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "EXCEPT / MINUS",
+    "zh": "差集",
+    "abbr": "",
+    "definition": "返回左侧结果中不属于右侧的行，命名因产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Set Operation",
+    "zh": "集合运算",
+    "abbr": "",
+    "definition": "UNION、INTERSECT、EXCEPT 等关系组合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Semi Join",
+    "zh": "半连接",
+    "abbr": "",
+    "definition": "只保留左侧存在匹配的行，常用于 EXISTS 优化。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Anti Join",
+    "zh": "反连接",
+    "abbr": "",
+    "definition": "只保留左侧不存在匹配的行，常用于 NOT EXISTS。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Join Cardinality",
+    "zh": "连接结果基数",
+    "abbr": "",
+    "definition": "连接运算输出的行数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 5,
+    "topic": "表连接、子查询与集合运算",
+    "en": "Duplicate Row",
+    "zh": "重复行",
+    "abbr": "",
+    "definition": "所考虑列组合完全一致的多条结果记录。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "COUNT(*)",
+    "zh": "统计行数",
+    "abbr": "",
+    "definition": "统计输入行数，包含含 NULL 字段的行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "COUNT(column)",
+    "zh": "统计非空值数",
+    "abbr": "",
+    "definition": "统计指定表达式不为 NULL 的行数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "COUNT(DISTINCT)",
+    "zh": "去重计数",
+    "abbr": "DISTINCT",
+    "definition": "统计不同的非 NULL 值数量。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "SUM",
+    "zh": "求和",
+    "abbr": "",
+    "definition": "计算数值表达式的合计。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "AVG",
+    "zh": "平均值",
+    "abbr": "",
+    "definition": "计算非 NULL 数值的算术平均。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "MIN / MAX",
+    "zh": "最小值／最大值",
+    "abbr": "",
+    "definition": "返回一组值中的最小或最大值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "STDDEV",
+    "zh": "标准差",
+    "abbr": "",
+    "definition": "常见统计聚合函数；具体变体名称不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "GROUPING SETS",
+    "zh": "分组集",
+    "abbr": "",
+    "definition": "在一次查询中表达多种分组组合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "ROLLUP",
+    "zh": "层级汇总",
+    "abbr": "",
+    "definition": "按分组列层级产生小计与总计。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "CUBE",
+    "zh": "立方体汇总",
+    "abbr": "",
+    "definition": "产生分组列组合的多维汇总。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "GROUPING",
+    "zh": "汇总层级标记",
+    "abbr": "",
+    "definition": "用于区分汇总生成的 NULL 与源数据 NULL。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "Window Function",
+    "zh": "窗口函数",
+    "abbr": "",
+    "definition": "对行的相关窗口计算值，通常保留原行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "OVER",
+    "zh": "窗口子句",
+    "abbr": "",
+    "definition": "声明窗口函数的分区、排序和帧定义。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "PARTITION BY",
+    "zh": "窗口分区",
+    "abbr": "",
+    "definition": "将结果行划入互不相交的计算分区。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "Window Frame",
+    "zh": "窗口帧",
+    "abbr": "",
+    "definition": "在分区内围绕当前行选取参与计算的行范围。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "ROWS",
+    "zh": "按物理行定义帧",
+    "abbr": "",
+    "definition": "按行偏移描述窗口帧边界。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "RANGE",
+    "zh": "按排序值定义帧",
+    "abbr": "",
+    "definition": "按排序键值或同值组定义窗口帧。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "GROUPS",
+    "zh": "按同值组定义帧",
+    "abbr": "",
+    "definition": "按排序键相同的行组定义窗口帧。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "ROW_NUMBER",
+    "zh": "行序号",
+    "abbr": "",
+    "definition": "按窗口排序给每行分配连续唯一编号。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "RANK",
+    "zh": "竞赛排名",
+    "abbr": "",
+    "definition": "并列值同名次，下一名次存在跳号。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "DENSE_RANK",
+    "zh": "密集排名",
+    "abbr": "",
+    "definition": "并列值同名次，后续名次不跳号。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "NTILE",
+    "zh": "分桶编号",
+    "abbr": "",
+    "definition": "将排序结果分为近似等量的若干桶。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "LAG",
+    "zh": "取前序行值",
+    "abbr": "",
+    "definition": "读取窗口中较前位置的行值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "LEAD",
+    "zh": "取后序行值",
+    "abbr": "",
+    "definition": "读取窗口中较后位置的行值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "FIRST_VALUE",
+    "zh": "取窗口首值",
+    "abbr": "",
+    "definition": "返回窗口帧中的第一个值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "LAST_VALUE",
+    "zh": "取窗口末值",
+    "abbr": "",
+    "definition": "受窗口帧边界影响，未必是分区最后一行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "Running Total",
+    "zh": "累计和",
+    "abbr": "",
+    "definition": "随排序位置递增累积的汇总值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 6,
+    "topic": "聚合分析与窗口函数",
+    "en": "Moving Average",
+    "zh": "移动平均",
+    "abbr": "",
+    "definition": "在滑动窗口内计算平均值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Primary Key (PK)",
+    "zh": "主键",
+    "abbr": "PK",
+    "definition": "唯一标识表内一行的一个或多个列。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Foreign Key (FK)",
+    "zh": "外键",
+    "abbr": "FK",
+    "definition": "引用另一表或本表候选键的完整性约束。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Candidate Key",
+    "zh": "候选键",
+    "abbr": "",
+    "definition": "能够唯一标识行的最小属性集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Composite Key",
+    "zh": "复合键",
+    "abbr": "",
+    "definition": "由多个列共同构成的键。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Surrogate Key",
+    "zh": "代理键",
+    "abbr": "",
+    "definition": "与业务属性解耦的人造标识符。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Natural Key",
+    "zh": "自然键",
+    "abbr": "",
+    "definition": "来自业务数据、具有业务含义的键。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Unique Constraint",
+    "zh": "唯一约束",
+    "abbr": "",
+    "definition": "限制列或列组合不能出现不允许的重复值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "NOT NULL Constraint",
+    "zh": "非空约束",
+    "abbr": "",
+    "definition": "禁止指定列存储 NULL。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "CHECK Constraint",
+    "zh": "检查约束",
+    "abbr": "",
+    "definition": "要求行满足给定布尔判断条件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "DEFAULT",
+    "zh": "默认值",
+    "abbr": "",
+    "definition": "插入时未提供列值所使用的预设表达式。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "REFERENCES",
+    "zh": "引用声明",
+    "abbr": "",
+    "definition": "在外键定义中指定被引用目标。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Referential Integrity",
+    "zh": "参照完整性",
+    "abbr": "",
+    "definition": "保证外键关系满足引用规则。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "ON DELETE CASCADE",
+    "zh": "级联删除",
+    "abbr": "",
+    "definition": "被引用行删除时联动删除相关行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "ON UPDATE CASCADE",
+    "zh": "级联更新",
+    "abbr": "",
+    "definition": "被引用键更新时联动更新外键。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "RESTRICT / NO ACTION",
+    "zh": "限制／延迟拒绝",
+    "abbr": "",
+    "definition": "约束不满足时拒绝操作；判定时机因产品而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "SET NULL / SET DEFAULT",
+    "zh": "设空／设默认",
+    "abbr": "",
+    "definition": "参照操作触发时对外键赋值的策略。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Generated Column",
+    "zh": "生成列",
+    "abbr": "",
+    "definition": "按表达式从其他数据派生的列。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Identity Column",
+    "zh": "标识列",
+    "abbr": "",
+    "definition": "由数据库自动生成递增或指定规则的标识值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Sequence",
+    "zh": "序列",
+    "abbr": "",
+    "definition": "独立产生数值序列的数据库对象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "AUTO_INCREMENT",
+    "zh": "自增属性",
+    "abbr": "",
+    "definition": "MySQL 常用的自动生成整数标识机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Constraint",
+    "zh": "约束",
+    "abbr": "",
+    "definition": "由数据库执行的数据合法性规则。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Deferrable Constraint",
+    "zh": "可延迟约束",
+    "abbr": "",
+    "definition": "部分数据库支持在事务结束前再检查约束。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Trigger",
+    "zh": "触发器",
+    "abbr": "",
+    "definition": "在指定数据事件发生时自动运行的逻辑。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "BEFORE / AFTER Trigger",
+    "zh": "前置／后置触发器",
+    "abbr": "",
+    "definition": "在事件动作之前或之后触发。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "INSTEAD OF Trigger",
+    "zh": "替代触发器",
+    "abbr": "",
+    "definition": "以触发器逻辑替代对视图等对象的直接操作。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Schema Migration",
+    "zh": "模式迁移",
+    "abbr": "",
+    "definition": "对数据库结构进行版本化变更。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 7,
+    "topic": "建表、键与完整性约束",
+    "en": "Backward Compatibility",
+    "zh": "向后兼容",
+    "abbr": "",
+    "definition": "新结构对旧应用或旧查询仍然可用的能力。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Index",
+    "zh": "索引",
+    "abbr": "",
+    "definition": "支持高效定位、排序或过滤数据的辅助结构。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "B-Tree Index B",
+    "zh": "树索引",
+    "abbr": "",
+    "definition": "基于平衡树的通用有序检索索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "B+ Tree B+",
+    "zh": "树",
+    "abbr": "",
+    "definition": "常见数据库索引实现，数据引用主要位于叶节点。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Hash Index",
+    "zh": "哈希索引",
+    "abbr": "",
+    "definition": "基于哈希的等值查找结构，通常不支持范围排序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Clustered Index",
+    "zh": "聚簇索引",
+    "abbr": "",
+    "definition": "决定数据行与索引组织关系的索引机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Secondary Index",
+    "zh": "二级索引",
+    "abbr": "",
+    "definition": "除主要组织索引之外的其他索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Unique Index",
+    "zh": "唯一索引",
+    "abbr": "",
+    "definition": "限制索引键重复的索引，NULL 规则依数据库而异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Composite Index",
+    "zh": "联合／复合索引",
+    "abbr": "",
+    "definition": "对多个列共同建立的索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Covering Index",
+    "zh": "覆盖索引",
+    "abbr": "",
+    "definition": "包含查询所需字段，从而减少回表需求。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Partial Index",
+    "zh": "部分索引",
+    "abbr": "",
+    "definition": "仅为满足谓词的行构建索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Expression Index",
+    "zh": "表达式索引",
+    "abbr": "",
+    "definition": "为函数或表达式计算结果创建索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Functional Index",
+    "zh": "函数索引",
+    "abbr": "",
+    "definition": "以表达式为键的索引，一些系统的命名。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Descending Index",
+    "zh": "降序索引",
+    "abbr": "",
+    "definition": "以特定降序方式组织索引键。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Bitmap Index",
+    "zh": "位图索引",
+    "abbr": "",
+    "definition": "利用位集合表示键值与行的关系。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "GIN Index",
+    "zh": "广义倒排索引",
+    "abbr": "",
+    "definition": "PostgreSQL 常用于数组、全文与 JSONB 等类型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "GiST Index",
+    "zh": "通用搜索树索引",
+    "abbr": "",
+    "definition": "PostgreSQL 可扩展索引框架。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "BRIN Index",
+    "zh": "块范围索引",
+    "abbr": "",
+    "definition": "PostgreSQL 为物理块范围保存摘要信息的索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Full-Text Index",
+    "zh": "全文索引",
+    "abbr": "",
+    "definition": "支持词项检索、相关性搜索的索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Spatial Index",
+    "zh": "空间索引",
+    "abbr": "",
+    "definition": "为几何或地理空间关系加速的索引。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Heap Table",
+    "zh": "堆表",
+    "abbr": "",
+    "definition": "行存放位置不按某个主索引键的逻辑顺序组织。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Page / Block",
+    "zh": "页／块",
+    "abbr": "",
+    "definition": "数据库读写及缓存管理的常见基本单位。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Extent",
+    "zh": "区／连续页组",
+    "abbr": "",
+    "definition": "分配给对象的一组存储页。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Tablespace",
+    "zh": "表空间",
+    "abbr": "",
+    "definition": "映射逻辑数据库对象与物理存储资源的管理单元。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Buffer Pool",
+    "zh": "缓冲池",
+    "abbr": "",
+    "definition": "缓存数据页和索引页的内存区域。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Dirty Page",
+    "zh": "脏页",
+    "abbr": "",
+    "definition": "内存中已修改但尚未写回持久介质的页。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Page Split",
+    "zh": "页分裂",
+    "abbr": "",
+    "definition": "有序索引页满时为插入腾出空间的结构调整。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Fill Factor",
+    "zh": "填充因子",
+    "abbr": "",
+    "definition": "控制页目标使用率，预留空间可减少后续页分裂。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Index Bloat",
+    "zh": "索引膨胀",
+    "abbr": "",
+    "definition": "索引占用空间高于有效数据所需空间的现象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 8,
+    "topic": "索引与存储结构",
+    "en": "Vacuum",
+    "zh": "清理／空间回收",
+    "abbr": "",
+    "definition": "PostgreSQL 等数据库用于清理无效行版本的过程。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Query Parser",
+    "zh": "查询解析器",
+    "abbr": "",
+    "definition": "将 SQL 文本解析为语法结构。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Abstract Syntax Tree (AST)",
+    "zh": "抽象语法树",
+    "abbr": "AST",
+    "definition": "表达 SQL 语法层次关系的树结构。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Binder / Name Resolver",
+    "zh": "绑定器／名称解析器",
+    "abbr": "",
+    "definition": "将列、表和函数名关联至具体数据库对象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Query Planner",
+    "zh": "查询规划器",
+    "abbr": "",
+    "definition": "枚举或生成可行的执行方案。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Query Optimizer",
+    "zh": "查询优化器",
+    "abbr": "",
+    "definition": "选择预计代价较低的执行计划。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Cost-Based Optimizer (CBO)",
+    "zh": "基于成本的优化器",
+    "abbr": "CBO",
+    "definition": "依赖统计信息和成本模型选择计划。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Rule-Based Optimization",
+    "zh": "基于规则的优化",
+    "abbr": "",
+    "definition": "依据固定变换与启发式规则改写查询。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Execution Plan",
+    "zh": "执行计划",
+    "abbr": "",
+    "definition": "查询算子及其运行顺序的表示。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Plan Node",
+    "zh": "计划节点",
+    "abbr": "",
+    "definition": "执行计划中的单个物理算子。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Sequential Scan / Table Scan",
+    "zh": "顺序扫描／全表扫描",
+    "abbr": "",
+    "definition": "顺序读取表中数据来检查条件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Index Scan",
+    "zh": "索引扫描",
+    "abbr": "",
+    "definition": "利用索引检索满足条件的条目及相关行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Index-Only Scan",
+    "zh": "仅索引扫描",
+    "abbr": "",
+    "definition": "尽可能从索引完成查询，具体还可能受可见性检查影响。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Bitmap Heap Scan",
+    "zh": "位图堆扫描",
+    "abbr": "",
+    "definition": "先用位图记录候选页再读取表页的扫描策略。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Filter",
+    "zh": "过滤算子",
+    "abbr": "",
+    "definition": "在执行阶段排除不符合条件的行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Sort",
+    "zh": "排序算子",
+    "abbr": "",
+    "definition": "按指定键对行排序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Hash Aggregate",
+    "zh": "哈希聚合",
+    "abbr": "",
+    "definition": "利用哈希表维护各分组的聚合状态。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Sort Aggregate",
+    "zh": "排序聚合",
+    "abbr": "",
+    "definition": "利用已排序分组输入完成聚合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Nested Loop Join",
+    "zh": "嵌套循环连接",
+    "abbr": "",
+    "definition": "对外侧行重复寻找内侧匹配行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Hash Join",
+    "zh": "哈希连接",
+    "abbr": "",
+    "definition": "建立哈希表并探测匹配行的连接算法。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Merge Join",
+    "zh": "归并连接",
+    "abbr": "",
+    "definition": "利用按连接键排序的输入进行匹配。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Predicate Pushdown",
+    "zh": "谓词下推",
+    "abbr": "",
+    "definition": "将过滤条件尽量移到靠近数据源的位置。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Projection Pushdown",
+    "zh": "投影下推",
+    "abbr": "",
+    "definition": "尽早只保留后续需要的列。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Join Reordering",
+    "zh": "连接重排",
+    "abbr": "",
+    "definition": "改变多表连接顺序以降低预计成本。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Cardinality Estimation",
+    "zh": "基数估计",
+    "abbr": "",
+    "definition": "预测算子将输出多少行。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Selectivity",
+    "zh": "选择率",
+    "abbr": "",
+    "definition": "谓词匹配行数占输入行数的比例。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Histogram",
+    "zh": "直方图",
+    "abbr": "",
+    "definition": "描述列值分布的统计摘要。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Statistics",
+    "zh": "统计信息",
+    "abbr": "",
+    "definition": "帮助估算行数、分布与成本的数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Plan Cache",
+    "zh": "计划缓存",
+    "abbr": "",
+    "definition": "复用已生成执行计划的缓存机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "Parameter Sniffing",
+    "zh": "参数嗅探",
+    "abbr": "",
+    "definition": "基于首轮绑定参数生成计划而影响后续执行的现象。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 9,
+    "topic": "查询优化器与执行计划",
+    "en": "EXPLAIN ANALYZE",
+    "zh": "实际执行分析",
+    "abbr": "",
+    "definition": "执行 SQL 并展示实际耗时与行数；注意可能产生副作用。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Transaction",
+    "zh": "事务",
+    "abbr": "",
+    "definition": "作为一个逻辑单元执行的一组数据库操作。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Atomicity",
+    "zh": "原子性",
+    "abbr": "",
+    "definition": "事务中的操作要么整体生效，要么整体撤销。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Consistency",
+    "zh": "一致性",
+    "abbr": "",
+    "definition": "事务将数据库从满足约束的状态转到另一合法状态。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Isolation",
+    "zh": "隔离性",
+    "abbr": "",
+    "definition": "并发事务之间的可见性与相互影响受到控制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Durability",
+    "zh": "持久性",
+    "abbr": "",
+    "definition": "事务成功提交后，其效果按保证持久保存。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "ACID",
+    "zh": "事务四特性",
+    "abbr": "",
+    "definition": "Atomicity、Consistency、Isolation、Durability 的缩写。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Autocommit",
+    "zh": "自动提交",
+    "abbr": "",
+    "definition": "通常在单条语句成功完成后自动提交事务。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Isolation Level",
+    "zh": "隔离级别",
+    "abbr": "",
+    "definition": "定义并发事务可见性与异常的规则。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "READ UNCOMMITTED",
+    "zh": "读未提交",
+    "abbr": "",
+    "definition": "最低隔离级别，标准允许脏读；具体实现可能更强。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "READ COMMITTED",
+    "zh": "读已提交",
+    "abbr": "",
+    "definition": "不读取未提交修改；同事务多次读取仍可能不同。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "REPEATABLE READ",
+    "zh": "可重复读",
+    "abbr": "",
+    "definition": "同事务重复读取的保证，具体实现差异明显。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "SERIALIZABLE",
+    "zh": "可串行化",
+    "abbr": "",
+    "definition": "并发结果等价于某种串行执行顺序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Dirty Read",
+    "zh": "脏读",
+    "abbr": "",
+    "definition": "读取另一事务尚未提交的数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Non-Repeatable Read",
+    "zh": "不可重复读",
+    "abbr": "",
+    "definition": "同事务重复读取同一行得到不同值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Phantom Read",
+    "zh": "幻读",
+    "abbr": "",
+    "definition": "同事务相同条件查询出现不同的行集合。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Lost Update",
+    "zh": "丢失更新",
+    "abbr": "",
+    "definition": "并发写入覆盖而丢失另一事务修改。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Write Skew",
+    "zh": "写偏斜",
+    "abbr": "",
+    "definition": "并发事务基于相同快照写不同数据而破坏业务约束。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Serialization Anomaly",
+    "zh": "序列化异常",
+    "abbr": "",
+    "definition": "并发执行结果无法等价于某串行顺序。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Multi-Version Concurrency Control (MVCC)",
+    "zh": "多版本并发控制",
+    "abbr": "MVCC",
+    "definition": "使用行版本与可见性规则支持并发读写。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Snapshot",
+    "zh": "快照",
+    "abbr": "",
+    "definition": "用于决定某一读取可见哪些数据版本的视图。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Snapshot Isolation (SI)",
+    "zh": "快照隔离",
+    "abbr": "SI",
+    "definition": "事务在一致快照下读取，仍可能发生写偏斜。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Lock",
+    "zh": "锁",
+    "abbr": "",
+    "definition": "协调多个事务访问共享资源的同步机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Shared Lock (S Lock)",
+    "zh": "共享锁",
+    "abbr": "",
+    "definition": "通常允许并行读取、限制冲突性写入。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Exclusive Lock (X Lock)",
+    "zh": "排他锁",
+    "abbr": "",
+    "definition": "对资源施加互斥性的更新访问限制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Row-Level Lock",
+    "zh": "行级锁",
+    "abbr": "",
+    "definition": "锁定特定数据行的粒度。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Table-Level Lock",
+    "zh": "表级锁",
+    "abbr": "",
+    "definition": "锁定表级资源的粒度。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Gap Lock",
+    "zh": "间隙锁",
+    "abbr": "",
+    "definition": "部分数据库锁定索引键之间的间隙以限制插入。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Next-Key Lock",
+    "zh": "临键锁",
+    "abbr": "",
+    "definition": "在 InnoDB 中结合记录和相邻间隙的锁。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Optimistic Concurrency Control (OCC)",
+    "zh": "乐观并发控制",
+    "abbr": "OCC",
+    "definition": "以冲突检测或版本比对为主的并发策略。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Pessimistic Locking",
+    "zh": "悲观锁策略",
+    "abbr": "",
+    "definition": "先获取锁再访问或更新冲突数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "多个事务相互等待所持资源而无法前进。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Lock Wait Timeout",
+    "zh": "锁等待超时",
+    "abbr": "",
+    "definition": "等待锁超过设置期限后的终止机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Two-Phase Locking (2PL)",
+    "zh": "两阶段锁协议",
+    "abbr": "",
+    "definition": "锁获取阶段与释放阶段分离的并发控制协议。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "SELECT FOR UPDATE",
+    "zh": "选择并加更新锁",
+    "abbr": "",
+    "definition": "读取目标行并按数据库规则获取更新相关锁。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 10,
+    "topic": "事务、隔离级别与并发控制",
+    "en": "Transaction Retry",
+    "zh": "事务重试",
+    "abbr": "",
+    "definition": "遇到冲突或序列化失败后重新执行完整事务。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Write-Ahead Logging (WAL)",
+    "zh": "预写式日志",
+    "abbr": "WAL",
+    "definition": "先持久记录变更日志再落实相应数据页修改的技术。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Redo Log",
+    "zh": "重做日志",
+    "abbr": "",
+    "definition": "用于恢复已提交但尚未写入数据页的修改。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Undo Log",
+    "zh": "撤销日志",
+    "abbr": "",
+    "definition": "用于回滚或支持旧版本读取的变更记录。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Transaction Log",
+    "zh": "事务日志",
+    "abbr": "",
+    "definition": "记录事务相关操作与状态的日志体系。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Checkpoint",
+    "zh": "检查点",
+    "abbr": "",
+    "definition": "推进持久化进度、限制恢复需重放日志的范围。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Crash Recovery",
+    "zh": "崩溃恢复",
+    "abbr": "",
+    "definition": "进程或主机异常终止后恢复一致状态。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Point-in-Time Recovery (PITR)",
+    "zh": "时间点恢复",
+    "abbr": "PITR",
+    "definition": "从备份和日志将数据库恢复到指定时刻。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Replication",
+    "zh": "复制",
+    "abbr": "",
+    "definition": "将数据库变更从一个节点传播到其他节点。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Primary / Replica",
+    "zh": "主节点／副本节点",
+    "abbr": "",
+    "definition": "写入源与接收复制结果的节点角色。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Leader / Follower",
+    "zh": "领导者／跟随者",
+    "abbr": "",
+    "definition": "按复制或共识协议划分的节点角色。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Synchronous Replication",
+    "zh": "同步复制",
+    "abbr": "",
+    "definition": "提交路径等待约定的副本确认。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Asynchronous Replication",
+    "zh": "异步复制",
+    "abbr": "",
+    "definition": "主节点提交不必等待全部副本确认。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Replication Lag",
+    "zh": "复制延迟",
+    "abbr": "",
+    "definition": "副本相对于源节点尚未追赶的进度或时间差。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Log Shipping",
+    "zh": "日志传送",
+    "abbr": "",
+    "definition": "把日志流持续传递至备用节点。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Logical Replication",
+    "zh": "逻辑复制",
+    "abbr": "",
+    "definition": "按表、行或逻辑变更事件进行复制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Physical Replication",
+    "zh": "物理复制",
+    "abbr": "",
+    "definition": "基于页、块或底层日志记录复制数据库状态。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Change Data Capture (CDC)",
+    "zh": "变更数据捕获",
+    "abbr": "CDC",
+    "definition": "将数据变更持续提取为可消费事件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "High Availability (HA)",
+    "zh": "高可用",
+    "abbr": "HA",
+    "definition": "通过冗余和故障切换提高服务连续性。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Failover",
+    "zh": "故障切换",
+    "abbr": "",
+    "definition": "在节点故障后将服务职责转移到备用节点。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Switchover",
+    "zh": "计划切换",
+    "abbr": "",
+    "definition": "在受控条件下主动切换主从角色。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Read Replica",
+    "zh": "只读副本",
+    "abbr": "",
+    "definition": "主要用于承载读取流量的数据库副本。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Read-Write Splitting",
+    "zh": "读写分离",
+    "abbr": "",
+    "definition": "将读请求与写请求分配至不同实例。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Partitioning",
+    "zh": "分区",
+    "abbr": "",
+    "definition": "将一张逻辑表按规则划分为多个物理分区。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Range Partitioning",
+    "zh": "范围分区",
+    "abbr": "",
+    "definition": "按值域范围将数据分配至分区。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Hash Partitioning",
+    "zh": "哈希分区",
+    "abbr": "",
+    "definition": "按键的哈希值将数据分布至分区。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Sharding",
+    "zh": "分片",
+    "abbr": "",
+    "definition": "把数据拆分到多个独立存储或服务节点。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Distributed Transaction",
+    "zh": "分布式事务",
+    "abbr": "",
+    "definition": "跨多个资源管理器或节点的协同事务。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Two-Phase Commit (2PC)",
+    "zh": "两阶段提交",
+    "abbr": "",
+    "definition": "协调参与者先准备、后统一提交或回滚的协议。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Consensus",
+    "zh": "共识",
+    "abbr": "",
+    "definition": "分布式节点对某项状态或决议达成一致。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Quorum",
+    "zh": "法定多数",
+    "abbr": "",
+    "definition": "足以形成有效读写决议的节点集合阈值。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "CAP Theorem CAP",
+    "zh": "定理",
+    "abbr": "",
+    "definition": "分区发生时无法同时无条件保证强一致与可用性的权衡。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Eventual Consistency",
+    "zh": "最终一致性",
+    "abbr": "",
+    "definition": "无新变更且通信恢复后，副本最终趋于一致。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 11,
+    "topic": "日志、恢复、复制与分布式数据库",
+    "en": "Split-Brain",
+    "zh": "脑裂",
+    "abbr": "",
+    "definition": "多个节点同时认为自己具备主控权的异常状态。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Online Transaction Processing (OLTP)",
+    "zh": "联机事务处理",
+    "abbr": "OLTP",
+    "definition": "大量低延迟、短事务读写的工作负载。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Online Analytical Processing (OLAP)",
+    "zh": "联机分析处理",
+    "abbr": "OLAP",
+    "definition": "偏向扫描、聚合与复杂分析的工作负载。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Query Latency",
+    "zh": "查询延迟",
+    "abbr": "",
+    "definition": "一次查询从发起到完成的耗时。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "系统单位时间内处理的请求或事务数量。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Queries per Second (QPS)",
+    "zh": "每秒查询数",
+    "abbr": "QPS",
+    "definition": "单位时间内处理的查询请求数。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Transactions per Second (TPS)",
+    "zh": "每秒事务数",
+    "abbr": "TPS",
+    "definition": "单位时间内完成的事务数量。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Slow Query",
+    "zh": "慢查询",
+    "abbr": "",
+    "definition": "耗时达到监控阈值的 SQL 请求。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Slow Query Log",
+    "zh": "慢查询日志",
+    "abbr": "",
+    "definition": "用于记录达到阈值的 SQL 语句或执行情况。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Connection Pool",
+    "zh": "连接池",
+    "abbr": "",
+    "definition": "复用数据库连接并限制并发连接数量的组件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Connection Timeout",
+    "zh": "连接超时",
+    "abbr": "",
+    "definition": "建立连接超过等待阈值后的失败机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Statement Timeout",
+    "zh": "语句超时",
+    "abbr": "",
+    "definition": "单条语句执行超过期限后的终止机制。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Query Cancellation",
+    "zh": "查询取消",
+    "abbr": "",
+    "definition": "主动中止正在运行的查询。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Backup",
+    "zh": "备份",
+    "abbr": "",
+    "definition": "保存可用于恢复的数据库数据副本。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Full Backup",
+    "zh": "全量备份",
+    "abbr": "",
+    "definition": "保存完整受保护数据集的备份。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Incremental Backup",
+    "zh": "增量备份",
+    "abbr": "",
+    "definition": "只记录相对指定基线新发生的变更。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Differential Backup",
+    "zh": "差异备份",
+    "abbr": "",
+    "definition": "记录自最近全量备份以来发生的变更。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Restore",
+    "zh": "还原",
+    "abbr": "",
+    "definition": "使用备份材料重新构建数据库内容。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Recovery Point Objective (RPO)",
+    "zh": "恢复点目标",
+    "abbr": "RPO",
+    "definition": "故障后业务可接受的最大数据丢失时间范围。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Recovery Time Objective (RTO)",
+    "zh": "恢复时间目标",
+    "abbr": "RTO",
+    "definition": "业务可接受的最长恢复服务时间。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Authentication",
+    "zh": "身份认证",
+    "abbr": "",
+    "definition": "验证连接主体身份的过程。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Authorization",
+    "zh": "权限控制／授权",
+    "abbr": "",
+    "definition": "确定某主体允许执行哪些操作。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Role",
+    "zh": "角色",
+    "abbr": "",
+    "definition": "可被授予权限并分配给用户的权限集合或主体。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Principle of Least Privilege",
+    "zh": "最小权限原则",
+    "abbr": "",
+    "definition": "只赋予完成任务所必需的最小权限。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "SQL Injection SQL",
+    "zh": "注入",
+    "abbr": "",
+    "definition": "将恶意输入拼进 SQL 而改变执行含义的漏洞。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Parameterized Query",
+    "zh": "参数化查询",
+    "abbr": "",
+    "definition": "将 SQL 结构与用户输入值分离以降低注入风险。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "TLS Encryption TLS",
+    "zh": "传输加密",
+    "abbr": "",
+    "definition": "保护客户端与数据库之间的通信。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Encryption at Rest",
+    "zh": "静态数据加密",
+    "abbr": "",
+    "definition": "对存储介质上的数据库数据或备份进行加密。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Audit Log",
+    "zh": "审计日志",
+    "abbr": "",
+    "definition": "记录访问、权限及关键操作的追踪信息。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Database Driver",
+    "zh": "数据库驱动",
+    "abbr": "",
+    "definition": "应用访问数据库的连接与协议适配软件。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Open Database Connectivity (ODBC)",
+    "zh": "开放数据库互连",
+    "abbr": "ODBC",
+    "definition": "通用的数据库访问接口规范。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Java Database Connectivity (JDBC) Java",
+    "zh": "数据库连接接口",
+    "abbr": "",
+    "definition": "Java 平台常用数据库访问 API。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Object-Relational Mapping (ORM)",
+    "zh": "对象关系映射",
+    "abbr": "ORM",
+    "definition": "把应用对象映射为关系表与查询的技术。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "SQL Dialect SQL",
+    "zh": "方言",
+    "abbr": "",
+    "definition": "各数据库产品对 SQL 标准的扩展与差异。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 12,
+    "topic": "性能、运维、安全与生态",
+    "en": "Portability",
+    "zh": "可移植性",
+    "abbr": "",
+    "definition": "SQL 或应用跨不同数据库产品迁移的难易程度。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Entity",
+    "zh": "实体",
+    "abbr": "",
+    "definition": "需要在数据库中表示的业务对象或概念。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Entity-Relationship Model (ER Model)",
+    "zh": "实体关系模型",
+    "abbr": "",
+    "definition": "用实体、属性和联系进行概念建模。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Entity-Relationship Diagram (ERD)",
+    "zh": "实体关系图",
+    "abbr": "ERD",
+    "definition": "可视化表示实体及其关系的图。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "One-to-One (1:1)",
+    "zh": "一对一关系",
+    "abbr": "",
+    "definition": "一个实体至多对应另一个实体的一条记录。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "One-to-Many (1:N)",
+    "zh": "一对多关系",
+    "abbr": "",
+    "definition": "一个实体可关联另一实体的多条记录。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Many-to-Many (M:N)",
+    "zh": "多对多关系",
+    "abbr": "",
+    "definition": "两侧实体均可与对侧多条记录关联。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Junction Table",
+    "zh": "关联表／连接表",
+    "abbr": "",
+    "definition": "通过外键实现多对多关系的中间表。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Normalization",
+    "zh": "规范化",
+    "abbr": "",
+    "definition": "依据函数依赖等规则减少冗余和更新异常。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Denormalization",
+    "zh": "反规范化",
+    "abbr": "",
+    "definition": "为查询性能等目的有意识引入冗余数据。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "First Normal Form (1NF)",
+    "zh": "第一范式",
+    "abbr": "",
+    "definition": "要求属性值满足所采用关系模型的原子性约定。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Second Normal Form (2NF)",
+    "zh": "第二范式",
+    "abbr": "",
+    "definition": "在 1NF 基础上排除非主属性对候选键的部分依赖。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Third Normal Form (3NF)",
+    "zh": "第三范式",
+    "abbr": "",
+    "definition": "控制非主属性通过非键属性产生的传递依赖。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Boyce-Codd Normal Form (BCNF) BC",
+    "zh": "范式",
+    "abbr": "",
+    "definition": "要求每个非平凡函数依赖的决定因素都是超键。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Functional Dependency",
+    "zh": "函数依赖",
+    "abbr": "",
+    "definition": "给定一组属性值可确定另一组属性值的关系。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Update Anomaly",
+    "zh": "更新异常",
+    "abbr": "",
+    "definition": "冗余导致更新时可能发生的不一致。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Star Schema",
+    "zh": "星型模式",
+    "abbr": "",
+    "definition": "事实表连接若干维度表的分析数据模型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Snowflake Schema",
+    "zh": "雪花模式",
+    "abbr": "",
+    "definition": "维度进一步规范化为层级表的数据模型。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Fact Table",
+    "zh": "事实表",
+    "abbr": "",
+    "definition": "保存业务事件、度量值与维度键的表。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Dimension Table",
+    "zh": "维度表",
+    "abbr": "",
+    "definition": "描述事实的业务维度和属性的表。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Slowly Changing Dimension (SCD)",
+    "zh": "缓慢变化维",
+    "abbr": "SCD",
+    "definition": "管理维度属性随时间变化的建模方法。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "ETL",
+    "zh": "抽取－转换－加载",
+    "abbr": "",
+    "definition": "先变换再将数据加载到目标系统的数据流程。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "ELT",
+    "zh": "抽取－加载－转换",
+    "abbr": "",
+    "definition": "先加载到目标系统再执行数据变换的流程。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Data Warehouse",
+    "zh": "数据仓库",
+    "abbr": "",
+    "definition": "服务分析与决策的集成型历史数据系统。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Data Mart",
+    "zh": "数据集市",
+    "abbr": "",
+    "definition": "面向某业务主题或团队的分析数据子集。"
+  },
+  {
+    "category": "sql-database",
+    "chapter": 13,
+    "topic": "数据建模、范式与数据仓库",
+    "en": "Columnar Storage",
+    "zh": "列式存储",
+    "abbr": "",
+    "definition": "按列组织数据，适合某些分析扫描与压缩场景。"
+  }
+]

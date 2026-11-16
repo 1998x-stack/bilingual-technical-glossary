@@ -1,10 +1,35 @@
-## 2026-11-16 — Operating Systems edition
-
-- Added 396 Operating Systems bilingual terms across 18 chapters, with original Markdown and reproducible HTML print source.
-- Expanded search index to 2,788 terms, 8 domains and 118 topics; updated website, catalog and documentation.
-- Added OS PDF publication without modifying the existing seven PDF books.
-
 # Changelog
+
+## University Mathematics — 2026-11-16
+
+- Added 627 bilingual mathematics terms across 17 chapters, three appendices, editable HTML, Markdown and PDF.
+- Published the topic in the structured search index and GitHub Pages, preserving all existing collections.
+- Added regression tests and dynamic catalogue icon/color cycling.
+
+
+## 2026-11-16 — Parallel Computing bilingual handbook
+
+- Published a 205-term, 12-topic, independently authored glossary structured with reference to Grama et al., *Introduction to Parallel Computing* (2nd edition).
+- Added PDF and Markdown handbooks under `pdf/` and `glossaries/`, with downloadable GitHub Pages mirrors.
+- Added README links; indexing into the structured search database remains a separate follow-up.
+
+
+## Machine Learning glossary publication — 2026-11-16
+
+- Indexed 447 Machine Learning terms in 19 chapters with Markdown and PDF.
+- Expanded search to 4,006 terms, 12 domains and 176 topics.
+
+## 2026-11-16 — Apache Kafka glossary
+
+- Added 283 Kafka terms across 16 chapters in Markdown, PDF, and search indexes.
+- Updated bilingual README navigation and added Kafka regression coverage.
+
+## Calculus edition — 2026-11-16
+
+- Added 361 Calculus terms across 16 topics with Markdown and PDF download editions.
+- Indexed mathematical notation separately from abbreviations.
+- Updated the explorer dataset, glossary catalog, documentation and validation for 10 subjects, 3,276 terms and 141 topics.
+
 
 ## v1.1.0 — 2026-11-16
 
@@ -19,3 +44,9 @@
 - Created 142 AI Infrastructure terms and the seventh searchable PDF reference.
 - Published 7 thematic Markdown glossaries, CSV/JSON dataset, a seven-domain knowledge coverage dashboard, and searchable static site assets.
 - Added scripts, editorial instructions, regression checks, and GitHub Pages deployment workflow.
+
+## Linux glossary integration — 2026-11-16
+
+- Published Linux Markdown and searchable PDF in both root and GitHub Pages downloads.
+- Indexed 394 Linux terms across 16 chapters and added 18 comparison notes to the authored Markdown.
+- Added Linux to navigation/catalog and updated structural validation to support growing coverage.

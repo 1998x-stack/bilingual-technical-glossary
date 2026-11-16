@@ -6,15 +6,26 @@ import csv, json, shutil, re
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/terms.json'
 CATALOG=[
+ ('high-school-mathematics','High School Mathematics','高中数学','Sets, functions, trigonometry, geometry, calculus, statistics and probability','book'),
  ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
  ('gpu-kernel','GPU Kernel Engineering','GPU Kernel / GPU 核函数','CUDA, PTX, Triton, GPU programming and kernel performance','cpu'),
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
  ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
  ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),
+ ('machine-learning','Machine Learning','机器学习','Foundations, classical algorithms, model evaluation, tuning and MLOps','target'),
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
+ ('calculus','Calculus','微积分','Limits, derivatives, integrals, series, multivariable and vector calculus','integral'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
+ ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('university-mathematics','University Mathematics','大学数学','Calculus, analysis, geometry, probability, differential equations and optimization','integral'),
+ ('apache-kafka','Apache Kafka','Apache Kafka / 事件流平台','Event streaming, KRaft, partitions, consumers, transactions and Streams','network'),
+ ('data-structures','Data Structures','数据结构','Arrays, lists, hashing, trees, graphs and advanced structures','network'),
+ ('linux','Linux','Linux 操作系统','Kernel, processes, memory, networking, containers and performance','terminal'),
  ('operating-systems','Operating Systems','操作系统','Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization','server'),
+ ('sql-database','SQL Database','SQL 数据库','Relational modeling, SQL syntax, indexes, optimizers, transactions and operations','database'),
+ ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
+ ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -31,11 +42,35 @@ def merge_infra(data):
   add.append(dict(category='ai-infrastructure',chapter=chapter,topic=topic,en=en,zh=zh,abbr=abbr,definition=desc))
  return add+data
 
+def merge_compiler(data):
+ # Compiler TSV is the editable source; replace indexed compiler rows on rebuild.
+ data=[t for t in data if t['category']!='compiler-principles']
+ topic='';chapter=0;add=[]
+ for line in (ROOT/'data/compiler-principles.tsv').read_text(encoding='utf8').splitlines():
+  if not line.strip():continue
+  if line.startswith('#'):
+   chapter+=1;topic=line.lstrip('# ').strip();continue
+  parts=line.split('|')
+  if len(parts)!=4:raise ValueError(f'Invalid Compiler Principles term: {line}')
+  en,zh,abbr,definition=(part.strip() for part in parts)
+  if not (topic and en and zh and definition):raise ValueError(f'Missing required value: {line}')
+  add.append(dict(category='compiler-principles',chapter=chapter,topic=topic,
+                  en=en,zh=zh,abbr=abbr,definition=definition))
+ return data+add
+
+def merge_high_school(data):
+ from render_high_school_pdf import load_terms
+ return [t for t in data if t['category']!='high-school-mathematics']+load_terms(ROOT/'data/high-school-mathematics.tsv')
+
 def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
-  if slug=='operating-systems':continue  # independently authored glossary
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel'):
+   continue  # Preserve independently authored Markdown and appendices.
+  if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
+  if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
+  if slug=='linux': continue  # Preserve independently authored Linux Markdown and appendix.
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)
@@ -44,9 +79,10 @@ def write_markdown(data):
   for (chapter,name),items in sorted(groups.items()):out.append(f'- {chapter:02d}. {name}（{len(items)} 条）')
   out+=['','---','']
   for (chapter,name),items in sorted(groups.items()):
-   out += [f'## {chapter:02d}. {name}','', '| # | English term | 中文译名 | Abbr. | 简明释义 |','|---:|---|---|---|---|']
-   for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item[k]) for k in ['en','zh','abbr','definition']])+' |')
+   out += [f'## {chapter:02d}. {name}','', ('| # | English term | 中文译名 | 符号 / 示例 | 简明释义 |' if slug=='calculus' else '| # | English term | 中文译名 | Abbr. | 简明释义 |'),'|---:|---|---|---|---|']
+   for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item.get(k,'')) for k in (['en','zh','notation','definition'] if slug=='calculus' else ['en','zh','abbr','definition'])])+' |')
    out.append('')
+  if slug=='compiler-principles':out += ['> 术语辨析：CFG 在形式语言中指上下文无关文法，在程序分析中指控制流图。','', '参考资料：[LLVM Language Reference](https://llvm.org/docs/LangRef.html) · [GNU Bison Manual](https://www.gnu.org/software/bison/manual/) · [GCC Internals](https://gcc.gnu.org/onlinedocs/gccint/)','']
   out+=['---','',f'原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/{slug}.pdf)','', '本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。','']
   (ROOT/'glossaries'/f'{slug}.md').write_text('\n'.join(out),encoding='utf8')
 
@@ -114,7 +150,9 @@ def write_site_data(data):
  (d/'.nojekyll').write_text('',encoding='utf8')
 
 def run():
- data=json.loads(DATA.read_text(encoding='utf8'));data=merge_infra(data)
+ data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data));data=merge_high_school(data)
+ from import_university_mathematics import merge_entries
+ data=merge_entries(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
@@ -125,7 +163,20 @@ def run():
  assert not errors,f'invalid / duplicate rows at: {errors[:15]}'
  DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
  with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
-  writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition']);writer.writeheader();writer.writerows(data)
- write_markdown(data);render_pdf(data);write_site_data(data)
+  writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition','notation'],extrasaction='ignore');writer.writeheader();writer.writerows(data)
+ write_markdown(data)
+ from import_university_mathematics import appendix_markdown,render_source_pdf
+ md=ROOT/'glossaries/university-mathematics.md'
+ md.write_text(md.read_text(encoding='utf8')+'\n'+appendix_markdown(),encoding='utf8')
+ render_source_pdf()
+ render_pdf(data)
+ from compiler_pdf import render_compiler_pdf
+ render_compiler_pdf(data, ROOT/'pdf/compiler-principles.pdf')
+ import subprocess,sys
+ subprocess.run([sys.executable,str(ROOT/'scripts/render_kafka_pdf.py')],check=True)
+
+ from render_high_school_pdf import render_pdf as render_hs
+ render_hs([t for t in data if t['category']=='high-school-mathematics'])
+ write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()

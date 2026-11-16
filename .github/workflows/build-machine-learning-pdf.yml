@@ -1,0 +1,52 @@
+name: Render Machine Learning glossary PDF
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sources/machine-learning.html'
+      - '.github/workflows/build-machine-learning-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: machine-learning-pdf
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install Python and Chinese fonts
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install --disable-pip-version-check weasyprint==68.0
+      - name: Render reproducible bilingual PDF
+        run: |
+          mkdir -p pdf docs/pdf
+          python -m weasyprint sources/machine-learning.html pdf/machine-learning.pdf
+          cp pdf/machine-learning.pdf docs/pdf/machine-learning.pdf
+          python - <<'PY'
+          from pathlib import Path
+          pdf = Path('pdf/machine-learning.pdf').read_bytes()
+          assert pdf.startswith(b'%PDF-') and len(pdf) > 10000, 'Invalid PDF artifact'
+          print(f'Rendered {len(pdf)} bytes')
+          PY
+      - name: Commit generated PDF artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf/machine-learning.pdf docs/pdf/machine-learning.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: publish machine learning PDF handbooks"
+            git push origin HEAD:main
+          else
+            echo "No PDF changes to commit"
+          fi
