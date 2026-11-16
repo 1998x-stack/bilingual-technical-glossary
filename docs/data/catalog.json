@@ -214,5 +214,14 @@
     "icon": "cpu",
     "count": 205,
     "topics": 12
+  },
+  {
+    "slug": "signal-processing",
+    "en": "Signal Processing",
+    "zh": "信号处理",
+    "description": "Signals, transforms, sampling, digital filters, spectral estimation and real-time DSP",
+    "icon": "sigma",
+    "count": 295,
+    "topics": 18
   }
 ]
