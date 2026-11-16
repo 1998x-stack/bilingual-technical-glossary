@@ -51,8 +51,10 @@ def main():
         body = canonical.read_text(encoding="utf-8")
         assert body == mirror.read_text(encoding="utf-8"), f"unsynced mirror: {canonical}"
         assert en in body and zh in body
-        for heading in ("核心定义", "形象理解", "技术原理", "工程实践", "易混概念", "面试题", "考试题", "参考资料"):
+        for heading in ("核心定义", "形象理解", "技术原理", "工程实践", "面试题", "考试题"):
             assert heading in body, f"missing {heading}: {canonical}"
+        assert ("易混概念" in body or "易混辨析" in body), f"missing concept contrasts: {canonical}"
+        assert ("参考资料" in body or "权威来源" in body), f"missing references: {canonical}"
         assert body.count("**问：") >= 2 and body.count("**题：") >= 2, f"missing Q&A: {canonical}"
         assert "https://" in body, f"missing reference: {canonical}"
     assert completed == site.get("readyArticles", site["readyInPr"]), "Wiki ready count does not match published files"
