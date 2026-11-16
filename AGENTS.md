@@ -2,6 +2,13 @@
 
 > Applies to all Codex, Pi, Claude Code, and other code agents working in this repository. This file is the canonical repository policy; task-specific skills supply the workflows, not contradictory rules. Follow explicit user requirements and review tool permissions before destructive actions.
 
+## Documentation maintenance
+
+- Before editing data or publication workflows, read [MAINTAINERS_GUIDE.md](docs/MAINTAINERS_GUIDE.md) and [CONTRIBUTING.md](CONTRIBUTING.md). Use the correct domain-specific source rather than assuming every record is authored in `data/terms.json`.
+- Read [Wiki editorial review](wiki/EDITORIAL_REVIEW.md) for internal batch acceptance and [wiki/TEMPLATE.md](wiki/TEMPLATE.md) for public-facing article structure. The production checklist must not be embedded into article Markdown.
+- For documentation changes run `python3 scripts/verify_docs.py`; this checks local links and README totals/subjects against catalog data, but does not certify external references or factual correctness.
+- [QUALITY_AUDIT.md](docs/QUALITY_AUDIT.md) is historical; do not restore the old independent Wiki homepage or public Batch UI described in that snapshot.
+
 ## First 90 seconds: read and route
 1. Inspect the current branch, recent changes, and affected domain; do not trust a prior chat's completion status without checking Git history.
 2. Determine the intended deliverable: bilingual term curation, 20-term deep Wiki batch, PDF/Markdown publication, site change, or verification/release.

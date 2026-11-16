@@ -15,11 +15,21 @@ The TERM/ATLAS site is completely generated under `docs/`, and the custom GitHub
 
 If GitHub Actions is undesired, you can choose **Deploy from a branch → main → /docs**. This publishes the exact same prebuilt static site. However, the repository also contains a custom Pages Actions workflow; it is designed for the **GitHub Actions** source and may fail if the branch deployment source is selected. Use the recommended setup above to avoid conflicting deployment sources.
 
+## Unified Explorer and term detail
+
+- Open [the single Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) or select a category such as [reinforcement learning](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer).
+- Click **any English or Chinese term** to navigate to `term.html`; the page first reads its definition from `data/terms.json`.
+- Terms with complete published Wiki articles resolve through `docs/data/wiki-index.json` and load the matching `docs/wiki/<domain>/*.md`. Otherwise, show only the curated short definition. This is expected, not a 404.
+- Do not create another public `/wiki` homepage or surface internal Batch production status. A former AI Infra Wiki URL remains only for redirect compatibility.
+- `site/` is the frontend source; `docs/` is the Pages mirror, which must contain `term.html`, `term.js`, `term.css`, and `data/wiki-index.json`.
+
 ## Troubleshooting
 
 - **Get Pages site failed / Not Found in Configure Pages:** Pages is not yet enabled; set the source to GitHub Actions first, then rerun.
 - **404 website:** Make sure the deployment succeeded and the URL includes `/bilingual-technical-glossary/`.
-- **JSON did not load:** Check the network request for `./data/terms.json`. Paths are relative to the site root.
+- **JSON did not load:** Check requests for `./data/terms.json`, `./data/catalog.json` and `./data/wiki-index.json`. Paths are relative to the project Pages root.
+- **Term detail 404:** Confirm `docs/term.html` is deployed; preserve the `/bilingual-technical-glossary/` subpath and percent-encoded query arguments.
+- **Wiki article not displayed:** Only entries in the validated public Wiki index are published as long-form articles. Run `python3 scripts/build_wiki_index.py --check`; verify that the manifest, source and mirrored Markdown match.
 - **PDF download error:** Confirm `docs/pdf/*.pdf` are committed on `main`.
 - **Opened index.html from disk:** Run `python3 -m http.server 8000 --directory docs` and visit `http://localhost:8000/`; JavaScript `fetch()` does not work reliably over `file://`.
 
