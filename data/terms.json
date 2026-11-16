@@ -39581,5 +39581,3551 @@
     "zh": "结构共享",
     "abbr": "",
     "definition": "不同版本复用未改变的内部节点或子结构。"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Linux kernel",
+    "zh": "Linux 内核",
+    "abbr": "",
+    "definition": "操作系统核心，管理硬件与系统资源"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "GNU/Linux",
+    "zh": "GNU/Linux 系统",
+    "abbr": "",
+    "definition": "使用 Linux 内核及 GNU 等用户空间组件的系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Distribution (distro)",
+    "zh": "发行版",
+    "abbr": "",
+    "definition": "内核与工具、软件包集成的操作系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "User space",
+    "zh": "用户空间",
+    "abbr": "",
+    "definition": "普通应用程序主要运行的空间"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Kernel space",
+    "zh": "内核空间",
+    "abbr": "",
+    "definition": "内核代码和特权资源运行的空间"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Kernel mode",
+    "zh": "内核态",
+    "abbr": "",
+    "definition": "CPU 运行具有特权的内核代码时的状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "User mode",
+    "zh": "用户态",
+    "abbr": "",
+    "definition": "CPU 运行非特权应用代码时的状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "System call (syscall)",
+    "zh": "系统调用",
+    "abbr": "",
+    "definition": "用户程序请求内核服务的接口"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "System call interface",
+    "zh": "系统调用接口",
+    "abbr": "",
+    "definition": "系统调用编号及调用约定等集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Application Binary Interface (ABI)",
+    "zh": "应用二进制接口",
+    "abbr": "ABI",
+    "definition": "程序与系统在二进制层面的约定"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Application Programming Interface (API)",
+    "zh": "应用程序编程接口",
+    "abbr": "API",
+    "definition": "提供给程序调用的函数或服务接口"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "GNU C Library (glibc)",
+    "zh": "GNU C 标准库",
+    "abbr": "",
+    "definition": "常用 C 库及系统调用封装实现"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "POSIX",
+    "zh": "可移植操作系统接口",
+    "abbr": "POSIX",
+    "definition": "规定兼容性接口与行为的标准族"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Linux Standard Base (LSB)",
+    "zh": "Linux 标准规范基础",
+    "abbr": "LSB",
+    "definition": "历史性的发行版兼容规范体系"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Monolithic kernel",
+    "zh": "宏内核",
+    "abbr": "",
+    "definition": "核心服务主要在内核地址空间执行"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Kernel module",
+    "zh": "内核模块",
+    "abbr": "",
+    "definition": "可按需加载到内核的代码单元"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Loadable Kernel Module (LKM)",
+    "zh": "可加载内核模块",
+    "abbr": "LKM",
+    "definition": "不重启即可装入的模块形式"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Kernel configuration (Kconfig)",
+    "zh": "内核配置系统",
+    "abbr": "Kconfig",
+    "definition": "声明配置选项及其依赖的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Kernel image",
+    "zh": "内核镜像",
+    "abbr": "",
+    "definition": "用于引导装载的内核二进制文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Initramfs",
+    "zh": "初始内存文件系统",
+    "abbr": "",
+    "definition": "引导早期加载的临时根文件系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Firmware",
+    "zh": "固件",
+    "abbr": "",
+    "definition": "设备或平台上的低层控制程序"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "UEFI",
+    "zh": "统一可扩展固件接口",
+    "abbr": "UEFI",
+    "definition": "现代计算机固件启动接口标准"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Bootloader",
+    "zh": "引导加载程序",
+    "abbr": "",
+    "definition": "加载内核并传递启动参数的软件"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "GRUB",
+    "zh": "GNU GRUB 引导器",
+    "abbr": "GRUB",
+    "definition": "常用的多系统引导加载程序"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Device tree",
+    "zh": "设备树",
+    "abbr": "",
+    "definition": "描述嵌入式硬件拓扑的数据结构"
+  },
+  {
+    "category": "linux",
+    "chapter": 1,
+    "topic": "Linux 基础与体系结构",
+    "en": "Kernel command line",
+    "zh": "内核启动参数",
+    "abbr": "",
+    "definition": "引导时传递给内核的参数字符串"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Shell",
+    "zh": "命令解释器",
+    "abbr": "",
+    "definition": "交互执行命令及脚本的程序"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Bash",
+    "zh": "Bourne Again Shell",
+    "abbr": "",
+    "definition": "广泛使用的命令解释器"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Zsh",
+    "zh": "Z Shell",
+    "abbr": "",
+    "definition": "支持丰富补全与扩展的 Shell"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Command-line interface (CLI)",
+    "zh": "命令行界面",
+    "abbr": "CLI",
+    "definition": "通过文本命令交互的界面"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Terminal emulator",
+    "zh": "终端模拟器",
+    "abbr": "",
+    "definition": "图形环境下模拟文本终端的软件"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "TTY",
+    "zh": "电传打字机终端",
+    "abbr": "TTY",
+    "definition": "历史名称，现泛指字符终端接口"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Pseudo-terminal (PTY)",
+    "zh": "伪终端",
+    "abbr": "PTY",
+    "definition": "终端主从设备对，支持远程会话"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Standard input (stdin)",
+    "zh": "标准输入",
+    "abbr": "",
+    "definition": "进程的默认输入流，文件描述符 0"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Standard output (stdout)",
+    "zh": "标准输出",
+    "abbr": "",
+    "definition": "进程的默认输出流，文件描述符 1"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Standard error (stderr)",
+    "zh": "标准错误",
+    "abbr": "",
+    "definition": "进程的错误输出流，文件描述符 2"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Pipe",
+    "zh": "管道",
+    "abbr": "",
+    "definition": "将一个进程输出连接到另一个进程输入"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Redirection",
+    "zh": "重定向",
+    "abbr": "",
+    "definition": "改变输入输出的来源或目的地"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Here-document",
+    "zh": "此处文档",
+    "abbr": "",
+    "definition": "在脚本中内嵌多行输入数据"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Here-string",
+    "zh": "此处字符串",
+    "abbr": "",
+    "definition": "把字符串作为命令标准输入"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Environment variable",
+    "zh": "环境变量",
+    "abbr": "",
+    "definition": "传给子进程的键值配置"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "PATH",
+    "zh": "可执行文件搜索路径",
+    "abbr": "PATH",
+    "definition": "Shell 查找命令的目录列表"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Exit status",
+    "zh": "退出状态码",
+    "abbr": "",
+    "definition": "进程结束时返回的状态值"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Wildcard globbing",
+    "zh": "通配符展开",
+    "abbr": "",
+    "definition": "按文件名模式展开匹配项"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Command substitution",
+    "zh": "命令替换",
+    "abbr": "",
+    "definition": "将子命令输出插入表达式"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Process substitution",
+    "zh": "进程替换",
+    "abbr": "",
+    "definition": "把子命令流表示成路径供命令使用"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Job control",
+    "zh": "作业控制",
+    "abbr": "",
+    "definition": "管理前台和后台作业的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 2,
+    "topic": "Shell 与命令行",
+    "en": "Shebang",
+    "zh": "解释器声明行",
+    "abbr": "",
+    "definition": "脚本首行的 #! 解释器指令"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Filesystem",
+    "zh": "文件系统",
+    "abbr": "",
+    "definition": "组织和访问文件及元数据的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Filesystem Hierarchy Standard (FHS)",
+    "zh": "文件系统层次结构标准",
+    "abbr": "FHS",
+    "definition": "约定常用系统目录的用途"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Root directory (/)",
+    "zh": "根目录",
+    "abbr": "",
+    "definition": "Unix 目录树的顶层"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Home directory",
+    "zh": "家目录",
+    "abbr": "",
+    "definition": "用户个人文件的默认目录"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Working directory",
+    "zh": "工作目录",
+    "abbr": "",
+    "definition": "进程当前相对路径基准"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Absolute path",
+    "zh": "绝对路径",
+    "abbr": "",
+    "definition": "从根目录开始的完整路径"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Relative path",
+    "zh": "相对路径",
+    "abbr": "",
+    "definition": "相对于某目录的路径"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Inode",
+    "zh": "索引节点",
+    "abbr": "",
+    "definition": "保存文件元数据与数据块引用的对象"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Directory entry (dentry)",
+    "zh": "目录项",
+    "abbr": "",
+    "definition": "将文件名与文件系统对象关联"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "File descriptor (FD)",
+    "zh": "文件描述符",
+    "abbr": "FD",
+    "definition": "进程使用的已打开文件整数句柄"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Open file description",
+    "zh": "打开文件描述项",
+    "abbr": "",
+    "definition": "内核保存的文件偏移及状态对象"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Hard link",
+    "zh": "硬链接",
+    "abbr": "",
+    "definition": "指向同一 inode 的另一目录项"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Symbolic link (symlink)",
+    "zh": "符号链接",
+    "abbr": "",
+    "definition": "记录目标路径的特殊文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Mount",
+    "zh": "挂载",
+    "abbr": "",
+    "definition": "将文件系统接入目录树"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Mount point",
+    "zh": "挂载点",
+    "abbr": "",
+    "definition": "被用于挂载的目录位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Bind mount",
+    "zh": "绑定挂载",
+    "abbr": "",
+    "definition": "把已有目录或文件映射到另一位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Read-only filesystem",
+    "zh": "只读文件系统",
+    "abbr": "",
+    "definition": "不允许修改写入的挂载状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Virtual Filesystem (VFS)",
+    "zh": "虚拟文件系统层",
+    "abbr": "VFS",
+    "definition": "为不同文件系统提供统一接口"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Extended filesystem (ext4)",
+    "zh": "第四代扩展文件系统",
+    "abbr": "",
+    "definition": "Linux 常用通用文件系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "XFS",
+    "zh": "XFS 文件系统",
+    "abbr": "XFS",
+    "definition": "适合大容量和并行 I/O 的日志文件系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "Btrfs",
+    "zh": "B 树文件系统",
+    "abbr": "",
+    "definition": "支持写时复制和快照等特性的文件系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "OverlayFS",
+    "zh": "叠加文件系统",
+    "abbr": "",
+    "definition": "组合上下层目录呈现统一视图"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "procfs (/proc)",
+    "zh": "进程信息伪文件系统",
+    "abbr": "",
+    "definition": "暴露进程及内核运行信息"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "sysfs (/sys)",
+    "zh": "系统设备伪文件系统",
+    "abbr": "",
+    "definition": "以文件形式暴露内核设备模型"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "/dev",
+    "zh": "设备目录",
+    "abbr": "",
+    "definition": "设备节点的常见存放目录"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "/etc",
+    "zh": "系统配置目录",
+    "abbr": "",
+    "definition": "主机相关配置文件的常见位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "/var/log",
+    "zh": "日志目录",
+    "abbr": "",
+    "definition": "许多程序保存日志文件的位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "/run",
+    "zh": "运行时数据目录",
+    "abbr": "",
+    "definition": "启动后动态状态数据的常见位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "/tmp",
+    "zh": "临时文件目录",
+    "abbr": "",
+    "definition": "存放临时文件，清理策略依系统而定"
+  },
+  {
+    "category": "linux",
+    "chapter": 3,
+    "topic": "目录、文件与文件系统",
+    "en": "/usr",
+    "zh": "用户空间软件层次",
+    "abbr": "",
+    "definition": "系统工具、库和共享数据的常见位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Process",
+    "zh": "进程",
+    "abbr": "",
+    "definition": "拥有资源与执行上下文的程序实例"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Thread",
+    "zh": "线程",
+    "abbr": "",
+    "definition": "进程中的可调度执行流"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Task",
+    "zh": "任务",
+    "abbr": "",
+    "definition": "内核调度与管理的执行实体"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Process ID (PID)",
+    "zh": "进程标识符",
+    "abbr": "PID",
+    "definition": "标识某 PID 命名空间内进程的编号"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Parent Process ID (PPID)",
+    "zh": "父进程标识符",
+    "abbr": "PPID",
+    "definition": "父进程在相应命名空间的编号"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Thread ID (TID)",
+    "zh": "线程标识符",
+    "abbr": "TID",
+    "definition": "标识单个任务的编号"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Process group",
+    "zh": "进程组",
+    "abbr": "",
+    "definition": "便于终端作业和信号管理的进程集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Session",
+    "zh": "会话",
+    "abbr": "",
+    "definition": "关联进程组与控制终端的集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Daemon",
+    "zh": "守护进程",
+    "abbr": "",
+    "definition": "长期提供后台服务的进程"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Zombie process",
+    "zh": "僵尸进程",
+    "abbr": "",
+    "definition": "已退出但尚未被父进程回收的进程"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Orphan process",
+    "zh": "孤儿进程",
+    "abbr": "",
+    "definition": "父进程退出而被重新指定父进程的子进程"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Fork (fork())",
+    "zh": "创建子进程",
+    "abbr": "",
+    "definition": "复制调用进程以形成子进程"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Exec (execve())",
+    "zh": "执行新程序",
+    "abbr": "",
+    "definition": "用新程序映像替换当前进程内容"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Wait (waitpid())",
+    "zh": "等待子进程",
+    "abbr": "",
+    "definition": "取得子进程状态并回收退出信息"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Context switch",
+    "zh": "上下文切换",
+    "abbr": "",
+    "definition": "CPU 在执行上下文之间切换"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Signal",
+    "zh": "信号",
+    "abbr": "",
+    "definition": "对进程异步事件的通知机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "SIGTERM",
+    "zh": "终止请求信号",
+    "abbr": "SIGTERM",
+    "definition": "通常用于请求进程正常退出"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "SIGKILL",
+    "zh": "强制终止信号",
+    "abbr": "SIGKILL",
+    "definition": "不可捕获或忽略的终止信号"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "SIGINT",
+    "zh": "中断信号",
+    "abbr": "SIGINT",
+    "definition": "通常由终端 Ctrl+C 触发"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "SIGCHLD",
+    "zh": "子进程状态信号",
+    "abbr": "SIGCHLD",
+    "definition": "通知父进程子进程状态变化"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Signal handler",
+    "zh": "信号处理函数",
+    "abbr": "",
+    "definition": "程序注册的特定信号处理逻辑"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Core dump",
+    "zh": "核心转储",
+    "abbr": "",
+    "definition": "保存进程异常退出时的内存状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Process state",
+    "zh": "进程状态",
+    "abbr": "",
+    "definition": "运行、睡眠、停止等内核记录状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 4,
+    "topic": "进程、线程与信号",
+    "en": "Nice value",
+    "zh": "nice 值",
+    "abbr": "",
+    "definition": "影响普通调度类任务权重的值"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Scheduler",
+    "zh": "调度器",
+    "abbr": "",
+    "definition": "决定何时由哪个任务运行的内核组件"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Preemption",
+    "zh": "抢占",
+    "abbr": "",
+    "definition": "高优先级任务或内核机制打断当前执行"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Time slice",
+    "zh": "时间片",
+    "abbr": "",
+    "definition": "任务在一次调度中的时间配额概念"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Completely Fair Scheduler (CFS)",
+    "zh": "完全公平调度器",
+    "abbr": "CFS",
+    "definition": "历史上用于普通任务公平调度的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Earliest Eligible Virtual Deadline First (EEVDF)",
+    "zh": "最早合格虚拟截止期优先",
+    "abbr": "EEVDF",
+    "definition": "面向公平与交互延迟的调度方法"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Virtual runtime (vruntime)",
+    "zh": "虚拟运行时间",
+    "abbr": "",
+    "definition": "按任务权重归一化的运行时间"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Run queue",
+    "zh": "运行队列",
+    "abbr": "",
+    "definition": "等待被 CPU 调度的可运行任务集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Scheduling policy",
+    "zh": "调度策略",
+    "abbr": "",
+    "definition": "规定任务优先级和调度行为"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "SCHED_FIFO",
+    "zh": "先进先出实时调度策略",
+    "abbr": "SCHED_FIFO",
+    "definition": "非时间片轮转的实时调度策略"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "SCHED_RR",
+    "zh": "轮转实时调度策略",
+    "abbr": "SCHED_RR",
+    "definition": "为同优先级任务提供时间片轮转"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "CPU affinity",
+    "zh": "CPU 亲和性",
+    "abbr": "",
+    "definition": "限制或偏好任务可运行的 CPU 集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Load balancing",
+    "zh": "负载均衡",
+    "abbr": "",
+    "definition": "在 CPU 之间分配可运行任务"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Race condition",
+    "zh": "竞态条件",
+    "abbr": "",
+    "definition": "执行时序影响正确性的情形"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Critical section",
+    "zh": "临界区",
+    "abbr": "",
+    "definition": "访问共享状态需互斥的代码区域"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Mutual exclusion (mutex)",
+    "zh": "互斥锁",
+    "abbr": "",
+    "definition": "保证同一时刻互斥访问的同步原语"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Spinlock",
+    "zh": "自旋锁",
+    "abbr": "",
+    "definition": "等待期间循环检查锁状态的锁"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Semaphore",
+    "zh": "信号量",
+    "abbr": "",
+    "definition": "通过计数管理并发访问或事件的原语"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Condition variable",
+    "zh": "条件变量",
+    "abbr": "",
+    "definition": "供线程等待条件并被唤醒的原语"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Atomic operation",
+    "zh": "原子操作",
+    "abbr": "",
+    "definition": "对并发观察表现为不可分割的操作"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Memory barrier",
+    "zh": "内存屏障",
+    "abbr": "",
+    "definition": "约束某些内存访问重排的同步机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Read-Copy-Update (RCU)",
+    "zh": "读取-复制-更新",
+    "abbr": "RCU",
+    "definition": "优化读多写少共享数据访问的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Grace period",
+    "zh": "宽限期",
+    "abbr": "",
+    "definition": "RCU 等机制等待既有读侧访问完成的阶段"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "参与者循环等待而无法继续执行"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Livelock",
+    "zh": "活锁",
+    "abbr": "",
+    "definition": "任务持续活动但未取得有效进展"
+  },
+  {
+    "category": "linux",
+    "chapter": 5,
+    "topic": "CPU 调度、并发与同步",
+    "en": "Priority inversion",
+    "zh": "优先级反转",
+    "abbr": "",
+    "definition": "高优先级任务被低优先级任务间接阻塞"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Virtual memory",
+    "zh": "虚拟内存",
+    "abbr": "",
+    "definition": "通过地址映射隔离并管理进程内存"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Virtual address",
+    "zh": "虚拟地址",
+    "abbr": "",
+    "definition": "程序使用、需经页表转换的地址"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Physical address",
+    "zh": "物理地址",
+    "abbr": "",
+    "definition": "内存硬件视角的地址"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Address space",
+    "zh": "地址空间",
+    "abbr": "",
+    "definition": "进程可使用的虚拟地址范围"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Memory Management Unit (MMU)",
+    "zh": "内存管理单元",
+    "abbr": "MMU",
+    "definition": "执行虚实地址转换与权限检查"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Page table",
+    "zh": "页表",
+    "abbr": "",
+    "definition": "保存虚拟页到物理页映射的结构"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Page",
+    "zh": "内存页",
+    "abbr": "",
+    "definition": "虚拟内存管理的基本粒度"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Page frame",
+    "zh": "物理页帧",
+    "abbr": "",
+    "definition": "物理内存中的页大小块"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Page fault",
+    "zh": "缺页异常",
+    "abbr": "",
+    "definition": "访问未映射或不满足权限的页时的异常"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Minor page fault",
+    "zh": "次缺页",
+    "abbr": "",
+    "definition": "通常无需从磁盘读取数据的缺页"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Major page fault",
+    "zh": "主缺页",
+    "abbr": "",
+    "definition": "通常需要存储 I/O 的缺页"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Translation Lookaside Buffer (TLB)",
+    "zh": "快表",
+    "abbr": "TLB",
+    "definition": "缓存虚拟地址翻译结果的硬件结构"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Huge pages",
+    "zh": "大页",
+    "abbr": "",
+    "definition": "采用比基础页更大的内存页"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Transparent Huge Pages (THP)",
+    "zh": "透明大页",
+    "abbr": "THP",
+    "definition": "内核自动使用大页的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Resident Set Size (RSS)",
+    "zh": "常驻内存集大小",
+    "abbr": "RSS",
+    "definition": "进程当前驻留物理内存的度量"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Virtual Memory Size (VMS)",
+    "zh": "虚拟内存大小",
+    "abbr": "VMS",
+    "definition": "进程虚拟地址空间占用的度量"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Shared memory",
+    "zh": "共享内存",
+    "abbr": "",
+    "definition": "多个进程可映射的同一内存区域"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Memory mapping (mmap)",
+    "zh": "内存映射",
+    "abbr": "",
+    "definition": "将文件或匿名对象映射进地址空间"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Anonymous memory",
+    "zh": "匿名内存",
+    "abbr": "",
+    "definition": "不直接由普通文件支持的内存"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Copy-on-write (COW)",
+    "zh": "写时复制",
+    "abbr": "COW",
+    "definition": "首次写入前共享同一数据页的策略"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Swap",
+    "zh": "交换空间",
+    "abbr": "",
+    "definition": "用于存放从内存换出的页面内容的空间"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Out of Memory (OOM)",
+    "zh": "内存不足",
+    "abbr": "OOM",
+    "definition": "系统或限制范围内无法满足内存需求"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "OOM killer",
+    "zh": "内存不足终止器",
+    "abbr": "",
+    "definition": "必要时选择终止进程以回收资源"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Slab allocator",
+    "zh": "Slab 分配器",
+    "abbr": "",
+    "definition": "基于对象缓存的内核内存分配机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Buddy allocator",
+    "zh": "伙伴分配器",
+    "abbr": "",
+    "definition": "按 2 的幂次块管理物理页的分配器"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "NUMA",
+    "zh": "非一致性内存访问",
+    "abbr": "NUMA",
+    "definition": "访问本地与远程内存代价不同的架构"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Memory pressure",
+    "zh": "内存压力",
+    "abbr": "",
+    "definition": "可用内存紧张导致回收和延迟的程度"
+  },
+  {
+    "category": "linux",
+    "chapter": 6,
+    "topic": "内存管理",
+    "en": "Page cache",
+    "zh": "页缓存",
+    "abbr": "",
+    "definition": "缓存文件数据的内存页集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Input/output (I/O)",
+    "zh": "输入输出",
+    "abbr": "I/O",
+    "definition": "与外部设备或数据流交换信息的操作"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Blocking I/O",
+    "zh": "阻塞式 I/O",
+    "abbr": "",
+    "definition": "操作未满足条件时调用者可能等待"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Nonblocking I/O",
+    "zh": "非阻塞式 I/O",
+    "abbr": "",
+    "definition": "无法立即完成时通常及时返回"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Synchronous I/O",
+    "zh": "同步 I/O",
+    "abbr": "",
+    "definition": "调用与完成语义关联的 I/O 方式"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Asynchronous I/O",
+    "zh": "异步 I/O",
+    "abbr": "",
+    "definition": "发起与结果完成可分离的 I/O 方式"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Direct I/O (O_DIRECT)",
+    "zh": "直接 I/O",
+    "abbr": "O_DIRECT",
+    "definition": "尝试绕过常规页缓存的 I/O 模式"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Buffered I/O",
+    "zh": "缓冲 I/O",
+    "abbr": "",
+    "definition": "通常通过内核页缓存执行的文件 I/O"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "io_uring",
+    "zh": "io_uring 异步 I/O 接口",
+    "abbr": "",
+    "definition": "通过共享环队列提交与获取完成事件"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Submission Queue (SQ)",
+    "zh": "提交队列",
+    "abbr": "SQ",
+    "definition": "io_uring 中提交请求的环形队列"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Completion Queue (CQ)",
+    "zh": "完成队列",
+    "abbr": "CQ",
+    "definition": "io_uring 中接收完成结果的环形队列"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "System call entry",
+    "zh": "系统调用入口",
+    "abbr": "",
+    "definition": "CPU 从用户程序进入内核的路径"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Interrupt",
+    "zh": "中断",
+    "abbr": "",
+    "definition": "硬件或软件触发的异步事件处理机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Interrupt Request (IRQ)",
+    "zh": "中断请求",
+    "abbr": "IRQ",
+    "definition": "设备等实体触发的中断事件标识"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Softirq",
+    "zh": "软中断",
+    "abbr": "",
+    "definition": "内核延后执行的一类底半部处理机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Workqueue",
+    "zh": "工作队列",
+    "abbr": "",
+    "definition": "将工作交给内核工作线程执行的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Device driver",
+    "zh": "设备驱动程序",
+    "abbr": "",
+    "definition": "控制或抽象硬件设备的内核软件"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Character device",
+    "zh": "字符设备",
+    "abbr": "",
+    "definition": "以字节流语义提供访问的设备类型"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Block device",
+    "zh": "块设备",
+    "abbr": "",
+    "definition": "提供可寻址数据块访问的设备类型"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Direct Memory Access (DMA)",
+    "zh": "直接内存访问",
+    "abbr": "DMA",
+    "definition": "设备不经 CPU 逐字节拷贝而访问内存"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "I/O scheduler",
+    "zh": "I/O 调度器",
+    "abbr": "",
+    "definition": "对块 I/O 请求排序与调节的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "poll()",
+    "zh": "poll 事件轮询接口",
+    "abbr": "",
+    "definition": "等待多个文件描述符就绪"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "select()",
+    "zh": "select 复用接口",
+    "abbr": "",
+    "definition": "等待多个文件描述符状态变化"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "epoll",
+    "zh": "epoll 事件通知机制",
+    "abbr": "",
+    "definition": "Linux 高并发 I/O 就绪事件接口"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "Event file descriptor (eventfd)",
+    "zh": "事件文件描述符",
+    "abbr": "",
+    "definition": "用于事件通知的计数器型文件描述符"
+  },
+  {
+    "category": "linux",
+    "chapter": 7,
+    "topic": "I/O、设备和内核接口",
+    "en": "File descriptor table",
+    "zh": "文件描述符表",
+    "abbr": "",
+    "definition": "进程管理 FD 到内核文件引用的映射"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Network stack",
+    "zh": "网络协议栈",
+    "abbr": "",
+    "definition": "内核中实现网络协议的组件"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Network interface",
+    "zh": "网络接口",
+    "abbr": "",
+    "definition": "操作系统发送和接收网络数据的端点"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Network Interface Card (NIC)",
+    "zh": "网络接口卡",
+    "abbr": "NIC",
+    "definition": "物理或虚拟网络适配器"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Loopback interface",
+    "zh": "环回接口",
+    "abbr": "",
+    "definition": "主机与自身通信的接口，如 lo"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "IP address",
+    "zh": "IP 地址",
+    "abbr": "",
+    "definition": "网络层识别接口或节点的地址"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Subnet mask",
+    "zh": "子网掩码",
+    "abbr": "",
+    "definition": "确定 IPv4 网络前缀范围的掩码"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "CIDR",
+    "zh": "无类别域间路由",
+    "abbr": "CIDR",
+    "definition": "用前缀长度表示地址块的方法"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Default gateway",
+    "zh": "默认网关",
+    "abbr": "",
+    "definition": "无更具体路由时使用的下一跳"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Routing table",
+    "zh": "路由表",
+    "abbr": "",
+    "definition": "用于选择数据包转发路径的信息表"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Domain Name System (DNS)",
+    "zh": "域名系统",
+    "abbr": "DNS",
+    "definition": "将域名解析为记录的分布式系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Socket",
+    "zh": "套接字",
+    "abbr": "",
+    "definition": "应用进行网络或本地进程通信的端点"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "TCP",
+    "zh": "传输控制协议",
+    "abbr": "TCP",
+    "definition": "面向连接且可靠的字节流协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "UDP",
+    "zh": "用户数据报协议",
+    "abbr": "UDP",
+    "definition": "无连接的报文传输协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "IP",
+    "zh": "网际协议",
+    "abbr": "IP",
+    "definition": "负责网络层编址和数据包转发的协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "ICMP",
+    "zh": "互联网控制消息协议",
+    "abbr": "ICMP",
+    "definition": "用于错误反馈和诊断的网络协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "ARP",
+    "zh": "地址解析协议",
+    "abbr": "ARP",
+    "definition": "在 IPv4 局域网解析链路层地址的协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Neighbor Discovery (NDP)",
+    "zh": "邻居发现协议",
+    "abbr": "NDP",
+    "definition": "IPv6 邻居与路由发现机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Three-way handshake",
+    "zh": "三次握手",
+    "abbr": "",
+    "definition": "TCP 建立连接的同步过程"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Four-tuple",
+    "zh": "四元组",
+    "abbr": "",
+    "definition": "源地址、源端口、目的地址、目的端口"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Listen backlog",
+    "zh": "监听积压队列",
+    "abbr": "",
+    "definition": "待接受连接相关队列的容量概念"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Socket buffer",
+    "zh": "套接字缓冲区",
+    "abbr": "",
+    "definition": "内核用于收发网络数据的缓冲区"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Maximum Transmission Unit (MTU)",
+    "zh": "最大传输单元",
+    "abbr": "MTU",
+    "definition": "链路层可承载的最大网络层报文大小"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Network Address Translation (NAT)",
+    "zh": "网络地址转换",
+    "abbr": "NAT",
+    "definition": "改写报文 IP 地址或端口的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Conntrack",
+    "zh": "连接跟踪",
+    "abbr": "",
+    "definition": "记录网络流量连接状态的子系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Netfilter",
+    "zh": "网络过滤框架",
+    "abbr": "",
+    "definition": "内核包过滤、NAT 等处理钩子框架"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "nftables",
+    "zh": "nftables 防火墙框架",
+    "abbr": "",
+    "definition": "Linux 新一代包过滤规则体系"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "iptables",
+    "zh": "iptables 规则工具",
+    "abbr": "",
+    "definition": "配置传统 Netfilter 规则的用户空间工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "tc (traffic control)",
+    "zh": "流量控制工具",
+    "abbr": "",
+    "definition": "配置队列规则、分类器和整形策略"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "qdisc (queueing discipline)",
+    "zh": "排队规则",
+    "abbr": "",
+    "definition": "网络包队列管理与调度机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 8,
+    "topic": "Linux 网络",
+    "en": "Virtual Ethernet (veth)",
+    "zh": "虚拟以太网设备对",
+    "abbr": "",
+    "definition": "常用于连接容器与主机网络的接口对"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Root user",
+    "zh": "超级用户",
+    "abbr": "",
+    "definition": "通常拥有用户标识符 0 的账户"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "User ID (UID)",
+    "zh": "用户标识符",
+    "abbr": "UID",
+    "definition": "标识用户身份的数字 ID"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Group ID (GID)",
+    "zh": "组标识符",
+    "abbr": "GID",
+    "definition": "标识用户组的数字 ID"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "File mode",
+    "zh": "文件权限模式",
+    "abbr": "",
+    "definition": "控制读写执行权限的位字段"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Read permission",
+    "zh": "读权限",
+    "abbr": "",
+    "definition": "允许读取文件或目录内容的权限"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Write permission",
+    "zh": "写权限",
+    "abbr": "",
+    "definition": "允许修改文件或目录项的权限"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Execute permission",
+    "zh": "执行权限",
+    "abbr": "",
+    "definition": "允许执行文件或进入目录的权限"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Set-user-ID (setuid)",
+    "zh": "设置用户 ID 位",
+    "abbr": "",
+    "definition": "执行时按文件所有者身份设置有效 UID"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Set-group-ID (setgid)",
+    "zh": "设置组 ID 位",
+    "abbr": "",
+    "definition": "执行时按文件组身份设置有效 GID 等"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Sticky bit",
+    "zh": "粘滞位",
+    "abbr": "",
+    "definition": "目录上限制删除或重命名他人文件的位"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Access Control List (ACL)",
+    "zh": "访问控制列表",
+    "abbr": "ACL",
+    "definition": "提供比传统权限位更细的授权规则"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Discretionary Access Control (DAC)",
+    "zh": "自主访问控制",
+    "abbr": "DAC",
+    "definition": "由对象所有者等决定授权的模型"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Mandatory Access Control (MAC)",
+    "zh": "强制访问控制",
+    "abbr": "MAC",
+    "definition": "由系统安全策略强制执行的访问控制"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Security-Enhanced Linux (SELinux)",
+    "zh": "安全增强型 Linux",
+    "abbr": "SELinux",
+    "definition": "基于策略的强制访问控制框架"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "AppArmor",
+    "zh": "AppArmor 安全框架",
+    "abbr": "",
+    "definition": "以配置文件限制程序资源访问"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Linux capabilities",
+    "zh": "Linux 权能",
+    "abbr": "",
+    "definition": "把部分超级用户权限分解为独立权能"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Least privilege",
+    "zh": "最小权限原则",
+    "abbr": "",
+    "definition": "只授予完成任务所必需的权限"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Privilege escalation",
+    "zh": "权限提升",
+    "abbr": "",
+    "definition": "获得超出原有授权的权限"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "seccomp",
+    "zh": "安全计算模式",
+    "abbr": "",
+    "definition": "限制进程可使用的系统调用"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "seccomp-BPF",
+    "zh": "seccomp BPF 过滤",
+    "abbr": "",
+    "definition": "按过滤规则限制系统调用"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Pluggable Authentication Modules (PAM)",
+    "zh": "可插拔认证模块",
+    "abbr": "PAM",
+    "definition": "提供可配置的身份认证框架"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "SSH",
+    "zh": "安全外壳协议",
+    "abbr": "SSH",
+    "definition": "用于安全远程登录和执行命令"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Public key authentication",
+    "zh": "公钥认证",
+    "abbr": "",
+    "definition": "使用公私钥对验证身份的方法"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Sudo",
+    "zh": "特权命令执行工具",
+    "abbr": "",
+    "definition": "按策略以其他用户身份执行命令"
+  },
+  {
+    "category": "linux",
+    "chapter": 9,
+    "topic": "用户、权限与安全",
+    "en": "Audit subsystem",
+    "zh": "审计子系统",
+    "abbr": "",
+    "definition": "记录安全相关系统活动的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Init process",
+    "zh": "初始化进程",
+    "abbr": "",
+    "definition": "系统启动后承担初始用户空间管理的进程"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "PID 1",
+    "zh": "一号进程",
+    "abbr": "",
+    "definition": "PID 命名空间中的首个进程，通常负责回收孤儿"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "systemd",
+    "zh": "systemd 系统管理器",
+    "abbr": "",
+    "definition": "提供服务和系统状态管理的套件"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Unit",
+    "zh": "systemd 单元",
+    "abbr": "",
+    "definition": "systemd 管理的服务、挂载等对象"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Service unit",
+    "zh": "服务单元",
+    "abbr": "",
+    "definition": "描述一个服务及其运行方式的配置"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Socket activation",
+    "zh": "套接字激活",
+    "abbr": "",
+    "definition": "由连接事件按需启动服务的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Target unit",
+    "zh": "目标单元",
+    "abbr": "",
+    "definition": "用于组合其他单元的同步点"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "systemctl",
+    "zh": "systemd 控制命令",
+    "abbr": "",
+    "definition": "检查、启动和管理 systemd 单元"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "journalctl",
+    "zh": "日志查询命令",
+    "abbr": "",
+    "definition": "读取 systemd journal 中的日志"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "journald",
+    "zh": "systemd 日志服务",
+    "abbr": "",
+    "definition": "收集并管理结构化系统日志"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Syslog",
+    "zh": "系统日志协议及机制",
+    "abbr": "",
+    "definition": "系统消息的标准化记录与传输概念"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Cron",
+    "zh": "定时任务守护程序",
+    "abbr": "",
+    "definition": "根据时间表达式执行任务"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Cron expression",
+    "zh": "Cron 时间表达式",
+    "abbr": "",
+    "definition": "描述定时任务触发时刻的语法"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "System timer",
+    "zh": "systemd 定时器",
+    "abbr": "",
+    "definition": "基于时钟或启动事件触发单元"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Package manager",
+    "zh": "软件包管理器",
+    "abbr": "",
+    "definition": "安装、更新与卸载软件的软件"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "APT",
+    "zh": "高级软件包工具",
+    "abbr": "APT",
+    "definition": "Debian 系发行版的软件包管理体系"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "DPKG",
+    "zh": "Debian 包管理工具",
+    "abbr": "DPKG",
+    "definition": "处理 .deb 软件包的底层工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "RPM",
+    "zh": "RPM 包管理器",
+    "abbr": "RPM",
+    "definition": "管理 RPM 软件包的工具及格式"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "DNF",
+    "zh": "DNF 软件包管理器",
+    "abbr": "DNF",
+    "definition": "RPM 系发行版的依赖管理前端"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Environment file",
+    "zh": "环境配置文件",
+    "abbr": "",
+    "definition": "保存服务运行环境变量的文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Hostname",
+    "zh": "主机名",
+    "abbr": "",
+    "definition": "系统在网络或本地环境中的名称"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "NTP",
+    "zh": "网络时间协议",
+    "abbr": "NTP",
+    "definition": "用于在网络上同步时钟的协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Time zone",
+    "zh": "时区",
+    "abbr": "",
+    "definition": "本地民用时间与 UTC 的规则关系"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Log rotation",
+    "zh": "日志轮转",
+    "abbr": "",
+    "definition": "按周期或大小切换并保留日志文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 10,
+    "topic": "启动、服务与系统管理",
+    "en": "Runlevel",
+    "zh": "运行级别",
+    "abbr": "",
+    "definition": "传统 SysV init 使用的系统运行状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Container",
+    "zh": "容器",
+    "abbr": "",
+    "definition": "通过内核隔离与资源控制运行的进程环境"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Namespace",
+    "zh": "命名空间",
+    "abbr": "",
+    "definition": "隔离进程所见系统资源的内核机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "PID namespace",
+    "zh": "PID 命名空间",
+    "abbr": "",
+    "definition": "隔离进程编号与进程树视图"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Mount namespace",
+    "zh": "挂载命名空间",
+    "abbr": "",
+    "definition": "隔离挂载点及目录树视图"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Network namespace",
+    "zh": "网络命名空间",
+    "abbr": "",
+    "definition": "隔离接口、路由和部分网络状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "User namespace",
+    "zh": "用户命名空间",
+    "abbr": "",
+    "definition": "隔离用户及组 ID 映射"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "IPC namespace",
+    "zh": "IPC 命名空间",
+    "abbr": "",
+    "definition": "隔离部分进程间通信资源"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "UTS namespace",
+    "zh": "UTS 命名空间",
+    "abbr": "",
+    "definition": "隔离主机名和域名等标识"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Cgroup namespace",
+    "zh": "控制组命名空间",
+    "abbr": "",
+    "definition": "隔离 cgroup 路径视图"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Time namespace",
+    "zh": "时间命名空间",
+    "abbr": "",
+    "definition": "隔离部分内核时钟偏移视图"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Control groups (cgroups)",
+    "zh": "控制组",
+    "abbr": "",
+    "definition": "对进程组进行资源计量、限制与管理"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "cgroup v2",
+    "zh": "第二版控制组",
+    "abbr": "",
+    "definition": "统一层级结构的 cgroup 接口"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "CPU quota",
+    "zh": "CPU 配额",
+    "abbr": "",
+    "definition": "限制一组任务可消耗的 CPU 时间"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Memory limit",
+    "zh": "内存限制",
+    "abbr": "",
+    "definition": "约束进程组可用内存的上限"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Container image",
+    "zh": "容器镜像",
+    "abbr": "",
+    "definition": "用于创建容器的分层文件系统与配置"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Image layer",
+    "zh": "镜像层",
+    "abbr": "",
+    "definition": "容器镜像可复用的文件系统增量层"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Container runtime",
+    "zh": "容器运行时",
+    "abbr": "",
+    "definition": "负责创建与运行容器的组件"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "OCI",
+    "zh": "开放容器倡议",
+    "abbr": "OCI",
+    "definition": "制定镜像与运行时相关规范的组织"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "runc",
+    "zh": "runc 运行时",
+    "abbr": "",
+    "definition": "实现 OCI 运行时规范的低层容器工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "containerd",
+    "zh": "containerd 容器运行时",
+    "abbr": "",
+    "definition": "管理容器生命周期的运行时服务"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "chroot",
+    "zh": "改变根目录",
+    "abbr": "",
+    "definition": "改变进程路径解析的根目录；非完整隔离"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Pivot root",
+    "zh": "切换根文件系统",
+    "abbr": "",
+    "definition": "将挂载树根切换到新目录的操作"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Virtual machine (VM)",
+    "zh": "虚拟机",
+    "abbr": "VM",
+    "definition": "通过虚拟化运行独立客户机操作系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Kernel-based Virtual Machine (KVM)",
+    "zh": "基于内核的虚拟机",
+    "abbr": "KVM",
+    "definition": "Linux 内核的硬件辅助虚拟化功能"
+  },
+  {
+    "category": "linux",
+    "chapter": 11,
+    "topic": "容器与虚拟化",
+    "en": "Hypervisor",
+    "zh": "虚拟机监控器",
+    "abbr": "",
+    "definition": "创建和管理虚拟机的底层软件"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Observability",
+    "zh": "可观测性",
+    "abbr": "",
+    "definition": "通过系统输出推断内部运行状态的能力"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Telemetry",
+    "zh": "遥测数据",
+    "abbr": "",
+    "definition": "从系统收集的指标、日志和追踪数据"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Metrics",
+    "zh": "指标",
+    "abbr": "",
+    "definition": "用于量化状态或性能的数值序列"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Tracing",
+    "zh": "追踪",
+    "abbr": "",
+    "definition": "记录系统事件与调用路径的观测方法"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Profiling",
+    "zh": "性能剖析",
+    "abbr": "",
+    "definition": "统计程序时间或资源消耗分布的方法"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Sampling",
+    "zh": "采样",
+    "abbr": "",
+    "definition": "按频率或事件抽取部分观测数据"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Flame graph",
+    "zh": "火焰图",
+    "abbr": "",
+    "definition": "汇总调用栈热点的可视化图表"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Latency",
+    "zh": "延迟",
+    "abbr": "",
+    "definition": "完成一次操作所需的时间"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间内处理的工作量"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "QPS",
+    "zh": "每秒查询数",
+    "abbr": "QPS",
+    "definition": "单位时间内完成的查询数量"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "P99 latency",
+    "zh": "P99 延迟",
+    "abbr": "",
+    "definition": "99% 样本不超过的延迟值"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "CPU utilization",
+    "zh": "CPU 使用率",
+    "abbr": "",
+    "definition": "CPU 在观察时间内执行工作的比例"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Load average",
+    "zh": "平均负载",
+    "abbr": "",
+    "definition": "一定时段可运行及不可中断任务数的平滑值"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "I/O wait",
+    "zh": "I/O 等待",
+    "abbr": "",
+    "definition": "CPU 空闲且存在待完成 I/O 时的一类记账时间"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Context switch rate",
+    "zh": "上下文切换率",
+    "abbr": "",
+    "definition": "单位时间内发生的上下文切换次数"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Page fault rate",
+    "zh": "缺页率",
+    "abbr": "",
+    "definition": "单位时间内发生的缺页次数"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Performance counters",
+    "zh": "性能计数器",
+    "abbr": "",
+    "definition": "由硬件或软件记录的性能事件计数"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Performance Monitoring Unit (PMU)",
+    "zh": "性能监控单元",
+    "abbr": "PMU",
+    "definition": "CPU 提供的硬件性能事件采集单元"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "perf",
+    "zh": "Linux perf 工具",
+    "abbr": "",
+    "definition": "利用内核性能事件接口进行分析的工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "strace",
+    "zh": "系统调用跟踪工具",
+    "abbr": "",
+    "definition": "观察程序系统调用与返回结果"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "ftrace",
+    "zh": "内核函数跟踪框架",
+    "abbr": "",
+    "definition": "Linux 内核自带的事件与函数跟踪框架"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "tracepoint",
+    "zh": "静态跟踪点",
+    "abbr": "",
+    "definition": "在内核代码中预定义的观测事件"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "kprobe",
+    "zh": "内核探针",
+    "abbr": "",
+    "definition": "在运行时动态探测内核代码位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "uprobes",
+    "zh": "用户空间探针",
+    "abbr": "",
+    "definition": "动态探测用户程序代码位置"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "BPF trace",
+    "zh": "BPF 追踪",
+    "abbr": "",
+    "definition": "使用 BPF 程序观测内核运行事件"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Pressure Stall Information (PSI)",
+    "zh": "资源压力停顿信息",
+    "abbr": "PSI",
+    "definition": "统计 CPU、内存、I/O 等资源停顿时间"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Bottleneck",
+    "zh": "性能瓶颈",
+    "abbr": "",
+    "definition": "限制系统整体能力的关键资源或环节"
+  },
+  {
+    "category": "linux",
+    "chapter": 12,
+    "topic": "系统性能与可观测性",
+    "en": "Benchmark",
+    "zh": "基准测试",
+    "abbr": "",
+    "definition": "在可控条件下测量系统性能"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Extended Berkeley Packet Filter (eBPF)",
+    "zh": "扩展伯克利包过滤器",
+    "abbr": "",
+    "definition": "可在受约束的内核执行环境中运行的程序机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF virtual machine",
+    "zh": "BPF 虚拟机",
+    "abbr": "",
+    "definition": "执行 BPF 指令集的抽象运行环境"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF verifier",
+    "zh": "BPF 验证器",
+    "abbr": "",
+    "definition": "静态检查 BPF 程序安全属性的组件"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF map",
+    "zh": "BPF 映射",
+    "abbr": "",
+    "definition": "供 BPF 与用户态交换或存储数据的结构"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF helper",
+    "zh": "BPF 辅助函数",
+    "abbr": "",
+    "definition": "内核向 BPF 程序提供的特定调用"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF program type",
+    "zh": "BPF 程序类型",
+    "abbr": "",
+    "definition": "决定程序挂载位置及能力的类别"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF ring buffer",
+    "zh": "BPF 环形缓冲区",
+    "abbr": "",
+    "definition": "BPF 事件向用户态传输的共享缓冲"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "XDP",
+    "zh": "快速数据路径",
+    "abbr": "XDP",
+    "definition": "在网络驱动早期路径执行 BPF 程序的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "AF_XDP",
+    "zh": "AF_XDP 套接字",
+    "abbr": "AF_XDP",
+    "definition": "支持高性能包收发的套接字地址族"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF CO-RE",
+    "zh": "一次编译到处运行",
+    "abbr": "",
+    "definition": "基于 BTF 等实现跨内核类型适配的方法"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF Type Format (BTF)",
+    "zh": "BPF 类型格式",
+    "abbr": "BTF",
+    "definition": "提供紧凑类型及调试元数据的格式"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "libbpf",
+    "zh": "libbpf 开发库",
+    "abbr": "",
+    "definition": "加载和管理 BPF 程序的用户空间库"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "BPF JIT",
+    "zh": "BPF 即时编译器",
+    "abbr": "",
+    "definition": "将 BPF 指令编译为本机指令的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Kernel source tree",
+    "zh": "内核源码树",
+    "abbr": "",
+    "definition": "Linux 内核源文件和构建配置的目录结构"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Kbuild",
+    "zh": "内核构建系统",
+    "abbr": "",
+    "definition": "负责编译内核及模块的构建机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Kconfig",
+    "zh": "内核配置语言及工具",
+    "abbr": "",
+    "definition": "表示配置选项与依赖关系的系统"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Kernel patch",
+    "zh": "内核补丁",
+    "abbr": "",
+    "definition": "用于修改内核源码的变更集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Upstream kernel",
+    "zh": "上游内核",
+    "abbr": "",
+    "definition": "Linux 主线开发社区维护的代码基线"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Stable kernel",
+    "zh": "稳定版内核",
+    "abbr": "",
+    "definition": "面向修复和维护的稳定分支"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Longterm kernel (LTS)",
+    "zh": "长期维护内核",
+    "abbr": "LTS",
+    "definition": "获得较长维护周期的稳定分支"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Kernel oops",
+    "zh": "内核异常报告",
+    "abbr": "",
+    "definition": "内核执行遇到错误时的诊断输出"
+  },
+  {
+    "category": "linux",
+    "chapter": 13,
+    "topic": "eBPF 与内核开发",
+    "en": "Kernel panic",
+    "zh": "内核恐慌",
+    "abbr": "",
+    "definition": "无法安全继续运行时的严重错误状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Disk partition",
+    "zh": "磁盘分区",
+    "abbr": "",
+    "definition": "在块设备上划分出的逻辑区域"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Partition table",
+    "zh": "分区表",
+    "abbr": "",
+    "definition": "描述磁盘分区位置和大小的元数据"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "GUID Partition Table (GPT)",
+    "zh": "全局唯一标识分区表",
+    "abbr": "GPT",
+    "definition": "现代磁盘分区表格式"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Master Boot Record (MBR)",
+    "zh": "主引导记录",
+    "abbr": "MBR",
+    "definition": "传统引导和分区记录格式"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Logical Volume Manager (LVM)",
+    "zh": "逻辑卷管理器",
+    "abbr": "LVM",
+    "definition": "对物理存储进行抽象与弹性分配的工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Physical volume (PV)",
+    "zh": "物理卷",
+    "abbr": "PV",
+    "definition": "LVM 管理的底层存储成员"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Volume group (VG)",
+    "zh": "卷组",
+    "abbr": "VG",
+    "definition": "LVM 中由一个或多个物理卷组成的资源池"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Logical volume (LV)",
+    "zh": "逻辑卷",
+    "abbr": "LV",
+    "definition": "从卷组分配的逻辑块设备"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "RAID",
+    "zh": "独立磁盘冗余阵列",
+    "abbr": "RAID",
+    "definition": "通过磁盘组合改善冗余或性能的技术"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Software RAID",
+    "zh": "软件 RAID",
+    "abbr": "",
+    "definition": "由操作系统软件实现的 RAID"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Device mapper",
+    "zh": "设备映射器",
+    "abbr": "",
+    "definition": "内核块设备映射与虚拟化框架"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "LUKS",
+    "zh": "Linux 统一密钥设置",
+    "abbr": "LUKS",
+    "definition": "常用的块设备加密格式及标准"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "DM-Crypt",
+    "zh": "设备映射加密目标",
+    "abbr": "",
+    "definition": "通过 device-mapper 提供块级加密"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Journaling",
+    "zh": "日志式文件系统机制",
+    "abbr": "",
+    "definition": "先记录变更以便崩溃恢复的技术"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Write-ahead logging (WAL)",
+    "zh": "预写式日志",
+    "abbr": "WAL",
+    "definition": "更新数据前先记录恢复日志的策略"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Writeback",
+    "zh": "回写",
+    "abbr": "",
+    "definition": "将缓存中的脏数据写入持久存储"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Dirty page",
+    "zh": "脏页",
+    "abbr": "",
+    "definition": "已修改但尚未同步到后端存储的页面"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "fsync()",
+    "zh": "文件同步系统调用",
+    "abbr": "",
+    "definition": "请求将文件相关修改刷至持久存储"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "I/O operations per second (IOPS)",
+    "zh": "每秒 I/O 操作数",
+    "abbr": "IOPS",
+    "definition": "衡量存储随机操作能力的指标"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Sequential I/O",
+    "zh": "顺序 I/O",
+    "abbr": "",
+    "definition": "按相邻偏移连续访问数据的模式"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Random I/O",
+    "zh": "随机 I/O",
+    "abbr": "",
+    "definition": "在不同偏移位置离散访问数据的模式"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Solid State Drive (SSD)",
+    "zh": "固态硬盘",
+    "abbr": "SSD",
+    "definition": "以闪存等介质存储数据的设备"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Non-Volatile Memory Express (NVMe)",
+    "zh": "非易失性存储器高速接口",
+    "abbr": "NVMe",
+    "definition": "主要用于高速存储设备的访问协议"
+  },
+  {
+    "category": "linux",
+    "chapter": 14,
+    "topic": "存储、磁盘与可靠性",
+    "en": "Snapshot",
+    "zh": "快照",
+    "abbr": "",
+    "definition": "保存某时点逻辑数据状态的机制"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Compiler",
+    "zh": "编译器",
+    "abbr": "",
+    "definition": "将源代码转换为目标代码的工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "GNU Compiler Collection (GCC)",
+    "zh": "GNU 编译器套件",
+    "abbr": "GCC",
+    "definition": "支持多语言和架构的编译器集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Clang",
+    "zh": "Clang 编译器",
+    "abbr": "",
+    "definition": "基于 LLVM 的 C/C++ 等语言前端"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Linker",
+    "zh": "链接器",
+    "abbr": "",
+    "definition": "将目标文件和库组合为可执行文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Assembler",
+    "zh": "汇编器",
+    "abbr": "",
+    "definition": "把汇编指令转为机器码的工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Executable and Linkable Format (ELF)",
+    "zh": "可执行与可链接格式",
+    "abbr": "ELF",
+    "definition": "Linux 常用可执行文件和目标文件格式"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Dynamic linker",
+    "zh": "动态链接器",
+    "abbr": "",
+    "definition": "运行时装载共享库并进行符号解析的组件"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Shared library",
+    "zh": "共享库",
+    "abbr": "",
+    "definition": "由多个程序在运行时复用的代码库"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Static library",
+    "zh": "静态库",
+    "abbr": "",
+    "definition": "链接时被复制进目标程序的代码集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Symbol",
+    "zh": "符号",
+    "abbr": "",
+    "definition": "编译与链接阶段用于标识对象或函数的名称"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Debug symbol",
+    "zh": "调试符号",
+    "abbr": "",
+    "definition": "帮助将机器地址映射到源码信息的元数据"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "GNU Debugger (GDB)",
+    "zh": "GNU 调试器",
+    "abbr": "GDB",
+    "definition": "支持断点、单步和内存检查的调试工具"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "DWARF",
+    "zh": "DWARF 调试信息格式",
+    "abbr": "DWARF",
+    "definition": "广泛用于保存源级调试元数据的格式"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Core file",
+    "zh": "核心文件",
+    "abbr": "",
+    "definition": "保存进程崩溃状态用于离线分析的文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Makefile",
+    "zh": "Make 构建规则文件",
+    "abbr": "",
+    "definition": "描述目标、依赖及构建命令的文件"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Cross-compilation",
+    "zh": "交叉编译",
+    "abbr": "",
+    "definition": "为不同于编译主机的平台构建软件"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Build system",
+    "zh": "构建系统",
+    "abbr": "",
+    "definition": "自动执行编译、链接和产物生成的工具链"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Toolchain",
+    "zh": "工具链",
+    "abbr": "",
+    "definition": "编译器、链接器和相关开发工具的集合"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Package dependency",
+    "zh": "软件包依赖",
+    "abbr": "",
+    "definition": "运行或构建某软件所需的其他软件包"
+  },
+  {
+    "category": "linux",
+    "chapter": 15,
+    "topic": "构建、工具链与调试",
+    "en": "Reproducible build",
+    "zh": "可复现构建",
+    "abbr": "",
+    "definition": "相同输入及环境产生可验证一致产物的实践"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Segmentation fault (SIGSEGV)",
+    "zh": "段错误",
+    "abbr": "SIGSEGV",
+    "definition": "访问不允许的内存地址引发的异常"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Permission denied",
+    "zh": "权限被拒绝",
+    "abbr": "",
+    "definition": "资源访问未通过权限检查"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Operation not permitted (EPERM)",
+    "zh": "操作不被允许",
+    "abbr": "EPERM",
+    "definition": "因权限或策略限制导致的错误码"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "No such file or directory (ENOENT)",
+    "zh": "文件或目录不存在",
+    "abbr": "ENOENT",
+    "definition": "指定路径或对象无法找到的错误码"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Out of memory (ENOMEM)",
+    "zh": "内存不足错误",
+    "abbr": "ENOMEM",
+    "definition": "分配内存失败的错误码"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Resource temporarily unavailable (EAGAIN)",
+    "zh": "资源暂时不可用",
+    "abbr": "EAGAIN",
+    "definition": "操作当前不能完成，可能适合重试"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Too many open files (EMFILE)",
+    "zh": "打开文件过多",
+    "abbr": "EMFILE",
+    "definition": "进程达到文件描述符数量限制"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "File descriptor leak",
+    "zh": "文件描述符泄漏",
+    "abbr": "",
+    "definition": "未及时关闭 FD 使资源持续累积"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Memory leak",
+    "zh": "内存泄漏",
+    "abbr": "",
+    "definition": "不再需要的内存仍长期无法释放"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Disk full (ENOSPC)",
+    "zh": "磁盘空间不足",
+    "abbr": "ENOSPC",
+    "definition": "无法获得所需存储空间的错误"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Read-only filesystem (EROFS)",
+    "zh": "只读文件系统错误",
+    "abbr": "EROFS",
+    "definition": "尝试写入只读文件系统引发的错误"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Kernel taint",
+    "zh": "内核污点标记",
+    "abbr": "",
+    "definition": "记录特定环境或事件的内核诊断状态"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Soft lockup",
+    "zh": "软锁死",
+    "abbr": "",
+    "definition": "CPU 长时间未能完成必要的调度进展"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Hard lockup",
+    "zh": "硬锁死",
+    "abbr": "",
+    "definition": "CPU 长时间没有响应预期的硬件监测事件"
+  },
+  {
+    "category": "linux",
+    "chapter": 16,
+    "topic": "故障排查与常见状态",
+    "en": "Watchdog",
+    "zh": "看门狗机制",
+    "abbr": "",
+    "definition": "监测系统卡顿并触发告警或恢复的机制"
   }
 ]
