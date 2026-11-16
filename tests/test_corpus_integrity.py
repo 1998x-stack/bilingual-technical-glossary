@@ -69,7 +69,7 @@ class CorpusIntegrityTests(unittest.TestCase):
 
 class PublishingInvariantsTests(unittest.TestCase):
     def test_static_site_is_mirrored(self):
-        for name in ("index.html", "app.js", "styles.css", "favicon.svg"):
+        for name in ("index.html", "app.js", "styles.css", "favicon.svg", "term.html", "term.css", "term.js"):
             with self.subTest(name=name):
                 self.assertEqual(
                     (ROOT / "site" / name).read_bytes(),

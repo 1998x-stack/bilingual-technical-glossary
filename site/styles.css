@@ -15,3 +15,10 @@ body.dark{--ink:#e4ecfb;--ink-light:#a2b0c8;--ink-subtle:#71839d;--panel:#1c2b40
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 .cat-downloads{display:flex;gap:8px;margin-top:9px}.cat-downloads a{font-size:9px;font-weight:800;color:#647bd3;padding:5px 7px;background:#eff3ff;border-radius:6px}.cat-downloads a:hover{background:#dce6ff;color:#364bb7}body.dark .cat-downloads a{background:#2c3e63;color:#b1c1ff}.category-card{min-height:186px}
+
+/* Term details are navigated from the single Explorer; don't introduce a separate Wiki catalog. */
+.terms-table .term-link{color:var(--ink);text-decoration:none;display:inline-block;transition:color .16s}
+.terms-table .term-link:hover,.terms-table .term-link:focus-visible{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.terms-table .term-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.term-wiki-hint{display:inline-block;vertical-align:middle;margin:4px 0 0 7px;color:#377e70;background:#eaf6f1;border:1px solid #d3eae1;border-radius:5px;font-size:9px;font-weight:800;padding:1px 6px}
+body.dark .term-wiki-hint{color:#b7f5df;background:#244e48;border-color:#356b61}

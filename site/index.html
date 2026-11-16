@@ -21,7 +21,6 @@
         <a href="#explorer" class="side-link" data-nav="explorer"><span class="nav-symbol">⌕</span><span>术语检索 Explorer</span></a>
         <a href="#collections" class="side-link" data-nav="collections"><span class="nav-symbol">▦</span><span>学科专题 Collections</span></a>
         <a href="#insights" class="side-link" data-nav="insights"><span class="nav-symbol">↗</span><span>知识图谱 Insights</span></a>
-        <a href="./wiki/ai-infrastructure/index.html" class="side-link"><span class="nav-symbol">◇</span><span>深度 Wiki · AI Infra</span></a>
       </nav>
       <div class="side-label spaced">SUBJECTS</div>
       <nav id="side-subjects" class="side-nav subject-links" aria-label="学科分类"></nav>
@@ -42,7 +41,7 @@
             <h1 id="hero-title">A common language<br>for <em>complex ideas.</em></h1>
             <p class="hero-cn">跨越语言边界，连接数学基础与人工智能前沿。</p>
             <p class="hero-desc">一个为研究者、开发者与学习者打造的中英双语技术术语图鉴。查找、理解、比较、导出，从概念开始构建体系。</p>
-            <div class="hero-actions"><button id="jump-search" class="btn primary">探索全部术语 <span>↗</span></button><a class="btn ghost" href="./wiki/ai-infrastructure/index.html">阅读 AI Infra Wiki <span>↗</span></a><a class="btn ghost" href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">查看 GitHub <span>↗</span></a></div>
+            <div class="hero-actions"><button id="jump-search" class="btn primary">探索全部术语 <span>↗</span></button><a class="btn ghost" href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">查看 GitHub <span>↗</span></a></div>
           </div>
           <div class="hero-corner">RESEARCH · BUILD · UNDERSTAND</div>
         </section>
@@ -72,7 +71,7 @@
           </article>
         </section>
         <section class="section explorer-section" id="explorer">
-          <div class="section-heading"><div><div class="eyebrow">04 / TERMINOLOGY EXPLORER</div><h2>统一术语检索 <span>Find the precise term.</span></h2><p>支持 English / 中文 / Abbreviation / 释义 搜索，筛选学科及专题。</p></div><div class="explorer-tools"><button id="copy-link" class="tiny-btn" title="复制当前搜索链接">⛓ 复制链接</button><button id="download-csv" class="tiny-btn" title="下载当前筛选结果">↓ 导出 CSV</button></div></div>
+          <div class="section-heading"><div><div class="eyebrow">04 / TERMINOLOGY EXPLORER</div><h2>统一术语检索 <span>Find the precise term.</span></h2><p>支持 English / 中文 / Abbreviation / 释义 搜索；点击任意术语查看详情，已发布的专业解析将直接展示。</p></div><div class="explorer-tools"><button id="copy-link" class="tiny-btn" title="复制当前搜索链接">⛓ 复制链接</button><button id="download-csv" class="tiny-btn" title="下载当前筛选结果">↓ 导出 CSV</button></div></div>
           <div class="search-box"><span class="search-icon">⌕</span><input id="search-input" type="search" autocomplete="off" placeholder="搜索，例如 Transformer、马尔可夫、KV Cache、PPO、SVD..." aria-label="搜索术语"><span class="search-shortcut">⌘ K</span><button id="clear-search" type="button" aria-label="清除搜索" hidden>×</button></div>
           <div class="filterbar"><div class="filters"><label class="sr-only" for="category-filter">选择学科</label><select id="category-filter"><option value="all">全部学科 · All domains</option></select><label class="sr-only" for="topic-filter">选择专题</label><select id="topic-filter"><option value="all">全部专题 · All topics</option></select></div><div class="filters-right"><span id="result-count" aria-live="polite">—</span><label class="sr-only" for="sort-select">排序</label><select id="sort-select"><option value="default">教材顺序</option><option value="az">English A–Z</option><option value="za">English Z–A</option></select></div></div>
           <div class="table-wrap"><table class="terms-table"><thead><tr><th style="width:5%">#</th><th style="width:28%">ENGLISH TERMINOLOGY</th><th style="width:20%">中文对应</th><th style="width:17%">CATEGORY / TOPIC</th><th>简明释义</th><th style="width:5%"></th></tr></thead><tbody id="terms-body"></tbody></table><div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>暂无匹配术语</h3><p>尝试减少关键词，或切换学科与专题筛选。</p><button class="tiny-btn" id="reset-filters">重置所有筛选</button></div></div>

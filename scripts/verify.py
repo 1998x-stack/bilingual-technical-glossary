@@ -56,9 +56,9 @@ with (ROOT/'data/terms.csv').open(encoding='utf8',newline='') as f:
  reader=csv.DictReader(f)
  rows=list(reader)
  fail.extend(csv_differences(TERMS,reader.fieldnames,rows))
-for path in ['docs/index.html','docs/styles.css','docs/app.js','docs/favicon.svg','site/index.html','site/styles.css','site/app.js','README.md','README.zh-CN.md','AGENTS.md','.github/workflows/pages.yml']:
+for path in ['docs/index.html','docs/styles.css','docs/app.js','docs/favicon.svg','docs/term.html','docs/term.css','docs/term.js','docs/data/wiki-index.json','site/index.html','site/styles.css','site/app.js','site/term.html','site/term.css','site/term.js','README.md','README.zh-CN.md','AGENTS.md','.github/workflows/pages.yml']:
  check((ROOT/path).is_file(),f'Missing required file: {path}')
-for name in ['index.html','app.js','styles.css','favicon.svg']:
+for name in ['index.html','app.js','styles.css','favicon.svg','term.html','term.css','term.js']:
  source=ROOT/'site'/name
  mirror=ROOT/'docs'/name
  if source.is_file() and mirror.is_file():
