@@ -7,6 +7,8 @@ on:
       - 'glossaries/**'
       - 'scripts/**'
       - 'tests/**'
+      - 'wiki/**'
+      - 'docs/wiki/**'
       - '.github/workflows/validate.yml'
   pull_request:
 permissions:
@@ -20,4 +22,5 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/verify.py
+      - run: python scripts/verify_wiki.py
       - run: python -m unittest discover -s tests -v
