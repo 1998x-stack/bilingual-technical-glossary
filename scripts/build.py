@@ -16,6 +16,7 @@ CATALOG=[
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('calculus','Calculus','微积分','Limits, derivatives, integrals, series, multivariable and vector calculus','integral'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
+ ('discrete-mathematics','Discrete Mathematics','离散数学','Logic, proofs, sets, relations, counting, graph theory, number theory and automata','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
  ('university-mathematics','University Mathematics','大学数学','Calculus, analysis, geometry, probability, differential equations and optimization','integral'),
@@ -158,6 +159,8 @@ def write_site_data(data):
 
 def run():
  data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data));data=merge_high_school(data)
+ from render_discrete_mathematics_pdf import load_terms as load_discrete_terms
+ data=[t for t in data if t['category']!='discrete-mathematics']+load_discrete_terms()
  from import_university_mathematics import merge_entries
  data=merge_entries(data)
  data=merge_computer_networks(data)
@@ -180,6 +183,8 @@ def run():
  md.write_text(md.read_text(encoding='utf8')+'\n'+appendix_markdown(),encoding='utf8')
  render_source_pdf()
  render_pdf(data)
+ from render_discrete_mathematics_pdf import render_pdf as render_discrete_pdf
+ render_discrete_pdf([t for t in data if t['category']=='discrete-mathematics'])
  from compiler_pdf import render_compiler_pdf
  render_compiler_pdf(data, ROOT/'pdf/compiler-principles.pdf')
  import subprocess,sys
