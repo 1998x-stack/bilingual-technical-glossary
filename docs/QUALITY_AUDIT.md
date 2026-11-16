@@ -1,4 +1,8 @@
-# TERM/ATLAS · Main branch quality audit (2026-11-16)
+# TERM/ATLAS · Historical main branch quality audit (2026-11-16)
+
+> **历史快照，非当前状态报告。** 本文保留基线 `ac15ffb...` 的已发现问题及当时的建议，**其中独立 Wiki 导航与 Batch UI 建议已经不适用**：当前读者从统一 Explorer 点击术语进入 `term.html`。仓库随后扩展至 25 个学科、8,889 条结构化索引词条和 40 篇已发布的 AI Infra 深度文章。最新文档层审计及未完成风险请见 [DOCUMENTATION_AUDIT_2026-11-16.md](DOCUMENTATION_AUDIT_2026-11-16.md)；日常维护流程见 [MAINTAINERS_GUIDE.md](MAINTAINERS_GUIDE.md)。
+
+> 下表“Remediation in this change”描述**该历史 PR 当时实施的措施**，不表示本页列出的旧界面方案仍应保留。
 
 Audit baseline: `ac15ffb16ff238a17b0d9eac4903449ad7d2f1ee`. Scope: 7,554 searchable terms, 21 subjects, 313 topics, Python exporters, independent PDF/Markdown handbooks, Pages, and GitHub Actions.
 

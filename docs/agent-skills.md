@@ -47,6 +47,7 @@ python3 scripts/sync_agent_skills.py --check
 python3 -m unittest tests.test_agent_skills -v
 python3 scripts/verify.py
 python3 scripts/verify_wiki.py
+python3 scripts/verify_docs.py
 python3 -m unittest discover -s tests -v
 ```
 
@@ -64,6 +65,10 @@ python3 -m unittest discover -s tests -v
 - [OpenAI Codex project skill locations](https://learn.chatgpt.com/docs/build-skills)
 - [Claude Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 - [Pi project skill discovery and duplicate handling](https://docs.pi.dev/latest/skills)
+
+## Documentation and article quality gates
+
+The [maintainer architecture guide](MAINTAINERS_GUIDE.md) explains which files are canonical, how to publish changes without accidentally rebuilding unrelated PDFs, and which workflows deploy Pages. For professional Wiki authoring, use [the editorial review checklist](../wiki/EDITORIAL_REVIEW.md). The structured checks (`verify_wiki.py`, `verify_docs.py`, tests) do **not** substitute for technical peer review, human PDF rendering inspection or browser visual QA.
 
 ## Reader experience: one Explorer, one detail route
 

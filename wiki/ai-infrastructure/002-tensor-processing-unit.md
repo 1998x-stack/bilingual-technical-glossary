@@ -41,7 +41,7 @@ TPU 是专用 ASIC 的具体实例；GPU 通用性通常更强，TPU 的优势�
 
 ## 9. 知识导航
 
-- [返回 AI Infra Wiki 总目录](../README.md)
+- [返回 AI Infra Wiki 总目录](README.md)
 - [返回术语对照表](../../glossaries/ai-infrastructure.md)
 
 > 编辑原则：数值例题中的设备能力与开销均为题设或理想假定，不代表具体产品实测值。任何性能结论必须指明硬件、精度、工作负载和测试口径。

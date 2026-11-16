@@ -14,7 +14,8 @@ Invoke when the task involves **validation or publication**. Read `AGENTS.md` an
 4. Run only the smallest necessary build first; inspect `git diff --stat` and changed binary files. Do not accept accidental regeneration of independently authored PDFs.
 
 ## Gate checks
-- Base: `python3 -m compileall -q scripts tests` and `node --check site/app.js` when those files exist; `python3 scripts/verify.py`; `python3 scripts/verify_wiki.py`; `python3 -m unittest discover -s tests -v`.
+- Base: `python3 -m compileall -q scripts tests` and `node --check site/app.js` / `node --check site/term.js` when Node is available; `python3 scripts/verify.py`; `python3 scripts/build_wiki_index.py --check`; `python3 scripts/verify_wiki.py`; `python3 scripts/verify_docs.py`; `python3 -m unittest discover -s tests -v`.
+- Documentation: verify local Markdown links, README statistics against structured catalog, article template editorial separation, and the accuracy of maintenance commands; documentation-check success does not certify external references.
 - Agent skills: `python3 scripts/sync_agent_skills.py --check` whenever `AGENTS.md`, `CLAUDE.md`, or skill directories are edited.
 - Wiki: verify contiguous source ordinals, canonical-vs-mirror Markdown equality, status/count consistency, actual answer quality and citation relevance, working links.
 - PDF: verify actual `%PDF-` header, searchability, embedded readable Chinese fonts, representative page rendering, source/manuscript parity.

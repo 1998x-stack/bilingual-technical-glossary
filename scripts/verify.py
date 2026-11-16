@@ -52,6 +52,7 @@ for cat in CATALOG:
 site=json.loads((ROOT/'docs/data/terms.json').read_text(encoding='utf8'))
 check(site==TERMS,'Pages search index differs from source data')
 check(sum(c['count'] for c in CATALOG)==len(TERMS),'Catalog total differs from indexed terms')
+check((ROOT/'docs/data/ai-infrastructure.tsv').is_file() and (ROOT/'data/ai-infrastructure.tsv').read_bytes()==(ROOT/'docs/data/ai-infrastructure.tsv').read_bytes(),'AI Infra published TSV mirror mismatch')
 with (ROOT/'data/terms.csv').open(encoding='utf8',newline='') as f:
  reader=csv.DictReader(f)
  rows=list(reader)

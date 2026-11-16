@@ -30,7 +30,7 @@ Use one numbered, stable-slug Markdown file per term: `wiki/<domain>/<NNN>-<engl
 3. **Public UX rule:** readers must enter through the unified `index.html?category=<slug>#explorer` and click English or Chinese names to `term.html`. Never expose batch IDs, cards, progress bars, internal research checklists, or a separate Wiki homepage to readers. An unpublished long-form article must render only an honest brief definition on the shared detail page.
 4. Retain batch plans and per-batch study paths **only in editor/source documents** and GitHub Issues; public pages must not link to those plans.
 5. Check all Markdown local links, number continuity, bilingual metadata, topic counts, duplicate pages, equation assumptions, and source relevance.
-6. For AI Infra run `python3 scripts/verify_wiki.py`, `python3 scripts/verify.py`, and tests. For other domains, create an equivalent corpus-aware validator before declaring coverage.
+6. For AI Infra run `python3 scripts/build_wiki_index.py --check`, `python3 scripts/verify_wiki.py`, `python3 scripts/verify_docs.py`, `python3 scripts/verify.py`, and tests. For other domains, create an equivalent corpus-aware validator before declaring coverage.
 7. Open **one focused PR per batch** referencing the tracking Issue. Verify CI and Pages before claiming publication; record what remains planned.
 
 ## Editorial stop conditions

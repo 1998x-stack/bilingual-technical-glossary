@@ -74,7 +74,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**23 个学科、347 个专题；
+- **主题选择：**25 个学科、381 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
@@ -85,16 +85,20 @@
 
 ## 更新与质量控制
 
-离散数学词条请编辑 `data/discrete-mathematics.tsv`；编译原理词条请编辑 `data/compiler-principles.tsv` 并运行构建脚本；其余词条可按项目约定编辑 `data/terms.json`，字段包含 `category`、`chapter`、`topic`、`en`、`zh`、`abbr`、`definition`，然后执行：
+修改术语前，请先查看 [贡献指南中的学科权威源对应表](CONTRIBUTING.md) 及 [维护者架构手册](docs/MAINTAINERS_GUIDE.md)。不同学科可能以 TSV、HTML、原始 Markdown 或 JSON 作为编辑入口；**不能默认所有词条都直接改 `data/terms.json`**。
+
+普通变更先执行不会生成 PDF 的只读检查：
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 scripts/build.py
 python3 scripts/verify.py
+python3 scripts/build_wiki_index.py --check
+python3 scripts/verify_wiki.py
+python3 scripts/verify_docs.py
+python3 scripts/sync_agent_skills.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-**注意：**现有六本 PDF 是独立排版的原件，不会因为修改 JSON 自动覆盖。若修改术语含义，需要同步检查原版 PDF 的版本一致性。详情参见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [AGENTS.md](AGENTS.md)。
+**注意：**总构建命令 `python3 scripts/build.py` 会重建多个学科的输出并调用 PDF 渲染器，仅在确认权威源与预期文件差异后运行。多本 PDF 属于独立编排原件，不应因只修改 JSON 就假装完成 PDF 内容更新。PDF 变更必须人工核查中文字体、分页和可检索性。
 
 本项目用于研究、学习和工程阅读；不是任何标准组织发布的官方术语规范。仓库尚未选择开放许可，直到明确发布 License 之前请保留作者权利。
 ## 大学数学手册
@@ -112,3 +116,13 @@ python3 -m unittest discover -s tests -v
 ## 统一术语详情页
 
 读者从原有的 [术语检索 Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) 进入，无须单独访问 Wiki 栏目。例如选择 [强化学习](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer)，点击任一英文或中文名即可打开该术语详情。已有专业解析的词条直接展示完整 Wiki 内容；其他词条仅展示经过整理的简明定义，不虚构尚未编写的长文。每 20 条一批的排期仅用于内部生产，不出现在公开阅读界面。
+
+
+## 文档架构与维护审计
+
+- [维护者指南](docs/MAINTAINERS_GUIDE.md)：源稿、搜索索引、Wiki 长文、Pages 镜像之间的数据流和发布步骤。
+- [贡献流程](CONTRIBUTING.md)：选择正确的学科权威文件、提供可信来源并提交 PR。
+- [本轮文档深度审计](docs/DOCUMENTATION_AUDIT_2026-11-16.md)：已确认的问题、修复与待治理风险。
+- [历史代码审计](docs/QUALITY_AUDIT.md)：保留旧版本基线，不代表目前的页面设计要求。
+
+网站面向读者始终按“**学科 → 术语 → 详情页**”组织，不展示内部 Wiki 生产批次。结构一致性通过 CI 校验；专业定义、题目推导和外部资料仍需要人工审校。

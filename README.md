@@ -98,14 +98,20 @@ bilingual-technical-glossary/
 ├── sources/                       # Authored glossary print materials
 ├── glossaries/                    # Bilingual thematic Markdown glossaries
 ├── pdf/                           # Searchable PDF handbooks
-├── site/                          # Website source: HTML, CSS, JS, icon
+├── site/                          # Explorer + term.html source frontend
+├── wiki/                          # Canonical long-form articles and internal editorial plans
 ├── docs/                          # GitHub Pages static publish directory
-│   ├── data/                      # Optimized JSON for frontend
+│   ├── data/                      # Search corpus, catalog, published Wiki link index
+│   ├── wiki/                      # Published Markdown article mirrors
 │   ├── glossaries/                # Markdown downloads
 │   └── pdf/                       # PDF downloads
 ├── scripts/
-│   ├── build.py                   # Rebuild indexes, Markdown, site
-│   └── verify.py                  # Structural checks
+│   ├── build.py                   # Full multi-domain rebuild (review side effects)
+│   ├── build_wiki_index.py        # Publish validated term → article mapping
+│   ├── verify_docs.py             # Documentation links and coverage checks
+│   └── verify.py                  # Corpus / mirror checks
+├── .agents/skills/                # Canonical portable Agent Skills
+├── .codex/skills/, .pi/skills/, .claude/skills/  # Mirrored skills
 ├── tests/                         # Regression tests
 ├── CONTRIBUTING.md
 ├── AGENTS.md
@@ -123,16 +129,18 @@ python3 -m http.server 8000 --directory docs
 # Open http://localhost:8000/
 ```
 
-For Discrete Mathematics, edit `data/discrete-mathematics.tsv`; for Compiler Principles, edit the curated `data/compiler-principles.tsv` source; other indexed terms follow the existing `data/terms.json` conventions. Then run:
+For a **read-only quality check**, run:
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 scripts/build.py
 python3 scripts/verify.py
+python3 scripts/build_wiki_index.py --check
+python3 scripts/verify_wiki.py
+python3 scripts/verify_docs.py
+python3 scripts/sync_agent_skills.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-The build script generates the AI Infra PDF when a suitable Chinese TTF font is installed. The GPU Kernel PDF is an independently authored original and is preserved, not regenerated from JSON. The six previously authored PDFs are intentionally **not** overwritten by this step. If no font is available, the script preserves any existing AI Infra PDF.
+If editing source publications, see the [source-of-truth table](CONTRIBUTING.md) and [maintainer guide](docs/MAINTAINERS_GUIDE.md) **before** running a renderer. The full `python3 scripts/build.py` can regenerate multiple domain indexes, Markdown files and PDFs; use it only when the affected source and expected artifact diff are understood, with prerequisites from `requirements.txt` installed. Independently authored PDFs must not be silently replaced or described as lossless JSON exports.
 
 ## Publish on GitHub Pages
 
@@ -167,4 +175,14 @@ Reusable workflows for term curation, 20-term technical Wiki batches, and releas
 
 ## Integrated term knowledge pages
 
-The existing [Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) is the **only reader-facing entrypoint** for term pages: click any English or Chinese term in a filtered category (for example [Reinforcement Learning](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer)) to open its dedicated concept detail. When a verified long-form Wiki article has been published, its mechanisms, examples, interviews and exercises appear on the same detail page; other terms show their curated short definitions without pretending long-form material exists. Editorial batches are internal and never shown as reader navigation.
+The existing [Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) is the **primary reader-facing entrypoint** for term pages: click any English or Chinese term in a filtered category (for example [Reinforcement Learning](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer)) to open its dedicated concept detail. When a verified long-form Wiki article has been published, its mechanisms, examples, interviews and exercises appear on the same detail page; other terms show their curated short definitions without pretending long-form material exists. Editorial batches are internal and never shown as reader navigation.
+
+
+## Maintenance documentation and audit
+
+- [Architecture & safe publishing workflow](docs/MAINTAINERS_GUIDE.md) — domain-specific authority, source/index/Pages relations, Wiki publication and quality gates.
+- [Contributing guide](CONTRIBUTING.md) — how to edit a term, authored handbook or professional Wiki without regenerating unrelated PDFs.
+- [Current documentation audit](docs/DOCUMENTATION_AUDIT_2026-11-16.md) — verified discrepancies, remediation and open architectural risks.
+- [Historical code audit](docs/QUALITY_AUDIT.md) — earlier baseline, retained for provenance rather than as current site guidance.
+
+The **public Explorer displays concepts rather than production batches**. Internal term-writing batches are tracked only in source documentation and Issues. Automated checks establish structural consistency, not expert verification of every definition or interview answer.
