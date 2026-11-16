@@ -1,0 +1,1438 @@
+{
+  "title": "AI Infra · 深度 Wiki",
+  "total": 142,
+  "batchSize": 20,
+  "readyInPr": 20,
+  "topics": [
+    "计算硬件与加速器",
+    "互连与网络",
+    "分布式训练",
+    "推理与服务",
+    "调度与容器",
+    "存储与数据管道",
+    "可靠性与可观测性",
+    "成本、能效与资源治理"
+  ],
+  "terms": [
+    {
+      "n": 1,
+      "en": "Graphics Processing Unit",
+      "zh": "图形处理器",
+      "abbr": "GPU",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "001-graphics-processing-unit.md"
+    },
+    {
+      "n": 2,
+      "en": "Tensor Processing Unit",
+      "zh": "张量处理单元",
+      "abbr": "TPU",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "002-tensor-processing-unit.md"
+    },
+    {
+      "n": 3,
+      "en": "Neural Processing Unit",
+      "zh": "神经网络处理单元",
+      "abbr": "NPU",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "003-neural-processing-unit.md"
+    },
+    {
+      "n": 4,
+      "en": "Application-Specific Integrated Circuit",
+      "zh": "专用集成电路",
+      "abbr": "ASIC",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "004-application-specific-integrated-circuit.md"
+    },
+    {
+      "n": 5,
+      "en": "Field-Programmable Gate Array",
+      "zh": "现场可编程门阵列",
+      "abbr": "FPGA",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "005-field-programmable-gate-array.md"
+    },
+    {
+      "n": 6,
+      "en": "Compute Capability",
+      "zh": "计算能力版本",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "006-compute-capability.md"
+    },
+    {
+      "n": 7,
+      "en": "Streaming Multiprocessor",
+      "zh": "流式多处理器",
+      "abbr": "SM",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "007-streaming-multiprocessor.md"
+    },
+    {
+      "n": 8,
+      "en": "Compute Unified Device Architecture",
+      "zh": "统一计算设备架构",
+      "abbr": "CUDA",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "008-compute-unified-device-architecture.md"
+    },
+    {
+      "n": 9,
+      "en": "Compute Unit",
+      "zh": "计算单元",
+      "abbr": "CU",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "009-compute-unit.md"
+    },
+    {
+      "n": 10,
+      "en": "Warp",
+      "zh": "线程束",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "010-warp.md"
+    },
+    {
+      "n": 11,
+      "en": "Thread Block",
+      "zh": "线程块",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "011-thread-block.md"
+    },
+    {
+      "n": 12,
+      "en": "Register File",
+      "zh": "寄存器文件",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "012-register-file.md"
+    },
+    {
+      "n": 13,
+      "en": "Shared Memory",
+      "zh": "共享内存",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "013-shared-memory.md"
+    },
+    {
+      "n": 14,
+      "en": "High Bandwidth Memory",
+      "zh": "高带宽内存",
+      "abbr": "HBM",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "014-high-bandwidth-memory.md"
+    },
+    {
+      "n": 15,
+      "en": "Double Data Rate Memory",
+      "zh": "双倍数据速率内存",
+      "abbr": "DDR",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "015-double-data-rate-memory.md"
+    },
+    {
+      "n": 16,
+      "en": "Memory Bandwidth",
+      "zh": "内存带宽",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "016-memory-bandwidth.md"
+    },
+    {
+      "n": 17,
+      "en": "Memory Capacity",
+      "zh": "内存容量",
+      "abbr": "",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "017-memory-capacity.md"
+    },
+    {
+      "n": 18,
+      "en": "Peak FLOPS",
+      "zh": "峰值浮点运算性能",
+      "abbr": "FLOPS",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "018-peak-flops.md"
+    },
+    {
+      "n": 19,
+      "en": "Thermal Design Power",
+      "zh": "热设计功耗",
+      "abbr": "TDP",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "019-thermal-design-power.md"
+    },
+    {
+      "n": 20,
+      "en": "Power Usage Effectiveness",
+      "zh": "电源使用效率",
+      "abbr": "PUE",
+      "topic": "计算硬件与加速器",
+      "batch": 1,
+      "ready": true,
+      "file": "020-power-usage-effectiveness.md"
+    },
+    {
+      "n": 21,
+      "en": "Peripheral Component Interconnect Express",
+      "zh": "高速外设互连",
+      "abbr": "PCIe",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 22,
+      "en": "NVLink",
+      "zh": "高速 GPU 互连",
+      "abbr": "NVLink",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 23,
+      "en": "NVSwitch",
+      "zh": "GPU 互连交换芯片",
+      "abbr": "NVSwitch",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 24,
+      "en": "InfiniBand",
+      "zh": "无限带宽网络",
+      "abbr": "IB",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 25,
+      "en": "Remote Direct Memory Access",
+      "zh": "远程直接内存访问",
+      "abbr": "RDMA",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 26,
+      "en": "RDMA over Converged Ethernet",
+      "zh": "融合以太网上的 RDMA",
+      "abbr": "RoCE",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 27,
+      "en": "Ethernet",
+      "zh": "以太网",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 28,
+      "en": "Network Interface Card",
+      "zh": "网络接口卡",
+      "abbr": "NIC",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 29,
+      "en": "Data Processing Unit",
+      "zh": "数据处理单元",
+      "abbr": "DPU",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 30,
+      "en": "SmartNIC",
+      "zh": "智能网卡",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 31,
+      "en": "Leaf-Spine Topology",
+      "zh": "叶脊网络拓扑",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 32,
+      "en": "Fat-Tree Topology",
+      "zh": "胖树拓扑",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 33,
+      "en": "Bisection Bandwidth",
+      "zh": "二分带宽",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 34,
+      "en": "Network Latency",
+      "zh": "网络延迟",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 35,
+      "en": "Network Throughput",
+      "zh": "网络吞吐量",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 36,
+      "en": "All-Reduce",
+      "zh": "全归约通信",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 37,
+      "en": "All-to-All",
+      "zh": "全互换通信",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 38,
+      "en": "Collective Communication",
+      "zh": "集合通信",
+      "abbr": "",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 39,
+      "en": "NVIDIA Collective Communications Library",
+      "zh": "NVIDIA 集合通信库",
+      "abbr": "NCCL",
+      "topic": "互连与网络",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 40,
+      "en": "Data Parallelism",
+      "zh": "数据并行",
+      "abbr": "DP",
+      "topic": "分布式训练",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 41,
+      "en": "Distributed Data Parallel",
+      "zh": "分布式数据并行",
+      "abbr": "DDP",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 42,
+      "en": "Tensor Parallelism",
+      "zh": "张量并行",
+      "abbr": "TP",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 43,
+      "en": "Pipeline Parallelism",
+      "zh": "流水线并行",
+      "abbr": "PP",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 44,
+      "en": "Expert Parallelism",
+      "zh": "专家并行",
+      "abbr": "EP",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 45,
+      "en": "Sequence Parallelism",
+      "zh": "序列并行",
+      "abbr": "SP",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 46,
+      "en": "Hybrid Parallelism",
+      "zh": "混合并行",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 47,
+      "en": "Fully Sharded Data Parallel",
+      "zh": "全分片数据并行",
+      "abbr": "FSDP",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 48,
+      "en": "Zero Redundancy Optimizer",
+      "zh": "零冗余优化器",
+      "abbr": "ZeRO",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 49,
+      "en": "Gradient Accumulation",
+      "zh": "梯度累积",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 50,
+      "en": "Gradient Checkpointing",
+      "zh": "梯度检查点",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 51,
+      "en": "Activation Recomputation",
+      "zh": "激活重计算",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 52,
+      "en": "Mixed Precision Training",
+      "zh": "混合精度训练",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 53,
+      "en": "Loss Scaling",
+      "zh": "损失缩放",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 54,
+      "en": "Microbatch",
+      "zh": "微批次",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 55,
+      "en": "Global Batch Size",
+      "zh": "全局批量大小",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 56,
+      "en": "Checkpoint",
+      "zh": "训练检查点",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 57,
+      "en": "Elastic Training",
+      "zh": "弹性训练",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 58,
+      "en": "Straggler",
+      "zh": "慢节点",
+      "abbr": "",
+      "topic": "分布式训练",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 59,
+      "en": "Inference Server",
+      "zh": "推理服务器",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 60,
+      "en": "Model Serving",
+      "zh": "模型服务化",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 61,
+      "en": "Time to First Token",
+      "zh": "首词元延迟",
+      "abbr": "TTFT",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 62,
+      "en": "Time per Output Token",
+      "zh": "每输出词元耗时",
+      "abbr": "TPOT",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 63,
+      "en": "Inter-Token Latency",
+      "zh": "词元间延迟",
+      "abbr": "ITL",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 64,
+      "en": "Tokens per Second",
+      "zh": "每秒词元数",
+      "abbr": "TPS",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 65,
+      "en": "Requests per Second",
+      "zh": "每秒请求数",
+      "abbr": "RPS",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 66,
+      "en": "Prefill",
+      "zh": "预填充阶段",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 67,
+      "en": "Decode",
+      "zh": "逐词元解码阶段",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 68,
+      "en": "Key-Value Cache",
+      "zh": "键值缓存",
+      "abbr": "KV Cache",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 69,
+      "en": "Paged Attention",
+      "zh": "分页注意力",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 70,
+      "en": "Continuous Batching",
+      "zh": "连续批处理",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 71,
+      "en": "Dynamic Batching",
+      "zh": "动态批处理",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 72,
+      "en": "Speculative Decoding",
+      "zh": "推测解码",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 73,
+      "en": "Disaggregated Prefill and Decode",
+      "zh": "预填充与解码分离",
+      "abbr": "PD Disaggregation",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 74,
+      "en": "Quantization",
+      "zh": "量化",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 75,
+      "en": "Weight-Only Quantization",
+      "zh": "仅权重量化",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 76,
+      "en": "Post-Training Quantization",
+      "zh": "训练后量化",
+      "abbr": "PTQ",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 77,
+      "en": "Quantization-Aware Training",
+      "zh": "量化感知训练",
+      "abbr": "QAT",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 78,
+      "en": "Model Sharding",
+      "zh": "模型分片",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 79,
+      "en": "Hot Reload",
+      "zh": "热重载",
+      "abbr": "",
+      "topic": "推理与服务",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 80,
+      "en": "Container",
+      "zh": "容器",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 81,
+      "en": "Container Image",
+      "zh": "容器镜像",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 82,
+      "en": "Docker",
+      "zh": "Docker 容器平台",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 83,
+      "en": "Kubernetes",
+      "zh": "容器编排系统",
+      "abbr": "K8s",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 84,
+      "en": "Pod",
+      "zh": "容器组",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 85,
+      "en": "Node",
+      "zh": "集群节点",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 86,
+      "en": "GPU Operator",
+      "zh": "GPU 运维算子",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 87,
+      "en": "Device Plugin",
+      "zh": "设备插件",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 88,
+      "en": "Job",
+      "zh": "批处理任务",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 89,
+      "en": "CronJob",
+      "zh": "定时任务",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 90,
+      "en": "Horizontal Pod Autoscaler",
+      "zh": "Pod 水平自动伸缩器",
+      "abbr": "HPA",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 91,
+      "en": "Cluster Autoscaler",
+      "zh": "集群自动扩缩容器",
+      "abbr": "CA",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 92,
+      "en": "Scheduler",
+      "zh": "调度器",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 93,
+      "en": "Resource Quota",
+      "zh": "资源配额",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 94,
+      "en": "Node Affinity",
+      "zh": "节点亲和性",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 95,
+      "en": "Taint and Toleration",
+      "zh": "污点与容忍",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 96,
+      "en": "Gang Scheduling",
+      "zh": "成组调度",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 97,
+      "en": "Preemption",
+      "zh": "抢占",
+      "abbr": "",
+      "topic": "调度与容器",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 98,
+      "en": "Object Storage",
+      "zh": "对象存储",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 99,
+      "en": "Block Storage",
+      "zh": "块存储",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 100,
+      "en": "Distributed File System",
+      "zh": "分布式文件系统",
+      "abbr": "DFS",
+      "topic": "存储与数据管道",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 101,
+      "en": "Network File System",
+      "zh": "网络文件系统",
+      "abbr": "NFS",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 102,
+      "en": "Parallel File System",
+      "zh": "并行文件系统",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 103,
+      "en": "Storage Throughput",
+      "zh": "存储吞吐量",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 104,
+      "en": "Input/Output Operations per Second",
+      "zh": "每秒输入输出操作数",
+      "abbr": "IOPS",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 105,
+      "en": "Data Lake",
+      "zh": "数据湖",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 106,
+      "en": "Data Pipeline",
+      "zh": "数据管道",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 107,
+      "en": "Data Shard",
+      "zh": "数据分片",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 108,
+      "en": "Data Loader",
+      "zh": "数据加载器",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 109,
+      "en": "Prefetching",
+      "zh": "预取",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 110,
+      "en": "Cache Hit Rate",
+      "zh": "缓存命中率",
+      "abbr": "",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 111,
+      "en": "Content Delivery Network",
+      "zh": "内容分发网络",
+      "abbr": "CDN",
+      "topic": "存储与数据管道",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 112,
+      "en": "Service Level Objective",
+      "zh": "服务级别目标",
+      "abbr": "SLO",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 113,
+      "en": "Service Level Indicator",
+      "zh": "服务级别指标",
+      "abbr": "SLI",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 114,
+      "en": "Service Level Agreement",
+      "zh": "服务级别协议",
+      "abbr": "SLA",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 115,
+      "en": "Availability",
+      "zh": "可用性",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 116,
+      "en": "Reliability",
+      "zh": "可靠性",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 117,
+      "en": "Mean Time Between Failures",
+      "zh": "平均故障间隔时间",
+      "abbr": "MTBF",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 118,
+      "en": "Mean Time to Recovery",
+      "zh": "平均恢复时间",
+      "abbr": "MTTR",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 119,
+      "en": "Observability",
+      "zh": "可观测性",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 120,
+      "en": "Metrics",
+      "zh": "指标数据",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 121,
+      "en": "Logs",
+      "zh": "日志",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 122,
+      "en": "Distributed Tracing",
+      "zh": "分布式链路追踪",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 123,
+      "en": "OpenTelemetry",
+      "zh": "开放遥测",
+      "abbr": "OTel",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 124,
+      "en": "Prometheus",
+      "zh": "Prometheus 监控系统",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 125,
+      "en": "Grafana",
+      "zh": "Grafana 可视化平台",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 126,
+      "en": "Alerting",
+      "zh": "告警",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 127,
+      "en": "Load Testing",
+      "zh": "负载测试",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 128,
+      "en": "Chaos Engineering",
+      "zh": "混沌工程",
+      "abbr": "",
+      "topic": "可靠性与可观测性",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 129,
+      "en": "Total Cost of Ownership",
+      "zh": "总体拥有成本",
+      "abbr": "TCO",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 130,
+      "en": "Capital Expenditure",
+      "zh": "资本性支出",
+      "abbr": "CapEx",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 131,
+      "en": "Operating Expenditure",
+      "zh": "运营性支出",
+      "abbr": "OpEx",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 132,
+      "en": "GPU Utilization",
+      "zh": "GPU 利用率",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 133,
+      "en": "GPU Memory Utilization",
+      "zh": "显存利用率",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 134,
+      "en": "Compute Efficiency",
+      "zh": "计算效率",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 135,
+      "en": "Energy per Token",
+      "zh": "每词元能耗",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 136,
+      "en": "Cost per Million Tokens",
+      "zh": "每百万词元成本",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 137,
+      "en": "Workload Consolidation",
+      "zh": "工作负载整合",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 138,
+      "en": "Multi-Tenancy",
+      "zh": "多租户",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 139,
+      "en": "Capacity Planning",
+      "zh": "容量规划",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 140,
+      "en": "Autoscaling",
+      "zh": "自动扩缩容",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 141,
+      "en": "Spot Instance",
+      "zh": "竞价实例",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 142,
+      "en": "Reserved Instance",
+      "zh": "预留实例",
+      "abbr": "",
+      "topic": "成本、能效与资源治理",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    }
+  ]
+}
