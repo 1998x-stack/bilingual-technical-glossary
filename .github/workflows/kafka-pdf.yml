@@ -5,10 +5,14 @@ on:
     paths:
       - 'glossaries/apache-kafka.md'
       - 'scripts/render_kafka_pdf.py'
+      - 'scripts/ingest_kafka.py'
       - '.github/workflows/kafka-pdf.yml'
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: kafka-glossary-publication
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,24 +23,43 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install PDF dependencies and Chinese font
+      - name: Install publishing dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y fonts-arphic-gbsn00lp
           python -m pip install -r requirements.txt
-      - name: Build indexed Kafka PDF
+      - name: Integrate, validate and publish Kafka assets
+        shell: bash
         run: |
-          python scripts/render_kafka_pdf.py
-          mkdir -p docs/pdf
-          cp pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
-          test -s pdf/apache-kafka.pdf
-          cmp -s pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
-      - name: Commit both downloadable PDF copies
-        run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
-          if ! git diff --cached --quiet; then
-            git commit -m "docs(kafka): publish searchable Kafka PDF handbook"
-            git push
-          fi
+          for attempt in 1 2 3 4; do
+            echo "Kafka publication attempt $attempt/4"
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/ingest_kafka.py
+            python scripts/render_kafka_pdf.py
+            mkdir -p docs/pdf
+            cp pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
+            cmp -s pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
+            python scripts/verify.py
+            python -m unittest discover -s tests -v
+            git add data/terms.json data/terms.csv docs/data/terms.json docs/data/catalog.json
+            git add docs/glossaries/apache-kafka.md pdf/apache-kafka.pdf docs/pdf/apache-kafka.pdf
+            git add scripts/build.py site/app.js docs/app.js README.md README.zh-CN.md
+            git add tests/test_kafka.py AGENTS.md CHANGELOG.md
+            if git diff --cached --quiet; then
+              echo "Kafka publications and indexes already synchronized."
+              exit 0
+            fi
+            git commit -m "feat(kafka): publish 283 indexed terms, Markdown and PDF"
+            if git push origin HEAD:main; then
+              echo "Kafka publication pushed."
+              exit 0
+            fi
+            echo "main advanced concurrently; rebuilding on the latest branch."
+            sleep 2
+          done
+          echo "Unable to publish after 4 guarded attempts" >&2
+          exit 1
