@@ -1,59 +1,61 @@
-name: Publish University Mathematics glossary and index
+# P0 safety: render one domain only. This workflow NEVER pushes to main.
+# To publish, download the artifact, review source/output changes in a PR.
+name: Render University Mathematics PDF (artifact only)
 on:
   push:
     branches: [main]
     paths:
-      - "sources/university-mathematics.html"
-      - "scripts/build.py"
-      - "scripts/import_university_mathematics.py"
-      - "requirements.txt"
-      - ".github/workflows/university-mathematics.yml"
+      - 'sources/university-mathematics.html'
+      - 'scripts/import_university_mathematics.py'
+      - '.github/workflows/university-mathematics.yml'
   workflow_dispatch:
-
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
-  group: publish-university-mathematics
-  cancel-in-progress: false
-
+  group: render-university-mathematics-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  publish:
+  render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Install fonts and dependencies
+          python-version: '3.12'
+      - name: Install domain-specific renderer
         run: |
-          sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk fonts-arphic-gbsn00lp libpango-1.0-0 libcairo2
-          python -m pip install -r requirements.txt
-      - name: Rebuild and publish against the latest main
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core libpango-1.0-0 libcairo2
+          python -m pip install 'weasyprint==68.0' 'pypdf>=5,<7'
+      - name: Render university-mathematics only
         run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3; do
-            git fetch origin main
-            git checkout -B publication-main origin/main
-            python scripts/build.py
-            python scripts/verify.py
-            python -m unittest discover -s tests -v
-            git add data/terms.json data/terms.csv docs/data/ docs/glossaries/ docs/pdf/ glossaries/ pdf/
-            if git diff --cached --quiet; then
-              echo "Everything is up-to-date"
-              exit 0
-            fi
-            git commit -m "build(math): sync University Mathematics PDF, Markdown and searchable index"
-            if git push origin HEAD:main; then
-              echo "Published successfully"
-              exit 0
-            fi
-            echo "Main advanced concurrently; rebasing output on the latest data"
-          done
-          echo "Publication not complete after retries" >&2
-          exit 1
+          set -euo pipefail
+          mkdir -p pdf docs/pdf
+          python -c 'from scripts.import_university_mathematics import render_source_pdf; print(render_source_pdf())'
+          cp pdf/university-mathematics.pdf docs/pdf/university-mathematics.pdf
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          original=Path('pdf/university-mathematics.pdf')
+          mirrored=Path('docs/pdf/university-mathematics.pdf')
+          raw=original.read_bytes()
+          assert raw.startswith(b'%PDF-') and len(raw)>10000, original
+          assert raw==mirrored.read_bytes(), 'Publication mirror mismatch'
+          pdf=PdfReader(str(original))
+          assert len(pdf.pages)>0, 'Empty document'
+          content=''.join((page.extract_text() or '') for page in pdf.pages)
+          assert len(content)>150, 'PDF text extraction unexpectedly empty'
+          print('Checked university-mathematics:',len(pdf.pages),'pages',len(raw),'bytes')
+          PY
+      - name: Upload reviewable publication artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: university-mathematics-pdf-${{ github.sha }}
+          path: |
+            pdf/university-mathematics.pdf
+            docs/pdf/university-mathematics.pdf
+          if-no-files-found: error
+          retention-days: 14

@@ -103,3 +103,11 @@ The Parallel Computing handbook contains 205 indexed entries across 12 chapters.
 ## C++ edition
 
 The authored C++ source is `data/cpp-glossary.tsv` (357 terms, 16 chapters). Run `python3 scripts/render_cpp_pdf.py --source data/cpp-glossary.tsv --markdown glossaries/cpp.md --pdf pdf/cpp.pdf` to render the independently authored Markdown and searchable PDF. `scripts/build.py` rehydrates the C++ search rows from that TSV and mirrors both publications to `docs/`. Preserve wording and counts across all formats and keep C++20/23 terms distinct from evolving C++26 draft support.
+
+## P0/P1/P2 release & evidence controls
+- No domain PDF builder or index synchronizer may commit, push, force-push, or use `contents: write`. Use read-only workflow jobs and reviewable artifacts; apply generated outputs through PR only. Run `python3 scripts/verify_workflow_policy.py` to enforce this.
+- Pages may use `pages: write` only after its `verify` job succeeds for the committed `docs/` files. A green Pages job does not mean a human reviewed the content.
+- Deep Wiki research uses `wiki/reviews/ai-infrastructure.json` and `python3 scripts/verify_wiki_reviews.py --check --report`; a `pending` article is published structurally but **not** expert verified. Human `verified` status requires reviewer, date, exact SHA and claim–source evidence; content changes invalidate approval.
+- Real Chromium E2E checks are in `e2e/test_browser.py` and `.github/workflows/browser-e2e.yml`; test desktop, mobile, accessible landmarks/keyboard, term navigation, code/table and formula visibility. Screen-reader audio and full TeX typesetting remain separate manual/product requirements.
+- Repository branch protection/ruleset requiring PR review and the named CI jobs must be enabled by a repository administrator; read-only workflow code alone is not a repository-wide ruleset.
+

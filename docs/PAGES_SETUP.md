@@ -53,3 +53,12 @@ Kafka 中英文术语表已并入结构化索引（283 条、16 个专题），�
 - [数据结构 PDF](./pdf/data-structures.pdf)
 
 维护原始排版时，请同步更新 `glossaries/data-structures.md`、`sources/data-structures.html`，并运行索引同步工作流，避免检索内容与 PDF 手册不一致。
+
+## Safe publication policy
+
+GitHub Actions domain renderer jobs no longer push to main. Download the PDF/patch artifact, inspect it and open a PR against main with the canonical source and matching `docs/` files. `pages.yml` runs an independent read-only pre-deployment verification job and grants only `pages: write` to the deploy job. The repo administrator should also activate main branch protection / Rulesets requiring PR review and both validation and browser E2E checks.
+
+- `python3 scripts/verify_workflow_policy.py`: blocks repository-writing workflows.
+- `python3 scripts/verify_wiki_reviews.py --check --report`: checks the integrity of human editorial records but does **not** certify any pending article.
+- `python -m unittest discover -s e2e -v`: actual Chromium tests with screenshots (requires [E2E setup](../e2e/README.md)).
+

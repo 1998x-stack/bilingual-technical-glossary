@@ -1,45 +1,44 @@
-name: Synchronize Data Structures index
+# P0 safety: synchronization produces a reviewable patch, never a bot commit.
+name: Propose Data Structures index changes
 on:
   push:
     branches: [main]
     paths:
       - 'scripts/sync_data_structures.py'
+      - 'glossaries/data-structures.md'
       - '.github/workflows/sync-data-structures.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+concurrency:
+  group: propose-data-structures-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  integrate:
+  propose:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Rebase on latest main and write the index
+      - name: Generate isolated proposed changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in $(seq 1 12); do
-            git fetch origin main
-            git reset --hard origin/main
-            python scripts/sync_data_structures.py
-            git add data/terms.json data/terms.csv docs/data/terms.json docs/data/catalog.json \
-              docs/glossaries/data-structures.md docs/pdf/data-structures.pdf \
-              scripts/build.py scripts/verify.py tests/test_catalog.py site/app.js docs/app.js \
-              README.md README.zh-CN.md
-            if git diff --cached --quiet; then
-              echo "Already synchronized"
-              exit 0
-            fi
-            git commit -m "feat: index 352 bilingual data structures terms"
-            if git push origin HEAD:main; then
-              echo "Published synchronized catalog"
-              exit 0
-            fi
-            echo "Concurrent commit detected; retrying against fresh main"
-            sleep 2
-          done
-          exit 1
+          set -euo pipefail
+          python scripts/sync_data_structures.py
+          git add -N .
+          git diff --binary > proposed-data-structures.patch
+          if test -s proposed-data-structures.patch; then
+            echo "Proposed changes require a reviewable PR; nothing was committed or pushed."
+            git diff --stat
+          else
+            echo "No proposed changes."
+          fi
+      - name: Upload suggested diff
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-structures-proposal-${{ github.sha }}
+          path: proposed-data-structures.patch
+          retention-days: 14

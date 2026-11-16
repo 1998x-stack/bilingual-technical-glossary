@@ -11,8 +11,12 @@ function termKey(term){return JSON.stringify([term.category,Number(term.chapter)
 function termURL(term){
  const q=new URLSearchParams({category:term.category,chapter:String(term.chapter),en:term.en,zh:term.zh});
  // Preserve the explorer filter, query, page, and sort in the return link.
- const from=window.location.pathname+window.location.search+(window.location.hash||'#explorer');
- q.set('from',from);return './term.html?'+q.toString();
+ const back=new URL(window.location.href);
+ const liveQuery=$('search-input')?.value.trim()||'';
+ if(liveQuery)back.searchParams.set('q',liveQuery);else back.searchParams.delete('q');
+ if(state.category!=='all')back.searchParams.set('category',state.category);
+ q.set('from',back.pathname+back.search+(back.hash||'#explorer'));
+ return './term.html?'+q.toString();
 }
 function locale(n){return Number(n).toLocaleString('en-US');}
 function notify(message){const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(notify.t);notify.t=setTimeout(()=>el.classList.remove('show'),2200);}
@@ -55,6 +59,7 @@ const items=filtered.slice((state.page-1)*PAGE_SIZE,state.page*PAGE_SIZE);const 
 items.forEach((item,i)=>{const meta=byId(item.category);const tr=document.createElement('tr');const en=item.en||'';const abbrev=item.abbr||'';const url=escaped(termURL(item));
 const hasWiki=state.wikiLinks.has(termKey(item));
 tr.innerHTML=`<td class="row-number">${String((state.page-1)*PAGE_SIZE+i+1).padStart(3,'0')}</td><td><a class="term-english term-link" href="${url}" aria-label="查看 ${escaped(en)} 的术语详情">${escaped(en)}</a>${abbrev?`<span class="term-abbr">${escaped(abbrev)}</span>`:''}${hasWiki?'<span class="term-wiki-hint">专业解析</span>':''}</td><td><a class="term-chinese term-link" href="${url}" aria-label="查看 ${escaped(item.zh)} 的术语详情">${escaped(item.zh)}</a></td><td><span class="term-category">${escaped(meta?.zh||item.category)}</span><span class="term-topic">${escaped(item.topic)}</span></td><td>${escaped(item.definition)}</td><td><button class="copy-term" aria-label="复制术语 ${escaped(en)}" title="复制中英文术语">⧉</button></td>`;
+tr.querySelectorAll('a.term-link').forEach(link=>link.addEventListener('click',()=>{link.href=termURL(item);}));
 tr.querySelector('button').addEventListener('click',()=>copyText(`${item.en} — ${item.zh}${item.abbr?` (${item.abbr})`:''}\n${item.definition}`));body.append(tr);});
 $('empty-state').hidden=count!==0;$('result-count').textContent=`${locale(count)} 条匹配术语`;
 $('page-summary').textContent=count?`显示 ${locale((state.page-1)*PAGE_SIZE+1)}–${locale(Math.min(state.page*PAGE_SIZE,count))} / ${locale(count)} 条`:'没有匹配结果';

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "domain": "ai-infrastructure",
+  "description": "Editorial expert verification ledger. pending is not certified; verified requires dated human sign-off and SHA-256 of the reviewed Markdown.",
+  "articles": [
+    {
+      "path": "wiki/ai-infrastructure/001-graphics-processing-unit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/002-tensor-processing-unit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/003-neural-processing-unit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/004-application-specific-integrated-circuit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/005-field-programmable-gate-array.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/006-compute-capability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/007-streaming-multiprocessor.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/008-compute-unified-device-architecture.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/009-compute-unit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/010-warp.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/011-thread-block.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/012-register-file.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/013-shared-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/014-high-bandwidth-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/015-double-data-rate-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/016-memory-bandwidth.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/017-memory-capacity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/018-peak-flops.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/019-thermal-design-power.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/020-power-usage-effectiveness.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/021-peripheral-component-interconnect-express.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/022-nvlink.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/023-nvswitch.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/024-infiniband.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/025-remote-direct-memory-access.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/026-rdma-over-converged-ethernet.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/027-ethernet.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/028-network-interface-card.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/029-data-processing-unit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/030-smartnic.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/031-leaf-spine-topology.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/032-fat-tree-topology.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/033-bisection-bandwidth.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/034-network-latency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/035-network-throughput.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/036-all-reduce.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/037-all-to-all.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/038-collective-communication.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/039-nvidia-collective-communications-library.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/040-data-parallelism.md",
+      "status": "pending"
+    }
+  ]
+}

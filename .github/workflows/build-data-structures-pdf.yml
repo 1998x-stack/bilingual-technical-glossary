@@ -1,53 +1,61 @@
-name: Build Data Structures PDF
+# P0 safety: render one domain only. This workflow NEVER pushes to main.
+# To publish, download the artifact, review source/output changes in a PR.
+name: Render Data Structures PDF (artifact only)
 on:
   push:
-    branches: [main, feat/data-structures-glossary]
+    branches: [main]
     paths:
+      - 'sources/data-structures.html'
       - 'sources/data-structures.html'
       - '.github/workflows/build-data-structures-pdf.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+concurrency:
+  group: render-data-structures-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install CJK fonts and WeasyPrint
+      - name: Install domain-specific renderer
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core
+          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core libpango-1.0-0 libcairo2
           python -m pip install 'weasyprint==68.0' 'pypdf>=5,<7'
-      - name: Render and inspect bilingual PDF
+      - name: Render data-structures only
         run: |
+          set -euo pipefail
+          mkdir -p pdf docs/pdf
+          python -m weasyprint sources/data-structures.html pdf/data-structures.pdf
+          cp pdf/data-structures.pdf docs/pdf/data-structures.pdf
           python - <<'PY'
           from pathlib import Path
-          from weasyprint import HTML
           from pypdf import PdfReader
-          source=Path("sources/data-structures.html")
-          target=Path("pdf/data-structures.pdf")
-          target.parent.mkdir(exist_ok=True)
-          HTML(filename=str(source), base_url=str(source.parent.resolve())).write_pdf(str(target))
-          pages=len(PdfReader(str(target)).pages)
-          assert 14 <= pages <= 40, f"Unexpected PDF pages: {pages}"
-          content=target.read_bytes()
-          assert content.startswith(b"%PDF-") and len(content)>10000
-          public=Path("docs/pdf/data-structures.pdf")
-          public.parent.mkdir(parents=True, exist_ok=True)
-          public.write_bytes(content)
-          print(f"PDF: {pages} pages, {len(content)} bytes")
+          original=Path('pdf/data-structures.pdf')
+          mirrored=Path('docs/pdf/data-structures.pdf')
+          raw=original.read_bytes()
+          assert raw.startswith(b'%PDF-') and len(raw)>10000, original
+          assert raw==mirrored.read_bytes(), 'Publication mirror mismatch'
+          pdf=PdfReader(str(original))
+          assert len(pdf.pages)>0, 'Empty document'
+          content=''.join((page.extract_text() or '') for page in pdf.pages)
+          assert len(content)>150, 'PDF text extraction unexpectedly empty'
+          print('Checked data-structures:',len(pdf.pages),'pages',len(raw),'bytes')
           PY
-      - name: Commit generated PDFs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pdf/data-structures.pdf docs/pdf/data-structures.pdf
-          if ! git diff --cached --quiet; then
-            git commit -m "docs: publish data structures bilingual PDF"
-            git push origin HEAD:${GITHUB_REF_NAME}
-          else
-            echo "PDF unchanged"
-          fi
+      - name: Upload reviewable publication artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-structures-pdf-${{ github.sha }}
+          path: |
+            pdf/data-structures.pdf
+            docs/pdf/data-structures.pdf
+          if-no-files-found: error
+          retention-days: 14

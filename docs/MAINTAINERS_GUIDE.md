@@ -110,3 +110,18 @@ python3 -m unittest discover -s tests -v
 - [本轮文档核查](DOCUMENTATION_AUDIT_2026-11-16.md)
 - [Agent Skills 使用与同步](agent-skills.md)
 - [Wiki 内部写作规则](../wiki/README.md)
+
+## 8. P0 发布策略（禁止机器人写入 main）
+
+所有原本带 `contents: write`、`git push` 的专题工作流已改为 `contents: read`：单学科渲染 → PDF Artifact；索引脚本运行在临时 CI 工作目录，输出 proposed patch Artifact。下载输出后必须通过经审核的 PR 合并。Pages 保留独立最小 `pages: write` 权限，并在部署前校验已提交的站点数据、Wiki、文档和工作流策略。执行 `python3 scripts/verify_workflow_policy.py` 可防止未来重引入直接提交。
+
+**管理员需要额外配置 GitHub Ruleset：**`main` 要求 PR、至少一名人工审阅者、必需状态检查（Validate glossary corpus、Browser E2E）、限制直接推送并保护 Actions 工作流文件。这个服务端权限设置不能单靠提交 YAML 自动实现。
+
+## 9. P1 专业审稿，不冒充“专家已完成”
+
+`wiki/reviews/ai-infrastructure.json` 为每篇已发布文章建立复核状态，现有 40 篇的初始状态均为 `pending`。用 `python3 scripts/verify_wiki_reviews.py --check --report` 检查审稿账本并生成离线证据风险报告；只有人工 reviewer 对真实原始来源、定义、算例、问答和版本边界逐条核对，附 `sha256` 和来源定位后才可标记 `verified`。详见 [审稿证据规范](../wiki/reviews/README.md)。
+
+## 10. P2 Chromium 浏览器验收
+
+`.github/workflows/browser-e2e.yml` 用 headless Chromium 对 `docs/` 真实站点做桌面/移动端 E2E，屏幕截图随 CI Artifact 上传。覆盖 Explorer/详情跳转、未完成文章的短释义回退、键盘焦点与目录、移动菜单、深色主题、代码/表格安全显示和公式文本可读性。详见 [E2E 说明](../e2e/README.md)。这**不是** NVDA/VoiceOver 实机审计，也不代表完整 LaTeX 排版已实现。
+

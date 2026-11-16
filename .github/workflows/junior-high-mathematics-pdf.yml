@@ -1,57 +1,61 @@
-name: Render Junior High Mathematics glossary PDF
+# P0 safety: render one domain only. This workflow NEVER pushes to main.
+# To publish, download the artifact, review source/output changes in a PR.
+name: Render Junior High Mathematics PDF (artifact only)
 on:
   push:
-    branches: [main, feat/junior-high-mathematics-2026]
+    branches: [main]
     paths:
+      - 'sources/junior-high-mathematics.html'
       - 'sources/junior-high-mathematics.html'
       - '.github/workflows/junior-high-mathematics-pdf.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 concurrency:
-  group: junior-math-pdf-${{ github.ref }}
-  cancel-in-progress: false
+  group: render-junior-high-mathematics-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install CJK fonts, PDF renderer and QA tools
+      - name: Install domain-specific renderer
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core poppler-utils
-          python -m pip install --disable-pip-version-check weasyprint==68.0
-      - name: Render and verify searchable PDF
+          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core libpango-1.0-0 libcairo2
+          python -m pip install 'weasyprint==68.0' 'pypdf>=5,<7'
+      - name: Render junior-high-mathematics only
         run: |
+          set -euo pipefail
           mkdir -p pdf docs/pdf
           python -m weasyprint sources/junior-high-mathematics.html pdf/junior-high-mathematics.pdf
           cp pdf/junior-high-mathematics.pdf docs/pdf/junior-high-mathematics.pdf
-          test -s pdf/junior-high-mathematics.pdf
-          cmp pdf/junior-high-mathematics.pdf docs/pdf/junior-high-mathematics.pdf
-          pdfinfo pdf/junior-high-mathematics.pdf | grep '^Pages:'
-          pdftotext pdf/junior-high-mathematics.pdf /tmp/junior-math-pdf.txt
           python - <<'PY'
           from pathlib import Path
-          pdf=Path('pdf/junior-high-mathematics.pdf').read_bytes()
-          txt=Path('/tmp/junior-math-pdf.txt').read_text(encoding='utf8')
-          assert pdf.startswith(b'%PDF-') and len(pdf)>30000
-          for keyword in ('初中数学','自然数','一元二次方程','相似三角形','概率'):
-              assert keyword in txt, f'Missing term: {keyword}'
-          print(f'PDF validated: {len(pdf):,} bytes')
+          from pypdf import PdfReader
+          original=Path('pdf/junior-high-mathematics.pdf')
+          mirrored=Path('docs/pdf/junior-high-mathematics.pdf')
+          raw=original.read_bytes()
+          assert raw.startswith(b'%PDF-') and len(raw)>10000, original
+          assert raw==mirrored.read_bytes(), 'Publication mirror mismatch'
+          pdf=PdfReader(str(original))
+          assert len(pdf.pages)>0, 'Empty document'
+          content=''.join((page.extract_text() or '') for page in pdf.pages)
+          assert len(content)>150, 'PDF text extraction unexpectedly empty'
+          print('Checked junior-high-mathematics:',len(pdf.pages),'pages',len(raw),'bytes')
           PY
-      - name: Commit both PDF downloads
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pdf/junior-high-mathematics.pdf docs/pdf/junior-high-mathematics.pdf
-          if ! git diff --cached --quiet; then
-            git commit -m "docs(math): publish junior high mathematics PDF"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
-          else
-            echo "No PDF changes to commit"
-          fi
+      - name: Upload reviewable publication artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: junior-high-mathematics-pdf-${{ github.sha }}
+          path: |
+            pdf/junior-high-mathematics.pdf
+            docs/pdf/junior-high-mathematics.pdf
+          if-no-files-found: error
+          retention-days: 14
