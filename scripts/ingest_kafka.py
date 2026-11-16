@@ -71,7 +71,7 @@ def main():
     names = ["category", "chapter", "topic", "en", "zh", "abbr", "definition"]
     import io
     out = io.StringIO(newline="")
-    writer = csv.DictWriter(out, fieldnames=names)
+    writer = csv.DictWriter(out, fieldnames=names, extrasaction="ignore")
     writer.writeheader()
     writer.writerows(data)
     write(ROOT / "data" / "terms.csv", out.getvalue())
@@ -154,10 +154,10 @@ def main():
     instructions = read(agents)
     if "Kafka editorial provenance" not in instructions:
         instructions += ("\n## Kafka editorial provenance\n"
-          "The 283-row, 16-chapter \`glossaries/apache-kafka.md\` is an original reference "
+          "The 283-row, 16-chapter `glossaries/apache-kafka.md` is an original reference "
           "with a preface and concept contrasts. The build intentionally preserves this "
-          "Markdown and renders its indexed rows to \`pdf/apache-kafka.pdf\` using "
-          "\`scripts/render_kafka_pdf.py\`; mirror to \`docs/pdf/\`.\n")
+          "Markdown and renders its indexed rows to `pdf/apache-kafka.pdf` using "
+          "`scripts/render_kafka_pdf.py`; mirror to `docs/pdf/`.\n")
     write(agents, instructions)
 
     changelog = ROOT / "CHANGELOG.md"
