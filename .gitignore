@@ -10,6 +10,10 @@ venv/
 .env.*
 !.env.example
 
+# JavaScript and browser tooling
+node_modules/
+.playwright/
+
 # Local build / editor artifacts
 .DS_Store
 .idea/
