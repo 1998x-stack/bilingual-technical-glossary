@@ -18,6 +18,7 @@ CATALOG=[
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('university-mathematics','University Mathematics','大学数学','Calculus, analysis, geometry, probability, differential equations and optimization','integral'),
  ('apache-kafka','Apache Kafka','Apache Kafka / 事件流平台','Event streaming, KRaft, partitions, consumers, transactions and Streams','network'),
  ('data-structures','Data Structures','数据结构','Arrays, lists, hashing, trees, graphs and advanced structures','network'),
  ('linux','Linux','Linux 操作系统','Kernel, processes, memory, networking, containers and performance','terminal'),
@@ -144,6 +145,8 @@ def write_site_data(data):
 
 def run():
  data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data));data=merge_high_school(data)
+ from import_university_mathematics import merge_entries
+ data=merge_entries(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
@@ -155,7 +158,12 @@ def run():
  DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
  with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
   writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition','notation'],extrasaction='ignore');writer.writeheader();writer.writerows(data)
- write_markdown(data);render_pdf(data)
+ write_markdown(data)
+ from import_university_mathematics import appendix_markdown,render_source_pdf
+ md=ROOT/'glossaries/university-mathematics.md'
+ md.write_text(md.read_text(encoding='utf8')+'\n'+appendix_markdown(),encoding='utf8')
+ render_source_pdf()
+ render_pdf(data)
  from compiler_pdf import render_compiler_pdf
  render_compiler_pdf(data, ROOT/'pdf/compiler-principles.pdf')
  import subprocess,sys
