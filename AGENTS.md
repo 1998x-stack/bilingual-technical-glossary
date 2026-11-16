@@ -4,11 +4,11 @@
 Maintain a precise, versioned Chinese–English technical reference. Accuracy and auditability outrank lexical volume. Never invent definitions, source links, or claims of coverage.
 
 ## Source of truth
-`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume.
+`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume. `data/compiler-principles.tsv` is the canonical editable source for the 268-entry Compiler Principles volume; rebuilding overwrites that category in `data/terms.json` and regenerates its Markdown and PDF.
 
 ## Workflow
 1. Understand the affected domain and chapter.
-2. Make a minimal change to source JSON.
+2. Make a minimal change to the appropriate source (for Compiler Principles edit `data/compiler-principles.tsv`; otherwise follow the subject's source convention).
 3. Rebuild with `python3 scripts/build.py`.
 4. Run `python3 scripts/verify.py` and `python3 -m unittest discover -s tests -v`.
 5. Check that counts are computed from data, and search returns the updated term.
