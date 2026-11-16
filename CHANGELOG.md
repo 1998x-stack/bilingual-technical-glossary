@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-16 — Parallel Computing bilingual handbook
+
+- Published a 205-term, 12-topic, independently authored glossary structured with reference to Grama et al., *Introduction to Parallel Computing* (2nd edition).
+- Added PDF and Markdown handbooks under `pdf/` and `glossaries/`, with downloadable GitHub Pages mirrors.
+- Added README links; indexing into the structured search database remains a separate follow-up.
+
+
 ## Machine Learning glossary publication — 2026-11-16
 
 - Indexed 447 Machine Learning terms in 19 chapters with Markdown and PDF.
