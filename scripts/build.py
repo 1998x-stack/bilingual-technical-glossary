@@ -20,6 +20,7 @@ CATALOG=[
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
  ('apache-kafka','Apache Kafka','Apache Kafka / 事件流平台','Event streaming, KRaft, partitions, consumers, transactions and Streams','network'),
  ('data-structures','Data Structures','数据结构','Arrays, lists, hashing, trees, graphs and advanced structures','network'),
+ ('linux','Linux','Linux 操作系统','Kernel, processes, memory, networking, containers and performance','terminal'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -62,6 +63,7 @@ def write_markdown(data):
  for slug in META:
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
+  if slug=='linux': continue  # Preserve independently authored Linux Markdown and appendix.
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)
