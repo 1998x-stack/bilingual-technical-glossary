@@ -77705,5 +77705,2660 @@
     "zh": "持续集成",
     "abbr": "",
     "definition": "在代码变更时自动执行构建和测试等检查的工程流程。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Signal Processing",
+    "zh": "信号处理",
+    "abbr": "",
+    "definition": "对信号进行表征、分析、变换或提取信息的方法总称。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Continuous-Time Signal",
+    "zh": "连续时间信号",
+    "abbr": "CT",
+    "definition": "以连续时间变量描述的信号，如 x(t)。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Discrete-Time Signal",
+    "zh": "离散时间信号",
+    "abbr": "DT",
+    "definition": "仅在离散时间索引上定义的信号，如 x[n]。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Analog Signal",
+    "zh": "模拟信号",
+    "abbr": "",
+    "definition": "幅值通常连续变化的物理或电信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Digital Signal",
+    "zh": "数字信号",
+    "abbr": "",
+    "definition": "幅值经过量化、可用有限字长编码的离散时间信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Deterministic Signal",
+    "zh": "确定性信号",
+    "abbr": "",
+    "definition": "给定模型与参数即可确定其取值的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Random Signal",
+    "zh": "随机信号",
+    "abbr": "",
+    "definition": "需要以随机过程描述其统计规律的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Periodic Signal",
+    "zh": "周期信号",
+    "abbr": "",
+    "definition": "满足某个非零周期平移后数值不变的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Aperiodic Signal",
+    "zh": "非周期信号",
+    "abbr": "",
+    "definition": "不存在满足周期条件的非零周期的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Energy Signal",
+    "zh": "能量信号",
+    "abbr": "",
+    "definition": "总能量有限且通常具有零平均功率的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Power Signal",
+    "zh": "功率信号",
+    "abbr": "",
+    "definition": "时间平均功率有限且非零的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Unit Impulse",
+    "zh": "单位冲激",
+    "abbr": "δ",
+    "definition": "连续时间用狄拉克冲激表示，离散时间用单位样值表示。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Unit Step",
+    "zh": "单位阶跃",
+    "abbr": "u",
+    "definition": "在约定起点前后由零变为一的基准信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Complex Exponential",
+    "zh": "复指数信号",
+    "abbr": "",
+    "definition": "利用指数与相位统一表示振荡和增长衰减。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Signal-to-Noise Ratio",
+    "zh": "信噪比",
+    "abbr": "SNR",
+    "definition": "指定条件下信号功率与噪声功率之比。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Dynamic Range",
+    "zh": "动态范围",
+    "abbr": "",
+    "definition": "系统可处理的最大与最小有效信号幅度之比。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 1,
+    "topic": "信号与系统基础",
+    "en": "Root Mean Square",
+    "zh": "均方根值",
+    "abbr": "RMS",
+    "definition": "信号平方的均值再开平方，用于描述有效幅值。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "System",
+    "zh": "系统",
+    "abbr": "",
+    "definition": "把输入信号映射为输出信号的规则或设备。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Linearity",
+    "zh": "线性性",
+    "abbr": "",
+    "definition": "系统满足可加性与齐次性两个条件。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Time Invariance",
+    "zh": "时不变性",
+    "abbr": "",
+    "definition": "输入整体时移只引起输出相同的时移。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Linear Time-Invariant System",
+    "zh": "线性时不变系统",
+    "abbr": "LTI",
+    "definition": "同时满足线性性与时不变性的系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Causality",
+    "zh": "因果性",
+    "abbr": "",
+    "definition": "某时刻的输出不依赖该时刻之后的输入。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Bounded-Input Bounded-Output Stability",
+    "zh": "有界输入有界输出稳定性",
+    "abbr": "BIBO",
+    "definition": "所有有界输入都产生有界输出。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Impulse Response",
+    "zh": "冲激响应",
+    "abbr": "",
+    "definition": "LTI 系统对单位冲激输入的输出。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Step Response",
+    "zh": "阶跃响应",
+    "abbr": "",
+    "definition": "系统对单位阶跃输入的输出。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Convolution",
+    "zh": "卷积",
+    "abbr": "",
+    "definition": "由输入与冲激响应计算 LTI 系统输出的运算。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Linear Convolution",
+    "zh": "线性卷积",
+    "abbr": "",
+    "definition": "对普通序列定义、输出长度一般增加的卷积。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Circular Convolution",
+    "zh": "循环卷积",
+    "abbr": "",
+    "definition": "在周期延拓或模 N 索引下定义的卷积。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Difference Equation",
+    "zh": "差分方程",
+    "abbr": "",
+    "definition": "用离散时间输入输出及其移位描述系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Differential Equation",
+    "zh": "微分方程",
+    "abbr": "",
+    "definition": "用连续时间信号及其导数描述系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Frequency Response",
+    "zh": "频率响应",
+    "abbr": "",
+    "definition": "系统对各频率复指数分量的增益与相位作用。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Transfer Function",
+    "zh": "传递函数",
+    "abbr": "",
+    "definition": "零初始条件下输出与输入变换之比。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Group Delay",
+    "zh": "群时延",
+    "abbr": "",
+    "definition": "相位响应对角频率的负导数，描述窄带包络延迟。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 2,
+    "topic": "线性系统与卷积",
+    "en": "Phase Delay",
+    "zh": "相位时延",
+    "abbr": "",
+    "definition": "相位响应相对于角频率的负比值，需注意相位展开。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Fourier Series",
+    "zh": "傅里叶级数",
+    "abbr": "FS",
+    "definition": "把周期信号分解为离散谐波的级数表示。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Continuous-Time Fourier Series",
+    "zh": "连续时间傅里叶级数",
+    "abbr": "CTFS",
+    "definition": "连续时间周期信号的谐波展开。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Discrete-Time Fourier Series",
+    "zh": "离散时间傅里叶级数",
+    "abbr": "DTFS",
+    "definition": "离散时间周期序列的有限谐波展开。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Fourier Transform",
+    "zh": "傅里叶变换",
+    "abbr": "FT",
+    "definition": "将信号映射到频率域的积分或广义变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Continuous-Time Fourier Transform",
+    "zh": "连续时间傅里叶变换",
+    "abbr": "CTFT",
+    "definition": "连续时间信号的连续频谱表示。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Discrete-Time Fourier Transform",
+    "zh": "离散时间傅里叶变换",
+    "abbr": "DTFT",
+    "definition": "离散时间序列的周期性连续频率谱。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Inverse Fourier Transform",
+    "zh": "傅里叶逆变换",
+    "abbr": "IFT",
+    "definition": "由频谱重构对应的时域信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Fourier Transform Pair",
+    "zh": "傅里叶变换对",
+    "abbr": "",
+    "definition": "相互对应的时域表示与频域表示。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Magnitude Spectrum",
+    "zh": "幅度谱",
+    "abbr": "",
+    "definition": "傅里叶变换复值的模。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Phase Spectrum",
+    "zh": "相位谱",
+    "abbr": "",
+    "definition": "傅里叶变换复值的相位角。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Power Spectrum",
+    "zh": "功率谱",
+    "abbr": "",
+    "definition": "频率分量功率分布的描述，需明确归一化定义。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Spectral Symmetry",
+    "zh": "频谱对称性",
+    "abbr": "",
+    "definition": "实信号的傅里叶谱满足共轭对称关系。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Parseval's Theorem",
+    "zh": "帕塞瓦尔定理",
+    "abbr": "",
+    "definition": "信号能量可等价地在时域和频域计算。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Convolution Theorem",
+    "zh": "卷积定理",
+    "abbr": "",
+    "definition": "时域卷积对应频域乘法，反之亦然。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Duality Property",
+    "zh": "对偶性质",
+    "abbr": "",
+    "definition": "傅里叶变换在一定约定下具有时频互换的对偶关系。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 3,
+    "topic": "傅里叶分析",
+    "en": "Time-Frequency Uncertainty Principle",
+    "zh": "时频不确定性原理",
+    "abbr": "",
+    "definition": "信号不可能同时在时间与频率上任意集中。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Laplace Transform",
+    "zh": "拉普拉斯变换",
+    "abbr": "",
+    "definition": "通过复频率变量表示连续时间信号及系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Bilateral Laplace Transform",
+    "zh": "双边拉普拉斯变换",
+    "abbr": "",
+    "definition": "积分时间范围覆盖整个实数轴的拉普拉斯变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Unilateral Laplace Transform",
+    "zh": "单边拉普拉斯变换",
+    "abbr": "",
+    "definition": "常用于带初始条件的因果系统分析。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Region of Convergence",
+    "zh": "收敛域",
+    "abbr": "ROC",
+    "definition": "使拉普拉斯或 Z 变换收敛的复变量区域。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Complex Frequency",
+    "zh": "复频率",
+    "abbr": "",
+    "definition": "包含指数增长衰减与振荡成分的复变量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Pole",
+    "zh": "极点",
+    "abbr": "",
+    "definition": "传递函数发生奇异性的复平面位置。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Zero",
+    "zh": "零点",
+    "abbr": "",
+    "definition": "传递函数分子为零且未被约去的位置。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Pole-Zero Plot",
+    "zh": "零极点图",
+    "abbr": "",
+    "definition": "在复平面展示系统零点与极点的图。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Z-Transform",
+    "zh": "Z 变换",
+    "abbr": "",
+    "definition": "以复变量 z 表示离散时间序列的变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Bilateral Z-Transform",
+    "zh": "双边 Z 变换",
+    "abbr": "",
+    "definition": "对全体整数时间索引求和的 Z 变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Unilateral Z-Transform",
+    "zh": "单边 Z 变换",
+    "abbr": "",
+    "definition": "常用于处理单边序列及初始条件。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Unit Circle",
+    "zh": "单位圆",
+    "abbr": "",
+    "definition": "Z 平面上模长为一的复数轨迹。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "System Function",
+    "zh": "系统函数",
+    "abbr": "",
+    "definition": "离散 LTI 系统冲激响应的 Z 变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "Minimum-Phase System",
+    "zh": "最小相位系统",
+    "abbr": "",
+    "definition": "稳定因果系统的逆系统也稳定因果的常见类别。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 4,
+    "topic": "拉普拉斯与 Z 变换",
+    "en": "All-Pass System",
+    "zh": "全通系统",
+    "abbr": "",
+    "definition": "幅频响应为常数、仅改变相位的系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Sampling",
+    "zh": "采样",
+    "abbr": "",
+    "definition": "从连续时间信号中按时刻取得离散样本。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Sampling Rate",
+    "zh": "采样率",
+    "abbr": "fs",
+    "definition": "单位时间采集的样本数量，单位通常为 Hz。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Sampling Period",
+    "zh": "采样周期",
+    "abbr": "Ts",
+    "definition": "相邻均匀采样时刻的时间间隔。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Nyquist-Shannon Sampling Theorem",
+    "zh": "奈奎斯特－香农采样定理",
+    "abbr": "",
+    "definition": "满足带限与足够采样率等条件时可无失真重构信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Nyquist Frequency",
+    "zh": "奈奎斯特频率",
+    "abbr": "",
+    "definition": "均匀采样率的一半，即 fs/2。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Nyquist Rate",
+    "zh": "奈奎斯特速率",
+    "abbr": "",
+    "definition": "对最高频率 B 的基带带限信号，临界采样率为 2B。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Aliasing",
+    "zh": "混叠",
+    "abbr": "",
+    "definition": "采样导致不同模拟频率分量对应相同离散频率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Anti-Aliasing Filter",
+    "zh": "抗混叠滤波器",
+    "abbr": "AAF",
+    "definition": "采样前抑制会折叠到目标频带的高频分量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Bandlimited Signal",
+    "zh": "带限信号",
+    "abbr": "",
+    "definition": "频谱在有限频率区间外为零的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Ideal Reconstruction",
+    "zh": "理想重构",
+    "abbr": "",
+    "definition": "满足定理条件时通过理想低通或 sinc 插值恢复原信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Sinc Interpolation",
+    "zh": "辛克插值",
+    "abbr": "",
+    "definition": "采用 sinc 核从均匀采样值恢复带限信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Zero-Order Hold",
+    "zh": "零阶保持",
+    "abbr": "ZOH",
+    "definition": "在相邻更新时刻之间保持前一输出值。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Quantization",
+    "zh": "量化",
+    "abbr": "",
+    "definition": "把连续或高精度幅值映射到有限离散级别。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Quantization Step Size",
+    "zh": "量化步长",
+    "abbr": "",
+    "definition": "相邻量化等级对应的输入幅值间隔。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Quantization Error",
+    "zh": "量化误差",
+    "abbr": "",
+    "definition": "量化前后幅值之差。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Bit Depth",
+    "zh": "位深度",
+    "abbr": "",
+    "definition": "表示每个样本所用的量化位数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Dithering",
+    "zh": "抖动处理",
+    "abbr": "",
+    "definition": "在量化前加入受控噪声以减轻相关失真或伪迹。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Analog-to-Digital Converter",
+    "zh": "模数转换器",
+    "abbr": "ADC",
+    "definition": "把连续模拟输入转换成数字编码的电路。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 5,
+    "topic": "采样、量化与重构",
+    "en": "Digital-to-Analog Converter",
+    "zh": "数模转换器",
+    "abbr": "DAC",
+    "definition": "把数字编码转换成模拟输出的电路。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Discrete Fourier Transform",
+    "zh": "离散傅里叶变换",
+    "abbr": "DFT",
+    "definition": "把 N 个时域样本变换为 N 个离散频率系数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Inverse Discrete Fourier Transform",
+    "zh": "离散傅里叶逆变换",
+    "abbr": "IDFT",
+    "definition": "从 DFT 频谱系数恢复长度为 N 的序列。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Fast Fourier Transform",
+    "zh": "快速傅里叶变换",
+    "abbr": "FFT",
+    "definition": "高效计算 DFT 的算法家族，并非另一种变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Inverse Fast Fourier Transform",
+    "zh": "逆快速傅里叶变换",
+    "abbr": "IFFT",
+    "definition": "高效计算 IDFT 的算法实现。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Radix-2 FFT",
+    "zh": "基二快速傅里叶变换",
+    "abbr": "",
+    "definition": "把变换规模按 2 的因子递归分解的 FFT 算法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Decimation in Time",
+    "zh": "按时间抽取",
+    "abbr": "DIT",
+    "definition": "通过拆分时域样本实现 FFT 的分解方案。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Decimation in Frequency",
+    "zh": "按频率抽取",
+    "abbr": "DIF",
+    "definition": "通过拆分频域输出实现 FFT 的分解方案。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Butterfly Operation",
+    "zh": "蝶形运算",
+    "abbr": "",
+    "definition": "FFT 中对若干样本进行加减与旋转因子组合的基本步骤。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Twiddle Factor",
+    "zh": "旋转因子",
+    "abbr": "",
+    "definition": "FFT 分解中使用的复指数乘数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Bit-Reversal Permutation",
+    "zh": "位逆序置换",
+    "abbr": "",
+    "definition": "某些基二 FFT 实现中采用的索引重排。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "FFT Bin",
+    "zh": "FFT 频点",
+    "abbr": "",
+    "definition": "DFT 离散频率采样位置，对应的频率与采样率有关。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Frequency Resolution",
+    "zh": "频率分辨率",
+    "abbr": "",
+    "definition": "区分相近频率分量的能力，需区分频点间距与真实可分辨能力。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Bin Spacing",
+    "zh": "频点间距",
+    "abbr": "",
+    "definition": "均匀 DFT 的相邻频点间距 fs/N。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Zero Padding",
+    "zh": "补零",
+    "abbr": "",
+    "definition": "在变换前添加零以加密频率采样，不能提升真实谱分辨能力。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Spectral Leakage",
+    "zh": "频谱泄漏",
+    "abbr": "",
+    "definition": "有限时窗截断使能量扩散到邻近频率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Picket-Fence Effect",
+    "zh": "栅栏效应",
+    "abbr": "",
+    "definition": "有限离散频点可能漏过连续频谱峰值。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Overlap-Add Method",
+    "zh": "重叠相加法",
+    "abbr": "OLA",
+    "definition": "通过分块卷积并相加重叠输出实现长序列处理。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 6,
+    "topic": "离散傅里叶变换与快速算法",
+    "en": "Overlap-Save Method",
+    "zh": "重叠保留法",
+    "abbr": "OLS",
+    "definition": "使用重叠分块并丢弃失真边界样本的快速卷积方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Window Function",
+    "zh": "窗函数",
+    "abbr": "",
+    "definition": "对有限数据段加权以调节频谱泄漏与分辨率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Rectangular Window",
+    "zh": "矩形窗",
+    "abbr": "",
+    "definition": "观测区间内权重恒为一的窗。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Hann Window",
+    "zh": "汉宁窗／Hann 窗",
+    "abbr": "",
+    "definition": "端点趋近于零的余弦型窗，标准英文为 Hann。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Hamming Window",
+    "zh": "海明窗",
+    "abbr": "",
+    "definition": "具有特定余弦系数的窗，用于抑制旁瓣。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Blackman Window",
+    "zh": "布莱克曼窗",
+    "abbr": "",
+    "definition": "包含多个余弦项、旁瓣抑制较强的窗。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Kaiser Window",
+    "zh": "凯泽窗",
+    "abbr": "",
+    "definition": "通过参数调节主瓣宽度与旁瓣的窗。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Gaussian Window",
+    "zh": "高斯窗",
+    "abbr": "",
+    "definition": "以高斯函数构造平滑加权的窗。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Main Lobe",
+    "zh": "主瓣",
+    "abbr": "",
+    "definition": "窗函数频率响应中心附近的主要能量区域。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Side Lobe",
+    "zh": "旁瓣",
+    "abbr": "",
+    "definition": "主瓣之外的频率响应局部峰值。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Side-Lobe Attenuation",
+    "zh": "旁瓣衰减",
+    "abbr": "",
+    "definition": "用来衡量旁瓣相对主瓣高度的指标。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Equivalent Noise Bandwidth",
+    "zh": "等效噪声带宽",
+    "abbr": "ENBW",
+    "definition": "表示窗对宽带噪声功率积分效应的等效带宽。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Coherent Gain",
+    "zh": "相干增益",
+    "abbr": "",
+    "definition": "窗对恰好落在频点上的正弦分量幅度的缩放系数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Periodogram",
+    "zh": "周期图",
+    "abbr": "",
+    "definition": "用有限长度数据傅里叶变换的平方估计功率谱。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Welch's Method",
+    "zh": "韦尔奇法",
+    "abbr": "",
+    "definition": "分段、加窗并平均周期图的功率谱估计方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Bartlett's Method",
+    "zh": "巴特利特法",
+    "abbr": "",
+    "definition": "对不重叠分段的周期图取平均的谱估计方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Power Spectral Density",
+    "zh": "功率谱密度",
+    "abbr": "PSD",
+    "definition": "单位频率上的平均功率分布，单位依输入而定。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Cross Spectral Density",
+    "zh": "互功率谱密度",
+    "abbr": "CSD",
+    "definition": "描述两个过程在频率域相关关系的谱量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 7,
+    "topic": "加窗与谱分析",
+    "en": "Magnitude-Squared Coherence",
+    "zh": "幅值平方相干函数",
+    "abbr": "MSC",
+    "definition": "归一化互谱强度，值通常介于零与一之间。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Digital Filter",
+    "zh": "数字滤波器",
+    "abbr": "",
+    "definition": "在离散时间域改变信号频率成分的算法系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Finite Impulse Response Filter",
+    "zh": "有限冲激响应滤波器",
+    "abbr": "FIR",
+    "definition": "冲激响应长度有限的滤波器类别。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Infinite Impulse Response Filter",
+    "zh": "无限冲激响应滤波器",
+    "abbr": "IIR",
+    "definition": "冲激响应通常无限延续的递归滤波器类别。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Low-Pass Filter",
+    "zh": "低通滤波器",
+    "abbr": "LPF",
+    "definition": "主要通过低频并抑制高频的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "High-Pass Filter",
+    "zh": "高通滤波器",
+    "abbr": "HPF",
+    "definition": "主要通过高频并抑制低频的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Band-Pass Filter",
+    "zh": "带通滤波器",
+    "abbr": "BPF",
+    "definition": "主要通过指定频带的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Band-Stop Filter",
+    "zh": "带阻滤波器",
+    "abbr": "BSF",
+    "definition": "主要抑制指定频带的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Notch Filter",
+    "zh": "陷波滤波器",
+    "abbr": "",
+    "definition": "对窄频带施加显著衰减的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Cutoff Frequency",
+    "zh": "截止频率",
+    "abbr": "",
+    "definition": "用于界定通带或阻带边界的特征频率，判定约定依滤波器而异。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Passband",
+    "zh": "通带",
+    "abbr": "",
+    "definition": "滤波器要求保留目标信号的频带。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Stopband",
+    "zh": "阻带",
+    "abbr": "",
+    "definition": "滤波器要求强烈抑制信号的频带。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Transition Band",
+    "zh": "过渡带",
+    "abbr": "",
+    "definition": "通带与阻带之间的频率区间。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Passband Ripple",
+    "zh": "通带波纹",
+    "abbr": "",
+    "definition": "通带增益相对目标响应的起伏。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Stopband Attenuation",
+    "zh": "阻带衰减",
+    "abbr": "",
+    "definition": "阻带信号相对于参考增益被削弱的程度。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Filter Order",
+    "zh": "滤波器阶数",
+    "abbr": "",
+    "definition": "决定系统复杂度与响应特性的阶数指标。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Linear-Phase Filter",
+    "zh": "线性相位滤波器",
+    "abbr": "",
+    "definition": "在目标频段具有仿射相位响应的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Butterworth Filter",
+    "zh": "巴特沃斯滤波器",
+    "abbr": "",
+    "definition": "模拟低通原型通带幅度单调且最大平坦的滤波器家族。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Chebyshev Type I Filter",
+    "zh": "切比雪夫 I 型滤波器",
+    "abbr": "",
+    "definition": "具有通带等波纹响应的经典滤波器家族。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Chebyshev Type II Filter",
+    "zh": "切比雪夫 II 型滤波器",
+    "abbr": "",
+    "definition": "具有阻带等波纹响应的经典滤波器家族。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Elliptic Filter",
+    "zh": "椭圆滤波器",
+    "abbr": "",
+    "definition": "通带与阻带均可等波纹、过渡带较陡的滤波器家族。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Biquad Filter",
+    "zh": "双二阶滤波器",
+    "abbr": "",
+    "definition": "由二阶有理传递函数构成的滤波单元。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Second-Order Section",
+    "zh": "二阶节",
+    "abbr": "SOS",
+    "definition": "将高阶滤波器拆分为多个二阶小节的实现形式。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Bilinear Transform",
+    "zh": "双线性变换",
+    "abbr": "",
+    "definition": "通过复平面映射将模拟滤波器转换为数字滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Frequency Prewarping",
+    "zh": "频率预畸变",
+    "abbr": "",
+    "definition": "补偿双线性变换非线性频率映射的设计步骤。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 8,
+    "topic": "数字滤波器与设计",
+    "en": "Forward-Backward Filtering",
+    "zh": "前向－后向滤波",
+    "abbr": "",
+    "definition": "先正向再反向滤波以抵消相位延迟，属于非因果离线处理。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Multirate Signal Processing",
+    "zh": "多速率信号处理",
+    "abbr": "",
+    "definition": "在不同采样率之间实现信号变换与处理。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Downsampling",
+    "zh": "下采样",
+    "abbr": "",
+    "definition": "通过保留部分样本降低采样率的操作。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Upsampling",
+    "zh": "上采样",
+    "abbr": "",
+    "definition": "通过插入零样本等操作提高离散时间采样率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Decimation",
+    "zh": "抽取",
+    "abbr": "",
+    "definition": "通常指先抗混叠低通再降采样的组合处理。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Interpolation",
+    "zh": "插值",
+    "abbr": "",
+    "definition": "利用相邻样本估计中间取值，数字插值常含上采样与滤波。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Resampling",
+    "zh": "重采样",
+    "abbr": "",
+    "definition": "把离散信号转换到新的采样时间网格。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Rational Resampling",
+    "zh": "有理比重采样",
+    "abbr": "",
+    "definition": "按整数比 L/M 改变采样率的处理。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Polyphase Decomposition",
+    "zh": "多相分解",
+    "abbr": "",
+    "definition": "将滤波器系数按相位子序列分组以高效多速率实现。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Polyphase Filter Bank",
+    "zh": "多相滤波器组",
+    "abbr": "",
+    "definition": "利用多相结构实现高效频带拆分或合成的滤波器组。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Cascaded Integrator-Comb Filter",
+    "zh": "级联积分梳状滤波器",
+    "abbr": "CIC",
+    "definition": "无需通用乘法器的高效抽取或插值滤波器结构。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Half-Band Filter",
+    "zh": "半带滤波器",
+    "abbr": "",
+    "definition": "过渡频率围绕四分之一采样率、具有特殊系数结构的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Noble Identity",
+    "zh": "贵族恒等式",
+    "abbr": "",
+    "definition": "在多速率系统中交换滤波与采样率变换位置的等价关系。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Channelizer",
+    "zh": "信道化器",
+    "abbr": "",
+    "definition": "把宽带输入分解为多个较窄频带通道的系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 9,
+    "topic": "多速率信号处理",
+    "en": "Perfect Reconstruction Filter Bank",
+    "zh": "完全重构滤波器组",
+    "abbr": "PRFB",
+    "definition": "分析与合成后能恢复输入，至多差一个固定增益或延迟。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Random Process",
+    "zh": "随机过程",
+    "abbr": "",
+    "definition": "随时间演化的一族随机变量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Stationary Process",
+    "zh": "平稳随机过程",
+    "abbr": "",
+    "definition": "其统计性质在时间平移下保持不变的随机过程。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Strict-Sense Stationarity",
+    "zh": "严平稳",
+    "abbr": "SSS",
+    "definition": "所有有限维联合分布均对时间平移不变。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Wide-Sense Stationarity",
+    "zh": "宽平稳",
+    "abbr": "WSS",
+    "definition": "均值为常数且自相关只依赖时差的随机过程。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Ergodicity",
+    "zh": "遍历性",
+    "abbr": "",
+    "definition": "在适当条件下单条样本路径的时间统计可反映总体统计。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Autocorrelation Function",
+    "zh": "自相关函数",
+    "abbr": "ACF",
+    "definition": "度量同一信号在不同时间点之间的相关程度。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Cross-Correlation Function",
+    "zh": "互相关函数",
+    "abbr": "CCF",
+    "definition": "度量两个信号在不同时间位移下的相关程度。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Autocovariance Function",
+    "zh": "自协方差函数",
+    "abbr": "",
+    "definition": "反映信号中心化后不同时间点之间的协方差。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "White Noise",
+    "zh": "白噪声",
+    "abbr": "",
+    "definition": "具有平坦功率谱密度的理想随机噪声模型。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Gaussian Noise",
+    "zh": "高斯噪声",
+    "abbr": "",
+    "definition": "其幅度或有限维联合分布服从高斯模型的噪声。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Colored Noise",
+    "zh": "有色噪声",
+    "abbr": "",
+    "definition": "功率谱密度随频率变化的噪声。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Additive White Gaussian Noise",
+    "zh": "加性高斯白噪声",
+    "abbr": "AWGN",
+    "definition": "以相加方式叠加、具有高斯统计与白谱特性的噪声模型。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Noise Floor",
+    "zh": "噪声底",
+    "abbr": "",
+    "definition": "在给定测量配置下可观察到的背景噪声水平。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Signal-to-Interference-plus-Noise Ratio",
+    "zh": "信干噪比",
+    "abbr": "SINR",
+    "definition": "目标信号功率与干扰及噪声总功率之比。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 10,
+    "topic": "随机过程与噪声",
+    "en": "Wiener-Khinchin Theorem",
+    "zh": "维纳－辛钦定理",
+    "abbr": "",
+    "definition": "在适当条件下平稳过程的自相关与功率谱密度互为傅里叶变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Estimator",
+    "zh": "估计量",
+    "abbr": "",
+    "definition": "由观测数据推断未知参数或信号的计算规则。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Bias",
+    "zh": "偏差",
+    "abbr": "",
+    "definition": "估计量期望与真实参数之间的差。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Variance",
+    "zh": "方差",
+    "abbr": "",
+    "definition": "估计量围绕其期望的离散程度。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Mean Squared Error",
+    "zh": "均方误差",
+    "abbr": "MSE",
+    "definition": "估计误差平方的期望，包含偏差与方差影响。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Maximum Likelihood Estimation",
+    "zh": "最大似然估计",
+    "abbr": "MLE",
+    "definition": "选择使观测数据似然最大的参数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Maximum A Posteriori Estimation",
+    "zh": "最大后验估计",
+    "abbr": "MAP",
+    "definition": "利用先验分布与似然寻找后验概率最大的参数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Minimum Mean Square Error Estimation",
+    "zh": "最小均方误差估计",
+    "abbr": "MMSE",
+    "definition": "以最小化平均平方误差为目标的估计。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Matched Filter",
+    "zh": "匹配滤波器",
+    "abbr": "",
+    "definition": "在指定加性白噪声模型中最大化采样输出信噪比的线性滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Hypothesis Testing",
+    "zh": "假设检验",
+    "abbr": "",
+    "definition": "根据观测证据在不同统计假设之间作决策。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Likelihood Ratio Test",
+    "zh": "似然比检验",
+    "abbr": "LRT",
+    "definition": "以两个假设的似然比构造判决规则。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Neyman-Pearson Criterion",
+    "zh": "奈曼－皮尔逊准则",
+    "abbr": "",
+    "definition": "在限制虚警率下最大化检测概率的判决准则。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "False Alarm Rate",
+    "zh": "虚警率",
+    "abbr": "",
+    "definition": "无目标时错误报告存在目标的概率或速率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Detection Probability",
+    "zh": "检测概率",
+    "abbr": "Pd",
+    "definition": "目标存在时正确报告存在目标的概率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Receiver Operating Characteristic",
+    "zh": "受试者工作特征曲线",
+    "abbr": "ROC",
+    "definition": "展示检测率与虚警率随阈值变化关系的曲线。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 11,
+    "topic": "统计估计与检测",
+    "en": "Cramér-Rao Lower Bound",
+    "zh": "克拉美－罗下界",
+    "abbr": "CRLB",
+    "definition": "在正则条件下无偏估计量方差的理论下界。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Adaptive Filter",
+    "zh": "自适应滤波器",
+    "abbr": "",
+    "definition": "根据输入输出数据自动更新参数的滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "System Identification",
+    "zh": "系统辨识",
+    "abbr": "",
+    "definition": "利用观测输入输出估计系统模型与参数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Least Mean Squares Algorithm",
+    "zh": "最小均方算法",
+    "abbr": "LMS",
+    "definition": "基于瞬时误差梯度更新滤波权重的自适应算法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Normalized Least Mean Squares",
+    "zh": "归一化最小均方算法",
+    "abbr": "NLMS",
+    "definition": "按输入能量归一化更新步长的 LMS 变体。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Recursive Least Squares",
+    "zh": "递归最小二乘算法",
+    "abbr": "RLS",
+    "definition": "递归更新加权最小二乘解的自适应算法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Step Size",
+    "zh": "步长",
+    "abbr": "",
+    "definition": "控制自适应参数单步更新幅度的系数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Convergence Rate",
+    "zh": "收敛速度",
+    "abbr": "",
+    "definition": "自适应估计接近稳定解的速度。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Misadjustment",
+    "zh": "失调量",
+    "abbr": "",
+    "definition": "自适应算法稳态误差相对理论最优误差的超额比例。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Adaptive Noise Cancellation",
+    "zh": "自适应噪声抵消",
+    "abbr": "ANC",
+    "definition": "利用参考噪声自适应估计并去除干扰。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Acoustic Echo Cancellation",
+    "zh": "声学回声消除",
+    "abbr": "AEC",
+    "definition": "估计并抑制声学回声路径引起的回传信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Wiener Filter",
+    "zh": "维纳滤波器",
+    "abbr": "",
+    "definition": "在二阶统计已知时最小化均方误差的线性滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Kalman Filter",
+    "zh": "卡尔曼滤波器",
+    "abbr": "KF",
+    "definition": "在线性高斯状态空间模型中递归估计隐状态。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "Extended Kalman Filter",
+    "zh": "扩展卡尔曼滤波器",
+    "abbr": "EKF",
+    "definition": "对非线性状态模型局部线性化的递归估计方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 12,
+    "topic": "自适应滤波与系统辨识",
+    "en": "State-Space Model",
+    "zh": "状态空间模型",
+    "abbr": "",
+    "definition": "以隐状态递推与观测方程描述动态系统。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Short-Time Fourier Transform",
+    "zh": "短时傅里叶变换",
+    "abbr": "STFT",
+    "definition": "对局部时间窗内信号计算傅里叶变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Inverse Short-Time Fourier Transform",
+    "zh": "短时傅里叶逆变换",
+    "abbr": "ISTFT",
+    "definition": "通过窗函数与重叠重构由短时频谱恢复信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Spectrogram",
+    "zh": "语谱图／时频谱图",
+    "abbr": "",
+    "definition": "以时间与频率坐标展示局部频谱强度的图。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Time-Frequency Representation",
+    "zh": "时频表示",
+    "abbr": "TFR",
+    "definition": "联合描述信号的时间位置与频率内容。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Gabor Transform",
+    "zh": "伽博变换",
+    "abbr": "",
+    "definition": "通常使用高斯窗构造的短时傅里叶型表示。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Constant-Q Transform",
+    "zh": "恒 Q 变换",
+    "abbr": "CQT",
+    "definition": "使分析频带中心频率与带宽比值近似恒定的变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Wavelet Transform",
+    "zh": "小波变换",
+    "abbr": "WT",
+    "definition": "用缩放和平移的小波分析不同时间尺度的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Continuous Wavelet Transform",
+    "zh": "连续小波变换",
+    "abbr": "CWT",
+    "definition": "按连续尺度和平移参数计算小波系数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Discrete Wavelet Transform",
+    "zh": "离散小波变换",
+    "abbr": "DWT",
+    "definition": "用离散尺度和位置构造可高效计算的小波分解。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Wavelet Packet Transform",
+    "zh": "小波包变换",
+    "abbr": "WPT",
+    "definition": "对低频与高频子带进一步分解的小波分析。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Multiresolution Analysis",
+    "zh": "多分辨率分析",
+    "abbr": "MRA",
+    "definition": "在嵌套尺度空间中描述信号近似与细节的框架。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Mother Wavelet",
+    "zh": "母小波",
+    "abbr": "",
+    "definition": "通过缩放和平移生成小波函数族的基函数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Scalogram",
+    "zh": "尺度图",
+    "abbr": "",
+    "definition": "展示小波系数能量随时间与尺度变化的图。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Hilbert Transform",
+    "zh": "希尔伯特变换",
+    "abbr": "",
+    "definition": "以特定卷积核形成相位正交分量的线性变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Analytic Signal",
+    "zh": "解析信号",
+    "abbr": "",
+    "definition": "由实信号及其希尔伯特变换构成的复信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 13,
+    "topic": "时频分析与小波",
+    "en": "Instantaneous Frequency",
+    "zh": "瞬时频率",
+    "abbr": "",
+    "definition": "解析信号相位对时间的导数经归一化得到的局部频率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Modulation",
+    "zh": "调制",
+    "abbr": "",
+    "definition": "利用基带信息改变载波参数的过程。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Demodulation",
+    "zh": "解调",
+    "abbr": "",
+    "definition": "从调制信号中恢复传输信息的过程。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Carrier Frequency",
+    "zh": "载波频率",
+    "abbr": "",
+    "definition": "用于承载基带信息的周期信号频率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Baseband Signal",
+    "zh": "基带信号",
+    "abbr": "",
+    "definition": "频谱集中在零频附近的待传输信息信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Passband Signal",
+    "zh": "通带信号",
+    "abbr": "",
+    "definition": "频谱围绕非零载频分布的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Amplitude Modulation",
+    "zh": "幅度调制",
+    "abbr": "AM",
+    "definition": "通过改变载波幅值承载信息的调制方式。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Frequency Modulation",
+    "zh": "频率调制",
+    "abbr": "FM",
+    "definition": "通过改变载波瞬时频率承载信息的调制方式。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Phase Modulation",
+    "zh": "相位调制",
+    "abbr": "PM",
+    "definition": "通过改变载波相位承载信息的调制方式。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Quadrature Amplitude Modulation",
+    "zh": "正交幅度调制",
+    "abbr": "QAM",
+    "definition": "通过两个正交载波的幅度组合传递符号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Phase-Shift Keying",
+    "zh": "相移键控",
+    "abbr": "PSK",
+    "definition": "将有限离散相位映射为数字通信符号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Frequency-Shift Keying",
+    "zh": "频移键控",
+    "abbr": "FSK",
+    "definition": "将离散载频映射为数字通信符号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Orthogonal Frequency-Division Multiplexing",
+    "zh": "正交频分复用",
+    "abbr": "OFDM",
+    "definition": "通过相互正交的多个子载波并行传输数据。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Symbol Rate",
+    "zh": "符号率",
+    "abbr": "",
+    "definition": "每秒传输的调制符号数，单位为波特。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Bit Error Rate",
+    "zh": "误码率",
+    "abbr": "BER",
+    "definition": "接收错误比特数与总接收比特数之比。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Inter-Symbol Interference",
+    "zh": "码间干扰",
+    "abbr": "ISI",
+    "definition": "相邻符号波形在判决时刻相互影响的现象。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Pulse Shaping",
+    "zh": "脉冲成形",
+    "abbr": "",
+    "definition": "通过滤波控制符号波形频谱与码间干扰。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 14,
+    "topic": "通信与调制",
+    "en": "Root-Raised-Cosine Filter",
+    "zh": "根升余弦滤波器",
+    "abbr": "RRC",
+    "definition": "发送与接收端常成对使用的脉冲成形滤波器。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Audio Signal Processing",
+    "zh": "音频信号处理",
+    "abbr": "",
+    "definition": "对声音波形进行分析、增强、编码或合成的方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Speech Enhancement",
+    "zh": "语音增强",
+    "abbr": "",
+    "definition": "减弱噪声或失真以改善语音可懂度和质量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Voice Activity Detection",
+    "zh": "语音活动检测",
+    "abbr": "VAD",
+    "definition": "判断音频片段中是否包含语音活动。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Pitch",
+    "zh": "音高",
+    "abbr": "",
+    "definition": "与听觉基频感知密切相关的声音特征。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Fundamental Frequency",
+    "zh": "基频",
+    "abbr": "F0",
+    "definition": "周期信号的最低重复频率，常用于描述声带振动。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Formant",
+    "zh": "共振峰",
+    "abbr": "",
+    "definition": "声道共振在语音谱中形成的主要频率区域。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Mel-Frequency Cepstral Coefficient",
+    "zh": "梅尔频率倒谱系数",
+    "abbr": "MFCC",
+    "definition": "基于梅尔频标滤波与倒谱变换提取的语音特征。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Cepstrum",
+    "zh": "倒谱",
+    "abbr": "",
+    "definition": "对谱对数进行逆变换得到的表征。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Linear Predictive Coding",
+    "zh": "线性预测编码",
+    "abbr": "LPC",
+    "definition": "用过去采样预测当前信号并构建语音模型的方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Pre-Emphasis",
+    "zh": "预加重",
+    "abbr": "",
+    "definition": "在处理前相对增强某些高频分量的滤波步骤。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Dynamic Range Compression",
+    "zh": "动态范围压缩",
+    "abbr": "DRC",
+    "definition": "通过随电平变化的增益缩小强弱声差异。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Image Filtering",
+    "zh": "图像滤波",
+    "abbr": "",
+    "definition": "对二维离散信号执行空间或频率域变换。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Two-Dimensional Fourier Transform",
+    "zh": "二维傅里叶变换",
+    "abbr": "2D FT",
+    "definition": "把图像等二维信号映射到二维空间频率域。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Convolution Kernel",
+    "zh": "卷积核",
+    "abbr": "",
+    "definition": "在局部邻域对样本加权求和的系数矩阵或序列。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 15,
+    "topic": "音频、语音与图像",
+    "en": "Edge Detection",
+    "zh": "边缘检测",
+    "abbr": "",
+    "definition": "定位图像中强度快速变化的空间结构。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Sensor Array",
+    "zh": "传感器阵列",
+    "abbr": "",
+    "definition": "由多个空间分布的传感器联合采集信号的结构。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Beamforming",
+    "zh": "波束形成",
+    "abbr": "",
+    "definition": "联合加权多通道信号以增强特定方向的响应。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Delay-and-Sum Beamforming",
+    "zh": "延时求和波束形成",
+    "abbr": "",
+    "definition": "按传播时差对齐阵列通道后求和的波束形成方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Direction of Arrival",
+    "zh": "波达方向",
+    "abbr": "DOA",
+    "definition": "入射波相对于阵列坐标系的方向参数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Steering Vector",
+    "zh": "导向矢量",
+    "abbr": "",
+    "definition": "描述特定入射方向在阵列各通道相位或幅值响应的向量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Multiple Signal Classification",
+    "zh": "多重信号分类算法",
+    "abbr": "MUSIC",
+    "definition": "利用信号与噪声子空间正交性估计来波方向的方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Synthetic Aperture Radar",
+    "zh": "合成孔径雷达",
+    "abbr": "SAR",
+    "definition": "利用平台运动合成大孔径实现高分辨率雷达成像。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Range-Doppler Processing",
+    "zh": "距离－多普勒处理",
+    "abbr": "",
+    "definition": "联合估计回波传播距离与径向速度的处理方法。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Pulse Compression",
+    "zh": "脉冲压缩",
+    "abbr": "",
+    "definition": "通过编码波形与匹配滤波兼顾发射能量和距离分辨率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Electrocardiogram",
+    "zh": "心电图信号",
+    "abbr": "ECG",
+    "definition": "记录心脏电活动随时间变化的生理信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Electroencephalogram",
+    "zh": "脑电图信号",
+    "abbr": "EEG",
+    "definition": "通过头皮或其他电极记录脑部电活动的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Electromyogram",
+    "zh": "肌电图信号",
+    "abbr": "EMG",
+    "definition": "记录肌肉电活动的信号。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Baseline Wander",
+    "zh": "基线漂移",
+    "abbr": "",
+    "definition": "低频趋势造成信号基准线缓慢偏移的现象。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 16,
+    "topic": "阵列、雷达与生物医学",
+    "en": "Artifact Removal",
+    "zh": "伪迹去除",
+    "abbr": "",
+    "definition": "抑制运动、电极接触等非目标来源的测量干扰。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Real-Time Signal Processing",
+    "zh": "实时信号处理",
+    "abbr": "",
+    "definition": "必须在规定处理时限内完成的信号计算。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Latency",
+    "zh": "延迟",
+    "abbr": "",
+    "definition": "输入发生到输出可用之间的时间差。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间可处理的数据量或样本数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Block Processing",
+    "zh": "分块处理",
+    "abbr": "",
+    "definition": "把信号分成数据块后执行计算的处理模式。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Streaming Processing",
+    "zh": "流式处理",
+    "abbr": "",
+    "definition": "在数据连续到达时增量执行的处理模式。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Fixed-Point Arithmetic",
+    "zh": "定点运算",
+    "abbr": "",
+    "definition": "以固定缩放因子与有限整数表示执行数值计算。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Floating-Point Arithmetic",
+    "zh": "浮点运算",
+    "abbr": "",
+    "definition": "以尾数和指数形式表达数值并执行运算。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Numerical Precision",
+    "zh": "数值精度",
+    "abbr": "",
+    "definition": "计算中有效数字与舍入误差的表征。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Coefficient Quantization",
+    "zh": "系数量化",
+    "abbr": "",
+    "definition": "把滤波器等算法系数映射到有限字长表示。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Overflow",
+    "zh": "溢出",
+    "abbr": "",
+    "definition": "数值超出目标表示范围的现象。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Saturation Arithmetic",
+    "zh": "饱和算术",
+    "abbr": "",
+    "definition": "溢出时将结果钳制到表示范围边界。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Circular Buffer",
+    "zh": "环形缓冲区",
+    "abbr": "",
+    "definition": "在固定容量内循环复用存储位置的数据结构。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Direct Memory Access",
+    "zh": "直接内存访问",
+    "abbr": "DMA",
+    "definition": "硬件无需 CPU 逐字节搬运即可传输数据的机制。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Single Instruction Multiple Data",
+    "zh": "单指令多数据",
+    "abbr": "SIMD",
+    "definition": "用同一条指令并行处理多个数据元素的体系结构。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 17,
+    "topic": "实时实现与数值工程",
+    "en": "Finite Word Length Effect",
+    "zh": "有限字长效应",
+    "abbr": "",
+    "definition": "量化和舍入对数值滤波器行为与稳定性造成的影响。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Normalization",
+    "zh": "归一化",
+    "abbr": "",
+    "definition": "按指定尺度调整信号或频谱，必须说明采用的规范。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "One-Sided Spectrum",
+    "zh": "单边频谱",
+    "abbr": "",
+    "definition": "仅呈现非负频率的频谱，通常需为能量一致性调整系数。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Two-Sided Spectrum",
+    "zh": "双边频谱",
+    "abbr": "",
+    "definition": "同时呈现正频率与负频率的频谱。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Angular Frequency",
+    "zh": "角频率",
+    "abbr": "ω",
+    "definition": "以弧度每秒或弧度每样本表示的频率变量。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Hertz",
+    "zh": "赫兹",
+    "abbr": "Hz",
+    "definition": "每秒一个周期的频率单位。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Radians per Sample",
+    "zh": "弧度每采样点",
+    "abbr": "rad/sample",
+    "definition": "离散时间角频率的常用单位。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Normalized Frequency",
+    "zh": "归一化频率",
+    "abbr": "",
+    "definition": "把频率按采样率或奈奎斯特频率缩放，须说明约定。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Spectral Centroid",
+    "zh": "频谱质心",
+    "abbr": "",
+    "definition": "按谱幅值或功率权重计算的频率中心指标。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Peak Frequency",
+    "zh": "峰值频率",
+    "abbr": "",
+    "definition": "在指定频带内谱值最大的位置。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Harmonic",
+    "zh": "谐波",
+    "abbr": "",
+    "definition": "频率为基频整数倍的周期成分。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Total Harmonic Distortion",
+    "zh": "总谐波失真",
+    "abbr": "THD",
+    "definition": "非基波谐波均方根相对基波均方根的比例。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Signal-to-Noise-and-Distortion Ratio",
+    "zh": "信噪失真比",
+    "abbr": "SINAD",
+    "definition": "信号有效功率相对噪声与失真功率总和的比值。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Effective Number of Bits",
+    "zh": "有效位数",
+    "abbr": "ENOB",
+    "definition": "根据实际转换器噪声与失真性能换算的等效分辨率。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Power Cepstrum",
+    "zh": "功率倒谱",
+    "abbr": "",
+    "definition": "由对数功率谱构成的倒谱表示，具体归一化需说明。"
+  },
+  {
+    "category": "signal-processing",
+    "chapter": 18,
+    "topic": "核心概念辨析与实验术语",
+    "en": "Phase Unwrapping",
+    "zh": "相位展开",
+    "abbr": "",
+    "definition": "通过消除相位的 2π 跳变形成连续相位轨迹。"
   }
 ]
