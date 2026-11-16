@@ -865,7 +865,7 @@
         "调度与容器",
         "存储与数据管道"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 81,
@@ -874,8 +874,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/081-container-image.md"
         },
         {
           "no": 82,
@@ -884,8 +884,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/082-docker.md"
         },
         {
           "no": 83,
@@ -894,8 +894,8 @@
           "abbr": "K8s",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/083-kubernetes.md"
         },
         {
           "no": 84,
@@ -904,8 +904,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/084-pod.md"
         },
         {
           "no": 85,
@@ -914,8 +914,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/085-node.md"
         },
         {
           "no": 86,
@@ -924,8 +924,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/086-gpu-operator.md"
         },
         {
           "no": 87,
@@ -934,8 +934,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/087-device-plugin.md"
         },
         {
           "no": 88,
@@ -944,8 +944,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/088-job.md"
         },
         {
           "no": 89,
@@ -954,8 +954,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/089-cronjob.md"
         },
         {
           "no": 90,
@@ -964,8 +964,8 @@
           "abbr": "HPA",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/090-horizontal-pod-autoscaler.md"
         },
         {
           "no": 91,
@@ -974,8 +974,8 @@
           "abbr": "CA",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/091-cluster-autoscaler.md"
         },
         {
           "no": 92,
@@ -984,8 +984,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/092-scheduler.md"
         },
         {
           "no": 93,
@@ -994,8 +994,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/093-resource-quota.md"
         },
         {
           "no": 94,
@@ -1004,8 +1004,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/094-node-affinity.md"
         },
         {
           "no": 95,
@@ -1014,8 +1014,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/095-taint-and-toleration.md"
         },
         {
           "no": 96,
@@ -1024,8 +1024,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/096-gang-scheduling.md"
         },
         {
           "no": 97,
@@ -1034,8 +1034,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/097-preemption.md"
         },
         {
           "no": 98,
@@ -1044,8 +1044,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/098-object-storage.md"
         },
         {
           "no": 99,
@@ -1054,8 +1054,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/099-block-storage.md"
         },
         {
           "no": 100,
@@ -1064,8 +1064,8 @@
           "abbr": "DFS",
           "topic": "存储与数据管道",
           "batch": 5,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/100-distributed-file-system.md"
         }
       ]
     },
