@@ -50,3 +50,9 @@
 - Published Linux Markdown and searchable PDF in both root and GitHub Pages downloads.
 - Indexed 394 Linux terms across 16 chapters and added 18 comparison notes to the authored Markdown.
 - Added Linux to navigation/catalog and updated structural validation to support growing coverage.
+
+## 2026-11-16 · Parallel Computing index and Computer Organization access
+
+- Integrated 205 Parallel Computing terms across 12 chapters into JSON, CSV, catalog and GitHub Pages search, retaining existing subject records and calculus notation values.
+- Added a dedicated computer-organization handbook panel with Markdown and PDF links to the site and Pages copy; the 678-term handbook remains outside the indexed terms count.
+- Updated bilingual README coverage to 7,554 terms, 21 subjects and 313 topics.
