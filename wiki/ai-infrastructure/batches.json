@@ -439,7 +439,7 @@
         "分布式训练",
         "推理与服务"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 41,
@@ -448,8 +448,8 @@
           "abbr": "DDP",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/041-distributed-data-parallel.md"
         },
         {
           "no": 42,
@@ -458,8 +458,8 @@
           "abbr": "TP",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/042-tensor-parallelism.md"
         },
         {
           "no": 43,
@@ -468,8 +468,8 @@
           "abbr": "PP",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/043-pipeline-parallelism.md"
         },
         {
           "no": 44,
@@ -478,8 +478,8 @@
           "abbr": "EP",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/044-expert-parallelism.md"
         },
         {
           "no": 45,
@@ -488,8 +488,8 @@
           "abbr": "SP",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/045-sequence-parallelism.md"
         },
         {
           "no": 46,
@@ -498,8 +498,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/046-hybrid-parallelism.md"
         },
         {
           "no": 47,
@@ -508,8 +508,8 @@
           "abbr": "FSDP",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/047-fully-sharded-data-parallel.md"
         },
         {
           "no": 48,
@@ -518,8 +518,8 @@
           "abbr": "ZeRO",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/048-zero-redundancy-optimizer.md"
         },
         {
           "no": 49,
@@ -528,8 +528,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/049-gradient-accumulation.md"
         },
         {
           "no": 50,
@@ -538,8 +538,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/050-gradient-checkpointing.md"
         },
         {
           "no": 51,
@@ -548,8 +548,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/051-activation-recomputation.md"
         },
         {
           "no": 52,
@@ -558,8 +558,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/052-mixed-precision-training.md"
         },
         {
           "no": 53,
@@ -568,8 +568,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/053-loss-scaling.md"
         },
         {
           "no": 54,
@@ -578,8 +578,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/054-microbatch.md"
         },
         {
           "no": 55,
@@ -588,8 +588,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/055-global-batch-size.md"
         },
         {
           "no": 56,
@@ -598,8 +598,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/056-checkpoint.md"
         },
         {
           "no": 57,
@@ -608,8 +608,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/057-elastic-training.md"
         },
         {
           "no": 58,
@@ -618,8 +618,8 @@
           "abbr": "",
           "topic": "分布式训练",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/058-straggler.md"
         },
         {
           "no": 59,
@@ -628,8 +628,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/059-inference-server.md"
         },
         {
           "no": 60,
@@ -638,8 +638,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 3,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/060-model-serving.md"
         }
       ]
     },

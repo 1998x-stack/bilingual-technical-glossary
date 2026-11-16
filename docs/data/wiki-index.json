@@ -280,6 +280,146 @@
       "en": "Data Parallelism",
       "zh": "数据并行",
       "path": "wiki/ai-infrastructure/040-data-parallelism.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Distributed Data Parallel",
+      "zh": "分布式数据并行",
+      "path": "wiki/ai-infrastructure/041-distributed-data-parallel.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Tensor Parallelism",
+      "zh": "张量并行",
+      "path": "wiki/ai-infrastructure/042-tensor-parallelism.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Pipeline Parallelism",
+      "zh": "流水线并行",
+      "path": "wiki/ai-infrastructure/043-pipeline-parallelism.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Expert Parallelism",
+      "zh": "专家并行",
+      "path": "wiki/ai-infrastructure/044-expert-parallelism.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Sequence Parallelism",
+      "zh": "序列并行",
+      "path": "wiki/ai-infrastructure/045-sequence-parallelism.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Hybrid Parallelism",
+      "zh": "混合并行",
+      "path": "wiki/ai-infrastructure/046-hybrid-parallelism.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Fully Sharded Data Parallel",
+      "zh": "全分片数据并行",
+      "path": "wiki/ai-infrastructure/047-fully-sharded-data-parallel.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Zero Redundancy Optimizer",
+      "zh": "零冗余优化器",
+      "path": "wiki/ai-infrastructure/048-zero-redundancy-optimizer.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Gradient Accumulation",
+      "zh": "梯度累积",
+      "path": "wiki/ai-infrastructure/049-gradient-accumulation.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Gradient Checkpointing",
+      "zh": "梯度检查点",
+      "path": "wiki/ai-infrastructure/050-gradient-checkpointing.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Activation Recomputation",
+      "zh": "激活重计算",
+      "path": "wiki/ai-infrastructure/051-activation-recomputation.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Mixed Precision Training",
+      "zh": "混合精度训练",
+      "path": "wiki/ai-infrastructure/052-mixed-precision-training.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Loss Scaling",
+      "zh": "损失缩放",
+      "path": "wiki/ai-infrastructure/053-loss-scaling.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Microbatch",
+      "zh": "微批次",
+      "path": "wiki/ai-infrastructure/054-microbatch.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Global Batch Size",
+      "zh": "全局批量大小",
+      "path": "wiki/ai-infrastructure/055-global-batch-size.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Checkpoint",
+      "zh": "训练检查点",
+      "path": "wiki/ai-infrastructure/056-checkpoint.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Elastic Training",
+      "zh": "弹性训练",
+      "path": "wiki/ai-infrastructure/057-elastic-training.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Straggler",
+      "zh": "慢节点",
+      "path": "wiki/ai-infrastructure/058-straggler.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Inference Server",
+      "zh": "推理服务器",
+      "path": "wiki/ai-infrastructure/059-inference-server.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Model Serving",
+      "zh": "模型服务化",
+      "path": "wiki/ai-infrastructure/060-model-serving.md"
     }
   ]
 }

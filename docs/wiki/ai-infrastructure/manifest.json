@@ -2,7 +2,7 @@
   "title": "AI Infra · 深度 Wiki",
   "total": 142,
   "batchSize": 20,
-  "readyInPr": 40,
+  "readyInPr": 60,
   "topics": [
     "计算硬件与加速器",
     "互连与网络",
@@ -421,8 +421,8 @@
       "abbr": "DDP",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "041-distributed-data-parallel.md"
     },
     {
       "n": 42,
@@ -431,8 +431,8 @@
       "abbr": "TP",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "042-tensor-parallelism.md"
     },
     {
       "n": 43,
@@ -441,8 +441,8 @@
       "abbr": "PP",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "043-pipeline-parallelism.md"
     },
     {
       "n": 44,
@@ -451,8 +451,8 @@
       "abbr": "EP",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "044-expert-parallelism.md"
     },
     {
       "n": 45,
@@ -461,8 +461,8 @@
       "abbr": "SP",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "045-sequence-parallelism.md"
     },
     {
       "n": 46,
@@ -471,8 +471,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "046-hybrid-parallelism.md"
     },
     {
       "n": 47,
@@ -481,8 +481,8 @@
       "abbr": "FSDP",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "047-fully-sharded-data-parallel.md"
     },
     {
       "n": 48,
@@ -491,8 +491,8 @@
       "abbr": "ZeRO",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "048-zero-redundancy-optimizer.md"
     },
     {
       "n": 49,
@@ -501,8 +501,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "049-gradient-accumulation.md"
     },
     {
       "n": 50,
@@ -511,8 +511,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "050-gradient-checkpointing.md"
     },
     {
       "n": 51,
@@ -521,8 +521,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "051-activation-recomputation.md"
     },
     {
       "n": 52,
@@ -531,8 +531,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "052-mixed-precision-training.md"
     },
     {
       "n": 53,
@@ -541,8 +541,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "053-loss-scaling.md"
     },
     {
       "n": 54,
@@ -551,8 +551,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "054-microbatch.md"
     },
     {
       "n": 55,
@@ -561,8 +561,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "055-global-batch-size.md"
     },
     {
       "n": 56,
@@ -571,8 +571,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "056-checkpoint.md"
     },
     {
       "n": 57,
@@ -581,8 +581,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "057-elastic-training.md"
     },
     {
       "n": 58,
@@ -591,8 +591,8 @@
       "abbr": "",
       "topic": "分布式训练",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "058-straggler.md"
     },
     {
       "n": 59,
@@ -601,8 +601,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "059-inference-server.md"
     },
     {
       "n": 60,
@@ -611,8 +611,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "060-model-serving.md"
     },
     {
       "n": 61,
@@ -1435,5 +1435,5 @@
       "file": null
     }
   ],
-  "readyArticles": 40
+  "readyArticles": 60
 }

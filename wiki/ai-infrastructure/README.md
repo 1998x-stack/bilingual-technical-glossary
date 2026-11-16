@@ -4,7 +4,7 @@
 
 将原双语词条扩展为独立技术百科文章：精确定义、直观类比、核心机制、工程案例、易混辨析、两道中级面试题及答案、两道中级考试题及解析、权威参考资料。
 
-**状态说明：** Batch 01–02 共 **40 篇已发布**，Batch 03–08 共 102 篇待研究；已完成 **40/142（28.2%）**。每批独立审阅与校验后合并，计划条目不算完成。
+**状态说明：** Batch 01–03 共 **60 篇已发布**，Batch 04–08 共 82 篇待研究；已完成 **60/142（42.3%）**。每批独立审阅与校验后合并，计划条目不算完成。
 
 ## 批次总览
 
@@ -12,7 +12,7 @@
 |---|---|---|---:|---|
 | 01 | 001–020 | 计算硬件与加速器 | 20 | 已发布 |
 | 02 | 021–040 | 互连与网络、分布式训练 | 20 | 已发布 |
-| 03 | 041–060 | 分布式训练、推理与服务 | 20 | 待研究 |
+| 03 | 041–060 | 分布式训练、推理与服务 | 20 | 已发布 |
 | 04 | 061–080 | 推理与服务、调度与容器 | 20 | 待研究 |
 | 05 | 081–100 | 调度与容器、存储与数据 | 20 | 待研究 |
 | 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 待研究 |
@@ -22,6 +22,10 @@
 ## Batch 02 综合学习路径
 
 阅读 [Batch 02：互连与网络 → 数据并行训练](BATCH-02.md)，串起硬件互连、网络拓扑、集合通信与 DDP 性能调优。
+
+## Batch 03 综合学习路径
+
+阅读 [分布式训练 → 在线推理服务](BATCH-03.md)，重点区分并行维度、显存/通信、训练数值和服务治理。
 
 ## 逐批术语清单
 
@@ -73,26 +77,26 @@
 
 ### Batch 03: 分布式训练、推理与服务
 
-41. Distributed Data Parallel（分布式数据并行） · `DDP` · 未编写
-42. Tensor Parallelism（张量并行） · `TP` · 未编写
-43. Pipeline Parallelism（流水线并行） · `PP` · 未编写
-44. Expert Parallelism（专家并行） · `EP` · 未编写
-45. Sequence Parallelism（序列并行） · `SP` · 未编写
-46. Hybrid Parallelism（混合并行） · 未编写
-47. Fully Sharded Data Parallel（全分片数据并行） · `FSDP` · 未编写
-48. Zero Redundancy Optimizer（零冗余优化器） · `ZeRO` · 未编写
-49. Gradient Accumulation（梯度累积） · 未编写
-50. Gradient Checkpointing（梯度检查点） · 未编写
-51. Activation Recomputation（激活重计算） · 未编写
-52. Mixed Precision Training（混合精度训练） · 未编写
-53. Loss Scaling（损失缩放） · 未编写
-54. Microbatch（微批次） · 未编写
-55. Global Batch Size（全局批量大小） · 未编写
-56. Checkpoint（训练检查点） · 未编写
-57. Elastic Training（弹性训练） · 未编写
-58. Straggler（慢节点） · 未编写
-59. Inference Server（推理服务器） · 未编写
-60. Model Serving（模型服务化） · 未编写
+41. [Distributed Data Parallel（分布式数据并行）](041-distributed-data-parallel.md) · `DDP` · 已发布
+42. [Tensor Parallelism（张量并行）](042-tensor-parallelism.md) · `TP` · 已发布
+43. [Pipeline Parallelism（流水线并行）](043-pipeline-parallelism.md) · `PP` · 已发布
+44. [Expert Parallelism（专家并行）](044-expert-parallelism.md) · `EP` · 已发布
+45. [Sequence Parallelism（序列并行）](045-sequence-parallelism.md) · `SP` · 已发布
+46. [Hybrid Parallelism（混合并行）](046-hybrid-parallelism.md) · 已发布
+47. [Fully Sharded Data Parallel（全分片数据并行）](047-fully-sharded-data-parallel.md) · `FSDP` · 已发布
+48. [Zero Redundancy Optimizer（零冗余优化器）](048-zero-redundancy-optimizer.md) · `ZeRO` · 已发布
+49. [Gradient Accumulation（梯度累积）](049-gradient-accumulation.md) · 已发布
+50. [Gradient Checkpointing（梯度检查点）](050-gradient-checkpointing.md) · 已发布
+51. [Activation Recomputation（激活重计算）](051-activation-recomputation.md) · 已发布
+52. [Mixed Precision Training（混合精度训练）](052-mixed-precision-training.md) · 已发布
+53. [Loss Scaling（损失缩放）](053-loss-scaling.md) · 已发布
+54. [Microbatch（微批次）](054-microbatch.md) · 已发布
+55. [Global Batch Size（全局批量大小）](055-global-batch-size.md) · 已发布
+56. [Checkpoint（训练检查点）](056-checkpoint.md) · 已发布
+57. [Elastic Training（弹性训练）](057-elastic-training.md) · 已发布
+58. [Straggler（慢节点）](058-straggler.md) · 已发布
+59. [Inference Server（推理服务器）](059-inference-server.md) · 已发布
+60. [Model Serving（模型服务化）](060-model-serving.md) · 已发布
 
 ### Batch 04: 推理与服务、调度与容器
 
