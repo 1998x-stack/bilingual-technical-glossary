@@ -15,7 +15,7 @@ class TestAgentSkills(unittest.TestCase):
         self.assertEqual(validate_repository(ROOT), [])
 
     def test_frontmatter_rejects_missing_name(self):
-        content = b"---\ndescription: Use when authoring a glossary entry with references.\n---\n# A\n" + b"detail " * 100
+        content = b"---\ndescription: Use when authoring a glossary entry with references.\n---\n# A\n" + b"detail for the test case\n" * 100
         self.assertTrue(any("name" in x or "metadata" in x for x in parse_frontmatter(content, "example-skill")))
 
     def test_detect_and_repair_mirror_drift(self):
