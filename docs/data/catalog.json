@@ -153,6 +153,15 @@
     "topics": 18
   },
   {
+    "slug": "computer-networks",
+    "en": "Computer Networks",
+    "zh": "计算机网络",
+    "description": "Layers, Ethernet, Wi-Fi, IPv4/IPv6, routing, TCP, QUIC, DNS, HTTP, TLS and network operations",
+    "icon": "network",
+    "count": 359,
+    "topics": 18
+  },
+  {
     "slug": "sql-database",
     "en": "SQL Database",
     "zh": "SQL 数据库",

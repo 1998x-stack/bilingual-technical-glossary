@@ -68345,5 +68345,3236 @@
     "zh": "可复现性",
     "abbr": "",
     "definition": "在明确环境与配置下重现可验证的实验结果。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Computer Network",
+    "zh": "计算机网络",
+    "abbr": "",
+    "definition": "由通信链路和协议连接的计算设备集合，用于交换数据与共享资源。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Internet",
+    "zh": "互联网",
+    "abbr": "",
+    "definition": "采用 IP 协议族互联的全球网络系统。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Intranet",
+    "zh": "内联网",
+    "abbr": "",
+    "definition": "面向组织内部、通常受访问控制保护的网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Network Protocol",
+    "zh": "网络协议",
+    "abbr": "",
+    "definition": "规定通信双方消息格式、交互顺序与行为的规则。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Network Architecture",
+    "zh": "网络体系结构",
+    "abbr": "",
+    "definition": "组织网络分层、功能与协议关系的总体设计。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Network Edge",
+    "zh": "网络边缘",
+    "abbr": "",
+    "definition": "运行终端和应用、接入网络的部分。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Network Core",
+    "zh": "网络核心",
+    "abbr": "",
+    "definition": "由路由器和链路组成、承担数据转发的骨干部分。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "End System (Host)",
+    "zh": "端系统（主机）",
+    "abbr": "",
+    "definition": "运行网络应用的设备，如服务器、电脑和手机。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Client",
+    "zh": "客户端",
+    "abbr": "",
+    "definition": "通常发起请求并消费远端服务的程序或设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Server",
+    "zh": "服务器",
+    "abbr": "",
+    "definition": "接收请求并提供资源或服务的程序或设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Peer-to-Peer (P2P)",
+    "zh": "对等网络",
+    "abbr": "P2P",
+    "definition": "节点可同时作为服务的请求者和提供者的通信模式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Internet Service Provider (ISP)",
+    "zh": "互联网服务提供商",
+    "abbr": "ISP",
+    "definition": "为用户或其他网络提供互联网接入与传输服务的运营者。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Autonomous System (AS)",
+    "zh": "自治系统",
+    "abbr": "AS",
+    "definition": "由统一路由策略管理并具有 AS 号的网络集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Local Area Network (LAN)",
+    "zh": "局域网",
+    "abbr": "LAN",
+    "definition": "覆盖家庭、校园或园区等有限区域的网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Wide Area Network (WAN)",
+    "zh": "广域网",
+    "abbr": "WAN",
+    "definition": "跨越较大地理范围连接多处站点的网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Metropolitan Area Network (MAN)",
+    "zh": "城域网",
+    "abbr": "MAN",
+    "definition": "通常覆盖城市或都市范围的网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Packet Switching",
+    "zh": "分组交换",
+    "abbr": "",
+    "definition": "将数据拆成分组、由网络逐跳转发的交换方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Circuit Switching",
+    "zh": "电路交换",
+    "abbr": "",
+    "definition": "通信前建立资源或路径连接，通常预留传输能力的交换方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Store-and-Forward",
+    "zh": "存储转发",
+    "abbr": "",
+    "definition": "设备完整接收一个分组后再向下一跳发送的转发方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 1,
+    "topic": "网络基础与体系结构",
+    "en": "Best-Effort Delivery",
+    "zh": "尽力而为交付",
+    "abbr": "",
+    "definition": "网络不承诺端到端时延、可靠交付或固定带宽的服务模型。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Open Systems Interconnection (OSI) Model",
+    "zh": "OSI 参考模型",
+    "abbr": "OSI",
+    "definition": "将网络通信功能抽象划分为七层的参考体系结构。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "TCP/IP Model",
+    "zh": "TCP/IP 协议模型",
+    "abbr": "",
+    "definition": "以 IP 为核心组织互联网协议的分层模型。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Application Layer",
+    "zh": "应用层",
+    "abbr": "",
+    "definition": "直接面向应用协议和服务语义的层次。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Transport Layer",
+    "zh": "传输层",
+    "abbr": "",
+    "definition": "提供端到端进程间的数据传输服务。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Network Layer",
+    "zh": "网络层",
+    "abbr": "",
+    "definition": "处理逻辑寻址、分组转发和跨网络路由。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Data Link Layer",
+    "zh": "数据链路层",
+    "abbr": "",
+    "definition": "在相邻节点间封装和传送帧并检测部分链路错误。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Physical Layer",
+    "zh": "物理层",
+    "abbr": "",
+    "definition": "将比特映射为光、电或无线电信号传输。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Encapsulation",
+    "zh": "封装",
+    "abbr": "",
+    "definition": "下层为上层数据添加协议首部或尾部的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Decapsulation",
+    "zh": "解封装",
+    "abbr": "",
+    "definition": "接收方逐层解析并移除封装信息的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Protocol Data Unit (PDU)",
+    "zh": "协议数据单元",
+    "abbr": "PDU",
+    "definition": "特定协议层处理和交换的完整数据单位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Service Data Unit (SDU)",
+    "zh": "服务数据单元",
+    "abbr": "SDU",
+    "definition": "由上层交给某一协议层承载的数据部分。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Frame",
+    "zh": "帧",
+    "abbr": "",
+    "definition": "数据链路层的传输单位，通常包含链路首部和校验信息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Packet",
+    "zh": "分组（数据包）",
+    "abbr": "",
+    "definition": "网络层或一般语境下独立转发的数据单元。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Segment",
+    "zh": "报文段",
+    "abbr": "",
+    "definition": "TCP 等传输层协议使用的数据单位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Datagram",
+    "zh": "数据报",
+    "abbr": "",
+    "definition": "面向无连接传输的数据单位，常见于 IP 和 UDP 语境。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Payload",
+    "zh": "有效载荷",
+    "abbr": "",
+    "definition": "除协议首部等控制信息外承载的业务数据。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Header",
+    "zh": "首部",
+    "abbr": "",
+    "definition": "描述地址、长度、控制标志等元信息的协议字段集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 2,
+    "topic": "分层、封装与数据单位",
+    "en": "Trailer",
+    "zh": "尾部",
+    "abbr": "",
+    "definition": "附在数据末尾的附加控制或校验信息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Bandwidth",
+    "zh": "带宽",
+    "abbr": "",
+    "definition": "通信链路的频率宽度或可传输数据速率容量，需区分语境。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Bit Rate",
+    "zh": "比特率",
+    "abbr": "",
+    "definition": "单位时间发送的比特数，通常以 bit/s 计。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Baud Rate",
+    "zh": "波特率",
+    "abbr": "",
+    "definition": "单位时间信号符号变化的次数，不必等于比特率。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Signal-to-Noise Ratio (SNR)",
+    "zh": "信噪比",
+    "abbr": "SNR",
+    "definition": "有用信号功率与噪声功率之比。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Attenuation",
+    "zh": "衰减",
+    "abbr": "",
+    "definition": "信号传播中功率或幅度逐渐减弱的现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Interference",
+    "zh": "干扰",
+    "abbr": "",
+    "definition": "其他信号影响目标信号接收的现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Propagation Delay",
+    "zh": "传播时延",
+    "abbr": "",
+    "definition": "信号在介质中传播一定距离所花费的时间。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Transmission Delay",
+    "zh": "发送时延",
+    "abbr": "",
+    "definition": "把一个分组的比特逐个推送到链路所需的时间。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Queuing Delay",
+    "zh": "排队时延",
+    "abbr": "",
+    "definition": "分组在设备缓冲队列中等待转发的时间。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Processing Delay",
+    "zh": "处理时延",
+    "abbr": "",
+    "definition": "设备分析首部、查表和检查错误等所花的时间。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Twisted Pair",
+    "zh": "双绞线",
+    "abbr": "",
+    "definition": "通过成对绞合导线降低干扰的有线传输介质。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Optical Fiber",
+    "zh": "光纤",
+    "abbr": "",
+    "definition": "利用光信号传输数据的低损耗通信介质。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Single-Mode Fiber (SMF)",
+    "zh": "单模光纤",
+    "abbr": "SMF",
+    "definition": "主要支持单一传播模式、适合长距离高速通信的光纤。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Multimode Fiber (MMF)",
+    "zh": "多模光纤",
+    "abbr": "MMF",
+    "definition": "允许多个传播模式、通常用于较短距离的光纤。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Ethernet PHY",
+    "zh": "以太网物理层收发器",
+    "abbr": "",
+    "definition": "执行以太网物理编码、信号发送与接收的组件。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Multiplexing",
+    "zh": "复用",
+    "abbr": "",
+    "definition": "让多路逻辑通信共享同一物理资源的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Time Division Multiplexing (TDM)",
+    "zh": "时分复用",
+    "abbr": "TDM",
+    "definition": "把不同通信分配到不同时间片的复用方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Wavelength Division Multiplexing (WDM)",
+    "zh": "波分复用",
+    "abbr": "WDM",
+    "definition": "利用不同光波长在同一光纤中并行传输信号。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Full-Duplex",
+    "zh": "全双工",
+    "abbr": "",
+    "definition": "两个方向可以同时发送和接收数据的工作方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 3,
+    "topic": "物理传输与接入技术",
+    "en": "Half-Duplex",
+    "zh": "半双工",
+    "abbr": "",
+    "definition": "双向通信可以进行，但通常不能在同一时刻双向传输。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Ethernet",
+    "zh": "以太网",
+    "abbr": "",
+    "definition": "广泛用于有线局域网的 IEEE 802.3 技术族。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Media Access Control (MAC)",
+    "zh": "媒体访问控制",
+    "abbr": "MAC",
+    "definition": "数据链路子层中处理介质访问和链路寻址的功能。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "MAC Address",
+    "zh": "MAC 地址",
+    "abbr": "",
+    "definition": "网络接口在链路层使用的地址标识，通常为 48 位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Ethernet Frame",
+    "zh": "以太网帧",
+    "abbr": "",
+    "definition": "包含目的 MAC、源 MAC、类型字段及校验信息的帧格式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "EtherType",
+    "zh": "以太网类型字段",
+    "abbr": "",
+    "definition": "标识帧载荷上层协议类型的字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Frame Check Sequence (FCS)",
+    "zh": "帧校验序列",
+    "abbr": "FCS",
+    "definition": "用于链路层错误检测的帧尾校验数据。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Cyclic Redundancy Check (CRC)",
+    "zh": "循环冗余校验",
+    "abbr": "CRC",
+    "definition": "通过多项式运算检测传输数据错误的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Network Switch",
+    "zh": "网络交换机",
+    "abbr": "",
+    "definition": "依据链路层地址表在端口之间转发帧的设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Bridge",
+    "zh": "网桥",
+    "abbr": "",
+    "definition": "连接链路网段并依据 MAC 地址转发或过滤帧的设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Hub",
+    "zh": "集线器",
+    "abbr": "",
+    "definition": "在物理层向其他端口重复接收信号的传统设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "MAC Address Table",
+    "zh": "MAC 地址表",
+    "abbr": "",
+    "definition": "交换机学习到的 MAC 地址与端口映射表。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Flooding",
+    "zh": "泛洪",
+    "abbr": "",
+    "definition": "将帧复制发送到多个端口的转发方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Broadcast Domain",
+    "zh": "广播域",
+    "abbr": "",
+    "definition": "链路层广播帧通常能到达的节点集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Collision Domain",
+    "zh": "冲突域",
+    "abbr": "",
+    "definition": "共享介质下可能出现发送碰撞的范围。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Virtual LAN (VLAN)",
+    "zh": "虚拟局域网",
+    "abbr": "VLAN",
+    "definition": "在二层网络内划分逻辑隔离广播域的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "IEEE 802.1Q",
+    "zh": "802.1Q VLAN 标记标准",
+    "abbr": "",
+    "definition": "定义以太网 VLAN 标记等桥接相关机制的 IEEE 标准。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Access Port",
+    "zh": "接入口",
+    "abbr": "",
+    "definition": "通常为终端提供单一 VLAN 接入的交换机端口。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Trunk Port",
+    "zh": "汇聚端口",
+    "abbr": "",
+    "definition": "在设备之间承载多个 VLAN 流量的端口。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Spanning Tree Protocol (STP)",
+    "zh": "生成树协议",
+    "abbr": "STP",
+    "definition": "通过阻塞冗余链路避免二层转发环路的协议族。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Link Aggregation (LAG)",
+    "zh": "链路聚合",
+    "abbr": "LAG",
+    "definition": "把多个物理链路组合成一个逻辑链路的技术。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Link Aggregation Control Protocol (LACP)",
+    "zh": "链路聚合控制协议",
+    "abbr": "LACP",
+    "definition": "用于协商和管理聚合链路成员的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 4,
+    "topic": "以太网、交换与局域网",
+    "en": "Maximum Transmission Unit (MTU)",
+    "zh": "最大传输单元",
+    "abbr": "MTU",
+    "definition": "特定链路可承载的最大网络层分组大小。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Wireless Local Area Network (WLAN)",
+    "zh": "无线局域网",
+    "abbr": "WLAN",
+    "definition": "通过无线电建立局域连接的网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Wi-Fi",
+    "zh": "Wi-Fi 无线局域网技术",
+    "abbr": "",
+    "definition": "基于 IEEE 802.11 规范的无线局域网技术品牌与生态。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "IEEE 802.11",
+    "zh": "802.11 无线局域网标准",
+    "abbr": "",
+    "definition": "规定 WLAN 物理层和 MAC 层功能的 IEEE 标准族。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Access Point (AP)",
+    "zh": "无线接入点",
+    "abbr": "AP",
+    "definition": "为无线终端提供接入有线或其他网络的设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Service Set Identifier (SSID)",
+    "zh": "服务集标识符",
+    "abbr": "SSID",
+    "definition": "用于标识 Wi-Fi 网络名称的字符串。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Basic Service Set (BSS)",
+    "zh": "基本服务集",
+    "abbr": "BSS",
+    "definition": "由无线接入点及其关联站点构成的局域通信集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Basic Service Set Identifier (BSSID)",
+    "zh": "基本服务集标识符",
+    "abbr": "BSSID",
+    "definition": "用于标识特定无线基本服务集的地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Association",
+    "zh": "关联",
+    "abbr": "",
+    "definition": "无线客户端与接入点建立 802.11 关联关系的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Roaming",
+    "zh": "漫游",
+    "abbr": "",
+    "definition": "终端在不同接入点或接入网络间迁移并维持服务的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)",
+    "zh": "载波监听多路访问与冲突避免",
+    "abbr": "CSMA/CA",
+    "definition": "无线站点先监听信道并采用退避降低碰撞概率的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Request to Send (RTS)",
+    "zh": "请求发送帧",
+    "abbr": "RTS",
+    "definition": "用于协调共享无线信道发送机会的控制帧。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Clear to Send (CTS)",
+    "zh": "允许发送帧",
+    "abbr": "CTS",
+    "definition": "响应 RTS 并通知有关站点介质使用状态的控制帧。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Hidden Node Problem",
+    "zh": "隐藏节点问题",
+    "abbr": "",
+    "definition": "两个发射端互相听不到却可能在接收端产生碰撞的情形。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Received Signal Strength Indicator (RSSI)",
+    "zh": "接收信号强度指示",
+    "abbr": "RSSI",
+    "definition": "设备报告接收无线信号功率相关强度的指标。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Channel Width",
+    "zh": "信道带宽",
+    "abbr": "",
+    "definition": "无线信道所占频谱宽度，如 20 MHz 或 80 MHz。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Multiple-Input Multiple-Output (MIMO)",
+    "zh": "多输入多输出",
+    "abbr": "MIMO",
+    "definition": "利用多个收发天线提高无线链路能力的技术。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Orthogonal Frequency Division Multiplexing (OFDM)",
+    "zh": "正交频分复用",
+    "abbr": "OFDM",
+    "definition": "将高速数据分配到多个正交子载波上传输的调制方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Cellular Network",
+    "zh": "蜂窝网络",
+    "abbr": "",
+    "definition": "通过分区基站和频谱资源实现广域移动通信的网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Base Station",
+    "zh": "基站",
+    "abbr": "",
+    "definition": "为特定无线覆盖区提供接入和无线资源控制的设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 5,
+    "topic": "无线网络与移动通信",
+    "en": "Handover",
+    "zh": "切换",
+    "abbr": "",
+    "definition": "移动设备在基站或无线链路之间转移连接的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Internet Protocol (IP)",
+    "zh": "网际协议",
+    "abbr": "IP",
+    "definition": "提供跨网络逻辑寻址与尽力而为分组转发能力的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "IPv4",
+    "zh": "互联网协议第 4 版",
+    "abbr": "",
+    "definition": "使用 32 位地址的 IP 版本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "IPv6",
+    "zh": "互联网协议第 6 版",
+    "abbr": "",
+    "definition": "使用 128 位地址并重新设计首部与扩展机制的 IP 版本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "IP Address",
+    "zh": "IP 地址",
+    "abbr": "",
+    "definition": "网络层用于标识接口或网络端点的逻辑地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Network Prefix",
+    "zh": "网络前缀",
+    "abbr": "",
+    "definition": "表示一组地址共享的高位比特部分。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Prefix Length",
+    "zh": "前缀长度",
+    "abbr": "",
+    "definition": "CIDR 表示法中网络前缀占据的比特数量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Classless Inter-Domain Routing (CIDR)",
+    "zh": "无类别域间路由",
+    "abbr": "CIDR",
+    "definition": "使用可变前缀长度进行 IP 地址分配与路由聚合的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Subnet",
+    "zh": "子网",
+    "abbr": "",
+    "definition": "由共同网络前缀划分出的逻辑网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Subnet Mask",
+    "zh": "子网掩码",
+    "abbr": "",
+    "definition": "在 IPv4 中指出地址的网络前缀与主机位的掩码。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Default Gateway",
+    "zh": "默认网关",
+    "abbr": "",
+    "definition": "终端向其他网络转发流量时使用的下一跳设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Loopback Address",
+    "zh": "回环地址",
+    "abbr": "",
+    "definition": "指向本机协议栈的逻辑地址，如 127.0.0.1 或 ::1。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Private IPv4 Address",
+    "zh": "私有 IPv4 地址",
+    "abbr": "",
+    "definition": "RFC 1918 定义、通常不在公网直接路由的 IPv4 地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Public IP Address",
+    "zh": "公网 IP 地址",
+    "abbr": "",
+    "definition": "在适用范围内可全球路由的 IP 地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Link-Local Address",
+    "zh": "链路本地地址",
+    "abbr": "",
+    "definition": "仅在本地链路范围有效的地址，如 IPv6 fe80::/10。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Unicast Address",
+    "zh": "单播地址",
+    "abbr": "",
+    "definition": "用于标识一个目标接口或单播接收方的地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Multicast Address",
+    "zh": "组播地址",
+    "abbr": "",
+    "definition": "用于标识一组订阅接收方的地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Anycast Address",
+    "zh": "任播地址",
+    "abbr": "",
+    "definition": "多个节点共享标识、由路由选取其中一个接收流量的地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Broadcast Address",
+    "zh": "广播地址",
+    "abbr": "",
+    "definition": "IPv4 中用于向特定范围内全部节点发送分组的地址。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "IPv6 Neighbor Discovery (NDP)",
+    "zh": "IPv6 邻居发现协议",
+    "abbr": "NDP",
+    "definition": "用于邻居可达性、地址解析和路由器发现的 ICMPv6 机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Stateless Address Autoconfiguration (SLAAC)",
+    "zh": "无状态地址自动配置",
+    "abbr": "SLAAC",
+    "definition": "IPv6 主机依据路由器通告等信息生成地址的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 6,
+    "topic": "IPv4、IPv6 与寻址",
+    "en": "Duplicate Address Detection (DAD)",
+    "zh": "重复地址检测",
+    "abbr": "DAD",
+    "definition": "IPv6 中检测拟使用地址是否已被占用的流程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Router",
+    "zh": "路由器",
+    "abbr": "",
+    "definition": "依据网络层路由与转发表在不同链路间转发分组的设备。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Routing",
+    "zh": "路由选择",
+    "abbr": "",
+    "definition": "决定到达目标网络应采用何种路径的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Forwarding",
+    "zh": "转发",
+    "abbr": "",
+    "definition": "依据转发表将到来的分组送往对应出口的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Forwarding Information Base (FIB)",
+    "zh": "转发信息库",
+    "abbr": "FIB",
+    "definition": "用于高效查找目的地址对应下一跳的转发表。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Routing Information Base (RIB)",
+    "zh": "路由信息库",
+    "abbr": "RIB",
+    "definition": "路由控制平面维护的候选路由及选择结果集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Longest Prefix Match",
+    "zh": "最长前缀匹配",
+    "abbr": "",
+    "definition": "选择与目标地址匹配的最长网络前缀的规则。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Next Hop",
+    "zh": "下一跳",
+    "abbr": "",
+    "definition": "分组沿路径接下来要发送到的网络节点。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Default Route",
+    "zh": "默认路由",
+    "abbr": "",
+    "definition": "没有更具体匹配时使用的路由，通常记作 0.0.0.0/0 或 ::/0。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Time to Live (TTL)",
+    "zh": "生存时间",
+    "abbr": "TTL",
+    "definition": "IPv4 首部中逐跳递减、避免分组无限循环的字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Hop Limit",
+    "zh": "跳数限制",
+    "abbr": "",
+    "definition": "IPv6 中限制分组可经过多少个路由器的字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Internet Control Message Protocol (ICMP)",
+    "zh": "互联网控制报文协议",
+    "abbr": "ICMP",
+    "definition": "传递 IP 网络错误、诊断和控制消息的协议族。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "ICMPv6",
+    "zh": "ICMP 第 6 版",
+    "abbr": "",
+    "definition": "服务于 IPv6 的错误报告、诊断与邻居发现协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Echo Request",
+    "zh": "回显请求",
+    "abbr": "",
+    "definition": "ICMP 中用于测试目标可达性的探测报文。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Echo Reply",
+    "zh": "回显应答",
+    "abbr": "",
+    "definition": "对 ICMP 回显请求的应答报文。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Destination Unreachable",
+    "zh": "目标不可达",
+    "abbr": "",
+    "definition": "指示由于网络或策略原因无法到达目的地的控制消息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Packet Fragmentation",
+    "zh": "分片",
+    "abbr": "",
+    "definition": "将数据报拆成较小片段以适配传输限制的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Path MTU Discovery (PMTUD)",
+    "zh": "路径 MTU 发现",
+    "abbr": "PMTUD",
+    "definition": "确定源到目的路径可支持的最大分组大小的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 7,
+    "topic": "IP 数据平面、转发与控制消息",
+    "en": "Black Hole",
+    "zh": "黑洞路由或丢包路径",
+    "abbr": "",
+    "definition": "流量在某路径上被无声丢弃而无法抵达目的地的现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Routing Protocol",
+    "zh": "路由协议",
+    "abbr": "",
+    "definition": "网络设备交换拓扑或可达性信息、计算路径的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Static Route",
+    "zh": "静态路由",
+    "abbr": "",
+    "definition": "由管理员明确配置、通常不自动学习的路由条目。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Dynamic Routing",
+    "zh": "动态路由",
+    "abbr": "",
+    "definition": "通过路由协议自动学习或更新路由的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Distance-Vector Routing",
+    "zh": "距离向量路由",
+    "abbr": "",
+    "definition": "节点交换到目的地的代价估计并迭代更新路由的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Link-State Routing",
+    "zh": "链路状态路由",
+    "abbr": "",
+    "definition": "节点获取拓扑信息并计算最短路径的路由方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Dijkstra Algorithm",
+    "zh": "迪杰斯特拉算法",
+    "abbr": "",
+    "definition": "在非负权图中计算从源点到各节点最短路径的算法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Bellman-Ford Algorithm",
+    "zh": "贝尔曼-福特算法",
+    "abbr": "",
+    "definition": "通过边的松弛迭代求解单源最短路径的算法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Routing Information Protocol (RIP)",
+    "zh": "路由信息协议",
+    "abbr": "RIP",
+    "definition": "采用跳数作为主要度量的传统距离向量路由协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Open Shortest Path First (OSPF)",
+    "zh": "开放最短路径优先协议",
+    "abbr": "OSPF",
+    "definition": "使用链路状态数据库和最短路径树的域内路由协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Intermediate System to Intermediate System (IS-IS)",
+    "zh": "中间系统到中间系统协议",
+    "abbr": "IS-IS",
+    "definition": "常用于运营商骨干的链路状态域内路由协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Border Gateway Protocol (BGP)",
+    "zh": "边界网关协议",
+    "abbr": "BGP",
+    "definition": "在自治系统之间交换可达前缀和策略属性的路径向量协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "External BGP (eBGP)",
+    "zh": "外部 BGP",
+    "abbr": "",
+    "definition": "不同自治系统之间建立的 BGP 邻接关系。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Internal BGP (iBGP)",
+    "zh": "内部 BGP",
+    "abbr": "",
+    "definition": "同一自治系统内部传递 BGP 路由信息的会话。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Autonomous System Number (ASN)",
+    "zh": "自治系统号",
+    "abbr": "ASN",
+    "definition": "全球互联网路由中标识自治系统的编号。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "BGP Path Attribute",
+    "zh": "BGP 路径属性",
+    "abbr": "",
+    "definition": "供 BGP 路由选择和策略处理使用的可达性元数据。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "AS_PATH",
+    "zh": "自治系统路径属性",
+    "abbr": "",
+    "definition": "BGP 中记录经过的 AS 序列，支持环路检测与策略控制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Route Aggregation",
+    "zh": "路由聚合",
+    "abbr": "",
+    "definition": "用较短前缀概括多个更具体路由以缩小路由表的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 8,
+    "topic": "动态路由与互联网互联",
+    "en": "Equal-Cost Multi-Path (ECMP)",
+    "zh": "等价多路径",
+    "abbr": "ECMP",
+    "definition": "在多条相同代价路径之间分担流量的转发策略。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Port Number",
+    "zh": "端口号",
+    "abbr": "",
+    "definition": "用于在主机内标识传输层服务端点的数字。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Socket",
+    "zh": "套接字",
+    "abbr": "",
+    "definition": "操作系统提供的网络通信端点抽象及编程接口。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Socket Address",
+    "zh": "套接字地址",
+    "abbr": "",
+    "definition": "由 IP 地址、端口等组成的通信端点标识。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Multiplexing",
+    "zh": "多路复用（传输层）",
+    "abbr": "",
+    "definition": "发送方将不同应用流的数据汇集到共同网络层服务。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Demultiplexing",
+    "zh": "多路分解",
+    "abbr": "",
+    "definition": "接收方依据首部标识把数据交付给正确的套接字。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Connection-Oriented Service",
+    "zh": "面向连接服务",
+    "abbr": "",
+    "definition": "数据交换前建立并维护连接状态的传输服务。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Connectionless Service",
+    "zh": "无连接服务",
+    "abbr": "",
+    "definition": "独立发送数据报而不建立传输层连接状态的服务。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Reliable Data Transfer",
+    "zh": "可靠数据传输",
+    "abbr": "",
+    "definition": "通过确认、重传等机制按所定义语义交付数据的协议能力。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Acknowledgment (ACK)",
+    "zh": "确认",
+    "abbr": "ACK",
+    "definition": "接收方用于报告数据接收情况的控制信息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Negative Acknowledgment (NAK)",
+    "zh": "否定确认",
+    "abbr": "NAK",
+    "definition": "显式告知部分数据未被正确接收的控制信息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Retransmission",
+    "zh": "重传",
+    "abbr": "",
+    "definition": "发送方再次发送先前未被确认或被认为丢失的数据。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Sequence Number",
+    "zh": "序列号",
+    "abbr": "",
+    "definition": "用于标记字节或报文的顺序位置与检测重复。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Checksum",
+    "zh": "校验和",
+    "abbr": "",
+    "definition": "对数据计算的检错值，可发现部分传输损坏。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Round-Trip Time (RTT)",
+    "zh": "往返时间",
+    "abbr": "RTT",
+    "definition": "数据从发送端到目标并收到响应经历的时间。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Timeout",
+    "zh": "超时",
+    "abbr": "",
+    "definition": "等待预期事件超过阈值后触发处理的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Flow Control",
+    "zh": "流量控制",
+    "abbr": "",
+    "definition": "限制发送方速率或在途数据，防止接收方缓冲耗尽。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 9,
+    "topic": "传输层基础、端口与 Socket",
+    "en": "Congestion Control",
+    "zh": "拥塞控制",
+    "abbr": "",
+    "definition": "根据网络负载和拥塞信号调节发送行为的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Transmission Control Protocol (TCP)",
+    "zh": "传输控制协议",
+    "abbr": "TCP",
+    "definition": "提供可靠、有序、面向字节流的双向传输协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Three-Way Handshake",
+    "zh": "三次握手",
+    "abbr": "",
+    "definition": "TCP 通过 SYN、SYN-ACK、ACK 建立连接并同步序列空间的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Four-Way Termination",
+    "zh": "四次挥手",
+    "abbr": "",
+    "definition": "TCP 双方向分别关闭发送能力时常见的四个报文交换过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "SYN Flag",
+    "zh": "SYN 标志",
+    "abbr": "",
+    "definition": "TCP 首部中用于连接建立和序列号同步的控制位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "FIN Flag",
+    "zh": "FIN 标志",
+    "abbr": "",
+    "definition": "TCP 中表示本端数据发送完毕的控制位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "RST Flag",
+    "zh": "RST 标志",
+    "abbr": "",
+    "definition": "TCP 中用于复位连接或拒绝无效连接的控制位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "TCP State Machine",
+    "zh": "TCP 状态机",
+    "abbr": "",
+    "definition": "描述 LISTEN、ESTABLISHED、TIME_WAIT 等连接状态转换的模型。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "LISTEN State",
+    "zh": "监听状态",
+    "abbr": "",
+    "definition": "TCP 服务端等待连接请求的状态。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "ESTABLISHED State",
+    "zh": "已建立状态",
+    "abbr": "",
+    "definition": "TCP 双方可以正常双向交换数据的连接状态。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "TIME_WAIT State",
+    "zh": "时间等待状态",
+    "abbr": "",
+    "definition": "主动完成正常关闭的一端等待足够时间以处理迟到报文的状态。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Maximum Segment Size (MSS)",
+    "zh": "最大报文段长度",
+    "abbr": "MSS",
+    "definition": "TCP 单个报文段中可携带的最大应用数据长度。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Sliding Window",
+    "zh": "滑动窗口",
+    "abbr": "",
+    "definition": "允许多个数据单元在收到确认前保持在途的传输机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Receive Window (rwnd)",
+    "zh": "接收窗口",
+    "abbr": "",
+    "definition": "接收端通告的、反映接收缓冲能力的窗口。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Congestion Window (cwnd)",
+    "zh": "拥塞窗口",
+    "abbr": "",
+    "definition": "发送方维护、用于约束网络在途数据量的窗口。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Slow Start",
+    "zh": "慢启动",
+    "abbr": "",
+    "definition": "TCP 建立或重启拥塞控制时逐步增长发送窗口的阶段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Congestion Avoidance",
+    "zh": "拥塞避免",
+    "abbr": "",
+    "definition": "拥塞窗口相对平缓增长、抑制网络过载的控制阶段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Fast Retransmit",
+    "zh": "快速重传",
+    "abbr": "",
+    "definition": "根据重复 ACK 等丢包线索提前重传数据的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Fast Recovery",
+    "zh": "快速恢复",
+    "abbr": "",
+    "definition": "在部分拥塞控制算法中检测丢包后调整窗口的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Duplicate ACK",
+    "zh": "重复确认",
+    "abbr": "",
+    "definition": "TCP 接收端对同一累计确认号反复发送的 ACK。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Selective Acknowledgment (SACK)",
+    "zh": "选择性确认",
+    "abbr": "SACK",
+    "definition": "允许接收方报告已收到的不连续数据块的 TCP 扩展。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Retransmission Timeout (RTO)",
+    "zh": "重传超时时间",
+    "abbr": "RTO",
+    "definition": "TCP 等待确认的定时器到期阈值。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Smoothed RTT (SRTT)",
+    "zh": "平滑往返时间",
+    "abbr": "SRTT",
+    "definition": "通过采样和滤波估计的 RTT 平滑值。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Nagle Algorithm",
+    "zh": "纳格算法",
+    "abbr": "",
+    "definition": "减少小型 TCP 数据段发送频率的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Delayed ACK",
+    "zh": "延迟确认",
+    "abbr": "",
+    "definition": "接收端短暂推迟 ACK 以减少控制报文的策略。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "Head-of-Line Blocking (HOL)",
+    "zh": "队头阻塞",
+    "abbr": "HOL",
+    "definition": "前序数据未就绪导致后续数据无法按顺序交付的现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 10,
+    "topic": "TCP 连接、可靠性与拥塞控制",
+    "en": "TCP Keepalive",
+    "zh": "TCP 保活",
+    "abbr": "",
+    "definition": "长时间空闲后使用探测报文检查连接状态的可选机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "User Datagram Protocol (UDP)",
+    "zh": "用户数据报协议",
+    "abbr": "UDP",
+    "definition": "提供无连接、按数据报划分的传输层服务，不保证送达或顺序。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "UDP Datagram",
+    "zh": "UDP 数据报",
+    "abbr": "",
+    "definition": "具有源端口、目的端口、长度和校验信息的 UDP 传输单位。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "UDP Checksum",
+    "zh": "UDP 校验和",
+    "abbr": "",
+    "definition": "覆盖伪首部及 UDP 报文内容的差错检测字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "QUIC",
+    "zh": "QUIC 传输协议",
+    "abbr": "",
+    "definition": "基于 UDP、集成安全握手与多路复用流的现代传输协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "QUIC Connection",
+    "zh": "QUIC 连接",
+    "abbr": "",
+    "definition": "由连接 ID、加密状态和传输参数管理的逻辑会话。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "QUIC Stream",
+    "zh": "QUIC 流",
+    "abbr": "",
+    "definition": "单条 QUIC 连接中的独立有序字节流。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Connection ID (CID)",
+    "zh": "连接标识符",
+    "abbr": "CID",
+    "definition": "QUIC 用来识别连接并支持连接迁移的标识。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Connection Migration",
+    "zh": "连接迁移",
+    "abbr": "",
+    "definition": "QUIC 在底层网络地址变化时维持逻辑连接的能力。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Zero Round-Trip Time (0-RTT)",
+    "zh": "零往返时间数据",
+    "abbr": "",
+    "definition": "恢复握手时可提前发送应用数据的机制，可能面临重放风险。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "One Round-Trip Time (1-RTT)",
+    "zh": "一往返时间数据",
+    "abbr": "",
+    "definition": "QUIC 完成协商后使用正常应用数据密钥传输的阶段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Stream Multiplexing",
+    "zh": "流多路复用",
+    "abbr": "",
+    "definition": "在同一传输连接上并行承载多个逻辑数据流。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Datagram Extension",
+    "zh": "数据报扩展",
+    "abbr": "",
+    "definition": "QUIC 上不提供可靠重传语义的数据报承载能力。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Connection Coalescing",
+    "zh": "连接合并",
+    "abbr": "",
+    "definition": "满足证书等条件时复用连接服务多个来源的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 11,
+    "topic": "UDP、QUIC 与现代传输",
+    "en": "Transport Parameter",
+    "zh": "传输参数",
+    "abbr": "",
+    "definition": "QUIC 连接建立时双方声明流量限制等能力的配置集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Domain Name System (DNS)",
+    "zh": "域名系统",
+    "abbr": "DNS",
+    "definition": "将域名映射到资源记录并提供分层分布式名称解析的系统。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "DNS Resolver",
+    "zh": "DNS 解析器",
+    "abbr": "",
+    "definition": "代表应用查询 DNS 数据并处理结果的组件。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Recursive Resolver",
+    "zh": "递归解析器",
+    "abbr": "",
+    "definition": "代客户端执行后续查询并返回最终结果的 DNS 服务。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Authoritative Name Server",
+    "zh": "权威名称服务器",
+    "abbr": "",
+    "definition": "对所负责区域提供权威 DNS 记录的服务器。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "DNS Zone",
+    "zh": "DNS 区域",
+    "abbr": "",
+    "definition": "DNS 管理与权威授权的逻辑数据范围。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Resource Record (RR)",
+    "zh": "资源记录",
+    "abbr": "RR",
+    "definition": "DNS 中存储名称、类型、TTL 与具体值的数据记录。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "A Record",
+    "zh": "A 记录",
+    "abbr": "",
+    "definition": "将名称映射到 IPv4 地址的 DNS 记录。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "AAAA Record",
+    "zh": "AAAA 记录",
+    "abbr": "",
+    "definition": "将名称映射到 IPv6 地址的 DNS 记录。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "CNAME Record",
+    "zh": "CNAME 别名记录",
+    "abbr": "",
+    "definition": "将一个域名指向另一个规范名称的 DNS 记录。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "MX Record",
+    "zh": "MX 邮件交换记录",
+    "abbr": "",
+    "definition": "用于指定域名邮件接收服务器的 DNS 记录。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "TXT Record",
+    "zh": "TXT 文本记录",
+    "abbr": "",
+    "definition": "保存文本数据并常用于域名验证和邮件安全策略的 DNS 记录。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "DNS Time to Live (TTL)",
+    "zh": "DNS 缓存生存时间",
+    "abbr": "TTL",
+    "definition": "记录建议被缓存的时间上限。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "DNS Cache",
+    "zh": "DNS 缓存",
+    "abbr": "",
+    "definition": "保存先前解析结果以减少后续查询时延的缓存。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Domain Name System Security Extensions (DNSSEC)",
+    "zh": "DNS 安全扩展",
+    "abbr": "DNSSEC",
+    "definition": "用数字签名验证 DNS 数据真实性和完整性的协议扩展。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Dynamic Host Configuration Protocol (DHCP)",
+    "zh": "动态主机配置协议",
+    "abbr": "DHCP",
+    "definition": "自动向终端分配 IP 地址及网络配置参数的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "DHCP Lease",
+    "zh": "DHCP 租约",
+    "abbr": "",
+    "definition": "客户端临时使用由 DHCP 服务器分配地址的有效期。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Address Resolution Protocol (ARP)",
+    "zh": "地址解析协议",
+    "abbr": "ARP",
+    "definition": "IPv4 局域网中查询 IP 地址对应链路层地址的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Gratuitous ARP",
+    "zh": "免费 ARP",
+    "abbr": "",
+    "definition": "主机主动发布或检测本机 IPv4 与 MAC 映射的 ARP 报文。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Network Address Translation (NAT)",
+    "zh": "网络地址转换",
+    "abbr": "NAT",
+    "definition": "在设备上改写分组中的 IP 地址以连接不同地址域的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Network Address and Port Translation (NAPT)",
+    "zh": "网络地址及端口转换",
+    "abbr": "NAPT",
+    "definition": "同时改写 IP 地址与传输层端口以复用公网地址的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 12,
+    "topic": "DNS、DHCP、ARP 与地址转换",
+    "en": "Carrier-Grade NAT (CGNAT)",
+    "zh": "运营商级 NAT",
+    "abbr": "CGNAT",
+    "definition": "运营商在共享地址空间上为多用户实施地址转换的部署方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Hypertext Transfer Protocol (HTTP)",
+    "zh": "超文本传输协议",
+    "abbr": "HTTP",
+    "definition": "Web 中传递请求和响应语义的应用层协议族。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Request",
+    "zh": "HTTP 请求",
+    "abbr": "",
+    "definition": "包含方法、目标、字段及可选内容的客户端消息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Response",
+    "zh": "HTTP 响应",
+    "abbr": "",
+    "definition": "包含状态码、字段及可选内容的服务端消息。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Method",
+    "zh": "HTTP 方法",
+    "abbr": "",
+    "definition": "描述请求意图的操作标识，如 GET、POST、PUT。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "GET Method",
+    "zh": "GET 方法",
+    "abbr": "",
+    "definition": "请求获取目标资源当前表示的 HTTP 方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "POST Method",
+    "zh": "POST 方法",
+    "abbr": "",
+    "definition": "要求目标资源按自身语义处理所提交内容的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "PUT Method",
+    "zh": "PUT 方法",
+    "abbr": "",
+    "definition": "请求创建或替换目标资源状态的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "DELETE Method",
+    "zh": "DELETE 方法",
+    "abbr": "",
+    "definition": "请求移除目标资源当前关联的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Status Code",
+    "zh": "HTTP 状态码",
+    "abbr": "",
+    "definition": "以三位数字表示请求处理结果类别和具体状态。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Header Field",
+    "zh": "HTTP 首部字段",
+    "abbr": "",
+    "definition": "携带请求或响应元信息的字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Cookie",
+    "zh": "HTTP Cookie",
+    "abbr": "",
+    "definition": "服务端通过浏览器持有并回传的少量状态数据机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP Cache",
+    "zh": "HTTP 缓存",
+    "abbr": "",
+    "definition": "缓存响应表示并依约束复用以减少网络请求的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Cache-Control",
+    "zh": "缓存控制字段",
+    "abbr": "",
+    "definition": "声明缓存可用性、新鲜度等策略的 HTTP 字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Entity Tag (ETag)",
+    "zh": "实体标签",
+    "abbr": "",
+    "definition": "用于资源版本比较与条件请求的 HTTP 验证标识。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Conditional Request",
+    "zh": "条件请求",
+    "abbr": "",
+    "definition": "依据 ETag 或修改时间等前提决定是否执行操作的 HTTP 请求。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Hypertext Transfer Protocol Version 1.1 (HTTP/1.1)",
+    "zh": "HTTP/1.1",
+    "abbr": "HTTP/1.1",
+    "definition": "常见的基于文本格式、连接可复用的 HTTP 版本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Hypertext Transfer Protocol Version 2 (HTTP/2)",
+    "zh": "HTTP/2",
+    "abbr": "HTTP/2",
+    "definition": "在单个连接上通过二进制分帧实现流多路复用的 HTTP 版本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Hypertext Transfer Protocol Version 3 (HTTP/3)",
+    "zh": "HTTP/3",
+    "abbr": "HTTP/3",
+    "definition": "使用 QUIC 承载 HTTP 语义的 HTTP 版本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP/2 Stream",
+    "zh": "HTTP/2 流",
+    "abbr": "",
+    "definition": "HTTP/2 连接中的独立双向帧序列和请求响应交换单元。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "HTTP/3 Stream",
+    "zh": "HTTP/3 流",
+    "abbr": "",
+    "definition": "基于 QUIC 流承载 HTTP 请求响应等信息的逻辑通道。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Server Name Indication (SNI)",
+    "zh": "服务器名称指示",
+    "abbr": "SNI",
+    "definition": "TLS 客户端握手中告知预期服务主机名的扩展。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Content Delivery Network (CDN)",
+    "zh": "内容分发网络",
+    "abbr": "CDN",
+    "definition": "将内容部署到地理或网络上分散的节点以改善访问体验的系统。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Reverse Proxy",
+    "zh": "反向代理",
+    "abbr": "",
+    "definition": "代表后端服务器接收客户端请求并转发的代理。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 13,
+    "topic": "HTTP、Web 与内容交付",
+    "en": "Load Balancer",
+    "zh": "负载均衡器",
+    "abbr": "",
+    "definition": "根据策略将网络连接或请求分配到多个后端实例的组件。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "File Transfer Protocol (FTP)",
+    "zh": "文件传输协议",
+    "abbr": "FTP",
+    "definition": "传统的应用层文件传输协议，可使用独立控制与数据连接。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Secure Shell (SSH)",
+    "zh": "安全外壳协议",
+    "abbr": "SSH",
+    "definition": "提供经过身份验证和加密的远程终端、隧道及文件传输能力。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Simple Mail Transfer Protocol (SMTP)",
+    "zh": "简单邮件传输协议",
+    "abbr": "SMTP",
+    "definition": "用于邮件提交和服务器间转发的应用层协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Internet Message Access Protocol (IMAP)",
+    "zh": "互联网消息访问协议",
+    "abbr": "IMAP",
+    "definition": "允许客户端在邮件服务器上检索和管理邮件的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Post Office Protocol Version 3 (POP3)",
+    "zh": "邮局协议第 3 版",
+    "abbr": "POP3",
+    "definition": "用于从服务器获取邮件的传统客户端协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Network Time Protocol (NTP)",
+    "zh": "网络时间协议",
+    "abbr": "NTP",
+    "definition": "在网络内同步设备时钟的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Simple Network Management Protocol (SNMP)",
+    "zh": "简单网络管理协议",
+    "abbr": "SNMP",
+    "definition": "用于读取和管理网络设备状态的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Remote Procedure Call (RPC)",
+    "zh": "远程过程调用",
+    "abbr": "RPC",
+    "definition": "让程序以调用接口的形式请求远端执行操作的抽象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Representational State Transfer (REST)",
+    "zh": "表述性状态转移",
+    "abbr": "REST",
+    "definition": "利用统一接口、资源标识等约束描述分布式应用架构风格。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "WebSocket",
+    "zh": "WebSocket 协议",
+    "abbr": "",
+    "definition": "在一个连接上提供双向消息传输的应用层协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Server-Sent Events (SSE)",
+    "zh": "服务器发送事件",
+    "abbr": "SSE",
+    "definition": "基于 HTTP 的服务端到客户端单向事件流机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "gRPC",
+    "zh": "gRPC 远程过程调用框架",
+    "abbr": "",
+    "definition": "通常采用 HTTP/2 并支持 Protocol Buffers 的 RPC 框架。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Message Queue Telemetry Transport (MQTT)",
+    "zh": "MQTT 消息传输协议",
+    "abbr": "MQTT",
+    "definition": "面向轻量级发布订阅通信的应用层协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 14,
+    "topic": "应用层常见协议与 API",
+    "en": "Advanced Message Queuing Protocol (AMQP)",
+    "zh": "高级消息队列协议",
+    "abbr": "AMQP",
+    "definition": "规定消息交换、路由和传输语义的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Transport Layer Security (TLS)",
+    "zh": "传输层安全协议",
+    "abbr": "TLS",
+    "definition": "为上层应用通信提供加密、完整性和身份认证机制的协议。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "TLS Handshake",
+    "zh": "TLS 握手",
+    "abbr": "",
+    "definition": "协商算法、身份验证和共享密钥材料的连接建立过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "TLS 1.3",
+    "zh": "传输层安全协议 1.3 版",
+    "abbr": "",
+    "definition": "简化握手并移除多种旧式密码方案的 TLS 标准版本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Certificate",
+    "zh": "数字证书",
+    "abbr": "",
+    "definition": "将公钥与主体身份等信息由签发者签名绑定的数据结构。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Certificate Authority (CA)",
+    "zh": "证书颁发机构",
+    "abbr": "CA",
+    "definition": "负责签发和管理数字证书信任链的实体。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Public Key Infrastructure (PKI)",
+    "zh": "公钥基础设施",
+    "abbr": "PKI",
+    "definition": "管理证书、密钥与信任策略的技术和组织体系。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Public Key",
+    "zh": "公钥",
+    "abbr": "",
+    "definition": "非对称密码系统中可公开分发的密钥。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Private Key",
+    "zh": "私钥",
+    "abbr": "",
+    "definition": "非对称密码系统中需保持秘密的密钥。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Digital Signature",
+    "zh": "数字签名",
+    "abbr": "",
+    "definition": "使用私钥生成、可用公钥验证来源与完整性的密码学凭据。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Symmetric Encryption",
+    "zh": "对称加密",
+    "abbr": "",
+    "definition": "加密和解密使用同一共享密钥的密码学方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Asymmetric Encryption",
+    "zh": "非对称加密",
+    "abbr": "",
+    "definition": "使用关联公私钥完成加密或签名等操作的密码学体系。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Authenticated Encryption with Associated Data (AEAD)",
+    "zh": "带关联数据的认证加密",
+    "abbr": "AEAD",
+    "definition": "同时保护机密性与完整性并认证额外数据的加密方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Perfect Forward Secrecy (PFS)",
+    "zh": "前向保密性",
+    "abbr": "PFS",
+    "definition": "长期身份密钥泄露不应导致过去会话密钥全部可恢复的性质。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Diffie-Hellman Key Exchange",
+    "zh": "迪菲-赫尔曼密钥交换",
+    "abbr": "",
+    "definition": "通信方在不直接传输共享秘密的情况下协商密钥的协议方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Mutual TLS (mTLS)",
+    "zh": "双向 TLS 认证",
+    "abbr": "",
+    "definition": "TLS 双方均通过证书等机制验证对方身份的部署方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Firewall",
+    "zh": "防火墙",
+    "abbr": "",
+    "definition": "根据规则允许、拒绝或检查网络流量的安全设备或软件。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Stateful Firewall",
+    "zh": "有状态防火墙",
+    "abbr": "",
+    "definition": "维护连接状态并据此实施流量过滤的防火墙。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Access Control List (ACL)",
+    "zh": "访问控制列表",
+    "abbr": "ACL",
+    "definition": "规定网络流量匹配条件及允许拒绝动作的规则集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Virtual Private Network (VPN)",
+    "zh": "虚拟专用网络",
+    "abbr": "VPN",
+    "definition": "通过加密或逻辑隔离在共享网络上构建私有通信路径的技术。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Internet Protocol Security (IPsec)",
+    "zh": "IP 安全协议族",
+    "abbr": "",
+    "definition": "在网络层提供包保护和密钥管理配套能力的协议族。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Denial-of-Service (DoS)",
+    "zh": "拒绝服务攻击",
+    "abbr": "",
+    "definition": "通过消耗资源或扰乱服务使合法请求无法完成的攻击方式。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 15,
+    "topic": "TLS、密码学与网络安全",
+    "en": "Distributed Denial-of-Service (DDoS)",
+    "zh": "分布式拒绝服务攻击",
+    "abbr": "",
+    "definition": "使用多个来源协同发起的拒绝服务攻击。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间内实际传输或处理的数据量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Goodput",
+    "zh": "有效吞吐量",
+    "abbr": "",
+    "definition": "应用层实际收到的有用数据速率，不包括重传等开销。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Latency",
+    "zh": "时延",
+    "abbr": "",
+    "definition": "数据或请求从起点到终点经过的时间。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Jitter",
+    "zh": "抖动",
+    "abbr": "",
+    "definition": "连续数据包延迟随时间变化的程度。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Packet Loss",
+    "zh": "丢包",
+    "abbr": "",
+    "definition": "发送的分组在到达目标前被丢弃或未被成功接收。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Packet Loss Rate",
+    "zh": "丢包率",
+    "abbr": "",
+    "definition": "一定范围内丢失分组数占发送分组数的比例。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Bit Error Rate (BER)",
+    "zh": "误码率",
+    "abbr": "BER",
+    "definition": "传输中出错比特占总接收比特的比例。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Bandwidth-Delay Product (BDP)",
+    "zh": "带宽时延积",
+    "abbr": "BDP",
+    "definition": "链路可用速率与 RTT 的乘积，用于估算在途数据量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Bottleneck Link",
+    "zh": "瓶颈链路",
+    "abbr": "",
+    "definition": "限制端到端路径可持续吞吐能力的最窄资源环节。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Bufferbloat",
+    "zh": "缓冲膨胀",
+    "abbr": "",
+    "definition": "过度排队导致网络时延显著增加的现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Quality of Service (QoS)",
+    "zh": "服务质量",
+    "abbr": "",
+    "definition": "按策略管理不同流量的带宽、时延和丢包表现的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Differentiated Services (DiffServ)",
+    "zh": "区分服务",
+    "abbr": "",
+    "definition": "借助分组分类和逐跳转发行为实施服务差异化的架构。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Differentiated Services Code Point (DSCP)",
+    "zh": "区分服务代码点",
+    "abbr": "DSCP",
+    "definition": "IP 首部中用于表明转发服务类别的字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Traffic Shaping",
+    "zh": "流量整形",
+    "abbr": "",
+    "definition": "通过缓冲与速率调节让流量符合预定发送曲线的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Traffic Policing",
+    "zh": "流量监管",
+    "abbr": "",
+    "definition": "按规则衡量并丢弃或标记超出限额的流量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Token Bucket",
+    "zh": "令牌桶",
+    "abbr": "",
+    "definition": "利用周期积累的令牌允许一定突发度的速率控制算法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Leaky Bucket",
+    "zh": "漏桶",
+    "abbr": "",
+    "definition": "以相对稳定输出速率调节突发流量的模型。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Active Queue Management (AQM)",
+    "zh": "主动队列管理",
+    "abbr": "AQM",
+    "definition": "在队列过长前主动丢弃或标记分组以抑制拥塞的技术。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Explicit Congestion Notification (ECN)",
+    "zh": "显式拥塞通知",
+    "abbr": "ECN",
+    "definition": "通过标记分组传递拥塞信号而非仅依赖丢包的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 16,
+    "topic": "性能、可靠性与服务质量",
+    "en": "Service Level Objective (SLO)",
+    "zh": "服务级别目标",
+    "abbr": "SLO",
+    "definition": "系统期望达到的可量化可用性或性能指标。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Data Center Network",
+    "zh": "数据中心网络",
+    "abbr": "",
+    "definition": "连接机架、计算、存储和服务集群的内部网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Leaf-Spine Topology",
+    "zh": "叶脊拓扑",
+    "abbr": "",
+    "definition": "由接入层叶交换机与骨干层脊交换机构成的常见数据中心架构。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Top-of-Rack (ToR) Switch",
+    "zh": "机架顶部交换机",
+    "abbr": "",
+    "definition": "通常为一个服务器机架提供网络汇聚的交换机。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Overlay Network",
+    "zh": "覆盖网络",
+    "abbr": "",
+    "definition": "建立在底层传输网络之上的逻辑互联网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Underlay Network",
+    "zh": "底层承载网络",
+    "abbr": "",
+    "definition": "为覆盖网络提供实际 IP 可达性与转发能力的物理或逻辑网络。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Virtual Extensible LAN (VXLAN)",
+    "zh": "虚拟可扩展局域网",
+    "abbr": "VXLAN",
+    "definition": "使用 UDP 封装二层帧以跨三层网络扩展二层网络的技术。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Virtual Network Identifier (VNI)",
+    "zh": "虚拟网络标识符",
+    "abbr": "VNI",
+    "definition": "VXLAN 中标识逻辑二层网络段的字段。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Tunnel",
+    "zh": "隧道",
+    "abbr": "",
+    "definition": "在一种网络协议的数据包内封装另一种协议数据包的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Encapsulation Overhead",
+    "zh": "封装开销",
+    "abbr": "",
+    "definition": "附加隧道首部及控制信息导致的额外字节和处理成本。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Software-Defined Networking (SDN)",
+    "zh": "软件定义网络",
+    "abbr": "SDN",
+    "definition": "将网络控制逻辑抽象并通过可编程接口管理转发行为的体系结构。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Control Plane",
+    "zh": "控制平面",
+    "abbr": "",
+    "definition": "计算并分发网络转发决策的控制逻辑部分。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Data Plane",
+    "zh": "数据平面",
+    "abbr": "",
+    "definition": "执行逐包转发、过滤和修改等操作的部分。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Network Function Virtualization (NFV)",
+    "zh": "网络功能虚拟化",
+    "abbr": "NFV",
+    "definition": "将防火墙、负载均衡等网络功能运行在通用计算平台上的方法。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Virtual Private Cloud (VPC)",
+    "zh": "虚拟私有云",
+    "abbr": "VPC",
+    "definition": "云平台中由用户配置的逻辑隔离网络环境。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Security Group",
+    "zh": "安全组",
+    "abbr": "",
+    "definition": "云环境中控制实例或接口流量的规则集合。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Subnet Routing Table",
+    "zh": "子网路由表",
+    "abbr": "",
+    "definition": "云子网中决定目的地址下一跳的路由策略表。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Ingress Traffic",
+    "zh": "入口流量",
+    "abbr": "",
+    "definition": "从网络外部或某系统边界进入内部的流量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "Egress Traffic",
+    "zh": "出口流量",
+    "abbr": "",
+    "definition": "从系统或网络内部向外发送的流量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "East-West Traffic",
+    "zh": "东西向流量",
+    "abbr": "",
+    "definition": "数据中心内部服务之间横向通信的流量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 17,
+    "topic": "数据中心、云网络与虚拟化",
+    "en": "North-South Traffic",
+    "zh": "南北向流量",
+    "abbr": "",
+    "definition": "数据中心或网络边界与外部之间进出的流量。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Ping",
+    "zh": "Ping 连通性测试",
+    "abbr": "",
+    "definition": "通常利用 ICMP 回显报文观察目标可达性与往返时间的工具。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Traceroute",
+    "zh": "路径跟踪",
+    "abbr": "",
+    "definition": "利用 TTL 或 Hop Limit 逐步探测路径上路由节点的工具。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Packet Capture",
+    "zh": "抓包",
+    "abbr": "",
+    "definition": "收集网络接口上传输的分组以供分析的过程。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Wireshark",
+    "zh": "Wireshark 抓包分析工具",
+    "abbr": "",
+    "definition": "对协议报文进行解码、筛选和分析的图形化工具。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "tcpdump",
+    "zh": "tcpdump 抓包工具",
+    "abbr": "",
+    "definition": "在命令行捕获和过滤网络报文的工具。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Berkeley Packet Filter (BPF)",
+    "zh": "伯克利包过滤器",
+    "abbr": "BPF",
+    "definition": "用于高效选择网络分组的过滤指令和机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Network Interface Card (NIC)",
+    "zh": "网络接口卡",
+    "abbr": "NIC",
+    "definition": "实现主机与外部网络物理或虚拟连接的接口硬件。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Network Interface",
+    "zh": "网络接口",
+    "abbr": "",
+    "definition": "操作系统中发送与接收链路层数据的设备或逻辑端点。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Interface Counter",
+    "zh": "接口计数器",
+    "abbr": "",
+    "definition": "记录接口收发字节、分组、错误和丢弃等统计数据的指标。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Socket Statistics (ss)",
+    "zh": "套接字状态统计工具",
+    "abbr": "",
+    "definition": "Linux 下查看套接字、连接和监听端口信息的命令。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "netstat",
+    "zh": "传统网络状态工具",
+    "abbr": "",
+    "definition": "用于查看连接、路由及接口统计的工具，现代 Linux 常用替代命令。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "iproute2",
+    "zh": "Linux 网络配置工具集",
+    "abbr": "",
+    "definition": "提供 ip、ss、tc 等命令管理路由、接口和流量控制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "dig",
+    "zh": "DNS 查询工具",
+    "abbr": "",
+    "definition": "发送 DNS 查询并显示资源记录及解析响应的命令行工具。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "nslookup",
+    "zh": "域名查询工具",
+    "abbr": "",
+    "definition": "用于交互式检查 DNS 查询结果的传统命令。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "curl",
+    "zh": "URL 请求工具",
+    "abbr": "",
+    "definition": "用于构造和调试 HTTP 等多种协议请求的命令行客户端。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Network Address Translation Table",
+    "zh": "NAT 映射表",
+    "abbr": "",
+    "definition": "保存内外部地址和端口映射状态的数据结构。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Connection Tracking (conntrack)",
+    "zh": "连接跟踪",
+    "abbr": "",
+    "definition": "内核或网络设备维护流量会话状态的机制。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "TCP Reset",
+    "zh": "TCP 复位",
+    "abbr": "",
+    "definition": "通过 RST 报文异常终止或拒绝 TCP 连接的行为。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Connection Refused",
+    "zh": "连接被拒绝",
+    "abbr": "",
+    "definition": "目标主动拒绝连接请求时常见的网络错误。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Connection Timeout",
+    "zh": "连接超时",
+    "abbr": "",
+    "definition": "建立连接阶段未在时间上限内获得所需响应的错误。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Name Resolution Failure",
+    "zh": "名称解析失败",
+    "abbr": "",
+    "definition": "域名无法成功转换为可用地址的故障现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Asymmetric Routing",
+    "zh": "非对称路由",
+    "abbr": "",
+    "definition": "往返数据包经过不同网络路径的现象。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Path MTU Black Hole",
+    "zh": "路径 MTU 黑洞",
+    "abbr": "",
+    "definition": "路径中大包无法通过且关键错误反馈被阻断的故障。"
+  },
+  {
+    "category": "computer-networks",
+    "chapter": 18,
+    "topic": "网络排障、监控与可观测性",
+    "en": "Packet Reordering",
+    "zh": "分组乱序",
+    "abbr": "",
+    "definition": "分组抵达顺序与发送顺序不一致的现象。"
   }
 ]
