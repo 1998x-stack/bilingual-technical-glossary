@@ -42,8 +42,11 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
 |---|---|---:|---:|---|---|
 | Computer Organization & Architecture | 计算机组成原理 | 678 | 15 | [Read](glossaries/computer-organization.md) | [Download](pdf/computer-organization.pdf) |
+| Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
 
 > **Search status:** This publication includes 678 Chinese–English term pairs, 16 terminology distinctions and an abbreviation index. The original 39-page PDF and Markdown are available, but these entries are **not included** in the searchable index counts above until their definitions have been verified.
+
+> **Parallel Computing:** The 205-term reference (12 chapters) follows the knowledge architecture of Grama et al. (2003), with independently written definitions and clearly marked modern extensions. The handbook is downloadable but not yet included in the searchable index.
 
 > **Data provenance.** The Kafka volume contributes 283 original, fully indexed terms in 16 chapters, with curated Markdown and searchable PDF editions.  The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless. The Machine Learning volume adds 447 independently authored entries across 19 topics, with matching Markdown and searchable PDF.
 
