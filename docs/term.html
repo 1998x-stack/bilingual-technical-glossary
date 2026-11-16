@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101b31" />
+  <meta name="description" content="TERM/ATLAS 中英双语技术术语详情：精确定义、知识背景、专业原理、工程实践与参考资料。" />
+  <title>术语详情 · TERM/ATLAS</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./term.css" />
+</head>
+<body class="detail-view">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="知识库导航">
+      <a class="brand" href="./index.html" aria-label="TERM/ATLAS 首页">
+        <span class="brand-mark">⌘</span><span class="brand-type"><strong>TERM<span class="brand-highlight">/</span>ATLAS</strong><small>BILINGUAL GLOSSARY</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="主要导航">
+        <a href="./index.html#home" class="side-link"><span class="nav-symbol">◈</span><span>概览 Overview</span></a>
+        <a href="./index.html#explorer" class="side-link active" id="sidebar-back"><span class="nav-symbol">⌕</span><span>术语检索 Explorer</span></a>
+        <a href="./index.html#collections" class="side-link"><span class="nav-symbol">▦</span><span>学科专题 Collections</span></a>
+      </nav>
+      <div class="side-label spaced">RELATED CONCEPTS</div>
+      <nav class="side-nav related-side" id="related-side" aria-label="同专题相关术语"></nav>
+      <div class="sidebar-bottom">
+        <a class="side-github" href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">GitHub Repository <span>↗</span></a>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button type="button" class="icon-btn menu-btn" id="menu-btn" aria-label="打开导航菜单">☰</button>
+          <span class="breadcrumbs">TERM/ATLAS <span>/</span> <strong>术语详情</strong></span>
+        </div>
+        <div class="topbar-right">
+          <span class="top-status"><i></i> VERIFIED GLOSSARY</span>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题" title="切换主题">◐</button>
+        </div>
+      </header>
+      <main class="main-content term-detail-main">
+        <nav class="term-crumb" aria-label="位置导航">
+          <a href="./index.html">术语库</a><span> / </span><a id="category-link" href="./index.html#explorer">学科</a><span> / </span><span id="topic-text">详情</span>
+        </nav>
+        <div id="detail-loading" class="detail-loading" role="status">正在载入术语…</div>
+        <section id="detail-content" hidden aria-labelledby="detail-title">
+          <header class="detail-hero">
+            <div class="detail-eyebrow">TECHNICAL CONCEPT · 中英双语术语</div>
+            <h1 id="detail-title"></h1>
+            <p id="detail-zh" class="detail-translation"></p>
+            <div class="detail-hero-meta"><span id="detail-category"></span><span id="detail-topic"></span><span id="detail-state"></span></div>
+            <div class="detail-actions"><a id="return-explorer" class="detail-back" href="./index.html#explorer">← 返回术语检索</a><button type="button" id="copy-term-link" class="detail-copy">复制本页链接</button></div>
+          </header>
+          <div class="detail-layout">
+            <article class="detail-article" aria-label="技术术语讲解">
+              <section class="detail-summary" aria-labelledby="definition-title">
+                <div class="detail-section-kicker">OVERVIEW</div>
+                <h2 id="definition-title">核心释义</h2>
+                <p id="detail-definition"></p>
+                <p id="detail-notation" hidden></p>
+              </section>
+              <section id="wiki-article" class="wiki-article" aria-label="专业技术详解" hidden></section>
+              <section id="wiki-fallback" class="detail-summary detail-fallback" hidden>
+                <h2>延伸学习</h2>
+                <p>当前提供经过整理的中英文术语与简明定义。更深入的原理、工程案例与练习题尚未发布；可以继续浏览同专题概念。</p>
+              </section>
+            </article>
+            <aside class="detail-aside" aria-label="文内导航与相关资料">
+              <div class="detail-aside-card" id="toc-card" hidden><div class="detail-aside-heading">本文目录</div><nav id="article-toc" class="article-toc" aria-label="文章章节"></nav></div>
+              <div class="detail-aside-card"><div class="detail-aside-heading">同专题阅读</div><nav id="related-terms" class="related-terms" aria-label="相关术语"></nav></div>
+            </aside>
+          </div>
+          <nav class="detail-neighbors" aria-label="前后术语"><a id="prev-term" href="#" hidden></a><a id="next-term" href="#" hidden></a></nav>
+        </section>
+        <div id="detail-error" class="detail-error" role="alert" hidden><h1>未找到对应术语</h1><p>请从术语检索页重新选择条目。</p><a href="./index.html#explorer">返回术语检索</a></div>
+        <footer class="detail-footer">© 2026 <strong>TERM/ATLAS</strong> · <a href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">内容与修订记录</a></footer>
+      </main>
+    </div>
+  </div>
+  <script src="./term.js" defer></script>
+</body>
+</html>

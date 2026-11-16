@@ -18,10 +18,16 @@ jobs:
       - name: Validate portable Agent Skills
         run: python scripts/sync_agent_skills.py --check
       - name: Check website JavaScript syntax
-        run: node --check site/app.js
+        run: |
+          node --check site/app.js
+          node --check site/term.js
+          node --check docs/app.js
+          node --check docs/term.js
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
-        run: python scripts/verify_wiki.py
+        run: |
+          python scripts/build_wiki_index.py --check
+          python scripts/verify_wiki.py
       - name: Run regression tests
         run: python -m unittest discover -s tests -v

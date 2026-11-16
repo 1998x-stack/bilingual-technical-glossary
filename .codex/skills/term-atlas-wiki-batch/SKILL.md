@@ -26,10 +26,12 @@ Use one numbered, stable-slug Markdown file per term: `wiki/<domain>/<NNN>-<engl
 
 ## Publish only completed articles
 1. Update domain batch plan and statuses without inflating completed counts. Statuses should distinguish `planned`, `drafted_in_pr`, and `merged`/published where supported; do not call unreviewed drafts final.
-2. Copy or generate the exact article mirror under `docs/wiki/<domain>/`, update the manifest, long-form index, study path, and website reader (if changed). Keep stable deep links and do not silently remove articles.
-3. Check all Markdown local links, number continuity, bilingual metadata, topic counts, duplicate pages, equation assumptions, and source relevance.
-4. For AI Infra run `python3 scripts/verify_wiki.py`, `python3 scripts/verify.py`, and tests. For other domains, create an equivalent corpus-aware validator before declaring coverage.
-5. Open **one focused PR per batch** referencing the tracking Issue. Verify CI and Pages before claiming publication; record what remains planned.
+2. Mirror the exact Markdown article under `docs/wiki/<domain>/` and update the internal plan/manifest. Then run `python3 scripts/build_wiki_index.py --write` to rebuild the verified **public term-to-article mapping**. Keep stable detail deep links and do not silently remove articles.
+3. **Public UX rule:** readers must enter through the unified `index.html?category=<slug>#explorer` and click English or Chinese names to `term.html`. Never expose batch IDs, cards, progress bars, internal research checklists, or a separate Wiki homepage to readers. An unpublished long-form article must render only an honest brief definition on the shared detail page.
+4. Retain batch plans and per-batch study paths **only in editor/source documents** and GitHub Issues; public pages must not link to those plans.
+5. Check all Markdown local links, number continuity, bilingual metadata, topic counts, duplicate pages, equation assumptions, and source relevance.
+6. For AI Infra run `python3 scripts/verify_wiki.py`, `python3 scripts/verify.py`, and tests. For other domains, create an equivalent corpus-aware validator before declaring coverage.
+7. Open **one focused PR per batch** referencing the tracking Issue. Verify CI and Pages before claiming publication; record what remains planned.
 
 ## Editorial stop conditions
 Do not fabricate version-specific hardware performance, benchmark results, unavailable official URLs, references, or answers. When a source is uncertain, use an explicit research note and keep that item out of the completed count until vetted.

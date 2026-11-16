@@ -69,7 +69,7 @@ class CorpusIntegrityTests(unittest.TestCase):
 
 class PublishingInvariantsTests(unittest.TestCase):
     def test_static_site_is_mirrored(self):
-        for name in ("index.html", "app.js", "styles.css", "favicon.svg"):
+        for name in ("index.html", "app.js", "styles.css", "favicon.svg", "term.html", "term.css", "term.js"):
             with self.subTest(name=name):
                 self.assertEqual(
                     (ROOT / "site" / name).read_bytes(),
@@ -78,7 +78,10 @@ class PublishingInvariantsTests(unittest.TestCase):
 
     def test_navigation_survives_rebuild(self):
         page = (ROOT / "site/index.html").read_text(encoding="utf-8")
-        self.assertIn("./wiki/ai-infrastructure/index.html", page)
+        self.assertIn('id="explorer"', page)
+        self.assertNotIn('href="./wiki/ai-infrastructure/index.html"', page)
+        detail = (ROOT / "site/term.html").read_text(encoding="utf-8")
+        self.assertIn('id="detail-content"', detail)
         self.assertIn("./pdf/computer-organization.pdf", page)
         self.assertIn("./glossaries/computer-organization.md", page)
 

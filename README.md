@@ -164,3 +164,7 @@ The C++ reference adds **357 curated English–Chinese terms in 16 chapters**, c
 ## Agent Skills for Codex, Pi and Claude Code
 
 Reusable workflows for term curation, 20-term technical Wiki batches, and release QA are available for all three coding agents. Read the canonical [AGENTS.md](AGENTS.md) policy and [portable skills guide](docs/agent-skills.md). The canonical `.agents/skills/` collection is mirrored to `.codex/skills/`, `.pi/skills/` and `.claude/skills/`; consistency is enforced with `python3 scripts/sync_agent_skills.py --check` in CI.
+
+## Integrated term knowledge pages
+
+The existing [Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) is the **only reader-facing entrypoint** for term pages: click any English or Chinese term in a filtered category (for example [Reinforcement Learning](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer)) to open its dedicated concept detail. When a verified long-form Wiki article has been published, its mechanisms, examples, interviews and exercises appear on the same detail page; other terms show their curated short definitions without pretending long-form material exists. Editorial batches are internal and never shown as reader navigation.

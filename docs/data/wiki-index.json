@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "articles": [
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Graphics Processing Unit",
+      "zh": "图形处理器",
+      "path": "wiki/ai-infrastructure/001-graphics-processing-unit.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Tensor Processing Unit",
+      "zh": "张量处理单元",
+      "path": "wiki/ai-infrastructure/002-tensor-processing-unit.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Neural Processing Unit",
+      "zh": "神经网络处理单元",
+      "path": "wiki/ai-infrastructure/003-neural-processing-unit.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Application-Specific Integrated Circuit",
+      "zh": "专用集成电路",
+      "path": "wiki/ai-infrastructure/004-application-specific-integrated-circuit.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Field-Programmable Gate Array",
+      "zh": "现场可编程门阵列",
+      "path": "wiki/ai-infrastructure/005-field-programmable-gate-array.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Compute Capability",
+      "zh": "计算能力版本",
+      "path": "wiki/ai-infrastructure/006-compute-capability.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Streaming Multiprocessor",
+      "zh": "流式多处理器",
+      "path": "wiki/ai-infrastructure/007-streaming-multiprocessor.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Compute Unified Device Architecture",
+      "zh": "统一计算设备架构",
+      "path": "wiki/ai-infrastructure/008-compute-unified-device-architecture.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Compute Unit",
+      "zh": "计算单元",
+      "path": "wiki/ai-infrastructure/009-compute-unit.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Warp",
+      "zh": "线程束",
+      "path": "wiki/ai-infrastructure/010-warp.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Thread Block",
+      "zh": "线程块",
+      "path": "wiki/ai-infrastructure/011-thread-block.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Register File",
+      "zh": "寄存器文件",
+      "path": "wiki/ai-infrastructure/012-register-file.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Shared Memory",
+      "zh": "共享内存",
+      "path": "wiki/ai-infrastructure/013-shared-memory.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "High Bandwidth Memory",
+      "zh": "高带宽内存",
+      "path": "wiki/ai-infrastructure/014-high-bandwidth-memory.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Double Data Rate Memory",
+      "zh": "双倍数据速率内存",
+      "path": "wiki/ai-infrastructure/015-double-data-rate-memory.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Memory Bandwidth",
+      "zh": "内存带宽",
+      "path": "wiki/ai-infrastructure/016-memory-bandwidth.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Memory Capacity",
+      "zh": "内存容量",
+      "path": "wiki/ai-infrastructure/017-memory-capacity.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Peak FLOPS",
+      "zh": "峰值浮点运算性能",
+      "path": "wiki/ai-infrastructure/018-peak-flops.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Thermal Design Power",
+      "zh": "热设计功耗",
+      "path": "wiki/ai-infrastructure/019-thermal-design-power.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 1,
+      "en": "Power Usage Effectiveness",
+      "zh": "电源使用效率",
+      "path": "wiki/ai-infrastructure/020-power-usage-effectiveness.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Peripheral Component Interconnect Express",
+      "zh": "高速外设互连",
+      "path": "wiki/ai-infrastructure/021-peripheral-component-interconnect-express.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "NVLink",
+      "zh": "高速 GPU 互连",
+      "path": "wiki/ai-infrastructure/022-nvlink.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "NVSwitch",
+      "zh": "GPU 互连交换芯片",
+      "path": "wiki/ai-infrastructure/023-nvswitch.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "InfiniBand",
+      "zh": "无限带宽网络",
+      "path": "wiki/ai-infrastructure/024-infiniband.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Remote Direct Memory Access",
+      "zh": "远程直接内存访问",
+      "path": "wiki/ai-infrastructure/025-remote-direct-memory-access.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "RDMA over Converged Ethernet",
+      "zh": "融合以太网上的 RDMA",
+      "path": "wiki/ai-infrastructure/026-rdma-over-converged-ethernet.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Ethernet",
+      "zh": "以太网",
+      "path": "wiki/ai-infrastructure/027-ethernet.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Network Interface Card",
+      "zh": "网络接口卡",
+      "path": "wiki/ai-infrastructure/028-network-interface-card.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Data Processing Unit",
+      "zh": "数据处理单元",
+      "path": "wiki/ai-infrastructure/029-data-processing-unit.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "SmartNIC",
+      "zh": "智能网卡",
+      "path": "wiki/ai-infrastructure/030-smartnic.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Leaf-Spine Topology",
+      "zh": "叶脊网络拓扑",
+      "path": "wiki/ai-infrastructure/031-leaf-spine-topology.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Fat-Tree Topology",
+      "zh": "胖树拓扑",
+      "path": "wiki/ai-infrastructure/032-fat-tree-topology.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Bisection Bandwidth",
+      "zh": "二分带宽",
+      "path": "wiki/ai-infrastructure/033-bisection-bandwidth.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Network Latency",
+      "zh": "网络延迟",
+      "path": "wiki/ai-infrastructure/034-network-latency.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Network Throughput",
+      "zh": "网络吞吐量",
+      "path": "wiki/ai-infrastructure/035-network-throughput.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "All-Reduce",
+      "zh": "全归约通信",
+      "path": "wiki/ai-infrastructure/036-all-reduce.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "All-to-All",
+      "zh": "全互换通信",
+      "path": "wiki/ai-infrastructure/037-all-to-all.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "Collective Communication",
+      "zh": "集合通信",
+      "path": "wiki/ai-infrastructure/038-collective-communication.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 2,
+      "en": "NVIDIA Collective Communications Library",
+      "zh": "NVIDIA 集合通信库",
+      "path": "wiki/ai-infrastructure/039-nvidia-collective-communications-library.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 3,
+      "en": "Data Parallelism",
+      "zh": "数据并行",
+      "path": "wiki/ai-infrastructure/040-data-parallelism.md"
+    }
+  ]
+}

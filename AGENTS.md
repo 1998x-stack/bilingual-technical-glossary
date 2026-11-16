@@ -26,8 +26,17 @@
 - Update source Wiki, Pages mirror, batch state, site manifest, site reader, and study index **as one consistent change**. Track `planned`, `drafted_in_pr`, and merged/published separately; status must not overclaim deployment.
 - Run `python3 scripts/verify_wiki.py` for AI Infra; extend coverage-aware validation before introducing other long-form Wiki domains.
 
+## Public website and article integration (mandatory)
+- The reader-facing entrypoint is the **existing unified Explorer** at `index.html?category=<slug>#explorer`. All indexed terms must be clickable from that table to a corresponding `term.html` concept detail, regardless of subject.
+- A detail page always displays the published bilingual definition. If a reviewed long-form Wiki article exists, show its full content; otherwise show an honest short-definition view. Never invent articles or display unpublished content as complete.
+- The public interface must **not** show editorial batch numbers, batch cards, production schedule, PR state or an independent Wiki library homepage. Batch plans remain internal in `wiki/` and Issue tracking only. Do not advertise `/wiki` as a separate reader destination.
+- Stable detail URLs are built from `category`, `chapter`, `en`, and `zh`, not mutable row positions. Preserve query/filter return navigation and accessible links for both English and Chinese names.
+- Article mapping is generated from approved `docs/wiki/<domain>/manifest.json` files by `python3 scripts/build_wiki_index.py --write` into `docs/data/wiki-index.json`. Run `--check` in CI; never add a public article index entry without a corresponding real Markdown source and Pages mirror.
+- The legacy `docs/wiki/ai-infrastructure/index.html` route exists only for backward-compatible redirects to Explorer/term detail. It must not render batch-navigation UI.
+- Changes to public assets must update matching `site/` and `docs/` source/mirrors, and `scripts/build.py` must preserve their sync on future rebuilds.
+
 ## Required verification and collaboration
-- Before publishing: `python3 -m compileall -q scripts tests`; `node --check site/app.js` if Node is present; `python3 scripts/verify.py`; `python3 scripts/verify_wiki.py`; `python3 -m unittest discover -s tests -v`.
+- Before publishing: `python3 scripts/build_wiki_index.py --check` when publishing Wiki; `python3 -m compileall -q scripts tests`; `node --check site/app.js` if Node is present; `python3 scripts/verify.py`; `python3 scripts/verify_wiki.py`; `python3 -m unittest discover -s tests -v`.
 - If skills or agent instructions changed: also run `python3 scripts/sync_agent_skills.py --check`.
 - Read build scripts before execution; inspect diffs for accidental PDF churn, count drift, broken `site/` ↔ `docs/` mirrors, and sensitive data.
 - Use narrowly scoped PRs with sources, count effects, test evidence, and related Issues. Never force-update an unrelated branch; obtain explicit approval for destructive/irreversible operations. Verify merge and Pages deploy with actual results instead of inferring success.

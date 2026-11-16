@@ -108,3 +108,7 @@ python3 -m unittest discover -s tests -v
 ## AI Agent Skills · Codex / Pi / Claude Code
 
 现提供专业技能工作流：**双语术语编辑**、**20 条一批的深度技术 Wiki 写作**及**构建发布与质量校验**。统一规范详见 [AGENTS.md](AGENTS.md)，使用与调用指南见 [docs/agent-skills.md](docs/agent-skills.md)。Skill 以 `.agents/skills/` 为规范源，镜像至 `.codex/skills/`、`.pi/skills/`、`.claude/skills/`，CI 会运行 `python3 scripts/sync_agent_skills.py --check` 防止漂移。
+
+## 统一术语详情页
+
+读者从原有的 [术语检索 Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) 进入，无须单独访问 Wiki 栏目。例如选择 [强化学习](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer)，点击任一英文或中文名即可打开该术语详情。已有专业解析的词条直接展示完整 Wiki 内容；其他词条仅展示经过整理的简明定义，不虚构尚未编写的长文。每 20 条一批的排期仅用于内部生产，不出现在公开阅读界面。
