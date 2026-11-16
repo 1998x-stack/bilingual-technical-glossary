@@ -26,3 +26,9 @@ Maintain a precise, versioned Chinese–English technical reference. Accuracy an
 
 ## Important distinction
 The 6 inherited PDFs collectively report 2,298 terms. The structured extraction contains 2,250 of those terms, plus 142 new AI Infra entries (2,392 searchable terms at initial publication). Do **not** describe the index as a complete lossless transcription unless reconciled row-by-row.
+
+## GPU Kernel edition
+The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
+
+## Operating Systems edition
+`glossaries/operating-systems.md` is the authored 396-term source handout; `assets/source/operating-systems.html` is its printable HTML source. Update both when terminology changes. `scripts/build.py` does not overwrite the authored Markdown. Reproduce the PDF with `python3 scripts/build_os_pdf.py` (WeasyPrint and Chinese fonts), then inspect rendered pages, links, and bookmarks. All 396 rows are also indexed in `data/terms.json`.

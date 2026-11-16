@@ -21526,5 +21526,3569 @@
     "zh": "可信区间",
     "abbr": "",
     "definition": "贝叶斯后验概率意义"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Operating System (OS)",
+    "zh": "操作系统",
+    "abbr": "OS",
+    "definition": "管理硬件资源并为应用程序提供抽象和服务的软件系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Kernel",
+    "zh": "内核",
+    "abbr": "",
+    "definition": "运行于特权级、提供操作系统核心机制的程序部分"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Kernel Space",
+    "zh": "内核空间",
+    "abbr": "",
+    "definition": "内核代码和数据所在的受保护地址空间范围"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "User Space",
+    "zh": "用户空间",
+    "abbr": "",
+    "definition": "普通应用程序运行的非特权执行环境"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "User Mode",
+    "zh": "用户态",
+    "abbr": "",
+    "definition": "CPU 处于非特权执行模式的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Kernel Mode",
+    "zh": "内核态",
+    "abbr": "",
+    "definition": "CPU 可执行特权指令的运行模式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Privilege Level",
+    "zh": "特权级",
+    "abbr": "",
+    "definition": "处理器对不同执行环境设置的权限层级"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Supervisor Mode",
+    "zh": "监管模式",
+    "abbr": "",
+    "definition": "处理器架构中的特权执行模式名称之一"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Hardware Abstraction",
+    "zh": "硬件抽象",
+    "abbr": "",
+    "definition": "向软件屏蔽具体硬件实现细节"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Resource Management",
+    "zh": "资源管理",
+    "abbr": "",
+    "definition": "分配与回收 CPU、内存、设备等资源"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Multiprogramming",
+    "zh": "多道程序设计",
+    "abbr": "",
+    "definition": "让多个程序驻留内存并交替利用处理器"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Multitasking",
+    "zh": "多任务处理",
+    "abbr": "",
+    "definition": "在多个任务之间调度执行资源"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Time Sharing",
+    "zh": "分时",
+    "abbr": "",
+    "definition": "以时间片轮转等机制提高交互性"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Batch Processing",
+    "zh": "批处理",
+    "abbr": "",
+    "definition": "按批次自动执行作业、通常减少人工干预"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Monolithic Kernel",
+    "zh": "宏内核",
+    "abbr": "",
+    "definition": "大部分操作系统服务运行于内核空间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Microkernel",
+    "zh": "微内核",
+    "abbr": "",
+    "definition": "将内核功能缩至少量基础机制的架构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Hybrid Kernel",
+    "zh": "混合内核",
+    "abbr": "",
+    "definition": "结合宏内核与微内核设计特征的架构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Exokernel",
+    "zh": "外核",
+    "abbr": "",
+    "definition": "尽量安全地将硬件资源控制权交给应用的架构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Kernel Module",
+    "zh": "内核模块",
+    "abbr": "",
+    "definition": "可按需加载的内核功能组件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Application Binary Interface (ABI)",
+    "zh": "应用程序二进制接口",
+    "abbr": "ABI",
+    "definition": "规定调用约定、数据布局等二进制兼容规则"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Application Programming Interface (API)",
+    "zh": "应用程序编程接口",
+    "abbr": "API",
+    "definition": "供程序调用的软件接口规范"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 1,
+    "topic": "操作系统基础与内核",
+    "en": "Portability",
+    "zh": "可移植性",
+    "abbr": "",
+    "definition": "软件适配不同硬件和操作系统的能力"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Boot Process",
+    "zh": "启动过程",
+    "abbr": "",
+    "definition": "从上电到操作系统可提供服务的执行流程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Firmware",
+    "zh": "固件",
+    "abbr": "",
+    "definition": "存储在设备中的低层控制程序"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "BIOS",
+    "zh": "基本输入输出系统",
+    "abbr": "",
+    "definition": "传统 PC 固件接口与启动环境"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "UEFI",
+    "zh": "统一可扩展固件接口",
+    "abbr": "",
+    "definition": "现代计算机固件与引导接口规范"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Bootloader",
+    "zh": "引导加载程序",
+    "abbr": "",
+    "definition": "定位并加载操作系统内核的程序"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Secure Boot",
+    "zh": "安全启动",
+    "abbr": "",
+    "definition": "对引导链中的组件实施签名验证的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Kernel Image",
+    "zh": "内核映像",
+    "abbr": "",
+    "definition": "供引导程序加载的内核二进制文件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Initial RAM Disk (initrd)",
+    "zh": "初始内存磁盘",
+    "abbr": "",
+    "definition": "在早期启动阶段提供临时文件系统的映像"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Initial RAM Filesystem (initramfs)",
+    "zh": "初始内存文件系统",
+    "abbr": "",
+    "definition": "内核早期启动使用的临时根文件系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "System Initialization",
+    "zh": "系统初始化",
+    "abbr": "",
+    "definition": "建立驱动、服务和用户态环境的阶段"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "System Call",
+    "zh": "系统调用",
+    "abbr": "",
+    "definition": "用户程序请求内核服务的受控入口"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "System Call Interface",
+    "zh": "系统调用接口",
+    "abbr": "",
+    "definition": "系统调用编号、参数与返回约定"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Trap",
+    "zh": "陷入",
+    "abbr": "",
+    "definition": "同步地转入特权处理程序的控制转移"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Exception",
+    "zh": "异常",
+    "abbr": "",
+    "definition": "由当前指令执行引起的同步事件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Interrupt",
+    "zh": "中断",
+    "abbr": "",
+    "definition": "硬件等异步事件触发的处理器控制转移"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Interrupt Handler",
+    "zh": "中断处理程序",
+    "abbr": "",
+    "definition": "响应中断并执行相应处理的代码"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Interrupt Vector",
+    "zh": "中断向量",
+    "abbr": "",
+    "definition": "用于定位中断或异常处理入口的信息"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Interrupt Service Routine (ISR)",
+    "zh": "中断服务例程",
+    "abbr": "ISR",
+    "definition": "处理中断事件的例程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Fault",
+    "zh": "故障型异常",
+    "abbr": "",
+    "definition": "通常可在处理后重试引发异常的指令"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 2,
+    "topic": "启动、异常与系统调用",
+    "en": "Double Fault",
+    "zh": "双重故障",
+    "abbr": "",
+    "definition": "处理异常期间再次发生特定异常的情况"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Program",
+    "zh": "程序",
+    "abbr": "",
+    "definition": "存储的指令和数据，本身不等于正在执行的进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Process",
+    "zh": "进程",
+    "abbr": "",
+    "definition": "拥有独立资源与执行状态的程序实例"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Thread",
+    "zh": "线程",
+    "abbr": "",
+    "definition": "进程内部可独立调度的执行流"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Task",
+    "zh": "任务",
+    "abbr": "",
+    "definition": "系统中可调度执行实体的泛称"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Process Identifier (PID)",
+    "zh": "进程标识符",
+    "abbr": "PID",
+    "definition": "操作系统分配给进程的标识"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Thread Identifier (TID)",
+    "zh": "线程标识符",
+    "abbr": "TID",
+    "definition": "标识线程的编号，具体作用域依系统而异"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Process Control Block (PCB)",
+    "zh": "进程控制块",
+    "abbr": "PCB",
+    "definition": "记录进程状态和调度信息的内核数据结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Thread Control Block (TCB)",
+    "zh": "线程控制块",
+    "abbr": "TCB",
+    "definition": "记录线程执行上下文的管理结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Process State",
+    "zh": "进程状态",
+    "abbr": "",
+    "definition": "运行、就绪、阻塞等生命周期状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Ready State",
+    "zh": "就绪态",
+    "abbr": "",
+    "definition": "具备运行条件、等待 CPU 调度的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Running State",
+    "zh": "运行态",
+    "abbr": "",
+    "definition": "当前正在处理器上执行的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Blocked State",
+    "zh": "阻塞态",
+    "abbr": "",
+    "definition": "等待事件、资源或 I/O 完成的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Zombie Process",
+    "zh": "僵尸进程",
+    "abbr": "",
+    "definition": "已终止但退出状态尚未被父进程回收的进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Orphan Process",
+    "zh": "孤儿进程",
+    "abbr": "",
+    "definition": "父进程退出后由其他进程接管的子进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Parent Process",
+    "zh": "父进程",
+    "abbr": "",
+    "definition": "创建子进程的进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Child Process",
+    "zh": "子进程",
+    "abbr": "",
+    "definition": "由其他进程创建的进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Process Creation",
+    "zh": "进程创建",
+    "abbr": "",
+    "definition": "建立新进程及其管理信息的过程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Process Termination",
+    "zh": "进程终止",
+    "abbr": "",
+    "definition": "结束执行并释放或待回收资源的过程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Context Switch",
+    "zh": "上下文切换",
+    "abbr": "",
+    "definition": "保存一个执行实体状态并恢复另一个的过程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "CPU Context",
+    "zh": "CPU 上下文",
+    "abbr": "",
+    "definition": "寄存器、程序计数器等执行状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Stack",
+    "zh": "栈",
+    "abbr": "",
+    "definition": "支持函数调用、局部变量等的后进先出存储区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Kernel Stack",
+    "zh": "内核栈",
+    "abbr": "",
+    "definition": "线程在内核态执行时使用的栈"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "User-Level Thread",
+    "zh": "用户级线程",
+    "abbr": "",
+    "definition": "主要由用户态运行时管理的线程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Kernel-Level Thread",
+    "zh": "内核级线程",
+    "abbr": "",
+    "definition": "由内核直接感知与调度的线程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Thread-Local Storage (TLS)",
+    "zh": "线程局部存储",
+    "abbr": "TLS",
+    "definition": "为每个线程单独保存变量的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 3,
+    "topic": "进程、线程与执行上下文",
+    "en": "Reentrancy",
+    "zh": "可重入性",
+    "abbr": "",
+    "definition": "代码在执行未结束时再次调用仍能正确工作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Scheduler",
+    "zh": "调度器",
+    "abbr": "",
+    "definition": "决定哪个任务获得处理器时间的组件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Dispatcher",
+    "zh": "派遣器",
+    "abbr": "",
+    "definition": "执行任务切换并将控制权交给选中任务的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Scheduling Policy",
+    "zh": "调度策略",
+    "abbr": "",
+    "definition": "选择执行实体的规则与目标"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Preemption",
+    "zh": "抢占",
+    "abbr": "",
+    "definition": "操作系统主动中断当前任务以调度其他任务"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Non-preemptive Scheduling",
+    "zh": "非抢占式调度",
+    "abbr": "",
+    "definition": "任务通常自行让出 CPU 才发生切换"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Time Slice / Quantum",
+    "zh": "时间片",
+    "abbr": "",
+    "definition": "任务一次被分配的连续 CPU 时间额度"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Round Robin (RR)",
+    "zh": "时间片轮转",
+    "abbr": "RR",
+    "definition": "就绪任务按轮转次序分享 CPU"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "First Come, First Served (FCFS)",
+    "zh": "先来先服务",
+    "abbr": "FCFS",
+    "definition": "按进入就绪队列先后顺序执行"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Shortest Job First (SJF)",
+    "zh": "最短作业优先",
+    "abbr": "SJF",
+    "definition": "优先执行估计运行时间最短的作业"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Shortest Remaining Time First (SRTF)",
+    "zh": "最短剩余时间优先",
+    "abbr": "SRTF",
+    "definition": "抢占式的最短作业优先策略"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Priority Scheduling",
+    "zh": "优先级调度",
+    "abbr": "",
+    "definition": "根据优先级选择任务"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Multilevel Queue Scheduling",
+    "zh": "多级队列调度",
+    "abbr": "",
+    "definition": "将任务分组到不同调度队列"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Multilevel Feedback Queue (MLFQ)",
+    "zh": "多级反馈队列",
+    "abbr": "MLFQ",
+    "definition": "根据行为动态调整任务所处队列"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Completely Fair Scheduler (CFS)",
+    "zh": "完全公平调度器",
+    "abbr": "CFS",
+    "definition": "Linux 曾长期采用的公平调度框架"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Earliest Eligible Virtual Deadline First (EEVDF)",
+    "zh": "最早合格虚拟截止时间优先",
+    "abbr": "EEVDF",
+    "definition": "Linux 公平调度采用的虚拟截止时间选择方法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "CPU Affinity",
+    "zh": "CPU 亲和性",
+    "abbr": "",
+    "definition": "限制或偏好任务运行的处理器集合"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Load Balancing",
+    "zh": "负载均衡",
+    "abbr": "",
+    "definition": "在多个处理器之间重新分配任务负载"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Scheduling Latency",
+    "zh": "调度延迟",
+    "abbr": "",
+    "definition": "任务变为可运行到实际获得 CPU 的等待时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Turnaround Time",
+    "zh": "周转时间",
+    "abbr": "",
+    "definition": "从作业提交到完成所经历的时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Response Time",
+    "zh": "响应时间",
+    "abbr": "",
+    "definition": "从请求发出到首次得到响应的时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Waiting Time",
+    "zh": "等待时间",
+    "abbr": "",
+    "definition": "任务在就绪队列中等待的累计时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间内完成的任务或工作数量"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Fairness",
+    "zh": "公平性",
+    "abbr": "",
+    "definition": "调度资源分配在任务间的均衡程度"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 4,
+    "topic": "CPU 调度与执行策略",
+    "en": "Starvation",
+    "zh": "饥饿",
+    "abbr": "",
+    "definition": "任务长期无法获得需要的执行机会或资源"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Concurrency",
+    "zh": "并发",
+    "abbr": "",
+    "definition": "多个任务在重叠时间区间内推进"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Parallelism",
+    "zh": "并行",
+    "abbr": "",
+    "definition": "多个任务在同一时刻于不同执行资源上运行"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Critical Section",
+    "zh": "临界区",
+    "abbr": "",
+    "definition": "访问共享状态、需要协调保护的代码区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Race Condition",
+    "zh": "竞态条件",
+    "abbr": "",
+    "definition": "结果依赖未恰当约束的事件先后顺序"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Data Race",
+    "zh": "数据竞争",
+    "abbr": "",
+    "definition": "未同步的冲突内存访问，且至少一个为写入"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Mutual Exclusion",
+    "zh": "互斥",
+    "abbr": "",
+    "definition": "同一时刻仅允许一个执行实体进入指定区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Mutex",
+    "zh": "互斥锁",
+    "abbr": "",
+    "definition": "提供互斥访问的同步原语"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Spinlock",
+    "zh": "自旋锁",
+    "abbr": "",
+    "definition": "通过循环检查锁状态等待的锁"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Semaphore",
+    "zh": "信号量",
+    "abbr": "",
+    "definition": "使用计数与等待/唤醒操作管理资源的同步原语"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Binary Semaphore",
+    "zh": "二元信号量",
+    "abbr": "",
+    "definition": "取值通常为 0 或 1 的信号量"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Counting Semaphore",
+    "zh": "计数信号量",
+    "abbr": "",
+    "definition": "用计数表示多个可用资源的信号量"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Condition Variable",
+    "zh": "条件变量",
+    "abbr": "",
+    "definition": "配合互斥锁等待某个共享条件变化"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Monitor",
+    "zh": "管程",
+    "abbr": "",
+    "definition": "封装共享状态、互斥访问和条件等待的抽象"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Reader-Writer Lock (RWLock)",
+    "zh": "读写锁",
+    "abbr": "",
+    "definition": "允许多读或单写的锁"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Barrier",
+    "zh": "屏障",
+    "abbr": "",
+    "definition": "等待一组参与线程到达同步点的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Atomic Operation",
+    "zh": "原子操作",
+    "abbr": "",
+    "definition": "从并发观察角度不可分割的操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Compare-and-Swap (CAS)",
+    "zh": "比较并交换",
+    "abbr": "CAS",
+    "definition": "仅在值匹配预期时原子更新的操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Test-and-Set",
+    "zh": "测试并设置",
+    "abbr": "",
+    "definition": "原子读取旧值并写入指定状态的操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Memory Ordering",
+    "zh": "内存顺序",
+    "abbr": "",
+    "definition": "约束并发程序中内存操作可观察顺序的规则"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Memory Barrier / Fence",
+    "zh": "内存屏障",
+    "abbr": "",
+    "definition": "限制某些内存操作重排的指令或机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Happens-Before",
+    "zh": "先行发生关系",
+    "abbr": "",
+    "definition": "用于描述并发操作可见性与顺序的偏序关系"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Sequential Consistency",
+    "zh": "顺序一致性",
+    "abbr": "",
+    "definition": "执行看起来遵循某个保序的全局交错顺序"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Acquire Semantics",
+    "zh": "获取语义",
+    "abbr": "",
+    "definition": "阻止后续相关内存操作越过获取操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Release Semantics",
+    "zh": "释放语义",
+    "abbr": "",
+    "definition": "阻止先前相关内存操作越过释放操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Lock-Free",
+    "zh": "无锁",
+    "abbr": "",
+    "definition": "系统级保证某个线程能持续取得进展的并发算法性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Wait-Free",
+    "zh": "无等待",
+    "abbr": "",
+    "definition": "每个操作可在有限步骤内完成的并发算法性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Read-Copy-Update (RCU)",
+    "zh": "读-复制-更新",
+    "abbr": "RCU",
+    "definition": "读侧开销低、通过延迟回收协调更新的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 5,
+    "topic": "并发、同步与内存一致性",
+    "en": "Futex",
+    "zh": "快速用户态互斥机制",
+    "abbr": "",
+    "definition": "Linux 以用户态原子操作结合内核等待/唤醒的原语"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "一组任务互相等待资源而均无法继续推进"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Livelock",
+    "zh": "活锁",
+    "abbr": "",
+    "definition": "任务持续活动但整体无法取得有效进展"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Deadlock Prevention",
+    "zh": "死锁预防",
+    "abbr": "",
+    "definition": "通过破坏必要条件避免死锁产生"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Deadlock Avoidance",
+    "zh": "死锁避免",
+    "abbr": "",
+    "definition": "仅允许进入可保持安全性的资源分配状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Deadlock Detection",
+    "zh": "死锁检测",
+    "abbr": "",
+    "definition": "分析当前资源等待关系以识别死锁"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Deadlock Recovery",
+    "zh": "死锁恢复",
+    "abbr": "",
+    "definition": "通过终止、回滚或抢占资源打破死锁"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Mutual Exclusion Condition",
+    "zh": "互斥条件",
+    "abbr": "",
+    "definition": "资源不可同时被多个任务独占使用"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Hold and Wait",
+    "zh": "占有并等待",
+    "abbr": "",
+    "definition": "任务持有资源时继续请求其他资源"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "No Preemption Condition",
+    "zh": "不可抢占条件",
+    "abbr": "",
+    "definition": "已分配资源无法被强制收回"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Circular Wait",
+    "zh": "循环等待",
+    "abbr": "",
+    "definition": "任务之间形成闭环资源等待关系"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Resource Allocation Graph",
+    "zh": "资源分配图",
+    "abbr": "",
+    "definition": "用图表示进程和资源间的请求/分配关系"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Wait-For Graph",
+    "zh": "等待图",
+    "abbr": "",
+    "definition": "表示任务之间等待依赖的有向图"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Banker's Algorithm",
+    "zh": "银行家算法",
+    "abbr": "",
+    "definition": "依据安全状态判定资源请求可否获批"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Priority Inversion",
+    "zh": "优先级反转",
+    "abbr": "",
+    "definition": "高优先级任务被持锁的低优先级任务间接阻塞"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 6,
+    "topic": "死锁与资源分配",
+    "en": "Priority Inheritance",
+    "zh": "优先级继承",
+    "abbr": "",
+    "definition": "临时提升持锁者优先级以缓解优先级反转"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Physical Memory",
+    "zh": "物理内存",
+    "abbr": "",
+    "definition": "由实际内存硬件提供的存储空间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Logical Address",
+    "zh": "逻辑地址",
+    "abbr": "",
+    "definition": "程序运行中使用、需按系统规则解释的地址"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Virtual Address",
+    "zh": "虚拟地址",
+    "abbr": "",
+    "definition": "进程虚拟地址空间中的地址"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Physical Address",
+    "zh": "物理地址",
+    "abbr": "",
+    "definition": "定位实际物理内存或物理地址空间的地址"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Address Space",
+    "zh": "地址空间",
+    "abbr": "",
+    "definition": "进程或系统可引用的地址集合"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Address Translation",
+    "zh": "地址转换",
+    "abbr": "",
+    "definition": "将虚拟地址映射到物理地址的过程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Memory Management Unit (MMU)",
+    "zh": "内存管理单元",
+    "abbr": "MMU",
+    "definition": "执行地址转换和访问权限检查的硬件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Memory Allocation",
+    "zh": "内存分配",
+    "abbr": "",
+    "definition": "为程序或内核提供可用内存区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Memory Deallocation",
+    "zh": "内存释放",
+    "abbr": "",
+    "definition": "将不再使用的内存归还分配器或系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Heap",
+    "zh": "堆",
+    "abbr": "",
+    "definition": "通常用于动态分配对象的内存区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Stack Frame",
+    "zh": "栈帧",
+    "abbr": "",
+    "definition": "一次函数调用在栈中占用的记录区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Fragmentation",
+    "zh": "碎片化",
+    "abbr": "",
+    "definition": "内存可用空间因分布或内部浪费而利用率下降"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Internal Fragmentation",
+    "zh": "内部碎片",
+    "abbr": "",
+    "definition": "已分配块内未被使用的空间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "External Fragmentation",
+    "zh": "外部碎片",
+    "abbr": "",
+    "definition": "空闲空间分散导致大块分配困难"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Contiguous Allocation",
+    "zh": "连续分配",
+    "abbr": "",
+    "definition": "将对象放在连续地址范围中的分配方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Buddy Allocator",
+    "zh": "伙伴分配器",
+    "abbr": "",
+    "definition": "按 2 的幂次划分和合并内存块的分配算法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Slab Allocator",
+    "zh": "Slab 分配器",
+    "abbr": "",
+    "definition": "为特定内核对象缓存可复用内存块的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "NUMA",
+    "zh": "非一致性内存访问",
+    "abbr": "",
+    "definition": "不同处理器访问不同内存节点的延迟不同"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Memory Locality",
+    "zh": "内存局部性",
+    "abbr": "",
+    "definition": "程序访问集中在时间或空间邻近区域的性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "Cache Line",
+    "zh": "缓存行",
+    "abbr": "",
+    "definition": "CPU 缓存与内存传输和一致性的基本数据单位"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 7,
+    "topic": "内存管理基础",
+    "en": "False Sharing",
+    "zh": "伪共享",
+    "abbr": "",
+    "definition": "不同线程修改同一缓存行的不同数据造成额外争用"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Virtual Memory",
+    "zh": "虚拟内存",
+    "abbr": "",
+    "definition": "通过地址映射与按需管理提供独立地址空间的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Paging",
+    "zh": "分页",
+    "abbr": "",
+    "definition": "把地址空间和物理内存划分为固定大小页的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Page",
+    "zh": "页",
+    "abbr": "",
+    "definition": "虚拟地址空间中固定大小的基本管理单元"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Page Frame",
+    "zh": "页框",
+    "abbr": "",
+    "definition": "物理内存中存放一个页面的固定大小区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Page Table",
+    "zh": "页表",
+    "abbr": "",
+    "definition": "保存虚拟页到物理页映射和权限的结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Page Table Entry (PTE)",
+    "zh": "页表项",
+    "abbr": "PTE",
+    "definition": "描述页面映射、权限、状态等信息的条目"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Multilevel Page Table",
+    "zh": "多级页表",
+    "abbr": "",
+    "definition": "分层组织页表以减少稀疏空间开销的结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Translation Lookaside Buffer (TLB)",
+    "zh": "地址转换后备缓冲器",
+    "abbr": "TLB",
+    "definition": "缓存最近地址转换结果的硬件结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "TLB Miss",
+    "zh": "TLB 未命中",
+    "abbr": "",
+    "definition": "所需地址映射未命中 TLB 的事件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "TLB Shootdown",
+    "zh": "TLB 失效广播",
+    "abbr": "",
+    "definition": "同步使其他 CPU 的相关 TLB 条目失效的操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Page Fault",
+    "zh": "缺页异常",
+    "abbr": "",
+    "definition": "页面访问无法由当前有效映射完成而触发的异常"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Minor Page Fault",
+    "zh": "次缺页",
+    "abbr": "",
+    "definition": "一般不必从磁盘读取页面即可解决的缺页"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Major Page Fault",
+    "zh": "主缺页",
+    "abbr": "",
+    "definition": "通常需要存储 I/O 才能完成的缺页"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Demand Paging",
+    "zh": "请求分页",
+    "abbr": "",
+    "definition": "页面在实际访问时才装入或映射的策略"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Page Replacement",
+    "zh": "页面置换",
+    "abbr": "",
+    "definition": "内存紧张时选择页淘汰或回收的策略"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Least Recently Used (LRU)",
+    "zh": "最近最少使用",
+    "abbr": "LRU",
+    "definition": "优先淘汰最长时间未被访问页面的思想"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Clock Algorithm",
+    "zh": "时钟置换算法",
+    "abbr": "",
+    "definition": "借助访问位近似 LRU 的页面替换算法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Working Set",
+    "zh": "工作集",
+    "abbr": "",
+    "definition": "进程在一段时间窗口内活跃使用的页面集合"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Thrashing",
+    "zh": "抖动",
+    "abbr": "",
+    "definition": "系统因频繁换页而大幅降低有效工作效率"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Swap Space",
+    "zh": "交换空间",
+    "abbr": "",
+    "definition": "用于存放换出内存页面的辅助存储空间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Swap In / Swap Out",
+    "zh": "换入 / 换出",
+    "abbr": "",
+    "definition": "在内存与交换空间之间迁移页面"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Copy-on-Write (CoW)",
+    "zh": "写时复制",
+    "abbr": "",
+    "definition": "先共享数据，写入时才复制私有副本"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Memory-Mapped File (mmap)",
+    "zh": "内存映射文件",
+    "abbr": "",
+    "definition": "将文件内容映射到进程虚拟地址空间的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Shared Memory",
+    "zh": "共享内存",
+    "abbr": "",
+    "definition": "多个进程或执行实体访问同一片内存的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Huge Page",
+    "zh": "大页",
+    "abbr": "",
+    "definition": "尺寸大于基础页的内存映射页面"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Transparent Huge Pages (THP)",
+    "zh": "透明大页",
+    "abbr": "THP",
+    "definition": "系统自动尝试使用大页优化地址转换的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Address Space Layout Randomization (ASLR)",
+    "zh": "地址空间布局随机化",
+    "abbr": "ASLR",
+    "definition": "随机化关键内存区域位置以提高攻击难度"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 8,
+    "topic": "分页、虚拟内存与地址转换",
+    "en": "Out-of-Memory (OOM)",
+    "zh": "内存耗尽",
+    "abbr": "OOM",
+    "definition": "系统无法满足内存分配或回收需求的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "File",
+    "zh": "文件",
+    "abbr": "",
+    "definition": "具有名称、元数据与内容的持久化数据对象"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Directory",
+    "zh": "目录",
+    "abbr": "",
+    "definition": "组织文件和子目录命名关系的结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Filesystem (FS)",
+    "zh": "文件系统",
+    "abbr": "FS",
+    "definition": "组织、存储、检索文件及元数据的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Path",
+    "zh": "路径",
+    "abbr": "",
+    "definition": "在命名空间中定位文件或目录的字符串"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Absolute Path",
+    "zh": "绝对路径",
+    "abbr": "",
+    "definition": "从根位置开始描述资源位置的路径"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Relative Path",
+    "zh": "相对路径",
+    "abbr": "",
+    "definition": "以当前工作目录等为基准的路径"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Root Directory",
+    "zh": "根目录",
+    "abbr": "",
+    "definition": "文件系统路径层级的起始目录"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Mount",
+    "zh": "挂载",
+    "abbr": "",
+    "definition": "将文件系统接入目录树中的操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Mount Point",
+    "zh": "挂载点",
+    "abbr": "",
+    "definition": "文件系统接入现有目录树的位置"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Inode",
+    "zh": "索引节点",
+    "abbr": "",
+    "definition": "类 Unix 文件系统中存储文件元数据的结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Directory Entry (Dentry)",
+    "zh": "目录项",
+    "abbr": "",
+    "definition": "路径名与文件对象之间关联的目录记录或缓存对象"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Metadata",
+    "zh": "元数据",
+    "abbr": "",
+    "definition": "描述文件属性、位置、权限等的数据"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "File Descriptor (FD)",
+    "zh": "文件描述符",
+    "abbr": "FD",
+    "definition": "进程用来引用已打开文件等对象的整数标识"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Open File Description",
+    "zh": "打开文件描述",
+    "abbr": "",
+    "definition": "内核维护的文件打开状态及偏移量等共享信息"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "File Offset",
+    "zh": "文件偏移量",
+    "abbr": "",
+    "definition": "读写操作在文件中的当前位置"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Hard Link",
+    "zh": "硬链接",
+    "abbr": "",
+    "definition": "多个目录项引用同一文件对象的链接关系"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Symbolic Link (Symlink)",
+    "zh": "符号链接",
+    "abbr": "",
+    "definition": "内容指向另一条路径的特殊文件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Virtual Filesystem (VFS)",
+    "zh": "虚拟文件系统",
+    "abbr": "VFS",
+    "definition": "统一不同文件系统访问操作的抽象层"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Superblock",
+    "zh": "超级块",
+    "abbr": "",
+    "definition": "记录文件系统整体参数和状态的元数据结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Block Group",
+    "zh": "块组",
+    "abbr": "",
+    "definition": "将文件系统的块与元数据分组管理的结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Extent",
+    "zh": "区段",
+    "abbr": "",
+    "definition": "用起始位置与长度描述连续存储块的映射"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Journaling Filesystem",
+    "zh": "日志文件系统",
+    "abbr": "",
+    "definition": "通过记录更新日志辅助崩溃恢复的文件系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Copy-on-Write Filesystem",
+    "zh": "写时复制文件系统",
+    "abbr": "",
+    "definition": "通过写入新数据块再更新引用维护一致性"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Filesystem Check (fsck)",
+    "zh": "文件系统检查",
+    "abbr": "",
+    "definition": "检测并在可能时修复文件系统结构问题的工具/过程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Filesystem Snapshot",
+    "zh": "文件系统快照",
+    "abbr": "",
+    "definition": "记录文件系统某一时间点状态的视图"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Page Cache",
+    "zh": "页缓存",
+    "abbr": "",
+    "definition": "用于缓存文件数据等内存页面的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 9,
+    "topic": "文件系统与命名空间",
+    "en": "Cache Coherence",
+    "zh": "缓存一致性",
+    "abbr": "",
+    "definition": "多个副本所见数据保持约定一致的性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Input/Output (I/O)",
+    "zh": "输入/输出",
+    "abbr": "I/O",
+    "definition": "处理器、内存与外设之间的数据交换操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Device Driver",
+    "zh": "设备驱动程序",
+    "abbr": "",
+    "definition": "管理硬件设备并向系统提供接口的内核组件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Device Controller",
+    "zh": "设备控制器",
+    "abbr": "",
+    "definition": "执行设备操作并与主机通信的硬件组件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Device File",
+    "zh": "设备文件",
+    "abbr": "",
+    "definition": "通过文件接口暴露设备的特殊文件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Character Device",
+    "zh": "字符设备",
+    "abbr": "",
+    "definition": "按字节流等方式提供访问的设备类型"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Block Device",
+    "zh": "块设备",
+    "abbr": "",
+    "definition": "按固定块或扇区地址访问的设备类型"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Programmed I/O (PIO)",
+    "zh": "程序控制 I/O",
+    "abbr": "PIO",
+    "definition": "由 CPU 显式读写设备寄存器传输数据的方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Memory-Mapped I/O (MMIO)",
+    "zh": "内存映射 I/O",
+    "abbr": "MMIO",
+    "definition": "以地址空间中的寄存器映射访问设备"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Port-Mapped I/O",
+    "zh": "端口映射 I/O",
+    "abbr": "",
+    "definition": "通过独立 I/O 端口空间访问设备的方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Direct Memory Access (DMA)",
+    "zh": "直接内存访问",
+    "abbr": "DMA",
+    "definition": "设备无需 CPU 逐字节搬运即可与内存传输数据"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Interrupt-Driven I/O",
+    "zh": "中断驱动 I/O",
+    "abbr": "",
+    "definition": "通过设备中断通知 CPU 完成或处理事件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Polling",
+    "zh": "轮询",
+    "abbr": "",
+    "definition": "主动反复检查设备或事件状态的方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Busy Waiting",
+    "zh": "忙等待",
+    "abbr": "",
+    "definition": "持续消耗执行资源以等待条件变化的方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Blocking I/O",
+    "zh": "阻塞式 I/O",
+    "abbr": "",
+    "definition": "操作完成前调用线程通常等待的 I/O 模式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Nonblocking I/O",
+    "zh": "非阻塞式 I/O",
+    "abbr": "",
+    "definition": "当前无法立即完成时及时返回的 I/O 模式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Asynchronous I/O (AIO)",
+    "zh": "异步 I/O",
+    "abbr": "AIO",
+    "definition": "请求提交与完成通知相分离的 I/O 模式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Synchronous I/O",
+    "zh": "同步 I/O",
+    "abbr": "",
+    "definition": "操作调用与完成按同步语义衔接的 I/O 方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "I/O Multiplexing",
+    "zh": "I/O 多路复用",
+    "abbr": "",
+    "definition": "单个执行流监视多个 I/O 事件源"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "select / poll",
+    "zh": "select / poll 机制",
+    "abbr": "",
+    "definition": "用于监视多个文件描述符就绪状态的接口"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "epoll",
+    "zh": "epoll 事件通知机制",
+    "abbr": "",
+    "definition": "Linux 上可扩展的 I/O 事件通知接口"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "io_uring",
+    "zh": "io_uring 异步 I/O 接口",
+    "abbr": "",
+    "definition": "Linux 使用共享环形队列提交与完成 I/O 的接口"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Buffering",
+    "zh": "缓冲",
+    "abbr": "",
+    "definition": "暂存数据以协调处理速率与传输粒度的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Spooling",
+    "zh": "假脱机",
+    "abbr": "",
+    "definition": "通过队列或磁盘暂存设备任务以便异步处理"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 10,
+    "topic": "输入输出与设备管理",
+    "en": "Zero-Copy",
+    "zh": "零拷贝",
+    "abbr": "",
+    "definition": "减少数据在内核与用户空间等层间复制的技术统称"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Persistent Storage",
+    "zh": "持久性存储",
+    "abbr": "",
+    "definition": "断电后仍可保存数据的存储介质或层级"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Hard Disk Drive (HDD)",
+    "zh": "机械硬盘",
+    "abbr": "HDD",
+    "definition": "通过磁性盘片记录和读取数据的存储设备"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Solid-State Drive (SSD)",
+    "zh": "固态硬盘",
+    "abbr": "SSD",
+    "definition": "以闪存等非机械介质为主的存储设备"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Sector",
+    "zh": "扇区",
+    "abbr": "",
+    "definition": "存储介质上寻址或组织数据的基本单元之一"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Logical Block Addressing (LBA)",
+    "zh": "逻辑块寻址",
+    "abbr": "LBA",
+    "definition": "使用线性逻辑块编号访问存储设备的方法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Storage Stack",
+    "zh": "存储栈",
+    "abbr": "",
+    "definition": "应用到文件系统、块层和设备的 I/O 处理层次"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "I/O Scheduler",
+    "zh": "I/O 调度器",
+    "abbr": "",
+    "definition": "决定块设备 I/O 请求分配和排序的组件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Seek Time",
+    "zh": "寻道时间",
+    "abbr": "",
+    "definition": "机械磁头移动到目标磁道所需时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Rotational Latency",
+    "zh": "旋转延迟",
+    "abbr": "",
+    "definition": "盘片旋转至目标扇区位置的等待时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Write Amplification",
+    "zh": "写放大",
+    "abbr": "",
+    "definition": "实际物理写入量高于逻辑写入量的现象"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Flash Translation Layer (FTL)",
+    "zh": "闪存转换层",
+    "abbr": "FTL",
+    "definition": "SSD 中逻辑地址到闪存物理位置的映射层"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Wear Leveling",
+    "zh": "磨损均衡",
+    "abbr": "",
+    "definition": "将闪存擦写负担分散到不同存储单元的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "TRIM",
+    "zh": "TRIM 指令",
+    "abbr": "",
+    "definition": "通知 SSD 某些逻辑块数据已不再需要的指令"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Redundant Array of Independent Disks (RAID)",
+    "zh": "独立磁盘冗余阵列",
+    "abbr": "RAID",
+    "definition": "组合多个磁盘实现性能或冗余目标的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Write-Ahead Logging (WAL)",
+    "zh": "预写式日志",
+    "abbr": "WAL",
+    "definition": "正式修改目标数据前先记录可恢复的变更信息"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Writeback Cache",
+    "zh": "回写缓存",
+    "abbr": "",
+    "definition": "先在缓存更新、之后再写入后端存储的策略"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Write-through Cache",
+    "zh": "直写缓存",
+    "abbr": "",
+    "definition": "写入缓存时同步更新后端存储的策略"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Crash Consistency",
+    "zh": "崩溃一致性",
+    "abbr": "",
+    "definition": "意外断电/崩溃后仍满足约定存储不变量的性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "Durability",
+    "zh": "持久性",
+    "abbr": "",
+    "definition": "已确认的数据在故障后仍能保留的性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 11,
+    "topic": "磁盘、存储与持久性",
+    "en": "fsync",
+    "zh": "文件同步调用",
+    "abbr": "",
+    "definition": "请求将文件相关待写数据及必要元数据同步到存储"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Protection",
+    "zh": "保护机制",
+    "abbr": "",
+    "definition": "控制进程对系统资源合法访问的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Security Boundary",
+    "zh": "安全边界",
+    "abbr": "",
+    "definition": "划分不同信任等级或权限域的界限"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Authentication",
+    "zh": "身份认证",
+    "abbr": "",
+    "definition": "确认请求方身份的过程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Authorization",
+    "zh": "访问授权",
+    "abbr": "",
+    "definition": "判定已识别主体是否可执行指定操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Access Control",
+    "zh": "访问控制",
+    "abbr": "",
+    "definition": "限制主体对对象可用操作的策略与机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Access Control List (ACL)",
+    "zh": "访问控制列表",
+    "abbr": "ACL",
+    "definition": "按主体或规则记录资源访问权限的结构"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Discretionary Access Control (DAC)",
+    "zh": "自主访问控制",
+    "abbr": "DAC",
+    "definition": "对象拥有者等可决定访问权限的模型"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Mandatory Access Control (MAC)",
+    "zh": "强制访问控制",
+    "abbr": "MAC",
+    "definition": "由系统统一执行安全策略的模型"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Role-Based Access Control (RBAC)",
+    "zh": "基于角色的访问控制",
+    "abbr": "RBAC",
+    "definition": "通过角色汇聚并分配访问权限的模型"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Principle of Least Privilege",
+    "zh": "最小权限原则",
+    "abbr": "",
+    "definition": "仅授予完成任务所需最少权限"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Privilege Escalation",
+    "zh": "权限提升",
+    "abbr": "",
+    "definition": "获得超出原有授权的更高权限"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Kernel Attack Surface",
+    "zh": "内核攻击面",
+    "abbr": "",
+    "definition": "可被外部输入或调用触达的内核功能范围"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Sandbox",
+    "zh": "沙箱",
+    "abbr": "",
+    "definition": "限制程序可访问资源和行为的隔离执行环境"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "System Call Filtering",
+    "zh": "系统调用过滤",
+    "abbr": "",
+    "definition": "允许或拒绝特定系统调用的控制机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "seccomp",
+    "zh": "安全计算模式",
+    "abbr": "",
+    "definition": "Linux 限制进程可使用的系统调用的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Capabilities",
+    "zh": "能力机制",
+    "abbr": "",
+    "definition": "将传统超级用户权限拆分为可独立授予的权限单元"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "SELinux",
+    "zh": "安全增强型 Linux",
+    "abbr": "",
+    "definition": "Linux 的强制访问控制安全框架"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "AppArmor",
+    "zh": "AppArmor 安全框架",
+    "abbr": "",
+    "definition": "Linux 使用配置文件约束程序访问的安全模块"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Stack Canary",
+    "zh": "栈保护值",
+    "abbr": "",
+    "definition": "用于辅助检测部分栈溢出破坏的防护机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Data Execution Prevention (DEP/NX)",
+    "zh": "数据执行保护 / 不可执行位",
+    "abbr": "DEP/NX",
+    "definition": "限制数据页面执行指令的硬件/系统机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Kernel Address Space Layout Randomization (KASLR)",
+    "zh": "内核地址空间布局随机化",
+    "abbr": "KASLR",
+    "definition": "随机化内核映射位置以增加利用难度"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 12,
+    "topic": "隔离、保护与系统安全",
+    "en": "Trusted Computing Base (TCB)",
+    "zh": "可信计算基",
+    "abbr": "TCB",
+    "definition": "必须可信、负责实施系统安全策略的组件集合"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Inter-Process Communication (IPC)",
+    "zh": "进程间通信",
+    "abbr": "IPC",
+    "definition": "不同进程交换数据并协调行为的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Pipe",
+    "zh": "管道",
+    "abbr": "",
+    "definition": "用于进程间单向字节流通信的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Named Pipe (FIFO)",
+    "zh": "命名管道",
+    "abbr": "FIFO",
+    "definition": "以文件系统名字访问的管道对象"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Message Queue",
+    "zh": "消息队列",
+    "abbr": "",
+    "definition": "按消息边界或队列语义传递数据的 IPC 机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Shared Memory Segment",
+    "zh": "共享内存段",
+    "abbr": "",
+    "definition": "供多个进程映射的共享数据区域"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Signal",
+    "zh": "信号",
+    "abbr": "",
+    "definition": "用于异步通知进程事件的软件机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Signal Handler",
+    "zh": "信号处理函数",
+    "abbr": "",
+    "definition": "进程收到指定信号时执行的用户态处理逻辑"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Unix Domain Socket",
+    "zh": "Unix 域套接字",
+    "abbr": "",
+    "definition": "同一主机进程间使用套接字接口的通信方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Socket",
+    "zh": "套接字",
+    "abbr": "",
+    "definition": "应用使用网络或本机通信协议的端点抽象"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Socket API",
+    "zh": "套接字 API",
+    "abbr": "",
+    "definition": "创建、绑定、连接、收发数据等接口的集合"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "TCP",
+    "zh": "传输控制协议",
+    "abbr": "",
+    "definition": "提供面向连接、可靠字节流的传输协议"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "UDP",
+    "zh": "用户数据报协议",
+    "abbr": "",
+    "definition": "提供无连接数据报传输的协议"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Port Number",
+    "zh": "端口号",
+    "abbr": "",
+    "definition": "在传输协议中区分通信端点的标识之一"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Network Stack",
+    "zh": "网络协议栈",
+    "abbr": "",
+    "definition": "实现协议分层、封装、路由和传输的系统组件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Network Interface",
+    "zh": "网络接口",
+    "abbr": "",
+    "definition": "系统中发送、接收网络数据的逻辑或物理端点"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Packet",
+    "zh": "数据包",
+    "abbr": "",
+    "definition": "网络分层传输中携带首部和负载的数据单元统称"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Zero-Copy Networking",
+    "zh": "零拷贝网络传输",
+    "abbr": "",
+    "definition": "尽量减少网络数据路径内存复制的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Remote Procedure Call (RPC)",
+    "zh": "远程过程调用",
+    "abbr": "RPC",
+    "definition": "以类似函数调用的方式请求远端服务"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Loopback Interface",
+    "zh": "回环接口",
+    "abbr": "",
+    "definition": "将网络流量送回本机协议栈的虚拟接口"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 13,
+    "topic": "进程间通信与网络接口",
+    "en": "Network Namespace",
+    "zh": "网络命名空间",
+    "abbr": "",
+    "definition": "隔离网络设备、路由等网络资源视图的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Virtualization",
+    "zh": "虚拟化",
+    "abbr": "",
+    "definition": "将底层资源抽象为隔离的虚拟运行环境"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Virtual Machine (VM)",
+    "zh": "虚拟机",
+    "abbr": "VM",
+    "definition": "具有虚拟硬件与独立客户机系统的运行环境"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Hypervisor / VMM",
+    "zh": "虚拟机监控器",
+    "abbr": "",
+    "definition": "创建、运行和管理虚拟机的控制层"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Type 1 Hypervisor",
+    "zh": "第一类虚拟机监控器",
+    "abbr": "",
+    "definition": "直接运行在硬件上的虚拟化管理层"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Type 2 Hypervisor",
+    "zh": "第二类虚拟机监控器",
+    "abbr": "",
+    "definition": "运行在宿主操作系统之上的虚拟化软件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Host OS",
+    "zh": "宿主操作系统",
+    "abbr": "",
+    "definition": "承载虚拟机管理软件或容器环境的操作系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Guest OS",
+    "zh": "客户机操作系统",
+    "abbr": "",
+    "definition": "在虚拟机内部运行的操作系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Hardware-Assisted Virtualization",
+    "zh": "硬件辅助虚拟化",
+    "abbr": "",
+    "definition": "利用处理器虚拟化扩展执行虚拟机的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Paravirtualization",
+    "zh": "半虚拟化",
+    "abbr": "",
+    "definition": "客户机与虚拟化层协作以降低模拟开销的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Full Virtualization",
+    "zh": "完全虚拟化",
+    "abbr": "",
+    "definition": "提供可运行未针对虚拟化修改的客户机的环境"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Virtual CPU (vCPU)",
+    "zh": "虚拟 CPU",
+    "abbr": "",
+    "definition": "分配给虚拟机的逻辑处理器执行资源"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Nested Virtualization",
+    "zh": "嵌套虚拟化",
+    "abbr": "",
+    "definition": "在虚拟机内部继续运行虚拟机监控器的能力"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Container",
+    "zh": "容器",
+    "abbr": "",
+    "definition": "共享宿主内核、通过隔离机制运行的进程集合"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Operating-System-Level Virtualization",
+    "zh": "操作系统级虚拟化",
+    "abbr": "",
+    "definition": "复用同一内核创建隔离用户空间的方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Namespace",
+    "zh": "命名空间",
+    "abbr": "",
+    "definition": "为进程提供部分系统资源的独立视图"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Control Groups (cgroups)",
+    "zh": "控制组",
+    "abbr": "",
+    "definition": "Linux 对进程组资源用量进行限制、统计与管理的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Mount Namespace",
+    "zh": "挂载命名空间",
+    "abbr": "",
+    "definition": "隔离进程所见挂载点集合的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "PID Namespace",
+    "zh": "进程标识符命名空间",
+    "abbr": "",
+    "definition": "隔离进程编号空间和进程树视图的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "User Namespace",
+    "zh": "用户命名空间",
+    "abbr": "",
+    "definition": "隔离用户与组 ID 映射及相关权限的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Overlay Filesystem",
+    "zh": "叠加文件系统",
+    "abbr": "",
+    "definition": "将多个目录层合成统一可写文件系统视图的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Container Image",
+    "zh": "容器镜像",
+    "abbr": "",
+    "definition": "打包文件系统内容与运行元数据的模板"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 14,
+    "topic": "虚拟化、容器与云原生",
+    "en": "Container Runtime",
+    "zh": "容器运行时",
+    "abbr": "",
+    "definition": "负责创建和管理容器生命周期的软件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Unix",
+    "zh": "Unix 操作系统家族",
+    "abbr": "",
+    "definition": "具有多用户、多任务和统一文件接口传统的系统家族"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "POSIX",
+    "zh": "可移植操作系统接口",
+    "abbr": "",
+    "definition": "定义类 Unix 操作系统接口和行为的标准族"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Shell",
+    "zh": "命令解释器",
+    "abbr": "",
+    "definition": "解析并执行用户输入的命令或脚本的程序"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Terminal",
+    "zh": "终端",
+    "abbr": "",
+    "definition": "提供交互式文本输入输出的设备或软件界面"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Pseudo-Terminal (PTY)",
+    "zh": "伪终端",
+    "abbr": "PTY",
+    "definition": "在软件中模拟终端设备的通信机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Daemon",
+    "zh": "守护进程",
+    "abbr": "",
+    "definition": "通常在后台运行并提供系统服务的进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "init Process",
+    "zh": "初始化进程",
+    "abbr": "",
+    "definition": "负责启动并管理部分用户态系统服务的首个进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "systemd",
+    "zh": "systemd 系统与服务管理器",
+    "abbr": "",
+    "definition": "Linux 上常用的初始化和服务管理系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "fork()",
+    "zh": "fork 进程复制调用",
+    "abbr": "",
+    "definition": "创建新进程，子进程初始状态基于父进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "execve()",
+    "zh": "execve 程序执行调用",
+    "abbr": "",
+    "definition": "将当前进程的程序映像替换为指定可执行文件"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "wait() / waitpid()",
+    "zh": "进程等待调用",
+    "abbr": "",
+    "definition": "等待子进程状态变化并回收退出信息"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "getpid()",
+    "zh": "获取进程号调用",
+    "abbr": "",
+    "definition": "返回调用进程的进程标识符"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "kill()",
+    "zh": "发送信号调用",
+    "abbr": "",
+    "definition": "向进程或进程组发送信号，并非必然终止进程"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "nice Value",
+    "zh": "nice 值",
+    "abbr": "",
+    "definition": "影响 Linux 普通任务调度权重的用户可调参数"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "/proc",
+    "zh": "proc 伪文件系统",
+    "abbr": "",
+    "definition": "暴露进程与内核状态信息的虚拟文件系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "/sys",
+    "zh": "sysfs 伪文件系统",
+    "abbr": "",
+    "definition": "暴露设备模型及部分内核属性的虚拟文件系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "/dev",
+    "zh": "设备目录",
+    "abbr": "",
+    "definition": "通常放置设备节点和设备相关接口文件的目录"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "/proc/self",
+    "zh": "当前进程信息入口",
+    "abbr": "",
+    "definition": "指向访问者自身进程 proc 信息的特殊路径"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "chroot",
+    "zh": "改变根目录",
+    "abbr": "",
+    "definition": "改变进程解析绝对路径所用根目录的操作"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "umask",
+    "zh": "权限掩码",
+    "abbr": "",
+    "definition": "影响新建文件和目录默认权限的掩码"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "File Permission Bits",
+    "zh": "文件权限位",
+    "abbr": "",
+    "definition": "类 Unix 中文件读、写、执行访问控制位"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Standard Input / Output / Error",
+    "zh": "标准输入 / 输出 / 错误",
+    "abbr": "",
+    "definition": "进程通常使用的三个标准数据流"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 15,
+    "topic": "Unix / Linux 关键概念",
+    "en": "Exit Status",
+    "zh": "退出状态码",
+    "abbr": "",
+    "definition": "进程终止时向父进程提供的结果值"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Real-Time Operating System (RTOS)",
+    "zh": "实时操作系统",
+    "abbr": "RTOS",
+    "definition": "以可预测时限响应为核心目标的操作系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Hard Real-Time",
+    "zh": "硬实时",
+    "abbr": "",
+    "definition": "错过截止时间被视为系统正确性失败的实时约束"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Soft Real-Time",
+    "zh": "软实时",
+    "abbr": "",
+    "definition": "偶发超时降低服务质量但不必然使系统失效"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Deadline",
+    "zh": "截止时间",
+    "abbr": "",
+    "definition": "任务必须完成的时间约束点"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Worst-Case Execution Time (WCET)",
+    "zh": "最坏情况执行时间",
+    "abbr": "WCET",
+    "definition": "任务在约定条件下的执行时间上界"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Worst-Case Response Time (WCRT)",
+    "zh": "最坏情况响应时间",
+    "abbr": "WCRT",
+    "definition": "任务从释放到完成的最坏响应时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Determinism",
+    "zh": "确定性",
+    "abbr": "",
+    "definition": "相同条件下表现出可预测时间和行为的性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Jitter",
+    "zh": "抖动 / 时间抖动",
+    "abbr": "",
+    "definition": "事件发生时间与理想时间之间的波动"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Rate Monotonic Scheduling (RMS)",
+    "zh": "速率单调调度",
+    "abbr": "RMS",
+    "definition": "周期越短静态优先级越高的实时调度算法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Earliest Deadline First (EDF)",
+    "zh": "最早截止时间优先",
+    "abbr": "EDF",
+    "definition": "动态优先执行绝对截止时间最近任务的算法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Priority Ceiling Protocol",
+    "zh": "优先级上限协议",
+    "abbr": "",
+    "definition": "控制共享资源访问以限制阻塞与反转的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Interrupt Latency",
+    "zh": "中断延迟",
+    "abbr": "",
+    "definition": "中断发出到处理程序开始执行的延迟"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Preemption Latency",
+    "zh": "抢占延迟",
+    "abbr": "",
+    "definition": "可抢占条件满足到实际切换任务的时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Tickless Kernel",
+    "zh": "无周期时钟滴答内核",
+    "abbr": "",
+    "definition": "避免不必要周期性时钟中断的内核模式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Watchdog Timer",
+    "zh": "看门狗定时器",
+    "abbr": "",
+    "definition": "在系统未按预期更新时触发恢复动作的计时机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 16,
+    "topic": "实时系统与嵌入式系统",
+    "en": "Embedded System",
+    "zh": "嵌入式系统",
+    "abbr": "",
+    "definition": "为特定设备或功能设计的计算机系统"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "CPU Utilization",
+    "zh": "CPU 利用率",
+    "abbr": "",
+    "definition": "处理器处于忙碌状态的时间占比"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Load Average",
+    "zh": "平均负载",
+    "abbr": "",
+    "definition": "Linux 一定时间窗口内可运行及不可中断任务数量的平滑指标"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Latency",
+    "zh": "延迟",
+    "abbr": "",
+    "definition": "从请求发出到特定完成事件之间的时间"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Bandwidth",
+    "zh": "带宽",
+    "abbr": "",
+    "definition": "单位时间内可传输的数据量上限或能力"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "IOPS",
+    "zh": "每秒输入输出操作数",
+    "abbr": "",
+    "definition": "衡量存储设备随机或混合 I/O 处理能力的指标"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Context Switch Rate",
+    "zh": "上下文切换频率",
+    "abbr": "",
+    "definition": "单位时间发生的上下文切换次数"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Cache Hit Ratio",
+    "zh": "缓存命中率",
+    "abbr": "",
+    "definition": "可由缓存直接满足的访问所占比例"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Page Fault Rate",
+    "zh": "缺页率",
+    "abbr": "",
+    "definition": "单位时间或单位访问中缺页异常的发生数量或比例"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "System Call Overhead",
+    "zh": "系统调用开销",
+    "abbr": "",
+    "definition": "陷入内核、执行服务并返回所需的附加成本"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Profiling",
+    "zh": "性能剖析",
+    "abbr": "",
+    "definition": "采集程序或系统资源消耗分布的方法"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Sampling Profiler",
+    "zh": "采样式分析器",
+    "abbr": "",
+    "definition": "定期采样执行状态以估计热点的工具"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Tracing",
+    "zh": "事件追踪",
+    "abbr": "",
+    "definition": "按时间线记录系统运行事件的分析技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Flame Graph",
+    "zh": "火焰图",
+    "abbr": "",
+    "definition": "聚合调用栈采样并展示热点路径的可视化方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "perf",
+    "zh": "perf 性能分析工具",
+    "abbr": "",
+    "definition": "Linux 性能计数、采样和事件分析工具集"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Extended Berkeley Packet Filter (eBPF)",
+    "zh": "扩展伯克利包过滤器",
+    "abbr": "",
+    "definition": "在内核受验证执行环境运行受控程序的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "kprobe / uprobe",
+    "zh": "内核 / 用户探针",
+    "abbr": "",
+    "definition": "动态挂载到内核或用户程序指定位置的探针"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "ftrace",
+    "zh": "ftrace 跟踪框架",
+    "abbr": "",
+    "definition": "Linux 内核函数与事件跟踪基础设施"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "strace",
+    "zh": "系统调用跟踪工具",
+    "abbr": "",
+    "definition": "观察进程系统调用及信号活动的工具"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Bottleneck",
+    "zh": "性能瓶颈",
+    "abbr": "",
+    "definition": "限制整体吞吐量或延迟的关键资源或环节"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Contention",
+    "zh": "资源争用",
+    "abbr": "",
+    "definition": "多个执行实体竞争同一资源的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Tail Latency",
+    "zh": "长尾延迟",
+    "abbr": "",
+    "definition": "延迟分布中靠后分位数所反映的慢请求表现"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 17,
+    "topic": "性能分析与可观测性",
+    "en": "Performance Counter",
+    "zh": "性能计数器",
+    "abbr": "",
+    "definition": "硬件或软件统计特定运行事件的计数机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Distributed Operating System",
+    "zh": "分布式操作系统",
+    "abbr": "",
+    "definition": "跨多台计算机协调资源并提供系统抽象的操作系统设计"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Distributed Shared Memory (DSM)",
+    "zh": "分布式共享内存",
+    "abbr": "DSM",
+    "definition": "为分布节点提供共享地址空间抽象的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Remote Direct Memory Access (RDMA)",
+    "zh": "远程直接内存访问",
+    "abbr": "RDMA",
+    "definition": "网络适配器支持的远端内存直接数据传输能力"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Microservices",
+    "zh": "微服务",
+    "abbr": "",
+    "definition": "将系统拆分为可独立部署服务的架构方式"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Checkpointing",
+    "zh": "检查点",
+    "abbr": "",
+    "definition": "保存执行状态以便后续恢复或迁移的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Process Migration",
+    "zh": "进程迁移",
+    "abbr": "",
+    "definition": "将运行中的进程状态转移到其他执行环境的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Live Migration",
+    "zh": "热迁移",
+    "abbr": "",
+    "definition": "在业务持续运行期间转移虚拟机或工作负载的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Fault Tolerance",
+    "zh": "容错性",
+    "abbr": "",
+    "definition": "发生故障时仍能维持约定服务的能力"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "High Availability (HA)",
+    "zh": "高可用性",
+    "abbr": "HA",
+    "definition": "通过冗余、故障转移等减少服务中断的设计目标"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Split-Brain",
+    "zh": "脑裂",
+    "abbr": "",
+    "definition": "分布系统中出现多个互不协调的主控视图的状态"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Consistency Model",
+    "zh": "一致性模型",
+    "abbr": "",
+    "definition": "规定并发或分布式操作可观察顺序的规则"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Linearizability",
+    "zh": "线性一致性",
+    "abbr": "",
+    "definition": "每个操作看起来在调用与响应间某一瞬间生效的性质"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Eventual Consistency",
+    "zh": "最终一致性",
+    "abbr": "",
+    "definition": "停止更新后各副本最终收敛到一致状态的模型"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Distributed Lock",
+    "zh": "分布式锁",
+    "abbr": "",
+    "definition": "跨多个节点协调互斥访问的机制"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Kernel Bypass",
+    "zh": "内核旁路",
+    "abbr": "",
+    "definition": "让部分数据路径绕开传统内核协议处理的技术"
+  },
+  {
+    "category": "operating-systems",
+    "chapter": 18,
+    "topic": "分布式操作系统与高级机制",
+    "en": "Unikernel",
+    "zh": "专用单地址空间内核镜像",
+    "abbr": "",
+    "definition": "把应用与所需系统组件编译为专用镜像的部署模型"
   }
 ]

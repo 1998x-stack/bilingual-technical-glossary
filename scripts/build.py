@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Markdown, CSV, site indexes, and a PDF for AI Infrastructure."""
+"""Build Markdown, CSV, site indexes, and AI Infra PDF; preserve GPU Kernel PDF."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, json, shutil, re
@@ -7,12 +7,14 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/terms.json'
 CATALOG=[
  ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
+ ('gpu-kernel','GPU Kernel Engineering','GPU Kernel / GPU 核函数','CUDA, PTX, Triton, GPU programming and kernel performance','cpu'),
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
  ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
  ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('operating-systems','Operating Systems','操作系统','Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization','server'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -33,6 +35,7 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  if slug=='operating-systems':continue  # independently authored glossary
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)

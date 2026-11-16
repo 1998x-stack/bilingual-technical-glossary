@@ -43,3 +43,7 @@
 - [ ] 导出的 Markdown / CSV / Pages JSON 已同步
 - [ ] 字符转义及 PDF 中文显示正常
 - [ ] 测试通过、PR 写明来源及变化范围
+
+## 操作系统专题 / Operating Systems
+
+`glossaries/operating-systems.md` 为独立撰写的正文；`assets/source/operating-systems.html` 为 PDF 排版源。修改术语需同步核对这两处与 `data/terms.json`，使用 `python3 scripts/build_os_pdf.py` 重建 `pdf/operating-systems.pdf` 与 `docs/pdf/operating-systems.pdf`，并运行校验。不要在常规构建中覆盖原始 Markdown。

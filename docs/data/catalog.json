@@ -61,5 +61,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "operating-systems",
+    "en": "Operating Systems",
+    "zh": "操作系统",
+    "description": "Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization",
+    "icon": "server",
+    "count": 396,
+    "topics": 18
   }
 ]
