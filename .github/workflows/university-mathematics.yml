@@ -25,11 +25,11 @@ jobs:
       - name: Install CJK fonts and render dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk libpango-1.0-0 libcairo2
+          sudo apt-get install -y fonts-noto-cjk fonts-arphic-gbsn00lp libpango-1.0-0 libcairo2
           python -m pip install -r requirements.txt
       - name: Generate indexed dataset, Markdown, PDF and Pages exports
         run: python scripts/build.py
-      - name: Validate all eight subjects and artifacts
+      - name: Validate all subjects and artifacts
         run: |
           python scripts/verify.py
           python -m unittest discover -s tests -v
@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/terms.json data/terms.csv glossaries/ pdf/university-mathematics.pdf docs/
+          git add data/terms.json data/terms.csv glossaries/ pdf/ docs/
           if ! git diff --cached --quiet; then
             git commit -m "build(math): publish 627 entries, Markdown, PDF and Pages assets"
             git push origin "HEAD:${GITHUB_REF_NAME}"
