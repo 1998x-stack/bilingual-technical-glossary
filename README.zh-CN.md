@@ -68,7 +68,7 @@
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
 
-静态资源位于 `docs/`，无需后端、数据库或付费 API。仓库首次发布后，需要仓库管理员在 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。无需生成新的工作流，现有 `.github/workflows/pages.yml` 已配置部署 `docs/`；随后在 **Actions → Publish TERM/ATLAS to GitHub Pages** 中重新运行之前失败的任务（或点击 Run workflow）。网页成功部署后，上方链接才会正常访问。详见 [部署说明](docs/PAGES_SETUP.md)。
+静态资源位于 `docs/`，无需后端、数据库或付费 API。当前 GitHub Pages 发布工作流已有成功执行记录；后续修改 `docs/**` 将自动触发部署。首次迁移到新仓库或 Pages 被关闭时，管理员需在 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**，再运行已有 `.github/workflows/pages.yml`。详见 [部署说明](docs/PAGES_SETUP.md)。
 
 微积分新增 361 条术语（16 个专题），并保留 `notation` 字段；源 Markdown 存放在 [`sources/calculus.md`](sources/calculus.md)。
 
