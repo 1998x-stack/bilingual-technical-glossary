@@ -10,6 +10,11 @@ class CatalogTests(unittest.TestCase):
    rows=[t for t in DATA if t['category']==slug]
    self.assertEqual(len(rows),count,slug)
    self.assertEqual(len({t['chapter'] for t in rows}),chapters,slug)
+ def test_parallel_computing_index(self):
+  rows=[t for t in DATA if t['category']=='parallel-computing']
+  self.assertEqual(len(rows),205)
+  self.assertEqual(len({t['chapter'] for t in rows}),12)
+  self.assertIn('Parallel Computing',{t['en'] for t in rows})
  def test_compiler_domain(self):
   self.assertIn('compiler-principles',{t['category'] for t in DATA})
   self.assertGreaterEqual(len({t['category'] for t in DATA}),9)

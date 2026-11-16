@@ -46,3 +46,6 @@ The 394-term `glossaries/linux.md` is independently authored, with 16 chapters, 
 ## University Mathematics edition
 
 The source of truth is `sources/university-mathematics.html` (627 terms, 17 chapters, 3 appendices). Edit this authored original, run `python3 scripts/build.py`, and verify Markdown/PDF/JSON/CSV and website files. Preserve existing independently authored publications.
+
+## Parallel Computing and Computer Organization publications
+The Parallel Computing handbook contains 205 indexed entries across 12 chapters. Keep its independently authored Markdown and PDF unchanged during the normal `scripts/build.py` index rebuild. Computer Organization (678 entries, 15 chapters) remains a separate non-indexed handbook; its site panel links to the original Markdown/PDF and must not be counted as indexed entries.

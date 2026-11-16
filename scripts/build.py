@@ -26,6 +26,7 @@ CATALOG=[
  ('sql-database','SQL Database','SQL 数据库','Relational modeling, SQL syntax, indexes, optimizers, transactions and operations','database'),
  ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
  ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
+ ('parallel-computing','Parallel Computing','并行计算','Parallel algorithm design, communication, performance, MPI, OpenMP, GPU and HPC','cpu'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -66,7 +67,7 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
-  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel'):
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'parallel-computing'):
    continue  # Preserve independently authored Markdown and appendices.
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.

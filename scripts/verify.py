@@ -11,7 +11,7 @@ fail=[]
 def check(test,message):
  if not test:fail.append(message)
 check(len(CATALOG)==len({t['category'] for t in TERMS}),'Catalog does not cover all indexed domains')
-check(len(TERMS)>=7349,'Dataset unexpectedly truncated')
+check(len(TERMS)>=7554,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
 check(slugs=={t['category'] for t in TERMS},'Catalog category slugs differ from terms')
 for i,r in enumerate(TERMS):
@@ -27,7 +27,7 @@ for i,r in enumerate(TERMS):
  check(topic_key not in topics or topics[topic_key]==r['topic'],f'Inconsistent topic for {topic_key}')
  topics[topic_key]=r['topic']
 counts=Counter(r['category'] for r in TERMS)
-for slug,expected in {'operating-systems':396,'sql-database':394,'python':429,'junior-high-mathematics':400}.items():
+for slug,expected in {'operating-systems':396,'sql-database':394,'python':429,'junior-high-mathematics':400,'parallel-computing':205}.items():
  check(counts[slug]==expected,f'Unexpected {slug} term count')
 check(counts['university-mathematics']==627,'University Mathematics must have 627 terms')
 check((ROOT/'sources/university-mathematics.html').is_file(),'University Mathematics source HTML missing')

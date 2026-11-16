@@ -32,18 +32,18 @@
 | SQL 数据库 / SQL Database | 394 | 13 | [阅读](glossaries/sql-database.md) | [下载](pdf/sql-database.pdf) |
 | Python 编程语言 / Python | 429 | 16 | [阅读](glossaries/python.md) | [下载](pdf/python.pdf) |
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
-| **合计** | **7,349** | **301** | | |
+| 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
+| **合计** | **7,554** | **313** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
 | 领域 | 词条数 | 章节 | Markdown | PDF |
 |---|---:|---:|---|---|
 | 计算机组成原理 / Computer Organization & Architecture | 678 | 15 | [阅读](glossaries/computer-organization.md) | [下载](pdf/computer-organization.pdf) |
-| 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
 
 > **检索状态：**手册包含 678 条中英文术语、16 组易混概念辨析和缩写速查，保留原始 39 页 PDF。为避免引入未经核验的释义，这些术语**尚未加入**网站全文检索，也不计入上方结构化数据统计。
 
-**并行计算专题：**以 Grama 等人的《Introduction to Parallel Computing》（第二版）作为知识结构参考，独立整理 205 条术语，覆盖 12 个主题。原版 Markdown 与 PDF 已发布，**暂未纳入网站搜索索引**。
+**并行计算专题：**以 Grama 等人的《Introduction to Parallel Computing》（第二版）作为知识结构参考，独立整理 205 条术语、12 个主题。原版 Markdown 与 PDF 均保留，全部 205 条术语现已纳入网站全文检索。
 
 **Kafka 专题新增：**283 条术语、16 个章节，Markdown 原稿和可检索 PDF 均已收录，且同步到网页、JSON 与 CSV 索引。
 
@@ -51,14 +51,14 @@
 
 ## 新增全文检索学科
 
-操作系统（396 条）、SQL 数据库（394 条）、Python（429 条）和初中数学（400 条）已接入结构化检索索引。原始 Markdown、PDF 和附录完整保留。
+操作系统（396 条）、SQL 数据库（394 条）、Python（429 条）、初中数学（400 条）和并行计算（205 条）已接入结构化检索索引。原始 Markdown、PDF 和附录完整保留。
 
 ## GitHub Pages 展示
 
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**20 个学科、301 个专题；
+- **主题选择：**21 个学科、313 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
