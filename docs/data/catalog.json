@@ -9,6 +9,15 @@
     "topics": 8
   },
   {
+    "slug": "gpu-kernel",
+    "en": "GPU Kernel Engineering",
+    "zh": "GPU Kernel / GPU 核函数",
+    "description": "CUDA, PTX, Triton, GPU programming and kernel performance",
+    "icon": "cpu",
+    "count": 255,
+    "topics": 13
+  },
+  {
     "slug": "ai-agents",
     "en": "AI Agents",
     "zh": "AI 智能体",
@@ -54,6 +63,15 @@
     "topics": 12
   },
   {
+    "slug": "compiler-principles",
+    "en": "Compiler Principles",
+    "zh": "编译原理",
+    "description": "Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime",
+    "icon": "code",
+    "count": 268,
+    "topics": 12
+  },
+  {
     "slug": "probability-theory",
     "en": "Probability Theory",
     "zh": "概率论",
@@ -61,14 +79,5 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
-  },
-  {
-    "slug": "gpu-kernel",
-    "en": "GPU Kernel Engineering",
-    "zh": "GPU Kernel / GPU 核函数",
-    "description": "CUDA, PTX, Triton, memory hierarchy, tensor cores, performance engineering and debugging",
-    "icon": "cpu",
-    "count": 255,
-    "topics": 13
   }
 ]
