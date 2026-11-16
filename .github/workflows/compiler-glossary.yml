@@ -52,8 +52,11 @@ jobs:
           git add docs/glossaries/compiler-principles.md docs/pdf/compiler-principles.pdf
           if ! git diff --cached --quiet; then
             git commit -m "docs(compiler): publish 268-term Markdown PDF and Pages index"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            if ! git push origin HEAD:main; then
+              git stash push --include-untracked -m "uncommitted regenerated files"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
           else
             echo "Generated artifacts already up to date."
           fi
