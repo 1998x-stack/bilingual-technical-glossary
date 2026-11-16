@@ -4,9 +4,9 @@
 
 **术语总量：351 条 · 专题：16 类**
 
-本手册涵盖高中数学主要知识模块，部分条目属于选修或拓展内容。
+Sets, functions, trigonometry, geometry, calculus, statistics and probability
 
-> 译法以常见中文教材和英语数学文献中的规范术语为主；不同教材版本、国际课程与具体语境可能存在差异。
+> 译法以常见教材和工程文献为参考；具体技术版本与词义以原始规范及上下文为准。
 
 ## 专题目录
 
@@ -464,4 +464,4 @@
 
 原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/high-school-mathematics.pdf)
 
-本术语表用于教育与术语核对。欢迎通过 Pull Request 提交译名修正、例证与参考来源。
+本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。

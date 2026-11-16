@@ -6,7 +6,7 @@
 
 Limits, derivatives, integrals, series, multivariable and vector calculus
 
-> 数学记号仅为常见示例；公式需要结合适用条件理解。
+> 译法以常见教材和工程文献为参考；具体技术版本与词义以原始规范及上下文为准。
 
 ## 专题目录
 
@@ -474,6 +474,4 @@ Limits, derivatives, integrals, series, multivariable and vector calculus
 
 原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/calculus.pdf)
 
-原始 Markdown：[sources/calculus.md](../sources/calculus.md)
-
-本术语表用于学习与研究，不是官方规范。
+本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。
