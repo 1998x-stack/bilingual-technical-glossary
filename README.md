@@ -160,3 +160,7 @@ This original handbook contains 627 bilingual terms across 17 chapters plus thre
 ## C++ Programming Language / C++ 编程语言
 
 The C++ reference adds **357 curated English–Chinese terms in 16 chapters**, covering object lifetime, value categories, RAII, smart pointers, templates, Concepts, STL/Ranges, concurrency and C++20/23. The authoritative editable source is [data/cpp-glossary.tsv](data/cpp-glossary.tsv); [Markdown](glossaries/cpp.md), [searchable PDF](pdf/cpp.pdf) and the site's JSON/CSV index are kept in sync. The appendix explains 16 commonly confused concept pairs.
+
+## Agent Skills for Codex, Pi and Claude Code
+
+Reusable workflows for term curation, 20-term technical Wiki batches, and release QA are available for all three coding agents. Read the canonical [AGENTS.md](AGENTS.md) policy and [portable skills guide](docs/agent-skills.md). The canonical `.agents/skills/` collection is mirrored to `.codex/skills/`, `.pi/skills/` and `.claude/skills/`; consistency is enforced with `python3 scripts/sync_agent_skills.py --check` in CI.

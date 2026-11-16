@@ -15,6 +15,8 @@ jobs:
           python-version: '3.12'
       - name: Check Python syntax
         run: python -m compileall -q scripts tests
+      - name: Validate portable Agent Skills
+        run: python scripts/sync_agent_skills.py --check
       - name: Check website JavaScript syntax
         run: node --check site/app.js
       - name: Verify corpus, mirrors, and metadata
