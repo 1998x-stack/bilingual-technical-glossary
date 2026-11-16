@@ -39,3 +39,6 @@ The 283-row, 16-chapter `glossaries/apache-kafka.md` is an original reference wi
 
 ## High School Mathematics
 The high-school mathematics source is `data/high-school-mathematics.tsv` (351 entries in 16 topics). Build JSON, Markdown and PDF with `scripts/build.py`, which requires a Chinese TrueType font for PDF generation.
+
+## Linux edition
+The 394-term `glossaries/linux.md` is independently authored, with 16 chapters, 18 terminology comparisons and official reference links. `pdf/linux.pdf` is a searchable print edition. `scripts/build.py` intentionally preserves Linux Markdown rather than replacing the manual with a generated table. Keep JSON/CSV, Markdown and PDF aligned for substantive edits.
