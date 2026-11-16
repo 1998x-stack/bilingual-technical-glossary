@@ -54,6 +54,15 @@
     "topics": 14
   },
   {
+    "slug": "calculus",
+    "en": "Calculus",
+    "zh": "微积分",
+    "description": "Limits, derivatives, integrals, series, multivariable and vector calculus",
+    "icon": "integral",
+    "count": 361,
+    "topics": 16
+  },
+  {
     "slug": "linear-algebra",
     "en": "Linear Algebra",
     "zh": "线性代数",

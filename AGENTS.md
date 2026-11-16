@@ -29,3 +29,7 @@ The 6 inherited PDFs collectively report 2,298 terms. The structured extraction 
 
 ## GPU Kernel edition
 The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
+
+## Calculus volume
+
+The Calculus volume contains 361 entries across 16 topics. An optional `notation` field holds mathematical examples, while `abbr` remains a true abbreviation. Preserve the Calculus PDF as an independently authored publication and compare it to the source manuscript when making corrections.

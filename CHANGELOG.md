@@ -1,5 +1,12 @@
 # Changelog
 
+## Calculus edition — 2026-11-16
+
+- Added 361 Calculus terms across 16 topics with Markdown and PDF download editions.
+- Indexed mathematical notation separately from abbreviations.
+- Updated the explorer dataset, glossary catalog, documentation and validation for 10 subjects, 3,276 terms and 141 topics.
+
+
 ## v1.1.0 — 2026-11-16
 
 - Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.

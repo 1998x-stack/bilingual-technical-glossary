@@ -12,6 +12,7 @@ CATALOG=[
  ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
  ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
+ ('calculus','Calculus','微积分','Limits, derivatives, integrals, series, multivariable and vector calculus','integral'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
@@ -58,8 +59,8 @@ def write_markdown(data):
   for (chapter,name),items in sorted(groups.items()):out.append(f'- {chapter:02d}. {name}（{len(items)} 条）')
   out+=['','---','']
   for (chapter,name),items in sorted(groups.items()):
-   out += [f'## {chapter:02d}. {name}','', '| # | English term | 中文译名 | Abbr. | 简明释义 |','|---:|---|---|---|---|']
-   for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item[k]) for k in ['en','zh','abbr','definition']])+' |')
+   out += [f'## {chapter:02d}. {name}','', ('| # | English term | 中文译名 | 符号 / 示例 | 简明释义 |' if slug=='calculus' else '| # | English term | 中文译名 | Abbr. | 简明释义 |'),'|---:|---|---|---|---|']
+   for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item.get(k,'')) for k in (['en','zh','notation','definition'] if slug=='calculus' else ['en','zh','abbr','definition'])])+' |')
    out.append('')
   if slug=='compiler-principles':out += ['> 术语辨析：CFG 在形式语言中指上下文无关文法，在程序分析中指控制流图。','', '参考资料：[LLVM Language Reference](https://llvm.org/docs/LangRef.html) · [GNU Bison Manual](https://www.gnu.org/software/bison/manual/) · [GCC Internals](https://gcc.gnu.org/onlinedocs/gccint/)','']
   out+=['---','',f'原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/{slug}.pdf)','', '本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。','']
@@ -140,7 +141,7 @@ def run():
  assert not errors,f'invalid / duplicate rows at: {errors[:15]}'
  DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
  with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
-  writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition']);writer.writeheader();writer.writerows(data)
+  writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition','notation'],extrasaction='ignore');writer.writeheader();writer.writerows(data)
  write_markdown(data);render_pdf(data)
  from compiler_pdf import render_compiler_pdf
  render_compiler_pdf(data, ROOT/'pdf/compiler-principles.pdf')

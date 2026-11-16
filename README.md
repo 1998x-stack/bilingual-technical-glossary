@@ -28,16 +28,17 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Large Language Models | 大语言模型 | 419 | 16 | [Read](glossaries/large-language-models.md) | [Download](pdf/large-language-models.pdf) |
 | Deep Learning | 深度学习 | 500 | 18 | [Read](glossaries/deep-learning.md) | [Download](pdf/deep-learning.pdf) |
 | Reinforcement Learning | 强化学习 | 305 | 14 | [Read](glossaries/reinforcement-learning.md) | [Download](pdf/reinforcement-learning.pdf) |
+| Calculus | 微积分 | 361 | 16 | [Read](glossaries/calculus.md) | [Download](pdf/calculus.pdf) |
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
-| **Total** | **8 domains** | **2,647** | **113** | | |
+| **Total** | **10 domains** | **3,276** | **141** | | |
 
 > **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. This explicit distinction prevents claiming that PDF extraction is lossless.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **113 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **141 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -52,8 +53,8 @@ bilingual-technical-glossary/
 │   ├── terms.json                 # Canonical indexed terms
 │   ├── terms.csv                  # Interoperable CSV export
 │   └── ai-infrastructure.tsv     # Curated AI Infra source notes
-├── glossaries/                    # 8 thematic Markdown glossaries
-├── pdf/                           # 8 searchable PDF handbooks
+├── glossaries/                    # 10 thematic Markdown glossaries
+├── pdf/                           # 10 searchable PDF handbooks
 ├── site/                          # Website source: HTML, CSS, JS, icon
 ├── docs/                          # GitHub Pages static publish directory
 │   ├── data/                      # Optimized JSON for frontend
@@ -67,6 +68,8 @@ bilingual-technical-glossary/
 ├── AGENTS.md
 └── .github/workflows/
 ```
+
+The Calculus volume adds 361 bilingual terms and a searchable, print-ready PDF. Its optional `notation` field records common mathematical symbols; the source manuscript is preserved in [`sources/calculus.md`](sources/calculus.md).
 
 ## Use locally
 
