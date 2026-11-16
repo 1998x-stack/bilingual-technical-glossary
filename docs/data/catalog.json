@@ -111,7 +111,7 @@
     "slug": "university-mathematics",
     "en": "University Mathematics",
     "zh": "大学数学",
-    "description": "Calculus, analysis, geometry, algebra, probability and differential equations",
+    "description": "Calculus, analysis, geometry, probability, differential equations and optimization",
     "icon": "integral",
     "count": 627,
     "topics": 17
@@ -129,7 +129,7 @@
     "slug": "data-structures",
     "en": "Data Structures",
     "zh": "数据结构",
-    "description": "Arrays, linked lists, hashing, trees, graphs and advanced structures",
+    "description": "Arrays, lists, hashing, trees, graphs and advanced structures",
     "icon": "network",
     "count": 352,
     "topics": 14
@@ -138,7 +138,7 @@
     "slug": "linux",
     "en": "Linux",
     "zh": "Linux 操作系统",
-    "description": "Kernel, processes, memory, filesystems, networking, containers and performance",
+    "description": "Kernel, processes, memory, networking, containers and performance",
     "icon": "terminal",
     "count": 394,
     "topics": 16
