@@ -24,10 +24,11 @@
 | 线性代数 / Linear Algebra | 289 | 12 | [阅读](glossaries/linear-algebra.md) | [下载](pdf/linear-algebra.pdf) |
 | 编译原理 / Compiler Principles | 268 | 12 | [阅读](glossaries/compiler-principles.md) | [下载](pdf/compiler-principles.pdf) |
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
+| 大学数学 / University Mathematics | 627 | 17 | [阅读](glossaries/university-mathematics.md) | [下载](pdf/university-mathematics.pdf) |
 | Apache Kafka / 事件流平台 | 283 | 16 | [阅读](glossaries/apache-kafka.md) | [下载](pdf/apache-kafka.pdf) |
 | 数据结构 / Data Structures | 352 | 14 | [阅读](glossaries/data-structures.md) | [下载](pdf/data-structures.pdf) |
 | Linux 操作系统 / Linux | 394 | 16 | [阅读](glossaries/linux.md) | [下载](pdf/linux.pdf) |
-| **合计** | **5,103** | **222** | | |
+| **合计** | **5,730** | **239** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -49,7 +50,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**15 个学科、222 个专题；
+- **主题选择：**16 个学科、239 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
@@ -72,3 +73,6 @@ python3 -m unittest discover -s tests -v
 **注意：**现有六本 PDF 是独立排版的原件，不会因为修改 JSON 自动覆盖。若修改术语含义，需要同步检查原版 PDF 的版本一致性。详情参见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [AGENTS.md](AGENTS.md)。
 
 本项目用于研究、学习和工程阅读；不是任何标准组织发布的官方术语规范。仓库尚未选择开放许可，直到明确发布 License 之前请保留作者权利。
+## 大学数学手册
+
+已收录 17 章、627 条中英文术语，附易混术语、数学符号与英文缩写表。支持 [HTML 源文件](sources/university-mathematics.html)、[Markdown](glossaries/university-mathematics.md)、[PDF](pdf/university-mathematics.pdf)。与现有线性代数、概率论专题的部分词条交叉，统计按领域分别计算。编辑时请先更新 HTML，再运行 `python3 scripts/build.py` 同步各格式。

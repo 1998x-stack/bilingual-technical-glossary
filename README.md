@@ -34,10 +34,11 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Compiler Principles | 编译原理 | 268 | 12 | [Read](glossaries/compiler-principles.md) | [Download](pdf/compiler-principles.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
+| University Mathematics | 大学数学 | 627 | 17 | [Read](glossaries/university-mathematics.md) | [Download](pdf/university-mathematics.pdf) |
 | Apache Kafka | Apache Kafka / 事件流平台 | 283 | 16 | [Read](glossaries/apache-kafka.md) | [Download](pdf/apache-kafka.pdf) |
 | Data Structures | 数据结构 | 352 | 14 | [Read](glossaries/data-structures.md) | [Download](pdf/data-structures.pdf) |
 | Linux | Linux 操作系统 | 394 | 16 | [Read](glossaries/linux.md) | [Download](pdf/linux.pdf) |
-| **Total** | **15 domains** | **5,103** | **222** | | |
+| **Total** | **16 domains** | **5,730** | **239** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -59,7 +60,7 @@ The [Python English–Chinese glossary](glossaries/python.md) (429 terms, 16 cha
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **206 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **239 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -132,3 +133,6 @@ The static site is fully committed in `docs/`. Initial Pages enablement requires
 6. Maintain all exported formats consistently; run validation before submitting PRs.
 
 **License:** Licensing terms for source and reference content have not been selected; all rights remain with their respective authors until a license is explicitly published. Contributions should not include third-party copyrighted textbook passages without permission.
+## University Mathematics / 大学数学
+
+This original handbook contains 627 bilingual terms across 17 chapters plus three appendices. See the [editable HTML source](sources/university-mathematics.html), [Markdown](glossaries/university-mathematics.md), and [PDF](pdf/university-mathematics.pdf). It intentionally overlaps specialized Linear Algebra and Probability Theory collections; collection totals are not globally deduplicated.

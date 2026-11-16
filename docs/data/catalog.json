@@ -108,6 +108,15 @@
     "topics": 16
   },
   {
+    "slug": "university-mathematics",
+    "en": "University Mathematics",
+    "zh": "大学数学",
+    "description": "Calculus, analysis, geometry, algebra, probability and differential equations",
+    "icon": "integral",
+    "count": 627,
+    "topics": 17
+  },
+  {
     "slug": "apache-kafka",
     "en": "Apache Kafka",
     "zh": "Apache Kafka / 事件流平台",
