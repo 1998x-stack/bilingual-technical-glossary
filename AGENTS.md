@@ -4,7 +4,7 @@
 Maintain a precise, versioned Chinese–English technical reference. Accuracy and auditability outrank lexical volume. Never invent definitions, source links, or claims of coverage.
 
 ## Source of truth
-`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume.
+`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume. Data Structures has an authored Markdown publication and a reproducible PDF HTML source in `sources/`; synchronize both with its structured search index.
 
 ## Workflow
 1. Understand the affected domain and chapter.
@@ -25,4 +25,4 @@ Maintain a precise, versioned Chinese–English technical reference. Accuracy an
 - Security: no secrets in git, escape data before DOM insertion, avoid unsafe external scripts.
 
 ## Important distinction
-The 6 inherited PDFs collectively report 2,298 terms. The structured extraction contains 2,250 of those terms, plus 142 new AI Infra entries (2,392 searchable terms at initial publication). Do **not** describe the index as a complete lossless transcription unless reconciled row-by-row.
+The 6 inherited PDFs collectively report 2,298 terms. The structured extraction contains 2,250 of those terms, plus 142 new AI Infra entries (2,392 searchable terms at initial publication). Data Structures contributes 352 entries, bringing the searchable total to 2,744. Do **not** describe the index as a complete lossless transcription unless reconciled row-by-row.

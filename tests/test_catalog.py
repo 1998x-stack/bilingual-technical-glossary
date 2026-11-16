@@ -4,8 +4,12 @@ from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'data/terms.json').read_text(encoding='utf8'))
 class CatalogTests(unittest.TestCase):
- def test_seven_domains(self):
-  self.assertEqual(len(set(t['category'] for t in DATA)),7)
+ def test_eight_domains(self):
+  self.assertEqual(len(set(t['category'] for t in DATA)),8)
+ def test_data_structures_coverage(self):
+  terms=[t for t in DATA if t['category']=='data-structures']
+  self.assertEqual(len(terms),352)
+  self.assertEqual(len(set(t['chapter'] for t in terms)),14)
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:

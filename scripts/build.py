@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Markdown, CSV, site indexes, and a PDF for AI Infrastructure."""
+"""Build Markdown, CSV, site indexes, and an AI Infrastructure PDF."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, json, shutil, re
@@ -13,6 +13,7 @@ CATALOG=[
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('data-structures','Data Structures','数据结构','Arrays, lists, hashing, trees, graphs, range queries and concurrent structures','network'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -33,6 +34,9 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  # Data Structures is an authored handbook: preserve its curated Markdown layout
+  # and the comparison appendix. Its HTML PDF source is in sources/.
+  if slug=='data-structures':continue
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)

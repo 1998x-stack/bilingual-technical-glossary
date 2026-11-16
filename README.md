@@ -29,14 +29,15 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Reinforcement Learning | 强化学习 | 305 | 14 | [Read](glossaries/reinforcement-learning.md) | [Download](pdf/reinforcement-learning.pdf) |
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
-| **Total** | **7 domains** | **2,392** | **100** | | |
+| Data Structures | 数据结构 | 352 | 14 | [Read](glossaries/data-structures.md) | [Download](pdf/data-structures.pdf) |
+| **Total** | **8 domains** | **2,744** | **114** | | |
 
-> **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). The seventh domain, AI Infra, adds 142 curated terms and a newly generated PDF. Original PDFs are therefore the reference version when the index and print editions differ. This explicit distinction prevents claiming that PDF extraction is lossless.
+> **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). The seventh domain, AI Infra, adds 142 curated terms and a newly generated PDF. The eighth domain, Data Structures, adds 352 newly authored and fully indexed entries. Original PDFs are therefore the reference version when the index and print editions differ. This explicit distinction prevents claiming that PDF extraction is lossless.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **100 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **114 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -51,8 +52,8 @@ bilingual-technical-glossary/
 │   ├── terms.json                 # Canonical indexed terms
 │   ├── terms.csv                  # Interoperable CSV export
 │   └── ai-infrastructure.tsv     # Curated AI Infra source notes
-├── glossaries/                    # 7 thematic Markdown glossaries
-├── pdf/                           # 7 searchable PDF handbooks
+├── glossaries/                    # 8 thematic Markdown glossaries
+├── pdf/                           # 8 searchable PDF handbooks
 ├── site/                          # Website source: HTML, CSS, JS, icon
 ├── docs/                          # GitHub Pages static publish directory
 │   ├── data/                      # Optimized JSON for frontend
@@ -85,7 +86,7 @@ python3 scripts/verify.py
 python3 -m unittest discover -s tests -v
 ```
 
-The build script generates the AI Infra PDF when a suitable Chinese TTF font is installed. The six previously authored PDFs are intentionally **not** overwritten by this step. If no font is available, the script preserves any existing AI Infra PDF.
+The build script generates the AI Infra PDF when a suitable Chinese TTF font is installed. The six previously authored PDFs and the Data Structures handbook are intentionally **not** overwritten by this step. Data Structures PDF is rendered from `sources/data-structures.html` by `.github/workflows/build-data-structures-pdf.yml`. If no font is available, the script preserves any existing AI Infra PDF.
 
 ## Publish on GitHub Pages
 

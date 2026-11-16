@@ -9,7 +9,8 @@
 3. 在 PR 描述中给出支持该译法的资料（学术论文、教材、项目官方文档、规范），并解释可疑歧义。
 4. 运行 `python3 scripts/build.py`，同步提交生成的 Markdown、CSV 和 `docs/data`。
 5. 运行 `python3 scripts/verify.py` 和 `python3 -m unittest discover -s tests -v`。
-6. 如果源 PDF 的内容也需要改变，须说明版本及排版方案；不可假装只修改 Markdown 就等于已更新 PDF。
+6. 数据结构专题有独立维护的 `glossaries/data-structures.md` 和 `sources/data-structures.html`；修订后请同步 JSON 索引和 PDF，避免网页与手册不一致。
+7. 如果源 PDF 的内容也需要改变，须说明版本及排版方案；不可假装只修改 Markdown 就等于已更新 PDF。
 
 ## 词条质量门槛
 

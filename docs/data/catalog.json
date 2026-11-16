@@ -61,5 +61,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "data-structures",
+    "en": "Data Structures",
+    "zh": "数据结构",
+    "description": "Arrays, lists, hashing, trees, graphs, range queries and concurrent structures",
+    "icon": "network",
+    "count": 352,
+    "topics": 14
   }
 ]
