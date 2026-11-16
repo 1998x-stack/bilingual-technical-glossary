@@ -420,6 +420,146 @@
       "en": "Model Serving",
       "zh": "模型服务化",
       "path": "wiki/ai-infrastructure/060-model-serving.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Time to First Token",
+      "zh": "首词元延迟",
+      "path": "wiki/ai-infrastructure/061-time-to-first-token.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Time per Output Token",
+      "zh": "每输出词元耗时",
+      "path": "wiki/ai-infrastructure/062-time-per-output-token.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Inter-Token Latency",
+      "zh": "词元间延迟",
+      "path": "wiki/ai-infrastructure/063-inter-token-latency.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Tokens per Second",
+      "zh": "每秒词元数",
+      "path": "wiki/ai-infrastructure/064-tokens-per-second.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Requests per Second",
+      "zh": "每秒请求数",
+      "path": "wiki/ai-infrastructure/065-requests-per-second.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Prefill",
+      "zh": "预填充阶段",
+      "path": "wiki/ai-infrastructure/066-prefill.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Decode",
+      "zh": "逐词元解码阶段",
+      "path": "wiki/ai-infrastructure/067-decode.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Key-Value Cache",
+      "zh": "键值缓存",
+      "path": "wiki/ai-infrastructure/068-key-value-cache.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Paged Attention",
+      "zh": "分页注意力",
+      "path": "wiki/ai-infrastructure/069-paged-attention.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Continuous Batching",
+      "zh": "连续批处理",
+      "path": "wiki/ai-infrastructure/070-continuous-batching.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Dynamic Batching",
+      "zh": "动态批处理",
+      "path": "wiki/ai-infrastructure/071-dynamic-batching.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Speculative Decoding",
+      "zh": "推测解码",
+      "path": "wiki/ai-infrastructure/072-speculative-decoding.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Disaggregated Prefill and Decode",
+      "zh": "预填充与解码分离",
+      "path": "wiki/ai-infrastructure/073-disaggregated-prefill-and-decode.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Quantization",
+      "zh": "量化",
+      "path": "wiki/ai-infrastructure/074-quantization.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Weight-Only Quantization",
+      "zh": "仅权重量化",
+      "path": "wiki/ai-infrastructure/075-weight-only-quantization.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Post-Training Quantization",
+      "zh": "训练后量化",
+      "path": "wiki/ai-infrastructure/076-post-training-quantization.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Quantization-Aware Training",
+      "zh": "量化感知训练",
+      "path": "wiki/ai-infrastructure/077-quantization-aware-training.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Model Sharding",
+      "zh": "模型分片",
+      "path": "wiki/ai-infrastructure/078-model-sharding.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 4,
+      "en": "Hot Reload",
+      "zh": "热重载",
+      "path": "wiki/ai-infrastructure/079-hot-reload.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 5,
+      "en": "Container",
+      "zh": "容器",
+      "path": "wiki/ai-infrastructure/080-container.md"
     }
   ]
 }

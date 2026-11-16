@@ -176,7 +176,7 @@ Reusable workflows for term curation, 20-term technical Wiki batches, and releas
 
 ## Integrated term knowledge pages
 
-The currently published AI Infrastructure Wiki contains **60 full concept articles** (of 142 indexed AI Infra terms), with independent human expert verification tracked separately as pending in the [review ledger](wiki/reviews/README.md). The remaining 82 terms still provide curated short definitions in their concept pages.
+The currently published AI Infrastructure Wiki contains **80 full concept articles** (of 142 indexed AI Infra terms), with independent human expert verification tracked separately as pending in the [review ledger](wiki/reviews/README.md). The remaining 62 terms still provide curated short definitions in their concept pages.
 
 
 The existing [Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/#explorer) is the **primary reader-facing entrypoint** for term pages: click any English or Chinese term in a filtered category (for example [Reinforcement Learning](https://1998x-stack.github.io/bilingual-technical-glossary/?category=reinforcement-learning#explorer)) to open its dedicated concept detail. When a verified long-form Wiki article has been published, its mechanisms, examples, interviews and exercises appear on the same detail page; other terms show their curated short definitions without pretending long-form material exists. Editorial batches are internal and never shown as reader navigation.

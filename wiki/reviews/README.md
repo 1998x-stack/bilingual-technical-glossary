@@ -10,7 +10,7 @@
 
 ## 全部已发布 Wiki 的复核状态
 
-`wiki/reviews/ai-infrastructure.json` 列出 `docs/data/wiki-index.json` 中当前全部 **60 篇**，尚未由真实审稿人签核的条目均为 `status: pending`；**不得**将结构检查误称为专业审稿完成。审稿者应依照 [内部编辑清单](../EDITORIAL_REVIEW.md) 对照原论文/标准逐篇核对。对于“官方技术资料”之类宽泛来源、跨技术主题的通用引用和题目中未注明的精度口径，优先要求补正。
+`wiki/reviews/ai-infrastructure.json` 列出 `docs/data/wiki-index.json` 中当前全部 **80 篇**，尚未由真实审稿人签核的条目均为 `status: pending`；**不得**将结构检查误称为专业审稿完成。审稿者应依照 [内部编辑清单](../EDITORIAL_REVIEW.md) 对照原论文/标准逐篇核对。对于“官方技术资料”之类宽泛来源、跨技术主题的通用引用和题目中未注明的精度口径，优先要求补正。
 
 ## 签核流程
 

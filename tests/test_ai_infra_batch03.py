@@ -43,11 +43,11 @@ class AIInfraBatch03Tests(unittest.TestCase):
                 self.assertGreaterEqual(len(set(urls)),2)
                 self.assertTrue(all(u.startswith("https://") for u in urls))
 
-    def test_public_index_has_exact_60_sorted_concepts_without_editorial_status(self):
+    def test_public_index_retains_batch03_with_sorted_concepts_and_no_editorial_status(self):
         pages=self.public["articles"]
-        self.assertEqual(len(pages),60)
-        self.assertEqual(self.manifest["readyArticles"],60)
-        self.assertEqual(self.manifest["readyInPr"],60)
+        self.assertEqual(len(pages), sum(1 for t in self.manifest['terms'] if t['ready']))
+        self.assertEqual(self.manifest["readyArticles"],len(pages))
+        self.assertEqual(self.manifest["readyInPr"],len(pages))
         paths=[p["path"] for p in pages]
         self.assertEqual(len(paths),len(set(paths)))
         self.assertEqual([p["path"] for p in pages[40:60]],
@@ -61,7 +61,7 @@ class AIInfraBatch03Tests(unittest.TestCase):
         self.assertEqual((plan["start"],plan["end"],plan["count"]),(41,60,20))
         self.assertEqual([row["status"] for row in plan["terms"]],["merged"]*20)
         ledgers={item["path"]:item for item in self.review["articles"]}
-        self.assertEqual(len(ledgers),60)
+        self.assertEqual(len(ledgers),len(self.public['articles']))
         for entry in self.public["articles"][40:60]:
             key=entry["path"]
             self.assertEqual(ledgers[key]["status"],"pending")
