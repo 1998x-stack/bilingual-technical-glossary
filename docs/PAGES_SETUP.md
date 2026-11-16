@@ -1,12 +1,12 @@
 # GitHub Pages activation / 部署说明
 
-The TERM/ATLAS site is completely generated under `docs/`, and the custom GitHub Actions workflow `.github/workflows/pages.yml` is committed. **Repository Pages must be enabled once by an administrator.** The `GITHUB_TOKEN` used by this workflow does not have permission to create the Pages site itself.
+The TERM/ATLAS site is completely generated under `docs/`, and the custom GitHub Actions workflow `.github/workflows/pages.yml` is committed. **Pages requires one-time administrator enablement in newly created or reset repositories.** The `GITHUB_TOKEN` used by this workflow does not have permission to create the Pages site itself.
 
 ## Recommended: GitHub Actions deployment / 推荐步骤
 
 1. Open **[repository Settings → Pages](https://github.com/1998x-stack/bilingual-technical-glossary/settings/pages)** while signed into an account with administrator permissions.
 2. In **Build and deployment → Source**, choose **GitHub Actions**. Since this repository already has a workflow, **skip GitHub's suggested starter templates**.
-3. Open **[Actions → Publish TERM/ATLAS to GitHub Pages](https://github.com/1998x-stack/bilingual-technical-glossary/actions/workflows/pages.yml)** and choose **Run workflow** (or use **Re-run jobs** on the earlier unsuccessful run, which initially lacked Pages enablement).
+3. Open **[Actions → Publish TERM/ATLAS to GitHub Pages](https://github.com/1998x-stack/bilingual-technical-glossary/actions/workflows/pages.yml)** and choose **Run workflow** when initializing Pages. For an active deployment, pushes that change `docs/**` deploy automatically.
 4. Confirm the deploy job is green. Then visit **https://1998x-stack.github.io/bilingual-technical-glossary/**.
 
 `pages.yml` deploys committed files from `docs/` on subsequent pushes to the `main` branch when `docs/` changes. `validate.yml` independently checks dataset and tests.

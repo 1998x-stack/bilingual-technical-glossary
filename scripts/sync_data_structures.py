@@ -68,8 +68,10 @@ def main():
     assert len(terms)==len({(x["category"],x["chapter"],x["en"].casefold(),x["zh"]) for x in terms})
     write("data/terms.json",json.dumps(terms,ensure_ascii=False,indent=2)+"\n")
     write("docs/data/terms.json",json.dumps(terms,ensure_ascii=False,separators=(",",":")))
+    # Never discard optional notation or newly introduced schema fields.
+    fields=FIELDS+sorted({key for row in terms for key in row}-set(FIELDS))
     with (R/"data/terms.csv").open("w",encoding="utf-8",newline="") as f:
-        w=csv.DictWriter(f,fieldnames=FIELDS,extrasaction='ignore');w.writeheader();w.writerows(terms)
+        w=csv.DictWriter(f,fieldnames=fields,extrasaction='raise');w.writeheader();w.writerows(terms)
     catalog=json.loads(read("docs/data/catalog.json"))
     if not any(x["slug"]==S for x in catalog):
         catalog.append(dict(slug=S,en="Data Structures",zh="数据结构",description="Arrays, linked lists, hashing, trees, graphs and advanced structures",icon="network",count=352,topics=14))
