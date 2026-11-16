@@ -16,6 +16,7 @@ CATALOG=[
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('linux','Linux','Linux 操作系统','Kernel, processes, memory, networking, containers and system operations','terminal'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -52,6 +53,7 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  if slug=='linux': continue  # Preserve independently authored Linux Markdown and appendices
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)

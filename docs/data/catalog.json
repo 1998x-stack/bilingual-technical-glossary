@@ -88,5 +88,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "linux",
+    "en": "Linux",
+    "zh": "Linux 操作系统",
+    "description": "Kernel, processes, memory, filesystems, networking, containers and performance",
+    "icon": "terminal",
+    "count": 394,
+    "topics": 16
   }
 ]

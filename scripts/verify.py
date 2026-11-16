@@ -39,6 +39,7 @@ for cat in CATALOG:
   with pdf.open('rb') as f:check(f.read(5)==b'%PDF-',f'Invalid PDF header {slug}')
 site=json.loads((ROOT/'docs/data/terms.json').read_text(encoding='utf8'))
 check(site==TERMS,'Pages search index differs from source data')
+check(sum(c['count'] for c in CATALOG)==len(TERMS),'Catalog sum mismatch')
 with (ROOT/'data/terms.csv').open(encoding='utf8',newline='') as f:
  rows=list(csv.DictReader(f));check(len(rows)==len(TERMS),'CSV count differs from JSON')
 for path in ['docs/index.html','docs/styles.css','docs/app.js','docs/favicon.svg','site/index.html','site/styles.css','site/app.js','README.md','README.zh-CN.md','AGENTS.md','.github/workflows/pages.yml']:
