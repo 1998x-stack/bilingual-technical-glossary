@@ -42,3 +42,7 @@ The high-school mathematics source is `data/high-school-mathematics.tsv` (351 en
 
 ## Linux edition
 The 394-term `glossaries/linux.md` is independently authored, with 16 chapters, 18 terminology comparisons and official reference links. `pdf/linux.pdf` is a searchable print edition. `scripts/build.py` intentionally preserves Linux Markdown rather than replacing the manual with a generated table. Keep JSON/CSV, Markdown and PDF aligned for substantive edits.
+
+## University Mathematics edition
+
+The source of truth is `sources/university-mathematics.html` (627 terms, 17 chapters, 3 appendices). Edit this authored original, run `python3 scripts/build.py`, and verify Markdown/PDF/JSON/CSV and website files. Preserve existing independently authored publications.

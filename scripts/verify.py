@@ -27,6 +27,8 @@ for i,r in enumerate(TERMS):
  check(topic_key not in topics or topics[topic_key]==r['topic'],f'Inconsistent topic for {topic_key}')
  topics[topic_key]=r['topic']
 counts=Counter(r['category'] for r in TERMS)
+check(counts['university-mathematics']==627,'University Mathematics must have 627 terms')
+check((ROOT/'sources/university-mathematics.html').is_file(),'University Mathematics source HTML missing')
 check(counts['machine-learning']==447,'ML must have 447 terms')
 for cat in CATALOG:
  slug=cat['slug'];check(cat['count']==counts[slug],f'Count mismatch: {slug}')

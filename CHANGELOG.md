@@ -1,5 +1,12 @@
 # Changelog
 
+## University Mathematics — 2026-11-16
+
+- Added 627 bilingual mathematics terms across 17 chapters, three appendices, editable HTML, Markdown and PDF.
+- Published the topic in the structured search index and GitHub Pages, preserving all existing collections.
+- Added regression tests and dynamic catalogue icon/color cycling.
+
+
 ## 2026-11-16 — Parallel Computing bilingual handbook
 
 - Published a 205-term, 12-topic, independently authored glossary structured with reference to Grama et al., *Introduction to Parallel Computing* (2nd edition).

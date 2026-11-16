@@ -51,3 +51,7 @@
 ## Linux 术语手册维护
 
 `glossaries/linux.md` 为原创版（394 条、16 个章节、18 组术语辨析），构建脚本不会覆盖它。修改 Linux 术语时应同步检查 `data/terms.json`、`pdf/linux.pdf` 与 `docs/` 发布副本；引用 Linux 内核官方文档、man-pages 等可靠来源。
+
+## 大学数学卷编辑流程
+
+请编辑 `sources/university-mathematics.html`，再运行 `python3 scripts/build.py` 同步 Markdown、PDF、JSON/CSV、GitHub Pages 下载副本。随后运行 `python3 scripts/verify.py` 与 `python3 -m unittest discover -s tests -v`；PDF 修改需要人工检查中文字体和分页。

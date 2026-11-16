@@ -20,6 +20,12 @@ class CatalogTests(unittest.TestCase):
   self.assertEqual(len(rows),351)
   self.assertEqual(len(set(t['chapter'] for t in rows)),16)
   self.assertIn('derivative',{t['en'] for t in rows})
+ def test_university_mathematics(self):
+  records=[x for x in DATA if x['category']=='university-mathematics']
+  self.assertEqual(len(records),627)
+  self.assertEqual(len(set(x['chapter'] for x in records)),17)
+  self.assertTrue((ROOT/'sources/university-mathematics.html').is_file())
+  self.assertTrue((ROOT/'pdf/university-mathematics.pdf').is_file())
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:
