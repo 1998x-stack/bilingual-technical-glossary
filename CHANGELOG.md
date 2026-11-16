@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-16 — Computer Organization bilingual handbook
+
+- Published the original 39-page Computer Organization PDF and the matching Markdown (678 term pairs across 15 chapters).
+- Mirrored both publications into the GitHub Pages docs folder and linked them in the READMEs and site collections.
+- Kept the searchable dataset unchanged pending terminology definition review.
+
 ## v1.1.0 — 2026-11-16
 
 - Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.

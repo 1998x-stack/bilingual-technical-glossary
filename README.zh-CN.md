@@ -23,6 +23,14 @@
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
 | **合计** | **2,915** | **125** | | |
 
+### 新增独立手册（暂未纳入全文检索）
+
+| 领域 | 词条数 | 章节 | Markdown | PDF |
+|---|---:|---:|---|---|
+| 计算机组成原理 / Computer Organization & Architecture | 678 | 15 | [阅读](glossaries/computer-organization.md) | [下载](pdf/computer-organization.pdf) |
+
+> **检索状态：**手册包含 678 条中英文术语、16 组易混概念辨析和缩写速查，保留原始 39 页 PDF。为避免引入未经核验的释义，这些术语**尚未加入**网站全文检索，也不计入上方结构化数据统计。
+
 **数据说明：**此前制作的六本 PDF 均保留原始完整版本，共自述含 2,298 条术语；从版式 PDF 提取的可检索记录有 2,250 条，尚有 48 条因跨行排版未能自动恢复。原始 PDF 才是这些书册完整词条的权威副本。新增的 AI Infra 独立整理了 142 条术语，GPU Kernel 原创手册包含 255 条术语（13 章），现已同步纳入可检索索引；编译原理专题补充 268 条术语（12 章），涵盖词法、语法、SSA、优化与代码生成。网页中所有“词条数”均指真实可搜索索引条目，不将 PDF 封面数字直接冒充完整的数据导入数量。
 
 ## GitHub Pages 展示
