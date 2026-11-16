@@ -164,7 +164,9 @@ def run():
  assert not errors,f'invalid / duplicate rows at: {errors[:15]}'
  DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
  with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
-  writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition','notation'],extrasaction='ignore');writer.writeheader();writer.writerows(data)
+  fields=['category','chapter','topic','en','zh','abbr','definition']
+  fields+=sorted({key for row in data for key in row}-set(fields))
+  writer=csv.DictWriter(f,fieldnames=fields,extrasaction='raise');writer.writeheader();writer.writerows(data)
  write_markdown(data)
  from import_university_mathematics import appendix_markdown,render_source_pdf
  md=ROOT/'glossaries/university-mathematics.md'

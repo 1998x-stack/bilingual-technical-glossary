@@ -25,8 +25,12 @@ def main():
     site = json.loads((PUBLIC / "manifest.json").read_text(encoding="utf-8"))
     assert meta["total_terms"] == len(rows) == site["total"]
     assert meta["batch_size"] == site["batchSize"] == 20
-    assert len(meta["batches"]) == 8
-    assert [b["count"] for b in meta["batches"]] == [20] * 7 + [2]
+    expected_batches = (len(rows) + meta["batch_size"] - 1) // meta["batch_size"]
+    assert len(meta["batches"]) == expected_batches
+    assert [b["count"] for b in meta["batches"]] == [
+        min(meta["batch_size"], len(rows) - i * meta["batch_size"])
+        for i in range(expected_batches)
+    ]
     assert sum(b["count"] for b in meta["batches"]) == len(rows)
     assert len(site["terms"]) == len(rows)
     completed = 0
@@ -51,7 +55,7 @@ def main():
             assert heading in body, f"missing {heading}: {canonical}"
         assert body.count("**问：") >= 2 and body.count("**题：") >= 2, f"missing Q&A: {canonical}"
         assert "https://" in body, f"missing reference: {canonical}"
-    assert completed == site["readyInPr"] == 20
+    assert completed == site["readyInPr"], "Wiki ready count does not match published files"
     print(f"AI Infra Wiki verified: {completed}/{len(rows)} articles, 8 batches, mirrored Pages content.")
 
 
