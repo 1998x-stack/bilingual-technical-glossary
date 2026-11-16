@@ -13,6 +13,7 @@ CATALOG=[
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('university-mathematics','University Mathematics','大学数学','Calculus, mathematical analysis, differential equations, algebra, statistics, geometry and optimization','sigma'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -112,6 +113,9 @@ def write_site_data(data):
 
 def run():
  data=json.loads(DATA.read_text(encoding='utf8'));data=merge_infra(data)
+ if (ROOT/'sources/university-mathematics.html').is_file():
+  from import_university_mathematics import merge_entries
+  data=merge_entries(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
@@ -123,6 +127,12 @@ def run():
  DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
  with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
   writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition']);writer.writeheader();writer.writerows(data)
- write_markdown(data);render_pdf(data);write_site_data(data)
+ write_markdown(data)
+ if (ROOT/'sources/university-mathematics.html').is_file():
+  from import_university_mathematics import appendix_markdown,render_source_pdf
+  md=ROOT/'glossaries/university-mathematics.md'
+  md.write_text(md.read_text(encoding='utf8')+'\n'+appendix_markdown(),encoding='utf8')
+  render_source_pdf()
+ render_pdf(data);write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()
