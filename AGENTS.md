@@ -4,7 +4,7 @@
 Maintain a precise, versioned Chinese–English technical reference. Accuracy and auditability outrank lexical volume. Never invent definitions, source links, or claims of coverage.
 
 ## Source of truth
-`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume.
+`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume. `data/high-school-mathematics.tsv` is the editable high-school mathematics source; `scripts/render_high_school_pdf.py` publishes its PDF.
 
 ## Workflow
 1. Understand the affected domain and chapter.
@@ -29,3 +29,6 @@ The 6 inherited PDFs collectively report 2,298 terms. The structured extraction 
 
 ## GPU Kernel edition
 The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
+
+## High-school mathematics volume
+The high-school mathematics domain contains 351 curated terms in 16 topics. Edit `data/high-school-mathematics.tsv`, not only generated JSON/Markdown. Run `python3 scripts/build.py`, then verify that `pdf/high-school-mathematics.pdf` and `docs/pdf/high-school-mathematics.pdf` agree. The PDF generation requires a Chinese TTF font (for example fonts-arphic-gbsn00lp).

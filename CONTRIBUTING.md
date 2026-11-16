@@ -4,7 +4,7 @@
 
 ## 提交流程
 
-1. 在 `data/terms.json` 中定位词条（或新增符合现有字段约定的条目）。
+1. 在 `data/terms.json` 中定位词条（或新增符合现有字段约定的条目）；高中数学条目请优先更新 `data/high-school-mathematics.tsv`。
 2. 推荐写法：英文规范词形、中文常用译名、缩写、一句话说明、适用专题。
 3. 在 PR 描述中给出支持该译法的资料（学术论文、教材、项目官方文档、规范），并解释可疑歧义。
 4. 运行 `python3 scripts/build.py`，同步提交生成的 Markdown、CSV 和 `docs/data`。
