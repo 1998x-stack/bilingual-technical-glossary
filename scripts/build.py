@@ -6,6 +6,7 @@ import csv, json, shutil, re
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/terms.json'
 CATALOG=[
+ ('high-school-mathematics','High School Mathematics','高中数学','Sets, functions, trigonometry, geometry, calculus, statistics and probability','book'),
  ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
  ('gpu-kernel','GPU Kernel Engineering','GPU Kernel / GPU 核函数','CUDA, PTX, Triton, GPU programming and kernel performance','cpu'),
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
@@ -50,6 +51,10 @@ def merge_compiler(data):
   add.append(dict(category='compiler-principles',chapter=chapter,topic=topic,
                   en=en,zh=zh,abbr=abbr,definition=definition))
  return data+add
+
+def merge_high_school(data):
+ from render_high_school_pdf import load_terms
+ return [t for t in data if t['category']!='high-school-mathematics']+load_terms(ROOT/'data/high-school-mathematics.tsv')
 
 def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
@@ -136,7 +141,7 @@ def write_site_data(data):
  (d/'.nojekyll').write_text('',encoding='utf8')
 
 def run():
- data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data))
+ data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data));data=merge_high_school(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
@@ -154,6 +159,8 @@ def run():
  import subprocess,sys
  subprocess.run([sys.executable,str(ROOT/'scripts/render_kafka_pdf.py')],check=True)
 
+ from render_high_school_pdf import render_pdf as render_hs
+ render_hs([t for t in data if t['category']=='high-school-mathematics'])
  write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()

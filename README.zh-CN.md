@@ -12,6 +12,7 @@
 
 | 领域 | 结构化词条 | 专题 | Markdown | PDF |
 |---|---:|---:|---|---|
+| 高中数学 / High School Mathematics | 351 | 16 | [阅读](glossaries/high-school-mathematics.md) | [下载](pdf/high-school-mathematics.pdf) |
 | AI 基础设施 / AI Infrastructure / AI Infra | 142 | 8 | [阅读](glossaries/ai-infrastructure.md) | [下载](pdf/ai-infrastructure.pdf) |
 | GPU Kernel / GPU 核函数 / GPU Kernel Engineering | 255 | 13 | [阅读](glossaries/gpu-kernel.md) | [下载](pdf/gpu-kernel.pdf) |
 | AI 智能体 / AI Agents | 332 | 16 | [阅读](glossaries/ai-agents.md) | [下载](pdf/ai-agents.pdf) |
@@ -25,7 +26,7 @@
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
 | Apache Kafka / 事件流平台 | 283 | 16 | [阅读](glossaries/apache-kafka.md) | [下载](pdf/apache-kafka.pdf) |
 | 数据结构 / Data Structures | 352 | 14 | [阅读](glossaries/data-structures.md) | [下载](pdf/data-structures.pdf) |
-| **合计** | **4,358** | **190** | | |
+| **合计** | **5,103** | **206** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -47,7 +48,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**13 个学科、190 个专题；
+- **主题选择：**14 个学科、206 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。

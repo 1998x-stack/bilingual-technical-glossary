@@ -22,6 +22,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 | Field | Chinese subject | Indexed terms | Topics | Markdown | PDF |
 |---|---|---:|---:|---|---|
+| High School Mathematics | 高中数学 | 351 | 16 | [Read](glossaries/high-school-mathematics.md) | [Download](pdf/high-school-mathematics.pdf) |
 | AI Infrastructure / AI Infra | AI 基础设施 | 142 | 8 | [Read](glossaries/ai-infrastructure.md) | [Download](pdf/ai-infrastructure.pdf) |
 | GPU Kernel Engineering | GPU Kernel / GPU 核函数 | 255 | 13 | [Read](glossaries/gpu-kernel.md) | [Download](pdf/gpu-kernel.pdf) |
 | AI Agents | AI 智能体 | 332 | 16 | [Read](glossaries/ai-agents.md) | [Download](pdf/ai-agents.pdf) |
@@ -35,7 +36,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
 | Apache Kafka | Apache Kafka / 事件流平台 | 283 | 16 | [Read](glossaries/apache-kafka.md) | [Download](pdf/apache-kafka.pdf) |
 | Data Structures | 数据结构 | 352 | 14 | [Read](glossaries/data-structures.md) | [Download](pdf/data-structures.pdf) |
-| **Total** | **13 domains** | **4,358** | **190** | | |
+| **Total** | **14 domains** | **5,103** | **206** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -53,7 +54,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **190 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **206 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.

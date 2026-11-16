@@ -43127,5 +43127,3164 @@
     "zh": "看门狗机制",
     "abbr": "",
     "definition": "监测系统卡顿并触发告警或恢复的机制"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "set",
+    "zh": "集合",
+    "abbr": "",
+    "definition": "具有确定性的对象所组成的整体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "element",
+    "zh": "元素",
+    "abbr": "",
+    "definition": "集合中的一个对象"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "membership",
+    "zh": "属于关系",
+    "abbr": "",
+    "definition": "表示某对象是否属于给定集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "subset",
+    "zh": "子集",
+    "abbr": "",
+    "definition": "一个集合的元素全部属于另一集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "proper subset",
+    "zh": "真子集",
+    "abbr": "",
+    "definition": "不等于原集合的子集"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "empty set",
+    "zh": "空集",
+    "abbr": "",
+    "definition": "不含任何元素的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "universal set",
+    "zh": "全集",
+    "abbr": "",
+    "definition": "讨论范围内所有元素组成的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "intersection",
+    "zh": "交集",
+    "abbr": "",
+    "definition": "两个集合共有元素构成的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "union",
+    "zh": "并集",
+    "abbr": "",
+    "definition": "属于至少一个集合的元素组成的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "complement",
+    "zh": "补集",
+    "abbr": "",
+    "definition": "全集中不属于指定集合的元素"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "set difference",
+    "zh": "差集",
+    "abbr": "",
+    "definition": "属于前一集合但不属于后一集合的元素"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "interval",
+    "zh": "区间",
+    "abbr": "",
+    "definition": "由实数范围及端点取舍确定的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "open interval",
+    "zh": "开区间",
+    "abbr": "",
+    "definition": "不包含两端点的区间"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "closed interval",
+    "zh": "闭区间",
+    "abbr": "",
+    "definition": "包含两端点的区间"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "necessary condition",
+    "zh": "必要条件",
+    "abbr": "",
+    "definition": "结论成立时必须满足的条件"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "sufficient condition",
+    "zh": "充分条件",
+    "abbr": "",
+    "definition": "一旦满足即可保证结论成立的条件"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "necessary and sufficient condition",
+    "zh": "充要条件",
+    "abbr": "",
+    "definition": "既是必要条件又是充分条件"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "proposition",
+    "zh": "命题",
+    "abbr": "",
+    "definition": "可以判断真假的陈述句"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "negation",
+    "zh": "否定",
+    "abbr": "",
+    "definition": "将命题的真值取反"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "converse proposition",
+    "zh": "逆命题",
+    "abbr": "",
+    "definition": "交换原命题的条件和结论"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "contrapositive",
+    "zh": "逆否命题",
+    "abbr": "",
+    "definition": "交换条件和结论并分别取否定"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "universal quantifier",
+    "zh": "全称量词",
+    "abbr": "",
+    "definition": "表示对讨论范围内所有对象均成立"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "existential quantifier",
+    "zh": "存在量词",
+    "abbr": "",
+    "definition": "表示至少存在一个满足条件的对象"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 1,
+    "topic": "集合、命题与逻辑",
+    "en": "counterexample",
+    "zh": "反例",
+    "abbr": "",
+    "definition": "用一个具体例子推翻全称断言"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "function",
+    "zh": "函数",
+    "abbr": "",
+    "definition": "从定义域到陪域的单值对应关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "domain",
+    "zh": "定义域",
+    "abbr": "",
+    "definition": "允许自变量取值的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "range",
+    "zh": "值域",
+    "abbr": "",
+    "definition": "函数实际取得的所有函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "independent variable",
+    "zh": "自变量",
+    "abbr": "",
+    "definition": "函数中作为输入的变量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "dependent variable",
+    "zh": "因变量",
+    "abbr": "",
+    "definition": "由自变量决定的输出变量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "function value",
+    "zh": "函数值",
+    "abbr": "",
+    "definition": "函数在某个自变量处的输出"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "function graph",
+    "zh": "函数图像",
+    "abbr": "",
+    "definition": "由所有自变量与函数值组成的点集"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "piecewise function",
+    "zh": "分段函数",
+    "abbr": "",
+    "definition": "在不同自变量区间采用不同表达式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "composite function",
+    "zh": "复合函数",
+    "abbr": "",
+    "definition": "把一个函数的输出作为另一函数输入"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "inverse function",
+    "zh": "反函数",
+    "abbr": "",
+    "definition": "交换一一对应函数的输入与输出"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "one-to-one function",
+    "zh": "单射函数",
+    "abbr": "",
+    "definition": "不同输入对应不同输出"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "even function",
+    "zh": "偶函数",
+    "abbr": "",
+    "definition": "满足 f(-x)=f(x) 的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "odd function",
+    "zh": "奇函数",
+    "abbr": "",
+    "definition": "满足 f(-x)=-f(x) 的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "periodic function",
+    "zh": "周期函数",
+    "abbr": "",
+    "definition": "函数值按某个正周期重复"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "fundamental period",
+    "zh": "最小正周期",
+    "abbr": "",
+    "definition": "满足周期条件的最小正数（若存在）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "monotonicity",
+    "zh": "单调性",
+    "abbr": "",
+    "definition": "函数在区间上的增减性质"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "increasing function",
+    "zh": "增函数",
+    "abbr": "",
+    "definition": "自变量增大时函数值也严格增大"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "decreasing function",
+    "zh": "减函数",
+    "abbr": "",
+    "definition": "自变量增大时函数值严格减小"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "maximum value",
+    "zh": "最大值",
+    "abbr": "",
+    "definition": "函数在定义域中实际取得的最大函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "minimum value",
+    "zh": "最小值",
+    "abbr": "",
+    "definition": "函数在定义域中实际取得的最小函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "bounded function",
+    "zh": "有界函数",
+    "abbr": "",
+    "definition": "函数值在一定上下界之间"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "zero of a function",
+    "zh": "函数零点",
+    "abbr": "",
+    "definition": "使函数值等于零的自变量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "axis of symmetry",
+    "zh": "对称轴",
+    "abbr": "",
+    "definition": "图像关于其对称的直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "center of symmetry",
+    "zh": "对称中心",
+    "abbr": "",
+    "definition": "图像关于其中心对称的点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "translation of a graph",
+    "zh": "图像平移",
+    "abbr": "",
+    "definition": "将图像各点沿指定方向移动"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 2,
+    "topic": "函数的概念与性质",
+    "en": "stretching of a graph",
+    "zh": "图像伸缩",
+    "abbr": "",
+    "definition": "按比例改变图像在坐标方向的尺度"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "power function",
+    "zh": "幂函数",
+    "abbr": "",
+    "definition": "通常指 y=x^a 形式的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "exponential function",
+    "zh": "指数函数",
+    "abbr": "",
+    "definition": "自变量位于指数位置且底数为正常数不等于一"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "logarithmic function",
+    "zh": "对数函数",
+    "abbr": "",
+    "definition": "指数函数的反函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "quadratic function",
+    "zh": "二次函数",
+    "abbr": "",
+    "definition": "一般形式为 ax²+bx+c 且 a 不为零"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "linear function",
+    "zh": "一次函数",
+    "abbr": "",
+    "definition": "一般形式为 y=kx+b 的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "absolute value function",
+    "zh": "绝对值函数",
+    "abbr": "",
+    "definition": "把输入映射为其绝对值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "rational function",
+    "zh": "有理函数",
+    "abbr": "",
+    "definition": "两个多项式的商（分母不为零）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "reciprocal function",
+    "zh": "反比例函数",
+    "abbr": "",
+    "definition": "形如 y=k/x 且 k 不为零的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "base of a logarithm",
+    "zh": "对数的底",
+    "abbr": "",
+    "definition": "确定对数运算的正数且不能等于一"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "logarithm",
+    "zh": "对数",
+    "abbr": "",
+    "definition": "指数运算中求指数的逆运算"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "common logarithm",
+    "zh": "常用对数",
+    "abbr": "",
+    "definition": "以十为底的对数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "natural logarithm",
+    "zh": "自然对数",
+    "abbr": "",
+    "definition": "以自然常数 e 为底的对数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "logarithm laws",
+    "zh": "对数运算法则",
+    "abbr": "",
+    "definition": "将乘除和乘方转化为对数加减和倍数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "exponential growth",
+    "zh": "指数增长",
+    "abbr": "",
+    "definition": "量按固定比例连续增长的模型"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "exponential decay",
+    "zh": "指数衰减",
+    "abbr": "",
+    "definition": "量按固定比例连续下降的模型"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "exponential equation",
+    "zh": "指数方程",
+    "abbr": "",
+    "definition": "未知数出现在指数位置的方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "logarithmic equation",
+    "zh": "对数方程",
+    "abbr": "",
+    "definition": "含未知数的对数表达式的方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "exponentiation",
+    "zh": "乘方",
+    "abbr": "",
+    "definition": "以底数和指数定义的运算"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "radical",
+    "zh": "根式",
+    "abbr": "",
+    "definition": "含有开方运算的代数式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "nth root",
+    "zh": "n 次方根",
+    "abbr": "",
+    "definition": "n 次幂等于给定数的数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "laws of exponents",
+    "zh": "指数运算法则",
+    "abbr": "",
+    "definition": "关于同底数乘除及幂的幂等规则"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "asymptote",
+    "zh": "渐近线",
+    "abbr": "",
+    "definition": "曲线与某条直线的距离趋近于零的线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "vertex of a parabola",
+    "zh": "抛物线顶点",
+    "abbr": "",
+    "definition": "二次函数图像的极值位置"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 3,
+    "topic": "基本初等函数",
+    "en": "discriminant",
+    "zh": "判别式",
+    "abbr": "",
+    "definition": "二次方程的 b²-4ac"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "equation",
+    "zh": "方程",
+    "abbr": "",
+    "definition": "要求两个表达式相等的关系式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "root of an equation",
+    "zh": "方程的根",
+    "abbr": "",
+    "definition": "使方程成立的未知数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "system of equations",
+    "zh": "方程组",
+    "abbr": "",
+    "definition": "需要同时满足的多个方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "equivalent equations",
+    "zh": "同解方程",
+    "abbr": "",
+    "definition": "具有相同解集的方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "inequality",
+    "zh": "不等式",
+    "abbr": "",
+    "definition": "比较两个表达式大小的关系式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "solution set",
+    "zh": "解集",
+    "abbr": "",
+    "definition": "满足方程或不等式的全部取值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "linear inequality",
+    "zh": "一元一次不等式",
+    "abbr": "",
+    "definition": "仅含一个未知数且最高次数为一"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "quadratic inequality",
+    "zh": "一元二次不等式",
+    "abbr": "",
+    "definition": "含一个未知数二次多项式的大小关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "absolute value inequality",
+    "zh": "绝对值不等式",
+    "abbr": "",
+    "definition": "含绝对值表达式的不等式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "strict inequality",
+    "zh": "严格不等式",
+    "abbr": "",
+    "definition": "使用大于或小于而不含等号"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "non-strict inequality",
+    "zh": "非严格不等式",
+    "abbr": "",
+    "definition": "允许等号成立的大小关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "quadratic formula",
+    "zh": "求根公式",
+    "abbr": "",
+    "definition": "计算一元二次方程根的公式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "Vieta's formulas",
+    "zh": "韦达定理",
+    "abbr": "",
+    "definition": "二次方程根与系数之间的关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "completing the square",
+    "zh": "配方法",
+    "abbr": "",
+    "definition": "将二次式改写为平方项加常数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "factorization",
+    "zh": "因式分解",
+    "abbr": "",
+    "definition": "将多项式写成若干因式的乘积"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "method of substitution",
+    "zh": "代入法",
+    "abbr": "",
+    "definition": "用一个表达式替换未知数求解"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "elimination method",
+    "zh": "消元法",
+    "abbr": "",
+    "definition": "通过运算消去部分未知数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "arithmetic mean",
+    "zh": "算术平均数",
+    "abbr": "",
+    "definition": "若干数之和除以个数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "geometric mean",
+    "zh": "几何平均数",
+    "abbr": "",
+    "definition": "非负数乘积的相应次方根"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "AM-GM inequality",
+    "zh": "基本不等式",
+    "abbr": "",
+    "definition": "非负实数算术平均数不小于几何平均数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "Cauchy–Schwarz inequality",
+    "zh": "柯西—施瓦茨不等式",
+    "abbr": "",
+    "definition": "内积绝对值不超过向量长度之积"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 4,
+    "topic": "方程与不等式",
+    "en": "inequality proof",
+    "zh": "不等式证明",
+    "abbr": "",
+    "definition": "使用等价变形或放缩等方法建立大小关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "angle",
+    "zh": "角",
+    "abbr": "",
+    "definition": "两条射线之间的旋转量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "radian",
+    "zh": "弧度",
+    "abbr": "",
+    "definition": "用弧长与半径之比度量角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "degree measure",
+    "zh": "角度制",
+    "abbr": "",
+    "definition": "把周角定义为三百六十度"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "unit circle",
+    "zh": "单位圆",
+    "abbr": "",
+    "definition": "以原点为圆心半径为一的圆"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "sine",
+    "zh": "正弦",
+    "abbr": "",
+    "definition": "单位圆对应点的纵坐标"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "cosine",
+    "zh": "余弦",
+    "abbr": "",
+    "definition": "单位圆对应点的横坐标"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "tangent",
+    "zh": "正切",
+    "abbr": "",
+    "definition": "正弦与余弦之商（分母非零）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "cotangent",
+    "zh": "余切",
+    "abbr": "",
+    "definition": "余弦与正弦之商（分母非零）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "trigonometric function",
+    "zh": "三角函数",
+    "abbr": "",
+    "definition": "与角有关的周期性函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "trigonometric identity",
+    "zh": "三角恒等式",
+    "abbr": "",
+    "definition": "在定义范围内恒成立的三角等式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "Pythagorean identity",
+    "zh": "同角三角函数基本关系",
+    "abbr": "",
+    "definition": "例如 sin²x+cos²x=1"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "angle addition formula",
+    "zh": "两角和公式",
+    "abbr": "",
+    "definition": "表达两角之和的三角函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "angle subtraction formula",
+    "zh": "两角差公式",
+    "abbr": "",
+    "definition": "表达两角之差的三角函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "double-angle formula",
+    "zh": "二倍角公式",
+    "abbr": "",
+    "definition": "表达二倍角三角函数的恒等式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "half-angle formula",
+    "zh": "半角公式",
+    "abbr": "",
+    "definition": "表达半角三角函数的恒等式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "sum-to-product identities",
+    "zh": "和差化积公式",
+    "abbr": "",
+    "definition": "将三角函数和差化为乘积"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "product-to-sum identities",
+    "zh": "积化和差公式",
+    "abbr": "",
+    "definition": "将三角函数乘积化为和差"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "induced-angle formula",
+    "zh": "诱导公式",
+    "abbr": "",
+    "definition": "利用对称与周期化简特殊角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "amplitude",
+    "zh": "振幅",
+    "abbr": "",
+    "definition": "正弦型振动偏离平衡位置的最大幅度"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "angular frequency",
+    "zh": "角频率",
+    "abbr": "",
+    "definition": "单位时间内相位的变化量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "phase shift",
+    "zh": "相位平移",
+    "abbr": "",
+    "definition": "正弦型函数图像在自变量方向的平移"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "period",
+    "zh": "周期",
+    "abbr": "",
+    "definition": "函数值重复所对应的自变量增量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "sine rule",
+    "zh": "正弦定理",
+    "abbr": "",
+    "definition": "三角形边长与对角正弦之比相等"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "cosine rule",
+    "zh": "余弦定理",
+    "abbr": "",
+    "definition": "三角形边角关系的推广勾股公式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "triangle area formula",
+    "zh": "三角形面积公式",
+    "abbr": "",
+    "definition": "可用两边及夹角正弦求面积"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 5,
+    "topic": "三角函数与三角恒等变换",
+    "en": "solution of triangles",
+    "zh": "解三角形",
+    "abbr": "",
+    "definition": "由已知边角条件求其他边角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "vector",
+    "zh": "向量",
+    "abbr": "",
+    "definition": "既有大小又有方向的量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "magnitude of a vector",
+    "zh": "向量的模",
+    "abbr": "",
+    "definition": "向量的长度"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "zero vector",
+    "zh": "零向量",
+    "abbr": "",
+    "definition": "长度为零的向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "unit vector",
+    "zh": "单位向量",
+    "abbr": "",
+    "definition": "模等于一的向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "opposite vector",
+    "zh": "相反向量",
+    "abbr": "",
+    "definition": "长度相等而方向相反的向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "equal vectors",
+    "zh": "相等向量",
+    "abbr": "",
+    "definition": "模相等且方向相同的向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "parallel vectors",
+    "zh": "平行向量",
+    "abbr": "",
+    "definition": "方向相同或相反的非零向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "collinear vectors",
+    "zh": "共线向量",
+    "abbr": "",
+    "definition": "零向量或相互平行的向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "vector addition",
+    "zh": "向量加法",
+    "abbr": "",
+    "definition": "按平行四边形法则合成向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "vector subtraction",
+    "zh": "向量减法",
+    "abbr": "",
+    "definition": "加上另一向量的相反向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "scalar multiplication",
+    "zh": "数乘向量",
+    "abbr": "",
+    "definition": "用实数改变向量长度和方向"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "linear combination",
+    "zh": "线性组合",
+    "abbr": "",
+    "definition": "多个向量数乘后的和"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "basis of the plane",
+    "zh": "平面向量基底",
+    "abbr": "",
+    "definition": "两个不共线向量构成平面表示基底"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "coordinate representation",
+    "zh": "坐标表示",
+    "abbr": "",
+    "definition": "用基底分量表示向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "dot product",
+    "zh": "数量积／点积",
+    "abbr": "",
+    "definition": "两个向量模的积与夹角余弦之积"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "orthogonal vectors",
+    "zh": "垂直向量",
+    "abbr": "",
+    "definition": "数量积为零的两个非零向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "projection",
+    "zh": "投影",
+    "abbr": "",
+    "definition": "向量沿给定方向得到的分量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "direction vector",
+    "zh": "方向向量",
+    "abbr": "",
+    "definition": "指示直线方向的非零向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "position vector",
+    "zh": "位置向量",
+    "abbr": "",
+    "definition": "从原点指向指定点的向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 6,
+    "topic": "平面向量",
+    "en": "linear dependence of planar vectors",
+    "zh": "平面向量共线条件",
+    "abbr": "",
+    "definition": "两向量成比例或其中一个为零"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "sequence",
+    "zh": "数列",
+    "abbr": "",
+    "definition": "按自然数顺序排列的一列数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "term of a sequence",
+    "zh": "数列的项",
+    "abbr": "",
+    "definition": "数列指定序号对应的数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "general term",
+    "zh": "通项",
+    "abbr": "",
+    "definition": "表示第 n 项的表达式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "partial sum",
+    "zh": "前 n 项和",
+    "abbr": "",
+    "definition": "从第一项到第 n 项之和"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "arithmetic sequence",
+    "zh": "等差数列",
+    "abbr": "",
+    "definition": "相邻两项的差为常数的数列"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "common difference",
+    "zh": "公差",
+    "abbr": "",
+    "definition": "等差数列相邻两项的固定差"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "geometric sequence",
+    "zh": "等比数列",
+    "abbr": "",
+    "definition": "后项与前项比值为常数且前项非零的数列"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "common ratio",
+    "zh": "公比",
+    "abbr": "",
+    "definition": "等比数列相邻两项的固定比"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "recursive formula",
+    "zh": "递推公式",
+    "abbr": "",
+    "definition": "通过前面若干项确定后续项"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "explicit formula",
+    "zh": "显式公式",
+    "abbr": "",
+    "definition": "直接由项序号计算通项的表达式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "summation symbol",
+    "zh": "求和符号",
+    "abbr": "",
+    "definition": "用 Σ 表示按序累加"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "arithmetic series",
+    "zh": "等差数列求和",
+    "abbr": "",
+    "definition": "对等差数列前若干项求和"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "geometric series",
+    "zh": "等比数列求和",
+    "abbr": "",
+    "definition": "对等比数列前若干项求和"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "telescoping sum",
+    "zh": "裂项相消求和",
+    "abbr": "",
+    "definition": "把各项拆分后利用相消求和"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "method of differences",
+    "zh": "作差法",
+    "abbr": "",
+    "definition": "比较相邻项差值研究数列"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "method of ratios",
+    "zh": "作商法",
+    "abbr": "",
+    "definition": "比较相邻项比值研究数列"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "mathematical induction",
+    "zh": "数学归纳法",
+    "abbr": "",
+    "definition": "先证初始情形再证明递推延续"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "base case",
+    "zh": "归纳起点",
+    "abbr": "",
+    "definition": "数学归纳法需要验证的初始序号"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "induction hypothesis",
+    "zh": "归纳假设",
+    "abbr": "",
+    "definition": "假设命题在某一序号处成立"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "inductive step",
+    "zh": "归纳步骤",
+    "abbr": "",
+    "definition": "从一个序号成立推出下一序号成立"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "monotone sequence",
+    "zh": "单调数列",
+    "abbr": "",
+    "definition": "各项随序号增加保持同一增减方向"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 7,
+    "topic": "数列与数学归纳法",
+    "en": "bounded sequence",
+    "zh": "有界数列",
+    "abbr": "",
+    "definition": "所有项有共同上下界的数列"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "solid geometry",
+    "zh": "立体几何",
+    "abbr": "",
+    "definition": "研究空间点线面及立体图形的几何"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "point",
+    "zh": "点",
+    "abbr": "",
+    "definition": "不具有长度宽度和厚度的基本对象"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "line",
+    "zh": "直线",
+    "abbr": "",
+    "definition": "空间中向两方向无限延伸的直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "plane",
+    "zh": "平面",
+    "abbr": "",
+    "definition": "二维无限延展的几何对象"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "skew lines",
+    "zh": "异面直线",
+    "abbr": "",
+    "definition": "既不平行也不相交的两条空间直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "parallel lines",
+    "zh": "平行直线",
+    "abbr": "",
+    "definition": "同一平面内没有交点的两条不同直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "line-plane parallelism",
+    "zh": "线面平行",
+    "abbr": "",
+    "definition": "直线与平面没有公共点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "plane-plane parallelism",
+    "zh": "面面平行",
+    "abbr": "",
+    "definition": "两个不同平面没有公共点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "line-plane perpendicularity",
+    "zh": "线面垂直",
+    "abbr": "",
+    "definition": "直线与平面内所有过垂足的直线垂直"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "plane-plane perpendicularity",
+    "zh": "面面垂直",
+    "abbr": "",
+    "definition": "两个平面的二面角为直角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "dihedral angle",
+    "zh": "二面角",
+    "abbr": "",
+    "definition": "两个半平面共享棱线形成的空间角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "angle between a line and a plane",
+    "zh": "线面角",
+    "abbr": "",
+    "definition": "直线与其在平面上射影的夹角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "space angle between lines",
+    "zh": "异面直线所成角",
+    "abbr": "",
+    "definition": "通过平移使两条直线相交后确定的锐角或直角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "orthogonal projection",
+    "zh": "正投影",
+    "abbr": "",
+    "definition": "沿垂直于投影面的方向作投影"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "polyhedron",
+    "zh": "多面体",
+    "abbr": "",
+    "definition": "由有限个平面多边形围成的几何体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "prism",
+    "zh": "棱柱",
+    "abbr": "",
+    "definition": "两底面平行全等且侧棱平行的多面体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "pyramid",
+    "zh": "棱锥",
+    "abbr": "",
+    "definition": "一个多边形底面与共顶点三角形侧面组成的多面体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "frustum",
+    "zh": "棱台／圆台",
+    "abbr": "",
+    "definition": "棱锥或圆锥被平行于底面的平面截得部分"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "cylinder",
+    "zh": "圆柱",
+    "abbr": "",
+    "definition": "由平行全等圆底面与侧面围成的立体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "cone",
+    "zh": "圆锥",
+    "abbr": "",
+    "definition": "以圆为底面且侧面汇于顶点的立体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "sphere",
+    "zh": "球",
+    "abbr": "",
+    "definition": "到球心距离不超过半径的空间点集"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "surface area",
+    "zh": "表面积",
+    "abbr": "",
+    "definition": "立体表面各部分面积之和"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "volume",
+    "zh": "体积",
+    "abbr": "",
+    "definition": "立体占据空间的度量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "cross section",
+    "zh": "截面",
+    "abbr": "",
+    "definition": "平面截立体所得的平面图形"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 8,
+    "topic": "立体几何",
+    "en": "three-view drawing",
+    "zh": "三视图",
+    "abbr": "",
+    "definition": "物体的正视俯视和侧视图"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "Cartesian coordinate system",
+    "zh": "平面直角坐标系",
+    "abbr": "",
+    "definition": "由两条相互垂直的数轴建立的坐标系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "coordinate",
+    "zh": "坐标",
+    "abbr": "",
+    "definition": "点相对于坐标系的位置数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "distance formula",
+    "zh": "两点间距离公式",
+    "abbr": "",
+    "definition": "由坐标差计算两点距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "midpoint formula",
+    "zh": "中点坐标公式",
+    "abbr": "",
+    "definition": "线段中点坐标为端点坐标的平均"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "slope",
+    "zh": "斜率",
+    "abbr": "",
+    "definition": "直线倾斜程度的代数量（竖直线斜率不存在）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "inclination angle",
+    "zh": "倾斜角",
+    "abbr": "",
+    "definition": "直线与 x 轴正向所成的规定角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "point-slope form",
+    "zh": "点斜式",
+    "abbr": "",
+    "definition": "用已知点和斜率表示直线方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "slope-intercept form",
+    "zh": "斜截式",
+    "abbr": "",
+    "definition": "形如 y=kx+b 的直线方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "two-point form",
+    "zh": "两点式",
+    "abbr": "",
+    "definition": "通过两个不同点确定直线方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "general equation of a line",
+    "zh": "直线的一般式方程",
+    "abbr": "",
+    "definition": "形如 Ax+By+C=0 且 A B 不同时为零"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "intercept",
+    "zh": "截距",
+    "abbr": "",
+    "definition": "直线与坐标轴交点的有向坐标"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "intersection point",
+    "zh": "交点",
+    "abbr": "",
+    "definition": "两条曲线共有的点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "distance from a point to a line",
+    "zh": "点到直线的距离",
+    "abbr": "",
+    "definition": "点到直线的最短距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "distance between parallel lines",
+    "zh": "平行线间距离",
+    "abbr": "",
+    "definition": "两平行直线之间的垂直距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "circle",
+    "zh": "圆",
+    "abbr": "",
+    "definition": "平面内到定点距离等于定长的点集"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "center of a circle",
+    "zh": "圆心",
+    "abbr": "",
+    "definition": "圆上各点等距的定点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "radius",
+    "zh": "半径",
+    "abbr": "",
+    "definition": "圆心到圆上任一点的距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "standard equation of a circle",
+    "zh": "圆的标准方程",
+    "abbr": "",
+    "definition": "形如 (x-a)²+(y-b)²=r²"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "general equation of a circle",
+    "zh": "圆的一般方程",
+    "abbr": "",
+    "definition": "由二元二次方程经配方确定的圆"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "tangent line",
+    "zh": "切线",
+    "abbr": "",
+    "definition": "与光滑曲线在指定点切触的直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "secant line",
+    "zh": "割线",
+    "abbr": "",
+    "definition": "与曲线有两个不同公共点的直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "chord",
+    "zh": "弦",
+    "abbr": "",
+    "definition": "圆上两点连成的线段"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "locus",
+    "zh": "轨迹",
+    "abbr": "",
+    "definition": "满足给定几何条件的点的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 9,
+    "topic": "平面解析几何与直线、圆",
+    "en": "parametric equation",
+    "zh": "参数方程",
+    "abbr": "",
+    "definition": "利用中间参数表示曲线坐标的方程组"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "conic section",
+    "zh": "圆锥曲线",
+    "abbr": "",
+    "definition": "椭圆双曲线和抛物线的统称"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "ellipse",
+    "zh": "椭圆",
+    "abbr": "",
+    "definition": "到两个定点距离之和为定值的轨迹"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "hyperbola",
+    "zh": "双曲线",
+    "abbr": "",
+    "definition": "到两个定点距离之差绝对值为定值的轨迹"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "parabola",
+    "zh": "抛物线",
+    "abbr": "",
+    "definition": "到定点与定直线距离相等的点的轨迹"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "focus",
+    "zh": "焦点",
+    "abbr": "",
+    "definition": "定义圆锥曲线的特殊定点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "directrix",
+    "zh": "准线",
+    "abbr": "",
+    "definition": "用于定义抛物线或描述圆锥曲线的定直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "eccentricity",
+    "zh": "离心率",
+    "abbr": "",
+    "definition": "表征圆锥曲线形状的无量纲参数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "major axis",
+    "zh": "长轴",
+    "abbr": "",
+    "definition": "椭圆较长的对称轴对应线段"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "minor axis",
+    "zh": "短轴",
+    "abbr": "",
+    "definition": "椭圆较短的对称轴对应线段"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "semi-major axis",
+    "zh": "半长轴",
+    "abbr": "",
+    "definition": "椭圆长轴长度的一半"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "semi-minor axis",
+    "zh": "半短轴",
+    "abbr": "",
+    "definition": "椭圆短轴长度的一半"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "focal distance",
+    "zh": "焦距",
+    "abbr": "",
+    "definition": "两焦点之间的距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "focal parameter",
+    "zh": "焦参数",
+    "abbr": "",
+    "definition": "抛物线或圆锥曲线有关焦点的参数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "vertex",
+    "zh": "顶点",
+    "abbr": "",
+    "definition": "圆锥曲线与其对称轴的特定交点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "asymptote of a hyperbola",
+    "zh": "双曲线渐近线",
+    "abbr": "",
+    "definition": "双曲线分支在无穷远处趋近的直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "standard equation of an ellipse",
+    "zh": "椭圆标准方程",
+    "abbr": "",
+    "definition": "坐标轴沿对称轴时椭圆的规范方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "standard equation of a hyperbola",
+    "zh": "双曲线标准方程",
+    "abbr": "",
+    "definition": "坐标轴沿对称轴时双曲线的规范方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "standard equation of a parabola",
+    "zh": "抛物线标准方程",
+    "abbr": "",
+    "definition": "顶点位于原点且对称轴为坐标轴的方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "focal chord",
+    "zh": "焦点弦",
+    "abbr": "",
+    "definition": "经过焦点且端点在圆锥曲线上的弦"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "latus rectum",
+    "zh": "通径",
+    "abbr": "",
+    "definition": "过焦点且垂直于对称轴的焦点弦"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 10,
+    "topic": "圆锥曲线",
+    "en": "reflection property",
+    "zh": "光学性质／反射性质",
+    "abbr": "",
+    "definition": "圆锥曲线切线对应的反射方向规律"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "limit",
+    "zh": "极限",
+    "abbr": "",
+    "definition": "自变量趋近某处时函数值的趋近趋势"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "instantaneous rate of change",
+    "zh": "瞬时变化率",
+    "abbr": "",
+    "definition": "自变量变化量趋零时的平均变化率极限"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "average rate of change",
+    "zh": "平均变化率",
+    "abbr": "",
+    "definition": "函数值改变量与自变量改变量之比"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "derivative",
+    "zh": "导数",
+    "abbr": "",
+    "definition": "差商极限给出的局部线性变化率"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "derivative at a point",
+    "zh": "一点处的导数",
+    "abbr": "",
+    "definition": "函数在指定点的差商极限"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "derivative function",
+    "zh": "导函数",
+    "abbr": "",
+    "definition": "将各点导数作为函数值的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "differentiability",
+    "zh": "可导性",
+    "abbr": "",
+    "definition": "函数在给定点存在有限导数的性质"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "continuity",
+    "zh": "连续性",
+    "abbr": "",
+    "definition": "函数值与邻近自变量的极限相一致"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "tangent slope",
+    "zh": "切线斜率",
+    "abbr": "",
+    "definition": "导数在指定点的几何意义"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "tangent line equation",
+    "zh": "切线方程",
+    "abbr": "",
+    "definition": "由切点及导数确定的切线方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "power rule",
+    "zh": "幂函数求导法则",
+    "abbr": "",
+    "definition": "对 x 的实数幂求导的基本规则"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "product rule",
+    "zh": "乘积求导法则",
+    "abbr": "",
+    "definition": "两个可导函数乘积的求导规则"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "quotient rule",
+    "zh": "商的求导法则",
+    "abbr": "",
+    "definition": "两个可导函数商的求导规则（分母非零）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "chain rule",
+    "zh": "复合函数求导法则",
+    "abbr": "",
+    "definition": "外层导数乘以内层导数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "stationary point",
+    "zh": "驻点",
+    "abbr": "",
+    "definition": "可导且一阶导数为零的点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "critical point",
+    "zh": "临界点",
+    "abbr": "",
+    "definition": "定义域内导数为零或不存在的点（在适用定义下）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "local maximum",
+    "zh": "局部极大值",
+    "abbr": "",
+    "definition": "函数在一点附近不小于邻近函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "local minimum",
+    "zh": "局部极小值",
+    "abbr": "",
+    "definition": "函数在一点附近不大于邻近函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "global maximum",
+    "zh": "全局最大值",
+    "abbr": "",
+    "definition": "整个定义域上取得的最大函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "global minimum",
+    "zh": "全局最小值",
+    "abbr": "",
+    "definition": "整个定义域上取得的最小函数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "monotonicity test",
+    "zh": "单调性判定",
+    "abbr": "",
+    "definition": "根据导数符号判断函数增减"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "optimization problem",
+    "zh": "最优化问题",
+    "abbr": "",
+    "definition": "在约束条件下求目标量最大或最小"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 11,
+    "topic": "导数、极值与函数应用",
+    "en": "parameter discussion",
+    "zh": "含参分类讨论",
+    "abbr": "",
+    "definition": "按参数取值区分方程或函数的不同情形"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "population",
+    "zh": "总体",
+    "abbr": "",
+    "definition": "研究对象的全体"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "individual",
+    "zh": "个体",
+    "abbr": "",
+    "definition": "总体中的单个对象"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "sample",
+    "zh": "样本",
+    "abbr": "",
+    "definition": "从总体中抽取的部分观察对象"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "sample size",
+    "zh": "样本容量",
+    "abbr": "",
+    "definition": "样本中观测单位的数量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "random sampling",
+    "zh": "随机抽样",
+    "abbr": "",
+    "definition": "按照规定随机机制抽取样本"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "simple random sampling",
+    "zh": "简单随机抽样",
+    "abbr": "",
+    "definition": "每个等容量样本被抽中的概率相同"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "stratified sampling",
+    "zh": "分层抽样",
+    "abbr": "",
+    "definition": "先分层后按方案在各层中抽取样本"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "systematic sampling",
+    "zh": "系统抽样",
+    "abbr": "",
+    "definition": "按固定间隔选择抽样单位"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "frequency",
+    "zh": "频数",
+    "abbr": "",
+    "definition": "某类数据出现的次数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "relative frequency",
+    "zh": "频率",
+    "abbr": "",
+    "definition": "某类频数占样本容量的比例"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "frequency distribution",
+    "zh": "频率分布",
+    "abbr": "",
+    "definition": "各组数据所占比例的分布"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "histogram",
+    "zh": "频率分布直方图",
+    "abbr": "",
+    "definition": "用矩形面积表示各组频率的图表"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "bar chart",
+    "zh": "条形图",
+    "abbr": "",
+    "definition": "用条形长度表示类别数量的图表"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "scatter plot",
+    "zh": "散点图",
+    "abbr": "",
+    "definition": "用点表示两个变量的成对观测值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "mean",
+    "zh": "均值",
+    "abbr": "",
+    "definition": "数据之和与个数的比值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "median",
+    "zh": "中位数",
+    "abbr": "",
+    "definition": "排序后位于中间位置的统计量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "mode",
+    "zh": "众数",
+    "abbr": "",
+    "definition": "出现次数最多的数值或类别"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "variance",
+    "zh": "方差",
+    "abbr": "",
+    "definition": "离均差平方的平均（总体或样本定义须区分）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "standard deviation",
+    "zh": "标准差",
+    "abbr": "",
+    "definition": "方差的非负平方根"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "percentile",
+    "zh": "百分位数",
+    "abbr": "",
+    "definition": "按数据排序定位相应累计比例的数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "quartile",
+    "zh": "四分位数",
+    "abbr": "",
+    "definition": "把排序数据大致分成四部分的分位点"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "box plot",
+    "zh": "箱线图",
+    "abbr": "",
+    "definition": "展示中位数四分位数与离散程度的图"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "linear regression",
+    "zh": "线性回归",
+    "abbr": "",
+    "definition": "用线性模型描述变量间的统计关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "correlation coefficient",
+    "zh": "相关系数",
+    "abbr": "",
+    "definition": "衡量变量线性相关程度的无量纲量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 12,
+    "topic": "统计与数据分析",
+    "en": "least squares method",
+    "zh": "最小二乘法",
+    "abbr": "",
+    "definition": "最小化残差平方和的拟合方法"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "random experiment",
+    "zh": "随机试验",
+    "abbr": "",
+    "definition": "结果具有不确定性而条件可重复的试验"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "sample space",
+    "zh": "样本空间",
+    "abbr": "",
+    "definition": "随机试验所有可能结果的集合"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "sample point",
+    "zh": "样本点",
+    "abbr": "",
+    "definition": "样本空间的一个基本结果"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "event",
+    "zh": "事件",
+    "abbr": "",
+    "definition": "样本空间的子集"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "certain event",
+    "zh": "必然事件",
+    "abbr": "",
+    "definition": "包含全部样本点的事件"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "impossible event",
+    "zh": "不可能事件",
+    "abbr": "",
+    "definition": "不包含任何样本点的事件"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "complementary event",
+    "zh": "对立事件",
+    "abbr": "",
+    "definition": "给定事件在样本空间中的补集"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "mutually exclusive events",
+    "zh": "互斥事件",
+    "abbr": "",
+    "definition": "不能同时发生的两个事件"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "independent events",
+    "zh": "相互独立事件",
+    "abbr": "",
+    "definition": "一个事件的发生不改变另一个的概率"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "classical probability",
+    "zh": "古典概型",
+    "abbr": "",
+    "definition": "有限等可能基本结果下的概率模型"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "geometric probability",
+    "zh": "几何概型",
+    "abbr": "",
+    "definition": "按长度面积或体积比例确定概率的模型"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "conditional probability",
+    "zh": "条件概率",
+    "abbr": "",
+    "definition": "在指定事件已发生前提下计算的概率"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "addition rule of probability",
+    "zh": "概率加法公式",
+    "abbr": "",
+    "definition": "计算两个事件并集概率的规则"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "multiplication rule of probability",
+    "zh": "概率乘法公式",
+    "abbr": "",
+    "definition": "用条件概率计算交事件概率的规则"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "law of total probability",
+    "zh": "全概率公式",
+    "abbr": "",
+    "definition": "按互斥且完备的事件组分解概率"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "Bayes' theorem",
+    "zh": "贝叶斯公式",
+    "abbr": "",
+    "definition": "由条件概率计算反向条件概率"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "random variable",
+    "zh": "随机变量",
+    "abbr": "",
+    "definition": "为随机结果赋予实数值的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "discrete random variable",
+    "zh": "离散型随机变量",
+    "abbr": "",
+    "definition": "取值可列举的随机变量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "probability distribution",
+    "zh": "概率分布",
+    "abbr": "",
+    "definition": "描述随机变量各取值概率的规律"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "probability mass function",
+    "zh": "概率质量函数",
+    "abbr": "PMF",
+    "definition": "给出离散随机变量各取值概率的函数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "expected value",
+    "zh": "数学期望",
+    "abbr": "",
+    "definition": "按概率加权的随机变量平均值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "variance of a random variable",
+    "zh": "随机变量方差",
+    "abbr": "",
+    "definition": "随机变量偏离期望的平方的期望"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "Bernoulli trial",
+    "zh": "伯努利试验",
+    "abbr": "",
+    "definition": "只有成功失败两种结果的试验"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "binomial distribution",
+    "zh": "二项分布",
+    "abbr": "",
+    "definition": "独立重复伯努利试验中成功次数的分布"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 13,
+    "topic": "概率与随机变量",
+    "en": "normal distribution",
+    "zh": "正态分布",
+    "abbr": "",
+    "definition": "钟形密度曲线对应的连续概率分布"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "addition principle",
+    "zh": "分类加法计数原理",
+    "abbr": "",
+    "definition": "互不重叠的类别个数相加"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "multiplication principle",
+    "zh": "分步乘法计数原理",
+    "abbr": "",
+    "definition": "相继完成各步骤的方案数相乘"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "factorial",
+    "zh": "阶乘",
+    "abbr": "",
+    "definition": "从一到指定正整数的连乘（0! 定义为 1）"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "permutation",
+    "zh": "排列",
+    "abbr": "",
+    "definition": "从元素中取出若干个并考虑顺序的安排"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "combination",
+    "zh": "组合",
+    "abbr": "",
+    "definition": "从元素中取出若干个而不考虑顺序的选取"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "permutation number",
+    "zh": "排列数",
+    "abbr": "",
+    "definition": "从 n 个不同元素中取 m 个排列的个数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "combination number",
+    "zh": "组合数",
+    "abbr": "",
+    "definition": "从 n 个不同元素中选 m 个的个数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "binomial theorem",
+    "zh": "二项式定理",
+    "abbr": "",
+    "definition": "展开两项和的非负整数次幂"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "binomial coefficient",
+    "zh": "二项式系数",
+    "abbr": "",
+    "definition": "二项展开式中的组合数系数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "Pascal's triangle",
+    "zh": "杨辉三角",
+    "abbr": "",
+    "definition": "按相邻两数之和构造的组合数三角阵"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "general term of binomial expansion",
+    "zh": "二项展开式通项",
+    "abbr": "",
+    "definition": "描述展开式第 k+1 项的公式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "complementary counting",
+    "zh": "间接计数法",
+    "abbr": "",
+    "definition": "用总数减去不满足条件的方案数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "inclusion–exclusion principle",
+    "zh": "容斥原理",
+    "abbr": "",
+    "definition": "通过交集修正并集计数中的重复"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "arrangement with repetition",
+    "zh": "可重复排列",
+    "abbr": "",
+    "definition": "元素允许重复选取时的有序安排"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 14,
+    "topic": "计数原理、排列组合与二项式",
+    "en": "combination with repetition",
+    "zh": "可重复组合",
+    "abbr": "",
+    "definition": "元素允许重复选取时的不计序选取"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "complex number",
+    "zh": "复数",
+    "abbr": "",
+    "definition": "形如 a+bi 的数，其中 i²=-1"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "real part",
+    "zh": "实部",
+    "abbr": "",
+    "definition": "复数 a+bi 中的 a"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "imaginary part",
+    "zh": "虚部",
+    "abbr": "",
+    "definition": "复数 a+bi 中的 b"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "imaginary unit",
+    "zh": "虚数单位",
+    "abbr": "",
+    "definition": "满足 i²=-1 的符号 i"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "complex conjugate",
+    "zh": "共轭复数",
+    "abbr": "",
+    "definition": "将 a+bi 变为 a-bi"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "modulus of a complex number",
+    "zh": "复数的模",
+    "abbr": "",
+    "definition": "复平面上相应点到原点的距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "complex plane",
+    "zh": "复平面",
+    "abbr": "",
+    "definition": "用平面点表示复数的坐标平面"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "argument of a complex number",
+    "zh": "复数的辐角",
+    "abbr": "",
+    "definition": "非零复数对应向量与正实轴的角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "algebraic form of a complex number",
+    "zh": "复数代数形式",
+    "abbr": "",
+    "definition": "形如 a+bi 的表达方式"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "trigonometric form of a complex number",
+    "zh": "复数三角形式",
+    "abbr": "",
+    "definition": "用模和角的三角函数表示复数"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "equivalent transformation",
+    "zh": "等价变形",
+    "abbr": "",
+    "definition": "保持原命题或原方程解集不变的变换"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "classification by cases",
+    "zh": "分类讨论",
+    "abbr": "",
+    "definition": "按互斥且完整的条件分情况推理"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "proof by contradiction",
+    "zh": "反证法",
+    "abbr": "",
+    "definition": "假设结论不成立并推出矛盾"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "direct proof",
+    "zh": "直接证明",
+    "abbr": "",
+    "definition": "从已知条件经推理得到结论"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "mathematical modelling",
+    "zh": "数学建模",
+    "abbr": "",
+    "definition": "用变量关系与假设描述现实问题"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "function model",
+    "zh": "函数模型",
+    "abbr": "",
+    "definition": "用函数表达现实数量间的关系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "parameter",
+    "zh": "参数",
+    "abbr": "",
+    "definition": "用于刻画函数族或模型情形的量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "numerical approximation",
+    "zh": "数值近似",
+    "abbr": "",
+    "definition": "采用有限计算求近似数值"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 15,
+    "topic": "复数与数学思想",
+    "en": "error analysis",
+    "zh": "误差分析",
+    "abbr": "",
+    "definition": "研究近似与真实值的差异来源和大小"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "spatial vector",
+    "zh": "空间向量",
+    "abbr": "",
+    "definition": "在三维空间中具有大小与方向的量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "spatial coordinate system",
+    "zh": "空间直角坐标系",
+    "abbr": "",
+    "definition": "三条两两垂直坐标轴建立的三维坐标系"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "normal vector",
+    "zh": "法向量",
+    "abbr": "",
+    "definition": "垂直于给定平面的非零向量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "vector equation of a line",
+    "zh": "直线的向量方程",
+    "abbr": "",
+    "definition": "利用位置向量和方向向量描述直线"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "plane equation",
+    "zh": "平面方程",
+    "abbr": "",
+    "definition": "用坐标关系刻画三维平面的方程"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "dot product in space",
+    "zh": "空间向量数量积",
+    "abbr": "",
+    "definition": "按模长与夹角余弦定义的运算"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "angle between planes",
+    "zh": "平面间夹角",
+    "abbr": "",
+    "definition": "由法向量夹角确定的锐角或直角"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "distance from a point to a plane",
+    "zh": "点到平面的距离",
+    "abbr": "",
+    "definition": "点沿垂直方向到平面的最短距离"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "projection vector",
+    "zh": "投影向量",
+    "abbr": "",
+    "definition": "向量在指定方向或子空间上的正交分量"
+  },
+  {
+    "category": "high-school-mathematics",
+    "chapter": 16,
+    "topic": "高中拓展：空间向量与坐标法",
+    "en": "direction cosine",
+    "zh": "方向余弦",
+    "abbr": "",
+    "definition": "向量与坐标轴正向夹角的余弦"
   }
 ]

@@ -36,3 +36,6 @@ The Calculus volume contains 361 entries across 16 topics. An optional `notation
 
 ## Kafka editorial provenance
 The 283-row, 16-chapter `glossaries/apache-kafka.md` is an original reference with a preface and concept contrasts. The build intentionally preserves this Markdown and renders its indexed rows to `pdf/apache-kafka.pdf` using `scripts/render_kafka_pdf.py`; mirror to `docs/pdf/`.
+
+## High School Mathematics
+The high-school mathematics source is `data/high-school-mathematics.tsv` (351 entries in 16 topics). Build JSON, Markdown and PDF with `scripts/build.py`, which requires a Chinese TrueType font for PDF generation.

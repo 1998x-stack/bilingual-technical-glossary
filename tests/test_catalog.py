@@ -15,6 +15,11 @@ class CatalogTests(unittest.TestCase):
   rows=[t for t in DATA if t['category']=='data-structures']
   self.assertEqual(len(rows),352)
   self.assertEqual(len({t['chapter'] for t in rows}),14)
+ def test_high_school_mathematics(self):
+  rows=[t for t in DATA if t['category']=='high-school-mathematics']
+  self.assertEqual(len(rows),351)
+  self.assertEqual(len(set(t['chapter'] for t in rows)),16)
+  self.assertIn('derivative',{t['en'] for t in rows})
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:
