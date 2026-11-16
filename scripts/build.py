@@ -32,7 +32,8 @@ def merge_infra(data):
  return add+data
 
 def merge_compiler(data):
- if any(t['category']=='compiler-principles' for t in data):return data
+ # Compiler TSV is the editable source; replace indexed compiler rows on rebuild.
+ data=[t for t in data if t['category']!='compiler-principles']
  topic='';chapter=0;add=[]
  for line in (ROOT/'data/compiler-principles.tsv').read_text(encoding='utf8').splitlines():
   if not line.strip():continue
