@@ -10,7 +10,7 @@ REQUIRED=['category','chapter','topic','en','zh','abbr','definition']
 fail=[]
 def check(test,message):
  if not test:fail.append(message)
-check(len(CATALOG)==14,'Expected 14 subject categories')
+check(len(CATALOG)==len({t['category'] for t in TERMS}),'Catalog does not cover all indexed domains')
 check(len(TERMS)>=5100,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
 check(slugs=={t['category'] for t in TERMS},'Catalog category slugs differ from terms')
@@ -40,6 +40,7 @@ for cat in CATALOG:
   with pdf.open('rb') as f:check(f.read(5)==b'%PDF-',f'Invalid PDF header {slug}')
 site=json.loads((ROOT/'docs/data/terms.json').read_text(encoding='utf8'))
 check(site==TERMS,'Pages search index differs from source data')
+check(sum(c['count'] for c in CATALOG)==len(TERMS),'Catalog total differs from indexed terms')
 with (ROOT/'data/terms.csv').open(encoding='utf8',newline='') as f:
  rows=list(csv.DictReader(f));check(len(rows)==len(TERMS),'CSV count differs from JSON')
 for path in ['docs/index.html','docs/styles.css','docs/app.js','docs/favicon.svg','site/index.html','site/styles.css','site/app.js','README.md','README.zh-CN.md','AGENTS.md','.github/workflows/pages.yml']:
