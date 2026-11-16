@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.0 — 2026-11-16
+
+- Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.
+- Indexed GPU Kernel terms in JSON/CSV and the static search site, expanding coverage to 2,647 indexed entries across 113 chapters.
+- Synchronized site downloads, repository READMEs, the build catalog, and regression checks.
+
 ## v1.0.0 — 2026-11-16
 
 - Initialized the bilingual glossary repository.

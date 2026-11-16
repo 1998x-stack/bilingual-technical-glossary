@@ -61,5 +61,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "gpu-kernel",
+    "en": "GPU Kernel Engineering",
+    "zh": "GPU Kernel / GPU 核函数",
+    "description": "CUDA, PTX, Triton, memory hierarchy, tensor cores, performance engineering and debugging",
+    "icon": "cpu",
+    "count": 255,
+    "topics": 13
   }
 ]

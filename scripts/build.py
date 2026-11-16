@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Markdown, CSV, site indexes, and a PDF for AI Infrastructure."""
+"""Build Markdown, CSV, site indexes, and AI Infra PDF; preserve GPU Kernel PDF."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, json, shutil, re
@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/terms.json'
 CATALOG=[
  ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
+ ('gpu-kernel','GPU Kernel Engineering','GPU Kernel / GPU 核函数','CUDA, PTX, Triton, GPU programming and kernel performance','cpu'),
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
  ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
  ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),

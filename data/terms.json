@@ -21526,5 +21526,2300 @@
     "zh": "可信区间",
     "abbr": "",
     "definition": "贝叶斯后验概率意义"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "GPU Kernel",
+    "zh": "GPU 核函数",
+    "abbr": "",
+    "definition": "在加速器设备端执行、由大量并行工作项共同运行的计算程序。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Host",
+    "zh": "主机端",
+    "abbr": "",
+    "definition": "通常指 CPU 侧代码，负责分配资源、准备数据及发起调用。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Device",
+    "zh": "设备端",
+    "abbr": "",
+    "definition": "指 GPU 等执行计算任务的加速器及其执行环境。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Kernel Launch",
+    "zh": "核函数启动",
+    "abbr": "",
+    "definition": "主机或设备将核函数提交给 GPU 执行的操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Launch Configuration",
+    "zh": "启动配置",
+    "abbr": "",
+    "definition": "指定网格、线程块、共享内存等运行参数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Execution Configuration",
+    "zh": "执行配置",
+    "abbr": "",
+    "definition": "CUDA 中描述网格维度和线程块维度等的配置。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "GPU Programming Model",
+    "zh": "GPU 编程模型",
+    "abbr": "",
+    "definition": "描述线程层次、存储空间和执行协作规则的抽象。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Single Instruction, Multiple Threads (SIMT)",
+    "zh": "单指令多线程",
+    "abbr": "SIMT",
+    "definition": "多个逻辑线程以成组方式执行，线程可具有独立控制流。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Single Instruction, Multiple Data (SIMD)",
+    "zh": "单指令多数据",
+    "abbr": "SIMD",
+    "definition": "单条指令对多个数据元素执行相同操作的计算方式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Data Parallelism",
+    "zh": "数据并行",
+    "abbr": "",
+    "definition": "将同一计算应用到不同数据分片。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Task Parallelism",
+    "zh": "任务并行",
+    "abbr": "",
+    "definition": "同时执行不同任务或工作流。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Throughput-oriented Architecture",
+    "zh": "吞吐量导向架构",
+    "abbr": "",
+    "definition": "优先提高单位时间完成的总体工作量。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Latency Hiding",
+    "zh": "延迟隐藏",
+    "abbr": "",
+    "definition": "等待访存或依赖时切换到其他可运行工作以保持执行单元繁忙。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Compute Capability",
+    "zh": "计算能力版本",
+    "abbr": "",
+    "definition": "NVIDIA 用于标识设备功能与指令支持范围的架构版本。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Device Function",
+    "zh": "设备函数",
+    "abbr": "",
+    "definition": "可在设备代码内调用、通常不能从主机直接启动的函数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 1,
+    "topic": "基础概念与运行模型",
+    "en": "Kernel Fusion",
+    "zh": "核函数融合",
+    "abbr": "",
+    "definition": "把连续运算合并到一个核函数，减少中间数据和启动开销。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Streaming Multiprocessor (SM)",
+    "zh": "流式多处理器",
+    "abbr": "SM",
+    "definition": "NVIDIA GPU 的主要计算资源单元，包含调度器、寄存器及执行流水线。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Compute Unit (CU)",
+    "zh": "计算单元",
+    "abbr": "CU",
+    "definition": "AMD GPU 中与 SM 大致处于同一层级的硬件计算单元。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Grid",
+    "zh": "网格",
+    "abbr": "",
+    "definition": "一次 CUDA 核函数启动时包含的全部线程块。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Thread Block",
+    "zh": "线程块",
+    "abbr": "",
+    "definition": "可协作、共享块内共享内存并进行块级同步的线程集合。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Cooperative Thread Array (CTA)",
+    "zh": "协作线程阵列",
+    "abbr": "CTA",
+    "definition": "NVIDIA 文档中与线程块密切对应的术语。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Thread Block Cluster",
+    "zh": "线程块簇",
+    "abbr": "",
+    "definition": "在支持的架构上以簇组织多个线程块，提供更大协作范围。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Warp",
+    "zh": "线程束",
+    "abbr": "",
+    "definition": "NVIDIA 中通常由 32 个线程组成的调度与执行分组。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Wavefront",
+    "zh": "波前",
+    "abbr": "",
+    "definition": "AMD GPU 的执行分组；宽度可因架构而为 32 或 64。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Lane",
+    "zh": "通道／线程槽位",
+    "abbr": "",
+    "definition": "一个 Warp 或 Wavefront 中的逻辑线程位置。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Lane ID",
+    "zh": "通道编号",
+    "abbr": "",
+    "definition": "线程在其 Warp 或 Wavefront 内的位置索引。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Thread ID",
+    "zh": "线程编号",
+    "abbr": "",
+    "definition": "标识线程在线程块内部的位置。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Block ID",
+    "zh": "线程块编号",
+    "abbr": "",
+    "definition": "标识线程块在网格中的位置。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Block Dimension",
+    "zh": "线程块维度",
+    "abbr": "",
+    "definition": "线程块在 x、y、z 方向上的线程数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Grid Dimension",
+    "zh": "网格维度",
+    "abbr": "",
+    "definition": "网格在 x、y、z 方向上的线程块数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Warp Scheduler",
+    "zh": "线程束调度器",
+    "abbr": "",
+    "definition": "选择已就绪的 Warp 发射指令的硬件单元。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Instruction Issue",
+    "zh": "指令发射",
+    "abbr": "",
+    "definition": "调度器将指令交给执行流水线的过程。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Resident Warp",
+    "zh": "驻留线程束",
+    "abbr": "",
+    "definition": "已分配到 SM 资源、尚未结束的 Warp。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Eligible Warp",
+    "zh": "就绪线程束",
+    "abbr": "",
+    "definition": "操作数与执行条件满足、可发射下一条指令的 Warp。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Active Mask",
+    "zh": "活跃掩码",
+    "abbr": "",
+    "definition": "标识 Warp 中哪些 Lane 当前参与操作的位掩码。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Thread Divergence",
+    "zh": "线程分歧",
+    "abbr": "",
+    "definition": "同一 Warp 内不同线程走入不同分支，可能增加执行成本。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Independent Thread Scheduling",
+    "zh": "独立线程调度",
+    "abbr": "",
+    "definition": "NVIDIA 特定架构起支持更灵活的 Warp 内线程执行状态管理。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 2,
+    "topic": "硬件与线程执行层级",
+    "en": "Persistent Kernel",
+    "zh": "常驻式核函数",
+    "abbr": "",
+    "definition": "由有限工作块持续从任务队列取活的执行方式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Register",
+    "zh": "寄存器",
+    "abbr": "",
+    "definition": "用于保存线程运算中的局部值，数量受硬件资源约束。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Register File",
+    "zh": "寄存器文件",
+    "abbr": "",
+    "definition": "SM 或 CU 内承载寄存器状态的物理存储资源。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Register Pressure",
+    "zh": "寄存器压力",
+    "abbr": "",
+    "definition": "一个核函数的寄存器需求对驻留并行度形成的负担。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Register Spill",
+    "zh": "寄存器溢出",
+    "abbr": "",
+    "definition": "寄存器不够时，编译器将部分值放到较慢的存储位置。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Local Memory (CUDA)",
+    "zh": "局部内存（CUDA）",
+    "abbr": "",
+    "definition": "线程私有的地址空间，常由设备内存承载；并非必然在片上。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Shared Memory (CUDA)",
+    "zh": "共享内存（CUDA）",
+    "abbr": "",
+    "definition": "同一线程块内线程可共享的片上、软件管理存储。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Local Data Share (LDS)",
+    "zh": "本地数据共享存储",
+    "abbr": "LDS",
+    "definition": "AMD GPU 中类似 CUDA 共享内存的片上存储资源。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Distributed Shared Memory (DSM)",
+    "zh": "分布式共享内存",
+    "abbr": "DSM",
+    "definition": "在支持线程块簇的架构上访问簇内其他块共享内存的机制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Global Memory",
+    "zh": "全局内存",
+    "abbr": "",
+    "definition": "设备侧大容量地址空间，可由不同线程块访问。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Device Memory",
+    "zh": "设备内存",
+    "abbr": "",
+    "definition": "GPU 可访问的设备侧内存，常由显存提供。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "High Bandwidth Memory (HBM)",
+    "zh": "高带宽内存",
+    "abbr": "HBM",
+    "definition": "用于高吞吐 GPU 的高带宽堆叠式存储技术。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "L1 Cache",
+    "zh": "一级缓存",
+    "abbr": "",
+    "definition": "靠近计算单元的较小缓存，具体结构随架构变化。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "L2 Cache",
+    "zh": "二级缓存",
+    "abbr": "",
+    "definition": "多个计算单元共享的缓存层，减少对外部显存的访问。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Cache Line",
+    "zh": "缓存行",
+    "abbr": "",
+    "definition": "缓存管理与数据传送的一种基本粒度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Shared Memory Bank",
+    "zh": "共享内存存储体",
+    "abbr": "",
+    "definition": "共享内存被划分的并行访问单元，访问冲突会影响吞吐。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Bank Conflict",
+    "zh": "存储体冲突",
+    "abbr": "",
+    "definition": "并行线程访问映射到同一 Bank 的不同位置所造成的冲突。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Memory Hierarchy",
+    "zh": "存储层级",
+    "abbr": "",
+    "definition": "从寄存器、片上缓存到外部显存的多级组织。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Memory Footprint",
+    "zh": "内存占用规模",
+    "abbr": "",
+    "definition": "运算实际需要驻留或访问的数据大小。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Memory Alignment",
+    "zh": "内存对齐",
+    "abbr": "",
+    "definition": "数据地址符合访问或传输的边界要求。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Pinned Host Memory",
+    "zh": "页锁定主机内存",
+    "abbr": "",
+    "definition": "固定在物理内存中的主机缓冲区，常用于加速异步传输。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Unified Memory",
+    "zh": "统一内存",
+    "abbr": "",
+    "definition": "通过统一地址空间和迁移机制简化主机／设备数据管理。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Page Migration",
+    "zh": "页面迁移",
+    "abbr": "",
+    "definition": "内存页面在 CPU 与 GPU 等处理器之间转移。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Memory Pool",
+    "zh": "内存池",
+    "abbr": "",
+    "definition": "对分配的内存块进行缓存和复用，以减小频繁分配开销。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 3,
+    "topic": "存储层级与硬件资源",
+    "en": "Scratchpad Memory",
+    "zh": "暂存存储器",
+    "abbr": "",
+    "definition": "软件可显式安排数据放置和复用的片上缓冲空间。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Memory Coalescing",
+    "zh": "合并访存",
+    "abbr": "",
+    "definition": "将同一 Warp 的多个相邻访问合并成较少内存事务。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Coalesced Access",
+    "zh": "合并式访问",
+    "abbr": "",
+    "definition": "地址布局有利于降低访存事务数的线程访问模式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Uncoalesced Access",
+    "zh": "非合并式访问",
+    "abbr": "",
+    "definition": "地址分散，通常需要更多事务的访问模式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Strided Access",
+    "zh": "跨步访问",
+    "abbr": "",
+    "definition": "相邻线程访问地址按固定间隔跳跃。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Contiguous Access",
+    "zh": "连续访问",
+    "abbr": "",
+    "definition": "相邻逻辑元素位于连续存储地址。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Memory Transaction",
+    "zh": "内存事务",
+    "abbr": "",
+    "definition": "GPU 存储系统执行的一次数据读取或写入请求单位。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Memory Sector",
+    "zh": "内存扇区",
+    "abbr": "",
+    "definition": "某些 NVIDIA 缓存指标中的数据传输或访问粒度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Memory Bandwidth",
+    "zh": "内存带宽",
+    "abbr": "",
+    "definition": "单位时间可传输的数据量，常以 GB/s 表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Memory Latency",
+    "zh": "内存访问延迟",
+    "abbr": "",
+    "definition": "从发起访存到数据可用所经历的时间。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Effective Bandwidth",
+    "zh": "有效带宽",
+    "abbr": "",
+    "definition": "根据有效读写字节数与实测耗时计算的传输速率。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Global Load",
+    "zh": "全局内存读取",
+    "abbr": "",
+    "definition": "从全局地址空间读取数据到线程执行资源。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Global Store",
+    "zh": "全局内存写入",
+    "abbr": "",
+    "definition": "将数据写回全局地址空间。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Vectorized Load/Store",
+    "zh": "向量化读写",
+    "abbr": "",
+    "definition": "单次指令搬运多个相邻元素的访存方法。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Asynchronous Copy",
+    "zh": "异步拷贝",
+    "abbr": "",
+    "definition": "发起数据传输后可与后续计算重叠，完成前需满足同步要求。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Double Buffering",
+    "zh": "双缓冲",
+    "abbr": "",
+    "definition": "用两组缓冲区交替加载与计算，减少等待。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Multi-stage Pipeline",
+    "zh": "多级流水线",
+    "abbr": "",
+    "definition": "在不同阶段并行组织加载、计算与写回。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Prefetching",
+    "zh": "预取",
+    "abbr": "",
+    "definition": "在实际使用之前提前请求数据。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Data Reuse",
+    "zh": "数据复用",
+    "abbr": "",
+    "definition": "多次使用已载入数据，减少重复访存。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Cache Hit Rate",
+    "zh": "缓存命中率",
+    "abbr": "",
+    "definition": "被目标缓存直接满足的访问比例。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 4,
+    "topic": "访存行为与数据搬运",
+    "en": "Read-Modify-Write (RMW)",
+    "zh": "读改写",
+    "abbr": "RMW",
+    "definition": "先读原值、计算新值再写回的操作模式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Barrier",
+    "zh": "屏障",
+    "abbr": "",
+    "definition": "让参与线程在指定执行点等待，直至同步条件满足。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Block Synchronization",
+    "zh": "线程块同步",
+    "abbr": "",
+    "definition": "同一个线程块内线程在某同步点协调执行。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Warp Synchronization",
+    "zh": "线程束同步",
+    "abbr": "",
+    "definition": "对 Warp 范围内参与线程进行同步或顺序约束。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Memory Fence",
+    "zh": "内存栅栏",
+    "abbr": "",
+    "definition": "对存储操作的可见顺序施加约束，不等同于线程屏障。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Memory Ordering",
+    "zh": "内存顺序",
+    "abbr": "",
+    "definition": "描述不同线程之间读写操作允许的观察顺序。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Memory Scope",
+    "zh": "内存作用域",
+    "abbr": "",
+    "definition": "限定同步或原子操作影响的线程范围。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Atomic Operation",
+    "zh": "原子操作",
+    "abbr": "",
+    "definition": "对共享位置执行不可分割的读改写操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Atomic Add",
+    "zh": "原子加",
+    "abbr": "",
+    "definition": "在并发修改同一变量时原子地进行加法。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Compare-and-Swap (CAS)",
+    "zh": "比较并交换",
+    "abbr": "CAS",
+    "definition": "当旧值满足比较条件时原子地写入新值。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Race Condition",
+    "zh": "竞态条件",
+    "abbr": "",
+    "definition": "结果依赖于不同线程操作时序的情形。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Data Race",
+    "zh": "数据竞争",
+    "abbr": "",
+    "definition": "缺少必要同步、对同一位置发生冲突访问的错误情形。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "相互等待条件无法满足而导致执行无法推进。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Asynchronous Execution",
+    "zh": "异步执行",
+    "abbr": "",
+    "definition": "调用返回与任务实际完成可发生在不同时间。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "CUDA Stream",
+    "zh": "CUDA 流",
+    "abbr": "",
+    "definition": "规定提交命令之间顺序关系的执行队列。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "CUDA Event",
+    "zh": "CUDA 事件",
+    "abbr": "",
+    "definition": "用于流间依赖、时间测量或执行完成通知的标记。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Concurrent Kernel Execution",
+    "zh": "并发核函数执行",
+    "abbr": "",
+    "definition": "允许不同核函数在设备上重叠运行，受硬件与资源限制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "CUDA Graph",
+    "zh": "CUDA 图",
+    "abbr": "",
+    "definition": "复用预先构建的操作依赖图，降低重复提交开销。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 5,
+    "topic": "同步、并发与一致性",
+    "en": "Cooperative Groups",
+    "zh": "协作线程组",
+    "abbr": "",
+    "definition": "CUDA 中描述多种粒度线程协作的编程接口。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Tensor",
+    "zh": "张量",
+    "abbr": "",
+    "definition": "有形状、数据类型和存储布局的多维数据对象。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Shape",
+    "zh": "形状",
+    "abbr": "",
+    "definition": "张量各维度的元素数量。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Stride",
+    "zh": "步长",
+    "abbr": "",
+    "definition": "沿某维增加一个索引时，地址按元素或字节移动的距离。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Row-major Layout",
+    "zh": "行主序布局",
+    "abbr": "",
+    "definition": "一般把行内相邻元素连续存放的布局。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Column-major Layout",
+    "zh": "列主序布局",
+    "abbr": "",
+    "definition": "一般把列内相邻元素连续存放的布局。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Contiguous Layout",
+    "zh": "连续布局",
+    "abbr": "",
+    "definition": "元素按约定顺序紧密排列、没有额外间隔的布局。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Blocked Layout",
+    "zh": "分块布局",
+    "abbr": "",
+    "definition": "将逻辑数据分割后按线程或硬件层级分配的布局。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Memory Swizzle",
+    "zh": "存储重排／交错映射",
+    "abbr": "",
+    "definition": "改变地址映射，以改善访存或减少存储体冲突。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Tiling",
+    "zh": "分块计算",
+    "abbr": "",
+    "definition": "把大问题划分为适合缓存或片上存储的小块。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Tile",
+    "zh": "数据块／计算块",
+    "abbr": "",
+    "definition": "一次由线程组或矩阵指令处理的局部数据区域。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Block Size",
+    "zh": "块大小",
+    "abbr": "",
+    "definition": "描述线程数量或数据分块尺寸；需结合上下文区分。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Tile Size",
+    "zh": "分块尺寸",
+    "abbr": "",
+    "definition": "一次计算处理的数据块在各维度上的大小。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Loop Tiling",
+    "zh": "循环分块",
+    "abbr": "",
+    "definition": "重排循环结构以提升局部性和数据复用。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Thread Mapping",
+    "zh": "线程映射",
+    "abbr": "",
+    "definition": "把数据元素或计算任务映射到线程与 Warp 的方法。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Thread Coarsening",
+    "zh": "线程粗粒化",
+    "abbr": "",
+    "definition": "让每个线程承担更多元素或操作以降低调度开销。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Vectorization",
+    "zh": "向量化",
+    "abbr": "",
+    "definition": "将多次标量操作组合为向量指令或向量化访问。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Broadcast",
+    "zh": "广播",
+    "abbr": "",
+    "definition": "根据规则把较小形状的数据扩展参与逐元素计算。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Reduction",
+    "zh": "归约",
+    "abbr": "",
+    "definition": "按结合规则把一组元素合并为较少结果，例如求和。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Scan / Prefix Sum",
+    "zh": "扫描／前缀和",
+    "abbr": "",
+    "definition": "计算各位置之前元素的累积聚合结果。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 6,
+    "topic": "张量布局、分块与映射",
+    "en": "Transpose",
+    "zh": "转置",
+    "abbr": "",
+    "definition": "交换张量的两个或多个维度，常涉及布局与搬运。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "General Matrix Multiply (GEMM)",
+    "zh": "通用矩阵乘法",
+    "abbr": "GEMM",
+    "definition": "计算矩阵乘积及可选加权累加的核心算子族。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Matrix Multiply-Accumulate (MMA)",
+    "zh": "矩阵乘加",
+    "abbr": "MMA",
+    "definition": "专用指令完成矩阵块乘法并累加到结果。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Fused Multiply-Add (FMA)",
+    "zh": "融合乘加",
+    "abbr": "FMA",
+    "definition": "在一次舍入语义下执行乘法和加法的组合操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Tensor Core",
+    "zh": "张量核心",
+    "abbr": "",
+    "definition": "NVIDIA GPU 上面向矩阵运算的专用执行单元。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Matrix Core",
+    "zh": "矩阵核心",
+    "abbr": "",
+    "definition": "AMD 等 GPU 文档中对矩阵计算专用硬件的称呼。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "MFMA",
+    "zh": "矩阵融合乘加",
+    "abbr": "",
+    "definition": "AMD GPU 指令体系中的矩阵乘加指令族。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "WMMA",
+    "zh": "Warp 级矩阵乘加",
+    "abbr": "",
+    "definition": "NVIDIA 提供的 Warp 粒度矩阵运算接口／指令体系。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "WGMMA",
+    "zh": "Warpgroup 矩阵乘加",
+    "abbr": "",
+    "definition": "特定 NVIDIA 架构上的 Warpgroup 级矩阵乘加指令。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Tensor Memory Accelerator (TMA)",
+    "zh": "张量内存加速器",
+    "abbr": "TMA",
+    "definition": "特定 NVIDIA 架构上支持张量块数据搬运的硬件机制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Warpgroup",
+    "zh": "线程束组",
+    "abbr": "",
+    "definition": "由多个 Warp 组成、服务于某些矩阵指令的执行分组。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Accumulator",
+    "zh": "累加器",
+    "abbr": "",
+    "definition": "保存部分和或矩阵乘加中间结果的存储对象。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Epilogue",
+    "zh": "尾处理阶段",
+    "abbr": "",
+    "definition": "主计算完成后，对结果执行偏置、激活、缩放等操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Prologue",
+    "zh": "前处理阶段",
+    "abbr": "",
+    "definition": "核心计算前完成输入装载、变换或准备的阶段。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Split-K",
+    "zh": "K 维拆分",
+    "abbr": "",
+    "definition": "将矩阵乘法的归约维拆成多个部分并行计算。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Batched GEMM",
+    "zh": "批量矩阵乘法",
+    "abbr": "",
+    "definition": "对一批矩阵对执行同类乘法计算。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Grouped GEMM",
+    "zh": "分组矩阵乘法",
+    "abbr": "",
+    "definition": "将尺寸或任务分布不同的多组矩阵乘法合并调度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Matrix Fragment",
+    "zh": "矩阵片段",
+    "abbr": "",
+    "definition": "分配到线程／Warp 寄存器中的矩阵局部表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Tensor Core Utilization",
+    "zh": "张量核心利用率",
+    "abbr": "",
+    "definition": "反映矩阵专用执行资源使用程度的性能指标。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 7,
+    "topic": "矩阵运算与专用计算单元",
+    "en": "Arithmetic Throughput",
+    "zh": "算术吞吐量",
+    "abbr": "",
+    "definition": "单位时间可完成或实际完成的计算操作量。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "FP64 / Double Precision",
+    "zh": "双精度浮点",
+    "abbr": "",
+    "definition": "通常指 IEEE 754 binary64 浮点格式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "FP32 / Single Precision",
+    "zh": "单精度浮点",
+    "abbr": "",
+    "definition": "通常指 IEEE 754 binary32 浮点格式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "FP16 / Half Precision",
+    "zh": "半精度浮点",
+    "abbr": "",
+    "definition": "常见的 16 位浮点格式，动态范围相对有限。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "BF16 / BFloat16",
+    "zh": "脑浮点 16 位",
+    "abbr": "",
+    "definition": "指数范围近似 FP32、尾数精度更低的 16 位格式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "TF32 / TensorFloat-32",
+    "zh": "TensorFloat-32 格式",
+    "abbr": "",
+    "definition": "NVIDIA 用于矩阵计算的一类精度模式；并非普通 32 位存储类型。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "FP8",
+    "zh": "8 位浮点",
+    "abbr": "",
+    "definition": "一组低精度浮点编码格式，具体指数与尾数配置可不同。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "E4M3",
+    "zh": "4 指数 3 尾数格式",
+    "abbr": "",
+    "definition": "常见 FP8 变体之一，具体特殊值语义依实现或标准而定。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "E5M2",
+    "zh": "5 指数 2 尾数格式",
+    "abbr": "",
+    "definition": "常见 FP8 变体之一，强调较大的可表示范围。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "INT8",
+    "zh": "8 位整数",
+    "abbr": "",
+    "definition": "量化算子常用的 8 位整数类型。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "INT4",
+    "zh": "4 位整数",
+    "abbr": "",
+    "definition": "常用于压缩模型参数或低比特计算的整数表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Mixed Precision",
+    "zh": "混合精度",
+    "abbr": "",
+    "definition": "在不同阶段使用不同数值精度以兼顾速度与误差。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Quantization",
+    "zh": "量化",
+    "abbr": "",
+    "definition": "将连续或高精度数值映射到较低精度表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Dequantization",
+    "zh": "反量化",
+    "abbr": "",
+    "definition": "将量化表示依据比例尺等参数恢复到计算表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Quantization Scale",
+    "zh": "量化比例因子",
+    "abbr": "",
+    "definition": "建立量化值与实际数值关系的缩放参数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Rounding Mode",
+    "zh": "舍入模式",
+    "abbr": "",
+    "definition": "控制不可精确表示结果如何取近似值的规则。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Numerical Stability",
+    "zh": "数值稳定性",
+    "abbr": "",
+    "definition": "算法面对舍入误差和输入扰动时保持可靠结果的能力。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "Accumulation Precision",
+    "zh": "累加精度",
+    "abbr": "",
+    "definition": "归约或矩阵乘加中累积中间结果时使用的精度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 8,
+    "topic": "数据精度与数值正确性",
+    "en": "ULP (Unit in the Last Place)",
+    "zh": "末位单位",
+    "abbr": "",
+    "definition": "衡量相邻可表示浮点数间隔与误差的常用尺度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "CUDA C++",
+    "zh": "CUDA C++",
+    "abbr": "",
+    "definition": "NVIDIA 用于编写设备程序的 C++ 扩展与运行时生态。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "PTX (Parallel Thread Execution)",
+    "zh": "并行线程执行虚拟指令集",
+    "abbr": "",
+    "definition": "NVIDIA 提供的 GPU 中间层虚拟 ISA 与汇编表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "SASS",
+    "zh": "GPU 原生机器指令",
+    "abbr": "",
+    "definition": "NVIDIA GPU 目标架构上的实际机器指令表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Instruction Set Architecture (ISA)",
+    "zh": "指令集架构",
+    "abbr": "ISA",
+    "definition": "软件可见的指令语义、编码和执行模型定义。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Intermediate Representation (IR)",
+    "zh": "中间表示",
+    "abbr": "IR",
+    "definition": "编译优化与代码生成时使用的程序表达形式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "LLVM IR",
+    "zh": "LLVM 中间表示",
+    "abbr": "",
+    "definition": "LLVM 编译基础设施中的通用中间表示。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "MLIR",
+    "zh": "多层级中间表示框架",
+    "abbr": "",
+    "definition": "可表达多种抽象层级和方言的编译器基础设施。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "NVVM IR",
+    "zh": "NVVM 中间表示",
+    "abbr": "",
+    "definition": "NVIDIA CUDA 设备端编译链使用的一种 LLVM 系 IR。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Triton IR",
+    "zh": "Triton 中间表示",
+    "abbr": "",
+    "definition": "Triton 编译器用于表示及优化 Kernel 的中间层。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "JIT Compilation",
+    "zh": "即时编译",
+    "abbr": "",
+    "definition": "程序运行阶段针对具体输入或设备生成可执行代码。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "AOT Compilation",
+    "zh": "提前编译",
+    "abbr": "",
+    "definition": "在程序运行前生成目标代码或可部署编译产物。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Specialization",
+    "zh": "特化",
+    "abbr": "",
+    "definition": "针对形状、常量或硬件条件生成优化代码。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Loop Unrolling",
+    "zh": "循环展开",
+    "abbr": "",
+    "definition": "将循环迭代展开以减少控制开销并暴露优化机会。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Instruction Scheduling",
+    "zh": "指令调度",
+    "abbr": "",
+    "definition": "安排指令顺序以改善依赖与流水线利用。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Instruction-Level Parallelism (ILP)",
+    "zh": "指令级并行",
+    "abbr": "ILP",
+    "definition": "同一线程或指令流中可独立推进的操作并行度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Peephole Optimization",
+    "zh": "窥孔优化",
+    "abbr": "",
+    "definition": "针对一小段指令进行局部替换和简化。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Constant Folding",
+    "zh": "常量折叠",
+    "abbr": "",
+    "definition": "编译期计算已知常量表达式以减少运行时工作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Kernel Binary",
+    "zh": "核函数二进制",
+    "abbr": "",
+    "definition": "可由驱动加载或执行的设备机器码及相关元数据。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 9,
+    "topic": "编译器、指令与代码生成",
+    "en": "Disassembly",
+    "zh": "反汇编",
+    "abbr": "",
+    "definition": "把机器码转为可阅读指令文本以检查实际执行路径。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Triton",
+    "zh": "Triton",
+    "abbr": "",
+    "definition": "面向 GPU Kernel 的编程语言与编译工具链。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Triton Kernel",
+    "zh": "Triton 核函数",
+    "abbr": "",
+    "definition": "以 Triton 编写、由编译器映射到目标 GPU 的核函数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Program Instance",
+    "zh": "程序实例",
+    "abbr": "",
+    "definition": "Triton 的独立执行实例，常处理一个逻辑数据块。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "program_id",
+    "zh": "程序实例编号",
+    "abbr": "",
+    "definition": "Triton 中获取当前程序实例在指定轴上编号的操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "num_programs",
+    "zh": "程序实例数量",
+    "abbr": "",
+    "definition": "Triton 中查询指定网格轴程序实例数的操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "arange",
+    "zh": "连续索引生成",
+    "abbr": "",
+    "definition": "Triton 中构造连续整数索引张量的操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "load / store",
+    "zh": "加载／存储",
+    "abbr": "",
+    "definition": "Triton 中显式从地址读取、向地址写入张量数据的操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Masking",
+    "zh": "掩码访问",
+    "abbr": "",
+    "definition": "用布尔条件屏蔽越界或不应参与的元素访问。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "constexpr",
+    "zh": "编译期常量注解",
+    "abbr": "",
+    "definition": "Triton 中标识可在编译期求值的参数或表达式。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "num_warps",
+    "zh": "Warp 数量参数",
+    "abbr": "",
+    "definition": "Triton 常见的编译或启动配置，指定每程序实例的 Warp 数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "num_stages",
+    "zh": "流水阶段数参数",
+    "abbr": "",
+    "definition": "控制特定 Triton 流水化操作采用的阶段数量。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "tl.dot",
+    "zh": "块矩阵乘法",
+    "abbr": "",
+    "definition": "Triton 提供的矩阵块乘法操作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Autotuning",
+    "zh": "自动调优",
+    "abbr": "",
+    "definition": "测试多组配置并选择实测表现较优方案的流程。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Kernel DSL",
+    "zh": "核函数领域专用语言",
+    "abbr": "",
+    "definition": "为 GPU 算子表达和优化设计的语言或高级接口。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "CUTLASS",
+    "zh": "CUTLASS",
+    "abbr": "",
+    "definition": "NVIDIA 的高性能矩阵运算模板与组件库。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "CuTe",
+    "zh": "CuTe 布局与张量抽象",
+    "abbr": "",
+    "definition": "CUTLASS 体系中的布局代数、张量及算法抽象。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "Layout Algebra",
+    "zh": "布局代数",
+    "abbr": "",
+    "definition": "用数学化映射描述逻辑坐标和物理存储分配。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 10,
+    "topic": "Triton、CuTe 与 Kernel DSL",
+    "en": "JIT Cache",
+    "zh": "即时编译缓存",
+    "abbr": "",
+    "definition": "保存特化编译产物以避免相同配置反复编译。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Occupancy",
+    "zh": "驻留率",
+    "abbr": "",
+    "definition": "SM 中活跃 Warp 数与硬件最大可驻留 Warp 数之比。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Theoretical Occupancy",
+    "zh": "理论驻留率",
+    "abbr": "",
+    "definition": "由线程块规模与资源约束推算的驻留率上限。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Achieved Occupancy",
+    "zh": "实测驻留率",
+    "abbr": "",
+    "definition": "运行时采集的活跃 Warp 比例；可能低于理论值。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "GPU Utilization",
+    "zh": "GPU 利用率",
+    "abbr": "",
+    "definition": "设备忙碌程度的统计量，不能与 Occupancy 等同。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Compute-bound",
+    "zh": "计算受限",
+    "abbr": "",
+    "definition": "性能主要受计算执行资源或算术吞吐限制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Memory-bound",
+    "zh": "访存受限",
+    "abbr": "",
+    "definition": "性能主要受访存带宽、延迟等存储系统因素限制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Launch-bound",
+    "zh": "启动开销受限",
+    "abbr": "",
+    "definition": "核函数本身工作少，提交或调度开销占比显著。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Arithmetic Intensity",
+    "zh": "算术强度",
+    "abbr": "",
+    "definition": "计算操作量与数据搬运量之比，常用 FLOP/Byte。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Roofline Model",
+    "zh": "屋顶线模型",
+    "abbr": "",
+    "definition": "用峰值算力、存储带宽和算术强度推断性能上界。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Peak FLOPS",
+    "zh": "峰值浮点算力",
+    "abbr": "",
+    "definition": "理论上单位时间可执行的浮点操作量上限。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Achieved FLOPS",
+    "zh": "实际浮点吞吐量",
+    "abbr": "",
+    "definition": "依据运行时间与运算量计算的实测浮点性能。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间处理的数据、操作或任务数量。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Latency",
+    "zh": "时延",
+    "abbr": "",
+    "definition": "单次请求、核函数或操作从开始到结束的耗时。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Speedup",
+    "zh": "加速比",
+    "abbr": "",
+    "definition": "基线耗时与优化后耗时的比值。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Memory Traffic",
+    "zh": "内存流量",
+    "abbr": "",
+    "definition": "实际在指定存储层级发生的数据传输总量。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Occupancy Limiter",
+    "zh": "驻留率限制因素",
+    "abbr": "",
+    "definition": "寄存器、共享内存、线程数或块数等容量约束。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Warp Stall",
+    "zh": "线程束停顿",
+    "abbr": "",
+    "definition": "Warp 因依赖、资源或同步条件未满足而不能发射。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Stall Reason",
+    "zh": "停顿原因",
+    "abbr": "",
+    "definition": "分析线程束等待内存、执行依赖或屏障等的类别。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Instruction Dependency",
+    "zh": "指令依赖",
+    "abbr": "",
+    "definition": "指令等待先前运算结果或状态满足的关系。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Pipeline Utilization",
+    "zh": "流水线利用率",
+    "abbr": "",
+    "definition": "执行流水线被有效使用的程度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Load Balancing",
+    "zh": "负载均衡",
+    "abbr": "",
+    "definition": "尽量均匀地向执行资源分配工作。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Kernel Launch Overhead",
+    "zh": "核函数启动开销",
+    "abbr": "",
+    "definition": "提交、排队和调度核函数的额外时间成本。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Benchmark Warm-up",
+    "zh": "基准预热",
+    "abbr": "",
+    "definition": "正式计时前运行任务以减小编译或初始化等干扰。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Microbenchmark",
+    "zh": "微基准测试",
+    "abbr": "",
+    "definition": "聚焦测量单个算子、访问模式或微小代码片段。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 11,
+    "topic": "性能建模与优化指标",
+    "en": "Performance Regression",
+    "zh": "性能回退",
+    "abbr": "",
+    "definition": "变更后在相同测量条件下性能变差的现象。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Profiler",
+    "zh": "性能分析器",
+    "abbr": "",
+    "definition": "收集时间、硬件计数器及执行轨迹的工具。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Nsight Compute",
+    "zh": "Nsight Compute",
+    "abbr": "",
+    "definition": "NVIDIA 面向单个 GPU Kernel 的详细性能分析工具。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Nsight Systems",
+    "zh": "Nsight Systems",
+    "abbr": "",
+    "definition": "NVIDIA 面向 CPU／GPU 时间线与系统交互的分析工具。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Kernel Timeline",
+    "zh": "核函数时间线",
+    "abbr": "",
+    "definition": "按时间展示提交、执行及并发情况的视图。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Hardware Performance Counter",
+    "zh": "硬件性能计数器",
+    "abbr": "",
+    "definition": "记录设备事件、事务和执行状态的硬件统计机制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Roofline Chart",
+    "zh": "屋顶线图",
+    "abbr": "",
+    "definition": "展示算术强度与性能上界、实测点关系的图。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Speed of Light (SOL)",
+    "zh": "理论峰值利用指标",
+    "abbr": "SOL",
+    "definition": "Nsight Compute 中比较资源吞吐与理论峰值的分析视图。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Memory Workload Analysis",
+    "zh": "存储负载分析",
+    "abbr": "",
+    "definition": "通过访问数、缓存、带宽等指标定位存储瓶颈。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Warp State Statistics",
+    "zh": "线程束状态统计",
+    "abbr": "",
+    "definition": "分析就绪、发射和停顿状态及其比例。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Source-level Profiling",
+    "zh": "源码级性能分析",
+    "abbr": "",
+    "definition": "将性能数据映射到源代码行或指令。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Sanitizer",
+    "zh": "动态检查工具",
+    "abbr": "",
+    "definition": "检测越界、竞态或其他运行时正确性问题的工具。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Compute Sanitizer",
+    "zh": "Compute Sanitizer",
+    "abbr": "",
+    "definition": "NVIDIA 的设备程序内存与同步错误检测工具。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Racecheck",
+    "zh": "竞态检查",
+    "abbr": "",
+    "definition": "对共享内存等访问中的数据竞争进行检测的检查器。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Memcheck",
+    "zh": "内存错误检查",
+    "abbr": "",
+    "definition": "发现越界、非法访问或其他内存使用问题的检查器。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Assertion",
+    "zh": "断言",
+    "abbr": "",
+    "definition": "运行时验证条件，不满足时报告失败。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Golden Reference",
+    "zh": "黄金参考实现",
+    "abbr": "",
+    "definition": "通常更直观、正确性优先的对照计算实现。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Correctness Test",
+    "zh": "正确性测试",
+    "abbr": "",
+    "definition": "验证输出、边界条件与数值容差是否满足要求。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 12,
+    "topic": "性能分析、诊断与调试",
+    "en": "Reproducibility",
+    "zh": "可复现性",
+    "abbr": "",
+    "definition": "记录软硬件版本、输入与测试条件，确保结果可重现。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "ROCm",
+    "zh": "ROCm",
+    "abbr": "",
+    "definition": "AMD 提供的 GPU 计算软件平台与工具链。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "HIP",
+    "zh": "HIP",
+    "abbr": "",
+    "definition": "面向 AMD/NVIDIA 等 GPU 的 C++ 异构编程接口体系。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Work-item",
+    "zh": "工作项",
+    "abbr": "",
+    "definition": "OpenCL 等模型中对应一个逻辑执行线程的工作单元。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Work-group",
+    "zh": "工作组",
+    "abbr": "",
+    "definition": "OpenCL／HIP 等模型中可进行组内协作的工作项集合。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Subgroup",
+    "zh": "子组",
+    "abbr": "",
+    "definition": "图形与异构计算模型中小于工作组的协作分组。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Wave32 / Wave64",
+    "zh": "32／64 通道波前",
+    "abbr": "",
+    "definition": "AMD 不同架构或模式下的 Wavefront 宽度。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "VGPR",
+    "zh": "向量通用寄存器",
+    "abbr": "",
+    "definition": "AMD GPU 上保存各工作项私有向量数据的寄存器。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "SGPR",
+    "zh": "标量通用寄存器",
+    "abbr": "",
+    "definition": "AMD GPU 上存放波前共享标量状态的寄存器。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "VALU (Vector ALU)",
+    "zh": "向量算术逻辑单元",
+    "abbr": "",
+    "definition": "AMD GPU 中执行按通道并行算术运算的执行资源。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "SALU (Scalar ALU)",
+    "zh": "标量算术逻辑单元",
+    "abbr": "",
+    "definition": "AMD GPU 中处理波前共享标量运算的单元。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Elementwise Kernel",
+    "zh": "逐元素核函数",
+    "abbr": "",
+    "definition": "对张量每个元素分别进行相同运算的核函数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Softmax Kernel",
+    "zh": "Softmax 核函数",
+    "abbr": "",
+    "definition": "计算指数归一化，常结合分块归约与数值稳定处理。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Layer Normalization",
+    "zh": "层归一化",
+    "abbr": "",
+    "definition": "对选定维度统计均值方差后进行归一化的算子。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "RMS Normalization",
+    "zh": "均方根归一化",
+    "abbr": "",
+    "definition": "用平方均值的根进行缩放的归一化算子。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Attention Kernel",
+    "zh": "注意力核函数",
+    "abbr": "",
+    "definition": "实现注意力得分、归一化与加权聚合的 GPU 核函数。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "FlashAttention",
+    "zh": "FlashAttention",
+    "abbr": "",
+    "definition": "通过分块与片上复用减少中间注意力矩阵读写的算法族。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "KV Cache",
+    "zh": "键值缓存",
+    "abbr": "",
+    "definition": "自回归推理中缓存历史注意力键和值的机制。"
+  },
+  {
+    "category": "gpu-kernel",
+    "chapter": 13,
+    "topic": "跨平台生态与 AI 常见核函数",
+    "en": "Fused Operator",
+    "zh": "融合算子",
+    "abbr": "",
+    "definition": "将多个计算阶段合并，以降低中间访存或调度开销。"
   }
 ]

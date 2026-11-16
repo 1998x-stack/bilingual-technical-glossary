@@ -13,22 +13,23 @@
 | 领域 | 结构化词条 | 专题 | Markdown | PDF |
 |---|---:|---:|---|---|
 | AI 基础设施 / AI Infrastructure | 142 | 8 | [阅读](glossaries/ai-infrastructure.md) | [下载](pdf/ai-infrastructure.pdf) |
+| GPU Kernel / GPU 核函数 | 255 | 13 | [阅读](glossaries/gpu-kernel.md) | [下载](pdf/gpu-kernel.pdf) |
 | AI 智能体 / AI Agents | 332 | 16 | [阅读](glossaries/ai-agents.md) | [下载](pdf/ai-agents.pdf) |
 | 大语言模型 / LLM | 419 | 16 | [阅读](glossaries/large-language-models.md) | [下载](pdf/large-language-models.pdf) |
 | 深度学习 / Deep Learning | 500 | 18 | [阅读](glossaries/deep-learning.md) | [下载](pdf/deep-learning.pdf) |
 | 强化学习 / Reinforcement Learning | 305 | 14 | [阅读](glossaries/reinforcement-learning.md) | [下载](pdf/reinforcement-learning.pdf) |
 | 线性代数 / Linear Algebra | 289 | 12 | [阅读](glossaries/linear-algebra.md) | [下载](pdf/linear-algebra.pdf) |
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
-| **合计** | **2,392** | **100** | | |
+| **合计** | **2,647** | **113** | | |
 
-**数据说明：**此前制作的六本 PDF 均保留原始完整版本，共自述含 2,298 条术语；从版式 PDF 提取的可检索记录有 2,250 条，尚有 48 条因跨行排版未能自动恢复。原始 PDF 才是这些书册完整词条的权威副本。新增的 AI Infra 则独立整理了 142 条结构化术语。网页中所有“词条数”均指真实可搜索索引条目，不将 PDF 封面数字直接冒充完整的数据导入数量。
+**数据说明：**此前制作的六本 PDF 均保留原始完整版本，共自述含 2,298 条术语；从版式 PDF 提取的可检索记录有 2,250 条，尚有 48 条因跨行排版未能自动恢复。原始 PDF 才是这些书册完整词条的权威副本。新增的 AI Infra 独立整理了 142 条术语，GPU Kernel 原创手册包含 255 条术语（13 章），现已同步纳入可检索索引。网页中所有“词条数”均指真实可搜索索引条目，不将 PDF 封面数字直接冒充完整的数据导入数量。
 
 ## GitHub Pages 展示
 
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**7 个学科、100 个专题；
+- **主题选择：**8 个学科、113 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
