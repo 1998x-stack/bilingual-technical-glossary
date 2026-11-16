@@ -55288,6 +55288,1851 @@
     "definition": "求最大或最小值"
   },
   {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Parallel Computing",
+    "zh": "并行计算",
+    "abbr": "",
+    "definition": "多个计算资源同时协作解决计算问题。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Concurrency",
+    "zh": "并发",
+    "abbr": "",
+    "definition": "多个任务在时间上重叠推进，不要求同时执行。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Parallelism",
+    "zh": "并行性",
+    "abbr": "",
+    "definition": "多个操作在同一时刻实际执行。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Sequential Computation",
+    "zh": "顺序计算",
+    "abbr": "",
+    "definition": "按依赖顺序使用单个执行流计算。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Parallel Algorithm",
+    "zh": "并行算法",
+    "abbr": "",
+    "definition": "明确任务划分、依赖和协作方式的算法。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Parallel Program",
+    "zh": "并行程序",
+    "abbr": "",
+    "definition": "在并行平台执行的程序及其同步通信逻辑。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Process",
+    "zh": "进程",
+    "abbr": "",
+    "definition": "具有独立地址空间等资源的执行实体。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Thread",
+    "zh": "线程",
+    "abbr": "",
+    "definition": "进程内可被调度的执行流。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Processing Element",
+    "zh": "处理单元",
+    "abbr": "PE",
+    "definition": "参与执行并行工作的抽象计算资源。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Degree of Parallelism",
+    "zh": "并行度",
+    "abbr": "",
+    "definition": "同一时刻可运行的任务数量。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Task",
+    "zh": "任务",
+    "abbr": "",
+    "definition": "可单独调度或分配的计算工作单元。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Work",
+    "zh": "总工作量",
+    "abbr": "W",
+    "definition": "算法完成问题所执行的总体操作量。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Span",
+    "zh": "跨度 / 关键路径长度",
+    "abbr": "T∞",
+    "definition": "无限处理器条件下受依赖约束的最短执行时间。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "Work-Span Model",
+    "zh": "工作量—跨度模型",
+    "abbr": "",
+    "definition": "用总工作量与关键路径刻画并行算法。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "PRAM",
+    "zh": "并行随机访问机",
+    "abbr": "PRAM",
+    "definition": "假设共享内存与同步访问的抽象并行模型。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "EREW PRAM",
+    "zh": "互斥读互斥写 PRAM",
+    "abbr": "EREW",
+    "definition": "任一存储位置不能被并发读或写。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "CREW PRAM",
+    "zh": "并发读互斥写 PRAM",
+    "abbr": "CREW",
+    "definition": "允许并发读同一位置，写操作互斥。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 1,
+    "topic": "并行计算基础与计算模型",
+    "en": "CRCW PRAM",
+    "zh": "并发读并发写 PRAM",
+    "abbr": "CRCW",
+    "definition": "允许并发读写，需规定写冲突的仲裁规则。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Shared-Memory Architecture",
+    "zh": "共享内存体系结构",
+    "abbr": "",
+    "definition": "多个执行单元通过共享地址空间交换数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Distributed-Memory Architecture",
+    "zh": "分布式内存体系结构",
+    "abbr": "",
+    "definition": "计算节点拥有独立内存，经通信网络交换数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Hybrid-Memory Architecture",
+    "zh": "混合内存体系结构",
+    "abbr": "",
+    "definition": "节点内共享内存、节点间消息通信的组合。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Symmetric Multiprocessing",
+    "zh": "对称多处理",
+    "abbr": "SMP",
+    "definition": "多个处理器平等访问共享主存的系统设计。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Non-Uniform Memory Access",
+    "zh": "非统一内存访问",
+    "abbr": "NUMA",
+    "definition": "访问延迟随处理器和内存位置而变化。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Cache Coherence",
+    "zh": "缓存一致性",
+    "abbr": "",
+    "definition": "保证不同缓存对共享位置的观察符合一致性协议。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Memory Consistency Model",
+    "zh": "内存一致性模型",
+    "abbr": "",
+    "definition": "规定不同线程内存操作可观察到的顺序。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "False Sharing",
+    "zh": "伪共享",
+    "abbr": "",
+    "definition": "线程访问不同变量却落在同一缓存行，导致额外一致性流量。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Cache Line",
+    "zh": "缓存行",
+    "abbr": "",
+    "definition": "缓存与内存之间传输数据的基本粒度。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Memory Hierarchy",
+    "zh": "存储层次结构",
+    "abbr": "",
+    "definition": "寄存器、缓存、主存与外存等层次的组织。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Memory Bandwidth",
+    "zh": "内存带宽",
+    "abbr": "",
+    "definition": "单位时间内存子系统可传输的数据量。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Memory Latency",
+    "zh": "内存延迟",
+    "abbr": "",
+    "definition": "完成一次存储访问所需时间。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Interconnection Network",
+    "zh": "互连网络",
+    "abbr": "",
+    "definition": "连接并行处理器、节点与存储资源的通信基础设施。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Network Topology",
+    "zh": "网络拓扑",
+    "abbr": "",
+    "definition": "节点及连接链路的逻辑或物理结构。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Hypercube",
+    "zh": "超立方体网络",
+    "abbr": "",
+    "definition": "以二进制地址相邻关系连接节点的拓扑。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Mesh Topology",
+    "zh": "网格拓扑",
+    "abbr": "",
+    "definition": "节点按二维或更高维规则网格互连。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Torus Topology",
+    "zh": "环面拓扑",
+    "abbr": "",
+    "definition": "在网格基础上增加环绕连接的拓扑。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 2,
+    "topic": "并行体系结构与内存层次",
+    "en": "Bisection Bandwidth",
+    "zh": "二分带宽",
+    "abbr": "",
+    "definition": "网络被划为两部分时跨割边可提供的总带宽。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Decomposition",
+    "zh": "任务分解",
+    "abbr": "",
+    "definition": "把问题划分为可并行执行的子任务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Domain Decomposition",
+    "zh": "区域分解",
+    "abbr": "",
+    "definition": "按输入数据或计算域的位置划分任务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Data Decomposition",
+    "zh": "数据分解",
+    "abbr": "",
+    "definition": "依据数据子集分派计算。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Functional Decomposition",
+    "zh": "功能分解",
+    "abbr": "",
+    "definition": "按不同计算功能或阶段划分任务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Recursive Decomposition",
+    "zh": "递归分解",
+    "abbr": "",
+    "definition": "递归拆分问题并生成子任务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Exploratory Decomposition",
+    "zh": "搜索空间分解",
+    "abbr": "",
+    "definition": "将候选搜索路径分配给多个任务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Speculative Decomposition",
+    "zh": "推测式分解",
+    "abbr": "",
+    "definition": "预先执行可能有用、但结果未必采用的分支。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Task Graph",
+    "zh": "任务图",
+    "abbr": "",
+    "definition": "以顶点表示任务、边表示依赖的有向图。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Dependency Graph",
+    "zh": "依赖图",
+    "abbr": "",
+    "definition": "描述操作间先后制约关系的图。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Critical Path",
+    "zh": "关键路径",
+    "abbr": "",
+    "definition": "任务图中决定最短完成时间的最长依赖链。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Task Granularity",
+    "zh": "任务粒度",
+    "abbr": "",
+    "definition": "每个任务承担计算工作的规模。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Fine-Grained Parallelism",
+    "zh": "细粒度并行",
+    "abbr": "",
+    "definition": "任务较小，调度与通信相对频繁。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Coarse-Grained Parallelism",
+    "zh": "粗粒度并行",
+    "abbr": "",
+    "definition": "任务较大，通信同步相对较少。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Task Mapping",
+    "zh": "任务映射",
+    "abbr": "",
+    "definition": "把任务分配到处理器或节点上的过程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Static Scheduling",
+    "zh": "静态调度",
+    "abbr": "",
+    "definition": "运行前预先确定任务与计算资源的分配。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Dynamic Scheduling",
+    "zh": "动态调度",
+    "abbr": "",
+    "definition": "运行时依据负载和任务进展进行分配。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Load Balancing",
+    "zh": "负载均衡",
+    "abbr": "",
+    "definition": "让计算资源承担接近的工作量以减小空闲。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 3,
+    "topic": "任务分解、映射与负载均衡",
+    "en": "Work Stealing",
+    "zh": "工作窃取",
+    "abbr": "",
+    "definition": "空闲工作线程从其他线程的任务队列取得工作。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Message Passing",
+    "zh": "消息传递",
+    "abbr": "",
+    "definition": "进程间显式发送和接收数据的通信模型。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Point-to-Point Communication",
+    "zh": "点对点通信",
+    "abbr": "",
+    "definition": "两个参与进程之间交换消息。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Collective Communication",
+    "zh": "集合通信",
+    "abbr": "",
+    "definition": "某个通信组内多个进程共同参与的操作。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Broadcast",
+    "zh": "广播",
+    "abbr": "Bcast",
+    "definition": "一个进程将同一数据发送给组内其他进程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Scatter",
+    "zh": "散发",
+    "abbr": "Scatter",
+    "definition": "根进程将不同数据片段分配给各进程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Gather",
+    "zh": "聚集",
+    "abbr": "Gather",
+    "definition": "多个进程将数据片段汇集至根进程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "All-Gather",
+    "zh": "全聚集",
+    "abbr": "Allgather",
+    "definition": "所有进程获取每个进程提供的数据片段。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Reduction",
+    "zh": "归约",
+    "abbr": "Reduce",
+    "definition": "按指定运算合并多个进程的数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "All-Reduce",
+    "zh": "全归约",
+    "abbr": "Allreduce",
+    "definition": "所有进程获得同一个归约结果。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Reduce-Scatter",
+    "zh": "归约后散发",
+    "abbr": "Reduce_scatter",
+    "definition": "归约数组后将结果片段分给各进程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "All-to-All",
+    "zh": "全互换",
+    "abbr": "Alltoall",
+    "definition": "每个进程向组内其他进程发送相应数据片段。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Prefix Scan",
+    "zh": "前缀扫描",
+    "abbr": "Scan",
+    "definition": "每个进程获得其之前元素的累计归约结果。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Exclusive Scan",
+    "zh": "排他前缀扫描",
+    "abbr": "Exscan",
+    "definition": "前缀结果排除当前进程的数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Barrier Synchronization",
+    "zh": "屏障同步",
+    "abbr": "Barrier",
+    "definition": "参与者到达同步点后才继续推进。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Halo Exchange",
+    "zh": "边界 / 幽灵区交换",
+    "abbr": "",
+    "definition": "相邻域之间交换边界所需数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Communication Latency",
+    "zh": "通信延迟",
+    "abbr": "α",
+    "definition": "消息通信的启动与固定开销。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Per-Word Transfer Time",
+    "zh": "单位字传输时间",
+    "abbr": "β",
+    "definition": "常见 α–β 模型中的单位数据传输成本。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Communication Volume",
+    "zh": "通信数据量",
+    "abbr": "",
+    "definition": "通信过程传输的总数据大小。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 4,
+    "topic": "通信、拓扑与数据交换",
+    "en": "Communication-Computing Overlap",
+    "zh": "通信与计算重叠",
+    "abbr": "",
+    "definition": "同时推进数据传输和独立计算以隐藏延迟。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Serial Execution Time",
+    "zh": "串行执行时间",
+    "abbr": "T₁",
+    "definition": "完成同一工作负载的单处理器运行时间。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Parallel Execution Time",
+    "zh": "并行执行时间",
+    "abbr": "Tₚ",
+    "definition": "使用 p 个处理器完成任务的运行时间。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Speedup",
+    "zh": "加速比",
+    "abbr": "Sₚ",
+    "definition": "串行时间与并行时间之比 T₁/Tₚ。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Parallel Efficiency",
+    "zh": "并行效率",
+    "abbr": "Eₚ",
+    "definition": "加速比除以处理器数 Sₚ/p。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Total Parallel Overhead",
+    "zh": "总并行开销",
+    "abbr": "Tₒ",
+    "definition": "pTₚ−T₁，反映通信、空闲和同步等额外代价。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Cost of Parallel Algorithm",
+    "zh": "并行算法代价",
+    "abbr": "",
+    "definition": "处理器数与并行运行时间的乘积 pTₚ。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Cost-Optimality",
+    "zh": "代价最优性",
+    "abbr": "",
+    "definition": "并行总代价与最优串行工作量同阶。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Amdahl's Law",
+    "zh": "阿姆达尔定律",
+    "abbr": "",
+    "definition": "固定工作负载加速比受不可并行部分限制。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Gustafson's Law",
+    "zh": "古斯塔夫森定律",
+    "abbr": "",
+    "definition": "在处理器数增加时扩大问题规模分析加速。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Strong Scaling",
+    "zh": "强扩展",
+    "abbr": "",
+    "definition": "固定问题规模，增加资源考察时间缩短程度。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Weak Scaling",
+    "zh": "弱扩展",
+    "abbr": "",
+    "definition": "每处理器负载近似固定，随处理器数量扩大问题。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Scalability",
+    "zh": "可扩展性",
+    "abbr": "",
+    "definition": "增加资源与问题规模时持续保持有效效率的能力。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Isoefficiency Function",
+    "zh": "等效率函数",
+    "abbr": "",
+    "definition": "为维持固定效率，问题规模应如何随处理器数增长。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Overhead Function",
+    "zh": "开销函数",
+    "abbr": "",
+    "definition": "描述并行附加开销随问题规模、处理器数的变化。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Workload",
+    "zh": "工作负载",
+    "abbr": "",
+    "definition": "程序需要处理的数据规模和计算需求。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Load Imbalance",
+    "zh": "负载不均衡",
+    "abbr": "",
+    "definition": "部分处理器因工作分配不均而等待。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Superlinear Speedup",
+    "zh": "超线性加速",
+    "abbr": "",
+    "definition": "观察到加速比大于处理器数，常由缓存等效应造成。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 5,
+    "topic": "性能分析与可扩展性",
+    "en": "Asymptotic Complexity",
+    "zh": "渐近复杂度",
+    "abbr": "",
+    "definition": "刻画规模增长时工作量或时间的数量级。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "Message Passing Interface",
+    "zh": "消息传递接口",
+    "abbr": "MPI",
+    "definition": "定义进程间消息通信接口的标准。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI Rank",
+    "zh": "MPI 进程编号",
+    "abbr": "rank",
+    "definition": "进程在通信器内的编号，不等于物理节点编号。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI Communicator",
+    "zh": "MPI 通信器",
+    "abbr": "comm",
+    "definition": "定义通信组与隔离消息上下文的对象。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI Group",
+    "zh": "MPI 进程组",
+    "abbr": "group",
+    "definition": "一组有序进程标识，可用于创建通信器。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Init",
+    "zh": "初始化 MPI 环境",
+    "abbr": "MPI_Init",
+    "definition": "启动 MPI 运行环境的函数。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Finalize",
+    "zh": "结束 MPI 环境",
+    "abbr": "MPI_Finalize",
+    "definition": "完成 MPI 程序的运行时清理。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Send",
+    "zh": "阻塞发送",
+    "abbr": "MPI_Send",
+    "definition": "发送缓冲区可再次使用前返回，具体协议依实现与模式。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Recv",
+    "zh": "阻塞接收",
+    "abbr": "MPI_Recv",
+    "definition": "接收匹配消息并完成缓冲区的数据写入。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Isend",
+    "zh": "非阻塞发送",
+    "abbr": "MPI_Isend",
+    "definition": "启动发送并返回请求句柄，完成需后续检测。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Irecv",
+    "zh": "非阻塞接收",
+    "abbr": "MPI_Irecv",
+    "definition": "启动异步接收并返回请求句柄。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Wait",
+    "zh": "等待通信请求完成",
+    "abbr": "MPI_Wait",
+    "definition": "等待指定非阻塞操作完成。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Test",
+    "zh": "测试通信请求",
+    "abbr": "MPI_Test",
+    "definition": "查询通信是否完成而不必一直阻塞。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Request",
+    "zh": "MPI 请求句柄",
+    "abbr": "MPI_Request",
+    "definition": "代表非阻塞操作等待完成的对象。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Status",
+    "zh": "MPI 通信状态",
+    "abbr": "MPI_Status",
+    "definition": "记录接收来源、标签及错误等状态信息。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Bcast",
+    "zh": "MPI 广播",
+    "abbr": "MPI_Bcast",
+    "definition": "让根进程的数据分发到通信器内所有进程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Reduce",
+    "zh": "MPI 归约",
+    "abbr": "MPI_Reduce",
+    "definition": "将组内数据合并到指定根进程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI_Allreduce",
+    "zh": "MPI 全归约",
+    "abbr": "MPI_Allreduce",
+    "definition": "各进程得到归约后的结果。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI Cartesian Topology",
+    "zh": "MPI 笛卡尔拓扑",
+    "abbr": "",
+    "definition": "按多维网格组织进程逻辑邻接关系。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 6,
+    "topic": "MPI 消息传递编程",
+    "en": "MPI One-Sided Communication",
+    "zh": "MPI 单边通信",
+    "abbr": "RMA",
+    "definition": "通过远程内存访问操作读写其他进程窗口。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Shared Address Space",
+    "zh": "共享地址空间",
+    "abbr": "",
+    "definition": "线程可通过共同地址访问同一数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Thread Creation",
+    "zh": "线程创建",
+    "abbr": "",
+    "definition": "创建新的并发执行流。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Mutex",
+    "zh": "互斥锁",
+    "abbr": "mutex",
+    "definition": "控制同一时刻仅一个线程进入受保护区域。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Critical Section",
+    "zh": "临界区",
+    "abbr": "",
+    "definition": "访问共享可变状态时须互斥执行的代码区。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Race Condition",
+    "zh": "竞态条件",
+    "abbr": "",
+    "definition": "程序结果依赖不可控的执行时序。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Data Race",
+    "zh": "数据竞争",
+    "abbr": "",
+    "definition": "未有足够同步的冲突内存访问，至少一个为写。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "参与者相互等待资源，导致没有一个可以推进。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Livelock",
+    "zh": "活锁",
+    "abbr": "",
+    "definition": "参与者不断响应彼此但无法完成有效进展。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Starvation",
+    "zh": "饥饿",
+    "abbr": "",
+    "definition": "某任务长期得不到运行或所需资源。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Atomic Operation",
+    "zh": "原子操作",
+    "abbr": "",
+    "definition": "对并发观察者不可分割的操作。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Compare-and-Swap",
+    "zh": "比较并交换",
+    "abbr": "CAS",
+    "definition": "按预期值条件原子更新共享位置。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Memory Fence",
+    "zh": "内存屏障",
+    "abbr": "",
+    "definition": "限制特定内存操作跨越屏障的重排。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Condition Variable",
+    "zh": "条件变量",
+    "abbr": "",
+    "definition": "线程等待共享状态满足条件的同步机制。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Semaphore",
+    "zh": "信号量",
+    "abbr": "",
+    "definition": "用计数许可约束并发访问或资源数量。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Read-Write Lock",
+    "zh": "读写锁",
+    "abbr": "RW lock",
+    "definition": "允许多个读者或一个写者访问受保护资源。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "OpenMP",
+    "zh": "开放多处理",
+    "abbr": "OpenMP",
+    "definition": "共享内存并行编程指令、库与环境变量接口。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Parallel Region",
+    "zh": "并行区域",
+    "abbr": "",
+    "definition": "OpenMP 创建团队执行的代码区域。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Reduction Clause",
+    "zh": "归约子句",
+    "abbr": "reduction",
+    "definition": "为并行工作提供私有副本并合并其结果。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 7,
+    "topic": "共享内存编程与同步",
+    "en": "Scheduling Clause",
+    "zh": "调度子句",
+    "abbr": "schedule",
+    "definition": "指定循环迭代如何分配给线程。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Dense Matrix",
+    "zh": "稠密矩阵",
+    "abbr": "",
+    "definition": "多数元素需显式存储的矩阵表示。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Sparse Matrix",
+    "zh": "稀疏矩阵",
+    "abbr": "",
+    "definition": "零元素占大多数，常采用压缩存储。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Matrix-Vector Multiplication",
+    "zh": "矩阵—向量乘法",
+    "abbr": "SpMV / GEMV",
+    "definition": "将矩阵作用于向量的线性代数运算。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Matrix-Matrix Multiplication",
+    "zh": "矩阵—矩阵乘法",
+    "abbr": "GEMM",
+    "definition": "并行数值计算中常见的密集计算内核。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Block Matrix Multiplication",
+    "zh": "分块矩阵乘法",
+    "abbr": "",
+    "definition": "按子块组织乘法以改善数据局部性与并行性。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Cannon's Algorithm",
+    "zh": "坎农算法",
+    "abbr": "",
+    "definition": "二维处理器网格上的分块矩阵乘法方法。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "SUMMA",
+    "zh": "可扩展通用矩阵乘法算法",
+    "abbr": "SUMMA",
+    "definition": "通过行列广播实现分布式矩阵乘法。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Matrix Transpose",
+    "zh": "矩阵转置",
+    "abbr": "",
+    "definition": "交换矩阵行列，经常涉及跨节点数据重排。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "One-Dimensional Partitioning",
+    "zh": "一维划分",
+    "abbr": "",
+    "definition": "沿矩阵某一个维度把数据分给计算单元。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Two-Dimensional Partitioning",
+    "zh": "二维划分",
+    "abbr": "",
+    "definition": "沿矩阵行列两个维度联合分布数据块。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Row-Major Order",
+    "zh": "行主序",
+    "abbr": "",
+    "definition": "以行连续的方式在内存存放二维数组。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Column-Major Order",
+    "zh": "列主序",
+    "abbr": "",
+    "definition": "以列连续的方式在内存存放二维数组。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "LU Factorization",
+    "zh": "LU 分解",
+    "abbr": "",
+    "definition": "将矩阵分解为下三角与上三角矩阵。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Parallel Prefix Sum",
+    "zh": "并行前缀和",
+    "abbr": "Scan",
+    "definition": "计算全部前缀聚合结果的基础并行原语。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 8,
+    "topic": "并行矩阵与数值计算",
+    "en": "Stencil Computation",
+    "zh": "模板计算",
+    "abbr": "stencil",
+    "definition": "按局部邻域访问规则更新数组网格点。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Parallel Sorting",
+    "zh": "并行排序",
+    "abbr": "",
+    "definition": "多个计算资源协同完成关键字排序。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Bitonic Sort",
+    "zh": "双调排序",
+    "abbr": "",
+    "definition": "通过固定比较交换网络对双调序列排序。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Odd-Even Transposition Sort",
+    "zh": "奇偶转置排序",
+    "abbr": "",
+    "definition": "交替比较相邻奇偶位置元素的并行排序。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Sample Sort",
+    "zh": "样本排序",
+    "abbr": "",
+    "definition": "基于采样枢轴分桶并行排序数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Parallel Merge",
+    "zh": "并行归并",
+    "abbr": "",
+    "definition": "并行合并两个有序序列。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Graph Traversal",
+    "zh": "图遍历",
+    "abbr": "",
+    "definition": "按图结构系统性地访问顶点和边。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Breadth-First Search",
+    "zh": "广度优先搜索",
+    "abbr": "BFS",
+    "definition": "逐层扩展图中的未访问邻居。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Depth-First Search",
+    "zh": "深度优先搜索",
+    "abbr": "DFS",
+    "definition": "沿分支深入并在必要时回溯。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Parallel BFS",
+    "zh": "并行广度优先搜索",
+    "abbr": "",
+    "definition": "并行处理前沿集合和邻接关系。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Frontier",
+    "zh": "搜索前沿",
+    "abbr": "",
+    "definition": "当前迭代待扩展的顶点或状态集合。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Graph Partitioning",
+    "zh": "图划分",
+    "abbr": "",
+    "definition": "把顶点划为子集，同时尽量减少跨分区连接。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Edge Cut",
+    "zh": "割边数",
+    "abbr": "",
+    "definition": "不同图分区之间连接边的数量。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Single-Source Shortest Path",
+    "zh": "单源最短路径",
+    "abbr": "SSSP",
+    "definition": "计算一个源点到可达顶点的最短距离。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Minimum Spanning Tree",
+    "zh": "最小生成树",
+    "abbr": "MST",
+    "definition": "连通加权无向图的最小总权生成树。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Branch and Bound",
+    "zh": "分支定界",
+    "abbr": "",
+    "definition": "利用上下界剪除不可能得到更优解的搜索分支。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Backtracking",
+    "zh": "回溯",
+    "abbr": "",
+    "definition": "逐步尝试候选决策，失败时撤销并返回。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Dynamic Programming",
+    "zh": "动态规划",
+    "abbr": "DP",
+    "definition": "利用重叠子问题与最优子结构复用结果。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 9,
+    "topic": "排序、图与组合搜索",
+    "en": "Wavefront Computation",
+    "zh": "波前计算",
+    "abbr": "",
+    "definition": "按依赖对角线等前沿逐层并行推进状态。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Discrete Fourier Transform",
+    "zh": "离散傅里叶变换",
+    "abbr": "DFT",
+    "definition": "把离散序列映射到频域的线性变换。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Fast Fourier Transform",
+    "zh": "快速傅里叶变换",
+    "abbr": "FFT",
+    "definition": "利用分治结构降低 DFT 计算复杂度。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Inverse FFT",
+    "zh": "逆快速傅里叶变换",
+    "abbr": "IFFT",
+    "definition": "将频域系数高效还原到时域。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Butterfly Operation",
+    "zh": "蝶形运算",
+    "abbr": "",
+    "definition": "FFT 分治阶段组合两个子变换结果的基本操作。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Cooley–Tukey Algorithm",
+    "zh": "库利—图基算法",
+    "abbr": "",
+    "definition": "通过分解变换规模实现 FFT 的算法族。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Radix-2 FFT",
+    "zh": "基 2 FFT",
+    "abbr": "",
+    "definition": "每阶段按二路分解的 FFT 实现。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Bit-Reversal Permutation",
+    "zh": "位逆序置换",
+    "abbr": "",
+    "definition": "按二进制下标位顺序反转以重排数据。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Twiddle Factor",
+    "zh": "旋转因子",
+    "abbr": "",
+    "definition": "FFT 中用于组合子变换的复指数系数。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "Distributed FFT",
+    "zh": "分布式 FFT",
+    "abbr": "",
+    "definition": "把 FFT 数据与计算分布到多个进程执行。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 10,
+    "topic": "并行 FFT 与频域算法",
+    "en": "All-to-All Transpose",
+    "zh": "全互换转置",
+    "abbr": "",
+    "definition": "分布式多维 FFT 中常见的全局数据重排。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Single Instruction Multiple Data",
+    "zh": "单指令多数据",
+    "abbr": "SIMD",
+    "definition": "一条指令对多个数据元素执行同类运算。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Single Instruction Multiple Threads",
+    "zh": "单指令多线程",
+    "abbr": "SIMT",
+    "definition": "GPU 以线程组组织并执行相同内核代码的模型。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "GPU Kernel",
+    "zh": "GPU 内核函数",
+    "abbr": "kernel",
+    "definition": "由加速设备上大量线程执行的计算函数。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Thread Block",
+    "zh": "线程块",
+    "abbr": "block",
+    "definition": "GPU 中协作执行、共享块内资源的线程集合。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Grid",
+    "zh": "线程网格",
+    "abbr": "grid",
+    "definition": "一次 GPU 内核启动创建的线程块集合。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Warp",
+    "zh": "线程束",
+    "abbr": "warp",
+    "definition": "NVIDIA GPU 上以 32 个线程组织的调度执行组。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Warp Divergence",
+    "zh": "线程束分歧",
+    "abbr": "",
+    "definition": "同一 warp 内线程选择不同控制流，可能降低效率。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Occupancy",
+    "zh": "占用率",
+    "abbr": "",
+    "definition": "活跃线程束数相对硬件最大可驻留线程束数的比例。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Coalesced Memory Access",
+    "zh": "合并内存访问",
+    "abbr": "",
+    "definition": "相邻线程的访问被整合为高效内存事务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Shared Memory on GPU",
+    "zh": "GPU 共享内存",
+    "abbr": "",
+    "definition": "线程块内用于低延迟交换数据的片上存储。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Global Memory on GPU",
+    "zh": "GPU 全局内存",
+    "abbr": "",
+    "definition": "对设备上多个线程块可访问的设备内存。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Host-Device Transfer",
+    "zh": "主机—设备传输",
+    "abbr": "",
+    "definition": "CPU 内存与加速器内存之间的数据拷贝。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Asynchronous Kernel Launch",
+    "zh": "异步内核启动",
+    "abbr": "",
+    "definition": "启动后主机无需等待内核完成即可继续执行。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "CUDA Stream",
+    "zh": "CUDA 流",
+    "abbr": "stream",
+    "definition": "设备操作的有序队列，可实现并发与重叠。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Tensor Core",
+    "zh": "张量核心",
+    "abbr": "",
+    "definition": "针对矩阵乘加等运算优化的 GPU 计算单元。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Roofline Model",
+    "zh": "屋顶线模型",
+    "abbr": "",
+    "definition": "用计算强度、带宽与峰值算力分析性能上限。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 11,
+    "topic": "GPU、SIMD 与异构并行",
+    "en": "Arithmetic Intensity",
+    "zh": "计算强度",
+    "abbr": "",
+    "definition": "浮点运算量与数据传输字节数之比。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "High-Performance Computing",
+    "zh": "高性能计算",
+    "abbr": "HPC",
+    "definition": "以高吞吐、低时延和大规模数值处理为目标的计算。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Compute Cluster",
+    "zh": "计算集群",
+    "abbr": "",
+    "definition": "通过网络连接的一组协同计算节点。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Compute Node",
+    "zh": "计算节点",
+    "abbr": "",
+    "definition": "集群中负责运行计算任务的机器。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Job Scheduler",
+    "zh": "作业调度器",
+    "abbr": "",
+    "definition": "为批处理任务分配集群资源并管理队列。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Batch Job",
+    "zh": "批处理作业",
+    "abbr": "",
+    "definition": "以非交互方式提交并由调度系统执行的任务。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Checkpointing",
+    "zh": "检查点保存",
+    "abbr": "",
+    "definition": "周期性保存运行状态以便失败后恢复。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Fault Tolerance",
+    "zh": "容错性",
+    "abbr": "",
+    "definition": "硬件或软件部分故障后继续提供正确结果的能力。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Resilience",
+    "zh": "韧性 / 抗故障能力",
+    "abbr": "",
+    "definition": "系统从扰动与故障中维持或恢复服务的能力。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Parallel I/O",
+    "zh": "并行输入输出",
+    "abbr": "",
+    "definition": "多个进程协同读写存储以提高吞吐。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "MPI-IO",
+    "zh": "MPI 并行 I/O",
+    "abbr": "MPI-IO",
+    "definition": "MPI 标准提供的并行文件操作接口。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Collective I/O",
+    "zh": "集合 I/O",
+    "abbr": "",
+    "definition": "多个进程协调文件访问以减少碎片化操作。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "HDF5",
+    "zh": "层次化数据格式 5",
+    "abbr": "HDF5",
+    "definition": "科学数据管理的格式与库，可用于并行 I/O。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Performance Profiling",
+    "zh": "性能剖析",
+    "abbr": "",
+    "definition": "记录函数、内核或通信开销以定位瓶颈。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Tracing",
+    "zh": "运行轨迹采集",
+    "abbr": "",
+    "definition": "记录事件时间线以分析任务依赖与通信重叠。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Benchmarking",
+    "zh": "基准测试",
+    "abbr": "",
+    "definition": "通过可重复负载比较实现或硬件的性能。"
+  },
+  {
+    "category": "parallel-computing",
+    "chapter": 12,
+    "topic": "分布式执行、可靠性与存储",
+    "en": "Reproducibility",
+    "zh": "可复现性",
+    "abbr": "",
+    "definition": "在明确环境与配置下重现可验证的实验结果。"
+  },
+  {
     "category": "compiler-principles",
     "chapter": 1,
     "topic": "编译器架构与工具链",
@@ -66500,1851 +68345,6 @@
     "zh": "狄拉克 delta 分布",
     "abbr": "",
     "definition": "广义函数中的单位点源"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Parallel Computing",
-    "zh": "并行计算",
-    "abbr": "",
-    "definition": "多个计算资源同时协作解决计算问题。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Concurrency",
-    "zh": "并发",
-    "abbr": "",
-    "definition": "多个任务在时间上重叠推进，不要求同时执行。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Parallelism",
-    "zh": "并行性",
-    "abbr": "",
-    "definition": "多个操作在同一时刻实际执行。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Sequential Computation",
-    "zh": "顺序计算",
-    "abbr": "",
-    "definition": "按依赖顺序使用单个执行流计算。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Parallel Algorithm",
-    "zh": "并行算法",
-    "abbr": "",
-    "definition": "明确任务划分、依赖和协作方式的算法。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Parallel Program",
-    "zh": "并行程序",
-    "abbr": "",
-    "definition": "在并行平台执行的程序及其同步通信逻辑。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Process",
-    "zh": "进程",
-    "abbr": "",
-    "definition": "具有独立地址空间等资源的执行实体。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Thread",
-    "zh": "线程",
-    "abbr": "",
-    "definition": "进程内可被调度的执行流。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Processing Element",
-    "zh": "处理单元",
-    "abbr": "PE",
-    "definition": "参与执行并行工作的抽象计算资源。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Degree of Parallelism",
-    "zh": "并行度",
-    "abbr": "",
-    "definition": "同一时刻可运行的任务数量。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Task",
-    "zh": "任务",
-    "abbr": "",
-    "definition": "可单独调度或分配的计算工作单元。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Work",
-    "zh": "总工作量",
-    "abbr": "W",
-    "definition": "算法完成问题所执行的总体操作量。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Span",
-    "zh": "跨度 / 关键路径长度",
-    "abbr": "T∞",
-    "definition": "无限处理器条件下受依赖约束的最短执行时间。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "Work-Span Model",
-    "zh": "工作量—跨度模型",
-    "abbr": "",
-    "definition": "用总工作量与关键路径刻画并行算法。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "PRAM",
-    "zh": "并行随机访问机",
-    "abbr": "PRAM",
-    "definition": "假设共享内存与同步访问的抽象并行模型。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "EREW PRAM",
-    "zh": "互斥读互斥写 PRAM",
-    "abbr": "EREW",
-    "definition": "任一存储位置不能被并发读或写。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "CREW PRAM",
-    "zh": "并发读互斥写 PRAM",
-    "abbr": "CREW",
-    "definition": "允许并发读同一位置，写操作互斥。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 1,
-    "topic": "并行计算基础与计算模型",
-    "en": "CRCW PRAM",
-    "zh": "并发读并发写 PRAM",
-    "abbr": "CRCW",
-    "definition": "允许并发读写，需规定写冲突的仲裁规则。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Shared-Memory Architecture",
-    "zh": "共享内存体系结构",
-    "abbr": "",
-    "definition": "多个执行单元通过共享地址空间交换数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Distributed-Memory Architecture",
-    "zh": "分布式内存体系结构",
-    "abbr": "",
-    "definition": "计算节点拥有独立内存，经通信网络交换数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Hybrid-Memory Architecture",
-    "zh": "混合内存体系结构",
-    "abbr": "",
-    "definition": "节点内共享内存、节点间消息通信的组合。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Symmetric Multiprocessing",
-    "zh": "对称多处理",
-    "abbr": "SMP",
-    "definition": "多个处理器平等访问共享主存的系统设计。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Non-Uniform Memory Access",
-    "zh": "非统一内存访问",
-    "abbr": "NUMA",
-    "definition": "访问延迟随处理器和内存位置而变化。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Cache Coherence",
-    "zh": "缓存一致性",
-    "abbr": "",
-    "definition": "保证不同缓存对共享位置的观察符合一致性协议。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Memory Consistency Model",
-    "zh": "内存一致性模型",
-    "abbr": "",
-    "definition": "规定不同线程内存操作可观察到的顺序。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "False Sharing",
-    "zh": "伪共享",
-    "abbr": "",
-    "definition": "线程访问不同变量却落在同一缓存行，导致额外一致性流量。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Cache Line",
-    "zh": "缓存行",
-    "abbr": "",
-    "definition": "缓存与内存之间传输数据的基本粒度。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Memory Hierarchy",
-    "zh": "存储层次结构",
-    "abbr": "",
-    "definition": "寄存器、缓存、主存与外存等层次的组织。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Memory Bandwidth",
-    "zh": "内存带宽",
-    "abbr": "",
-    "definition": "单位时间内存子系统可传输的数据量。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Memory Latency",
-    "zh": "内存延迟",
-    "abbr": "",
-    "definition": "完成一次存储访问所需时间。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Interconnection Network",
-    "zh": "互连网络",
-    "abbr": "",
-    "definition": "连接并行处理器、节点与存储资源的通信基础设施。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Network Topology",
-    "zh": "网络拓扑",
-    "abbr": "",
-    "definition": "节点及连接链路的逻辑或物理结构。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Hypercube",
-    "zh": "超立方体网络",
-    "abbr": "",
-    "definition": "以二进制地址相邻关系连接节点的拓扑。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Mesh Topology",
-    "zh": "网格拓扑",
-    "abbr": "",
-    "definition": "节点按二维或更高维规则网格互连。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Torus Topology",
-    "zh": "环面拓扑",
-    "abbr": "",
-    "definition": "在网格基础上增加环绕连接的拓扑。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 2,
-    "topic": "并行体系结构与内存层次",
-    "en": "Bisection Bandwidth",
-    "zh": "二分带宽",
-    "abbr": "",
-    "definition": "网络被划为两部分时跨割边可提供的总带宽。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Decomposition",
-    "zh": "任务分解",
-    "abbr": "",
-    "definition": "把问题划分为可并行执行的子任务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Domain Decomposition",
-    "zh": "区域分解",
-    "abbr": "",
-    "definition": "按输入数据或计算域的位置划分任务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Data Decomposition",
-    "zh": "数据分解",
-    "abbr": "",
-    "definition": "依据数据子集分派计算。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Functional Decomposition",
-    "zh": "功能分解",
-    "abbr": "",
-    "definition": "按不同计算功能或阶段划分任务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Recursive Decomposition",
-    "zh": "递归分解",
-    "abbr": "",
-    "definition": "递归拆分问题并生成子任务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Exploratory Decomposition",
-    "zh": "搜索空间分解",
-    "abbr": "",
-    "definition": "将候选搜索路径分配给多个任务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Speculative Decomposition",
-    "zh": "推测式分解",
-    "abbr": "",
-    "definition": "预先执行可能有用、但结果未必采用的分支。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Task Graph",
-    "zh": "任务图",
-    "abbr": "",
-    "definition": "以顶点表示任务、边表示依赖的有向图。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Dependency Graph",
-    "zh": "依赖图",
-    "abbr": "",
-    "definition": "描述操作间先后制约关系的图。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Critical Path",
-    "zh": "关键路径",
-    "abbr": "",
-    "definition": "任务图中决定最短完成时间的最长依赖链。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Task Granularity",
-    "zh": "任务粒度",
-    "abbr": "",
-    "definition": "每个任务承担计算工作的规模。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Fine-Grained Parallelism",
-    "zh": "细粒度并行",
-    "abbr": "",
-    "definition": "任务较小，调度与通信相对频繁。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Coarse-Grained Parallelism",
-    "zh": "粗粒度并行",
-    "abbr": "",
-    "definition": "任务较大，通信同步相对较少。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Task Mapping",
-    "zh": "任务映射",
-    "abbr": "",
-    "definition": "把任务分配到处理器或节点上的过程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Static Scheduling",
-    "zh": "静态调度",
-    "abbr": "",
-    "definition": "运行前预先确定任务与计算资源的分配。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Dynamic Scheduling",
-    "zh": "动态调度",
-    "abbr": "",
-    "definition": "运行时依据负载和任务进展进行分配。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Load Balancing",
-    "zh": "负载均衡",
-    "abbr": "",
-    "definition": "让计算资源承担接近的工作量以减小空闲。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 3,
-    "topic": "任务分解、映射与负载均衡",
-    "en": "Work Stealing",
-    "zh": "工作窃取",
-    "abbr": "",
-    "definition": "空闲工作线程从其他线程的任务队列取得工作。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Message Passing",
-    "zh": "消息传递",
-    "abbr": "",
-    "definition": "进程间显式发送和接收数据的通信模型。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Point-to-Point Communication",
-    "zh": "点对点通信",
-    "abbr": "",
-    "definition": "两个参与进程之间交换消息。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Collective Communication",
-    "zh": "集合通信",
-    "abbr": "",
-    "definition": "某个通信组内多个进程共同参与的操作。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Broadcast",
-    "zh": "广播",
-    "abbr": "Bcast",
-    "definition": "一个进程将同一数据发送给组内其他进程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Scatter",
-    "zh": "散发",
-    "abbr": "Scatter",
-    "definition": "根进程将不同数据片段分配给各进程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Gather",
-    "zh": "聚集",
-    "abbr": "Gather",
-    "definition": "多个进程将数据片段汇集至根进程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "All-Gather",
-    "zh": "全聚集",
-    "abbr": "Allgather",
-    "definition": "所有进程获取每个进程提供的数据片段。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Reduction",
-    "zh": "归约",
-    "abbr": "Reduce",
-    "definition": "按指定运算合并多个进程的数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "All-Reduce",
-    "zh": "全归约",
-    "abbr": "Allreduce",
-    "definition": "所有进程获得同一个归约结果。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Reduce-Scatter",
-    "zh": "归约后散发",
-    "abbr": "Reduce_scatter",
-    "definition": "归约数组后将结果片段分给各进程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "All-to-All",
-    "zh": "全互换",
-    "abbr": "Alltoall",
-    "definition": "每个进程向组内其他进程发送相应数据片段。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Prefix Scan",
-    "zh": "前缀扫描",
-    "abbr": "Scan",
-    "definition": "每个进程获得其之前元素的累计归约结果。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Exclusive Scan",
-    "zh": "排他前缀扫描",
-    "abbr": "Exscan",
-    "definition": "前缀结果排除当前进程的数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Barrier Synchronization",
-    "zh": "屏障同步",
-    "abbr": "Barrier",
-    "definition": "参与者到达同步点后才继续推进。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Halo Exchange",
-    "zh": "边界 / 幽灵区交换",
-    "abbr": "",
-    "definition": "相邻域之间交换边界所需数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Communication Latency",
-    "zh": "通信延迟",
-    "abbr": "α",
-    "definition": "消息通信的启动与固定开销。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Per-Word Transfer Time",
-    "zh": "单位字传输时间",
-    "abbr": "β",
-    "definition": "常见 α–β 模型中的单位数据传输成本。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Communication Volume",
-    "zh": "通信数据量",
-    "abbr": "",
-    "definition": "通信过程传输的总数据大小。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 4,
-    "topic": "通信、拓扑与数据交换",
-    "en": "Communication-Computing Overlap",
-    "zh": "通信与计算重叠",
-    "abbr": "",
-    "definition": "同时推进数据传输和独立计算以隐藏延迟。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Serial Execution Time",
-    "zh": "串行执行时间",
-    "abbr": "T₁",
-    "definition": "完成同一工作负载的单处理器运行时间。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Parallel Execution Time",
-    "zh": "并行执行时间",
-    "abbr": "Tₚ",
-    "definition": "使用 p 个处理器完成任务的运行时间。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Speedup",
-    "zh": "加速比",
-    "abbr": "Sₚ",
-    "definition": "串行时间与并行时间之比 T₁/Tₚ。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Parallel Efficiency",
-    "zh": "并行效率",
-    "abbr": "Eₚ",
-    "definition": "加速比除以处理器数 Sₚ/p。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Total Parallel Overhead",
-    "zh": "总并行开销",
-    "abbr": "Tₒ",
-    "definition": "pTₚ−T₁，反映通信、空闲和同步等额外代价。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Cost of Parallel Algorithm",
-    "zh": "并行算法代价",
-    "abbr": "",
-    "definition": "处理器数与并行运行时间的乘积 pTₚ。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Cost-Optimality",
-    "zh": "代价最优性",
-    "abbr": "",
-    "definition": "并行总代价与最优串行工作量同阶。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Amdahl's Law",
-    "zh": "阿姆达尔定律",
-    "abbr": "",
-    "definition": "固定工作负载加速比受不可并行部分限制。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Gustafson's Law",
-    "zh": "古斯塔夫森定律",
-    "abbr": "",
-    "definition": "在处理器数增加时扩大问题规模分析加速。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Strong Scaling",
-    "zh": "强扩展",
-    "abbr": "",
-    "definition": "固定问题规模，增加资源考察时间缩短程度。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Weak Scaling",
-    "zh": "弱扩展",
-    "abbr": "",
-    "definition": "每处理器负载近似固定，随处理器数量扩大问题。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Scalability",
-    "zh": "可扩展性",
-    "abbr": "",
-    "definition": "增加资源与问题规模时持续保持有效效率的能力。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Isoefficiency Function",
-    "zh": "等效率函数",
-    "abbr": "",
-    "definition": "为维持固定效率，问题规模应如何随处理器数增长。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Overhead Function",
-    "zh": "开销函数",
-    "abbr": "",
-    "definition": "描述并行附加开销随问题规模、处理器数的变化。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Workload",
-    "zh": "工作负载",
-    "abbr": "",
-    "definition": "程序需要处理的数据规模和计算需求。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Load Imbalance",
-    "zh": "负载不均衡",
-    "abbr": "",
-    "definition": "部分处理器因工作分配不均而等待。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Superlinear Speedup",
-    "zh": "超线性加速",
-    "abbr": "",
-    "definition": "观察到加速比大于处理器数，常由缓存等效应造成。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 5,
-    "topic": "性能分析与可扩展性",
-    "en": "Asymptotic Complexity",
-    "zh": "渐近复杂度",
-    "abbr": "",
-    "definition": "刻画规模增长时工作量或时间的数量级。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "Message Passing Interface",
-    "zh": "消息传递接口",
-    "abbr": "MPI",
-    "definition": "定义进程间消息通信接口的标准。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI Rank",
-    "zh": "MPI 进程编号",
-    "abbr": "rank",
-    "definition": "进程在通信器内的编号，不等于物理节点编号。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI Communicator",
-    "zh": "MPI 通信器",
-    "abbr": "comm",
-    "definition": "定义通信组与隔离消息上下文的对象。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI Group",
-    "zh": "MPI 进程组",
-    "abbr": "group",
-    "definition": "一组有序进程标识，可用于创建通信器。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Init",
-    "zh": "初始化 MPI 环境",
-    "abbr": "MPI_Init",
-    "definition": "启动 MPI 运行环境的函数。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Finalize",
-    "zh": "结束 MPI 环境",
-    "abbr": "MPI_Finalize",
-    "definition": "完成 MPI 程序的运行时清理。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Send",
-    "zh": "阻塞发送",
-    "abbr": "MPI_Send",
-    "definition": "发送缓冲区可再次使用前返回，具体协议依实现与模式。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Recv",
-    "zh": "阻塞接收",
-    "abbr": "MPI_Recv",
-    "definition": "接收匹配消息并完成缓冲区的数据写入。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Isend",
-    "zh": "非阻塞发送",
-    "abbr": "MPI_Isend",
-    "definition": "启动发送并返回请求句柄，完成需后续检测。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Irecv",
-    "zh": "非阻塞接收",
-    "abbr": "MPI_Irecv",
-    "definition": "启动异步接收并返回请求句柄。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Wait",
-    "zh": "等待通信请求完成",
-    "abbr": "MPI_Wait",
-    "definition": "等待指定非阻塞操作完成。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Test",
-    "zh": "测试通信请求",
-    "abbr": "MPI_Test",
-    "definition": "查询通信是否完成而不必一直阻塞。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Request",
-    "zh": "MPI 请求句柄",
-    "abbr": "MPI_Request",
-    "definition": "代表非阻塞操作等待完成的对象。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Status",
-    "zh": "MPI 通信状态",
-    "abbr": "MPI_Status",
-    "definition": "记录接收来源、标签及错误等状态信息。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Bcast",
-    "zh": "MPI 广播",
-    "abbr": "MPI_Bcast",
-    "definition": "让根进程的数据分发到通信器内所有进程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Reduce",
-    "zh": "MPI 归约",
-    "abbr": "MPI_Reduce",
-    "definition": "将组内数据合并到指定根进程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI_Allreduce",
-    "zh": "MPI 全归约",
-    "abbr": "MPI_Allreduce",
-    "definition": "各进程得到归约后的结果。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI Cartesian Topology",
-    "zh": "MPI 笛卡尔拓扑",
-    "abbr": "",
-    "definition": "按多维网格组织进程逻辑邻接关系。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 6,
-    "topic": "MPI 消息传递编程",
-    "en": "MPI One-Sided Communication",
-    "zh": "MPI 单边通信",
-    "abbr": "RMA",
-    "definition": "通过远程内存访问操作读写其他进程窗口。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Shared Address Space",
-    "zh": "共享地址空间",
-    "abbr": "",
-    "definition": "线程可通过共同地址访问同一数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Thread Creation",
-    "zh": "线程创建",
-    "abbr": "",
-    "definition": "创建新的并发执行流。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Mutex",
-    "zh": "互斥锁",
-    "abbr": "mutex",
-    "definition": "控制同一时刻仅一个线程进入受保护区域。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Critical Section",
-    "zh": "临界区",
-    "abbr": "",
-    "definition": "访问共享可变状态时须互斥执行的代码区。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Race Condition",
-    "zh": "竞态条件",
-    "abbr": "",
-    "definition": "程序结果依赖不可控的执行时序。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Data Race",
-    "zh": "数据竞争",
-    "abbr": "",
-    "definition": "未有足够同步的冲突内存访问，至少一个为写。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Deadlock",
-    "zh": "死锁",
-    "abbr": "",
-    "definition": "参与者相互等待资源，导致没有一个可以推进。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Livelock",
-    "zh": "活锁",
-    "abbr": "",
-    "definition": "参与者不断响应彼此但无法完成有效进展。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Starvation",
-    "zh": "饥饿",
-    "abbr": "",
-    "definition": "某任务长期得不到运行或所需资源。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Atomic Operation",
-    "zh": "原子操作",
-    "abbr": "",
-    "definition": "对并发观察者不可分割的操作。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Compare-and-Swap",
-    "zh": "比较并交换",
-    "abbr": "CAS",
-    "definition": "按预期值条件原子更新共享位置。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Memory Fence",
-    "zh": "内存屏障",
-    "abbr": "",
-    "definition": "限制特定内存操作跨越屏障的重排。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Condition Variable",
-    "zh": "条件变量",
-    "abbr": "",
-    "definition": "线程等待共享状态满足条件的同步机制。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Semaphore",
-    "zh": "信号量",
-    "abbr": "",
-    "definition": "用计数许可约束并发访问或资源数量。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Read-Write Lock",
-    "zh": "读写锁",
-    "abbr": "RW lock",
-    "definition": "允许多个读者或一个写者访问受保护资源。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "OpenMP",
-    "zh": "开放多处理",
-    "abbr": "OpenMP",
-    "definition": "共享内存并行编程指令、库与环境变量接口。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Parallel Region",
-    "zh": "并行区域",
-    "abbr": "",
-    "definition": "OpenMP 创建团队执行的代码区域。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Reduction Clause",
-    "zh": "归约子句",
-    "abbr": "reduction",
-    "definition": "为并行工作提供私有副本并合并其结果。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 7,
-    "topic": "共享内存编程与同步",
-    "en": "Scheduling Clause",
-    "zh": "调度子句",
-    "abbr": "schedule",
-    "definition": "指定循环迭代如何分配给线程。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Dense Matrix",
-    "zh": "稠密矩阵",
-    "abbr": "",
-    "definition": "多数元素需显式存储的矩阵表示。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Sparse Matrix",
-    "zh": "稀疏矩阵",
-    "abbr": "",
-    "definition": "零元素占大多数，常采用压缩存储。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Matrix-Vector Multiplication",
-    "zh": "矩阵—向量乘法",
-    "abbr": "SpMV / GEMV",
-    "definition": "将矩阵作用于向量的线性代数运算。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Matrix-Matrix Multiplication",
-    "zh": "矩阵—矩阵乘法",
-    "abbr": "GEMM",
-    "definition": "并行数值计算中常见的密集计算内核。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Block Matrix Multiplication",
-    "zh": "分块矩阵乘法",
-    "abbr": "",
-    "definition": "按子块组织乘法以改善数据局部性与并行性。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Cannon's Algorithm",
-    "zh": "坎农算法",
-    "abbr": "",
-    "definition": "二维处理器网格上的分块矩阵乘法方法。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "SUMMA",
-    "zh": "可扩展通用矩阵乘法算法",
-    "abbr": "SUMMA",
-    "definition": "通过行列广播实现分布式矩阵乘法。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Matrix Transpose",
-    "zh": "矩阵转置",
-    "abbr": "",
-    "definition": "交换矩阵行列，经常涉及跨节点数据重排。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "One-Dimensional Partitioning",
-    "zh": "一维划分",
-    "abbr": "",
-    "definition": "沿矩阵某一个维度把数据分给计算单元。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Two-Dimensional Partitioning",
-    "zh": "二维划分",
-    "abbr": "",
-    "definition": "沿矩阵行列两个维度联合分布数据块。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Row-Major Order",
-    "zh": "行主序",
-    "abbr": "",
-    "definition": "以行连续的方式在内存存放二维数组。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Column-Major Order",
-    "zh": "列主序",
-    "abbr": "",
-    "definition": "以列连续的方式在内存存放二维数组。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "LU Factorization",
-    "zh": "LU 分解",
-    "abbr": "",
-    "definition": "将矩阵分解为下三角与上三角矩阵。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Parallel Prefix Sum",
-    "zh": "并行前缀和",
-    "abbr": "Scan",
-    "definition": "计算全部前缀聚合结果的基础并行原语。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 8,
-    "topic": "并行矩阵与数值计算",
-    "en": "Stencil Computation",
-    "zh": "模板计算",
-    "abbr": "stencil",
-    "definition": "按局部邻域访问规则更新数组网格点。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Parallel Sorting",
-    "zh": "并行排序",
-    "abbr": "",
-    "definition": "多个计算资源协同完成关键字排序。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Bitonic Sort",
-    "zh": "双调排序",
-    "abbr": "",
-    "definition": "通过固定比较交换网络对双调序列排序。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Odd-Even Transposition Sort",
-    "zh": "奇偶转置排序",
-    "abbr": "",
-    "definition": "交替比较相邻奇偶位置元素的并行排序。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Sample Sort",
-    "zh": "样本排序",
-    "abbr": "",
-    "definition": "基于采样枢轴分桶并行排序数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Parallel Merge",
-    "zh": "并行归并",
-    "abbr": "",
-    "definition": "并行合并两个有序序列。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Graph Traversal",
-    "zh": "图遍历",
-    "abbr": "",
-    "definition": "按图结构系统性地访问顶点和边。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Breadth-First Search",
-    "zh": "广度优先搜索",
-    "abbr": "BFS",
-    "definition": "逐层扩展图中的未访问邻居。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Depth-First Search",
-    "zh": "深度优先搜索",
-    "abbr": "DFS",
-    "definition": "沿分支深入并在必要时回溯。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Parallel BFS",
-    "zh": "并行广度优先搜索",
-    "abbr": "",
-    "definition": "并行处理前沿集合和邻接关系。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Frontier",
-    "zh": "搜索前沿",
-    "abbr": "",
-    "definition": "当前迭代待扩展的顶点或状态集合。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Graph Partitioning",
-    "zh": "图划分",
-    "abbr": "",
-    "definition": "把顶点划为子集，同时尽量减少跨分区连接。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Edge Cut",
-    "zh": "割边数",
-    "abbr": "",
-    "definition": "不同图分区之间连接边的数量。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Single-Source Shortest Path",
-    "zh": "单源最短路径",
-    "abbr": "SSSP",
-    "definition": "计算一个源点到可达顶点的最短距离。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Minimum Spanning Tree",
-    "zh": "最小生成树",
-    "abbr": "MST",
-    "definition": "连通加权无向图的最小总权生成树。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Branch and Bound",
-    "zh": "分支定界",
-    "abbr": "",
-    "definition": "利用上下界剪除不可能得到更优解的搜索分支。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Backtracking",
-    "zh": "回溯",
-    "abbr": "",
-    "definition": "逐步尝试候选决策，失败时撤销并返回。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Dynamic Programming",
-    "zh": "动态规划",
-    "abbr": "DP",
-    "definition": "利用重叠子问题与最优子结构复用结果。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 9,
-    "topic": "排序、图与组合搜索",
-    "en": "Wavefront Computation",
-    "zh": "波前计算",
-    "abbr": "",
-    "definition": "按依赖对角线等前沿逐层并行推进状态。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Discrete Fourier Transform",
-    "zh": "离散傅里叶变换",
-    "abbr": "DFT",
-    "definition": "把离散序列映射到频域的线性变换。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Fast Fourier Transform",
-    "zh": "快速傅里叶变换",
-    "abbr": "FFT",
-    "definition": "利用分治结构降低 DFT 计算复杂度。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Inverse FFT",
-    "zh": "逆快速傅里叶变换",
-    "abbr": "IFFT",
-    "definition": "将频域系数高效还原到时域。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Butterfly Operation",
-    "zh": "蝶形运算",
-    "abbr": "",
-    "definition": "FFT 分治阶段组合两个子变换结果的基本操作。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Cooley–Tukey Algorithm",
-    "zh": "库利—图基算法",
-    "abbr": "",
-    "definition": "通过分解变换规模实现 FFT 的算法族。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Radix-2 FFT",
-    "zh": "基 2 FFT",
-    "abbr": "",
-    "definition": "每阶段按二路分解的 FFT 实现。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Bit-Reversal Permutation",
-    "zh": "位逆序置换",
-    "abbr": "",
-    "definition": "按二进制下标位顺序反转以重排数据。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Twiddle Factor",
-    "zh": "旋转因子",
-    "abbr": "",
-    "definition": "FFT 中用于组合子变换的复指数系数。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "Distributed FFT",
-    "zh": "分布式 FFT",
-    "abbr": "",
-    "definition": "把 FFT 数据与计算分布到多个进程执行。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 10,
-    "topic": "并行 FFT 与频域算法",
-    "en": "All-to-All Transpose",
-    "zh": "全互换转置",
-    "abbr": "",
-    "definition": "分布式多维 FFT 中常见的全局数据重排。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Single Instruction Multiple Data",
-    "zh": "单指令多数据",
-    "abbr": "SIMD",
-    "definition": "一条指令对多个数据元素执行同类运算。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Single Instruction Multiple Threads",
-    "zh": "单指令多线程",
-    "abbr": "SIMT",
-    "definition": "GPU 以线程组组织并执行相同内核代码的模型。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "GPU Kernel",
-    "zh": "GPU 内核函数",
-    "abbr": "kernel",
-    "definition": "由加速设备上大量线程执行的计算函数。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Thread Block",
-    "zh": "线程块",
-    "abbr": "block",
-    "definition": "GPU 中协作执行、共享块内资源的线程集合。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Grid",
-    "zh": "线程网格",
-    "abbr": "grid",
-    "definition": "一次 GPU 内核启动创建的线程块集合。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Warp",
-    "zh": "线程束",
-    "abbr": "warp",
-    "definition": "NVIDIA GPU 上以 32 个线程组织的调度执行组。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Warp Divergence",
-    "zh": "线程束分歧",
-    "abbr": "",
-    "definition": "同一 warp 内线程选择不同控制流，可能降低效率。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Occupancy",
-    "zh": "占用率",
-    "abbr": "",
-    "definition": "活跃线程束数相对硬件最大可驻留线程束数的比例。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Coalesced Memory Access",
-    "zh": "合并内存访问",
-    "abbr": "",
-    "definition": "相邻线程的访问被整合为高效内存事务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Shared Memory on GPU",
-    "zh": "GPU 共享内存",
-    "abbr": "",
-    "definition": "线程块内用于低延迟交换数据的片上存储。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Global Memory on GPU",
-    "zh": "GPU 全局内存",
-    "abbr": "",
-    "definition": "对设备上多个线程块可访问的设备内存。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Host-Device Transfer",
-    "zh": "主机—设备传输",
-    "abbr": "",
-    "definition": "CPU 内存与加速器内存之间的数据拷贝。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Asynchronous Kernel Launch",
-    "zh": "异步内核启动",
-    "abbr": "",
-    "definition": "启动后主机无需等待内核完成即可继续执行。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "CUDA Stream",
-    "zh": "CUDA 流",
-    "abbr": "stream",
-    "definition": "设备操作的有序队列，可实现并发与重叠。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Tensor Core",
-    "zh": "张量核心",
-    "abbr": "",
-    "definition": "针对矩阵乘加等运算优化的 GPU 计算单元。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Roofline Model",
-    "zh": "屋顶线模型",
-    "abbr": "",
-    "definition": "用计算强度、带宽与峰值算力分析性能上限。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 11,
-    "topic": "GPU、SIMD 与异构并行",
-    "en": "Arithmetic Intensity",
-    "zh": "计算强度",
-    "abbr": "",
-    "definition": "浮点运算量与数据传输字节数之比。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "High-Performance Computing",
-    "zh": "高性能计算",
-    "abbr": "HPC",
-    "definition": "以高吞吐、低时延和大规模数值处理为目标的计算。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Compute Cluster",
-    "zh": "计算集群",
-    "abbr": "",
-    "definition": "通过网络连接的一组协同计算节点。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Compute Node",
-    "zh": "计算节点",
-    "abbr": "",
-    "definition": "集群中负责运行计算任务的机器。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Job Scheduler",
-    "zh": "作业调度器",
-    "abbr": "",
-    "definition": "为批处理任务分配集群资源并管理队列。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Batch Job",
-    "zh": "批处理作业",
-    "abbr": "",
-    "definition": "以非交互方式提交并由调度系统执行的任务。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Checkpointing",
-    "zh": "检查点保存",
-    "abbr": "",
-    "definition": "周期性保存运行状态以便失败后恢复。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Fault Tolerance",
-    "zh": "容错性",
-    "abbr": "",
-    "definition": "硬件或软件部分故障后继续提供正确结果的能力。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Resilience",
-    "zh": "韧性 / 抗故障能力",
-    "abbr": "",
-    "definition": "系统从扰动与故障中维持或恢复服务的能力。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Parallel I/O",
-    "zh": "并行输入输出",
-    "abbr": "",
-    "definition": "多个进程协同读写存储以提高吞吐。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "MPI-IO",
-    "zh": "MPI 并行 I/O",
-    "abbr": "MPI-IO",
-    "definition": "MPI 标准提供的并行文件操作接口。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Collective I/O",
-    "zh": "集合 I/O",
-    "abbr": "",
-    "definition": "多个进程协调文件访问以减少碎片化操作。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "HDF5",
-    "zh": "层次化数据格式 5",
-    "abbr": "HDF5",
-    "definition": "科学数据管理的格式与库，可用于并行 I/O。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Performance Profiling",
-    "zh": "性能剖析",
-    "abbr": "",
-    "definition": "记录函数、内核或通信开销以定位瓶颈。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Tracing",
-    "zh": "运行轨迹采集",
-    "abbr": "",
-    "definition": "记录事件时间线以分析任务依赖与通信重叠。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Benchmarking",
-    "zh": "基准测试",
-    "abbr": "",
-    "definition": "通过可重复负载比较实现或硬件的性能。"
-  },
-  {
-    "category": "parallel-computing",
-    "chapter": 12,
-    "topic": "分布式执行、可靠性与存储",
-    "en": "Reproducibility",
-    "zh": "可复现性",
-    "abbr": "",
-    "definition": "在明确环境与配置下重现可验证的实验结果。"
   },
   {
     "category": "computer-networks",
