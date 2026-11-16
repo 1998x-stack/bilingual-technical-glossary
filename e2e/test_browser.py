@@ -103,6 +103,9 @@ class ExplorerBrowserTests(unittest.TestCase):
         self.assertLessEqual(self.page.evaluate("document.documentElement.scrollWidth - innerWidth"),3)
         self.page.locator("#menu-btn").click()
         expect(self.page.locator("#sidebar")).to_have_class(re.compile("open"))
+        # An open mobile drawer intentionally covers the content: close it first.
+        self.page.locator("#menu-btn").click()
+        expect(self.page.locator("#sidebar")).not_to_have_class(re.compile("open"))
         self.page.locator("#terms-body tr").first.locator("a.term-english").click()
         expect(self.page.locator("#detail-content")).to_be_visible()
         self.assertLessEqual(self.page.evaluate("document.documentElement.scrollWidth - innerWidth"),3)
