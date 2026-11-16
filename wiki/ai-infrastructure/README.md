@@ -4,7 +4,7 @@
 
 将原双语词条扩展为独立技术百科文章：精确定义、直观类比、核心机制、工程案例、易混辨析、两道中级面试题及答案、两道中级考试题及解析、权威参考资料。
 
-**状态说明：** Batch 01–03 共 **60 篇已发布**，Batch 04–08 共 82 篇待研究；已完成 **60/142（42.3%）**。每批独立审阅与校验后合并，计划条目不算完成。
+**状态说明：** Batch 01–04 共 **80 篇已发布**，Batch 05–08 共 62 篇待研究；已完成 **80/142（56.3%）**。每批独立审阅与校验后合并，计划条目不算完成。
 
 ## 批次总览
 
@@ -13,7 +13,7 @@
 | 01 | 001–020 | 计算硬件与加速器 | 20 | 已发布 |
 | 02 | 021–040 | 互连与网络、分布式训练 | 20 | 已发布 |
 | 03 | 041–060 | 分布式训练、推理与服务 | 20 | 已发布 |
-| 04 | 061–080 | 推理与服务、调度与容器 | 20 | 待研究 |
+| 04 | 061–080 | 推理与服务、调度与容器 | 20 | 已发布 |
 | 05 | 081–100 | 调度与容器、存储与数据 | 20 | 待研究 |
 | 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 待研究 |
 | 07 | 121–140 | 可靠性与可观测性、成本治理 | 20 | 待研究 |
@@ -26,6 +26,10 @@
 ## Batch 03 综合学习路径
 
 阅读 [分布式训练 → 在线推理服务](BATCH-03.md)，重点区分并行维度、显存/通信、训练数值和服务治理。
+
+## Batch 04 综合学习路径
+
+阅读 [推理指标 → KV 管理 → 服务量化与部署](BATCH-04.md)；此路径仅用于仓库作者组织资料，不会出现在公开 Explorer 的导航栏。
 
 ## 逐批术语清单
 
@@ -100,26 +104,26 @@
 
 ### Batch 04: 推理与服务、调度与容器
 
-61. Time to First Token（首词元延迟） · `TTFT` · 未编写
-62. Time per Output Token（每输出词元耗时） · `TPOT` · 未编写
-63. Inter-Token Latency（词元间延迟） · `ITL` · 未编写
-64. Tokens per Second（每秒词元数） · `TPS` · 未编写
-65. Requests per Second（每秒请求数） · `RPS` · 未编写
-66. Prefill（预填充阶段） · 未编写
-67. Decode（逐词元解码阶段） · 未编写
-68. Key-Value Cache（键值缓存） · `KV Cache` · 未编写
-69. Paged Attention（分页注意力） · 未编写
-70. Continuous Batching（连续批处理） · 未编写
-71. Dynamic Batching（动态批处理） · 未编写
-72. Speculative Decoding（推测解码） · 未编写
-73. Disaggregated Prefill and Decode（预填充与解码分离） · `PD Disaggregation` · 未编写
-74. Quantization（量化） · 未编写
-75. Weight-Only Quantization（仅权重量化） · 未编写
-76. Post-Training Quantization（训练后量化） · `PTQ` · 未编写
-77. Quantization-Aware Training（量化感知训练） · `QAT` · 未编写
-78. Model Sharding（模型分片） · 未编写
-79. Hot Reload（热重载） · 未编写
-80. Container（容器） · 未编写
+61. [Time to First Token（首词元延迟）](061-time-to-first-token.md) · `TTFT` · 已发布
+62. [Time per Output Token（每输出词元耗时）](062-time-per-output-token.md) · `TPOT` · 已发布
+63. [Inter-Token Latency（词元间延迟）](063-inter-token-latency.md) · `ITL` · 已发布
+64. [Tokens per Second（每秒词元数）](064-tokens-per-second.md) · `TPS` · 已发布
+65. [Requests per Second（每秒请求数）](065-requests-per-second.md) · `RPS` · 已发布
+66. [Prefill（预填充阶段）](066-prefill.md) · 已发布
+67. [Decode（逐词元解码阶段）](067-decode.md) · 已发布
+68. [Key-Value Cache（键值缓存）](068-key-value-cache.md) · `KV Cache` · 已发布
+69. [Paged Attention（分页注意力）](069-paged-attention.md) · 已发布
+70. [Continuous Batching（连续批处理）](070-continuous-batching.md) · 已发布
+71. [Dynamic Batching（动态批处理）](071-dynamic-batching.md) · 已发布
+72. [Speculative Decoding（推测解码）](072-speculative-decoding.md) · 已发布
+73. [Disaggregated Prefill and Decode（预填充与解码分离）](073-disaggregated-prefill-and-decode.md) · `PD Disaggregation` · 已发布
+74. [Quantization（量化）](074-quantization.md) · 已发布
+75. [Weight-Only Quantization（仅权重量化）](075-weight-only-quantization.md) · 已发布
+76. [Post-Training Quantization（训练后量化）](076-post-training-quantization.md) · `PTQ` · 已发布
+77. [Quantization-Aware Training（量化感知训练）](077-quantization-aware-training.md) · `QAT` · 已发布
+78. [Model Sharding（模型分片）](078-model-sharding.md) · 已发布
+79. [Hot Reload（热重载）](079-hot-reload.md) · 已发布
+80. [Container（容器）](080-container.md) · 已发布
 
 ### Batch 05: 调度与容器、存储与数据
 

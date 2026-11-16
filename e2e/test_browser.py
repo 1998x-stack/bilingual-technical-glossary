@@ -87,6 +87,18 @@ class ExplorerBrowserTests(unittest.TestCase):
         expect(self.page.locator("#wiki-article a[href^='https://']").first).to_be_visible()
         self.assertNotIn("Batch 03",self.page.locator("main").inner_text())
 
+    def test_inference_metric_and_paged_attention_articles(self):
+        self.home("ai-infrastructure")
+        self.page.locator("#search-input").fill("Paged Attention")
+        first=self.page.locator("#terms-body tr").first
+        expect(first.locator("a.term-english")).to_have_text("Paged Attention")
+        first.locator("a.term-english").click()
+        expect(self.page.get_by_role("heading",name="Paged Attention",level=1)).to_be_visible()
+        expect(self.page.locator("#detail-state")).to_have_text("专业解析")
+        expect(self.page.get_by_role("heading",name=re.compile("技术原理"),level=2)).to_be_visible()
+        expect(self.page.locator("#wiki-article a[href^='https://']").first).to_be_visible()
+        self.assertNotIn("Batch 04", self.page.locator("main").inner_text())
+
     def test_unwritten_wiki_is_honestly_short_definition(self):
         self.home("reinforcement-learning")
         self.page.locator("#terms-body tr").first.locator("a.term-chinese").click()

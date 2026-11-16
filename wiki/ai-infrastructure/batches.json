@@ -652,7 +652,7 @@
         "推理与服务",
         "调度与容器"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 61,
@@ -661,8 +661,8 @@
           "abbr": "TTFT",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/061-time-to-first-token.md"
         },
         {
           "no": 62,
@@ -671,8 +671,8 @@
           "abbr": "TPOT",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/062-time-per-output-token.md"
         },
         {
           "no": 63,
@@ -681,8 +681,8 @@
           "abbr": "ITL",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/063-inter-token-latency.md"
         },
         {
           "no": 64,
@@ -691,8 +691,8 @@
           "abbr": "TPS",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/064-tokens-per-second.md"
         },
         {
           "no": 65,
@@ -701,8 +701,8 @@
           "abbr": "RPS",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/065-requests-per-second.md"
         },
         {
           "no": 66,
@@ -711,8 +711,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/066-prefill.md"
         },
         {
           "no": 67,
@@ -721,8 +721,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/067-decode.md"
         },
         {
           "no": 68,
@@ -731,8 +731,8 @@
           "abbr": "KV Cache",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/068-key-value-cache.md"
         },
         {
           "no": 69,
@@ -741,8 +741,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/069-paged-attention.md"
         },
         {
           "no": 70,
@@ -751,8 +751,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/070-continuous-batching.md"
         },
         {
           "no": 71,
@@ -761,8 +761,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/071-dynamic-batching.md"
         },
         {
           "no": 72,
@@ -771,8 +771,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/072-speculative-decoding.md"
         },
         {
           "no": 73,
@@ -781,8 +781,8 @@
           "abbr": "PD Disaggregation",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/073-disaggregated-prefill-and-decode.md"
         },
         {
           "no": 74,
@@ -791,8 +791,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/074-quantization.md"
         },
         {
           "no": 75,
@@ -801,8 +801,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/075-weight-only-quantization.md"
         },
         {
           "no": 76,
@@ -811,8 +811,8 @@
           "abbr": "PTQ",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/076-post-training-quantization.md"
         },
         {
           "no": 77,
@@ -821,8 +821,8 @@
           "abbr": "QAT",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/077-quantization-aware-training.md"
         },
         {
           "no": 78,
@@ -831,8 +831,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/078-model-sharding.md"
         },
         {
           "no": 79,
@@ -841,8 +841,8 @@
           "abbr": "",
           "topic": "推理与服务",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/079-hot-reload.md"
         },
         {
           "no": 80,
@@ -851,8 +851,8 @@
           "abbr": "",
           "topic": "调度与容器",
           "batch": 4,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/080-container.md"
         }
       ]
     },

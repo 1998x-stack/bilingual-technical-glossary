@@ -2,7 +2,7 @@
   "title": "AI Infra · 深度 Wiki",
   "total": 142,
   "batchSize": 20,
-  "readyInPr": 60,
+  "readyInPr": 80,
   "topics": [
     "计算硬件与加速器",
     "互连与网络",
@@ -621,8 +621,8 @@
       "abbr": "TTFT",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "061-time-to-first-token.md"
     },
     {
       "n": 62,
@@ -631,8 +631,8 @@
       "abbr": "TPOT",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "062-time-per-output-token.md"
     },
     {
       "n": 63,
@@ -641,8 +641,8 @@
       "abbr": "ITL",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "063-inter-token-latency.md"
     },
     {
       "n": 64,
@@ -651,8 +651,8 @@
       "abbr": "TPS",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "064-tokens-per-second.md"
     },
     {
       "n": 65,
@@ -661,8 +661,8 @@
       "abbr": "RPS",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "065-requests-per-second.md"
     },
     {
       "n": 66,
@@ -671,8 +671,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "066-prefill.md"
     },
     {
       "n": 67,
@@ -681,8 +681,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "067-decode.md"
     },
     {
       "n": 68,
@@ -691,8 +691,8 @@
       "abbr": "KV Cache",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "068-key-value-cache.md"
     },
     {
       "n": 69,
@@ -701,8 +701,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "069-paged-attention.md"
     },
     {
       "n": 70,
@@ -711,8 +711,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "070-continuous-batching.md"
     },
     {
       "n": 71,
@@ -721,8 +721,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "071-dynamic-batching.md"
     },
     {
       "n": 72,
@@ -731,8 +731,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "072-speculative-decoding.md"
     },
     {
       "n": 73,
@@ -741,8 +741,8 @@
       "abbr": "PD Disaggregation",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "073-disaggregated-prefill-and-decode.md"
     },
     {
       "n": 74,
@@ -751,8 +751,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "074-quantization.md"
     },
     {
       "n": 75,
@@ -761,8 +761,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "075-weight-only-quantization.md"
     },
     {
       "n": 76,
@@ -771,8 +771,8 @@
       "abbr": "PTQ",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "076-post-training-quantization.md"
     },
     {
       "n": 77,
@@ -781,8 +781,8 @@
       "abbr": "QAT",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "077-quantization-aware-training.md"
     },
     {
       "n": 78,
@@ -791,8 +791,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "078-model-sharding.md"
     },
     {
       "n": 79,
@@ -801,8 +801,8 @@
       "abbr": "",
       "topic": "推理与服务",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "079-hot-reload.md"
     },
     {
       "n": 80,
@@ -811,8 +811,8 @@
       "abbr": "",
       "topic": "调度与容器",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "080-container.md"
     },
     {
       "n": 81,
@@ -1435,5 +1435,5 @@
       "file": null
     }
   ],
-  "readyArticles": 60
+  "readyArticles": 80
 }

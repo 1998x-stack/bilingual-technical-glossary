@@ -242,6 +242,86 @@
     {
       "path": "wiki/ai-infrastructure/060-model-serving.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/061-time-to-first-token.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/062-time-per-output-token.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/063-inter-token-latency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/064-tokens-per-second.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/065-requests-per-second.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/066-prefill.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/067-decode.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/068-key-value-cache.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/069-paged-attention.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/070-continuous-batching.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/071-dynamic-batching.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/072-speculative-decoding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/073-disaggregated-prefill-and-decode.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/074-quantization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/075-weight-only-quantization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/076-post-training-quantization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/077-quantization-aware-training.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/078-model-sharding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/079-hot-reload.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/080-container.md",
+      "status": "pending"
     }
   ]
 }
