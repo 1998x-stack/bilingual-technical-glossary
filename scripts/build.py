@@ -1,0 +1,128 @@
+#!/usr/bin/env python3
+"""Build Markdown, CSV, site indexes, and a PDF for AI Infrastructure."""
+from pathlib import Path
+from collections import Counter, defaultdict
+import csv, json, shutil, re
+ROOT=Path(__file__).resolve().parents[1]
+DATA=ROOT/'data/terms.json'
+CATALOG=[
+ ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
+ ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
+ ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
+ ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),
+ ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
+ ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
+ ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+]
+META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
+
+def merge_infra(data):
+ if any(t['category']=='ai-infrastructure' for t in data): return data
+ topic='';chapter=0;add=[]
+ for line in (ROOT/'data/ai-infrastructure.tsv').read_text(encoding='utf8').splitlines():
+  if not line.strip():continue
+  if line.startswith('#'):
+   chapter+=1;topic=line.lstrip('# ').strip();continue
+  pieces=line.split('|')
+  if len(pieces)!=4:raise ValueError(f'Invalid AI Infra term: {line}')
+  en,zh,abbr,desc=pieces
+  add.append(dict(category='ai-infrastructure',chapter=chapter,topic=topic,en=en,zh=zh,abbr=abbr,definition=desc))
+ return add+data
+
+def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
+
+def write_markdown(data):
+ for slug in META:
+  entries=[x for x in data if x['category']==slug]
+  groups=defaultdict(list)
+  for x in entries:groups[(x['chapter'],x['topic'])].append(x)
+  m=META[slug]
+  out=[f'# {m["zh"]} · {m["en"]}', '', '> 中英双语专业术语手册 | Chinese-English Technical Glossary', '',f'**术语总量：{len(entries)} 条 · 专题：{len(groups)} 类**','',m['description'],'','> 译法以常见教材和工程文献为参考；具体技术版本与词义以原始规范及上下文为准。','', '## 专题目录','']
+  for (chapter,name),items in sorted(groups.items()):out.append(f'- {chapter:02d}. {name}（{len(items)} 条）')
+  out+=['','---','']
+  for (chapter,name),items in sorted(groups.items()):
+   out += [f'## {chapter:02d}. {name}','', '| # | English term | 中文译名 | Abbr. | 简明释义 |','|---:|---|---|---|---|']
+   for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item[k]) for k in ['en','zh','abbr','definition']])+' |')
+   out.append('')
+  out+=['---','',f'原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/{slug}.pdf)','', '本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。','']
+  (ROOT/'glossaries'/f'{slug}.md').write_text('\n'.join(out),encoding='utf8')
+
+def render_pdf(data):
+ dest=ROOT/'pdf/ai-infrastructure.pdf'
+ try:
+  from reportlab.lib import colors
+  from reportlab.lib.pagesizes import A4
+  from reportlab.lib.styles import ParagraphStyle
+  from reportlab.lib.enums import TA_LEFT
+  from reportlab.lib.units import mm
+  from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,Table,TableStyle,PageBreak,KeepTogether
+  from reportlab.pdfbase import pdfmetrics
+  from reportlab.pdfbase.ttfonts import TTFont
+ except ImportError:print('reportlab not installed: skipping PDF');return
+ font='/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf'
+ if not Path(font).exists():
+  from glob import glob
+  c=glob('/usr/share/fonts/**/*gbsn*.ttf',recursive=True)
+  if c:font=c[0]
+ if not Path(font).exists():
+  print('Chinese TTF unavailable: PDF generation skipped');return
+ pdfmetrics.registerFont(TTFont('GlossaryCJK',font))
+ NAVY=colors.HexColor('#17233C');MUTED=colors.HexColor('#64748B');BLUE=colors.HexColor('#2563EB')
+ head=ParagraphStyle('head',fontName='GlossaryCJK',fontSize=21,leading=31,textColor=NAVY,spaceAfter=16)
+ sub=ParagraphStyle('sub',fontName='GlossaryCJK',fontSize=12,leading=20,textColor=NAVY,spaceBefore=20,spaceAfter=12)
+ body=ParagraphStyle('body',fontName='GlossaryCJK',fontSize=8.3,leading=13,textColor=NAVY,spaceAfter=4)
+ small=ParagraphStyle('small',fontName='GlossaryCJK',fontSize=7.1,leading=11,textColor=NAVY)
+ title=ParagraphStyle('ttl',fontName='GlossaryCJK',fontSize=30,leading=42,textColor=NAVY,spaceAfter=25)
+ all_entries=[x for x in data if x['category']=='ai-infrastructure']
+ def P(s,style=small):
+  import html
+  return Paragraph(html.escape(str(s)),style)
+ def decorate(canv,doc):
+  canv.setStrokeColor(colors.HexColor('#DEE4EF'));canv.line(44,43,A4[0]-44,43)
+  canv.setFont('GlossaryCJK',8);canv.setFillColor(MUTED)
+  canv.drawString(44,30,'Bilingual Technical Glossary  ·  AI Infra')
+  canv.drawRightString(A4[0]-44,30,f'{doc.page:02d}')
+  canv.setFillColor(BLUE);canv.rect(0,A4[1]-7,A4[0],7,fill=1,stroke=0)
+ doc=SimpleDocTemplate(str(dest),pagesize=A4,rightMargin=43,leftMargin=43,topMargin=54,bottomMargin=62,author='1998x-stack',title='AI Infrastructure — Bilingual Technical Glossary')
+ story=[Spacer(1,46),P('AI INFRASTRUCTURE  /  REFERENCE HANDBOOK',body),Spacer(1,24),Paragraph('AI 基础设施<br/>中英文专业术语对照表',title),Paragraph('AI Infrastructure · Chinese-English Technical Glossary',sub),Spacer(1,26),Paragraph(f'{len(all_entries)} TERMS    /    {len(set(x["chapter"] for x in all_entries))} TOPICS    /    2026 EDITION',head),Spacer(1,12),Paragraph('覆盖 GPU 与加速器、集群网络、分布式训练、LLM 推理服务、容器调度、数据存储、可观测性与成本治理。',body),Spacer(1,15),P('用于 AI Infra 架构学习、论文检索、技术文档和工程面试。',body),PageBreak()]
+ groups=defaultdict(list)
+ for x in all_entries:groups[(x['chapter'],x['topic'])].append(x)
+ for (chapter,topic),rows in sorted(groups.items()):
+  story += [Paragraph(f'{chapter:02d} / {topic}',sub),P(f'{len(rows)} terms · English / 中文 / 缩写 / 简明释义',body),Spacer(1,5)]
+  header=[P('ENGLISH TERM'),P('中文'),P('缩写'),P('简明解释')]
+  grid=[header]
+  for r in rows:grid.append([P(r['en']),P(r['zh']),P(r['abbr']),P(r['definition'])])
+  table=Table(grid,colWidths=[155,86,58,210],repeatRows=1,hAlign='LEFT')
+  table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#E8EFFC')),('LINEBELOW',(0,0),(-1,0),0.8,BLUE),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6),('TOPPADDING',(0,0),(-1,-1),6),('BOTTOMPADDING',(0,0),(-1,-1),6),('LINEBELOW',(0,1),(-1,-1),0.3,colors.HexColor('#E1E7F0')),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#F8FAFE')])]))
+  story.extend([table,Spacer(1,12)])
+ doc.build(story,onFirstPage=decorate,onLaterPages=decorate)
+ print('Generated PDF',dest,round(dest.stat().st_size/1024),'KB')
+
+def write_site_data(data):
+ d=ROOT/'docs';(d/'data').mkdir(parents=True,exist_ok=True)
+ (d/'data/terms.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf8')
+ (d/'data/catalog.json').write_text(json.dumps([{**META[k],'count':sum(x['category']==k for x in data),'topics':len(set(x['topic'] for x in data if x['category']==k))} for k in META],ensure_ascii=False,indent=2),encoding='utf8')
+ for source in ['glossaries','pdf']:
+  (d/source).mkdir(parents=True,exist_ok=True)
+  for original in (ROOT/source).glob('*'):
+   if original.is_file():shutil.copy2(original,d/source/original.name)
+ for fn in ['index.html','styles.css','app.js','favicon.svg']:
+  if (ROOT/'site'/fn).exists():shutil.copy2(ROOT/'site'/fn,d/fn)
+ (d/'.nojekyll').write_text('',encoding='utf8')
+
+def run():
+ data=json.loads(DATA.read_text(encoding='utf8'));data=merge_infra(data)
+ # Validate core field presence and duplicate pairs within each category
+ errors=[];seen=set()
+ for i,r in enumerate(data):
+  if not all(r.get(k) for k in ['category','chapter','topic','en','zh','definition']):errors.append(i)
+  key=(r['category'],r['chapter'],r['en'].casefold().strip(),r['zh'].strip())
+  if key in seen:errors.append(i)
+  seen.add(key)
+ assert not errors,f'invalid / duplicate rows at: {errors[:15]}'
+ DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
+ with (ROOT/'data/terms.csv').open('w',encoding='utf8',newline='') as f:
+  writer=csv.DictWriter(f,fieldnames=['category','chapter','topic','en','zh','abbr','definition']);writer.writeheader();writer.writerows(data)
+ write_markdown(data);render_pdf(data);write_site_data(data)
+ print('Complete:',len(data),'terms,',len(META),'subjects')
+if __name__=='__main__':run()

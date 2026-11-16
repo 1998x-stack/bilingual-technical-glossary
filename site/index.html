@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101b31" />
+  <meta name="description" content="中英双语专业术语知识库，涵盖 AI Infra、AI Agent、LLM、深度学习、强化学习、线性代数和概率论。支持全文检索、专题筛选、PDF 与 Markdown 下载。" />
+  <title>Bilingual Technical Glossary · 中英双语技术术语库</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="网站导航">
+      <a class="brand" href="#home" aria-label="Bilingual Technical Glossary 首页">
+        <span class="brand-mark">⌘</span><span class="brand-type"><strong>TERM<span class="brand-highlight">/</span>ATLAS</strong><small>BILINGUAL GLOSSARY</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="主要导航">
+        <a href="#home" class="side-link active" data-nav="home"><span class="nav-symbol">◈</span><span>概览 Overview</span></a>
+        <a href="#explorer" class="side-link" data-nav="explorer"><span class="nav-symbol">⌕</span><span>术语检索 Explorer</span></a>
+        <a href="#collections" class="side-link" data-nav="collections"><span class="nav-symbol">▦</span><span>学科专题 Collections</span></a>
+        <a href="#insights" class="side-link" data-nav="insights"><span class="nav-symbol">↗</span><span>知识图谱 Insights</span></a>
+      </nav>
+      <div class="side-label spaced">SUBJECTS</div>
+      <nav id="side-subjects" class="side-nav subject-links" aria-label="学科分类"></nav>
+      <div class="sidebar-bottom">
+        <div class="open-source"><span class="open-dot"></span><div><strong>Open Knowledge</strong><small>Community maintained · v1.0</small></div></div>
+        <a class="side-github" href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">GitHub Repository <span>↗</span></a>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left"><button class="icon-btn menu-btn" id="menu-btn" aria-label="打开导航菜单">☰</button><span class="breadcrumbs">KNOWLEDGE BASE <span>/</span> <strong>OVERVIEW</strong></span></div>
+        <div class="topbar-right"><span class="top-status"><i></i> PUBLIC REFERENCE</span><button class="icon-btn" id="theme-toggle" aria-label="切换主题" title="切换主题">◐</button><a class="github-top" href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">★ Star on GitHub ↗</a></div>
+      </header>
+      <main class="main-content" id="home">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div><span class="hero-node n1"></span><span class="hero-node n2"></span><span class="hero-node n3"></span><span class="hero-node n4"></span><div class="hero-glyph">Aa<span>↔</span>文</div></div>
+          <div class="hero-content"><div class="hero-kicker"><span class="kicker-line"></span> OPEN REFERENCE / KNOWLEDGE INFRASTRUCTURE <span class="hero-version">2026 EDITION</span></div>
+            <h1 id="hero-title">A common language<br>for <em>complex ideas.</em></h1>
+            <p class="hero-cn">跨越语言边界，连接数学基础与人工智能前沿。</p>
+            <p class="hero-desc">一个为研究者、开发者与学习者打造的中英双语技术术语图鉴。查找、理解、比较、导出，从概念开始构建体系。</p>
+            <div class="hero-actions"><button id="jump-search" class="btn primary">探索全部术语 <span>↗</span></button><a class="btn ghost" href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">查看 GitHub <span>↗</span></a></div>
+          </div>
+          <div class="hero-corner">RESEARCH · BUILD · UNDERSTAND</div>
+        </section>
+        <section class="stats-grid" aria-label="术语库统计">
+          <article class="stat-card"><div class="stat-top">TOTAL TERMS <span>↗</span></div><strong id="stat-total">—</strong><p>中英双语术语条目</p><div class="stat-foot">CURRENT CATALOG <span class="stat-spark">▂▄▅▆▃▇</span></div></article>
+          <article class="stat-card"><div class="stat-top">KNOWLEDGE DOMAINS <span>◈</span></div><strong id="stat-categories">—</strong><p>涵盖核心技术学科</p><div class="stat-foot">STRUCTURED SUBJECTS <span>↗</span></div></article>
+          <article class="stat-card"><div class="stat-top">TOPIC CHAPTERS <span>▦</span></div><strong id="stat-topics">—</strong><p>循序渐进的主题分类</p><div class="stat-foot">KNOWLEDGE PATHS <span>↗</span></div></article>
+          <article class="stat-card"><div class="stat-top">EXPORT FORMATS <span>↓</span></div><strong>03<span class="stat-small"> formats</span></strong><p>Markdown · PDF · CSV</p><div class="stat-foot">OPEN & PORTABLE <span>↗</span></div></article>
+        </section>
+        <section class="section" id="collections">
+          <div class="section-heading"><div><div class="eyebrow">01 / EXPLORE THE LIBRARY</div><h2>按领域探索 <span>Explore by domain.</span></h2><p>从底层数学到 AI 计算基础设施，建立连贯、可检索的知识地图。</p></div><button class="text-link" id="view-all-subjects">查看全部分类 ↗</button></div>
+          <div id="category-grid" class="category-grid" aria-live="polite"></div>
+        </section>
+        <section class="analytics-grid" id="insights">
+          <article class="panel coverage-panel"><div class="panel-header"><div><div class="eyebrow">02 / KNOWLEDGE COVERAGE</div><h2>术语覆盖分布</h2><p>按学科统计结构化词条数量，真实反映当前知识库内容。</p></div><span class="panel-icon">◫</span></div><div class="bar-chart" id="coverage-chart"></div><div class="panel-foot"><span><i class="legend-dot"></i> Indexed terms</span><span>Counts derived from catalog</span></div></article>
+          <article class="panel learning-panel"><div class="panel-header"><div><div class="eyebrow">03 / LEARNING ARCHITECTURE</div><h2>知识学习路径</h2><p>从理论、模型到运行系统的建议阅读顺序。</p></div><span class="panel-icon">⌁</span></div>
+            <div class="learning-track"><div class="track-stage"><div class="stage-number">01</div><div><strong>Mathematical Foundations</strong><small>线性代数 · 概率论</small></div><span class="track-icon">∑</span></div><div class="track-arrow">↓</div><div class="track-stage"><div class="stage-number">02</div><div><strong>Machine Intelligence</strong><small>深度学习 · 强化学习</small></div><span class="track-icon">∇</span></div><div class="track-arrow">↓</div><div class="track-stage"><div class="stage-number">03</div><div><strong>Language & Agents</strong><small>LLM · AI Agent</small></div><span class="track-icon">⌘</span></div><div class="track-arrow">↓</div><div class="track-stage"><div class="stage-number">04</div><div><strong>Production Infrastructure</strong><small>AI Infra · Serving & Systems</small></div><span class="track-icon">↗</span></div></div>
+          </article>
+        </section>
+        <section class="section explorer-section" id="explorer">
+          <div class="section-heading"><div><div class="eyebrow">04 / TERMINOLOGY EXPLORER</div><h2>统一术语检索 <span>Find the precise term.</span></h2><p>支持 English / 中文 / Abbreviation / 释义 搜索，筛选学科及专题。</p></div><div class="explorer-tools"><button id="copy-link" class="tiny-btn" title="复制当前搜索链接">⛓ 复制链接</button><button id="download-csv" class="tiny-btn" title="下载当前筛选结果">↓ 导出 CSV</button></div></div>
+          <div class="search-box"><span class="search-icon">⌕</span><input id="search-input" type="search" autocomplete="off" placeholder="搜索，例如 Transformer、马尔可夫、KV Cache、PPO、SVD..." aria-label="搜索术语"><span class="search-shortcut">⌘ K</span><button id="clear-search" type="button" aria-label="清除搜索" hidden>×</button></div>
+          <div class="filterbar"><div class="filters"><label class="sr-only" for="category-filter">选择学科</label><select id="category-filter"><option value="all">全部学科 · All domains</option></select><label class="sr-only" for="topic-filter">选择专题</label><select id="topic-filter"><option value="all">全部专题 · All topics</option></select></div><div class="filters-right"><span id="result-count" aria-live="polite">—</span><label class="sr-only" for="sort-select">排序</label><select id="sort-select"><option value="default">教材顺序</option><option value="az">English A–Z</option><option value="za">English Z–A</option></select></div></div>
+          <div class="table-wrap"><table class="terms-table"><thead><tr><th style="width:5%">#</th><th style="width:28%">ENGLISH TERMINOLOGY</th><th style="width:20%">中文对应</th><th style="width:17%">CATEGORY / TOPIC</th><th>简明释义</th><th style="width:5%"></th></tr></thead><tbody id="terms-body"></tbody></table><div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>暂无匹配术语</h3><p>尝试减少关键词，或切换学科与专题筛选。</p><button class="tiny-btn" id="reset-filters">重置所有筛选</button></div></div>
+          <div class="pager"><div id="page-summary">—</div><div class="pager-buttons"><button id="prev-page" aria-label="上一页">← 上一页</button><span id="page-number">1 / 1</span><button id="next-page" aria-label="下一页">下一页 →</button></div></div>
+        </section>
+        <section class="cta-panel"><div><div class="eyebrow">OPEN REFERENCE · GROWING TOGETHER</div><h2>让术语成为共同的基础设施。</h2><p>发现翻译歧义？希望补充新领域？在 GitHub 提交 Issue 或 Pull Request，与社区共同建设可验证、可复用的双语知识库。</p></div><a class="btn cta-btn" href="https://github.com/1998x-stack/bilingual-technical-glossary/issues" target="_blank" rel="noopener noreferrer">参与协作 ↗</a></section>
+        <footer><div>© 2026 <strong>TERM/ATLAS</strong> · 1998x-stack <span class="footer-divider">/</span> Research reference, not a normative standard.</div><div><a href="https://github.com/1998x-stack/bilingual-technical-glossary" target="_blank" rel="noopener noreferrer">Source ↗</a><a href="./data/terms.json">Open JSON ↗</a><a href="./data/catalog.json">Catalog ↗</a></div></footer>
+      </main>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

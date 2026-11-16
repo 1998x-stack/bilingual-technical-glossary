@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "ai-infrastructure",
+    "en": "AI Infrastructure / AI Infra",
+    "zh": "AI 基础设施",
+    "description": "Accelerators, distributed systems, GPU serving and operations",
+    "icon": "cpu",
+    "count": 142,
+    "topics": 8
+  },
+  {
+    "slug": "ai-agents",
+    "en": "AI Agents",
+    "zh": "AI 智能体",
+    "description": "Planning, tools, protocols, memory and multi-agent systems",
+    "icon": "bot",
+    "count": 332,
+    "topics": 16
+  },
+  {
+    "slug": "large-language-models",
+    "en": "Large Language Models",
+    "zh": "大语言模型 LLM",
+    "description": "Tokenization, transformer, training, inference and alignment",
+    "icon": "brain",
+    "count": 419,
+    "topics": 16
+  },
+  {
+    "slug": "deep-learning",
+    "en": "Deep Learning",
+    "zh": "深度学习",
+    "description": "Neural networks, optimization, computer vision and generation",
+    "icon": "layers",
+    "count": 500,
+    "topics": 18
+  },
+  {
+    "slug": "reinforcement-learning",
+    "en": "Reinforcement Learning",
+    "zh": "强化学习",
+    "description": "MDPs, value learning, policy optimization and reward models",
+    "icon": "route",
+    "count": 305,
+    "topics": 14
+  },
+  {
+    "slug": "linear-algebra",
+    "en": "Linear Algebra",
+    "zh": "线性代数",
+    "description": "Vectors, matrices, spaces, eigensystems and factorization",
+    "icon": "grid",
+    "count": 289,
+    "topics": 12
+  },
+  {
+    "slug": "probability-theory",
+    "en": "Probability Theory",
+    "zh": "概率论",
+    "description": "Random variables, distributions, stochastic processes and inference",
+    "icon": "sigma",
+    "count": 405,
+    "topics": 16
+  }
+]
