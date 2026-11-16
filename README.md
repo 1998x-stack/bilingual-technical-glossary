@@ -32,6 +32,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Reinforcement Learning | 强化学习 | 305 | 14 | [Read](glossaries/reinforcement-learning.md) | [Download](pdf/reinforcement-learning.pdf) |
 | Calculus | 微积分 | 361 | 16 | [Read](glossaries/calculus.md) | [Download](pdf/calculus.pdf) |
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
+| Discrete Mathematics | 离散数学 | 324 | 16 | [Read](glossaries/discrete-mathematics.md) | [Download](pdf/discrete-mathematics.pdf) |
 | Compiler Principles | 编译原理 | 268 | 12 | [Read](glossaries/compiler-principles.md) | [Download](pdf/compiler-principles.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
 | University Mathematics | 大学数学 | 627 | 17 | [Read](glossaries/university-mathematics.md) | [Download](pdf/university-mathematics.pdf) |
@@ -45,7 +46,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | C++ Programming Language | C++ 编程语言 | 357 | 16 | [Read](glossaries/cpp.md) | [Download](pdf/cpp.pdf) |
 | Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
 | Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
-| **Total** | **23 domains** | **8,270** | **347** | | |
+| **Total** | **24 domains** | **8,594** | **363** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -63,6 +64,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 The Computer Networks edition adds **359 independently curated terms across 18 chapters**, spanning network architecture, Ethernet, WLAN, IP addressing, routing, TCP/UDP/QUIC, DNS, HTTP, TLS, cloud networking and troubleshooting. Its authored [Markdown](glossaries/computer-networks.md), [searchable PDF](pdf/computer-networks.pdf) and underlying [TSV](data/computer-networks.tsv) are synchronized with the searchable index and GitHub Pages downloads.
 
+## Discrete Mathematics / 离散数学
+
+The discrete mathematics handbook includes **324 independently curated terms in 16 topics**, ranging from proof and logic to combinatorics, number theory, graph algorithms and computational complexity. Edit the [canonical TSV source](data/discrete-mathematics.tsv); browse the [Markdown](glossaries/discrete-mathematics.md) or [searchable PDF](pdf/discrete-mathematics.pdf). Every term is included in the website search index.
+
 ## Newly indexed handbooks
 
 Operating Systems (396), SQL Database (394), Python (429), Junior High School Mathematics (400) and Parallel Computing (205) are now included in the searchable index; authored Markdown and PDFs remain preserved.
@@ -70,7 +75,7 @@ Operating Systems (396), SQL Database (394), Python (429), Junior High School Ma
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **347 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **363 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -113,7 +118,7 @@ python3 -m http.server 8000 --directory docs
 # Open http://localhost:8000/
 ```
 
-For Compiler Principles, edit the curated `data/compiler-principles.tsv` source; other indexed terms follow the existing `data/terms.json` conventions. Then run:
+For Discrete Mathematics, edit `data/discrete-mathematics.tsv`; for Compiler Principles, edit the curated `data/compiler-principles.tsv` source; other indexed terms follow the existing `data/terms.json` conventions. Then run:
 
 ```bash
 python3 -m pip install -r requirements.txt
