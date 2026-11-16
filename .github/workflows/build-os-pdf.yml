@@ -8,6 +8,7 @@ on:
       - 'assets/source/operating-systems.html'
       - 'glossaries/operating-systems.md'
       - 'scripts/build_os_pdf.py'
+      - 'tests/test_catalog.py'
       - '.github/workflows/build-os-pdf.yml'
   workflow_dispatch:
 
