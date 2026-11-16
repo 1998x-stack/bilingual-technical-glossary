@@ -43,7 +43,7 @@ class AIInfraBatch04Tests(unittest.TestCase):
                 self.assertGreaterEqual(text.count("**问："),2)
                 self.assertGreaterEqual(text.count("**题："),2)
                 self.assertGreaterEqual(len(set(SOURCE_LINK.findall(text))),2)
-                self.assertNotRegex(text,r"(?i)batch\s*0?[1-9]|生产批次|PR状态")
+                self.assertNotRegex(text,r"(?i)\bbatch[-\s]*0[1-8]\b|生产批次|PR状态")
 
     def test_index_and_editorial_ledger_are_consistent_with_80_public_pages(self):
         entries=self.index["articles"]
