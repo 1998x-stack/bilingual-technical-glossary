@@ -11,6 +11,10 @@ class CatalogTests(unittest.TestCase):
   ml=[t for t in DATA if t['category']=='machine-learning']
   self.assertEqual(len(ml),447)
   self.assertEqual(len(set(t['chapter'] for t in ml)),19)
+ def test_data_structures_domain(self):
+  rows=[t for t in DATA if t['category']=='data-structures']
+  self.assertEqual(len(rows),352)
+  self.assertEqual(len({t['chapter'] for t in rows}),14)
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:

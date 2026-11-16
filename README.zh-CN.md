@@ -24,7 +24,8 @@
 | 编译原理 / Compiler Principles | 268 | 12 | [阅读](glossaries/compiler-principles.md) | [下载](pdf/compiler-principles.pdf) |
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
 | Apache Kafka / 事件流平台 | 283 | 16 | [阅读](glossaries/apache-kafka.md) | [下载](pdf/apache-kafka.pdf) |
-| **合计** | **4,006** | **176** | | |
+| 数据结构 / Data Structures | 352 | 14 | [阅读](glossaries/data-structures.md) | [下载](pdf/data-structures.pdf) |
+| **合计** | **4,358** | **190** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -43,7 +44,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**12 个学科、176 个专题；
+- **主题选择：**13 个学科、190 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。

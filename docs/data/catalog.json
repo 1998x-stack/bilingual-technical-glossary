@@ -106,5 +106,14 @@
     "icon": "network",
     "count": 283,
     "topics": 16
+  },
+  {
+    "slug": "data-structures",
+    "en": "Data Structures",
+    "zh": "数据结构",
+    "description": "Arrays, linked lists, hashing, trees, graphs and advanced structures",
+    "icon": "network",
+    "count": 352,
+    "topics": 14
   }
 ]

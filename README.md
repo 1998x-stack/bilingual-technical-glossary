@@ -34,7 +34,8 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Compiler Principles | 编译原理 | 268 | 12 | [Read](glossaries/compiler-principles.md) | [Download](pdf/compiler-principles.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
 | Apache Kafka | Apache Kafka / 事件流平台 | 283 | 16 | [Read](glossaries/apache-kafka.md) | [Download](pdf/apache-kafka.pdf) |
-| **Total** | **12 domains** | **4,006** | **176** | | |
+| Data Structures | 数据结构 | 352 | 14 | [Read](glossaries/data-structures.md) | [Download](pdf/data-structures.pdf) |
+| **Total** | **13 domains** | **4,358** | **190** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -49,7 +50,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **176 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **190 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
