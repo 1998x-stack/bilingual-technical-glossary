@@ -223,5 +223,14 @@
     "icon": "sigma",
     "count": 295,
     "topics": 18
+  },
+  {
+    "slug": "numerical-computing",
+    "en": "Numerical Computing",
+    "zh": "数值计算",
+    "description": "Floating point, error analysis, linear algebra, nonlinear solvers, integration, optimization, ODE/PDE and scientific software",
+    "icon": "sigma",
+    "count": 259,
+    "topics": 17
   }
 ]

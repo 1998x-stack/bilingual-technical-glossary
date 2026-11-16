@@ -13,6 +13,7 @@
 | AI Infra 术语 | `data/ai-infrastructure.tsv` | 源词表；不得只修改生成的 JSON |
 | AI Infra 深度 Wiki | `wiki/ai-infrastructure/*.md` | 与 `docs/wiki/ai-infrastructure/` 逐字节镜像 |
 | 离散数学、编译原理 | `data/discrete-mathematics.tsv`、`data/compiler-principles.tsv` | 使用对应渲染器/导入路径 |
+| 数值计算 | `data/numerical-computing.tsv` | 独立创作 TSV；专用渲染器生成 Markdown/PDF，并与结构化检索同步 |
 | C++、计算机网络、信号处理 | `data/cpp-glossary.tsv`、`data/computer-networks.tsv`、`data/signal-processing.tsv` | 独立原稿，版本/缩写需校对 |
 | 高中数学 | `data/high-school-mathematics.tsv` | 保留中文符号与原始章节结构 |
 | 大学数学 | `sources/university-mathematics.html` | 包含附录；最终检查 Markdown 与 PDF |
