@@ -21,8 +21,15 @@
 | P1 | `wiki/TEMPLATE.md` | 公共正文模板混入 Batch/序号/编辑 checklist；未来复制后可能泄露生产字段 | 改为仅读者可见的八章节模板；内部检查单独维护 |
 | P1 | `docs/PAGES_SETUP.md` | 缺少统一术语详情页、发布索引、旧入口跳转和详情页常见故障说明 | 补充从 Explorer → term.html → Wiki 的数据与排错流程 |
 | P2 | README 中/英文、`AGENTS.md`、`wiki/README.md`、Skills 指南 | 缺少统一的“数据原稿 → 结构化索引 → 已发布正文 → Pages”维护图 | 新增维护者手册、领域规则、内部编辑验收和真实校验命令 |
-| P2 | 文档自动验证 | 只校验 README 中是否包含术语总数字符串，无法发现旧的学科/专题数字或本地 Markdown 死链 | 新增文档检查器和回归测试；仅校验本地链接，避免 PR CI 每次依赖外网 |
+| P2 | 文档自动验证 | 只校验 README 中是否包含术语总数字符串，无法发现旧的学科/专题数字或本地 Markdown 死链 | 新增文档检查器和回归测试；覆盖核心文档及已发布 Wiki 原稿、Pages 镜像的本地链接，避免日常 PR 依赖外网 |
 
+## 额外发现：Wiki Markdown 镜像的返回目录链接
+
+第一批 001–010 篇的 `../README.md` 在原稿目录中有效，但迁移至 Pages 镜像后会指向不存在的 `docs/wiki/README.md`。其余文章原有的 `README.md` 也缺少 Pages 对应目标。
+
+本次将前 10 篇的导航统一调整为 `README.md` 并同步原稿与镜像；新增只提供**返回统一 Explorer**链接的 `docs/wiki/ai-infrastructure/README.md` 作为 Markdown 兼容目标。它不展示批次，也不充当独立 Wiki 主页。
+
+扩展了文档检查脚本，对当前公开文章映射中每篇 Markdown 原稿与 Pages 镜像的本地链接进行离线检测。
 ## 仍需后续处理：不能靠改文档冒充已解决
 
 1. **发布作业并发与直接写 main（P1）：**多个专题出版 Workflow 可能提交自动重新生成的 PDF/Markdown。最新基线提交本身涉及多本 PDF 的同步。建议限制自动化写入范围、对产物做确定性检查、通过 PR 审查及按领域并发串行化。此次不改工作流权限和发布架构。

@@ -29,6 +29,9 @@ DOCUMENTS = (
     "wiki/TEMPLATE.md",
     "wiki/EDITORIAL_REVIEW.md",
     "wiki/ai-infrastructure/README.md",
+    "wiki/ai-infrastructure/BATCH-02.md",
+    "docs/wiki/ai-infrastructure/README.md",
+    "docs/wiki/ai-infrastructure/BATCH-02.md",
 )
 MARKDOWN_LINK = re.compile(r"!?(?:\[[^\]\n]*\])\(([^)\n]+)\)")
 BACKTICKS = re.compile(r"^\s*(?:```|~~~)")
@@ -71,6 +74,16 @@ def local_link_errors(root: Path = ROOT, docs=DOCUMENTS) -> list[str]:
 def check_documentation(root: Path = ROOT) -> list[str]:
     problems = local_link_errors(root)
     try:
+        # Check canonical and Pages Markdown links for every published article.
+        published = json.loads((root / "docs/data/wiki-index.json").read_text(encoding="utf-8"))
+        article_paths = []
+        for entry in published["articles"]:
+            relative = entry["path"]
+            if not re.fullmatch(r"wiki/[a-z0-9-]+/[0-9]{3}-[a-z0-9-]+\.md", relative):
+                problems.append(f"unsafe published article path: {relative!r}")
+                continue
+            article_paths.extend((relative, "docs/" + relative))
+        problems.extend(local_link_errors(root, article_paths))
         terms = json.loads((root / "data/terms.json").read_text(encoding="utf-8"))
         catalog = json.loads((root / "docs/data/catalog.json").read_text(encoding="utf-8"))
         en = (root / "README.md").read_text(encoding="utf-8")
