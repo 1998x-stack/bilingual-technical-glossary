@@ -4,7 +4,7 @@
 
 ### Bilingual Technical Glossary · 中英双语专业术语库
 
-**A structured reference for the language of mathematics, machine learning, and AI engineering.**
+**A structured reference for the language of programming, mathematics, machine learning, and AI engineering.**
 
 [中文说明](README.zh-CN.md) · [Browse the Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/) · [Glossary Sources](glossaries/) · [Contribute](CONTRIBUTING.md)
 
@@ -22,6 +22,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 | Field | Chinese subject | Indexed terms | Topics | Markdown | PDF |
 |---|---|---:|---:|---|---|
+| Python | Python 编程语言 | 429 | 16 | [Read](glossaries/python.md) | [Download](pdf/python.pdf) |
 | AI Infrastructure / AI Infra | AI 基础设施 | 142 | 8 | [Read](glossaries/ai-infrastructure.md) | [Download](pdf/ai-infrastructure.pdf) |
 | GPU Kernel Engineering | GPU Kernel / GPU 核函数 | 255 | 13 | [Read](glossaries/gpu-kernel.md) | [Download](pdf/gpu-kernel.pdf) |
 | AI Agents | AI 智能体 | 332 | 16 | [Read](glossaries/ai-agents.md) | [Download](pdf/ai-agents.pdf) |
@@ -31,14 +32,16 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Compiler Principles | 编译原理 | 268 | 12 | [Read](glossaries/compiler-principles.md) | [Download](pdf/compiler-principles.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
-| **Total** | **9 domains** | **2,915** | **125** | | |
+| **Total** | **10 domains** | **3,344** | **141** | | |
 
 > **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless.
+
+The Python volume adds **429 indexed entries across 16 chapters**. Its [complete authored Markdown](glossaries/python.md) preserves the confusion-guide appendix, English A–Z index, and primary references. The companion [PDF](pdf/python.pdf) uses searchable vector text with standard Chinese CID font substitution (Markdown is the fallback when the reader lacks Chinese fonts). Existing publications remain intact.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **125 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **141 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -53,8 +56,8 @@ bilingual-technical-glossary/
 │   ├── terms.json                 # Canonical indexed terms
 │   ├── terms.csv                  # Interoperable CSV export
 │   └── ai-infrastructure.tsv     # Curated AI Infra source notes
-├── glossaries/                    # 9 thematic Markdown glossaries
-├── pdf/                           # 9 searchable PDF handbooks
+├── glossaries/                    # 10 thematic Markdown glossaries
+├── pdf/                           # 10 searchable PDF handbooks
 ├── site/                          # Website source: HTML, CSS, JS, icon
 ├── docs/                          # GitHub Pages static publish directory
 │   ├── data/                      # Optimized JSON for frontend

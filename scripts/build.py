@@ -6,6 +6,7 @@ import csv, json, shutil, re
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/terms.json'
 CATALOG=[
+ ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
  ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
  ('gpu-kernel','GPU Kernel Engineering','GPU Kernel / GPU 核函数','CUDA, PTX, Triton, GPU programming and kernel performance','cpu'),
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
@@ -51,6 +52,10 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  # Retain complete standalone authored Markdown publications and appendices.
+  if slug in ('python','gpu-kernel'):
+   if not (ROOT/'glossaries'/f'{slug}.md').is_file():raise FileNotFoundError(f'glossaries/{slug}.md')
+   continue
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)
   for x in entries:groups[(x['chapter'],x['topic'])].append(x)

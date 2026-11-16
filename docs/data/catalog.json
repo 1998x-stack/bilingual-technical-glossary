@@ -1,5 +1,14 @@
 [
   {
+    "slug": "python",
+    "en": "Python",
+    "zh": "Python 编程语言",
+    "description": "Language, runtime, data model, typing, packaging and performance",
+    "icon": "code",
+    "count": 429,
+    "topics": 16
+  },
+  {
     "slug": "ai-infrastructure",
     "en": "AI Infrastructure / AI Infra",
     "zh": "AI 基础设施",

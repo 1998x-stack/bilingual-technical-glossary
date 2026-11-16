@@ -1,4 +1,433 @@
 category,chapter,topic,en,zh,abbr,definition
+python,1,语言与运行环境,Python,Python 编程语言,,一种通用的高级编程语言，强调可读性与丰富的生态。
+python,1,语言与运行环境,CPython,CPython 解释器,,最常见的 Python 实现，主要由 C 语言编写。
+python,1,语言与运行环境,Python implementation,Python 实现,,实现 Python 语言规范的运行系统，如 CPython、PyPy。
+python,1,语言与运行环境,interpreter,解释器,,读取并执行 Python 程序的运行组件。
+python,1,语言与运行环境,interactive mode,交互模式,,在提示符中逐条输入并执行代码的工作模式。
+python,1,语言与运行环境,REPL,读取-求值-输出循环,,Read–Eval–Print Loop；典型的交互式执行环境。
+python,1,语言与运行环境,script,脚本,,作为程序入口直接运行的 Python 源文件。
+python,1,语言与运行环境,source code,源代码,,开发者编写的可读程序文本。
+python,1,语言与运行环境,bytecode,字节码,,Python 编译阶段产生的中间指令形式。
+python,1,语言与运行环境,code object,代码对象,,表示已编译可执行代码片段的内部对象。
+python,1,语言与运行环境,virtual machine,虚拟机,,在解释器内部执行字节码的抽象执行机制。
+python,1,语言与运行环境,runtime,运行时,,程序执行期间提供对象、异常与资源管理的环境。
+python,1,语言与运行环境,standard library,标准库,,随 Python 发行、涵盖大量常见功能的模块集合。
+python,1,语言与运行环境,built-in function,内置函数,,无须导入即可使用的函数，如 len()、print()。
+python,1,语言与运行环境,built-in type,内置类型,,无须额外导入的类型，如 int、list、dict。
+python,1,语言与运行环境,namespace,命名空间,,将名称映射到对象的结构。
+python,1,语言与运行环境,scope,作用域,,名称可被直接查找或引用的代码区域。
+python,1,语言与运行环境,name binding,名称绑定,,将变量名与某个对象建立关联。
+python,1,语言与运行环境,object,对象,,Python 中具有身份、类型和值的运行实体。
+python,1,语言与运行环境,identity,身份标识,,标识对象本身；is 运算符比较对象身份。
+python,1,语言与运行环境,reference,引用,,指向对象的关联；变量保存的是对象引用语义。
+python,1,语言与运行环境,implementation detail,实现细节,,特定解释器的行为，不应一概视为语言保证。
+python,1,语言与运行环境,backward compatibility,向后兼容,,新版本尽量保持旧程序可运行的性质。
+python,1,语言与运行环境,Python Enhancement Proposal (PEP),Python 增强提案,PEP,记录语言、库与开发流程重大设计决策的提案文档。
+python,2,词法、语法与源文件,token,词法单元,,词法分析器识别出的最小语法组成单位。
+python,2,词法、语法与源文件,keyword,关键字,,具有固定语法用途的保留词，如 if、return。
+python,2,词法、语法与源文件,soft keyword,软关键字,,仅在特定语法上下文中作关键字，如 match、case。
+python,2,词法、语法与源文件,identifier,标识符,,用于命名变量、函数、类和模块的合法名称。
+python,2,词法、语法与源文件,literal,字面量,,在代码中直接写出的常量表示，如 42、'hi'。
+python,2,词法、语法与源文件,expression,表达式,,可求值得到某个结果的语法结构。
+python,2,词法、语法与源文件,statement,语句,,执行动作或控制程序结构的语法单元。
+python,2,词法、语法与源文件,simple statement,简单语句,,通常占一个逻辑行的语句，如 pass、import。
+python,2,词法、语法与源文件,compound statement,复合语句,,引入代码块的语句，如 if、for、def。
+python,2,词法、语法与源文件,block,代码块,,按缩进组织的一组相关语句。
+python,2,词法、语法与源文件,indentation,缩进,,Python 用来划定代码块层级的空白排版。
+python,2,词法、语法与源文件,logical line,逻辑行,,词法层面的完整语句行，可跨多个物理行。
+python,2,词法、语法与源文件,physical line,物理行,,源文件中由换行结束的一行字符。
+python,2,词法、语法与源文件,comment,注释,,以 # 开始、不会作为代码执行的说明文字。
+python,2,词法、语法与源文件,docstring,文档字符串,,模块、类或函数开头的字符串文档说明。
+python,2,词法、语法与源文件,encoding declaration,编码声明,,文件开头可指定源码编码的特殊注释。
+python,2,词法、语法与源文件,UTF-8,UTF-8 编码,,Python 3 源码默认使用的 Unicode 编码形式。
+python,2,词法、语法与源文件,string prefix,字符串前缀,,r、b、f 等前缀，用于指定字符串字面量种类。
+python,2,词法、语法与源文件,raw string,原始字符串,,带 r 前缀的字符串，减少对反斜杠转义的处理。
+python,2,词法、语法与源文件,f-string,格式化字符串字面量,,以 f 开头，允许在花括号中嵌入表达式。
+python,2,词法、语法与源文件,escape sequence,转义序列,,使用反斜杠表示特殊字符或编码，如 \n。
+python,2,词法、语法与源文件,syntax error,语法错误,,源代码违反语法规则，通常无法完成解析。
+python,2,词法、语法与源文件,semantic meaning,语义,,符合语法的代码在执行或求值时的含义。
+python,2,词法、语法与源文件,type annotation syntax,类型注解语法,,在函数参数、返回值及变量处声明类型信息的写法。
+python,2,词法、语法与源文件,PEP 8,Python 代码风格指南,,广泛使用的 Python 代码排版与命名建议。
+python,3,类型、对象与容器,type,类型,,决定对象支持哪些操作及其语义的类别。
+python,3,类型、对象与容器,instance,实例,,某个类型或类创建出的具体对象。
+python,3,类型、对象与容器,value,值,,对象所表示的数据内容。
+python,3,类型、对象与容器,None,空值对象,,内置单例，通常表示缺失值或无返回结果。
+python,3,类型、对象与容器,NoneType,空值类型,,单例 None 的类型。
+python,3,类型、对象与容器,boolean,布尔值,,真或假；Python 内置 bool 类型的值。
+python,3,类型、对象与容器,integer,整数,,Python 的 int，支持任意精度整数运算。
+python,3,类型、对象与容器,floating-point number,浮点数,,Python 的 float，通常采用二进制浮点表示。
+python,3,类型、对象与容器,complex number,复数,,Python 的 complex，包含实部与虚部。
+python,3,类型、对象与容器,string (str),字符串,,不可变的 Unicode 文本序列。
+python,3,类型、对象与容器,bytes,字节串,,不可变的字节序列，元素值为 0 到 255。
+python,3,类型、对象与容器,bytearray,可变字节数组,,可就地修改的字节序列。
+python,3,类型、对象与容器,list,列表,,有序、可变的对象序列。
+python,3,类型、对象与容器,tuple,元组,,有序、不可变的对象序列。
+python,3,类型、对象与容器,range,范围对象,,惰性表示整数等差序列的内置类型。
+python,3,类型、对象与容器,dictionary (dict),字典,,按键映射到值、保持插入顺序的可变映射。
+python,3,类型、对象与容器,set,集合,,无序、不重复元素的可变集合类型。
+python,3,类型、对象与容器,frozenset,不可变集合,,元素集合不支持增删操作的集合类型。
+python,3,类型、对象与容器,sequence,序列,,支持按位置索引等操作的数据结构抽象。
+python,3,类型、对象与容器,mapping,映射,,从键到值的关联结构抽象。
+python,3,类型、对象与容器,container,容器,,用于包含其他对象的对象，如列表或字典。
+python,3,类型、对象与容器,mutable,可变的,,对象创建后，其内部状态可以被修改。
+python,3,类型、对象与容器,immutable,不可变的,,对象创建后，其值不可就地改变。
+python,3,类型、对象与容器,hashable,可哈希的,,具有稳定哈希值并可用于字典键、集合元素的对象。
+python,3,类型、对象与容器,hash value,哈希值,,由 hash() 返回、用于哈希表定位的整数。
+python,3,类型、对象与容器,truth value testing,真值测试,,在 if、while、bool() 等场景判断对象真假。
+python,3,类型、对象与容器,subscript,下标访问,,使用 obj[key] 访问元素或切片的语法。
+python,3,类型、对象与容器,slice,切片,,用 start:stop:step 指定序列的某一范围。
+python,3,类型、对象与容器,shallow copy,浅拷贝,,复制外层容器，内部嵌套对象通常仍被共享。
+python,3,类型、对象与容器,deep copy,深拷贝,,递归复制嵌套对象，尽可能解除共享引用。
+python,3,类型、对象与容器,dictionary view,字典视图,,keys()、values()、items() 返回的动态视图。
+python,3,类型、对象与容器,bytes-like object,类字节对象,,支持缓冲区协议的二进制数据对象。
+python,3,类型、对象与容器,memoryview,内存视图,,无须复制底层数据即可访问缓冲区内容的对象。
+python,4,表达式、运算符与赋值,operator,运算符,,指定运算或比较操作的符号或关键字。
+python,4,表达式、运算符与赋值,operand,操作数,,运算符作用的值或表达式。
+python,4,表达式、运算符与赋值,operator precedence,运算符优先级,,决定表达式中不同运算符结合顺序的规则。
+python,4,表达式、运算符与赋值,associativity,结合性,,同优先级运算符的分组方式。
+python,4,表达式、运算符与赋值,arithmetic operator,算术运算符,,例如 +、-、*、/、//、%、**。
+python,4,表达式、运算符与赋值,floor division,向下取整除法,,// 运算通常向负无穷方向取整。
+python,4,表达式、运算符与赋值,modulo,取模运算,,% 返回余数，整数运算结果与除数符号相关。
+python,4,表达式、运算符与赋值,exponentiation,幂运算,,** 计算乘方。
+python,4,表达式、运算符与赋值,comparison operator,比较运算符,,如 ==、!=、<、>=，返回比较结果。
+python,4,表达式、运算符与赋值,equality,相等性,,== 判断两个对象的值是否按规则相等。
+python,4,表达式、运算符与赋值,identity comparison,身份比较,,is 与 is not 比较是否为同一对象。
+python,4,表达式、运算符与赋值,logical operator,逻辑运算符,,and、or、not，支持短路求值。
+python,4,表达式、运算符与赋值,short-circuit evaluation,短路求值,,已足以确定结果时不再执行后续操作数。
+python,4,表达式、运算符与赋值,bitwise operator,按位运算符,,对整数位模式进行 &、|、^、~、移位操作。
+python,4,表达式、运算符与赋值,membership test,成员资格测试,,in / not in 判断元素是否在容器中。
+python,4,表达式、运算符与赋值,assignment,赋值,,用 = 将名称绑定到表达式的求值结果。
+python,4,表达式、运算符与赋值,augmented assignment,增强赋值,,+=、*= 等，可能调用对象的就地运算方法。
+python,4,表达式、运算符与赋值,unpacking,解包,,将序列或可迭代对象的元素分配到多个目标。
+python,4,表达式、运算符与赋值,starred expression,星号表达式,,在解包或调用等位置使用 * 处理多个元素。
+python,4,表达式、运算符与赋值,walrus operator,海象运算符,,:= 是赋值表达式，在表达式中绑定名称。
+python,4,表达式、运算符与赋值,conditional expression,条件表达式,,x if condition else y 的表达式形式。
+python,4,表达式、运算符与赋值,chained comparison,链式比较,,例如 0 < x < 10，避免重复求值中间操作数。
+python,4,表达式、运算符与赋值,operator overloading,运算符重载,,类通过特殊方法自定义运算符行为。
+python,4,表达式、运算符与赋值,bitwise OR type union,类型联合写法,,在类型表达式中用 X | Y 表示联合类型。
+python,5,控制流程与函数,conditional statement,条件语句,,使用 if、elif、else 选择执行分支。
+python,5,控制流程与函数,for loop,for 循环,,依次取出可迭代对象中的元素执行代码块。
+python,5,控制流程与函数,while loop,while 循环,,当条件保持为真时重复执行代码块。
+python,5,控制流程与函数,break,跳出循环,,提前结束最近一层循环。
+python,5,控制流程与函数,continue,继续下一轮,,跳过本轮剩余语句，开始下一次循环。
+python,5,控制流程与函数,pass,空语句,,语法上需要语句时使用的不执行操作的占位语句。
+python,5,控制流程与函数,loop else,循环 else 子句,,循环未通过 break 退出时执行的代码块。
+python,5,控制流程与函数,match statement,模式匹配语句,,使用 match/case 按结构模式选择分支。
+python,5,控制流程与函数,pattern matching,模式匹配,,按值、结构或绑定模式检查数据。
+python,5,控制流程与函数,function,函数,,可复用的可调用代码单元。
+python,5,控制流程与函数,function definition,函数定义,,用 def 创建函数对象并绑定名称。
+python,5,控制流程与函数,call,调用,,通过圆括号向可调用对象传入参数并执行。
+python,5,控制流程与函数,parameter,形参,,函数定义中声明的接收值的名称。
+python,5,控制流程与函数,argument,实参,,函数调用时实际传递的值或表达式。
+python,5,控制流程与函数,positional argument,位置实参,,依靠参数位置匹配形参的实参。
+python,5,控制流程与函数,keyword argument,关键字实参,,使用 name=value 显式指定目标形参。
+python,5,控制流程与函数,default argument value,默认参数值,,定义函数时计算、调用时可省略的形参默认值。
+python,5,控制流程与函数,mutable default pitfall,可变默认参数陷阱,,默认值对象在多次调用之间复用，可能意外共享状态。
+python,5,控制流程与函数,variadic positional parameters (*args),可变位置参数,,接收多余位置实参并组成元组。
+python,5,控制流程与函数,variadic keyword parameters (**kwargs),可变关键字参数,,接收多余关键字实参并组成字典。
+python,5,控制流程与函数,positional-only parameter,仅限位置参数,,定义中放在 / 之前，只能按位置传入。
+python,5,控制流程与函数,keyword-only parameter,仅限关键字参数,,定义中位于 * 之后，必须以关键字传入。
+python,5,控制流程与函数,return value,返回值,,函数执行 return 后交还调用者的结果。
+python,5,控制流程与函数,recursion,递归,,函数直接或间接调用自身。
+python,5,控制流程与函数,closure,闭包,,函数携带并访问其定义时外层作用域的绑定。
+python,5,控制流程与函数,LEGB rule,LEGB 名称查找规则,,Local、Enclosing、Global、Built-in 的常见查找顺序概括。
+python,5,控制流程与函数,global statement,global 声明,,指定函数中某名称绑定到模块级命名空间。
+python,5,控制流程与函数,nonlocal statement,nonlocal 声明,,指定名称绑定到最近的已有外层函数作用域。
+python,6,类、面向对象与数据模型,class,类,,定义对象属性与行为的可调用构造模板。
+python,6,类、面向对象与数据模型,constructor call,构造调用,,调用类对象以创建并初始化实例。
+python,6,类、面向对象与数据模型,class attribute,类属性,,定义在类命名空间中的属性，可被实例读取。
+python,6,类、面向对象与数据模型,instance attribute,实例属性,,保存于某个实例自身的属性。
+python,6,类、面向对象与数据模型,method,方法,,通过对象属性访问、具有调用行为的函数或描述符。
+python,6,类、面向对象与数据模型,instance method,实例方法,,一般将实例作为第一个参数（惯例名 self）。
+python,6,类、面向对象与数据模型,class method,类方法,,经 @classmethod 装饰，将类作为第一个参数。
+python,6,类、面向对象与数据模型,static method,静态方法,,经 @staticmethod 装饰，不自动接收实例或类。
+python,6,类、面向对象与数据模型,inheritance,继承,,子类从基类获取可复用或可覆盖的行为。
+python,6,类、面向对象与数据模型,base class,基类,,被其他类继承的父类。
+python,6,类、面向对象与数据模型,subclass,子类,,从已有类派生出的类。
+python,6,类、面向对象与数据模型,multiple inheritance,多重继承,,一个类继承多个基类。
+python,6,类、面向对象与数据模型,method resolution order (MRO),方法解析顺序,MRO,多重继承下查找类属性的线性顺序。
+python,6,类、面向对象与数据模型,polymorphism,多态,,不同类型对象以共同接口参与相同操作。
+python,6,类、面向对象与数据模型,duck typing,鸭子类型,,更关注对象能做什么，而非其名义继承关系。
+python,6,类、面向对象与数据模型,encapsulation,封装,,通过接口组织对象的状态与行为；Python 主要依靠约定。
+python,6,类、面向对象与数据模型,property,属性描述器,,property 允许通过属性访问调用 getter/setter。
+python,6,类、面向对象与数据模型,descriptor,描述符,,实现 __get__、__set__ 或 __delete__ 的属性协议对象。
+python,6,类、面向对象与数据模型,attribute lookup,属性查找,,解析 obj.attr 时依据数据模型执行的查找流程。
+python,6,类、面向对象与数据模型,special method,特殊方法,,如 __len__、__iter__，让对象参与语言协议。
+python,6,类、面向对象与数据模型,dunder method,双下划线方法,,对 __xxx__ 特殊方法的常用俗称。
+python,6,类、面向对象与数据模型,__init__(),初始化方法,,新实例创建后被调用，用于设置初始状态。
+python,6,类、面向对象与数据模型,__new__(),实例创建方法,,负责创建并返回实例，先于 __init__。
+python,6,类、面向对象与数据模型,__repr__(),开发者表示方法,,返回倾向于准确、可调试的对象字符串表示。
+python,6,类、面向对象与数据模型,__str__(),字符串表示方法,,定义 str(obj) 和 print(obj) 的友好文本形式。
+python,6,类、面向对象与数据模型,__eq__(),相等比较方法,,定义对象的 == 比较行为。
+python,6,类、面向对象与数据模型,__hash__(),哈希方法,,返回整数哈希值，需与相等性约束一致。
+python,6,类、面向对象与数据模型,__slots__,属性槽声明,,可限制常规实例属性布局，常用于节省部分对象开销。
+python,6,类、面向对象与数据模型,metaclass,元类,,控制类对象创建与行为的类，常见默认元类为 type。
+python,6,类、面向对象与数据模型,abstract base class (ABC),抽象基类,ABC,通过 abc 提供抽象接口或虚拟子类机制。
+python,6,类、面向对象与数据模型,dataclass,数据类,,使用 @dataclass 自动生成常见数据承载类方法。
+python,7,迭代器、生成器与函数式工具,iterable,可迭代对象,,能通过 iter() 取得迭代器的对象。
+python,7,迭代器、生成器与函数式工具,iterator,迭代器,,实现 __next__() 并逐个提供元素的对象。
+python,7,迭代器、生成器与函数式工具,iteration,迭代,,依次获取一系列元素的过程。
+python,7,迭代器、生成器与函数式工具,iteration protocol,迭代协议,,由 __iter__() 与 __next__() 组成的常用接口。
+python,7,迭代器、生成器与函数式工具,StopIteration,迭代结束异常,,迭代器耗尽时发出的终止信号。
+python,7,迭代器、生成器与函数式工具,generator,生成器,,通常指由含 yield 的函数创建的迭代器。
+python,7,迭代器、生成器与函数式工具,generator function,生成器函数,,函数体含 yield，调用后返回生成器对象。
+python,7,迭代器、生成器与函数式工具,generator expression,生成器表达式,,如 (x*x for x in data) 的惰性迭代结构。
+python,7,迭代器、生成器与函数式工具,yield,产出并暂停,,生成器发送一个值并保存执行现场。
+python,7,迭代器、生成器与函数式工具,yield from,委托产出,,将产出与交互委托给子迭代器或生成器。
+python,7,迭代器、生成器与函数式工具,next(),获取下个元素,,从迭代器中取一个元素，可设置耗尽默认值。
+python,7,迭代器、生成器与函数式工具,iter(),获取迭代器,,对可迭代对象构造或取得迭代器。
+python,7,迭代器、生成器与函数式工具,list comprehension,列表推导式,,由迭代表达式简洁构造列表。
+python,7,迭代器、生成器与函数式工具,set comprehension,集合推导式,,由迭代表达式简洁构造集合。
+python,7,迭代器、生成器与函数式工具,dictionary comprehension,字典推导式,,由键值表达式简洁构造字典。
+python,7,迭代器、生成器与函数式工具,lazy evaluation,惰性求值,,仅在需要时计算后续数据或结果。
+python,7,迭代器、生成器与函数式工具,eager evaluation,立即求值,,立即完成计算并产生完整结果。
+python,7,迭代器、生成器与函数式工具,map(),映射函数,,对一个或多个可迭代对象逐项应用函数。
+python,7,迭代器、生成器与函数式工具,filter(),过滤函数,,保留使谓词结果为真的输入元素。
+python,7,迭代器、生成器与函数式工具,zip(),并行打包函数,,将多个可迭代对象按位置组合成元组。
+python,7,迭代器、生成器与函数式工具,enumerate(),带索引枚举,,迭代时同时产生索引和值。
+python,7,迭代器、生成器与函数式工具,functools,函数式工具模块,,提供 partial、reduce、缓存装饰器等。
+python,7,迭代器、生成器与函数式工具,itertools,迭代器工具模块,,提供组合、排列、链式迭代等工具。
+python,7,迭代器、生成器与函数式工具,partial function,偏函数,,固定某些实参以得到新的可调用对象。
+python,8,异常处理与上下文管理,exception,异常,,表示错误或特殊控制事件的对象。
+python,8,异常处理与上下文管理,exception class,异常类,,用于表示某类异常的类型。
+python,8,异常处理与上下文管理,raise statement,抛出异常语句,,使用 raise 发出异常。
+python,8,异常处理与上下文管理,try statement,尝试语句,,捕获与清理异常的复合语句。
+python,8,异常处理与上下文管理,except clause,异常捕获子句,,在异常匹配时执行恢复或处理逻辑。
+python,8,异常处理与上下文管理,except* clause,异常组捕获子句,,按异常类型处理 ExceptionGroup 的子集。
+python,8,异常处理与上下文管理,else clause,无异常子句,,try 主体未抛出异常时执行的对应子句。
+python,8,异常处理与上下文管理,finally clause,最终清理子句,,不论 try 如何退出通常都会执行的清理逻辑。
+python,8,异常处理与上下文管理,exception chaining,异常链,,通过 __cause__、__context__ 记录异常间的关系。
+python,8,异常处理与上下文管理,raise ... from ...,显式异常原因,,将一个异常明确设置为另一个异常的原因。
+python,8,异常处理与上下文管理,traceback,回溯信息,,展示异常调用栈与代码位置的信息。
+python,8,异常处理与上下文管理,stack frame,栈帧,,函数执行时携带局部变量等状态的运行记录。
+python,8,异常处理与上下文管理,context manager,上下文管理器,,定义进入、退出受管理执行环境的对象。
+python,8,异常处理与上下文管理,with statement,with 语句,,通过上下文管理器管理资源范围。
+python,8,异常处理与上下文管理,__enter__(),进入上下文方法,,进入 with 块前调用，返回绑定给 as 的对象。
+python,8,异常处理与上下文管理,__exit__(),退出上下文方法,,离开 with 块时调用，可控制异常是否被抑制。
+python,8,异常处理与上下文管理,contextlib,上下文工具模块,,提供 contextmanager、ExitStack 等工具。
+python,8,异常处理与上下文管理,resource cleanup,资源清理,,关闭文件、释放锁等操作。
+python,8,异常处理与上下文管理,custom exception,自定义异常,,应用代码定义的异常类，通常继承 Exception。
+python,8,异常处理与上下文管理,BaseException,异常基类,,大多数可抛出异常的共同根类型。
+python,8,异常处理与上下文管理,ExceptionGroup,异常组,,聚合多个异常以便统一传播与拆分处理。
+python,9,模块、导入与项目结构,module,模块,,可导入的 Python 代码组织单元。
+python,9,模块、导入与项目结构,package,包（导入包）,,组织子模块的可导入包；不同于发布分发包。
+python,9,模块、导入与项目结构,submodule,子模块,,位于包之下的模块。
+python,9,模块、导入与项目结构,import statement,导入语句,,使用 import 或 from ... import 绑定导入名称。
+python,9,模块、导入与项目结构,absolute import,绝对导入,,从顶层包名称开始解析的导入方式。
+python,9,模块、导入与项目结构,relative import,相对导入,,使用前导点号按包层级解析导入。
+python,9,模块、导入与项目结构,import path,模块搜索路径,,导入系统查找模块所用的路径集合。
+python,9,模块、导入与项目结构,sys.path,模块搜索路径列表,,Python 导入器使用的重要路径序列。
+python,9,模块、导入与项目结构,module cache,模块缓存,,sys.modules 中已加载模块的映射。
+python,9,模块、导入与项目结构,__name__,模块名称属性,,模块作为脚本运行时通常为 '__main__'。
+python,9,模块、导入与项目结构,__main__,主模块,,解释器执行程序入口时使用的模块名。
+python,9,模块、导入与项目结构,__init__.py,包初始化文件,,常规包中的初始化模块文件。
+python,9,模块、导入与项目结构,namespace package,命名空间包,,可跨多个目录位置组成同一包的机制。
+python,9,模块、导入与项目结构,importlib,导入工具库,,提供导入系统与模块加载的编程接口。
+python,9,模块、导入与项目结构,module spec,模块规格信息,,描述模块加载器与来源等元数据的对象。
+python,9,模块、导入与项目结构,relative path,相对路径,,相对于当前目录或基准目录的路径。
+python,9,模块、导入与项目结构,absolute path,绝对路径,,从文件系统根或盘符基准定位的路径。
+python,9,模块、导入与项目结构,project root,项目根目录,,项目配置与代码结构的顶层目录。
+python,9,模块、导入与项目结构,source layout,源码布局,,例如 src/ 目录承载项目导入包的组织方式。
+python,9,模块、导入与项目结构,circular import,循环导入,,模块互相依赖导入，可能在初始化中出现问题。
+python,9,模块、导入与项目结构,entry point,入口点,,包元数据声明的可执行命令或插件入口。
+python,9,模块、导入与项目结构,plugin,插件,,通过约定接口动态扩展宿主程序的组件。
+python,10,类型注解与静态分析,type hint,类型提示,,用注解表达开发者预期的类型信息。
+python,10,类型注解与静态分析,type annotation,类型注解,,放在变量、形参或返回值上的类型表达式。
+python,10,类型注解与静态分析,static type checker,静态类型检查器,,不运行程序即可分析类型兼容性的工具。
+python,10,类型注解与静态分析,runtime type checking,运行时类型检查,,程序执行期间主动验证值的类型。
+python,10,类型注解与静态分析,typing module,typing 模块,,提供 Python 类型系统相关构造与工具。
+python,10,类型注解与静态分析,Any,任意类型,,静态类型系统中的动态逃逸类型，削弱检查约束。
+python,10,类型注解与静态分析,object type,顶层对象类型,,Python 类层次常见顶层类；静态意义不同于 Any。
+python,10,类型注解与静态分析,Union,联合类型,,表示值可能符合多个类型之一。
+python,10,类型注解与静态分析,Optional,可选空值类型,,Optional[T] 等价于 T 与 None 的联合类型。
+python,10,类型注解与静态分析,Literal,字面量类型,,限定到某些具体字面值的静态类型。
+python,10,类型注解与静态分析,Annotated,附加元数据类型,,在基本类型上附加供工具使用的元数据。
+python,10,类型注解与静态分析,Callable,可调用类型,,描述参数与返回值形状的函数接口类型。
+python,10,类型注解与静态分析,Iterable,可迭代协议类型,,描述可通过迭代取元素的对象。
+python,10,类型注解与静态分析,Iterator,迭代器协议类型,,描述既可迭代又可提供下一元素的对象。
+python,10,类型注解与静态分析,Generator,生成器类型,,在类型层表示 yield、send、return 类型信息。
+python,10,类型注解与静态分析,Protocol,协议类型,,通过结构成员而非显式继承表达接口兼容性。
+python,10,类型注解与静态分析,structural subtyping,结构化子类型,,依据对象成员结构判断类型兼容性。
+python,10,类型注解与静态分析,nominal subtyping,名义子类型,,依据显式继承或注册关系判断子类型。
+python,10,类型注解与静态分析,TypeVar,类型变量,,在泛型定义中表达类型之间的关联。
+python,10,类型注解与静态分析,generic,泛型,,以类型参数描述可复用的类型或函数。
+python,10,类型注解与静态分析,ParamSpec,参数规格变量,,在高阶函数中保留被包装函数的参数形状。
+python,10,类型注解与静态分析,TypeAlias,类型别名,,为类型表达式赋予可复用名称。
+python,10,类型注解与静态分析,TypedDict,带类型键的字典,,为具有固定键结构的字典声明预期值类型。
+python,10,类型注解与静态分析,NewType,新类型标记,,为静态检查构造名义上不同的简单类型。
+python,10,类型注解与静态分析,Final,不应重赋值标记,,静态工具可检查被标记名称的重新赋值。
+python,10,类型注解与静态分析,overload,重载声明,,描述函数针对不同参数类型的多个静态签名。
+python,10,类型注解与静态分析,Self,自身类型,,在方法或类接口中引用当前类及其子类的类型。
+python,10,类型注解与静态分析,type narrowing,类型缩窄,,在条件判断后，将联合类型缩小到更具体类型。
+python,11,异步编程与并发模型,concurrency,并发,,多项任务在时间上交错或协调推进。
+python,11,异步编程与并发模型,parallelism,并行,,多项计算在同一时刻实质上执行。
+python,11,异步编程与并发模型,asynchronous programming,异步编程,,使用非阻塞等待与任务调度组织工作。
+python,11,异步编程与并发模型,synchronous programming,同步编程,,按顺序执行并在调用完成后继续的常见模式。
+python,11,异步编程与并发模型,coroutine,协程,,可挂起并在之后恢复执行的计算对象。
+python,11,异步编程与并发模型,coroutine function,协程函数,,通过 async def 定义，调用后通常返回协程对象。
+python,11,异步编程与并发模型,awaitable,可等待对象,,可作为 await 表达式操作数的对象。
+python,11,异步编程与并发模型,await,等待表达式,,在协程中等待可等待对象，同时让出调度控制权。
+python,11,异步编程与并发模型,asyncio,异步 I/O 标准库,,Python 提供事件循环、任务与异步同步原语的模块。
+python,11,异步编程与并发模型,event loop,事件循环,,负责调度异步回调、任务及 I/O 事件的核心组件。
+python,11,异步编程与并发模型,Task,异步任务,,asyncio 中调度协程执行的可等待对象。
+python,11,异步编程与并发模型,Future,未来结果对象,,表示异步操作未来完成结果的可等待对象。
+python,11,异步编程与并发模型,async iterator,异步迭代器,,提供 __aiter__ 与异步 __anext__ 方法的对象。
+python,11,异步编程与并发模型,async for,异步迭代语句,,迭代异步迭代器的语法。
+python,11,异步编程与并发模型,async context manager,异步上下文管理器,,定义 __aenter__ 和 __aexit__ 的资源管理对象。
+python,11,异步编程与并发模型,async with,异步 with 语句,,以异步协议进入与退出上下文。
+python,11,异步编程与并发模型,asynchronous generator,异步生成器,,同时使用 async def 与 yield 定义的生成器机制。
+python,11,异步编程与并发模型,thread,线程,,进程内执行流，通常共享同一进程内存。
+python,11,异步编程与并发模型,process,进程,,操作系统管理的独立执行单元，通常有独立地址空间。
+python,11,异步编程与并发模型,threading,线程模块,,提供 Thread、Lock、Event 等线程同步接口。
+python,11,异步编程与并发模型,multiprocessing,多进程模块,,基于子进程提供并行计算与通信的工具。
+python,11,异步编程与并发模型,concurrent.futures,并发任务接口,,提供线程池、进程池与 Future 抽象。
+python,11,异步编程与并发模型,thread pool,线程池,,重用工作线程执行多个任务的机制。
+python,11,异步编程与并发模型,process pool,进程池,,重用工作进程执行多个任务的机制。
+python,11,异步编程与并发模型,lock,互斥锁,,限制共享资源被多个执行单元同时访问的同步原语。
+python,11,异步编程与并发模型,reentrant lock (RLock),可重入锁,,同一线程可以多次获取的锁。
+python,11,异步编程与并发模型,semaphore,信号量,,限制同时进入某个资源区的执行单元数量。
+python,11,异步编程与并发模型,race condition,竞态条件,,程序结果依赖不受控执行时序的缺陷。
+python,11,异步编程与并发模型,deadlock,死锁,,多个执行单元相互等待导致无法继续推进。
+python,11,异步编程与并发模型,cancellation,取消,,请求异步任务停止，通常在可等待点传播取消异常。
+python,11,异步编程与并发模型,structured concurrency,结构化并发,,让子任务生命周期与明确的代码作用域绑定的设计思想。
+python,11,异步编程与并发模型,TaskGroup,任务组,,asyncio 中用于成组管理子任务及异常传播的上下文管理器。
+python,11,异步编程与并发模型,Global Interpreter Lock (GIL),全局解释器锁,GIL,传统 CPython 构建中限制同一解释器内线程并行执行字节码的机制。
+python,11,异步编程与并发模型,free-threaded build,自由线程构建,,可禁用 GIL 的 CPython 构建模式，兼容性与行为需参照对应版本文档。
+python,12,文件、I/O 与系统接口,I/O (input/output),输入/输出,,程序与文件、终端或外部设备交换数据的活动。
+python,12,文件、I/O 与系统接口,stream,流,,按顺序读写数据的抽象接口。
+python,12,文件、I/O 与系统接口,text I/O,文本输入输出,,读写 str 并涉及字符编码/解码的 I/O。
+python,12,文件、I/O 与系统接口,binary I/O,二进制输入输出,,读写 bytes 等二进制对象的 I/O。
+python,12,文件、I/O 与系统接口,buffering,缓冲,,临时聚集数据以减少底层读写次数的机制。
+python,12,文件、I/O 与系统接口,file object,文件对象,,提供 read、write、close 等接口的对象。
+python,12,文件、I/O 与系统接口,file descriptor,文件描述符,,操作系统使用的打开文件资源整数标识。
+python,12,文件、I/O 与系统接口,open(),打开文件函数,,返回适当类型的文件对象。
+python,12,文件、I/O 与系统接口,encoding,字符编码,,在字符与字节之间进行映射的规则。
+python,12,文件、I/O 与系统接口,decoding,解码,,将字节序列转换为字符文本的过程。
+python,12,文件、I/O 与系统接口,newline translation,换行符转换,,文本 I/O 对不同平台换行形式的处理。
+python,12,文件、I/O 与系统接口,pathlike object,类路径对象,,通过 __fspath__ 表示文件系统路径的对象。
+python,12,文件、I/O 与系统接口,pathlib.Path,路径对象,,面向对象地处理文件与目录路径的类型。
+python,12,文件、I/O 与系统接口,os module,操作系统接口模块,,提供环境变量、进程与文件系统相关操作。
+python,12,文件、I/O 与系统接口,sys module,解释器系统模块,,提供 argv、path、stdout 等解释器级接口。
+python,12,文件、I/O 与系统接口,stdin,标准输入,,程序默认接收输入的数据流。
+python,12,文件、I/O 与系统接口,stdout,标准输出,,程序正常输出的默认流。
+python,12,文件、I/O 与系统接口,stderr,标准错误,,程序诊断信息的默认输出流。
+python,12,文件、I/O 与系统接口,environment variable,环境变量,,由进程环境提供的键值配置。
+python,12,文件、I/O 与系统接口,subprocess,子进程模块,,启动、控制与通信外部程序的标准库模块。
+python,12,文件、I/O 与系统接口,pipe,管道,,将一个进程的数据流连接到另一进程的通信机制。
+python,12,文件、I/O 与系统接口,serialization,序列化,,将对象或数据结构编码成可保存/传输形式。
+python,12,文件、I/O 与系统接口,deserialization,反序列化,,从编码格式恢复对应的数据结构。
+python,12,文件、I/O 与系统接口,JSON,JSON 数据格式,,通用文本数据交换格式，Python 常用 json 模块处理。
+python,12,文件、I/O 与系统接口,pickle,Python 对象序列化,,pickle 能序列化大量 Python 对象，但不可加载不可信数据。
+python,12,文件、I/O 与系统接口,CSV,逗号分隔值格式,,常用于表格型数据交换，分隔规则由方言决定。
+python,12,文件、I/O 与系统接口,temporary file,临时文件,,为短期处理创建、通常需要及时清理的文件。
+python,13,常用标准库与数据工具,collections,集合工具模块,,提供 deque、Counter、defaultdict 等容器。
+python,13,常用标准库与数据工具,collections.abc,容器抽象基类模块,,定义 Iterable、Mapping、Sequence 等 ABC。
+python,13,常用标准库与数据工具,dataclasses,数据类模块,,自动为数据类生成初始化和比较等方法。
+python,13,常用标准库与数据工具,heapq,堆队列模块,,提供基于列表的小顶堆操作。
+python,13,常用标准库与数据工具,bisect,二分查找模块,,在有序序列中查找插入位置。
+python,13,常用标准库与数据工具,array,同类型值数组模块,,存储特定基本 C 类型数值的紧凑序列。
+python,13,常用标准库与数据工具,math,数学函数模块,,提供实数数学函数与常量。
+python,13,常用标准库与数据工具,statistics,统计模块,,提供均值、中位数、方差等基础统计工具。
+python,13,常用标准库与数据工具,decimal,十进制运算模块,,提供可控制精度与舍入的十进制数。
+python,13,常用标准库与数据工具,fractions,有理数模块,,通过 Fraction 表示分子、分母比值。
+python,13,常用标准库与数据工具,random,伪随机数模块,,用于模拟等普通随机需求，不应用于密码安全。
+python,13,常用标准库与数据工具,secrets,安全随机工具,,适于生成令牌等密码学用途的随机值。
+python,13,常用标准库与数据工具,re,正则表达式模块,,提供文本模式匹配与替换功能。
+python,13,常用标准库与数据工具,string,字符串常量与模板,,提供字符类别常量、Template 等。
+python,13,常用标准库与数据工具,datetime,日期时间模块,,提供 date、time、datetime 和 timedelta。
+python,13,常用标准库与数据工具,zoneinfo,时区数据库接口,,提供 IANA 时区数据库对应的时区对象。
+python,13,常用标准库与数据工具,logging,日志模块,,支持等级、格式器、处理器的日志记录。
+python,13,常用标准库与数据工具,argparse,命令行参数模块,,构建具有选项和帮助信息的命令行接口。
+python,13,常用标准库与数据工具,configparser,INI 配置解析模块,,读写传统 INI 风格配置文件。
+python,13,常用标准库与数据工具,shutil,高级文件操作模块,,提供复制、移动、目录树操作等。
+python,13,常用标准库与数据工具,functools.lru_cache,最近最少使用缓存,,按调用参数缓存函数结果的装饰器。
+python,13,常用标准库与数据工具,weakref,弱引用模块,,引用对象而不阻止其被垃圾回收的工具。
+python,13,常用标准库与数据工具,inspect,内省工具模块,,读取签名、源码及其他运行对象信息。
+python,13,常用标准库与数据工具,importlib.metadata,包元数据读取,,查询已安装分发包的版本与元信息。
+python,14,依赖、包管理与构建发布,package manager,包管理器,,安装、更新或管理可复用软件包的工具。
+python,14,依赖、包管理与构建发布,pip,Python 包安装工具,,常用的 Python 分发包安装前端。
+python,14,依赖、包管理与构建发布,PyPI,Python 包索引,,Python 社区广泛使用的公开分发包索引服务。
+python,14,依赖、包管理与构建发布,virtual environment,虚拟环境,,为项目隔离 Python 解释器环境与安装依赖的机制。
+python,14,依赖、包管理与构建发布,venv,虚拟环境模块,,创建 Python 虚拟环境的标准库模块。
+python,14,依赖、包管理与构建发布,site-packages,第三方包安装目录,,解释器环境中常见的已安装包位置。
+python,14,依赖、包管理与构建发布,dependency,依赖,,项目正常运行或构建所依赖的其他包或组件。
+python,14,依赖、包管理与构建发布,direct dependency,直接依赖,,项目显式声明依赖的软件包。
+python,14,依赖、包管理与构建发布,transitive dependency,传递依赖,,因直接依赖的需求而间接引入的软件包。
+python,14,依赖、包管理与构建发布,version specifier,版本约束,,指定可接受软件包版本范围的表达式。
+python,14,依赖、包管理与构建发布,requirement,安装需求,,对需要安装的分发包及其约束的说明。
+python,14,依赖、包管理与构建发布,requirements.txt,依赖需求文件,,常用于按行列出 pip 需要安装的需求。
+python,14,依赖、包管理与构建发布,lock file,锁定文件,,记录经解析后的具体依赖版本/工件，格式因工具而异。
+python,14,依赖、包管理与构建发布,reproducible build,可复现构建,,在规定条件下能重复产出相同工件的构建目标。
+python,14,依赖、包管理与构建发布,pyproject.toml,Python 项目配置文件,,声明构建系统、项目元数据及工具配置的 TOML 文件。
+python,14,依赖、包管理与构建发布,[build-system],构建系统配置区,,pyproject.toml 中声明构建后端等设置的表。
+python,14,依赖、包管理与构建发布,[project],项目元数据配置区,,pyproject.toml 中声明包名、版本、依赖等字段的表。
+python,14,依赖、包管理与构建发布,build backend,构建后端,,按标准构建接口生成源码包或 wheel 的实现。
+python,14,依赖、包管理与构建发布,build frontend,构建前端,,调用构建后端并管理构建流程的工具。
+python,14,依赖、包管理与构建发布,source distribution (sdist),源码分发包,,含构建所需源码和元数据的发布工件。
+python,14,依赖、包管理与构建发布,wheel,Wheel 二进制分发包,,可安装的构建分发格式，扩展模块可能含平台特定二进制文件。
+python,14,依赖、包管理与构建发布,distribution package,分发包,,供包管理器发布与安装的项目版本工件。
+python,14,依赖、包管理与构建发布,import package,导入包,,import 语句访问的 Python 包结构。
+python,14,依赖、包管理与构建发布,editable install,可编辑安装,,安装后可直接使用源码目录中改动的开发模式。
+python,14,依赖、包管理与构建发布,semantic versioning,语义化版本,,MAJOR.MINOR.PATCH 版本约定；并非全部 Python 项目都遵循。
+python,14,依赖、包管理与构建发布,build artifact,构建产物,,构建系统生成的文件，如 wheel 或 sdist。
+python,14,依赖、包管理与构建发布,package index,包索引,,托管并提供分发包发现/下载的仓库服务。
+python,15,测试、调试与工程质量,test case,测试用例,,对某个预期行为进行输入与验证的独立检查。
+python,15,测试、调试与工程质量,test suite,测试套件,,多个相关测试的集合。
+python,15,测试、调试与工程质量,unit test,单元测试,,针对函数、类等较小代码单元的测试。
+python,15,测试、调试与工程质量,integration test,集成测试,,验证多个组件一起工作的行为。
+python,15,测试、调试与工程质量,end-to-end test,端到端测试,,模拟完整用户流程或系统路径的测试。
+python,15,测试、调试与工程质量,regression test,回归测试,,确保代码变化未破坏既有行为的测试。
+python,15,测试、调试与工程质量,assertion,断言,,对预期条件成立作出检查的表达式或工具。
+python,15,测试、调试与工程质量,assert statement,assert 语句,,在调试构建中检查条件；优化模式可能移除，不能用于安全校验。
+python,15,测试、调试与工程质量,fixture,测试夹具,,为测试准备及清理环境、对象或数据的机制。
+python,15,测试、调试与工程质量,mock,模拟对象,,用可控替身代替真实依赖以进行测试。
+python,15,测试、调试与工程质量,monkeypatch,动态替换,,测试中临时替换模块属性、函数或环境配置的做法。
+python,15,测试、调试与工程质量,code coverage,代码覆盖率,,衡量测试执行触及代码区域的程度。
+python,15,测试、调试与工程质量,branch coverage,分支覆盖率,,衡量控制流各分支被测试执行的比例。
+python,15,测试、调试与工程质量,property-based testing,基于性质的测试,,生成多种输入并验证通用不变量。
+python,15,测试、调试与工程质量,parameterized test,参数化测试,,一份测试逻辑使用多组输入与期望结果。
+python,15,测试、调试与工程质量,unittest,单元测试标准库,,Python 自带的测试框架。
+python,15,测试、调试与工程质量,pytest,pytest 测试框架,,流行的第三方测试工具，支持 fixture 与参数化。
+python,15,测试、调试与工程质量,debugger,调试器,,允许断点、单步执行与状态检查的工具。
+python,15,测试、调试与工程质量,breakpoint,断点,,程序执行时主动暂停以便诊断的位置。
+python,15,测试、调试与工程质量,pdb,Python 调试器,,标准库提供的交互式调试工具。
+python,15,测试、调试与工程质量,stack trace,调用栈跟踪,,展示函数调用链，常用于定位异常原因。
+python,15,测试、调试与工程质量,linter,静态规范检查器,,检查潜在错误和编码风格问题的工具。
+python,15,测试、调试与工程质量,formatter,代码格式化器,,自动统一缩进、换行等代码样式的工具。
+python,15,测试、调试与工程质量,refactoring,重构,,在保持外部行为的条件下改进内部结构。
+python,15,测试、调试与工程质量,continuous integration (CI),持续集成,CI,自动构建、测试及验证代码变更的流程。
+python,15,测试、调试与工程质量,pre-commit hook,提交前钩子,,在 Git 提交前运行检查或自动修复的机制。
+python,15,测试、调试与工程质量,logging level,日志级别,,DEBUG、INFO、WARNING、ERROR、CRITICAL 等等级。
+python,15,测试、调试与工程质量,structured logging,结构化日志,,以 JSON 或字段形式输出便于机器分析的日志。
+python,16,性能、内存与解释器内部,time complexity,时间复杂度,,分析算法运行开销随输入规模变化的量级。
+python,16,性能、内存与解释器内部,space complexity,空间复杂度,,分析额外内存开销随输入规模变化的量级。
+python,16,性能、内存与解释器内部,Big O notation,大 O 记号,,描述渐近上界或增长阶的常见记法。
+python,16,性能、内存与解释器内部,profiling,性能剖析,,测量程序各部分时间或资源使用的过程。
+python,16,性能、内存与解释器内部,profiler,性能分析器,,采集执行耗时、调用次数等指标的工具。
+python,16,性能、内存与解释器内部,cProfile,cProfile 分析器,,CPython 常见确定性函数级性能分析模块。
+python,16,性能、内存与解释器内部,timeit,微基准测试模块,,重复计时小段 Python 代码的工具。
+python,16,性能、内存与解释器内部,benchmark,基准测试,,在明确条件下比较性能的测试方法。
+python,16,性能、内存与解释器内部,latency,延迟,,单个请求或操作完成所花的时间。
+python,16,性能、内存与解释器内部,throughput,吞吐量,,单位时间可完成的任务或处理数据量。
+python,16,性能、内存与解释器内部,reference counting,引用计数,,以引用数量辅助管理对象生命周期的机制。
+python,16,性能、内存与解释器内部,cyclic garbage collector,循环垃圾回收器,,用来发现并回收某些引用环的机制。
+python,16,性能、内存与解释器内部,garbage collection (GC),垃圾回收,GC,回收程序不再需要的对象占用资源的过程。
+python,16,性能、内存与解释器内部,memory leak,内存泄漏,,不再需要的数据仍被保留，导致内存占用增长。
+python,16,性能、内存与解释器内部,weak reference,弱引用,,不因自身存在而阻止对象回收的引用。
+python,16,性能、内存与解释器内部,object interning,对象驻留,,复用部分不可变对象实例的优化技术。
+python,16,性能、内存与解释器内部,small integer cache,小整数缓存,,某些 Python 实现对部分整数对象的复用优化。
+python,16,性能、内存与解释器内部,copy-on-write,写时复制,,共享数据直到有写入才进行复制的系统机制。
+python,16,性能、内存与解释器内部,stack,栈,,用于管理调用上下文等信息的数据结构概念。
+python,16,性能、内存与解释器内部,heap,堆内存,,动态分配对象通常使用的内存区域概念。
+python,16,性能、内存与解释器内部,heap allocation,堆分配,,从动态内存管理区域为对象分配空间。
+python,16,性能、内存与解释器内部,C extension,C 扩展模块,,使用 C/C++ 等编写、以原生扩展形式加载的模块。
+python,16,性能、内存与解释器内部,Python C API,Python C 接口,,供原生代码与 Python 运行时交互的接口集合。
+python,16,性能、内存与解释器内部,ABI,应用二进制接口,,二进制模块间调用约定、符号和数据布局等契约。
+python,16,性能、内存与解释器内部,stable ABI,稳定 ABI,,Python 为兼容多个 CPython 版本提供的受限二进制接口。
+python,16,性能、内存与解释器内部,bytecode cache,字节码缓存,,常以 __pycache__ 下的 .pyc 文件保存编译结果。
+python,16,性能、内存与解释器内部,__pycache__,字节码缓存目录,,通常存放解释器生成的版本标记 .pyc 文件。
+python,16,性能、内存与解释器内部,JIT compilation,即时编译,,运行时将热点代码转成更低层指令的技术。
+python,16,性能、内存与解释器内部,vectorization,向量化,,用批量运算代替逐元素 Python 级循环的优化方法。
 ai-infrastructure,1,计算硬件与加速器,Graphics Processing Unit,图形处理器,GPU,擅长高并行计算的处理器，是 AI 训练与推理的主要加速设备。
 ai-infrastructure,1,计算硬件与加速器,Tensor Processing Unit,张量处理单元,TPU,面向张量计算设计的专用加速芯片。
 ai-infrastructure,1,计算硬件与加速器,Neural Processing Unit,神经网络处理单元,NPU,针对神经网络运算优化的处理器。

@@ -1,5 +1,11 @@
 # Changelog
 
+## Python integration — 2026-11-16
+
+- Added complete Python glossary Markdown and PDF: 429 terms in 16 chapters, distinctions appendix, A–Z index, and official references.
+- Expanded the search dataset to 3,344 indexed entries in 10 subject domains and 141 topic chapters (including GPU Kernel and Compiler Principles).
+- Updated Markdown/PDF site downloads, JSON/CSV, domain navigation, imported source workflow, tests and README statistics while preserving previous handbooks.
+
 ## v1.1.0 — 2026-11-16
 
 - Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.

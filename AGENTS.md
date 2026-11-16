@@ -29,3 +29,6 @@ The 6 inherited PDFs collectively report 2,298 terms. The structured extraction 
 
 ## GPU Kernel edition
 The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
+
+## Python authored edition
+`glossaries/python.md` is an independently edited 429-term / 16-chapter handbook including concept comparisons, an English A–Z index and primary reference links. After editing its glossary table rows run `python3 scripts/import_python.py`, then `python3 scripts/build.py`, `scripts/verify.py` and tests. The generic Markdown generator must not replace the authored Python handbook, and `pdf/python.pdf` is a separately published searchable print edition with CID font fallback.

@@ -1,5 +1,3866 @@
 [
   {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "Python",
+    "zh": "Python 编程语言",
+    "abbr": "",
+    "definition": "一种通用的高级编程语言，强调可读性与丰富的生态。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "CPython",
+    "zh": "CPython 解释器",
+    "abbr": "",
+    "definition": "最常见的 Python 实现，主要由 C 语言编写。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "Python implementation",
+    "zh": "Python 实现",
+    "abbr": "",
+    "definition": "实现 Python 语言规范的运行系统，如 CPython、PyPy。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "interpreter",
+    "zh": "解释器",
+    "abbr": "",
+    "definition": "读取并执行 Python 程序的运行组件。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "interactive mode",
+    "zh": "交互模式",
+    "abbr": "",
+    "definition": "在提示符中逐条输入并执行代码的工作模式。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "REPL",
+    "zh": "读取-求值-输出循环",
+    "abbr": "",
+    "definition": "Read–Eval–Print Loop；典型的交互式执行环境。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "script",
+    "zh": "脚本",
+    "abbr": "",
+    "definition": "作为程序入口直接运行的 Python 源文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "source code",
+    "zh": "源代码",
+    "abbr": "",
+    "definition": "开发者编写的可读程序文本。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "bytecode",
+    "zh": "字节码",
+    "abbr": "",
+    "definition": "Python 编译阶段产生的中间指令形式。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "code object",
+    "zh": "代码对象",
+    "abbr": "",
+    "definition": "表示已编译可执行代码片段的内部对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "virtual machine",
+    "zh": "虚拟机",
+    "abbr": "",
+    "definition": "在解释器内部执行字节码的抽象执行机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "runtime",
+    "zh": "运行时",
+    "abbr": "",
+    "definition": "程序执行期间提供对象、异常与资源管理的环境。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "standard library",
+    "zh": "标准库",
+    "abbr": "",
+    "definition": "随 Python 发行、涵盖大量常见功能的模块集合。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "built-in function",
+    "zh": "内置函数",
+    "abbr": "",
+    "definition": "无须导入即可使用的函数，如 len()、print()。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "built-in type",
+    "zh": "内置类型",
+    "abbr": "",
+    "definition": "无须额外导入的类型，如 int、list、dict。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "namespace",
+    "zh": "命名空间",
+    "abbr": "",
+    "definition": "将名称映射到对象的结构。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "scope",
+    "zh": "作用域",
+    "abbr": "",
+    "definition": "名称可被直接查找或引用的代码区域。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "name binding",
+    "zh": "名称绑定",
+    "abbr": "",
+    "definition": "将变量名与某个对象建立关联。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "object",
+    "zh": "对象",
+    "abbr": "",
+    "definition": "Python 中具有身份、类型和值的运行实体。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "identity",
+    "zh": "身份标识",
+    "abbr": "",
+    "definition": "标识对象本身；is 运算符比较对象身份。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "reference",
+    "zh": "引用",
+    "abbr": "",
+    "definition": "指向对象的关联；变量保存的是对象引用语义。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "implementation detail",
+    "zh": "实现细节",
+    "abbr": "",
+    "definition": "特定解释器的行为，不应一概视为语言保证。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "backward compatibility",
+    "zh": "向后兼容",
+    "abbr": "",
+    "definition": "新版本尽量保持旧程序可运行的性质。"
+  },
+  {
+    "category": "python",
+    "chapter": 1,
+    "topic": "语言与运行环境",
+    "en": "Python Enhancement Proposal (PEP)",
+    "zh": "Python 增强提案",
+    "abbr": "PEP",
+    "definition": "记录语言、库与开发流程重大设计决策的提案文档。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "token",
+    "zh": "词法单元",
+    "abbr": "",
+    "definition": "词法分析器识别出的最小语法组成单位。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "keyword",
+    "zh": "关键字",
+    "abbr": "",
+    "definition": "具有固定语法用途的保留词，如 if、return。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "soft keyword",
+    "zh": "软关键字",
+    "abbr": "",
+    "definition": "仅在特定语法上下文中作关键字，如 match、case。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "identifier",
+    "zh": "标识符",
+    "abbr": "",
+    "definition": "用于命名变量、函数、类和模块的合法名称。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "literal",
+    "zh": "字面量",
+    "abbr": "",
+    "definition": "在代码中直接写出的常量表示，如 42、'hi'。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "expression",
+    "zh": "表达式",
+    "abbr": "",
+    "definition": "可求值得到某个结果的语法结构。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "statement",
+    "zh": "语句",
+    "abbr": "",
+    "definition": "执行动作或控制程序结构的语法单元。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "simple statement",
+    "zh": "简单语句",
+    "abbr": "",
+    "definition": "通常占一个逻辑行的语句，如 pass、import。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "compound statement",
+    "zh": "复合语句",
+    "abbr": "",
+    "definition": "引入代码块的语句，如 if、for、def。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "block",
+    "zh": "代码块",
+    "abbr": "",
+    "definition": "按缩进组织的一组相关语句。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "indentation",
+    "zh": "缩进",
+    "abbr": "",
+    "definition": "Python 用来划定代码块层级的空白排版。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "logical line",
+    "zh": "逻辑行",
+    "abbr": "",
+    "definition": "词法层面的完整语句行，可跨多个物理行。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "physical line",
+    "zh": "物理行",
+    "abbr": "",
+    "definition": "源文件中由换行结束的一行字符。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "comment",
+    "zh": "注释",
+    "abbr": "",
+    "definition": "以 # 开始、不会作为代码执行的说明文字。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "docstring",
+    "zh": "文档字符串",
+    "abbr": "",
+    "definition": "模块、类或函数开头的字符串文档说明。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "encoding declaration",
+    "zh": "编码声明",
+    "abbr": "",
+    "definition": "文件开头可指定源码编码的特殊注释。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "UTF-8",
+    "zh": "UTF-8 编码",
+    "abbr": "",
+    "definition": "Python 3 源码默认使用的 Unicode 编码形式。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "string prefix",
+    "zh": "字符串前缀",
+    "abbr": "",
+    "definition": "r、b、f 等前缀，用于指定字符串字面量种类。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "raw string",
+    "zh": "原始字符串",
+    "abbr": "",
+    "definition": "带 r 前缀的字符串，减少对反斜杠转义的处理。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "f-string",
+    "zh": "格式化字符串字面量",
+    "abbr": "",
+    "definition": "以 f 开头，允许在花括号中嵌入表达式。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "escape sequence",
+    "zh": "转义序列",
+    "abbr": "",
+    "definition": "使用反斜杠表示特殊字符或编码，如 \\n。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "syntax error",
+    "zh": "语法错误",
+    "abbr": "",
+    "definition": "源代码违反语法规则，通常无法完成解析。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "semantic meaning",
+    "zh": "语义",
+    "abbr": "",
+    "definition": "符合语法的代码在执行或求值时的含义。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "type annotation syntax",
+    "zh": "类型注解语法",
+    "abbr": "",
+    "definition": "在函数参数、返回值及变量处声明类型信息的写法。"
+  },
+  {
+    "category": "python",
+    "chapter": 2,
+    "topic": "词法、语法与源文件",
+    "en": "PEP 8",
+    "zh": "Python 代码风格指南",
+    "abbr": "",
+    "definition": "广泛使用的 Python 代码排版与命名建议。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "type",
+    "zh": "类型",
+    "abbr": "",
+    "definition": "决定对象支持哪些操作及其语义的类别。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "instance",
+    "zh": "实例",
+    "abbr": "",
+    "definition": "某个类型或类创建出的具体对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "value",
+    "zh": "值",
+    "abbr": "",
+    "definition": "对象所表示的数据内容。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "None",
+    "zh": "空值对象",
+    "abbr": "",
+    "definition": "内置单例，通常表示缺失值或无返回结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "NoneType",
+    "zh": "空值类型",
+    "abbr": "",
+    "definition": "单例 None 的类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "boolean",
+    "zh": "布尔值",
+    "abbr": "",
+    "definition": "真或假；Python 内置 bool 类型的值。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "integer",
+    "zh": "整数",
+    "abbr": "",
+    "definition": "Python 的 int，支持任意精度整数运算。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "floating-point number",
+    "zh": "浮点数",
+    "abbr": "",
+    "definition": "Python 的 float，通常采用二进制浮点表示。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "complex number",
+    "zh": "复数",
+    "abbr": "",
+    "definition": "Python 的 complex，包含实部与虚部。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "string (str)",
+    "zh": "字符串",
+    "abbr": "",
+    "definition": "不可变的 Unicode 文本序列。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "bytes",
+    "zh": "字节串",
+    "abbr": "",
+    "definition": "不可变的字节序列，元素值为 0 到 255。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "bytearray",
+    "zh": "可变字节数组",
+    "abbr": "",
+    "definition": "可就地修改的字节序列。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "list",
+    "zh": "列表",
+    "abbr": "",
+    "definition": "有序、可变的对象序列。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "tuple",
+    "zh": "元组",
+    "abbr": "",
+    "definition": "有序、不可变的对象序列。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "range",
+    "zh": "范围对象",
+    "abbr": "",
+    "definition": "惰性表示整数等差序列的内置类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "dictionary (dict)",
+    "zh": "字典",
+    "abbr": "",
+    "definition": "按键映射到值、保持插入顺序的可变映射。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "set",
+    "zh": "集合",
+    "abbr": "",
+    "definition": "无序、不重复元素的可变集合类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "frozenset",
+    "zh": "不可变集合",
+    "abbr": "",
+    "definition": "元素集合不支持增删操作的集合类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "sequence",
+    "zh": "序列",
+    "abbr": "",
+    "definition": "支持按位置索引等操作的数据结构抽象。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "mapping",
+    "zh": "映射",
+    "abbr": "",
+    "definition": "从键到值的关联结构抽象。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "container",
+    "zh": "容器",
+    "abbr": "",
+    "definition": "用于包含其他对象的对象，如列表或字典。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "mutable",
+    "zh": "可变的",
+    "abbr": "",
+    "definition": "对象创建后，其内部状态可以被修改。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "immutable",
+    "zh": "不可变的",
+    "abbr": "",
+    "definition": "对象创建后，其值不可就地改变。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "hashable",
+    "zh": "可哈希的",
+    "abbr": "",
+    "definition": "具有稳定哈希值并可用于字典键、集合元素的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "hash value",
+    "zh": "哈希值",
+    "abbr": "",
+    "definition": "由 hash() 返回、用于哈希表定位的整数。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "truth value testing",
+    "zh": "真值测试",
+    "abbr": "",
+    "definition": "在 if、while、bool() 等场景判断对象真假。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "subscript",
+    "zh": "下标访问",
+    "abbr": "",
+    "definition": "使用 obj[key] 访问元素或切片的语法。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "slice",
+    "zh": "切片",
+    "abbr": "",
+    "definition": "用 start:stop:step 指定序列的某一范围。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "shallow copy",
+    "zh": "浅拷贝",
+    "abbr": "",
+    "definition": "复制外层容器，内部嵌套对象通常仍被共享。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "deep copy",
+    "zh": "深拷贝",
+    "abbr": "",
+    "definition": "递归复制嵌套对象，尽可能解除共享引用。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "dictionary view",
+    "zh": "字典视图",
+    "abbr": "",
+    "definition": "keys()、values()、items() 返回的动态视图。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "bytes-like object",
+    "zh": "类字节对象",
+    "abbr": "",
+    "definition": "支持缓冲区协议的二进制数据对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 3,
+    "topic": "类型、对象与容器",
+    "en": "memoryview",
+    "zh": "内存视图",
+    "abbr": "",
+    "definition": "无须复制底层数据即可访问缓冲区内容的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "operator",
+    "zh": "运算符",
+    "abbr": "",
+    "definition": "指定运算或比较操作的符号或关键字。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "operand",
+    "zh": "操作数",
+    "abbr": "",
+    "definition": "运算符作用的值或表达式。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "operator precedence",
+    "zh": "运算符优先级",
+    "abbr": "",
+    "definition": "决定表达式中不同运算符结合顺序的规则。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "associativity",
+    "zh": "结合性",
+    "abbr": "",
+    "definition": "同优先级运算符的分组方式。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "arithmetic operator",
+    "zh": "算术运算符",
+    "abbr": "",
+    "definition": "例如 +、-、*、/、//、%、**。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "floor division",
+    "zh": "向下取整除法",
+    "abbr": "",
+    "definition": "// 运算通常向负无穷方向取整。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "modulo",
+    "zh": "取模运算",
+    "abbr": "",
+    "definition": "% 返回余数，整数运算结果与除数符号相关。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "exponentiation",
+    "zh": "幂运算",
+    "abbr": "",
+    "definition": "** 计算乘方。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "comparison operator",
+    "zh": "比较运算符",
+    "abbr": "",
+    "definition": "如 ==、!=、<、>=，返回比较结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "equality",
+    "zh": "相等性",
+    "abbr": "",
+    "definition": "== 判断两个对象的值是否按规则相等。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "identity comparison",
+    "zh": "身份比较",
+    "abbr": "",
+    "definition": "is 与 is not 比较是否为同一对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "logical operator",
+    "zh": "逻辑运算符",
+    "abbr": "",
+    "definition": "and、or、not，支持短路求值。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "short-circuit evaluation",
+    "zh": "短路求值",
+    "abbr": "",
+    "definition": "已足以确定结果时不再执行后续操作数。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "bitwise operator",
+    "zh": "按位运算符",
+    "abbr": "",
+    "definition": "对整数位模式进行 &、|、^、~、移位操作。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "membership test",
+    "zh": "成员资格测试",
+    "abbr": "",
+    "definition": "in / not in 判断元素是否在容器中。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "assignment",
+    "zh": "赋值",
+    "abbr": "",
+    "definition": "用 = 将名称绑定到表达式的求值结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "augmented assignment",
+    "zh": "增强赋值",
+    "abbr": "",
+    "definition": "+=、*= 等，可能调用对象的就地运算方法。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "unpacking",
+    "zh": "解包",
+    "abbr": "",
+    "definition": "将序列或可迭代对象的元素分配到多个目标。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "starred expression",
+    "zh": "星号表达式",
+    "abbr": "",
+    "definition": "在解包或调用等位置使用 * 处理多个元素。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "walrus operator",
+    "zh": "海象运算符",
+    "abbr": "",
+    "definition": ":= 是赋值表达式，在表达式中绑定名称。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "conditional expression",
+    "zh": "条件表达式",
+    "abbr": "",
+    "definition": "x if condition else y 的表达式形式。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "chained comparison",
+    "zh": "链式比较",
+    "abbr": "",
+    "definition": "例如 0 < x < 10，避免重复求值中间操作数。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "operator overloading",
+    "zh": "运算符重载",
+    "abbr": "",
+    "definition": "类通过特殊方法自定义运算符行为。"
+  },
+  {
+    "category": "python",
+    "chapter": 4,
+    "topic": "表达式、运算符与赋值",
+    "en": "bitwise OR type union",
+    "zh": "类型联合写法",
+    "abbr": "",
+    "definition": "在类型表达式中用 X | Y 表示联合类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "conditional statement",
+    "zh": "条件语句",
+    "abbr": "",
+    "definition": "使用 if、elif、else 选择执行分支。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "for loop",
+    "zh": "for 循环",
+    "abbr": "",
+    "definition": "依次取出可迭代对象中的元素执行代码块。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "while loop",
+    "zh": "while 循环",
+    "abbr": "",
+    "definition": "当条件保持为真时重复执行代码块。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "break",
+    "zh": "跳出循环",
+    "abbr": "",
+    "definition": "提前结束最近一层循环。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "continue",
+    "zh": "继续下一轮",
+    "abbr": "",
+    "definition": "跳过本轮剩余语句，开始下一次循环。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "pass",
+    "zh": "空语句",
+    "abbr": "",
+    "definition": "语法上需要语句时使用的不执行操作的占位语句。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "loop else",
+    "zh": "循环 else 子句",
+    "abbr": "",
+    "definition": "循环未通过 break 退出时执行的代码块。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "match statement",
+    "zh": "模式匹配语句",
+    "abbr": "",
+    "definition": "使用 match/case 按结构模式选择分支。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "pattern matching",
+    "zh": "模式匹配",
+    "abbr": "",
+    "definition": "按值、结构或绑定模式检查数据。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "function",
+    "zh": "函数",
+    "abbr": "",
+    "definition": "可复用的可调用代码单元。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "function definition",
+    "zh": "函数定义",
+    "abbr": "",
+    "definition": "用 def 创建函数对象并绑定名称。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "call",
+    "zh": "调用",
+    "abbr": "",
+    "definition": "通过圆括号向可调用对象传入参数并执行。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "parameter",
+    "zh": "形参",
+    "abbr": "",
+    "definition": "函数定义中声明的接收值的名称。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "argument",
+    "zh": "实参",
+    "abbr": "",
+    "definition": "函数调用时实际传递的值或表达式。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "positional argument",
+    "zh": "位置实参",
+    "abbr": "",
+    "definition": "依靠参数位置匹配形参的实参。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "keyword argument",
+    "zh": "关键字实参",
+    "abbr": "",
+    "definition": "使用 name=value 显式指定目标形参。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "default argument value",
+    "zh": "默认参数值",
+    "abbr": "",
+    "definition": "定义函数时计算、调用时可省略的形参默认值。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "mutable default pitfall",
+    "zh": "可变默认参数陷阱",
+    "abbr": "",
+    "definition": "默认值对象在多次调用之间复用，可能意外共享状态。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "variadic positional parameters (*args)",
+    "zh": "可变位置参数",
+    "abbr": "",
+    "definition": "接收多余位置实参并组成元组。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "variadic keyword parameters (**kwargs)",
+    "zh": "可变关键字参数",
+    "abbr": "",
+    "definition": "接收多余关键字实参并组成字典。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "positional-only parameter",
+    "zh": "仅限位置参数",
+    "abbr": "",
+    "definition": "定义中放在 / 之前，只能按位置传入。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "keyword-only parameter",
+    "zh": "仅限关键字参数",
+    "abbr": "",
+    "definition": "定义中位于 * 之后，必须以关键字传入。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "return value",
+    "zh": "返回值",
+    "abbr": "",
+    "definition": "函数执行 return 后交还调用者的结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "recursion",
+    "zh": "递归",
+    "abbr": "",
+    "definition": "函数直接或间接调用自身。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "closure",
+    "zh": "闭包",
+    "abbr": "",
+    "definition": "函数携带并访问其定义时外层作用域的绑定。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "LEGB rule",
+    "zh": "LEGB 名称查找规则",
+    "abbr": "",
+    "definition": "Local、Enclosing、Global、Built-in 的常见查找顺序概括。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "global statement",
+    "zh": "global 声明",
+    "abbr": "",
+    "definition": "指定函数中某名称绑定到模块级命名空间。"
+  },
+  {
+    "category": "python",
+    "chapter": 5,
+    "topic": "控制流程与函数",
+    "en": "nonlocal statement",
+    "zh": "nonlocal 声明",
+    "abbr": "",
+    "definition": "指定名称绑定到最近的已有外层函数作用域。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "class",
+    "zh": "类",
+    "abbr": "",
+    "definition": "定义对象属性与行为的可调用构造模板。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "constructor call",
+    "zh": "构造调用",
+    "abbr": "",
+    "definition": "调用类对象以创建并初始化实例。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "class attribute",
+    "zh": "类属性",
+    "abbr": "",
+    "definition": "定义在类命名空间中的属性，可被实例读取。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "instance attribute",
+    "zh": "实例属性",
+    "abbr": "",
+    "definition": "保存于某个实例自身的属性。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "method",
+    "zh": "方法",
+    "abbr": "",
+    "definition": "通过对象属性访问、具有调用行为的函数或描述符。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "instance method",
+    "zh": "实例方法",
+    "abbr": "",
+    "definition": "一般将实例作为第一个参数（惯例名 self）。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "class method",
+    "zh": "类方法",
+    "abbr": "",
+    "definition": "经 @classmethod 装饰，将类作为第一个参数。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "static method",
+    "zh": "静态方法",
+    "abbr": "",
+    "definition": "经 @staticmethod 装饰，不自动接收实例或类。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "inheritance",
+    "zh": "继承",
+    "abbr": "",
+    "definition": "子类从基类获取可复用或可覆盖的行为。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "base class",
+    "zh": "基类",
+    "abbr": "",
+    "definition": "被其他类继承的父类。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "subclass",
+    "zh": "子类",
+    "abbr": "",
+    "definition": "从已有类派生出的类。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "multiple inheritance",
+    "zh": "多重继承",
+    "abbr": "",
+    "definition": "一个类继承多个基类。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "method resolution order (MRO)",
+    "zh": "方法解析顺序",
+    "abbr": "MRO",
+    "definition": "多重继承下查找类属性的线性顺序。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "polymorphism",
+    "zh": "多态",
+    "abbr": "",
+    "definition": "不同类型对象以共同接口参与相同操作。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "duck typing",
+    "zh": "鸭子类型",
+    "abbr": "",
+    "definition": "更关注对象能做什么，而非其名义继承关系。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "encapsulation",
+    "zh": "封装",
+    "abbr": "",
+    "definition": "通过接口组织对象的状态与行为；Python 主要依靠约定。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "property",
+    "zh": "属性描述器",
+    "abbr": "",
+    "definition": "property 允许通过属性访问调用 getter/setter。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "descriptor",
+    "zh": "描述符",
+    "abbr": "",
+    "definition": "实现 __get__、__set__ 或 __delete__ 的属性协议对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "attribute lookup",
+    "zh": "属性查找",
+    "abbr": "",
+    "definition": "解析 obj.attr 时依据数据模型执行的查找流程。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "special method",
+    "zh": "特殊方法",
+    "abbr": "",
+    "definition": "如 __len__、__iter__，让对象参与语言协议。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "dunder method",
+    "zh": "双下划线方法",
+    "abbr": "",
+    "definition": "对 __xxx__ 特殊方法的常用俗称。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__init__()",
+    "zh": "初始化方法",
+    "abbr": "",
+    "definition": "新实例创建后被调用，用于设置初始状态。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__new__()",
+    "zh": "实例创建方法",
+    "abbr": "",
+    "definition": "负责创建并返回实例，先于 __init__。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__repr__()",
+    "zh": "开发者表示方法",
+    "abbr": "",
+    "definition": "返回倾向于准确、可调试的对象字符串表示。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__str__()",
+    "zh": "字符串表示方法",
+    "abbr": "",
+    "definition": "定义 str(obj) 和 print(obj) 的友好文本形式。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__eq__()",
+    "zh": "相等比较方法",
+    "abbr": "",
+    "definition": "定义对象的 == 比较行为。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__hash__()",
+    "zh": "哈希方法",
+    "abbr": "",
+    "definition": "返回整数哈希值，需与相等性约束一致。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "__slots__",
+    "zh": "属性槽声明",
+    "abbr": "",
+    "definition": "可限制常规实例属性布局，常用于节省部分对象开销。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "metaclass",
+    "zh": "元类",
+    "abbr": "",
+    "definition": "控制类对象创建与行为的类，常见默认元类为 type。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "abstract base class (ABC)",
+    "zh": "抽象基类",
+    "abbr": "ABC",
+    "definition": "通过 abc 提供抽象接口或虚拟子类机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 6,
+    "topic": "类、面向对象与数据模型",
+    "en": "dataclass",
+    "zh": "数据类",
+    "abbr": "",
+    "definition": "使用 @dataclass 自动生成常见数据承载类方法。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "iterable",
+    "zh": "可迭代对象",
+    "abbr": "",
+    "definition": "能通过 iter() 取得迭代器的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "iterator",
+    "zh": "迭代器",
+    "abbr": "",
+    "definition": "实现 __next__() 并逐个提供元素的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "iteration",
+    "zh": "迭代",
+    "abbr": "",
+    "definition": "依次获取一系列元素的过程。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "iteration protocol",
+    "zh": "迭代协议",
+    "abbr": "",
+    "definition": "由 __iter__() 与 __next__() 组成的常用接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "StopIteration",
+    "zh": "迭代结束异常",
+    "abbr": "",
+    "definition": "迭代器耗尽时发出的终止信号。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "generator",
+    "zh": "生成器",
+    "abbr": "",
+    "definition": "通常指由含 yield 的函数创建的迭代器。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "generator function",
+    "zh": "生成器函数",
+    "abbr": "",
+    "definition": "函数体含 yield，调用后返回生成器对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "generator expression",
+    "zh": "生成器表达式",
+    "abbr": "",
+    "definition": "如 (x*x for x in data) 的惰性迭代结构。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "yield",
+    "zh": "产出并暂停",
+    "abbr": "",
+    "definition": "生成器发送一个值并保存执行现场。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "yield from",
+    "zh": "委托产出",
+    "abbr": "",
+    "definition": "将产出与交互委托给子迭代器或生成器。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "next()",
+    "zh": "获取下个元素",
+    "abbr": "",
+    "definition": "从迭代器中取一个元素，可设置耗尽默认值。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "iter()",
+    "zh": "获取迭代器",
+    "abbr": "",
+    "definition": "对可迭代对象构造或取得迭代器。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "list comprehension",
+    "zh": "列表推导式",
+    "abbr": "",
+    "definition": "由迭代表达式简洁构造列表。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "set comprehension",
+    "zh": "集合推导式",
+    "abbr": "",
+    "definition": "由迭代表达式简洁构造集合。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "dictionary comprehension",
+    "zh": "字典推导式",
+    "abbr": "",
+    "definition": "由键值表达式简洁构造字典。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "lazy evaluation",
+    "zh": "惰性求值",
+    "abbr": "",
+    "definition": "仅在需要时计算后续数据或结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "eager evaluation",
+    "zh": "立即求值",
+    "abbr": "",
+    "definition": "立即完成计算并产生完整结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "map()",
+    "zh": "映射函数",
+    "abbr": "",
+    "definition": "对一个或多个可迭代对象逐项应用函数。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "filter()",
+    "zh": "过滤函数",
+    "abbr": "",
+    "definition": "保留使谓词结果为真的输入元素。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "zip()",
+    "zh": "并行打包函数",
+    "abbr": "",
+    "definition": "将多个可迭代对象按位置组合成元组。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "enumerate()",
+    "zh": "带索引枚举",
+    "abbr": "",
+    "definition": "迭代时同时产生索引和值。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "functools",
+    "zh": "函数式工具模块",
+    "abbr": "",
+    "definition": "提供 partial、reduce、缓存装饰器等。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "itertools",
+    "zh": "迭代器工具模块",
+    "abbr": "",
+    "definition": "提供组合、排列、链式迭代等工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 7,
+    "topic": "迭代器、生成器与函数式工具",
+    "en": "partial function",
+    "zh": "偏函数",
+    "abbr": "",
+    "definition": "固定某些实参以得到新的可调用对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "exception",
+    "zh": "异常",
+    "abbr": "",
+    "definition": "表示错误或特殊控制事件的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "exception class",
+    "zh": "异常类",
+    "abbr": "",
+    "definition": "用于表示某类异常的类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "raise statement",
+    "zh": "抛出异常语句",
+    "abbr": "",
+    "definition": "使用 raise 发出异常。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "try statement",
+    "zh": "尝试语句",
+    "abbr": "",
+    "definition": "捕获与清理异常的复合语句。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "except clause",
+    "zh": "异常捕获子句",
+    "abbr": "",
+    "definition": "在异常匹配时执行恢复或处理逻辑。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "except* clause",
+    "zh": "异常组捕获子句",
+    "abbr": "",
+    "definition": "按异常类型处理 ExceptionGroup 的子集。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "else clause",
+    "zh": "无异常子句",
+    "abbr": "",
+    "definition": "try 主体未抛出异常时执行的对应子句。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "finally clause",
+    "zh": "最终清理子句",
+    "abbr": "",
+    "definition": "不论 try 如何退出通常都会执行的清理逻辑。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "exception chaining",
+    "zh": "异常链",
+    "abbr": "",
+    "definition": "通过 __cause__、__context__ 记录异常间的关系。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "raise ... from ...",
+    "zh": "显式异常原因",
+    "abbr": "",
+    "definition": "将一个异常明确设置为另一个异常的原因。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "traceback",
+    "zh": "回溯信息",
+    "abbr": "",
+    "definition": "展示异常调用栈与代码位置的信息。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "stack frame",
+    "zh": "栈帧",
+    "abbr": "",
+    "definition": "函数执行时携带局部变量等状态的运行记录。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "context manager",
+    "zh": "上下文管理器",
+    "abbr": "",
+    "definition": "定义进入、退出受管理执行环境的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "with statement",
+    "zh": "with 语句",
+    "abbr": "",
+    "definition": "通过上下文管理器管理资源范围。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "__enter__()",
+    "zh": "进入上下文方法",
+    "abbr": "",
+    "definition": "进入 with 块前调用，返回绑定给 as 的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "__exit__()",
+    "zh": "退出上下文方法",
+    "abbr": "",
+    "definition": "离开 with 块时调用，可控制异常是否被抑制。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "contextlib",
+    "zh": "上下文工具模块",
+    "abbr": "",
+    "definition": "提供 contextmanager、ExitStack 等工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "resource cleanup",
+    "zh": "资源清理",
+    "abbr": "",
+    "definition": "关闭文件、释放锁等操作。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "custom exception",
+    "zh": "自定义异常",
+    "abbr": "",
+    "definition": "应用代码定义的异常类，通常继承 Exception。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "BaseException",
+    "zh": "异常基类",
+    "abbr": "",
+    "definition": "大多数可抛出异常的共同根类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 8,
+    "topic": "异常处理与上下文管理",
+    "en": "ExceptionGroup",
+    "zh": "异常组",
+    "abbr": "",
+    "definition": "聚合多个异常以便统一传播与拆分处理。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "module",
+    "zh": "模块",
+    "abbr": "",
+    "definition": "可导入的 Python 代码组织单元。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "package",
+    "zh": "包（导入包）",
+    "abbr": "",
+    "definition": "组织子模块的可导入包；不同于发布分发包。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "submodule",
+    "zh": "子模块",
+    "abbr": "",
+    "definition": "位于包之下的模块。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "import statement",
+    "zh": "导入语句",
+    "abbr": "",
+    "definition": "使用 import 或 from ... import 绑定导入名称。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "absolute import",
+    "zh": "绝对导入",
+    "abbr": "",
+    "definition": "从顶层包名称开始解析的导入方式。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "relative import",
+    "zh": "相对导入",
+    "abbr": "",
+    "definition": "使用前导点号按包层级解析导入。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "import path",
+    "zh": "模块搜索路径",
+    "abbr": "",
+    "definition": "导入系统查找模块所用的路径集合。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "sys.path",
+    "zh": "模块搜索路径列表",
+    "abbr": "",
+    "definition": "Python 导入器使用的重要路径序列。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "module cache",
+    "zh": "模块缓存",
+    "abbr": "",
+    "definition": "sys.modules 中已加载模块的映射。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "__name__",
+    "zh": "模块名称属性",
+    "abbr": "",
+    "definition": "模块作为脚本运行时通常为 '__main__'。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "__main__",
+    "zh": "主模块",
+    "abbr": "",
+    "definition": "解释器执行程序入口时使用的模块名。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "__init__.py",
+    "zh": "包初始化文件",
+    "abbr": "",
+    "definition": "常规包中的初始化模块文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "namespace package",
+    "zh": "命名空间包",
+    "abbr": "",
+    "definition": "可跨多个目录位置组成同一包的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "importlib",
+    "zh": "导入工具库",
+    "abbr": "",
+    "definition": "提供导入系统与模块加载的编程接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "module spec",
+    "zh": "模块规格信息",
+    "abbr": "",
+    "definition": "描述模块加载器与来源等元数据的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "relative path",
+    "zh": "相对路径",
+    "abbr": "",
+    "definition": "相对于当前目录或基准目录的路径。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "absolute path",
+    "zh": "绝对路径",
+    "abbr": "",
+    "definition": "从文件系统根或盘符基准定位的路径。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "project root",
+    "zh": "项目根目录",
+    "abbr": "",
+    "definition": "项目配置与代码结构的顶层目录。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "source layout",
+    "zh": "源码布局",
+    "abbr": "",
+    "definition": "例如 src/ 目录承载项目导入包的组织方式。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "circular import",
+    "zh": "循环导入",
+    "abbr": "",
+    "definition": "模块互相依赖导入，可能在初始化中出现问题。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "entry point",
+    "zh": "入口点",
+    "abbr": "",
+    "definition": "包元数据声明的可执行命令或插件入口。"
+  },
+  {
+    "category": "python",
+    "chapter": 9,
+    "topic": "模块、导入与项目结构",
+    "en": "plugin",
+    "zh": "插件",
+    "abbr": "",
+    "definition": "通过约定接口动态扩展宿主程序的组件。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "type hint",
+    "zh": "类型提示",
+    "abbr": "",
+    "definition": "用注解表达开发者预期的类型信息。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "type annotation",
+    "zh": "类型注解",
+    "abbr": "",
+    "definition": "放在变量、形参或返回值上的类型表达式。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "static type checker",
+    "zh": "静态类型检查器",
+    "abbr": "",
+    "definition": "不运行程序即可分析类型兼容性的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "runtime type checking",
+    "zh": "运行时类型检查",
+    "abbr": "",
+    "definition": "程序执行期间主动验证值的类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "typing module",
+    "zh": "typing 模块",
+    "abbr": "",
+    "definition": "提供 Python 类型系统相关构造与工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Any",
+    "zh": "任意类型",
+    "abbr": "",
+    "definition": "静态类型系统中的动态逃逸类型，削弱检查约束。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "object type",
+    "zh": "顶层对象类型",
+    "abbr": "",
+    "definition": "Python 类层次常见顶层类；静态意义不同于 Any。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Union",
+    "zh": "联合类型",
+    "abbr": "",
+    "definition": "表示值可能符合多个类型之一。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Optional",
+    "zh": "可选空值类型",
+    "abbr": "",
+    "definition": "Optional[T] 等价于 T 与 None 的联合类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Literal",
+    "zh": "字面量类型",
+    "abbr": "",
+    "definition": "限定到某些具体字面值的静态类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Annotated",
+    "zh": "附加元数据类型",
+    "abbr": "",
+    "definition": "在基本类型上附加供工具使用的元数据。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Callable",
+    "zh": "可调用类型",
+    "abbr": "",
+    "definition": "描述参数与返回值形状的函数接口类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Iterable",
+    "zh": "可迭代协议类型",
+    "abbr": "",
+    "definition": "描述可通过迭代取元素的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Iterator",
+    "zh": "迭代器协议类型",
+    "abbr": "",
+    "definition": "描述既可迭代又可提供下一元素的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Generator",
+    "zh": "生成器类型",
+    "abbr": "",
+    "definition": "在类型层表示 yield、send、return 类型信息。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Protocol",
+    "zh": "协议类型",
+    "abbr": "",
+    "definition": "通过结构成员而非显式继承表达接口兼容性。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "structural subtyping",
+    "zh": "结构化子类型",
+    "abbr": "",
+    "definition": "依据对象成员结构判断类型兼容性。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "nominal subtyping",
+    "zh": "名义子类型",
+    "abbr": "",
+    "definition": "依据显式继承或注册关系判断子类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "TypeVar",
+    "zh": "类型变量",
+    "abbr": "",
+    "definition": "在泛型定义中表达类型之间的关联。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "generic",
+    "zh": "泛型",
+    "abbr": "",
+    "definition": "以类型参数描述可复用的类型或函数。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "ParamSpec",
+    "zh": "参数规格变量",
+    "abbr": "",
+    "definition": "在高阶函数中保留被包装函数的参数形状。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "TypeAlias",
+    "zh": "类型别名",
+    "abbr": "",
+    "definition": "为类型表达式赋予可复用名称。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "TypedDict",
+    "zh": "带类型键的字典",
+    "abbr": "",
+    "definition": "为具有固定键结构的字典声明预期值类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "NewType",
+    "zh": "新类型标记",
+    "abbr": "",
+    "definition": "为静态检查构造名义上不同的简单类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Final",
+    "zh": "不应重赋值标记",
+    "abbr": "",
+    "definition": "静态工具可检查被标记名称的重新赋值。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "overload",
+    "zh": "重载声明",
+    "abbr": "",
+    "definition": "描述函数针对不同参数类型的多个静态签名。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "Self",
+    "zh": "自身类型",
+    "abbr": "",
+    "definition": "在方法或类接口中引用当前类及其子类的类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 10,
+    "topic": "类型注解与静态分析",
+    "en": "type narrowing",
+    "zh": "类型缩窄",
+    "abbr": "",
+    "definition": "在条件判断后，将联合类型缩小到更具体类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "concurrency",
+    "zh": "并发",
+    "abbr": "",
+    "definition": "多项任务在时间上交错或协调推进。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "parallelism",
+    "zh": "并行",
+    "abbr": "",
+    "definition": "多项计算在同一时刻实质上执行。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "asynchronous programming",
+    "zh": "异步编程",
+    "abbr": "",
+    "definition": "使用非阻塞等待与任务调度组织工作。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "synchronous programming",
+    "zh": "同步编程",
+    "abbr": "",
+    "definition": "按顺序执行并在调用完成后继续的常见模式。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "coroutine",
+    "zh": "协程",
+    "abbr": "",
+    "definition": "可挂起并在之后恢复执行的计算对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "coroutine function",
+    "zh": "协程函数",
+    "abbr": "",
+    "definition": "通过 async def 定义，调用后通常返回协程对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "awaitable",
+    "zh": "可等待对象",
+    "abbr": "",
+    "definition": "可作为 await 表达式操作数的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "await",
+    "zh": "等待表达式",
+    "abbr": "",
+    "definition": "在协程中等待可等待对象，同时让出调度控制权。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "asyncio",
+    "zh": "异步 I/O 标准库",
+    "abbr": "",
+    "definition": "Python 提供事件循环、任务与异步同步原语的模块。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "event loop",
+    "zh": "事件循环",
+    "abbr": "",
+    "definition": "负责调度异步回调、任务及 I/O 事件的核心组件。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "Task",
+    "zh": "异步任务",
+    "abbr": "",
+    "definition": "asyncio 中调度协程执行的可等待对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "Future",
+    "zh": "未来结果对象",
+    "abbr": "",
+    "definition": "表示异步操作未来完成结果的可等待对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "async iterator",
+    "zh": "异步迭代器",
+    "abbr": "",
+    "definition": "提供 __aiter__ 与异步 __anext__ 方法的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "async for",
+    "zh": "异步迭代语句",
+    "abbr": "",
+    "definition": "迭代异步迭代器的语法。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "async context manager",
+    "zh": "异步上下文管理器",
+    "abbr": "",
+    "definition": "定义 __aenter__ 和 __aexit__ 的资源管理对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "async with",
+    "zh": "异步 with 语句",
+    "abbr": "",
+    "definition": "以异步协议进入与退出上下文。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "asynchronous generator",
+    "zh": "异步生成器",
+    "abbr": "",
+    "definition": "同时使用 async def 与 yield 定义的生成器机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "thread",
+    "zh": "线程",
+    "abbr": "",
+    "definition": "进程内执行流，通常共享同一进程内存。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "process",
+    "zh": "进程",
+    "abbr": "",
+    "definition": "操作系统管理的独立执行单元，通常有独立地址空间。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "threading",
+    "zh": "线程模块",
+    "abbr": "",
+    "definition": "提供 Thread、Lock、Event 等线程同步接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "multiprocessing",
+    "zh": "多进程模块",
+    "abbr": "",
+    "definition": "基于子进程提供并行计算与通信的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "concurrent.futures",
+    "zh": "并发任务接口",
+    "abbr": "",
+    "definition": "提供线程池、进程池与 Future 抽象。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "thread pool",
+    "zh": "线程池",
+    "abbr": "",
+    "definition": "重用工作线程执行多个任务的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "process pool",
+    "zh": "进程池",
+    "abbr": "",
+    "definition": "重用工作进程执行多个任务的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "lock",
+    "zh": "互斥锁",
+    "abbr": "",
+    "definition": "限制共享资源被多个执行单元同时访问的同步原语。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "reentrant lock (RLock)",
+    "zh": "可重入锁",
+    "abbr": "",
+    "definition": "同一线程可以多次获取的锁。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "semaphore",
+    "zh": "信号量",
+    "abbr": "",
+    "definition": "限制同时进入某个资源区的执行单元数量。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "race condition",
+    "zh": "竞态条件",
+    "abbr": "",
+    "definition": "程序结果依赖不受控执行时序的缺陷。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "deadlock",
+    "zh": "死锁",
+    "abbr": "",
+    "definition": "多个执行单元相互等待导致无法继续推进。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "cancellation",
+    "zh": "取消",
+    "abbr": "",
+    "definition": "请求异步任务停止，通常在可等待点传播取消异常。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "structured concurrency",
+    "zh": "结构化并发",
+    "abbr": "",
+    "definition": "让子任务生命周期与明确的代码作用域绑定的设计思想。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "TaskGroup",
+    "zh": "任务组",
+    "abbr": "",
+    "definition": "asyncio 中用于成组管理子任务及异常传播的上下文管理器。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "Global Interpreter Lock (GIL)",
+    "zh": "全局解释器锁",
+    "abbr": "GIL",
+    "definition": "传统 CPython 构建中限制同一解释器内线程并行执行字节码的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 11,
+    "topic": "异步编程与并发模型",
+    "en": "free-threaded build",
+    "zh": "自由线程构建",
+    "abbr": "",
+    "definition": "可禁用 GIL 的 CPython 构建模式，兼容性与行为需参照对应版本文档。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "I/O (input/output)",
+    "zh": "输入/输出",
+    "abbr": "",
+    "definition": "程序与文件、终端或外部设备交换数据的活动。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "stream",
+    "zh": "流",
+    "abbr": "",
+    "definition": "按顺序读写数据的抽象接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "text I/O",
+    "zh": "文本输入输出",
+    "abbr": "",
+    "definition": "读写 str 并涉及字符编码/解码的 I/O。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "binary I/O",
+    "zh": "二进制输入输出",
+    "abbr": "",
+    "definition": "读写 bytes 等二进制对象的 I/O。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "buffering",
+    "zh": "缓冲",
+    "abbr": "",
+    "definition": "临时聚集数据以减少底层读写次数的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "file object",
+    "zh": "文件对象",
+    "abbr": "",
+    "definition": "提供 read、write、close 等接口的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "file descriptor",
+    "zh": "文件描述符",
+    "abbr": "",
+    "definition": "操作系统使用的打开文件资源整数标识。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "open()",
+    "zh": "打开文件函数",
+    "abbr": "",
+    "definition": "返回适当类型的文件对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "encoding",
+    "zh": "字符编码",
+    "abbr": "",
+    "definition": "在字符与字节之间进行映射的规则。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "decoding",
+    "zh": "解码",
+    "abbr": "",
+    "definition": "将字节序列转换为字符文本的过程。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "newline translation",
+    "zh": "换行符转换",
+    "abbr": "",
+    "definition": "文本 I/O 对不同平台换行形式的处理。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "pathlike object",
+    "zh": "类路径对象",
+    "abbr": "",
+    "definition": "通过 __fspath__ 表示文件系统路径的对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "pathlib.Path",
+    "zh": "路径对象",
+    "abbr": "",
+    "definition": "面向对象地处理文件与目录路径的类型。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "os module",
+    "zh": "操作系统接口模块",
+    "abbr": "",
+    "definition": "提供环境变量、进程与文件系统相关操作。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "sys module",
+    "zh": "解释器系统模块",
+    "abbr": "",
+    "definition": "提供 argv、path、stdout 等解释器级接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "stdin",
+    "zh": "标准输入",
+    "abbr": "",
+    "definition": "程序默认接收输入的数据流。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "stdout",
+    "zh": "标准输出",
+    "abbr": "",
+    "definition": "程序正常输出的默认流。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "stderr",
+    "zh": "标准错误",
+    "abbr": "",
+    "definition": "程序诊断信息的默认输出流。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "environment variable",
+    "zh": "环境变量",
+    "abbr": "",
+    "definition": "由进程环境提供的键值配置。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "subprocess",
+    "zh": "子进程模块",
+    "abbr": "",
+    "definition": "启动、控制与通信外部程序的标准库模块。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "pipe",
+    "zh": "管道",
+    "abbr": "",
+    "definition": "将一个进程的数据流连接到另一进程的通信机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "serialization",
+    "zh": "序列化",
+    "abbr": "",
+    "definition": "将对象或数据结构编码成可保存/传输形式。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "deserialization",
+    "zh": "反序列化",
+    "abbr": "",
+    "definition": "从编码格式恢复对应的数据结构。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "JSON",
+    "zh": "JSON 数据格式",
+    "abbr": "",
+    "definition": "通用文本数据交换格式，Python 常用 json 模块处理。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "pickle",
+    "zh": "Python 对象序列化",
+    "abbr": "",
+    "definition": "pickle 能序列化大量 Python 对象，但不可加载不可信数据。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "CSV",
+    "zh": "逗号分隔值格式",
+    "abbr": "",
+    "definition": "常用于表格型数据交换，分隔规则由方言决定。"
+  },
+  {
+    "category": "python",
+    "chapter": 12,
+    "topic": "文件、I/O 与系统接口",
+    "en": "temporary file",
+    "zh": "临时文件",
+    "abbr": "",
+    "definition": "为短期处理创建、通常需要及时清理的文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "collections",
+    "zh": "集合工具模块",
+    "abbr": "",
+    "definition": "提供 deque、Counter、defaultdict 等容器。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "collections.abc",
+    "zh": "容器抽象基类模块",
+    "abbr": "",
+    "definition": "定义 Iterable、Mapping、Sequence 等 ABC。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "dataclasses",
+    "zh": "数据类模块",
+    "abbr": "",
+    "definition": "自动为数据类生成初始化和比较等方法。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "heapq",
+    "zh": "堆队列模块",
+    "abbr": "",
+    "definition": "提供基于列表的小顶堆操作。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "bisect",
+    "zh": "二分查找模块",
+    "abbr": "",
+    "definition": "在有序序列中查找插入位置。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "array",
+    "zh": "同类型值数组模块",
+    "abbr": "",
+    "definition": "存储特定基本 C 类型数值的紧凑序列。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "math",
+    "zh": "数学函数模块",
+    "abbr": "",
+    "definition": "提供实数数学函数与常量。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "statistics",
+    "zh": "统计模块",
+    "abbr": "",
+    "definition": "提供均值、中位数、方差等基础统计工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "decimal",
+    "zh": "十进制运算模块",
+    "abbr": "",
+    "definition": "提供可控制精度与舍入的十进制数。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "fractions",
+    "zh": "有理数模块",
+    "abbr": "",
+    "definition": "通过 Fraction 表示分子、分母比值。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "random",
+    "zh": "伪随机数模块",
+    "abbr": "",
+    "definition": "用于模拟等普通随机需求，不应用于密码安全。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "secrets",
+    "zh": "安全随机工具",
+    "abbr": "",
+    "definition": "适于生成令牌等密码学用途的随机值。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "re",
+    "zh": "正则表达式模块",
+    "abbr": "",
+    "definition": "提供文本模式匹配与替换功能。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "string",
+    "zh": "字符串常量与模板",
+    "abbr": "",
+    "definition": "提供字符类别常量、Template 等。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "datetime",
+    "zh": "日期时间模块",
+    "abbr": "",
+    "definition": "提供 date、time、datetime 和 timedelta。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "zoneinfo",
+    "zh": "时区数据库接口",
+    "abbr": "",
+    "definition": "提供 IANA 时区数据库对应的时区对象。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "logging",
+    "zh": "日志模块",
+    "abbr": "",
+    "definition": "支持等级、格式器、处理器的日志记录。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "argparse",
+    "zh": "命令行参数模块",
+    "abbr": "",
+    "definition": "构建具有选项和帮助信息的命令行接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "configparser",
+    "zh": "INI 配置解析模块",
+    "abbr": "",
+    "definition": "读写传统 INI 风格配置文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "shutil",
+    "zh": "高级文件操作模块",
+    "abbr": "",
+    "definition": "提供复制、移动、目录树操作等。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "functools.lru_cache",
+    "zh": "最近最少使用缓存",
+    "abbr": "",
+    "definition": "按调用参数缓存函数结果的装饰器。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "weakref",
+    "zh": "弱引用模块",
+    "abbr": "",
+    "definition": "引用对象而不阻止其被垃圾回收的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "inspect",
+    "zh": "内省工具模块",
+    "abbr": "",
+    "definition": "读取签名、源码及其他运行对象信息。"
+  },
+  {
+    "category": "python",
+    "chapter": 13,
+    "topic": "常用标准库与数据工具",
+    "en": "importlib.metadata",
+    "zh": "包元数据读取",
+    "abbr": "",
+    "definition": "查询已安装分发包的版本与元信息。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "package manager",
+    "zh": "包管理器",
+    "abbr": "",
+    "definition": "安装、更新或管理可复用软件包的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "pip",
+    "zh": "Python 包安装工具",
+    "abbr": "",
+    "definition": "常用的 Python 分发包安装前端。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "PyPI",
+    "zh": "Python 包索引",
+    "abbr": "",
+    "definition": "Python 社区广泛使用的公开分发包索引服务。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "virtual environment",
+    "zh": "虚拟环境",
+    "abbr": "",
+    "definition": "为项目隔离 Python 解释器环境与安装依赖的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "venv",
+    "zh": "虚拟环境模块",
+    "abbr": "",
+    "definition": "创建 Python 虚拟环境的标准库模块。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "site-packages",
+    "zh": "第三方包安装目录",
+    "abbr": "",
+    "definition": "解释器环境中常见的已安装包位置。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "dependency",
+    "zh": "依赖",
+    "abbr": "",
+    "definition": "项目正常运行或构建所依赖的其他包或组件。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "direct dependency",
+    "zh": "直接依赖",
+    "abbr": "",
+    "definition": "项目显式声明依赖的软件包。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "transitive dependency",
+    "zh": "传递依赖",
+    "abbr": "",
+    "definition": "因直接依赖的需求而间接引入的软件包。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "version specifier",
+    "zh": "版本约束",
+    "abbr": "",
+    "definition": "指定可接受软件包版本范围的表达式。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "requirement",
+    "zh": "安装需求",
+    "abbr": "",
+    "definition": "对需要安装的分发包及其约束的说明。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "requirements.txt",
+    "zh": "依赖需求文件",
+    "abbr": "",
+    "definition": "常用于按行列出 pip 需要安装的需求。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "lock file",
+    "zh": "锁定文件",
+    "abbr": "",
+    "definition": "记录经解析后的具体依赖版本/工件，格式因工具而异。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "reproducible build",
+    "zh": "可复现构建",
+    "abbr": "",
+    "definition": "在规定条件下能重复产出相同工件的构建目标。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "pyproject.toml",
+    "zh": "Python 项目配置文件",
+    "abbr": "",
+    "definition": "声明构建系统、项目元数据及工具配置的 TOML 文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "[build-system]",
+    "zh": "构建系统配置区",
+    "abbr": "",
+    "definition": "pyproject.toml 中声明构建后端等设置的表。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "[project]",
+    "zh": "项目元数据配置区",
+    "abbr": "",
+    "definition": "pyproject.toml 中声明包名、版本、依赖等字段的表。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "build backend",
+    "zh": "构建后端",
+    "abbr": "",
+    "definition": "按标准构建接口生成源码包或 wheel 的实现。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "build frontend",
+    "zh": "构建前端",
+    "abbr": "",
+    "definition": "调用构建后端并管理构建流程的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "source distribution (sdist)",
+    "zh": "源码分发包",
+    "abbr": "",
+    "definition": "含构建所需源码和元数据的发布工件。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "wheel",
+    "zh": "Wheel 二进制分发包",
+    "abbr": "",
+    "definition": "可安装的构建分发格式，扩展模块可能含平台特定二进制文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "distribution package",
+    "zh": "分发包",
+    "abbr": "",
+    "definition": "供包管理器发布与安装的项目版本工件。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "import package",
+    "zh": "导入包",
+    "abbr": "",
+    "definition": "import 语句访问的 Python 包结构。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "editable install",
+    "zh": "可编辑安装",
+    "abbr": "",
+    "definition": "安装后可直接使用源码目录中改动的开发模式。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "semantic versioning",
+    "zh": "语义化版本",
+    "abbr": "",
+    "definition": "MAJOR.MINOR.PATCH 版本约定；并非全部 Python 项目都遵循。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "build artifact",
+    "zh": "构建产物",
+    "abbr": "",
+    "definition": "构建系统生成的文件，如 wheel 或 sdist。"
+  },
+  {
+    "category": "python",
+    "chapter": 14,
+    "topic": "依赖、包管理与构建发布",
+    "en": "package index",
+    "zh": "包索引",
+    "abbr": "",
+    "definition": "托管并提供分发包发现/下载的仓库服务。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "test case",
+    "zh": "测试用例",
+    "abbr": "",
+    "definition": "对某个预期行为进行输入与验证的独立检查。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "test suite",
+    "zh": "测试套件",
+    "abbr": "",
+    "definition": "多个相关测试的集合。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "unit test",
+    "zh": "单元测试",
+    "abbr": "",
+    "definition": "针对函数、类等较小代码单元的测试。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "integration test",
+    "zh": "集成测试",
+    "abbr": "",
+    "definition": "验证多个组件一起工作的行为。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "end-to-end test",
+    "zh": "端到端测试",
+    "abbr": "",
+    "definition": "模拟完整用户流程或系统路径的测试。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "regression test",
+    "zh": "回归测试",
+    "abbr": "",
+    "definition": "确保代码变化未破坏既有行为的测试。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "assertion",
+    "zh": "断言",
+    "abbr": "",
+    "definition": "对预期条件成立作出检查的表达式或工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "assert statement",
+    "zh": "assert 语句",
+    "abbr": "",
+    "definition": "在调试构建中检查条件；优化模式可能移除，不能用于安全校验。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "fixture",
+    "zh": "测试夹具",
+    "abbr": "",
+    "definition": "为测试准备及清理环境、对象或数据的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "mock",
+    "zh": "模拟对象",
+    "abbr": "",
+    "definition": "用可控替身代替真实依赖以进行测试。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "monkeypatch",
+    "zh": "动态替换",
+    "abbr": "",
+    "definition": "测试中临时替换模块属性、函数或环境配置的做法。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "code coverage",
+    "zh": "代码覆盖率",
+    "abbr": "",
+    "definition": "衡量测试执行触及代码区域的程度。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "branch coverage",
+    "zh": "分支覆盖率",
+    "abbr": "",
+    "definition": "衡量控制流各分支被测试执行的比例。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "property-based testing",
+    "zh": "基于性质的测试",
+    "abbr": "",
+    "definition": "生成多种输入并验证通用不变量。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "parameterized test",
+    "zh": "参数化测试",
+    "abbr": "",
+    "definition": "一份测试逻辑使用多组输入与期望结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "unittest",
+    "zh": "单元测试标准库",
+    "abbr": "",
+    "definition": "Python 自带的测试框架。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "pytest",
+    "zh": "pytest 测试框架",
+    "abbr": "",
+    "definition": "流行的第三方测试工具，支持 fixture 与参数化。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "debugger",
+    "zh": "调试器",
+    "abbr": "",
+    "definition": "允许断点、单步执行与状态检查的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "breakpoint",
+    "zh": "断点",
+    "abbr": "",
+    "definition": "程序执行时主动暂停以便诊断的位置。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "pdb",
+    "zh": "Python 调试器",
+    "abbr": "",
+    "definition": "标准库提供的交互式调试工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "stack trace",
+    "zh": "调用栈跟踪",
+    "abbr": "",
+    "definition": "展示函数调用链，常用于定位异常原因。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "linter",
+    "zh": "静态规范检查器",
+    "abbr": "",
+    "definition": "检查潜在错误和编码风格问题的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "formatter",
+    "zh": "代码格式化器",
+    "abbr": "",
+    "definition": "自动统一缩进、换行等代码样式的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "refactoring",
+    "zh": "重构",
+    "abbr": "",
+    "definition": "在保持外部行为的条件下改进内部结构。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "continuous integration (CI)",
+    "zh": "持续集成",
+    "abbr": "CI",
+    "definition": "自动构建、测试及验证代码变更的流程。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "pre-commit hook",
+    "zh": "提交前钩子",
+    "abbr": "",
+    "definition": "在 Git 提交前运行检查或自动修复的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "logging level",
+    "zh": "日志级别",
+    "abbr": "",
+    "definition": "DEBUG、INFO、WARNING、ERROR、CRITICAL 等等级。"
+  },
+  {
+    "category": "python",
+    "chapter": 15,
+    "topic": "测试、调试与工程质量",
+    "en": "structured logging",
+    "zh": "结构化日志",
+    "abbr": "",
+    "definition": "以 JSON 或字段形式输出便于机器分析的日志。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "time complexity",
+    "zh": "时间复杂度",
+    "abbr": "",
+    "definition": "分析算法运行开销随输入规模变化的量级。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "space complexity",
+    "zh": "空间复杂度",
+    "abbr": "",
+    "definition": "分析额外内存开销随输入规模变化的量级。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "Big O notation",
+    "zh": "大 O 记号",
+    "abbr": "",
+    "definition": "描述渐近上界或增长阶的常见记法。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "profiling",
+    "zh": "性能剖析",
+    "abbr": "",
+    "definition": "测量程序各部分时间或资源使用的过程。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "profiler",
+    "zh": "性能分析器",
+    "abbr": "",
+    "definition": "采集执行耗时、调用次数等指标的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "cProfile",
+    "zh": "cProfile 分析器",
+    "abbr": "",
+    "definition": "CPython 常见确定性函数级性能分析模块。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "timeit",
+    "zh": "微基准测试模块",
+    "abbr": "",
+    "definition": "重复计时小段 Python 代码的工具。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "benchmark",
+    "zh": "基准测试",
+    "abbr": "",
+    "definition": "在明确条件下比较性能的测试方法。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "latency",
+    "zh": "延迟",
+    "abbr": "",
+    "definition": "单个请求或操作完成所花的时间。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间可完成的任务或处理数据量。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "reference counting",
+    "zh": "引用计数",
+    "abbr": "",
+    "definition": "以引用数量辅助管理对象生命周期的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "cyclic garbage collector",
+    "zh": "循环垃圾回收器",
+    "abbr": "",
+    "definition": "用来发现并回收某些引用环的机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "garbage collection (GC)",
+    "zh": "垃圾回收",
+    "abbr": "GC",
+    "definition": "回收程序不再需要的对象占用资源的过程。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "memory leak",
+    "zh": "内存泄漏",
+    "abbr": "",
+    "definition": "不再需要的数据仍被保留，导致内存占用增长。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "weak reference",
+    "zh": "弱引用",
+    "abbr": "",
+    "definition": "不因自身存在而阻止对象回收的引用。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "object interning",
+    "zh": "对象驻留",
+    "abbr": "",
+    "definition": "复用部分不可变对象实例的优化技术。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "small integer cache",
+    "zh": "小整数缓存",
+    "abbr": "",
+    "definition": "某些 Python 实现对部分整数对象的复用优化。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "copy-on-write",
+    "zh": "写时复制",
+    "abbr": "",
+    "definition": "共享数据直到有写入才进行复制的系统机制。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "stack",
+    "zh": "栈",
+    "abbr": "",
+    "definition": "用于管理调用上下文等信息的数据结构概念。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "heap",
+    "zh": "堆内存",
+    "abbr": "",
+    "definition": "动态分配对象通常使用的内存区域概念。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "heap allocation",
+    "zh": "堆分配",
+    "abbr": "",
+    "definition": "从动态内存管理区域为对象分配空间。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "C extension",
+    "zh": "C 扩展模块",
+    "abbr": "",
+    "definition": "使用 C/C++ 等编写、以原生扩展形式加载的模块。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "Python C API",
+    "zh": "Python C 接口",
+    "abbr": "",
+    "definition": "供原生代码与 Python 运行时交互的接口集合。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "ABI",
+    "zh": "应用二进制接口",
+    "abbr": "",
+    "definition": "二进制模块间调用约定、符号和数据布局等契约。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "stable ABI",
+    "zh": "稳定 ABI",
+    "abbr": "",
+    "definition": "Python 为兼容多个 CPython 版本提供的受限二进制接口。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "bytecode cache",
+    "zh": "字节码缓存",
+    "abbr": "",
+    "definition": "常以 __pycache__ 下的 .pyc 文件保存编译结果。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "__pycache__",
+    "zh": "字节码缓存目录",
+    "abbr": "",
+    "definition": "通常存放解释器生成的版本标记 .pyc 文件。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "JIT compilation",
+    "zh": "即时编译",
+    "abbr": "",
+    "definition": "运行时将热点代码转成更低层指令的技术。"
+  },
+  {
+    "category": "python",
+    "chapter": 16,
+    "topic": "性能、内存与解释器内部",
+    "en": "vectorization",
+    "zh": "向量化",
+    "abbr": "",
+    "definition": "用批量运算代替逐元素 Python 级循环的优化方法。"
+  },
+  {
     "category": "ai-infrastructure",
     "chapter": 1,
     "topic": "计算硬件与加速器",

@@ -43,3 +43,6 @@
 - [ ] 导出的 Markdown / CSV / Pages JSON 已同步
 - [ ] 字符转义及 PDF 中文显示正常
 - [ ] 测试通过、PR 写明来源及变化范围
+
+## Python 内容维护
+`glossaries/python.md` 是包含概念辨析、英文索引和参考文献的完整编辑原稿。修改后先运行 `python3 scripts/import_python.py` 更新结构化索引，再运行 `python3 scripts/build.py`、`python3 scripts/verify.py` 和单元测试。PDF 为独立排版工件，更正词条后请同步核对 `pdf/python.pdf` 和 `docs/pdf/python.pdf`。

@@ -4,6 +4,11 @@ from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'data/terms.json').read_text(encoding='utf8'))
 class CatalogTests(unittest.TestCase):
+ def test_python_domain(self):
+  python=[t for t in DATA if t['category']=='python']
+  self.assertEqual(len(python),429)
+  self.assertEqual(len({t['chapter'] for t in python}),16)
+  self.assertIn('CPython',{t['en'] for t in python})
  def test_compiler_domain(self):
   self.assertIn('compiler-principles',{t['category'] for t in DATA})
   self.assertGreaterEqual(len({t['category'] for t in DATA}),9)
