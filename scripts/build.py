@@ -23,6 +23,7 @@ CATALOG=[
  ('data-structures','Data Structures','数据结构','Arrays, lists, hashing, trees, graphs and advanced structures','network'),
  ('linux','Linux','Linux 操作系统','Kernel, processes, memory, networking, containers and performance','terminal'),
  ('operating-systems','Operating Systems','操作系统','Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization','server'),
+ ('computer-networks','Computer Networks','计算机网络','Layers, Ethernet, Wi-Fi, IPv4/IPv6, routing, TCP, QUIC, DNS, HTTP, TLS and network operations','network'),
  ('sql-database','SQL Database','SQL 数据库','Relational modeling, SQL syntax, indexes, optimizers, transactions and operations','database'),
  ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
  ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
@@ -63,11 +64,16 @@ def merge_high_school(data):
  from render_high_school_pdf import load_terms
  return [t for t in data if t['category']!='high-school-mathematics']+load_terms(ROOT/'data/high-school-mathematics.tsv')
 
+def merge_computer_networks(data):
+ from ingest_computer_networks import load_records
+ additions=load_records(ROOT/'data/computer-networks.tsv')
+ return [row for row in data if row['category']!='computer-networks']+additions
+
 def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
-  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'parallel-computing'):
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing'):
    continue  # Preserve independently authored Markdown and appendices.
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
@@ -154,6 +160,7 @@ def run():
  data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data));data=merge_high_school(data)
  from import_university_mathematics import merge_entries
  data=merge_entries(data)
+ data=merge_computer_networks(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
