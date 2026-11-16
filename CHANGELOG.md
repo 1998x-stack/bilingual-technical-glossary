@@ -1,10 +1,11 @@
 # Changelog
 
-## 2026-11-16 — Computer Organization bilingual handbook
+## Calculus edition — 2026-11-16
 
-- Published the original 39-page Computer Organization PDF and the matching Markdown (678 term pairs across 15 chapters).
-- Mirrored both publications into the GitHub Pages docs folder and linked them in the READMEs and site collections.
-- Kept the searchable dataset unchanged pending terminology definition review.
+- Added 361 Calculus terms across 16 topics with Markdown and PDF download editions.
+- Indexed mathematical notation separately from abbreviations.
+- Updated the explorer dataset, glossary catalog, documentation and validation for 10 subjects, 3,276 terms and 141 topics.
+
 
 ## v1.1.0 — 2026-11-16
 

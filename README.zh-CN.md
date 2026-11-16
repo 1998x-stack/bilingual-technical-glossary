@@ -18,10 +18,11 @@
 | 大语言模型 LLM / Large Language Models | 419 | 16 | [阅读](glossaries/large-language-models.md) | [下载](pdf/large-language-models.pdf) |
 | 深度学习 / Deep Learning | 500 | 18 | [阅读](glossaries/deep-learning.md) | [下载](pdf/deep-learning.pdf) |
 | 强化学习 / Reinforcement Learning | 305 | 14 | [阅读](glossaries/reinforcement-learning.md) | [下载](pdf/reinforcement-learning.pdf) |
+| 微积分 / Calculus | 361 | 16 | [阅读](glossaries/calculus.md) | [下载](pdf/calculus.pdf) |
 | 线性代数 / Linear Algebra | 289 | 12 | [阅读](glossaries/linear-algebra.md) | [下载](pdf/linear-algebra.pdf) |
 | 编译原理 / Compiler Principles | 268 | 12 | [阅读](glossaries/compiler-principles.md) | [下载](pdf/compiler-principles.pdf) |
 | 概率论 / Probability Theory | 405 | 16 | [阅读](glossaries/probability-theory.md) | [下载](pdf/probability-theory.pdf) |
-| **合计** | **2,915** | **125** | | |
+| **合计** | **3,276** | **141** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -38,12 +39,14 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**8 个学科、113 个专题；
+- **主题选择：**10 个学科、141 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
 
 静态资源位于 `docs/`，无需后端、数据库或付费 API。仓库首次发布后，需要仓库管理员在 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。无需生成新的工作流，现有 `.github/workflows/pages.yml` 已配置部署 `docs/`；随后在 **Actions → Publish TERM/ATLAS to GitHub Pages** 中重新运行之前失败的任务（或点击 Run workflow）。网页成功部署后，上方链接才会正常访问。详见 [部署说明](docs/PAGES_SETUP.md)。
+
+微积分新增 361 条术语（16 个专题），并保留 `notation` 字段；源 Markdown 存放在 [`sources/calculus.md`](sources/calculus.md)。
 
 ## 更新与质量控制
 

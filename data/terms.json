@@ -26233,5 +26233,3615 @@
     "zh": "源码映射",
     "abbr": "",
     "definition": "把生成代码位置映射回原始源码位置的元数据。"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Calculus",
+    "zh": "微积分",
+    "abbr": "",
+    "definition": "研究变化率、累积量及其联系的数学分支",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Differential calculus",
+    "zh": "微分学",
+    "abbr": "",
+    "definition": "主要研究导数及局部变化",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Integral calculus",
+    "zh": "积分学",
+    "abbr": "",
+    "definition": "主要研究累积、面积和积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Function",
+    "zh": "函数",
+    "abbr": "",
+    "definition": "将定义域中的元素映射到值域中的元素",
+    "notation": "f: A → B"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Independent variable",
+    "zh": "自变量",
+    "abbr": "",
+    "definition": "函数的输入变量",
+    "notation": "x"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Dependent variable",
+    "zh": "因变量",
+    "abbr": "",
+    "definition": "随自变量变化的输出变量",
+    "notation": "y = f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Domain",
+    "zh": "定义域",
+    "abbr": "",
+    "definition": "函数允许的输入集合",
+    "notation": "dom(f)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Codomain",
+    "zh": "陪域",
+    "abbr": "",
+    "definition": "函数声明的目标集合",
+    "notation": "B"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Range / image",
+    "zh": "值域",
+    "abbr": "",
+    "definition": "函数实际取得的输出集合",
+    "notation": "f(A)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Graph of a function",
+    "zh": "函数图像",
+    "abbr": "",
+    "definition": "函数输入与输出的几何表示",
+    "notation": "y = f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Composite function",
+    "zh": "复合函数",
+    "abbr": "",
+    "definition": "由多个函数依次作用形成",
+    "notation": "f ∘ g"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Inverse function",
+    "zh": "反函数",
+    "abbr": "",
+    "definition": "在适当条件下撤销原函数映射",
+    "notation": "f⁻¹"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Piecewise-defined function",
+    "zh": "分段函数",
+    "abbr": "",
+    "definition": "在不同区间采用不同表达式",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Even function",
+    "zh": "偶函数",
+    "abbr": "",
+    "definition": "关于纵轴对称的函数",
+    "notation": "f(−x)=f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Odd function",
+    "zh": "奇函数",
+    "abbr": "",
+    "definition": "关于原点对称的函数",
+    "notation": "f(−x)=−f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Periodic function",
+    "zh": "周期函数",
+    "abbr": "",
+    "definition": "按固定周期重复函数值",
+    "notation": "f(x+T)=f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Monotonically increasing",
+    "zh": "单调递增",
+    "abbr": "",
+    "definition": "自变量增加时函数值不下降",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Strictly increasing",
+    "zh": "严格递增",
+    "abbr": "",
+    "definition": "自变量增加时函数值严格增大",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Bounded function",
+    "zh": "有界函数",
+    "abbr": "",
+    "definition": "函数值落在有限界限内",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Continuous function",
+    "zh": "连续函数",
+    "abbr": "",
+    "definition": "在所论点或区间上满足连续性",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Elementary function",
+    "zh": "初等函数",
+    "abbr": "",
+    "definition": "由常用基本函数经有限次运算与复合得到",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Parametric equation",
+    "zh": "参数方程",
+    "abbr": "",
+    "definition": "以参数表示曲线坐标",
+    "notation": "x=x(t), y=y(t)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Polar coordinates",
+    "zh": "极坐标",
+    "abbr": "",
+    "definition": "通过半径与角度描述平面位置",
+    "notation": "(r, θ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 1,
+    "topic": "基础概念与函数",
+    "en": "Radian",
+    "zh": "弧度",
+    "abbr": "",
+    "definition": "以弧长与半径之比定义的角度单位",
+    "notation": "rad"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Limit",
+    "zh": "极限",
+    "abbr": "",
+    "definition": "描述变量接近某点时的趋近值",
+    "notation": "lim"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Limit of a function",
+    "zh": "函数极限",
+    "abbr": "",
+    "definition": "函数在自变量趋近时的变化趋势",
+    "notation": "limₓ→ₐ f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Limit of a sequence",
+    "zh": "数列极限",
+    "abbr": "",
+    "definition": "描述数列项的渐近行为",
+    "notation": "limₙ→∞ aₙ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Left-hand limit",
+    "zh": "左极限",
+    "abbr": "",
+    "definition": "从左侧趋向指定点的极限",
+    "notation": "limₓ→ₐ⁻"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Right-hand limit",
+    "zh": "右极限",
+    "abbr": "",
+    "definition": "从右侧趋向指定点的极限",
+    "notation": "limₓ→ₐ⁺"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Infinite limit",
+    "zh": "无穷极限",
+    "abbr": "",
+    "definition": "函数值向正或负无穷增大",
+    "notation": "∞ / −∞"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Limit at infinity",
+    "zh": "无穷远处的极限",
+    "abbr": "",
+    "definition": "当自变量绝对值增大时考察极限",
+    "notation": "limₓ→∞"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "One-sided limit",
+    "zh": "单侧极限",
+    "abbr": "",
+    "definition": "从某一侧靠近点时的极限",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Infinitesimal",
+    "zh": "无穷小量",
+    "abbr": "",
+    "definition": "在给定极限过程中趋于零的量",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Infinitely large quantity",
+    "zh": "无穷大量",
+    "abbr": "",
+    "definition": "在给定极限过程中绝对值趋于无穷的量",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Asymptotically equivalent infinitesimals",
+    "zh": "等价无穷小",
+    "abbr": "",
+    "definition": "两量之比趋于 1",
+    "notation": "f ∼ g"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Higher-order infinitesimal",
+    "zh": "高阶无穷小",
+    "abbr": "",
+    "definition": "相对另一无穷小收敛得更快",
+    "notation": "f=o(g)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Little-o notation",
+    "zh": "小 o 记号",
+    "abbr": "",
+    "definition": "描述可忽略的相对阶",
+    "notation": "o(g)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Big-O notation",
+    "zh": "大 O 记号",
+    "abbr": "",
+    "definition": "描述渐近量级上界",
+    "notation": "O(g)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Squeeze theorem / sandwich theorem",
+    "zh": "夹逼定理",
+    "abbr": "",
+    "definition": "用上下界共同极限确定目标极限",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Epsilon-delta definition",
+    "zh": "ε–δ 定义",
+    "abbr": "",
+    "definition": "函数极限的严格定义方式",
+    "notation": "ε, δ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Epsilon-N definition",
+    "zh": "ε–N 定义",
+    "abbr": "",
+    "definition": "数列极限的严格定义方式",
+    "notation": "ε, N"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Continuity",
+    "zh": "连续性",
+    "abbr": "",
+    "definition": "极限值等于函数在该点的值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Left continuity",
+    "zh": "左连续",
+    "abbr": "",
+    "definition": "左极限等于函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Right continuity",
+    "zh": "右连续",
+    "abbr": "",
+    "definition": "右极限等于函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Point of discontinuity",
+    "zh": "间断点",
+    "abbr": "",
+    "definition": "函数不连续的位置",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Removable discontinuity",
+    "zh": "可去间断点",
+    "abbr": "",
+    "definition": "重新定义函数值后可使其连续",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Jump discontinuity",
+    "zh": "跳跃间断点",
+    "abbr": "",
+    "definition": "左右极限有限但不相等",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Intermediate value theorem",
+    "zh": "介值定理",
+    "abbr": "",
+    "definition": "连续函数取得端点函数值之间的所有值",
+    "notation": "IVT"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Extreme value theorem",
+    "zh": "最值定理",
+    "abbr": "",
+    "definition": "闭区间上连续函数达到最大最小值",
+    "notation": "EVT"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Sequential criterion for limits",
+    "zh": "海涅定理",
+    "abbr": "",
+    "definition": "通过任意趋近点的数列刻画函数极限",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 2,
+    "topic": "极限与连续性",
+    "en": "Cauchy criterion",
+    "zh": "柯西收敛准则",
+    "abbr": "",
+    "definition": "通过项间距离刻画收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Derivative",
+    "zh": "导数",
+    "abbr": "",
+    "definition": "函数在一点的瞬时变化率",
+    "notation": "f′(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Derivative function",
+    "zh": "导函数",
+    "abbr": "",
+    "definition": "把每一点映射到其导数的函数",
+    "notation": "f′"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Definition of derivative",
+    "zh": "导数定义",
+    "abbr": "",
+    "definition": "差商的极限",
+    "notation": "limₕ→₀ [f(x+h)−f(x)]/h"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Difference quotient",
+    "zh": "差商",
+    "abbr": "",
+    "definition": "函数增量与自变量增量的比",
+    "notation": "Δy/Δx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Increment",
+    "zh": "增量",
+    "abbr": "",
+    "definition": "变量发生的变化量",
+    "notation": "Δx, Δy"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Tangent line",
+    "zh": "切线",
+    "abbr": "",
+    "definition": "在可导点与曲线一阶贴合的直线",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Slope of tangent line",
+    "zh": "切线斜率",
+    "abbr": "",
+    "definition": "切线的斜率",
+    "notation": "f′(x₀)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Differential",
+    "zh": "微分",
+    "abbr": "",
+    "definition": "函数的线性主部变化",
+    "notation": "dy=f′(x)dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Differentiability",
+    "zh": "可导性",
+    "abbr": "",
+    "definition": "导数存在的性质",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Left-hand derivative",
+    "zh": "左导数",
+    "abbr": "",
+    "definition": "从左侧差商得到的导数",
+    "notation": "f′₋(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Right-hand derivative",
+    "zh": "右导数",
+    "abbr": "",
+    "definition": "从右侧差商得到的导数",
+    "notation": "f′₊(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "First derivative",
+    "zh": "一阶导数",
+    "abbr": "",
+    "definition": "函数的第一次求导结果",
+    "notation": "f′(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Second derivative",
+    "zh": "二阶导数",
+    "abbr": "",
+    "definition": "导数的导数",
+    "notation": "f″(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Higher-order derivative",
+    "zh": "高阶导数",
+    "abbr": "",
+    "definition": "重复求导得到的导数",
+    "notation": "f⁽ⁿ⁾(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Leibniz notation",
+    "zh": "莱布尼茨导数记号",
+    "abbr": "",
+    "definition": "用微分符号表示导数",
+    "notation": "dy/dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Lagrange notation",
+    "zh": "拉格朗日导数记号",
+    "abbr": "",
+    "definition": "用撇号表示导数",
+    "notation": "f′(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Newton's notation",
+    "zh": "牛顿导数记号",
+    "abbr": "",
+    "definition": "常用于对时间求导",
+    "notation": "ẋ, ẍ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Chain rule",
+    "zh": "链式法则",
+    "abbr": "",
+    "definition": "复合函数求导法则",
+    "notation": "(f∘g)′=(f′∘g)g′"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Product rule",
+    "zh": "乘积法则",
+    "abbr": "",
+    "definition": "两个函数乘积的求导法则",
+    "notation": "(fg)′=f′g+fg′"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Quotient rule",
+    "zh": "商法则",
+    "abbr": "",
+    "definition": "两个函数商的求导法则",
+    "notation": "(f/g)′=(f′g−fg′)/g²"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Power rule",
+    "zh": "幂函数求导法则",
+    "abbr": "",
+    "definition": "幂函数的基本求导公式",
+    "notation": "d(xⁿ)/dx=nxⁿ⁻¹"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Implicit differentiation",
+    "zh": "隐函数求导",
+    "abbr": "",
+    "definition": "对隐式方程两边求导",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Logarithmic differentiation",
+    "zh": "对数求导法",
+    "abbr": "",
+    "definition": "先取对数再求导以简化乘幂关系",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Parametric differentiation",
+    "zh": "参数方程求导",
+    "abbr": "",
+    "definition": "按参数求导再取比值",
+    "notation": "dy/dx=(dy/dt)/(dx/dt)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Inverse function differentiation",
+    "zh": "反函数求导",
+    "abbr": "",
+    "definition": "依据原函数导数计算反函数导数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Linear approximation",
+    "zh": "线性近似",
+    "abbr": "",
+    "definition": "用切线近似函数",
+    "notation": "f(a)+f′(a)(x−a)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 3,
+    "topic": "导数与微分",
+    "en": "Local linearization",
+    "zh": "局部线性化",
+    "abbr": "",
+    "definition": "用一阶线性模型刻画局部行为",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Fermat's theorem on stationary points",
+    "zh": "费马引理",
+    "abbr": "",
+    "definition": "可导函数在内点极值处导数为零",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Rolle's theorem",
+    "zh": "罗尔定理",
+    "abbr": "",
+    "definition": "端点函数值相等时存在导数为零的内点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Mean value theorem",
+    "zh": "拉格朗日中值定理",
+    "abbr": "",
+    "definition": "某内点导数等于区间平均变化率",
+    "notation": "MVT"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Cauchy's mean value theorem",
+    "zh": "柯西中值定理",
+    "abbr": "",
+    "definition": "将中值定理推广到两函数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "L'Hôpital's rule",
+    "zh": "洛必达法则",
+    "abbr": "",
+    "definition": "在适当条件下用导数比求未定式极限",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Taylor's theorem",
+    "zh": "泰勒定理",
+    "abbr": "",
+    "definition": "用多项式及余项近似光滑函数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Taylor polynomial",
+    "zh": "泰勒多项式",
+    "abbr": "",
+    "definition": "某点附近的有限阶多项式近似",
+    "notation": "Tₙ(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Maclaurin polynomial",
+    "zh": "麦克劳林多项式",
+    "abbr": "",
+    "definition": "在零点展开的泰勒多项式",
+    "notation": "Tₙ at 0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Peano form of remainder",
+    "zh": "佩亚诺余项",
+    "abbr": "",
+    "definition": "泰勒公式的渐近余项",
+    "notation": "o((x−a)ⁿ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Lagrange form of remainder",
+    "zh": "拉格朗日余项",
+    "abbr": "",
+    "definition": "以高阶导数表达的泰勒余项",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Stationary point",
+    "zh": "驻点",
+    "abbr": "",
+    "definition": "一阶导数为零的点",
+    "notation": "f′(x)=0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Critical point",
+    "zh": "临界点",
+    "abbr": "",
+    "definition": "定义域内导数为零或不存在的内点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Local maximum",
+    "zh": "局部极大值",
+    "abbr": "",
+    "definition": "邻域内不小于周围函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Local minimum",
+    "zh": "局部极小值",
+    "abbr": "",
+    "definition": "邻域内不大于周围函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Global maximum",
+    "zh": "全局最大值",
+    "abbr": "",
+    "definition": "定义域内的最大函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Global minimum",
+    "zh": "全局最小值",
+    "abbr": "",
+    "definition": "定义域内的最小函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "First derivative test",
+    "zh": "一阶导数判别法",
+    "abbr": "",
+    "definition": "依据导数符号变化判断极值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Second derivative test",
+    "zh": "二阶导数判别法",
+    "abbr": "",
+    "definition": "通过二阶导数符号分析驻点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Convex function",
+    "zh": "凸函数",
+    "abbr": "",
+    "definition": "函数图像位于任意弦下方或弦上",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Concave function",
+    "zh": "凹函数",
+    "abbr": "",
+    "definition": "函数图像位于任意弦上方或弦下方",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Inflection point",
+    "zh": "拐点",
+    "abbr": "",
+    "definition": "曲线凹凸性发生变化的点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Curvature",
+    "zh": "曲率",
+    "abbr": "",
+    "definition": "刻画曲线弯曲程度的量",
+    "notation": "κ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Asymptote",
+    "zh": "渐近线",
+    "abbr": "",
+    "definition": "曲线逐渐接近的直线",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Horizontal asymptote",
+    "zh": "水平渐近线",
+    "abbr": "",
+    "definition": "趋向无穷远时接近的水平直线",
+    "notation": "y=L"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Vertical asymptote",
+    "zh": "垂直渐近线",
+    "abbr": "",
+    "definition": "靠近该直线时函数值趋于无穷",
+    "notation": "x=a"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Oblique asymptote",
+    "zh": "斜渐近线",
+    "abbr": "",
+    "definition": "无穷远处接近的非水平直线",
+    "notation": "y=mx+b"
+  },
+  {
+    "category": "calculus",
+    "chapter": 4,
+    "topic": "微分定理与函数分析",
+    "en": "Optimization",
+    "zh": "最优化",
+    "abbr": "",
+    "definition": "寻找目标函数的极值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Antiderivative",
+    "zh": "原函数",
+    "abbr": "",
+    "definition": "导数等于给定函数的函数",
+    "notation": "F′=f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Indefinite integral",
+    "zh": "不定积分",
+    "abbr": "",
+    "definition": "函数所有原函数的族",
+    "notation": "∫f(x)dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Constant of integration",
+    "zh": "积分常数",
+    "abbr": "",
+    "definition": "不定积分中的任意常数",
+    "notation": "C"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Variable of integration",
+    "zh": "积分变量",
+    "abbr": "",
+    "definition": "积分运算所对应的变量",
+    "notation": "x"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Integrand",
+    "zh": "被积函数",
+    "abbr": "",
+    "definition": "积分号内部被积的函数",
+    "notation": "f(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Integral sign",
+    "zh": "积分号",
+    "abbr": "",
+    "definition": "表示积分运算的符号",
+    "notation": "∫"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Differential element",
+    "zh": "积分微元",
+    "abbr": "",
+    "definition": "积分表达式中的微分记号",
+    "notation": "dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Basic integration formulas",
+    "zh": "基本积分公式",
+    "abbr": "",
+    "definition": "常见函数的原函数公式",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Integration by substitution",
+    "zh": "换元积分法",
+    "abbr": "",
+    "definition": "通过变量替换简化积分",
+    "notation": "u=g(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Substitution method",
+    "zh": "第一类换元法",
+    "abbr": "",
+    "definition": "利用复合函数形式进行换元",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Change-of-variable method",
+    "zh": "第二类换元法",
+    "abbr": "",
+    "definition": "显式引入新变量进行换元",
+    "notation": "x=φ(t)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Integration by parts",
+    "zh": "分部积分法",
+    "abbr": "",
+    "definition": "由乘积法则导出的积分方法",
+    "notation": "∫u dv=uv−∫v du"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Integration of rational functions",
+    "zh": "有理函数积分",
+    "abbr": "",
+    "definition": "有理函数的积分计算",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Partial fraction decomposition",
+    "zh": "部分分式分解",
+    "abbr": "",
+    "definition": "将有理式拆为简单分式之和",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Trigonometric substitution",
+    "zh": "三角代换",
+    "abbr": "",
+    "definition": "利用三角恒等式简化根式积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Trigonometric identities",
+    "zh": "三角恒等变换",
+    "abbr": "",
+    "definition": "用三角公式转化被积函数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Tangent half-angle substitution",
+    "zh": "万能代换",
+    "abbr": "",
+    "definition": "把部分三角积分转为有理函数积分",
+    "notation": "t=tan(x/2)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Reduction formula",
+    "zh": "递推积分公式",
+    "abbr": "",
+    "definition": "将某类积分化为较低阶积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Non-elementary antiderivative",
+    "zh": "不可用初等函数表示的原函数",
+    "abbr": "",
+    "definition": "不能写为有限个初等函数组合的原函数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 5,
+    "topic": "不定积分与积分技巧",
+    "en": "Error function",
+    "zh": "误差函数",
+    "abbr": "",
+    "definition": "高斯函数积分相关的特殊函数",
+    "notation": "erf(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Definite integral",
+    "zh": "定积分",
+    "abbr": "",
+    "definition": "区间上函数的有符号累积量",
+    "notation": "∫ₐᵇ f(x)dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Interval of integration",
+    "zh": "积分区间",
+    "abbr": "",
+    "definition": "定积分的自变量范围",
+    "notation": "[a,b]"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Upper limit of integration",
+    "zh": "积分上限",
+    "abbr": "",
+    "definition": "定积分区间右端点",
+    "notation": "b"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Lower limit of integration",
+    "zh": "积分下限",
+    "abbr": "",
+    "definition": "定积分区间左端点",
+    "notation": "a"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Riemann sum",
+    "zh": "黎曼和",
+    "abbr": "",
+    "definition": "用小区间加权和近似积分",
+    "notation": "Σf(ξᵢ)Δxᵢ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Riemann integral",
+    "zh": "黎曼积分",
+    "abbr": "",
+    "definition": "用分割和的极限定义的积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Riemann integrable",
+    "zh": "黎曼可积",
+    "abbr": "",
+    "definition": "黎曼和极限存在且与取样一致",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Partition",
+    "zh": "分割",
+    "abbr": "",
+    "definition": "把区间划分为若干小区间",
+    "notation": "P={x₀,…,xₙ}"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Mesh size of a partition",
+    "zh": "分割网格大小",
+    "abbr": "",
+    "definition": "分割中最长小区间的长度",
+    "notation": "‖P‖"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Upper Darboux sum",
+    "zh": "上和",
+    "abbr": "",
+    "definition": "各小区间上确界构成的和",
+    "notation": "U(f,P)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Lower Darboux sum",
+    "zh": "下和",
+    "abbr": "",
+    "definition": "各小区间下确界构成的和",
+    "notation": "L(f,P)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Darboux integral",
+    "zh": "达布积分",
+    "abbr": "",
+    "definition": "以达布上、下和定义积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Mean value theorem for integrals",
+    "zh": "积分中值定理",
+    "abbr": "",
+    "definition": "连续函数的积分等于区间长度乘某函数值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Fundamental theorem of calculus",
+    "zh": "微积分基本定理",
+    "abbr": "",
+    "definition": "建立求导与定积分之间的关系",
+    "notation": "FTC"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Integral with variable upper limit",
+    "zh": "变上限积分",
+    "abbr": "",
+    "definition": "上限变化产生的累积函数",
+    "notation": "F(x)=∫ₐˣ f(t)dt"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Newton–Leibniz formula",
+    "zh": "牛顿–莱布尼茨公式",
+    "abbr": "",
+    "definition": "使用原函数计算定积分",
+    "notation": "∫ₐᵇ f=F(b)−F(a)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Linearity of integration",
+    "zh": "积分的线性性",
+    "abbr": "",
+    "definition": "积分与线性组合交换",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Additivity of definite integrals",
+    "zh": "积分可加性",
+    "abbr": "",
+    "definition": "积分可按区间拆分相加",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Comparison theorem for integrals",
+    "zh": "积分比较定理",
+    "abbr": "",
+    "definition": "点态不等式在积分下保持序关系",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Integral estimation",
+    "zh": "积分估计",
+    "abbr": "",
+    "definition": "用上界和下界估算积分值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Differentiation of integral with variable limits",
+    "zh": "变限积分求导",
+    "abbr": "",
+    "definition": "对上下限含变量的积分求导",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 6,
+    "topic": "定积分与积分基本定理",
+    "en": "Leibniz integral rule",
+    "zh": "莱布尼茨积分法则",
+    "abbr": "",
+    "definition": "适当条件下对含参数的积分求导",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Improper integral",
+    "zh": "反常积分",
+    "abbr": "",
+    "definition": "无限区间或无界被积函数上的积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Integral over an infinite interval",
+    "zh": "无穷区间积分",
+    "abbr": "",
+    "definition": "积分区间延伸到无穷",
+    "notation": "∫ₐ^∞ f(x)dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Improper integral with singularity",
+    "zh": "瑕积分",
+    "abbr": "",
+    "definition": "被积函数在积分端点或内部无界",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Convergence of improper integrals",
+    "zh": "反常积分收敛",
+    "abbr": "",
+    "definition": "相关极限存在且有限",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Absolute convergence",
+    "zh": "绝对收敛",
+    "abbr": "",
+    "definition": "绝对值的反常积分收敛",
+    "notation": "∫∣f∣<∞"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Conditional convergence",
+    "zh": "条件收敛",
+    "abbr": "",
+    "definition": "原积分收敛但绝对积分不收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Comparison test",
+    "zh": "比较判别法",
+    "abbr": "",
+    "definition": "通过正函数大小比较判断收敛性",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Limit comparison test",
+    "zh": "极限比较判别法",
+    "abbr": "",
+    "definition": "用函数比值的极限判断收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Cauchy principal value",
+    "zh": "柯西主值",
+    "abbr": "",
+    "definition": "以对称方式取极限的积分值",
+    "notation": "PV∫"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Gamma function",
+    "zh": "伽马函数",
+    "abbr": "",
+    "definition": "阶乘向实数或复数的推广",
+    "notation": "Γ(s)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Beta function",
+    "zh": "贝塔函数",
+    "abbr": "",
+    "definition": "与伽马函数相关的特殊积分",
+    "notation": "B(p,q)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Numerical integration / quadrature",
+    "zh": "数值积分",
+    "abbr": "",
+    "definition": "用数值方法近似计算定积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Quadrature rule",
+    "zh": "求积公式",
+    "abbr": "",
+    "definition": "使用加权函数值近似积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Trapezoidal rule",
+    "zh": "梯形法则",
+    "abbr": "",
+    "definition": "以梯形面积近似曲线下面积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Simpson's rule",
+    "zh": "辛普森法则",
+    "abbr": "",
+    "definition": "以二次插值近似积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Composite trapezoidal rule",
+    "zh": "复化梯形公式",
+    "abbr": "",
+    "definition": "分段应用梯形公式",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Composite Simpson's rule",
+    "zh": "复化辛普森公式",
+    "abbr": "",
+    "definition": "分段应用辛普森公式",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Gaussian quadrature",
+    "zh": "高斯求积",
+    "abbr": "",
+    "definition": "选择节点与权重提高积分精度",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Adaptive quadrature",
+    "zh": "自适应求积",
+    "abbr": "",
+    "definition": "依据误差估计细化积分区间",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 7,
+    "topic": "反常积分与数值积分",
+    "en": "Truncation error",
+    "zh": "截断误差",
+    "abbr": "",
+    "definition": "近似公式与精确目标之间的误差",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Area under a curve",
+    "zh": "曲线下面积",
+    "abbr": "",
+    "definition": "函数与坐标轴之间的几何面积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Area between curves",
+    "zh": "曲线间面积",
+    "abbr": "",
+    "definition": "两条曲线围成区域的面积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Volume of a solid of revolution",
+    "zh": "旋转体体积",
+    "abbr": "",
+    "definition": "平面区域绕直线旋转得到的体积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Disk method",
+    "zh": "圆盘法",
+    "abbr": "",
+    "definition": "通过圆盘横截面积计算体积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Washer method",
+    "zh": "垫片法",
+    "abbr": "",
+    "definition": "通过圆环横截面积计算体积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Cylindrical shell method",
+    "zh": "柱壳法",
+    "abbr": "",
+    "definition": "通过薄柱壳累加计算体积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Method of cross sections",
+    "zh": "截面法",
+    "abbr": "",
+    "definition": "通过截面积积分求体积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Arc length",
+    "zh": "弧长",
+    "abbr": "",
+    "definition": "曲线的长度",
+    "notation": "s"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Surface area",
+    "zh": "曲面面积",
+    "abbr": "",
+    "definition": "二维曲面在三维空间中的面积",
+    "notation": "A"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Surface area of revolution",
+    "zh": "旋转曲面面积",
+    "abbr": "",
+    "definition": "曲线旋转形成曲面的面积",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Center of mass",
+    "zh": "质心",
+    "abbr": "",
+    "definition": "按质量分布确定的平均位置",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Centroid",
+    "zh": "形心",
+    "abbr": "",
+    "definition": "几何区域的均匀密度中心",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Moment of inertia",
+    "zh": "转动惯量",
+    "abbr": "",
+    "definition": "质量相对于转轴分布的二次矩",
+    "notation": "I"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Work",
+    "zh": "功",
+    "abbr": "",
+    "definition": "力沿位移的累积作用",
+    "notation": "W=∫F·ds"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Average value of a function",
+    "zh": "平均值",
+    "abbr": "",
+    "definition": "函数在区间内的积分平均",
+    "notation": "[1/(b−a)]∫ₐᵇ f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 8,
+    "topic": "积分的几何与物理应用",
+    "en": "Net change",
+    "zh": "累积变化量",
+    "abbr": "",
+    "definition": "变化率积分得到的净变化",
+    "notation": "∫ₐᵇ f′(x)dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Infinite sequence",
+    "zh": "无穷数列",
+    "abbr": "",
+    "definition": "按自然数索引的数列",
+    "notation": "(aₙ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Monotone sequence",
+    "zh": "单调数列",
+    "abbr": "",
+    "definition": "各项按同一方向变化",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Bounded sequence",
+    "zh": "有界数列",
+    "abbr": "",
+    "definition": "所有项落在某有界区间",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Monotone convergence theorem (sequences)",
+    "zh": "单调收敛定理",
+    "abbr": "",
+    "definition": "单调且有界的实数数列必收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Subsequence",
+    "zh": "子列",
+    "abbr": "",
+    "definition": "从原数列按递增索引抽取的数列",
+    "notation": "(aₙₖ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Cluster point / accumulation point",
+    "zh": "聚点",
+    "abbr": "",
+    "definition": "可由数列子列趋近的点或集合的聚集点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Limit superior",
+    "zh": "上极限",
+    "abbr": "",
+    "definition": "数列尾部上界的渐近极限",
+    "notation": "lim sup"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Limit inferior",
+    "zh": "下极限",
+    "abbr": "",
+    "definition": "数列尾部下界的渐近极限",
+    "notation": "lim inf"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Infinite series",
+    "zh": "无穷级数",
+    "abbr": "",
+    "definition": "无穷多个项的形式和",
+    "notation": "Σaₙ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Partial sum",
+    "zh": "部分和",
+    "abbr": "",
+    "definition": "级数前 n 项的和",
+    "notation": "Sₙ=Σₖ₌₁ⁿaₖ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Series convergence",
+    "zh": "级数收敛",
+    "abbr": "",
+    "definition": "部分和数列存在有限极限",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Series divergence",
+    "zh": "级数发散",
+    "abbr": "",
+    "definition": "部分和数列不收敛到有限值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Geometric series",
+    "zh": "几何级数",
+    "abbr": "",
+    "definition": "公比固定的级数",
+    "notation": "Σarⁿ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Harmonic series",
+    "zh": "调和级数",
+    "abbr": "",
+    "definition": "著名的发散正项级数",
+    "notation": "Σ1/n"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "p-series",
+    "zh": "p 级数",
+    "abbr": "",
+    "definition": "以指数 p 判断收敛的标准级数",
+    "notation": "Σ1/nᵖ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Alternating series",
+    "zh": "交错级数",
+    "abbr": "",
+    "definition": "正负项交替的级数",
+    "notation": "Σ(−1)ⁿaₙ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Alternating series test",
+    "zh": "莱布尼茨判别法",
+    "abbr": "",
+    "definition": "判断特定交错级数收敛的准则",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Ratio test",
+    "zh": "比值判别法",
+    "abbr": "",
+    "definition": "通过相邻项比值判断绝对收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Root test",
+    "zh": "根值判别法",
+    "abbr": "",
+    "definition": "通过项绝对值 n 次根判断收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Integral test",
+    "zh": "积分判别法",
+    "abbr": "",
+    "definition": "用正函数反常积分判断对应级数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Comparison test for series",
+    "zh": "比较判别法（级数）",
+    "abbr": "",
+    "definition": "与已知正项级数比较",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Dirichlet's test",
+    "zh": "狄利克雷判别法",
+    "abbr": "",
+    "definition": "基于部分和有界与因子趋零的判别法",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Abel's test",
+    "zh": "阿贝尔判别法",
+    "abbr": "",
+    "definition": "基于级数收敛与因子单调有界的判别法",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 9,
+    "topic": "无穷数列与级数",
+    "en": "Rearrangement of a series",
+    "zh": "重排",
+    "abbr": "",
+    "definition": "改变级数各项的排列顺序",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Series of functions",
+    "zh": "函数项级数",
+    "abbr": "",
+    "definition": "各项本身为函数的级数",
+    "notation": "Σfₙ(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Power series",
+    "zh": "幂级数",
+    "abbr": "",
+    "definition": "围绕中心 c 的幂函数级数",
+    "notation": "Σaₙ(x−c)ⁿ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Center of convergence",
+    "zh": "收敛中心",
+    "abbr": "",
+    "definition": "幂级数展开的中心点",
+    "notation": "c"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Radius of convergence",
+    "zh": "收敛半径",
+    "abbr": "",
+    "definition": "幂级数保证绝对收敛的半径",
+    "notation": "R"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Interval of convergence",
+    "zh": "收敛区间",
+    "abbr": "",
+    "definition": "实变量幂级数的收敛 x 范围",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Pointwise convergence",
+    "zh": "逐点收敛",
+    "abbr": "",
+    "definition": "对每个固定点函数项序列收敛",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Uniform convergence",
+    "zh": "一致收敛",
+    "abbr": "",
+    "definition": "收敛速度可以与点的选择无关",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Weierstrass M-test",
+    "zh": "一致收敛判别法",
+    "abbr": "",
+    "definition": "用可求和上界判别一致收敛",
+    "notation": "M-test"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Term-by-term differentiation",
+    "zh": "逐项求导",
+    "abbr": "",
+    "definition": "在适当条件下交换求导与求和",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Term-by-term integration",
+    "zh": "逐项积分",
+    "abbr": "",
+    "definition": "在适当条件下交换积分与求和",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Taylor series",
+    "zh": "泰勒级数",
+    "abbr": "",
+    "definition": "用各阶导数构造的幂级数",
+    "notation": "Σf⁽ⁿ⁾(a)(x−a)ⁿ/n!"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Maclaurin series",
+    "zh": "麦克劳林级数",
+    "abbr": "",
+    "definition": "以零为展开中心的泰勒级数",
+    "notation": "Taylor series at 0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Taylor expansion",
+    "zh": "泰勒展开",
+    "abbr": "",
+    "definition": "函数在某点附近的多项式或级数展开",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Analytic function",
+    "zh": "解析函数",
+    "abbr": "",
+    "definition": "局部可由收敛幂级数表示的函数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Remainder term",
+    "zh": "余项",
+    "abbr": "",
+    "definition": "截断展开后剩余的部分",
+    "notation": "Rₙ(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Endpoint of convergence",
+    "zh": "收敛端点",
+    "abbr": "",
+    "definition": "幂级数收敛区间的候选端点",
+    "notation": "c±R"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Binomial series",
+    "zh": "二项式级数",
+    "abbr": "",
+    "definition": "广义二项式函数的幂级数展开",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Fourier series",
+    "zh": "傅里叶级数",
+    "abbr": "",
+    "definition": "用正弦和余弦展开周期函数",
+    "notation": "Σ(aₙcos nx+bₙsin nx)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Fourier coefficients",
+    "zh": "傅里叶系数",
+    "abbr": "",
+    "definition": "傅里叶展开中的权重",
+    "notation": "aₙ, bₙ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 10,
+    "topic": "幂级数与函数展开",
+    "en": "Orthogonality",
+    "zh": "正交性",
+    "abbr": "",
+    "definition": "内积为零的性质",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Multivariable function",
+    "zh": "多元函数",
+    "abbr": "",
+    "definition": "输入由多个变量组成的函数",
+    "notation": "f(x₁,…,xₙ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Function of two variables",
+    "zh": "二元函数",
+    "abbr": "",
+    "definition": "输入由两个变量组成的函数",
+    "notation": "f(x,y)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Domain (multivariable)",
+    "zh": "定义域（多元）",
+    "abbr": "",
+    "definition": "多元函数的输入点集合",
+    "notation": "D⊆ℝⁿ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Level curve",
+    "zh": "等值线",
+    "abbr": "",
+    "definition": "二维函数具有相同函数值的点集",
+    "notation": "f(x,y)=c"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Level surface",
+    "zh": "等值面",
+    "abbr": "",
+    "definition": "三维函数具有相同函数值的曲面",
+    "notation": "f(x,y,z)=c"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Contour plot",
+    "zh": "等高线图",
+    "abbr": "",
+    "definition": "在平面上显示各等值线的图形",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Partial derivative",
+    "zh": "偏导数",
+    "abbr": "",
+    "definition": "保持其他自变量不变的变化率",
+    "notation": "∂f/∂x"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Partial differential",
+    "zh": "偏微分",
+    "abbr": "",
+    "definition": "与某坐标方向相关的微分项",
+    "notation": "∂f/∂x · dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Second partial derivative",
+    "zh": "二阶偏导数",
+    "abbr": "",
+    "definition": "对某变量重复求偏导",
+    "notation": "∂²f/∂x²"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Mixed partial derivative",
+    "zh": "混合偏导数",
+    "abbr": "",
+    "definition": "按不同变量求高阶偏导",
+    "notation": "∂²f/∂x∂y"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Clairaut's theorem / Schwarz's theorem",
+    "zh": "克莱罗定理",
+    "abbr": "",
+    "definition": "在适当连续性条件下混合偏导相等",
+    "notation": "fₓᵧ=fᵧₓ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Gradient",
+    "zh": "梯度",
+    "abbr": "",
+    "definition": "由各偏导数组成的向量",
+    "notation": "∇f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Gradient vector",
+    "zh": "梯度向量",
+    "abbr": "",
+    "definition": "函数增加最快方向的向量",
+    "notation": "grad f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Directional derivative",
+    "zh": "方向导数",
+    "abbr": "",
+    "definition": "沿指定方向的变化率",
+    "notation": "Dᵤf"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Unit direction vector",
+    "zh": "单位方向向量",
+    "abbr": "",
+    "definition": "用于定义方向导数的单位向量",
+    "notation": "‖u‖=1"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Total differential",
+    "zh": "全微分",
+    "abbr": "",
+    "definition": "多元函数的一阶线性变化量",
+    "notation": "df=Σ(∂f/∂xᵢ)dxᵢ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Total derivative",
+    "zh": "全导数",
+    "abbr": "",
+    "definition": "沿参数路径的函数变化率",
+    "notation": "df/dt"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Total differential formula",
+    "zh": "全微分公式",
+    "abbr": "",
+    "definition": "以偏导数表示一阶变化",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Multivariable chain rule",
+    "zh": "多元链式法则",
+    "abbr": "",
+    "definition": "对多变量复合映射求导的法则",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Jacobian matrix",
+    "zh": "雅可比矩阵",
+    "abbr": "",
+    "definition": "向量值函数的一阶偏导数矩阵",
+    "notation": "J_f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Jacobian determinant",
+    "zh": "雅可比行列式",
+    "abbr": "",
+    "definition": "方形雅可比矩阵的行列式",
+    "notation": "det J"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Hessian matrix",
+    "zh": "海森矩阵",
+    "abbr": "",
+    "definition": "标量函数的二阶偏导矩阵",
+    "notation": "H_f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Tangent plane",
+    "zh": "切平面",
+    "abbr": "",
+    "definition": "曲面在一点的一阶线性近似",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Normal vector",
+    "zh": "法向量",
+    "abbr": "",
+    "definition": "与曲面切空间正交的向量",
+    "notation": "n"
+  },
+  {
+    "category": "calculus",
+    "chapter": 11,
+    "topic": "多元函数与偏导数",
+    "en": "Differentiability (multivariable)",
+    "zh": "可微性（多元）",
+    "abbr": "",
+    "definition": "函数可由线性映射一阶近似的性质",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Partial derivative test",
+    "zh": "偏导数判别法",
+    "abbr": "",
+    "definition": "利用一阶偏导数寻找候选极值点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Stationary point (multivariable)",
+    "zh": "驻点（多元）",
+    "abbr": "",
+    "definition": "梯度为零的点",
+    "notation": "∇f=0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Critical point (multivariable)",
+    "zh": "临界点（多元）",
+    "abbr": "",
+    "definition": "梯度为零或微分失效等候选点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Local extremum",
+    "zh": "局部极值（多元）",
+    "abbr": "",
+    "definition": "局部邻域内的最大或最小值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Saddle point",
+    "zh": "鞍点",
+    "abbr": "",
+    "definition": "附近既有更大值也有更小值的驻点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Positive-definite matrix",
+    "zh": "正定矩阵",
+    "abbr": "",
+    "definition": "多元二阶充分条件中的一种矩阵性质",
+    "notation": "vᵀHv>0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Second-order sufficient condition",
+    "zh": "二阶充分条件",
+    "abbr": "",
+    "definition": "根据 Hessian 正负定性判断严格局部极值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Constrained optimization",
+    "zh": "约束优化",
+    "abbr": "",
+    "definition": "在等式或不等式限制下求极值",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Unconstrained optimization",
+    "zh": "无约束优化",
+    "abbr": "",
+    "definition": "不含显式限制条件的优化",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Method of Lagrange multipliers",
+    "zh": "拉格朗日乘子法",
+    "abbr": "",
+    "definition": "用于等式约束下的驻点条件",
+    "notation": "∇f=λ∇g"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Lagrangian",
+    "zh": "拉格朗日函数",
+    "abbr": "",
+    "definition": "把目标函数与约束组合为辅助函数",
+    "notation": "L=f−λg"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Lagrange multiplier",
+    "zh": "拉格朗日乘子",
+    "abbr": "",
+    "definition": "与约束相关的辅助变量",
+    "notation": "λ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Implicit function",
+    "zh": "隐函数",
+    "abbr": "",
+    "definition": "由关系式局部确定的函数",
+    "notation": "F(x,y)=0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Implicit function theorem",
+    "zh": "隐函数定理",
+    "abbr": "",
+    "definition": "给出方程局部可解出变量的条件",
+    "notation": "IFT"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Inverse function theorem",
+    "zh": "反函数定理",
+    "abbr": "",
+    "definition": "给出局部可逆和反函数可微的条件",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Multivariable Taylor expansion",
+    "zh": "多元泰勒展开",
+    "abbr": "",
+    "definition": "用梯度和 Hessian 等高阶项作局部近似",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Gradient descent",
+    "zh": "梯度下降",
+    "abbr": "",
+    "definition": "沿负梯度更新以降低目标函数",
+    "notation": "xₖ₊₁=xₖ−η∇f"
+  },
+  {
+    "category": "calculus",
+    "chapter": 12,
+    "topic": "多元最优化与隐函数",
+    "en": "Newton's method (optimization)",
+    "zh": "牛顿法（优化）",
+    "abbr": "",
+    "definition": "结合梯度与 Hessian 寻找驻点",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Double integral",
+    "zh": "二重积分",
+    "abbr": "",
+    "definition": "在平面区域上的累积运算",
+    "notation": "∬_D f(x,y)dA"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Triple integral",
+    "zh": "三重积分",
+    "abbr": "",
+    "definition": "在空间区域上的累积运算",
+    "notation": "∭_V f(x,y,z)dV"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Multiple integral",
+    "zh": "重积分",
+    "abbr": "",
+    "definition": "对多维区域的积分统称",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Region of integration",
+    "zh": "积分区域",
+    "abbr": "",
+    "definition": "多重积分覆盖的区域",
+    "notation": "D, V"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Iterated integral",
+    "zh": "累次积分",
+    "abbr": "",
+    "definition": "按多个一维积分依次计算",
+    "notation": "∫∫ f dxdy"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Fubini's theorem",
+    "zh": "富比尼定理",
+    "abbr": "",
+    "definition": "在相应条件下交换积分次序",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Tonelli's theorem",
+    "zh": "托内利定理",
+    "abbr": "",
+    "definition": "非负可测函数可交换积分次序（扩展内容）",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Changing the order of integration",
+    "zh": "积分次序交换",
+    "abbr": "",
+    "definition": "更换多重积分计算顺序",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Polar coordinate transformation",
+    "zh": "极坐标变换",
+    "abbr": "",
+    "definition": "二维区域积分的坐标替换",
+    "notation": "x=r cosθ, y=r sinθ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Cylindrical coordinates",
+    "zh": "柱坐标",
+    "abbr": "",
+    "definition": "以极坐标和高度描述空间点",
+    "notation": "(r, θ, z)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Spherical coordinates",
+    "zh": "球坐标",
+    "abbr": "",
+    "definition": "以径向距离和角度描述空间点",
+    "notation": "(ρ, θ, φ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Change of variables formula",
+    "zh": "变量替换公式",
+    "abbr": "",
+    "definition": "用雅可比行列式变换积分元",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Jacobian factor",
+    "zh": "雅可比因子",
+    "abbr": "",
+    "definition": "积分换元时的局部面积或体积伸缩因子",
+    "notation": "abs(det J)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Area element",
+    "zh": "面积元素",
+    "abbr": "",
+    "definition": "平面区域的微小面积",
+    "notation": "dA"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Volume element",
+    "zh": "体积元素",
+    "abbr": "",
+    "definition": "空间区域的微小体积",
+    "notation": "dV"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Area element in polar coordinates",
+    "zh": "极坐标面积元素",
+    "abbr": "",
+    "definition": "极坐标下的面积微元",
+    "notation": "dA=r dr dθ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Volume element in cylindrical coordinates",
+    "zh": "柱坐标体积元素",
+    "abbr": "",
+    "definition": "柱坐标下的体积微元",
+    "notation": "dV=r dr dθ dz"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Volume element in spherical coordinates",
+    "zh": "球坐标体积元素",
+    "abbr": "",
+    "definition": "球坐标下的体积微元（φ 为极角）",
+    "notation": "dV=ρ² sinφ dρ dφ dθ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Mass density",
+    "zh": "质量密度",
+    "abbr": "",
+    "definition": "单位长度、面积或体积的质量分布",
+    "notation": "ρ(x,y,z)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 13,
+    "topic": "重积分与坐标变换",
+    "en": "Center of gravity",
+    "zh": "重心",
+    "abbr": "",
+    "definition": "重力近似均匀时与质心相同",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Vector field",
+    "zh": "向量场",
+    "abbr": "",
+    "definition": "为区域中每一点指定向量",
+    "notation": "F: ℝⁿ→ℝⁿ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Scalar field",
+    "zh": "标量场",
+    "abbr": "",
+    "definition": "为区域中每一点指定标量",
+    "notation": "f: ℝⁿ→ℝ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Position vector",
+    "zh": "位置向量",
+    "abbr": "",
+    "definition": "描述空间点位置的向量",
+    "notation": "r(t)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Vector-valued function",
+    "zh": "向量值函数",
+    "abbr": "",
+    "definition": "输出为向量的函数",
+    "notation": "r(t)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Parametric curve",
+    "zh": "参数曲线",
+    "abbr": "",
+    "definition": "由参数描绘的曲线",
+    "notation": "r(t)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Smooth curve",
+    "zh": "光滑曲线",
+    "abbr": "",
+    "definition": "具有足够连续导数且通常无退化切向的曲线",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Line integral",
+    "zh": "曲线积分",
+    "abbr": "",
+    "definition": "沿一条曲线积分",
+    "notation": "∫_C f ds / ∫_C F·dr"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Scalar line integral",
+    "zh": "第一类曲线积分",
+    "abbr": "",
+    "definition": "对标量场按弧长积分",
+    "notation": "∫_C f ds"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Vector line integral",
+    "zh": "第二类曲线积分",
+    "abbr": "",
+    "definition": "沿有向曲线计算向量场做功",
+    "notation": "∫_C F·dr"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Path integral",
+    "zh": "路径积分",
+    "abbr": "",
+    "definition": "常指沿路径的积分；在数学与物理中语义略有区别",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Surface integral",
+    "zh": "曲面积分",
+    "abbr": "",
+    "definition": "在曲面上的积分",
+    "notation": "∬_S f dS"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Scalar surface integral",
+    "zh": "第一类曲面积分",
+    "abbr": "",
+    "definition": "标量函数的曲面积分",
+    "notation": "∬_S f dS"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Flux integral",
+    "zh": "通量积分",
+    "abbr": "",
+    "definition": "向量场穿过有向曲面的净通量",
+    "notation": "∬_S F·n dS"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Circulation",
+    "zh": "环流",
+    "abbr": "",
+    "definition": "沿闭合曲线的向量场线积分",
+    "notation": "∮_C F·dr"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Flux",
+    "zh": "通量",
+    "abbr": "",
+    "definition": "穿过指定曲面的流量类量",
+    "notation": "Φ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Divergence",
+    "zh": "散度",
+    "abbr": "",
+    "definition": "描述向量场局部发散强度的标量",
+    "notation": "∇·F"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Curl",
+    "zh": "旋度",
+    "abbr": "",
+    "definition": "描述三维向量场局部旋转的向量",
+    "notation": "∇×F"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Laplacian",
+    "zh": "拉普拉斯算子",
+    "abbr": "",
+    "definition": "梯度的散度",
+    "notation": "∇²f / Δf"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Nabla operator",
+    "zh": "哈密顿算子",
+    "abbr": "",
+    "definition": "梯度、散度和旋度所用的微分算子",
+    "notation": "∇"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Conservative vector field",
+    "zh": "保守向量场",
+    "abbr": "",
+    "definition": "可表示为标量势梯度的向量场",
+    "notation": "F=∇φ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Potential function",
+    "zh": "势函数",
+    "abbr": "",
+    "definition": "其梯度给出保守向量场的标量函数",
+    "notation": "φ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Path independence",
+    "zh": "路径无关性",
+    "abbr": "",
+    "definition": "线积分仅由起点和终点决定",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Green's theorem",
+    "zh": "格林公式",
+    "abbr": "",
+    "definition": "联系平面闭曲线积分与区域二重积分",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Divergence theorem / Gauss's theorem",
+    "zh": "高斯散度定理",
+    "abbr": "",
+    "definition": "联系封闭曲面通量与体积分中的散度",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Stokes' theorem",
+    "zh": "斯托克斯定理",
+    "abbr": "",
+    "definition": "联系边界环流与曲面旋度通量",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Oriented surface",
+    "zh": "定向曲面",
+    "abbr": "",
+    "definition": "指定连续单位法向选择的曲面",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 14,
+    "topic": "向量微积分",
+    "en": "Outward unit normal",
+    "zh": "外法向量",
+    "abbr": "",
+    "definition": "封闭曲面朝外的单位法向量",
+    "notation": "n"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Differential equation",
+    "zh": "微分方程",
+    "abbr": "",
+    "definition": "包含未知函数及其导数的方程",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Ordinary differential equation",
+    "zh": "常微分方程",
+    "abbr": "",
+    "definition": "未知函数关于单个自变量的微分方程",
+    "notation": "ODE"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Partial differential equation",
+    "zh": "偏微分方程",
+    "abbr": "",
+    "definition": "包含多变量未知函数偏导数的方程",
+    "notation": "PDE"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Order of a differential equation",
+    "zh": "方程阶数",
+    "abbr": "",
+    "definition": "方程中出现的最高阶导数的阶数",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "General solution",
+    "zh": "通解",
+    "abbr": "",
+    "definition": "包含任意常数的解族（在线性等常见情形）",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Particular solution",
+    "zh": "特解",
+    "abbr": "",
+    "definition": "满足附加条件的某个具体解",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Initial value problem",
+    "zh": "初值问题",
+    "abbr": "",
+    "definition": "给出某个初始点处数据的微分方程问题",
+    "notation": "IVP"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Boundary value problem",
+    "zh": "边值问题",
+    "abbr": "",
+    "definition": "给出边界处约束的微分方程问题",
+    "notation": "BVP"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Separable differential equation",
+    "zh": "可分离变量方程",
+    "abbr": "",
+    "definition": "可将变量分离到方程两侧",
+    "notation": "dy/dx=g(x)h(y)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "First-order linear ODE",
+    "zh": "一阶线性微分方程",
+    "abbr": "",
+    "definition": "未知函数及一阶导数线性出现",
+    "notation": "y′+p(x)y=q(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Integrating factor",
+    "zh": "积分因子",
+    "abbr": "",
+    "definition": "将线性方程转为可直接积分的形式",
+    "notation": "μ(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Homogeneous linear ODE",
+    "zh": "齐次线性微分方程",
+    "abbr": "",
+    "definition": "线性微分方程右端为零",
+    "notation": "L[y]=0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Nonhomogeneous linear ODE",
+    "zh": "非齐次线性微分方程",
+    "abbr": "",
+    "definition": "线性微分方程含非零外部项",
+    "notation": "L[y]=g(x)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Characteristic equation",
+    "zh": "特征方程",
+    "abbr": "",
+    "definition": "求解常系数线性方程时的代数方程",
+    "notation": "p(λ)=0"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Euler's method",
+    "zh": "欧拉法",
+    "abbr": "",
+    "definition": "基于切线斜率的数值方法",
+    "notation": "yₙ₊₁=yₙ+h f(xₙ,yₙ)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Improved Euler method",
+    "zh": "改进欧拉法",
+    "abbr": "",
+    "definition": "利用预测校正或梯形思想提高精度",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Runge–Kutta method",
+    "zh": "龙格–库塔法",
+    "abbr": "",
+    "definition": "通过多个斜率估计推进数值解",
+    "notation": "RK"
+  },
+  {
+    "category": "calculus",
+    "chapter": 15,
+    "topic": "常微分方程入门",
+    "en": "Existence and uniqueness theorem",
+    "zh": "存在唯一性定理",
+    "abbr": "",
+    "definition": "描述初值问题何时存在唯一局部解",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Tends to / approaches",
+    "zh": "趋于",
+    "abbr": "",
+    "definition": "描述极限过程",
+    "notation": "x→a"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Infinity",
+    "zh": "无穷大",
+    "abbr": "",
+    "definition": "不表示一个普通实数",
+    "notation": "∞"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Summation",
+    "zh": "求和",
+    "abbr": "",
+    "definition": "对离散项求和",
+    "notation": "Σ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Product notation",
+    "zh": "乘积记号",
+    "abbr": "",
+    "definition": "对离散项连乘",
+    "notation": "Π"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Partial derivative symbol",
+    "zh": "偏导符号",
+    "abbr": "",
+    "definition": "用于多元偏导数",
+    "notation": "∂"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Differential operator",
+    "zh": "微分算子",
+    "abbr": "",
+    "definition": "作用于函数以求导",
+    "notation": "d/dx"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Delta",
+    "zh": "增量符号",
+    "abbr": "",
+    "definition": "表示有限变化或差分",
+    "notation": "Δ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Asymptotically equivalent to",
+    "zh": "趋近符号",
+    "abbr": "",
+    "definition": "在此术语表中主要用于渐近等价",
+    "notation": "∼"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Approximately equal to",
+    "zh": "约等于",
+    "abbr": "",
+    "definition": "近似相等",
+    "notation": "≈"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Identically equal to",
+    "zh": "恒等于",
+    "abbr": "",
+    "definition": "恒等关系或同余，依语境区分",
+    "notation": "≡"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Element of",
+    "zh": "属于",
+    "abbr": "",
+    "definition": "集合成员关系",
+    "notation": "∈"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Subset of",
+    "zh": "包含于",
+    "abbr": "",
+    "definition": "集合包含关系",
+    "notation": "⊆"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Set of real numbers",
+    "zh": "实数集",
+    "abbr": "",
+    "definition": "所有实数的集合",
+    "notation": "ℝ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Set of natural numbers",
+    "zh": "自然数集",
+    "abbr": "",
+    "definition": "自然数的集合（是否含零依约定）",
+    "notation": "ℕ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "n-dimensional Euclidean space",
+    "zh": "n 维欧氏空间",
+    "abbr": "",
+    "definition": "实向量组成的 n 维空间",
+    "notation": "ℝⁿ"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Closed interval",
+    "zh": "闭区间",
+    "abbr": "",
+    "definition": "包含左右端点的区间",
+    "notation": "[a,b]"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Open interval",
+    "zh": "开区间",
+    "abbr": "",
+    "definition": "不包含左右端点的区间",
+    "notation": "(a,b)"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Neighborhood",
+    "zh": "邻域",
+    "abbr": "",
+    "definition": "包含目标点的某个开集合",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Open set",
+    "zh": "开集",
+    "abbr": "",
+    "definition": "每个点都具有包含于该集合的邻域",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Closed set",
+    "zh": "闭集",
+    "abbr": "",
+    "definition": "补集为开集的集合",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Supremum",
+    "zh": "上确界",
+    "abbr": "",
+    "definition": "所有上界中的最小者",
+    "notation": "sup"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Infimum",
+    "zh": "下确界",
+    "abbr": "",
+    "definition": "所有下界中的最大者",
+    "notation": "inf"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Sufficient condition",
+    "zh": "充分条件",
+    "abbr": "",
+    "definition": "足以推出结论的条件",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Necessary condition",
+    "zh": "必要条件",
+    "abbr": "",
+    "definition": "结论成立所必需的条件",
+    "notation": "—"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Necessary and sufficient condition",
+    "zh": "充分必要条件",
+    "abbr": "",
+    "definition": "两个命题等价",
+    "notation": "iff / ⇔"
+  },
+  {
+    "category": "calculus",
+    "chapter": 16,
+    "topic": "常用数学记号与英文表达",
+    "en": "Almost everywhere",
+    "zh": "几乎处处",
+    "abbr": "",
+    "definition": "除一个零测集外均成立（扩展内容）",
+    "notation": "a.e."
   }
 ]
