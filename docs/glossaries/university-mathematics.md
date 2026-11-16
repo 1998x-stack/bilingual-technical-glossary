@@ -4,7 +4,7 @@
 
 **术语总量：627 条 · 专题：17 类**
 
-Calculus, mathematical analysis, differential equations, algebra, statistics, geometry and optimization
+Calculus, mathematical analysis, differential equations, geometry, topology and optimization
 
 > 译法以常见教材和工程文献为参考；具体技术版本与词义以原始规范及上下文为准。
 
