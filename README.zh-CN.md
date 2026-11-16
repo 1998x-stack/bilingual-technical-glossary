@@ -34,7 +34,7 @@
 | Python 编程语言 / Python | 429 | 16 | [阅读](glossaries/python.md) | [下载](pdf/python.pdf) |
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
 | 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
-| **合计** | **7,554** | **313** | | |
+| **合计** | **7,913** | **331** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -63,7 +63,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**21 个学科、313 个专题；
+- **主题选择：**22 个学科、331 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
