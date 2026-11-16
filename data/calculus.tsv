@@ -22,7 +22,7 @@ Parametric Equation|参数方程||用一个或多个参数表示曲线上的坐�
 Polar Coordinates|极坐标||通过到原点的距离和方向角描述平面点的坐标。
 Interval|区间||实数轴上由端点或无穷界确定的连续数集。
 Neighborhood|邻域||包含给定点附近一定范围的点集。
-Absolute Value|绝对值||实数到原点的距离，记作 |x|。
+Absolute Value|绝对值||实数到原点的距离，记作绝对值符号包围的 x。
 # 02. 极限与无穷小
 Limit|极限||当自变量趋近某值或无穷远时函数值趋向的确定值。
 Finite Limit|有限极限||极限为某个有限实数的情况。
