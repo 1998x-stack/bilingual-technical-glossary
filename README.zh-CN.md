@@ -104,3 +104,7 @@ python3 -m unittest discover -s tests -v
 ## C++ 编程语言 / C++ Programming Language
 
 新增 **357 条中英文术语、16 个专题**，包含对象生存期与值类别、RAII、模板/Concepts、STL、Ranges、异常安全、并发内存模型及 C++20/23。提供 [源 TSV](data/cpp-glossary.tsv)、[Markdown](glossaries/cpp.md)、[可检索 PDF](pdf/cpp.pdf) 和网站全文检索；附录另有 16 组易混淆概念辨析。
+
+## AI Agent Skills · Codex / Pi / Claude Code
+
+现提供专业技能工作流：**双语术语编辑**、**20 条一批的深度技术 Wiki 写作**及**构建发布与质量校验**。统一规范详见 [AGENTS.md](AGENTS.md)，使用与调用指南见 [docs/agent-skills.md](docs/agent-skills.md)。Skill 以 `.agents/skills/` 为规范源，镜像至 `.codex/skills/`、`.pi/skills/`、`.claude/skills/`，CI 会运行 `python3 scripts/sync_agent_skills.py --check` 防止漂移。
