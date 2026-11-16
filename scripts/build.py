@@ -15,6 +15,7 @@ CATALOG=[
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
+ ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -63,6 +64,7 @@ def write_markdown(data):
    for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item[k]) for k in ['en','zh','abbr','definition']])+' |')
    out.append('')
   if slug=='compiler-principles':out += ['> 术语辨析：CFG 在形式语言中指上下文无关文法，在程序分析中指控制流图。','', '参考资料：[LLVM Language Reference](https://llvm.org/docs/LangRef.html) · [GNU Bison Manual](https://www.gnu.org/software/bison/manual/) · [GCC Internals](https://gcc.gnu.org/onlinedocs/gccint/)','']
+  if slug=='junior-high-mathematics':out += ['',(ROOT/'data/junior-high-mathematics-appendices.md').read_text(encoding='utf8').rstrip(),'']
   out+=['---','',f'原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/{slug}.pdf)','', '本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。','']
   (ROOT/'glossaries'/f'{slug}.md').write_text('\n'.join(out),encoding='utf8')
 

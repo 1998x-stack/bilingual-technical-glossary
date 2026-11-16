@@ -31,14 +31,15 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Compiler Principles | 编译原理 | 268 | 12 | [Read](glossaries/compiler-principles.md) | [Download](pdf/compiler-principles.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
-| **Total** | **9 domains** | **2,915** | **125** | | |
+| Junior High Mathematics | 初中数学（七至九年级） | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
+| **Total** | **10 domains** | **3,315** | **140** | | |
 
 > **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **125 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **140 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -49,12 +50,13 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 ```text
 bilingual-technical-glossary/
+├── sources/                      # Authored HTML used for selected PDF editions
 ├── data/
 │   ├── terms.json                 # Canonical indexed terms
 │   ├── terms.csv                  # Interoperable CSV export
 │   └── ai-infrastructure.tsv     # Curated AI Infra source notes
-├── glossaries/                    # 9 thematic Markdown glossaries
-├── pdf/                           # 9 searchable PDF handbooks
+├── glossaries/                    # 10 thematic Markdown glossaries
+├── pdf/                           # 10 searchable PDF handbooks
 ├── site/                          # Website source: HTML, CSS, JS, icon
 ├── docs/                          # GitHub Pages static publish directory
 │   ├── data/                      # Optimized JSON for frontend
@@ -87,7 +89,7 @@ python3 scripts/verify.py
 python3 -m unittest discover -s tests -v
 ```
 
-The build script generates the AI Infra PDF when a suitable Chinese TTF font is installed. The GPU Kernel PDF is an independently authored original and is preserved, not regenerated from JSON. The six previously authored PDFs are intentionally **not** overwritten by this step. If no font is available, the script preserves any existing AI Infra PDF.
+The build script generates the AI Infra PDF when a suitable Chinese TTF font is installed. The Junior High Mathematics PDF is independently rendered from [`sources/junior-high-mathematics.html`](sources/junior-high-mathematics.html) through [GitHub Actions](.github/workflows/junior-high-mathematics-pdf.yml); JSON edits do not automatically change that print edition. The GPU Kernel PDF is an independently authored original and is preserved, not regenerated from JSON. The six previously authored PDFs are intentionally **not** overwritten by this step. If no font is available, the script preserves any existing AI Infra PDF.
 
 ## Publish on GitHub Pages
 

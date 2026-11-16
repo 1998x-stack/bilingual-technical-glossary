@@ -7,6 +7,11 @@ class CatalogTests(unittest.TestCase):
  def test_compiler_domain(self):
   self.assertIn('compiler-principles',{t['category'] for t in DATA})
   self.assertGreaterEqual(len({t['category'] for t in DATA}),9)
+ def test_junior_high_math(self):
+  rows=[t for t in DATA if t['category']=='junior-high-mathematics']
+  self.assertEqual(len(rows),400)
+  self.assertEqual(len({t['chapter'] for t in rows}),15)
+  self.assertIn('quadratic equation in one variable',{t['en'] for t in rows})
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:

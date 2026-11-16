@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.0 — 2026-11-16
+
+- Indexed the previously published Grade 7–9 bilingual mathematics handbook: 400 entries over 15 chapters, with symbols, translation pitfalls and classroom-English appendices.
+- Connected downloadable Markdown/PDF to the site search index, CSV/JSON exports, and the subject catalog (3,315 terms across 10 domains and 140 topics).
+- Made the edited appendix source persistent across `scripts/build.py` runs, and added math-specific regression checks.
+- Expanded subject visual styles and documented independent PDF/HTML versioning.
+
+
 ## v1.1.0 — 2026-11-16
 
 - Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.

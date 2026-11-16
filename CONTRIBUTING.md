@@ -54,3 +54,7 @@ Shift/Reduce Conflict|移进-归约冲突||同一状态和向前看符号同时�
 - [ ] 导出的 Markdown / CSV / Pages JSON 已同步
 - [ ] 字符转义及 PDF 中文显示正常
 - [ ] 测试通过、PR 写明来源及变化范围
+
+### 初中数学 / Junior High Mathematics
+
+修改初中数学术语时，请编辑 `data/terms.json` 并运行 `scripts/build.py` 同步 Markdown、CSV、JSON；附录维护在 `data/junior-high-mathematics-appendices.md`。由于 PDF 按 `sources/junior-high-mathematics.html` 单独排版，术语变更也要人工更新 HTML 并触发对应 PDF 工作流，确保两个版本一致。

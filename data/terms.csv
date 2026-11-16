@@ -2914,3 +2914,403 @@ compiler-principles,12,现代编译器与工具,Speculative Optimization,推测�
 compiler-principles,12,现代编译器与工具,Incremental Compilation,增量编译,,仅重新处理受输入变化影响的编译单元或阶段。
 compiler-principles,12,现代编译器与工具,Reproducible Build,可复现构建,,在相同规定输入条件下产生可验证一致输出的构建过程。
 compiler-principles,12,现代编译器与工具,Source Map,源码映射,,把生成代码位置映射回原始源码位置的元数据。
+junior-high-mathematics,1,数与数系,natural number,自然数,,"0, 1, 2, 3, …；部分英文教材从 1 开始定义"
+junior-high-mathematics,1,数与数系,integer,整数,,"…, −2, −1, 0, 1, 2, …"
+junior-high-mathematics,1,数与数系,positive number,正数,,大于 0 的数
+junior-high-mathematics,1,数与数系,negative number,负数,,小于 0 的数
+junior-high-mathematics,1,数与数系,nonnegative number,非负数,,x ≥ 0
+junior-high-mathematics,1,数与数系,nonpositive number,非正数,,x ≤ 0
+junior-high-mathematics,1,数与数系,rational number,有理数,,能写成 p/q（q ≠ 0）的数
+junior-high-mathematics,1,数与数系,irrational number,无理数,,不能写成整数之比的实数
+junior-high-mathematics,1,数与数系,real number,实数,,有理数与无理数的统称
+junior-high-mathematics,1,数与数系,number line,数轴,,用直线上的点表示实数
+junior-high-mathematics,1,数与数系,origin,原点,,数轴上表示 0 的点
+junior-high-mathematics,1,数与数系,additive inverse / opposite,相反数,,a 与 −a 的和为 0
+junior-high-mathematics,1,数与数系,absolute value,绝对值,,｜−3｜= 3；表示到 0 的距离
+junior-high-mathematics,1,数与数系,reciprocal / multiplicative inverse,倒数,,a ≠ 0 时，倒数是 1/a
+junior-high-mathematics,1,数与数系,square,平方,,a²
+junior-high-mathematics,1,数与数系,cube,立方,,a³
+junior-high-mathematics,1,数与数系,square root,平方根,,9 的平方根是 ±3
+junior-high-mathematics,1,数与数系,principal square root,算术平方根,,√9 = 3，取非负值
+junior-high-mathematics,1,数与数系,cube root,立方根,,∛(−8) = −2
+junior-high-mathematics,1,数与数系,exponentiation / raising to a power,乘方,,aⁿ
+junior-high-mathematics,1,数与数系,base,底数,,在 aⁿ 中，a 为底数
+junior-high-mathematics,1,数与数系,exponent,指数,,在 aⁿ 中，n 为指数
+junior-high-mathematics,1,数与数系,scientific notation,科学记数法,,3.2 × 10⁵
+junior-high-mathematics,1,数与数系,approximate number,近似数,,π ≈ 3.14
+junior-high-mathematics,1,数与数系,significant figures / significant digits,有效数字,,0.0230 有 3 位有效数字
+junior-high-mathematics,1,数与数系,rounding,四舍五入,,round to two decimal places
+junior-high-mathematics,1,数与数系,estimation,估算,,估计数量级与结果范围
+junior-high-mathematics,1,数与数系,comparison of numbers,数的大小比较,,−2 < 1
+junior-high-mathematics,1,数与数系,order of operations,运算顺序,,括号、乘方、乘除、加减
+junior-high-mathematics,1,数与数系,laws of arithmetic,运算律,,交换律、结合律、分配律
+junior-high-mathematics,2,代数式、整式与分式,algebraic expression,代数式,,由数、字母和运算符号构成的式子
+junior-high-mathematics,2,代数式、整式与分式,using variables to represent numbers,字母表示数,,用 x 表示未知量或变化量
+junior-high-mathematics,2,代数式、整式与分式,variable,变量,,取值可以变化的字母
+junior-high-mathematics,2,代数式、整式与分式,constant,常量,,取值固定的量
+junior-high-mathematics,2,代数式、整式与分式,coefficient,系数,,3x 中 3 是系数
+junior-high-mathematics,2,代数式、整式与分式,constant term,常数项,,3x + 2 中 2 是常数项
+junior-high-mathematics,2,代数式、整式与分式,monomial,单项式,,−2xy²
+junior-high-mathematics,2,代数式、整式与分式,polynomial,多项式,,x² + 3x + 2
+junior-high-mathematics,2,代数式、整式与分式,polynomial expression,整式,,单项式与多项式的统称（中学语境）
+junior-high-mathematics,2,代数式、整式与分式,term,项,,x² + 3x + 2 有三项
+junior-high-mathematics,2,代数式、整式与分式,degree,次数,,x²y 的总次数为 3
+junior-high-mathematics,2,代数式、整式与分式,like terms,同类项,,3x²y 与 −5x²y
+junior-high-mathematics,2,代数式、整式与分式,combining like terms,合并同类项,,2x + 3x = 5x
+junior-high-mathematics,2,代数式、整式与分式,removing parentheses / expanding brackets,去括号,,−(a − b) = −a + b
+junior-high-mathematics,2,代数式、整式与分式,addition and subtraction of polynomials,整式加减,,逐项合并同类项
+junior-high-mathematics,2,代数式、整式与分式,multiplication of polynomials,整式乘法,,(x + 1)(x + 2)
+junior-high-mathematics,2,代数式、整式与分式,multiplying monomials,单项式乘单项式,,2x · 3x² = 6x³
+junior-high-mathematics,2,代数式、整式与分式,distributive multiplication,单项式乘多项式,,a(b + c) = ab + ac
+junior-high-mathematics,2,代数式、整式与分式,multiplying polynomials,多项式乘多项式,,(a + b)(c + d)
+junior-high-mathematics,2,代数式、整式与分式,difference of two squares,平方差公式,,a² − b² = (a − b)(a + b)
+junior-high-mathematics,2,代数式、整式与分式,perfect-square identity,完全平方公式,,(a ± b)² = a² ± 2ab + b²
+junior-high-mathematics,2,代数式、整式与分式,rational expression,分式,,如 (x + 1)/(x − 2)
+junior-high-mathematics,2,代数式、整式与分式,denominator,分母,,分数线下方的式子
+junior-high-mathematics,2,代数式、整式与分式,numerator,分子,,分数线上方的式子
+junior-high-mathematics,2,代数式、整式与分式,fundamental property of rational expressions,分式的基本性质,,分子分母同乘非零式，值不变
+junior-high-mathematics,2,代数式、整式与分式,finding a common denominator,通分,,把异分母分式改写成同分母
+junior-high-mathematics,2,代数式、整式与分式,reducing a fraction / cancellation,约分,,约去分子分母的公因式
+junior-high-mathematics,2,代数式、整式与分式,rational expression in simplest form,最简分式,,分子分母没有非常数公因式
+junior-high-mathematics,2,代数式、整式与分式,domain restriction of a rational expression,分式有意义的条件,,分母不等于 0
+junior-high-mathematics,3,因式分解与二次根式,factor,因式,,乘积中的每一个乘数
+junior-high-mathematics,3,因式分解与二次根式,factorization / factoring,因式分解,,x² − 1 = (x − 1)(x + 1)
+junior-high-mathematics,3,因式分解与二次根式,common factor,公因式,,6x 与 9x² 的公因式可为 3x
+junior-high-mathematics,3,因式分解与二次根式,factoring out a common factor,提取公因式法,,ab + ac = a(b + c)
+junior-high-mathematics,3,因式分解与二次根式,factoring using identities,公式法分解因式,,利用平方差、完全平方等公式
+junior-high-mathematics,3,因式分解与二次根式,factoring by cross multiplication,十字相乘法,,分解二次三项式的常用技巧
+junior-high-mathematics,3,因式分解与二次根式,quadratic trinomial,二次三项式,,ax² + bx + c（a ≠ 0）
+junior-high-mathematics,3,因式分解与二次根式,perfect-square expression,完全平方式,,x² + 2x + 1 = (x + 1)²
+junior-high-mathematics,3,因式分解与二次根式,difference of squares,平方差,,a² − b²
+junior-high-mathematics,3,因式分解与二次根式,simplest radical form,最简二次根式,,如 2√3，而非 √12
+junior-high-mathematics,3,因式分解与二次根式,square-root expression / radical expression,二次根式,,形如 √a（a ≥ 0）
+junior-high-mathematics,3,因式分解与二次根式,radical sign,根号,,√
+junior-high-mathematics,3,因式分解与二次根式,radicand,被开方数,,在 √a 中，a 是被开方数
+junior-high-mathematics,3,因式分解与二次根式,like radical expressions,同类二次根式,,2√3 与 5√3
+junior-high-mathematics,3,因式分解与二次根式,simplifying radical expressions,二次根式的化简,,√12 = 2√3
+junior-high-mathematics,3,因式分解与二次根式,adding and subtracting radicals,二次根式的加减,,2√3 + √3 = 3√3
+junior-high-mathematics,3,因式分解与二次根式,multiplication of radicals,二次根式的乘法,,"√a·√b = √(ab)，a,b ≥ 0"
+junior-high-mathematics,3,因式分解与二次根式,division of radicals,二次根式的除法,,√a/√b = √(a/b)，b > 0
+junior-high-mathematics,3,因式分解与二次根式,rationalizing the denominator,分母有理化,,1/√2 = √2/2
+junior-high-mathematics,3,因式分解与二次根式,special product identities,乘法公式,,常见恒等式，如 (a + b)²
+junior-high-mathematics,3,因式分解与二次根式,identity,恒等式,,对定义域中所有允许值都成立的等式
+junior-high-mathematics,3,因式分解与二次根式,equivalent transformation,等价变形,,保持解集或数值相等的变形
+junior-high-mathematics,4,方程与方程组,equation,方程,,含未知数的等式
+junior-high-mathematics,4,方程与方程组,unknown,未知数,,待求的数，常设为 x
+junior-high-mathematics,4,方程与方程组,solution of an equation,方程的解,,使方程成立的未知数的值
+junior-high-mathematics,4,方程与方程组,solving an equation,解方程,,求所有满足条件的解
+junior-high-mathematics,4,方程与方程组,linear equation in one variable,一元一次方程,,ax + b = 0（a ≠ 0）
+junior-high-mathematics,4,方程与方程组,properties of equality,等式的性质,,等式两边同加或同乘合适的数
+junior-high-mathematics,4,方程与方程组,transposing terms / moving terms,移项,,移项时需改变符号
+junior-high-mathematics,4,方程与方程组,clearing denominators,去分母,,乘以公分母，并关注定义条件
+junior-high-mathematics,4,方程与方程组,linear equation in two variables,二元一次方程,,ax + by = c
+junior-high-mathematics,4,方程与方程组,system of linear equations in two variables,二元一次方程组,,联立两个一次方程
+junior-high-mathematics,4,方程与方程组,substitution method,代入消元法,,由一式表示一个未知数后代入
+junior-high-mathematics,4,方程与方程组,elimination method,加减消元法,,联立方程相加或相减消元
+junior-high-mathematics,4,方程与方程组,elimination of a variable,消元,,减少未知数个数
+junior-high-mathematics,4,方程与方程组,solution of a system,方程组的解,,同时满足各方程的有序数对
+junior-high-mathematics,4,方程与方程组,rational equation,分式方程,,未知数出现在分母中
+junior-high-mathematics,4,方程与方程组,extraneous solution,增根,,变形后出现但不满足原方程的解
+junior-high-mathematics,4,方程与方程组,checking candidate solutions,验根,,代入原方程并检查分母
+junior-high-mathematics,4,方程与方程组,quadratic equation in one variable,一元二次方程,,ax² + bx + c = 0（a ≠ 0）
+junior-high-mathematics,4,方程与方程组,leading coefficient / quadratic coefficient,二次项系数,,ax² + bx + c 中的 a
+junior-high-mathematics,4,方程与方程组,linear coefficient,一次项系数,,ax² + bx + c 中的 b
+junior-high-mathematics,4,方程与方程组,discriminant,判别式,,Δ = b² − 4ac
+junior-high-mathematics,4,方程与方程组,quadratic formula,求根公式,,x = (−b ± √Δ)/(2a)
+junior-high-mathematics,4,方程与方程组,square-root method,直接开平方法,,x² = 9 → x = ±3
+junior-high-mathematics,4,方程与方程组,completing the square,配方法,,x² + 6x = (x + 3)² − 9
+junior-high-mathematics,4,方程与方程组,solving by factoring,因式分解法解方程,,(x − 1)(x − 2) = 0
+junior-high-mathematics,4,方程与方程组,Vieta&#x27;s formulas / relations between roots and coefficients,根与系数的关系,,x₁+x₂ = −b/a，x₁x₂ = c/a
+junior-high-mathematics,4,方程与方程组,equation modeling / forming an equation,方程建模,,把实际数量关系转化为方程
+junior-high-mathematics,5,不等式与不等式组,inequality,不等式,,例如 2x + 1 > 3
+junior-high-mathematics,5,不等式与不等式组,inequality sign,不等号,,"<, >, ≤, ≥"
+junior-high-mathematics,5,不等式与不等式组,strict inequality,严格不等式,,x < 3 或 x > 3
+junior-high-mathematics,5,不等式与不等式组,non-strict inequality,非严格不等式,,x ≤ 3 或 x ≥ 3
+junior-high-mathematics,5,不等式与不等式组,solution of an inequality,不等式的解,,满足不等式的数
+junior-high-mathematics,5,不等式与不等式组,solution set of an inequality,不等式的解集,,如 {x : x > 2}
+junior-high-mathematics,5,不等式与不等式组,linear inequality in one variable,一元一次不等式,,ax + b > 0 等
+junior-high-mathematics,5,不等式与不等式组,system of linear inequalities in one variable,一元一次不等式组,,同时满足多个不等式
+junior-high-mathematics,5,不等式与不等式组,solving an inequality,解不等式,,求解集并在数轴表示
+junior-high-mathematics,5,不等式与不等式组,properties of inequalities,不等式的性质,,乘或除负数时不等号反向
+junior-high-mathematics,5,不等式与不等式组,greater than,大于,,>
+junior-high-mathematics,5,不等式与不等式组,less than,小于,,<
+junior-high-mathematics,5,不等式与不等式组,greater than or equal to,大于等于,,≥
+junior-high-mathematics,5,不等式与不等式组,less than or equal to,小于等于,,≤
+junior-high-mathematics,5,不等式与不等式组,graphing a solution set on a number line,数轴表示解集,,空心点表示不含端点
+junior-high-mathematics,5,不等式与不等式组,interval,区间,,"如 (2, 5]，左开右闭"
+junior-high-mathematics,5,不等式与不等式组,taking the intersection,取交集,,同时满足条件：A ∩ B
+junior-high-mathematics,6,平面直角坐标系与函数,Cartesian coordinate system,平面直角坐标系,,由互相垂直的两条数轴构成
+junior-high-mathematics,6,平面直角坐标系与函数,x-axis / horizontal axis,横轴 / x轴,,横坐标所在轴
+junior-high-mathematics,6,平面直角坐标系与函数,y-axis / vertical axis,纵轴 / y轴,,纵坐标所在轴
+junior-high-mathematics,6,平面直角坐标系与函数,origin,坐标原点,,"O(0, 0)"
+junior-high-mathematics,6,平面直角坐标系与函数,ordered pair,有序数对,,"(x, y)"
+junior-high-mathematics,6,平面直角坐标系与函数,x-coordinate / abscissa,横坐标,,"点 P(2, 3) 的横坐标为 2"
+junior-high-mathematics,6,平面直角坐标系与函数,y-coordinate / ordinate,纵坐标,,"点 P(2, 3) 的纵坐标为 3"
+junior-high-mathematics,6,平面直角坐标系与函数,quadrant,象限,,四个象限 I、II、III、IV
+junior-high-mathematics,6,平面直角坐标系与函数,coordinates of a point,点的坐标,,"A(−1, 4)"
+junior-high-mathematics,6,平面直角坐标系与函数,function,函数,,每个允许的 x 对应唯一一个 y
+junior-high-mathematics,6,平面直角坐标系与函数,independent variable,自变量,,通常记作 x
+junior-high-mathematics,6,平面直角坐标系与函数,dependent variable,因变量,,通常记作 y
+junior-high-mathematics,6,平面直角坐标系与函数,domain,定义域,,自变量的允许取值集合
+junior-high-mathematics,6,平面直角坐标系与函数,function value,函数值,,f(2) 表示 x = 2 时的值
+junior-high-mathematics,6,平面直角坐标系与函数,graph of a function,函数图像,,"所有 (x, f(x)) 形成的点集"
+junior-high-mathematics,6,平面直角坐标系与函数,table method / tabular representation,列表法,,用表格表示对应关系
+junior-high-mathematics,6,平面直角坐标系与函数,formula representation,解析式法,,如 y = 2x + 1
+junior-high-mathematics,6,平面直角坐标系与函数,graphical representation,图像法,,用曲线或直线表示函数
+junior-high-mathematics,6,平面直角坐标系与函数,direct variation function,正比例函数,,y = kx（k ≠ 0）
+junior-high-mathematics,6,平面直角坐标系与函数,linear function / affine function,一次函数,,中学常用：y = kx + b（k ≠ 0）
+junior-high-mathematics,6,平面直角坐标系与函数,slope / gradient,斜率,,直线 y = kx + b 中的 k
+junior-high-mathematics,6,平面直角坐标系与函数,intercept,截距,,y = kx + b 的 y 轴截距为 b
+junior-high-mathematics,6,平面直角坐标系与函数,graph of a linear function,一次函数图像,,一条直线
+junior-high-mathematics,6,平面直角坐标系与函数,inverse variation function,反比例函数,,y = k/x（k ≠ 0）
+junior-high-mathematics,6,平面直角坐标系与函数,hyperbola,双曲线,,y = k/x 的图像有两支
+junior-high-mathematics,6,平面直角坐标系与函数,quadratic function,二次函数,,y = ax² + bx + c（a ≠ 0）
+junior-high-mathematics,6,平面直角坐标系与函数,parabola,抛物线,,二次函数的图像
+junior-high-mathematics,6,平面直角坐标系与函数,direction of opening,开口方向,,a > 0 时开口向上
+junior-high-mathematics,6,平面直角坐标系与函数,axis of symmetry,对称轴,,x = −b/(2a)
+junior-high-mathematics,6,平面直角坐标系与函数,vertex,顶点,,抛物线的最高点或最低点
+junior-high-mathematics,6,平面直角坐标系与函数,vertex form,顶点式,,y = a(x − h)² + k
+junior-high-mathematics,6,平面直角坐标系与函数,standard / general form,一般式,,y = ax² + bx + c
+junior-high-mathematics,6,平面直角坐标系与函数,zero / root of a function,零点,,f(x) = 0 的解
+junior-high-mathematics,6,平面直角坐标系与函数,increasing,单调递增,,自变量增大时函数值增大
+junior-high-mathematics,6,平面直角坐标系与函数,decreasing,单调递减,,自变量增大时函数值减小
+junior-high-mathematics,6,平面直角坐标系与函数,maximum or minimum value,最值,,函数的最大值或最小值
+junior-high-mathematics,6,平面直角坐标系与函数,point of intersection,交点,,两图像公共点
+junior-high-mathematics,7,几何基本概念与位置关系,geometric figure,几何图形,,平面或空间中的图形
+junior-high-mathematics,7,几何基本概念与位置关系,point,点,,点 A
+junior-high-mathematics,7,几何基本概念与位置关系,line,直线,,向两端无限延伸
+junior-high-mathematics,7,几何基本概念与位置关系,ray,射线,,一个端点，向一侧无限延伸
+junior-high-mathematics,7,几何基本概念与位置关系,line segment,线段,,有两个端点
+junior-high-mathematics,7,几何基本概念与位置关系,endpoint,端点,,线段或射线的端点
+junior-high-mathematics,7,几何基本概念与位置关系,midpoint,中点,,把线段分成相等的两段
+junior-high-mathematics,7,几何基本概念与位置关系,distance,距离,,两点之间的线段长度
+junior-high-mathematics,7,几何基本概念与位置关系,angle,角,,∠ABC
+junior-high-mathematics,7,几何基本概念与位置关系,vertex of an angle,角的顶点,,∠ABC 的顶点是 B
+junior-high-mathematics,7,几何基本概念与位置关系,side / arm of an angle,角的边,,组成角的两条射线
+junior-high-mathematics,7,几何基本概念与位置关系,acute angle,锐角,,0° < α < 90°
+junior-high-mathematics,7,几何基本概念与位置关系,right angle,直角,,90°
+junior-high-mathematics,7,几何基本概念与位置关系,obtuse angle,钝角,,90° < α < 180°
+junior-high-mathematics,7,几何基本概念与位置关系,straight angle,平角,,180°
+junior-high-mathematics,7,几何基本概念与位置关系,full angle / complete angle,周角,,360°
+junior-high-mathematics,7,几何基本概念与位置关系,complementary angles,余角,,两角和为 90°
+junior-high-mathematics,7,几何基本概念与位置关系,supplementary angles,补角,,两角和为 180°
+junior-high-mathematics,7,几何基本概念与位置关系,vertically opposite angles / vertical angles,对顶角,,相交直线形成的对顶角相等
+junior-high-mathematics,7,几何基本概念与位置关系,linear pair of angles,邻补角,,相邻且和为 180° 的两角
+junior-high-mathematics,7,几何基本概念与位置关系,angle bisector,角平分线,,把角分成两个相等的角
+junior-high-mathematics,7,几何基本概念与位置关系,perpendicular line,垂线,,两直线成 90°
+junior-high-mathematics,7,几何基本概念与位置关系,foot of a perpendicular,垂足,,垂线与已知直线的交点
+junior-high-mathematics,7,几何基本概念与位置关系,parallel lines,平行线,,同一平面内不相交的直线
+junior-high-mathematics,7,几何基本概念与位置关系,transversal,截线,,与两条直线相交的直线
+junior-high-mathematics,7,几何基本概念与位置关系,corresponding angles,同位角,,两直线被截时对应位置的角
+junior-high-mathematics,7,几何基本概念与位置关系,alternate interior angles,内错角,,位于两直线内侧且截线两侧
+junior-high-mathematics,7,几何基本概念与位置关系,same-side interior angles / co-interior angles,同旁内角,,同侧内角和为 180°（两线平行时）
+junior-high-mathematics,7,几何基本概念与位置关系,criteria for parallel lines,平行线的判定,,借角关系判断两线平行
+junior-high-mathematics,7,几何基本概念与位置关系,properties of parallel lines,平行线的性质,,如同位角相等
+junior-high-mathematics,8,三角形与全等,triangle,三角形,,△ABC
+junior-high-mathematics,8,三角形与全等,side of a triangle,三角形的边,,a、b、c
+junior-high-mathematics,8,三角形与全等,interior angle of a triangle,三角形的内角,,三个内角和为 180°
+junior-high-mathematics,8,三角形与全等,exterior angle of a triangle,三角形的外角,,外角等于不相邻两内角之和
+junior-high-mathematics,8,三角形与全等,triangle angle-sum theorem,三角形内角和定理,,α + β + γ = 180°
+junior-high-mathematics,8,三角形与全等,exterior angle theorem,三角形外角定理,,外角 = 两个不相邻内角之和
+junior-high-mathematics,8,三角形与全等,triangle inequality,三角形两边之和大于第三边,,a + b > c
+junior-high-mathematics,8,三角形与全等,isosceles triangle,等腰三角形,,有两边相等
+junior-high-mathematics,8,三角形与全等,equilateral triangle,等边三角形,,三边相等，各角 60°
+junior-high-mathematics,8,三角形与全等,scalene triangle,不等边三角形,,三边长度互不相等
+junior-high-mathematics,8,三角形与全等,right triangle / right-angled triangle,直角三角形,,有一个角为 90°
+junior-high-mathematics,8,三角形与全等,acute triangle,锐角三角形,,三个内角均为锐角
+junior-high-mathematics,8,三角形与全等,obtuse triangle,钝角三角形,,有一个钝角
+junior-high-mathematics,8,三角形与全等,hypotenuse,斜边,,直角三角形中直角所对的边
+junior-high-mathematics,8,三角形与全等,leg of a right triangle,直角边,,形成直角的两条边
+junior-high-mathematics,8,三角形与全等,altitude / height of a triangle,三角形的高,,顶点向对边所在直线作垂线段
+junior-high-mathematics,8,三角形与全等,median of a triangle,三角形的中线,,顶点连到对边中点
+junior-high-mathematics,8,三角形与全等,angle bisector of a triangle,三角形的角平分线,,由顶点平分内角的线段
+junior-high-mathematics,8,三角形与全等,perpendicular bisector,中垂线,,垂直且平分线段的直线
+junior-high-mathematics,8,三角形与全等,centroid,三角形的重心,,三条中线的交点
+junior-high-mathematics,8,三角形与全等,circumcenter / circumcentre,三角形的外心,,三边垂直平分线的交点
+junior-high-mathematics,8,三角形与全等,incenter / incentre,三角形的内心,,三条内角平分线的交点
+junior-high-mathematics,8,三角形与全等,congruent figures,全等图形,,形状和大小相同
+junior-high-mathematics,8,三角形与全等,congruent triangles,全等三角形,,△ABC ≅ △DEF
+junior-high-mathematics,8,三角形与全等,corresponding sides,对应边,,全等或相似图形中匹配的边
+junior-high-mathematics,8,三角形与全等,corresponding angles,对应角,,全等或相似图形中匹配的角
+junior-high-mathematics,8,三角形与全等,SSS congruence criterion,边边边判定,SSS,side-side-side
+junior-high-mathematics,8,三角形与全等,SAS congruence criterion,边角边判定,SAS,side-angle-side（夹角）
+junior-high-mathematics,8,三角形与全等,ASA congruence criterion,角边角判定,ASA,angle-side-angle
+junior-high-mathematics,8,三角形与全等,AAS congruence criterion,角角边判定,AAS,angle-angle-side
+junior-high-mathematics,8,三角形与全等,HL / RHS congruence criterion,斜边直角边判定,HL,hypotenuse-leg；英式 RHS
+junior-high-mathematics,9,相似、勾股与锐角三角函数,Pythagorean theorem,勾股定理,,直角三角形：a² + b² = c²
+junior-high-mathematics,9,相似、勾股与锐角三角函数,converse of the Pythagorean theorem,勾股定理的逆定理,,若 a² + b² = c²，则为直角三角形
+junior-high-mathematics,9,相似、勾股与锐角三角函数,proportion,比例,,a/b = c/d
+junior-high-mathematics,9,相似、勾股与锐角三角函数,ratio,比,,a : b
+junior-high-mathematics,9,相似、勾股与锐角三角函数,scale / map scale,比例尺,,图上距离与实际距离的比
+junior-high-mathematics,9,相似、勾股与锐角三角函数,proportional segments,成比例线段,,对应线段长度的比相等
+junior-high-mathematics,9,相似、勾股与锐角三角函数,similar figures,相似图形,,形状相同，大小可不同
+junior-high-mathematics,9,相似、勾股与锐角三角函数,similar triangles,相似三角形,,△ABC ∼ △DEF
+junior-high-mathematics,9,相似、勾股与锐角三角函数,similarity ratio / scale factor,相似比,,对应边长之比
+junior-high-mathematics,9,相似、勾股与锐角三角函数,AA similarity criterion,相似判定 AA,AA,两角分别相等
+junior-high-mathematics,9,相似、勾股与锐角三角函数,SAS similarity criterion,相似判定 SAS,SAS,夹角相等，夹边成比例
+junior-high-mathematics,9,相似、勾股与锐角三角函数,SSS similarity criterion,相似判定 SSS,SSS,三组对应边成比例
+junior-high-mathematics,9,相似、勾股与锐角三角函数,area ratio of similar triangles,相似三角形面积比,,面积比 = 相似比的平方
+junior-high-mathematics,9,相似、勾股与锐角三角函数,intercept theorem / basic proportionality theorem,平行线分线段成比例,,平行线截得对应线段成比例
+junior-high-mathematics,9,相似、勾股与锐角三角函数,homothety / dilation,位似,,以某中心按比例放大或缩小
+junior-high-mathematics,9,相似、勾股与锐角三角函数,center of homothety / dilation center,位似中心,,位似变换的中心
+junior-high-mathematics,9,相似、勾股与锐角三角函数,trigonometric ratios of acute angles,锐角三角函数,,sin、cos、tan
+junior-high-mathematics,9,相似、勾股与锐角三角函数,sine,正弦,,sin θ = 对边/斜边
+junior-high-mathematics,9,相似、勾股与锐角三角函数,cosine,余弦,,cos θ = 邻边/斜边
+junior-high-mathematics,9,相似、勾股与锐角三角函数,tangent,正切,,tan θ = 对边/邻边
+junior-high-mathematics,9,相似、勾股与锐角三角函数,opposite side,对边,,相对于所选锐角的对边
+junior-high-mathematics,9,相似、勾股与锐角三角函数,adjacent side,邻边,,相对于所选锐角的直角边
+junior-high-mathematics,9,相似、勾股与锐角三角函数,trigonometric values of special angles,特殊角三角函数值,,30°、45°、60°
+junior-high-mathematics,9,相似、勾股与锐角三角函数,solving a right triangle,解直角三角形,,利用边、角与三角比求未知量
+junior-high-mathematics,9,相似、勾股与锐角三角函数,angle of elevation,仰角,,从水平向上看的夹角
+junior-high-mathematics,9,相似、勾股与锐角三角函数,angle of depression,俯角,,从水平向下看的夹角
+junior-high-mathematics,10,四边形与多边形,quadrilateral,四边形,,由四条线段首尾连接围成
+junior-high-mathematics,10,四边形与多边形,polygon,多边形,,由多条线段围成的平面图形
+junior-high-mathematics,10,四边形与多边形,convex polygon,凸多边形,,任意两点连线都在图形内或边界上
+junior-high-mathematics,10,四边形与多边形,regular polygon,正多边形,,所有边与内角分别相等
+junior-high-mathematics,10,四边形与多边形,diagonal,对角线,,连接不相邻顶点的线段
+junior-high-mathematics,10,四边形与多边形,sum of interior angles of a polygon,多边形内角和,,(n − 2) × 180°
+junior-high-mathematics,10,四边形与多边形,sum of exterior angles of a polygon,多边形外角和,,凸多边形外角和 360°
+junior-high-mathematics,10,四边形与多边形,parallelogram,平行四边形,,两组对边分别平行
+junior-high-mathematics,10,四边形与多边形,rectangle,矩形,,四角都是直角的平行四边形
+junior-high-mathematics,10,四边形与多边形,rhombus,菱形,,四边相等的平行四边形
+junior-high-mathematics,10,四边形与多边形,square,正方形,,四边相等且四角为直角
+junior-high-mathematics,10,四边形与多边形,trapezoid (US) / trapezium (UK),梯形,,中学常指恰有一组对边平行；定义有地区差异
+junior-high-mathematics,10,四边形与多边形,isosceles trapezoid / isosceles trapezium,等腰梯形,,两腰相等的梯形
+junior-high-mathematics,10,四边形与多边形,right trapezoid / right trapezium,直角梯形,,有直角的梯形
+junior-high-mathematics,10,四边形与多边形,midsegment / midline,中位线,,连接三角形两边中点的线段等
+junior-high-mathematics,10,四边形与多边形,midsegment theorem,三角形中位线定理,,中位线平行第三边且等于其一半
+junior-high-mathematics,10,四边形与多边形,tests for a parallelogram,平行四边形判定,,如两组对边分别平行
+junior-high-mathematics,10,四边形与多边形,tests for a rectangle,矩形判定,,如有三个直角的四边形
+junior-high-mathematics,10,四边形与多边形,tests for a rhombus,菱形判定,,如四条边相等的四边形
+junior-high-mathematics,10,四边形与多边形,tests for a square,正方形判定,,兼具矩形与菱形的特征
+junior-high-mathematics,10,四边形与多边形,perimeter,周长,,边界长度之和
+junior-high-mathematics,10,四边形与多边形,area,面积,,二维区域的大小
+junior-high-mathematics,10,四边形与多边形,base,底,,几何图形选定的底边
+junior-high-mathematics,10,四边形与多边形,height / altitude,高,,底边到相对位置的垂直距离
+junior-high-mathematics,11,圆与几何度量,circle,圆,,到定点距离等于定长的点的集合（圆周）
+junior-high-mathematics,11,圆与几何度量,center / centre of a circle,圆心,,固定的中心点
+junior-high-mathematics,11,圆与几何度量,radius,半径,,r
+junior-high-mathematics,11,圆与几何度量,diameter,直径,,d = 2r
+junior-high-mathematics,11,圆与几何度量,chord,弦,,连接圆上两点的线段
+junior-high-mathematics,11,圆与几何度量,arc,弧,,圆周的一部分
+junior-high-mathematics,11,圆与几何度量,major arc,优弧,,大于半圆的弧
+junior-high-mathematics,11,圆与几何度量,minor arc,劣弧,,小于半圆的弧
+junior-high-mathematics,11,圆与几何度量,semicircle,半圆,,半个圆周或半圆形区域，依上下文区分
+junior-high-mathematics,11,圆与几何度量,central angle,圆心角,,顶点在圆心
+junior-high-mathematics,11,圆与几何度量,inscribed angle,圆周角,,顶点在圆上，两边与圆相交
+junior-high-mathematics,11,圆与几何度量,inscribed angle theorem,圆周角定理,,同弧圆周角等于圆心角的一半
+junior-high-mathematics,11,圆与几何度量,tangent line,切线,,与圆恰有一个公共点的直线
+junior-high-mathematics,11,圆与几何度量,point of tangency,切点,,切线与圆的公共点
+junior-high-mathematics,11,圆与几何度量,secant line,割线,,与圆有两个公共点的直线
+junior-high-mathematics,11,圆与几何度量,tangent-radius theorem,切线的性质,,切线垂直于过切点的半径
+junior-high-mathematics,11,圆与几何度量,equal tangents theorem,切线长定理,,同一外点引两条切线，切线段相等
+junior-high-mathematics,11,圆与几何度量,circumcircle / circumscribed circle,外接圆,,经过多边形全部顶点的圆
+junior-high-mathematics,11,圆与几何度量,incircle / inscribed circle,内切圆,,与多边形各边相切的圆
+junior-high-mathematics,11,圆与几何度量,sector of a circle,扇形,,由两条半径与弧围成
+junior-high-mathematics,11,圆与几何度量,circular segment,弓形,,由弦和所对弧围成的区域
+junior-high-mathematics,11,圆与几何度量,circumference,圆周长,,C = 2πr
+junior-high-mathematics,11,圆与几何度量,area of a circle,圆面积,,A = πr²
+junior-high-mathematics,11,圆与几何度量,arc length,弧长,,l = (θ/360°)·2πr
+junior-high-mathematics,11,圆与几何度量,area of a sector,扇形面积,,A = (θ/360°)·πr²
+junior-high-mathematics,11,圆与几何度量,cylinder,圆柱,,底面为全等圆，侧面展开为矩形（直圆柱）
+junior-high-mathematics,11,圆与几何度量,cone,圆锥,,底面为圆，顶点不在底面上
+junior-high-mathematics,11,圆与几何度量,volume,体积,,立体图形占据空间的大小
+junior-high-mathematics,11,圆与几何度量,surface area,表面积,,立体图形各表面的面积之和
+junior-high-mathematics,12,图形变化与几何坐标,geometric transformation,几何变换,,图形位置、方向或大小的变化
+junior-high-mathematics,12,图形变化与几何坐标,translation,平移,,沿固定向量移动每个点
+junior-high-mathematics,12,图形变化与几何坐标,translation vector,平移向量,,决定方向和距离
+junior-high-mathematics,12,图形变化与几何坐标,reflection symmetry / line symmetry,轴对称,,关于某条直线成镜像
+junior-high-mathematics,12,图形变化与几何坐标,line-symmetric figure,轴对称图形,,沿对称轴折叠两侧重合
+junior-high-mathematics,12,图形变化与几何坐标,line of symmetry / axis of symmetry,对称轴,,使两侧互为镜像的直线
+junior-high-mathematics,12,图形变化与几何坐标,reflection across a line,轴对称变换,,关于直线作镜像反射
+junior-high-mathematics,12,图形变化与几何坐标,central symmetry / point symmetry,中心对称,,关于一个点旋转 180° 重合
+junior-high-mathematics,12,图形变化与几何坐标,point-symmetric figure,中心对称图形,,绕某点转 180° 与自身重合
+junior-high-mathematics,12,图形变化与几何坐标,center of symmetry,对称中心,,中心对称的中心点
+junior-high-mathematics,12,图形变化与几何坐标,rotation,旋转,,绕固定点转过一定角度
+junior-high-mathematics,12,图形变化与几何坐标,center of rotation,旋转中心,,旋转的固定点
+junior-high-mathematics,12,图形变化与几何坐标,angle of rotation,旋转角,,图形转过的角度
+junior-high-mathematics,12,图形变化与几何坐标,clockwise,顺时针,,clockwise rotation
+junior-high-mathematics,12,图形变化与几何坐标,counterclockwise / anticlockwise,逆时针,,counterclockwise rotation
+junior-high-mathematics,12,图形变化与几何坐标,corresponding points,对应点,,变换前后相互对应的点
+junior-high-mathematics,12,图形变化与几何坐标,tessellation / tiling,平面镶嵌,,图形无缝、无重叠地铺满平面
+junior-high-mathematics,12,图形变化与几何坐标,reflection across the x-axis,关于x轴对称,,"(x, y) → (x, −y)"
+junior-high-mathematics,12,图形变化与几何坐标,reflection across the y-axis,关于y轴对称,,"(x, y) → (−x, y)"
+junior-high-mathematics,12,图形变化与几何坐标,reflection through the origin,关于原点对称,,"(x, y) → (−x, −y)"
+junior-high-mathematics,12,图形变化与几何坐标,distance formula,两点间距离公式,,d = √[(x₂ − x₁)² + (y₂ − y₁)²]
+junior-high-mathematics,12,图形变化与几何坐标,midpoint formula,中点坐标公式,,"((x₁+x₂)/2, (y₁+y₂)/2)"
+junior-high-mathematics,13,数据分析与统计,statistics,统计,,研究数据收集、分析与解释
+junior-high-mathematics,13,数据分析与统计,data,数据,,观察或测量获得的信息
+junior-high-mathematics,13,数据分析与统计,data collection,数据收集,,调查、实验、测量等
+junior-high-mathematics,13,数据分析与统计,population,总体,,研究对象的全体
+junior-high-mathematics,13,数据分析与统计,individual / population element,个体,,总体中的一个对象
+junior-high-mathematics,13,数据分析与统计,sample,样本,,从总体中抽取的一部分
+junior-high-mathematics,13,数据分析与统计,sample size,样本容量,,样本中观察单位的个数
+junior-high-mathematics,13,数据分析与统计,random sampling,随机抽样,,依随机机制抽取样本
+junior-high-mathematics,13,数据分析与统计,simple random sampling,简单随机抽样,,每个等大小样本被抽中机会相同
+junior-high-mathematics,13,数据分析与统计,census,普查,,对总体全部单位进行调查
+junior-high-mathematics,13,数据分析与统计,sample survey,抽样调查,,调查总体中的一部分
+junior-high-mathematics,13,数据分析与统计,frequency,频数,,某数值或类别出现的次数
+junior-high-mathematics,13,数据分析与统计,relative frequency,频率,,某频数占总次数的比例
+junior-high-mathematics,13,数据分析与统计,frequency distribution table,频数分布表,,按组记录频数
+junior-high-mathematics,13,数据分析与统计,frequency histogram,频数直方图,,矩形高度反映频数或频数密度
+junior-high-mathematics,13,数据分析与统计,bar chart / bar graph,条形统计图,,比较不同类别数量
+junior-high-mathematics,13,数据分析与统计,line graph,折线统计图,,展示随时间等变化的趋势
+junior-high-mathematics,13,数据分析与统计,pie chart,扇形统计图,,表示各类别占比
+junior-high-mathematics,13,数据分析与统计,stem-and-leaf plot,茎叶图,,保留原始数据的一种图示
+junior-high-mathematics,13,数据分析与统计,arithmetic mean / average,平均数,,x̄ = (x₁+⋯+xₙ)/n
+junior-high-mathematics,13,数据分析与统计,weighted mean / weighted average,加权平均数,,按权重计算平均值
+junior-high-mathematics,13,数据分析与统计,median,中位数,,排序后处于中间位置的值
+junior-high-mathematics,13,数据分析与统计,mode,众数,,出现频数最高的数值
+junior-high-mathematics,13,数据分析与统计,range,极差,,最大值减最小值
+junior-high-mathematics,13,数据分析与统计,variance,方差,,刻画离散程度
+junior-high-mathematics,13,数据分析与统计,standard deviation,标准差,,方差的平方根
+junior-high-mathematics,13,数据分析与统计,spread / variability of data,数据的离散程度,,如极差、方差与标准差
+junior-high-mathematics,13,数据分析与统计,statistical charts and tables,统计图表,,以图或表呈现数据
+junior-high-mathematics,14,概率与随机现象,random phenomenon,随机现象,,相同条件下结果可能不同
+junior-high-mathematics,14,概率与随机现象,random experiment,随机试验,,结果不确定但可能结果可描述
+junior-high-mathematics,14,概率与随机现象,random event,随机事件,,随机试验中可能发生的事件
+junior-high-mathematics,14,概率与随机现象,certain event / sure event,必然事件,,一定发生的事件
+junior-high-mathematics,14,概率与随机现象,impossible event,不可能事件,,不可能发生的事件
+junior-high-mathematics,14,概率与随机现象,elementary event,基本事件,,样本空间中的一个基本结果
+junior-high-mathematics,14,概率与随机现象,sample space,样本空间,,所有可能基本结果组成的集合
+junior-high-mathematics,14,概率与随机现象,equally likely outcomes,等可能性,,每个基本结果概率相同
+junior-high-mathematics,14,概率与随机现象,probability,概率,,P(A)，范围为 0 到 1
+junior-high-mathematics,14,概率与随机现象,classical probability model,古典概型,,等可能情形下：有利结果数/总结果数
+junior-high-mathematics,14,概率与随机现象,estimating probability by relative frequency,频率估计概率,,重复试验中以频率近似概率
+junior-high-mathematics,14,概率与随机现象,listing method,列表法,,逐一列出所有可能结果
+junior-high-mathematics,14,概率与随机现象,tree diagram method,树状图法,,分步骤列举结果
+junior-high-mathematics,14,概率与随机现象,mutually exclusive events,互斥事件,,不能同时发生的事件
+junior-high-mathematics,14,概率与随机现象,complementary event,对立事件 / 余事件,,A 的补事件记为 Aᶜ
+junior-high-mathematics,14,概率与随机现象,independent events,独立事件,,一个事件发生不改变另一个事件概率
+junior-high-mathematics,14,概率与随机现象,union of events,事件的并,,A ∪ B：A 或 B 发生
+junior-high-mathematics,14,概率与随机现象,intersection of events,事件的交,,A ∩ B：A 且 B 发生
+junior-high-mathematics,14,概率与随机现象,addition rule of probability,概率加法公式,,互斥时 P(A∪B)=P(A)+P(B)
+junior-high-mathematics,14,概率与随机现象,multiplication rule of probability,概率乘法公式,,独立时 P(A∩B)=P(A)P(B)
+junior-high-mathematics,15,推理、证明与数学思想,proposition / statement,命题,,可以判断真假的陈述句
+junior-high-mathematics,15,推理、证明与数学思想,true statement,真命题,,结论正确的命题
+junior-high-mathematics,15,推理、证明与数学思想,false statement,假命题,,不成立的命题
+junior-high-mathematics,15,推理、证明与数学思想,hypothesis / condition,条件,,命题的已知前提
+junior-high-mathematics,15,推理、证明与数学思想,conclusion,结论,,由条件推得的结果
+junior-high-mathematics,15,推理、证明与数学思想,theorem,定理,,经过证明的数学命题
+junior-high-mathematics,15,推理、证明与数学思想,axiom,公理,,作为推理起点的基本命题
+junior-high-mathematics,15,推理、证明与数学思想,definition,定义,,对术语作出严格约定
+junior-high-mathematics,15,推理、证明与数学思想,proof,证明,,依逻辑推理说明命题成立
+junior-high-mathematics,15,推理、证明与数学思想,given,已知,,题目提供的条件
+junior-high-mathematics,15,推理、证明与数学思想,to prove / prove that,求证,,证明指定结论
+junior-high-mathematics,15,推理、证明与数学思想,corollary,推论,,由已有定理直接得到的结论
+junior-high-mathematics,15,推理、证明与数学思想,converse statement,逆命题,,交换原命题条件与结论
+junior-high-mathematics,15,推理、证明与数学思想,counterexample,反例,,举一例说明命题不普遍成立
+junior-high-mathematics,15,推理、证明与数学思想,sufficient condition,充分条件,,若 A 则 B：A 对 B 充分
+junior-high-mathematics,15,推理、证明与数学思想,necessary condition,必要条件,,若 A 则 B：B 对 A 必要
+junior-high-mathematics,15,推理、证明与数学思想,necessary and sufficient condition,充要条件,,A 当且仅当 B
+junior-high-mathematics,15,推理、证明与数学思想,proof by cases / case analysis,分类讨论,,按不同情况分别处理
+junior-high-mathematics,15,推理、证明与数学思想,combining algebra and geometry,数形结合,,利用图像辅助代数分析
+junior-high-mathematics,15,推理、证明与数学思想,functional thinking,函数思想,,用变量之间的依赖关系研究问题
+junior-high-mathematics,15,推理、证明与数学思想,equation-based approach,方程思想,,用方程描述数量关系
+junior-high-mathematics,15,推理、证明与数学思想,transformation strategy,转化思想,,将复杂问题转成熟悉问题
+junior-high-mathematics,15,推理、证明与数学思想,substitution of a whole expression,整体代换,,以新变量表示重复出现的式子
+junior-high-mathematics,15,推理、证明与数学思想,method of undetermined coefficients,待定系数法,,通过条件确定未知系数
+junior-high-mathematics,15,推理、证明与数学思想,proof by contradiction,反证法,,假设结论不成立并推出矛盾
+junior-high-mathematics,15,推理、证明与数学思想,inductive reasoning and conjecture,归纳与猜想,,从实例观察规律，仍需证明
+junior-high-mathematics,15,推理、证明与数学思想,mathematical modeling,数学建模,,抽象现实问题、建立并检验模型
+junior-high-mathematics,15,推理、证明与数学思想,optimization problem,最优化问题,,求最大或最小值

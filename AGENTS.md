@@ -29,3 +29,7 @@ The 6 inherited PDFs collectively report 2,298 terms. The structured extraction 
 
 ## GPU Kernel edition
 The GPU Kernel glossary contains 255 independently authored English–Chinese entries across 13 chapters. Its PDF (`pdf/gpu-kernel.pdf`) and Markdown (`glossaries/gpu-kernel.md`) are source publications and should be kept aligned with the 255 indexed `gpu-kernel` records. `scripts/build.py` regenerates Markdown exports but must not silently replace the authored PDF.
+
+## Junior High Mathematics maintenance
+
+The Grade 7–9 mathematics subject adds 400 indexed terms across 15 topics. Keep `data/terms.json`, `glossaries/junior-high-mathematics.md`, `docs/glossaries/`, and `docs/data/` aligned through `scripts/build.py`. Curated appendices live in `data/junior-high-mathematics-appendices.md` and are appended during Markdown generation. The independently typeset PDF is rebuilt via `sources/junior-high-mathematics.html` and `.github/workflows/junior-high-mathematics-pdf.yml`; updating JSON alone does not update that PDF. Preserve existing third-party/original PDF publications.

@@ -79,5 +79,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "junior-high-mathematics",
+    "en": "Junior High School Mathematics",
+    "zh": "初中数学",
+    "description": "Grade 7–9 numbers, algebra, functions, geometry, statistics and probability",
+    "icon": "triangle",
+    "count": 400,
+    "topics": 15
   }
 ]
