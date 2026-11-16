@@ -1,5 +1,14 @@
 [
   {
+    "slug": "high-school-mathematics",
+    "en": "High School Mathematics",
+    "zh": "高中数学",
+    "description": "Sets, functions, trigonometry, geometry, calculus, statistics and probability",
+    "icon": "book",
+    "count": 351,
+    "topics": 16
+  },
+  {
     "slug": "ai-infrastructure",
     "en": "AI Infrastructure / AI Infra",
     "zh": "AI 基础设施",
