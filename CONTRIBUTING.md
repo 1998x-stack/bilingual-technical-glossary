@@ -47,3 +47,7 @@
 ## 数学记号字段
 
 `notation` 是可选字段，仅记录典型符号或示例；`abbr` 仅用于标准缩写。校订微积分词条时需同时核对 Markdown、结构化索引和原始 PDF。
+
+## Linux 术语手册维护
+
+`glossaries/linux.md` 为原创版（394 条、16 个章节、18 组术语辨析），构建脚本不会覆盖它。修改 Linux 术语时应同步检查 `data/terms.json`、`pdf/linux.pdf` 与 `docs/` 发布副本；引用 Linux 内核官方文档、man-pages 等可靠来源。
