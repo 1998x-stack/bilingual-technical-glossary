@@ -44,7 +44,7 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Python | Python 编程语言 | 429 | 16 | [Read](glossaries/python.md) | [Download](pdf/python.pdf) |
 | Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
 | Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
-| **Total** | **21 domains** | **7,554** | **313** | | |
+| **Total** | **22 domains** | **7,913** | **331** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -69,7 +69,7 @@ Operating Systems (396), SQL Database (394), Python (429), Junior High School Ma
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **313 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **331 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
