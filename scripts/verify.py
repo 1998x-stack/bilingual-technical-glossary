@@ -10,8 +10,8 @@ REQUIRED=['category','chapter','topic','en','zh','abbr','definition']
 fail=[]
 def check(test,message):
  if not test:fail.append(message)
-check(len(CATALOG)==8,'Expected eight subject categories')
-check(len(TERMS)>=2600,'Dataset unexpectedly truncated')
+check(len(CATALOG)==9,'Expected nine subject categories')
+check(len(TERMS)>=2900,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
 for i,r in enumerate(TERMS):
  check(all(k in r for k in REQUIRED),f'Missing field row {i}')
