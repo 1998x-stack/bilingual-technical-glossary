@@ -64,3 +64,9 @@ python3 -m unittest discover -s tests -v
 - [OpenAI Codex project skill locations](https://learn.chatgpt.com/docs/build-skills)
 - [Claude Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 - [Pi project skill discovery and duplicate handling](https://docs.pi.dev/latest/skills)
+
+## Reader experience: one Explorer, one detail route
+
+**Editorial batches are internal only.** Readers select a subject in the existing `/?category=<slug>#explorer` table and click any English or Chinese name. The canonical public page is `term.html?category=...&chapter=...&en=...&zh=...` (return filters may be included); it shows a published long-form article when available or the curated short definition when not. Never create public batch tabs, batch progress dashboards, or a separate Wiki directory homepage. Legacy Wiki landing URLs redirect to the matching term or Explorer.
+
+After writing a Wiki article and updating its manifest, run `python3 scripts/build_wiki_index.py --write`, then `--check`; the generator verifies the actual source term and Markdown mirror before adding it to `docs/data/wiki-index.json`. `scripts/build.py` also regenerates this public index on a full repository rebuild.

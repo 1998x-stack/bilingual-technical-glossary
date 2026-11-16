@@ -17,7 +17,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "docs/data/wiki-index.json"
-ARTICLES = ROOT / "docs/wiki"
 SAFE_FILE = re.compile(r"^[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*\.md$")
 SAFE_DOMAIN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
@@ -50,7 +49,7 @@ def generate_index(root: Path = ROOT) -> dict:
             matches = identities.get(key, [])
             if len(matches) != 1:
                 raise ValueError(f"published Wiki term not uniquely indexed: {key!r} ({len(matches)} matches)")
-            _, record = matches[0]
+            corpus_position, record = matches[0]
             identity = (category, record["chapter"], en, zh)
             if identity in seen:
                 raise ValueError(f"duplicate published Wiki article: {identity!r}")
@@ -61,7 +60,7 @@ def generate_index(root: Path = ROOT) -> dict:
                 raise ValueError(f"missing original or Pages article: {public}")
             if canonical.read_bytes() != public.read_bytes():
                 raise ValueError(f"Wiki article mirror mismatch: {public}")
-            published.append((corpus.index(record), {
+            published.append((corpus_position, {
                 "category": category,
                 "chapter": record["chapter"],
                 "en": en,

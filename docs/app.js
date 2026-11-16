@@ -18,7 +18,7 @@ function locale(n){return Number(n).toLocaleString('en-US');}
 function notify(message){const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(notify.t);notify.t=setTimeout(()=>el.classList.remove('show'),2200);}
 function download(name,text,type){const blob=new Blob([text],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);}
 function updateURL(){const u=new URL(window.location.href);u.search='';if(state.query)u.searchParams.set('q',state.query);if(state.category!=='all')u.searchParams.set('category',state.category);if(state.topic!=='all')u.searchParams.set('topic',state.topic);if(state.page>1)u.searchParams.set('page',String(state.page));if(state.sort!=='default')u.searchParams.set('sort',state.sort);history.replaceState({},'',u.pathname+u.search+u.hash);}
-function applyURL(){const u=new URL(window.location.href);const q=u.searchParams.get('q')||'';const cat=u.searchParams.get('category')||'all';state.query=q;state.category=state.catalog.some(x=>x.slug===cat)?cat:'all';
+function applyURL(){const u=new URL(window.location.href);const q=u.searchParams.get('q')||'';const cat=u.searchParams.get('category')||'all';state.query=q;state.category=state.catalog.some(x=>x.slug===cat)?cat:'all';state.topic=u.searchParams.get('topic')||'all';
  const requestedPage=Number(u.searchParams.get('page'));
  state.page=Number.isSafeInteger(requestedPage)&&requestedPage>0?requestedPage:1;
  state.sort=['default','az','za'].includes(u.searchParams.get('sort'))?u.searchParams.get('sort'):'default';

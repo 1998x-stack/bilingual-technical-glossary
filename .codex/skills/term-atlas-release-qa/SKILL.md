@@ -18,7 +18,8 @@ Invoke when the task involves **validation or publication**. Read `AGENTS.md` an
 - Agent skills: `python3 scripts/sync_agent_skills.py --check` whenever `AGENTS.md`, `CLAUDE.md`, or skill directories are edited.
 - Wiki: verify contiguous source ordinals, canonical-vs-mirror Markdown equality, status/count consistency, actual answer quality and citation relevance, working links.
 - PDF: verify actual `%PDF-` header, searchability, embedded readable Chinese fonts, representative page rendering, source/manuscript parity.
-- Website: check relative links under the project subpath, JS escaping of untrusted term text, keyboard/responsive accessibility, and Pages artifact paths; browser smoke-test changed deep links if available.
+- Website: the **single Explorer** is the reader-facing entrypoint and term rows link to `term.html`; **never show batch numbers, batch cards or an independent Wiki landing page**. Validate both expanded and not-yet-expanded terms, URL encoding, back navigation, language links, theme, and same-topic browsing. Check relative links under the project subpath, safe Markdown escaping, keyboard/responsive accessibility, and Pages artifact paths. Browser smoke-test deep links if available.
+- Published articles: run `python3 scripts/build_wiki_index.py --check`, confirm only real mirrored Wiki files appear in `docs/data/wiki-index.json`, and keep any former standalone Wiki URL as a backward-compatible redirect.
 
 ## PR, merge and provenance
 1. Create a narrowly scoped branch and PR. Include source files, terminology/provenance decisions, exact executed checks and results, and visible count/coverage effects.
