@@ -39,11 +39,12 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Data Structures | 数据结构 | 352 | 14 | [Read](glossaries/data-structures.md) | [Download](pdf/data-structures.pdf) |
 | Linux | Linux 操作系统 | 394 | 16 | [Read](glossaries/linux.md) | [Download](pdf/linux.pdf) |
 | Operating Systems | 操作系统 | 396 | 18 | [Read](glossaries/operating-systems.md) | [Download](pdf/operating-systems.pdf) |
+| Computer Networks | 计算机网络 | 359 | 18 | [Read](glossaries/computer-networks.md) | [Download](pdf/computer-networks.pdf) |
 | SQL Database | SQL 数据库 | 394 | 13 | [Read](glossaries/sql-database.md) | [Download](pdf/sql-database.pdf) |
 | Python | Python 编程语言 | 429 | 16 | [Read](glossaries/python.md) | [Download](pdf/python.pdf) |
 | Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
 | Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
-| **Total** | **21 domains** | **7,554** | **313** | | |
+| **Total** | **22 domains** | **7,913** | **331** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -57,6 +58,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 > **Data provenance.** The Kafka volume contributes 283 original, fully indexed terms in 16 chapters, with curated Markdown and searchable PDF editions.  The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless. The Machine Learning volume adds 447 independently authored entries across 19 topics, with matching Markdown and searchable PDF. Linux adds 394 fully indexed terms from its original Markdown, with 16 chapters and 18 concept comparisons; a searchable PDF is available.
 
+## Computer Networks / 计算机网络
+
+The Computer Networks edition adds **359 independently curated terms across 18 chapters**, spanning network architecture, Ethernet, WLAN, IP addressing, routing, TCP/UDP/QUIC, DNS, HTTP, TLS, cloud networking and troubleshooting. Its authored [Markdown](glossaries/computer-networks.md), [searchable PDF](pdf/computer-networks.pdf) and underlying [TSV](data/computer-networks.tsv) are synchronized with the searchable index and GitHub Pages downloads.
+
 ## Newly indexed handbooks
 
 Operating Systems (396), SQL Database (394), Python (429), Junior High School Mathematics (400) and Parallel Computing (205) are now included in the searchable index; authored Markdown and PDFs remain preserved.
@@ -64,7 +69,7 @@ Operating Systems (396), SQL Database (394), Python (429), Junior High School Ma
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **313 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **331 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -80,8 +85,8 @@ bilingual-technical-glossary/
 │   ├── terms.csv                  # Interoperable CSV export
 │   └── ai-infrastructure.tsv     # Curated AI Infra source notes
 ├── sources/                       # Authored glossary print materials
-├── glossaries/                    # 12 thematic Markdown glossaries
-├── pdf/                           # 12 searchable PDF handbooks
+├── glossaries/                    # Bilingual thematic Markdown glossaries
+├── pdf/                           # Searchable PDF handbooks
 ├── site/                          # Website source: HTML, CSS, JS, icon
 ├── docs/                          # GitHub Pages static publish directory
 │   ├── data/                      # Optimized JSON for frontend

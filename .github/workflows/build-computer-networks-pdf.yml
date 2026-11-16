@@ -1,0 +1,62 @@
+name: Build Computer Networks PDF
+on:
+  push:
+    branches:
+      - main
+      - feat/computer-networks-glossary-20261116
+    paths:
+      - data/computer-networks.tsv
+      - scripts/render_computer_networks_pdf.py
+      - scripts/ingest_computer_networks.py
+      - glossaries/computer-networks.md
+      - .github/workflows/build-computer-networks-pdf.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CJK fonts and PDF renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-arphic-gbsn00lp
+          python -m pip install 'reportlab>=4,<5' 'pypdf>=5,<7'
+      - name: Synchronize searchable glossary index
+        run: |
+          python scripts/ingest_computer_networks.py
+      - name: Render and validate Computer Networks PDF
+        run: |
+          python scripts/render_computer_networks_pdf.py
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          path = Path("pdf/computer-networks.pdf")
+          pdf = PdfReader(str(path))
+          text = "".join((p.extract_text() or "") for p in pdf.pages)
+          assert 10 <= len(pdf.pages) <= 75, len(pdf.pages)
+          assert "Computer Networks" in text and "TCP" in text and "QUIC" in text
+          assert len(path.read_bytes()) > 20000
+          dest = Path("docs/pdf/computer-networks.pdf")
+          dest.parent.mkdir(parents=True, exist_ok=True)
+          dest.write_bytes(path.read_bytes())
+          print(f"Verified {len(pdf.pages)} PDF pages, {path.stat().st_size} bytes")
+          PY
+      - name: Commit publication PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf/computer-networks.pdf docs/pdf/computer-networks.pdf \
+            docs/glossaries/computer-networks.md \
+            data/terms.json data/terms.csv \
+            docs/data/terms.json docs/data/catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(networking): publish 359-term bilingual PDF"
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+          else
+            echo "PDF unchanged"
+          fi
