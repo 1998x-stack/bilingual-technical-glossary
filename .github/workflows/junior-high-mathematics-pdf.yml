@@ -1,0 +1,57 @@
+name: Render Junior High Mathematics glossary PDF
+on:
+  push:
+    branches: [main, feat/junior-high-mathematics-2026]
+    paths:
+      - 'sources/junior-high-mathematics.html'
+      - '.github/workflows/junior-high-mathematics-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: junior-math-pdf-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CJK fonts, PDF renderer and QA tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core poppler-utils
+          python -m pip install --disable-pip-version-check weasyprint==68.0
+      - name: Render and verify searchable PDF
+        run: |
+          mkdir -p pdf docs/pdf
+          python -m weasyprint sources/junior-high-mathematics.html pdf/junior-high-mathematics.pdf
+          cp pdf/junior-high-mathematics.pdf docs/pdf/junior-high-mathematics.pdf
+          test -s pdf/junior-high-mathematics.pdf
+          cmp pdf/junior-high-mathematics.pdf docs/pdf/junior-high-mathematics.pdf
+          pdfinfo pdf/junior-high-mathematics.pdf | grep '^Pages:'
+          pdftotext pdf/junior-high-mathematics.pdf /tmp/junior-math-pdf.txt
+          python - <<'PY'
+          from pathlib import Path
+          pdf=Path('pdf/junior-high-mathematics.pdf').read_bytes()
+          txt=Path('/tmp/junior-math-pdf.txt').read_text(encoding='utf8')
+          assert pdf.startswith(b'%PDF-') and len(pdf)>30000
+          for keyword in ('初中数学','自然数','一元二次方程','相似三角形','概率'):
+              assert keyword in txt, f'Missing term: {keyword}'
+          print(f'PDF validated: {len(pdf):,} bytes')
+          PY
+      - name: Commit both PDF downloads
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf/junior-high-mathematics.pdf docs/pdf/junior-high-mathematics.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(math): publish junior high mathematics PDF"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No PDF changes to commit"
+          fi
