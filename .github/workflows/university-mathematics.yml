@@ -1,0 +1,51 @@
+name: Generate University Mathematics PDF and searchable glossary
+
+on:
+  push:
+    branches:
+      - content/university-mathematics-2026
+    paths:
+      - "sources/university-mathematics.html"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/university-mathematics.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install CJK fonts and render dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk libpango-1.0-0 libcairo2
+          python -m pip install -r requirements.txt
+      - name: Generate indexed dataset, Markdown, PDF and Pages exports
+        run: python scripts/build.py
+      - name: Validate all eight subjects and artifacts
+        run: |
+          python scripts/verify.py
+          python -m unittest discover -s tests -v
+          python - <<'PY'
+          from pathlib import Path
+          for path in ["pdf/university-mathematics.pdf", "docs/pdf/university-mathematics.pdf"]:
+              data=Path(path)
+              assert data.stat().st_size > 20000
+              assert data.read_bytes()[:5] == b"%PDF-"
+          PY
+      - name: Commit generated publications to content branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/terms.json data/terms.csv glossaries/ pdf/university-mathematics.pdf docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "build(math): publish 627 entries, Markdown, PDF and Pages assets"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
