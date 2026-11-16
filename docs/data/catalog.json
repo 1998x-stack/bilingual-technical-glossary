@@ -205,5 +205,14 @@
     "icon": "cpu",
     "count": 205,
     "topics": 12
+  },
+  {
+    "slug": "cpp",
+    "en": "C++ Programming Language",
+    "zh": "C++ 编程语言",
+    "description": "Core language, object lifetime, templates, STL, concurrency and modern C++",
+    "icon": "code",
+    "count": 357,
+    "topics": 16
   }
 ]

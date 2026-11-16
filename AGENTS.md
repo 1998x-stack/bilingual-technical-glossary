@@ -49,3 +49,7 @@ The source of truth is `sources/university-mathematics.html` (627 terms, 17 chap
 
 ## Parallel Computing and Computer Organization publications
 The Parallel Computing handbook contains 205 indexed entries across 12 chapters. Keep its independently authored Markdown and PDF unchanged during the normal `scripts/build.py` index rebuild. Computer Organization (678 entries, 15 chapters) remains a separate non-indexed handbook; its site panel links to the original Markdown/PDF and must not be counted as indexed entries.
+
+## C++ edition
+
+The authored C++ source is `data/cpp-glossary.tsv` (357 terms, 16 chapters). Run `python3 scripts/render_cpp_pdf.py --source data/cpp-glossary.tsv --markdown glossaries/cpp.md --pdf pdf/cpp.pdf` to render the independently authored Markdown and searchable PDF. `scripts/build.py` rehydrates the C++ search rows from that TSV and mirrors both publications to `docs/`. Preserve wording and counts across all formats and keep C++20/23 terms distinct from evolving C++26 draft support.
