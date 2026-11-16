@@ -61,5 +61,14 @@
     "icon": "sigma",
     "count": 405,
     "topics": 16
+  },
+  {
+    "slug": "university-mathematics",
+    "en": "University Mathematics",
+    "zh": "大学数学",
+    "description": "Calculus, mathematical analysis, differential equations, algebra, statistics, geometry and optimization",
+    "icon": "sigma",
+    "count": 627,
+    "topics": 17
   }
 ]

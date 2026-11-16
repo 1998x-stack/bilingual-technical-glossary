@@ -21526,5 +21526,5648 @@
     "zh": "可信区间",
     "abbr": "",
     "definition": "贝叶斯后验概率意义"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "set",
+    "zh": "集合",
+    "abbr": "",
+    "definition": "对象组成的整体"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "element",
+    "zh": "元素",
+    "abbr": "",
+    "definition": "集合中的一个对象"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "subset",
+    "zh": "子集",
+    "abbr": "",
+    "definition": "一个集合包含于另一集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "proper subset",
+    "zh": "真子集",
+    "abbr": "",
+    "definition": "不等于原集合的子集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "empty set",
+    "zh": "空集",
+    "abbr": "",
+    "definition": "不含任何元素的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "universal set",
+    "zh": "全集",
+    "abbr": "",
+    "definition": "讨论范围内的全部元素"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "union",
+    "zh": "并集",
+    "abbr": "",
+    "definition": "属于至少一个集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "intersection",
+    "zh": "交集",
+    "abbr": "",
+    "definition": "同时属于两个集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "set difference",
+    "zh": "差集",
+    "abbr": "",
+    "definition": "属于前者而不属于后者"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "complement",
+    "zh": "补集",
+    "abbr": "",
+    "definition": "全集中不属于该集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "Cartesian product",
+    "zh": "笛卡儿积",
+    "abbr": "",
+    "definition": "按顺序配对形成的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "power set",
+    "zh": "幂集",
+    "abbr": "",
+    "definition": "所有子集构成的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "ordered pair",
+    "zh": "有序对",
+    "abbr": "",
+    "definition": "顺序影响对象的二元组"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "relation",
+    "zh": "关系",
+    "abbr": "",
+    "definition": "两个集合之间的子集结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "equivalence relation",
+    "zh": "等价关系",
+    "abbr": "",
+    "definition": "满足自反、对称、传递"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "partial order",
+    "zh": "偏序关系",
+    "abbr": "",
+    "definition": "满足自反、反对称、传递"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "mapping / map",
+    "zh": "映射",
+    "abbr": "",
+    "definition": "按规则指定对应元素"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "domain",
+    "zh": "定义域",
+    "abbr": "",
+    "definition": "映射输入的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "codomain",
+    "zh": "陪域",
+    "abbr": "",
+    "definition": "映射规定的目标集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "image / range",
+    "zh": "像集",
+    "abbr": "",
+    "definition": "实际取得的输出值集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "preimage",
+    "zh": "原像",
+    "abbr": "",
+    "definition": "映射到给定集合的输入集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "injective map / injection",
+    "zh": "单射",
+    "abbr": "",
+    "definition": "不同输入对应不同输出"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "surjective map / surjection",
+    "zh": "满射",
+    "abbr": "",
+    "definition": "每个陪域元素都有原像"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "bijective map / bijection",
+    "zh": "双射",
+    "abbr": "",
+    "definition": "既单射又满射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "inverse map",
+    "zh": "逆映射",
+    "abbr": "",
+    "definition": "双射的反向对应"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "proposition",
+    "zh": "命题",
+    "abbr": "",
+    "definition": "可判断真假的陈述"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "sufficient condition",
+    "zh": "充分条件",
+    "abbr": "",
+    "definition": "条件成立保证结论成立"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "necessary condition",
+    "zh": "必要条件",
+    "abbr": "",
+    "definition": "结论成立需要该条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "necessary and sufficient condition",
+    "zh": "充要条件",
+    "abbr": "",
+    "definition": "两个方向的蕴含都成立"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "universal quantifier",
+    "zh": "全称量词",
+    "abbr": "",
+    "definition": "“对所有”"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "existential quantifier",
+    "zh": "存在量词",
+    "abbr": "",
+    "definition": "“存在至少一个”"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "proof by contradiction",
+    "zh": "反证法",
+    "abbr": "",
+    "definition": "假设结论不成立推出矛盾"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "mathematical induction",
+    "zh": "数学归纳法",
+    "abbr": "",
+    "definition": "基例与归纳步骤"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 1,
+    "topic": "集合、逻辑与数学语言",
+    "en": "contrapositive",
+    "zh": "逆否命题",
+    "abbr": "",
+    "definition": "与原蕴含命题等价"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "real number",
+    "zh": "实数",
+    "abbr": "",
+    "definition": "可由实数轴上的点表示"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "rational number",
+    "zh": "有理数",
+    "abbr": "",
+    "definition": "可表示为整数之比"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "irrational number",
+    "zh": "无理数",
+    "abbr": "",
+    "definition": "不能写成整数之比"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "interval",
+    "zh": "区间",
+    "abbr": "",
+    "definition": "实数轴上的连续一段"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "open interval",
+    "zh": "开区间",
+    "abbr": "",
+    "definition": "不包含端点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "closed interval",
+    "zh": "闭区间",
+    "abbr": "",
+    "definition": "包含两端点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "upper bound",
+    "zh": "上界",
+    "abbr": "",
+    "definition": "不小于集合中所有元素的数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "lower bound",
+    "zh": "下界",
+    "abbr": "",
+    "definition": "不大于集合中所有元素的数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "supremum / least upper bound",
+    "zh": "上确界",
+    "abbr": "",
+    "definition": "所有上界中的最小者"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "infimum / greatest lower bound",
+    "zh": "下确界",
+    "abbr": "",
+    "definition": "所有下界中的最大者"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "function",
+    "zh": "函数",
+    "abbr": "",
+    "definition": "每个自变量对应唯一函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "composite function",
+    "zh": "复合函数",
+    "abbr": "",
+    "definition": "一个函数作用于另一个函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "inverse function",
+    "zh": "反函数",
+    "abbr": "",
+    "definition": "互换自变量与函数值的对应"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "odd function",
+    "zh": "奇函数",
+    "abbr": "",
+    "definition": "满足 f(-x)=-f(x)"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "even function",
+    "zh": "偶函数",
+    "abbr": "",
+    "definition": "满足 f(-x)=f(x)"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "periodic function",
+    "zh": "周期函数",
+    "abbr": "",
+    "definition": "函数值按固定间隔重复"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "nondecreasing / monotonically increasing",
+    "zh": "单调不减",
+    "abbr": "",
+    "definition": "自变量增大时函数值不减"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "nonincreasing / monotonically decreasing",
+    "zh": "单调不增",
+    "abbr": "",
+    "definition": "自变量增大时函数值不增"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "bounded function",
+    "zh": "有界函数",
+    "abbr": "",
+    "definition": "函数值具有统一上下界"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "elementary function",
+    "zh": "初等函数",
+    "abbr": "",
+    "definition": "由基本初等函数有限次组合得到"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "exponential function",
+    "zh": "指数函数",
+    "abbr": "",
+    "definition": "自变量出现在指数位置"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "logarithmic function",
+    "zh": "对数函数",
+    "abbr": "",
+    "definition": "指数函数的反函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "inverse trigonometric function",
+    "zh": "反三角函数",
+    "abbr": "",
+    "definition": "适当限定定义域后的三角函数反函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "sequence",
+    "zh": "数列",
+    "abbr": "",
+    "definition": "按自然数索引的项"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "subsequence",
+    "zh": "子列",
+    "abbr": "",
+    "definition": "按严格递增指标抽取的项"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "convergence",
+    "zh": "收敛",
+    "abbr": "",
+    "definition": "趋向有限极限"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "divergence",
+    "zh": "发散",
+    "abbr": "",
+    "definition": "不收敛到有限值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "limit of a sequence",
+    "zh": "数列极限",
+    "abbr": "",
+    "definition": "项的指标趋于无穷时的极限"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "limit of a function",
+    "zh": "函数极限",
+    "abbr": "",
+    "definition": "自变量趋近指定点的极限"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "left-hand limit",
+    "zh": "左极限",
+    "abbr": "",
+    "definition": "从左侧趋近"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "right-hand limit",
+    "zh": "右极限",
+    "abbr": "",
+    "definition": "从右侧趋近"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "infinitesimal",
+    "zh": "无穷小量",
+    "abbr": "",
+    "definition": "极限为零的变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "infinitely large quantity",
+    "zh": "无穷大量",
+    "abbr": "",
+    "definition": "绝对值趋向无穷的量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "asymptotically equivalent infinitesimals",
+    "zh": "等价无穷小",
+    "abbr": "",
+    "definition": "比值趋于 1 的无穷小"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "continuity",
+    "zh": "连续性",
+    "abbr": "",
+    "definition": "函数极限等于该点函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "point of discontinuity",
+    "zh": "间断点",
+    "abbr": "",
+    "definition": "不满足连续性的位置"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "removable discontinuity",
+    "zh": "可去间断点",
+    "abbr": "",
+    "definition": "补定或重定义函数值可连续"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "jump discontinuity",
+    "zh": "跳跃间断点",
+    "abbr": "",
+    "definition": "左右极限有限而不相等"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "intermediate value theorem",
+    "zh": "介值定理",
+    "abbr": "",
+    "definition": "连续函数取到端点值之间的各值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 2,
+    "topic": "函数、极限与连续",
+    "en": "extreme value theorem",
+    "zh": "最值定理",
+    "abbr": "",
+    "definition": "闭区间连续函数可取到最值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "derivative",
+    "zh": "导数",
+    "abbr": "",
+    "definition": "函数值变化率的极限"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "differentiability",
+    "zh": "可导性",
+    "abbr": "",
+    "definition": "导数存在的性质"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "left-hand derivative",
+    "zh": "左导数",
+    "abbr": "",
+    "definition": "由左侧差商求得"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "right-hand derivative",
+    "zh": "右导数",
+    "abbr": "",
+    "definition": "由右侧差商求得"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "derivative function",
+    "zh": "导函数",
+    "abbr": "",
+    "definition": "将每点导数组成的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "differential",
+    "zh": "微分",
+    "abbr": "",
+    "definition": "一阶线性近似量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "differential coefficient",
+    "zh": "微分系数",
+    "abbr": "",
+    "definition": "导数的另一称法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "geometric interpretation of the derivative",
+    "zh": "导数的几何意义",
+    "abbr": "",
+    "definition": "曲线切线斜率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "tangent line",
+    "zh": "切线",
+    "abbr": "",
+    "definition": "局部的一阶逼近直线"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "normal line",
+    "zh": "法线",
+    "abbr": "",
+    "definition": "垂直于切线的直线"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "product rule",
+    "zh": "导数的乘积法则",
+    "abbr": "",
+    "definition": "乘积求导的规则"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "quotient rule",
+    "zh": "导数的商法则",
+    "abbr": "",
+    "definition": "商式求导的规则"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "chain rule",
+    "zh": "链式法则",
+    "abbr": "",
+    "definition": "复合函数求导的规则"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "implicit differentiation",
+    "zh": "隐函数求导",
+    "abbr": "",
+    "definition": "不显式解出函数而求导"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "differentiation of parametric equations",
+    "zh": "参数方程求导",
+    "abbr": "",
+    "definition": "通过参数表示求导数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "logarithmic differentiation",
+    "zh": "对数求导法",
+    "abbr": "",
+    "definition": "先取对数再求导"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "higher-order derivative",
+    "zh": "高阶导数",
+    "abbr": "",
+    "definition": "多次求导得到的导数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "second derivative",
+    "zh": "二阶导数",
+    "abbr": "",
+    "definition": "导数的导数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Rolle's theorem",
+    "zh": "罗尔定理",
+    "abbr": "",
+    "definition": "满足条件时存在导数为零的点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "mean value theorem",
+    "zh": "拉格朗日中值定理",
+    "abbr": "",
+    "definition": "平均变化率等于某点瞬时变化率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Cauchy's mean value theorem",
+    "zh": "柯西中值定理",
+    "abbr": "",
+    "definition": "两函数的中值定理"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "L'Hôpital's rule",
+    "zh": "洛必达法则",
+    "abbr": "",
+    "definition": "特定未定式的极限求法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Taylor's theorem",
+    "zh": "泰勒定理",
+    "abbr": "",
+    "definition": "用多项式和余项表示局部行为"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Taylor expansion",
+    "zh": "泰勒展开",
+    "abbr": "",
+    "definition": "围绕某点的多项式展开"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Maclaurin expansion",
+    "zh": "麦克劳林展开",
+    "abbr": "",
+    "definition": "在零点处的泰勒展开"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Peano remainder",
+    "zh": "佩亚诺余项",
+    "abbr": "",
+    "definition": "用小 o 表示的余项"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Lagrange remainder",
+    "zh": "拉格朗日余项",
+    "abbr": "",
+    "definition": "含某中间点高阶导数的余项"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "stationary point",
+    "zh": "驻点",
+    "abbr": "",
+    "definition": "一阶导数为零的点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "critical point",
+    "zh": "临界点",
+    "abbr": "",
+    "definition": "导数为零或不存在的定义域内点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "local maximum",
+    "zh": "局部极大值",
+    "abbr": "",
+    "definition": "邻域内相对较大的函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "local minimum",
+    "zh": "局部极小值",
+    "abbr": "",
+    "definition": "邻域内相对较小的函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "concavity",
+    "zh": "凹性",
+    "abbr": "",
+    "definition": "函数图形弯曲性质"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "inflection point",
+    "zh": "拐点",
+    "abbr": "",
+    "definition": "凹凸性发生改变的点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "asymptote",
+    "zh": "渐近线",
+    "abbr": "",
+    "definition": "曲线在极限意义下靠近的直线"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "curvature",
+    "zh": "曲率",
+    "abbr": "",
+    "definition": "曲线弯曲程度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "radius of curvature",
+    "zh": "曲率半径",
+    "abbr": "",
+    "definition": "曲率非零时的倒数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "linear approximation",
+    "zh": "线性近似",
+    "abbr": "",
+    "definition": "用切线近似函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 3,
+    "topic": "一元微分学",
+    "en": "Newton's method",
+    "zh": "牛顿法",
+    "abbr": "",
+    "definition": "利用切线迭代求根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "antiderivative",
+    "zh": "原函数",
+    "abbr": "",
+    "definition": "导数为原函数对象的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "indefinite integral",
+    "zh": "不定积分",
+    "abbr": "",
+    "definition": "所有原函数及积分常数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "definite integral",
+    "zh": "定积分",
+    "abbr": "",
+    "definition": "区间上的极限求和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "constant of integration",
+    "zh": "积分常数",
+    "abbr": "",
+    "definition": "不定积分中的任意常数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "Riemann sum",
+    "zh": "黎曼和",
+    "abbr": "",
+    "definition": "小区间函数值乘区间宽度求和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "Riemann integral",
+    "zh": "黎曼积分",
+    "abbr": "",
+    "definition": "黎曼和极限定义的积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "fundamental theorem of calculus",
+    "zh": "牛顿—莱布尼茨公式",
+    "abbr": "",
+    "definition": "连接微分与积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "substitution method",
+    "zh": "换元积分法",
+    "abbr": "",
+    "definition": "通过变量替换计算积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "integration by parts",
+    "zh": "分部积分法",
+    "abbr": "",
+    "definition": "由乘积求导公式导出"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "improper integral",
+    "zh": "反常积分",
+    "abbr": "",
+    "definition": "区间无界或被积函数无界"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "generalized integral",
+    "zh": "广义积分",
+    "abbr": "",
+    "definition": "反常积分的常见别名"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "integral over an infinite interval",
+    "zh": "无穷区间积分",
+    "abbr": "",
+    "definition": "积分区间至少一端无界"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "integral with a singularity",
+    "zh": "瑕积分",
+    "abbr": "",
+    "definition": "被积函数在区间上有无界点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "mean value theorem for integrals",
+    "zh": "积分平均值定理",
+    "abbr": "",
+    "definition": "连续函数积分与某点函数值有关"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "fundamental theorem of calculus",
+    "zh": "微积分基本定理",
+    "abbr": "",
+    "definition": "说明积分与导数互逆关系"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "integral function with variable upper limit",
+    "zh": "积分上限函数",
+    "abbr": "",
+    "definition": "积分上限为自变量的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "area under a curve",
+    "zh": "曲边梯形面积",
+    "abbr": "",
+    "definition": "定积分的几何应用"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "volume of a solid of revolution",
+    "zh": "旋转体体积",
+    "abbr": "",
+    "definition": "利用切片或壳层求体积"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "arc length",
+    "zh": "弧长",
+    "abbr": "",
+    "definition": "曲线长度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "infinite series",
+    "zh": "无穷级数",
+    "abbr": "",
+    "definition": "数列各项的无穷求和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "partial sum",
+    "zh": "部分和",
+    "abbr": "",
+    "definition": "级数前有限项之和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "convergence of a series",
+    "zh": "级数收敛",
+    "abbr": "",
+    "definition": "部分和序列收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "geometric series",
+    "zh": "几何级数",
+    "abbr": "",
+    "definition": "相邻项比值固定的级数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "harmonic series",
+    "zh": "调和级数",
+    "abbr": "",
+    "definition": "倒数 1/n 的级数，发散"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "series of nonnegative terms",
+    "zh": "正项级数",
+    "abbr": "",
+    "definition": "各项非负的级数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "comparison test",
+    "zh": "比较判别法",
+    "abbr": "",
+    "definition": "与已知级数比较敛散性"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "ratio test",
+    "zh": "比值判别法",
+    "abbr": "",
+    "definition": "考察相邻项绝对值比"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "root test",
+    "zh": "根值判别法",
+    "abbr": "",
+    "definition": "考察项绝对值的 n 次方根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "integral test",
+    "zh": "积分判别法",
+    "abbr": "",
+    "definition": "用相应反常积分判别"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "alternating series",
+    "zh": "交错级数",
+    "abbr": "",
+    "definition": "正负项交替的级数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "alternating series test",
+    "zh": "莱布尼茨判别法",
+    "abbr": "",
+    "definition": "单调趋零项的交错级数收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "absolute convergence",
+    "zh": "绝对收敛",
+    "abbr": "",
+    "definition": "绝对值组成的级数收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "conditional convergence",
+    "zh": "条件收敛",
+    "abbr": "",
+    "definition": "级数收敛而非绝对收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "power series",
+    "zh": "幂级数",
+    "abbr": "",
+    "definition": "按自变量幂次展开的级数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "radius of convergence",
+    "zh": "收敛半径",
+    "abbr": "",
+    "definition": "幂级数绝对收敛区域的半径"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "interval of convergence",
+    "zh": "收敛区间",
+    "abbr": "",
+    "definition": "使幂级数收敛的实数集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "term-by-term differentiation",
+    "zh": "逐项微分",
+    "abbr": "",
+    "definition": "在适当条件下对级数逐项求导"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "term-by-term integration",
+    "zh": "逐项积分",
+    "abbr": "",
+    "definition": "在适当条件下对级数逐项积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 4,
+    "topic": "积分学、无穷级数与幂级数",
+    "en": "Fourier series",
+    "zh": "傅里叶级数",
+    "abbr": "",
+    "definition": "用正弦余弦或复指数展开周期函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "multivariable function",
+    "zh": "多元函数",
+    "abbr": "",
+    "definition": "具有两个或更多自变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "function of two variables",
+    "zh": "二元函数",
+    "abbr": "",
+    "definition": "两个自变量决定函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "partial derivative",
+    "zh": "偏导数",
+    "abbr": "",
+    "definition": "固定其余变量求导"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "partial differential",
+    "zh": "偏微分",
+    "abbr": "",
+    "definition": "与一个自变量变化有关的微分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "total differential",
+    "zh": "全微分",
+    "abbr": "",
+    "definition": "所有自变量的一阶变化线性和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "total differentiability",
+    "zh": "可微性（多元）",
+    "abbr": "",
+    "definition": "存在统一的线性主部"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "gradient",
+    "zh": "梯度",
+    "abbr": "",
+    "definition": "由各偏导数组成的向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "directional derivative",
+    "zh": "方向导数",
+    "abbr": "",
+    "definition": "沿指定方向的变化率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Jacobian matrix",
+    "zh": "雅可比矩阵",
+    "abbr": "",
+    "definition": "向量值函数的一阶偏导矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Jacobian determinant",
+    "zh": "雅可比行列式",
+    "abbr": "",
+    "definition": "方形雅可比矩阵的行列式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Hessian matrix",
+    "zh": "海森矩阵",
+    "abbr": "",
+    "definition": "标量函数的二阶偏导矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "mixed partial derivative",
+    "zh": "混合偏导数",
+    "abbr": "",
+    "definition": "对不同变量依次求偏导"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Clairaut's theorem / Schwarz's theorem",
+    "zh": "施瓦茨定理",
+    "abbr": "",
+    "definition": "条件满足时混合偏导可交换"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "tangent plane",
+    "zh": "切平面",
+    "abbr": "",
+    "definition": "曲面在一点的线性近似平面"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "normal vector",
+    "zh": "法向量",
+    "abbr": "",
+    "definition": "垂直于切平面的向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "implicit function theorem",
+    "zh": "隐函数定理",
+    "abbr": "",
+    "definition": "局部从方程组解出变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "inverse function theorem",
+    "zh": "反函数定理",
+    "abbr": "",
+    "definition": "局部可逆映射的判定定理"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "multivariable Taylor expansion",
+    "zh": "多元泰勒展开",
+    "abbr": "",
+    "definition": "多变量函数的局部多项式展开"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "double integral",
+    "zh": "二重积分",
+    "abbr": "",
+    "definition": "二维区域上的积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "triple integral",
+    "zh": "三重积分",
+    "abbr": "",
+    "definition": "三维区域上的积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "iterated integral",
+    "zh": "累次积分",
+    "abbr": "",
+    "definition": "按变量依次进行积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Fubini's theorem",
+    "zh": "富比尼定理",
+    "abbr": "",
+    "definition": "在适当条件下交换积分次序"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "polar coordinates",
+    "zh": "极坐标",
+    "abbr": "",
+    "definition": "用半径与角度表示平面位置"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "cylindrical coordinates",
+    "zh": "柱坐标",
+    "abbr": "",
+    "definition": "平面极坐标加高度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "spherical coordinates",
+    "zh": "球坐标",
+    "abbr": "",
+    "definition": "用径向距离与两个角定位"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "change-of-variables formula",
+    "zh": "变量替换公式",
+    "abbr": "",
+    "definition": "积分变量变换及雅可比因子"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "scalar line integral",
+    "zh": "第一类曲线积分",
+    "abbr": "",
+    "definition": "沿曲线对标量场积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "vector line integral",
+    "zh": "第二类曲线积分",
+    "abbr": "",
+    "definition": "沿曲线积分向量场的切向分量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "scalar surface integral",
+    "zh": "第一类曲面积分",
+    "abbr": "",
+    "definition": "对曲面标量场积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "flux integral",
+    "zh": "第二类曲面积分",
+    "abbr": "",
+    "definition": "向量场穿过定向曲面的通量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "vector field",
+    "zh": "向量场",
+    "abbr": "",
+    "definition": "每一点对应一个向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "scalar field",
+    "zh": "标量场",
+    "abbr": "",
+    "definition": "每一点对应一个标量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "divergence",
+    "zh": "散度",
+    "abbr": "",
+    "definition": "描述向量场局部源汇"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "curl",
+    "zh": "旋度",
+    "abbr": "",
+    "definition": "描述向量场的局部旋转"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "flux",
+    "zh": "通量",
+    "abbr": "",
+    "definition": "向量场穿过面的总效应"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "circulation",
+    "zh": "环流",
+    "abbr": "",
+    "definition": "向量场沿闭合路径的线积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "conservative vector field",
+    "zh": "保守场",
+    "abbr": "",
+    "definition": "路径积分可由势函数表示"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "potential function",
+    "zh": "势函数",
+    "abbr": "",
+    "definition": "梯度生成相应向量场的标量函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "path independence",
+    "zh": "路径无关性",
+    "abbr": "",
+    "definition": "线积分与路径选择无关"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Green's theorem",
+    "zh": "格林公式",
+    "abbr": "",
+    "definition": "平面边界线积分与区域积分相关"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "divergence theorem / Gauss's theorem",
+    "zh": "高斯散度定理",
+    "abbr": "",
+    "definition": "闭曲面的通量等于区域内散度积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "Stokes' theorem",
+    "zh": "斯托克斯定理",
+    "abbr": "",
+    "definition": "曲面的旋度通量等于边界环流"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "constrained extremum",
+    "zh": "约束极值",
+    "abbr": "",
+    "definition": "满足约束条件下的最值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 5,
+    "topic": "多元微积分与向量分析",
+    "en": "method of Lagrange multipliers",
+    "zh": "拉格朗日乘数法",
+    "abbr": "",
+    "definition": "利用约束梯度寻找驻点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "vector",
+    "zh": "向量",
+    "abbr": "",
+    "definition": "可加且可数乘的对象"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "zero vector",
+    "zh": "零向量",
+    "abbr": "",
+    "definition": "向量加法单位元"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "vector space",
+    "zh": "向量空间",
+    "abbr": "",
+    "definition": "满足线性运算公理的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "subspace",
+    "zh": "子空间",
+    "abbr": "",
+    "definition": "对线性运算封闭的子集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "linear combination",
+    "zh": "线性组合",
+    "abbr": "",
+    "definition": "向量的标量加权和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "linear dependence",
+    "zh": "线性相关",
+    "abbr": "",
+    "definition": "存在非零系数组合为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "linear independence",
+    "zh": "线性无关",
+    "abbr": "",
+    "definition": "只有零系数组合为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "span",
+    "zh": "张成",
+    "abbr": "",
+    "definition": "线性组合可得到的全部向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "basis",
+    "zh": "基",
+    "abbr": "",
+    "definition": "既线性无关又张成空间的向量组"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "dimension",
+    "zh": "维数",
+    "abbr": "",
+    "definition": "有限维空间基中的向量数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "coordinates",
+    "zh": "坐标",
+    "abbr": "",
+    "definition": "向量相对于基的系数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "change of basis",
+    "zh": "基变换",
+    "abbr": "",
+    "definition": "同一向量不同基下的坐标转换"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "linear transformation",
+    "zh": "线性变换",
+    "abbr": "",
+    "definition": "保持加法与数乘的映射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "linear operator",
+    "zh": "线性算子",
+    "abbr": "",
+    "definition": "从向量空间到自身的线性映射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "kernel / null space",
+    "zh": "核",
+    "abbr": "",
+    "definition": "被映射为零的向量集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "image / range of a linear map",
+    "zh": "像空间",
+    "abbr": "",
+    "definition": "线性映射输出所张成的子空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "rank",
+    "zh": "秩",
+    "abbr": "",
+    "definition": "线性映射像空间的维数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "nullity",
+    "zh": "核维数",
+    "abbr": "",
+    "definition": "线性变换核的维数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "rank-nullity theorem",
+    "zh": "秩—零度定理",
+    "abbr": "",
+    "definition": "秩与零度之和等于定义域维数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "matrix",
+    "zh": "矩阵",
+    "abbr": "",
+    "definition": "按行列排列的数或元素"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "row vector",
+    "zh": "行向量",
+    "abbr": "",
+    "definition": "只有一行的矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "column vector",
+    "zh": "列向量",
+    "abbr": "",
+    "definition": "只有一列的矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "square matrix",
+    "zh": "方阵",
+    "abbr": "",
+    "definition": "行数与列数相同的矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "identity matrix",
+    "zh": "单位矩阵",
+    "abbr": "",
+    "definition": "主对角为 1，其他为 0"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "zero matrix",
+    "zh": "零矩阵",
+    "abbr": "",
+    "definition": "所有元素为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "transpose",
+    "zh": "转置矩阵",
+    "abbr": "",
+    "definition": "行列互换得到的矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "conjugate transpose / Hermitian transpose",
+    "zh": "共轭转置",
+    "abbr": "",
+    "definition": "转置并逐项取复共轭"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "inverse matrix",
+    "zh": "逆矩阵",
+    "abbr": "",
+    "definition": "与原矩阵相乘得到单位矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "invertible matrix",
+    "zh": "可逆矩阵",
+    "abbr": "",
+    "definition": "存在双侧逆矩阵的方阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "elementary row operation",
+    "zh": "初等行变换",
+    "abbr": "",
+    "definition": "交换、缩放、倍加行"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "row echelon form",
+    "zh": "行阶梯形矩阵",
+    "abbr": "",
+    "definition": "主元位置呈阶梯排列"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "reduced row echelon form",
+    "zh": "简化行阶梯形矩阵",
+    "abbr": "",
+    "definition": "每个主元列除主元外均为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "Gaussian elimination",
+    "zh": "高斯消元法",
+    "abbr": "",
+    "definition": "通过行变换求解线性方程组"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "determinant",
+    "zh": "行列式",
+    "abbr": "",
+    "definition": "描述方阵体积缩放及可逆性"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "trace",
+    "zh": "迹",
+    "abbr": "",
+    "definition": "方阵对角线元素之和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "eigenvalue",
+    "zh": "特征值",
+    "abbr": "",
+    "definition": "满足 Av=λv 的标量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "eigenvector",
+    "zh": "特征向量",
+    "abbr": "",
+    "definition": "满足 Av=λv 的非零向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "characteristic polynomial",
+    "zh": "特征多项式",
+    "abbr": "",
+    "definition": "det(λI-A) 对应的多项式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "eigenspace",
+    "zh": "特征空间",
+    "abbr": "",
+    "definition": "给定特征值对应的特征向量与零向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "similar matrices",
+    "zh": "相似矩阵",
+    "abbr": "",
+    "definition": "通过可逆矩阵换基相联系"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "diagonalization",
+    "zh": "对角化",
+    "abbr": "",
+    "definition": "在适当基下化为对角矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "orthogonal vectors",
+    "zh": "正交向量",
+    "abbr": "",
+    "definition": "内积为零的向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "orthogonal matrix",
+    "zh": "正交矩阵",
+    "abbr": "",
+    "definition": "满足 QᵀQ=I 的实方阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "unitary matrix",
+    "zh": "酉矩阵",
+    "abbr": "",
+    "definition": "满足 U*U=I 的复方阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "symmetric matrix",
+    "zh": "对称矩阵",
+    "abbr": "",
+    "definition": "满足 Aᵀ=A 的实矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "Hermitian matrix",
+    "zh": "埃尔米特矩阵",
+    "abbr": "",
+    "definition": "满足 A*=A 的复矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "positive definite matrix",
+    "zh": "正定矩阵",
+    "abbr": "",
+    "definition": "非零向量满足 x*Ax>0 的 Hermitian 矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "inner product",
+    "zh": "内积",
+    "abbr": "",
+    "definition": "衡量长度与角度的双线性或半双线性结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "norm",
+    "zh": "范数",
+    "abbr": "",
+    "definition": "满足范数公理的长度度量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "Euclidean norm / 2-norm",
+    "zh": "欧几里得范数",
+    "abbr": "",
+    "definition": "向量分量平方和的平方根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "orthogonal projection",
+    "zh": "正交投影",
+    "abbr": "",
+    "definition": "沿正交方向投到子空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "Gram-Schmidt orthogonalization",
+    "zh": "格拉姆—施密特正交化",
+    "abbr": "",
+    "definition": "将无关向量组转为正交组"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "least squares method",
+    "zh": "最小二乘法",
+    "abbr": "",
+    "definition": "最小化残差平方和"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "singular value decomposition (SVD)",
+    "zh": "奇异值分解",
+    "abbr": "SVD",
+    "definition": "将矩阵分为 UΣV* 结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "singular value",
+    "zh": "奇异值",
+    "abbr": "",
+    "definition": "A*A 特征值的非负平方根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 6,
+    "topic": "线性代数与矩阵论",
+    "en": "spectral theorem",
+    "zh": "谱定理",
+    "abbr": "",
+    "definition": "自伴随或正规算子的谱分解结果"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "random experiment",
+    "zh": "随机试验",
+    "abbr": "",
+    "definition": "结果不确定但可重复描述的试验"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "sample space",
+    "zh": "样本空间",
+    "abbr": "",
+    "definition": "全部可能结果的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "sample point / outcome",
+    "zh": "样本点",
+    "abbr": "",
+    "definition": "样本空间中的单个结果"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "event",
+    "zh": "随机事件",
+    "abbr": "",
+    "definition": "样本空间的子集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "mutually exclusive events",
+    "zh": "互斥事件",
+    "abbr": "",
+    "definition": "不能同时发生的事件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "complementary event",
+    "zh": "对立事件",
+    "abbr": "",
+    "definition": "某事件的不发生"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "probability",
+    "zh": "概率",
+    "abbr": "",
+    "definition": "满足概率公理的测度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "classical probability",
+    "zh": "古典概率",
+    "abbr": "",
+    "definition": "等可能有限样本空间计数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "conditional probability",
+    "zh": "条件概率",
+    "abbr": "",
+    "definition": "在给定事件下的概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "law of total probability",
+    "zh": "全概率公式",
+    "abbr": "",
+    "definition": "用划分事件计算总体概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "Bayes' theorem",
+    "zh": "贝叶斯公式",
+    "abbr": "",
+    "definition": "条件概率反向更新公式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "independent events",
+    "zh": "独立事件",
+    "abbr": "",
+    "definition": "交事件概率等于概率乘积"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "random variable",
+    "zh": "随机变量",
+    "abbr": "",
+    "definition": "将随机结果映为数值的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "discrete random variable",
+    "zh": "离散型随机变量",
+    "abbr": "",
+    "definition": "取值可数的随机变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "continuous random variable",
+    "zh": "连续型随机变量",
+    "abbr": "",
+    "definition": "通常以密度描述分布的变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "probability mass function (PMF)",
+    "zh": "概率质量函数",
+    "abbr": "PMF",
+    "definition": "离散变量各取值概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "probability density function (PDF)",
+    "zh": "概率密度函数",
+    "abbr": "PDF",
+    "definition": "积分给出区间概率的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "cumulative distribution function (CDF)",
+    "zh": "累积分布函数",
+    "abbr": "CDF",
+    "definition": "F(x)=P(X≤x)"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "joint distribution",
+    "zh": "联合分布",
+    "abbr": "",
+    "definition": "多个随机变量的联合规律"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "marginal distribution",
+    "zh": "边缘分布",
+    "abbr": "",
+    "definition": "从联合分布得到单变量分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "conditional distribution",
+    "zh": "条件分布",
+    "abbr": "",
+    "definition": "给定部分变量后的分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "expected value / expectation",
+    "zh": "数学期望",
+    "abbr": "",
+    "definition": "随机变量按概率加权的平均"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "variance",
+    "zh": "方差",
+    "abbr": "",
+    "definition": "相对期望的平方偏差的期望"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "standard deviation",
+    "zh": "标准差",
+    "abbr": "",
+    "definition": "方差的非负平方根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "covariance",
+    "zh": "协方差",
+    "abbr": "",
+    "definition": "两个变量共同变化的度量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "correlation coefficient",
+    "zh": "相关系数",
+    "abbr": "",
+    "definition": "标准化的协方差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "moment",
+    "zh": "矩",
+    "abbr": "",
+    "definition": "随机变量幂的期望或中心化期望"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "moment-generating function (MGF)",
+    "zh": "矩母函数",
+    "abbr": "MGF",
+    "definition": "在存在时用于生成矩的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "characteristic function",
+    "zh": "特征函数（概率）",
+    "abbr": "",
+    "definition": "复指数期望，刻画概率分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "Bernoulli distribution",
+    "zh": "伯努利分布",
+    "abbr": "",
+    "definition": "仅取 0 与 1 的分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "binomial distribution",
+    "zh": "二项分布",
+    "abbr": "",
+    "definition": "独立伯努利试验成功次数分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "geometric distribution",
+    "zh": "几何分布",
+    "abbr": "",
+    "definition": "首次成功前后试验次数约定需注明"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "Poisson distribution",
+    "zh": "泊松分布",
+    "abbr": "",
+    "definition": "描述计数事件的离散分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "uniform distribution",
+    "zh": "均匀分布",
+    "abbr": "",
+    "definition": "区间内密度恒定的分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "exponential distribution",
+    "zh": "指数分布",
+    "abbr": "",
+    "definition": "常用于等待时间建模"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "normal / Gaussian distribution",
+    "zh": "正态分布",
+    "abbr": "",
+    "definition": "钟形曲线对应的连续分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "law of large numbers",
+    "zh": "大数定律",
+    "abbr": "",
+    "definition": "样本平均趋近总体期望的定理"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "central limit theorem (CLT)",
+    "zh": "中心极限定理",
+    "abbr": "CLT",
+    "definition": "适当标准化的和趋向正态分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "Chebyshev's inequality",
+    "zh": "切比雪夫不等式",
+    "abbr": "",
+    "definition": "利用方差约束偏离概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "Markov's inequality",
+    "zh": "马尔可夫不等式",
+    "abbr": "",
+    "definition": "约束非负随机变量尾概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "convergence in probability",
+    "zh": "依概率收敛",
+    "abbr": "",
+    "definition": "偏离极限超过阈值的概率趋零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "almost sure convergence",
+    "zh": "几乎处处收敛",
+    "abbr": "",
+    "definition": "除零概率集合外逐点收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 7,
+    "topic": "概率论与随机变量",
+    "en": "convergence in distribution",
+    "zh": "依分布收敛",
+    "abbr": "",
+    "definition": "分布函数在连续点上收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "population",
+    "zh": "总体",
+    "abbr": "",
+    "definition": "研究对象的完整集合或分布"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "sample",
+    "zh": "样本",
+    "abbr": "",
+    "definition": "从总体抽取的观测"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "random sample",
+    "zh": "随机样本",
+    "abbr": "",
+    "definition": "通常指独立同分布样本"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "sample size",
+    "zh": "样本量",
+    "abbr": "",
+    "definition": "样本观测的数量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "statistic",
+    "zh": "统计量",
+    "abbr": "",
+    "definition": "仅由样本计算的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "parameter",
+    "zh": "参数",
+    "abbr": "",
+    "definition": "刻画总体分布的未知量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "sample mean",
+    "zh": "样本均值",
+    "abbr": "",
+    "definition": "样本观测的算术平均"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "sample variance",
+    "zh": "样本方差",
+    "abbr": "",
+    "definition": "以 n-1 为分母的常用无偏形式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "sample standard deviation",
+    "zh": "样本标准差",
+    "abbr": "",
+    "definition": "样本方差平方根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "empirical distribution function (ECDF)",
+    "zh": "经验分布函数",
+    "abbr": "ECDF",
+    "definition": "样本中不超过 x 的比例"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "histogram",
+    "zh": "直方图",
+    "abbr": "",
+    "definition": "按区间统计频数或密度的图形"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "box plot",
+    "zh": "箱线图",
+    "abbr": "",
+    "definition": "显示四分位数与异常点的图形"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "quantile",
+    "zh": "分位数",
+    "abbr": "",
+    "definition": "对应指定累积概率的位置"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "median",
+    "zh": "中位数",
+    "abbr": "",
+    "definition": "0.5 分位数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "mode",
+    "zh": "众数",
+    "abbr": "",
+    "definition": "概率质量或密度较高的取值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "point estimation",
+    "zh": "点估计",
+    "abbr": "",
+    "definition": "用单个数估计未知参数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "interval estimation",
+    "zh": "区间估计",
+    "abbr": "",
+    "definition": "用随机区间估计参数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "estimator",
+    "zh": "估计量",
+    "abbr": "",
+    "definition": "用于估计参数的样本函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "estimate",
+    "zh": "估计值",
+    "abbr": "",
+    "definition": "估计量在样本上的具体结果"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "unbiased estimation",
+    "zh": "无偏估计",
+    "abbr": "",
+    "definition": "估计量期望等于目标参数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "consistency",
+    "zh": "一致性",
+    "abbr": "",
+    "definition": "样本增大时估计量趋近真参数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "efficiency",
+    "zh": "有效性",
+    "abbr": "",
+    "definition": "在指定准则下的估计精度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "maximum likelihood estimation (MLE)",
+    "zh": "最大似然估计",
+    "abbr": "MLE",
+    "definition": "最大化观测数据似然"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "method of moments",
+    "zh": "矩估计法",
+    "abbr": "",
+    "definition": "匹配样本矩与理论矩"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "sufficient statistic",
+    "zh": "充分统计量",
+    "abbr": "",
+    "definition": "保留参数相关全部样本信息"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "confidence interval (CI)",
+    "zh": "置信区间",
+    "abbr": "CI",
+    "definition": "具有指定长期覆盖率的构造区间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "confidence level",
+    "zh": "置信水平",
+    "abbr": "",
+    "definition": "区间过程的覆盖率目标"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "significance level",
+    "zh": "显著性水平",
+    "abbr": "",
+    "definition": "预先规定的一类错误上限"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "null hypothesis (H₀)",
+    "zh": "原假设",
+    "abbr": "",
+    "definition": "接受检验的基准假设"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "alternative hypothesis (H₁)",
+    "zh": "备择假设",
+    "abbr": "",
+    "definition": "与原假设相竞争的假设"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "test statistic",
+    "zh": "检验统计量",
+    "abbr": "",
+    "definition": "用于判断假设的统计量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "rejection region",
+    "zh": "拒绝域",
+    "abbr": "",
+    "definition": "统计量落入时拒绝原假设的区域"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "p-value",
+    "zh": "p 值",
+    "abbr": "",
+    "definition": "原假设下至少同样极端结果的概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "Type I error",
+    "zh": "第一类错误",
+    "abbr": "",
+    "definition": "原假设为真却拒绝它"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "Type II error",
+    "zh": "第二类错误",
+    "abbr": "",
+    "definition": "原假设为假却未拒绝它"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "statistical power",
+    "zh": "检验功效",
+    "abbr": "",
+    "definition": "正确拒绝错误原假设的概率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "t-test",
+    "zh": "t 检验",
+    "abbr": "",
+    "definition": "基于 t 分布的均值相关检验"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "chi-square test",
+    "zh": "卡方检验",
+    "abbr": "",
+    "definition": "常用于拟合优度或独立性检验"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "analysis of variance (ANOVA)",
+    "zh": "方差分析",
+    "abbr": "ANOVA",
+    "definition": "比较组均值的统计框架"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "regression analysis",
+    "zh": "回归分析",
+    "abbr": "",
+    "definition": "研究响应变量与解释变量关系"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "linear regression",
+    "zh": "线性回归",
+    "abbr": "",
+    "definition": "模型在参数上呈线性"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "residual",
+    "zh": "残差",
+    "abbr": "",
+    "definition": "观测值与拟合值之差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "coefficient of determination (R²)",
+    "zh": "决定系数",
+    "abbr": "",
+    "definition": "常用于衡量回归拟合优度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "overfitting",
+    "zh": "过拟合",
+    "abbr": "",
+    "definition": "训练样本拟合好但泛化差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 8,
+    "topic": "数理统计与数据分析",
+    "en": "cross-validation",
+    "zh": "交叉验证",
+    "abbr": "",
+    "definition": "通过样本划分评估模型表现"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "differential equation",
+    "zh": "微分方程",
+    "abbr": "",
+    "definition": "含未知函数及其导数的方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "ordinary differential equation (ODE)",
+    "zh": "常微分方程",
+    "abbr": "ODE",
+    "definition": "未知函数仅依赖一个自变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "order of a differential equation",
+    "zh": "方程的阶",
+    "abbr": "",
+    "definition": "出现的最高阶导数阶数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "linear differential equation",
+    "zh": "线性微分方程",
+    "abbr": "",
+    "definition": "未知函数及其导数线性出现"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "nonlinear differential equation",
+    "zh": "非线性微分方程",
+    "abbr": "",
+    "definition": "不满足线性结构的方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "homogeneous linear equation",
+    "zh": "齐次线性方程",
+    "abbr": "",
+    "definition": "线性方程右端为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "nonhomogeneous linear equation",
+    "zh": "非齐次线性方程",
+    "abbr": "",
+    "definition": "线性方程具有非零外力项"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "general solution",
+    "zh": "通解",
+    "abbr": "",
+    "definition": "包含任意常数的解族"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "particular solution",
+    "zh": "特解",
+    "abbr": "",
+    "definition": "满足指定条件的具体解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "initial value problem (IVP)",
+    "zh": "初值问题",
+    "abbr": "IVP",
+    "definition": "给定某时刻函数状态"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "boundary value problem (BVP)",
+    "zh": "边值问题",
+    "abbr": "BVP",
+    "definition": "给定不同边界位置的条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "separable differential equation",
+    "zh": "可分离变量方程",
+    "abbr": "",
+    "definition": "可分为函数与自变量两侧"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "first-order linear ODE",
+    "zh": "一阶线性方程",
+    "abbr": "",
+    "definition": "一阶未知函数线性方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "integrating factor",
+    "zh": "积分因子",
+    "abbr": "",
+    "definition": "使方程成为可直接积分形式的因子"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "Bernoulli differential equation",
+    "zh": "伯努利微分方程",
+    "abbr": "",
+    "definition": "可经变量替换线性化的一阶方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "exact differential equation",
+    "zh": "恰当微分方程",
+    "abbr": "",
+    "definition": "对应某势函数的全微分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "characteristic equation",
+    "zh": "特征方程",
+    "abbr": "",
+    "definition": "用于常系数线性 ODE 求解的代数方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "constant-coefficient differential equation",
+    "zh": "常系数微分方程",
+    "abbr": "",
+    "definition": "系数为常数的线性方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "homogeneous solution",
+    "zh": "齐次解",
+    "abbr": "",
+    "definition": "对应齐次方程的解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "superposition principle",
+    "zh": "特解叠加",
+    "abbr": "",
+    "definition": "线性系统解的叠加性质"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "variation of parameters",
+    "zh": "参数变易法",
+    "abbr": "",
+    "definition": "利用齐次解构造非齐次特解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "method of undetermined coefficients",
+    "zh": "待定系数法",
+    "abbr": "",
+    "definition": "针对特定外力型猜测特解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "Laplace transform",
+    "zh": "拉普拉斯变换",
+    "abbr": "",
+    "definition": "将微分问题转换到复频域"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "existence and uniqueness theorem",
+    "zh": "存在唯一性定理",
+    "abbr": "",
+    "definition": "保证初值问题局部解的条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "Picard-Lindelöf theorem",
+    "zh": "皮卡—林德勒夫定理",
+    "abbr": "",
+    "definition": "利用局部 Lipschitz 条件的存在唯一性"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "phase plane",
+    "zh": "相平面",
+    "abbr": "",
+    "definition": "二维自治系统状态所在平面"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "equilibrium point",
+    "zh": "平衡点",
+    "abbr": "",
+    "definition": "系统演化时保持不变的状态"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "stability",
+    "zh": "稳定性",
+    "abbr": "",
+    "definition": "扰动后解是否保持附近"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "asymptotic stability",
+    "zh": "渐近稳定性",
+    "abbr": "",
+    "definition": "扰动后轨道逐渐回到平衡点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 9,
+    "topic": "常微分方程与动力系统",
+    "en": "Lyapunov function",
+    "zh": "李雅普诺夫函数",
+    "abbr": "",
+    "definition": "用于判断动力系统稳定性"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "complex number",
+    "zh": "复数",
+    "abbr": "",
+    "definition": "形如 a+bi 的数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "real part",
+    "zh": "实部",
+    "abbr": "",
+    "definition": "复数的实系数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "imaginary part",
+    "zh": "虚部",
+    "abbr": "",
+    "definition": "复数的虚系数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "imaginary unit",
+    "zh": "虚数单位",
+    "abbr": "",
+    "definition": "满足 i²=-1 的单位"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "complex conjugate",
+    "zh": "复共轭",
+    "abbr": "",
+    "definition": "a+bi 变为 a-bi"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "modulus / absolute value",
+    "zh": "模",
+    "abbr": "",
+    "definition": "复平面到原点的距离"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "argument",
+    "zh": "辐角",
+    "abbr": "",
+    "definition": "复数对应的方向角"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "principal argument",
+    "zh": "主辐角",
+    "abbr": "",
+    "definition": "选定角度区间内的辐角"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "polar form",
+    "zh": "极形式",
+    "abbr": "",
+    "definition": "复数的模与角表示"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "Euler's formula",
+    "zh": "欧拉公式",
+    "abbr": "",
+    "definition": "e^(iθ)=cosθ+i sinθ"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "complex plane",
+    "zh": "复平面",
+    "abbr": "",
+    "definition": "以实部、虚部为坐标的平面"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "complex-valued function",
+    "zh": "复函数",
+    "abbr": "",
+    "definition": "输出为复数的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "analytic function",
+    "zh": "解析函数",
+    "abbr": "",
+    "definition": "局部可由收敛幂级数表示"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "holomorphic function",
+    "zh": "全纯函数",
+    "abbr": "",
+    "definition": "复开集上处处复可导"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "entire function",
+    "zh": "整函数",
+    "abbr": "",
+    "definition": "整个复平面全纯的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "Cauchy-Riemann equations",
+    "zh": "柯西—黎曼方程",
+    "abbr": "",
+    "definition": "复可导的必要条件之一"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "Cauchy's integral theorem",
+    "zh": "柯西积分定理",
+    "abbr": "",
+    "definition": "适当条件下闭路积分为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "Cauchy's integral formula",
+    "zh": "柯西积分公式",
+    "abbr": "",
+    "definition": "通过边界积分求内部函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "complex contour integral",
+    "zh": "复路径积分",
+    "abbr": "",
+    "definition": "沿复平面路径的积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "closed contour",
+    "zh": "闭路",
+    "abbr": "",
+    "definition": "起点和终点重合的路径"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "simply connected domain",
+    "zh": "单连通区域",
+    "abbr": "",
+    "definition": "任意闭路可连续收缩为一点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "isolated singularity",
+    "zh": "孤立奇点",
+    "abbr": "",
+    "definition": "邻域穿孔后全纯的异常点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "removable singularity",
+    "zh": "可去奇点",
+    "abbr": "",
+    "definition": "可通过延拓消除的奇点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "pole",
+    "zh": "极点",
+    "abbr": "",
+    "definition": "函数在该处呈有限阶负幂发散"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "essential singularity",
+    "zh": "本性奇点",
+    "abbr": "",
+    "definition": "既非极点也非可去的孤立奇点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "residue",
+    "zh": "留数",
+    "abbr": "",
+    "definition": "洛朗级数中 (z-z₀)^(-1) 项系数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "residue theorem",
+    "zh": "留数定理",
+    "abbr": "",
+    "definition": "闭路积分可由留数和计算"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "Laurent series",
+    "zh": "洛朗级数",
+    "abbr": "",
+    "definition": "含正幂与负幂的局部展开"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "analytic continuation",
+    "zh": "解析延拓",
+    "abbr": "",
+    "definition": "将解析函数扩展到更大区域"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "conformal map",
+    "zh": "保角映射",
+    "abbr": "",
+    "definition": "局部保持角度的映射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "maximum modulus principle",
+    "zh": "最大模原理",
+    "abbr": "",
+    "definition": "非常值全纯函数模无法在内部取局部极大"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 10,
+    "topic": "复变函数与复分析",
+    "en": "argument principle",
+    "zh": "幅角原理",
+    "abbr": "",
+    "definition": "用对数导数积分计数零点与极点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "completeness",
+    "zh": "完备性",
+    "abbr": "",
+    "definition": "柯西列在空间内收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Cauchy sequence",
+    "zh": "柯西列",
+    "abbr": "",
+    "definition": "充分靠后的各项任意接近"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "limit point / accumulation point",
+    "zh": "极限点",
+    "abbr": "",
+    "definition": "任意邻域有不同于该点的集合点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "closure",
+    "zh": "闭包",
+    "abbr": "",
+    "definition": "集合与其全部极限点组成的最小闭集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "interior",
+    "zh": "内部",
+    "abbr": "",
+    "definition": "所有内点组成的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "boundary",
+    "zh": "边界",
+    "abbr": "",
+    "definition": "每个邻域都同时接触集合与其补集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "open set",
+    "zh": "开集",
+    "abbr": "",
+    "definition": "每点都有包含于该集合的邻域"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "closed set",
+    "zh": "闭集",
+    "abbr": "",
+    "definition": "其补集为开集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "compactness",
+    "zh": "紧致性",
+    "abbr": "",
+    "definition": "每个开覆盖有有限子覆盖"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Heine-Borel theorem",
+    "zh": "海涅—博雷尔定理",
+    "abbr": "",
+    "definition": "欧氏空间中闭且有界等价于紧致"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "uniform continuity",
+    "zh": "一致连续",
+    "abbr": "",
+    "definition": "连续性中的 δ 不依赖于选点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "uniform convergence",
+    "zh": "一致收敛",
+    "abbr": "",
+    "definition": "对整个定义域统一控制误差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "pointwise convergence",
+    "zh": "逐点收敛",
+    "abbr": "",
+    "definition": "每个固定自变量处收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "sequence of functions",
+    "zh": "函数列",
+    "abbr": "",
+    "definition": "按指标排列的一列函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "series of functions",
+    "zh": "函数项级数",
+    "abbr": "",
+    "definition": "各项为函数的无穷级数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Weierstrass M-test",
+    "zh": "魏尔斯特拉斯判别法",
+    "abbr": "",
+    "definition": "用收敛数项级数证明一致收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Lipschitz continuity",
+    "zh": "利普希茨连续",
+    "abbr": "",
+    "definition": "函数值差由距离的常数倍控制"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "measure",
+    "zh": "测度",
+    "abbr": "",
+    "definition": "对集合大小进行可列可加的赋值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "measurable set",
+    "zh": "可测集",
+    "abbr": "",
+    "definition": "属于给定 σ-代数的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "sigma-algebra",
+    "zh": "σ-代数",
+    "abbr": "",
+    "definition": "对补与可数并封闭的集合族"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Lebesgue measure",
+    "zh": "勒贝格测度",
+    "abbr": "",
+    "definition": "扩展长度、面积和体积的测度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Lebesgue integral",
+    "zh": "勒贝格积分",
+    "abbr": "",
+    "definition": "按函数取值分层定义的积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "almost everywhere (a.e.)",
+    "zh": "几乎处处",
+    "abbr": "",
+    "definition": "除零测集外成立"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "measure-zero set / null set",
+    "zh": "零测集",
+    "abbr": "",
+    "definition": "测度等于零的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "dominated convergence theorem",
+    "zh": "控制收敛定理",
+    "abbr": "",
+    "definition": "由可积控制函数推出极限与积分交换"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "monotone convergence theorem",
+    "zh": "单调收敛定理",
+    "abbr": "",
+    "definition": "非负递增可测函数的积分极限定理"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "normed space",
+    "zh": "赋范空间",
+    "abbr": "",
+    "definition": "定义了范数的线性空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Banach space",
+    "zh": "巴拿赫空间",
+    "abbr": "",
+    "definition": "完备的赋范线性空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "Hilbert space",
+    "zh": "希尔伯特空间",
+    "abbr": "",
+    "definition": "完备的内积空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "bounded linear operator",
+    "zh": "有界线性算子",
+    "abbr": "",
+    "definition": "具有有限算子范数的线性算子"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "dual space",
+    "zh": "对偶空间",
+    "abbr": "",
+    "definition": "连续线性泛函组成的空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "weak convergence",
+    "zh": "弱收敛",
+    "abbr": "",
+    "definition": "通过连续线性泛函检验的收敛"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 11,
+    "topic": "实分析、测度与泛函分析",
+    "en": "operator norm",
+    "zh": "算子范数",
+    "abbr": "",
+    "definition": "线性算子的最大放大率"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "algebraic structure",
+    "zh": "代数结构",
+    "abbr": "",
+    "definition": "带有特定运算及公理的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "binary operation",
+    "zh": "二元运算",
+    "abbr": "",
+    "definition": "从两个输入产生一个输出的运算"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "closure under an operation",
+    "zh": "封闭性",
+    "abbr": "",
+    "definition": "运算结果仍属于原集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "associative law",
+    "zh": "结合律",
+    "abbr": "",
+    "definition": "改变括号不改变结果"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "commutative law",
+    "zh": "交换律",
+    "abbr": "",
+    "definition": "交换运算对象不改变结果"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "identity element",
+    "zh": "单位元",
+    "abbr": "",
+    "definition": "与任意元素运算不改变它"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "inverse element",
+    "zh": "逆元",
+    "abbr": "",
+    "definition": "与给定元素运算得到单位元"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "group",
+    "zh": "群",
+    "abbr": "",
+    "definition": "满足群公理的集合及运算"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "Abelian group",
+    "zh": "阿贝尔群",
+    "abbr": "",
+    "definition": "运算可交换的群"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "subgroup",
+    "zh": "子群",
+    "abbr": "",
+    "definition": "本身也构成群的子集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "cyclic group",
+    "zh": "循环群",
+    "abbr": "",
+    "definition": "由单个元素生成的群"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "coset",
+    "zh": "陪集",
+    "abbr": "",
+    "definition": "子群经群元素平移的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "normal subgroup",
+    "zh": "正规子群",
+    "abbr": "",
+    "definition": "左右陪集相等的子群"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "quotient group",
+    "zh": "商群",
+    "abbr": "",
+    "definition": "由正规子群陪集形成的群"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "group homomorphism",
+    "zh": "群同态",
+    "abbr": "",
+    "definition": "保持群运算的映射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "group isomorphism",
+    "zh": "群同构",
+    "abbr": "",
+    "definition": "可逆的群同态"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "Lagrange's theorem",
+    "zh": "拉格朗日定理（群论）",
+    "abbr": "",
+    "definition": "有限群中子群阶整除群阶"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "ring",
+    "zh": "环",
+    "abbr": "",
+    "definition": "具有加法与乘法运算的代数结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "commutative ring",
+    "zh": "交换环",
+    "abbr": "",
+    "definition": "乘法满足交换律的环"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "integral domain",
+    "zh": "整环",
+    "abbr": "",
+    "definition": "无零因子的交换含幺环"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "field",
+    "zh": "域",
+    "abbr": "",
+    "definition": "非零元素对乘法可逆的交换环"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "ideal",
+    "zh": "理想",
+    "abbr": "",
+    "definition": "对环乘法吸收的加法子群"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "quotient ring",
+    "zh": "商环",
+    "abbr": "",
+    "definition": "用理想定义同余类的环"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "polynomial ring",
+    "zh": "多项式环",
+    "abbr": "",
+    "definition": "系数在给定环中的多项式结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "scalar field",
+    "zh": "向量空间的标量域",
+    "abbr": "",
+    "definition": "决定向量数乘系数的域"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "greatest common divisor (GCD)",
+    "zh": "最大公因数",
+    "abbr": "GCD",
+    "definition": "同时整除若干整数的最大正整数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "least common multiple (LCM)",
+    "zh": "最小公倍数",
+    "abbr": "LCM",
+    "definition": "若干整数的最小正公倍数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "congruence modulo n",
+    "zh": "同余",
+    "abbr": "",
+    "definition": "整数之差被模数整除"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "modular arithmetic",
+    "zh": "模运算",
+    "abbr": "",
+    "definition": "按余数进行的运算"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "prime number",
+    "zh": "素数",
+    "abbr": "",
+    "definition": "大于 1 且只有两个正因子的整数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "Euclidean algorithm",
+    "zh": "欧几里得算法",
+    "abbr": "",
+    "definition": "利用带余除法求最大公因数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "Chinese remainder theorem (CRT)",
+    "zh": "中国剩余定理",
+    "abbr": "CRT",
+    "definition": "特定同余方程组的求解定理"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 12,
+    "topic": "抽象代数与数论基础",
+    "en": "Fermat's little theorem",
+    "zh": "费马小定理",
+    "abbr": "",
+    "definition": "素数模意义下的幂同余关系"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "Euclidean space",
+    "zh": "欧几里得空间",
+    "abbr": "",
+    "definition": "具有标准距离和内积的空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "affine space",
+    "zh": "仿射空间",
+    "abbr": "",
+    "definition": "可做点差与向量平移的空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "convex set",
+    "zh": "凸集",
+    "abbr": "",
+    "definition": "任意两点之间线段都在集合内"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "convex hull",
+    "zh": "凸包",
+    "abbr": "",
+    "definition": "包含给定集合的最小凸集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "affine subspace",
+    "zh": "线性流形（仿射子空间）",
+    "abbr": "",
+    "definition": "向量子空间的平移"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "metric space",
+    "zh": "度量空间",
+    "abbr": "",
+    "definition": "定义了距离函数的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "metric / distance function",
+    "zh": "度量",
+    "abbr": "",
+    "definition": "满足非负、对称、三角不等式等"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "neighborhood",
+    "zh": "邻域",
+    "abbr": "",
+    "definition": "包含某开球的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "topological space",
+    "zh": "拓扑空间",
+    "abbr": "",
+    "definition": "给定开集族的集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "continuous map",
+    "zh": "连续映射",
+    "abbr": "",
+    "definition": "开集的原像仍为开集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "homeomorphism",
+    "zh": "同胚",
+    "abbr": "",
+    "definition": "具有连续逆映射的双射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "connectedness",
+    "zh": "连通性",
+    "abbr": "",
+    "definition": "空间不能分成两个不交非空开集"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "path connectedness",
+    "zh": "道路连通",
+    "abbr": "",
+    "definition": "任意两点可用连续路径连接"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "product topology",
+    "zh": "积拓扑",
+    "abbr": "",
+    "definition": "乘积空间上的自然拓扑"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "quotient topology",
+    "zh": "商拓扑",
+    "abbr": "",
+    "definition": "通过识别点构造的拓扑"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "manifold",
+    "zh": "流形",
+    "abbr": "",
+    "definition": "局部类似欧氏空间的空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "smooth manifold",
+    "zh": "光滑流形",
+    "abbr": "",
+    "definition": "配备相容光滑坐标图的流形"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "coordinate chart",
+    "zh": "坐标图",
+    "abbr": "",
+    "definition": "流形局部到欧氏空间的坐标映射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "tangent space",
+    "zh": "切空间",
+    "abbr": "",
+    "definition": "一点处可行方向组成的向量空间"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "tangent vector",
+    "zh": "切向量",
+    "abbr": "",
+    "definition": "切空间中的向量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "Riemannian metric",
+    "zh": "黎曼度量",
+    "abbr": "",
+    "definition": "切空间上的平滑内积族"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "geodesic",
+    "zh": "测地线",
+    "abbr": "",
+    "definition": "在几何结构下局部直的曲线"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "surface",
+    "zh": "曲面",
+    "abbr": "",
+    "definition": "局部呈二维的几何对象"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "Gaussian curvature",
+    "zh": "高斯曲率",
+    "abbr": "",
+    "definition": "曲面两个主曲率的乘积"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "mean curvature",
+    "zh": "平均曲率",
+    "abbr": "",
+    "definition": "主曲率的算术平均"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "differential form",
+    "zh": "微分形式",
+    "abbr": "",
+    "definition": "可对定向几何对象积分的反对称张量场"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "exterior derivative",
+    "zh": "外微分",
+    "abbr": "",
+    "definition": "将 k-形式映到 (k+1)-形式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "fundamental group",
+    "zh": "基本群",
+    "abbr": "",
+    "definition": "由基点闭路的同伦类组成的群"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 13,
+    "topic": "几何、拓扑与流形",
+    "en": "homotopy",
+    "zh": "同伦",
+    "abbr": "",
+    "definition": "连续变形一条映射到另一条映射"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "numerical error",
+    "zh": "数值误差",
+    "abbr": "",
+    "definition": "近似值与目标值的偏差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "absolute error",
+    "zh": "绝对误差",
+    "abbr": "",
+    "definition": "误差的绝对值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "relative error",
+    "zh": "相对误差",
+    "abbr": "",
+    "definition": "误差相对于真值尺度的比例"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "truncation error",
+    "zh": "截断误差",
+    "abbr": "",
+    "definition": "截断无限过程引入的误差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "round-off error",
+    "zh": "舍入误差",
+    "abbr": "",
+    "definition": "有限精度数值表示造成的误差"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "machine epsilon",
+    "zh": "机器精度",
+    "abbr": "",
+    "definition": "浮点数中可分辨的相对间隔尺度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "floating-point number",
+    "zh": "浮点数",
+    "abbr": "",
+    "definition": "通过尾数与指数近似表示实数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "numerical stability",
+    "zh": "数值稳定性",
+    "abbr": "",
+    "definition": "算法对误差扰动的放大程度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "condition number",
+    "zh": "条件数",
+    "abbr": "",
+    "definition": "问题解对输入扰动的敏感程度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "ill-conditioned problem",
+    "zh": "病态问题",
+    "abbr": "",
+    "definition": "微小输入扰动可能造成巨大输出变化"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "iterative method",
+    "zh": "迭代法",
+    "abbr": "",
+    "definition": "重复更新近似解的方法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "bisection method",
+    "zh": "二分法",
+    "abbr": "",
+    "definition": "对有符号变化区间反复折半求根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "secant method",
+    "zh": "割线法",
+    "abbr": "",
+    "definition": "以两点割线近似切线求根"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "fixed-point iteration",
+    "zh": "不动点迭代",
+    "abbr": "",
+    "definition": "迭代 x=g(x) 的形式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "order of convergence",
+    "zh": "收敛阶",
+    "abbr": "",
+    "definition": "迭代误差减小的速率等级"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "linear convergence",
+    "zh": "线性收敛",
+    "abbr": "",
+    "definition": "误差大致按固定比例下降"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "quadratic convergence",
+    "zh": "二次收敛",
+    "abbr": "",
+    "definition": "下一步误差大致与当前误差平方成正比"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "interpolation",
+    "zh": "插值",
+    "abbr": "",
+    "definition": "构造通过已知数据点的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "Lagrange interpolation",
+    "zh": "拉格朗日插值",
+    "abbr": "",
+    "definition": "用基多项式构造插值多项式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "Newton interpolation",
+    "zh": "牛顿插值",
+    "abbr": "",
+    "definition": "使用差商形式构造插值多项式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "piecewise interpolation",
+    "zh": "分段插值",
+    "abbr": "",
+    "definition": "在不同区间使用不同插值函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "spline interpolation",
+    "zh": "样条插值",
+    "abbr": "",
+    "definition": "用分段多项式满足平滑衔接条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "numerical integration / quadrature",
+    "zh": "数值积分",
+    "abbr": "",
+    "definition": "用离散加权求和近似积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "trapezoidal rule",
+    "zh": "梯形公式",
+    "abbr": "",
+    "definition": "用线性插值近似积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "Simpson's rule",
+    "zh": "辛普森公式",
+    "abbr": "",
+    "definition": "用二次插值近似积分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "Gaussian quadrature",
+    "zh": "高斯求积",
+    "abbr": "",
+    "definition": "优化节点和权重的求积公式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "numerical differentiation",
+    "zh": "数值微分",
+    "abbr": "",
+    "definition": "用离散函数值近似导数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "finite difference",
+    "zh": "有限差分",
+    "abbr": "",
+    "definition": "以相邻数值之差代替导数信息"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "forward difference",
+    "zh": "前向差分",
+    "abbr": "",
+    "definition": "利用前方节点构造差分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "central difference",
+    "zh": "中心差分",
+    "abbr": "",
+    "definition": "利用两侧节点构造差分"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "Euler's method",
+    "zh": "欧拉方法",
+    "abbr": "",
+    "definition": "求解 ODE 的一阶步进方法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "Runge-Kutta method",
+    "zh": "龙格—库塔法",
+    "abbr": "",
+    "definition": "利用多次斜率评估的 ODE 积分方法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "finite element method (FEM)",
+    "zh": "有限元法",
+    "abbr": "FEM",
+    "definition": "用分片基函数离散连续问题"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "finite volume method (FVM)",
+    "zh": "有限体积法",
+    "abbr": "FVM",
+    "definition": "对控制体积实施守恒离散"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "conjugate gradient method (CG)",
+    "zh": "共轭梯度法",
+    "abbr": "CG",
+    "definition": "求解特定对称正定线性系统"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "LU decomposition",
+    "zh": "LU 分解",
+    "abbr": "",
+    "definition": "矩阵分解为下三角与上三角矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 14,
+    "topic": "数值分析与科学计算",
+    "en": "QR decomposition",
+    "zh": "QR 分解",
+    "abbr": "",
+    "definition": "矩阵分解为正交（酉）与上三角矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "objective function",
+    "zh": "目标函数",
+    "abbr": "",
+    "definition": "待最小化或最大化的函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "feasible region / feasible set",
+    "zh": "可行域",
+    "abbr": "",
+    "definition": "满足全部约束的解集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "constraint",
+    "zh": "约束条件",
+    "abbr": "",
+    "definition": "限制候选解的条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "unconstrained optimization",
+    "zh": "无约束优化",
+    "abbr": "",
+    "definition": "不带显式限制的最优化"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "constrained optimization",
+    "zh": "约束优化",
+    "abbr": "",
+    "definition": "具有等式或不等式约束的优化"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "local optimum",
+    "zh": "局部最优解",
+    "abbr": "",
+    "definition": "某邻域内的最优解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "global optimum",
+    "zh": "全局最优解",
+    "abbr": "",
+    "definition": "整个可行域上的最优解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "convex function",
+    "zh": "凸函数",
+    "abbr": "",
+    "definition": "函数值不超过连接两点函数值的线性插值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "strictly convex function",
+    "zh": "严格凸函数",
+    "abbr": "",
+    "definition": "对不同点的凸性不等式严格成立"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "convex optimization",
+    "zh": "凸优化",
+    "abbr": "",
+    "definition": "凸目标在凸可行域上求最小值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "first-order optimality condition",
+    "zh": "一阶最优性条件",
+    "abbr": "",
+    "definition": "基于梯度或方向导数的必要条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "second-order optimality condition",
+    "zh": "二阶最优性条件",
+    "abbr": "",
+    "definition": "基于 Hessian 的最优性条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "Lagrangian",
+    "zh": "拉格朗日函数",
+    "abbr": "",
+    "definition": "将目标函数与约束按乘子组合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "dual problem",
+    "zh": "对偶问题",
+    "abbr": "",
+    "definition": "由原问题构造的相关优化问题"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "weak duality",
+    "zh": "弱对偶性",
+    "abbr": "",
+    "definition": "对偶目标对原问题给出界"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "strong duality",
+    "zh": "强对偶性",
+    "abbr": "",
+    "definition": "原问题与对偶问题最优值相等"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "Karush-Kuhn-Tucker (KKT) conditions",
+    "zh": "KKT 条件",
+    "abbr": "KKT",
+    "definition": "含驻点、可行性及互补条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "complementary slackness",
+    "zh": "互补松弛",
+    "abbr": "",
+    "definition": "约束松弛量与乘子乘积为零"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "gradient descent",
+    "zh": "梯度下降法",
+    "abbr": "",
+    "definition": "沿负梯度方向更新变量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "stochastic gradient descent (SGD)",
+    "zh": "随机梯度下降",
+    "abbr": "SGD",
+    "definition": "用随机梯度近似更新"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "learning rate / step size",
+    "zh": "学习率",
+    "abbr": "",
+    "definition": "每次迭代的更新幅度"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "Newton's method for optimization",
+    "zh": "牛顿优化法",
+    "abbr": "",
+    "definition": "利用 Hessian 的二阶优化方法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "quasi-Newton method",
+    "zh": "拟牛顿法",
+    "abbr": "",
+    "definition": "近似 Hessian 或其逆的迭代方法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "line search",
+    "zh": "线搜索",
+    "abbr": "",
+    "definition": "沿搜索方向选择步长"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "projected gradient method",
+    "zh": "梯度投影法",
+    "abbr": "",
+    "definition": "迭代后投影回可行集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "linear programming (LP)",
+    "zh": "线性规划",
+    "abbr": "LP",
+    "definition": "线性目标和线性约束的优化"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "integer programming (IP)",
+    "zh": "整数规划",
+    "abbr": "IP",
+    "definition": "部分或全部变量被限制为整数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "simplex method",
+    "zh": "单纯形法",
+    "abbr": "",
+    "definition": "在线性规划顶点间搜索"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "interior-point method",
+    "zh": "内点法",
+    "abbr": "",
+    "definition": "从可行域内部逼近优化解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "sensitivity analysis",
+    "zh": "敏感性分析",
+    "abbr": "",
+    "definition": "分析输入变化对最优解的影响"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "dynamic programming",
+    "zh": "动态规划",
+    "abbr": "",
+    "definition": "通过最优子结构递推求解"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 15,
+    "topic": "最优化与运筹学",
+    "en": "Bellman equation",
+    "zh": "贝尔曼方程",
+    "abbr": "",
+    "definition": "刻画最优价值函数的递推等式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "counting principle",
+    "zh": "计数原理",
+    "abbr": "",
+    "definition": "确定对象数量的基本规则"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "addition principle",
+    "zh": "加法原理",
+    "abbr": "",
+    "definition": "不重叠情形数相加"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "multiplication principle",
+    "zh": "乘法原理",
+    "abbr": "",
+    "definition": "连续选择的情形数相乘"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "permutation",
+    "zh": "排列",
+    "abbr": "",
+    "definition": "考虑顺序的元素安排"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "combination",
+    "zh": "组合",
+    "abbr": "",
+    "definition": "不考虑顺序的元素选取"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "factorial",
+    "zh": "阶乘",
+    "abbr": "",
+    "definition": "从 1 到 n 的整数连乘"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "binomial coefficient",
+    "zh": "二项式系数",
+    "abbr": "",
+    "definition": "组合数 C(n,k)"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "binomial theorem",
+    "zh": "二项式定理",
+    "abbr": "",
+    "definition": "二项式整数幂的展开定理"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "inclusion-exclusion principle",
+    "zh": "容斥原理",
+    "abbr": "",
+    "definition": "通过交集修正并集计数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "pigeonhole principle",
+    "zh": "鸽巢原理",
+    "abbr": "",
+    "definition": "对象多于容器则某容器至少有两个"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "recurrence relation",
+    "zh": "递推关系",
+    "abbr": "",
+    "definition": "用先前项定义后续项"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "generating function",
+    "zh": "生成函数",
+    "abbr": "",
+    "definition": "用形式幂级数编码数列"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "graph",
+    "zh": "图",
+    "abbr": "",
+    "definition": "由顶点与边组成的结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "vertex",
+    "zh": "顶点",
+    "abbr": "",
+    "definition": "图中的节点"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "edge",
+    "zh": "边",
+    "abbr": "",
+    "definition": "连接两个顶点的对象"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "directed graph / digraph",
+    "zh": "有向图",
+    "abbr": "",
+    "definition": "每条边有方向的图"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "undirected graph",
+    "zh": "无向图",
+    "abbr": "",
+    "definition": "边不带方向的图"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "weighted graph",
+    "zh": "加权图",
+    "abbr": "",
+    "definition": "边或顶点具有权重的图"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "degree",
+    "zh": "度",
+    "abbr": "",
+    "definition": "与一个顶点关联的边的数量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "path",
+    "zh": "路径",
+    "abbr": "",
+    "definition": "按边依次连接的顶点序列"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "cycle",
+    "zh": "回路",
+    "abbr": "",
+    "definition": "首尾相连的非平凡路径结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "connected graph",
+    "zh": "连通图",
+    "abbr": "",
+    "definition": "任意两顶点之间存在路径"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "tree",
+    "zh": "树",
+    "abbr": "",
+    "definition": "连通且无回路的无向图"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "spanning tree",
+    "zh": "生成树",
+    "abbr": "",
+    "definition": "覆盖全部顶点的子树"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "minimum spanning tree (MST)",
+    "zh": "最小生成树",
+    "abbr": "MST",
+    "definition": "总权重最小的生成树"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "shortest path",
+    "zh": "最短路径",
+    "abbr": "",
+    "definition": "两顶点间总权重最小的路径"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "Eulerian circuit",
+    "zh": "欧拉回路",
+    "abbr": "",
+    "definition": "每条边恰经过一次的闭合迹"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "Hamiltonian cycle",
+    "zh": "哈密顿回路",
+    "abbr": "",
+    "definition": "每个顶点恰经过一次的回路"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "adjacency matrix",
+    "zh": "邻接矩阵",
+    "abbr": "",
+    "definition": "编码顶点之间边关系的矩阵"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "adjacency list",
+    "zh": "邻接表",
+    "abbr": "",
+    "definition": "按顶点列出邻接节点的数据结构"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "graph coloring",
+    "zh": "图着色",
+    "abbr": "",
+    "definition": "使相邻顶点满足颜色差异条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "bipartite graph",
+    "zh": "二分图",
+    "abbr": "",
+    "definition": "顶点可分成两组且边只跨组连接"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "matching",
+    "zh": "匹配",
+    "abbr": "",
+    "definition": "任意两条边不共享端点的边集合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 16,
+    "topic": "离散数学、组合与图论",
+    "en": "maximum flow",
+    "zh": "最大流",
+    "abbr": "",
+    "definition": "满足容量约束的最大网络流量"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "partial differential equation (PDE)",
+    "zh": "偏微分方程",
+    "abbr": "PDE",
+    "definition": "含多个自变量的未知函数偏导数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "first-order PDE",
+    "zh": "一阶偏微分方程",
+    "abbr": "",
+    "definition": "最高偏导阶数为 1 的方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "second-order PDE",
+    "zh": "二阶偏微分方程",
+    "abbr": "",
+    "definition": "最高偏导阶数为 2 的方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "elliptic PDE",
+    "zh": "椭圆型方程",
+    "abbr": "",
+    "definition": "二阶 PDE 的一种类型"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "parabolic PDE",
+    "zh": "抛物型方程",
+    "abbr": "",
+    "definition": "二阶 PDE 的一种类型"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "hyperbolic PDE",
+    "zh": "双曲型方程",
+    "abbr": "",
+    "definition": "二阶 PDE 的一种类型"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Laplace's equation",
+    "zh": "拉普拉斯方程",
+    "abbr": "",
+    "definition": "满足 Δu=0 的方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Poisson's equation",
+    "zh": "泊松方程",
+    "abbr": "",
+    "definition": "满足 Δu=f（符号约定可异）的方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "heat equation",
+    "zh": "热传导方程",
+    "abbr": "",
+    "definition": "描述扩散过程的 PDE"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "wave equation",
+    "zh": "波动方程",
+    "abbr": "",
+    "definition": "描述振动与波传播的 PDE"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "diffusion equation",
+    "zh": "扩散方程",
+    "abbr": "",
+    "definition": "描述物质或热量扩散"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "initial condition",
+    "zh": "初始条件",
+    "abbr": "",
+    "definition": "指定初始时刻的状态"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "boundary condition",
+    "zh": "边界条件",
+    "abbr": "",
+    "definition": "指定空间边界上的条件"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Dirichlet boundary condition",
+    "zh": "狄利克雷边界条件",
+    "abbr": "",
+    "definition": "指定边界上的函数值"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Neumann boundary condition",
+    "zh": "诺伊曼边界条件",
+    "abbr": "",
+    "definition": "指定边界法向导数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Robin boundary condition",
+    "zh": "罗宾边界条件",
+    "abbr": "",
+    "definition": "函数值与法向导数的线性组合"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "separation of variables",
+    "zh": "分离变量法",
+    "abbr": "",
+    "definition": "试将解写为各变量函数的乘积"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "weak solution",
+    "zh": "弱解",
+    "abbr": "",
+    "definition": "在积分或分布意义下满足方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "classical solution",
+    "zh": "经典解",
+    "abbr": "",
+    "definition": "具有足够导数并逐点满足方程"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Green's function",
+    "zh": "格林函数",
+    "abbr": "",
+    "definition": "反映单位源响应的核函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Fourier transform",
+    "zh": "傅里叶变换",
+    "abbr": "",
+    "definition": "将函数表示到频率域"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "inverse Fourier transform",
+    "zh": "傅里叶逆变换",
+    "abbr": "",
+    "definition": "从频域表示恢复原函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "spectrum / frequency spectrum",
+    "zh": "频谱",
+    "abbr": "",
+    "definition": "信号频率成分的描述"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "convolution",
+    "zh": "卷积",
+    "abbr": "",
+    "definition": "通过平移乘积积分组合两个函数"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "convolution theorem",
+    "zh": "卷积定理",
+    "abbr": "",
+    "definition": "卷积在变换域转为乘法"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Parseval's identity",
+    "zh": "帕塞瓦尔恒等式",
+    "abbr": "",
+    "definition": "时域与频域能量之间的等式"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Plancherel's theorem",
+    "zh": "普朗歇雷尔定理",
+    "abbr": "",
+    "definition": "傅里叶变换在 L² 上保持范数（适当归一化）"
+  },
+  {
+    "category": "university-mathematics",
+    "chapter": 17,
+    "topic": "偏微分方程与傅里叶分析",
+    "en": "Dirac delta distribution",
+    "zh": "狄拉克 delta 分布",
+    "abbr": "",
+    "definition": "广义函数中的单位点源"
   }
 ]
