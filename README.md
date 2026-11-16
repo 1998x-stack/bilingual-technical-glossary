@@ -38,7 +38,11 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Apache Kafka | Apache Kafka / 事件流平台 | 283 | 16 | [Read](glossaries/apache-kafka.md) | [Download](pdf/apache-kafka.pdf) |
 | Data Structures | 数据结构 | 352 | 14 | [Read](glossaries/data-structures.md) | [Download](pdf/data-structures.pdf) |
 | Linux | Linux 操作系统 | 394 | 16 | [Read](glossaries/linux.md) | [Download](pdf/linux.pdf) |
-| **Total** | **16 domains** | **5,730** | **239** | | |
+| Operating Systems | 操作系统 | 396 | 18 | [Read](glossaries/operating-systems.md) | [Download](pdf/operating-systems.pdf) |
+| SQL Database | SQL 数据库 | 394 | 13 | [Read](glossaries/sql-database.md) | [Download](pdf/sql-database.pdf) |
+| Python | Python 编程语言 | 429 | 16 | [Read](glossaries/python.md) | [Download](pdf/python.pdf) |
+| Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
+| **Total** | **20 domains** | **7,349** | **301** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -53,14 +57,14 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 > **Data provenance.** The Kafka volume contributes 283 original, fully indexed terms in 16 chapters, with curated Markdown and searchable PDF editions.  The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless. The Machine Learning volume adds 447 independently authored entries across 19 topics, with matching Markdown and searchable PDF. Linux adds 394 fully indexed terms from its original Markdown, with 16 chapters and 18 concept comparisons; a searchable PDF is available.
 
-## Python handbook
+## Newly indexed handbooks
 
-The [Python English–Chinese glossary](glossaries/python.md) (429 terms, 16 chapters) and its [PDF print edition](pdf/python.pdf) are published in this repository. The searchable index integration is tracked separately in [PR #13](https://github.com/1998x-stack/bilingual-technical-glossary/pull/13).
+Operating Systems (396), SQL Database (394), Python (429) and Junior High School Mathematics (400) are now included in the searchable index; authored Markdown and PDFs remain preserved.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **239 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **301 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.

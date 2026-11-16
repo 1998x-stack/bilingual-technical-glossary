@@ -22,6 +22,10 @@ CATALOG=[
  ('apache-kafka','Apache Kafka','Apache Kafka / 事件流平台','Event streaming, KRaft, partitions, consumers, transactions and Streams','network'),
  ('data-structures','Data Structures','数据结构','Arrays, lists, hashing, trees, graphs and advanced structures','network'),
  ('linux','Linux','Linux 操作系统','Kernel, processes, memory, networking, containers and performance','terminal'),
+ ('operating-systems','Operating Systems','操作系统','Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization','server'),
+ ('sql-database','SQL Database','SQL 数据库','Relational modeling, SQL syntax, indexes, optimizers, transactions and operations','database'),
+ ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
+ ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -62,6 +66,8 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel'):
+   continue  # Preserve independently authored Markdown and appendices.
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
   if slug=='linux': continue  # Preserve independently authored Linux Markdown and appendix.

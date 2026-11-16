@@ -142,5 +142,41 @@
     "icon": "terminal",
     "count": 394,
     "topics": 16
+  },
+  {
+    "slug": "operating-systems",
+    "en": "Operating Systems",
+    "zh": "操作系统",
+    "description": "Processes, scheduling, concurrency, memory, file systems, security, Linux and virtualization",
+    "icon": "server",
+    "count": 396,
+    "topics": 18
+  },
+  {
+    "slug": "sql-database",
+    "en": "SQL Database",
+    "zh": "SQL 数据库",
+    "description": "Relational modeling, SQL syntax, indexes, optimizers, transactions and operations",
+    "icon": "database",
+    "count": 394,
+    "topics": 13
+  },
+  {
+    "slug": "python",
+    "en": "Python",
+    "zh": "Python 编程语言",
+    "description": "Language, runtime, data model, typing, packaging and performance",
+    "icon": "code",
+    "count": 429,
+    "topics": 16
+  },
+  {
+    "slug": "junior-high-mathematics",
+    "en": "Junior High School Mathematics",
+    "zh": "初中数学",
+    "description": "Grade 7–9 numbers, algebra, functions, geometry, statistics and probability",
+    "icon": "triangle",
+    "count": 400,
+    "topics": 15
   }
 ]

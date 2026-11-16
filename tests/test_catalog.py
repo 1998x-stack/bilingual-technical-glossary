@@ -4,6 +4,12 @@ from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'data/terms.json').read_text(encoding='utf8'))
 class CatalogTests(unittest.TestCase):
+ def test_reconciled_domains(self):
+  expected={'operating-systems':(396,18),'sql-database':(394,13),'python':(429,16),'junior-high-mathematics':(400,15)}
+  for slug,(count,chapters) in expected.items():
+   rows=[t for t in DATA if t['category']==slug]
+   self.assertEqual(len(rows),count,slug)
+   self.assertEqual(len({t['chapter'] for t in rows}),chapters,slug)
  def test_compiler_domain(self):
   self.assertIn('compiler-principles',{t['category'] for t in DATA})
   self.assertGreaterEqual(len({t['category'] for t in DATA}),9)
