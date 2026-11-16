@@ -17,6 +17,7 @@ CATALOG=[
  ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
  ('apache-kafka','Apache Kafka','Apache Kafka / 事件流平台','Event streaming, KRaft, partitions, consumers, transactions and Streams','network'),
+ ('parallel-computing','Parallel Computing','并行计算','Parallel architecture, algorithms, communication, scalability, MPI and HPC','cpu'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -53,6 +54,9 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
+  if slug == 'parallel-computing':
+   # Independently authored handbook; preserve original Markdown and PDF layout.
+   continue
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
   entries=[x for x in data if x['category']==slug]
   groups=defaultdict(list)

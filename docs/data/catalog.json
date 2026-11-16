@@ -97,5 +97,14 @@
     "icon": "network",
     "count": 283,
     "topics": 16
+  },
+  {
+    "slug": "parallel-computing",
+    "en": "Parallel Computing",
+    "zh": "并行计算",
+    "description": "Parallel algorithm design, communication, performance, MPI, OpenMP, GPU and HPC",
+    "icon": "cpu",
+    "count": 205,
+    "topics": 12
   }
 ]
