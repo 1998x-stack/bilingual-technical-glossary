@@ -10,7 +10,7 @@ python -m playwright install --with-deps chromium
 python -m unittest discover -s e2e -v
 ```
 
-The independent GitHub Actions workflow `.github/workflows/browser-e2e.yml` runs on pull requests, main changes affecting the website and manual dispatch. Screenshots are attached as CI artifacts.
+The browser job runs on **ubuntu-24.04** (not the floating `ubuntu-latest` runner), because the pinned Playwright 1.56.0 Chromium build is not compatible with Ubuntu 26.04. The independent GitHub Actions workflow `.github/workflows/browser-e2e.yml` runs on pull requests, main changes affecting the website and manual dispatch. Screenshots are attached as CI artifacts.
 
 ## Scenarios
 

@@ -50,10 +50,11 @@ class ExplorerBrowserTests(unittest.TestCase):
         self.page.on("pageerror",lambda error:self.errors.append(str(error)))
 
     def tearDown(self):
-        if self._outcome and not self._outcome.success:
-            self.page.screenshot(path=str(ARTIFACTS/(self._testMethodName+"-failure.png")),full_page=True)
-        self.assertEqual(self.errors,[],"JavaScript errors found")
-        self.context.close()
+        try:
+            self.page.screenshot(path=str(ARTIFACTS/(self._testMethodName+".png")),full_page=True)
+            self.assertEqual(self.errors,[],"JavaScript errors found")
+        finally:
+            self.context.close()
 
     def home(self,category):
         self.page.goto(f"{self.base}/?category={category}#explorer")
