@@ -30,6 +30,7 @@ CATALOG=[
  ('python','Python','Python 编程语言','Language, runtime, data model, typing, packaging and performance','code'),
  ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
  ('parallel-computing','Parallel Computing','并行计算','Parallel algorithm design, communication, performance, MPI, OpenMP, GPU and HPC','cpu'),
+ ('signal-processing','Signal Processing','信号处理','Signals, sampling, transforms, spectral analysis, digital filters and real-time DSP','sigma'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -66,6 +67,23 @@ def merge_high_school(data):
  from render_high_school_pdf import load_terms
  return [t for t in data if t['category']!='high-school-mathematics']+load_terms(ROOT/'data/high-school-mathematics.tsv')
 
+def merge_signal_processing(data):
+ # Canonical Signal Processing vocabulary source.
+ src=ROOT/'data/signal-processing.tsv';topic='';chapter=0;added=[]
+ for lineno,line in enumerate(src.read_text(encoding='utf8').splitlines(),1):
+  if not line.strip():continue
+  if line.startswith('# '):
+   chapter+=1;topic=line[2:].strip();continue
+  values=[p.strip() for p in line.split('|')]
+  if len(values)!=4 or not topic or not values[0] or not values[1] or not values[3]:
+   raise ValueError(f'Invalid signal processing source record at line {lineno}')
+  en,zh,abbr,definition=values
+  added.append(dict(category='signal-processing',chapter=chapter,topic=topic,
+                    en=en,zh=zh,abbr=abbr,definition=definition))
+ if len(added)!=295 or chapter!=18:
+  raise ValueError(f'Signal Processing should have 295 terms and 18 topics; got {len(added)} and {chapter}')
+ return [item for item in data if item['category']!='signal-processing']+added
+
 def merge_computer_networks(data):
  from ingest_computer_networks import load_records
  additions=load_records(ROOT/'data/computer-networks.tsv')
@@ -91,7 +109,7 @@ def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
-  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing', 'cpp'):
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing', 'cpp', 'signal-processing'):
    continue  # Preserve independently authored Markdown and appendices.
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
@@ -182,6 +200,7 @@ def run():
  data=merge_entries(data)
  data=merge_computer_networks(data)
  data=merge_cpp(data)
+ data=merge_signal_processing(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):

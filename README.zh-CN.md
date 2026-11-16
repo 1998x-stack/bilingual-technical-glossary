@@ -36,7 +36,8 @@
 | C++ 编程语言 / C++ Programming Language | 357 | 16 | [阅读](glossaries/cpp.md) | [下载](pdf/cpp.pdf) |
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
 | 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
-| **合计** | **8,594** | **363** | | |
+| 信号处理 / Signal Processing | 295 | 18 | [阅读](glossaries/signal-processing.md) | [下载](pdf/signal-processing.pdf) |
+| **合计** | **8,889** | **381** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -59,6 +60,10 @@
 ## 离散数学 / Discrete Mathematics
 
 本卷收录 **324 条术语、16 个专题**，覆盖逻辑与证明、集合与关系、计数原理、离散概率、递推、数论、图论、树、布尔代数及自动机与复杂性。同步提供 [可编辑 TSV](data/discrete-mathematics.tsv)、[Markdown](glossaries/discrete-mathematics.md)、[可检索 PDF](pdf/discrete-mathematics.pdf) 与网站全文搜索。
+
+## 信号处理专题
+
+新增 **295 条信号处理专业术语、18 个专题与 12 组易混概念辨析**，覆盖信号与系统、傅里叶分析、采样定理、DFT/FFT、数字滤波、随机信号、谱估计、小波与阵列处理。相关 TSV、Markdown、PDF 与网站检索均已同步准备。
 
 ## 新增全文检索学科
 

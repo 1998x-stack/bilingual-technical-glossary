@@ -46,7 +46,8 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | C++ Programming Language | C++ 编程语言 | 357 | 16 | [Read](glossaries/cpp.md) | [Download](pdf/cpp.pdf) |
 | Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
 | Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
-| **Total** | **24 domains** | **8,594** | **363** | | |
+| Signal Processing | 信号处理 | 295 | 18 | [Read](glossaries/signal-processing.md) | [Download](pdf/signal-processing.pdf) |
+| **Total** | **25 domains** | **8,889** | **381** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -68,6 +69,10 @@ The Computer Networks edition adds **359 independently curated terms across 18 c
 
 The discrete mathematics handbook includes **324 independently curated terms in 16 topics**, ranging from proof and logic to combinatorics, number theory, graph algorithms and computational complexity. Edit the [canonical TSV source](data/discrete-mathematics.tsv); browse the [Markdown](glossaries/discrete-mathematics.md) or [searchable PDF](pdf/discrete-mathematics.pdf). Every term is included in the website search index.
 
+## Signal Processing / 信号处理
+
+The Signal Processing handbook adds **295 independently authored bilingual terms in 18 chapters**, with **12 concept contrasts**. Topics include Fourier transforms, sampling, DFT/FFT, filters, spectral estimation, wavelets, communications and DSP engineering. It is published as editable TSV, Markdown, searchable PDF and website search data.
+
 ## Newly indexed handbooks
 
 Operating Systems (396), SQL Database (394), Python (429), Junior High School Mathematics (400) and Parallel Computing (205) are now included in the searchable index; authored Markdown and PDFs remain preserved.
@@ -75,7 +80,7 @@ Operating Systems (396), SQL Database (394), Python (429), Junior High School Ma
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **363 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **381 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
