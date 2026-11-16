@@ -75,6 +75,18 @@ class ExplorerBrowserTests(unittest.TestCase):
         self.assertNotIn("Batch",self.page.locator("main").inner_text())
         self.page.screenshot(path=str(ARTIFACTS/"desktop-wiki.png"),full_page=True)
 
+    def test_new_distributed_training_article_is_published_in_explorer(self):
+        self.home("ai-infrastructure")
+        self.page.locator("#search-input").fill("distributed data parallel")
+        match=self.page.locator("#terms-body tr").first
+        expect(match.locator("a.term-english")).to_have_text("Distributed Data Parallel")
+        match.locator("a.term-english").click()
+        expect(self.page.get_by_role("heading",name="Distributed Data Parallel",level=1)).to_be_visible()
+        expect(self.page.locator("#detail-state")).to_have_text("专业解析")
+        expect(self.page.get_by_role("heading",name=re.compile("中等难度考试题"),level=2)).to_be_visible()
+        expect(self.page.locator("#wiki-article a[href^='https://']").first).to_be_visible()
+        self.assertNotIn("Batch 03",self.page.locator("main").inner_text())
+
     def test_unwritten_wiki_is_honestly_short_definition(self):
         self.home("reinforcement-learning")
         self.page.locator("#terms-body tr").first.locator("a.term-chinese").click()

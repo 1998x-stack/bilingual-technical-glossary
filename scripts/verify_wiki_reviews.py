@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """P1 human-attested Wiki review gate + automated evidence warning inventory.
 
-All 40 existing articles begin pending; passing this check DOES NOT mean
+All published articles begin pending; passing this check DOES NOT mean
 expert-reviewed. A verified review needs a human handle, date, content hash,
 specific claim/evidence pairs and a checked-example attestation.
 """
