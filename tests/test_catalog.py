@@ -7,6 +7,10 @@ class CatalogTests(unittest.TestCase):
  def test_compiler_domain(self):
   self.assertIn('compiler-principles',{t['category'] for t in DATA})
   self.assertGreaterEqual(len({t['category'] for t in DATA}),9)
+ def test_machine_learning_volume(self):
+  ml=[t for t in DATA if t['category']=='machine-learning']
+  self.assertEqual(len(ml),447)
+  self.assertEqual(len(set(t['chapter'] for t in ml)),19)
  def test_required_fields(self):
   for t in DATA:
    for field in ['category','chapter','topic','en','zh','abbr','definition']:

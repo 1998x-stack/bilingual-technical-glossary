@@ -32390,5 +32390,4028 @@
     "zh": "毒丸消息（非正式）",
     "abbr": "",
     "definition": "持续触发下游解析或处理失败的异常记录。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Machine Learning (ML)",
+    "zh": "机器学习",
+    "abbr": "ML",
+    "definition": "从数据中学习规律，用于预测、决策或生成的技术总称。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Artificial Intelligence (AI)",
+    "zh": "人工智能",
+    "abbr": "AI",
+    "definition": "研究和构建表现出智能行为的系统的广泛领域。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Statistical Learning",
+    "zh": "统计学习",
+    "abbr": "",
+    "definition": "以统计理论刻画从样本到预测规则的学习过程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Supervised Learning",
+    "zh": "监督学习",
+    "abbr": "",
+    "definition": "利用带目标标签的样本学习输入到输出的映射。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Unsupervised Learning",
+    "zh": "无监督学习",
+    "abbr": "",
+    "definition": "在无目标标签数据中发现结构、分组或表征。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Semi-supervised Learning",
+    "zh": "半监督学习",
+    "abbr": "",
+    "definition": "结合少量有标签与大量无标签数据进行学习。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Self-supervised Learning",
+    "zh": "自监督学习",
+    "abbr": "",
+    "definition": "从数据自身构造监督信号进行表征学习。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Reinforcement Learning (RL)",
+    "zh": "强化学习",
+    "abbr": "RL",
+    "definition": "通过与环境交互、根据奖励学习行动策略。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Online Learning",
+    "zh": "在线学习",
+    "abbr": "",
+    "definition": "样本持续到来时增量更新模型的学习方式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Offline Learning / Batch Learning",
+    "zh": "离线学习／批量学习",
+    "abbr": "",
+    "definition": "先汇集数据，再分批训练模型的方式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Active Learning",
+    "zh": "主动学习",
+    "abbr": "",
+    "definition": "模型主动选择最值得人工标注的样本。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Transfer Learning",
+    "zh": "迁移学习",
+    "abbr": "",
+    "definition": "将源任务或领域所学知识应用于新任务。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Multi-task Learning",
+    "zh": "多任务学习",
+    "abbr": "",
+    "definition": "联合训练相关任务，以共享有益的表征。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Meta-learning",
+    "zh": "元学习",
+    "abbr": "",
+    "definition": "学习如何更快适应新的任务或训练设置。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Few-shot Learning",
+    "zh": "少样本学习",
+    "abbr": "",
+    "definition": "仅使用少量示例完成新任务的学习方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Zero-shot Learning",
+    "zh": "零样本学习",
+    "abbr": "",
+    "definition": "不依赖目标类别的训练样本完成预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Domain Adaptation",
+    "zh": "领域自适应",
+    "abbr": "",
+    "definition": "减小训练域与目标域分布差异带来的影响。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Inductive Learning",
+    "zh": "归纳学习",
+    "abbr": "",
+    "definition": "从训练样本学习可推广到未知样本的规则。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Transductive Learning",
+    "zh": "直推学习",
+    "abbr": "",
+    "definition": "针对给定的未标注目标样本进行推断。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Generative Model",
+    "zh": "生成模型",
+    "abbr": "",
+    "definition": "学习数据分布，支持采样或生成数据。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Discriminative Model",
+    "zh": "判别模型",
+    "abbr": "",
+    "definition": "学习类别边界或条件预测关系。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Predictive Modeling",
+    "zh": "预测建模",
+    "abbr": "",
+    "definition": "构建用于预测未知结果的统计或机器学习模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Representation Learning",
+    "zh": "表征学习",
+    "abbr": "",
+    "definition": "自动学习适合下游任务的数据表示。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 1,
+    "topic": "基础概念与学习范式",
+    "en": "Foundation Model",
+    "zh": "基础模型",
+    "abbr": "",
+    "definition": "在广泛数据上预训练、可适配多种任务的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Dataset",
+    "zh": "数据集",
+    "abbr": "",
+    "definition": "用于训练、验证或评估的样本集合。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Sample / Instance",
+    "zh": "样本／实例",
+    "abbr": "",
+    "definition": "数据集中一次观测或一个数据对象。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Observation",
+    "zh": "观测",
+    "abbr": "",
+    "definition": "被记录的数据测量或事件。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Feature",
+    "zh": "特征",
+    "abbr": "",
+    "definition": "作为模型输入的可测量属性或变量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Target / Label",
+    "zh": "目标变量／标签",
+    "abbr": "",
+    "definition": "希望模型预测或解释的值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Ground Truth",
+    "zh": "真实标注／参考真值",
+    "abbr": "",
+    "definition": "用作训练或评估依据的可信参考标签。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Feature Matrix (X)",
+    "zh": "特征矩阵",
+    "abbr": "",
+    "definition": "以样本为行、特征为列的输入矩阵。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Target Vector (y)",
+    "zh": "目标向量",
+    "abbr": "",
+    "definition": "与样本对应的预测目标序列。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Training Set",
+    "zh": "训练集",
+    "abbr": "",
+    "definition": "用于拟合模型参数的数据部分。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Validation Set",
+    "zh": "验证集",
+    "abbr": "",
+    "definition": "用于模型选择、调参与监控训练的数据部分。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Test Set",
+    "zh": "测试集",
+    "abbr": "",
+    "definition": "用于最终估计泛化表现的保留数据部分。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Holdout Set",
+    "zh": "留出集",
+    "abbr": "",
+    "definition": "从训练过程中隔离，用于独立评估的数据。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Train–Test Split",
+    "zh": "训练测试划分",
+    "abbr": "",
+    "definition": "将样本划分成用于训练和评估的子集。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Stratified Sampling",
+    "zh": "分层抽样",
+    "abbr": "",
+    "definition": "按类别等分层因素保持分布比例的抽样方式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Group Split",
+    "zh": "分组划分",
+    "abbr": "",
+    "definition": "保证同一组的样本不会跨训练与测试划分。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Temporal Split",
+    "zh": "时间划分",
+    "abbr": "",
+    "definition": "按照时间先后进行数据划分，减少未来信息泄漏。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Cross-validation (CV)",
+    "zh": "交叉验证",
+    "abbr": "CV",
+    "definition": "重复划分训练和验证数据以评估模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "K-fold Cross-validation",
+    "zh": "K 折交叉验证",
+    "abbr": "",
+    "definition": "将数据分成 K 份，轮流用一份验证。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Stratified K-fold",
+    "zh": "分层 K 折交叉验证",
+    "abbr": "",
+    "definition": "每折尽量维持类别比例的 K 折验证。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Leave-one-out CV (LOOCV)",
+    "zh": "留一交叉验证",
+    "abbr": "LOOCV",
+    "definition": "每次留一个样本作验证，其余样本训练。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Out-of-fold Prediction (OOF)",
+    "zh": "折外预测",
+    "abbr": "OOF",
+    "definition": "在样本未参与对应模型训练的折上产生预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Data Leakage",
+    "zh": "数据泄漏",
+    "abbr": "",
+    "definition": "训练时不当使用评估集或未来信息造成评估虚高。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Label Leakage",
+    "zh": "标签泄漏",
+    "abbr": "",
+    "definition": "特征包含了预测时不可获得的目标信息。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Sampling Bias",
+    "zh": "抽样偏差",
+    "abbr": "",
+    "definition": "样本选取机制导致数据不代表目标总体。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Class Imbalance",
+    "zh": "类别不平衡",
+    "abbr": "",
+    "definition": "不同类别的样本数量差异明显。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Missing Value",
+    "zh": "缺失值",
+    "abbr": "",
+    "definition": "某项特征的观测值未被记录。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Outlier",
+    "zh": "离群点",
+    "abbr": "",
+    "definition": "相对主要数据分布显著偏离的观测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 2,
+    "topic": "数据、样本与数据集划分",
+    "en": "Data Annotation",
+    "zh": "数据标注",
+    "abbr": "",
+    "definition": "为原始数据提供类别、边界或其他监督信息。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Data Cleaning",
+    "zh": "数据清洗",
+    "abbr": "",
+    "definition": "修正重复、缺失、错误或不一致的数据。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Data Preprocessing",
+    "zh": "数据预处理",
+    "abbr": "",
+    "definition": "模型训练前的清洗、变换和编码流程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Feature Engineering",
+    "zh": "特征工程",
+    "abbr": "",
+    "definition": "设计、构造和处理能改善模型表现的特征。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Feature Extraction",
+    "zh": "特征提取",
+    "abbr": "",
+    "definition": "将原始数据变换为更有用的特征表示。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Feature Selection",
+    "zh": "特征选择",
+    "abbr": "",
+    "definition": "从候选特征中选择相关、有效的子集。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Imputation",
+    "zh": "缺失值填补",
+    "abbr": "",
+    "definition": "用规则或模型估计缺失的数据值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Mean Imputation",
+    "zh": "均值填补",
+    "abbr": "",
+    "definition": "使用已观测数值的均值替代缺失值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Standardization",
+    "zh": "标准化",
+    "abbr": "",
+    "definition": "常指减均值后除以标准差的数值变换。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Normalization",
+    "zh": "归一化",
+    "abbr": "",
+    "definition": "按约定尺度变换数据；具体含义依场景而异。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Min–Max Scaling",
+    "zh": "最小最大缩放",
+    "abbr": "",
+    "definition": "将特征线性映射到指定值域。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Robust Scaling",
+    "zh": "稳健缩放",
+    "abbr": "",
+    "definition": "利用中位数和分位距减弱异常值影响。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "One-hot Encoding",
+    "zh": "独热编码",
+    "abbr": "",
+    "definition": "将类别编码为只有对应位置为 1 的向量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Ordinal Encoding",
+    "zh": "序数编码",
+    "abbr": "",
+    "definition": "将类别映射为有顺序的整数值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Target Encoding",
+    "zh": "目标编码",
+    "abbr": "",
+    "definition": "利用目标统计量表示类别，需要防止数据泄漏。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Label Encoding",
+    "zh": "标签编码",
+    "abbr": "",
+    "definition": "将离散标签映射为整数编码。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Binning / Discretization",
+    "zh": "分箱／离散化",
+    "abbr": "",
+    "definition": "将连续变量划分为有限个区间。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Polynomial Features",
+    "zh": "多项式特征",
+    "abbr": "",
+    "definition": "通过原特征的幂与交互项扩展输入。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Interaction Feature",
+    "zh": "交互特征",
+    "abbr": "",
+    "definition": "表征两个或多个变量联合作用的特征。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Log Transformation",
+    "zh": "对数变换",
+    "abbr": "",
+    "definition": "以对数压缩长尾分布或较大数值范围。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Box–Cox Transformation",
+    "zh": "Box–Cox 变换",
+    "abbr": "",
+    "definition": "对正值数据使用参数化幂变换。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Feature Hashing",
+    "zh": "特征哈希",
+    "abbr": "",
+    "definition": "通过哈希将高维离散特征映射到固定维度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Bag of Words (BoW)",
+    "zh": "词袋模型",
+    "abbr": "",
+    "definition": "以词出现情况或频次表征文本。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "TF–IDF",
+    "zh": "词频-逆文档频率",
+    "abbr": "",
+    "definition": "衡量词在文档中的重要性并抑制常见词。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Embedding",
+    "zh": "嵌入向量",
+    "abbr": "",
+    "definition": "将对象映射为连续、低维或稠密的数值表示。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Sparse Feature",
+    "zh": "稀疏特征",
+    "abbr": "",
+    "definition": "取零值或缺失状态的比例很高的特征。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Dense Feature",
+    "zh": "稠密特征",
+    "abbr": "",
+    "definition": "多数维度都有有效数值的特征。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Data Augmentation",
+    "zh": "数据增强",
+    "abbr": "",
+    "definition": "通过合理变换样本扩充训练数据多样性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Resampling",
+    "zh": "重采样",
+    "abbr": "",
+    "definition": "改变样本选择或重复使用方式以调整数据分布。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "SMOTE",
+    "zh": "合成少数类过采样技术",
+    "abbr": "",
+    "definition": "在特征空间合成少数类样本以缓解不平衡。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 3,
+    "topic": "数据预处理与特征工程",
+    "en": "Pipeline",
+    "zh": "流水线",
+    "abbr": "",
+    "definition": "串联预处理和预测器并统一训练、推断的流程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Empirical Risk",
+    "zh": "经验风险",
+    "abbr": "",
+    "definition": "模型在训练样本上的平均损失。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Expected Risk",
+    "zh": "期望风险",
+    "abbr": "",
+    "definition": "模型在目标数据分布上的期望损失。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Empirical Risk Minimization (ERM)",
+    "zh": "经验风险最小化",
+    "abbr": "ERM",
+    "definition": "通过最小化训练数据上的损失选择模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Structural Risk Minimization (SRM)",
+    "zh": "结构风险最小化",
+    "abbr": "SRM",
+    "definition": "在拟合误差之外控制模型复杂度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Generalization",
+    "zh": "泛化",
+    "abbr": "",
+    "definition": "模型对未见样本保持有效表现的能力。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Generalization Gap",
+    "zh": "泛化差距",
+    "abbr": "",
+    "definition": "训练指标与验证或测试指标之间的差异。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Overfitting",
+    "zh": "过拟合",
+    "abbr": "",
+    "definition": "模型过度记忆训练样本，未见样本表现下降。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Underfitting",
+    "zh": "欠拟合",
+    "abbr": "",
+    "definition": "模型表达能力或训练程度不足，难以捕获规律。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Bias–Variance Tradeoff",
+    "zh": "偏差-方差权衡",
+    "abbr": "",
+    "definition": "模型偏差与对样本变化敏感度之间的折中。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Inductive Bias",
+    "zh": "归纳偏置",
+    "abbr": "",
+    "definition": "学习算法为了推广到新样本而采用的先验假设。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Regularization",
+    "zh": "正则化",
+    "abbr": "",
+    "definition": "通过约束或惩罚降低过拟合风险。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "L1 Regularization",
+    "zh": "L1 正则化",
+    "abbr": "",
+    "definition": "惩罚参数绝对值之和，可促进稀疏性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "L2 Regularization",
+    "zh": "L2 正则化",
+    "abbr": "",
+    "definition": "惩罚参数平方和，倾向于缩小参数幅度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Elastic Net Regularization",
+    "zh": "弹性网络正则化",
+    "abbr": "",
+    "definition": "组合 L1 与 L2 惩罚的正则化方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Model Complexity",
+    "zh": "模型复杂度",
+    "abbr": "",
+    "definition": "衡量模型表达能力或自由度的概念。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Capacity",
+    "zh": "模型容量",
+    "abbr": "",
+    "definition": "模型能拟合的函数集合的丰富程度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "VC Dimension",
+    "zh": "VC 维",
+    "abbr": "",
+    "definition": "衡量假设类分类表达能力的理论量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "PAC Learning",
+    "zh": "概率近似正确学习",
+    "abbr": "",
+    "definition": "通过概率保证和样本复杂度研究可学习性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Sample Complexity",
+    "zh": "样本复杂度",
+    "abbr": "",
+    "definition": "达到目标误差和置信水平所需样本规模。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Learning Curve",
+    "zh": "学习曲线",
+    "abbr": "",
+    "definition": "观察性能随训练样本量或训练过程变化的曲线。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Validation Curve",
+    "zh": "验证曲线",
+    "abbr": "",
+    "definition": "观察训练和验证表现随超参数变化的曲线。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Distribution Shift",
+    "zh": "分布偏移",
+    "abbr": "",
+    "definition": "训练环境和实际使用环境的数据分布发生改变。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Covariate Shift",
+    "zh": "协变量偏移",
+    "abbr": "",
+    "definition": "输入分布变化而条件标签机制假设保持不变。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Label Shift / Prior Shift",
+    "zh": "标签偏移／先验偏移",
+    "abbr": "",
+    "definition": "类别先验比例变化而类条件输入分布保持不变。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 4,
+    "topic": "统计学习与泛化理论",
+    "en": "Concept Drift",
+    "zh": "概念漂移",
+    "abbr": "",
+    "definition": "输入与目标之间的预测关系随时间改变。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Regression",
+    "zh": "回归",
+    "abbr": "",
+    "definition": "预测连续数值目标的学习任务。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Classification",
+    "zh": "分类",
+    "abbr": "",
+    "definition": "预测离散类别的学习任务。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Binary Classification",
+    "zh": "二分类",
+    "abbr": "",
+    "definition": "在两个类别中判断样本所属类别。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Multiclass Classification",
+    "zh": "多类别分类",
+    "abbr": "",
+    "definition": "在三个及以上互斥类别中分类。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Multilabel Classification",
+    "zh": "多标签分类",
+    "abbr": "",
+    "definition": "为一个样本预测多个可同时成立的标签。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Multioutput Prediction",
+    "zh": "多输出预测",
+    "abbr": "",
+    "definition": "对每个输入同时预测多个目标变量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Linear Regression",
+    "zh": "线性回归",
+    "abbr": "",
+    "definition": "以特征的线性组合预测连续目标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Ordinary Least Squares (OLS)",
+    "zh": "普通最小二乘法",
+    "abbr": "OLS",
+    "definition": "最小化残差平方和来估计回归系数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Ridge Regression",
+    "zh": "岭回归",
+    "abbr": "",
+    "definition": "采用 L2 惩罚的线性回归。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Lasso Regression",
+    "zh": "套索回归",
+    "abbr": "",
+    "definition": "采用 L1 惩罚的线性回归。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Elastic Net",
+    "zh": "弹性网络",
+    "abbr": "",
+    "definition": "同时使用 L1 和 L2 惩罚的线性模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Logistic Regression",
+    "zh": "逻辑回归",
+    "abbr": "",
+    "definition": "通过逻辑函数建模类别条件概率的分类方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Softmax Regression",
+    "zh": "Softmax 回归",
+    "abbr": "",
+    "definition": "将多类得分转为类别概率的线性分类模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Generalized Linear Model (GLM)",
+    "zh": "广义线性模型",
+    "abbr": "GLM",
+    "definition": "用链接函数连接预测变量和响应均值的模型族。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Poisson Regression",
+    "zh": "泊松回归",
+    "abbr": "",
+    "definition": "常用于计数型响应变量的广义线性模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Quantile Regression",
+    "zh": "分位数回归",
+    "abbr": "",
+    "definition": "估计条件分布中指定分位数的回归方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Robust Regression",
+    "zh": "稳健回归",
+    "abbr": "",
+    "definition": "降低异常值或模型偏离对估计的影响。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Decision Boundary",
+    "zh": "决策边界",
+    "abbr": "",
+    "definition": "将不同预测类别划分开的边界。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Decision Function",
+    "zh": "决策函数",
+    "abbr": "",
+    "definition": "将样本映射为分类得分或判别量的函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Logit",
+    "zh": "对数几率",
+    "abbr": "",
+    "definition": "概率 p 对应的 log(p/(1-p)) 值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Sigmoid Function",
+    "zh": "Sigmoid 函数",
+    "abbr": "",
+    "definition": "将实数压缩到 0 与 1 之间的 S 形函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Softmax Function",
+    "zh": "Softmax 函数",
+    "abbr": "",
+    "definition": "将多个得分变换为和为 1 的概率型向量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Residual",
+    "zh": "残差",
+    "abbr": "",
+    "definition": "观测目标与模型拟合值之差。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Coefficient",
+    "zh": "回归系数",
+    "abbr": "",
+    "definition": "线性模型中描述特征影响的参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Intercept",
+    "zh": "截距",
+    "abbr": "",
+    "definition": "输入特征为零时线性模型的基准输出项。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 5,
+    "topic": "回归、分类与线性模型",
+    "en": "Multicollinearity",
+    "zh": "多重共线性",
+    "abbr": "",
+    "definition": "多个输入特征之间存在较强线性相关。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Decision Tree",
+    "zh": "决策树",
+    "abbr": "",
+    "definition": "通过层层条件划分数据的树形预测模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Root Node",
+    "zh": "根节点",
+    "abbr": "",
+    "definition": "决策树最上层的起始节点。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Internal Node",
+    "zh": "内部节点",
+    "abbr": "",
+    "definition": "用于特征条件判断和样本分裂的节点。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Leaf Node",
+    "zh": "叶节点",
+    "abbr": "",
+    "definition": "决策树中输出最终预测的终端节点。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Tree Depth",
+    "zh": "树深度",
+    "abbr": "",
+    "definition": "从根到叶的最大边数或层级数，依实现定义。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Split Criterion",
+    "zh": "划分准则",
+    "abbr": "",
+    "definition": "判断哪种特征划分最有利的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Gini Impurity",
+    "zh": "基尼不纯度",
+    "abbr": "",
+    "definition": "衡量节点内类别混杂程度的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Information Gain",
+    "zh": "信息增益",
+    "abbr": "",
+    "definition": "分裂前后信息熵减少的量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Tree Pruning",
+    "zh": "决策树剪枝",
+    "abbr": "",
+    "definition": "删减树枝以控制复杂度和提高泛化能力。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Bagging (Bootstrap Aggregating)",
+    "zh": "自助聚合",
+    "abbr": "",
+    "definition": "对重采样数据训练多个模型并聚合输出。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Bootstrap Sampling",
+    "zh": "自助采样",
+    "abbr": "",
+    "definition": "从样本中有放回地重复抽样。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Random Forest",
+    "zh": "随机森林",
+    "abbr": "",
+    "definition": "组合多棵随机化决策树的集成模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Extra Trees",
+    "zh": "极端随机树",
+    "abbr": "",
+    "definition": "在树的划分阈值中引入更多随机性的集成方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Boosting",
+    "zh": "提升法",
+    "abbr": "",
+    "definition": "顺序训练弱学习器并组合成更强模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "AdaBoost",
+    "zh": "自适应提升",
+    "abbr": "",
+    "definition": "根据样本误差动态调整权重的提升算法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Gradient Boosting",
+    "zh": "梯度提升",
+    "abbr": "",
+    "definition": "沿损失函数负梯度方向逐步添加基学习器。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "GBDT",
+    "zh": "梯度提升决策树",
+    "abbr": "",
+    "definition": "以决策树为弱学习器的梯度提升模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "XGBoost",
+    "zh": "极端梯度提升",
+    "abbr": "",
+    "definition": "高效实现正则化梯度提升树的算法与库。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "LightGBM",
+    "zh": "轻量级梯度提升机",
+    "abbr": "",
+    "definition": "强调高效直方图建树等策略的 GBDT 框架。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "CatBoost",
+    "zh": "类别提升",
+    "abbr": "",
+    "definition": "擅长处理类别特征的梯度提升框架。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Stacking",
+    "zh": "堆叠集成",
+    "abbr": "",
+    "definition": "用次级模型组合多个基模型的预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Voting Ensemble",
+    "zh": "投票集成",
+    "abbr": "",
+    "definition": "通过投票或概率平均融合多个分类器。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Out-of-bag Error (OOB)",
+    "zh": "袋外误差",
+    "abbr": "OOB",
+    "definition": "利用未被某棵树抽中的样本估计泛化误差。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 6,
+    "topic": "树模型与集成学习",
+    "en": "Feature Importance",
+    "zh": "特征重要性",
+    "abbr": "",
+    "definition": "估计某特征对模型预测或指标的贡献程度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Support Vector Machine (SVM)",
+    "zh": "支持向量机",
+    "abbr": "SVM",
+    "definition": "通过间隔最大化等原则构建分类或回归模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Support Vector",
+    "zh": "支持向量",
+    "abbr": "",
+    "definition": "对最大间隔决策边界起关键作用的训练样本。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Margin",
+    "zh": "间隔",
+    "abbr": "",
+    "definition": "分类边界与样本之间的距离或函数性间隔。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Maximum Margin Classifier",
+    "zh": "最大间隔分类器",
+    "abbr": "",
+    "definition": "选择使类别分离间隔尽可能大的分类器。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Hinge Loss",
+    "zh": "合页损失",
+    "abbr": "",
+    "definition": "在间隔不满足要求时产生惩罚的分类损失。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Soft Margin",
+    "zh": "软间隔",
+    "abbr": "",
+    "definition": "允许部分样本违反间隔要求的 SVM 设定。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Kernel Trick",
+    "zh": "核技巧",
+    "abbr": "",
+    "definition": "不显式映射高维特征即可计算内积的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Kernel Function",
+    "zh": "核函数",
+    "abbr": "",
+    "definition": "计算某特征映射空间中内积的函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Linear Kernel",
+    "zh": "线性核",
+    "abbr": "",
+    "definition": "以原始向量内积定义的核函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Polynomial Kernel",
+    "zh": "多项式核",
+    "abbr": "",
+    "definition": "用输入内积的多项式构造非线性相似度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "RBF Kernel / Gaussian Kernel",
+    "zh": "径向基核／高斯核",
+    "abbr": "",
+    "definition": "根据样本距离构造局部相似度的核函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Support Vector Regression (SVR)",
+    "zh": "支持向量回归",
+    "abbr": "SVR",
+    "definition": "采用间隔思想进行连续值预测的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "K-nearest Neighbors (KNN)",
+    "zh": "K 近邻算法",
+    "abbr": "KNN",
+    "definition": "根据距离最近的 K 个样本作预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Nearest Neighbor Search",
+    "zh": "最近邻搜索",
+    "abbr": "",
+    "definition": "在特征空间中寻找距离最小的样本。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Distance Metric",
+    "zh": "距离度量",
+    "abbr": "",
+    "definition": "度量两个样本相异程度的函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Euclidean Distance",
+    "zh": "欧氏距离",
+    "abbr": "",
+    "definition": "向量差的 L2 范数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Manhattan Distance",
+    "zh": "曼哈顿距离",
+    "abbr": "",
+    "definition": "各坐标绝对差之和。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Cosine Similarity",
+    "zh": "余弦相似度",
+    "abbr": "",
+    "definition": "由向量夹角余弦衡量方向相似性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Metric Learning",
+    "zh": "度量学习",
+    "abbr": "",
+    "definition": "学习使相似样本更近、不相似样本更远的表示或距离。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 7,
+    "topic": "支持向量机、核方法与近邻",
+    "en": "Approximate Nearest Neighbor (ANN)",
+    "zh": "近似最近邻",
+    "abbr": "ANN",
+    "definition": "以近似正确结果换取更快的近邻检索。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Probability Distribution",
+    "zh": "概率分布",
+    "abbr": "",
+    "definition": "描述随机变量取值概率的数学对象。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Conditional Probability",
+    "zh": "条件概率",
+    "abbr": "",
+    "definition": "给定一个事件后另一个事件发生的概率。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Bayes’ Theorem",
+    "zh": "贝叶斯定理",
+    "abbr": "",
+    "definition": "联系先验、似然、证据与后验的公式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Prior Probability",
+    "zh": "先验概率",
+    "abbr": "",
+    "definition": "观察当前数据之前对假设的概率判断。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Likelihood",
+    "zh": "似然",
+    "abbr": "",
+    "definition": "在给定模型参数下观察到数据的相对支持程度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Posterior Probability",
+    "zh": "后验概率",
+    "abbr": "",
+    "definition": "结合先验和数据后得到的概率分布。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Maximum Likelihood Estimation (MLE)",
+    "zh": "极大似然估计",
+    "abbr": "MLE",
+    "definition": "选择使观测数据似然最大的参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Maximum A Posteriori (MAP)",
+    "zh": "最大后验估计",
+    "abbr": "MAP",
+    "definition": "选择使后验密度或质量最大的参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Bayesian Inference",
+    "zh": "贝叶斯推断",
+    "abbr": "",
+    "definition": "利用贝叶斯规则更新参数或假设的不确定性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Naive Bayes",
+    "zh": "朴素贝叶斯",
+    "abbr": "",
+    "definition": "给定类别时假定各特征条件独立的分类器。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Gaussian Naive Bayes",
+    "zh": "高斯朴素贝叶斯",
+    "abbr": "",
+    "definition": "假设每类内连续特征服从高斯分布的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Gaussian Mixture Model (GMM)",
+    "zh": "高斯混合模型",
+    "abbr": "GMM",
+    "definition": "用多个高斯分布的加权和拟合数据分布。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Latent Variable",
+    "zh": "潜变量",
+    "abbr": "",
+    "definition": "模型中未直接观测到、用于解释数据的变量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Expectation–Maximization (EM)",
+    "zh": "期望最大化算法",
+    "abbr": "EM",
+    "definition": "交替求潜变量期望与更新参数的估计方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Markov Chain",
+    "zh": "马尔可夫链",
+    "abbr": "",
+    "definition": "下一状态仅依赖当前状态的随机过程模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Hidden Markov Model (HMM)",
+    "zh": "隐马尔可夫模型",
+    "abbr": "HMM",
+    "definition": "通过隐藏状态序列生成观测序列的概率模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Markov Random Field (MRF)",
+    "zh": "马尔可夫随机场",
+    "abbr": "MRF",
+    "definition": "用无向图描述变量之间条件依赖的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Bayesian Network",
+    "zh": "贝叶斯网络",
+    "abbr": "",
+    "definition": "用有向无环图表达概率依赖关系。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Probabilistic Graphical Model (PGM)",
+    "zh": "概率图模型",
+    "abbr": "PGM",
+    "definition": "以图结构表示联合分布和条件依赖的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Variational Inference (VI)",
+    "zh": "变分推断",
+    "abbr": "VI",
+    "definition": "用可优化的近似分布逼近复杂后验。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Monte Carlo Method",
+    "zh": "蒙特卡罗方法",
+    "abbr": "",
+    "definition": "通过随机采样进行数值估计的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Markov Chain Monte Carlo (MCMC)",
+    "zh": "马尔可夫链蒙特卡罗",
+    "abbr": "MCMC",
+    "definition": "构造马尔可夫链来采样目标分布的技术。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Gaussian Process (GP)",
+    "zh": "高斯过程",
+    "abbr": "GP",
+    "definition": "在函数空间定义联合高斯分布的非参数模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 8,
+    "topic": "概率模型与统计推断",
+    "en": "Uncertainty Quantification",
+    "zh": "不确定性量化",
+    "abbr": "",
+    "definition": "分析和表达预测或参数估计不确定性的过程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Clustering",
+    "zh": "聚类",
+    "abbr": "",
+    "definition": "按相似性把无标签样本划分成若干组。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Cluster",
+    "zh": "簇",
+    "abbr": "",
+    "definition": "聚类算法发现的相似样本集合。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Centroid",
+    "zh": "质心",
+    "abbr": "",
+    "definition": "一簇样本的中心位置或均值向量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "K-means",
+    "zh": "K 均值聚类",
+    "abbr": "",
+    "definition": "迭代分配样本并更新 K 个簇中心的算法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "K-means++",
+    "zh": "K-means++ 初始化",
+    "abbr": "",
+    "definition": "通过距离加权策略选择初始聚类中心的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "K-medoids",
+    "zh": "K 中心点聚类",
+    "abbr": "",
+    "definition": "使用真实样本作为簇代表的聚类方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Hierarchical Clustering",
+    "zh": "层次聚类",
+    "abbr": "",
+    "definition": "按层级合并或拆分样本簇的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Agglomerative Clustering",
+    "zh": "凝聚层次聚类",
+    "abbr": "",
+    "definition": "自底向上逐步合并簇的聚类方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Divisive Clustering",
+    "zh": "分裂层次聚类",
+    "abbr": "",
+    "definition": "自顶向下逐步拆分簇的聚类方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Dendrogram",
+    "zh": "树状图",
+    "abbr": "",
+    "definition": "可视化层次聚类合并或分裂过程的树图。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "DBSCAN",
+    "zh": "基于密度的带噪声空间聚类",
+    "abbr": "",
+    "definition": "根据局部密度识别簇并标记噪声的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "HDBSCAN",
+    "zh": "层次密度聚类",
+    "abbr": "",
+    "definition": "基于多尺度密度结构构造聚类的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Mean Shift",
+    "zh": "均值漂移",
+    "abbr": "",
+    "definition": "沿局部密度上升方向寻找模式的聚类方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Spectral Clustering",
+    "zh": "谱聚类",
+    "abbr": "",
+    "definition": "利用相似度图的谱结构完成数据划分。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Affinity Propagation",
+    "zh": "亲和传播",
+    "abbr": "",
+    "definition": "通过消息传递选择代表点的聚类算法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Silhouette Coefficient",
+    "zh": "轮廓系数",
+    "abbr": "",
+    "definition": "结合簇内紧密程度与簇间分离程度的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Davies–Bouldin Index",
+    "zh": "戴维斯-博尔丁指数",
+    "abbr": "",
+    "definition": "比较簇内离散度与簇间距离的聚类指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Adjusted Rand Index (ARI)",
+    "zh": "调整兰德指数",
+    "abbr": "ARI",
+    "definition": "比较两个聚类划分一致性的校正指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Normalized Mutual Information (NMI)",
+    "zh": "归一化互信息",
+    "abbr": "NMI",
+    "definition": "衡量两组聚类标签共享信息的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Anomaly Detection",
+    "zh": "异常检测",
+    "abbr": "",
+    "definition": "识别偏离正常模式的样本或事件。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Novelty Detection",
+    "zh": "新颖性检测",
+    "abbr": "",
+    "definition": "利用正常样本训练后识别未见异常对象。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Isolation Forest",
+    "zh": "孤立森林",
+    "abbr": "",
+    "definition": "通过随机分割使异常样本更易被孤立的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "Local Outlier Factor (LOF)",
+    "zh": "局部离群因子",
+    "abbr": "LOF",
+    "definition": "比较局部邻域密度识别异常的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 9,
+    "topic": "无监督学习与聚类",
+    "en": "One-class SVM",
+    "zh": "单类支持向量机",
+    "abbr": "",
+    "definition": "学习正常数据支持区域以发现异常的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Dimensionality Reduction",
+    "zh": "降维",
+    "abbr": "",
+    "definition": "用较少维度保留数据的重要信息。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Curse of Dimensionality",
+    "zh": "维度灾难",
+    "abbr": "",
+    "definition": "高维空间中样本稀疏、距离性质变化等问题。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Principal Component Analysis (PCA)",
+    "zh": "主成分分析",
+    "abbr": "PCA",
+    "definition": "寻找解释数据方差最多的正交方向。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Principal Component",
+    "zh": "主成分",
+    "abbr": "",
+    "definition": "PCA 识别出的关键正交投影方向。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Explained Variance Ratio",
+    "zh": "解释方差比",
+    "abbr": "",
+    "definition": "某主成分占总方差的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Singular Value Decomposition (SVD)",
+    "zh": "奇异值分解",
+    "abbr": "SVD",
+    "definition": "将矩阵分解为奇异向量与奇异值的乘积。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Truncated SVD",
+    "zh": "截断奇异值分解",
+    "abbr": "",
+    "definition": "仅保留主要奇异分量的低秩近似。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Non-negative Matrix Factorization (NMF)",
+    "zh": "非负矩阵分解",
+    "abbr": "NMF",
+    "definition": "用两个非负低秩矩阵近似原始非负矩阵。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Independent Component Analysis (ICA)",
+    "zh": "独立成分分析",
+    "abbr": "ICA",
+    "definition": "分解数据以寻找近似统计独立的潜在来源。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Factor Analysis (FA)",
+    "zh": "因子分析",
+    "abbr": "FA",
+    "definition": "用少量潜在因子解释观测变量的相关结构。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Linear Discriminant Analysis (LDA)",
+    "zh": "线性判别分析",
+    "abbr": "LDA",
+    "definition": "寻找使类间分离与类内紧凑性兼顾的投影。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Manifold Learning",
+    "zh": "流形学习",
+    "abbr": "",
+    "definition": "假设高维数据位于低维流形上的降维方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "t-SNE",
+    "zh": "t 分布随机邻域嵌入",
+    "abbr": "",
+    "definition": "常用于可视化的非线性邻域保持降维方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "UMAP",
+    "zh": "均匀流形近似与投影",
+    "abbr": "",
+    "definition": "利用邻域图进行非线性降维与可视化。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Isomap",
+    "zh": "等距映射",
+    "abbr": "",
+    "definition": "利用邻域图测地距离进行流形降维。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Locally Linear Embedding (LLE)",
+    "zh": "局部线性嵌入",
+    "abbr": "LLE",
+    "definition": "通过保留局部线性重构关系进行降维。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Random Projection",
+    "zh": "随机投影",
+    "abbr": "",
+    "definition": "利用随机矩阵近似保留样本距离的降维方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Low-rank Approximation",
+    "zh": "低秩近似",
+    "abbr": "",
+    "definition": "用低秩矩阵表示主要结构以减少复杂度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Eigenvalue",
+    "zh": "特征值",
+    "abbr": "",
+    "definition": "描述线性变换在特征向量方向伸缩的标量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 10,
+    "topic": "降维、分解与流形学习",
+    "en": "Eigenvector",
+    "zh": "特征向量",
+    "abbr": "",
+    "definition": "在线性变换下方向保持不变的非零向量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Objective Function",
+    "zh": "目标函数",
+    "abbr": "",
+    "definition": "训练过程中希望最小化或最大化的函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Loss Function",
+    "zh": "损失函数",
+    "abbr": "",
+    "definition": "衡量模型预测与目标不一致程度的函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Cost Function",
+    "zh": "代价函数",
+    "abbr": "",
+    "definition": "通常指样本损失的聚合或优化目标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Gradient",
+    "zh": "梯度",
+    "abbr": "",
+    "definition": "函数对参数各偏导数组成的方向向量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Gradient Descent (GD)",
+    "zh": "梯度下降",
+    "abbr": "GD",
+    "definition": "沿目标函数负梯度方向更新参数的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Stochastic Gradient Descent (SGD)",
+    "zh": "随机梯度下降",
+    "abbr": "SGD",
+    "definition": "利用随机样本或小批量梯度更新参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Mini-batch Gradient Descent",
+    "zh": "小批量梯度下降",
+    "abbr": "",
+    "definition": "每次使用一小批样本估计梯度并更新参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Batch Size",
+    "zh": "批量大小",
+    "abbr": "",
+    "definition": "一次参数更新使用的训练样本数量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Epoch",
+    "zh": "训练轮次",
+    "abbr": "",
+    "definition": "对训练集完成一轮遍历的单位。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Iteration / Step",
+    "zh": "迭代／更新步",
+    "abbr": "",
+    "definition": "一次训练循环或参数更新，需结合上下文理解。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Learning Rate",
+    "zh": "学习率",
+    "abbr": "",
+    "definition": "控制单次参数更新幅度的超参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Learning Rate Schedule",
+    "zh": "学习率调度",
+    "abbr": "",
+    "definition": "按步骤或条件调整学习率的规则。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Warmup",
+    "zh": "预热",
+    "abbr": "",
+    "definition": "训练初期逐渐增大学习率等训练参数的策略。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Momentum",
+    "zh": "动量",
+    "abbr": "",
+    "definition": "结合历史梯度方向平滑更新的优化技巧。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Nesterov Momentum",
+    "zh": "Nesterov 动量",
+    "abbr": "",
+    "definition": "在前瞻位置估计梯度的动量方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "AdaGrad",
+    "zh": "自适应梯度算法",
+    "abbr": "",
+    "definition": "根据历史梯度平方和调整各参数学习率。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "RMSProp",
+    "zh": "均方根传播优化器",
+    "abbr": "",
+    "definition": "利用梯度平方的指数移动平均缩放更新。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Adam",
+    "zh": "自适应矩估计",
+    "abbr": "",
+    "definition": "结合梯度一阶矩和二阶矩估计的优化算法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "AdamW",
+    "zh": "解耦权重衰减 Adam",
+    "abbr": "",
+    "definition": "将权重衰减与梯度更新解耦的 Adam 变体。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Weight Decay",
+    "zh": "权重衰减",
+    "abbr": "",
+    "definition": "在训练更新中缩小参数幅度的正则化机制。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Gradient Clipping",
+    "zh": "梯度裁剪",
+    "abbr": "",
+    "definition": "限制梯度范数或数值以稳定训练。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Early Stopping",
+    "zh": "提前停止",
+    "abbr": "",
+    "definition": "依据验证表现决定结束训练以抑制过拟合。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Convergence",
+    "zh": "收敛",
+    "abbr": "",
+    "definition": "优化迭代趋向稳定解或稳定目标值的性质。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Local Minimum",
+    "zh": "局部最小值",
+    "abbr": "",
+    "definition": "在局部邻域中目标函数最小的点。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Global Minimum",
+    "zh": "全局最小值",
+    "abbr": "",
+    "definition": "在整个可行域内目标函数最小的点。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Saddle Point",
+    "zh": "鞍点",
+    "abbr": "",
+    "definition": "梯度可为零，但某些方向上升、另一些方向下降的点。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Convex Optimization",
+    "zh": "凸优化",
+    "abbr": "",
+    "definition": "具有凸目标与适当凸约束的优化问题。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Hessian Matrix",
+    "zh": "海森矩阵",
+    "abbr": "",
+    "definition": "目标函数对参数的二阶偏导数组成的矩阵。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Backpropagation",
+    "zh": "反向传播",
+    "abbr": "",
+    "definition": "利用链式法则高效计算计算图中参数梯度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 11,
+    "topic": "优化算法与模型训练",
+    "en": "Automatic Differentiation (Autodiff)",
+    "zh": "自动微分",
+    "abbr": "",
+    "definition": "基于计算图规则精确组合程序的导数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Mean Squared Error (MSE)",
+    "zh": "均方误差",
+    "abbr": "MSE",
+    "definition": "预测与真实值之差平方的平均值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Root Mean Squared Error (RMSE)",
+    "zh": "均方根误差",
+    "abbr": "RMSE",
+    "definition": "均方误差开平方，量纲与目标相同。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Mean Absolute Error (MAE)",
+    "zh": "平均绝对误差",
+    "abbr": "MAE",
+    "definition": "预测绝对误差的平均值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Mean Absolute Percentage Error (MAPE)",
+    "zh": "平均绝对百分比误差",
+    "abbr": "MAPE",
+    "definition": "以真实值为分母的相对绝对误差均值；零值时有问题。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Huber Loss",
+    "zh": "Huber 损失",
+    "abbr": "",
+    "definition": "小误差为平方惩罚、大误差为线性惩罚的损失。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Mean Absolute Deviation",
+    "zh": "平均绝对偏差",
+    "abbr": "",
+    "definition": "相对参照值的绝对偏差平均，需说明参照定义。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "R-squared (R²)",
+    "zh": "决定系数",
+    "abbr": "",
+    "definition": "衡量回归相对于常数基线的拟合改善程度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Cross-entropy Loss",
+    "zh": "交叉熵损失",
+    "abbr": "",
+    "definition": "利用真实标签分布衡量预测概率的损失。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Binary Cross-entropy (BCE)",
+    "zh": "二元交叉熵",
+    "abbr": "BCE",
+    "definition": "二分类概率预测常用的交叉熵损失。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "Negative Log-likelihood (NLL)",
+    "zh": "负对数似然",
+    "abbr": "NLL",
+    "definition": "对模型赋予真实观测的概率取负对数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 12,
+    "topic": "损失函数与回归评估",
+    "en": "KL Divergence",
+    "zh": "KL 散度",
+    "abbr": "",
+    "definition": "衡量两个概率分布差异的非对称信息量。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Confusion Matrix",
+    "zh": "混淆矩阵",
+    "abbr": "",
+    "definition": "按真实标签与预测标签统计分类结果的矩阵。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "True Positive (TP)",
+    "zh": "真正例",
+    "abbr": "TP",
+    "definition": "真实为正且预测为正的样本数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "False Positive (FP)",
+    "zh": "假正例",
+    "abbr": "FP",
+    "definition": "真实为负但预测为正的样本数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "True Negative (TN)",
+    "zh": "真负例",
+    "abbr": "TN",
+    "definition": "真实为负且预测为负的样本数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "False Negative (FN)",
+    "zh": "假负例",
+    "abbr": "FN",
+    "definition": "真实为正但预测为负的样本数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Accuracy",
+    "zh": "准确率",
+    "abbr": "",
+    "definition": "所有预测中分类正确的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Precision / Positive Predictive Value",
+    "zh": "精确率／查准率",
+    "abbr": "",
+    "definition": "预测为正的样本中真正为正的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Recall / Sensitivity / TPR",
+    "zh": "召回率／敏感度／真正例率",
+    "abbr": "",
+    "definition": "真实正例中被正确识别的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Specificity / TNR",
+    "zh": "特异度／真负例率",
+    "abbr": "",
+    "definition": "真实负例中被正确识别的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "False Positive Rate (FPR)",
+    "zh": "假正例率",
+    "abbr": "FPR",
+    "definition": "真实负例中被误判为正的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "False Negative Rate (FNR)",
+    "zh": "假负例率",
+    "abbr": "FNR",
+    "definition": "真实正例中被漏判的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "F1 Score",
+    "zh": "F1 分数",
+    "abbr": "",
+    "definition": "精确率与召回率的调和平均。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "F-beta Score",
+    "zh": "Fβ 分数",
+    "abbr": "",
+    "definition": "通过 β 调整召回率与精确率权重的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Balanced Accuracy",
+    "zh": "平衡准确率",
+    "abbr": "",
+    "definition": "对每类召回率等权平均的分类指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "ROC Curve",
+    "zh": "ROC 曲线",
+    "abbr": "",
+    "definition": "展示不同阈值下真正例率与假正例率的关系。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "ROC AUC",
+    "zh": "ROC 曲线下面积",
+    "abbr": "",
+    "definition": "综合衡量二分类得分区分正负类的能力。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Precision–Recall Curve (PR Curve)",
+    "zh": "精确率-召回率曲线",
+    "abbr": "",
+    "definition": "展示不同阈值下精确率与召回率的关系。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Average Precision (AP)",
+    "zh": "平均精确率",
+    "abbr": "AP",
+    "definition": "通常指对 PR 曲线按召回率增量加权的精确率求和。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Log Loss",
+    "zh": "对数损失",
+    "abbr": "",
+    "definition": "按真实类别的预测概率计算对数惩罚。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Brier Score",
+    "zh": "布赖尔分数",
+    "abbr": "",
+    "definition": "预测概率与二元真实标签差的平方均值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Calibration",
+    "zh": "概率校准",
+    "abbr": "",
+    "definition": "预测概率与实际发生频率的一致程度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Calibration Curve",
+    "zh": "校准曲线",
+    "abbr": "",
+    "definition": "对比预测概率与经验发生频率的图。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Threshold",
+    "zh": "分类阈值",
+    "abbr": "",
+    "definition": "将预测得分或概率映射为类别的决策界值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Macro Average",
+    "zh": "宏平均",
+    "abbr": "",
+    "definition": "先逐类别计算指标，再对类别等权平均。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Micro Average",
+    "zh": "微平均",
+    "abbr": "",
+    "definition": "先跨类别汇总计数，再计算整体指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Weighted Average",
+    "zh": "加权平均",
+    "abbr": "",
+    "definition": "按类别支持度等权重聚合指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 13,
+    "topic": "分类指标与概率校准",
+    "en": "Top-k Accuracy",
+    "zh": "Top-k 准确率",
+    "abbr": "",
+    "definition": "真实类别位于最高 k 个候选预测中的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Parameter",
+    "zh": "模型参数",
+    "abbr": "",
+    "definition": "从训练数据中估计得到的模型内部数值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Hyperparameter",
+    "zh": "超参数",
+    "abbr": "",
+    "definition": "训练前配置或由搜索过程选择的控制参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Hyperparameter Optimization (HPO)",
+    "zh": "超参数优化",
+    "abbr": "HPO",
+    "definition": "通过搜索与验证寻找效果较好的超参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Grid Search",
+    "zh": "网格搜索",
+    "abbr": "",
+    "definition": "遍历预设的超参数组合进行评估。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Random Search",
+    "zh": "随机搜索",
+    "abbr": "",
+    "definition": "从超参数分布中随机抽取组合进行评估。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Bayesian Optimization",
+    "zh": "贝叶斯优化",
+    "abbr": "",
+    "definition": "利用代理模型选择下一组值得评估的参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Tree-structured Parzen Estimator (TPE)",
+    "zh": "树结构 Parzen 估计器",
+    "abbr": "TPE",
+    "definition": "使用密度模型引导超参数搜索的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Successive Halving",
+    "zh": "逐次减半",
+    "abbr": "",
+    "definition": "阶段性淘汰较差配置并增配计算资源。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Hyperband",
+    "zh": "超带算法",
+    "abbr": "",
+    "definition": "组合多组资源分配策略进行高效搜索。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Optuna",
+    "zh": "Optuna 超参数优化框架",
+    "abbr": "",
+    "definition": "常用于定义搜索空间并运行优化试验的工具。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Trial",
+    "zh": "试验轮次",
+    "abbr": "",
+    "definition": "超参数搜索中一次配置及其评估。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Search Space",
+    "zh": "搜索空间",
+    "abbr": "",
+    "definition": "超参数候选值与允许范围的集合。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Nested Cross-validation",
+    "zh": "嵌套交叉验证",
+    "abbr": "",
+    "definition": "内层选参、外层估计泛化性能的验证策略。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Model Selection",
+    "zh": "模型选择",
+    "abbr": "",
+    "definition": "依据验证证据在模型或配置中做选择。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Baseline Model",
+    "zh": "基线模型",
+    "abbr": "",
+    "definition": "作为衡量新方法是否有改进的参考模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Ablation Study",
+    "zh": "消融实验",
+    "abbr": "",
+    "definition": "移除或替换组件，以评估其贡献。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Reproducibility",
+    "zh": "可复现性",
+    "abbr": "",
+    "definition": "在明确条件下能够重新得到相同或相近结果的性质。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 14,
+    "topic": "调参与模型选择",
+    "en": "Random Seed",
+    "zh": "随机种子",
+    "abbr": "",
+    "definition": "初始化伪随机过程以便控制实验随机性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Time Series",
+    "zh": "时间序列",
+    "abbr": "",
+    "definition": "按时间顺序排列的观测数据。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Forecasting",
+    "zh": "预测未来值",
+    "abbr": "",
+    "definition": "根据历史和已知信息估计未来数值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Trend",
+    "zh": "趋势",
+    "abbr": "",
+    "definition": "时间序列中的长期方向性变化。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Seasonality",
+    "zh": "季节性",
+    "abbr": "",
+    "definition": "按固定周期重复出现的模式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Stationarity",
+    "zh": "平稳性",
+    "abbr": "",
+    "definition": "统计性质在时间上保持不变的特性，定义依类型而异。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Autocorrelation (ACF)",
+    "zh": "自相关",
+    "abbr": "ACF",
+    "definition": "同一序列在不同时滞间的相关性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Partial Autocorrelation (PACF)",
+    "zh": "偏自相关",
+    "abbr": "PACF",
+    "definition": "控制中间滞后影响后的相关性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Lag Feature",
+    "zh": "滞后特征",
+    "abbr": "",
+    "definition": "将过去时间点的观测作为当前预测输入。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Rolling Window",
+    "zh": "滚动窗口",
+    "abbr": "",
+    "definition": "随着时间向前移动的固定长度数据窗口。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Walk-forward Validation",
+    "zh": "滚动前向验证",
+    "abbr": "",
+    "definition": "按时间顺序反复训练并评估未来时间段。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Backtesting",
+    "zh": "回测",
+    "abbr": "",
+    "definition": "用历史数据模拟策略或预测系统的运行表现。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Autoregressive Model (AR)",
+    "zh": "自回归模型",
+    "abbr": "AR",
+    "definition": "用过去的观测值预测当前值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Moving Average Model (MA)",
+    "zh": "移动平均模型",
+    "abbr": "MA",
+    "definition": "以过去噪声项构造当前序列的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "ARIMA",
+    "zh": "自回归积分滑动平均模型",
+    "abbr": "",
+    "definition": "结合差分、自回归和移动平均的时间序列模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "SARIMA",
+    "zh": "季节性 ARIMA",
+    "abbr": "",
+    "definition": "显式建模季节结构的 ARIMA 扩展。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Exponential Smoothing",
+    "zh": "指数平滑",
+    "abbr": "",
+    "definition": "对较近观测给予更大权重的预测方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Forecast Horizon",
+    "zh": "预测步长／预测时域",
+    "abbr": "",
+    "definition": "从当前时点向未来预测的跨度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 15,
+    "topic": "时间序列与预测",
+    "en": "Prediction Interval",
+    "zh": "预测区间",
+    "abbr": "",
+    "definition": "表示未来观测值可能所在范围的区间。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Recommender System",
+    "zh": "推荐系统",
+    "abbr": "",
+    "definition": "根据用户与内容信息预测偏好并推荐对象。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Collaborative Filtering (CF)",
+    "zh": "协同过滤",
+    "abbr": "CF",
+    "definition": "利用用户-物品交互模式产生推荐。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Content-based Filtering",
+    "zh": "基于内容的推荐",
+    "abbr": "",
+    "definition": "依据物品特征与用户历史兴趣进行推荐。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Matrix Factorization",
+    "zh": "矩阵分解",
+    "abbr": "",
+    "definition": "将用户-物品交互矩阵分解为潜在因子。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Implicit Feedback",
+    "zh": "隐式反馈",
+    "abbr": "",
+    "definition": "点击、浏览、购买等间接反映偏好的行为。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Explicit Feedback",
+    "zh": "显式反馈",
+    "abbr": "",
+    "definition": "评分、点赞等直接表达的偏好信号。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Cold Start",
+    "zh": "冷启动",
+    "abbr": "",
+    "definition": "新用户或新物品缺乏交互历史的问题。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Candidate Generation",
+    "zh": "候选召回",
+    "abbr": "",
+    "definition": "从大规模物品库筛选少量可能相关的候选。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Ranking",
+    "zh": "排序",
+    "abbr": "",
+    "definition": "根据预测相关性或效用排列候选结果。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Re-ranking",
+    "zh": "重排序",
+    "abbr": "",
+    "definition": "在初次排序后加入业务约束或多样性等目标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Learning to Rank (LTR)",
+    "zh": "排序学习",
+    "abbr": "LTR",
+    "definition": "通过训练数据学习结果排序函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Pointwise Ranking",
+    "zh": "逐点排序",
+    "abbr": "",
+    "definition": "将排序视为单样本预测任务的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Pairwise Ranking",
+    "zh": "成对排序",
+    "abbr": "",
+    "definition": "学习两个候选之间相对顺序的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Listwise Ranking",
+    "zh": "列表式排序",
+    "abbr": "",
+    "definition": "直接基于候选列表优化排序目标的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Normalized Discounted Cumulative Gain (NDCG)",
+    "zh": "归一化折损累计增益",
+    "abbr": "NDCG",
+    "definition": "根据相关性和排序位置评价结果列表的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Mean Average Precision (MAP)",
+    "zh": "平均精确率均值",
+    "abbr": "MAP",
+    "definition": "对多个查询的平均精确率再取均值的指标。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Mean Reciprocal Rank (MRR)",
+    "zh": "平均倒数排名",
+    "abbr": "MRR",
+    "definition": "统计首个相关结果名次倒数的均值。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Hit Rate@K",
+    "zh": "命中率@K",
+    "abbr": "",
+    "definition": "衡量前 K 个推荐是否至少包含目标项目的比例。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 16,
+    "topic": "推荐系统与排序学习",
+    "en": "Exploration–Exploitation Tradeoff",
+    "zh": "探索-利用权衡",
+    "abbr": "",
+    "definition": "在尝试新选项与使用已知好选项间取得平衡。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Deep Learning (DL)",
+    "zh": "深度学习",
+    "abbr": "DL",
+    "definition": "使用多层神经网络进行表示和预测的机器学习分支。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Artificial Neural Network (ANN)",
+    "zh": "人工神经网络",
+    "abbr": "ANN",
+    "definition": "由可训练的连接单元组成的函数模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Perceptron",
+    "zh": "感知机",
+    "abbr": "",
+    "definition": "按线性判别规则进行二分类的早期神经模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Multilayer Perceptron (MLP)",
+    "zh": "多层感知机",
+    "abbr": "MLP",
+    "definition": "包含多层全连接变换的前馈神经网络。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Fully Connected Layer",
+    "zh": "全连接层",
+    "abbr": "",
+    "definition": "输出单元与前一层全部输入连接的网络层。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Activation Function",
+    "zh": "激活函数",
+    "abbr": "",
+    "definition": "在神经网络层中引入非线性变换的函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "ReLU",
+    "zh": "修正线性单元",
+    "abbr": "",
+    "definition": "输出 max(0, x) 的常用激活函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "GELU",
+    "zh": "高斯误差线性单元",
+    "abbr": "",
+    "definition": "根据输入幅值进行平滑门控的激活函数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Dropout",
+    "zh": "随机失活",
+    "abbr": "",
+    "definition": "训练时随机屏蔽部分单元以起正则化作用。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Batch Normalization",
+    "zh": "批量归一化",
+    "abbr": "",
+    "definition": "用小批量统计量标准化中间激活的技术。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Layer Normalization",
+    "zh": "层归一化",
+    "abbr": "",
+    "definition": "沿样本内部指定维度归一化激活的技术。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Convolutional Neural Network (CNN)",
+    "zh": "卷积神经网络",
+    "abbr": "CNN",
+    "definition": "擅长处理局部空间结构的网络架构。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Recurrent Neural Network (RNN)",
+    "zh": "循环神经网络",
+    "abbr": "RNN",
+    "definition": "通过循环状态处理序列信息的网络。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Long Short-term Memory (LSTM)",
+    "zh": "长短期记忆网络",
+    "abbr": "LSTM",
+    "definition": "使用门控机制处理长期依赖的循环网络。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Gated Recurrent Unit (GRU)",
+    "zh": "门控循环单元",
+    "abbr": "GRU",
+    "definition": "具有较简化门控结构的循环网络单元。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Attention Mechanism",
+    "zh": "注意力机制",
+    "abbr": "",
+    "definition": "根据输入元素相关性加权聚合信息的机制。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Self-attention",
+    "zh": "自注意力",
+    "abbr": "",
+    "definition": "序列内元素相互计算相关性并聚合信息的机制。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Transformer",
+    "zh": "Transformer 架构",
+    "abbr": "",
+    "definition": "以注意力与前馈层为核心的序列建模架构。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Autoencoder",
+    "zh": "自编码器",
+    "abbr": "",
+    "definition": "通过编码和重构目标学习潜在表示的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Variational Autoencoder (VAE)",
+    "zh": "变分自编码器",
+    "abbr": "VAE",
+    "definition": "结合潜变量概率建模与变分训练的生成模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Generative Adversarial Network (GAN)",
+    "zh": "生成对抗网络",
+    "abbr": "GAN",
+    "definition": "通过生成器与判别器竞争进行生成建模。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Diffusion Model",
+    "zh": "扩散模型",
+    "abbr": "",
+    "definition": "学习逐步去噪过程以生成数据的模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Pretraining",
+    "zh": "预训练",
+    "abbr": "",
+    "definition": "在大规模数据或前置任务上获得初始模型能力。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Fine-tuning",
+    "zh": "微调",
+    "abbr": "",
+    "definition": "基于预训练模型针对新任务继续调整参数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 17,
+    "topic": "深度学习相关核心术语",
+    "en": "Knowledge Distillation",
+    "zh": "知识蒸馏",
+    "abbr": "",
+    "definition": "让较小模型学习较大模型输出或中间知识。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Machine Learning Operations (MLOps)",
+    "zh": "机器学习运维",
+    "abbr": "",
+    "definition": "将 ML 开发、部署、监控和治理工程化的实践。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "ML Pipeline",
+    "zh": "机器学习流水线",
+    "abbr": "",
+    "definition": "串联数据准备、训练、评估及部署的自动化流程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Data Pipeline",
+    "zh": "数据流水线",
+    "abbr": "",
+    "definition": "负责收集、清洗、变换和输送数据的处理流程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Feature Store",
+    "zh": "特征存储平台",
+    "abbr": "",
+    "definition": "统一管理、复用并服务训练与在线推断特征的系统。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Feature Registry",
+    "zh": "特征注册表",
+    "abbr": "",
+    "definition": "记录特征定义、元数据与版本的信息目录。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Experiment Tracking",
+    "zh": "实验跟踪",
+    "abbr": "",
+    "definition": "记录模型参数、代码版本、指标和产物的过程。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Model Registry",
+    "zh": "模型注册表",
+    "abbr": "",
+    "definition": "管理模型版本、状态和元数据的系统。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Artifact",
+    "zh": "产物",
+    "abbr": "",
+    "definition": "训练后生成的模型文件、指标文件或其他可复用结果。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Model Serving",
+    "zh": "模型服务",
+    "abbr": "",
+    "definition": "将模型封装成可供调用的推断服务。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Inference",
+    "zh": "推断",
+    "abbr": "",
+    "definition": "用训练后的模型对输入数据产生输出。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Online Inference",
+    "zh": "在线推断",
+    "abbr": "",
+    "definition": "收到请求时实时调用模型生成结果。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Batch Inference",
+    "zh": "批量推断",
+    "abbr": "",
+    "definition": "定期或离线对大量样本生成预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Streaming Inference",
+    "zh": "流式推断",
+    "abbr": "",
+    "definition": "对连续输入的数据流进行持续预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Inference Latency",
+    "zh": "推断延迟",
+    "abbr": "",
+    "definition": "从请求到获得预测结果所经历的时间。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Throughput",
+    "zh": "吞吐量",
+    "abbr": "",
+    "definition": "单位时间内处理的请求数或样本数。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Model Compression",
+    "zh": "模型压缩",
+    "abbr": "",
+    "definition": "在尽量保持质量的同时减小模型资源需求。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Quantization",
+    "zh": "量化",
+    "abbr": "",
+    "definition": "使用更低精度的数值形式表示参数或计算。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Model Pruning",
+    "zh": "模型剪枝",
+    "abbr": "",
+    "definition": "删除较不重要的权重、通道或其他结构。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "ONNX",
+    "zh": "开放神经网络交换格式",
+    "abbr": "",
+    "definition": "用于模型表示与不同框架间交换的开放格式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Concept Drift Monitoring",
+    "zh": "概念漂移监测",
+    "abbr": "",
+    "definition": "检测模型预测关系随时间改变的迹象。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Data Drift",
+    "zh": "数据漂移",
+    "abbr": "",
+    "definition": "生产输入数据的统计分布相对参考分布发生变化。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Training–Serving Skew",
+    "zh": "训练与服务偏差",
+    "abbr": "",
+    "definition": "训练特征与在线推断特征的生成方式或分布不一致。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Model Monitoring",
+    "zh": "模型监控",
+    "abbr": "",
+    "definition": "持续观察数据、性能、延迟与异常状况。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Canary Deployment",
+    "zh": "金丝雀发布",
+    "abbr": "",
+    "definition": "先将新模型投放给少量流量验证风险。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "A/B Testing",
+    "zh": "A/B 测试",
+    "abbr": "",
+    "definition": "随机分配流量比较两个方案的实际效果。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Shadow Deployment",
+    "zh": "影子部署",
+    "abbr": "",
+    "definition": "新模型并行预测但不影响正式决策的验证方式。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Model Rollback",
+    "zh": "模型回滚",
+    "abbr": "",
+    "definition": "当新模型出现问题时恢复到旧版本。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Reproducible Training",
+    "zh": "可复现训练",
+    "abbr": "",
+    "definition": "固定数据、配置、代码和环境以重建训练结果。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Data Versioning",
+    "zh": "数据版本管理",
+    "abbr": "",
+    "definition": "追踪训练和评估所用数据快照及其变化。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 18,
+    "topic": "机器学习工程与生产部署",
+    "en": "Continuous Training (CT)",
+    "zh": "持续训练",
+    "abbr": "CT",
+    "definition": "按计划或触发条件自动更新训练模型。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Interpretability",
+    "zh": "可解释性",
+    "abbr": "",
+    "definition": "模型机制及其预测原因能被人理解的程度。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Explainability",
+    "zh": "可解释说明能力",
+    "abbr": "",
+    "definition": "为模型行为提供可理解解释的能力或方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Global Explanation",
+    "zh": "全局解释",
+    "abbr": "",
+    "definition": "解释模型整体规律或普遍行为。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Local Explanation",
+    "zh": "局部解释",
+    "abbr": "",
+    "definition": "解释针对单个样本的具体预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Permutation Importance",
+    "zh": "置换重要性",
+    "abbr": "",
+    "definition": "打乱特征后根据性能下降估计重要性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Partial Dependence Plot (PDP)",
+    "zh": "部分依赖图",
+    "abbr": "PDP",
+    "definition": "显示特征变化对模型平均预测的影响。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Individual Conditional Expectation (ICE)",
+    "zh": "个体条件期望图",
+    "abbr": "ICE",
+    "definition": "展示每个样本的预测随某特征变化的轨迹。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "SHAP",
+    "zh": "SHAP 特征归因",
+    "abbr": "",
+    "definition": "用 Shapley 值思想分配特征对预测的贡献。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "LIME",
+    "zh": "局部可解释模型无关解释",
+    "abbr": "",
+    "definition": "在预测附近拟合简单替代模型进行解释。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Counterfactual Explanation",
+    "zh": "反事实解释",
+    "abbr": "",
+    "definition": "展示改变哪些输入可能改变模型预测。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Fairness",
+    "zh": "公平性",
+    "abbr": "",
+    "definition": "研究模型对不同群体或个体是否存在不当差异。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Protected Attribute",
+    "zh": "受保护属性",
+    "abbr": "",
+    "definition": "公平性分析中需特别审慎处理的人群属性。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Demographic Parity",
+    "zh": "人口统计均等",
+    "abbr": "",
+    "definition": "不同群体具有相同正向决策率的公平标准。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Equal Opportunity",
+    "zh": "机会均等",
+    "abbr": "",
+    "definition": "不同群体在真实正例上的真正例率相同。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Equalized Odds",
+    "zh": "均衡机会",
+    "abbr": "",
+    "definition": "不同群体的真正例率和假正例率都相同。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Algorithmic Bias",
+    "zh": "算法偏差",
+    "abbr": "",
+    "definition": "算法预测中可能出现的系统性不公平差异。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Robustness",
+    "zh": "鲁棒性",
+    "abbr": "",
+    "definition": "面对噪声、扰动或环境变化仍稳定工作的能力。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Adversarial Example",
+    "zh": "对抗样本",
+    "abbr": "",
+    "definition": "经过特定扰动以诱导模型错误预测的输入。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Adversarial Training",
+    "zh": "对抗训练",
+    "abbr": "",
+    "definition": "在训练中加入对抗扰动以提升稳健性的方法。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Privacy-preserving ML",
+    "zh": "隐私保护机器学习",
+    "abbr": "",
+    "definition": "尽量减少模型训练或使用时隐私风险的技术。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Differential Privacy (DP)",
+    "zh": "差分隐私",
+    "abbr": "DP",
+    "definition": "限制单个记录对输出分布影响的隐私保证框架。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Federated Learning",
+    "zh": "联邦学习",
+    "abbr": "",
+    "definition": "数据留在本地、多方协同训练模型的机制。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Model Card",
+    "zh": "模型卡片",
+    "abbr": "",
+    "definition": "记录模型用途、评估、限制及风险的说明文档。"
+  },
+  {
+    "category": "machine-learning",
+    "chapter": 19,
+    "topic": "可解释性、公平性与安全",
+    "en": "Dataset Documentation",
+    "zh": "数据集文档",
+    "abbr": "",
+    "definition": "描述数据来源、采样、标注和适用边界的信息。"
   }
 ]

@@ -45,6 +45,15 @@
     "topics": 18
   },
   {
+    "slug": "machine-learning",
+    "en": "Machine Learning",
+    "zh": "机器学习",
+    "description": "Foundations, classical algorithms, model evaluation, tuning and MLOps",
+    "icon": "target",
+    "count": 447,
+    "topics": 19
+  },
+  {
     "slug": "reinforcement-learning",
     "en": "Reinforcement Learning",
     "zh": "强化学习",

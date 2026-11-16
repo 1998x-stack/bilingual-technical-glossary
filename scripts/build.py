@@ -11,6 +11,7 @@ CATALOG=[
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
  ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
  ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),
+ ('machine-learning','Machine Learning','机器学习','Foundations, classical algorithms, model evaluation, tuning and MLOps','target'),
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('calculus','Calculus','微积分','Limits, derivatives, integrals, series, multivariable and vector calculus','integral'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),

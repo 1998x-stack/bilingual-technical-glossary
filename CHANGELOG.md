@@ -1,5 +1,10 @@
 # Changelog
 
+## Machine Learning glossary publication — 2026-11-16
+
+- Indexed 447 Machine Learning terms in 19 chapters with Markdown and PDF.
+- Expanded search to 4,006 terms, 12 domains and 176 topics.
+
 ## 2026-11-16 — Apache Kafka glossary
 
 - Added 283 Kafka terms across 16 chapters in Markdown, PDF, and search indexes.
