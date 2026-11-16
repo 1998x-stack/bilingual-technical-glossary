@@ -4,7 +4,7 @@
 Maintain a precise, versioned Chinese–English technical reference. Accuracy and auditability outrank lexical volume. Never invent definitions, source links, or claims of coverage.
 
 ## Source of truth
-`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume.
+`data/terms.json` is the structured index for the website. `pdf/*.pdf` includes independently authored original publications. These originals contain additional terms not yet recovered by PDF extraction; do not delete or silently replace them. `data/ai-infrastructure.tsv` is the curated seed used for the AI Infra volume. The authored university mathematics publication lives in `sources/university-mathematics.html` and contains 627 original rows plus three appendices; `scripts/import_university_mathematics.py` deterministically imports it into `data/terms.json` and reproduces its PDF. Preserve this HTML as the publication source, and edit it when changing this volume.
 
 ## Workflow
 1. Understand the affected domain and chapter.
