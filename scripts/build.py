@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Markdown, CSV, site indexes, and a PDF for AI Infrastructure."""
+"""Build Markdown, CSV, site indexes, and AI Infra PDF; preserve GPU Kernel PDF."""
 from pathlib import Path
 from collections import Counter, defaultdict
 import csv, json, shutil, re
@@ -7,13 +7,15 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/terms.json'
 CATALOG=[
  ('ai-infrastructure','AI Infrastructure / AI Infra','AI 基础设施','Accelerators, distributed systems, GPU serving and operations','cpu'),
+ ('gpu-kernel','GPU Kernel Engineering','GPU Kernel / GPU 核函数','CUDA, PTX, Triton, GPU programming and kernel performance','cpu'),
  ('ai-agents','AI Agents','AI 智能体','Planning, tools, protocols, memory and multi-agent systems','bot'),
  ('large-language-models','Large Language Models','大语言模型 LLM','Tokenization, transformer, training, inference and alignment','brain'),
  ('deep-learning','Deep Learning','深度学习','Neural networks, optimization, computer vision and generation','layers'),
  ('reinforcement-learning','Reinforcement Learning','强化学习','MDPs, value learning, policy optimization and reward models','route'),
  ('linear-algebra','Linear Algebra','线性代数','Vectors, matrices, spaces, eigensystems and factorization','grid'),
+ ('compiler-principles','Compiler Principles','编译原理','Lexing, grammars, parsing, semantics, SSA, optimization, code generation and runtime','code'),
  ('probability-theory','Probability Theory','概率论','Random variables, distributions, stochastic processes and inference','sigma'),
- ('university-mathematics','University Mathematics','大学数学','Calculus, mathematical analysis, differential equations, algebra, statistics, geometry and optimization','sigma'),
+ ('university-mathematics','University Mathematics','大学数学','Calculus, mathematical analysis, differential equations, geometry, topology and optimization','sigma'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -30,6 +32,22 @@ def merge_infra(data):
   add.append(dict(category='ai-infrastructure',chapter=chapter,topic=topic,en=en,zh=zh,abbr=abbr,definition=desc))
  return add+data
 
+def merge_compiler(data):
+ # Compiler TSV is the editable source; replace indexed compiler rows on rebuild.
+ data=[t for t in data if t['category']!='compiler-principles']
+ topic='';chapter=0;add=[]
+ for line in (ROOT/'data/compiler-principles.tsv').read_text(encoding='utf8').splitlines():
+  if not line.strip():continue
+  if line.startswith('#'):
+   chapter+=1;topic=line.lstrip('# ').strip();continue
+  parts=line.split('|')
+  if len(parts)!=4:raise ValueError(f'Invalid Compiler Principles term: {line}')
+  en,zh,abbr,definition=(part.strip() for part in parts)
+  if not (topic and en and zh and definition):raise ValueError(f'Missing required value: {line}')
+  add.append(dict(category='compiler-principles',chapter=chapter,topic=topic,
+                  en=en,zh=zh,abbr=abbr,definition=definition))
+ return data+add
+
 def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
@@ -45,6 +63,7 @@ def write_markdown(data):
    out += [f'## {chapter:02d}. {name}','', '| # | English term | 中文译名 | Abbr. | 简明释义 |','|---:|---|---|---|---|']
    for i,item in enumerate(items,1):out.append('| '+ ' | '.join([str(i)]+[md_table_value(item[k]) for k in ['en','zh','abbr','definition']])+' |')
    out.append('')
+  if slug=='compiler-principles':out += ['> 术语辨析：CFG 在形式语言中指上下文无关文法，在程序分析中指控制流图。','', '参考资料：[LLVM Language Reference](https://llvm.org/docs/LangRef.html) · [GNU Bison Manual](https://www.gnu.org/software/bison/manual/) · [GCC Internals](https://gcc.gnu.org/onlinedocs/gccint/)','']
   out+=['---','',f'原始数据：[JSON](../data/terms.json) · [CSV](../data/terms.csv) · [PDF](../pdf/{slug}.pdf)','', '本术语表仅用于学习与参考，欢迎通过 Pull Request 提交译名修正、例证及权威来源。','']
   (ROOT/'glossaries'/f'{slug}.md').write_text('\n'.join(out),encoding='utf8')
 
@@ -112,7 +131,7 @@ def write_site_data(data):
  (d/'.nojekyll').write_text('',encoding='utf8')
 
 def run():
- data=json.loads(DATA.read_text(encoding='utf8'));data=merge_infra(data)
+ data=json.loads(DATA.read_text(encoding='utf8'));data=merge_compiler(merge_infra(data))
  if (ROOT/'sources/university-mathematics.html').is_file():
   from import_university_mathematics import merge_entries
   data=merge_entries(data)
@@ -133,6 +152,9 @@ def run():
   md=ROOT/'glossaries/university-mathematics.md'
   md.write_text(md.read_text(encoding='utf8')+'\n'+appendix_markdown(),encoding='utf8')
   render_source_pdf()
- render_pdf(data);write_site_data(data)
+ render_pdf(data)
+ from compiler_pdf import render_compiler_pdf
+ render_compiler_pdf(data, ROOT/'pdf/compiler-principles.pdf')
+ write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()

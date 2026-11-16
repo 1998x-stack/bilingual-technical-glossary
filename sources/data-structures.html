@@ -1,0 +1,496 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><title>数据结构专有名词中英文对照表</title>
+<style>
+@page { size: A4; margin: 19mm 17mm 19mm 17mm;
+ @top-left {content: 'DATA STRUCTURES  /  BILINGUAL GLOSSARY'; font: 8px 'DejaVu Sans',sans-serif; color:#6f8197; letter-spacing:1.1px;}
+ @top-right {content: string(chapter); font: 9px 'Noto Sans CJK SC',sans-serif; color:#64748b; }
+ @bottom-left {content:'数据结构专有名词中英文对照表  ·  2026'; font: 8px 'Noto Sans CJK SC',sans-serif; color:#7c8ca0;}
+ @bottom-right {content:counter(page); font: 9px 'DejaVu Sans',sans-serif; color:#425a76;}
+}
+@page cover { margin: 0; background:#0d1b31; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none}}
+@page toc { margin: 18mm 17mm 18mm 17mm; @top-left{content:'BILINGUAL GLOSSARY  /  INDEX'} @top-right{content:none} }
+*{ box-sizing:border-box }
+body{ font-family:'Noto Sans CJK SC','DejaVu Sans',sans-serif; color:#24344c; font-size:9.5pt; line-height:1.55; }
+a { color:inherit; text-decoration:none }
+.cover{page:cover; break-after:page; height:297mm; padding:31mm 25mm 28mm 25mm; background:linear-gradient(140deg,#112444 0%,#0d1b31 64%,#153a52 100%); color:#fff; position:relative; }
+.cover .micro {font: 10px 'DejaVu Sans',sans-serif; color:#8fbad4; letter-spacing:3px; }
+.cover .rule{width:45mm;height:2.5px;background:#29c6a6;margin:21mm 0 20mm}
+.cover h1{font-size:37pt;line-height:1.36;margin:0;letter-spacing:1px;font-weight:700;color:#f8fafc}
+.cover .english{font: 15pt 'DejaVu Sans',sans-serif;line-height:1.55;color:#d9e8f3;margin-top:9mm;max-width:145mm;}
+.cover .intro{font-size:11.5pt; color:#bacfe0;margin-top:15mm; line-height:1.9;}
+.cover .metric-grid{display:flex;gap:8mm;margin-top:24mm;border-top:1px solid #466077;padding-top:10mm;}
+.cover .metric{width:50mm;}.cover .big{display:block;font:28pt 'DejaVu Sans',sans-serif;color:#6fe2c3}.cover .lab{font-size:9pt;color:#9fb7cc;margin-top:1mm}
+.cover .bottom{position:absolute;bottom:25mm;left:25mm;right:25mm;display:flex;justify-content:space-between;font:9pt 'DejaVu Sans',sans-serif;color:#98b0c7;}
+.toc-page{page:toc;break-after:page;} .eyebrow{color:#1b9e92;font:9pt 'DejaVu Sans',sans-serif;letter-spacing:2px}
+.section-main-title{font-size:23pt;color:#142a46;margin:4mm 0 2mm;font-weight:700}
+.toc-lead{font-size:10pt;color:#6c7b90;margin:0 0 8mm}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm;row-gap:1.4mm}
+.toc-item{border-bottom:1px solid #e8edf2; padding:3mm 0; display:flex;align-items:baseline; gap:3mm;break-inside:avoid}
+.toc-item .num{font:9pt 'DejaVu Sans',sans-serif; color:#0c9b8e; min-width:7mm}
+.toc-item .title{font-size:10pt;color:#1c3451;font-weight:600}
+.toc-item .count{margin-left:auto;font-size:8pt;color:#8b98a7;white-space:nowrap}
+.callout{background:#f1f7f8;border-left:3px solid #18b5a4;padding:4mm 5mm;margin-top:10mm;border-radius:0 4px 4px 0;color:#3d586c;}
+.callout strong{color:#1d5260;}
+.scope{margin-top:10mm;display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.scope-box{border:1px solid #e2ebef;border-radius:5px;padding:4mm;background:#fbfcfe}
+.scope-box .t{font-weight:700;color:#203b59}.scope-box .d{font-size:8.5pt;color:#687c8e}
+.chapter{break-before:page;}
+.chapter-heading{border-bottom:1.5px solid #dbe6eb;margin-bottom:5mm;padding-bottom:4mm}
+.chapter-heading h2{string-set:chapter content(); color:#153252;font-size:19pt;line-height:1.35;margin:0}
+.chapter-heading .sub{font:9pt 'DejaVu Sans',sans-serif;color:#1a9d91;margin-top:1mm;}
+.chapter-heading p{font-size:9pt;color:#718096;margin:3mm 0 0}
+.chip{display:inline-block;vertical-align:middle;background:#e3f6f2;color:#087768;border-radius:12px;padding:0.5mm 2.2mm;font:7.5pt 'DejaVu Sans',sans-serif;margin-left:2mm}
+table{border-collapse:collapse;width:100%;table-layout:fixed;font-size:8.25pt; line-height:1.40}
+thead{display:table-header-group} tr{break-inside:avoid}
+th{background:#173757;color:#fff;text-align:left;font-size:8pt;padding:3mm 3mm;font-weight:600}
+.glossary-table th:nth-child(1), .glossary-table td:nth-child(1){width:37%}
+.glossary-table th:nth-child(2), .glossary-table td:nth-child(2){width:25%}
+.glossary-table th:nth-child(3), .glossary-table td:nth-child(3){width:38%}
+td{padding:1.00mm 3mm;vertical-align:top;border-bottom:0.6px solid #e5ebf0;overflow-wrap:anywhere}
+tbody tr:nth-child(2n){background:#f6f9fc}
+.term-en{color:#173757;font:7.85pt/1.48 'DejaVu Sans','Noto Sans CJK SC',sans-serif;overflow-wrap:anywhere}
+.term-zh{color:#123d45;font-weight:600}.term-desc{color:#526273}
+.chapter-note{margin-top:5mm;font-size:8pt;color:#7a8798;}
+.confusions{break-before:page;} .confusions h2{string-set:chapter content();}
+.confusion-item{border-bottom:1px solid #e0e7ed;padding:0.65mm 0;break-inside:avoid}
+.confusion-item .e{font:9pt 'DejaVu Sans',sans-serif;color:#168f84}
+.confusion-item .z{font-size:10.5pt;color:#203851;font-weight:600;margin-top:0.5mm}
+.confusion-item .d{font-size:9pt;color:#596a7a;margin-top:0.5mm}
+.endnote{margin-top:9mm;border-top:1px solid #dce5ea;padding-top:4mm;color:#64748b;font-size:8.5pt}
+</style></head><body>
+<section class="cover"><div class="micro">REFERENCE / DATA STRUCTURES / ZH–EN</div><div class="rule"></div>
+<h1>数据结构<br/>专有名词<br/>中英文对照表</h1>
+<div class="english">Bilingual Glossary<br/>of Data Structures</div>
+<div class="intro">基础概念 · 线性结构 · 树与图 · 哈希与索引<br/>高阶结构 · 性能分析 · 工程实践</div>
+<div class="metric-grid"><div class="metric"><span class="big">352</span><div class="lab">专业术语 / TERMS</div></div><div class="metric"><span class="big">14</span><div class="lab">知识主题 / TOPICS</div></div><div class="metric"><span class="big">03</span><div class="lab">英 · 中 · 释义</div></div></div>
+<div class="bottom"><span>STUDY · REFERENCE · ENGINEERING</span><span>2026 · 11 · 16</span></div>
+</section>
+<section class="toc-page"><div class="eyebrow">CONTENTS / 知识导航</div><h2 class="section-main-title">目录与学习路径</h2><p class="toc-lead">按“基础 → 结构 → 索引 → 工程”组织，点击主题可以跳转到对应章节。</p><div class="toc-grid">
+<a class="toc-item" href="#sec-01"><span class="num">01</span><span class="title">基础概念与抽象</span><span class="count">28 terms</span></a>
+<a class="toc-item" href="#sec-02"><span class="num">02</span><span class="title">复杂度与存储布局</span><span class="count">27 terms</span></a>
+<a class="toc-item" href="#sec-03"><span class="num">03</span><span class="title">数组、序列与矩阵</span><span class="count">28 terms</span></a>
+<a class="toc-item" href="#sec-04"><span class="num">04</span><span class="title">链表与指针结构</span><span class="count">19 terms</span></a>
+<a class="toc-item" href="#sec-05"><span class="num">05</span><span class="title">栈、队列与双端队列</span><span class="count">23 terms</span></a>
+<a class="toc-item" href="#sec-06"><span class="num">06</span><span class="title">哈希表与映射</span><span class="count">27 terms</span></a>
+<a class="toc-item" href="#sec-07"><span class="num">07</span><span class="title">树与遍历</span><span class="count">30 terms</span></a>
+<a class="toc-item" href="#sec-08"><span class="num">08</span><span class="title">搜索树与平衡树</span><span class="count">26 terms</span></a>
+<a class="toc-item" href="#sec-09"><span class="num">09</span><span class="title">堆与优先队列</span><span class="count">19 terms</span></a>
+<a class="toc-item" href="#sec-10"><span class="num">10</span><span class="title">图的表示与属性</span><span class="count">30 terms</span></a>
+<a class="toc-item" href="#sec-11"><span class="num">11</span><span class="title">图结构算法与连通性</span><span class="count">25 terms</span></a>
+<a class="toc-item" href="#sec-12"><span class="num">12</span><span class="title">并查集与区间查询</span><span class="count">22 terms</span></a>
+<a class="toc-item" href="#sec-13"><span class="num">13</span><span class="title">字符串、字典树与索引</span><span class="count">23 terms</span></a>
+<a class="toc-item" href="#sec-14"><span class="num">14</span><span class="title">概率型、外存与并发结构</span><span class="count">25 terms</span></a>
+<a class="toc-item" href="#confusions"><span class="num">→</span><span class="title">易混淆概念对照</span><span class="count">12 pairs</span></a></div>
+<div class="scope">
+<div class="scope-box"><div class="t">线性结构</div><div class="d">数组 · 链表 · 栈 · 队列</div></div>
+<div class="scope-box"><div class="t">树与索引</div><div class="d">二叉树 · 平衡树 · 堆 · Trie</div></div>
+<div class="scope-box"><div class="t">图与集合</div><div class="d">图 · 并查集 · 区间查询</div></div>
+<div class="scope-box"><div class="t">工程拓展</div><div class="d">外存结构 · 概率结构 · 并发结构</div></div>
+</div><div class="callout"><strong>阅读说明</strong><br/>英文名称优先使用论文、教材和主流工程实践中的常见写法；中文名称采用常见译法。部分术语跨多个领域，定义以快速检索为目标，具体边界条件以相应资料为准。</div></section>
+<section class="chapter" id="sec-01"><div class="chapter-heading"><h2>01 · 基础概念与抽象</h2><div class="sub">Core Concepts &amp; Abstractions <span class="chip">28 TERMS</span></div><p>从抽象数据类型、逻辑结构到基本操作，建立统一术语体系。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Data Structure</td><td class="term-zh">数据结构</td><td class="term-desc">组织、存储和访问数据的方式及相应操作。</td></tr>
+<tr><td class="term-en">Abstract Data Type (ADT)</td><td class="term-zh">抽象数据类型</td><td class="term-desc">只规定数据与操作的语义，不限定实现细节。</td></tr>
+<tr><td class="term-en">Data Type</td><td class="term-zh">数据类型</td><td class="term-desc">值的集合及可执行操作的约束。</td></tr>
+<tr><td class="term-en">Primitive Type</td><td class="term-zh">基本类型</td><td class="term-desc">语言直接提供的基本数据类型，如整数与布尔值。</td></tr>
+<tr><td class="term-en">Composite Type</td><td class="term-zh">复合类型</td><td class="term-desc">由多个值或类型组合形成的类型。</td></tr>
+<tr><td class="term-en">Container</td><td class="term-zh">容器</td><td class="term-desc">保存与组织一组元素的对象或结构。</td></tr>
+<tr><td class="term-en">Collection</td><td class="term-zh">集合容器</td><td class="term-desc">一组元素及其访问、修改操作的统称。</td></tr>
+<tr><td class="term-en">Element</td><td class="term-zh">元素</td><td class="term-desc">数据结构中存储的一个数据项。</td></tr>
+<tr><td class="term-en">Node</td><td class="term-zh">节点</td><td class="term-desc">具有数据字段和可能的链接字段的基本单元。</td></tr>
+<tr><td class="term-en">Key</td><td class="term-zh">键</td><td class="term-desc">用于标识、检索或比较记录的字段。</td></tr>
+<tr><td class="term-en">Value</td><td class="term-zh">值</td><td class="term-desc">与键关联或作为容器成员的数据。</td></tr>
+<tr><td class="term-en">Record</td><td class="term-zh">记录</td><td class="term-desc">由若干字段构成的一条结构化数据。</td></tr>
+<tr><td class="term-en">Entry</td><td class="term-zh">条目</td><td class="term-desc">容器中的键值对或单个存储项。</td></tr>
+<tr><td class="term-en">Index</td><td class="term-zh">索引</td><td class="term-desc">指向元素位置或支持快速检索的辅助结构。</td></tr>
+<tr><td class="term-en">Reference</td><td class="term-zh">引用</td><td class="term-desc">用于间接访问对象的标识或关联。</td></tr>
+<tr><td class="term-en">Pointer</td><td class="term-zh">指针</td><td class="term-desc">保存内存地址或等价位置标识的值。</td></tr>
+<tr><td class="term-en">Null Pointer</td><td class="term-zh">空指针</td><td class="term-desc">表示不指向有效对象或节点的指针。</td></tr>
+<tr><td class="term-en">Sentinel</td><td class="term-zh">哨兵</td><td class="term-desc">简化边界判断的特殊标记或节点。</td></tr>
+<tr><td class="term-en">Invariant</td><td class="term-zh">不变量</td><td class="term-desc">在结构操作前后必须持续成立的性质。</td></tr>
+<tr><td class="term-en">Mutable Structure</td><td class="term-zh">可变数据结构</td><td class="term-desc">创建后可原地修改元素或链接的结构。</td></tr>
+<tr><td class="term-en">Immutable Structure</td><td class="term-zh">不可变数据结构</td><td class="term-desc">构建后不改变既有实例状态的结构。</td></tr>
+<tr><td class="term-en">Persistent Data Structure</td><td class="term-zh">持久化数据结构</td><td class="term-desc">更新时保留旧版本，并生成可访问的新版本。</td></tr>
+<tr><td class="term-en">Ephemeral Data Structure</td><td class="term-zh">非持久化数据结构</td><td class="term-desc">更新通常覆盖当前版本，不保留历史版本。</td></tr>
+<tr><td class="term-en">Interface</td><td class="term-zh">接口</td><td class="term-desc">向外提供的一组操作与使用约定。</td></tr>
+<tr><td class="term-en">Implementation</td><td class="term-zh">实现</td><td class="term-desc">将抽象操作映射到具体存储布局和算法。</td></tr>
+<tr><td class="term-en">Traversal</td><td class="term-zh">遍历</td><td class="term-desc">依照特定次序访问结构中的各元素。</td></tr>
+<tr><td class="term-en">Iteration</td><td class="term-zh">迭代</td><td class="term-desc">按序逐次取得元素或执行重复操作。</td></tr>
+<tr><td class="term-en">Iterator</td><td class="term-zh">迭代器</td><td class="term-desc">用于逐项访问容器元素的对象或协议。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-02"><div class="chapter-heading"><h2>02 · 复杂度与存储布局</h2><div class="sub">Complexity &amp; Memory Layout <span class="chip">27 TERMS</span></div><p>理解术语在性能分析、内存组织和实现取舍中的作用。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Time Complexity</td><td class="term-zh">时间复杂度</td><td class="term-desc">描述输入规模增长时操作时间的渐近变化。</td></tr>
+<tr><td class="term-en">Space Complexity</td><td class="term-zh">空间复杂度</td><td class="term-desc">描述输入规模增长时所需空间的渐近变化。</td></tr>
+<tr><td class="term-en">Big O Notation</td><td class="term-zh">大 O 记号</td><td class="term-desc">表示函数增长率的渐近上界。</td></tr>
+<tr><td class="term-en">Big Omega Notation</td><td class="term-zh">大 Ω 记号</td><td class="term-desc">表示函数增长率的渐近下界。</td></tr>
+<tr><td class="term-en">Big Theta Notation</td><td class="term-zh">大 Θ 记号</td><td class="term-desc">表示函数增长率的渐近紧确界。</td></tr>
+<tr><td class="term-en">Worst-case Complexity</td><td class="term-zh">最坏情况复杂度</td><td class="term-desc">在最不利输入下的资源消耗上界。</td></tr>
+<tr><td class="term-en">Average-case Complexity</td><td class="term-zh">平均情况复杂度</td><td class="term-desc">给定输入分布下的期望资源消耗。</td></tr>
+<tr><td class="term-en">Amortized Analysis</td><td class="term-zh">均摊分析</td><td class="term-desc">将一系列操作的总成本分摊到单次操作。</td></tr>
+<tr><td class="term-en">Amortized Complexity</td><td class="term-zh">均摊复杂度</td><td class="term-desc">序列操作中平均分摊到每次的代价上界。</td></tr>
+<tr><td class="term-en">Auxiliary Space</td><td class="term-zh">辅助空间</td><td class="term-desc">除输入与输出数据本身以外的额外空间。</td></tr>
+<tr><td class="term-en">Memory Footprint</td><td class="term-zh">内存占用</td><td class="term-desc">数据结构及相关元数据消耗的存储空间。</td></tr>
+<tr><td class="term-en">Contiguous Memory</td><td class="term-zh">连续内存</td><td class="term-desc">数据元素占据相邻的内存地址区间。</td></tr>
+<tr><td class="term-en">Non-contiguous Memory</td><td class="term-zh">非连续内存</td><td class="term-desc">元素可散布在不同地址并通过链接关联。</td></tr>
+<tr><td class="term-en">Random Access</td><td class="term-zh">随机访问</td><td class="term-desc">能够直接通过位置标识访问任意元素。</td></tr>
+<tr><td class="term-en">Sequential Access</td><td class="term-zh">顺序访问</td><td class="term-desc">通常沿既定顺序逐个访问元素。</td></tr>
+<tr><td class="term-en">Cache Locality</td><td class="term-zh">缓存局部性</td><td class="term-desc">访问数据时倾向重复访问附近或近期的位置。</td></tr>
+<tr><td class="term-en">Spatial Locality</td><td class="term-zh">空间局部性</td><td class="term-desc">程序倾向访问地址相邻的存储位置。</td></tr>
+<tr><td class="term-en">Temporal Locality</td><td class="term-zh">时间局部性</td><td class="term-desc">程序倾向短期内重复访问同一数据。</td></tr>
+<tr><td class="term-en">Memory Allocation</td><td class="term-zh">内存分配</td><td class="term-desc">为元素或节点申请可用内存空间。</td></tr>
+<tr><td class="term-en">Dynamic Allocation</td><td class="term-zh">动态分配</td><td class="term-desc">运行期间按需申请与释放内存。</td></tr>
+<tr><td class="term-en">Fragmentation</td><td class="term-zh">内存碎片</td><td class="term-desc">空闲空间被分割，降低有效利用或分配效率。</td></tr>
+<tr><td class="term-en">Capacity</td><td class="term-zh">容量</td><td class="term-desc">容器当前无需扩容即可容纳的元素上限。</td></tr>
+<tr><td class="term-en">Size</td><td class="term-zh">大小</td><td class="term-desc">容器当前实际包含的元素个数。</td></tr>
+<tr><td class="term-en">Load Factor</td><td class="term-zh">负载因子</td><td class="term-desc">已存储元素数与桶数等容量指标的比值。</td></tr>
+<tr><td class="term-en">Resize</td><td class="term-zh">调整容量</td><td class="term-desc">改变底层可容纳元素数量的操作。</td></tr>
+<tr><td class="term-en">Reallocation</td><td class="term-zh">重新分配</td><td class="term-desc">申请新的存储区域并可能搬移既有元素。</td></tr>
+<tr><td class="term-en">Memory Alignment</td><td class="term-zh">内存对齐</td><td class="term-desc">按特定地址边界布置对象以满足平台要求。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-03"><div class="chapter-heading"><h2>03 · 数组、序列与矩阵</h2><div class="sub">Arrays, Sequences &amp; Matrices <span class="chip">28 TERMS</span></div><p>掌握连续存储、索引、动态扩容及多维表示的核心词汇。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Array</td><td class="term-zh">数组</td><td class="term-desc">按索引访问、通常在连续存储区排列的同类型元素序列。</td></tr>
+<tr><td class="term-en">Static Array</td><td class="term-zh">静态数组</td><td class="term-desc">长度在创建后固定的数组。</td></tr>
+<tr><td class="term-en">Dynamic Array</td><td class="term-zh">动态数组</td><td class="term-desc">容量可通过重新分配等方式增长的数组。</td></tr>
+<tr><td class="term-en">Resizable Array</td><td class="term-zh">可调整大小数组</td><td class="term-desc">支持运行时扩容或缩容的数组实现。</td></tr>
+<tr><td class="term-en">Array List</td><td class="term-zh">数组列表</td><td class="term-desc">基于动态数组实现的列表容器名称。</td></tr>
+<tr><td class="term-en">Sequence</td><td class="term-zh">序列</td><td class="term-desc">元素按明确次序组织的抽象集合。</td></tr>
+<tr><td class="term-en">List</td><td class="term-zh">列表</td><td class="term-desc">支持按位置访问或插入删除的有序集合抽象。</td></tr>
+<tr><td class="term-en">Indexing</td><td class="term-zh">索引访问</td><td class="term-desc">使用位置编号定位元素。</td></tr>
+<tr><td class="term-en">Zero-based Indexing</td><td class="term-zh">从零开始的索引</td><td class="term-desc">首元素下标为零的索引约定。</td></tr>
+<tr><td class="term-en">Subarray</td><td class="term-zh">子数组</td><td class="term-desc">原数组中一段连续的元素区间。</td></tr>
+<tr><td class="term-en">Slice</td><td class="term-zh">切片</td><td class="term-desc">从序列中选择连续区间或按步长抽取元素。</td></tr>
+<tr><td class="term-en">View</td><td class="term-zh">视图</td><td class="term-desc">共享底层数据、提供不同访问方式的表示。</td></tr>
+<tr><td class="term-en">Array Copy</td><td class="term-zh">数组复制</td><td class="term-desc">将数组内容复制到另一存储区域。</td></tr>
+<tr><td class="term-en">In-place Operation</td><td class="term-zh">原地操作</td><td class="term-desc">主要在原有数据区域中完成修改。</td></tr>
+<tr><td class="term-en">Append</td><td class="term-zh">尾部追加</td><td class="term-desc">在序列末端加入一个元素。</td></tr>
+<tr><td class="term-en">Insert</td><td class="term-zh">插入</td><td class="term-desc">在指定位置加入元素并维护次序。</td></tr>
+<tr><td class="term-en">Delete</td><td class="term-zh">删除</td><td class="term-desc">移除指定位置或满足条件的元素。</td></tr>
+<tr><td class="term-en">Shift</td><td class="term-zh">移位</td><td class="term-desc">为插入、删除或重排移动元素位置。</td></tr>
+<tr><td class="term-en">Circular Array</td><td class="term-zh">循环数组</td><td class="term-desc">将固定数组下标按模运算首尾衔接使用。</td></tr>
+<tr><td class="term-en">Multidimensional Array</td><td class="term-zh">多维数组</td><td class="term-desc">使用多个下标表示元素位置的数组。</td></tr>
+<tr><td class="term-en">Matrix</td><td class="term-zh">矩阵</td><td class="term-desc">按行和列组织元素的二维数据结构。</td></tr>
+<tr><td class="term-en">Row-major Order</td><td class="term-zh">行主序</td><td class="term-desc">同一行的元素在内存中相邻排列的存储次序。</td></tr>
+<tr><td class="term-en">Column-major Order</td><td class="term-zh">列主序</td><td class="term-desc">同一列的元素在内存中相邻排列的存储次序。</td></tr>
+<tr><td class="term-en">Stride</td><td class="term-zh">步长</td><td class="term-desc">跨越某个数组维度一个索引单位时的内存偏移量。</td></tr>
+<tr><td class="term-en">Sparse Matrix</td><td class="term-zh">稀疏矩阵</td><td class="term-desc">绝大多数元素为零或缺省值的矩阵。</td></tr>
+<tr><td class="term-en">Dense Matrix</td><td class="term-zh">稠密矩阵</td><td class="term-desc">通常显式存储大部分位置元素的矩阵。</td></tr>
+<tr><td class="term-en">Compressed Sparse Row (CSR)</td><td class="term-zh">压缩稀疏行格式</td><td class="term-desc">以行指针、列索引和值表示稀疏矩阵。</td></tr>
+<tr><td class="term-en">Compressed Sparse Column (CSC)</td><td class="term-zh">压缩稀疏列格式</td><td class="term-desc">以列指针、行索引和值表示稀疏矩阵。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-04"><div class="chapter-heading"><h2>04 · 链表与指针结构</h2><div class="sub">Linked Lists &amp; Pointer Structures <span class="chip">19 TERMS</span></div><p>区分单链、双链、循环链表及常见节点操作。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Linked List</td><td class="term-zh">链表</td><td class="term-desc">通过节点间链接组织的线性数据结构。</td></tr>
+<tr><td class="term-en">Singly Linked List</td><td class="term-zh">单向链表</td><td class="term-desc">每个节点通常仅保存后继节点链接的链表。</td></tr>
+<tr><td class="term-en">Doubly Linked List</td><td class="term-zh">双向链表</td><td class="term-desc">节点同时保存前驱与后继链接的链表。</td></tr>
+<tr><td class="term-en">Circular Linked List</td><td class="term-zh">循环链表</td><td class="term-desc">尾节点链接回某个起始节点的链表。</td></tr>
+<tr><td class="term-en">Circular Doubly Linked List</td><td class="term-zh">循环双向链表</td><td class="term-desc">前驱和后继关系均首尾闭合的双向链表。</td></tr>
+<tr><td class="term-en">Head Node</td><td class="term-zh">头节点</td><td class="term-desc">链表起始位置的节点；有时专指虚拟头节点。</td></tr>
+<tr><td class="term-en">Tail Node</td><td class="term-zh">尾节点</td><td class="term-desc">链表末端的节点。</td></tr>
+<tr><td class="term-en">Dummy Head</td><td class="term-zh">虚拟头节点</td><td class="term-desc">不承载普通业务元素、用于简化边界操作的节点。</td></tr>
+<tr><td class="term-en">Next Pointer</td><td class="term-zh">后继指针</td><td class="term-desc">指向下一个节点的链接。</td></tr>
+<tr><td class="term-en">Previous Pointer</td><td class="term-zh">前驱指针</td><td class="term-desc">指向上一个节点的链接。</td></tr>
+<tr><td class="term-en">Predecessor</td><td class="term-zh">前驱</td><td class="term-desc">在指定顺序中位于目标元素之前的元素。</td></tr>
+<tr><td class="term-en">Successor</td><td class="term-zh">后继</td><td class="term-desc">在指定顺序中位于目标元素之后的元素。</td></tr>
+<tr><td class="term-en">List Reversal</td><td class="term-zh">链表反转</td><td class="term-desc">将链表节点的链接方向或次序反转。</td></tr>
+<tr><td class="term-en">List Splicing</td><td class="term-zh">链表拼接</td><td class="term-desc">通过调整链接合并或移动一段链表。</td></tr>
+<tr><td class="term-en">Cycle Detection</td><td class="term-zh">环检测</td><td class="term-desc">判断链表中是否存在可重复到达的节点。</td></tr>
+<tr><td class="term-en">Fast and Slow Pointers</td><td class="term-zh">快慢指针</td><td class="term-desc">使用不同移动速度的指针完成检测或定位。</td></tr>
+<tr><td class="term-en">Skip List</td><td class="term-zh">跳表</td><td class="term-desc">通过多层有序链接实现期望对数级查找的结构。</td></tr>
+<tr><td class="term-en">Unrolled Linked List</td><td class="term-zh">分块链表</td><td class="term-desc">每个节点存储多个连续元素的链表变体。</td></tr>
+<tr><td class="term-en">Intrusive Linked List</td><td class="term-zh">侵入式链表</td><td class="term-desc">将链接字段直接放入被管理对象的链表。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-05"><div class="chapter-heading"><h2>05 · 栈、队列与双端队列</h2><div class="sub">Stacks, Queues &amp; Deques <span class="chip">23 TERMS</span></div><p>理解 LIFO、FIFO、双端操作以及实际工程中的队列变体。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Stack</td><td class="term-zh">栈</td><td class="term-desc">遵循后进先出次序的线性容器。</td></tr>
+<tr><td class="term-en">Last In, First Out (LIFO)</td><td class="term-zh">后进先出</td><td class="term-desc">最后加入的元素最先被取出。</td></tr>
+<tr><td class="term-en">Push</td><td class="term-zh">入栈</td><td class="term-desc">向栈顶加入元素。</td></tr>
+<tr><td class="term-en">Pop</td><td class="term-zh">出栈</td><td class="term-desc">从栈顶移除并通常返回元素。</td></tr>
+<tr><td class="term-en">Peek / Top</td><td class="term-zh">查看栈顶</td><td class="term-desc">读取栈顶元素但不移除。</td></tr>
+<tr><td class="term-en">Stack Overflow</td><td class="term-zh">栈溢出</td><td class="term-desc">栈空间超出允许容量或调用栈限制。</td></tr>
+<tr><td class="term-en">Stack Underflow</td><td class="term-zh">栈下溢</td><td class="term-desc">在空栈上执行非法弹出等操作。</td></tr>
+<tr><td class="term-en">Monotonic Stack</td><td class="term-zh">单调栈</td><td class="term-desc">保持元素按单调关系排列的栈。</td></tr>
+<tr><td class="term-en">Call Stack</td><td class="term-zh">调用栈</td><td class="term-desc">保存函数调用帧和返回信息的运行时栈。</td></tr>
+<tr><td class="term-en">Queue</td><td class="term-zh">队列</td><td class="term-desc">通常遵循先进先出次序的线性容器。</td></tr>
+<tr><td class="term-en">First In, First Out (FIFO)</td><td class="term-zh">先进先出</td><td class="term-desc">最先加入的元素最先被取出。</td></tr>
+<tr><td class="term-en">Enqueue</td><td class="term-zh">入队</td><td class="term-desc">向队列尾端加入元素。</td></tr>
+<tr><td class="term-en">Dequeue</td><td class="term-zh">出队</td><td class="term-desc">从队列头端移除并通常返回元素。</td></tr>
+<tr><td class="term-en">Front</td><td class="term-zh">队首</td><td class="term-desc">队列中下一次通常被取出的元素位置。</td></tr>
+<tr><td class="term-en">Rear / Back</td><td class="term-zh">队尾</td><td class="term-desc">队列中通常执行追加的位置。</td></tr>
+<tr><td class="term-en">Circular Queue</td><td class="term-zh">循环队列</td><td class="term-desc">用环形下标复用固定缓冲区的队列。</td></tr>
+<tr><td class="term-en">Deque (Double-ended Queue)</td><td class="term-zh">双端队列</td><td class="term-desc">支持在首尾两端插入和删除的容器。</td></tr>
+<tr><td class="term-en">Monotonic Queue</td><td class="term-zh">单调队列</td><td class="term-desc">保持候选值单调，用于窗口极值等查询。</td></tr>
+<tr><td class="term-en">Blocking Queue</td><td class="term-zh">阻塞队列</td><td class="term-desc">在空或满等条件下可使操作等待的并发队列。</td></tr>
+<tr><td class="term-en">Bounded Queue</td><td class="term-zh">有界队列</td><td class="term-desc">最多容纳预设数量元素的队列。</td></tr>
+<tr><td class="term-en">Unbounded Queue</td><td class="term-zh">无界队列</td><td class="term-desc">不规定固定元素上限的队列抽象。</td></tr>
+<tr><td class="term-en">Ring Buffer</td><td class="term-zh">环形缓冲区</td><td class="term-desc">在固定空间内循环复用读写位置的缓冲结构。</td></tr>
+<tr><td class="term-en">Producer–Consumer Queue</td><td class="term-zh">生产者—消费者队列</td><td class="term-desc">在生产任务和消费任务间传递元素的队列。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-06"><div class="chapter-heading"><h2>06 · 哈希表与映射</h2><div class="sub">Hash Tables &amp; Maps <span class="chip">27 TERMS</span></div><p>覆盖哈希函数、冲突处理、哈希容器和探测策略。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Hash Table</td><td class="term-zh">哈希表</td><td class="term-desc">通过哈希函数把键映射到桶或槽位的结构。</td></tr>
+<tr><td class="term-en">Hash Map</td><td class="term-zh">哈希映射</td><td class="term-desc">使用哈希表实现键到值映射的容器。</td></tr>
+<tr><td class="term-en">Hash Set</td><td class="term-zh">哈希集合</td><td class="term-desc">基于哈希表实现的去重元素集合。</td></tr>
+<tr><td class="term-en">Map / Dictionary</td><td class="term-zh">映射／字典</td><td class="term-desc">保存键值关联并支持按键查找的抽象类型。</td></tr>
+<tr><td class="term-en">Set</td><td class="term-zh">集合</td><td class="term-desc">不包含重复元素的抽象容器。</td></tr>
+<tr><td class="term-en">Multiset</td><td class="term-zh">多重集合</td><td class="term-desc">允许同一元素出现多次的集合抽象。</td></tr>
+<tr><td class="term-en">Multimap</td><td class="term-zh">多重映射</td><td class="term-desc">允许一个键对应多个值的映射抽象。</td></tr>
+<tr><td class="term-en">Hash Function</td><td class="term-zh">哈希函数</td><td class="term-desc">将输入键转换为固定范围摘要或索引的函数。</td></tr>
+<tr><td class="term-en">Hash Value</td><td class="term-zh">哈希值</td><td class="term-desc">哈希函数计算得到的摘要或数值。</td></tr>
+<tr><td class="term-en">Hash Code</td><td class="term-zh">哈希码</td><td class="term-desc">对象或键用于哈希分桶的整数等表示。</td></tr>
+<tr><td class="term-en">Bucket</td><td class="term-zh">桶</td><td class="term-desc">哈希表中负责容纳一个或多个条目的位置或分组。</td></tr>
+<tr><td class="term-en">Slot</td><td class="term-zh">槽位</td><td class="term-desc">底层表中可放置条目的单个位置。</td></tr>
+<tr><td class="term-en">Hash Collision</td><td class="term-zh">哈希冲突</td><td class="term-desc">不同键映射到同一桶或槽位的情形。</td></tr>
+<tr><td class="term-en">Collision Resolution</td><td class="term-zh">冲突解决</td><td class="term-desc">在碰撞发生时仍能正确存储和查找键的方法。</td></tr>
+<tr><td class="term-en">Separate Chaining</td><td class="term-zh">链地址法</td><td class="term-desc">将同桶碰撞项放入链表或其他次级容器。</td></tr>
+<tr><td class="term-en">Open Addressing</td><td class="term-zh">开放寻址法</td><td class="term-desc">通过探测表中其他槽位解决碰撞。</td></tr>
+<tr><td class="term-en">Linear Probing</td><td class="term-zh">线性探测</td><td class="term-desc">碰撞后依次检查相邻候选槽位。</td></tr>
+<tr><td class="term-en">Quadratic Probing</td><td class="term-zh">二次探测</td><td class="term-desc">以二次函数决定探测位移的策略。</td></tr>
+<tr><td class="term-en">Double Hashing</td><td class="term-zh">双重哈希</td><td class="term-desc">使用第二个哈希函数确定探测步长。</td></tr>
+<tr><td class="term-en">Robin Hood Hashing</td><td class="term-zh">罗宾汉哈希</td><td class="term-desc">通过平衡探测距离减少较长探测链的策略。</td></tr>
+<tr><td class="term-en">Cuckoo Hashing</td><td class="term-zh">布谷鸟哈希</td><td class="term-desc">在多个候选位置之间搬移键以处理冲突。</td></tr>
+<tr><td class="term-en">Tombstone</td><td class="term-zh">删除标记</td><td class="term-desc">开放寻址表中用于标识已删除槽位的标记。</td></tr>
+<tr><td class="term-en">Rehashing</td><td class="term-zh">重新哈希</td><td class="term-desc">改变容量或布局时重新安排各键的位置。</td></tr>
+<tr><td class="term-en">Hash Flooding</td><td class="term-zh">哈希洪泛</td><td class="term-desc">大量冲突导致哈希结构性能下降的情形。</td></tr>
+<tr><td class="term-en">Perfect Hashing</td><td class="term-zh">完美哈希</td><td class="term-desc">针对给定静态键集实现无碰撞映射的方法。</td></tr>
+<tr><td class="term-en">Minimal Perfect Hash</td><td class="term-zh">最小完美哈希</td><td class="term-desc">将 n 个固定键无碰撞映射到 n 个槽位。</td></tr>
+<tr><td class="term-en">Ordered Map</td><td class="term-zh">有序映射</td><td class="term-desc">按键顺序或插入顺序维持确定迭代次序的映射。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-07"><div class="chapter-heading"><h2>07 · 树与遍历</h2><div class="sub">Trees &amp; Traversals <span class="chip">30 TERMS</span></div><p>从节点关系、树的形态到深度优先与层序遍历。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Tree</td><td class="term-zh">树</td><td class="term-desc">由节点和无环的层次连接关系组成的结构。</td></tr>
+<tr><td class="term-en">Rooted Tree</td><td class="term-zh">有根树</td><td class="term-desc">指定一个根节点以定义父子关系的树。</td></tr>
+<tr><td class="term-en">Root</td><td class="term-zh">根节点</td><td class="term-desc">有根树中没有父节点的起始节点。</td></tr>
+<tr><td class="term-en">Parent Node</td><td class="term-zh">父节点</td><td class="term-desc">树中直接连接到某个子节点上方的节点。</td></tr>
+<tr><td class="term-en">Child Node</td><td class="term-zh">子节点</td><td class="term-desc">由某个父节点直接连接的下层节点。</td></tr>
+<tr><td class="term-en">Sibling Nodes</td><td class="term-zh">兄弟节点</td><td class="term-desc">拥有相同父节点的节点。</td></tr>
+<tr><td class="term-en">Leaf Node</td><td class="term-zh">叶子节点</td><td class="term-desc">没有子节点的节点。</td></tr>
+<tr><td class="term-en">Internal Node</td><td class="term-zh">内部节点</td><td class="term-desc">至少拥有一个子节点的节点。</td></tr>
+<tr><td class="term-en">Ancestor</td><td class="term-zh">祖先节点</td><td class="term-desc">沿父指针不断向上可以到达的节点。</td></tr>
+<tr><td class="term-en">Descendant</td><td class="term-zh">后代节点</td><td class="term-desc">沿子指针向下可以到达的节点。</td></tr>
+<tr><td class="term-en">Subtree</td><td class="term-zh">子树</td><td class="term-desc">由某节点及其所有后代构成的树。</td></tr>
+<tr><td class="term-en">Forest</td><td class="term-zh">森林</td><td class="term-desc">若干互不相交的树的集合。</td></tr>
+<tr><td class="term-en">Degree of a Node</td><td class="term-zh">节点的度</td><td class="term-desc">节点直接拥有的子节点数（有根树语境）。</td></tr>
+<tr><td class="term-en">Depth of a Node</td><td class="term-zh">节点深度</td><td class="term-desc">从根到该节点的边数。</td></tr>
+<tr><td class="term-en">Height of a Node</td><td class="term-zh">节点高度</td><td class="term-desc">从该节点到最深叶节点的最长边数。</td></tr>
+<tr><td class="term-en">Height of a Tree</td><td class="term-zh">树高</td><td class="term-desc">根节点的高度；空树约定因实现而异。</td></tr>
+<tr><td class="term-en">Level</td><td class="term-zh">层</td><td class="term-desc">依据根到节点距离划分的层级；起始层编号依约定。</td></tr>
+<tr><td class="term-en">Binary Tree</td><td class="term-zh">二叉树</td><td class="term-desc">每个节点最多有左右两个子节点的树。</td></tr>
+<tr><td class="term-en">Full Binary Tree</td><td class="term-zh">严格二叉树／真二叉树</td><td class="term-desc">每个节点的子节点数只能是零或二的二叉树。</td></tr>
+<tr><td class="term-en">Perfect Binary Tree</td><td class="term-zh">满二叉树／完美二叉树</td><td class="term-desc">全部内部节点有两个子节点且叶子在同一层。</td></tr>
+<tr><td class="term-en">Complete Binary Tree</td><td class="term-zh">完全二叉树</td><td class="term-desc">除末层外各层已满，末层节点从左向右排列。</td></tr>
+<tr><td class="term-en">Skewed Tree</td><td class="term-zh">斜树</td><td class="term-desc">绝大多数节点只有单侧子节点的退化树。</td></tr>
+<tr><td class="term-en">Tree Traversal</td><td class="term-zh">树遍历</td><td class="term-desc">按指定顺序访问树中全部节点。</td></tr>
+<tr><td class="term-en">Preorder Traversal</td><td class="term-zh">前序遍历</td><td class="term-desc">按根、左子树、右子树的顺序访问二叉树。</td></tr>
+<tr><td class="term-en">Inorder Traversal</td><td class="term-zh">中序遍历</td><td class="term-desc">按左子树、根、右子树的顺序访问二叉树。</td></tr>
+<tr><td class="term-en">Postorder Traversal</td><td class="term-zh">后序遍历</td><td class="term-desc">按左子树、右子树、根的顺序访问二叉树。</td></tr>
+<tr><td class="term-en">Level-order Traversal</td><td class="term-zh">层序遍历</td><td class="term-desc">从上到下逐层访问节点，通常借助队列。</td></tr>
+<tr><td class="term-en">Depth-first Search (DFS)</td><td class="term-zh">深度优先搜索</td><td class="term-desc">优先深入尚未访问的分支，之后回溯。</td></tr>
+<tr><td class="term-en">Breadth-first Search (BFS)</td><td class="term-zh">广度优先搜索</td><td class="term-desc">按与起点距离的层次依次扩展节点。</td></tr>
+<tr><td class="term-en">Lowest Common Ancestor (LCA)</td><td class="term-zh">最近公共祖先</td><td class="term-desc">两个节点共同祖先中深度最大的节点。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-08"><div class="chapter-heading"><h2>08 · 搜索树与平衡树</h2><div class="sub">Search Trees &amp; Balanced Trees <span class="chip">26 TERMS</span></div><p>理解查找不变量、旋转、平衡约束和常见平衡树变体。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Binary Search Tree (BST)</td><td class="term-zh">二叉搜索树</td><td class="term-desc">左子树键小于节点键、右子树键大于节点键（重复键规则另定）。</td></tr>
+<tr><td class="term-en">Search Tree</td><td class="term-zh">搜索树</td><td class="term-desc">利用键顺序或分区规则支持高效检索的树。</td></tr>
+<tr><td class="term-en">Balanced Tree</td><td class="term-zh">平衡树</td><td class="term-desc">通过结构约束控制高度以保证操作效率的树。</td></tr>
+<tr><td class="term-en">Self-balancing Tree</td><td class="term-zh">自平衡树</td><td class="term-desc">在更新时自动维持指定平衡条件的树。</td></tr>
+<tr><td class="term-en">AVL Tree</td><td class="term-zh">AVL 树</td><td class="term-desc">通过左右子树高度差约束保持平衡的搜索树。</td></tr>
+<tr><td class="term-en">Red–Black Tree</td><td class="term-zh">红黑树</td><td class="term-desc">以节点颜色与路径约束限制高度的平衡搜索树。</td></tr>
+<tr><td class="term-en">Splay Tree</td><td class="term-zh">伸展树</td><td class="term-desc">通过访问后的旋转将操作节点移至根部的搜索树。</td></tr>
+<tr><td class="term-en">Treap</td><td class="term-zh">树堆</td><td class="term-desc">同时满足搜索树的键顺序和堆的优先级约束。</td></tr>
+<tr><td class="term-en">Scapegoat Tree</td><td class="term-zh">替罪羊树</td><td class="term-desc">在失衡时重建子树的平衡搜索树。</td></tr>
+<tr><td class="term-en">Weight-balanced Tree</td><td class="term-zh">权重平衡树</td><td class="term-desc">依据子树大小或权重维持平衡的搜索树。</td></tr>
+<tr><td class="term-en">AA Tree</td><td class="term-zh">AA 树</td><td class="term-desc">使用简化层级约束实现平衡的搜索树。</td></tr>
+<tr><td class="term-en">Tree Rotation</td><td class="term-zh">树旋转</td><td class="term-desc">局部调整父子链接且维持中序顺序的操作。</td></tr>
+<tr><td class="term-en">Left Rotation</td><td class="term-zh">左旋</td><td class="term-desc">围绕节点与其右子节点进行的局部旋转。</td></tr>
+<tr><td class="term-en">Right Rotation</td><td class="term-zh">右旋</td><td class="term-desc">围绕节点与其左子节点进行的局部旋转。</td></tr>
+<tr><td class="term-en">Balance Factor</td><td class="term-zh">平衡因子</td><td class="term-desc">常指左右子树高度的差值。</td></tr>
+<tr><td class="term-en">Rebalancing</td><td class="term-zh">重新平衡</td><td class="term-desc">插入或删除后恢复树的平衡约束。</td></tr>
+<tr><td class="term-en">Order Statistic Tree</td><td class="term-zh">顺序统计树</td><td class="term-desc">支持按排名选取元素等操作的增强搜索树。</td></tr>
+<tr><td class="term-en">Rank Query</td><td class="term-zh">排名查询</td><td class="term-desc">求小于指定键的元素数量或对应位置。</td></tr>
+<tr><td class="term-en">Select Query</td><td class="term-zh">按秩选择</td><td class="term-desc">按排序位置查找第 k 个元素。</td></tr>
+<tr><td class="term-en">Successor Query</td><td class="term-zh">后继查询</td><td class="term-desc">查找比给定键大的最小键。</td></tr>
+<tr><td class="term-en">Predecessor Query</td><td class="term-zh">前驱查询</td><td class="term-desc">查找比给定键小的最大键。</td></tr>
+<tr><td class="term-en">B-Tree</td><td class="term-zh">B 树</td><td class="term-desc">允许多键、多子节点、适合块存储的平衡搜索树。</td></tr>
+<tr><td class="term-en">B+ Tree</td><td class="term-zh">B+ 树</td><td class="term-desc">通常把记录或索引条目集中于叶层的多路搜索树。</td></tr>
+<tr><td class="term-en">B* Tree</td><td class="term-zh">B* 树</td><td class="term-desc">通过更高节点利用率约束改进的 B 树变体。</td></tr>
+<tr><td class="term-en">2–3 Tree</td><td class="term-zh">2-3 树</td><td class="term-desc">内部节点可有两个或三个孩子的平衡搜索树。</td></tr>
+<tr><td class="term-en">2–3–4 Tree</td><td class="term-zh">2-3-4 树</td><td class="term-desc">内部节点可有两个、三个或四个孩子的平衡搜索树。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-09"><div class="chapter-heading"><h2>09 · 堆与优先队列</h2><div class="sub">Heaps &amp; Priority Queues <span class="chip">19 TERMS</span></div><p>辨析堆序性质、堆构建以及优先队列的不同实现。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Heap (Data Structure)</td><td class="term-zh">堆（数据结构）</td><td class="term-desc">满足特定堆序性质的树形结构，不等同于堆内存。</td></tr>
+<tr><td class="term-en">Binary Heap</td><td class="term-zh">二叉堆</td><td class="term-desc">满足完全二叉树形态及堆序性质的堆。</td></tr>
+<tr><td class="term-en">Min-heap</td><td class="term-zh">最小堆</td><td class="term-desc">父节点键不大于子节点键的堆。</td></tr>
+<tr><td class="term-en">Max-heap</td><td class="term-zh">最大堆</td><td class="term-desc">父节点键不小于子节点键的堆。</td></tr>
+<tr><td class="term-en">Heap Property</td><td class="term-zh">堆序性质</td><td class="term-desc">父子节点键之间满足规定大小关系的性质。</td></tr>
+<tr><td class="term-en">Priority Queue</td><td class="term-zh">优先队列</td><td class="term-desc">按优先级而非严格入队时间取出元素的抽象容器。</td></tr>
+<tr><td class="term-en">Heapify</td><td class="term-zh">堆化</td><td class="term-desc">对数组或局部节点调整以恢复堆序性质。</td></tr>
+<tr><td class="term-en">Build Heap</td><td class="term-zh">建堆</td><td class="term-desc">将无序元素集合组织为合法堆的过程。</td></tr>
+<tr><td class="term-en">Sift Up</td><td class="term-zh">上滤／上浮</td><td class="term-desc">将节点向父节点方向调整以恢复堆序。</td></tr>
+<tr><td class="term-en">Sift Down</td><td class="term-zh">下滤／下沉</td><td class="term-desc">将节点向子节点方向调整以恢复堆序。</td></tr>
+<tr><td class="term-en">Extract Min</td><td class="term-zh">取出最小值</td><td class="term-desc">移除并返回最小堆的堆顶元素。</td></tr>
+<tr><td class="term-en">Extract Max</td><td class="term-zh">取出最大值</td><td class="term-desc">移除并返回最大堆的堆顶元素。</td></tr>
+<tr><td class="term-en">Decrease Key</td><td class="term-zh">减小键值</td><td class="term-desc">降低元素优先级键值并调整结构。</td></tr>
+<tr><td class="term-en">Increase Key</td><td class="term-zh">增大键值</td><td class="term-desc">提高元素键值并调整结构。</td></tr>
+<tr><td class="term-en">D-ary Heap</td><td class="term-zh">d 叉堆</td><td class="term-desc">每个节点最多拥有 d 个孩子的堆。</td></tr>
+<tr><td class="term-en">Binomial Heap</td><td class="term-zh">二项堆</td><td class="term-desc">由满足约束的二项树集合组成的可合并堆。</td></tr>
+<tr><td class="term-en">Fibonacci Heap</td><td class="term-zh">斐波那契堆</td><td class="term-desc">支持多种高效均摊操作的可合并堆。</td></tr>
+<tr><td class="term-en">Pairing Heap</td><td class="term-zh">配对堆</td><td class="term-desc">通过树链接与成对合并实现的堆结构。</td></tr>
+<tr><td class="term-en">Meldable Heap</td><td class="term-zh">可合并堆</td><td class="term-desc">支持高效合并两堆元素的堆抽象或实现。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-10"><div class="chapter-heading"><h2>10 · 图的表示与属性</h2><div class="sub">Graphs: Representation &amp; Properties <span class="chip">30 TERMS</span></div><p>用统一术语描述顶点、边、方向、连通性和图的存储。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Graph</td><td class="term-zh">图</td><td class="term-desc">由顶点集合与连接顶点的边集合构成的结构。</td></tr>
+<tr><td class="term-en">Vertex</td><td class="term-zh">顶点</td><td class="term-desc">图中表示对象、状态或位置的基本元素。</td></tr>
+<tr><td class="term-en">Edge</td><td class="term-zh">边</td><td class="term-desc">图中连接一对顶点的关系。</td></tr>
+<tr><td class="term-en">Directed Graph (Digraph)</td><td class="term-zh">有向图</td><td class="term-desc">边具有方向的图。</td></tr>
+<tr><td class="term-en">Undirected Graph</td><td class="term-zh">无向图</td><td class="term-desc">边不区分方向的图。</td></tr>
+<tr><td class="term-en">Weighted Graph</td><td class="term-zh">带权图</td><td class="term-desc">边或顶点带有成本、距离等数值权重的图。</td></tr>
+<tr><td class="term-en">Unweighted Graph</td><td class="term-zh">无权图</td><td class="term-desc">边不附加显式权重的图。</td></tr>
+<tr><td class="term-en">Simple Graph</td><td class="term-zh">简单图</td><td class="term-desc">通常不含自环和重边的图。</td></tr>
+<tr><td class="term-en">Multigraph</td><td class="term-zh">多重图</td><td class="term-desc">允许同一对顶点之间存在多条边的图。</td></tr>
+<tr><td class="term-en">Self-loop</td><td class="term-zh">自环</td><td class="term-desc">起点与终点为同一顶点的边。</td></tr>
+<tr><td class="term-en">Parallel Edges</td><td class="term-zh">平行边／重边</td><td class="term-desc">连接同一对顶点的多条边。</td></tr>
+<tr><td class="term-en">Adjacent Vertices</td><td class="term-zh">相邻顶点</td><td class="term-desc">通过一条边直接连接的两个顶点。</td></tr>
+<tr><td class="term-en">Incident Edge</td><td class="term-zh">关联边</td><td class="term-desc">以指定顶点为端点的边。</td></tr>
+<tr><td class="term-en">Degree</td><td class="term-zh">度</td><td class="term-desc">无向图中与顶点相接的边数，自环按两次计。</td></tr>
+<tr><td class="term-en">In-degree</td><td class="term-zh">入度</td><td class="term-desc">有向图中指向某顶点的边数。</td></tr>
+<tr><td class="term-en">Out-degree</td><td class="term-zh">出度</td><td class="term-desc">有向图中从某顶点出发的边数。</td></tr>
+<tr><td class="term-en">Path</td><td class="term-zh">路径</td><td class="term-desc">由相邻顶点与边依次组成的行进序列。</td></tr>
+<tr><td class="term-en">Simple Path</td><td class="term-zh">简单路径</td><td class="term-desc">顶点不重复出现的路径。</td></tr>
+<tr><td class="term-en">Walk</td><td class="term-zh">游走</td><td class="term-desc">允许重复顶点和边的图上行进序列。</td></tr>
+<tr><td class="term-en">Cycle</td><td class="term-zh">环／回路</td><td class="term-desc">起点与终点相同的闭合路径或游走，具体约定依语境。</td></tr>
+<tr><td class="term-en">Connected Graph</td><td class="term-zh">连通图</td><td class="term-desc">任意两顶点之间均存在路径的无向图。</td></tr>
+<tr><td class="term-en">Connected Component</td><td class="term-zh">连通分量</td><td class="term-desc">无向图中极大的连通子图。</td></tr>
+<tr><td class="term-en">Strongly Connected Component (SCC)</td><td class="term-zh">强连通分量</td><td class="term-desc">有向图中互相可达的极大顶点集合。</td></tr>
+<tr><td class="term-en">Directed Acyclic Graph (DAG)</td><td class="term-zh">有向无环图</td><td class="term-desc">不存在有向环的有向图。</td></tr>
+<tr><td class="term-en">Bipartite Graph</td><td class="term-zh">二分图</td><td class="term-desc">顶点可分为两组且边仅跨两组连接的图。</td></tr>
+<tr><td class="term-en">Adjacency List</td><td class="term-zh">邻接表</td><td class="term-desc">按顶点记录其相邻顶点或关联边的存储方式。</td></tr>
+<tr><td class="term-en">Adjacency Matrix</td><td class="term-zh">邻接矩阵</td><td class="term-desc">用二维矩阵标记顶点对之间是否存在边。</td></tr>
+<tr><td class="term-en">Edge List</td><td class="term-zh">边列表</td><td class="term-desc">逐条保存边及端点、权重等信息的表示。</td></tr>
+<tr><td class="term-en">Incidence Matrix</td><td class="term-zh">关联矩阵</td><td class="term-desc">通过顶点与边之间的关系构造的矩阵。</td></tr>
+<tr><td class="term-en">Compressed Sparse Row (Graph CSR)</td><td class="term-zh">图的压缩稀疏行表示</td><td class="term-desc">以偏移数组和邻接顶点数组紧凑存储图。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-11"><div class="chapter-heading"><h2>11 · 图结构算法与连通性</h2><div class="sub">Graph Algorithms &amp; Connectivity <span class="chip">25 TERMS</span></div><p>纳入与图结构直接相关的经典算法、生成树和拓扑关系。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Graph Traversal</td><td class="term-zh">图遍历</td><td class="term-desc">按规则访问可达顶点与边的过程。</td></tr>
+<tr><td class="term-en">Topological Sort</td><td class="term-zh">拓扑排序</td><td class="term-desc">对 DAG 顶点排列，使每条有向边均从前指向后。</td></tr>
+<tr><td class="term-en">Topological Order</td><td class="term-zh">拓扑序</td><td class="term-desc">符合图中依赖方向约束的顶点排列。</td></tr>
+<tr><td class="term-en">Reachability</td><td class="term-zh">可达性</td><td class="term-desc">是否存在从一个顶点到另一个顶点的路径。</td></tr>
+<tr><td class="term-en">Transitive Closure</td><td class="term-zh">传递闭包</td><td class="term-desc">描述各顶点对之间可达性的关系。</td></tr>
+<tr><td class="term-en">Spanning Tree</td><td class="term-zh">生成树</td><td class="term-desc">包含连通无向图全部顶点的无环连通子图。</td></tr>
+<tr><td class="term-en">Minimum Spanning Tree (MST)</td><td class="term-zh">最小生成树</td><td class="term-desc">总边权最小的生成树。</td></tr>
+<tr><td class="term-en">Kruskal&#x27;s Algorithm</td><td class="term-zh">克鲁斯卡尔算法</td><td class="term-desc">按边权排序并逐步选择不成环的边构建 MST。</td></tr>
+<tr><td class="term-en">Prim&#x27;s Algorithm</td><td class="term-zh">普里姆算法</td><td class="term-desc">从一个顶点出发逐步扩张生成树以构建 MST。</td></tr>
+<tr><td class="term-en">Shortest Path</td><td class="term-zh">最短路径</td><td class="term-desc">两顶点间总权重最小的路径。</td></tr>
+<tr><td class="term-en">Single-source Shortest Path (SSSP)</td><td class="term-zh">单源最短路径</td><td class="term-desc">求一个源点到其他顶点的最短距离或路径。</td></tr>
+<tr><td class="term-en">All-pairs Shortest Paths (APSP)</td><td class="term-zh">全源最短路径</td><td class="term-desc">求图中所有顶点对的最短距离。</td></tr>
+<tr><td class="term-en">Dijkstra&#x27;s Algorithm</td><td class="term-zh">迪杰斯特拉算法</td><td class="term-desc">求非负边权图单源最短路径的经典算法。</td></tr>
+<tr><td class="term-en">Bellman–Ford Algorithm</td><td class="term-zh">贝尔曼—福特算法</td><td class="term-desc">可处理负边权并检测可达负环的最短路算法。</td></tr>
+<tr><td class="term-en">Floyd–Warshall Algorithm</td><td class="term-zh">弗洛伊德—沃歇尔算法</td><td class="term-desc">使用动态规划求全源最短路径。</td></tr>
+<tr><td class="term-en">A* Search</td><td class="term-zh">A* 搜索</td><td class="term-desc">借助启发函数指导的路径搜索算法。</td></tr>
+<tr><td class="term-en">Negative Cycle</td><td class="term-zh">负权环</td><td class="term-desc">边权之和为负的有向环。</td></tr>
+<tr><td class="term-en">Cut</td><td class="term-zh">割</td><td class="term-desc">将图的顶点分为两部分所形成的跨分区边集合。</td></tr>
+<tr><td class="term-en">Bridge</td><td class="term-zh">桥</td><td class="term-desc">移除后会增加无向图连通分量数量的边。</td></tr>
+<tr><td class="term-en">Articulation Point</td><td class="term-zh">割点</td><td class="term-desc">移除后会增加无向图连通分量数量的顶点。</td></tr>
+<tr><td class="term-en">Biconnected Component</td><td class="term-zh">双连通分量</td><td class="term-desc">按双连通关系划分的极大子图，需区分点／边双连通。</td></tr>
+<tr><td class="term-en">Tarjan&#x27;s Algorithm</td><td class="term-zh">Tarjan 算法</td><td class="term-desc">利用 DFS 与低链接值求强连通分量等的算法族。</td></tr>
+<tr><td class="term-en">Low-link Value</td><td class="term-zh">低链接值</td><td class="term-desc">DFS 中表示可经特定边型到达的最早祖先编号。</td></tr>
+<tr><td class="term-en">Eulerian Path</td><td class="term-zh">欧拉路径</td><td class="term-desc">恰好经过每条边一次的路径或迹。</td></tr>
+<tr><td class="term-en">Hamiltonian Path</td><td class="term-zh">哈密顿路径</td><td class="term-desc">恰好访问每个顶点一次的路径。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-12"><div class="chapter-heading"><h2>12 · 并查集与区间查询</h2><div class="sub">Disjoint Sets &amp; Range Queries <span class="chip">22 TERMS</span></div><p>学习高效合并集合、区间聚合、树状数组与线段树。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Disjoint Set Union (DSU)</td><td class="term-zh">并查集</td><td class="term-desc">维护互不相交集合并支持合并与代表元查询的结构。</td></tr>
+<tr><td class="term-en">Union–Find</td><td class="term-zh">并查集／合并查找</td><td class="term-desc">并查集数据结构及其核心操作的另一常用名称。</td></tr>
+<tr><td class="term-en">Find</td><td class="term-zh">查找代表元</td><td class="term-desc">返回元素所在集合的代表节点。</td></tr>
+<tr><td class="term-en">Union</td><td class="term-zh">合并集合</td><td class="term-desc">把两个不相交集合合为一个集合。</td></tr>
+<tr><td class="term-en">Path Compression</td><td class="term-zh">路径压缩</td><td class="term-desc">在查找代表元时缩短节点至根的路径。</td></tr>
+<tr><td class="term-en">Union by Rank</td><td class="term-zh">按秩合并</td><td class="term-desc">依据树的秩选择连接方向以限制高度。</td></tr>
+<tr><td class="term-en">Union by Size</td><td class="term-zh">按大小合并</td><td class="term-desc">将较小集合对应的树挂到较大集合的根下。</td></tr>
+<tr><td class="term-en">Inverse Ackermann Function</td><td class="term-zh">反阿克曼函数</td><td class="term-desc">用于描述优化并查集近乎常数均摊复杂度的函数。</td></tr>
+<tr><td class="term-en">Range Query</td><td class="term-zh">区间查询</td><td class="term-desc">查询连续下标区间上的汇总结果。</td></tr>
+<tr><td class="term-en">Point Update</td><td class="term-zh">单点更新</td><td class="term-desc">修改序列中某一个位置的值。</td></tr>
+<tr><td class="term-en">Range Update</td><td class="term-zh">区间更新</td><td class="term-desc">修改连续一段位置中的全部或部分值。</td></tr>
+<tr><td class="term-en">Prefix Sum</td><td class="term-zh">前缀和</td><td class="term-desc">从序列起始位置到指定下标的累计和。</td></tr>
+<tr><td class="term-en">Prefix Sum Array</td><td class="term-zh">前缀和数组</td><td class="term-desc">预先存储各位置前缀和的数组。</td></tr>
+<tr><td class="term-en">Difference Array</td><td class="term-zh">差分数组</td><td class="term-desc">通过相邻元素差表示序列，便于区间加法更新。</td></tr>
+<tr><td class="term-en">Fenwick Tree (Binary Indexed Tree)</td><td class="term-zh">树状数组</td><td class="term-desc">支持前缀聚合与单点更新的紧凑索引结构。</td></tr>
+<tr><td class="term-en">Segment Tree</td><td class="term-zh">线段树</td><td class="term-desc">通过树节点存储区间信息并支持聚合查询与更新。</td></tr>
+<tr><td class="term-en">Lazy Propagation</td><td class="term-zh">懒惰传播</td><td class="term-desc">延迟将区间更新下推至子节点的技术。</td></tr>
+<tr><td class="term-en">Sparse Table</td><td class="term-zh">稀疏表</td><td class="term-desc">预处理幂长区间以高效回答静态幂等区间查询的结构。</td></tr>
+<tr><td class="term-en">Range Minimum Query (RMQ)</td><td class="term-zh">区间最小值查询</td><td class="term-desc">求指定区间内的最小元素或最小值。</td></tr>
+<tr><td class="term-en">Range Maximum Query</td><td class="term-zh">区间最大值查询</td><td class="term-desc">求指定区间内的最大元素或最大值。</td></tr>
+<tr><td class="term-en">Interval Tree</td><td class="term-zh">区间树</td><td class="term-desc">保存区间并支持区间相交检索的结构。</td></tr>
+<tr><td class="term-en">Binary Indexed Tree</td><td class="term-zh">二叉索引树</td><td class="term-desc">Fenwick Tree 的另一常见英文名称。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-13"><div class="chapter-heading"><h2>13 · 字符串、字典树与索引</h2><div class="sub">Strings, Tries &amp; Indexes <span class="chip">23 TERMS</span></div><p>覆盖前缀匹配、后缀索引与多模式字符串查询。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">String</td><td class="term-zh">字符串</td><td class="term-desc">按次序排列的字符或符号序列。</td></tr>
+<tr><td class="term-en">Character</td><td class="term-zh">字符</td><td class="term-desc">字符串中的基本符号单位，具体编码粒度依语境。</td></tr>
+<tr><td class="term-en">Substring</td><td class="term-zh">子串</td><td class="term-desc">字符串中连续的一段字符序列。</td></tr>
+<tr><td class="term-en">Subsequence</td><td class="term-zh">子序列</td><td class="term-desc">保持相对次序但不要求连续的字符序列。</td></tr>
+<tr><td class="term-en">Prefix</td><td class="term-zh">前缀</td><td class="term-desc">从字符串起始位置开始的连续片段。</td></tr>
+<tr><td class="term-en">Suffix</td><td class="term-zh">后缀</td><td class="term-desc">直到字符串末尾的连续片段。</td></tr>
+<tr><td class="term-en">Trie (Prefix Tree)</td><td class="term-zh">字典树／前缀树</td><td class="term-desc">按字符或符号边组织键前缀的树形索引。</td></tr>
+<tr><td class="term-en">Trie Node</td><td class="term-zh">字典树节点</td><td class="term-desc">表示某个前缀状态并保存后继分支的节点。</td></tr>
+<tr><td class="term-en">Terminal Node</td><td class="term-zh">终止节点</td><td class="term-desc">表示某个完整键在 Trie 中结束的节点。</td></tr>
+<tr><td class="term-en">Radix Tree</td><td class="term-zh">基数树</td><td class="term-desc">将单分支路径压缩成多符号边的前缀树。</td></tr>
+<tr><td class="term-en">Patricia Trie</td><td class="term-zh">Patricia 树</td><td class="term-desc">对 Trie 的单路径进行压缩的检索树变体。</td></tr>
+<tr><td class="term-en">Ternary Search Tree</td><td class="term-zh">三叉搜索树</td><td class="term-desc">每个节点按小于、等于、大于分支组织字符的树。</td></tr>
+<tr><td class="term-en">Suffix Array</td><td class="term-zh">后缀数组</td><td class="term-desc">按字典序排列所有后缀起始位置的数组。</td></tr>
+<tr><td class="term-en">Suffix Tree</td><td class="term-zh">后缀树</td><td class="term-desc">紧凑表示字符串所有后缀的树形索引。</td></tr>
+<tr><td class="term-en">Suffix Automaton</td><td class="term-zh">后缀自动机</td><td class="term-desc">紧凑表示一个字符串全部子串的有限状态自动机。</td></tr>
+<tr><td class="term-en">Longest Common Prefix (LCP)</td><td class="term-zh">最长公共前缀</td><td class="term-desc">两个字符串或后缀开头连续相同的最长部分。</td></tr>
+<tr><td class="term-en">LCP Array</td><td class="term-zh">最长公共前缀数组</td><td class="term-desc">保存排序后相邻后缀 LCP 长度的数组。</td></tr>
+<tr><td class="term-en">Prefix Function</td><td class="term-zh">前缀函数</td><td class="term-desc">记录每个前缀的最长相等真前后缀长度的数组。</td></tr>
+<tr><td class="term-en">Failure Link</td><td class="term-zh">失配链接</td><td class="term-desc">自动机或字典树匹配失败时的跳转链接。</td></tr>
+<tr><td class="term-en">Aho–Corasick Automaton</td><td class="term-zh">AC 自动机</td><td class="term-desc">结合 Trie 与失配链接进行多模式匹配的结构。</td></tr>
+<tr><td class="term-en">Rolling Hash</td><td class="term-zh">滚动哈希</td><td class="term-desc">可通过递推快速更新窗口或子串哈希的技术。</td></tr>
+<tr><td class="term-en">String Interner</td><td class="term-zh">字符串驻留表</td><td class="term-desc">把相同内容字符串映射到共享表示的结构。</td></tr>
+<tr><td class="term-en">Inverted Index</td><td class="term-zh">倒排索引</td><td class="term-desc">按词项记录包含它的文档或位置列表的索引。</td></tr>
+</tbody></table></section>
+<section class="chapter" id="sec-14"><div class="chapter-heading"><h2>14 · 概率型、外存与并发结构</h2><div class="sub">Probabilistic, External &amp; Concurrent Structures <span class="chip">25 TERMS</span></div><p>延伸到数据库存储引擎、近似成员查询和多线程场景。</p></div>
+<table class="glossary-table"><thead><tr><th>ENGLISH / 英文</th><th>中文译名</th><th>简明释义</th></tr></thead><tbody>
+<tr><td class="term-en">Bloom Filter</td><td class="term-zh">布隆过滤器</td><td class="term-desc">紧凑的概率型成员结构；可有假阳性，通常无假阴性。</td></tr>
+<tr><td class="term-en">Counting Bloom Filter</td><td class="term-zh">计数布隆过滤器</td><td class="term-desc">将位替换成计数器以支持一定条件下的删除。</td></tr>
+<tr><td class="term-en">Cuckoo Filter</td><td class="term-zh">布谷鸟过滤器</td><td class="term-desc">使用短指纹和可替换桶实现近似成员查询。</td></tr>
+<tr><td class="term-en">Count–Min Sketch</td><td class="term-zh">Count–Min 草图</td><td class="term-desc">以概率误差上界估计元素出现频次的结构。</td></tr>
+<tr><td class="term-en">HyperLogLog</td><td class="term-zh">HyperLogLog 基数估计</td><td class="term-desc">用少量空间近似统计不同元素数量的算法与结构。</td></tr>
+<tr><td class="term-en">Probabilistic Data Structure</td><td class="term-zh">概率型数据结构</td><td class="term-desc">用随机化或近似表示换取时间、空间收益的结构。</td></tr>
+<tr><td class="term-en">Bitset / Bitmap</td><td class="term-zh">位集合／位图</td><td class="term-desc">以比特位表示布尔状态或整数成员的结构。</td></tr>
+<tr><td class="term-en">Roaring Bitmap</td><td class="term-zh">Roaring 位图</td><td class="term-desc">按块选择压缩形式的高效整数集合位图。</td></tr>
+<tr><td class="term-en">External-memory Data Structure</td><td class="term-zh">外存数据结构</td><td class="term-desc">针对磁盘或块设备访问成本设计的数据结构。</td></tr>
+<tr><td class="term-en">B-Tree Index</td><td class="term-zh">B 树索引</td><td class="term-desc">使用多路平衡搜索树组织磁盘友好索引的方式。</td></tr>
+<tr><td class="term-en">LSM Tree</td><td class="term-zh">日志结构合并树</td><td class="term-desc">以可排序的内存表与磁盘层级文件组织写密集型存储。</td></tr>
+<tr><td class="term-en">Memtable</td><td class="term-zh">内存表</td><td class="term-desc">LSM 系统中接收近期写入的有序内存结构。</td></tr>
+<tr><td class="term-en">SSTable</td><td class="term-zh">排序字符串表</td><td class="term-desc">将有序键值记录写入不可变文件的存储格式。</td></tr>
+<tr><td class="term-en">Write-ahead Log (WAL)</td><td class="term-zh">预写日志</td><td class="term-desc">先持久化操作记录，以支持崩溃恢复的日志结构。</td></tr>
+<tr><td class="term-en">Log-structured Storage</td><td class="term-zh">日志结构化存储</td><td class="term-desc">以追加写和后台整理为核心的存储组织方式。</td></tr>
+<tr><td class="term-en">Concurrent Data Structure</td><td class="term-zh">并发数据结构</td><td class="term-desc">允许多个执行线程协同访问的结构。</td></tr>
+<tr><td class="term-en">Thread-safe Data Structure</td><td class="term-zh">线程安全数据结构</td><td class="term-desc">并发使用时能满足规定正确性约束的结构。</td></tr>
+<tr><td class="term-en">Lock-free Data Structure</td><td class="term-zh">无锁数据结构</td><td class="term-desc">系统整体操作可在有限步骤中持续取得进展的结构。</td></tr>
+<tr><td class="term-en">Wait-free Data Structure</td><td class="term-zh">无等待数据结构</td><td class="term-desc">每个线程操作均能在有限自身步骤内完成的结构。</td></tr>
+<tr><td class="term-en">Linearizability</td><td class="term-zh">线性一致性</td><td class="term-desc">并发操作可视为在调用与返回之间某瞬间原子发生的正确性条件。</td></tr>
+<tr><td class="term-en">Compare-and-swap (CAS)</td><td class="term-zh">比较并交换</td><td class="term-desc">比较目标值并在匹配时原子更新的同步原语。</td></tr>
+<tr><td class="term-en">ABA Problem</td><td class="term-zh">ABA 问题</td><td class="term-desc">值由 A 变 B 再变 A 导致 CAS 难察觉中间变化的问题。</td></tr>
+<tr><td class="term-en">Lock-free Queue</td><td class="term-zh">无锁队列</td><td class="term-desc">不依赖互斥锁并满足无锁进展保证的并发队列。</td></tr>
+<tr><td class="term-en">Copy-on-write (COW)</td><td class="term-zh">写时复制</td><td class="term-desc">在写入发生时才复制共享数据的策略。</td></tr>
+<tr><td class="term-en">Structural Sharing</td><td class="term-zh">结构共享</td><td class="term-desc">不同版本复用未改变的内部节点或子结构。</td></tr>
+</tbody></table></section>
+<section class="confusions" id="confusions"><div class="eyebrow">PRECISION NOTES / 术语辨析</div><h2 class="section-main-title">容易混淆的 12 组概念</h2><p class="toc-lead">以下对比是学习和阅读源码时最常遇到的命名边界。</p>
+<div class="confusion-item"><div class="e">Heap vs. Heap Memory</div><div class="z">堆（数据结构）≠ 堆内存</div><div class="d">前者通常是满足堆序性质的树；后者指动态内存分配区域。</div></div>
+<div class="confusion-item"><div class="e">Array vs. List</div><div class="z">数组 ≠ 列表抽象</div><div class="d">数组强调索引与布局；List 是抽象序列，可用数组或链表实现。</div></div>
+<div class="confusion-item"><div class="e">Stack vs. Call Stack</div><div class="z">栈 ≠ 调用栈</div><div class="d">栈是 LIFO 容器抽象；调用栈是运行时保存调用帧的实现机制。</div></div>
+<div class="confusion-item"><div class="e">Priority Queue vs. Heap</div><div class="z">优先队列 ≠ 堆</div><div class="d">优先队列是抽象类型；二叉堆、平衡树等都可实现它。</div></div>
+<div class="confusion-item"><div class="e">Map vs. Hash Map</div><div class="z">映射 ≠ 哈希映射</div><div class="d">Map 描述键值关联；Hash Map 只是其中一种实现。</div></div>
+<div class="confusion-item"><div class="e">BST vs. Binary Tree</div><div class="z">二叉搜索树 ≠ 二叉树</div><div class="d">二叉搜索树额外规定键顺序；普通二叉树没有此要求。</div></div>
+<div class="confusion-item"><div class="e">Full vs. Perfect vs. Complete</div><div class="z">严格／满／完全二叉树</div><div class="d">严格：节点有 0 或 2 个孩子；满：叶同层且内部节点各有 2 个孩子；完全：按层从左填充。</div></div>
+<div class="confusion-item"><div class="e">Trie vs. Prefix Tree</div><div class="z">Trie 与前缀树</div><div class="d">通常是同一类数据结构的两种名称；不同实现可能压缩路径。</div></div>
+<div class="confusion-item"><div class="e">Set vs. Multiset</div><div class="z">集合 ≠ 多重集合</div><div class="d">Set 不允许重复元素；Multiset 允许并记录重复次数。</div></div>
+<div class="confusion-item"><div class="e">B-Tree vs. B+ Tree</div><div class="z">B 树 ≠ B+ 树</div><div class="d">B+ 树常把数据条目放在叶层，并通过叶间链接支持范围扫描。</div></div>
+<div class="confusion-item"><div class="e">DFS vs. BFS</div><div class="z">深度优先 ≠ 广度优先</div><div class="d">DFS 优先深入分支；BFS 按距离层次扩展。</div></div>
+<div class="confusion-item"><div class="e">Bloom Filter vs. Hash Set</div><div class="z">布隆过滤器 ≠ 哈希集合</div><div class="d">Bloom Filter 节省空间但可能误判存在；Hash Set 通常给出精确成员答案。</div></div>
+</section></body></html>

@@ -4,12 +4,23 @@
 
 ## 提交流程
 
-1. 在 `data/terms.json` 中定位词条（或新增符合现有字段约定的条目）。**大学数学卷是例外：**请编辑 `sources/university-mathematics.html`，再执行 `python3 scripts/build.py`，以免下一次构建覆盖改动。
+1. 在 `data/terms.json` 中定位词条（或新增符合现有字段约定的条目）。大学数学卷请先编辑 `sources/university-mathematics.html`，随后运行 `python3 scripts/build.py` 同步数据与出版物。
 2. 推荐写法：英文规范词形、中文常用译名、缩写、一句话说明、适用专题。
 3. 在 PR 描述中给出支持该译法的资料（学术论文、教材、项目官方文档、规范），并解释可疑歧义。
 4. 运行 `python3 scripts/build.py`，同步提交生成的 Markdown、CSV 和 `docs/data`。
 5. 运行 `python3 scripts/verify.py` 和 `python3 -m unittest discover -s tests -v`。
 6. 如果源 PDF 的内容也需要改变，须说明版本及排版方案；不可假装只修改 Markdown 就等于已更新 PDF。
+
+## 编译原理专题的贡献方式
+
+编译原理的人工维护源是 `data/compiler-principles.tsv`，而不是生成后的 Markdown、PDF 或 JSON。请按照 `# 章节名称` 和 `英文术语|中文译名|缩写|一句话释义` 的格式新增或修改词条。缩写没有通用形式时保留为空字段；不要把空字段删掉。
+
+```text
+# 语法分析
+Shift/Reduce Conflict|移进-归约冲突||同一状态和向前看符号同时允许移进与归约的情况。
+```
+
+运行 `python3 scripts/build.py` 会重新生成 `glossaries/compiler-principles.md`、`pdf/compiler-principles.pdf`、`data/terms.json`、CSV 以及 `docs/` 中的站点副本。请执行验证与单元测试，并检查 PDF 中文字符、分页和长表格排版。对于 CFG、IR 等有歧义或有多重含义的缩写，请解释具体适用语境。
 
 ## 词条质量门槛
 

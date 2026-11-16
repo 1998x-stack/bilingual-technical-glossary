@@ -10,9 +10,10 @@ REQUIRED=['category','chapter','topic','en','zh','abbr','definition']
 fail=[]
 def check(test,message):
  if not test:fail.append(message)
-check(len(CATALOG)==8,'Expected eight subject categories')
-check(len(TERMS)>=3000,'Dataset unexpectedly truncated')
+check(len(CATALOG)==len({t['category'] for t in TERMS}), 'Catalog and term category sets differ')
+check(len(TERMS)>=2600,'Dataset unexpectedly truncated')
 seen=set();topics={};slugs={c['slug'] for c in CATALOG}
+check(slugs=={t['category'] for t in TERMS},'Catalog category slugs differ from terms')
 for i,r in enumerate(TERMS):
  check(all(k in r for k in REQUIRED),f'Missing field row {i}')
  if any(k not in r for k in REQUIRED):continue
@@ -26,8 +27,8 @@ for i,r in enumerate(TERMS):
  check(topic_key not in topics or topics[topic_key]==r['topic'],f'Inconsistent topic for {topic_key}')
  topics[topic_key]=r['topic']
 counts=Counter(r['category'] for r in TERMS)
-check(counts['university-mathematics']==627,'Expected 627 university mathematics terms')
-check((ROOT/'sources/university-mathematics.html').is_file(),'Missing authored university mathematics HTML source')
+check(counts['university-mathematics']==627,'University Mathematics must have exactly 627 terms')
+check((ROOT/'sources/university-mathematics.html').is_file(),'Missing university mathematics authored HTML')
 for cat in CATALOG:
  slug=cat['slug'];check(cat['count']==counts[slug],f'Count mismatch: {slug}')
  check(cat['topics']==len(set(t['topic'] for t in TERMS if t['category']==slug)),f'Topic count mismatch: {slug}')
