@@ -31,6 +31,7 @@ CATALOG=[
  ('junior-high-mathematics','Junior High School Mathematics','初中数学','Grade 7–9 numbers, algebra, functions, geometry, statistics and probability','triangle'),
  ('parallel-computing','Parallel Computing','并行计算','Parallel algorithm design, communication, performance, MPI, OpenMP, GPU and HPC','cpu'),
  ('signal-processing','Signal Processing','信号处理','Signals, sampling, transforms, spectral analysis, digital filters and real-time DSP','sigma'),
+ ('numerical-computing','Numerical Computing','数值计算','Floating point, error analysis, linear algebra, solvers, integration, ODE/PDE and scientific computing','sigma'),
 ]
 META={x[0]:{'slug':x[0],'en':x[1],'zh':x[2],'description':x[3],'icon':x[4]} for x in CATALOG}
 
@@ -105,11 +106,33 @@ def merge_cpp(data):
    rows.append(dict(category='cpp',chapter=chapter,topic=topic,en=en,zh=zh,abbr='',definition=definition))
  return [t for t in data if t['category']!='cpp']+rows
 
+def merge_numerical_computing(data):
+ # Canonical TSV for the independent Numerical Computing handbook.
+ src=ROOT/'data/numerical-computing.tsv'
+ rows=[];chapter=0;topic='';seen=set()
+ for lineno,raw in enumerate(src.read_text(encoding='utf8').splitlines(),1):
+  line=raw.strip()
+  if not line:continue
+  if line.startswith('# '):
+   parts=line[2:].split(' ',1)
+   if len(parts)!=2 or int(parts[0])!=chapter+1:raise ValueError(f'Invalid Numerical Computing chapter at {lineno}')
+   chapter+=1;topic=parts[1];continue
+  parts=[x.strip() for x in line.split('|')]
+  if len(parts)!=4 or not topic or not all(parts[i] for i in (0,1,3)):
+   raise ValueError(f'Invalid Numerical Computing record at {lineno}')
+  en,zh,abbr,definition=parts
+  key=(chapter,en.casefold(),zh)
+  if key in seen:raise ValueError(f'Duplicate Numerical Computing entry {key}')
+  seen.add(key)
+  rows.append(dict(category='numerical-computing',chapter=chapter,topic=topic,en=en,zh=zh,abbr=abbr,definition=definition))
+ if chapter!=17 or len(rows)!=259:raise ValueError(f'Numerical Computing expected 259 terms in 17 topics, got {len(rows)} and {chapter}')
+ return [x for x in data if x['category']!='numerical-computing']+rows
+
 def md_table_value(x):return str(x).replace('|','\\|').replace('\n',' ').strip()
 
 def write_markdown(data):
  for slug in META:
-  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing', 'cpp', 'signal-processing'):
+  if slug in ('operating-systems', 'sql-database', 'python', 'junior-high-mathematics', 'gpu-kernel', 'computer-networks', 'parallel-computing', 'cpp', 'signal-processing', 'numerical-computing'):
    continue  # Preserve independently authored Markdown and appendices.
   if slug == 'data-structures': continue  # Preserve authored Markdown and appendix.
   if slug=='apache-kafka':continue  # Preserve original editorial Markdown.
@@ -205,6 +228,7 @@ def run():
  data=merge_computer_networks(data)
  data=merge_cpp(data)
  data=merge_signal_processing(data)
+ data=merge_numerical_computing(data)
  # Validate core field presence and duplicate pairs within each category
  errors=[];seen=set()
  for i,r in enumerate(data):
@@ -238,6 +262,7 @@ def run():
                  '--source',str(ROOT/'data/cpp-glossary.tsv'),
                  '--markdown',str(ROOT/'glossaries/cpp.md'),
                  '--pdf',str(ROOT/'pdf/cpp.pdf')],check=True)
+ subprocess.run([sys.executable,str(ROOT/'scripts/render_numerical_computing_pdf.py')],check=True)
  write_site_data(data)
  print('Complete:',len(data),'terms,',len(META),'subjects')
 if __name__=='__main__':run()

@@ -47,7 +47,8 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Junior High School Mathematics | 初中数学 | 400 | 15 | [Read](glossaries/junior-high-mathematics.md) | [Download](pdf/junior-high-mathematics.pdf) |
 | Parallel Computing | 并行计算 | 205 | 12 | [Read](glossaries/parallel-computing.md) | [Download](pdf/parallel-computing.pdf) |
 | Signal Processing | 信号处理 | 295 | 18 | [Read](glossaries/signal-processing.md) | [Download](pdf/signal-processing.pdf) |
-| **Total** | **25 domains** | **8,889** | **381** | | |
+| Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
+| **Total** | **26 domains** | **9,148** | **398** | | |
 
 ### Additional standalone handbook (not yet indexed)
 
@@ -80,7 +81,7 @@ Operating Systems (396), SQL Database (394), Python (429), Junior High School Ma
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **381 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **398 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
 - **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
@@ -198,3 +199,7 @@ The **public Explorer displays concepts rather than production batches**. Intern
 
 Branch protection and mandatory human review must also be enabled by a GitHub repository administrator; CI cannot make that permission policy on its own.
 
+
+## Numerical Computing / 数值计算
+
+The Numerical Computing handbook contributes **259 independently curated bilingual terms in 17 chapters and 15 concept contrasts**. It covers floating-point arithmetic, conditioning and stability, root finding, interpolation, quadrature, numerical linear algebra, optimization, ODE/PDEs, sparse iterative methods and scientific software. The canonical [TSV](data/numerical-computing.tsv), authored [Markdown](glossaries/numerical-computing.md), searchable [PDF](pdf/numerical-computing.pdf), and website search index are published together. Source renderer: [`scripts/render_numerical_computing_pdf.py`](scripts/render_numerical_computing_pdf.py). Independent expert review remains pending.

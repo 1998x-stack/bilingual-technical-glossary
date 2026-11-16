@@ -1,0 +1,462 @@
+# 数值计算专有名词中英文对照表
+
+# Numerical Computing · Chinese–English Technical Glossary
+
+> TERM/ATLAS · 2026 Edition · 原创教学性简明释义；术语在数值分析、科学计算、线性代数与计算工程语境下使用，不代表标准机构的唯一官方译法。
+
+**259 条术语 · 17 个主题 · 15 组易混概念辨析**
+
+## 主题目录
+
+- 01. 数值计算基础与数学建模（14 条）
+- 02. 浮点表示与 IEEE 754（19 条）
+- 03. 数值误差与精度控制（18 条）
+- 04. 条件数、稳定性与算法可靠性（15 条）
+- 05. 非线性方程与求根（15 条）
+- 06. 插值、逼近与拟合（15 条）
+- 07. 数值微分与求积（15 条）
+- 08. 线性方程组与直接法（15 条）
+- 09. 矩阵分解、最小二乘与秩（15 条）
+- 10. 特征值与矩阵函数（14 条）
+- 11. 迭代线性求解与稀疏矩阵（15 条）
+- 12. 数值优化与非线性最小二乘（15 条）
+- 13. 常微分方程数值方法（15 条）
+- 14. 偏微分方程与网格方法（15 条）
+- 15. 数值随机计算与积分采样（14 条）
+- 16. 高性能数值计算与实现（15 条）
+- 17. 数值软件与算法验证（15 条）
+
+## 阅读约定
+
+- `abbr` 仅填写真实常用缩写；空白不是缺失数据。数学符号另在正文解释，不将数学符号伪装成缩写。
+- 区分 problem conditioning、algorithm stability 与 computed residual；不同误差指标须指定尺度、范数和误差模型。
+- 本手册是专业术语学习材料，不应当作为 IEEE 标准、教科书公式或软件 API 的替代。
+
+---
+
+## 01. 数值计算基础与数学建模
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Numerical Computing | 数值计算 |  | 利用有限精度计算机实现近似数学计算并分析误差、稳定性与代价。 |
+| 2 | Numerical Analysis | 数值分析 |  | 研究数值算法的构造、收敛、误差和稳定性的数学分支。 |
+| 3 | Numerical Method | 数值方法 |  | 把数学问题转化为有限步可执行计算过程的方法。 |
+| 4 | Numerical Algorithm | 数值算法 |  | 具有明确输入输出、计算步骤及终止准则的求近似解过程。 |
+| 5 | Discretization | 离散化 |  | 将连续模型替换为有限个自由度或网格上的近似模型。 |
+| 6 | Approximation | 近似 |  | 用可计算对象替代难以精确表示或求解的对象。 |
+| 7 | Convergence | 收敛性 |  | 当迭代步数增加或离散尺度减小时，近似结果趋近目标的性质。 |
+| 8 | Consistency | 相容性 |  | 离散算子在网格尺度趋零时逼近所对应的连续算子。 |
+| 9 | Stability | 稳定性 |  | 扰动在计算或离散演化过程中受到适当控制的性质，须结合具体定义。 |
+| 10 | Well-Posed Problem | 适定问题 |  | 满足解存在、唯一且对输入连续依赖等条件的数学问题。 |
+| 11 | Ill-Posed Problem | 不适定问题 |  | 未满足存在性、唯一性或连续依赖等适定条件的问题。 |
+| 12 | Computational Complexity | 计算复杂度 |  | 计算所需时间或空间随问题规模增长的规律。 |
+| 13 | Asymptotic Notation | 渐近记号 |  | 用大 O 等记号描述规模或误差趋于极限时的增长阶。 |
+| 14 | Floating-Point Operation | 浮点运算 | FLOP | 一次浮点算术操作，具体统计口径随算法和硬件而异。 |
+
+## 02. 浮点表示与 IEEE 754
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Floating-Point Number | 浮点数 |  | 用有限位符号、有效数字和指数表示的离散数值。 |
+| 2 | Significand | 有效数字 |  | 浮点数表示中承载精度的数位部分，亦常称尾数。 |
+| 3 | Exponent | 指数 |  | 浮点数表示中决定数值缩放量级的部分。 |
+| 4 | Radix | 基数 |  | 浮点表示采用的进位基数，二进制浮点基数为二。 |
+| 5 | Binary32 | 单精度二进制浮点 | FP32 | IEEE 754 定义的 32 位二进制浮点格式。 |
+| 6 | Binary64 | 双精度二进制浮点 | FP64 | IEEE 754 定义的 64 位二进制浮点格式。 |
+| 7 | Half Precision | 半精度 | FP16 | 通常指 binary16，具有较窄的指数范围和精度。 |
+| 8 | Bfloat16 | 脑浮点 16 位 | BF16 | 采用较宽指数范围、较少有效位的 16 位浮点格式。 |
+| 9 | Machine Epsilon | 机器精度间隔 |  | 通常指 1 与其下一个可表示浮点数的差；不同文献符号约定有差异。 |
+| 10 | Unit Roundoff | 单位舍入误差界 | u | 在通常四舍六入五取偶模型下界定单次相对舍入误差的量。 |
+| 11 | Rounding Mode | 舍入模式 |  | 指定不可精确表示结果如何映射到可表示浮点数。 |
+| 12 | Round to Nearest, Ties to Even | 最近舍入，遇中值取偶 |  | 选最接近可表示数；恰好居中时选末位为偶者。 |
+| 13 | Subnormal Number | 次正规数 |  | 指数达到下界后以渐进下溢方式表示的极小非零数。 |
+| 14 | Signed Zero | 带符号零 |  | IEEE 754 中的正零和负零，某些运算结果和符号行为不同。 |
+| 15 | Infinity | 无穷大 |  | 浮点格式中的正负无穷大特殊值。 |
+| 16 | Not a Number | 非数 | NaN | 用于表示未定义或不可表示的某些浮点运算结果的特殊值。 |
+| 17 | Overflow | 上溢 |  | 结果量级超过格式允许的有限值范围。 |
+| 18 | Underflow | 下溢 |  | 极小结果落入次正规范围或归零并可能触发相应异常状态。 |
+| 19 | Fused Multiply-Add | 融合乘加 | FMA | 将乘法与加法融合并按规范执行一次结果舍入的运算。 |
+
+## 03. 数值误差与精度控制
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Absolute Error | 绝对误差 |  | 计算值与参考真值之差的绝对值或相应范数。 |
+| 2 | Relative Error | 相对误差 |  | 绝对误差相对于非零参考量大小的比值。 |
+| 3 | Forward Error | 前向误差 |  | 计算结果相对于原问题精确解的偏差。 |
+| 4 | Backward Error | 后向误差 |  | 使计算结果成为某个邻近输入问题精确解所需的输入扰动。 |
+| 5 | Truncation Error | 截断误差 |  | 以有限阶展开或有限差分替代无穷过程造成的误差。 |
+| 6 | Rounding Error | 舍入误差 |  | 数值映射到有限精度表示时引入的差异。 |
+| 7 | Discretization Error | 离散化误差 |  | 连续问题解与其离散问题对应解之间的差异。 |
+| 8 | Accumulated Error | 累积误差 |  | 多步计算中局部误差传播后形成的总体偏差。 |
+| 9 | Cancellation | 相消 |  | 相近数相减使结果有效数字可能大幅减少的现象。 |
+| 10 | Catastrophic Cancellation | 灾难性相消 |  | 严重相消导致相对精度显著损失的情况。 |
+| 11 | Loss of Significance | 有效数字丢失 |  | 运算后可信有效数位减少的现象。 |
+| 12 | Error Bound | 误差界 |  | 对近似结果偏差给出的可证明上界或估计界。 |
+| 13 | A Priori Error Estimate | 先验误差估计 |  | 计算前依据模型、网格及正则性给出的误差估计。 |
+| 14 | A Posteriori Error Estimate | 后验误差估计 |  | 利用已经计算的近似解评估误差的估计。 |
+| 15 | Tolerance | 容差 |  | 判断近似相等、精度或终止条件时使用的允许误差阈值。 |
+| 16 | Absolute Tolerance | 绝对容差 | atol | 相对于零附近尺度设定的绝对误差限制。 |
+| 17 | Relative Tolerance | 相对容差 | rtol | 按结果或参考量规模缩放的误差限制。 |
+| 18 | Significant Digits | 有效数字 |  | 在指定误差标准下具有可信意义的数字位数。 |
+
+## 04. 条件数、稳定性与算法可靠性
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Condition Number | 条件数 |  | 度量输入微小扰动对问题解影响程度的敏感性指标。 |
+| 2 | Well-Conditioned Problem | 良态问题 |  | 在指定尺度和范数下对数据扰动不敏感的问题。 |
+| 3 | Ill-Conditioned Problem | 病态问题 |  | 对输入扰动高度敏感的问题，即使算法稳定也可能难获高精度。 |
+| 4 | Numerical Stability | 数值稳定性 |  | 算法在舍入和其他计算扰动存在时保持可接受误差的性质。 |
+| 5 | Backward Stability | 后向稳定性 |  | 算法结果可视为邻近输入问题的精确解的性质。 |
+| 6 | Forward Stability | 前向稳定性 |  | 算法计算值与精确解足够接近的性质，其界需考虑条件数。 |
+| 7 | Mixed Stability | 混合稳定性 |  | 在输入与输出两端同时允许受控扰动的稳定性概念。 |
+| 8 | Residual | 残差 |  | 将近似解代入原方程后得到的不满足程度，如 b-Ax。 |
+| 9 | Perturbation Analysis | 扰动分析 |  | 研究输入或模型参数变化如何影响解及算法的过程。 |
+| 10 | Sensitivity Analysis | 敏感性分析 |  | 量化输出随参数变化的方向和幅度。 |
+| 11 | Error Propagation | 误差传播 |  | 研究局部误差经过运算与迭代如何影响最终结果。 |
+| 12 | Numerically Robust Algorithm | 数值鲁棒算法 |  | 在给定数据范围和精度下能避免显著失效的算法。 |
+| 13 | Scaling | 尺度缩放 |  | 改变变量、矩阵或方程的量级以改善数值处理。 |
+| 14 | Nondimensionalization | 无量纲化 |  | 通过特征尺度将物理量转换为无量纲形式。 |
+| 15 | Preconditioning | 预条件 |  | 对问题作可逆或近似变换，改善迭代求解的收敛性质。 |
+
+## 05. 非线性方程与求根
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Root Finding | 求根 |  | 寻找满足标量或向量方程为零的自变量。 |
+| 2 | Nonlinear Equation | 非线性方程 |  | 未知量以非线性方式进入的方程。 |
+| 3 | Bracketing Method | 区间括根法 |  | 维护含有根的区间并逐步缩小范围的方法。 |
+| 4 | Bisection Method | 二分法 |  | 对端点异号的连续函数反复取中点缩小根区间。 |
+| 5 | Newton's Method | 牛顿法 |  | 使用导数构造局部线性近似并迭代求根。 |
+| 6 | Secant Method | 割线法 |  | 利用相邻两点函数值近似导数的求根法。 |
+| 7 | Brent's Method | 布伦特法 |  | 综合括根、插值与二分保障的标量求根方法。 |
+| 8 | Fixed-Point Iteration | 不动点迭代 |  | 反复计算 x_{k+1}=g(x_k) 以寻找不动点。 |
+| 9 | Contraction Mapping | 压缩映射 |  | 在给定距离下使两点间距严格缩小的映射。 |
+| 10 | Jacobian Matrix | 雅可比矩阵 |  | 向量值函数对各变量一阶偏导组成的矩阵。 |
+| 11 | Damped Newton Method | 阻尼牛顿法 |  | 对牛顿步长进行缩放以增强全局收敛性的变体。 |
+| 12 | Line Search | 线搜索 |  | 沿给定搜索方向选择使目标或残差充分改善的步长。 |
+| 13 | Trust Region | 信赖域 |  | 只在局部模型被认为可靠的区域内求试探步。 |
+| 14 | Convergence Rate | 收敛速度 |  | 描述迭代误差随迭代次数下降快慢的量。 |
+| 15 | Stopping Criterion | 停止准则 |  | 依据残差、步长、目标变化与计算预算终止迭代的规则。 |
+
+## 06. 插值、逼近与拟合
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Interpolation | 插值 |  | 构造在给定节点处精确匹配数据的函数。 |
+| 2 | Extrapolation | 外推 |  | 在已知数据覆盖区间之外预测函数值。 |
+| 3 | Polynomial Interpolation | 多项式插值 |  | 通过多项式匹配一组节点值的插值方式。 |
+| 4 | Lagrange Interpolation | 拉格朗日插值 |  | 以拉格朗日基多项式构造插值多项式。 |
+| 5 | Newton Interpolation | 牛顿插值 |  | 利用差商递推构造牛顿形式插值多项式。 |
+| 6 | Divided Difference | 差商 |  | 从节点及函数值递归计算的插值系数。 |
+| 7 | Barycentric Interpolation | 重心插值 |  | 利用重心权重稳定、快速地评价插值多项式的形式。 |
+| 8 | Spline | 样条函数 |  | 分段多项式并满足指定节点处连续性约束的函数。 |
+| 9 | Cubic Spline | 三次样条 |  | 每段为三次多项式、通常具有连续一二阶导数的样条。 |
+| 10 | Hermite Interpolation | 埃尔米特插值 |  | 同时匹配节点函数值及部分导数值的插值。 |
+| 11 | Chebyshev Nodes | 切比雪夫节点 |  | 按切比雪夫多项式构造、常用于减轻高阶插值振荡的节点。 |
+| 12 | Runge Phenomenon | 龙格现象 |  | 高次多项式在等距节点插值中可能出现的端点剧烈振荡。 |
+| 13 | Least-Squares Approximation | 最小二乘逼近 |  | 通过最小化残差平方和逼近观测数据。 |
+| 14 | Orthogonal Polynomial | 正交多项式 |  | 在给定权函数内积下互相正交的多项式族。 |
+| 15 | Rational Approximation | 有理函数逼近 |  | 以两个多项式之比逼近目标函数的方法。 |
+
+## 07. 数值微分与求积
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Numerical Differentiation | 数值微分 |  | 通过离散函数值近似计算导数。 |
+| 2 | Finite Difference | 有限差分 |  | 用邻近节点函数值线性组合近似微分算子。 |
+| 3 | Forward Difference | 前向差分 |  | 利用当前与前一方向邻近节点构造导数近似。 |
+| 4 | Backward Difference | 后向差分 |  | 利用当前与后一方向邻近节点构造导数近似。 |
+| 5 | Central Difference | 中心差分 |  | 利用当前节点两侧数值构造通常更高阶的导数近似。 |
+| 6 | Step Size | 步长 |  | 相邻离散采样点、时间点或迭代点之间的尺度。 |
+| 7 | Richardson Extrapolation | 理查森外推 |  | 组合不同步长的结果以消去主导截断误差项。 |
+| 8 | Numerical Integration | 数值积分 |  | 利用离散采样与权重近似计算定积分。 |
+| 9 | Quadrature Rule | 求积公式 |  | 以加权函数值之和近似积分的公式。 |
+| 10 | Trapezoidal Rule | 梯形法则 |  | 利用分段线性插值面积近似积分。 |
+| 11 | Simpson's Rule | 辛普森法则 |  | 利用二次插值构造的经典求积公式。 |
+| 12 | Gaussian Quadrature | 高斯求积 |  | 选择节点与权重使给定节点数下多项式精度尽可能高的求积法。 |
+| 13 | Adaptive Quadrature | 自适应求积 |  | 根据局部误差估计动态细化积分区间的方法。 |
+| 14 | Romberg Integration | 龙贝格积分 |  | 对复合梯形结果逐层进行理查森外推的积分方法。 |
+| 15 | Monte Carlo Integration | 蒙特卡罗积分 |  | 使用随机采样统计估计多维积分的方法。 |
+
+## 08. 线性方程组与直接法
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Linear System | 线性方程组 |  | 通常写为 Ax=b 的联立线性方程。 |
+| 2 | Coefficient Matrix | 系数矩阵 |  | 线性方程组中各未知量系数组成的矩阵。 |
+| 3 | Augmented Matrix | 增广矩阵 |  | 将线性系统系数矩阵与右端向量并列形成的矩阵。 |
+| 4 | Gaussian Elimination | 高斯消元 |  | 通过初等行变换逐步消去未知量求解线性系统。 |
+| 5 | Pivot | 主元 |  | 在消元或分解步骤中用于消除其他元素的关键元素。 |
+| 6 | Partial Pivoting | 部分选主元 |  | 在当前列选取绝对值较大元素作主元以提升稳定性。 |
+| 7 | Complete Pivoting | 完全选主元 |  | 在剩余子矩阵中同时进行行列选取主元。 |
+| 8 | LU Factorization | LU 分解 | LU | 将矩阵分解成下三角和上三角因子的形式，必要时伴随置换。 |
+| 9 | Cholesky Factorization | 乔列斯基分解 |  | 将对称正定矩阵分解为三角因子与其转置或共轭转置的乘积。 |
+| 10 | LDL Transpose Factorization | LDLᵀ 分解 | LDLT | 将合适的对称矩阵表示为三角因子、块对角因子与转置的乘积。 |
+| 11 | Triangular Solve | 三角方程求解 | TRSM | 利用前代或回代求解三角线性方程组。 |
+| 12 | Forward Substitution | 前代法 |  | 依序求解下三角系统各未知量。 |
+| 13 | Backward Substitution | 回代法 |  | 逆序求解上三角系统各未知量。 |
+| 14 | Iterative Refinement | 迭代改进 |  | 依据残差求解校正方程，不断提高线性系统解精度。 |
+| 15 | Matrix Norm | 矩阵范数 |  | 量化矩阵大小并符合范数公理的函数。 |
+
+## 09. 矩阵分解、最小二乘与秩
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Matrix Factorization | 矩阵分解 |  | 将矩阵表示为具有特定结构因子的乘积。 |
+| 2 | QR Factorization | QR 分解 | QR | 将矩阵表示为正交或酉因子与上三角因子的乘积。 |
+| 3 | Householder Reflection | 豪斯霍尔德反射 |  | 通过正交反射变换消去向量的指定分量。 |
+| 4 | Givens Rotation | 吉文斯旋转 |  | 使用仅涉及两个坐标的平面旋转消去元素。 |
+| 5 | Singular Value Decomposition | 奇异值分解 | SVD | 将矩阵分解为酉或正交因子与非负奇异值对角矩阵。 |
+| 6 | Singular Value | 奇异值 |  | 由矩阵 A 的 A* A 的非负特征值开平方得到的量。 |
+| 7 | Numerical Rank | 数值秩 |  | 依据奇异值阈值等有限精度判据确定的有效秩。 |
+| 8 | Rank Deficiency | 秩亏 |  | 矩阵秩小于其可能达到的最大秩的情况。 |
+| 9 | Pseudoinverse | 伪逆 |  | 在最小二乘等场景中推广矩阵逆的 Moore–Penrose 算子。 |
+| 10 | Least-Squares Problem | 最小二乘问题 |  | 寻找使残差二范数平方最小的参数。 |
+| 11 | Normal Equations | 正规方程 |  | 由最小二乘一阶条件得到的 A*Ax=A*b 方程。 |
+| 12 | Regularization | 正则化 |  | 通过额外惩罚或约束控制不适定性、噪声敏感性或复杂度。 |
+| 13 | Tikhonov Regularization | 吉洪诺夫正则化 |  | 以解范数或其变换的二次惩罚稳定反问题。 |
+| 14 | Truncated SVD | 截断奇异值分解 | TSVD | 仅保留较大的奇异值分量求近似或正则化解。 |
+| 15 | Low-Rank Approximation | 低秩近似 |  | 用秩较低的矩阵逼近原矩阵以压缩或降噪。 |
+
+## 10. 特征值与矩阵函数
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Eigenvalue | 特征值 |  | 使 Ax=λx 存在非零向量解的标量 λ。 |
+| 2 | Eigenvector | 特征向量 |  | 满足 Ax=λx 的非零向量。 |
+| 3 | Spectral Radius | 谱半径 |  | 矩阵全部特征值模的最大值。 |
+| 4 | Eigenvalue Decomposition | 特征值分解 | EVD | 在可对角化条件下把矩阵表达为特征向量和特征值组合。 |
+| 5 | Symmetric Eigenproblem | 对称特征值问题 |  | 求实对称或厄米矩阵特征值与特征向量的问题。 |
+| 6 | Power Iteration | 幂迭代 |  | 反复乘矩阵并归一化以逼近主导特征方向的方法。 |
+| 7 | Inverse Iteration | 反幂迭代 |  | 利用移位线性系统求接近指定移位的特征向量。 |
+| 8 | Rayleigh Quotient | 瑞利商 |  | 由向量形成的 x*Ax/(x*x)，用于估计特征值。 |
+| 9 | QR Algorithm | QR 算法 |  | 通过反复 QR 分解与迭代更新求矩阵特征值的方法。 |
+| 10 | Schur Decomposition | 舒尔分解 |  | 将方阵酉相似变换为上三角或实准上三角形式。 |
+| 11 | Hessenberg Matrix | 海森堡矩阵 |  | 下次对角线以下为零的方阵。 |
+| 12 | Matrix Exponential | 矩阵指数 |  | 通过幂级数等方式定义的 exp(A)，常用于线性微分系统。 |
+| 13 | Krylov Subspace | 克里洛夫子空间 |  | 由向量 b、Ab、A²b 等张成的有限维子空间。 |
+| 14 | Spectral Gap | 谱间隙 |  | 谱中相关特征值或特征值组之间的距离。 |
+
+## 11. 迭代线性求解与稀疏矩阵
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Sparse Matrix | 稀疏矩阵 |  | 多数元素为零、适合只存非零值及索引的矩阵。 |
+| 2 | Dense Matrix | 稠密矩阵 |  | 通常以连续二维数组存储并广泛参与运算的矩阵。 |
+| 3 | Compressed Sparse Row | 压缩稀疏行格式 | CSR | 按行存非零值、列索引与行指针的稀疏格式。 |
+| 4 | Compressed Sparse Column | 压缩稀疏列格式 | CSC | 按列存非零值、行索引与列指针的稀疏格式。 |
+| 5 | Matrix-Free Method | 无显式矩阵方法 |  | 无需构造完整矩阵，只需实现矩阵向量乘算子。 |
+| 6 | Jacobi Method | 雅可比迭代法 |  | 用旧迭代值同时更新各分量求解线性系统。 |
+| 7 | Gauss–Seidel Method | 高斯–赛德尔迭代法 |  | 逐分量更新并立即利用最新值的线性迭代法。 |
+| 8 | Successive Over-Relaxation | 逐次超松弛 | SOR | 通过松弛参数加速某些驻点迭代的方法。 |
+| 9 | Conjugate Gradient Method | 共轭梯度法 | CG | 用于对称正定线性系统的克里洛夫迭代法。 |
+| 10 | Generalized Minimal Residual Method | 广义最小残量法 | GMRES | 在增长的克里洛夫子空间上最小化残差范数的算法。 |
+| 11 | Bi-Conjugate Gradient Stabilized | 稳定双共轭梯度法 | BiCGSTAB | 适用于一般非对称线性系统的克里洛夫迭代法之一。 |
+| 12 | Incomplete LU Factorization | 不完全 LU 分解 | ILU | 保留有限填充模式的近似 LU 分解，常作预条件器。 |
+| 13 | Multigrid Method | 多重网格法 |  | 在多级网格间交换误差信息以加速消除不同频率误差。 |
+| 14 | Algebraic Multigrid | 代数多重网格 | AMG | 根据矩阵连接结构构造粗层而非依赖几何网格的多重网格法。 |
+| 15 | Fill-In | 填充 |  | 稀疏消元或分解时在原本为零的位置产生非零元素。 |
+
+## 12. 数值优化与非线性最小二乘
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Optimization Problem | 优化问题 |  | 在约束条件下最小化或最大化目标函数的问题。 |
+| 2 | Objective Function | 目标函数 |  | 衡量待优化变量优劣的标量函数。 |
+| 3 | Gradient | 梯度 |  | 由一阶偏导组成并指向局部最大增长方向的向量。 |
+| 4 | Hessian Matrix | 海森矩阵 |  | 标量函数的二阶偏导数组成的矩阵。 |
+| 5 | Gradient Descent | 梯度下降法 |  | 沿负梯度方向迭代降低目标函数的方法。 |
+| 6 | Steepest Descent | 最速下降法 |  | 在指定范数和度量下沿局部最陡下降方向选择步长的方法。 |
+| 7 | Quasi-Newton Method | 拟牛顿法 |  | 通过迭代近似 Hessian 或其逆构造优化方向的方法。 |
+| 8 | BFGS Algorithm | BFGS 算法 | BFGS | 基于梯度差更新正定 Hessian 逆近似的拟牛顿算法。 |
+| 9 | L-BFGS | 有限内存 BFGS | L-BFGS | 以少量历史向量近似拟牛顿更新的算法。 |
+| 10 | Convex Optimization | 凸优化 |  | 目标函数凸且可行域为凸集的最小化问题。 |
+| 11 | Karush–Kuhn–Tucker Conditions | KKT 条件 | KKT | 约束优化局部最优解在适当正则条件下满足的一阶条件。 |
+| 12 | Nonlinear Least Squares | 非线性最小二乘 |  | 残差依赖参数非线性时最小化残差平方和的问题。 |
+| 13 | Gauss–Newton Method | 高斯–牛顿法 |  | 利用残差雅可比近似最小二乘 Hessian 的迭代法。 |
+| 14 | Levenberg–Marquardt Algorithm | 列文伯格–马夸尔特算法 | LM | 结合阻尼与高斯–牛顿思想求解非线性最小二乘的算法。 |
+| 15 | Automatic Differentiation | 自动微分 | AD | 基于程序运算图与链式法则精确传播导数的技术，数值仍受浮点影响。 |
+
+## 13. 常微分方程数值方法
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Ordinary Differential Equation | 常微分方程 | ODE | 未知函数及其单一自变量导数之间的关系式。 |
+| 2 | Initial Value Problem | 初值问题 | IVP | 给定起始时刻状态并向前或向后求解的微分方程问题。 |
+| 3 | Boundary Value Problem | 边值问题 | BVP | 通过区间端点或边界条件约束解的微分方程问题。 |
+| 4 | Explicit Euler Method | 显式欧拉法 |  | 用当前点导数预测下一步状态的一阶时间积分方法。 |
+| 5 | Implicit Euler Method | 隐式欧拉法 |  | 下一步状态出现在更新方程右端的一阶隐式方法。 |
+| 6 | Runge–Kutta Method | 龙格–库塔法 | RK | 通过多阶段斜率组合近似单步时间演化的方法族。 |
+| 7 | Embedded Runge–Kutta Method | 嵌入式龙格–库塔法 |  | 用共享阶段的不同阶公式估计局部误差并调节步长。 |
+| 8 | Adaptive Step Size | 自适应步长 |  | 依据局部误差估计动态改变时间步长或积分步长。 |
+| 9 | Local Truncation Error | 局部截断误差 |  | 假定此前状态精确时单步离散近似引入的误差。 |
+| 10 | Global Error | 全局误差 |  | 多步累积后数值解相对于精确解的差异。 |
+| 11 | Stiff Equation | 刚性方程 |  | 含显著不同时间尺度，显式方法可能受到严苛稳定步长限制的方程。 |
+| 12 | A-Stability | A 稳定性 |  | 对线性试验方程在整个左半复平面保持绝对稳定的性质。 |
+| 13 | L-Stability | L 稳定性 |  | A 稳定且对足够快衰减的模式具有强阻尼的性质。 |
+| 14 | Backward Differentiation Formula | 后向差分公式 | BDF | 基于多个过去时刻值的隐式多步 ODE 方法族。 |
+| 15 | Event Detection | 事件检测 |  | 确定 ODE 求解过程中状态满足指定条件的时刻。 |
+
+## 14. 偏微分方程与网格方法
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Partial Differential Equation | 偏微分方程 | PDE | 未知函数依赖多个自变量并含偏导数的方程。 |
+| 2 | Finite Difference Method | 有限差分法 | FDM | 以网格点差分近似微分算子的离散方法。 |
+| 3 | Finite Element Method | 有限元法 | FEM | 通过弱形式与局部基函数构造离散方程的方法。 |
+| 4 | Finite Volume Method | 有限体积法 | FVM | 对控制体积上的守恒量积分并用数值通量离散的方法。 |
+| 5 | Mesh | 网格 |  | 将计算区域划分为离散单元或节点的结构。 |
+| 6 | Mesh Refinement | 网格加密 |  | 增加局部分辨率以降低离散误差或解析细尺度结构。 |
+| 7 | Adaptive Mesh Refinement | 自适应网格加密 | AMR | 根据解的变化或误差指示器动态细化网格的方法。 |
+| 8 | Boundary Condition | 边界条件 |  | 在计算域边界约束解或其导数的条件。 |
+| 9 | Dirichlet Boundary Condition | 狄利克雷边界条件 |  | 直接指定边界上的函数值。 |
+| 10 | Neumann Boundary Condition | 诺伊曼边界条件 |  | 指定边界法向导数或通量。 |
+| 11 | Weak Formulation | 弱形式 |  | 通过积分和测试函数降低导数要求的方程形式。 |
+| 12 | Numerical Flux | 数值通量 |  | 在单元界面上近似连续流量或守恒通量的离散表达。 |
+| 13 | Courant–Friedrichs–Lewy Condition | 库朗–弗里德里希斯–列维条件 | CFL | 对某些显式时空离散稳定性施加的时间步长限制。 |
+| 14 | Method of Lines | 直线法 | MOL | 先离散空间变量，再用 ODE 数值方法推进时间的方法。 |
+| 15 | Grid Convergence Study | 网格收敛性研究 |  | 比较不同网格尺度下结果以评估离散误差与收敛阶。 |
+
+## 15. 数值随机计算与积分采样
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Pseudorandom Number Generator | 伪随机数生成器 | PRNG | 从有限内部状态确定性产生近似随机序列的算法。 |
+| 2 | Random Seed | 随机种子 |  | 初始化伪随机数生成器状态的输入。 |
+| 3 | Random Sampling | 随机采样 |  | 从指定分布产生样本的数值过程。 |
+| 4 | Inverse Transform Sampling | 逆变换采样 |  | 用分布函数的广义逆把均匀随机数转换为目标分布样本。 |
+| 5 | Rejection Sampling | 拒绝采样 |  | 按易采样包络分布提出候选并按概率接受的采样方法。 |
+| 6 | Markov Chain Monte Carlo | 马尔可夫链蒙特卡罗 | MCMC | 构造不变分布为目标分布的马尔可夫链进行统计估计的方法。 |
+| 7 | Importance Sampling | 重要性采样 |  | 从辅助分布采样并按权重修正估计的方法。 |
+| 8 | Variance Reduction | 方差缩减 |  | 通过抽样设计或控制变量降低蒙特卡罗估计方差的方法。 |
+| 9 | Quasi-Monte Carlo | 拟蒙特卡罗 | QMC | 利用低差异序列进行数值积分的方法。 |
+| 10 | Low-Discrepancy Sequence | 低差异序列 |  | 在单位区域中具有较均匀覆盖性质的确定性点序列。 |
+| 11 | Bootstrap Resampling | 自助重采样 | Bootstrap | 从观测样本重复有放回抽样以估计统计量不确定性的方法。 |
+| 12 | Reproducibility | 可复现性 |  | 在明确随机状态、计算环境和算法设置下复现结果的能力。 |
+| 13 | Stochastic Differential Equation | 随机微分方程 | SDE | 含随机驱动项的微分方程。 |
+| 14 | Euler–Maruyama Method | 欧拉–丸山法 |  | 对 Itô 型随机微分方程进行时间离散的基本方法。 |
+
+## 16. 高性能数值计算与实现
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | Basic Linear Algebra Subprograms | 基础线性代数子程序 | BLAS | 标准化向量与矩阵基本运算接口及相关实现。 |
+| 2 | Linear Algebra PACKage | 线性代数程序包 | LAPACK | 基于 BLAS 的稠密线性代数算法软件库。 |
+| 3 | Vectorization | 向量化 |  | 将标量级循环转为批量数组或 SIMD 风格操作的优化方式。 |
+| 4 | SIMD | 单指令多数据 | SIMD | 单条指令在多个数据元素上执行同类操作。 |
+| 5 | Memory Bandwidth | 内存带宽 |  | 单位时间可从内存子系统传输的数据量。 |
+| 6 | Arithmetic Intensity | 算术强度 |  | 计算操作次数与数据搬运字节数的比值。 |
+| 7 | Cache Locality | 缓存局部性 |  | 程序在时间或空间上重复访问相近数据的特性。 |
+| 8 | Blocking | 分块 |  | 将计算重组为小块以提高缓存复用与并行效率。 |
+| 9 | Tiling | 平铺 |  | 通过循环分块或数据块组织改善局部性与并行执行的方法。 |
+| 10 | Mixed-Precision Computing | 混合精度计算 |  | 在不同阶段使用多种数值精度以平衡速度、内存与精度。 |
+| 11 | Compensated Summation | 补偿求和 |  | 维护舍入误差补偿以改善长序列求和精度的技术。 |
+| 12 | Kahan Summation | 卡汉求和 |  | 使用补偿变量减小连续浮点加法舍入误差的算法。 |
+| 13 | Pairwise Summation | 成对求和 |  | 按近似平衡的树形结构累加数据以减轻误差传播的方法。 |
+| 14 | Reproducible Reduction | 可复现归约 |  | 通过规定归约次序或精确累加等方式实现更稳定的重复结果。 |
+| 15 | Roofline Model | 屋顶线性能模型 |  | 以算术强度和硬件计算、带宽上界解释性能瓶颈的模型。 |
+
+## 17. 数值软件与算法验证
+
+| # | English term | 中文译名 | Abbr. | 简明释义 |
+|---:|---|---|---|---|
+| 1 | NumPy | NumPy |  | 提供 ndarray、多维数组运算、通用函数及基础线性代数接口的 Python 库。 |
+| 2 | SciPy | SciPy |  | 提供优化、积分、稀疏矩阵、插值、线性代数及更多科学算法的 Python 库。 |
+| 3 | Array Broadcasting | 数组广播 |  | 根据兼容维度规则在不必显式复制数据时执行逐元素运算。 |
+| 4 | Strides | 步幅 |  | 数组在各轴移动一个索引所对应的内存字节偏移。 |
+| 5 | Universal Function | 通用函数 | ufunc | 在 NumPy 中按元素执行并支持广播等机制的函数对象。 |
+| 6 | Numerical Regression Test | 数值回归测试 |  | 检查算法变更后在受控输入上的精度、稳定性及行为是否退化。 |
+| 7 | Reference Implementation | 参考实现 |  | 用于阐明算法语义或验证其他实现的基准实现。 |
+| 8 | Benchmark | 性能基准测试 |  | 在明确硬件、输入和测量条件下比较执行效率的实验。 |
+| 9 | Property-Based Testing | 基于性质的测试 |  | 对大量生成输入检验数学不变量或程序属性的测试方法。 |
+| 10 | Convergence Test | 收敛性测试 |  | 改变网格、步长或迭代次数检查误差是否按预期收敛。 |
+| 11 | Condition Number Estimation | 条件数估计 |  | 使用近似算法评估矩阵或问题的敏感度而不直接精确计算。 |
+| 12 | Residual Check | 残差检查 |  | 对计算结果重新代入原模型并量化不满足程度。 |
+| 13 | Precision Budget | 精度预算 |  | 对输入误差、离散误差、舍入误差与容差作整体分配。 |
+| 14 | Deterministic Execution | 确定性执行 |  | 在指定环境与输入下使算法产生一致结果的执行方式。 |
+| 15 | Validated Numerics | 验证数值计算 |  | 通过严格误差界和区间方法对计算结果给出可靠包络。 |
+
+---
+
+## 重点易混术语辨析
+
+**01. 机器精度间隔 vs 单位舍入误差界**
+
+binary64 的 nextafter(1,+∞)-1 是 2^-52；在最近舍入模型下常取 u=2^-53。两者常被混称 machine epsilon，使用时需说明约定。
+
+**02. 病态问题 vs 不稳定算法**
+
+病态是数学问题本身对输入扰动敏感；不稳定是特定算法会额外放大舍入或计算扰动。两者相互独立。
+
+**03. 前向误差 vs 后向误差 vs 残差**
+
+前向误差比较解的距离；后向误差寻找使计算结果精确成立所需的输入改动；残差直接代入方程，量纲与尺度需额外处理。
+
+**04. 相容性 vs 收敛性 vs 稳定性**
+
+相容性描述离散算子逼近原问题；稳定性控制误差传播；收敛性描述最终解趋近真解。不能在所有问题上不加前提地互推。
+
+**05. 截断误差 vs 舍入误差**
+
+截断误差通常随步长变小而下降；舍入误差可能在步长太小时被放大，因此更小步长不一定更准。
+
+**06. 插值 vs 回归拟合**
+
+插值要求在节点处匹配数据；回归拟合通常允许残差以抑制噪声或追求泛化。
+
+**07. LU vs QR vs SVD**
+
+LU 通常用于一般可逆方程组；QR 常用于最小二乘；SVD 便于秩分析和病态问题处理，但成本往往较高。
+
+**08. 正规方程 vs QR 最小二乘**
+
+正规方程通过 A* A 求解，2-范数条件数在满列秩时通常被平方；QR 避免显式形成 A* A，数值上通常更稳健。
+
+**09. 浮点格式精度 vs 算法精度**
+
+使用 FP64 并不意味着获得约 16 位可靠数字；条件数、离散误差、算法稳定性和输入误差都会影响可信位数。
+
+**10. CG vs GMRES**
+
+经典 CG 要求线性算子对应对称正定矩阵；GMRES 可处理更一般非对称系统，但需要存储/正交化克里洛夫基。
+
+**11. 显式法 vs 隐式法**
+
+显式时间步常无需求解联立非线性方程，刚性问题步长可能受限；隐式法常更稳定但每步求解更昂贵。
+
+**12. FDM vs FEM vs FVM**
+
+有限差分直接近似微分；有限元通过弱形式和基函数离散；有限体积通过控制体积通量表达守恒。
+
+**13. FMA vs 分开乘加**
+
+FMA 在融合运算中对乘积加和作一次结果舍入，因此通常可降低舍入误差；它不保证与两步执行逐位一致。
+
+**14. 绝对容差 vs 相对容差**
+
+接近零时绝对容差尤为重要；量级很大时相对容差更合适。常见策略是 |err| ≤ atol + rtol·scale。
+
+**15. 确定性 vs 跨硬件逐位复现**
+
+固定随机种子只是必要条件之一；多线程归约次序、FMA、库实现和硬件差异仍可能改变浮点末位。
+
+## 参考资料与术语核验入口
+
+参考资料用于核对核心定义、算法分类与工程实现；并不表示每个译名由相应组织正式批准。
+
+- [IEEE 754-2019 - IEEE Standard for Floating-Point Arithmetic](https://standards.ieee.org/ieee/754/6210/)
+- [Nicholas J. Higham - Accuracy and Stability of Numerical Algorithms](https://epubs.siam.org/doi/book/10.1137/1.9780898718027)
+- [Fundamentals of Numerical Computation - T. A. Driscoll and R. J. Braun](https://fncbook.com/)
+- [Netlib LAPACK User Guide](https://www.netlib.org/lapack/lug/)
+- [NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html)
+- [SciPy Reference - Optimization, Integration, Sparse and Linear Algebra](https://docs.scipy.org/doc/scipy/reference/)
+- [NIST DLMF - Digital Library of Mathematical Functions](https://dlmf.nist.gov/)
+
+## 数据来源与维护
+
+- 权威可编辑词表：`data/numerical-computing.tsv`。
+- GitHub 仓库：<https://github.com/1998x-stack/bilingual-technical-glossary>。
+- 此版本共计 259 条领域条目，不代表全站跨学科去重数量。
+- 专业审稿状态：待独立领域专家逐条校对；欢迎提交附权威证据的 PR。

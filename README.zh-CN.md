@@ -37,7 +37,8 @@
 | 初中数学 / Junior High School Mathematics | 400 | 15 | [阅读](glossaries/junior-high-mathematics.md) | [下载](pdf/junior-high-mathematics.pdf) |
 | 并行计算 / Parallel Computing | 205 | 12 | [阅读](glossaries/parallel-computing.md) | [下载](pdf/parallel-computing.pdf) |
 | 信号处理 / Signal Processing | 295 | 18 | [阅读](glossaries/signal-processing.md) | [下载](pdf/signal-processing.pdf) |
-| **合计** | **8,889** | **381** | | |
+| 数值计算 / Numerical Computing | 259 | 17 | [阅读](glossaries/numerical-computing.md) | [下载](pdf/numerical-computing.pdf) |
+| **合计** | **9,148** | **398** | | |
 
 ### 新增独立手册（暂未纳入全文检索）
 
@@ -74,7 +75,7 @@
 主题为专业技术知识库、研究数据门户的 UI，支持：
 
 - **中英混合全文搜索：**英文、中文、缩写、专题和解释；
-- **主题选择：**25 个学科、381 个专题；
+- **主题选择：**26 个学科、398 个专题；
 - **覆盖可视化：**按学科展示真实术语数量及学习路线；
 - **资料下载：**每个主题的 PDF、Markdown，以及搜索结果 CSV；
 - **交互体验：**移动端布局、明暗主题、键盘快捷键、分享检索链接。
@@ -137,3 +138,7 @@ python3 -m unittest discover -s tests -v
 
 仓库管理员仍需在 GitHub Rulesets 中开启 `main` 必须经 PR/人工审核/必要检查的保护；真正的屏幕阅读器体验与完整数学排版还需专项验收。
 
+
+## 数值计算专题
+
+新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
