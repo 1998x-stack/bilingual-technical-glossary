@@ -33,6 +33,14 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
 | **Total** | **9 domains** | **2,915** | **125** | | |
 
+### Additional standalone handbook (not yet indexed)
+
+| Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
+|---|---|---:|---:|---|---|
+| Computer Organization & Architecture | 计算机组成原理 | 678 | 15 | [Read](glossaries/computer-organization.md) | [Download](pdf/computer-organization.pdf) |
+
+> **Search status:** This publication includes 678 Chinese–English term pairs, 16 terminology distinctions and an abbreviation index. The original 39-page PDF and Markdown are available, but these entries are **not included** in the searchable index counts above until their definitions have been verified.
+
 > **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. The Compiler Principles glossary contributes 268 independently curated terms in 12 chapters and is available as Markdown, PDF, and searchable index entries. This explicit distinction prevents claiming that PDF extraction is lossless.
 
 ## Features
