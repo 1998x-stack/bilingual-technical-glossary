@@ -1,0 +1,566 @@
+# 计算机网络专有名词中英文对照表
+
+> **Computer Networks · Bilingual Technical Glossary**
+>
+> 版本：1.0 · 2026-11-16 · **359 条术语 / 18 个专题** · TERM/ATLAS
+
+## 阅读说明
+
+- 英文术语优先使用经典教材、IETF RFC 和 IEEE 802 系列规范中的标准写法；缩写保留在英文全称中。
+- 中文为教材与工程实践中常见译名，存在多译名的概念应结合上下文核对。
+- 释义旨在帮助准确区分概念，不等同于完整协议规范；实际行为需结合具体协议版本与实现。
+- 术语覆盖网络基础、协议分层、链路、无线、IP、路由、TCP/UDP/QUIC、DNS、HTTP、TLS、云网络及排障。
+
+## 核心网络协议栈
+
+```text
+应用层       DNS · HTTP/1.1 · HTTP/2 · HTTP/3 · SSH · SMTP
+传输层       TCP · UDP · QUIC（基于 UDP）
+网络层       IPv4 · IPv6 · ICMP · 路由协议
+数据链路层   Ethernet · 802.11 · VLAN
+物理层       双绞线 · 光纤 · 无线信号
+```
+
+## 高频易混术语
+
+| 概念 A | 概念 B | 核心区别 |
+|---|---|---|
+| Bandwidth（带宽） | Throughput（吞吐量） | 前者常指链路容量或频谱宽度；后者指实际完成的数据传输速率。 |
+| Throughput（吞吐量） | Goodput（有效吞吐量） | 后者通常只计算应用真正接收到的有效数据，不计重传及协议开销。 |
+| Transmission Delay（发送时延） | Propagation Delay（传播时延） | 发送时延≈分组比特数/链路速率；传播时延≈链路长度/信号传播速度。 |
+| Routing（路由选择） | Forwarding（转发） | 路由选择决定路径；转发依据 FIB 对单个分组执行下一跳操作。 |
+| Switch（交换机） | Router（路由器） | 传统二层交换按 MAC 转发；路由按 IP 前缀转发，三层交换机可兼有二者能力。 |
+| MAC Address | IP Address | 前者一般用于本地链路帧交换；后者用于跨网络逻辑寻址与路由。 |
+| TCP | UDP | TCP 提供可靠有序字节流；UDP 保持数据报边界，不保证可靠传输与顺序。 |
+| TCP Flow Control | TCP Congestion Control | 前者关注接收方处理能力；后者关注网络中间路径的拥塞。 |
+| TCP | QUIC | QUIC 基于 UDP，提供可靠流并集成 TLS 1.3；独立流可减少传输层队头阻塞。 |
+| HTTP/2 | HTTP/3 | HTTP/2 常通过 TCP；HTTP/3 使用 QUIC，传输层的多流独立性有所不同。 |
+| DNS | DHCP | DNS 解析名称与资源记录；DHCP 自动分配主机网络配置。 |
+| TLS | HTTPS | TLS 是安全协议；HTTPS 是在加密传输上运行 HTTP 的使用方式。 |
+| NAT | Firewall | NAT 改写地址或端口；防火墙根据安全规则控制通信，二者功能不同。 |
+| Latency | RTT | 延迟可能是单向或业务端到端耗时；RTT 是往返时间。 |
+
+## 专题目录
+
+- 01 网络基础与体系结构 / Networking Fundamentals & Architecture（20 条）
+- 02 分层、封装与数据单位 / Layers, Encapsulation & Data Units（18 条）
+- 03 物理传输与接入技术 / Physical Transmission & Access（20 条）
+- 04 以太网、交换与局域网 / Ethernet, Switching & LAN（22 条）
+- 05 无线网络与移动通信 / Wireless & Mobile Networks（20 条）
+- 06 IPv4、IPv6 与寻址 / IPv4, IPv6 & Addressing（21 条）
+- 07 IP 数据平面、转发与控制消息 / IP Forwarding & Control（18 条）
+- 08 动态路由与互联网互联 / Routing Protocols & Interdomain Networking（18 条）
+- 09 传输层基础、端口与 Socket / Transport Basics & Sockets（17 条）
+- 10 TCP 连接、可靠性与拥塞控制 / TCP Mechanics & Congestion Control（26 条）
+- 11 UDP、QUIC 与现代传输 / UDP, QUIC & Modern Transport（14 条）
+- 12 DNS、DHCP、ARP 与地址转换 / DNS, DHCP, ARP & NAT（21 条）
+- 13 HTTP、Web 与内容交付 / HTTP, Web & Content Delivery（24 条）
+- 14 应用层常见协议与 API / Common Application Protocols（14 条）
+- 15 TLS、密码学与网络安全 / TLS, Cryptography & Network Security（22 条）
+- 16 性能、可靠性与服务质量 / Performance, Reliability & QoS（20 条）
+- 17 数据中心、云网络与虚拟化 / Data Center & Cloud Networking（20 条）
+- 18 网络排障、监控与可观测性 / Troubleshooting & Observability（24 条）
+
+---
+
+## 01 网络基础与体系结构 · Networking Fundamentals & Architecture
+
+*20 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Computer Network | 计算机网络 | 由通信链路和协议连接的计算设备集合，用于交换数据与共享资源。 |
+| Internet | 互联网 | 采用 IP 协议族互联的全球网络系统。 |
+| Intranet | 内联网 | 面向组织内部、通常受访问控制保护的网络。 |
+| Network Protocol | 网络协议 | 规定通信双方消息格式、交互顺序与行为的规则。 |
+| Network Architecture | 网络体系结构 | 组织网络分层、功能与协议关系的总体设计。 |
+| Network Edge | 网络边缘 | 运行终端和应用、接入网络的部分。 |
+| Network Core | 网络核心 | 由路由器和链路组成、承担数据转发的骨干部分。 |
+| End System (Host) | 端系统（主机） | 运行网络应用的设备，如服务器、电脑和手机。 |
+| Client | 客户端 | 通常发起请求并消费远端服务的程序或设备。 |
+| Server | 服务器 | 接收请求并提供资源或服务的程序或设备。 |
+| Peer-to-Peer (P2P) | 对等网络 | 节点可同时作为服务的请求者和提供者的通信模式。 |
+| Internet Service Provider (ISP) | 互联网服务提供商 | 为用户或其他网络提供互联网接入与传输服务的运营者。 |
+| Autonomous System (AS) | 自治系统 | 由统一路由策略管理并具有 AS 号的网络集合。 |
+| Local Area Network (LAN) | 局域网 | 覆盖家庭、校园或园区等有限区域的网络。 |
+| Wide Area Network (WAN) | 广域网 | 跨越较大地理范围连接多处站点的网络。 |
+| Metropolitan Area Network (MAN) | 城域网 | 通常覆盖城市或都市范围的网络。 |
+| Packet Switching | 分组交换 | 将数据拆成分组、由网络逐跳转发的交换方式。 |
+| Circuit Switching | 电路交换 | 通信前建立资源或路径连接，通常预留传输能力的交换方式。 |
+| Store-and-Forward | 存储转发 | 设备完整接收一个分组后再向下一跳发送的转发方式。 |
+| Best-Effort Delivery | 尽力而为交付 | 网络不承诺端到端时延、可靠交付或固定带宽的服务模型。 |
+
+## 02 分层、封装与数据单位 · Layers, Encapsulation & Data Units
+
+*18 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Open Systems Interconnection (OSI) Model | OSI 参考模型 | 将网络通信功能抽象划分为七层的参考体系结构。 |
+| TCP/IP Model | TCP/IP 协议模型 | 以 IP 为核心组织互联网协议的分层模型。 |
+| Application Layer | 应用层 | 直接面向应用协议和服务语义的层次。 |
+| Transport Layer | 传输层 | 提供端到端进程间的数据传输服务。 |
+| Network Layer | 网络层 | 处理逻辑寻址、分组转发和跨网络路由。 |
+| Data Link Layer | 数据链路层 | 在相邻节点间封装和传送帧并检测部分链路错误。 |
+| Physical Layer | 物理层 | 将比特映射为光、电或无线电信号传输。 |
+| Encapsulation | 封装 | 下层为上层数据添加协议首部或尾部的过程。 |
+| Decapsulation | 解封装 | 接收方逐层解析并移除封装信息的过程。 |
+| Protocol Data Unit (PDU) | 协议数据单元 | 特定协议层处理和交换的完整数据单位。 |
+| Service Data Unit (SDU) | 服务数据单元 | 由上层交给某一协议层承载的数据部分。 |
+| Frame | 帧 | 数据链路层的传输单位，通常包含链路首部和校验信息。 |
+| Packet | 分组（数据包） | 网络层或一般语境下独立转发的数据单元。 |
+| Segment | 报文段 | TCP 等传输层协议使用的数据单位。 |
+| Datagram | 数据报 | 面向无连接传输的数据单位，常见于 IP 和 UDP 语境。 |
+| Payload | 有效载荷 | 除协议首部等控制信息外承载的业务数据。 |
+| Header | 首部 | 描述地址、长度、控制标志等元信息的协议字段集合。 |
+| Trailer | 尾部 | 附在数据末尾的附加控制或校验信息。 |
+
+## 03 物理传输与接入技术 · Physical Transmission & Access
+
+*20 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Bandwidth | 带宽 | 通信链路的频率宽度或可传输数据速率容量，需区分语境。 |
+| Bit Rate | 比特率 | 单位时间发送的比特数，通常以 bit/s 计。 |
+| Baud Rate | 波特率 | 单位时间信号符号变化的次数，不必等于比特率。 |
+| Signal-to-Noise Ratio (SNR) | 信噪比 | 有用信号功率与噪声功率之比。 |
+| Attenuation | 衰减 | 信号传播中功率或幅度逐渐减弱的现象。 |
+| Interference | 干扰 | 其他信号影响目标信号接收的现象。 |
+| Propagation Delay | 传播时延 | 信号在介质中传播一定距离所花费的时间。 |
+| Transmission Delay | 发送时延 | 把一个分组的比特逐个推送到链路所需的时间。 |
+| Queuing Delay | 排队时延 | 分组在设备缓冲队列中等待转发的时间。 |
+| Processing Delay | 处理时延 | 设备分析首部、查表和检查错误等所花的时间。 |
+| Twisted Pair | 双绞线 | 通过成对绞合导线降低干扰的有线传输介质。 |
+| Optical Fiber | 光纤 | 利用光信号传输数据的低损耗通信介质。 |
+| Single-Mode Fiber (SMF) | 单模光纤 | 主要支持单一传播模式、适合长距离高速通信的光纤。 |
+| Multimode Fiber (MMF) | 多模光纤 | 允许多个传播模式、通常用于较短距离的光纤。 |
+| Ethernet PHY | 以太网物理层收发器 | 执行以太网物理编码、信号发送与接收的组件。 |
+| Multiplexing | 复用 | 让多路逻辑通信共享同一物理资源的机制。 |
+| Time Division Multiplexing (TDM) | 时分复用 | 把不同通信分配到不同时间片的复用方式。 |
+| Wavelength Division Multiplexing (WDM) | 波分复用 | 利用不同光波长在同一光纤中并行传输信号。 |
+| Full-Duplex | 全双工 | 两个方向可以同时发送和接收数据的工作方式。 |
+| Half-Duplex | 半双工 | 双向通信可以进行，但通常不能在同一时刻双向传输。 |
+
+## 04 以太网、交换与局域网 · Ethernet, Switching & LAN
+
+*22 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Ethernet | 以太网 | 广泛用于有线局域网的 IEEE 802.3 技术族。 |
+| Media Access Control (MAC) | 媒体访问控制 | 数据链路子层中处理介质访问和链路寻址的功能。 |
+| MAC Address | MAC 地址 | 网络接口在链路层使用的地址标识，通常为 48 位。 |
+| Ethernet Frame | 以太网帧 | 包含目的 MAC、源 MAC、类型字段及校验信息的帧格式。 |
+| EtherType | 以太网类型字段 | 标识帧载荷上层协议类型的字段。 |
+| Frame Check Sequence (FCS) | 帧校验序列 | 用于链路层错误检测的帧尾校验数据。 |
+| Cyclic Redundancy Check (CRC) | 循环冗余校验 | 通过多项式运算检测传输数据错误的方法。 |
+| Network Switch | 网络交换机 | 依据链路层地址表在端口之间转发帧的设备。 |
+| Bridge | 网桥 | 连接链路网段并依据 MAC 地址转发或过滤帧的设备。 |
+| Hub | 集线器 | 在物理层向其他端口重复接收信号的传统设备。 |
+| MAC Address Table | MAC 地址表 | 交换机学习到的 MAC 地址与端口映射表。 |
+| Flooding | 泛洪 | 将帧复制发送到多个端口的转发方式。 |
+| Broadcast Domain | 广播域 | 链路层广播帧通常能到达的节点集合。 |
+| Collision Domain | 冲突域 | 共享介质下可能出现发送碰撞的范围。 |
+| Virtual LAN (VLAN) | 虚拟局域网 | 在二层网络内划分逻辑隔离广播域的机制。 |
+| IEEE 802.1Q | 802.1Q VLAN 标记标准 | 定义以太网 VLAN 标记等桥接相关机制的 IEEE 标准。 |
+| Access Port | 接入口 | 通常为终端提供单一 VLAN 接入的交换机端口。 |
+| Trunk Port | 汇聚端口 | 在设备之间承载多个 VLAN 流量的端口。 |
+| Spanning Tree Protocol (STP) | 生成树协议 | 通过阻塞冗余链路避免二层转发环路的协议族。 |
+| Link Aggregation (LAG) | 链路聚合 | 把多个物理链路组合成一个逻辑链路的技术。 |
+| Link Aggregation Control Protocol (LACP) | 链路聚合控制协议 | 用于协商和管理聚合链路成员的协议。 |
+| Maximum Transmission Unit (MTU) | 最大传输单元 | 特定链路可承载的最大网络层分组大小。 |
+
+## 05 无线网络与移动通信 · Wireless & Mobile Networks
+
+*20 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Wireless Local Area Network (WLAN) | 无线局域网 | 通过无线电建立局域连接的网络。 |
+| Wi-Fi | Wi-Fi 无线局域网技术 | 基于 IEEE 802.11 规范的无线局域网技术品牌与生态。 |
+| IEEE 802.11 | 802.11 无线局域网标准 | 规定 WLAN 物理层和 MAC 层功能的 IEEE 标准族。 |
+| Access Point (AP) | 无线接入点 | 为无线终端提供接入有线或其他网络的设备。 |
+| Service Set Identifier (SSID) | 服务集标识符 | 用于标识 Wi-Fi 网络名称的字符串。 |
+| Basic Service Set (BSS) | 基本服务集 | 由无线接入点及其关联站点构成的局域通信集合。 |
+| Basic Service Set Identifier (BSSID) | 基本服务集标识符 | 用于标识特定无线基本服务集的地址。 |
+| Association | 关联 | 无线客户端与接入点建立 802.11 关联关系的过程。 |
+| Roaming | 漫游 | 终端在不同接入点或接入网络间迁移并维持服务的过程。 |
+| Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA) | 载波监听多路访问与冲突避免 | 无线站点先监听信道并采用退避降低碰撞概率的机制。 |
+| Request to Send (RTS) | 请求发送帧 | 用于协调共享无线信道发送机会的控制帧。 |
+| Clear to Send (CTS) | 允许发送帧 | 响应 RTS 并通知有关站点介质使用状态的控制帧。 |
+| Hidden Node Problem | 隐藏节点问题 | 两个发射端互相听不到却可能在接收端产生碰撞的情形。 |
+| Received Signal Strength Indicator (RSSI) | 接收信号强度指示 | 设备报告接收无线信号功率相关强度的指标。 |
+| Channel Width | 信道带宽 | 无线信道所占频谱宽度，如 20 MHz 或 80 MHz。 |
+| Multiple-Input Multiple-Output (MIMO) | 多输入多输出 | 利用多个收发天线提高无线链路能力的技术。 |
+| Orthogonal Frequency Division Multiplexing (OFDM) | 正交频分复用 | 将高速数据分配到多个正交子载波上传输的调制方式。 |
+| Cellular Network | 蜂窝网络 | 通过分区基站和频谱资源实现广域移动通信的网络。 |
+| Base Station | 基站 | 为特定无线覆盖区提供接入和无线资源控制的设备。 |
+| Handover | 切换 | 移动设备在基站或无线链路之间转移连接的过程。 |
+
+## 06 IPv4、IPv6 与寻址 · IPv4, IPv6 & Addressing
+
+*21 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Internet Protocol (IP) | 网际协议 | 提供跨网络逻辑寻址与尽力而为分组转发能力的协议。 |
+| IPv4 | 互联网协议第 4 版 | 使用 32 位地址的 IP 版本。 |
+| IPv6 | 互联网协议第 6 版 | 使用 128 位地址并重新设计首部与扩展机制的 IP 版本。 |
+| IP Address | IP 地址 | 网络层用于标识接口或网络端点的逻辑地址。 |
+| Network Prefix | 网络前缀 | 表示一组地址共享的高位比特部分。 |
+| Prefix Length | 前缀长度 | CIDR 表示法中网络前缀占据的比特数量。 |
+| Classless Inter-Domain Routing (CIDR) | 无类别域间路由 | 使用可变前缀长度进行 IP 地址分配与路由聚合的方法。 |
+| Subnet | 子网 | 由共同网络前缀划分出的逻辑网络。 |
+| Subnet Mask | 子网掩码 | 在 IPv4 中指出地址的网络前缀与主机位的掩码。 |
+| Default Gateway | 默认网关 | 终端向其他网络转发流量时使用的下一跳设备。 |
+| Loopback Address | 回环地址 | 指向本机协议栈的逻辑地址，如 127.0.0.1 或 ::1。 |
+| Private IPv4 Address | 私有 IPv4 地址 | RFC 1918 定义、通常不在公网直接路由的 IPv4 地址。 |
+| Public IP Address | 公网 IP 地址 | 在适用范围内可全球路由的 IP 地址。 |
+| Link-Local Address | 链路本地地址 | 仅在本地链路范围有效的地址，如 IPv6 fe80::/10。 |
+| Unicast Address | 单播地址 | 用于标识一个目标接口或单播接收方的地址。 |
+| Multicast Address | 组播地址 | 用于标识一组订阅接收方的地址。 |
+| Anycast Address | 任播地址 | 多个节点共享标识、由路由选取其中一个接收流量的地址。 |
+| Broadcast Address | 广播地址 | IPv4 中用于向特定范围内全部节点发送分组的地址。 |
+| IPv6 Neighbor Discovery (NDP) | IPv6 邻居发现协议 | 用于邻居可达性、地址解析和路由器发现的 ICMPv6 机制。 |
+| Stateless Address Autoconfiguration (SLAAC) | 无状态地址自动配置 | IPv6 主机依据路由器通告等信息生成地址的机制。 |
+| Duplicate Address Detection (DAD) | 重复地址检测 | IPv6 中检测拟使用地址是否已被占用的流程。 |
+
+## 07 IP 数据平面、转发与控制消息 · IP Forwarding & Control
+
+*18 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Router | 路由器 | 依据网络层路由与转发表在不同链路间转发分组的设备。 |
+| Routing | 路由选择 | 决定到达目标网络应采用何种路径的过程。 |
+| Forwarding | 转发 | 依据转发表将到来的分组送往对应出口的过程。 |
+| Forwarding Information Base (FIB) | 转发信息库 | 用于高效查找目的地址对应下一跳的转发表。 |
+| Routing Information Base (RIB) | 路由信息库 | 路由控制平面维护的候选路由及选择结果集合。 |
+| Longest Prefix Match | 最长前缀匹配 | 选择与目标地址匹配的最长网络前缀的规则。 |
+| Next Hop | 下一跳 | 分组沿路径接下来要发送到的网络节点。 |
+| Default Route | 默认路由 | 没有更具体匹配时使用的路由，通常记作 0.0.0.0/0 或 ::/0。 |
+| Time to Live (TTL) | 生存时间 | IPv4 首部中逐跳递减、避免分组无限循环的字段。 |
+| Hop Limit | 跳数限制 | IPv6 中限制分组可经过多少个路由器的字段。 |
+| Internet Control Message Protocol (ICMP) | 互联网控制报文协议 | 传递 IP 网络错误、诊断和控制消息的协议族。 |
+| ICMPv6 | ICMP 第 6 版 | 服务于 IPv6 的错误报告、诊断与邻居发现协议。 |
+| Echo Request | 回显请求 | ICMP 中用于测试目标可达性的探测报文。 |
+| Echo Reply | 回显应答 | 对 ICMP 回显请求的应答报文。 |
+| Destination Unreachable | 目标不可达 | 指示由于网络或策略原因无法到达目的地的控制消息。 |
+| Packet Fragmentation | 分片 | 将数据报拆成较小片段以适配传输限制的机制。 |
+| Path MTU Discovery (PMTUD) | 路径 MTU 发现 | 确定源到目的路径可支持的最大分组大小的方法。 |
+| Black Hole | 黑洞路由或丢包路径 | 流量在某路径上被无声丢弃而无法抵达目的地的现象。 |
+
+## 08 动态路由与互联网互联 · Routing Protocols & Interdomain Networking
+
+*18 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Routing Protocol | 路由协议 | 网络设备交换拓扑或可达性信息、计算路径的协议。 |
+| Static Route | 静态路由 | 由管理员明确配置、通常不自动学习的路由条目。 |
+| Dynamic Routing | 动态路由 | 通过路由协议自动学习或更新路由的机制。 |
+| Distance-Vector Routing | 距离向量路由 | 节点交换到目的地的代价估计并迭代更新路由的方法。 |
+| Link-State Routing | 链路状态路由 | 节点获取拓扑信息并计算最短路径的路由方法。 |
+| Dijkstra Algorithm | 迪杰斯特拉算法 | 在非负权图中计算从源点到各节点最短路径的算法。 |
+| Bellman-Ford Algorithm | 贝尔曼-福特算法 | 通过边的松弛迭代求解单源最短路径的算法。 |
+| Routing Information Protocol (RIP) | 路由信息协议 | 采用跳数作为主要度量的传统距离向量路由协议。 |
+| Open Shortest Path First (OSPF) | 开放最短路径优先协议 | 使用链路状态数据库和最短路径树的域内路由协议。 |
+| Intermediate System to Intermediate System (IS-IS) | 中间系统到中间系统协议 | 常用于运营商骨干的链路状态域内路由协议。 |
+| Border Gateway Protocol (BGP) | 边界网关协议 | 在自治系统之间交换可达前缀和策略属性的路径向量协议。 |
+| External BGP (eBGP) | 外部 BGP | 不同自治系统之间建立的 BGP 邻接关系。 |
+| Internal BGP (iBGP) | 内部 BGP | 同一自治系统内部传递 BGP 路由信息的会话。 |
+| Autonomous System Number (ASN) | 自治系统号 | 全球互联网路由中标识自治系统的编号。 |
+| BGP Path Attribute | BGP 路径属性 | 供 BGP 路由选择和策略处理使用的可达性元数据。 |
+| AS_PATH | 自治系统路径属性 | BGP 中记录经过的 AS 序列，支持环路检测与策略控制。 |
+| Route Aggregation | 路由聚合 | 用较短前缀概括多个更具体路由以缩小路由表的方法。 |
+| Equal-Cost Multi-Path (ECMP) | 等价多路径 | 在多条相同代价路径之间分担流量的转发策略。 |
+
+## 09 传输层基础、端口与 Socket · Transport Basics & Sockets
+
+*17 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Port Number | 端口号 | 用于在主机内标识传输层服务端点的数字。 |
+| Socket | 套接字 | 操作系统提供的网络通信端点抽象及编程接口。 |
+| Socket Address | 套接字地址 | 由 IP 地址、端口等组成的通信端点标识。 |
+| Multiplexing | 多路复用（传输层） | 发送方将不同应用流的数据汇集到共同网络层服务。 |
+| Demultiplexing | 多路分解 | 接收方依据首部标识把数据交付给正确的套接字。 |
+| Connection-Oriented Service | 面向连接服务 | 数据交换前建立并维护连接状态的传输服务。 |
+| Connectionless Service | 无连接服务 | 独立发送数据报而不建立传输层连接状态的服务。 |
+| Reliable Data Transfer | 可靠数据传输 | 通过确认、重传等机制按所定义语义交付数据的协议能力。 |
+| Acknowledgment (ACK) | 确认 | 接收方用于报告数据接收情况的控制信息。 |
+| Negative Acknowledgment (NAK) | 否定确认 | 显式告知部分数据未被正确接收的控制信息。 |
+| Retransmission | 重传 | 发送方再次发送先前未被确认或被认为丢失的数据。 |
+| Sequence Number | 序列号 | 用于标记字节或报文的顺序位置与检测重复。 |
+| Checksum | 校验和 | 对数据计算的检错值，可发现部分传输损坏。 |
+| Round-Trip Time (RTT) | 往返时间 | 数据从发送端到目标并收到响应经历的时间。 |
+| Timeout | 超时 | 等待预期事件超过阈值后触发处理的机制。 |
+| Flow Control | 流量控制 | 限制发送方速率或在途数据，防止接收方缓冲耗尽。 |
+| Congestion Control | 拥塞控制 | 根据网络负载和拥塞信号调节发送行为的机制。 |
+
+## 10 TCP 连接、可靠性与拥塞控制 · TCP Mechanics & Congestion Control
+
+*26 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Transmission Control Protocol (TCP) | 传输控制协议 | 提供可靠、有序、面向字节流的双向传输协议。 |
+| Three-Way Handshake | 三次握手 | TCP 通过 SYN、SYN-ACK、ACK 建立连接并同步序列空间的过程。 |
+| Four-Way Termination | 四次挥手 | TCP 双方向分别关闭发送能力时常见的四个报文交换过程。 |
+| SYN Flag | SYN 标志 | TCP 首部中用于连接建立和序列号同步的控制位。 |
+| FIN Flag | FIN 标志 | TCP 中表示本端数据发送完毕的控制位。 |
+| RST Flag | RST 标志 | TCP 中用于复位连接或拒绝无效连接的控制位。 |
+| TCP State Machine | TCP 状态机 | 描述 LISTEN、ESTABLISHED、TIME_WAIT 等连接状态转换的模型。 |
+| LISTEN State | 监听状态 | TCP 服务端等待连接请求的状态。 |
+| ESTABLISHED State | 已建立状态 | TCP 双方可以正常双向交换数据的连接状态。 |
+| TIME_WAIT State | 时间等待状态 | 主动完成正常关闭的一端等待足够时间以处理迟到报文的状态。 |
+| Maximum Segment Size (MSS) | 最大报文段长度 | TCP 单个报文段中可携带的最大应用数据长度。 |
+| Sliding Window | 滑动窗口 | 允许多个数据单元在收到确认前保持在途的传输机制。 |
+| Receive Window (rwnd) | 接收窗口 | 接收端通告的、反映接收缓冲能力的窗口。 |
+| Congestion Window (cwnd) | 拥塞窗口 | 发送方维护、用于约束网络在途数据量的窗口。 |
+| Slow Start | 慢启动 | TCP 建立或重启拥塞控制时逐步增长发送窗口的阶段。 |
+| Congestion Avoidance | 拥塞避免 | 拥塞窗口相对平缓增长、抑制网络过载的控制阶段。 |
+| Fast Retransmit | 快速重传 | 根据重复 ACK 等丢包线索提前重传数据的机制。 |
+| Fast Recovery | 快速恢复 | 在部分拥塞控制算法中检测丢包后调整窗口的过程。 |
+| Duplicate ACK | 重复确认 | TCP 接收端对同一累计确认号反复发送的 ACK。 |
+| Selective Acknowledgment (SACK) | 选择性确认 | 允许接收方报告已收到的不连续数据块的 TCP 扩展。 |
+| Retransmission Timeout (RTO) | 重传超时时间 | TCP 等待确认的定时器到期阈值。 |
+| Smoothed RTT (SRTT) | 平滑往返时间 | 通过采样和滤波估计的 RTT 平滑值。 |
+| Nagle Algorithm | 纳格算法 | 减少小型 TCP 数据段发送频率的机制。 |
+| Delayed ACK | 延迟确认 | 接收端短暂推迟 ACK 以减少控制报文的策略。 |
+| Head-of-Line Blocking (HOL) | 队头阻塞 | 前序数据未就绪导致后续数据无法按顺序交付的现象。 |
+| TCP Keepalive | TCP 保活 | 长时间空闲后使用探测报文检查连接状态的可选机制。 |
+
+## 11 UDP、QUIC 与现代传输 · UDP, QUIC & Modern Transport
+
+*14 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| User Datagram Protocol (UDP) | 用户数据报协议 | 提供无连接、按数据报划分的传输层服务，不保证送达或顺序。 |
+| UDP Datagram | UDP 数据报 | 具有源端口、目的端口、长度和校验信息的 UDP 传输单位。 |
+| UDP Checksum | UDP 校验和 | 覆盖伪首部及 UDP 报文内容的差错检测字段。 |
+| QUIC | QUIC 传输协议 | 基于 UDP、集成安全握手与多路复用流的现代传输协议。 |
+| QUIC Connection | QUIC 连接 | 由连接 ID、加密状态和传输参数管理的逻辑会话。 |
+| QUIC Stream | QUIC 流 | 单条 QUIC 连接中的独立有序字节流。 |
+| Connection ID (CID) | 连接标识符 | QUIC 用来识别连接并支持连接迁移的标识。 |
+| Connection Migration | 连接迁移 | QUIC 在底层网络地址变化时维持逻辑连接的能力。 |
+| Zero Round-Trip Time (0-RTT) | 零往返时间数据 | 恢复握手时可提前发送应用数据的机制，可能面临重放风险。 |
+| One Round-Trip Time (1-RTT) | 一往返时间数据 | QUIC 完成协商后使用正常应用数据密钥传输的阶段。 |
+| Stream Multiplexing | 流多路复用 | 在同一传输连接上并行承载多个逻辑数据流。 |
+| Datagram Extension | 数据报扩展 | QUIC 上不提供可靠重传语义的数据报承载能力。 |
+| Connection Coalescing | 连接合并 | 满足证书等条件时复用连接服务多个来源的机制。 |
+| Transport Parameter | 传输参数 | QUIC 连接建立时双方声明流量限制等能力的配置集合。 |
+
+## 12 DNS、DHCP、ARP 与地址转换 · DNS, DHCP, ARP & NAT
+
+*21 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Domain Name System (DNS) | 域名系统 | 将域名映射到资源记录并提供分层分布式名称解析的系统。 |
+| DNS Resolver | DNS 解析器 | 代表应用查询 DNS 数据并处理结果的组件。 |
+| Recursive Resolver | 递归解析器 | 代客户端执行后续查询并返回最终结果的 DNS 服务。 |
+| Authoritative Name Server | 权威名称服务器 | 对所负责区域提供权威 DNS 记录的服务器。 |
+| DNS Zone | DNS 区域 | DNS 管理与权威授权的逻辑数据范围。 |
+| Resource Record (RR) | 资源记录 | DNS 中存储名称、类型、TTL 与具体值的数据记录。 |
+| A Record | A 记录 | 将名称映射到 IPv4 地址的 DNS 记录。 |
+| AAAA Record | AAAA 记录 | 将名称映射到 IPv6 地址的 DNS 记录。 |
+| CNAME Record | CNAME 别名记录 | 将一个域名指向另一个规范名称的 DNS 记录。 |
+| MX Record | MX 邮件交换记录 | 用于指定域名邮件接收服务器的 DNS 记录。 |
+| TXT Record | TXT 文本记录 | 保存文本数据并常用于域名验证和邮件安全策略的 DNS 记录。 |
+| DNS Time to Live (TTL) | DNS 缓存生存时间 | 记录建议被缓存的时间上限。 |
+| DNS Cache | DNS 缓存 | 保存先前解析结果以减少后续查询时延的缓存。 |
+| Domain Name System Security Extensions (DNSSEC) | DNS 安全扩展 | 用数字签名验证 DNS 数据真实性和完整性的协议扩展。 |
+| Dynamic Host Configuration Protocol (DHCP) | 动态主机配置协议 | 自动向终端分配 IP 地址及网络配置参数的协议。 |
+| DHCP Lease | DHCP 租约 | 客户端临时使用由 DHCP 服务器分配地址的有效期。 |
+| Address Resolution Protocol (ARP) | 地址解析协议 | IPv4 局域网中查询 IP 地址对应链路层地址的协议。 |
+| Gratuitous ARP | 免费 ARP | 主机主动发布或检测本机 IPv4 与 MAC 映射的 ARP 报文。 |
+| Network Address Translation (NAT) | 网络地址转换 | 在设备上改写分组中的 IP 地址以连接不同地址域的机制。 |
+| Network Address and Port Translation (NAPT) | 网络地址及端口转换 | 同时改写 IP 地址与传输层端口以复用公网地址的机制。 |
+| Carrier-Grade NAT (CGNAT) | 运营商级 NAT | 运营商在共享地址空间上为多用户实施地址转换的部署方式。 |
+
+## 13 HTTP、Web 与内容交付 · HTTP, Web & Content Delivery
+
+*24 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Hypertext Transfer Protocol (HTTP) | 超文本传输协议 | Web 中传递请求和响应语义的应用层协议族。 |
+| HTTP Request | HTTP 请求 | 包含方法、目标、字段及可选内容的客户端消息。 |
+| HTTP Response | HTTP 响应 | 包含状态码、字段及可选内容的服务端消息。 |
+| HTTP Method | HTTP 方法 | 描述请求意图的操作标识，如 GET、POST、PUT。 |
+| GET Method | GET 方法 | 请求获取目标资源当前表示的 HTTP 方法。 |
+| POST Method | POST 方法 | 要求目标资源按自身语义处理所提交内容的方法。 |
+| PUT Method | PUT 方法 | 请求创建或替换目标资源状态的方法。 |
+| DELETE Method | DELETE 方法 | 请求移除目标资源当前关联的方法。 |
+| HTTP Status Code | HTTP 状态码 | 以三位数字表示请求处理结果类别和具体状态。 |
+| HTTP Header Field | HTTP 首部字段 | 携带请求或响应元信息的字段。 |
+| HTTP Cookie | HTTP Cookie | 服务端通过浏览器持有并回传的少量状态数据机制。 |
+| HTTP Cache | HTTP 缓存 | 缓存响应表示并依约束复用以减少网络请求的机制。 |
+| Cache-Control | 缓存控制字段 | 声明缓存可用性、新鲜度等策略的 HTTP 字段。 |
+| Entity Tag (ETag) | 实体标签 | 用于资源版本比较与条件请求的 HTTP 验证标识。 |
+| Conditional Request | 条件请求 | 依据 ETag 或修改时间等前提决定是否执行操作的 HTTP 请求。 |
+| Hypertext Transfer Protocol Version 1.1 (HTTP/1.1) | HTTP/1.1 | 常见的基于文本格式、连接可复用的 HTTP 版本。 |
+| Hypertext Transfer Protocol Version 2 (HTTP/2) | HTTP/2 | 在单个连接上通过二进制分帧实现流多路复用的 HTTP 版本。 |
+| Hypertext Transfer Protocol Version 3 (HTTP/3) | HTTP/3 | 使用 QUIC 承载 HTTP 语义的 HTTP 版本。 |
+| HTTP/2 Stream | HTTP/2 流 | HTTP/2 连接中的独立双向帧序列和请求响应交换单元。 |
+| HTTP/3 Stream | HTTP/3 流 | 基于 QUIC 流承载 HTTP 请求响应等信息的逻辑通道。 |
+| Server Name Indication (SNI) | 服务器名称指示 | TLS 客户端握手中告知预期服务主机名的扩展。 |
+| Content Delivery Network (CDN) | 内容分发网络 | 将内容部署到地理或网络上分散的节点以改善访问体验的系统。 |
+| Reverse Proxy | 反向代理 | 代表后端服务器接收客户端请求并转发的代理。 |
+| Load Balancer | 负载均衡器 | 根据策略将网络连接或请求分配到多个后端实例的组件。 |
+
+## 14 应用层常见协议与 API · Common Application Protocols
+
+*14 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| File Transfer Protocol (FTP) | 文件传输协议 | 传统的应用层文件传输协议，可使用独立控制与数据连接。 |
+| Secure Shell (SSH) | 安全外壳协议 | 提供经过身份验证和加密的远程终端、隧道及文件传输能力。 |
+| Simple Mail Transfer Protocol (SMTP) | 简单邮件传输协议 | 用于邮件提交和服务器间转发的应用层协议。 |
+| Internet Message Access Protocol (IMAP) | 互联网消息访问协议 | 允许客户端在邮件服务器上检索和管理邮件的协议。 |
+| Post Office Protocol Version 3 (POP3) | 邮局协议第 3 版 | 用于从服务器获取邮件的传统客户端协议。 |
+| Network Time Protocol (NTP) | 网络时间协议 | 在网络内同步设备时钟的协议。 |
+| Simple Network Management Protocol (SNMP) | 简单网络管理协议 | 用于读取和管理网络设备状态的协议。 |
+| Remote Procedure Call (RPC) | 远程过程调用 | 让程序以调用接口的形式请求远端执行操作的抽象。 |
+| Representational State Transfer (REST) | 表述性状态转移 | 利用统一接口、资源标识等约束描述分布式应用架构风格。 |
+| WebSocket | WebSocket 协议 | 在一个连接上提供双向消息传输的应用层协议。 |
+| Server-Sent Events (SSE) | 服务器发送事件 | 基于 HTTP 的服务端到客户端单向事件流机制。 |
+| gRPC | gRPC 远程过程调用框架 | 通常采用 HTTP/2 并支持 Protocol Buffers 的 RPC 框架。 |
+| Message Queue Telemetry Transport (MQTT) | MQTT 消息传输协议 | 面向轻量级发布订阅通信的应用层协议。 |
+| Advanced Message Queuing Protocol (AMQP) | 高级消息队列协议 | 规定消息交换、路由和传输语义的协议。 |
+
+## 15 TLS、密码学与网络安全 · TLS, Cryptography & Network Security
+
+*22 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Transport Layer Security (TLS) | 传输层安全协议 | 为上层应用通信提供加密、完整性和身份认证机制的协议。 |
+| TLS Handshake | TLS 握手 | 协商算法、身份验证和共享密钥材料的连接建立过程。 |
+| TLS 1.3 | 传输层安全协议 1.3 版 | 简化握手并移除多种旧式密码方案的 TLS 标准版本。 |
+| Certificate | 数字证书 | 将公钥与主体身份等信息由签发者签名绑定的数据结构。 |
+| Certificate Authority (CA) | 证书颁发机构 | 负责签发和管理数字证书信任链的实体。 |
+| Public Key Infrastructure (PKI) | 公钥基础设施 | 管理证书、密钥与信任策略的技术和组织体系。 |
+| Public Key | 公钥 | 非对称密码系统中可公开分发的密钥。 |
+| Private Key | 私钥 | 非对称密码系统中需保持秘密的密钥。 |
+| Digital Signature | 数字签名 | 使用私钥生成、可用公钥验证来源与完整性的密码学凭据。 |
+| Symmetric Encryption | 对称加密 | 加密和解密使用同一共享密钥的密码学方法。 |
+| Asymmetric Encryption | 非对称加密 | 使用关联公私钥完成加密或签名等操作的密码学体系。 |
+| Authenticated Encryption with Associated Data (AEAD) | 带关联数据的认证加密 | 同时保护机密性与完整性并认证额外数据的加密方式。 |
+| Perfect Forward Secrecy (PFS) | 前向保密性 | 长期身份密钥泄露不应导致过去会话密钥全部可恢复的性质。 |
+| Diffie-Hellman Key Exchange | 迪菲-赫尔曼密钥交换 | 通信方在不直接传输共享秘密的情况下协商密钥的协议方法。 |
+| Mutual TLS (mTLS) | 双向 TLS 认证 | TLS 双方均通过证书等机制验证对方身份的部署方式。 |
+| Firewall | 防火墙 | 根据规则允许、拒绝或检查网络流量的安全设备或软件。 |
+| Stateful Firewall | 有状态防火墙 | 维护连接状态并据此实施流量过滤的防火墙。 |
+| Access Control List (ACL) | 访问控制列表 | 规定网络流量匹配条件及允许拒绝动作的规则集合。 |
+| Virtual Private Network (VPN) | 虚拟专用网络 | 通过加密或逻辑隔离在共享网络上构建私有通信路径的技术。 |
+| Internet Protocol Security (IPsec) | IP 安全协议族 | 在网络层提供包保护和密钥管理配套能力的协议族。 |
+| Denial-of-Service (DoS) | 拒绝服务攻击 | 通过消耗资源或扰乱服务使合法请求无法完成的攻击方式。 |
+| Distributed Denial-of-Service (DDoS) | 分布式拒绝服务攻击 | 使用多个来源协同发起的拒绝服务攻击。 |
+
+## 16 性能、可靠性与服务质量 · Performance, Reliability & QoS
+
+*20 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Throughput | 吞吐量 | 单位时间内实际传输或处理的数据量。 |
+| Goodput | 有效吞吐量 | 应用层实际收到的有用数据速率，不包括重传等开销。 |
+| Latency | 时延 | 数据或请求从起点到终点经过的时间。 |
+| Jitter | 抖动 | 连续数据包延迟随时间变化的程度。 |
+| Packet Loss | 丢包 | 发送的分组在到达目标前被丢弃或未被成功接收。 |
+| Packet Loss Rate | 丢包率 | 一定范围内丢失分组数占发送分组数的比例。 |
+| Bit Error Rate (BER) | 误码率 | 传输中出错比特占总接收比特的比例。 |
+| Bandwidth-Delay Product (BDP) | 带宽时延积 | 链路可用速率与 RTT 的乘积，用于估算在途数据量。 |
+| Bottleneck Link | 瓶颈链路 | 限制端到端路径可持续吞吐能力的最窄资源环节。 |
+| Bufferbloat | 缓冲膨胀 | 过度排队导致网络时延显著增加的现象。 |
+| Quality of Service (QoS) | 服务质量 | 按策略管理不同流量的带宽、时延和丢包表现的机制。 |
+| Differentiated Services (DiffServ) | 区分服务 | 借助分组分类和逐跳转发行为实施服务差异化的架构。 |
+| Differentiated Services Code Point (DSCP) | 区分服务代码点 | IP 首部中用于表明转发服务类别的字段。 |
+| Traffic Shaping | 流量整形 | 通过缓冲与速率调节让流量符合预定发送曲线的方法。 |
+| Traffic Policing | 流量监管 | 按规则衡量并丢弃或标记超出限额的流量。 |
+| Token Bucket | 令牌桶 | 利用周期积累的令牌允许一定突发度的速率控制算法。 |
+| Leaky Bucket | 漏桶 | 以相对稳定输出速率调节突发流量的模型。 |
+| Active Queue Management (AQM) | 主动队列管理 | 在队列过长前主动丢弃或标记分组以抑制拥塞的技术。 |
+| Explicit Congestion Notification (ECN) | 显式拥塞通知 | 通过标记分组传递拥塞信号而非仅依赖丢包的机制。 |
+| Service Level Objective (SLO) | 服务级别目标 | 系统期望达到的可量化可用性或性能指标。 |
+
+## 17 数据中心、云网络与虚拟化 · Data Center & Cloud Networking
+
+*20 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Data Center Network | 数据中心网络 | 连接机架、计算、存储和服务集群的内部网络。 |
+| Leaf-Spine Topology | 叶脊拓扑 | 由接入层叶交换机与骨干层脊交换机构成的常见数据中心架构。 |
+| Top-of-Rack (ToR) Switch | 机架顶部交换机 | 通常为一个服务器机架提供网络汇聚的交换机。 |
+| Overlay Network | 覆盖网络 | 建立在底层传输网络之上的逻辑互联网络。 |
+| Underlay Network | 底层承载网络 | 为覆盖网络提供实际 IP 可达性与转发能力的物理或逻辑网络。 |
+| Virtual Extensible LAN (VXLAN) | 虚拟可扩展局域网 | 使用 UDP 封装二层帧以跨三层网络扩展二层网络的技术。 |
+| Virtual Network Identifier (VNI) | 虚拟网络标识符 | VXLAN 中标识逻辑二层网络段的字段。 |
+| Tunnel | 隧道 | 在一种网络协议的数据包内封装另一种协议数据包的机制。 |
+| Encapsulation Overhead | 封装开销 | 附加隧道首部及控制信息导致的额外字节和处理成本。 |
+| Software-Defined Networking (SDN) | 软件定义网络 | 将网络控制逻辑抽象并通过可编程接口管理转发行为的体系结构。 |
+| Control Plane | 控制平面 | 计算并分发网络转发决策的控制逻辑部分。 |
+| Data Plane | 数据平面 | 执行逐包转发、过滤和修改等操作的部分。 |
+| Network Function Virtualization (NFV) | 网络功能虚拟化 | 将防火墙、负载均衡等网络功能运行在通用计算平台上的方法。 |
+| Virtual Private Cloud (VPC) | 虚拟私有云 | 云平台中由用户配置的逻辑隔离网络环境。 |
+| Security Group | 安全组 | 云环境中控制实例或接口流量的规则集合。 |
+| Subnet Routing Table | 子网路由表 | 云子网中决定目的地址下一跳的路由策略表。 |
+| Ingress Traffic | 入口流量 | 从网络外部或某系统边界进入内部的流量。 |
+| Egress Traffic | 出口流量 | 从系统或网络内部向外发送的流量。 |
+| East-West Traffic | 东西向流量 | 数据中心内部服务之间横向通信的流量。 |
+| North-South Traffic | 南北向流量 | 数据中心或网络边界与外部之间进出的流量。 |
+
+## 18 网络排障、监控与可观测性 · Troubleshooting & Observability
+
+*24 terms · English / 中文 / 简明释义*
+
+| English | 中文 | 简明释义 |
+|---|---|---|
+| Ping | Ping 连通性测试 | 通常利用 ICMP 回显报文观察目标可达性与往返时间的工具。 |
+| Traceroute | 路径跟踪 | 利用 TTL 或 Hop Limit 逐步探测路径上路由节点的工具。 |
+| Packet Capture | 抓包 | 收集网络接口上传输的分组以供分析的过程。 |
+| Wireshark | Wireshark 抓包分析工具 | 对协议报文进行解码、筛选和分析的图形化工具。 |
+| tcpdump | tcpdump 抓包工具 | 在命令行捕获和过滤网络报文的工具。 |
+| Berkeley Packet Filter (BPF) | 伯克利包过滤器 | 用于高效选择网络分组的过滤指令和机制。 |
+| Network Interface Card (NIC) | 网络接口卡 | 实现主机与外部网络物理或虚拟连接的接口硬件。 |
+| Network Interface | 网络接口 | 操作系统中发送与接收链路层数据的设备或逻辑端点。 |
+| Interface Counter | 接口计数器 | 记录接口收发字节、分组、错误和丢弃等统计数据的指标。 |
+| Socket Statistics (ss) | 套接字状态统计工具 | Linux 下查看套接字、连接和监听端口信息的命令。 |
+| netstat | 传统网络状态工具 | 用于查看连接、路由及接口统计的工具，现代 Linux 常用替代命令。 |
+| iproute2 | Linux 网络配置工具集 | 提供 ip、ss、tc 等命令管理路由、接口和流量控制。 |
+| dig | DNS 查询工具 | 发送 DNS 查询并显示资源记录及解析响应的命令行工具。 |
+| nslookup | 域名查询工具 | 用于交互式检查 DNS 查询结果的传统命令。 |
+| curl | URL 请求工具 | 用于构造和调试 HTTP 等多种协议请求的命令行客户端。 |
+| Network Address Translation Table | NAT 映射表 | 保存内外部地址和端口映射状态的数据结构。 |
+| Connection Tracking (conntrack) | 连接跟踪 | 内核或网络设备维护流量会话状态的机制。 |
+| TCP Reset | TCP 复位 | 通过 RST 报文异常终止或拒绝 TCP 连接的行为。 |
+| Connection Refused | 连接被拒绝 | 目标主动拒绝连接请求时常见的网络错误。 |
+| Connection Timeout | 连接超时 | 建立连接阶段未在时间上限内获得所需响应的错误。 |
+| Name Resolution Failure | 名称解析失败 | 域名无法成功转换为可用地址的故障现象。 |
+| Asymmetric Routing | 非对称路由 | 往返数据包经过不同网络路径的现象。 |
+| Path MTU Black Hole | 路径 MTU 黑洞 | 路径中大包无法通过且关键错误反馈被阻断的故障。 |
+| Packet Reordering | 分组乱序 | 分组抵达顺序与发送顺序不一致的现象。 |
+
+---
+
+## 参考资料与编辑原则
+
+- James F. Kurose & Keith W. Ross, *Computer Networking: A Top-Down Approach*（章节结构与概念层次参考；所有词条释义均独立撰写）。
+- [IETF RFC 9293 — Transmission Control Protocol (TCP)](https://www.rfc-editor.org/rfc/rfc9293.html)
+- [IETF RFC 8200 — Internet Protocol, Version 6 (IPv6)](https://www.rfc-editor.org/rfc/rfc8200.html)
+- [IETF RFC 9000 — QUIC: A UDP-Based Multiplexed and Secure Transport](https://www.rfc-editor.org/rfc/rfc9000.html)
+- [IETF RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html)
+- [IETF RFC 9114 — HTTP/3](https://www.rfc-editor.org/rfc/rfc9114.html)
+- [IETF RFC 8446 — TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
+- [IEEE 802 LAN/MAN Standards Committee](https://www.ieee802.org/)
+
+**源数据**：[可编辑 TSV](../data/computer-networks.tsv) · [网站结构化索引](../data/terms.json) · [PDF](../pdf/computer-networks.pdf)
+
+> 本文为独立整理的学习及工程参考材料，并非 IETF、IEEE 或教材作者的官方出版物。欢迎通过 Pull Request 补充权威出处、修正译名和澄清适用版本。
