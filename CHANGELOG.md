@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2.0 — 2026-11-16
+
+- Added Calculus / 微积分 as the ninth subject, with 301 curated bilingual terms in 14 chapters.
+- Published the Calculus Markdown glossary and a 19-page bilingual PDF handbook.
+- Synchronized JSON/CSV data, GitHub Pages downloads, coverage statistics and subject navigation: 2,948 indexed terms across 127 chapters.
+- Extended build reproducibility and contribution guidance for the new mathematics subject.
+
 ## v1.1.0 — 2026-11-16
 
 - Added the GPU Kernel glossary as the eighth subject: 255 terms across 13 chapters, with original Markdown and PDF editions.

@@ -30,16 +30,17 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Reinforcement Learning | 强化学习 | 305 | 14 | [Read](glossaries/reinforcement-learning.md) | [Download](pdf/reinforcement-learning.pdf) |
 | Linear Algebra | 线性代数 | 289 | 12 | [Read](glossaries/linear-algebra.md) | [Download](pdf/linear-algebra.pdf) |
 | Probability Theory | 概率论 | 405 | 16 | [Read](glossaries/probability-theory.md) | [Download](pdf/probability-theory.pdf) |
-| **Total** | **8 domains** | **2,647** | **113** | | |
+| Calculus | 微积分 | 301 | 14 | [Read](glossaries/calculus.md) | [Download](pdf/calculus.pdf) |
+| **Total** | **9 domains** | **2,948** | **127** | | |
 
-> **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. Original PDFs are therefore the reference version when the index and print editions differ. This explicit distinction prevents claiming that PDF extraction is lossless.
+> **Data provenance.** The six existing subject PDFs are preserved as their full original, independently authored publications. The machine-readable index and Markdown were extracted and checked from these PDFs; extraction presently indexes 2,250 of the **2,298** terms reported in the six original covers (differences are mostly complex and wrapped PDF table rows). AI Infra adds 142 curated terms and a newly generated PDF. The GPU Kernel volume adds 255 original entries in 13 chapters; its searchable Markdown, PDF, and index entries are all included. The Calculus volume adds 301 curated terms across 14 chapters, synchronized in the index, Markdown and PDF. Original PDFs are therefore the reference version when the index and print editions differ. This explicit distinction prevents claiming that PDF extraction is lossless.
 
 ## Features
 
 - **Bilingual full-text search:** English, simplified Chinese, abbreviations, topic names, and definitions; multiple search words supported.
-- **113 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
+- **127 topic chapters:** thematic navigation from mathematical foundations to operational AI infrastructure.
 - **Interactive coverage visualization:** bar chart generated directly from indexed content.
-- **Practical reading path:** mathematical concepts → model training → LLM/Agent → AI systems.
+- **Practical reading path:** calculus and mathematical concepts → model training → LLM/Agent → AI systems.
 - **Export:** subject-level Markdown and PDF; filtered search result as CSV; normalized JSON and CSV for programmatic reuse.
 - **Accessible, responsive static site:** light/dark display, keyboard search (`Ctrl/⌘ + K` or `/`), no JavaScript dependencies or build framework required.
 - **GitHub Pages ready:** prebuilt site in [`docs/`](docs/), plus optional Actions workflow deployment.
@@ -51,9 +52,10 @@ bilingual-technical-glossary/
 ├── data/
 │   ├── terms.json                 # Canonical indexed terms
 │   ├── terms.csv                  # Interoperable CSV export
-│   └── ai-infrastructure.tsv     # Curated AI Infra source notes
-├── glossaries/                    # 8 thematic Markdown glossaries
-├── pdf/                           # 8 searchable PDF handbooks
+│   ├── ai-infrastructure.tsv     # Curated AI Infra source notes
+│   └── calculus.tsv              # Curated Calculus source notes
+├── glossaries/                    # 9 thematic Markdown glossaries
+├── pdf/                           # 9 searchable PDF handbooks
 ├── site/                          # Website source: HTML, CSS, JS, icon
 ├── docs/                          # GitHub Pages static publish directory
 │   ├── data/                      # Optimized JSON for frontend
@@ -86,7 +88,7 @@ python3 scripts/verify.py
 python3 -m unittest discover -s tests -v
 ```
 
-The build script generates the AI Infra PDF when a suitable Chinese TTF font is installed. The GPU Kernel PDF is an independently authored original and is preserved, not regenerated from JSON. The six previously authored PDFs are intentionally **not** overwritten by this step. If no font is available, the script preserves any existing AI Infra PDF.
+The build script generates AI Infra and Calculus PDFs when a suitable Chinese TTF font is installed. The GPU Kernel PDF is an independently authored original and is preserved, not regenerated from JSON. The six previously authored PDFs are intentionally **not** overwritten by this step. If no font is available, the script preserves existing AI Infra and Calculus PDFs.
 
 ## Publish on GitHub Pages
 
