@@ -28,8 +28,8 @@
 | 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | drafted_in_pr |
 | 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | drafted_in_pr |
 | 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | drafted_in_pr |
-| 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | 部分 drafted_in_pr（261–270），271–280 planned |
-| 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | planned |
+| 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | drafted_in_pr |
+| 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | 部分 drafted_in_pr（281–290），291–300 planned |
 | 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | planned |
 | 17 | 321–332 | 开发实践与生态术语 | 12 | planned |
 
@@ -400,3 +400,28 @@
 ## 人工审稿要求
 
 逐篇检查来源与论断匹配、算例的数学步骤、技术版本与安全边界；对任何需修改事实的文章保留改动记录。分支存在候审稿不等于已经合并，也不等于经过独立专家认证。
+
+## 本轮补齐：271–290（候审稿）
+
+已完成源 Batch 14 的 271–280；源 Batch 15 的 281–290 已形成候审稿，291–300 仍 planned。本批尚未合并 main 或经过独立专家签核。
+
+271. [Indirect Prompt Injection（间接提示词注入）](271-indirect-prompt-injection.md)
+272. [Tool-output Poisoning（工具输出投毒）](272-tool-output-poisoning.md)
+273. [Memory Poisoning（记忆投毒）](273-memory-poisoning.md)
+274. [Goal Hijacking（目标劫持）](274-goal-hijacking.md)
+275. [Tool Misuse（工具滥用）](275-tool-misuse.md)
+276. [Privilege Escalation（权限提升）](276-privilege-escalation.md)
+277. [Data Exfiltration（数据外泄）](277-data-exfiltration.md)
+278. [Sensitive Data Exposure（敏感信息暴露）](278-sensitive-data-exposure.md)
+279. [Unauthorized Action（越权操作）](279-unauthorized-action.md)
+280. [Excessive Autonomy（过度自主性）](280-excessive-autonomy.md)
+281. [Excessive Agency（过度代理权限）](281-excessive-agency.md)
+282. [Supply Chain Attack（供应链攻击）](282-supply-chain-attack.md)
+283. [Tool Poisoning（工具投毒）](283-tool-poisoning.md)
+284. [Prompt Leakage（提示词泄漏）](284-prompt-leakage.md)
+285. [Denial of Wallet (DoW)（成本耗尽攻击）](285-denial-of-wallet.md)
+286. [Observability（可观测性）](286-observability.md)
+287. [Tracing（追踪）](287-tracing.md)
+288. [Trace（追踪记录）](288-trace.md)
+289. [Span（跨度）](289-span.md)
+290. [Distributed Tracing（分布式追踪）](290-distributed-tracing.md)

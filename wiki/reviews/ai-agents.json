@@ -1082,6 +1082,86 @@
     {
       "path": "wiki/ai-agents/270-prompt-injection.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/271-indirect-prompt-injection.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/272-tool-output-poisoning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/273-memory-poisoning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/274-goal-hijacking.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/275-tool-misuse.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/276-privilege-escalation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/277-data-exfiltration.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/278-sensitive-data-exposure.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/279-unauthorized-action.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/280-excessive-autonomy.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/281-excessive-agency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/282-supply-chain-attack.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/283-tool-poisoning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/284-prompt-leakage.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/285-denial-of-wallet.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/286-observability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/287-tracing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/288-trace.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/289-span.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/290-distributed-tracing.md",
+      "status": "pending"
     }
   ]
 }

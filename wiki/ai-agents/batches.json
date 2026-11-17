@@ -2619,8 +2619,8 @@
           "zh": "间接提示词注入",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/271-indirect-prompt-injection.md"
         },
         {
           "no": 272,
@@ -2628,8 +2628,8 @@
           "zh": "工具输出投毒",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/272-tool-output-poisoning.md"
         },
         {
           "no": 273,
@@ -2637,8 +2637,8 @@
           "zh": "记忆投毒",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/273-memory-poisoning.md"
         },
         {
           "no": 274,
@@ -2646,8 +2646,8 @@
           "zh": "目标劫持",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/274-goal-hijacking.md"
         },
         {
           "no": 275,
@@ -2655,8 +2655,8 @@
           "zh": "工具滥用",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/275-tool-misuse.md"
         },
         {
           "no": 276,
@@ -2664,8 +2664,8 @@
           "zh": "权限提升",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/276-privilege-escalation.md"
         },
         {
           "no": 277,
@@ -2673,8 +2673,8 @@
           "zh": "数据外泄",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/277-data-exfiltration.md"
         },
         {
           "no": 278,
@@ -2682,8 +2682,8 @@
           "zh": "敏感信息暴露",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/278-sensitive-data-exposure.md"
         },
         {
           "no": 279,
@@ -2691,8 +2691,8 @@
           "zh": "越权操作",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/279-unauthorized-action.md"
         },
         {
           "no": 280,
@@ -2700,8 +2700,8 @@
           "zh": "过度自主性",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/280-excessive-autonomy.md"
         }
       ]
     },
@@ -2714,7 +2714,7 @@
         "智能体攻击与风险",
         "工程化、成本与可观测性"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 281,
@@ -2722,8 +2722,8 @@
           "zh": "过度代理权限",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/281-excessive-agency.md"
         },
         {
           "no": 282,
@@ -2731,8 +2731,8 @@
           "zh": "供应链攻击",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/282-supply-chain-attack.md"
         },
         {
           "no": 283,
@@ -2740,8 +2740,8 @@
           "zh": "工具投毒",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/283-tool-poisoning.md"
         },
         {
           "no": 284,
@@ -2749,8 +2749,8 @@
           "zh": "提示词泄漏",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/284-prompt-leakage.md"
         },
         {
           "no": 285,
@@ -2758,8 +2758,8 @@
           "zh": "成本耗尽攻击",
           "abbr": "DoW",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/285-denial-of-wallet.md"
         },
         {
           "no": 286,
@@ -2767,8 +2767,8 @@
           "zh": "可观测性",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/286-observability.md"
         },
         {
           "no": 287,
@@ -2776,8 +2776,8 @@
           "zh": "追踪",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/287-tracing.md"
         },
         {
           "no": 288,
@@ -2785,8 +2785,8 @@
           "zh": "追踪记录",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/288-trace.md"
         },
         {
           "no": 289,
@@ -2794,8 +2794,8 @@
           "zh": "跨度",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/289-span.md"
         },
         {
           "no": 290,
@@ -2803,8 +2803,8 @@
           "zh": "分布式追踪",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/290-distributed-tracing.md"
         },
         {
           "no": 291,
