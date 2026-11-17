@@ -994,6 +994,146 @@
       "en": "Reserved Instance",
       "zh": "预留实例",
       "path": "wiki/ai-infrastructure/142-reserved-instance.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "AI Agent",
+      "zh": "人工智能智能体",
+      "path": "wiki/ai-agents/001-ai-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Agentic AI",
+      "zh": "智能体化人工智能",
+      "path": "wiki/ai-agents/002-agentic-ai.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Agentic System",
+      "zh": "智能体系统",
+      "path": "wiki/ai-agents/003-agentic-system.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Large Language Model (LLM)",
+      "zh": "大语言模型",
+      "path": "wiki/ai-agents/004-large-language-model.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Foundation Model",
+      "zh": "基础模型",
+      "path": "wiki/ai-agents/005-foundation-model.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Agent Framework",
+      "zh": "智能体框架",
+      "path": "wiki/ai-agents/006-agent-framework.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Agent Runtime",
+      "zh": "智能体运行时",
+      "path": "wiki/ai-agents/007-agent-runtime.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Agent Loop",
+      "zh": "智能体循环",
+      "path": "wiki/ai-agents/008-agent-loop.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Goal",
+      "zh": "目标",
+      "path": "wiki/ai-agents/009-goal.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Task",
+      "zh": "任务",
+      "path": "wiki/ai-agents/010-task.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Subtask",
+      "zh": "子任务",
+      "path": "wiki/ai-agents/011-subtask.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Instruction",
+      "zh": "指令",
+      "path": "wiki/ai-agents/012-instruction.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "System Prompt",
+      "zh": "系统提示词",
+      "path": "wiki/ai-agents/013-system-prompt.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "User Prompt",
+      "zh": "用户提示词",
+      "path": "wiki/ai-agents/014-user-prompt.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Role",
+      "zh": "角色",
+      "path": "wiki/ai-agents/015-role.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Capability",
+      "zh": "能力",
+      "path": "wiki/ai-agents/016-capability.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Autonomy",
+      "zh": "自主性",
+      "path": "wiki/ai-agents/017-autonomy.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Agency",
+      "zh": "能动性",
+      "path": "wiki/ai-agents/018-agency.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Environment",
+      "zh": "环境",
+      "path": "wiki/ai-agents/019-environment.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Observation",
+      "zh": "观察",
+      "path": "wiki/ai-agents/020-observation.md"
     }
   ]
 }

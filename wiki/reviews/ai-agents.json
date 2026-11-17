@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "domain": "ai-agents",
+  "description": "Draft articles pending independent technical review; no AI-generated reviewer attestations.",
+  "articles": [
+    {
+      "path": "wiki/ai-agents/001-ai-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/002-agentic-ai.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/003-agentic-system.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/004-large-language-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/005-foundation-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/006-agent-framework.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/007-agent-runtime.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/008-agent-loop.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/009-goal.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/010-task.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/011-subtask.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/012-instruction.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/013-system-prompt.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/014-user-prompt.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/015-role.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/016-capability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/017-autonomy.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/018-agency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/019-environment.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/020-observation.md",
+      "status": "pending"
+    }
+  ]
+}
