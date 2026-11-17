@@ -198,7 +198,7 @@ class ExplorerBrowserTests(unittest.TestCase):
         self.page.locator("#terms-body tr").first.locator("a.term-english").click()
         # Wait for cross-page navigation and deferred term.js initialization.
         # A successful click alone does not guarantee renderMarkdown is loaded.
-        expect(self.page).to_have_url(re.compile(r"/term\\.html\\?"), timeout=15000)
+        expect(self.page).to_have_url(re.compile(r"/term\.html\?"), timeout=15000)
         expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
         self.page.wait_for_function("typeof renderMarkdown === 'function'", timeout=15000)
         result=self.page.evaluate("""() => renderMarkdown(
