@@ -24,8 +24,12 @@ class AIAgentsBatch02Tests(unittest.TestCase):
         self.assertEqual([x["topic"] for x in selection],
                          ["基础概念与角色"]*2+["模型能力与推理"]*18)
         self.assertTrue(all(x["ready"] and x["file"] for x in selection))
-        self.assertEqual(len(self.ledger["articles"]), 40)
-        self.assertTrue(all(x["status"]=="pending" and "reviewer" not in x for x in self.ledger["articles"]))
+        # Check Batch 02's own ledger entries without freezing future total coverage.
+        self.assertGreaterEqual(len(self.ledger["articles"]),40)
+        self.assertEqual([x["path"] for x in self.ledger["articles"][20:40]],
+                         ["wiki/ai-agents/"+x["file"] for x in selection])
+        self.assertTrue(all(x["status"]=="pending" and "reviewer" not in x
+                            for x in self.ledger["articles"][20:40]))
         self.assertEqual(self.plan["batches"][1]["status"],"drafted_in_pr")
 
     def test_articles_have_mechanism_and_differentiated_questions(self):
