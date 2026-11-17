@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 210,
-  "readyArticles": 210,
+  "readyInPr": 240,
+  "readyArticles": 240,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -2130,8 +2130,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "211-checkpointing.md"
     },
     {
       "n": 212,
@@ -2140,8 +2140,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "212-persistence.md"
     },
     {
       "n": 213,
@@ -2150,8 +2150,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "213-durable-execution.md"
     },
     {
       "n": 214,
@@ -2160,8 +2160,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "214-interrupt.md"
     },
     {
       "n": 215,
@@ -2170,8 +2170,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "215-resume-execution.md"
     },
     {
       "n": 216,
@@ -2180,8 +2180,8 @@
       "abbr": "HITL",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "216-human-in-the-loop.md"
     },
     {
       "n": 217,
@@ -2190,8 +2190,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "217-human-review.md"
     },
     {
       "n": 218,
@@ -2200,8 +2200,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "218-human-approval.md"
     },
     {
       "n": 219,
@@ -2210,8 +2210,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "219-recoverable-error.md"
     },
     {
       "n": 220,
@@ -2220,8 +2220,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 11,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "220-retry-policy.md"
     },
     {
       "n": 221,
@@ -2230,8 +2230,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "221-exponential-backoff.md"
     },
     {
       "n": 222,
@@ -2240,8 +2240,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "222-timeout.md"
     },
     {
       "n": 223,
@@ -2250,8 +2250,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "223-deadline.md"
     },
     {
       "n": 224,
@@ -2260,8 +2260,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "224-failover.md"
     },
     {
       "n": 225,
@@ -2270,8 +2270,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "225-compensating-action.md"
     },
     {
       "n": 226,
@@ -2280,8 +2280,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "226-transaction-boundary.md"
     },
     {
       "n": 227,
@@ -2290,8 +2290,8 @@
       "abbr": "",
       "topic": "执行状态、持久化与恢复",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "227-execution-log.md"
     },
     {
       "n": 228,
@@ -2300,8 +2300,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "228-agent-evaluation.md"
     },
     {
       "n": 229,
@@ -2310,8 +2310,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "229-benchmark.md"
     },
     {
       "n": 230,
@@ -2320,8 +2320,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "230-evaluation-dataset.md"
     },
     {
       "n": 231,
@@ -2330,8 +2330,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "231-task-success-rate.md"
     },
     {
       "n": 232,
@@ -2340,8 +2340,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "232-end-to-end-success-rate.md"
     },
     {
       "n": 233,
@@ -2350,8 +2350,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "233-tool-call-accuracy.md"
     },
     {
       "n": 234,
@@ -2360,8 +2360,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "234-action-success-rate.md"
     },
     {
       "n": 235,
@@ -2370,8 +2370,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "235-trajectory-evaluation.md"
     },
     {
       "n": 236,
@@ -2380,8 +2380,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "236-trajectory.md"
     },
     {
       "n": 237,
@@ -2390,8 +2390,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "237-outcome-evaluation.md"
     },
     {
       "n": 238,
@@ -2400,8 +2400,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "238-process-evaluation.md"
     },
     {
       "n": 239,
@@ -2410,8 +2410,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "239-faithfulness.md"
     },
     {
       "n": 240,
@@ -2420,8 +2420,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 12,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "240-factual-accuracy.md"
     },
     {
       "n": 241,
