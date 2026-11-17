@@ -6,7 +6,7 @@
 
 **Transaction Boundary（事务边界）**：Transaction Boundary（事务边界）界定一组更新何时开始以及在哪个范围内可以原子提交或回滚。Agent 往往横跨数据库、支付网关、MCP 工具和远程智能体；不同系统的操作通常不在同一个 ACID 事务里，因此需明确各自的提交点。
 
-**适用边界：**PostgreSQL 的 BEGIN/COMMIT 可以原子保护同一数据库内的相关写入，但不会自动撤销第三方付款、邮件发送或外部 API；跨服务失败通常采用 Saga/Compensating Action，而非宣称一次 ROLLBACK 可恢复一切。
+**适用边界：**跨服务事务的任何写入仍须在实际执行器检查当前身份、资源级权限、用户授权与审批参数版本；本地事务原子性不能替代外部支付或退款授权。PostgreSQL 的 BEGIN/COMMIT 可以原子保护同一数据库内的相关写入，但不会自动撤销第三方付款、邮件发送或外部 API；跨服务失败通常采用 Saga/Compensating Action，而非宣称一次 ROLLBACK 可恢复一切。
 
 ## 2. 形象理解
 
