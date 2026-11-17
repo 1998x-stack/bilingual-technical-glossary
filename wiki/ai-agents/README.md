@@ -16,7 +16,7 @@
 | 批次 | 编号 | 主题（可能跨专题） | 篇数 | 编辑状态 |
 |---|---|---|---:|---|
 | 01 | 001–020 | 基础概念与角色 | 20 | drafted_in_pr |
-| 02 | 021–040 | 基础概念与角色 / 模型能力与推理 | 20 | planned |
+| 02 | 021–040 | 基础概念与角色 / 模型能力与推理 | 20 | drafted_in_pr |
 | 03 | 041–060 | 模型能力与推理 / 任务规划与决策 | 20 | planned |
 | 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | planned |
 | 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | planned |
@@ -60,6 +60,33 @@
 19. [Environment（环境）](019-environment.md)
 20. [Observation（观察）](020-observation.md)
 
+## 第 2 批知识路径
+
+[第 2 批：Action、推理预算、结构化输出与事实校验](BATCH-02.md)：从 Agent 控制逻辑过渡到推理模型，理解结构约束、推理时搜索、工具协作及错误检测。
+
+### 已完成候审稿（021–040）
+
+21. [Action（动作）](021-action.md)
+22. [Termination Condition（终止条件）](022-termination-condition.md)
+23. [Reasoning Model（推理模型）](023-reasoning-model.md)
+24. [Model Invocation（模型调用）](024-model-invocation.md)
+25. [Inference-time Compute（推理时计算）](025-inference-time-compute.md)
+26. [Test-time Compute（测试时计算）](026-test-time-compute.md)
+27. [Context Window（上下文窗口）](027-context-window.md)
+28. [Token（词元）](028-token.md)
+29. [Token Budget（词元预算）](029-token-budget.md)
+30. [Temperature（温度参数）](030-temperature.md)
+31. [Structured Output（结构化输出）](031-structured-output.md)
+32. [Constrained Decoding（约束解码）](032-constrained-decoding.md)
+33. [Function Calling（函数调用）](033-function-calling.md)
+34. [Chain of Thought (CoT)（链式思维）](034-chain-of-thought.md)
+35. [Tree of Thoughts (ToT)（思维树）](035-tree-of-thoughts.md)
+36. [Self-Consistency（自洽性采样）](036-self-consistency.md)
+37. [Reasoning and Acting (ReAct)（推理与行动协同）](037-reasoning-and-acting.md)
+38. [Reflection（反思）](038-reflection.md)
+39. [Self-Correction（自我纠错）](039-self-correction.md)
+40. [Hallucination（幻觉）](040-hallucination.md)
+
 ## 人工审稿要求
 
-逐篇检查来源与论断匹配、算例的数学步骤、技术版本与安全边界；对任何需修改事实的文章保留改动记录。分支存在 20 篇候审稿不等于已经合并，也不等于经过独立专家认证。
+逐篇检查来源与论断匹配、算例的数学步骤、技术版本与安全边界；对任何需修改事实的文章保留改动记录。分支存在候审稿不等于已经合并，也不等于经过独立专家认证。

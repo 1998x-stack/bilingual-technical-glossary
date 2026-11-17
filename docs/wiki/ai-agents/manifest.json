@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 20,
-  "readyArticles": 20,
+  "readyInPr": 40,
+  "readyArticles": 40,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -230,8 +230,8 @@
       "abbr": "",
       "topic": "基础概念与角色",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "021-action.md"
     },
     {
       "n": 22,
@@ -240,8 +240,8 @@
       "abbr": "",
       "topic": "基础概念与角色",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "022-termination-condition.md"
     },
     {
       "n": 23,
@@ -250,8 +250,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "023-reasoning-model.md"
     },
     {
       "n": 24,
@@ -260,8 +260,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "024-model-invocation.md"
     },
     {
       "n": 25,
@@ -270,8 +270,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "025-inference-time-compute.md"
     },
     {
       "n": 26,
@@ -280,8 +280,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "026-test-time-compute.md"
     },
     {
       "n": 27,
@@ -290,8 +290,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "027-context-window.md"
     },
     {
       "n": 28,
@@ -300,8 +300,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "028-token.md"
     },
     {
       "n": 29,
@@ -310,8 +310,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "029-token-budget.md"
     },
     {
       "n": 30,
@@ -320,8 +320,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "030-temperature.md"
     },
     {
       "n": 31,
@@ -330,8 +330,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "031-structured-output.md"
     },
     {
       "n": 32,
@@ -340,8 +340,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "032-constrained-decoding.md"
     },
     {
       "n": 33,
@@ -350,8 +350,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "033-function-calling.md"
     },
     {
       "n": 34,
@@ -360,8 +360,8 @@
       "abbr": "CoT",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "034-chain-of-thought.md"
     },
     {
       "n": 35,
@@ -370,8 +370,8 @@
       "abbr": "ToT",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "035-tree-of-thoughts.md"
     },
     {
       "n": 36,
@@ -380,8 +380,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "036-self-consistency.md"
     },
     {
       "n": 37,
@@ -390,8 +390,8 @@
       "abbr": "ReAct",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "037-reasoning-and-acting.md"
     },
     {
       "n": 38,
@@ -400,8 +400,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "038-reflection.md"
     },
     {
       "n": 39,
@@ -410,8 +410,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "039-self-correction.md"
     },
     {
       "n": 40,
@@ -420,8 +420,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 2,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "040-hallucination.md"
     },
     {
       "n": 41,

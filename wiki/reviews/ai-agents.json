@@ -82,6 +82,86 @@
     {
       "path": "wiki/ai-agents/020-observation.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/021-action.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/022-termination-condition.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/023-reasoning-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/024-model-invocation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/025-inference-time-compute.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/026-test-time-compute.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/027-context-window.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/028-token.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/029-token-budget.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/030-temperature.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/031-structured-output.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/032-constrained-decoding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/033-function-calling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/034-chain-of-thought.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/035-tree-of-thoughts.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/036-self-consistency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/037-reasoning-and-acting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/038-reflection.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/039-self-correction.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/040-hallucination.md",
+      "status": "pending"
     }
   ]
 }

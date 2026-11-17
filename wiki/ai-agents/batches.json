@@ -205,7 +205,7 @@
         "基础概念与角色",
         "模型能力与推理"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 21,
@@ -213,8 +213,8 @@
           "zh": "动作",
           "abbr": "",
           "topic": "基础概念与角色",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/021-action.md"
         },
         {
           "no": 22,
@@ -222,8 +222,8 @@
           "zh": "终止条件",
           "abbr": "",
           "topic": "基础概念与角色",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/022-termination-condition.md"
         },
         {
           "no": 23,
@@ -231,8 +231,8 @@
           "zh": "推理模型",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/023-reasoning-model.md"
         },
         {
           "no": 24,
@@ -240,8 +240,8 @@
           "zh": "模型调用",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/024-model-invocation.md"
         },
         {
           "no": 25,
@@ -249,8 +249,8 @@
           "zh": "推理时计算",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/025-inference-time-compute.md"
         },
         {
           "no": 26,
@@ -258,8 +258,8 @@
           "zh": "测试时计算",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/026-test-time-compute.md"
         },
         {
           "no": 27,
@@ -267,8 +267,8 @@
           "zh": "上下文窗口",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/027-context-window.md"
         },
         {
           "no": 28,
@@ -276,8 +276,8 @@
           "zh": "词元",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/028-token.md"
         },
         {
           "no": 29,
@@ -285,8 +285,8 @@
           "zh": "词元预算",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/029-token-budget.md"
         },
         {
           "no": 30,
@@ -294,8 +294,8 @@
           "zh": "温度参数",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/030-temperature.md"
         },
         {
           "no": 31,
@@ -303,8 +303,8 @@
           "zh": "结构化输出",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/031-structured-output.md"
         },
         {
           "no": 32,
@@ -312,8 +312,8 @@
           "zh": "约束解码",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/032-constrained-decoding.md"
         },
         {
           "no": 33,
@@ -321,8 +321,8 @@
           "zh": "函数调用",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/033-function-calling.md"
         },
         {
           "no": 34,
@@ -330,8 +330,8 @@
           "zh": "链式思维",
           "abbr": "CoT",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/034-chain-of-thought.md"
         },
         {
           "no": 35,
@@ -339,8 +339,8 @@
           "zh": "思维树",
           "abbr": "ToT",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/035-tree-of-thoughts.md"
         },
         {
           "no": 36,
@@ -348,8 +348,8 @@
           "zh": "自洽性采样",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/036-self-consistency.md"
         },
         {
           "no": 37,
@@ -357,8 +357,8 @@
           "zh": "推理与行动协同",
           "abbr": "ReAct",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/037-reasoning-and-acting.md"
         },
         {
           "no": 38,
@@ -366,8 +366,8 @@
           "zh": "反思",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/038-reflection.md"
         },
         {
           "no": 39,
@@ -375,8 +375,8 @@
           "zh": "自我纠错",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/039-self-correction.md"
         },
         {
           "no": 40,
@@ -384,8 +384,8 @@
           "zh": "幻觉",
           "abbr": "",
           "topic": "模型能力与推理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/040-hallucination.md"
         }
       ]
     },
