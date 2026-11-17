@@ -1274,6 +1274,146 @@
       "en": "Hallucination",
       "zh": "幻觉",
       "path": "wiki/ai-agents/040-hallucination.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Uncertainty",
+      "zh": "不确定性",
+      "path": "wiki/ai-agents/041-uncertainty.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Confidence Calibration",
+      "zh": "置信度校准",
+      "path": "wiki/ai-agents/042-confidence-calibration.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Planning",
+      "zh": "规划",
+      "path": "wiki/ai-agents/043-planning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Task Decomposition",
+      "zh": "任务分解",
+      "path": "wiki/ai-agents/044-task-decomposition.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Hierarchical Planning",
+      "zh": "分层规划",
+      "path": "wiki/ai-agents/045-hierarchical-planning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "High-level Plan",
+      "zh": "高层计划",
+      "path": "wiki/ai-agents/046-high-level-plan.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Action Plan",
+      "zh": "行动计划",
+      "path": "wiki/ai-agents/047-action-plan.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Adaptive Planning",
+      "zh": "自适应规划",
+      "path": "wiki/ai-agents/048-adaptive-planning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Plan Revision",
+      "zh": "计划修订",
+      "path": "wiki/ai-agents/049-plan-revision.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Task Dependency",
+      "zh": "任务依赖",
+      "path": "wiki/ai-agents/050-task-dependency.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Task Priority",
+      "zh": "任务优先级",
+      "path": "wiki/ai-agents/051-task-priority.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Decision Point",
+      "zh": "决策点",
+      "path": "wiki/ai-agents/052-decision-point.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Action Space",
+      "zh": "行动空间",
+      "path": "wiki/ai-agents/053-action-space.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "State Space",
+      "zh": "状态空间",
+      "path": "wiki/ai-agents/054-state-space.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Policy",
+      "zh": "策略",
+      "path": "wiki/ai-agents/055-policy.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Utility Function",
+      "zh": "效用函数",
+      "path": "wiki/ai-agents/056-utility-function.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Reward Signal",
+      "zh": "奖励信号",
+      "path": "wiki/ai-agents/057-reward-signal.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Search Space",
+      "zh": "搜索空间",
+      "path": "wiki/ai-agents/058-search-space.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Heuristic Search",
+      "zh": "启发式搜索",
+      "path": "wiki/ai-agents/059-heuristic-search.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Lookahead Search",
+      "zh": "前瞻搜索",
+      "path": "wiki/ai-agents/060-lookahead-search.md"
     }
   ]
 }

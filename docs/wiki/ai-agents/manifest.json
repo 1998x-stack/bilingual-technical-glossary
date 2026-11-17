@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 40,
-  "readyArticles": 40,
+  "readyInPr": 60,
+  "readyArticles": 60,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -430,8 +430,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "041-uncertainty.md"
     },
     {
       "n": 42,
@@ -440,8 +440,8 @@
       "abbr": "",
       "topic": "模型能力与推理",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "042-confidence-calibration.md"
     },
     {
       "n": 43,
@@ -450,8 +450,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "043-planning.md"
     },
     {
       "n": 44,
@@ -460,8 +460,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "044-task-decomposition.md"
     },
     {
       "n": 45,
@@ -470,8 +470,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "045-hierarchical-planning.md"
     },
     {
       "n": 46,
@@ -480,8 +480,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "046-high-level-plan.md"
     },
     {
       "n": 47,
@@ -490,8 +490,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "047-action-plan.md"
     },
     {
       "n": 48,
@@ -500,8 +500,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "048-adaptive-planning.md"
     },
     {
       "n": 49,
@@ -510,8 +510,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "049-plan-revision.md"
     },
     {
       "n": 50,
@@ -520,8 +520,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "050-task-dependency.md"
     },
     {
       "n": 51,
@@ -530,8 +530,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "051-task-priority.md"
     },
     {
       "n": 52,
@@ -540,8 +540,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "052-decision-point.md"
     },
     {
       "n": 53,
@@ -550,8 +550,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "053-action-space.md"
     },
     {
       "n": 54,
@@ -560,8 +560,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "054-state-space.md"
     },
     {
       "n": 55,
@@ -570,8 +570,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "055-policy.md"
     },
     {
       "n": 56,
@@ -580,8 +580,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "056-utility-function.md"
     },
     {
       "n": 57,
@@ -590,8 +590,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "057-reward-signal.md"
     },
     {
       "n": 58,
@@ -600,8 +600,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "058-search-space.md"
     },
     {
       "n": 59,
@@ -610,8 +610,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "059-heuristic-search.md"
     },
     {
       "n": 60,
@@ -620,8 +620,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 3,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "060-lookahead-search.md"
     },
     {
       "n": 61,

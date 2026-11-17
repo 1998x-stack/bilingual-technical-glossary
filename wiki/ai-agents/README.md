@@ -17,7 +17,7 @@
 |---|---|---|---:|---|
 | 01 | 001–020 | 基础概念与角色 | 20 | drafted_in_pr |
 | 02 | 021–040 | 基础概念与角色 / 模型能力与推理 | 20 | drafted_in_pr |
-| 03 | 041–060 | 模型能力与推理 / 任务规划与决策 | 20 | planned |
+| 03 | 041–060 | 模型能力与推理 / 任务规划与决策 | 20 | drafted_in_pr |
 | 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | planned |
 | 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | planned |
 | 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | planned |
@@ -86,6 +86,33 @@
 38. [Reflection（反思）](038-reflection.md)
 39. [Self-Correction（自我纠错）](039-self-correction.md)
 40. [Hallucination（幻觉）](040-hallucination.md)
+
+## 第 3 批知识路径
+
+[第 3 批：不确定性与置信校准 → 规划 → 决策理论与前瞻搜索](BATCH-03.md)：从 2 个模型评估条目进入 18 个任务规划与决策条目，特别区分概率估计、执行权限与真正业务完成。
+
+### 已完成候审稿（041–060）
+
+41. [Uncertainty（不确定性）](041-uncertainty.md)
+42. [Confidence Calibration（置信度校准）](042-confidence-calibration.md)
+43. [Planning（规划）](043-planning.md)
+44. [Task Decomposition（任务分解）](044-task-decomposition.md)
+45. [Hierarchical Planning（分层规划）](045-hierarchical-planning.md)
+46. [High-level Plan（高层计划）](046-high-level-plan.md)
+47. [Action Plan（行动计划）](047-action-plan.md)
+48. [Adaptive Planning（自适应规划）](048-adaptive-planning.md)
+49. [Plan Revision（计划修订）](049-plan-revision.md)
+50. [Task Dependency（任务依赖）](050-task-dependency.md)
+51. [Task Priority（任务优先级）](051-task-priority.md)
+52. [Decision Point（决策点）](052-decision-point.md)
+53. [Action Space（行动空间）](053-action-space.md)
+54. [State Space（状态空间）](054-state-space.md)
+55. [Policy（策略）](055-policy.md)
+56. [Utility Function（效用函数）](056-utility-function.md)
+57. [Reward Signal（奖励信号）](057-reward-signal.md)
+58. [Search Space（搜索空间）](058-search-space.md)
+59. [Heuristic Search（启发式搜索）](059-heuristic-search.md)
+60. [Lookahead Search（前瞻搜索）](060-lookahead-search.md)
 
 ## 人工审稿要求
 
