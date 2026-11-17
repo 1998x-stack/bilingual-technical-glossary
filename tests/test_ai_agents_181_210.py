@@ -97,10 +97,10 @@ class AIAgents181210Tests(unittest.TestCase):
             self.assertTrue("权限" in article or "授权" in article)
         article=(ROOT/"wiki/ai-agents"/self.manifest["terms"][207]["file"]).read_text(encoding="utf-8")
         self.assertIn("不是现行 A2A 规范中另立",article)
-        self.assertIn("server/discover",
-                      (ROOT/"wiki/ai-agents/BATCH-10.md").read_text(encoding="utf-8")+
-                      (ROOT/"wiki/ai-agents/BATCH-11.md").read_text(encoding="utf-8")
-                      if False else "server/discover") # verified by 2026 source, not mandatory in this batch
+        self.assertIn("input_required",
+                      (ROOT/"wiki/ai-agents/BATCH-10.md").read_text(encoding="utf-8"))
+        self.assertIn("211–220",
+                      (ROOT/"wiki/ai-agents/BATCH-11.md").read_text(encoding="utf-8"))
 
     def test_medium_exercises_arithmetic_crosschecked(self):
         self.assertEqual(20+30+50,100)
