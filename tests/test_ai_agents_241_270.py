@@ -95,7 +95,7 @@ class AIAgents241270Tests(unittest.TestCase):
         self.assertIn("Prompt Injection",b14)
 
     def test_math_examples_independently_recomputed(self):
-        self.assertEqual(.72/.90,.8)
+        self.assertAlmostEqual(.72/.90,.8)
         self.assertEqual((42+44+40)/3,42)
         self.assertAlmostEqual(42/50,.84)
         self.assertEqual(82/100,.82)
@@ -105,7 +105,7 @@ class AIAgents241270Tests(unittest.TestCase):
         self.assertEqual(37/100,.37)
         self.assertEqual(12/40,.3)
         self.assertEqual(18/50,.36)
-        self.assertEqual(.8**3,.5120000000000001)
+        self.assertAlmostEqual(.8**3,.512)
         self.assertEqual(166/200,.83)
         self.assertEqual(3/20,.15)
         self.assertEqual(7/100,.07)

@@ -239,6 +239,32 @@ class ExplorerBrowserTests(unittest.TestCase):
         expect(self.page.locator("#wiki-article")).to_contain_text("Factual Accuracy")
         self.assertNotIn("Batch", self.page.locator("main").inner_text())
 
+    def test_new_bfcl_benchmark_article_in_unified_ai_agents_explorer(self):
+        self.home("ai-agents")
+        self.page.locator("#search-input").fill("Berkeley Function Calling Leaderboard")
+        item=self.page.locator("#terms-body tr").first
+        expect(item.locator("a.term-english")).to_have_text("Berkeley Function Calling Leaderboard (BFCL)")
+        item.locator("a.term-english").click()
+        expect(self.page.locator("#detail-state")).to_have_text("专业解析", timeout=15000)
+        expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
+        expect(self.page.get_by_role("heading", name=re.compile("技术原理"), level=2)).to_be_visible()
+        expect(self.page.locator("#wiki-article")).to_contain_text("BFCL V4")
+        self.assertNotIn("Batch", self.page.locator("main").inner_text())
+
+    def test_new_prompt_injection_article_is_readable_without_editorial_status(self):
+        self.home("ai-agents")
+        self.page.locator("#search-input").fill("Prompt Injection")
+        row=self.page.locator("#terms-body tr").filter(
+            has=self.page.get_by_role("link", name="Prompt Injection", exact=True)
+        ).first
+        expect(row.locator("a.term-english")).to_have_text("Prompt Injection")
+        row.locator("a.term-english").click()
+        expect(self.page.locator("#detail-state")).to_have_text("专业解析", timeout=15000)
+        expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
+        expect(self.page.locator("#wiki-article")).to_contain_text("Trust Boundary")
+        expect(self.page.locator("#wiki-article")).to_contain_text("OWASP")
+        self.assertNotIn("Batch", self.page.locator("main").inner_text())
+
     def test_accessible_landmarks_and_focusable_article_navigation(self):
         self.home("ai-infrastructure")
         expect(self.page.get_by_role("main")).to_have_count(1)
