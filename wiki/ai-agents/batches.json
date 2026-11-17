@@ -784,7 +784,7 @@
         "工具使用与环境交互",
         "上下文、记忆与状态"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 81,
@@ -792,8 +792,8 @@
           "zh": "环境反馈",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/081-environment-feedback.md"
         },
         {
           "no": 82,
@@ -801,8 +801,8 @@
           "zh": "工具调用重试",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/082-tool-retry.md"
         },
         {
           "no": 83,
@@ -810,8 +810,8 @@
           "zh": "副作用",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/083-side-effect.md"
         },
         {
           "no": 84,
@@ -819,8 +819,8 @@
           "zh": "幂等操作",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/084-idempotent-operation.md"
         },
         {
           "no": 85,
@@ -828,8 +828,8 @@
           "zh": "敏感操作",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/085-sensitive-action.md"
         },
         {
           "no": 86,
@@ -837,8 +837,8 @@
           "zh": "上下文",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/086-context.md"
         },
         {
           "no": 87,
@@ -846,8 +846,8 @@
           "zh": "上下文工程",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/087-context-engineering.md"
         },
         {
           "no": 88,
@@ -855,8 +855,8 @@
           "zh": "提示词工程",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/088-prompt-engineering.md"
         },
         {
           "no": 89,
@@ -864,8 +864,8 @@
           "zh": "上下文注入",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/089-context-injection.md"
         },
         {
           "no": 90,
@@ -873,8 +873,8 @@
           "zh": "上下文压缩",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/090-context-compression.md"
         },
         {
           "no": 91,
@@ -882,8 +882,8 @@
           "zh": "对话历史",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/091-conversation-history.md"
         },
         {
           "no": 92,
@@ -891,8 +891,8 @@
           "zh": "会话",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/092-session.md"
         },
         {
           "no": 93,
@@ -900,8 +900,8 @@
           "zh": "会话状态",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/093-session-state.md"
         },
         {
           "no": 94,
@@ -909,8 +909,8 @@
           "zh": "工作记忆",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/094-working-memory.md"
         },
         {
           "no": 95,
@@ -918,8 +918,8 @@
           "zh": "短期记忆",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/095-short-term-memory.md"
         },
         {
           "no": 96,
@@ -927,8 +927,8 @@
           "zh": "长期记忆",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/096-long-term-memory.md"
         },
         {
           "no": 97,
@@ -936,8 +936,8 @@
           "zh": "情景记忆",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/097-episodic-memory.md"
         },
         {
           "no": 98,
@@ -945,8 +945,8 @@
           "zh": "语义记忆",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/098-semantic-memory.md"
         },
         {
           "no": 99,
@@ -954,8 +954,8 @@
           "zh": "程序性记忆",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/099-procedural-memory.md"
         },
         {
           "no": 100,
@@ -963,8 +963,8 @@
           "zh": "记忆检索",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/100-memory-retrieval.md"
         }
       ]
     },
