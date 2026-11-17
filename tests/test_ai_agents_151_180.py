@@ -84,6 +84,9 @@ class AIAgents151180Tests(unittest.TestCase):
             r=self.manifest["terms"][n-1]
             body=(ROOT/"wiki/ai-agents"/r["file"]).read_text(encoding="utf-8")
             self.assertIn("2026-07-28",body)
+        for n in (167,169,178):
+            r=self.manifest["terms"][n-1]
+            body=(ROOT/"wiki/ai-agents"/r["file"]).read_text(encoding="utf-8")
             self.assertIn("2025-11-25",body)
         for n in (167,169,177,178,179,180):
             body=(ROOT/"wiki/ai-agents"/self.manifest["terms"][n-1]["file"]).read_text(encoding="utf-8")
