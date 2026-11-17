@@ -18,7 +18,7 @@
 | 01 | 001–020 | 基础概念与角色 | 20 | drafted_in_pr |
 | 02 | 021–040 | 基础概念与角色 / 模型能力与推理 | 20 | drafted_in_pr |
 | 03 | 041–060 | 模型能力与推理 / 任务规划与决策 | 20 | drafted_in_pr |
-| 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | planned |
+| 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | drafted_in_pr |
 | 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | planned |
 | 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | planned |
 | 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | planned |
@@ -113,6 +113,33 @@
 58. [Search Space（搜索空间）](058-search-space.md)
 59. [Heuristic Search（启发式搜索）](059-heuristic-search.md)
 60. [Lookahead Search（前瞻搜索）](060-lookahead-search.md)
+
+## 第 4 批知识路径
+
+[第 4 批：从回溯/重规划到工具发现、调用、计算机使用及适配](BATCH-04.md)：3 条规划决策概念 + 17 条工具与环境交互概念，重点校验工具反馈、权限、提示注入与外部副作用。
+
+### 已完成候审稿（061–080）
+
+61. [Backtracking（回溯）](061-backtracking.md)
+62. [Replanning（重规划）](062-replanning.md)
+63. [Stopping Criterion（停止准则）](063-stopping-criterion.md)
+64. [Tool（工具）](064-tool.md)
+65. [Tool Call（工具调用）](065-tool-call.md)
+66. [Tool Result（工具结果）](066-tool-result.md)
+67. [Tool Selection（工具选择）](067-tool-selection.md)
+68. [Tool Routing（工具路由）](068-tool-routing.md)
+69. [Tool Schema（工具模式）](069-tool-schema.md)
+70. [Argument Validation（参数校验）](070-argument-validation.md)
+71. [Tool Discovery（工具发现）](071-tool-discovery.md)
+72. [Tool Registry（工具注册表）](072-tool-registry.md)
+73. [Function Tool（函数工具）](073-function-tool.md)
+74. [Web Search Tool（网络搜索工具）](074-web-search-tool.md)
+75. [Browser Automation（浏览器自动化）](075-browser-automation.md)
+76. [Computer Use（计算机使用）](076-computer-use.md)
+77. [Code Execution（代码执行）](077-code-execution.md)
+78. [Command-line Tool (CLI)（命令行工具）](078-command-line-tool.md)
+79. [Application Programming Interface (API)（应用程序接口）](079-application-programming-interface.md)
+80. [Tool Adapter（工具适配器）](080-tool-adapter.md)
 
 ## 人工审稿要求
 

@@ -23,12 +23,14 @@ class AIAgentsBatch03Tests(unittest.TestCase):
         self.assertEqual(subset[1]["en"],"Confidence Calibration")
         self.assertEqual(subset[-1]["en"],"Lookahead Search")
         self.assertEqual(self.plan["batches"][2]["status"],"drafted_in_pr")
-        self.assertEqual(self.manifest["readyArticles"],60)
-        self.assertEqual(self.manifest["readyInPr"],60)
-        self.assertEqual(len(self.index["articles"]),202)
-        self.assertEqual(len([r for r in self.index["articles"] if r["category"]=="ai-agents"]),60)
-        self.assertEqual(len(self.ledger["articles"]),60)
-        self.assertTrue(all(r["status"]=="pending" and "reviewer" not in r for r in self.ledger["articles"]))
+        self.assertGreaterEqual(self.manifest["readyArticles"],60)
+        self.assertGreaterEqual(self.manifest["readyInPr"],60)
+        self.assertGreaterEqual(len(self.index["articles"]),202)
+        self.assertGreaterEqual(len([r for r in self.index["articles"] if r["category"]=="ai-agents"]),60)
+        self.assertGreaterEqual(len(self.ledger["articles"]),60)
+        self.assertTrue(all(r["status"]=="pending" and "reviewer" not in r for r in self.ledger["articles"][40:60]))
+        self.assertEqual([r["path"] for r in self.ledger["articles"][40:60]],
+                         ["wiki/ai-agents/"+r["file"] for r in subset])
 
     def test_20_real_wiki_articles_have_bilingual_identity_and_questions(self):
         for r in self.manifest["terms"][40:60]:

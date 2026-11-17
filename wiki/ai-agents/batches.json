@@ -591,7 +591,7 @@
         "任务规划与决策",
         "工具使用与环境交互"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 61,
@@ -599,8 +599,8 @@
           "zh": "回溯",
           "abbr": "",
           "topic": "任务规划与决策",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/061-backtracking.md"
         },
         {
           "no": 62,
@@ -608,8 +608,8 @@
           "zh": "重规划",
           "abbr": "",
           "topic": "任务规划与决策",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/062-replanning.md"
         },
         {
           "no": 63,
@@ -617,8 +617,8 @@
           "zh": "停止准则",
           "abbr": "",
           "topic": "任务规划与决策",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/063-stopping-criterion.md"
         },
         {
           "no": 64,
@@ -626,8 +626,8 @@
           "zh": "工具",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/064-tool.md"
         },
         {
           "no": 65,
@@ -635,8 +635,8 @@
           "zh": "工具调用",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/065-tool-call.md"
         },
         {
           "no": 66,
@@ -644,8 +644,8 @@
           "zh": "工具结果",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/066-tool-result.md"
         },
         {
           "no": 67,
@@ -653,8 +653,8 @@
           "zh": "工具选择",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/067-tool-selection.md"
         },
         {
           "no": 68,
@@ -662,8 +662,8 @@
           "zh": "工具路由",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/068-tool-routing.md"
         },
         {
           "no": 69,
@@ -671,8 +671,8 @@
           "zh": "工具模式",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/069-tool-schema.md"
         },
         {
           "no": 70,
@@ -680,8 +680,8 @@
           "zh": "参数校验",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/070-argument-validation.md"
         },
         {
           "no": 71,
@@ -689,8 +689,8 @@
           "zh": "工具发现",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/071-tool-discovery.md"
         },
         {
           "no": 72,
@@ -698,8 +698,8 @@
           "zh": "工具注册表",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/072-tool-registry.md"
         },
         {
           "no": 73,
@@ -707,8 +707,8 @@
           "zh": "函数工具",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/073-function-tool.md"
         },
         {
           "no": 74,
@@ -716,8 +716,8 @@
           "zh": "网络搜索工具",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/074-web-search-tool.md"
         },
         {
           "no": 75,
@@ -725,8 +725,8 @@
           "zh": "浏览器自动化",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/075-browser-automation.md"
         },
         {
           "no": 76,
@@ -734,8 +734,8 @@
           "zh": "计算机使用",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/076-computer-use.md"
         },
         {
           "no": 77,
@@ -743,8 +743,8 @@
           "zh": "代码执行",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/077-code-execution.md"
         },
         {
           "no": 78,
@@ -752,8 +752,8 @@
           "zh": "命令行工具",
           "abbr": "CLI",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/078-command-line-tool.md"
         },
         {
           "no": 79,
@@ -761,8 +761,8 @@
           "zh": "应用程序接口",
           "abbr": "API",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/079-application-programming-interface.md"
         },
         {
           "no": 80,
@@ -770,8 +770,8 @@
           "zh": "工具适配器",
           "abbr": "",
           "topic": "工具使用与环境交互",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/080-tool-adapter.md"
         }
       ]
     },

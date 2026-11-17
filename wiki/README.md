@@ -21,7 +21,7 @@
 | 领域 | 总条数 | 批数 | 完整文章 | 当前状态 |
 |---|---:|---:|---:|---|
 | [AI Infra](ai-infrastructure/README.md) | 142 | 8 | 142 | 已并入 main；独立专家复核仍 pending |
-| [AI Agents](ai-agents/README.md) | 332 | 17 | 60 | 第 1–3 批共 60 篇候审稿（PR #47、#49 与本批），尚未合并到 main；余 272 篇 planned |
+| [AI Agents](ai-agents/README.md) | 332 | 17 | 80 | 第 1–4 批共 80 篇候审稿（堆叠 PR #47、#49、#50、#51），尚未合并到 main；余 252 篇 planned |
 
 其他学科以真实权威源规划批次，不以简明词条的数量冒充已完成的长文数量。
 
