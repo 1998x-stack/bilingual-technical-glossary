@@ -402,6 +402,86 @@
     {
       "path": "wiki/ai-infrastructure/100-distributed-file-system.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/101-network-file-system.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/102-parallel-file-system.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/103-storage-throughput.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/104-input-output-operations-per-second.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/105-data-lake.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/106-data-pipeline.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/107-data-shard.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/108-data-loader.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/109-prefetching.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/110-cache-hit-rate.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/111-content-delivery-network.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/112-service-level-objective.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/113-service-level-indicator.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/114-service-level-agreement.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/115-availability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/116-reliability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/117-mean-time-between-failures.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/118-mean-time-to-recovery.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/119-observability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/120-metrics.md",
+      "status": "pending"
     }
   ]
 }

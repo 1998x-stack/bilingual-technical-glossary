@@ -700,6 +700,146 @@
       "en": "Distributed File System",
       "zh": "分布式文件系统",
       "path": "wiki/ai-infrastructure/100-distributed-file-system.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Network File System",
+      "zh": "网络文件系统",
+      "path": "wiki/ai-infrastructure/101-network-file-system.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Parallel File System",
+      "zh": "并行文件系统",
+      "path": "wiki/ai-infrastructure/102-parallel-file-system.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Storage Throughput",
+      "zh": "存储吞吐量",
+      "path": "wiki/ai-infrastructure/103-storage-throughput.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Input/Output Operations per Second",
+      "zh": "每秒输入输出操作数",
+      "path": "wiki/ai-infrastructure/104-input-output-operations-per-second.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Data Lake",
+      "zh": "数据湖",
+      "path": "wiki/ai-infrastructure/105-data-lake.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Data Pipeline",
+      "zh": "数据管道",
+      "path": "wiki/ai-infrastructure/106-data-pipeline.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Data Shard",
+      "zh": "数据分片",
+      "path": "wiki/ai-infrastructure/107-data-shard.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Data Loader",
+      "zh": "数据加载器",
+      "path": "wiki/ai-infrastructure/108-data-loader.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Prefetching",
+      "zh": "预取",
+      "path": "wiki/ai-infrastructure/109-prefetching.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Cache Hit Rate",
+      "zh": "缓存命中率",
+      "path": "wiki/ai-infrastructure/110-cache-hit-rate.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 6,
+      "en": "Content Delivery Network",
+      "zh": "内容分发网络",
+      "path": "wiki/ai-infrastructure/111-content-delivery-network.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Service Level Objective",
+      "zh": "服务级别目标",
+      "path": "wiki/ai-infrastructure/112-service-level-objective.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Service Level Indicator",
+      "zh": "服务级别指标",
+      "path": "wiki/ai-infrastructure/113-service-level-indicator.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Service Level Agreement",
+      "zh": "服务级别协议",
+      "path": "wiki/ai-infrastructure/114-service-level-agreement.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Availability",
+      "zh": "可用性",
+      "path": "wiki/ai-infrastructure/115-availability.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Reliability",
+      "zh": "可靠性",
+      "path": "wiki/ai-infrastructure/116-reliability.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Mean Time Between Failures",
+      "zh": "平均故障间隔时间",
+      "path": "wiki/ai-infrastructure/117-mean-time-between-failures.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Mean Time to Recovery",
+      "zh": "平均恢复时间",
+      "path": "wiki/ai-infrastructure/118-mean-time-to-recovery.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Observability",
+      "zh": "可观测性",
+      "path": "wiki/ai-infrastructure/119-observability.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Metrics",
+      "zh": "指标数据",
+      "path": "wiki/ai-infrastructure/120-metrics.md"
     }
   ]
 }

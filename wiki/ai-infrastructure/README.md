@@ -4,7 +4,7 @@
 
 将原双语词条扩展为独立技术百科文章：精确定义、直观类比、核心机制、工程案例、易混辨析、两道中级面试题及答案、两道中级考试题及解析、权威参考资料。
 
-**状态说明：** Batch 01–05 共 **100 篇已发布**，Batch 06–08 共 42 篇待研究；已完成 **100/142（70.4%）**。每批独立审阅与校验后合并，计划条目不算完成。
+**状态说明：** Batch 01–06 共 **120 篇已发布**，Batch 07–08 共 22 篇待研究；已完成 **120/142（84.5%）**。每批独立审阅与校验后合并，计划条目不算完成。
 
 ## 批次总览
 
@@ -15,7 +15,7 @@
 | 03 | 041–060 | 分布式训练、推理与服务 | 20 | 已发布 |
 | 04 | 061–080 | 推理与服务、调度与容器 | 20 | 已发布 |
 | 05 | 081–100 | 调度与容器、存储与数据 | 20 | 已发布 |
-| 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 待研究 |
+| 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 已发布 |
 | 07 | 121–140 | 可靠性与可观测性、成本治理 | 20 | 待研究 |
 | 08 | 141–142 | 成本、能效与资源治理 | 2 | 待研究 |
 
@@ -30,6 +30,10 @@
 ## Batch 04 综合学习路径
 
 阅读 [推理指标 → KV 管理 → 服务量化与部署](BATCH-04.md)；此路径仅用于仓库作者组织资料，不会出现在公开 Explorer 的导航栏。
+
+## Batch 06 综合学习路径
+
+阅读 [AI 数据链路 → SLI/SLO/SLA → 故障恢复和可观测性](BATCH-06.md)。此路线仅用于内部写作与审校，不出现在读者页面。
 
 ## 逐批术语清单
 
@@ -150,26 +154,26 @@
 
 ### Batch 06: 存储与数据、可靠性与可观测性
 
-101. Network File System（网络文件系统） · `NFS` · 未编写
-102. Parallel File System（并行文件系统） · 未编写
-103. Storage Throughput（存储吞吐量） · 未编写
-104. Input/Output Operations per Second（每秒输入输出操作数） · `IOPS` · 未编写
-105. Data Lake（数据湖） · 未编写
-106. Data Pipeline（数据管道） · 未编写
-107. Data Shard（数据分片） · 未编写
-108. Data Loader（数据加载器） · 未编写
-109. Prefetching（预取） · 未编写
-110. Cache Hit Rate（缓存命中率） · 未编写
-111. Content Delivery Network（内容分发网络） · `CDN` · 未编写
-112. Service Level Objective（服务级别目标） · `SLO` · 未编写
-113. Service Level Indicator（服务级别指标） · `SLI` · 未编写
-114. Service Level Agreement（服务级别协议） · `SLA` · 未编写
-115. Availability（可用性） · 未编写
-116. Reliability（可靠性） · 未编写
-117. Mean Time Between Failures（平均故障间隔时间） · `MTBF` · 未编写
-118. Mean Time to Recovery（平均恢复时间） · `MTTR` · 未编写
-119. Observability（可观测性） · 未编写
-120. Metrics（指标数据） · 未编写
+101. [Network File System（网络文件系统）](101-network-file-system.md) · `NFS` · 已发布
+102. [Parallel File System（并行文件系统）](102-parallel-file-system.md) · 已发布
+103. [Storage Throughput（存储吞吐量）](103-storage-throughput.md) · 已发布
+104. [Input/Output Operations per Second（每秒输入输出操作数）](104-input-output-operations-per-second.md) · `IOPS` · 已发布
+105. [Data Lake（数据湖）](105-data-lake.md) · 已发布
+106. [Data Pipeline（数据管道）](106-data-pipeline.md) · 已发布
+107. [Data Shard（数据分片）](107-data-shard.md) · 已发布
+108. [Data Loader（数据加载器）](108-data-loader.md) · 已发布
+109. [Prefetching（预取）](109-prefetching.md) · 已发布
+110. [Cache Hit Rate（缓存命中率）](110-cache-hit-rate.md) · 已发布
+111. [Content Delivery Network（内容分发网络）](111-content-delivery-network.md) · `CDN` · 已发布
+112. [Service Level Objective（服务级别目标）](112-service-level-objective.md) · `SLO` · 已发布
+113. [Service Level Indicator（服务级别指标）](113-service-level-indicator.md) · `SLI` · 已发布
+114. [Service Level Agreement（服务级别协议）](114-service-level-agreement.md) · `SLA` · 已发布
+115. [Availability（可用性）](115-availability.md) · 已发布
+116. [Reliability（可靠性）](116-reliability.md) · 已发布
+117. [Mean Time Between Failures（平均故障间隔时间）](117-mean-time-between-failures.md) · `MTBF` · 已发布
+118. [Mean Time to Recovery（平均恢复时间）](118-mean-time-to-recovery.md) · `MTTR` · 已发布
+119. [Observability（可观测性）](119-observability.md) · 已发布
+120. [Metrics（指标数据）](120-metrics.md) · 已发布
 
 ### Batch 07: 可靠性与可观测性、成本治理
 
