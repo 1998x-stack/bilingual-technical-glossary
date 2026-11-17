@@ -213,6 +213,19 @@ class ExplorerBrowserTests(unittest.TestCase):
         self.assertNotIn("<img src=",malicious)
         self.assertNotIn('href="javascript:',malicious)
 
+    def test_new_a2a_article_is_rendered_in_unified_ai_agent_explorer(self):
+        self.home("ai-agents")
+        self.page.locator("#search-input").fill("Agent2Agent Protocol")
+        item=self.page.locator("#terms-body tr").first
+        expect(item.locator("a.term-english")).to_have_text("Agent2Agent Protocol (A2A)")
+        item.locator("a.term-english").click()
+        expect(self.page.locator("#detail-state")).to_have_text("专业解析", timeout=15000)
+        expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
+        expect(self.page.get_by_role("heading", name=re.compile("技术原理"), level=2)).to_be_visible()
+        expect(self.page.locator("#wiki-article")).to_contain_text("Agent Card")
+        expect(self.page.locator("#wiki-article")).to_contain_text("Task")
+        self.assertNotIn("Batch", self.page.locator("main").inner_text())
+
     def test_accessible_landmarks_and_focusable_article_navigation(self):
         self.home("ai-infrastructure")
         expect(self.page.get_by_role("main")).to_have_count(1)
