@@ -29,8 +29,8 @@
 | 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | drafted_in_pr |
 | 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | drafted_in_pr |
 | 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | drafted_in_pr |
-| 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | 部分 drafted_in_pr（281–290），291–300 planned |
-| 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | planned |
+| 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | drafted_in_pr |
+| 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | 部分 drafted_in_pr（301–310），311–320 planned |
 | 17 | 321–332 | 开发实践与生态术语 | 12 | planned |
 
 ## 第 1 批知识路径
@@ -425,3 +425,28 @@
 288. [Trace（追踪记录）](288-trace.md)
 289. [Span（跨度）](289-span.md)
 290. [Distributed Tracing（分布式追踪）](290-distributed-tracing.md)
+
+## 本轮候审稿：291–310（20 篇）
+
+已完成源 Batch 15 的 291–300，源 Batch 16 前 10 条 301–310；其余 311–332 仍为 planned。内容位于堆叠 PR，尚未合并 main 或完成独立专业审稿。
+
+291. [Logging（日志记录）](291-logging.md)
+292. [Metrics Monitoring（指标监控）](292-metrics-monitoring.md)
+293. [Structured Logging（结构化日志）](293-structured-logging.md)
+294. [Correlation ID（相关标识符）](294-correlation-id.md)
+295. [Latency（延迟）](295-latency.md)
+296. [Throughput（吞吐量）](296-throughput.md)
+297. [Concurrency（并发）](297-concurrency.md)
+298. [Parallelism（并行）](298-parallelism.md)
+299. [Rate Limiting（速率限制）](299-rate-limiting.md)
+300. [Quota（请求配额）](300-quota.md)
+301. [Token Usage（词元用量）](301-token-usage.md)
+302. [Cost per Task（单任务成本）](302-cost-per-task.md)
+303. [Cost Budget（成本预算）](303-cost-budget.md)
+304. [Cost–Quality Trade-off（成本—质量权衡）](304-cost-quality-trade-off.md)
+305. [Caching（缓存）](305-caching.md)
+306. [Lifecycle Hook（回调钩子）](306-lifecycle-hook.md)
+307. [Circuit Breaker（断路器）](307-circuit-breaker.md)
+308. [Service Level Objective (SLO)（服务级别目标）](308-service-level-objective.md)
+309. [Service Level Agreement (SLA)（服务级别协议）](309-service-level-agreement.md)
+310. [Alerting（告警）](310-alerting.md)

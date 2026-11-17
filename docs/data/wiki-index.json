@@ -3024,6 +3024,146 @@
       "en": "Distributed Tracing",
       "zh": "分布式追踪",
       "path": "wiki/ai-agents/290-distributed-tracing.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Logging",
+      "zh": "日志记录",
+      "path": "wiki/ai-agents/291-logging.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Metrics Monitoring",
+      "zh": "指标监控",
+      "path": "wiki/ai-agents/292-metrics-monitoring.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Structured Logging",
+      "zh": "结构化日志",
+      "path": "wiki/ai-agents/293-structured-logging.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Correlation ID",
+      "zh": "相关标识符",
+      "path": "wiki/ai-agents/294-correlation-id.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Latency",
+      "zh": "延迟",
+      "path": "wiki/ai-agents/295-latency.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Throughput",
+      "zh": "吞吐量",
+      "path": "wiki/ai-agents/296-throughput.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Concurrency",
+      "zh": "并发",
+      "path": "wiki/ai-agents/297-concurrency.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Parallelism",
+      "zh": "并行",
+      "path": "wiki/ai-agents/298-parallelism.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Rate Limiting",
+      "zh": "速率限制",
+      "path": "wiki/ai-agents/299-rate-limiting.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Quota",
+      "zh": "请求配额",
+      "path": "wiki/ai-agents/300-quota.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Token Usage",
+      "zh": "词元用量",
+      "path": "wiki/ai-agents/301-token-usage.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Cost per Task",
+      "zh": "单任务成本",
+      "path": "wiki/ai-agents/302-cost-per-task.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Cost Budget",
+      "zh": "成本预算",
+      "path": "wiki/ai-agents/303-cost-budget.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Cost–Quality Trade-off",
+      "zh": "成本—质量权衡",
+      "path": "wiki/ai-agents/304-cost-quality-trade-off.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Caching",
+      "zh": "缓存",
+      "path": "wiki/ai-agents/305-caching.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Lifecycle Hook",
+      "zh": "回调钩子",
+      "path": "wiki/ai-agents/306-lifecycle-hook.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Circuit Breaker",
+      "zh": "断路器",
+      "path": "wiki/ai-agents/307-circuit-breaker.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Service Level Objective (SLO)",
+      "zh": "服务级别目标",
+      "path": "wiki/ai-agents/308-service-level-objective.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Service Level Agreement (SLA)",
+      "zh": "服务级别协议",
+      "path": "wiki/ai-agents/309-service-level-agreement.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Alerting",
+      "zh": "告警",
+      "path": "wiki/ai-agents/310-alerting.md"
     }
   ]
 }

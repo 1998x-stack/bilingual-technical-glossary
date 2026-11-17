@@ -1162,6 +1162,86 @@
     {
       "path": "wiki/ai-agents/290-distributed-tracing.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/291-logging.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/292-metrics-monitoring.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/293-structured-logging.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/294-correlation-id.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/295-latency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/296-throughput.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/297-concurrency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/298-parallelism.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/299-rate-limiting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/300-quota.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/301-token-usage.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/302-cost-per-task.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/303-cost-budget.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/304-cost-quality-trade-off.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/305-caching.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/306-lifecycle-hook.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/307-circuit-breaker.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/308-service-level-objective.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/309-service-level-agreement.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/310-alerting.md",
+      "status": "pending"
     }
   ]
 }
