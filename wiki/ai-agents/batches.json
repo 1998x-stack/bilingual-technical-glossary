@@ -1749,7 +1749,7 @@
         "MCP：模型上下文协议",
         "A2A：智能体间协议"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 181,
@@ -1757,8 +1757,8 @@
           "zh": "流式 HTTP 传输",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/181-streamable-http-transport.md"
         },
         {
           "no": 182,
@@ -1766,8 +1766,8 @@
           "zh": "采样请求",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/182-sampling.md"
         },
         {
           "no": 183,
@@ -1775,8 +1775,8 @@
           "zh": "用户信息征询",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/183-elicitation.md"
         },
         {
           "no": 184,
@@ -1784,8 +1784,8 @@
           "zh": "根目录",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/184-roots.md"
         },
         {
           "no": 185,
@@ -1793,8 +1793,8 @@
           "zh": "参数自动补全",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/185-completion.md"
         },
         {
           "no": 186,
@@ -1802,8 +1802,8 @@
           "zh": "进度通知",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/186-progress-notification.md"
         },
         {
           "no": 187,
@@ -1811,8 +1811,8 @@
           "zh": "取消通知",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/187-cancellation-notification.md"
         },
         {
           "no": 188,
@@ -1820,8 +1820,8 @@
           "zh": "授权",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/188-authorization.md"
         },
         {
           "no": 189,
@@ -1829,8 +1829,8 @@
           "zh": "MCP 扩展",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/189-mcp-extension.md"
         },
         {
           "no": 190,
@@ -1838,8 +1838,8 @@
           "zh": "MCP 应用",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/190-mcp-apps.md"
         },
         {
           "no": 191,
@@ -1847,8 +1847,8 @@
           "zh": "智能体间协议",
           "abbr": "A2A",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/191-agent2agent-protocol.md"
         },
         {
           "no": 192,
@@ -1856,8 +1856,8 @@
           "zh": "A2A 客户端",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/192-a2a-client.md"
         },
         {
           "no": 193,
@@ -1865,8 +1865,8 @@
           "zh": "A2A 服务器",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/193-a2a-server.md"
         },
         {
           "no": 194,
@@ -1874,8 +1874,8 @@
           "zh": "远程智能体",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/194-remote-agent.md"
         },
         {
           "no": 195,
@@ -1883,8 +1883,8 @@
           "zh": "智能体名片",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/195-agent-card.md"
         },
         {
           "no": 196,
@@ -1892,8 +1892,8 @@
           "zh": "智能体发现",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/196-agent-discovery.md"
         },
         {
           "no": 197,
@@ -1901,8 +1901,8 @@
           "zh": "智能体技能",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/197-agent-skill.md"
         },
         {
           "no": 198,
@@ -1910,8 +1910,8 @@
           "zh": "A2A 任务",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/198-a2a-task.md"
         },
         {
           "no": 199,
@@ -1919,8 +1919,8 @@
           "zh": "A2A 消息",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/199-a2a-message.md"
         },
         {
           "no": 200,
@@ -1928,8 +1928,8 @@
           "zh": "消息片段",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/200-message-part.md"
         }
       ]
     },
@@ -1942,7 +1942,7 @@
         "A2A：智能体间协议",
         "执行状态、持久化与恢复"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 201,
@@ -1950,8 +1950,8 @@
           "zh": "任务产物",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/201-artifact.md"
         },
         {
           "no": 202,
@@ -1959,8 +1959,8 @@
           "zh": "任务状态",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/202-task-state.md"
         },
         {
           "no": 203,
@@ -1968,8 +1968,8 @@
           "zh": "任务生命周期",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/203-task-lifecycle.md"
         },
         {
           "no": 204,
@@ -1977,8 +1977,8 @@
           "zh": "流式更新",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/204-streaming-update.md"
         },
         {
           "no": 205,
@@ -1986,8 +1986,8 @@
           "zh": "推送通知",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/205-push-notification.md"
         },
         {
           "no": 206,
@@ -1995,8 +1995,8 @@
           "zh": "互操作性",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/206-interoperability.md"
         },
         {
           "no": 207,
@@ -2004,8 +2004,8 @@
           "zh": "能力声明",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/207-capability-declaration.md"
         },
         {
           "no": 208,
@@ -2013,8 +2013,8 @@
           "zh": "任务委派协议",
           "abbr": "",
           "topic": "A2A：智能体间协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/208-task-delegation-protocol.md"
         },
         {
           "no": 209,
@@ -2022,8 +2022,8 @@
           "zh": "状态机",
           "abbr": "",
           "topic": "执行状态、持久化与恢复",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/209-state-machine.md"
         },
         {
           "no": 210,
@@ -2031,8 +2031,8 @@
           "zh": "检查点",
           "abbr": "",
           "topic": "执行状态、持久化与恢复",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/210-checkpoint.md"
         },
         {
           "no": 211,

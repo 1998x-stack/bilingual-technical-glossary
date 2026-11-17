@@ -2254,6 +2254,216 @@
       "en": "Standard Input/Output Transport (stdio)",
       "zh": "标准输入输出传输",
       "path": "wiki/ai-agents/180-standard-input-output-transport.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Streamable HTTP Transport",
+      "zh": "流式 HTTP 传输",
+      "path": "wiki/ai-agents/181-streamable-http-transport.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Sampling",
+      "zh": "采样请求",
+      "path": "wiki/ai-agents/182-sampling.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Elicitation",
+      "zh": "用户信息征询",
+      "path": "wiki/ai-agents/183-elicitation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Roots",
+      "zh": "根目录",
+      "path": "wiki/ai-agents/184-roots.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Completion",
+      "zh": "参数自动补全",
+      "path": "wiki/ai-agents/185-completion.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Progress Notification",
+      "zh": "进度通知",
+      "path": "wiki/ai-agents/186-progress-notification.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Cancellation Notification",
+      "zh": "取消通知",
+      "path": "wiki/ai-agents/187-cancellation-notification.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Authorization",
+      "zh": "授权",
+      "path": "wiki/ai-agents/188-authorization.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Extension",
+      "zh": "MCP 扩展",
+      "path": "wiki/ai-agents/189-mcp-extension.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Apps",
+      "zh": "MCP 应用",
+      "path": "wiki/ai-agents/190-mcp-apps.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Agent2Agent Protocol (A2A)",
+      "zh": "智能体间协议",
+      "path": "wiki/ai-agents/191-agent2agent-protocol.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "A2A Client",
+      "zh": "A2A 客户端",
+      "path": "wiki/ai-agents/192-a2a-client.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "A2A Server",
+      "zh": "A2A 服务器",
+      "path": "wiki/ai-agents/193-a2a-server.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Remote Agent",
+      "zh": "远程智能体",
+      "path": "wiki/ai-agents/194-remote-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Agent Card",
+      "zh": "智能体名片",
+      "path": "wiki/ai-agents/195-agent-card.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Agent Discovery",
+      "zh": "智能体发现",
+      "path": "wiki/ai-agents/196-agent-discovery.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Agent Skill",
+      "zh": "智能体技能",
+      "path": "wiki/ai-agents/197-agent-skill.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "A2A Task",
+      "zh": "A2A 任务",
+      "path": "wiki/ai-agents/198-a2a-task.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "A2A Message",
+      "zh": "A2A 消息",
+      "path": "wiki/ai-agents/199-a2a-message.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Message Part",
+      "zh": "消息片段",
+      "path": "wiki/ai-agents/200-message-part.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Artifact",
+      "zh": "任务产物",
+      "path": "wiki/ai-agents/201-artifact.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Task State",
+      "zh": "任务状态",
+      "path": "wiki/ai-agents/202-task-state.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Task Lifecycle",
+      "zh": "任务生命周期",
+      "path": "wiki/ai-agents/203-task-lifecycle.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Streaming Update",
+      "zh": "流式更新",
+      "path": "wiki/ai-agents/204-streaming-update.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Push Notification",
+      "zh": "推送通知",
+      "path": "wiki/ai-agents/205-push-notification.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Interoperability",
+      "zh": "互操作性",
+      "path": "wiki/ai-agents/206-interoperability.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Capability Declaration",
+      "zh": "能力声明",
+      "path": "wiki/ai-agents/207-capability-declaration.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 10,
+      "en": "Task Delegation Protocol",
+      "zh": "任务委派协议",
+      "path": "wiki/ai-agents/208-task-delegation-protocol.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "State Machine",
+      "zh": "状态机",
+      "path": "wiki/ai-agents/209-state-machine.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Checkpoint",
+      "zh": "检查点",
+      "path": "wiki/ai-agents/210-checkpoint.md"
     }
   ]
 }

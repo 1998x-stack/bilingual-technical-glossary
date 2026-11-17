@@ -40,5 +40,5 @@ Progress Notification 反馈当前运行情况；A2A Streaming Update 表示另�
 
 ## 8. 权威来源与延伸阅读
 
-- [MCP · Progress](https://modelcontextprotocol.io/specification/2026-07-28/basic/utilities/progress)：进度通知与 token 关联。
+- [MCP · Progress](https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/progress)：进度通知与 token 关联。
 - [MCP · Transport bindings](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports)：HTTP 中断流与 stdio 通知。

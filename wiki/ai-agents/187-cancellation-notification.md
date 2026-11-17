@@ -40,5 +40,5 @@ Cancellation Notification 取消进行中的请求；Tasks 扩展 `tasks/cancel`
 
 ## 8. 权威来源与延伸阅读
 
-- [MCP · Cancellation](https://modelcontextprotocol.io/specification/2026-07-28/basic/utilities/cancellation)：协作式取消和版本传输区别。
+- [MCP · Cancellation](https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/cancellation)：协作式取消和版本传输区别。
 - [MCP · Transport bindings](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports)：HTTP 中断流与 stdio 通知。
