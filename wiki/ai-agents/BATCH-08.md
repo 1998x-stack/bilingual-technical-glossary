@@ -1,6 +1,6 @@
-# AI Agents · 第 8 批（141–160）学习路径 · 当前仅完成 141–150
+# AI Agents · 第 8 批（141–160）学习路径 · 已完成全 20 篇候审稿
 
-> **部分完成说明：**按照权威源词表，本批仍有 20 条。此次用户要求新增 30 篇，故在完整第 7 批 121–140 之外，写完本批 141–150 共 10 篇；剩余 151–160 尚未写作，不标记 ready。仅供内部编辑和审稿，不显示在 GitHub Pages 读者导航。
+ > **状态更新：**此前在 121–150 的 30 篇增量中仅完成本批前 10 篇；本次新增 151–160 后，第 8 批完整的 141–160 已全部成稿，均仍待独立专家复核。仓库始终保留 20 条/批的规范和编号。
 
 ## 已完成 141–150
 
@@ -29,9 +29,9 @@ Multi-Agent System 由多个角色组成，可能通过消息、共享环境或�
 
 **解：**ceil(30/5)×2+1=13 秒，未计队列/调度开销；若任何强制安全检查失败，不能将整体标为成功。
 
-## 后续范围
+## 已补齐 151–160
 
-第 8 批继续编写 **151–160**，从 Worker Agent 开始。未来完成这一半批次时，将整个第 8 批视为 drafted_in_pr；不需更改原 20 条批次大小或已发布索引。
+Worker Agent、Supervisor Agent、Reviewer Agent、Critic Agent、Inter-Agent Communication、Task Delegation、Handoff、Agent as Tool、Shared Memory、Blackboard 均已完成独立长文。重点区别下游 Worker 自述与真实工具证据、Reviewer 的机器审查与真人专家签核、Handoff 控制权转移与 Agent-as-tool 的经理持续控制。
 
 ## 主要一手资料
 

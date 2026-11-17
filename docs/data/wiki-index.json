@@ -2044,6 +2044,216 @@
       "en": "Coordinator Agent",
       "zh": "协调者智能体",
       "path": "wiki/ai-agents/150-coordinator-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Worker Agent",
+      "zh": "工作者智能体",
+      "path": "wiki/ai-agents/151-worker-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Supervisor Agent",
+      "zh": "监督者智能体",
+      "path": "wiki/ai-agents/152-supervisor-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Reviewer Agent",
+      "zh": "审查者智能体",
+      "path": "wiki/ai-agents/153-reviewer-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Critic Agent",
+      "zh": "批评者智能体",
+      "path": "wiki/ai-agents/154-critic-agent.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Inter-Agent Communication",
+      "zh": "代理间通信",
+      "path": "wiki/ai-agents/155-inter-agent-communication.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Task Delegation",
+      "zh": "任务委派",
+      "path": "wiki/ai-agents/156-task-delegation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Handoff",
+      "zh": "控制权交接",
+      "path": "wiki/ai-agents/157-handoff.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Agent as Tool",
+      "zh": "智能体即工具",
+      "path": "wiki/ai-agents/158-agent-as-tool.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Shared Memory",
+      "zh": "共享记忆",
+      "path": "wiki/ai-agents/159-shared-memory.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Blackboard",
+      "zh": "共享黑板",
+      "path": "wiki/ai-agents/160-blackboard.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Message Bus",
+      "zh": "消息总线",
+      "path": "wiki/ai-agents/161-message-bus.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Consensus",
+      "zh": "共识",
+      "path": "wiki/ai-agents/162-consensus.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Conflict Resolution",
+      "zh": "冲突解决",
+      "path": "wiki/ai-agents/163-conflict-resolution.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Role Specialization",
+      "zh": "角色分工",
+      "path": "wiki/ai-agents/164-role-specialization.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Handoff Record",
+      "zh": "任务交接记录",
+      "path": "wiki/ai-agents/165-handoff-record.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 8,
+      "en": "Coordination Failure",
+      "zh": "协作失效",
+      "path": "wiki/ai-agents/166-coordination-failure.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Model Context Protocol (MCP)",
+      "zh": "模型上下文协议",
+      "path": "wiki/ai-agents/167-model-context-protocol.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Host",
+      "zh": "MCP 主机",
+      "path": "wiki/ai-agents/168-mcp-host.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Client",
+      "zh": "MCP 客户端",
+      "path": "wiki/ai-agents/169-mcp-client.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Server",
+      "zh": "MCP 服务器",
+      "path": "wiki/ai-agents/170-mcp-server.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Tool",
+      "zh": "MCP 工具",
+      "path": "wiki/ai-agents/171-mcp-tool.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Resource",
+      "zh": "MCP 资源",
+      "path": "wiki/ai-agents/172-mcp-resource.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "MCP Prompt",
+      "zh": "MCP 提示模板",
+      "path": "wiki/ai-agents/173-mcp-prompt.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Resource URI (URI)",
+      "zh": "资源标识符",
+      "path": "wiki/ai-agents/174-resource-uri.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Tool Listing (tools/list)",
+      "zh": "工具列表",
+      "path": "wiki/ai-agents/175-tool-listing.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Tool Invocation (tools/call)",
+      "zh": "工具执行",
+      "path": "wiki/ai-agents/176-tool-invocation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Capability Negotiation",
+      "zh": "能力协商",
+      "path": "wiki/ai-agents/177-capability-negotiation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Protocol Version Negotiation",
+      "zh": "协议版本协商",
+      "path": "wiki/ai-agents/178-protocol-version-negotiation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "JSON-RPC",
+      "zh": "JSON 远程过程调用",
+      "path": "wiki/ai-agents/179-json-rpc.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 9,
+      "en": "Standard Input/Output Transport (stdio)",
+      "zh": "标准输入输出传输",
+      "path": "wiki/ai-agents/180-standard-input-output-transport.md"
     }
   ]
 }

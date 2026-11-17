@@ -602,6 +602,126 @@
     {
       "path": "wiki/ai-agents/150-coordinator-agent.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/151-worker-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/152-supervisor-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/153-reviewer-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/154-critic-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/155-inter-agent-communication.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/156-task-delegation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/157-handoff.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/158-agent-as-tool.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/159-shared-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/160-blackboard.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/161-message-bus.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/162-consensus.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/163-conflict-resolution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/164-role-specialization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/165-handoff-record.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/166-coordination-failure.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/167-model-context-protocol.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/168-mcp-host.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/169-mcp-client.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/170-mcp-server.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/171-mcp-tool.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/172-mcp-resource.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/173-mcp-prompt.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/174-resource-uri.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/175-tool-listing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/176-tool-invocation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/177-capability-negotiation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/178-protocol-version-negotiation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/179-json-rpc.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/180-standard-input-output-transport.md",
+      "status": "pending"
     }
   ]
 }

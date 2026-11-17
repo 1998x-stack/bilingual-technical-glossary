@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 150,
-  "readyArticles": 150,
+  "readyInPr": 180,
+  "readyArticles": 180,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -1530,8 +1530,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "151-worker-agent.md"
     },
     {
       "n": 152,
@@ -1540,8 +1540,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "152-supervisor-agent.md"
     },
     {
       "n": 153,
@@ -1550,8 +1550,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "153-reviewer-agent.md"
     },
     {
       "n": 154,
@@ -1560,8 +1560,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "154-critic-agent.md"
     },
     {
       "n": 155,
@@ -1570,8 +1570,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "155-inter-agent-communication.md"
     },
     {
       "n": 156,
@@ -1580,8 +1580,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "156-task-delegation.md"
     },
     {
       "n": 157,
@@ -1590,8 +1590,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "157-handoff.md"
     },
     {
       "n": 158,
@@ -1600,8 +1600,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "158-agent-as-tool.md"
     },
     {
       "n": 159,
@@ -1610,8 +1610,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "159-shared-memory.md"
     },
     {
       "n": 160,
@@ -1620,8 +1620,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "160-blackboard.md"
     },
     {
       "n": 161,
@@ -1630,8 +1630,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "161-message-bus.md"
     },
     {
       "n": 162,
@@ -1640,8 +1640,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "162-consensus.md"
     },
     {
       "n": 163,
@@ -1650,8 +1650,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "163-conflict-resolution.md"
     },
     {
       "n": 164,
@@ -1660,8 +1660,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "164-role-specialization.md"
     },
     {
       "n": 165,
@@ -1670,8 +1670,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "165-handoff-record.md"
     },
     {
       "n": 166,
@@ -1680,8 +1680,8 @@
       "abbr": "",
       "topic": "多智能体协作",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "166-coordination-failure.md"
     },
     {
       "n": 167,
@@ -1690,8 +1690,8 @@
       "abbr": "MCP",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "167-model-context-protocol.md"
     },
     {
       "n": 168,
@@ -1700,8 +1700,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "168-mcp-host.md"
     },
     {
       "n": 169,
@@ -1710,8 +1710,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "169-mcp-client.md"
     },
     {
       "n": 170,
@@ -1720,8 +1720,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "170-mcp-server.md"
     },
     {
       "n": 171,
@@ -1730,8 +1730,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "171-mcp-tool.md"
     },
     {
       "n": 172,
@@ -1740,8 +1740,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "172-mcp-resource.md"
     },
     {
       "n": 173,
@@ -1750,8 +1750,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "173-mcp-prompt.md"
     },
     {
       "n": 174,
@@ -1760,8 +1760,8 @@
       "abbr": "URI",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "174-resource-uri.md"
     },
     {
       "n": 175,
@@ -1770,8 +1770,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "175-tool-listing.md"
     },
     {
       "n": 176,
@@ -1780,8 +1780,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "176-tool-invocation.md"
     },
     {
       "n": 177,
@@ -1790,8 +1790,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "177-capability-negotiation.md"
     },
     {
       "n": 178,
@@ -1800,8 +1800,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "178-protocol-version-negotiation.md"
     },
     {
       "n": 179,
@@ -1810,8 +1810,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "179-json-rpc.md"
     },
     {
       "n": 180,
@@ -1820,8 +1820,8 @@
       "abbr": "",
       "topic": "MCP：模型上下文协议",
       "batch": 9,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "180-standard-input-output-transport.md"
     },
     {
       "n": 181,
