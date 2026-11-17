@@ -43,5 +43,5 @@
 
 ## 5. 独立签核和内容哈希
 
-每篇已发布文章的专业验证记录见 [Review ledger](reviews/README.md) 及 `reviews/ai-infrastructure.json`。审稿人应提交明确的技术主张与权威文档版本/章节对应关系，逐题重算；签核带正文 SHA-256，变动后自动失效。**已发布文章的未签核状态必须保持 pending；当前 100 篇均需要逐篇专业复核**，不能将 CI 通过宣称为学术同行评审通过。执行 `python3 scripts/verify_wiki_reviews.py --check --report` 可收集宽泛引用、缺少引用、尚未审核等风险。
+每篇已发布文章的专业验证记录见 [Review ledger](reviews/README.md) 及 `reviews/ai-infrastructure.json`。审稿人应提交明确的技术主张与权威文档版本/章节对应关系，逐题重算；签核带正文 SHA-256，变动后自动失效。**已发布文章的未签核状态必须保持 pending；当前 120 篇均需要逐篇专业复核**，不能将 CI 通过宣称为学术同行评审通过。执行 `python3 scripts/verify_wiki_reviews.py --check --report` 可收集宽泛引用、缺少引用、尚未审核等风险。
 

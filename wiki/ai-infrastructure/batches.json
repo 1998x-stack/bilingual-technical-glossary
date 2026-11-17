@@ -1078,7 +1078,7 @@
         "存储与数据管道",
         "可靠性与可观测性"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 101,
@@ -1087,8 +1087,8 @@
           "abbr": "NFS",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/101-network-file-system.md"
         },
         {
           "no": 102,
@@ -1097,8 +1097,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/102-parallel-file-system.md"
         },
         {
           "no": 103,
@@ -1107,8 +1107,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/103-storage-throughput.md"
         },
         {
           "no": 104,
@@ -1117,8 +1117,8 @@
           "abbr": "IOPS",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/104-input-output-operations-per-second.md"
         },
         {
           "no": 105,
@@ -1127,8 +1127,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/105-data-lake.md"
         },
         {
           "no": 106,
@@ -1137,8 +1137,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/106-data-pipeline.md"
         },
         {
           "no": 107,
@@ -1147,8 +1147,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/107-data-shard.md"
         },
         {
           "no": 108,
@@ -1157,8 +1157,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/108-data-loader.md"
         },
         {
           "no": 109,
@@ -1167,8 +1167,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/109-prefetching.md"
         },
         {
           "no": 110,
@@ -1177,8 +1177,8 @@
           "abbr": "",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/110-cache-hit-rate.md"
         },
         {
           "no": 111,
@@ -1187,8 +1187,8 @@
           "abbr": "CDN",
           "topic": "存储与数据管道",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/111-content-delivery-network.md"
         },
         {
           "no": 112,
@@ -1197,8 +1197,8 @@
           "abbr": "SLO",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/112-service-level-objective.md"
         },
         {
           "no": 113,
@@ -1207,8 +1207,8 @@
           "abbr": "SLI",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/113-service-level-indicator.md"
         },
         {
           "no": 114,
@@ -1217,8 +1217,8 @@
           "abbr": "SLA",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/114-service-level-agreement.md"
         },
         {
           "no": 115,
@@ -1227,8 +1227,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/115-availability.md"
         },
         {
           "no": 116,
@@ -1237,8 +1237,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/116-reliability.md"
         },
         {
           "no": 117,
@@ -1247,8 +1247,8 @@
           "abbr": "MTBF",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/117-mean-time-between-failures.md"
         },
         {
           "no": 118,
@@ -1257,8 +1257,8 @@
           "abbr": "MTTR",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/118-mean-time-to-recovery.md"
         },
         {
           "no": 119,
@@ -1267,8 +1267,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/119-observability.md"
         },
         {
           "no": 120,
@@ -1277,8 +1277,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 6,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/120-metrics.md"
         }
       ]
     },
