@@ -254,11 +254,11 @@ class ExplorerBrowserTests(unittest.TestCase):
     def test_new_prompt_injection_article_is_readable_without_editorial_status(self):
         self.home("ai-agents")
         self.page.locator("#search-input").fill("Prompt Injection")
-        row=self.page.locator("#terms-body tr").filter(
-            has=self.page.get_by_role("link", name="Prompt Injection", exact=True)
+        term=self.page.locator("#terms-body a.term-english").filter(
+            has_text=re.compile(r"^Prompt Injection$")
         ).first
-        expect(row.locator("a.term-english")).to_have_text("Prompt Injection")
-        row.locator("a.term-english").click()
+        expect(term).to_have_text("Prompt Injection")
+        term.click()
         expect(self.page.locator("#detail-state")).to_have_text("专业解析", timeout=15000)
         expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
         expect(self.page.locator("#wiki-article")).to_contain_text("Trust Boundary")
