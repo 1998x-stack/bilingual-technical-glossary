@@ -261,7 +261,7 @@ class ExplorerBrowserTests(unittest.TestCase):
         term.click()
         expect(self.page.locator("#detail-state")).to_have_text("专业解析", timeout=15000)
         expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
-        expect(self.page.locator("#wiki-article")).to_contain_text("Trust Boundary")
+        expect(self.page.locator("#wiki-article")).to_contain_text("信任边界")
         expect(self.page.locator("#wiki-article")).to_contain_text("OWASP")
         self.assertNotIn("Batch", self.page.locator("main").inner_text())
 
