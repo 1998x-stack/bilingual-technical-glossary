@@ -4,7 +4,7 @@
 
 将原双语词条扩展为独立技术百科文章：精确定义、直观类比、核心机制、工程案例、易混辨析、两道中级面试题及答案、两道中级考试题及解析、权威参考资料。
 
-**状态说明：** Batch 01–06 共 **120 篇已发布**，Batch 07–08 共 22 篇待研究；已完成 **120/142（84.5%）**。每批独立审阅与校验后合并，计划条目不算完成。
+**状态说明：** Batch 01–08 共 **142 篇已发布**；已完成 **142/142（100%）**。全部词条已有完整技术文章，独立领域专家审稿仍由人工证据台账单独跟踪。。每批独立审阅与校验后合并，计划条目不算完成。
 
 ## 批次总览
 
@@ -16,8 +16,8 @@
 | 04 | 061–080 | 推理与服务、调度与容器 | 20 | 已发布 |
 | 05 | 081–100 | 调度与容器、存储与数据 | 20 | 已发布 |
 | 06 | 101–120 | 存储与数据、可靠性与可观测性 | 20 | 已发布 |
-| 07 | 121–140 | 可靠性与可观测性、成本治理 | 20 | 待研究 |
-| 08 | 141–142 | 成本、能效与资源治理 | 2 | 待研究 |
+| 07 | 121–140 | 可靠性与可观测性、成本治理 | 20 | 已发布 |
+| 08 | 141–142 | 成本、能效与资源治理 | 2 | 已发布 |
 
 ## Batch 02 综合学习路径
 
@@ -34,6 +34,10 @@
 ## Batch 06 综合学习路径
 
 阅读 [AI 数据链路 → SLI/SLO/SLA → 故障恢复和可观测性](BATCH-06.md)。此路线仅用于内部写作与审校，不出现在读者页面。
+
+## Batch 07–08 综合学习路径
+
+阅读 [可观测性 → 混沌工程 → GPU 效率 → FinOps 成本治理](BATCH-07.md)，以及 [Spot / Reserved Instance 采购与容量语义](BATCH-08.md)。以下路线仅供仓库作者研究，不在公开 Explorer 显示批次进度。
 
 ## 逐批术语清单
 
@@ -177,32 +181,29 @@
 
 ### Batch 07: 可靠性与可观测性、成本治理
 
-121. Logs（日志） · 未编写
-122. Distributed Tracing（分布式链路追踪） · 未编写
-123. OpenTelemetry（开放遥测） · `OTel` · 未编写
-124. Prometheus（Prometheus 监控系统） · 未编写
-125. Grafana（Grafana 可视化平台） · 未编写
-126. Alerting（告警） · 未编写
-127. Load Testing（负载测试） · 未编写
-128. Chaos Engineering（混沌工程） · 未编写
-129. Total Cost of Ownership（总体拥有成本） · `TCO` · 未编写
-130. Capital Expenditure（资本性支出） · `CapEx` · 未编写
-131. Operating Expenditure（运营性支出） · `OpEx` · 未编写
-132. GPU Utilization（GPU 利用率） · 未编写
-133. GPU Memory Utilization（显存利用率） · 未编写
-134. Compute Efficiency（计算效率） · 未编写
-135. Energy per Token（每词元能耗） · 未编写
-136. Cost per Million Tokens（每百万词元成本） · 未编写
-137. Workload Consolidation（工作负载整合） · 未编写
-138. Multi-Tenancy（多租户） · 未编写
-139. Capacity Planning（容量规划） · 未编写
-140. Autoscaling（自动扩缩容） · 未编写
+121. [Logs（日志）](121-logs.md) · 已发布
+122. [Distributed Tracing（分布式链路追踪）](122-distributed-tracing.md) · 已发布
+123. [OpenTelemetry（开放遥测）](123-opentelemetry.md) · `OTel` · 已发布
+124. [Prometheus（Prometheus 监控系统）](124-prometheus.md) · 已发布
+125. [Grafana（Grafana 可视化平台）](125-grafana.md) · 已发布
+126. [Alerting（告警）](126-alerting.md) · 已发布
+127. [Load Testing（负载测试）](127-load-testing.md) · 已发布
+128. [Chaos Engineering（混沌工程）](128-chaos-engineering.md) · 已发布
+129. [Total Cost of Ownership（总体拥有成本）](129-total-cost-of-ownership.md) · `TCO` · 已发布
+130. [Capital Expenditure（资本性支出）](130-capital-expenditure.md) · `CapEx` · 已发布
+131. [Operating Expenditure（运营性支出）](131-operating-expenditure.md) · `OpEx` · 已发布
+132. [GPU Utilization（GPU 利用率）](132-gpu-utilization.md) · 已发布
+133. [GPU Memory Utilization（显存利用率）](133-gpu-memory-utilization.md) · 已发布
+134. [Compute Efficiency（计算效率）](134-compute-efficiency.md) · 已发布
+135. [Energy per Token（每词元能耗）](135-energy-per-token.md) · 已发布
+136. [Cost per Million Tokens（每百万词元成本）](136-cost-per-million-tokens.md) · 已发布
+137. [Workload Consolidation（工作负载整合）](137-workload-consolidation.md) · 已发布
+138. [Multi-Tenancy（多租户）](138-multi-tenancy.md) · 已发布
+139. [Capacity Planning（容量规划）](139-capacity-planning.md) · 已发布
+140. [Autoscaling（自动扩缩容）](140-autoscaling.md) · 已发布
 
 ### Batch 08: 成本、能效与资源治理
 
-141. Spot Instance（竞价实例） · 未编写
-142. Reserved Instance（预留实例） · 未编写
+141. [Spot Instance（竞价实例）](141-spot-instance.md) · 已发布
+142. [Reserved Instance（预留实例）](142-reserved-instance.md) · 已发布
 
-## 质量规则
-
-内容采用 [统一模板](../TEMPLATE.md)，规范见 [Wiki 路线图](../README.md)。准确性、引用出处、设备/数值精度口径优先于篇幅；每批均应独立审阅、验证内链及示例计算，并通过 PR 合并。后续批次不得破坏原 CSV、JSON、PDF 和已编制手册。

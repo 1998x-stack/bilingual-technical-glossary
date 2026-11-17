@@ -482,6 +482,94 @@
     {
       "path": "wiki/ai-infrastructure/120-metrics.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/121-logs.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/122-distributed-tracing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/123-opentelemetry.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/124-prometheus.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/125-grafana.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/126-alerting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/127-load-testing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/128-chaos-engineering.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/129-total-cost-of-ownership.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/130-capital-expenditure.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/131-operating-expenditure.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/132-gpu-utilization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/133-gpu-memory-utilization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/134-compute-efficiency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/135-energy-per-token.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/136-cost-per-million-tokens.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/137-workload-consolidation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/138-multi-tenancy.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/139-capacity-planning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/140-autoscaling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/141-spot-instance.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-infrastructure/142-reserved-instance.md",
+      "status": "pending"
     }
   ]
 }

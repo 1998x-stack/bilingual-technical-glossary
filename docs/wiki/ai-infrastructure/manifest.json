@@ -2,7 +2,7 @@
   "title": "AI Infra · 深度 Wiki",
   "total": 142,
   "batchSize": 20,
-  "readyInPr": 120,
+  "readyInPr": 142,
   "topics": [
     "计算硬件与加速器",
     "互连与网络",
@@ -1221,8 +1221,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "121-logs.md"
     },
     {
       "n": 122,
@@ -1231,8 +1231,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "122-distributed-tracing.md"
     },
     {
       "n": 123,
@@ -1241,8 +1241,8 @@
       "abbr": "OTel",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "123-opentelemetry.md"
     },
     {
       "n": 124,
@@ -1251,8 +1251,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "124-prometheus.md"
     },
     {
       "n": 125,
@@ -1261,8 +1261,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "125-grafana.md"
     },
     {
       "n": 126,
@@ -1271,8 +1271,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "126-alerting.md"
     },
     {
       "n": 127,
@@ -1281,8 +1281,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "127-load-testing.md"
     },
     {
       "n": 128,
@@ -1291,8 +1291,8 @@
       "abbr": "",
       "topic": "可靠性与可观测性",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "128-chaos-engineering.md"
     },
     {
       "n": 129,
@@ -1301,8 +1301,8 @@
       "abbr": "TCO",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "129-total-cost-of-ownership.md"
     },
     {
       "n": 130,
@@ -1311,8 +1311,8 @@
       "abbr": "CapEx",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "130-capital-expenditure.md"
     },
     {
       "n": 131,
@@ -1321,8 +1321,8 @@
       "abbr": "OpEx",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "131-operating-expenditure.md"
     },
     {
       "n": 132,
@@ -1331,8 +1331,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "132-gpu-utilization.md"
     },
     {
       "n": 133,
@@ -1341,8 +1341,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "133-gpu-memory-utilization.md"
     },
     {
       "n": 134,
@@ -1351,8 +1351,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "134-compute-efficiency.md"
     },
     {
       "n": 135,
@@ -1361,8 +1361,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "135-energy-per-token.md"
     },
     {
       "n": 136,
@@ -1371,8 +1371,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "136-cost-per-million-tokens.md"
     },
     {
       "n": 137,
@@ -1381,8 +1381,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "137-workload-consolidation.md"
     },
     {
       "n": 138,
@@ -1391,8 +1391,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "138-multi-tenancy.md"
     },
     {
       "n": 139,
@@ -1401,8 +1401,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "139-capacity-planning.md"
     },
     {
       "n": 140,
@@ -1411,8 +1411,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 7,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "140-autoscaling.md"
     },
     {
       "n": 141,
@@ -1421,8 +1421,8 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "141-spot-instance.md"
     },
     {
       "n": 142,
@@ -1431,9 +1431,9 @@
       "abbr": "",
       "topic": "成本、能效与资源治理",
       "batch": 8,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "142-reserved-instance.md"
     }
   ],
-  "readyArticles": 120
+  "readyArticles": 142
 }

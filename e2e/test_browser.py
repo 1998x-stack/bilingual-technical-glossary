@@ -126,6 +126,34 @@ class ExplorerBrowserTests(unittest.TestCase):
                 expect(self.page.locator("#wiki-article a[href^='https://']").first).to_be_visible()
                 self.assertNotIn("Batch 06",self.page.locator("main").inner_text())
 
+    def test_observability_and_gpu_efficiency_articles_are_complete(self):
+        for concept in ("Logs", "GPU Utilization"):
+            with self.subTest(concept=concept):
+                self.home("ai-infrastructure")
+                self.page.locator("#search-input").fill(concept)
+                first=self.page.locator("#terms-body tr").first
+                expect(first.locator("a.term-english")).to_have_text(concept)
+                first.locator("a.term-english").click()
+                expect(self.page.get_by_role("heading",name=concept,level=1)).to_be_visible()
+                expect(self.page.locator("#detail-state")).to_have_text("专业解析")
+                expect(self.page.get_by_role("heading",name=re.compile("中等难度考试题"),level=2)).to_be_visible()
+                expect(self.page.locator("#wiki-article a[href^='https://']").first).to_be_visible()
+                self.assertNotIn("Batch 07",self.page.locator("main").inner_text())
+
+    def test_spot_and_reserved_instances_are_full_wiki_articles(self):
+        for concept in ("Spot Instance", "Reserved Instance"):
+            with self.subTest(concept=concept):
+                self.home("ai-infrastructure")
+                self.page.locator("#search-input").fill(concept)
+                first=self.page.locator("#terms-body tr").first
+                expect(first.locator("a.term-english")).to_have_text(concept)
+                first.locator("a.term-english").click()
+                expect(self.page.get_by_role("heading",name=concept,level=1)).to_be_visible()
+                expect(self.page.locator("#detail-state")).to_have_text("专业解析")
+                expect(self.page.get_by_role("heading",name=re.compile("技术原理"),level=2)).to_be_visible()
+                expect(self.page.locator("#wiki-article a[href^='https://']").first).to_be_visible()
+                self.assertNotIn("Batch 08",self.page.locator("main").inner_text())
+
     def test_unwritten_wiki_is_honestly_short_definition(self):
         self.home("reinforcement-learning")
         self.page.locator("#terms-body tr").first.locator("a.term-chinese").click()

@@ -47,15 +47,15 @@ class AIInfraBatch06Tests(unittest.TestCase):
 
     def test_all_public_index_entries_and_pending_reviews_are_consistent(self):
         entries=self.index["articles"]
-        self.assertEqual(len(entries),120)
-        self.assertEqual(self.manifest["readyArticles"],120)
-        self.assertEqual(self.manifest["readyInPr"],120)
+        self.assertEqual(len(entries),self.manifest["readyArticles"])
+        self.assertEqual(self.manifest["readyArticles"],len(entries))
+        self.assertEqual(self.manifest["readyInPr"],len(entries))
         self.assertEqual([x["chapter"] for x in entries[100:120]],[6]*11+[7]*9)
         self.assertEqual([x["path"] for x in entries[100:120]],
             ["wiki/ai-infrastructure/"+x["file"] for x in self.manifest["terms"][100:120]])
-        self.assertEqual(len({x["path"] for x in entries}),120)
+        self.assertEqual(len({x["path"] for x in entries}),len(entries))
         ledger={x["path"]:x for x in self.review["articles"]}
-        self.assertEqual(len(ledger),120)
+        self.assertEqual(len(ledger),len(entries))
         for x in entries[100:120]:
             self.assertEqual(ledger[x["path"]]["status"],"pending")
             self.assertNotIn("reviewer",ledger[x["path"]])

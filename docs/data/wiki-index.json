@@ -840,6 +840,160 @@
       "en": "Metrics",
       "zh": "指标数据",
       "path": "wiki/ai-infrastructure/120-metrics.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Logs",
+      "zh": "日志",
+      "path": "wiki/ai-infrastructure/121-logs.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Distributed Tracing",
+      "zh": "分布式链路追踪",
+      "path": "wiki/ai-infrastructure/122-distributed-tracing.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "OpenTelemetry",
+      "zh": "开放遥测",
+      "path": "wiki/ai-infrastructure/123-opentelemetry.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Prometheus",
+      "zh": "Prometheus 监控系统",
+      "path": "wiki/ai-infrastructure/124-prometheus.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Grafana",
+      "zh": "Grafana 可视化平台",
+      "path": "wiki/ai-infrastructure/125-grafana.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Alerting",
+      "zh": "告警",
+      "path": "wiki/ai-infrastructure/126-alerting.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Load Testing",
+      "zh": "负载测试",
+      "path": "wiki/ai-infrastructure/127-load-testing.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 7,
+      "en": "Chaos Engineering",
+      "zh": "混沌工程",
+      "path": "wiki/ai-infrastructure/128-chaos-engineering.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Total Cost of Ownership",
+      "zh": "总体拥有成本",
+      "path": "wiki/ai-infrastructure/129-total-cost-of-ownership.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Capital Expenditure",
+      "zh": "资本性支出",
+      "path": "wiki/ai-infrastructure/130-capital-expenditure.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Operating Expenditure",
+      "zh": "运营性支出",
+      "path": "wiki/ai-infrastructure/131-operating-expenditure.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "GPU Utilization",
+      "zh": "GPU 利用率",
+      "path": "wiki/ai-infrastructure/132-gpu-utilization.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "GPU Memory Utilization",
+      "zh": "显存利用率",
+      "path": "wiki/ai-infrastructure/133-gpu-memory-utilization.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Compute Efficiency",
+      "zh": "计算效率",
+      "path": "wiki/ai-infrastructure/134-compute-efficiency.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Energy per Token",
+      "zh": "每词元能耗",
+      "path": "wiki/ai-infrastructure/135-energy-per-token.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Cost per Million Tokens",
+      "zh": "每百万词元成本",
+      "path": "wiki/ai-infrastructure/136-cost-per-million-tokens.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Workload Consolidation",
+      "zh": "工作负载整合",
+      "path": "wiki/ai-infrastructure/137-workload-consolidation.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Multi-Tenancy",
+      "zh": "多租户",
+      "path": "wiki/ai-infrastructure/138-multi-tenancy.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Capacity Planning",
+      "zh": "容量规划",
+      "path": "wiki/ai-infrastructure/139-capacity-planning.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Autoscaling",
+      "zh": "自动扩缩容",
+      "path": "wiki/ai-infrastructure/140-autoscaling.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Spot Instance",
+      "zh": "竞价实例",
+      "path": "wiki/ai-infrastructure/141-spot-instance.md"
+    },
+    {
+      "category": "ai-infrastructure",
+      "chapter": 8,
+      "en": "Reserved Instance",
+      "zh": "预留实例",
+      "path": "wiki/ai-infrastructure/142-reserved-instance.md"
     }
   ]
 }
