@@ -74,7 +74,7 @@ class AIAgentsBatch06Tests(unittest.TestCase):
         self.assertEqual(50/5,10)
         self.assertEqual(4/5,.8)
         self.assertEqual(4/10,.4)
-        self.assertEqual(5*(.4+.2),3)
+        self.assertAlmostEqual(5*(.4+.2),3)
         self.assertEqual(80-5-3,72)
         self.assertEqual(1+math.ceil((1000-300)/(300-50)),4)
         self.assertEqual(100*3,300)
