@@ -977,7 +977,7 @@
         "上下文、记忆与状态",
         "检索与知识增强"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 101,
@@ -985,8 +985,8 @@
           "zh": "记忆写入",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/101-memory-write.md"
         },
         {
           "no": 102,
@@ -994,8 +994,8 @@
           "zh": "记忆巩固",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/102-memory-consolidation.md"
         },
         {
           "no": 103,
@@ -1003,8 +1003,8 @@
           "zh": "记忆遗忘",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/103-memory-forgetting.md"
         },
         {
           "no": 104,
@@ -1012,8 +1012,8 @@
           "zh": "状态快照",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/104-state-snapshot.md"
         },
         {
           "no": 105,
@@ -1021,8 +1021,8 @@
           "zh": "状态恢复",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/105-state-restoration.md"
         },
         {
           "no": 106,
@@ -1030,8 +1030,8 @@
           "zh": "用户偏好",
           "abbr": "",
           "topic": "上下文、记忆与状态",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/106-user-preference.md"
         },
         {
           "no": 107,
@@ -1039,8 +1039,8 @@
           "zh": "检索增强生成",
           "abbr": "RAG",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/107-retrieval-augmented-generation.md"
         },
         {
           "no": 108,
@@ -1048,8 +1048,8 @@
           "zh": "智能体式检索",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/108-agentic-retrieval.md"
         },
         {
           "no": 109,
@@ -1057,8 +1057,8 @@
           "zh": "知识库",
           "abbr": "KB",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/109-knowledge-base.md"
         },
         {
           "no": 110,
@@ -1066,8 +1066,8 @@
           "zh": "文档摄取",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/110-document-ingestion.md"
         },
         {
           "no": 111,
@@ -1075,8 +1075,8 @@
           "zh": "文本切分",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/111-chunking.md"
         },
         {
           "no": 112,
@@ -1084,8 +1084,8 @@
           "zh": "文本块",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/112-chunk.md"
         },
         {
           "no": 113,
@@ -1093,8 +1093,8 @@
           "zh": "嵌入向量",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/113-embedding.md"
         },
         {
           "no": 114,
@@ -1102,8 +1102,8 @@
           "zh": "向量数据库",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/114-vector-database.md"
         },
         {
           "no": 115,
@@ -1111,8 +1111,8 @@
           "zh": "向量检索",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/115-vector-search.md"
         },
         {
           "no": 116,
@@ -1120,8 +1120,8 @@
           "zh": "语义检索",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/116-semantic-search.md"
         },
         {
           "no": 117,
@@ -1129,8 +1129,8 @@
           "zh": "关键词检索",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/117-keyword-search.md"
         },
         {
           "no": 118,
@@ -1138,8 +1138,8 @@
           "zh": "混合检索",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/118-hybrid-search.md"
         },
         {
           "no": 119,
@@ -1147,8 +1147,8 @@
           "zh": "重排序",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/119-reranking.md"
         },
         {
           "no": 120,
@@ -1156,8 +1156,8 @@
           "zh": "查询改写",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/120-query-rewriting.md"
         }
       ]
     },

@@ -20,7 +20,7 @@
 | 03 | 041–060 | 模型能力与推理 / 任务规划与决策 | 20 | drafted_in_pr |
 | 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | drafted_in_pr |
 | 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | drafted_in_pr |
-| 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | planned |
+| 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | drafted_in_pr |
 | 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | planned |
 | 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | planned |
 | 09 | 161–180 | 多智能体协作 / MCP：模型上下文协议 | 20 | planned |
@@ -167,6 +167,33 @@
 98. [Semantic Memory（语义记忆）](098-semantic-memory.md)
 99. [Procedural Memory（程序性记忆）](099-procedural-memory.md)
 100. [Memory Retrieval（记忆检索）](100-memory-retrieval.md)
+
+## 第 6 批知识路径
+
+[第 6 批：Memory Lifecycle / 状态恢复 → RAG 检索链路](BATCH-06.md)：从长期记忆的写入、巩固、遗忘与恢复，过渡到知识库摄取、切分、Embedding、向量/关键词/混合检索、重排序和查询改写。
+
+### 已完成候审稿（101–120）
+
+101. [Memory Write（记忆写入）](101-memory-write.md)
+102. [Memory Consolidation（记忆巩固）](102-memory-consolidation.md)
+103. [Memory Forgetting（记忆遗忘）](103-memory-forgetting.md)
+104. [State Snapshot（状态快照）](104-state-snapshot.md)
+105. [State Restoration（状态恢复）](105-state-restoration.md)
+106. [User Preference（用户偏好）](106-user-preference.md)
+107. [Retrieval-Augmented Generation (RAG)（检索增强生成）](107-retrieval-augmented-generation.md)
+108. [Agentic Retrieval（智能体式检索）](108-agentic-retrieval.md)
+109. [Knowledge Base (KB)（知识库）](109-knowledge-base.md)
+110. [Document Ingestion（文档摄取）](110-document-ingestion.md)
+111. [Chunking（文本切分）](111-chunking.md)
+112. [Chunk（文本块）](112-chunk.md)
+113. [Embedding（嵌入向量）](113-embedding.md)
+114. [Vector Database（向量数据库）](114-vector-database.md)
+115. [Vector Search（向量检索）](115-vector-search.md)
+116. [Semantic Search（语义检索）](116-semantic-search.md)
+117. [Keyword Search（关键词检索）](117-keyword-search.md)
+118. [Hybrid Search（混合检索）](118-hybrid-search.md)
+119. [Reranking（重排序）](119-reranking.md)
+120. [Query Rewriting（查询改写）](120-query-rewriting.md)
 
 ## 人工审稿要求
 
