@@ -1170,7 +1170,7 @@
         "检索与知识增强",
         "工作流与编排模式"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 121,
@@ -1178,8 +1178,8 @@
           "zh": "多跳检索",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/121-multi-hop-retrieval.md"
         },
         {
           "no": 122,
@@ -1187,8 +1187,8 @@
           "zh": "知识图谱",
           "abbr": "KG",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/122-knowledge-graph.md"
         },
         {
           "no": 123,
@@ -1196,8 +1196,8 @@
           "zh": "来源归因",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/123-source-attribution.md"
         },
         {
           "no": 124,
@@ -1205,8 +1205,8 @@
           "zh": "证据链",
           "abbr": "",
           "topic": "检索与知识增强",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/124-evidence-chain.md"
         },
         {
           "no": 125,
@@ -1214,8 +1214,8 @@
           "zh": "工作流",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/125-workflow.md"
         },
         {
           "no": 126,
@@ -1223,8 +1223,8 @@
           "zh": "智能体编排",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/126-agent-orchestration.md"
         },
         {
           "no": 127,
@@ -1232,8 +1232,8 @@
           "zh": "链式处理",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/127-chaining.md"
         },
         {
           "no": 128,
@@ -1241,8 +1241,8 @@
           "zh": "提示链",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/128-prompt-chaining.md"
         },
         {
           "no": 129,
@@ -1250,8 +1250,8 @@
           "zh": "路由模式",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/129-routing-pattern.md"
         },
         {
           "no": 130,
@@ -1259,8 +1259,8 @@
           "zh": "并行化",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/130-parallelization.md"
         },
         {
           "no": 131,
@@ -1268,8 +1268,8 @@
           "zh": "汇总模式",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/131-aggregation-pattern.md"
         },
         {
           "no": 132,
@@ -1277,8 +1277,8 @@
           "zh": "编排者—工作者模式",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/132-orchestrator-workers.md"
         },
         {
           "no": 133,
@@ -1286,8 +1286,8 @@
           "zh": "评估者—优化者模式",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/133-evaluator-optimizer.md"
         },
         {
           "no": 134,
@@ -1295,8 +1295,8 @@
           "zh": "计划后执行",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/134-plan-and-execute.md"
         },
         {
           "no": 135,
@@ -1304,8 +1304,8 @@
           "zh": "反应式执行",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/135-reactive-execution.md"
         },
         {
           "no": 136,
@@ -1313,8 +1313,8 @@
           "zh": "顺序执行",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/136-sequential-execution.md"
         },
         {
           "no": 137,
@@ -1322,8 +1322,8 @@
           "zh": "条件分支",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/137-conditional-branch.md"
         },
         {
           "no": 138,
@@ -1331,8 +1331,8 @@
           "zh": "控制流",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/138-control-flow.md"
         },
         {
           "no": 139,
@@ -1340,8 +1340,8 @@
           "zh": "数据流",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/139-data-flow.md"
         },
         {
           "no": 140,
@@ -1349,8 +1349,8 @@
           "zh": "有向无环图",
           "abbr": "DAG",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/140-directed-acyclic-graph.md"
         }
       ]
     },
@@ -1363,7 +1363,7 @@
         "工作流与编排模式",
         "多智能体协作"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 141,
@@ -1371,8 +1371,8 @@
           "zh": "状态图",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/141-state-graph.md"
         },
         {
           "no": 142,
@@ -1380,8 +1380,8 @@
           "zh": "循环节点",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/142-loop-node.md"
         },
         {
           "no": 143,
@@ -1389,8 +1389,8 @@
           "zh": "扇出",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/143-fan-out.md"
         },
         {
           "no": 144,
@@ -1398,8 +1398,8 @@
           "zh": "扇入",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/144-fan-in.md"
         },
         {
           "no": 145,
@@ -1407,8 +1407,8 @@
           "zh": "门控检查",
           "abbr": "",
           "topic": "工作流与编排模式",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/145-gate-check.md"
         },
         {
           "no": 146,
@@ -1416,8 +1416,8 @@
           "zh": "多智能体系统",
           "abbr": "MAS",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/146-multi-agent-system.md"
         },
         {
           "no": 147,
@@ -1425,8 +1425,8 @@
           "zh": "专业智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/147-specialist-agent.md"
         },
         {
           "no": 148,
@@ -1434,8 +1434,8 @@
           "zh": "通用智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/148-generalist-agent.md"
         },
         {
           "no": 149,
@@ -1443,8 +1443,8 @@
           "zh": "管理者智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/149-manager-agent.md"
         },
         {
           "no": 150,
@@ -1452,8 +1452,8 @@
           "zh": "协调者智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/150-coordinator-agent.md"
         },
         {
           "no": 151,

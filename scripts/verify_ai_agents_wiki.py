@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the AI Agents glossary-to-Wiki mapping and 20-term PR batch."""
+"""Validate the AI Agents glossary-to-Wiki mapping, including partial batches."""
 import json
 import re
 from pathlib import Path
@@ -55,6 +55,7 @@ def main():
         t = b["terms"][(pos - 1) % 20]
         assert t["no"] == pos and t["en"] == r["en"] and t["zh"] == r["zh"]
         if item["ready"]:
+            assert t["status"] in ("drafted_in_pr", "merged"), f"ready term without draft status: {pos}"
             name = article_filename(pos, r["en"])
             assert item["file"] == name
             assert t["wiki"] == f"wiki/ai-agents/{name}"
@@ -80,8 +81,17 @@ def main():
         start, end = i * 20 + 1, min((i + 1) * 20, len(rows))
         assert b["batch"] == i + 1 and b["start"] == start and b["end"] == end
         assert b["count"] == end - start + 1 and len(b["terms"]) == b["count"]
-        expected = "drafted_in_pr" if end <= len(ready) else "planned"
-        assert b["status"] in (expected, "merged") if expected == "drafted_in_pr" else b["status"] == "planned"
+        # Preserve original 20-term batch boundaries when a new authoring
+        # increment partially completes the next batch (e.g. 121–150).
+        expected_ready = max(0, min(len(ready) - start + 1, b["count"]))
+        actual_ready = sum(t["status"] in ("drafted_in_pr", "merged") for t in b["terms"])
+        assert actual_ready == expected_ready, f"batch {i + 1} drafted prefix mismatch"
+        if expected_ready == 0:
+            assert b["status"] == "planned"
+        elif expected_ready == b["count"]:
+            assert b["status"] in ("drafted_in_pr", "merged")
+        else:
+            assert b["status"] == "drafted_in_pr"  # Partially written batch, not merged
     from build_wiki_index import check_index
     check_index(ROOT)
     index = json.loads((ROOT / "docs/data/wiki-index.json").read_text(encoding="utf-8"))
