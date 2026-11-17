@@ -1291,7 +1291,7 @@
         "可靠性与可观测性",
         "成本、能效与资源治理"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 121,
@@ -1300,8 +1300,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/121-logs.md"
         },
         {
           "no": 122,
@@ -1310,8 +1310,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/122-distributed-tracing.md"
         },
         {
           "no": 123,
@@ -1320,8 +1320,8 @@
           "abbr": "OTel",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/123-opentelemetry.md"
         },
         {
           "no": 124,
@@ -1330,8 +1330,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/124-prometheus.md"
         },
         {
           "no": 125,
@@ -1340,8 +1340,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/125-grafana.md"
         },
         {
           "no": 126,
@@ -1350,8 +1350,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/126-alerting.md"
         },
         {
           "no": 127,
@@ -1360,8 +1360,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/127-load-testing.md"
         },
         {
           "no": 128,
@@ -1370,8 +1370,8 @@
           "abbr": "",
           "topic": "可靠性与可观测性",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/128-chaos-engineering.md"
         },
         {
           "no": 129,
@@ -1380,8 +1380,8 @@
           "abbr": "TCO",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/129-total-cost-of-ownership.md"
         },
         {
           "no": 130,
@@ -1390,8 +1390,8 @@
           "abbr": "CapEx",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/130-capital-expenditure.md"
         },
         {
           "no": 131,
@@ -1400,8 +1400,8 @@
           "abbr": "OpEx",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/131-operating-expenditure.md"
         },
         {
           "no": 132,
@@ -1410,8 +1410,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/132-gpu-utilization.md"
         },
         {
           "no": 133,
@@ -1420,8 +1420,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/133-gpu-memory-utilization.md"
         },
         {
           "no": 134,
@@ -1430,8 +1430,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/134-compute-efficiency.md"
         },
         {
           "no": 135,
@@ -1440,8 +1440,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/135-energy-per-token.md"
         },
         {
           "no": 136,
@@ -1450,8 +1450,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/136-cost-per-million-tokens.md"
         },
         {
           "no": 137,
@@ -1460,8 +1460,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/137-workload-consolidation.md"
         },
         {
           "no": 138,
@@ -1470,8 +1470,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/138-multi-tenancy.md"
         },
         {
           "no": 139,
@@ -1480,8 +1480,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/139-capacity-planning.md"
         },
         {
           "no": 140,
@@ -1490,8 +1490,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 7,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/140-autoscaling.md"
         }
       ]
     },
@@ -1503,7 +1503,7 @@
       "topics": [
         "成本、能效与资源治理"
       ],
-      "status": "planned",
+      "status": "merged",
       "terms": [
         {
           "no": 141,
@@ -1512,8 +1512,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 8,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/141-spot-instance.md"
         },
         {
           "no": 142,
@@ -1522,8 +1522,8 @@
           "abbr": "",
           "topic": "成本、能效与资源治理",
           "batch": 8,
-          "status": "planned",
-          "wiki": null
+          "status": "merged",
+          "wiki": "wiki/ai-infrastructure/142-reserved-instance.md"
         }
       ]
     }

@@ -34,6 +34,8 @@ DOCUMENTS = (
     "wiki/ai-infrastructure/BATCH-04.md",
     "wiki/ai-infrastructure/BATCH-05.md",
     "wiki/ai-infrastructure/BATCH-06.md",
+    "wiki/ai-infrastructure/BATCH-07.md",
+    "wiki/ai-infrastructure/BATCH-08.md",
     "docs/wiki/ai-infrastructure/README.md",
     "docs/wiki/ai-infrastructure/BATCH-02.md",
 )
