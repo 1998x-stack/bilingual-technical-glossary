@@ -3005,8 +3005,8 @@
           "zh": "运行手册",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/311-runbook.md"
         },
         {
           "no": 312,
@@ -3014,8 +3014,8 @@
           "zh": "智能体开发工具包",
           "abbr": "ADK",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/312-agent-development-kit.md"
         },
         {
           "no": 313,
@@ -3023,8 +3023,8 @@
           "zh": "软件开发工具包",
           "abbr": "SDK",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/313-software-development-kit.md"
         },
         {
           "no": 314,
@@ -3032,8 +3032,8 @@
           "zh": "技能包",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/314-skill-package.md"
         },
         {
           "no": 315,
@@ -3041,8 +3041,8 @@
           "zh": "技能发现",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/315-skill-discovery.md"
         },
         {
           "no": 316,
@@ -3050,8 +3050,8 @@
           "zh": "技能调用",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/316-skill-invocation.md"
         },
         {
           "no": 317,
@@ -3059,8 +3059,8 @@
           "zh": "指令文件",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/317-instruction-file.md"
         },
         {
           "no": 318,
@@ -3068,8 +3068,8 @@
           "zh": "工具清单",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/318-tool-manifest.md"
         },
         {
           "no": 319,
@@ -3077,8 +3077,8 @@
           "zh": "模式定义",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/319-schema-definition.md"
         },
         {
           "no": 320,
@@ -3086,8 +3086,8 @@
           "zh": "JSON 模式",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/320-json-schema.md"
         }
       ]
     },

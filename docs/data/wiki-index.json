@@ -3164,6 +3164,76 @@
       "en": "Alerting",
       "zh": "告警",
       "path": "wiki/ai-agents/310-alerting.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Runbook",
+      "zh": "运行手册",
+      "path": "wiki/ai-agents/311-runbook.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Agent Development Kit (ADK)",
+      "zh": "智能体开发工具包",
+      "path": "wiki/ai-agents/312-agent-development-kit.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Software Development Kit (SDK)",
+      "zh": "软件开发工具包",
+      "path": "wiki/ai-agents/313-software-development-kit.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Skill Package",
+      "zh": "技能包",
+      "path": "wiki/ai-agents/314-skill-package.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Skill Discovery",
+      "zh": "技能发现",
+      "path": "wiki/ai-agents/315-skill-discovery.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Skill Invocation",
+      "zh": "技能调用",
+      "path": "wiki/ai-agents/316-skill-invocation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Instruction File",
+      "zh": "指令文件",
+      "path": "wiki/ai-agents/317-instruction-file.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Tool Manifest",
+      "zh": "工具清单",
+      "path": "wiki/ai-agents/318-tool-manifest.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Schema Definition",
+      "zh": "模式定义",
+      "path": "wiki/ai-agents/319-schema-definition.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "JSON Schema",
+      "zh": "JSON 模式",
+      "path": "wiki/ai-agents/320-json-schema.md"
     }
   ]
 }

@@ -30,7 +30,7 @@
 | 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | drafted_in_pr |
 | 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | drafted_in_pr |
 | 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | drafted_in_pr |
-| 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | 部分 drafted_in_pr（301–310），311–320 planned |
+| 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | drafted_in_pr |
 | 17 | 321–332 | 开发实践与生态术语 | 12 | planned |
 
 ## 第 1 批知识路径
@@ -450,3 +450,18 @@
 308. [Service Level Objective (SLO)（服务级别目标）](308-service-level-objective.md)
 309. [Service Level Agreement (SLA)（服务级别协议）](309-service-level-agreement.md)
 310. [Alerting（告警）](310-alerting.md)
+
+## 本轮新增候审稿：311–320（10 篇）
+
+完成源 Batch 16 的全部 20 篇（301–320）。原始 Batch 17 的 321–332 仍 planned；目前 320/332 均为堆叠 PR 候审稿，非 main/Pages 已正式部署或完成专家审稿。
+
+311. [Runbook（运行手册）](311-runbook.md)
+312. [Agent Development Kit (ADK)（智能体开发工具包）](312-agent-development-kit.md)
+313. [Software Development Kit (SDK)（软件开发工具包）](313-software-development-kit.md)
+314. [Skill Package（技能包）](314-skill-package.md)
+315. [Skill Discovery（技能发现）](315-skill-discovery.md)
+316. [Skill Invocation（技能调用）](316-skill-invocation.md)
+317. [Instruction File（指令文件）](317-instruction-file.md)
+318. [Tool Manifest（工具清单）](318-tool-manifest.md)
+319. [Schema Definition（模式定义）](319-schema-definition.md)
+320. [JSON Schema（JSON 模式）](320-json-schema.md)
