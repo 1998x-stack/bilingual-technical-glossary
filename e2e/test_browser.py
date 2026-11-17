@@ -226,6 +226,19 @@ class ExplorerBrowserTests(unittest.TestCase):
         expect(self.page.locator("#wiki-article")).to_contain_text("Task")
         self.assertNotIn("Batch", self.page.locator("main").inner_text())
 
+    def test_new_agent_evaluation_faithfulness_article(self):
+        self.home("ai-agents")
+        self.page.locator("#search-input").fill("Faithfulness")
+        row=self.page.locator("#terms-body tr").first
+        expect(row.locator("a.term-english")).to_have_text("Faithfulness")
+        row.locator("a.term-english").click()
+        expect(self.page.locator("#detail-state")).to_have_text("专业解析", timeout=15000)
+        expect(self.page.locator("#wiki-article")).to_be_visible(timeout=15000)
+        expect(self.page.get_by_role("heading", name=re.compile("技术原理"), level=2)).to_be_visible()
+        expect(self.page.locator("#wiki-article")).to_contain_text("Ragas")
+        expect(self.page.locator("#wiki-article")).to_contain_text("Factual Accuracy")
+        self.assertNotIn("Batch", self.page.locator("main").inner_text())
+
     def test_accessible_landmarks_and_focusable_article_navigation(self):
         self.home("ai-infrastructure")
         expect(self.page.get_by_role("main")).to_have_count(1)
