@@ -962,6 +962,126 @@
     {
       "path": "wiki/ai-agents/240-factual-accuracy.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/241-robustness.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/242-reproducibility.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/243-llm-as-a-judge.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/244-ground-truth.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/245-human-annotation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/246-regression-test.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/247-scenario-based-evaluation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/248-gaia.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/249-swe-bench.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/250-webarena.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/251-osworld.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/252-tau-bench.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/253-berkeley-function-calling-leaderboard.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/254-guardrail.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/255-policy-constraint.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/256-principle-of-least-privilege.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/257-permission-scope.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/258-access-control.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/259-authentication.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/260-authorization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/261-sandbox.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/262-safety-confirmation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/263-human-oversight.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/264-refusal.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/265-safe-fallback.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/266-audit-trail.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/267-security-boundary.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/268-trust-boundary.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/269-data-minimization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/270-prompt-injection.md",
+      "status": "pending"
     }
   ]
 }

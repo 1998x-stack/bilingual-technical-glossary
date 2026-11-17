@@ -27,8 +27,8 @@
 | 10 | 181–200 | MCP：模型上下文协议 / A2A：智能体间协议 | 20 | drafted_in_pr |
 | 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | drafted_in_pr |
 | 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | drafted_in_pr |
-| 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | planned |
-| 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | planned |
+| 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | drafted_in_pr |
+| 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | 部分 drafted_in_pr（261–270），271–280 planned |
 | 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | planned |
 | 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | planned |
 | 17 | 321–332 | 开发实践与生态术语 | 12 | planned |
@@ -356,6 +356,46 @@
 238. [Process Evaluation（过程评测）](238-process-evaluation.md)
 239. [Faithfulness（忠实度）](239-faithfulness.md)
 240. [Factual Accuracy（事实准确性）](240-factual-accuracy.md)
+
+## 第 13 批（241–260 · 完整 20 篇）
+
+[第 13 批学习路径：Agent Benchmark → Guardrail → PoLP/AuthN/AuthZ](BATCH-13.md)：覆盖 GAIA、SWE-bench、WebArena、OSWorld、τ-bench、BFCL V4 以及模型评分器的偏差控制、执行层授权。
+
+241. [Robustness（鲁棒性）](241-robustness.md)
+242. [Reproducibility（可复现性）](242-reproducibility.md)
+243. [LLM-as-a-Judge（评判模型）](243-llm-as-a-judge.md)
+244. [Ground Truth（黄金答案）](244-ground-truth.md)
+245. [Human Annotation（人工标注）](245-human-annotation.md)
+246. [Regression Test（回归测试）](246-regression-test.md)
+247. [Scenario-based Evaluation（基于场景的评测）](247-scenario-based-evaluation.md)
+248. [GAIA（GAIA 基准）](248-gaia.md)
+249. [SWE-bench（SWE-bench）](249-swe-bench.md)
+250. [WebArena（WebArena）](250-webarena.md)
+251. [OSWorld（OSWorld）](251-osworld.md)
+252. [tau-bench（τ-bench）](252-tau-bench.md)
+253. [Berkeley Function Calling Leaderboard (BFCL)（伯克利函数调用榜单）](253-berkeley-function-calling-leaderboard.md)
+254. [Guardrail（护栏）](254-guardrail.md)
+255. [Policy Constraint（策略约束）](255-policy-constraint.md)
+256. [Principle of Least Privilege (PoLP)（最小权限原则）](256-principle-of-least-privilege.md)
+257. [Permission Scope（权限范围）](257-permission-scope.md)
+258. [Access Control（访问控制）](258-access-control.md)
+259. [Authentication (AuthN)（身份认证）](259-authentication.md)
+260. [Authorization (AuthZ)（访问授权）](260-authorization.md)
+
+## 第 14 批（261–280 · 已完成前 10 篇）
+
+[第 14 批学习路径：Sandbox → Trust Boundary → Prompt Injection](BATCH-14.md)：本轮完成 261–270；**271–280 仍 planned，不应标记 ready**。第 14 批继续保留 20 条/批的原始计划。
+
+261. [Sandbox（沙箱）](261-sandbox.md)
+262. [Safety Confirmation（安全确认）](262-safety-confirmation.md)
+263. [Human Oversight（人类监督）](263-human-oversight.md)
+264. [Refusal（拒绝执行）](264-refusal.md)
+265. [Safe Fallback（安全回退）](265-safe-fallback.md)
+266. [Audit Trail（审计跟踪）](266-audit-trail.md)
+267. [Security Boundary（安全边界）](267-security-boundary.md)
+268. [Trust Boundary（信任边界）](268-trust-boundary.md)
+269. [Data Minimization（数据最小化）](269-data-minimization.md)
+270. [Prompt Injection（提示词注入）](270-prompt-injection.md)
 
 ## 人工审稿要求
 

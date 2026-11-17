@@ -2328,7 +2328,7 @@
         "评测体系与常见基准",
         "安全防护与治理"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 241,
@@ -2336,8 +2336,8 @@
           "zh": "鲁棒性",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/241-robustness.md"
         },
         {
           "no": 242,
@@ -2345,8 +2345,8 @@
           "zh": "可复现性",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/242-reproducibility.md"
         },
         {
           "no": 243,
@@ -2354,8 +2354,8 @@
           "zh": "评判模型",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/243-llm-as-a-judge.md"
         },
         {
           "no": 244,
@@ -2363,8 +2363,8 @@
           "zh": "黄金答案",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/244-ground-truth.md"
         },
         {
           "no": 245,
@@ -2372,8 +2372,8 @@
           "zh": "人工标注",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/245-human-annotation.md"
         },
         {
           "no": 246,
@@ -2381,8 +2381,8 @@
           "zh": "回归测试",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/246-regression-test.md"
         },
         {
           "no": 247,
@@ -2390,8 +2390,8 @@
           "zh": "基于场景的评测",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/247-scenario-based-evaluation.md"
         },
         {
           "no": 248,
@@ -2399,8 +2399,8 @@
           "zh": "GAIA 基准",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/248-gaia.md"
         },
         {
           "no": 249,
@@ -2408,8 +2408,8 @@
           "zh": "SWE-bench",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/249-swe-bench.md"
         },
         {
           "no": 250,
@@ -2417,8 +2417,8 @@
           "zh": "WebArena",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/250-webarena.md"
         },
         {
           "no": 251,
@@ -2426,8 +2426,8 @@
           "zh": "OSWorld",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/251-osworld.md"
         },
         {
           "no": 252,
@@ -2435,8 +2435,8 @@
           "zh": "τ-bench",
           "abbr": "",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/252-tau-bench.md"
         },
         {
           "no": 253,
@@ -2444,8 +2444,8 @@
           "zh": "伯克利函数调用榜单",
           "abbr": "BFCL",
           "topic": "评测体系与常见基准",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/253-berkeley-function-calling-leaderboard.md"
         },
         {
           "no": 254,
@@ -2453,8 +2453,8 @@
           "zh": "护栏",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/254-guardrail.md"
         },
         {
           "no": 255,
@@ -2462,8 +2462,8 @@
           "zh": "策略约束",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/255-policy-constraint.md"
         },
         {
           "no": 256,
@@ -2471,8 +2471,8 @@
           "zh": "最小权限原则",
           "abbr": "PoLP",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/256-principle-of-least-privilege.md"
         },
         {
           "no": 257,
@@ -2480,8 +2480,8 @@
           "zh": "权限范围",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/257-permission-scope.md"
         },
         {
           "no": 258,
@@ -2489,8 +2489,8 @@
           "zh": "访问控制",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/258-access-control.md"
         },
         {
           "no": 259,
@@ -2498,8 +2498,8 @@
           "zh": "身份认证",
           "abbr": "AuthN",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/259-authentication.md"
         },
         {
           "no": 260,
@@ -2507,8 +2507,8 @@
           "zh": "访问授权",
           "abbr": "AuthZ",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/260-authorization.md"
         }
       ]
     },
@@ -2521,7 +2521,7 @@
         "安全防护与治理",
         "智能体攻击与风险"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 261,
@@ -2529,8 +2529,8 @@
           "zh": "沙箱",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/261-sandbox.md"
         },
         {
           "no": 262,
@@ -2538,8 +2538,8 @@
           "zh": "安全确认",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/262-safety-confirmation.md"
         },
         {
           "no": 263,
@@ -2547,8 +2547,8 @@
           "zh": "人类监督",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/263-human-oversight.md"
         },
         {
           "no": 264,
@@ -2556,8 +2556,8 @@
           "zh": "拒绝执行",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/264-refusal.md"
         },
         {
           "no": 265,
@@ -2565,8 +2565,8 @@
           "zh": "安全回退",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/265-safe-fallback.md"
         },
         {
           "no": 266,
@@ -2574,8 +2574,8 @@
           "zh": "审计跟踪",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/266-audit-trail.md"
         },
         {
           "no": 267,
@@ -2583,8 +2583,8 @@
           "zh": "安全边界",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/267-security-boundary.md"
         },
         {
           "no": 268,
@@ -2592,8 +2592,8 @@
           "zh": "信任边界",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/268-trust-boundary.md"
         },
         {
           "no": 269,
@@ -2601,8 +2601,8 @@
           "zh": "数据最小化",
           "abbr": "",
           "topic": "安全防护与治理",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/269-data-minimization.md"
         },
         {
           "no": 270,
@@ -2610,8 +2610,8 @@
           "zh": "提示词注入",
           "abbr": "",
           "topic": "智能体攻击与风险",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/270-prompt-injection.md"
         },
         {
           "no": 271,

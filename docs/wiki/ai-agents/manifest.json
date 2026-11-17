@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 240,
-  "readyArticles": 240,
+  "readyInPr": 270,
+  "readyArticles": 270,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -2430,8 +2430,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "241-robustness.md"
     },
     {
       "n": 242,
@@ -2440,8 +2440,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "242-reproducibility.md"
     },
     {
       "n": 243,
@@ -2450,8 +2450,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "243-llm-as-a-judge.md"
     },
     {
       "n": 244,
@@ -2460,8 +2460,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "244-ground-truth.md"
     },
     {
       "n": 245,
@@ -2470,8 +2470,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "245-human-annotation.md"
     },
     {
       "n": 246,
@@ -2480,8 +2480,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "246-regression-test.md"
     },
     {
       "n": 247,
@@ -2490,8 +2490,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "247-scenario-based-evaluation.md"
     },
     {
       "n": 248,
@@ -2500,8 +2500,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "248-gaia.md"
     },
     {
       "n": 249,
@@ -2510,8 +2510,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "249-swe-bench.md"
     },
     {
       "n": 250,
@@ -2520,8 +2520,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "250-webarena.md"
     },
     {
       "n": 251,
@@ -2530,8 +2530,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "251-osworld.md"
     },
     {
       "n": 252,
@@ -2540,8 +2540,8 @@
       "abbr": "",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "252-tau-bench.md"
     },
     {
       "n": 253,
@@ -2550,8 +2550,8 @@
       "abbr": "BFCL",
       "topic": "评测体系与常见基准",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "253-berkeley-function-calling-leaderboard.md"
     },
     {
       "n": 254,
@@ -2560,8 +2560,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "254-guardrail.md"
     },
     {
       "n": 255,
@@ -2570,8 +2570,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "255-policy-constraint.md"
     },
     {
       "n": 256,
@@ -2580,8 +2580,8 @@
       "abbr": "PoLP",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "256-principle-of-least-privilege.md"
     },
     {
       "n": 257,
@@ -2590,8 +2590,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "257-permission-scope.md"
     },
     {
       "n": 258,
@@ -2600,8 +2600,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "258-access-control.md"
     },
     {
       "n": 259,
@@ -2610,8 +2610,8 @@
       "abbr": "AuthN",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "259-authentication.md"
     },
     {
       "n": 260,
@@ -2620,8 +2620,8 @@
       "abbr": "AuthZ",
       "topic": "安全防护与治理",
       "batch": 13,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "260-authorization.md"
     },
     {
       "n": 261,
@@ -2630,8 +2630,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "261-sandbox.md"
     },
     {
       "n": 262,
@@ -2640,8 +2640,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "262-safety-confirmation.md"
     },
     {
       "n": 263,
@@ -2650,8 +2650,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "263-human-oversight.md"
     },
     {
       "n": 264,
@@ -2660,8 +2660,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "264-refusal.md"
     },
     {
       "n": 265,
@@ -2670,8 +2670,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "265-safe-fallback.md"
     },
     {
       "n": 266,
@@ -2680,8 +2680,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "266-audit-trail.md"
     },
     {
       "n": 267,
@@ -2690,8 +2690,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "267-security-boundary.md"
     },
     {
       "n": 268,
@@ -2700,8 +2700,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "268-trust-boundary.md"
     },
     {
       "n": 269,
@@ -2710,8 +2710,8 @@
       "abbr": "",
       "topic": "安全防护与治理",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "269-data-minimization.md"
     },
     {
       "n": 270,
@@ -2720,8 +2720,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "270-prompt-injection.md"
     },
     {
       "n": 271,
