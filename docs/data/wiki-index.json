@@ -1694,6 +1694,146 @@
       "en": "Memory Retrieval",
       "zh": "记忆检索",
       "path": "wiki/ai-agents/100-memory-retrieval.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 5,
+      "en": "Memory Write",
+      "zh": "记忆写入",
+      "path": "wiki/ai-agents/101-memory-write.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 5,
+      "en": "Memory Consolidation",
+      "zh": "记忆巩固",
+      "path": "wiki/ai-agents/102-memory-consolidation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 5,
+      "en": "Memory Forgetting",
+      "zh": "记忆遗忘",
+      "path": "wiki/ai-agents/103-memory-forgetting.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 5,
+      "en": "State Snapshot",
+      "zh": "状态快照",
+      "path": "wiki/ai-agents/104-state-snapshot.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 5,
+      "en": "State Restoration",
+      "zh": "状态恢复",
+      "path": "wiki/ai-agents/105-state-restoration.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 5,
+      "en": "User Preference",
+      "zh": "用户偏好",
+      "path": "wiki/ai-agents/106-user-preference.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Retrieval-Augmented Generation (RAG)",
+      "zh": "检索增强生成",
+      "path": "wiki/ai-agents/107-retrieval-augmented-generation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Agentic Retrieval",
+      "zh": "智能体式检索",
+      "path": "wiki/ai-agents/108-agentic-retrieval.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Knowledge Base (KB)",
+      "zh": "知识库",
+      "path": "wiki/ai-agents/109-knowledge-base.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Document Ingestion",
+      "zh": "文档摄取",
+      "path": "wiki/ai-agents/110-document-ingestion.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Chunking",
+      "zh": "文本切分",
+      "path": "wiki/ai-agents/111-chunking.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Chunk",
+      "zh": "文本块",
+      "path": "wiki/ai-agents/112-chunk.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Embedding",
+      "zh": "嵌入向量",
+      "path": "wiki/ai-agents/113-embedding.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Vector Database",
+      "zh": "向量数据库",
+      "path": "wiki/ai-agents/114-vector-database.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Vector Search",
+      "zh": "向量检索",
+      "path": "wiki/ai-agents/115-vector-search.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Semantic Search",
+      "zh": "语义检索",
+      "path": "wiki/ai-agents/116-semantic-search.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Keyword Search",
+      "zh": "关键词检索",
+      "path": "wiki/ai-agents/117-keyword-search.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Hybrid Search",
+      "zh": "混合检索",
+      "path": "wiki/ai-agents/118-hybrid-search.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Reranking",
+      "zh": "重排序",
+      "path": "wiki/ai-agents/119-reranking.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 6,
+      "en": "Query Rewriting",
+      "zh": "查询改写",
+      "path": "wiki/ai-agents/120-query-rewriting.md"
     }
   ]
 }
