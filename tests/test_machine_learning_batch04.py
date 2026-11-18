@@ -64,7 +64,7 @@ class MLBatch04Tests(unittest.TestCase):
         self.assertAlmostEqual((99 / 100) ** 100, .366032341, places=6)  # 080 OOB
         self.assertEqual((2 + .25 * (6 - 2), 4 + .25 * (8 - 4)), (3, 5)) # 081 SMOTE
         self.assertEqual(sum([0, 1, 0, 1, 0]) / 5, .4)       # 083 risk
-        self.assertEqual(.75 * .1 + .25 * .3, .15)           # 084 expected
+        self.assertAlmostEqual(.75 * .1 + .25 * .3, .15)           # 084 expected
         self.assertEqual(3.5 - 2, 1.5)                       # 088 gap
         self.assertEqual((12 - 10) ** 2 + 3 + 1, 8)          # 091 bias variance
         self.assertEqual(max(3 - 1, 0), 2)                   # 094 L1 threshold
