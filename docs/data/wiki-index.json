@@ -2884,6 +2884,146 @@
       "en": "Prompt Injection",
       "zh": "提示词注入",
       "path": "wiki/ai-agents/270-prompt-injection.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Indirect Prompt Injection",
+      "zh": "间接提示词注入",
+      "path": "wiki/ai-agents/271-indirect-prompt-injection.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Tool-output Poisoning",
+      "zh": "工具输出投毒",
+      "path": "wiki/ai-agents/272-tool-output-poisoning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Memory Poisoning",
+      "zh": "记忆投毒",
+      "path": "wiki/ai-agents/273-memory-poisoning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Goal Hijacking",
+      "zh": "目标劫持",
+      "path": "wiki/ai-agents/274-goal-hijacking.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Tool Misuse",
+      "zh": "工具滥用",
+      "path": "wiki/ai-agents/275-tool-misuse.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Privilege Escalation",
+      "zh": "权限提升",
+      "path": "wiki/ai-agents/276-privilege-escalation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Data Exfiltration",
+      "zh": "数据外泄",
+      "path": "wiki/ai-agents/277-data-exfiltration.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Sensitive Data Exposure",
+      "zh": "敏感信息暴露",
+      "path": "wiki/ai-agents/278-sensitive-data-exposure.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Unauthorized Action",
+      "zh": "越权操作",
+      "path": "wiki/ai-agents/279-unauthorized-action.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Excessive Autonomy",
+      "zh": "过度自主性",
+      "path": "wiki/ai-agents/280-excessive-autonomy.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Excessive Agency",
+      "zh": "过度代理权限",
+      "path": "wiki/ai-agents/281-excessive-agency.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Supply Chain Attack",
+      "zh": "供应链攻击",
+      "path": "wiki/ai-agents/282-supply-chain-attack.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Tool Poisoning",
+      "zh": "工具投毒",
+      "path": "wiki/ai-agents/283-tool-poisoning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Prompt Leakage",
+      "zh": "提示词泄漏",
+      "path": "wiki/ai-agents/284-prompt-leakage.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Denial of Wallet (DoW)",
+      "zh": "成本耗尽攻击",
+      "path": "wiki/ai-agents/285-denial-of-wallet.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Observability",
+      "zh": "可观测性",
+      "path": "wiki/ai-agents/286-observability.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Tracing",
+      "zh": "追踪",
+      "path": "wiki/ai-agents/287-tracing.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Trace",
+      "zh": "追踪记录",
+      "path": "wiki/ai-agents/288-trace.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Span",
+      "zh": "跨度",
+      "path": "wiki/ai-agents/289-span.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 15,
+      "en": "Distributed Tracing",
+      "zh": "分布式追踪",
+      "path": "wiki/ai-agents/290-distributed-tracing.md"
     }
   ]
 }

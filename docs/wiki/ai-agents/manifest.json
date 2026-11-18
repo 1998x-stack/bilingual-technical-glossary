@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 270,
-  "readyArticles": 270,
+  "readyInPr": 290,
+  "readyArticles": 290,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -2730,8 +2730,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "271-indirect-prompt-injection.md"
     },
     {
       "n": 272,
@@ -2740,8 +2740,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "272-tool-output-poisoning.md"
     },
     {
       "n": 273,
@@ -2750,8 +2750,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "273-memory-poisoning.md"
     },
     {
       "n": 274,
@@ -2760,8 +2760,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "274-goal-hijacking.md"
     },
     {
       "n": 275,
@@ -2770,8 +2770,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "275-tool-misuse.md"
     },
     {
       "n": 276,
@@ -2780,8 +2780,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "276-privilege-escalation.md"
     },
     {
       "n": 277,
@@ -2790,8 +2790,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "277-data-exfiltration.md"
     },
     {
       "n": 278,
@@ -2800,8 +2800,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "278-sensitive-data-exposure.md"
     },
     {
       "n": 279,
@@ -2810,8 +2810,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "279-unauthorized-action.md"
     },
     {
       "n": 280,
@@ -2820,8 +2820,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 14,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "280-excessive-autonomy.md"
     },
     {
       "n": 281,
@@ -2830,8 +2830,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "281-excessive-agency.md"
     },
     {
       "n": 282,
@@ -2840,8 +2840,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "282-supply-chain-attack.md"
     },
     {
       "n": 283,
@@ -2850,8 +2850,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "283-tool-poisoning.md"
     },
     {
       "n": 284,
@@ -2860,8 +2860,8 @@
       "abbr": "",
       "topic": "智能体攻击与风险",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "284-prompt-leakage.md"
     },
     {
       "n": 285,
@@ -2870,8 +2870,8 @@
       "abbr": "DoW",
       "topic": "智能体攻击与风险",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "285-denial-of-wallet.md"
     },
     {
       "n": 286,
@@ -2880,8 +2880,8 @@
       "abbr": "",
       "topic": "工程化、成本与可观测性",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "286-observability.md"
     },
     {
       "n": 287,
@@ -2890,8 +2890,8 @@
       "abbr": "",
       "topic": "工程化、成本与可观测性",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "287-tracing.md"
     },
     {
       "n": 288,
@@ -2900,8 +2900,8 @@
       "abbr": "",
       "topic": "工程化、成本与可观测性",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "288-trace.md"
     },
     {
       "n": 289,
@@ -2910,8 +2910,8 @@
       "abbr": "",
       "topic": "工程化、成本与可观测性",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "289-span.md"
     },
     {
       "n": 290,
@@ -2920,8 +2920,8 @@
       "abbr": "",
       "topic": "工程化、成本与可观测性",
       "batch": 15,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "290-distributed-tracing.md"
     },
     {
       "n": 291,

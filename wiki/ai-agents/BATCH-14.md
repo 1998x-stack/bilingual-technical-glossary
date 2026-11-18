@@ -49,3 +49,18 @@
 ## 下次工作与专家审核
 
 下一批优先补齐 271–280：Indirect Prompt Injection、Tool-output Poisoning、Memory Poisoning、Goal Hijacking、Tool Misuse、Privilege Escalation 及其后续攻击术语，然后进入第 15 批 281–300。批次规划与内容状态不得跳号。真实专家审稿仍为 `pending`，不能从 CI 通过推断技术定义和反例已获专业认可。
+
+## 补齐学习路径：271–280（候审稿）
+
+在 Prompt Injection 基础上依次讨论间接注入、工具与记忆投毒、目标劫持、工具误用、权限提升、外泄/暴露、越权操作和过度自主性。使用合成案例测试安全边界与真实业务后置状态，不将编辑进度嵌入公众文章。
+
+- [Indirect Prompt Injection（间接提示词注入）](271-indirect-prompt-injection.md)
+- [Tool-output Poisoning（工具输出投毒）](272-tool-output-poisoning.md)
+- [Memory Poisoning（记忆投毒）](273-memory-poisoning.md)
+- [Goal Hijacking（目标劫持）](274-goal-hijacking.md)
+- [Tool Misuse（工具滥用）](275-tool-misuse.md)
+- [Privilege Escalation（权限提升）](276-privilege-escalation.md)
+- [Data Exfiltration（数据外泄）](277-data-exfiltration.md)
+- [Sensitive Data Exposure（敏感信息暴露）](278-sensitive-data-exposure.md)
+- [Unauthorized Action（越权操作）](279-unauthorized-action.md)
+- [Excessive Autonomy（过度自主性）](280-excessive-autonomy.md)
