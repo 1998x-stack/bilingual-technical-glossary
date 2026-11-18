@@ -102,6 +102,106 @@
     {
       "path": "wiki/machine-learning/025-dataset.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/026-sample-instance.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/027-observation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/028-feature.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/029-target-label.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/030-ground-truth.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/031-feature-matrix.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/032-target-vector.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/033-training-set.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/034-validation-set.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/035-test-set.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/036-holdout-set.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/037-train-test-split.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/038-stratified-sampling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/039-group-split.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/040-temporal-split.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/041-cross-validation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/042-k-fold-cross-validation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/043-stratified-k-fold.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/044-leave-one-out-cv.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/045-out-of-fold-prediction.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/046-data-leakage.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/047-label-leakage.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/048-sampling-bias.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/049-class-imbalance.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/050-missing-value.md",
+      "status": "pending"
     }
   ]
 }
