@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 320,
-  "readyArticles": 320,
+  "readyInPr": 332,
+  "readyArticles": 332,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -3230,8 +3230,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "321-orchestration-graph.md"
     },
     {
       "n": 322,
@@ -3240,8 +3240,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "322-node.md"
     },
     {
       "n": 323,
@@ -3250,8 +3250,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "323-edge.md"
     },
     {
       "n": 324,
@@ -3260,8 +3260,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "324-prompt-template.md"
     },
     {
       "n": 325,
@@ -3270,8 +3270,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "325-environment-variable.md"
     },
     {
       "n": 326,
@@ -3280,8 +3280,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "326-secrets-management.md"
     },
     {
       "n": 327,
@@ -3290,8 +3290,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "327-development-environment.md"
     },
     {
       "n": 328,
@@ -3300,8 +3300,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "328-staging-environment.md"
     },
     {
       "n": 329,
@@ -3310,8 +3310,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "329-production-environment.md"
     },
     {
       "n": 330,
@@ -3320,8 +3320,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "330-version-control.md"
     },
     {
       "n": 331,
@@ -3330,8 +3330,8 @@
       "abbr": "CI",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "331-continuous-integration.md"
     },
     {
       "n": 332,
@@ -3340,8 +3340,8 @@
       "abbr": "CD",
       "topic": "开发实践与生态术语",
       "batch": 17,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "332-continuous-delivery.md"
     }
   ]
 }
