@@ -1461,8 +1461,8 @@
           "zh": "工作者智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/151-worker-agent.md"
         },
         {
           "no": 152,
@@ -1470,8 +1470,8 @@
           "zh": "监督者智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/152-supervisor-agent.md"
         },
         {
           "no": 153,
@@ -1479,8 +1479,8 @@
           "zh": "审查者智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/153-reviewer-agent.md"
         },
         {
           "no": 154,
@@ -1488,8 +1488,8 @@
           "zh": "批评者智能体",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/154-critic-agent.md"
         },
         {
           "no": 155,
@@ -1497,8 +1497,8 @@
           "zh": "代理间通信",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/155-inter-agent-communication.md"
         },
         {
           "no": 156,
@@ -1506,8 +1506,8 @@
           "zh": "任务委派",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/156-task-delegation.md"
         },
         {
           "no": 157,
@@ -1515,8 +1515,8 @@
           "zh": "控制权交接",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/157-handoff.md"
         },
         {
           "no": 158,
@@ -1524,8 +1524,8 @@
           "zh": "智能体即工具",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/158-agent-as-tool.md"
         },
         {
           "no": 159,
@@ -1533,8 +1533,8 @@
           "zh": "共享记忆",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/159-shared-memory.md"
         },
         {
           "no": 160,
@@ -1542,8 +1542,8 @@
           "zh": "共享黑板",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/160-blackboard.md"
         }
       ]
     },
@@ -1556,7 +1556,7 @@
         "多智能体协作",
         "MCP：模型上下文协议"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 161,
@@ -1564,8 +1564,8 @@
           "zh": "消息总线",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/161-message-bus.md"
         },
         {
           "no": 162,
@@ -1573,8 +1573,8 @@
           "zh": "共识",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/162-consensus.md"
         },
         {
           "no": 163,
@@ -1582,8 +1582,8 @@
           "zh": "冲突解决",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/163-conflict-resolution.md"
         },
         {
           "no": 164,
@@ -1591,8 +1591,8 @@
           "zh": "角色分工",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/164-role-specialization.md"
         },
         {
           "no": 165,
@@ -1600,8 +1600,8 @@
           "zh": "任务交接记录",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/165-handoff-record.md"
         },
         {
           "no": 166,
@@ -1609,8 +1609,8 @@
           "zh": "协作失效",
           "abbr": "",
           "topic": "多智能体协作",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/166-coordination-failure.md"
         },
         {
           "no": 167,
@@ -1618,8 +1618,8 @@
           "zh": "模型上下文协议",
           "abbr": "MCP",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/167-model-context-protocol.md"
         },
         {
           "no": 168,
@@ -1627,8 +1627,8 @@
           "zh": "MCP 主机",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/168-mcp-host.md"
         },
         {
           "no": 169,
@@ -1636,8 +1636,8 @@
           "zh": "MCP 客户端",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/169-mcp-client.md"
         },
         {
           "no": 170,
@@ -1645,8 +1645,8 @@
           "zh": "MCP 服务器",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/170-mcp-server.md"
         },
         {
           "no": 171,
@@ -1654,8 +1654,8 @@
           "zh": "MCP 工具",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/171-mcp-tool.md"
         },
         {
           "no": 172,
@@ -1663,8 +1663,8 @@
           "zh": "MCP 资源",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/172-mcp-resource.md"
         },
         {
           "no": 173,
@@ -1672,8 +1672,8 @@
           "zh": "MCP 提示模板",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/173-mcp-prompt.md"
         },
         {
           "no": 174,
@@ -1681,8 +1681,8 @@
           "zh": "资源标识符",
           "abbr": "URI",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/174-resource-uri.md"
         },
         {
           "no": 175,
@@ -1690,8 +1690,8 @@
           "zh": "工具列表",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/175-tool-listing.md"
         },
         {
           "no": 176,
@@ -1699,8 +1699,8 @@
           "zh": "工具执行",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/176-tool-invocation.md"
         },
         {
           "no": 177,
@@ -1708,8 +1708,8 @@
           "zh": "能力协商",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/177-capability-negotiation.md"
         },
         {
           "no": 178,
@@ -1717,8 +1717,8 @@
           "zh": "协议版本协商",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/178-protocol-version-negotiation.md"
         },
         {
           "no": 179,
@@ -1726,8 +1726,8 @@
           "zh": "JSON 远程过程调用",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/179-json-rpc.md"
         },
         {
           "no": 180,
@@ -1735,8 +1735,8 @@
           "zh": "标准输入输出传输",
           "abbr": "",
           "topic": "MCP：模型上下文协议",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/180-standard-input-output-transport.md"
         }
       ]
     },

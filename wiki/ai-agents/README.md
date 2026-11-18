@@ -22,8 +22,8 @@
 | 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | drafted_in_pr |
 | 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | drafted_in_pr |
 | 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | drafted_in_pr |
-| 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | 部分 drafted_in_pr（141–150），151–160 planned |
-| 09 | 161–180 | 多智能体协作 / MCP：模型上下文协议 | 20 | planned |
+| 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | drafted_in_pr |
+| 09 | 161–180 | 多智能体协作 / MCP：模型上下文协议 | 20 | drafted_in_pr |
 | 10 | 181–200 | MCP：模型上下文协议 / A2A：智能体间协议 | 20 | planned |
 | 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | planned |
 | 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | planned |
@@ -222,9 +222,9 @@
 139. [Data Flow（数据流）](139-data-flow.md)
 140. [Directed Acyclic Graph (DAG)（有向无环图）](140-directed-acyclic-graph.md)
 
-## 第 8 批知识路径（141–160 · 已完成前 10 篇）
+## 第 8 批知识路径（141–160 · 完整 20 篇）
 
-[第 8 批：状态图、扇出扇入与多 Agent](BATCH-08.md)：目前 141–150 已完成候审稿；151–160 仍 planned、未写作，不应标记 ready 或宣称整批完成。
+[第 8 批：状态图、扇出扇入与多 Agent](BATCH-08.md)：在本轮补齐 151–160，现已完成整个第 8 批 20 篇候审稿；各篇仍 pending 专家审稿。
 
 ### 已完成候审稿（141–150）
 
@@ -238,6 +238,46 @@
 148. [Generalist Agent（通用智能体）](148-generalist-agent.md)
 149. [Manager Agent（管理者智能体）](149-manager-agent.md)
 150. [Coordinator Agent（协调者智能体）](150-coordinator-agent.md)
+
+### 补齐第 8 批（151–160）
+
+151. [Worker Agent（工作者智能体）](151-worker-agent.md)
+152. [Supervisor Agent（监督者智能体）](152-supervisor-agent.md)
+153. [Reviewer Agent（审查者智能体）](153-reviewer-agent.md)
+154. [Critic Agent（批评者智能体）](154-critic-agent.md)
+155. [Inter-Agent Communication（代理间通信）](155-inter-agent-communication.md)
+156. [Task Delegation（任务委派）](156-task-delegation.md)
+157. [Handoff（控制权交接）](157-handoff.md)
+158. [Agent as Tool（智能体即工具）](158-agent-as-tool.md)
+159. [Shared Memory（共享记忆）](159-shared-memory.md)
+160. [Blackboard（共享黑板）](160-blackboard.md)
+
+## 第 9 批知识路径（161–180 · 完整 20 篇）
+
+[第 9 批：多 Agent 消息与协作故障 → MCP 2026-07-28 协议考古](BATCH-09.md)：前六篇聚焦通信总线、共识、冲突与交接；后十四篇涵盖 MCP 基础角色、工具资源、协议发现、版本/能力协商、JSON-RPC 和 stdio，并明确 2025-11-25 与 2026-07-28 生命周期差异。
+
+### 已完成候审稿（161–180）
+
+161. [Message Bus（消息总线）](161-message-bus.md)
+162. [Consensus（共识）](162-consensus.md)
+163. [Conflict Resolution（冲突解决）](163-conflict-resolution.md)
+164. [Role Specialization（角色分工）](164-role-specialization.md)
+165. [Handoff Record（任务交接记录）](165-handoff-record.md)
+166. [Coordination Failure（协作失效）](166-coordination-failure.md)
+167. [Model Context Protocol (MCP)（模型上下文协议）](167-model-context-protocol.md)
+168. [MCP Host（MCP 主机）](168-mcp-host.md)
+169. [MCP Client（MCP 客户端）](169-mcp-client.md)
+170. [MCP Server（MCP 服务器）](170-mcp-server.md)
+171. [MCP Tool（MCP 工具）](171-mcp-tool.md)
+172. [MCP Resource（MCP 资源）](172-mcp-resource.md)
+173. [MCP Prompt（MCP 提示模板）](173-mcp-prompt.md)
+174. [Resource URI (URI)（资源标识符）](174-resource-uri.md)
+175. [Tool Listing (tools/list)（工具列表）](175-tool-listing.md)
+176. [Tool Invocation (tools/call)（工具执行）](176-tool-invocation.md)
+177. [Capability Negotiation（能力协商）](177-capability-negotiation.md)
+178. [Protocol Version Negotiation（协议版本协商）](178-protocol-version-negotiation.md)
+179. [JSON-RPC（JSON 远程过程调用）](179-json-rpc.md)
+180. [Standard Input/Output Transport (stdio)（标准输入输出传输）](180-standard-input-output-transport.md)
 
 ## 人工审稿要求
 
