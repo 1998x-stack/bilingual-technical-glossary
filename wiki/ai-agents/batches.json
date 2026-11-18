@@ -2812,8 +2812,8 @@
           "zh": "日志记录",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/291-logging.md"
         },
         {
           "no": 292,
@@ -2821,8 +2821,8 @@
           "zh": "指标监控",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/292-metrics-monitoring.md"
         },
         {
           "no": 293,
@@ -2830,8 +2830,8 @@
           "zh": "结构化日志",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/293-structured-logging.md"
         },
         {
           "no": 294,
@@ -2839,8 +2839,8 @@
           "zh": "相关标识符",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/294-correlation-id.md"
         },
         {
           "no": 295,
@@ -2848,8 +2848,8 @@
           "zh": "延迟",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/295-latency.md"
         },
         {
           "no": 296,
@@ -2857,8 +2857,8 @@
           "zh": "吞吐量",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/296-throughput.md"
         },
         {
           "no": 297,
@@ -2866,8 +2866,8 @@
           "zh": "并发",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/297-concurrency.md"
         },
         {
           "no": 298,
@@ -2875,8 +2875,8 @@
           "zh": "并行",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/298-parallelism.md"
         },
         {
           "no": 299,
@@ -2884,8 +2884,8 @@
           "zh": "速率限制",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/299-rate-limiting.md"
         },
         {
           "no": 300,
@@ -2893,8 +2893,8 @@
           "zh": "请求配额",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/300-quota.md"
         }
       ]
     },
@@ -2907,7 +2907,7 @@
         "工程化、成本与可观测性",
         "开发实践与生态术语"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 301,
@@ -2915,8 +2915,8 @@
           "zh": "词元用量",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/301-token-usage.md"
         },
         {
           "no": 302,
@@ -2924,8 +2924,8 @@
           "zh": "单任务成本",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/302-cost-per-task.md"
         },
         {
           "no": 303,
@@ -2933,8 +2933,8 @@
           "zh": "成本预算",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/303-cost-budget.md"
         },
         {
           "no": 304,
@@ -2942,8 +2942,8 @@
           "zh": "成本—质量权衡",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/304-cost-quality-trade-off.md"
         },
         {
           "no": 305,
@@ -2951,8 +2951,8 @@
           "zh": "缓存",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/305-caching.md"
         },
         {
           "no": 306,
@@ -2960,8 +2960,8 @@
           "zh": "回调钩子",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/306-lifecycle-hook.md"
         },
         {
           "no": 307,
@@ -2969,8 +2969,8 @@
           "zh": "断路器",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/307-circuit-breaker.md"
         },
         {
           "no": 308,
@@ -2978,8 +2978,8 @@
           "zh": "服务级别目标",
           "abbr": "SLO",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/308-service-level-objective.md"
         },
         {
           "no": 309,
@@ -2987,8 +2987,8 @@
           "zh": "服务级别协议",
           "abbr": "SLA",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/309-service-level-agreement.md"
         },
         {
           "no": 310,
@@ -2996,8 +2996,8 @@
           "zh": "告警",
           "abbr": "",
           "topic": "工程化、成本与可观测性",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/310-alerting.md"
         },
         {
           "no": 311,
