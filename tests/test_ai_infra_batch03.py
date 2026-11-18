@@ -16,6 +16,7 @@ class AIInfraBatch03Tests(unittest.TestCase):
     def setUpClass(cls):
         cls.manifest=json.loads((ROOT/"docs/wiki/ai-infrastructure/manifest.json").read_text(encoding="utf-8"))
         cls.public=json.loads((ROOT/"docs/data/wiki-index.json").read_text(encoding="utf-8"))
+        cls.public["articles"]=[entry for entry in cls.public["articles"] if entry["category"]=="ai-infrastructure"]
         cls.plans=json.loads((ROOT/"wiki/ai-infrastructure/batches.json").read_text(encoding="utf-8"))
         cls.review=json.loads((ROOT/"wiki/reviews/ai-infrastructure.json").read_text(encoding="utf-8"))
 

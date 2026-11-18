@@ -1,0 +1,3347 @@
+{
+  "title": "AI Agents · 深度 Wiki",
+  "total": 332,
+  "batchSize": 20,
+  "readyInPr": 20,
+  "readyArticles": 20,
+  "topics": [
+    "基础概念与角色",
+    "模型能力与推理",
+    "任务规划与决策",
+    "工具使用与环境交互",
+    "上下文、记忆与状态",
+    "检索与知识增强",
+    "工作流与编排模式",
+    "多智能体协作",
+    "MCP：模型上下文协议",
+    "A2A：智能体间协议",
+    "执行状态、持久化与恢复",
+    "评测体系与常见基准",
+    "安全防护与治理",
+    "智能体攻击与风险",
+    "工程化、成本与可观测性",
+    "开发实践与生态术语"
+  ],
+  "terms": [
+    {
+      "n": 1,
+      "en": "AI Agent",
+      "zh": "人工智能智能体",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "001-ai-agent.md"
+    },
+    {
+      "n": 2,
+      "en": "Agentic AI",
+      "zh": "智能体化人工智能",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "002-agentic-ai.md"
+    },
+    {
+      "n": 3,
+      "en": "Agentic System",
+      "zh": "智能体系统",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "003-agentic-system.md"
+    },
+    {
+      "n": 4,
+      "en": "Large Language Model (LLM)",
+      "zh": "大语言模型",
+      "abbr": "LLM",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "004-large-language-model.md"
+    },
+    {
+      "n": 5,
+      "en": "Foundation Model",
+      "zh": "基础模型",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "005-foundation-model.md"
+    },
+    {
+      "n": 6,
+      "en": "Agent Framework",
+      "zh": "智能体框架",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "006-agent-framework.md"
+    },
+    {
+      "n": 7,
+      "en": "Agent Runtime",
+      "zh": "智能体运行时",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "007-agent-runtime.md"
+    },
+    {
+      "n": 8,
+      "en": "Agent Loop",
+      "zh": "智能体循环",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "008-agent-loop.md"
+    },
+    {
+      "n": 9,
+      "en": "Goal",
+      "zh": "目标",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "009-goal.md"
+    },
+    {
+      "n": 10,
+      "en": "Task",
+      "zh": "任务",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "010-task.md"
+    },
+    {
+      "n": 11,
+      "en": "Subtask",
+      "zh": "子任务",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "011-subtask.md"
+    },
+    {
+      "n": 12,
+      "en": "Instruction",
+      "zh": "指令",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "012-instruction.md"
+    },
+    {
+      "n": 13,
+      "en": "System Prompt",
+      "zh": "系统提示词",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "013-system-prompt.md"
+    },
+    {
+      "n": 14,
+      "en": "User Prompt",
+      "zh": "用户提示词",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "014-user-prompt.md"
+    },
+    {
+      "n": 15,
+      "en": "Role",
+      "zh": "角色",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "015-role.md"
+    },
+    {
+      "n": 16,
+      "en": "Capability",
+      "zh": "能力",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "016-capability.md"
+    },
+    {
+      "n": 17,
+      "en": "Autonomy",
+      "zh": "自主性",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "017-autonomy.md"
+    },
+    {
+      "n": 18,
+      "en": "Agency",
+      "zh": "能动性",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "018-agency.md"
+    },
+    {
+      "n": 19,
+      "en": "Environment",
+      "zh": "环境",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "019-environment.md"
+    },
+    {
+      "n": 20,
+      "en": "Observation",
+      "zh": "观察",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 1,
+      "ready": true,
+      "file": "020-observation.md"
+    },
+    {
+      "n": 21,
+      "en": "Action",
+      "zh": "动作",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 22,
+      "en": "Termination Condition",
+      "zh": "终止条件",
+      "abbr": "",
+      "topic": "基础概念与角色",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 23,
+      "en": "Reasoning Model",
+      "zh": "推理模型",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 24,
+      "en": "Model Invocation",
+      "zh": "模型调用",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 25,
+      "en": "Inference-time Compute",
+      "zh": "推理时计算",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 26,
+      "en": "Test-time Compute",
+      "zh": "测试时计算",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 27,
+      "en": "Context Window",
+      "zh": "上下文窗口",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 28,
+      "en": "Token",
+      "zh": "词元",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 29,
+      "en": "Token Budget",
+      "zh": "词元预算",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 30,
+      "en": "Temperature",
+      "zh": "温度参数",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 31,
+      "en": "Structured Output",
+      "zh": "结构化输出",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 32,
+      "en": "Constrained Decoding",
+      "zh": "约束解码",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 33,
+      "en": "Function Calling",
+      "zh": "函数调用",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 34,
+      "en": "Chain of Thought (CoT)",
+      "zh": "链式思维",
+      "abbr": "CoT",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 35,
+      "en": "Tree of Thoughts (ToT)",
+      "zh": "思维树",
+      "abbr": "ToT",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 36,
+      "en": "Self-Consistency",
+      "zh": "自洽性采样",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 37,
+      "en": "Reasoning and Acting (ReAct)",
+      "zh": "推理与行动协同",
+      "abbr": "ReAct",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 38,
+      "en": "Reflection",
+      "zh": "反思",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 39,
+      "en": "Self-Correction",
+      "zh": "自我纠错",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 40,
+      "en": "Hallucination",
+      "zh": "幻觉",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 2,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 41,
+      "en": "Uncertainty",
+      "zh": "不确定性",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 42,
+      "en": "Confidence Calibration",
+      "zh": "置信度校准",
+      "abbr": "",
+      "topic": "模型能力与推理",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 43,
+      "en": "Planning",
+      "zh": "规划",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 44,
+      "en": "Task Decomposition",
+      "zh": "任务分解",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 45,
+      "en": "Hierarchical Planning",
+      "zh": "分层规划",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 46,
+      "en": "High-level Plan",
+      "zh": "高层计划",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 47,
+      "en": "Action Plan",
+      "zh": "行动计划",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 48,
+      "en": "Adaptive Planning",
+      "zh": "自适应规划",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 49,
+      "en": "Plan Revision",
+      "zh": "计划修订",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 50,
+      "en": "Task Dependency",
+      "zh": "任务依赖",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 51,
+      "en": "Task Priority",
+      "zh": "任务优先级",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 52,
+      "en": "Decision Point",
+      "zh": "决策点",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 53,
+      "en": "Action Space",
+      "zh": "行动空间",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 54,
+      "en": "State Space",
+      "zh": "状态空间",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 55,
+      "en": "Policy",
+      "zh": "策略",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 56,
+      "en": "Utility Function",
+      "zh": "效用函数",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 57,
+      "en": "Reward Signal",
+      "zh": "奖励信号",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 58,
+      "en": "Search Space",
+      "zh": "搜索空间",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 59,
+      "en": "Heuristic Search",
+      "zh": "启发式搜索",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 60,
+      "en": "Lookahead Search",
+      "zh": "前瞻搜索",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 3,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 61,
+      "en": "Backtracking",
+      "zh": "回溯",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 62,
+      "en": "Replanning",
+      "zh": "重规划",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 63,
+      "en": "Stopping Criterion",
+      "zh": "停止准则",
+      "abbr": "",
+      "topic": "任务规划与决策",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 64,
+      "en": "Tool",
+      "zh": "工具",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 65,
+      "en": "Tool Call",
+      "zh": "工具调用",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 66,
+      "en": "Tool Result",
+      "zh": "工具结果",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 67,
+      "en": "Tool Selection",
+      "zh": "工具选择",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 68,
+      "en": "Tool Routing",
+      "zh": "工具路由",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 69,
+      "en": "Tool Schema",
+      "zh": "工具模式",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 70,
+      "en": "Argument Validation",
+      "zh": "参数校验",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 71,
+      "en": "Tool Discovery",
+      "zh": "工具发现",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 72,
+      "en": "Tool Registry",
+      "zh": "工具注册表",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 73,
+      "en": "Function Tool",
+      "zh": "函数工具",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 74,
+      "en": "Web Search Tool",
+      "zh": "网络搜索工具",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 75,
+      "en": "Browser Automation",
+      "zh": "浏览器自动化",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 76,
+      "en": "Computer Use",
+      "zh": "计算机使用",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 77,
+      "en": "Code Execution",
+      "zh": "代码执行",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 78,
+      "en": "Command-line Tool (CLI)",
+      "zh": "命令行工具",
+      "abbr": "CLI",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 79,
+      "en": "Application Programming Interface (API)",
+      "zh": "应用程序接口",
+      "abbr": "API",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 80,
+      "en": "Tool Adapter",
+      "zh": "工具适配器",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 4,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 81,
+      "en": "Environment Feedback",
+      "zh": "环境反馈",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 82,
+      "en": "Tool Retry",
+      "zh": "工具调用重试",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 83,
+      "en": "Side Effect",
+      "zh": "副作用",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 84,
+      "en": "Idempotent Operation",
+      "zh": "幂等操作",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 85,
+      "en": "Sensitive Action",
+      "zh": "敏感操作",
+      "abbr": "",
+      "topic": "工具使用与环境交互",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 86,
+      "en": "Context",
+      "zh": "上下文",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 87,
+      "en": "Context Engineering",
+      "zh": "上下文工程",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 88,
+      "en": "Prompt Engineering",
+      "zh": "提示词工程",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 89,
+      "en": "Context Injection",
+      "zh": "上下文注入",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 90,
+      "en": "Context Compression",
+      "zh": "上下文压缩",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 91,
+      "en": "Conversation History",
+      "zh": "对话历史",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 92,
+      "en": "Session",
+      "zh": "会话",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 93,
+      "en": "Session State",
+      "zh": "会话状态",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 94,
+      "en": "Working Memory",
+      "zh": "工作记忆",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 95,
+      "en": "Short-term Memory",
+      "zh": "短期记忆",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 96,
+      "en": "Long-term Memory",
+      "zh": "长期记忆",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 97,
+      "en": "Episodic Memory",
+      "zh": "情景记忆",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 98,
+      "en": "Semantic Memory",
+      "zh": "语义记忆",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 99,
+      "en": "Procedural Memory",
+      "zh": "程序性记忆",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 100,
+      "en": "Memory Retrieval",
+      "zh": "记忆检索",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 5,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 101,
+      "en": "Memory Write",
+      "zh": "记忆写入",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 102,
+      "en": "Memory Consolidation",
+      "zh": "记忆巩固",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 103,
+      "en": "Memory Forgetting",
+      "zh": "记忆遗忘",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 104,
+      "en": "State Snapshot",
+      "zh": "状态快照",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 105,
+      "en": "State Restoration",
+      "zh": "状态恢复",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 106,
+      "en": "User Preference",
+      "zh": "用户偏好",
+      "abbr": "",
+      "topic": "上下文、记忆与状态",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 107,
+      "en": "Retrieval-Augmented Generation (RAG)",
+      "zh": "检索增强生成",
+      "abbr": "RAG",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 108,
+      "en": "Agentic Retrieval",
+      "zh": "智能体式检索",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 109,
+      "en": "Knowledge Base (KB)",
+      "zh": "知识库",
+      "abbr": "KB",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 110,
+      "en": "Document Ingestion",
+      "zh": "文档摄取",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 111,
+      "en": "Chunking",
+      "zh": "文本切分",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 112,
+      "en": "Chunk",
+      "zh": "文本块",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 113,
+      "en": "Embedding",
+      "zh": "嵌入向量",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 114,
+      "en": "Vector Database",
+      "zh": "向量数据库",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 115,
+      "en": "Vector Search",
+      "zh": "向量检索",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 116,
+      "en": "Semantic Search",
+      "zh": "语义检索",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 117,
+      "en": "Keyword Search",
+      "zh": "关键词检索",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 118,
+      "en": "Hybrid Search",
+      "zh": "混合检索",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 119,
+      "en": "Reranking",
+      "zh": "重排序",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 120,
+      "en": "Query Rewriting",
+      "zh": "查询改写",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 6,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 121,
+      "en": "Multi-hop Retrieval",
+      "zh": "多跳检索",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 122,
+      "en": "Knowledge Graph (KG)",
+      "zh": "知识图谱",
+      "abbr": "KG",
+      "topic": "检索与知识增强",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 123,
+      "en": "Source Attribution",
+      "zh": "来源归因",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 124,
+      "en": "Evidence Chain",
+      "zh": "证据链",
+      "abbr": "",
+      "topic": "检索与知识增强",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 125,
+      "en": "Workflow",
+      "zh": "工作流",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 126,
+      "en": "Agent Orchestration",
+      "zh": "智能体编排",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 127,
+      "en": "Chaining",
+      "zh": "链式处理",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 128,
+      "en": "Prompt Chaining",
+      "zh": "提示链",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 129,
+      "en": "Routing Pattern",
+      "zh": "路由模式",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 130,
+      "en": "Parallelization",
+      "zh": "并行化",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 131,
+      "en": "Aggregation Pattern",
+      "zh": "汇总模式",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 132,
+      "en": "Orchestrator–Workers",
+      "zh": "编排者—工作者模式",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 133,
+      "en": "Evaluator–Optimizer",
+      "zh": "评估者—优化者模式",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 134,
+      "en": "Plan-and-Execute",
+      "zh": "计划后执行",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 135,
+      "en": "Reactive Execution",
+      "zh": "反应式执行",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 136,
+      "en": "Sequential Execution",
+      "zh": "顺序执行",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 137,
+      "en": "Conditional Branch",
+      "zh": "条件分支",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 138,
+      "en": "Control Flow",
+      "zh": "控制流",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 139,
+      "en": "Data Flow",
+      "zh": "数据流",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 140,
+      "en": "Directed Acyclic Graph (DAG)",
+      "zh": "有向无环图",
+      "abbr": "DAG",
+      "topic": "工作流与编排模式",
+      "batch": 7,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 141,
+      "en": "State Graph",
+      "zh": "状态图",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 142,
+      "en": "Loop Node",
+      "zh": "循环节点",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 143,
+      "en": "Fan-out",
+      "zh": "扇出",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 144,
+      "en": "Fan-in",
+      "zh": "扇入",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 145,
+      "en": "Gate Check",
+      "zh": "门控检查",
+      "abbr": "",
+      "topic": "工作流与编排模式",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 146,
+      "en": "Multi-Agent System (MAS)",
+      "zh": "多智能体系统",
+      "abbr": "MAS",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 147,
+      "en": "Specialist Agent",
+      "zh": "专业智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 148,
+      "en": "Generalist Agent",
+      "zh": "通用智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 149,
+      "en": "Manager Agent",
+      "zh": "管理者智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 150,
+      "en": "Coordinator Agent",
+      "zh": "协调者智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 151,
+      "en": "Worker Agent",
+      "zh": "工作者智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 152,
+      "en": "Supervisor Agent",
+      "zh": "监督者智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 153,
+      "en": "Reviewer Agent",
+      "zh": "审查者智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 154,
+      "en": "Critic Agent",
+      "zh": "批评者智能体",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 155,
+      "en": "Inter-Agent Communication",
+      "zh": "代理间通信",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 156,
+      "en": "Task Delegation",
+      "zh": "任务委派",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 157,
+      "en": "Handoff",
+      "zh": "控制权交接",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 158,
+      "en": "Agent as Tool",
+      "zh": "智能体即工具",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 159,
+      "en": "Shared Memory",
+      "zh": "共享记忆",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 160,
+      "en": "Blackboard",
+      "zh": "共享黑板",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 8,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 161,
+      "en": "Message Bus",
+      "zh": "消息总线",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 162,
+      "en": "Consensus",
+      "zh": "共识",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 163,
+      "en": "Conflict Resolution",
+      "zh": "冲突解决",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 164,
+      "en": "Role Specialization",
+      "zh": "角色分工",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 165,
+      "en": "Handoff Record",
+      "zh": "任务交接记录",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 166,
+      "en": "Coordination Failure",
+      "zh": "协作失效",
+      "abbr": "",
+      "topic": "多智能体协作",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 167,
+      "en": "Model Context Protocol (MCP)",
+      "zh": "模型上下文协议",
+      "abbr": "MCP",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 168,
+      "en": "MCP Host",
+      "zh": "MCP 主机",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 169,
+      "en": "MCP Client",
+      "zh": "MCP 客户端",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 170,
+      "en": "MCP Server",
+      "zh": "MCP 服务器",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 171,
+      "en": "MCP Tool",
+      "zh": "MCP 工具",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 172,
+      "en": "MCP Resource",
+      "zh": "MCP 资源",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 173,
+      "en": "MCP Prompt",
+      "zh": "MCP 提示模板",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 174,
+      "en": "Resource URI (URI)",
+      "zh": "资源标识符",
+      "abbr": "URI",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 175,
+      "en": "Tool Listing (tools/list)",
+      "zh": "工具列表",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 176,
+      "en": "Tool Invocation (tools/call)",
+      "zh": "工具执行",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 177,
+      "en": "Capability Negotiation",
+      "zh": "能力协商",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 178,
+      "en": "Protocol Version Negotiation",
+      "zh": "协议版本协商",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 179,
+      "en": "JSON-RPC",
+      "zh": "JSON 远程过程调用",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 180,
+      "en": "Standard Input/Output Transport (stdio)",
+      "zh": "标准输入输出传输",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 9,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 181,
+      "en": "Streamable HTTP Transport",
+      "zh": "流式 HTTP 传输",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 182,
+      "en": "Sampling",
+      "zh": "采样请求",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 183,
+      "en": "Elicitation",
+      "zh": "用户信息征询",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 184,
+      "en": "Roots",
+      "zh": "根目录",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 185,
+      "en": "Completion",
+      "zh": "参数自动补全",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 186,
+      "en": "Progress Notification",
+      "zh": "进度通知",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 187,
+      "en": "Cancellation Notification",
+      "zh": "取消通知",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 188,
+      "en": "Authorization",
+      "zh": "授权",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 189,
+      "en": "MCP Extension",
+      "zh": "MCP 扩展",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 190,
+      "en": "MCP Apps",
+      "zh": "MCP 应用",
+      "abbr": "",
+      "topic": "MCP：模型上下文协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 191,
+      "en": "Agent2Agent Protocol (A2A)",
+      "zh": "智能体间协议",
+      "abbr": "A2A",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 192,
+      "en": "A2A Client",
+      "zh": "A2A 客户端",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 193,
+      "en": "A2A Server",
+      "zh": "A2A 服务器",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 194,
+      "en": "Remote Agent",
+      "zh": "远程智能体",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 195,
+      "en": "Agent Card",
+      "zh": "智能体名片",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 196,
+      "en": "Agent Discovery",
+      "zh": "智能体发现",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 197,
+      "en": "Agent Skill",
+      "zh": "智能体技能",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 198,
+      "en": "A2A Task",
+      "zh": "A2A 任务",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 199,
+      "en": "A2A Message",
+      "zh": "A2A 消息",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 200,
+      "en": "Message Part",
+      "zh": "消息片段",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 10,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 201,
+      "en": "Artifact",
+      "zh": "任务产物",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 202,
+      "en": "Task State",
+      "zh": "任务状态",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 203,
+      "en": "Task Lifecycle",
+      "zh": "任务生命周期",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 204,
+      "en": "Streaming Update",
+      "zh": "流式更新",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 205,
+      "en": "Push Notification",
+      "zh": "推送通知",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 206,
+      "en": "Interoperability",
+      "zh": "互操作性",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 207,
+      "en": "Capability Declaration",
+      "zh": "能力声明",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 208,
+      "en": "Task Delegation Protocol",
+      "zh": "任务委派协议",
+      "abbr": "",
+      "topic": "A2A：智能体间协议",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 209,
+      "en": "State Machine",
+      "zh": "状态机",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 210,
+      "en": "Checkpoint",
+      "zh": "检查点",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 211,
+      "en": "Checkpointing",
+      "zh": "检查点保存",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 212,
+      "en": "Persistence",
+      "zh": "持久化",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 213,
+      "en": "Durable Execution",
+      "zh": "持久执行",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 214,
+      "en": "Interrupt",
+      "zh": "中断",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 215,
+      "en": "Resume Execution",
+      "zh": "恢复执行",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 216,
+      "en": "Human-in-the-loop (HITL)",
+      "zh": "人工介入",
+      "abbr": "HITL",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 217,
+      "en": "Human Review",
+      "zh": "人工审核",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 218,
+      "en": "Human Approval",
+      "zh": "人工批准",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 219,
+      "en": "Recoverable Error",
+      "zh": "可恢复错误",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 220,
+      "en": "Retry Policy",
+      "zh": "重试策略",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 11,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 221,
+      "en": "Exponential Backoff",
+      "zh": "指数退避",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 222,
+      "en": "Timeout",
+      "zh": "超时",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 223,
+      "en": "Deadline",
+      "zh": "截止期限",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 224,
+      "en": "Failover",
+      "zh": "故障转移",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 225,
+      "en": "Compensating Action",
+      "zh": "补偿操作",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 226,
+      "en": "Transaction Boundary",
+      "zh": "事务边界",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 227,
+      "en": "Execution Log",
+      "zh": "执行日志",
+      "abbr": "",
+      "topic": "执行状态、持久化与恢复",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 228,
+      "en": "Agent Evaluation",
+      "zh": "智能体评测",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 229,
+      "en": "Benchmark",
+      "zh": "评测基准",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 230,
+      "en": "Evaluation Dataset (Eval Set)",
+      "zh": "评测集",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 231,
+      "en": "Task Success Rate",
+      "zh": "任务成功率",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 232,
+      "en": "End-to-end Success Rate",
+      "zh": "端到端成功率",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 233,
+      "en": "Tool-call Accuracy",
+      "zh": "工具调用正确率",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 234,
+      "en": "Action Success Rate",
+      "zh": "动作成功率",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 235,
+      "en": "Trajectory Evaluation",
+      "zh": "轨迹评测",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 236,
+      "en": "Trajectory",
+      "zh": "轨迹",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 237,
+      "en": "Outcome Evaluation",
+      "zh": "结果评测",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 238,
+      "en": "Process Evaluation",
+      "zh": "过程评测",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 239,
+      "en": "Faithfulness",
+      "zh": "忠实度",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 240,
+      "en": "Factual Accuracy",
+      "zh": "事实准确性",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 12,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 241,
+      "en": "Robustness",
+      "zh": "鲁棒性",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 242,
+      "en": "Reproducibility",
+      "zh": "可复现性",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 243,
+      "en": "LLM-as-a-Judge",
+      "zh": "评判模型",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 244,
+      "en": "Ground Truth",
+      "zh": "黄金答案",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 245,
+      "en": "Human Annotation",
+      "zh": "人工标注",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 246,
+      "en": "Regression Test",
+      "zh": "回归测试",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 247,
+      "en": "Scenario-based Evaluation",
+      "zh": "基于场景的评测",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 248,
+      "en": "GAIA",
+      "zh": "GAIA 基准",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 249,
+      "en": "SWE-bench",
+      "zh": "SWE-bench",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 250,
+      "en": "WebArena",
+      "zh": "WebArena",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 251,
+      "en": "OSWorld",
+      "zh": "OSWorld",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 252,
+      "en": "tau-bench",
+      "zh": "τ-bench",
+      "abbr": "",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 253,
+      "en": "Berkeley Function Calling Leaderboard (BFCL)",
+      "zh": "伯克利函数调用榜单",
+      "abbr": "BFCL",
+      "topic": "评测体系与常见基准",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 254,
+      "en": "Guardrail",
+      "zh": "护栏",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 255,
+      "en": "Policy Constraint",
+      "zh": "策略约束",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 256,
+      "en": "Principle of Least Privilege (PoLP)",
+      "zh": "最小权限原则",
+      "abbr": "PoLP",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 257,
+      "en": "Permission Scope",
+      "zh": "权限范围",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 258,
+      "en": "Access Control",
+      "zh": "访问控制",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 259,
+      "en": "Authentication (AuthN)",
+      "zh": "身份认证",
+      "abbr": "AuthN",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 260,
+      "en": "Authorization (AuthZ)",
+      "zh": "访问授权",
+      "abbr": "AuthZ",
+      "topic": "安全防护与治理",
+      "batch": 13,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 261,
+      "en": "Sandbox",
+      "zh": "沙箱",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 262,
+      "en": "Safety Confirmation",
+      "zh": "安全确认",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 263,
+      "en": "Human Oversight",
+      "zh": "人类监督",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 264,
+      "en": "Refusal",
+      "zh": "拒绝执行",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 265,
+      "en": "Safe Fallback",
+      "zh": "安全回退",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 266,
+      "en": "Audit Trail",
+      "zh": "审计跟踪",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 267,
+      "en": "Security Boundary",
+      "zh": "安全边界",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 268,
+      "en": "Trust Boundary",
+      "zh": "信任边界",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 269,
+      "en": "Data Minimization",
+      "zh": "数据最小化",
+      "abbr": "",
+      "topic": "安全防护与治理",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 270,
+      "en": "Prompt Injection",
+      "zh": "提示词注入",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 271,
+      "en": "Indirect Prompt Injection",
+      "zh": "间接提示词注入",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 272,
+      "en": "Tool-output Poisoning",
+      "zh": "工具输出投毒",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 273,
+      "en": "Memory Poisoning",
+      "zh": "记忆投毒",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 274,
+      "en": "Goal Hijacking",
+      "zh": "目标劫持",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 275,
+      "en": "Tool Misuse",
+      "zh": "工具滥用",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 276,
+      "en": "Privilege Escalation",
+      "zh": "权限提升",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 277,
+      "en": "Data Exfiltration",
+      "zh": "数据外泄",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 278,
+      "en": "Sensitive Data Exposure",
+      "zh": "敏感信息暴露",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 279,
+      "en": "Unauthorized Action",
+      "zh": "越权操作",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 280,
+      "en": "Excessive Autonomy",
+      "zh": "过度自主性",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 14,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 281,
+      "en": "Excessive Agency",
+      "zh": "过度代理权限",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 282,
+      "en": "Supply Chain Attack",
+      "zh": "供应链攻击",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 283,
+      "en": "Tool Poisoning",
+      "zh": "工具投毒",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 284,
+      "en": "Prompt Leakage",
+      "zh": "提示词泄漏",
+      "abbr": "",
+      "topic": "智能体攻击与风险",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 285,
+      "en": "Denial of Wallet (DoW)",
+      "zh": "成本耗尽攻击",
+      "abbr": "DoW",
+      "topic": "智能体攻击与风险",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 286,
+      "en": "Observability",
+      "zh": "可观测性",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 287,
+      "en": "Tracing",
+      "zh": "追踪",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 288,
+      "en": "Trace",
+      "zh": "追踪记录",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 289,
+      "en": "Span",
+      "zh": "跨度",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 290,
+      "en": "Distributed Tracing",
+      "zh": "分布式追踪",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 291,
+      "en": "Logging",
+      "zh": "日志记录",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 292,
+      "en": "Metrics Monitoring",
+      "zh": "指标监控",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 293,
+      "en": "Structured Logging",
+      "zh": "结构化日志",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 294,
+      "en": "Correlation ID",
+      "zh": "相关标识符",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 295,
+      "en": "Latency",
+      "zh": "延迟",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 296,
+      "en": "Throughput",
+      "zh": "吞吐量",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 297,
+      "en": "Concurrency",
+      "zh": "并发",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 298,
+      "en": "Parallelism",
+      "zh": "并行",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 299,
+      "en": "Rate Limiting",
+      "zh": "速率限制",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 300,
+      "en": "Quota",
+      "zh": "请求配额",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 15,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 301,
+      "en": "Token Usage",
+      "zh": "词元用量",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 302,
+      "en": "Cost per Task",
+      "zh": "单任务成本",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 303,
+      "en": "Cost Budget",
+      "zh": "成本预算",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 304,
+      "en": "Cost–Quality Trade-off",
+      "zh": "成本—质量权衡",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 305,
+      "en": "Caching",
+      "zh": "缓存",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 306,
+      "en": "Lifecycle Hook",
+      "zh": "回调钩子",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 307,
+      "en": "Circuit Breaker",
+      "zh": "断路器",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 308,
+      "en": "Service Level Objective (SLO)",
+      "zh": "服务级别目标",
+      "abbr": "SLO",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 309,
+      "en": "Service Level Agreement (SLA)",
+      "zh": "服务级别协议",
+      "abbr": "SLA",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 310,
+      "en": "Alerting",
+      "zh": "告警",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 311,
+      "en": "Runbook",
+      "zh": "运行手册",
+      "abbr": "",
+      "topic": "工程化、成本与可观测性",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 312,
+      "en": "Agent Development Kit (ADK)",
+      "zh": "智能体开发工具包",
+      "abbr": "ADK",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 313,
+      "en": "Software Development Kit (SDK)",
+      "zh": "软件开发工具包",
+      "abbr": "SDK",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 314,
+      "en": "Skill Package",
+      "zh": "技能包",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 315,
+      "en": "Skill Discovery",
+      "zh": "技能发现",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 316,
+      "en": "Skill Invocation",
+      "zh": "技能调用",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 317,
+      "en": "Instruction File",
+      "zh": "指令文件",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 318,
+      "en": "Tool Manifest",
+      "zh": "工具清单",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 319,
+      "en": "Schema Definition",
+      "zh": "模式定义",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 320,
+      "en": "JSON Schema",
+      "zh": "JSON 模式",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 16,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 321,
+      "en": "Orchestration Graph",
+      "zh": "编排图",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 322,
+      "en": "Node",
+      "zh": "节点",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 323,
+      "en": "Edge",
+      "zh": "边",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 324,
+      "en": "Prompt Template",
+      "zh": "提示模板",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 325,
+      "en": "Environment Variable",
+      "zh": "环境变量",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 326,
+      "en": "Secrets Management",
+      "zh": "密钥管理",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 327,
+      "en": "Development Environment",
+      "zh": "开发环境",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 328,
+      "en": "Staging Environment",
+      "zh": "暂存环境",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 329,
+      "en": "Production Environment",
+      "zh": "生产环境",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 330,
+      "en": "Version Control",
+      "zh": "版本控制",
+      "abbr": "",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 331,
+      "en": "Continuous Integration (CI)",
+      "zh": "持续集成",
+      "abbr": "CI",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    },
+    {
+      "n": 332,
+      "en": "Continuous Delivery (CD)",
+      "zh": "持续交付",
+      "abbr": "CD",
+      "topic": "开发实践与生态术语",
+      "batch": 17,
+      "ready": false,
+      "file": null
+    }
+  ]
+}

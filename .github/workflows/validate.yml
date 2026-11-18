@@ -29,6 +29,8 @@ jobs:
         run: |
           python scripts/build_wiki_index.py --check
           python scripts/verify_wiki.py
+      - name: Verify AI Agents Wiki
+        run: python scripts/verify_ai_agents_wiki.py
       - name: Validate documentation and local links
         run: python scripts/verify_docs.py
       - name: Enforce read-only workflows and reviewer evidence

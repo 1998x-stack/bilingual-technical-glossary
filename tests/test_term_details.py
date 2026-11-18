@@ -21,8 +21,9 @@ class TermDetailTests(unittest.TestCase):
         self.assertEqual(self.index, generate_index(ROOT))
         check_index(ROOT)
         self.assertEqual(self.index["schemaVersion"], 1)
-        manifest = json.loads((ROOT / "docs/wiki/ai-infrastructure/manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(self.index["articles"]), sum(1 for entry in manifest["terms"] if entry["ready"]))
+        manifests = sorted((ROOT / "docs/wiki").glob("*/manifest.json"))
+        expected = sum(sum(1 for entry in json.loads(p.read_text(encoding="utf-8"))["terms"] if entry["ready"]) for p in manifests)
+        self.assertEqual(len(self.index["articles"]), expected)
 
     def test_public_index_uses_real_glossary_identity(self):
         identities = {
