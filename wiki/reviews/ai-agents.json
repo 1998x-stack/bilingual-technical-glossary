@@ -242,6 +242,86 @@
     {
       "path": "wiki/ai-agents/060-lookahead-search.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/061-backtracking.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/062-replanning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/063-stopping-criterion.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/064-tool.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/065-tool-call.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/066-tool-result.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/067-tool-selection.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/068-tool-routing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/069-tool-schema.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/070-argument-validation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/071-tool-discovery.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/072-tool-registry.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/073-function-tool.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/074-web-search-tool.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/075-browser-automation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/076-computer-use.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/077-code-execution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/078-command-line-tool.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/079-application-programming-interface.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/080-tool-adapter.md",
+      "status": "pending"
     }
   ]
 }

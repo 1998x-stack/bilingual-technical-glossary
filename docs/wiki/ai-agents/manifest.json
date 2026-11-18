@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 60,
-  "readyArticles": 60,
+  "readyInPr": 80,
+  "readyArticles": 80,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -630,8 +630,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "061-backtracking.md"
     },
     {
       "n": 62,
@@ -640,8 +640,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "062-replanning.md"
     },
     {
       "n": 63,
@@ -650,8 +650,8 @@
       "abbr": "",
       "topic": "任务规划与决策",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "063-stopping-criterion.md"
     },
     {
       "n": 64,
@@ -660,8 +660,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "064-tool.md"
     },
     {
       "n": 65,
@@ -670,8 +670,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "065-tool-call.md"
     },
     {
       "n": 66,
@@ -680,8 +680,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "066-tool-result.md"
     },
     {
       "n": 67,
@@ -690,8 +690,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "067-tool-selection.md"
     },
     {
       "n": 68,
@@ -700,8 +700,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "068-tool-routing.md"
     },
     {
       "n": 69,
@@ -710,8 +710,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "069-tool-schema.md"
     },
     {
       "n": 70,
@@ -720,8 +720,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "070-argument-validation.md"
     },
     {
       "n": 71,
@@ -730,8 +730,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "071-tool-discovery.md"
     },
     {
       "n": 72,
@@ -740,8 +740,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "072-tool-registry.md"
     },
     {
       "n": 73,
@@ -750,8 +750,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "073-function-tool.md"
     },
     {
       "n": 74,
@@ -760,8 +760,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "074-web-search-tool.md"
     },
     {
       "n": 75,
@@ -770,8 +770,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "075-browser-automation.md"
     },
     {
       "n": 76,
@@ -780,8 +780,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "076-computer-use.md"
     },
     {
       "n": 77,
@@ -790,8 +790,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "077-code-execution.md"
     },
     {
       "n": 78,
@@ -800,8 +800,8 @@
       "abbr": "CLI",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "078-command-line-tool.md"
     },
     {
       "n": 79,
@@ -810,8 +810,8 @@
       "abbr": "API",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "079-application-programming-interface.md"
     },
     {
       "n": 80,
@@ -820,8 +820,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 4,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "080-tool-adapter.md"
     },
     {
       "n": 81,

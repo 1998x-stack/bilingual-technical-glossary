@@ -1414,6 +1414,146 @@
       "en": "Lookahead Search",
       "zh": "前瞻搜索",
       "path": "wiki/ai-agents/060-lookahead-search.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Backtracking",
+      "zh": "回溯",
+      "path": "wiki/ai-agents/061-backtracking.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Replanning",
+      "zh": "重规划",
+      "path": "wiki/ai-agents/062-replanning.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 3,
+      "en": "Stopping Criterion",
+      "zh": "停止准则",
+      "path": "wiki/ai-agents/063-stopping-criterion.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool",
+      "zh": "工具",
+      "path": "wiki/ai-agents/064-tool.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Call",
+      "zh": "工具调用",
+      "path": "wiki/ai-agents/065-tool-call.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Result",
+      "zh": "工具结果",
+      "path": "wiki/ai-agents/066-tool-result.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Selection",
+      "zh": "工具选择",
+      "path": "wiki/ai-agents/067-tool-selection.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Routing",
+      "zh": "工具路由",
+      "path": "wiki/ai-agents/068-tool-routing.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Schema",
+      "zh": "工具模式",
+      "path": "wiki/ai-agents/069-tool-schema.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Argument Validation",
+      "zh": "参数校验",
+      "path": "wiki/ai-agents/070-argument-validation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Discovery",
+      "zh": "工具发现",
+      "path": "wiki/ai-agents/071-tool-discovery.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Registry",
+      "zh": "工具注册表",
+      "path": "wiki/ai-agents/072-tool-registry.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Function Tool",
+      "zh": "函数工具",
+      "path": "wiki/ai-agents/073-function-tool.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Web Search Tool",
+      "zh": "网络搜索工具",
+      "path": "wiki/ai-agents/074-web-search-tool.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Browser Automation",
+      "zh": "浏览器自动化",
+      "path": "wiki/ai-agents/075-browser-automation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Computer Use",
+      "zh": "计算机使用",
+      "path": "wiki/ai-agents/076-computer-use.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Code Execution",
+      "zh": "代码执行",
+      "path": "wiki/ai-agents/077-code-execution.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Command-line Tool (CLI)",
+      "zh": "命令行工具",
+      "path": "wiki/ai-agents/078-command-line-tool.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Application Programming Interface (API)",
+      "zh": "应用程序接口",
+      "path": "wiki/ai-agents/079-application-programming-interface.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 4,
+      "en": "Tool Adapter",
+      "zh": "工具适配器",
+      "path": "wiki/ai-agents/080-tool-adapter.md"
     }
   ]
 }
