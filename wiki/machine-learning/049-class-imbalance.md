@@ -41,4 +41,6 @@ Class Imbalance 是观测类别比例特征；Sampling Bias 指样本代表性�
 - [scikit-learn：官方算法与数据协议文档](https://scikit-learn.org/stable/modules/model_evaluation.html)：支持模型划分、算法或评估语义。
 - [scikit-learn：官方相关方法参考](https://scikit-learn.org/stable/modules/generated/sklearn.utils.class_weight.compute_class_weight.html)：核对函数边界、统计要求与实现。
 
+- [imbalanced-learn：User Guide](https://imbalanced-learn.org/stable/user_guide.html)：类别不平衡下的重采样、分类评估和训练折约束。
+
 > 算例均为教学设定，非业务实测；所有专业审稿仍 pending。

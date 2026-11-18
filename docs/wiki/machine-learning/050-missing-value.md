@@ -41,4 +41,6 @@ Missing Value 是信息未提供；Outlier 是已有观测显著偏离；Imputat
 - [scikit-learn：官方算法与数据协议文档](https://scikit-learn.org/stable/modules/impute.html)：支持模型划分、算法或评估语义。
 - [scikit-learn：官方相关方法参考](https://scikit-learn.org/stable/modules/generated/sklearn.impute.MissingIndicator.html)：核对函数边界、统计要求与实现。
 
+- [Rubin (1976)：Inference and Missing Data](https://doi.org/10.1093/biomet/63.3.581)：缺失机制 MCAR、MAR、MNAR 的经典统计研究；具体假设需要依据观测流程讨论。
+
 > 算例均为教学设定，非业务实测；所有专业审稿仍 pending。
