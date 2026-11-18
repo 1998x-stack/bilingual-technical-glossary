@@ -4193,6 +4193,181 @@
       "en": "Decision Boundary",
       "zh": "决策边界",
       "path": "wiki/machine-learning/125-decision-boundary.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Decision Function",
+      "zh": "决策函数",
+      "path": "wiki/machine-learning/126-decision-function.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Logit",
+      "zh": "对数几率",
+      "path": "wiki/machine-learning/127-logit.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Sigmoid Function",
+      "zh": "Sigmoid 函数",
+      "path": "wiki/machine-learning/128-sigmoid-function.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Softmax Function",
+      "zh": "Softmax 函数",
+      "path": "wiki/machine-learning/129-softmax-function.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Residual",
+      "zh": "残差",
+      "path": "wiki/machine-learning/130-residual.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Coefficient",
+      "zh": "回归系数",
+      "path": "wiki/machine-learning/131-coefficient.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Intercept",
+      "zh": "截距",
+      "path": "wiki/machine-learning/132-intercept.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Multicollinearity",
+      "zh": "多重共线性",
+      "path": "wiki/machine-learning/133-multicollinearity.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Decision Tree",
+      "zh": "决策树",
+      "path": "wiki/machine-learning/134-decision-tree.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Root Node",
+      "zh": "根节点",
+      "path": "wiki/machine-learning/135-root-node.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Internal Node",
+      "zh": "内部节点",
+      "path": "wiki/machine-learning/136-internal-node.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Leaf Node",
+      "zh": "叶节点",
+      "path": "wiki/machine-learning/137-leaf-node.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Tree Depth",
+      "zh": "树深度",
+      "path": "wiki/machine-learning/138-tree-depth.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Split Criterion",
+      "zh": "划分准则",
+      "path": "wiki/machine-learning/139-split-criterion.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Gini Impurity",
+      "zh": "基尼不纯度",
+      "path": "wiki/machine-learning/140-gini-impurity.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Information Gain",
+      "zh": "信息增益",
+      "path": "wiki/machine-learning/141-information-gain.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Tree Pruning",
+      "zh": "决策树剪枝",
+      "path": "wiki/machine-learning/142-tree-pruning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Bagging (Bootstrap Aggregating)",
+      "zh": "自助聚合",
+      "path": "wiki/machine-learning/143-bagging.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Bootstrap Sampling",
+      "zh": "自助采样",
+      "path": "wiki/machine-learning/144-bootstrap-sampling.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Random Forest",
+      "zh": "随机森林",
+      "path": "wiki/machine-learning/145-random-forest.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Extra Trees",
+      "zh": "极端随机树",
+      "path": "wiki/machine-learning/146-extra-trees.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Boosting",
+      "zh": "提升法",
+      "path": "wiki/machine-learning/147-boosting.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "AdaBoost",
+      "zh": "自适应提升",
+      "path": "wiki/machine-learning/148-adaboost.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Gradient Boosting",
+      "zh": "梯度提升",
+      "path": "wiki/machine-learning/149-gradient-boosting.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "GBDT",
+      "zh": "梯度提升决策树",
+      "path": "wiki/machine-learning/150-gbdt.md"
     }
   ]
 }
