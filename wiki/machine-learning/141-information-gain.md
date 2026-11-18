@@ -39,6 +39,6 @@ Information Gain 具体基于 Entropy Reduction；Gini Decrease 使用不同不�
 ## 8. 权威来源与延伸阅读
 
 - [scikit-learn Decision Tree 不纯度与熵指南](https://scikit-learn.org/stable/modules/tree.html)：核对训练算法、数理定义及 API 行为。
-- [Quinlan ID3 原始论文 DOI](https://doi.org/10.1023/A:1022643204877)：核对训练算法、数理定义及 API 行为。
+- [Quinlan ID3 原始论文 DOI](https://doi.org/10.1007/BF00116251)：核对训练算法、数理定义及 API 行为。
 
 > 教学数字是明确算例，非真实工业性能；独立专业审稿仍为 pending。
