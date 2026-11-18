@@ -1,6 +1,6 @@
 ---
 name: term-atlas-wiki-batch
-description: Research and write a batch of up to 20 long-form TERM/ATLAS concept Wiki articles with precise definitions, intuitive explanations, mechanisms, engineering cases, medium-level interview and exam questions, references, and GitHub Pages synchronization. Use for AI Infra Wiki Batch 03 onward and other domain Wiki batches; not for simple glossary translation.
+description: Research and write a batch of up to 20 long-form (25 for Machine Learning) TERM/ATLAS concept Wiki articles with precise definitions, intuitive explanations, mechanisms, engineering cases, medium-level interview and exam questions, references, and GitHub Pages synchronization. Use for AI Infra Wiki Batch 03 onward and other domain Wiki batches; not for simple glossary translation.
 ---
 
 # TERM/ATLAS · Deep Wiki Batch Authoring
@@ -10,7 +10,7 @@ Use for **knowledge-article production**, not for ordinary bilingual term correc
 ## Plan the batch from source data
 1. Read the current `main` branch. Detect completed articles and open PRs before deciding the next batch; never assume a previous chat's completion state is current.
 2. Find the domain's canonical term order in its source; for AI Infra use `data/ai-infrastructure.tsv`. Read `wiki/ai-infrastructure/batches.json` and `docs/wiki/ai-infrastructure/manifest.json`.
-3. Select the **next uncompleted contiguous group of up to 20 terms** in source order (the final group may be shorter). Avoid writing duplicate numbered pages or reordering IDs. For AI Infra, Batch 03 is 041–060 unless the repository has since changed.
+3. Select the **next uncompleted contiguous group of up to 20 terms by default, or 25 for Machine Learning** in source order (the final group may be shorter). Avoid writing duplicate numbered pages or reordering IDs. For AI Infra, Batch 03 is 041–060 unless the repository has since changed.
 4. Define per-article scope: prerequisites, related terms, candidate authoritative references, a mechanism, an engineering example, and assessment objectives.
 
 ## Write each article

@@ -1,0 +1,4731 @@
+{
+  "schema_version": 1,
+  "source": "glossaries/machine-learning.md",
+  "total_terms": 447,
+  "batch_size": 25,
+  "topics": [
+    "基础概念与学习范式",
+    "数据、样本与数据集划分",
+    "数据预处理与特征工程",
+    "统计学习与泛化理论",
+    "回归、分类与线性模型",
+    "树模型与集成学习",
+    "支持向量机、核方法与近邻",
+    "概率模型与统计推断",
+    "无监督学习与聚类",
+    "降维、分解与流形学习",
+    "优化算法与模型训练",
+    "损失函数与回归评估",
+    "分类指标与概率校准",
+    "调参与模型选择",
+    "时间序列与预测",
+    "推荐系统与排序学习",
+    "深度学习相关核心术语",
+    "机器学习工程与生产部署",
+    "可解释性、公平性与安全"
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "start": 1,
+      "end": 25,
+      "count": 25,
+      "topics": [
+        "基础概念与学习范式",
+        "数据、样本与数据集划分"
+      ],
+      "status": "drafted_in_pr",
+      "terms": [
+        {
+          "no": 1,
+          "en": "Machine Learning (ML)",
+          "zh": "机器学习",
+          "abbr": "ML",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/001-machine-learning.md"
+        },
+        {
+          "no": 2,
+          "en": "Artificial Intelligence (AI)",
+          "zh": "人工智能",
+          "abbr": "AI",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/002-artificial-intelligence.md"
+        },
+        {
+          "no": 3,
+          "en": "Statistical Learning",
+          "zh": "统计学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/003-statistical-learning.md"
+        },
+        {
+          "no": 4,
+          "en": "Supervised Learning",
+          "zh": "监督学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/004-supervised-learning.md"
+        },
+        {
+          "no": 5,
+          "en": "Unsupervised Learning",
+          "zh": "无监督学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/005-unsupervised-learning.md"
+        },
+        {
+          "no": 6,
+          "en": "Semi-supervised Learning",
+          "zh": "半监督学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/006-semi-supervised-learning.md"
+        },
+        {
+          "no": 7,
+          "en": "Self-supervised Learning",
+          "zh": "自监督学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/007-self-supervised-learning.md"
+        },
+        {
+          "no": 8,
+          "en": "Reinforcement Learning (RL)",
+          "zh": "强化学习",
+          "abbr": "RL",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/008-reinforcement-learning.md"
+        },
+        {
+          "no": 9,
+          "en": "Online Learning",
+          "zh": "在线学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/009-online-learning.md"
+        },
+        {
+          "no": 10,
+          "en": "Offline Learning / Batch Learning",
+          "zh": "离线学习／批量学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/010-offline-learning-batch-learning.md"
+        },
+        {
+          "no": 11,
+          "en": "Active Learning",
+          "zh": "主动学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/011-active-learning.md"
+        },
+        {
+          "no": 12,
+          "en": "Transfer Learning",
+          "zh": "迁移学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/012-transfer-learning.md"
+        },
+        {
+          "no": 13,
+          "en": "Multi-task Learning",
+          "zh": "多任务学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/013-multi-task-learning.md"
+        },
+        {
+          "no": 14,
+          "en": "Meta-learning",
+          "zh": "元学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/014-meta-learning.md"
+        },
+        {
+          "no": 15,
+          "en": "Few-shot Learning",
+          "zh": "少样本学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/015-few-shot-learning.md"
+        },
+        {
+          "no": 16,
+          "en": "Zero-shot Learning",
+          "zh": "零样本学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/016-zero-shot-learning.md"
+        },
+        {
+          "no": 17,
+          "en": "Domain Adaptation",
+          "zh": "领域自适应",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/017-domain-adaptation.md"
+        },
+        {
+          "no": 18,
+          "en": "Inductive Learning",
+          "zh": "归纳学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/018-inductive-learning.md"
+        },
+        {
+          "no": 19,
+          "en": "Transductive Learning",
+          "zh": "直推学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/019-transductive-learning.md"
+        },
+        {
+          "no": 20,
+          "en": "Generative Model",
+          "zh": "生成模型",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/020-generative-model.md"
+        },
+        {
+          "no": 21,
+          "en": "Discriminative Model",
+          "zh": "判别模型",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/021-discriminative-model.md"
+        },
+        {
+          "no": 22,
+          "en": "Predictive Modeling",
+          "zh": "预测建模",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/022-predictive-modeling.md"
+        },
+        {
+          "no": 23,
+          "en": "Representation Learning",
+          "zh": "表征学习",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/023-representation-learning.md"
+        },
+        {
+          "no": 24,
+          "en": "Foundation Model",
+          "zh": "基础模型",
+          "abbr": "",
+          "chapter": 1,
+          "topic": "基础概念与学习范式",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/024-foundation-model.md"
+        },
+        {
+          "no": 25,
+          "en": "Dataset",
+          "zh": "数据集",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "drafted_in_pr",
+          "wiki": "wiki/machine-learning/025-dataset.md"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "start": 26,
+      "end": 50,
+      "count": 25,
+      "topics": [
+        "数据、样本与数据集划分"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 26,
+          "en": "Sample / Instance",
+          "zh": "样本／实例",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/026-sample-instance.md"
+        },
+        {
+          "no": 27,
+          "en": "Observation",
+          "zh": "观测",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/027-observation.md"
+        },
+        {
+          "no": 28,
+          "en": "Feature",
+          "zh": "特征",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/028-feature.md"
+        },
+        {
+          "no": 29,
+          "en": "Target / Label",
+          "zh": "目标变量／标签",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/029-target-label.md"
+        },
+        {
+          "no": 30,
+          "en": "Ground Truth",
+          "zh": "真实标注／参考真值",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/030-ground-truth.md"
+        },
+        {
+          "no": 31,
+          "en": "Feature Matrix (X)",
+          "zh": "特征矩阵",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/031-feature-matrix.md"
+        },
+        {
+          "no": 32,
+          "en": "Target Vector (y)",
+          "zh": "目标向量",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/032-target-vector.md"
+        },
+        {
+          "no": 33,
+          "en": "Training Set",
+          "zh": "训练集",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/033-training-set.md"
+        },
+        {
+          "no": 34,
+          "en": "Validation Set",
+          "zh": "验证集",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/034-validation-set.md"
+        },
+        {
+          "no": 35,
+          "en": "Test Set",
+          "zh": "测试集",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/035-test-set.md"
+        },
+        {
+          "no": 36,
+          "en": "Holdout Set",
+          "zh": "留出集",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/036-holdout-set.md"
+        },
+        {
+          "no": 37,
+          "en": "Train–Test Split",
+          "zh": "训练测试划分",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/037-train-test-split.md"
+        },
+        {
+          "no": 38,
+          "en": "Stratified Sampling",
+          "zh": "分层抽样",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/038-stratified-sampling.md"
+        },
+        {
+          "no": 39,
+          "en": "Group Split",
+          "zh": "分组划分",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/039-group-split.md"
+        },
+        {
+          "no": 40,
+          "en": "Temporal Split",
+          "zh": "时间划分",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/040-temporal-split.md"
+        },
+        {
+          "no": 41,
+          "en": "Cross-validation (CV)",
+          "zh": "交叉验证",
+          "abbr": "CV",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/041-cross-validation.md"
+        },
+        {
+          "no": 42,
+          "en": "K-fold Cross-validation",
+          "zh": "K 折交叉验证",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/042-k-fold-cross-validation.md"
+        },
+        {
+          "no": 43,
+          "en": "Stratified K-fold",
+          "zh": "分层 K 折交叉验证",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/043-stratified-k-fold.md"
+        },
+        {
+          "no": 44,
+          "en": "Leave-one-out CV (LOOCV)",
+          "zh": "留一交叉验证",
+          "abbr": "LOOCV",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/044-leave-one-out-cv.md"
+        },
+        {
+          "no": 45,
+          "en": "Out-of-fold Prediction (OOF)",
+          "zh": "折外预测",
+          "abbr": "OOF",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/045-out-of-fold-prediction.md"
+        },
+        {
+          "no": 46,
+          "en": "Data Leakage",
+          "zh": "数据泄漏",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/046-data-leakage.md"
+        },
+        {
+          "no": 47,
+          "en": "Label Leakage",
+          "zh": "标签泄漏",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/047-label-leakage.md"
+        },
+        {
+          "no": 48,
+          "en": "Sampling Bias",
+          "zh": "抽样偏差",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/048-sampling-bias.md"
+        },
+        {
+          "no": 49,
+          "en": "Class Imbalance",
+          "zh": "类别不平衡",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/049-class-imbalance.md"
+        },
+        {
+          "no": 50,
+          "en": "Missing Value",
+          "zh": "缺失值",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/050-missing-value.md"
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "start": 51,
+      "end": 75,
+      "count": 25,
+      "topics": [
+        "数据、样本与数据集划分",
+        "数据预处理与特征工程"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 51,
+          "en": "Outlier",
+          "zh": "离群点",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/051-outlier.md"
+        },
+        {
+          "no": 52,
+          "en": "Data Annotation",
+          "zh": "数据标注",
+          "abbr": "",
+          "chapter": 2,
+          "topic": "数据、样本与数据集划分",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/052-data-annotation.md"
+        },
+        {
+          "no": 53,
+          "en": "Data Cleaning",
+          "zh": "数据清洗",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/053-data-cleaning.md"
+        },
+        {
+          "no": 54,
+          "en": "Data Preprocessing",
+          "zh": "数据预处理",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/054-data-preprocessing.md"
+        },
+        {
+          "no": 55,
+          "en": "Feature Engineering",
+          "zh": "特征工程",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/055-feature-engineering.md"
+        },
+        {
+          "no": 56,
+          "en": "Feature Extraction",
+          "zh": "特征提取",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/056-feature-extraction.md"
+        },
+        {
+          "no": 57,
+          "en": "Feature Selection",
+          "zh": "特征选择",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/057-feature-selection.md"
+        },
+        {
+          "no": 58,
+          "en": "Imputation",
+          "zh": "缺失值填补",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/058-imputation.md"
+        },
+        {
+          "no": 59,
+          "en": "Mean Imputation",
+          "zh": "均值填补",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/059-mean-imputation.md"
+        },
+        {
+          "no": 60,
+          "en": "Standardization",
+          "zh": "标准化",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/060-standardization.md"
+        },
+        {
+          "no": 61,
+          "en": "Normalization",
+          "zh": "归一化",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/061-normalization.md"
+        },
+        {
+          "no": 62,
+          "en": "Min–Max Scaling",
+          "zh": "最小最大缩放",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/062-min-max-scaling.md"
+        },
+        {
+          "no": 63,
+          "en": "Robust Scaling",
+          "zh": "稳健缩放",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/063-robust-scaling.md"
+        },
+        {
+          "no": 64,
+          "en": "One-hot Encoding",
+          "zh": "独热编码",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/064-one-hot-encoding.md"
+        },
+        {
+          "no": 65,
+          "en": "Ordinal Encoding",
+          "zh": "序数编码",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/065-ordinal-encoding.md"
+        },
+        {
+          "no": 66,
+          "en": "Target Encoding",
+          "zh": "目标编码",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/066-target-encoding.md"
+        },
+        {
+          "no": 67,
+          "en": "Label Encoding",
+          "zh": "标签编码",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/067-label-encoding.md"
+        },
+        {
+          "no": 68,
+          "en": "Binning / Discretization",
+          "zh": "分箱／离散化",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/068-binning-discretization.md"
+        },
+        {
+          "no": 69,
+          "en": "Polynomial Features",
+          "zh": "多项式特征",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/069-polynomial-features.md"
+        },
+        {
+          "no": 70,
+          "en": "Interaction Feature",
+          "zh": "交互特征",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/070-interaction-feature.md"
+        },
+        {
+          "no": 71,
+          "en": "Log Transformation",
+          "zh": "对数变换",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/071-log-transformation.md"
+        },
+        {
+          "no": 72,
+          "en": "Box–Cox Transformation",
+          "zh": "Box–Cox 变换",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/072-box-cox-transformation.md"
+        },
+        {
+          "no": 73,
+          "en": "Feature Hashing",
+          "zh": "特征哈希",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/073-feature-hashing.md"
+        },
+        {
+          "no": 74,
+          "en": "Bag of Words (BoW)",
+          "zh": "词袋模型",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/074-bag-of-words.md"
+        },
+        {
+          "no": 75,
+          "en": "TF–IDF",
+          "zh": "词频-逆文档频率",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/075-tf-idf.md"
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "start": 76,
+      "end": 100,
+      "count": 25,
+      "topics": [
+        "数据预处理与特征工程",
+        "统计学习与泛化理论"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 76,
+          "en": "Embedding",
+          "zh": "嵌入向量",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/076-embedding.md"
+        },
+        {
+          "no": 77,
+          "en": "Sparse Feature",
+          "zh": "稀疏特征",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/077-sparse-feature.md"
+        },
+        {
+          "no": 78,
+          "en": "Dense Feature",
+          "zh": "稠密特征",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/078-dense-feature.md"
+        },
+        {
+          "no": 79,
+          "en": "Data Augmentation",
+          "zh": "数据增强",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/079-data-augmentation.md"
+        },
+        {
+          "no": 80,
+          "en": "Resampling",
+          "zh": "重采样",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/080-resampling.md"
+        },
+        {
+          "no": 81,
+          "en": "SMOTE",
+          "zh": "合成少数类过采样技术",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/081-smote.md"
+        },
+        {
+          "no": 82,
+          "en": "Pipeline",
+          "zh": "流水线",
+          "abbr": "",
+          "chapter": 3,
+          "topic": "数据预处理与特征工程",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/082-pipeline.md"
+        },
+        {
+          "no": 83,
+          "en": "Empirical Risk",
+          "zh": "经验风险",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/083-empirical-risk.md"
+        },
+        {
+          "no": 84,
+          "en": "Expected Risk",
+          "zh": "期望风险",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/084-expected-risk.md"
+        },
+        {
+          "no": 85,
+          "en": "Empirical Risk Minimization (ERM)",
+          "zh": "经验风险最小化",
+          "abbr": "ERM",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/085-empirical-risk-minimization.md"
+        },
+        {
+          "no": 86,
+          "en": "Structural Risk Minimization (SRM)",
+          "zh": "结构风险最小化",
+          "abbr": "SRM",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/086-structural-risk-minimization.md"
+        },
+        {
+          "no": 87,
+          "en": "Generalization",
+          "zh": "泛化",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/087-generalization.md"
+        },
+        {
+          "no": 88,
+          "en": "Generalization Gap",
+          "zh": "泛化差距",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/088-generalization-gap.md"
+        },
+        {
+          "no": 89,
+          "en": "Overfitting",
+          "zh": "过拟合",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/089-overfitting.md"
+        },
+        {
+          "no": 90,
+          "en": "Underfitting",
+          "zh": "欠拟合",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/090-underfitting.md"
+        },
+        {
+          "no": 91,
+          "en": "Bias–Variance Tradeoff",
+          "zh": "偏差-方差权衡",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/091-bias-variance-tradeoff.md"
+        },
+        {
+          "no": 92,
+          "en": "Inductive Bias",
+          "zh": "归纳偏置",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/092-inductive-bias.md"
+        },
+        {
+          "no": 93,
+          "en": "Regularization",
+          "zh": "正则化",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/093-regularization.md"
+        },
+        {
+          "no": 94,
+          "en": "L1 Regularization",
+          "zh": "L1 正则化",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/094-l1-regularization.md"
+        },
+        {
+          "no": 95,
+          "en": "L2 Regularization",
+          "zh": "L2 正则化",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/095-l2-regularization.md"
+        },
+        {
+          "no": 96,
+          "en": "Elastic Net Regularization",
+          "zh": "弹性网络正则化",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/096-elastic-net-regularization.md"
+        },
+        {
+          "no": 97,
+          "en": "Model Complexity",
+          "zh": "模型复杂度",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/097-model-complexity.md"
+        },
+        {
+          "no": 98,
+          "en": "Capacity",
+          "zh": "模型容量",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/098-capacity.md"
+        },
+        {
+          "no": 99,
+          "en": "VC Dimension",
+          "zh": "VC 维",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/099-vc-dimension.md"
+        },
+        {
+          "no": 100,
+          "en": "PAC Learning",
+          "zh": "概率近似正确学习",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/100-pac-learning.md"
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "start": 101,
+      "end": 125,
+      "count": 25,
+      "topics": [
+        "统计学习与泛化理论",
+        "回归、分类与线性模型"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 101,
+          "en": "Sample Complexity",
+          "zh": "样本复杂度",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/101-sample-complexity.md"
+        },
+        {
+          "no": 102,
+          "en": "Learning Curve",
+          "zh": "学习曲线",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/102-learning-curve.md"
+        },
+        {
+          "no": 103,
+          "en": "Validation Curve",
+          "zh": "验证曲线",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/103-validation-curve.md"
+        },
+        {
+          "no": 104,
+          "en": "Distribution Shift",
+          "zh": "分布偏移",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/104-distribution-shift.md"
+        },
+        {
+          "no": 105,
+          "en": "Covariate Shift",
+          "zh": "协变量偏移",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/105-covariate-shift.md"
+        },
+        {
+          "no": 106,
+          "en": "Label Shift / Prior Shift",
+          "zh": "标签偏移／先验偏移",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/106-label-shift-prior-shift.md"
+        },
+        {
+          "no": 107,
+          "en": "Concept Drift",
+          "zh": "概念漂移",
+          "abbr": "",
+          "chapter": 4,
+          "topic": "统计学习与泛化理论",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/107-concept-drift.md"
+        },
+        {
+          "no": 108,
+          "en": "Regression",
+          "zh": "回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/108-regression.md"
+        },
+        {
+          "no": 109,
+          "en": "Classification",
+          "zh": "分类",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/109-classification.md"
+        },
+        {
+          "no": 110,
+          "en": "Binary Classification",
+          "zh": "二分类",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/110-binary-classification.md"
+        },
+        {
+          "no": 111,
+          "en": "Multiclass Classification",
+          "zh": "多类别分类",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/111-multiclass-classification.md"
+        },
+        {
+          "no": 112,
+          "en": "Multilabel Classification",
+          "zh": "多标签分类",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/112-multilabel-classification.md"
+        },
+        {
+          "no": 113,
+          "en": "Multioutput Prediction",
+          "zh": "多输出预测",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/113-multioutput-prediction.md"
+        },
+        {
+          "no": 114,
+          "en": "Linear Regression",
+          "zh": "线性回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/114-linear-regression.md"
+        },
+        {
+          "no": 115,
+          "en": "Ordinary Least Squares (OLS)",
+          "zh": "普通最小二乘法",
+          "abbr": "OLS",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/115-ordinary-least-squares.md"
+        },
+        {
+          "no": 116,
+          "en": "Ridge Regression",
+          "zh": "岭回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/116-ridge-regression.md"
+        },
+        {
+          "no": 117,
+          "en": "Lasso Regression",
+          "zh": "套索回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/117-lasso-regression.md"
+        },
+        {
+          "no": 118,
+          "en": "Elastic Net",
+          "zh": "弹性网络",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/118-elastic-net.md"
+        },
+        {
+          "no": 119,
+          "en": "Logistic Regression",
+          "zh": "逻辑回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/119-logistic-regression.md"
+        },
+        {
+          "no": 120,
+          "en": "Softmax Regression",
+          "zh": "Softmax 回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/120-softmax-regression.md"
+        },
+        {
+          "no": 121,
+          "en": "Generalized Linear Model (GLM)",
+          "zh": "广义线性模型",
+          "abbr": "GLM",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/121-generalized-linear-model.md"
+        },
+        {
+          "no": 122,
+          "en": "Poisson Regression",
+          "zh": "泊松回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/122-poisson-regression.md"
+        },
+        {
+          "no": 123,
+          "en": "Quantile Regression",
+          "zh": "分位数回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/123-quantile-regression.md"
+        },
+        {
+          "no": 124,
+          "en": "Robust Regression",
+          "zh": "稳健回归",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/124-robust-regression.md"
+        },
+        {
+          "no": 125,
+          "en": "Decision Boundary",
+          "zh": "决策边界",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/125-decision-boundary.md"
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "start": 126,
+      "end": 150,
+      "count": 25,
+      "topics": [
+        "回归、分类与线性模型",
+        "树模型与集成学习"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 126,
+          "en": "Decision Function",
+          "zh": "决策函数",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/126-decision-function.md"
+        },
+        {
+          "no": 127,
+          "en": "Logit",
+          "zh": "对数几率",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/127-logit.md"
+        },
+        {
+          "no": 128,
+          "en": "Sigmoid Function",
+          "zh": "Sigmoid 函数",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/128-sigmoid-function.md"
+        },
+        {
+          "no": 129,
+          "en": "Softmax Function",
+          "zh": "Softmax 函数",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/129-softmax-function.md"
+        },
+        {
+          "no": 130,
+          "en": "Residual",
+          "zh": "残差",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/130-residual.md"
+        },
+        {
+          "no": 131,
+          "en": "Coefficient",
+          "zh": "回归系数",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/131-coefficient.md"
+        },
+        {
+          "no": 132,
+          "en": "Intercept",
+          "zh": "截距",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/132-intercept.md"
+        },
+        {
+          "no": 133,
+          "en": "Multicollinearity",
+          "zh": "多重共线性",
+          "abbr": "",
+          "chapter": 5,
+          "topic": "回归、分类与线性模型",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/133-multicollinearity.md"
+        },
+        {
+          "no": 134,
+          "en": "Decision Tree",
+          "zh": "决策树",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/134-decision-tree.md"
+        },
+        {
+          "no": 135,
+          "en": "Root Node",
+          "zh": "根节点",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/135-root-node.md"
+        },
+        {
+          "no": 136,
+          "en": "Internal Node",
+          "zh": "内部节点",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/136-internal-node.md"
+        },
+        {
+          "no": 137,
+          "en": "Leaf Node",
+          "zh": "叶节点",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/137-leaf-node.md"
+        },
+        {
+          "no": 138,
+          "en": "Tree Depth",
+          "zh": "树深度",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/138-tree-depth.md"
+        },
+        {
+          "no": 139,
+          "en": "Split Criterion",
+          "zh": "划分准则",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/139-split-criterion.md"
+        },
+        {
+          "no": 140,
+          "en": "Gini Impurity",
+          "zh": "基尼不纯度",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/140-gini-impurity.md"
+        },
+        {
+          "no": 141,
+          "en": "Information Gain",
+          "zh": "信息增益",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/141-information-gain.md"
+        },
+        {
+          "no": 142,
+          "en": "Tree Pruning",
+          "zh": "决策树剪枝",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/142-tree-pruning.md"
+        },
+        {
+          "no": 143,
+          "en": "Bagging (Bootstrap Aggregating)",
+          "zh": "自助聚合",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/143-bagging.md"
+        },
+        {
+          "no": 144,
+          "en": "Bootstrap Sampling",
+          "zh": "自助采样",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/144-bootstrap-sampling.md"
+        },
+        {
+          "no": 145,
+          "en": "Random Forest",
+          "zh": "随机森林",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/145-random-forest.md"
+        },
+        {
+          "no": 146,
+          "en": "Extra Trees",
+          "zh": "极端随机树",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/146-extra-trees.md"
+        },
+        {
+          "no": 147,
+          "en": "Boosting",
+          "zh": "提升法",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/147-boosting.md"
+        },
+        {
+          "no": 148,
+          "en": "AdaBoost",
+          "zh": "自适应提升",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/148-adaboost.md"
+        },
+        {
+          "no": 149,
+          "en": "Gradient Boosting",
+          "zh": "梯度提升",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/149-gradient-boosting.md"
+        },
+        {
+          "no": 150,
+          "en": "GBDT",
+          "zh": "梯度提升决策树",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/150-gbdt.md"
+        }
+      ]
+    },
+    {
+      "batch": 7,
+      "start": 151,
+      "end": 175,
+      "count": 25,
+      "topics": [
+        "树模型与集成学习",
+        "支持向量机、核方法与近邻"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 151,
+          "en": "XGBoost",
+          "zh": "极端梯度提升",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/151-xgboost.md"
+        },
+        {
+          "no": 152,
+          "en": "LightGBM",
+          "zh": "轻量级梯度提升机",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/152-lightgbm.md"
+        },
+        {
+          "no": 153,
+          "en": "CatBoost",
+          "zh": "类别提升",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/153-catboost.md"
+        },
+        {
+          "no": 154,
+          "en": "Stacking",
+          "zh": "堆叠集成",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/154-stacking.md"
+        },
+        {
+          "no": 155,
+          "en": "Voting Ensemble",
+          "zh": "投票集成",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/155-voting-ensemble.md"
+        },
+        {
+          "no": 156,
+          "en": "Out-of-bag Error (OOB)",
+          "zh": "袋外误差",
+          "abbr": "OOB",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/156-out-of-bag-error.md"
+        },
+        {
+          "no": 157,
+          "en": "Feature Importance",
+          "zh": "特征重要性",
+          "abbr": "",
+          "chapter": 6,
+          "topic": "树模型与集成学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/157-feature-importance.md"
+        },
+        {
+          "no": 158,
+          "en": "Support Vector Machine (SVM)",
+          "zh": "支持向量机",
+          "abbr": "SVM",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/158-support-vector-machine.md"
+        },
+        {
+          "no": 159,
+          "en": "Support Vector",
+          "zh": "支持向量",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/159-support-vector.md"
+        },
+        {
+          "no": 160,
+          "en": "Margin",
+          "zh": "间隔",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/160-margin.md"
+        },
+        {
+          "no": 161,
+          "en": "Maximum Margin Classifier",
+          "zh": "最大间隔分类器",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/161-maximum-margin-classifier.md"
+        },
+        {
+          "no": 162,
+          "en": "Hinge Loss",
+          "zh": "合页损失",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/162-hinge-loss.md"
+        },
+        {
+          "no": 163,
+          "en": "Soft Margin",
+          "zh": "软间隔",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/163-soft-margin.md"
+        },
+        {
+          "no": 164,
+          "en": "Kernel Trick",
+          "zh": "核技巧",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/164-kernel-trick.md"
+        },
+        {
+          "no": 165,
+          "en": "Kernel Function",
+          "zh": "核函数",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/165-kernel-function.md"
+        },
+        {
+          "no": 166,
+          "en": "Linear Kernel",
+          "zh": "线性核",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/166-linear-kernel.md"
+        },
+        {
+          "no": 167,
+          "en": "Polynomial Kernel",
+          "zh": "多项式核",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/167-polynomial-kernel.md"
+        },
+        {
+          "no": 168,
+          "en": "RBF Kernel / Gaussian Kernel",
+          "zh": "径向基核／高斯核",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/168-rbf-kernel-gaussian-kernel.md"
+        },
+        {
+          "no": 169,
+          "en": "Support Vector Regression (SVR)",
+          "zh": "支持向量回归",
+          "abbr": "SVR",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/169-support-vector-regression.md"
+        },
+        {
+          "no": 170,
+          "en": "K-nearest Neighbors (KNN)",
+          "zh": "K 近邻算法",
+          "abbr": "KNN",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/170-k-nearest-neighbors.md"
+        },
+        {
+          "no": 171,
+          "en": "Nearest Neighbor Search",
+          "zh": "最近邻搜索",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/171-nearest-neighbor-search.md"
+        },
+        {
+          "no": 172,
+          "en": "Distance Metric",
+          "zh": "距离度量",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/172-distance-metric.md"
+        },
+        {
+          "no": 173,
+          "en": "Euclidean Distance",
+          "zh": "欧氏距离",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/173-euclidean-distance.md"
+        },
+        {
+          "no": 174,
+          "en": "Manhattan Distance",
+          "zh": "曼哈顿距离",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/174-manhattan-distance.md"
+        },
+        {
+          "no": 175,
+          "en": "Cosine Similarity",
+          "zh": "余弦相似度",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/175-cosine-similarity.md"
+        }
+      ]
+    },
+    {
+      "batch": 8,
+      "start": 176,
+      "end": 200,
+      "count": 25,
+      "topics": [
+        "支持向量机、核方法与近邻",
+        "概率模型与统计推断"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 176,
+          "en": "Metric Learning",
+          "zh": "度量学习",
+          "abbr": "",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/176-metric-learning.md"
+        },
+        {
+          "no": 177,
+          "en": "Approximate Nearest Neighbor (ANN)",
+          "zh": "近似最近邻",
+          "abbr": "ANN",
+          "chapter": 7,
+          "topic": "支持向量机、核方法与近邻",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/177-approximate-nearest-neighbor.md"
+        },
+        {
+          "no": 178,
+          "en": "Probability Distribution",
+          "zh": "概率分布",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/178-probability-distribution.md"
+        },
+        {
+          "no": 179,
+          "en": "Conditional Probability",
+          "zh": "条件概率",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/179-conditional-probability.md"
+        },
+        {
+          "no": 180,
+          "en": "Bayes’ Theorem",
+          "zh": "贝叶斯定理",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/180-bayes-theorem.md"
+        },
+        {
+          "no": 181,
+          "en": "Prior Probability",
+          "zh": "先验概率",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/181-prior-probability.md"
+        },
+        {
+          "no": 182,
+          "en": "Likelihood",
+          "zh": "似然",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/182-likelihood.md"
+        },
+        {
+          "no": 183,
+          "en": "Posterior Probability",
+          "zh": "后验概率",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/183-posterior-probability.md"
+        },
+        {
+          "no": 184,
+          "en": "Maximum Likelihood Estimation (MLE)",
+          "zh": "极大似然估计",
+          "abbr": "MLE",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/184-maximum-likelihood-estimation.md"
+        },
+        {
+          "no": 185,
+          "en": "Maximum A Posteriori (MAP)",
+          "zh": "最大后验估计",
+          "abbr": "MAP",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/185-maximum-a-posteriori.md"
+        },
+        {
+          "no": 186,
+          "en": "Bayesian Inference",
+          "zh": "贝叶斯推断",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/186-bayesian-inference.md"
+        },
+        {
+          "no": 187,
+          "en": "Naive Bayes",
+          "zh": "朴素贝叶斯",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/187-naive-bayes.md"
+        },
+        {
+          "no": 188,
+          "en": "Gaussian Naive Bayes",
+          "zh": "高斯朴素贝叶斯",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/188-gaussian-naive-bayes.md"
+        },
+        {
+          "no": 189,
+          "en": "Gaussian Mixture Model (GMM)",
+          "zh": "高斯混合模型",
+          "abbr": "GMM",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/189-gaussian-mixture-model.md"
+        },
+        {
+          "no": 190,
+          "en": "Latent Variable",
+          "zh": "潜变量",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/190-latent-variable.md"
+        },
+        {
+          "no": 191,
+          "en": "Expectation–Maximization (EM)",
+          "zh": "期望最大化算法",
+          "abbr": "EM",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/191-expectation-maximization.md"
+        },
+        {
+          "no": 192,
+          "en": "Markov Chain",
+          "zh": "马尔可夫链",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/192-markov-chain.md"
+        },
+        {
+          "no": 193,
+          "en": "Hidden Markov Model (HMM)",
+          "zh": "隐马尔可夫模型",
+          "abbr": "HMM",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/193-hidden-markov-model.md"
+        },
+        {
+          "no": 194,
+          "en": "Markov Random Field (MRF)",
+          "zh": "马尔可夫随机场",
+          "abbr": "MRF",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/194-markov-random-field.md"
+        },
+        {
+          "no": 195,
+          "en": "Bayesian Network",
+          "zh": "贝叶斯网络",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/195-bayesian-network.md"
+        },
+        {
+          "no": 196,
+          "en": "Probabilistic Graphical Model (PGM)",
+          "zh": "概率图模型",
+          "abbr": "PGM",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/196-probabilistic-graphical-model.md"
+        },
+        {
+          "no": 197,
+          "en": "Variational Inference (VI)",
+          "zh": "变分推断",
+          "abbr": "VI",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/197-variational-inference.md"
+        },
+        {
+          "no": 198,
+          "en": "Monte Carlo Method",
+          "zh": "蒙特卡罗方法",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/198-monte-carlo-method.md"
+        },
+        {
+          "no": 199,
+          "en": "Markov Chain Monte Carlo (MCMC)",
+          "zh": "马尔可夫链蒙特卡罗",
+          "abbr": "MCMC",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/199-markov-chain-monte-carlo.md"
+        },
+        {
+          "no": 200,
+          "en": "Gaussian Process (GP)",
+          "zh": "高斯过程",
+          "abbr": "GP",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/200-gaussian-process.md"
+        }
+      ]
+    },
+    {
+      "batch": 9,
+      "start": 201,
+      "end": 225,
+      "count": 25,
+      "topics": [
+        "概率模型与统计推断",
+        "无监督学习与聚类"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 201,
+          "en": "Uncertainty Quantification",
+          "zh": "不确定性量化",
+          "abbr": "",
+          "chapter": 8,
+          "topic": "概率模型与统计推断",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/201-uncertainty-quantification.md"
+        },
+        {
+          "no": 202,
+          "en": "Clustering",
+          "zh": "聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/202-clustering.md"
+        },
+        {
+          "no": 203,
+          "en": "Cluster",
+          "zh": "簇",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/203-cluster.md"
+        },
+        {
+          "no": 204,
+          "en": "Centroid",
+          "zh": "质心",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/204-centroid.md"
+        },
+        {
+          "no": 205,
+          "en": "K-means",
+          "zh": "K 均值聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/205-k-means.md"
+        },
+        {
+          "no": 206,
+          "en": "K-means++",
+          "zh": "K-means++ 初始化",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/206-k-means-206.md"
+        },
+        {
+          "no": 207,
+          "en": "K-medoids",
+          "zh": "K 中心点聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/207-k-medoids.md"
+        },
+        {
+          "no": 208,
+          "en": "Hierarchical Clustering",
+          "zh": "层次聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/208-hierarchical-clustering.md"
+        },
+        {
+          "no": 209,
+          "en": "Agglomerative Clustering",
+          "zh": "凝聚层次聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/209-agglomerative-clustering.md"
+        },
+        {
+          "no": 210,
+          "en": "Divisive Clustering",
+          "zh": "分裂层次聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/210-divisive-clustering.md"
+        },
+        {
+          "no": 211,
+          "en": "Dendrogram",
+          "zh": "树状图",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/211-dendrogram.md"
+        },
+        {
+          "no": 212,
+          "en": "DBSCAN",
+          "zh": "基于密度的带噪声空间聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/212-dbscan.md"
+        },
+        {
+          "no": 213,
+          "en": "HDBSCAN",
+          "zh": "层次密度聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/213-hdbscan.md"
+        },
+        {
+          "no": 214,
+          "en": "Mean Shift",
+          "zh": "均值漂移",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/214-mean-shift.md"
+        },
+        {
+          "no": 215,
+          "en": "Spectral Clustering",
+          "zh": "谱聚类",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/215-spectral-clustering.md"
+        },
+        {
+          "no": 216,
+          "en": "Affinity Propagation",
+          "zh": "亲和传播",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/216-affinity-propagation.md"
+        },
+        {
+          "no": 217,
+          "en": "Silhouette Coefficient",
+          "zh": "轮廓系数",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/217-silhouette-coefficient.md"
+        },
+        {
+          "no": 218,
+          "en": "Davies–Bouldin Index",
+          "zh": "戴维斯-博尔丁指数",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/218-davies-bouldin-index.md"
+        },
+        {
+          "no": 219,
+          "en": "Adjusted Rand Index (ARI)",
+          "zh": "调整兰德指数",
+          "abbr": "ARI",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/219-adjusted-rand-index.md"
+        },
+        {
+          "no": 220,
+          "en": "Normalized Mutual Information (NMI)",
+          "zh": "归一化互信息",
+          "abbr": "NMI",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/220-normalized-mutual-information.md"
+        },
+        {
+          "no": 221,
+          "en": "Anomaly Detection",
+          "zh": "异常检测",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/221-anomaly-detection.md"
+        },
+        {
+          "no": 222,
+          "en": "Novelty Detection",
+          "zh": "新颖性检测",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/222-novelty-detection.md"
+        },
+        {
+          "no": 223,
+          "en": "Isolation Forest",
+          "zh": "孤立森林",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/223-isolation-forest.md"
+        },
+        {
+          "no": 224,
+          "en": "Local Outlier Factor (LOF)",
+          "zh": "局部离群因子",
+          "abbr": "LOF",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/224-local-outlier-factor.md"
+        },
+        {
+          "no": 225,
+          "en": "One-class SVM",
+          "zh": "单类支持向量机",
+          "abbr": "",
+          "chapter": 9,
+          "topic": "无监督学习与聚类",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/225-one-class-svm.md"
+        }
+      ]
+    },
+    {
+      "batch": 10,
+      "start": 226,
+      "end": 250,
+      "count": 25,
+      "topics": [
+        "降维、分解与流形学习",
+        "优化算法与模型训练"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 226,
+          "en": "Dimensionality Reduction",
+          "zh": "降维",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/226-dimensionality-reduction.md"
+        },
+        {
+          "no": 227,
+          "en": "Curse of Dimensionality",
+          "zh": "维度灾难",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/227-curse-of-dimensionality.md"
+        },
+        {
+          "no": 228,
+          "en": "Principal Component Analysis (PCA)",
+          "zh": "主成分分析",
+          "abbr": "PCA",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/228-principal-component-analysis.md"
+        },
+        {
+          "no": 229,
+          "en": "Principal Component",
+          "zh": "主成分",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/229-principal-component.md"
+        },
+        {
+          "no": 230,
+          "en": "Explained Variance Ratio",
+          "zh": "解释方差比",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/230-explained-variance-ratio.md"
+        },
+        {
+          "no": 231,
+          "en": "Singular Value Decomposition (SVD)",
+          "zh": "奇异值分解",
+          "abbr": "SVD",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/231-singular-value-decomposition.md"
+        },
+        {
+          "no": 232,
+          "en": "Truncated SVD",
+          "zh": "截断奇异值分解",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/232-truncated-svd.md"
+        },
+        {
+          "no": 233,
+          "en": "Non-negative Matrix Factorization (NMF)",
+          "zh": "非负矩阵分解",
+          "abbr": "NMF",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/233-non-negative-matrix-factorization.md"
+        },
+        {
+          "no": 234,
+          "en": "Independent Component Analysis (ICA)",
+          "zh": "独立成分分析",
+          "abbr": "ICA",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/234-independent-component-analysis.md"
+        },
+        {
+          "no": 235,
+          "en": "Factor Analysis (FA)",
+          "zh": "因子分析",
+          "abbr": "FA",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/235-factor-analysis.md"
+        },
+        {
+          "no": 236,
+          "en": "Linear Discriminant Analysis (LDA)",
+          "zh": "线性判别分析",
+          "abbr": "LDA",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/236-linear-discriminant-analysis.md"
+        },
+        {
+          "no": 237,
+          "en": "Manifold Learning",
+          "zh": "流形学习",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/237-manifold-learning.md"
+        },
+        {
+          "no": 238,
+          "en": "t-SNE",
+          "zh": "t 分布随机邻域嵌入",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/238-t-sne.md"
+        },
+        {
+          "no": 239,
+          "en": "UMAP",
+          "zh": "均匀流形近似与投影",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/239-umap.md"
+        },
+        {
+          "no": 240,
+          "en": "Isomap",
+          "zh": "等距映射",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/240-isomap.md"
+        },
+        {
+          "no": 241,
+          "en": "Locally Linear Embedding (LLE)",
+          "zh": "局部线性嵌入",
+          "abbr": "LLE",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/241-locally-linear-embedding.md"
+        },
+        {
+          "no": 242,
+          "en": "Random Projection",
+          "zh": "随机投影",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/242-random-projection.md"
+        },
+        {
+          "no": 243,
+          "en": "Low-rank Approximation",
+          "zh": "低秩近似",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/243-low-rank-approximation.md"
+        },
+        {
+          "no": 244,
+          "en": "Eigenvalue",
+          "zh": "特征值",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/244-eigenvalue.md"
+        },
+        {
+          "no": 245,
+          "en": "Eigenvector",
+          "zh": "特征向量",
+          "abbr": "",
+          "chapter": 10,
+          "topic": "降维、分解与流形学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/245-eigenvector.md"
+        },
+        {
+          "no": 246,
+          "en": "Objective Function",
+          "zh": "目标函数",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/246-objective-function.md"
+        },
+        {
+          "no": 247,
+          "en": "Loss Function",
+          "zh": "损失函数",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/247-loss-function.md"
+        },
+        {
+          "no": 248,
+          "en": "Cost Function",
+          "zh": "代价函数",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/248-cost-function.md"
+        },
+        {
+          "no": 249,
+          "en": "Gradient",
+          "zh": "梯度",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/249-gradient.md"
+        },
+        {
+          "no": 250,
+          "en": "Gradient Descent (GD)",
+          "zh": "梯度下降",
+          "abbr": "GD",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/250-gradient-descent.md"
+        }
+      ]
+    },
+    {
+      "batch": 11,
+      "start": 251,
+      "end": 275,
+      "count": 25,
+      "topics": [
+        "优化算法与模型训练"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 251,
+          "en": "Stochastic Gradient Descent (SGD)",
+          "zh": "随机梯度下降",
+          "abbr": "SGD",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/251-stochastic-gradient-descent.md"
+        },
+        {
+          "no": 252,
+          "en": "Mini-batch Gradient Descent",
+          "zh": "小批量梯度下降",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/252-mini-batch-gradient-descent.md"
+        },
+        {
+          "no": 253,
+          "en": "Batch Size",
+          "zh": "批量大小",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/253-batch-size.md"
+        },
+        {
+          "no": 254,
+          "en": "Epoch",
+          "zh": "训练轮次",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/254-epoch.md"
+        },
+        {
+          "no": 255,
+          "en": "Iteration / Step",
+          "zh": "迭代／更新步",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/255-iteration-step.md"
+        },
+        {
+          "no": 256,
+          "en": "Learning Rate",
+          "zh": "学习率",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/256-learning-rate.md"
+        },
+        {
+          "no": 257,
+          "en": "Learning Rate Schedule",
+          "zh": "学习率调度",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/257-learning-rate-schedule.md"
+        },
+        {
+          "no": 258,
+          "en": "Warmup",
+          "zh": "预热",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/258-warmup.md"
+        },
+        {
+          "no": 259,
+          "en": "Momentum",
+          "zh": "动量",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/259-momentum.md"
+        },
+        {
+          "no": 260,
+          "en": "Nesterov Momentum",
+          "zh": "Nesterov 动量",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/260-nesterov-momentum.md"
+        },
+        {
+          "no": 261,
+          "en": "AdaGrad",
+          "zh": "自适应梯度算法",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/261-adagrad.md"
+        },
+        {
+          "no": 262,
+          "en": "RMSProp",
+          "zh": "均方根传播优化器",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/262-rmsprop.md"
+        },
+        {
+          "no": 263,
+          "en": "Adam",
+          "zh": "自适应矩估计",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/263-adam.md"
+        },
+        {
+          "no": 264,
+          "en": "AdamW",
+          "zh": "解耦权重衰减 Adam",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/264-adamw.md"
+        },
+        {
+          "no": 265,
+          "en": "Weight Decay",
+          "zh": "权重衰减",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/265-weight-decay.md"
+        },
+        {
+          "no": 266,
+          "en": "Gradient Clipping",
+          "zh": "梯度裁剪",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/266-gradient-clipping.md"
+        },
+        {
+          "no": 267,
+          "en": "Early Stopping",
+          "zh": "提前停止",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/267-early-stopping.md"
+        },
+        {
+          "no": 268,
+          "en": "Convergence",
+          "zh": "收敛",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/268-convergence.md"
+        },
+        {
+          "no": 269,
+          "en": "Local Minimum",
+          "zh": "局部最小值",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/269-local-minimum.md"
+        },
+        {
+          "no": 270,
+          "en": "Global Minimum",
+          "zh": "全局最小值",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/270-global-minimum.md"
+        },
+        {
+          "no": 271,
+          "en": "Saddle Point",
+          "zh": "鞍点",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/271-saddle-point.md"
+        },
+        {
+          "no": 272,
+          "en": "Convex Optimization",
+          "zh": "凸优化",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/272-convex-optimization.md"
+        },
+        {
+          "no": 273,
+          "en": "Hessian Matrix",
+          "zh": "海森矩阵",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/273-hessian-matrix.md"
+        },
+        {
+          "no": 274,
+          "en": "Backpropagation",
+          "zh": "反向传播",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/274-backpropagation.md"
+        },
+        {
+          "no": 275,
+          "en": "Automatic Differentiation (Autodiff)",
+          "zh": "自动微分",
+          "abbr": "",
+          "chapter": 11,
+          "topic": "优化算法与模型训练",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/275-automatic-differentiation.md"
+        }
+      ]
+    },
+    {
+      "batch": 12,
+      "start": 276,
+      "end": 300,
+      "count": 25,
+      "topics": [
+        "损失函数与回归评估",
+        "分类指标与概率校准"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 276,
+          "en": "Mean Squared Error (MSE)",
+          "zh": "均方误差",
+          "abbr": "MSE",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/276-mean-squared-error.md"
+        },
+        {
+          "no": 277,
+          "en": "Root Mean Squared Error (RMSE)",
+          "zh": "均方根误差",
+          "abbr": "RMSE",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/277-root-mean-squared-error.md"
+        },
+        {
+          "no": 278,
+          "en": "Mean Absolute Error (MAE)",
+          "zh": "平均绝对误差",
+          "abbr": "MAE",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/278-mean-absolute-error.md"
+        },
+        {
+          "no": 279,
+          "en": "Mean Absolute Percentage Error (MAPE)",
+          "zh": "平均绝对百分比误差",
+          "abbr": "MAPE",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/279-mean-absolute-percentage-error.md"
+        },
+        {
+          "no": 280,
+          "en": "Huber Loss",
+          "zh": "Huber 损失",
+          "abbr": "",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/280-huber-loss.md"
+        },
+        {
+          "no": 281,
+          "en": "Mean Absolute Deviation",
+          "zh": "平均绝对偏差",
+          "abbr": "",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/281-mean-absolute-deviation.md"
+        },
+        {
+          "no": 282,
+          "en": "R-squared (R²)",
+          "zh": "决定系数",
+          "abbr": "",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/282-r-squared.md"
+        },
+        {
+          "no": 283,
+          "en": "Cross-entropy Loss",
+          "zh": "交叉熵损失",
+          "abbr": "",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/283-cross-entropy-loss.md"
+        },
+        {
+          "no": 284,
+          "en": "Binary Cross-entropy (BCE)",
+          "zh": "二元交叉熵",
+          "abbr": "BCE",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/284-binary-cross-entropy.md"
+        },
+        {
+          "no": 285,
+          "en": "Negative Log-likelihood (NLL)",
+          "zh": "负对数似然",
+          "abbr": "NLL",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/285-negative-log-likelihood.md"
+        },
+        {
+          "no": 286,
+          "en": "KL Divergence",
+          "zh": "KL 散度",
+          "abbr": "",
+          "chapter": 12,
+          "topic": "损失函数与回归评估",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/286-kl-divergence.md"
+        },
+        {
+          "no": 287,
+          "en": "Confusion Matrix",
+          "zh": "混淆矩阵",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/287-confusion-matrix.md"
+        },
+        {
+          "no": 288,
+          "en": "True Positive (TP)",
+          "zh": "真正例",
+          "abbr": "TP",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/288-true-positive.md"
+        },
+        {
+          "no": 289,
+          "en": "False Positive (FP)",
+          "zh": "假正例",
+          "abbr": "FP",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/289-false-positive.md"
+        },
+        {
+          "no": 290,
+          "en": "True Negative (TN)",
+          "zh": "真负例",
+          "abbr": "TN",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/290-true-negative.md"
+        },
+        {
+          "no": 291,
+          "en": "False Negative (FN)",
+          "zh": "假负例",
+          "abbr": "FN",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/291-false-negative.md"
+        },
+        {
+          "no": 292,
+          "en": "Accuracy",
+          "zh": "准确率",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/292-accuracy.md"
+        },
+        {
+          "no": 293,
+          "en": "Precision / Positive Predictive Value",
+          "zh": "精确率／查准率",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/293-precision-positive-predictive-value.md"
+        },
+        {
+          "no": 294,
+          "en": "Recall / Sensitivity / TPR",
+          "zh": "召回率／敏感度／真正例率",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/294-recall-sensitivity-tpr.md"
+        },
+        {
+          "no": 295,
+          "en": "Specificity / TNR",
+          "zh": "特异度／真负例率",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/295-specificity-tnr.md"
+        },
+        {
+          "no": 296,
+          "en": "False Positive Rate (FPR)",
+          "zh": "假正例率",
+          "abbr": "FPR",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/296-false-positive-rate.md"
+        },
+        {
+          "no": 297,
+          "en": "False Negative Rate (FNR)",
+          "zh": "假负例率",
+          "abbr": "FNR",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/297-false-negative-rate.md"
+        },
+        {
+          "no": 298,
+          "en": "F1 Score",
+          "zh": "F1 分数",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/298-f1-score.md"
+        },
+        {
+          "no": 299,
+          "en": "F-beta Score",
+          "zh": "Fβ 分数",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/299-f-beta-score.md"
+        },
+        {
+          "no": 300,
+          "en": "Balanced Accuracy",
+          "zh": "平衡准确率",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/300-balanced-accuracy.md"
+        }
+      ]
+    },
+    {
+      "batch": 13,
+      "start": 301,
+      "end": 325,
+      "count": 25,
+      "topics": [
+        "分类指标与概率校准",
+        "调参与模型选择"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 301,
+          "en": "ROC Curve",
+          "zh": "ROC 曲线",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/301-roc-curve.md"
+        },
+        {
+          "no": 302,
+          "en": "ROC AUC",
+          "zh": "ROC 曲线下面积",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/302-roc-auc.md"
+        },
+        {
+          "no": 303,
+          "en": "Precision–Recall Curve (PR Curve)",
+          "zh": "精确率-召回率曲线",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/303-precision-recall-curve.md"
+        },
+        {
+          "no": 304,
+          "en": "Average Precision (AP)",
+          "zh": "平均精确率",
+          "abbr": "AP",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/304-average-precision.md"
+        },
+        {
+          "no": 305,
+          "en": "Log Loss",
+          "zh": "对数损失",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/305-log-loss.md"
+        },
+        {
+          "no": 306,
+          "en": "Brier Score",
+          "zh": "布赖尔分数",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/306-brier-score.md"
+        },
+        {
+          "no": 307,
+          "en": "Calibration",
+          "zh": "概率校准",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/307-calibration.md"
+        },
+        {
+          "no": 308,
+          "en": "Calibration Curve",
+          "zh": "校准曲线",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/308-calibration-curve.md"
+        },
+        {
+          "no": 309,
+          "en": "Threshold",
+          "zh": "分类阈值",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/309-threshold.md"
+        },
+        {
+          "no": 310,
+          "en": "Macro Average",
+          "zh": "宏平均",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/310-macro-average.md"
+        },
+        {
+          "no": 311,
+          "en": "Micro Average",
+          "zh": "微平均",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/311-micro-average.md"
+        },
+        {
+          "no": 312,
+          "en": "Weighted Average",
+          "zh": "加权平均",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/312-weighted-average.md"
+        },
+        {
+          "no": 313,
+          "en": "Top-k Accuracy",
+          "zh": "Top-k 准确率",
+          "abbr": "",
+          "chapter": 13,
+          "topic": "分类指标与概率校准",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/313-top-k-accuracy.md"
+        },
+        {
+          "no": 314,
+          "en": "Parameter",
+          "zh": "模型参数",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/314-parameter.md"
+        },
+        {
+          "no": 315,
+          "en": "Hyperparameter",
+          "zh": "超参数",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/315-hyperparameter.md"
+        },
+        {
+          "no": 316,
+          "en": "Hyperparameter Optimization (HPO)",
+          "zh": "超参数优化",
+          "abbr": "HPO",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/316-hyperparameter-optimization.md"
+        },
+        {
+          "no": 317,
+          "en": "Grid Search",
+          "zh": "网格搜索",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/317-grid-search.md"
+        },
+        {
+          "no": 318,
+          "en": "Random Search",
+          "zh": "随机搜索",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/318-random-search.md"
+        },
+        {
+          "no": 319,
+          "en": "Bayesian Optimization",
+          "zh": "贝叶斯优化",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/319-bayesian-optimization.md"
+        },
+        {
+          "no": 320,
+          "en": "Tree-structured Parzen Estimator (TPE)",
+          "zh": "树结构 Parzen 估计器",
+          "abbr": "TPE",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/320-tree-structured-parzen-estimator.md"
+        },
+        {
+          "no": 321,
+          "en": "Successive Halving",
+          "zh": "逐次减半",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/321-successive-halving.md"
+        },
+        {
+          "no": 322,
+          "en": "Hyperband",
+          "zh": "超带算法",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/322-hyperband.md"
+        },
+        {
+          "no": 323,
+          "en": "Optuna",
+          "zh": "Optuna 超参数优化框架",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/323-optuna.md"
+        },
+        {
+          "no": 324,
+          "en": "Trial",
+          "zh": "试验轮次",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/324-trial.md"
+        },
+        {
+          "no": 325,
+          "en": "Search Space",
+          "zh": "搜索空间",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/325-search-space.md"
+        }
+      ]
+    },
+    {
+      "batch": 14,
+      "start": 326,
+      "end": 350,
+      "count": 25,
+      "topics": [
+        "调参与模型选择",
+        "时间序列与预测",
+        "推荐系统与排序学习"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 326,
+          "en": "Nested Cross-validation",
+          "zh": "嵌套交叉验证",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/326-nested-cross-validation.md"
+        },
+        {
+          "no": 327,
+          "en": "Model Selection",
+          "zh": "模型选择",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/327-model-selection.md"
+        },
+        {
+          "no": 328,
+          "en": "Baseline Model",
+          "zh": "基线模型",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/328-baseline-model.md"
+        },
+        {
+          "no": 329,
+          "en": "Ablation Study",
+          "zh": "消融实验",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/329-ablation-study.md"
+        },
+        {
+          "no": 330,
+          "en": "Reproducibility",
+          "zh": "可复现性",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/330-reproducibility.md"
+        },
+        {
+          "no": 331,
+          "en": "Random Seed",
+          "zh": "随机种子",
+          "abbr": "",
+          "chapter": 14,
+          "topic": "调参与模型选择",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/331-random-seed.md"
+        },
+        {
+          "no": 332,
+          "en": "Time Series",
+          "zh": "时间序列",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/332-time-series.md"
+        },
+        {
+          "no": 333,
+          "en": "Forecasting",
+          "zh": "预测未来值",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/333-forecasting.md"
+        },
+        {
+          "no": 334,
+          "en": "Trend",
+          "zh": "趋势",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/334-trend.md"
+        },
+        {
+          "no": 335,
+          "en": "Seasonality",
+          "zh": "季节性",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/335-seasonality.md"
+        },
+        {
+          "no": 336,
+          "en": "Stationarity",
+          "zh": "平稳性",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/336-stationarity.md"
+        },
+        {
+          "no": 337,
+          "en": "Autocorrelation (ACF)",
+          "zh": "自相关",
+          "abbr": "ACF",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/337-autocorrelation.md"
+        },
+        {
+          "no": 338,
+          "en": "Partial Autocorrelation (PACF)",
+          "zh": "偏自相关",
+          "abbr": "PACF",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/338-partial-autocorrelation.md"
+        },
+        {
+          "no": 339,
+          "en": "Lag Feature",
+          "zh": "滞后特征",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/339-lag-feature.md"
+        },
+        {
+          "no": 340,
+          "en": "Rolling Window",
+          "zh": "滚动窗口",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/340-rolling-window.md"
+        },
+        {
+          "no": 341,
+          "en": "Walk-forward Validation",
+          "zh": "滚动前向验证",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/341-walk-forward-validation.md"
+        },
+        {
+          "no": 342,
+          "en": "Backtesting",
+          "zh": "回测",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/342-backtesting.md"
+        },
+        {
+          "no": 343,
+          "en": "Autoregressive Model (AR)",
+          "zh": "自回归模型",
+          "abbr": "AR",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/343-autoregressive-model.md"
+        },
+        {
+          "no": 344,
+          "en": "Moving Average Model (MA)",
+          "zh": "移动平均模型",
+          "abbr": "MA",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/344-moving-average-model.md"
+        },
+        {
+          "no": 345,
+          "en": "ARIMA",
+          "zh": "自回归积分滑动平均模型",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/345-arima.md"
+        },
+        {
+          "no": 346,
+          "en": "SARIMA",
+          "zh": "季节性 ARIMA",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/346-sarima.md"
+        },
+        {
+          "no": 347,
+          "en": "Exponential Smoothing",
+          "zh": "指数平滑",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/347-exponential-smoothing.md"
+        },
+        {
+          "no": 348,
+          "en": "Forecast Horizon",
+          "zh": "预测步长／预测时域",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/348-forecast-horizon.md"
+        },
+        {
+          "no": 349,
+          "en": "Prediction Interval",
+          "zh": "预测区间",
+          "abbr": "",
+          "chapter": 15,
+          "topic": "时间序列与预测",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/349-prediction-interval.md"
+        },
+        {
+          "no": 350,
+          "en": "Recommender System",
+          "zh": "推荐系统",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/350-recommender-system.md"
+        }
+      ]
+    },
+    {
+      "batch": 15,
+      "start": 351,
+      "end": 375,
+      "count": 25,
+      "topics": [
+        "推荐系统与排序学习",
+        "深度学习相关核心术语"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 351,
+          "en": "Collaborative Filtering (CF)",
+          "zh": "协同过滤",
+          "abbr": "CF",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/351-collaborative-filtering.md"
+        },
+        {
+          "no": 352,
+          "en": "Content-based Filtering",
+          "zh": "基于内容的推荐",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/352-content-based-filtering.md"
+        },
+        {
+          "no": 353,
+          "en": "Matrix Factorization",
+          "zh": "矩阵分解",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/353-matrix-factorization.md"
+        },
+        {
+          "no": 354,
+          "en": "Implicit Feedback",
+          "zh": "隐式反馈",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/354-implicit-feedback.md"
+        },
+        {
+          "no": 355,
+          "en": "Explicit Feedback",
+          "zh": "显式反馈",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/355-explicit-feedback.md"
+        },
+        {
+          "no": 356,
+          "en": "Cold Start",
+          "zh": "冷启动",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/356-cold-start.md"
+        },
+        {
+          "no": 357,
+          "en": "Candidate Generation",
+          "zh": "候选召回",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/357-candidate-generation.md"
+        },
+        {
+          "no": 358,
+          "en": "Ranking",
+          "zh": "排序",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/358-ranking.md"
+        },
+        {
+          "no": 359,
+          "en": "Re-ranking",
+          "zh": "重排序",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/359-re-ranking.md"
+        },
+        {
+          "no": 360,
+          "en": "Learning to Rank (LTR)",
+          "zh": "排序学习",
+          "abbr": "LTR",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/360-learning-to-rank.md"
+        },
+        {
+          "no": 361,
+          "en": "Pointwise Ranking",
+          "zh": "逐点排序",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/361-pointwise-ranking.md"
+        },
+        {
+          "no": 362,
+          "en": "Pairwise Ranking",
+          "zh": "成对排序",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/362-pairwise-ranking.md"
+        },
+        {
+          "no": 363,
+          "en": "Listwise Ranking",
+          "zh": "列表式排序",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/363-listwise-ranking.md"
+        },
+        {
+          "no": 364,
+          "en": "Normalized Discounted Cumulative Gain (NDCG)",
+          "zh": "归一化折损累计增益",
+          "abbr": "NDCG",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/364-normalized-discounted-cumulative-gain.md"
+        },
+        {
+          "no": 365,
+          "en": "Mean Average Precision (MAP)",
+          "zh": "平均精确率均值",
+          "abbr": "MAP",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/365-mean-average-precision.md"
+        },
+        {
+          "no": 366,
+          "en": "Mean Reciprocal Rank (MRR)",
+          "zh": "平均倒数排名",
+          "abbr": "MRR",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/366-mean-reciprocal-rank.md"
+        },
+        {
+          "no": 367,
+          "en": "Hit Rate@K",
+          "zh": "命中率@K",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/367-hit-rate-k.md"
+        },
+        {
+          "no": 368,
+          "en": "Exploration–Exploitation Tradeoff",
+          "zh": "探索-利用权衡",
+          "abbr": "",
+          "chapter": 16,
+          "topic": "推荐系统与排序学习",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/368-exploration-exploitation-tradeoff.md"
+        },
+        {
+          "no": 369,
+          "en": "Deep Learning (DL)",
+          "zh": "深度学习",
+          "abbr": "DL",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/369-deep-learning.md"
+        },
+        {
+          "no": 370,
+          "en": "Artificial Neural Network (ANN)",
+          "zh": "人工神经网络",
+          "abbr": "ANN",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/370-artificial-neural-network.md"
+        },
+        {
+          "no": 371,
+          "en": "Perceptron",
+          "zh": "感知机",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/371-perceptron.md"
+        },
+        {
+          "no": 372,
+          "en": "Multilayer Perceptron (MLP)",
+          "zh": "多层感知机",
+          "abbr": "MLP",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/372-multilayer-perceptron.md"
+        },
+        {
+          "no": 373,
+          "en": "Fully Connected Layer",
+          "zh": "全连接层",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/373-fully-connected-layer.md"
+        },
+        {
+          "no": 374,
+          "en": "Activation Function",
+          "zh": "激活函数",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/374-activation-function.md"
+        },
+        {
+          "no": 375,
+          "en": "ReLU",
+          "zh": "修正线性单元",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/375-relu.md"
+        }
+      ]
+    },
+    {
+      "batch": 16,
+      "start": 376,
+      "end": 400,
+      "count": 25,
+      "topics": [
+        "深度学习相关核心术语",
+        "机器学习工程与生产部署"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 376,
+          "en": "GELU",
+          "zh": "高斯误差线性单元",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/376-gelu.md"
+        },
+        {
+          "no": 377,
+          "en": "Dropout",
+          "zh": "随机失活",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/377-dropout.md"
+        },
+        {
+          "no": 378,
+          "en": "Batch Normalization",
+          "zh": "批量归一化",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/378-batch-normalization.md"
+        },
+        {
+          "no": 379,
+          "en": "Layer Normalization",
+          "zh": "层归一化",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/379-layer-normalization.md"
+        },
+        {
+          "no": 380,
+          "en": "Convolutional Neural Network (CNN)",
+          "zh": "卷积神经网络",
+          "abbr": "CNN",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/380-convolutional-neural-network.md"
+        },
+        {
+          "no": 381,
+          "en": "Recurrent Neural Network (RNN)",
+          "zh": "循环神经网络",
+          "abbr": "RNN",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/381-recurrent-neural-network.md"
+        },
+        {
+          "no": 382,
+          "en": "Long Short-term Memory (LSTM)",
+          "zh": "长短期记忆网络",
+          "abbr": "LSTM",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/382-long-short-term-memory.md"
+        },
+        {
+          "no": 383,
+          "en": "Gated Recurrent Unit (GRU)",
+          "zh": "门控循环单元",
+          "abbr": "GRU",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/383-gated-recurrent-unit.md"
+        },
+        {
+          "no": 384,
+          "en": "Attention Mechanism",
+          "zh": "注意力机制",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/384-attention-mechanism.md"
+        },
+        {
+          "no": 385,
+          "en": "Self-attention",
+          "zh": "自注意力",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/385-self-attention.md"
+        },
+        {
+          "no": 386,
+          "en": "Transformer",
+          "zh": "Transformer 架构",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/386-transformer.md"
+        },
+        {
+          "no": 387,
+          "en": "Autoencoder",
+          "zh": "自编码器",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/387-autoencoder.md"
+        },
+        {
+          "no": 388,
+          "en": "Variational Autoencoder (VAE)",
+          "zh": "变分自编码器",
+          "abbr": "VAE",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/388-variational-autoencoder.md"
+        },
+        {
+          "no": 389,
+          "en": "Generative Adversarial Network (GAN)",
+          "zh": "生成对抗网络",
+          "abbr": "GAN",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/389-generative-adversarial-network.md"
+        },
+        {
+          "no": 390,
+          "en": "Diffusion Model",
+          "zh": "扩散模型",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/390-diffusion-model.md"
+        },
+        {
+          "no": 391,
+          "en": "Pretraining",
+          "zh": "预训练",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/391-pretraining.md"
+        },
+        {
+          "no": 392,
+          "en": "Fine-tuning",
+          "zh": "微调",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/392-fine-tuning.md"
+        },
+        {
+          "no": 393,
+          "en": "Knowledge Distillation",
+          "zh": "知识蒸馏",
+          "abbr": "",
+          "chapter": 17,
+          "topic": "深度学习相关核心术语",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/393-knowledge-distillation.md"
+        },
+        {
+          "no": 394,
+          "en": "Machine Learning Operations (MLOps)",
+          "zh": "机器学习运维",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/394-machine-learning-operations.md"
+        },
+        {
+          "no": 395,
+          "en": "ML Pipeline",
+          "zh": "机器学习流水线",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/395-ml-pipeline.md"
+        },
+        {
+          "no": 396,
+          "en": "Data Pipeline",
+          "zh": "数据流水线",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/396-data-pipeline.md"
+        },
+        {
+          "no": 397,
+          "en": "Feature Store",
+          "zh": "特征存储平台",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/397-feature-store.md"
+        },
+        {
+          "no": 398,
+          "en": "Feature Registry",
+          "zh": "特征注册表",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/398-feature-registry.md"
+        },
+        {
+          "no": 399,
+          "en": "Experiment Tracking",
+          "zh": "实验跟踪",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/399-experiment-tracking.md"
+        },
+        {
+          "no": 400,
+          "en": "Model Registry",
+          "zh": "模型注册表",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/400-model-registry.md"
+        }
+      ]
+    },
+    {
+      "batch": 17,
+      "start": 401,
+      "end": 425,
+      "count": 25,
+      "topics": [
+        "机器学习工程与生产部署",
+        "可解释性、公平性与安全"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 401,
+          "en": "Artifact",
+          "zh": "产物",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/401-artifact.md"
+        },
+        {
+          "no": 402,
+          "en": "Model Serving",
+          "zh": "模型服务",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/402-model-serving.md"
+        },
+        {
+          "no": 403,
+          "en": "Inference",
+          "zh": "推断",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/403-inference.md"
+        },
+        {
+          "no": 404,
+          "en": "Online Inference",
+          "zh": "在线推断",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/404-online-inference.md"
+        },
+        {
+          "no": 405,
+          "en": "Batch Inference",
+          "zh": "批量推断",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/405-batch-inference.md"
+        },
+        {
+          "no": 406,
+          "en": "Streaming Inference",
+          "zh": "流式推断",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/406-streaming-inference.md"
+        },
+        {
+          "no": 407,
+          "en": "Inference Latency",
+          "zh": "推断延迟",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/407-inference-latency.md"
+        },
+        {
+          "no": 408,
+          "en": "Throughput",
+          "zh": "吞吐量",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/408-throughput.md"
+        },
+        {
+          "no": 409,
+          "en": "Model Compression",
+          "zh": "模型压缩",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/409-model-compression.md"
+        },
+        {
+          "no": 410,
+          "en": "Quantization",
+          "zh": "量化",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/410-quantization.md"
+        },
+        {
+          "no": 411,
+          "en": "Model Pruning",
+          "zh": "模型剪枝",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/411-model-pruning.md"
+        },
+        {
+          "no": 412,
+          "en": "ONNX",
+          "zh": "开放神经网络交换格式",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/412-onnx.md"
+        },
+        {
+          "no": 413,
+          "en": "Concept Drift Monitoring",
+          "zh": "概念漂移监测",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/413-concept-drift-monitoring.md"
+        },
+        {
+          "no": 414,
+          "en": "Data Drift",
+          "zh": "数据漂移",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/414-data-drift.md"
+        },
+        {
+          "no": 415,
+          "en": "Training–Serving Skew",
+          "zh": "训练与服务偏差",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/415-training-serving-skew.md"
+        },
+        {
+          "no": 416,
+          "en": "Model Monitoring",
+          "zh": "模型监控",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/416-model-monitoring.md"
+        },
+        {
+          "no": 417,
+          "en": "Canary Deployment",
+          "zh": "金丝雀发布",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/417-canary-deployment.md"
+        },
+        {
+          "no": 418,
+          "en": "A/B Testing",
+          "zh": "A/B 测试",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/418-a-b-testing.md"
+        },
+        {
+          "no": 419,
+          "en": "Shadow Deployment",
+          "zh": "影子部署",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/419-shadow-deployment.md"
+        },
+        {
+          "no": 420,
+          "en": "Model Rollback",
+          "zh": "模型回滚",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/420-model-rollback.md"
+        },
+        {
+          "no": 421,
+          "en": "Reproducible Training",
+          "zh": "可复现训练",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/421-reproducible-training.md"
+        },
+        {
+          "no": 422,
+          "en": "Data Versioning",
+          "zh": "数据版本管理",
+          "abbr": "",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/422-data-versioning.md"
+        },
+        {
+          "no": 423,
+          "en": "Continuous Training (CT)",
+          "zh": "持续训练",
+          "abbr": "CT",
+          "chapter": 18,
+          "topic": "机器学习工程与生产部署",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/423-continuous-training.md"
+        },
+        {
+          "no": 424,
+          "en": "Interpretability",
+          "zh": "可解释性",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/424-interpretability.md"
+        },
+        {
+          "no": 425,
+          "en": "Explainability",
+          "zh": "可解释说明能力",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/425-explainability.md"
+        }
+      ]
+    },
+    {
+      "batch": 18,
+      "start": 426,
+      "end": 447,
+      "count": 22,
+      "topics": [
+        "可解释性、公平性与安全"
+      ],
+      "status": "planned",
+      "terms": [
+        {
+          "no": 426,
+          "en": "Global Explanation",
+          "zh": "全局解释",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/426-global-explanation.md"
+        },
+        {
+          "no": 427,
+          "en": "Local Explanation",
+          "zh": "局部解释",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/427-local-explanation.md"
+        },
+        {
+          "no": 428,
+          "en": "Permutation Importance",
+          "zh": "置换重要性",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/428-permutation-importance.md"
+        },
+        {
+          "no": 429,
+          "en": "Partial Dependence Plot (PDP)",
+          "zh": "部分依赖图",
+          "abbr": "PDP",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/429-partial-dependence-plot.md"
+        },
+        {
+          "no": 430,
+          "en": "Individual Conditional Expectation (ICE)",
+          "zh": "个体条件期望图",
+          "abbr": "ICE",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/430-individual-conditional-expectation.md"
+        },
+        {
+          "no": 431,
+          "en": "SHAP",
+          "zh": "SHAP 特征归因",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/431-shap.md"
+        },
+        {
+          "no": 432,
+          "en": "LIME",
+          "zh": "局部可解释模型无关解释",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/432-lime.md"
+        },
+        {
+          "no": 433,
+          "en": "Counterfactual Explanation",
+          "zh": "反事实解释",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/433-counterfactual-explanation.md"
+        },
+        {
+          "no": 434,
+          "en": "Fairness",
+          "zh": "公平性",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/434-fairness.md"
+        },
+        {
+          "no": 435,
+          "en": "Protected Attribute",
+          "zh": "受保护属性",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/435-protected-attribute.md"
+        },
+        {
+          "no": 436,
+          "en": "Demographic Parity",
+          "zh": "人口统计均等",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/436-demographic-parity.md"
+        },
+        {
+          "no": 437,
+          "en": "Equal Opportunity",
+          "zh": "机会均等",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/437-equal-opportunity.md"
+        },
+        {
+          "no": 438,
+          "en": "Equalized Odds",
+          "zh": "均衡机会",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/438-equalized-odds.md"
+        },
+        {
+          "no": 439,
+          "en": "Algorithmic Bias",
+          "zh": "算法偏差",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/439-algorithmic-bias.md"
+        },
+        {
+          "no": 440,
+          "en": "Robustness",
+          "zh": "鲁棒性",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/440-robustness.md"
+        },
+        {
+          "no": 441,
+          "en": "Adversarial Example",
+          "zh": "对抗样本",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/441-adversarial-example.md"
+        },
+        {
+          "no": 442,
+          "en": "Adversarial Training",
+          "zh": "对抗训练",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/442-adversarial-training.md"
+        },
+        {
+          "no": 443,
+          "en": "Privacy-preserving ML",
+          "zh": "隐私保护机器学习",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/443-privacy-preserving-ml.md"
+        },
+        {
+          "no": 444,
+          "en": "Differential Privacy (DP)",
+          "zh": "差分隐私",
+          "abbr": "DP",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/444-differential-privacy.md"
+        },
+        {
+          "no": 445,
+          "en": "Federated Learning",
+          "zh": "联邦学习",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/445-federated-learning.md"
+        },
+        {
+          "no": 446,
+          "en": "Model Card",
+          "zh": "模型卡片",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/446-model-card.md"
+        },
+        {
+          "no": 447,
+          "en": "Dataset Documentation",
+          "zh": "数据集文档",
+          "abbr": "",
+          "chapter": 19,
+          "topic": "可解释性、公平性与安全",
+          "status": "planned",
+          "wiki": "wiki/machine-learning/447-dataset-documentation.md"
+        }
+      ]
+    }
+  ]
+}
