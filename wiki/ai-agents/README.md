@@ -31,7 +31,7 @@
 | 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | drafted_in_pr |
 | 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | drafted_in_pr |
 | 16 | 301–320 | 工程化、成本与可观测性 / 开发实践与生态术语 | 20 | drafted_in_pr |
-| 17 | 321–332 | 开发实践与生态术语 | 12 | planned |
+| 17 | 321–332 | 开发实践与生态术语 | 12 | drafted_in_pr |
 
 ## 第 1 批知识路径
 
@@ -428,7 +428,7 @@
 
 ## 本轮候审稿：291–310（20 篇）
 
-已完成源 Batch 15 的 291–300，源 Batch 16 前 10 条 301–310；其余 311–332 仍为 planned。内容位于堆叠 PR，尚未合并 main 或完成独立专业审稿。
+已完成源 Batch 15 的 291–300，源 Batch 16 前 10 条 301–310；截至 PR #61，311–332 尚未编写；后续已逐批补齐。内容位于堆叠 PR，尚未合并 main 或完成独立专业审稿。
 
 291. [Logging（日志记录）](291-logging.md)
 292. [Metrics Monitoring（指标监控）](292-metrics-monitoring.md)
@@ -453,7 +453,7 @@
 
 ## 本轮新增候审稿：311–320（10 篇）
 
-完成源 Batch 16 的全部 20 篇（301–320）。原始 Batch 17 的 321–332 仍 planned；目前 320/332 均为堆叠 PR 候审稿，非 main/Pages 已正式部署或完成专家审稿。
+完成源 Batch 16 的全部 20 篇（301–320）。截至 PR #62 时原始 Batch 17 的 321–332 仍 planned；当时 320/332 为堆叠 PR 候审稿，非 main/Pages 已正式部署或完成专家审稿。
 
 311. [Runbook（运行手册）](311-runbook.md)
 312. [Agent Development Kit (ADK)（智能体开发工具包）](312-agent-development-kit.md)
@@ -465,3 +465,22 @@
 318. [Tool Manifest（工具清单）](318-tool-manifest.md)
 319. [Schema Definition（模式定义）](319-schema-definition.md)
 320. [JSON Schema（JSON 模式）](320-json-schema.md)
+
+## 源 Batch 17 完结：321–332（12 篇，候审稿）
+
+canonical 332/332 篇全部形成八章节长文，来源序号、双语标题、题解和两份目录均完整。**全部仍位于堆叠 PR，未合并 main、未完成独立专家技术审稿；不应标记为正式公开发布。**
+
+321. [Orchestration Graph（编排图）](321-orchestration-graph.md)
+322. [Node（节点）](322-node.md)
+323. [Edge（边）](323-edge.md)
+324. [Prompt Template（提示模板）](324-prompt-template.md)
+325. [Environment Variable（环境变量）](325-environment-variable.md)
+326. [Secrets Management（密钥管理）](326-secrets-management.md)
+327. [Development Environment（开发环境）](327-development-environment.md)
+328. [Staging Environment（暂存环境）](328-staging-environment.md)
+329. [Production Environment（生产环境）](329-production-environment.md)
+330. [Version Control（版本控制）](330-version-control.md)
+331. [Continuous Integration (CI)（持续集成）](331-continuous-integration.md)
+332. [Continuous Delivery (CD)（持续交付）](332-continuous-delivery.md)
+
+**本轮质量关口：**文章镜像字节一致；唯一索引覆盖 332 条 AI Agent；自动化正文校验及 Chromium 桌面/移动 E2E；之后仍需独立专家对定义、习题推导、来源和运行时可用性审稿。特别保留 CI/持续交付/持续部署概念差异。

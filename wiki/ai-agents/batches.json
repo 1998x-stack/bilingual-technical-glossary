@@ -3099,7 +3099,7 @@
       "topics": [
         "开发实践与生态术语"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 321,
@@ -3107,8 +3107,8 @@
           "zh": "编排图",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/321-orchestration-graph.md"
         },
         {
           "no": 322,
@@ -3116,8 +3116,8 @@
           "zh": "节点",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/322-node.md"
         },
         {
           "no": 323,
@@ -3125,8 +3125,8 @@
           "zh": "边",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/323-edge.md"
         },
         {
           "no": 324,
@@ -3134,8 +3134,8 @@
           "zh": "提示模板",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/324-prompt-template.md"
         },
         {
           "no": 325,
@@ -3143,8 +3143,8 @@
           "zh": "环境变量",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/325-environment-variable.md"
         },
         {
           "no": 326,
@@ -3152,8 +3152,8 @@
           "zh": "密钥管理",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/326-secrets-management.md"
         },
         {
           "no": 327,
@@ -3161,8 +3161,8 @@
           "zh": "开发环境",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/327-development-environment.md"
         },
         {
           "no": 328,
@@ -3170,8 +3170,8 @@
           "zh": "暂存环境",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/328-staging-environment.md"
         },
         {
           "no": 329,
@@ -3179,8 +3179,8 @@
           "zh": "生产环境",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/329-production-environment.md"
         },
         {
           "no": 330,
@@ -3188,8 +3188,8 @@
           "zh": "版本控制",
           "abbr": "",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/330-version-control.md"
         },
         {
           "no": 331,
@@ -3197,8 +3197,8 @@
           "zh": "持续集成",
           "abbr": "CI",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/331-continuous-integration.md"
         },
         {
           "no": 332,
@@ -3206,8 +3206,8 @@
           "zh": "持续交付",
           "abbr": "CD",
           "topic": "开发实践与生态术语",
-          "status": "planned",
-          "wiki": null
+          "status": "drafted_in_pr",
+          "wiki": "wiki/ai-agents/332-continuous-delivery.md"
         }
       ]
     }

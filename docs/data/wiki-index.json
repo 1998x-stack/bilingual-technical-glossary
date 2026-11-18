@@ -3234,6 +3234,90 @@
       "en": "JSON Schema",
       "zh": "JSON 模式",
       "path": "wiki/ai-agents/320-json-schema.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Orchestration Graph",
+      "zh": "编排图",
+      "path": "wiki/ai-agents/321-orchestration-graph.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Node",
+      "zh": "节点",
+      "path": "wiki/ai-agents/322-node.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Edge",
+      "zh": "边",
+      "path": "wiki/ai-agents/323-edge.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Prompt Template",
+      "zh": "提示模板",
+      "path": "wiki/ai-agents/324-prompt-template.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Environment Variable",
+      "zh": "环境变量",
+      "path": "wiki/ai-agents/325-environment-variable.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Secrets Management",
+      "zh": "密钥管理",
+      "path": "wiki/ai-agents/326-secrets-management.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Development Environment",
+      "zh": "开发环境",
+      "path": "wiki/ai-agents/327-development-environment.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Staging Environment",
+      "zh": "暂存环境",
+      "path": "wiki/ai-agents/328-staging-environment.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Production Environment",
+      "zh": "生产环境",
+      "path": "wiki/ai-agents/329-production-environment.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Version Control",
+      "zh": "版本控制",
+      "path": "wiki/ai-agents/330-version-control.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Continuous Integration (CI)",
+      "zh": "持续集成",
+      "path": "wiki/ai-agents/331-continuous-integration.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 16,
+      "en": "Continuous Delivery (CD)",
+      "zh": "持续交付",
+      "path": "wiki/ai-agents/332-continuous-delivery.md"
     }
   ]
 }
