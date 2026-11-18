@@ -11,8 +11,8 @@
 | 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | merged |
 | 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | merged |
 | 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | merged |
-| 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | drafted_in_pr |
-| 07 | 151–175 | 树模型与集成学习 / 支持向量机、核方法与近邻 | 25 | planned |
+| 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | merged |
+| 07 | 151–175 | 树模型与集成学习 / 支持向量机、核方法与近邻 | 25 | drafted_in_pr |
 | 08 | 176–200 | 支持向量机、核方法与近邻 / 概率模型与统计推断 | 25 | planned |
 | 09 | 201–225 | 概率模型与统计推断 / 无监督学习与聚类 | 25 | planned |
 | 10 | 226–250 | 降维、分解与流形学习 / 优化算法与模型训练 | 25 | planned |
@@ -228,7 +228,7 @@
 > 第五批已通过 PR CI 并合并至 main，Pages 发布成功；独立专业审稿仍 pending。
 
 
-## 第六批 126–150（25 篇深度候审稿）
+## 第六批 126–150（已合并 main 并发布 Pages）
 
 承接第五专题“回归、分类与线性模型”最后 8 个术语，再进入第六专题“树模型与集成学习”17 个术语，从决策函数、Logit/Sigmoid/Softmax、残差/截距/共线性过渡到树结构、Gini/Information Gain、剪枝、Bagging/Bootstrap、RandomForest/ExtraTrees、Boosting/AdaBoost/GBDT。综合学习路径见 [BATCH-06.md](BATCH-06.md)。
 
@@ -258,4 +258,37 @@
 149. [Gradient Boosting（梯度提升）](149-gradient-boosting.md)
 150. [GBDT（梯度提升决策树）](150-gbdt.md)
 
-> 第 6 批候审稿不等于正式合并发布；必须通过 PR CI、合并并复核 Pages。独立专家审核状态均 pending。
+> 第六批已合并 main 且通过正式 Pages 部署；独立专家审核仍 pending。
+
+
+## 第七批 151–175（25 篇深度候审稿）
+
+覆盖“树模型与集成学习”最后 7 条，以及“支持向量机、核方法与近邻”前 18 条。从 XGBoost、LightGBM、CatBoost、Stacking、Voting、OOB 与 Feature Importance，推进到 SVM/间隔/合页损失、核函数/核技巧、SVR、KNN、近邻搜索、Euclidean/Manhattan/Cosine。主题知识路径详见 [BATCH-07.md](BATCH-07.md)。
+
+151. [XGBoost（极端梯度提升）](151-xgboost.md)
+152. [LightGBM（轻量级梯度提升机）](152-lightgbm.md)
+153. [CatBoost（类别提升）](153-catboost.md)
+154. [Stacking（堆叠集成）](154-stacking.md)
+155. [Voting Ensemble（投票集成）](155-voting-ensemble.md)
+156. [Out-of-bag Error (OOB)（袋外误差）](156-out-of-bag-error.md)
+157. [Feature Importance（特征重要性）](157-feature-importance.md)
+158. [Support Vector Machine (SVM)（支持向量机）](158-support-vector-machine.md)
+159. [Support Vector（支持向量）](159-support-vector.md)
+160. [Margin（间隔）](160-margin.md)
+161. [Maximum Margin Classifier（最大间隔分类器）](161-maximum-margin-classifier.md)
+162. [Hinge Loss（合页损失）](162-hinge-loss.md)
+163. [Soft Margin（软间隔）](163-soft-margin.md)
+164. [Kernel Trick（核技巧）](164-kernel-trick.md)
+165. [Kernel Function（核函数）](165-kernel-function.md)
+166. [Linear Kernel（线性核）](166-linear-kernel.md)
+167. [Polynomial Kernel（多项式核）](167-polynomial-kernel.md)
+168. [RBF Kernel / Gaussian Kernel（径向基核／高斯核）](168-rbf-kernel-gaussian-kernel.md)
+169. [Support Vector Regression (SVR)（支持向量回归）](169-support-vector-regression.md)
+170. [K-nearest Neighbors (KNN)（K 近邻算法）](170-k-nearest-neighbors.md)
+171. [Nearest Neighbor Search（最近邻搜索）](171-nearest-neighbor-search.md)
+172. [Distance Metric（距离度量）](172-distance-metric.md)
+173. [Euclidean Distance（欧氏距离）](173-euclidean-distance.md)
+174. [Manhattan Distance（曼哈顿距离）](174-manhattan-distance.md)
+175. [Cosine Similarity（余弦相似度）](175-cosine-similarity.md)
+
+> 第七批在本 PR 内为候审稿；须通过 Validate + Chromium E2E、合并与正式 Pages 发布。全部专业技术审校仍为 pending。
