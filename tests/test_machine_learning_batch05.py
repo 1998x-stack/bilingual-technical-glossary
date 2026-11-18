@@ -65,7 +65,7 @@ class MLBatch05Tests(unittest.TestCase):
         n = (math.log(20) + math.log(1 / .05)) / .1
         self.assertEqual(math.ceil(n), 60)                    # 101 sample complexity
         self.assertAlmostEqual((.24 - .18) / .24, .25)       # 102 learning curve
-        self.assertEqual((.3 / .1), 3)                      # 105 covariate weight
+        self.assertAlmostEqual((.3 / .1), 3)                      # 105 covariate weight
         self.assertAlmostEqual(1 / (1 + .375), .727272727)  # 106 label-shift Bayes
         self.assertAlmostEqual(30 / 40, .75)               # 107 drift recall
         self.assertAlmostEqual((abs(3-2)+abs(6-4)) / 2, 1.5) # 108 regression MAE
@@ -80,7 +80,7 @@ class MLBatch05Tests(unittest.TestCase):
         self.assertAlmostEqual(.6 * .25, .15)              # 118 Elastic Net
         self.assertAlmostEqual(-math.log(.8), .2231435513) # 119 log loss
         self.assertAlmostEqual(2 / (2+1), 2/3)             # 120 Softmax
-        self.assertEqual(math.exp(math.log(4)), 4)         # 121 GLM
+        self.assertAlmostEqual(math.exp(math.log(4)), 4)         # 121 GLM
         self.assertAlmostEqual(math.exp(-2), .1353352832) # 122 Poisson
         self.assertAlmostEqual(.9 * (12-10), 1.8)          # 123 quantile
         self.assertEqual(2 * (5 - 1), 8)                   # 124 Huber
