@@ -1,6 +1,6 @@
-# AI Agents · 第 11 批（201–220）学习路径 · 本轮先完成 201–210
+# AI Agents · 第 11 批（201–220）学习路径 · 全 20 篇候审稿已写入
 
-> 该批仍以 canonical 20 条为单位。**已写作 201–210 的前 10 篇；211–220 保持 planned**，不计入已完成 Wiki。本文为内部审稿说明，不在面向读者的 GitHub Pages 展示编辑进度。
+> 第 11 批在本轮补齐 211–220，现已完整写入 201–220 共 20 篇候审稿；文章通过结构校验不意味着已完成真人专家审稿。本页仅用于内部学习和审稿，不展示在 Pages 读者导航。
 
 ## 1. 从 Task 到 Artifact（201–208）
 
@@ -45,6 +45,21 @@
 - [LangGraph · Persistence](https://docs.langchain.com/oss/python/langgraph/persistence)
 - [LangGraph · Durable Execution](https://docs.langchain.com/oss/python/langgraph/durable-execution)
 
-## 7. 下次编辑范围与审稿
+## 7. 第 11 批补齐的执行可靠性部分（211–220）
 
-下一轮先补齐 **211–220**（Checkpointing、Persistence、Durable Execution 等），再进入第 12 批的 221–240。继续采用 20 条/批结构。专家审稿 pending，核对 A2A 正式状态名/字段、Webhook 幂等和快照恢复时外部副作用重放的安全边界。
+- **211. Checkpointing（检查点保存）**：独立技术长文与工程测试案例已写入 [211-checkpointing.md](211-checkpointing.md)
+- **212. Persistence（持久化）**：独立技术长文与工程测试案例已写入 [212-persistence.md](212-persistence.md)
+- **213. Durable Execution（持久执行）**：独立技术长文与工程测试案例已写入 [213-durable-execution.md](213-durable-execution.md)
+- **214. Interrupt（中断）**：独立技术长文与工程测试案例已写入 [214-interrupt.md](214-interrupt.md)
+- **215. Resume Execution（恢复执行）**：独立技术长文与工程测试案例已写入 [215-resume-execution.md](215-resume-execution.md)
+- **216. Human-in-the-loop (HITL)（人工介入）**：独立技术长文与工程测试案例已写入 [216-human-in-the-loop.md](216-human-in-the-loop.md)
+- **217. Human Review（人工审核）**：独立技术长文与工程测试案例已写入 [217-human-review.md](217-human-review.md)
+- **218. Human Approval（人工批准）**：独立技术长文与工程测试案例已写入 [218-human-approval.md](218-human-approval.md)
+- **219. Recoverable Error（可恢复错误）**：独立技术长文与工程测试案例已写入 [219-recoverable-error.md](219-recoverable-error.md)
+- **220. Retry Policy（重试策略）**：独立技术长文与工程测试案例已写入 [220-retry-policy.md](220-retry-policy.md)
+
+特别核对 Checkpointing 与 Persistence 之间的时点/底层存储差异、Durable Execution 的外部副作用和事务对账、LangGraph interrupt/Command(resume=...) 与 Agents SDK RunState 的不同接口、HITL 的 reviewer/approver 身份、授权版本绑定，以及 Retry Policy 在超时与网络故障中的幂等约束。
+
+## 8. 审稿与后续
+
+第 11 批现已完整候审。下一次 241–260 为第 13 批；第 12 批 221–240 已与本轮同时成稿。专业审稿 pending，不得把自动化校验当真人签核。

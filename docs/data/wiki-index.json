@@ -2464,6 +2464,216 @@
       "en": "Checkpoint",
       "zh": "检查点",
       "path": "wiki/ai-agents/210-checkpoint.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Checkpointing",
+      "zh": "检查点保存",
+      "path": "wiki/ai-agents/211-checkpointing.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Persistence",
+      "zh": "持久化",
+      "path": "wiki/ai-agents/212-persistence.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Durable Execution",
+      "zh": "持久执行",
+      "path": "wiki/ai-agents/213-durable-execution.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Interrupt",
+      "zh": "中断",
+      "path": "wiki/ai-agents/214-interrupt.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Resume Execution",
+      "zh": "恢复执行",
+      "path": "wiki/ai-agents/215-resume-execution.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Human-in-the-loop (HITL)",
+      "zh": "人工介入",
+      "path": "wiki/ai-agents/216-human-in-the-loop.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Human Review",
+      "zh": "人工审核",
+      "path": "wiki/ai-agents/217-human-review.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Human Approval",
+      "zh": "人工批准",
+      "path": "wiki/ai-agents/218-human-approval.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Recoverable Error",
+      "zh": "可恢复错误",
+      "path": "wiki/ai-agents/219-recoverable-error.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Retry Policy",
+      "zh": "重试策略",
+      "path": "wiki/ai-agents/220-retry-policy.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Exponential Backoff",
+      "zh": "指数退避",
+      "path": "wiki/ai-agents/221-exponential-backoff.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Timeout",
+      "zh": "超时",
+      "path": "wiki/ai-agents/222-timeout.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Deadline",
+      "zh": "截止期限",
+      "path": "wiki/ai-agents/223-deadline.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Failover",
+      "zh": "故障转移",
+      "path": "wiki/ai-agents/224-failover.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Compensating Action",
+      "zh": "补偿操作",
+      "path": "wiki/ai-agents/225-compensating-action.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Transaction Boundary",
+      "zh": "事务边界",
+      "path": "wiki/ai-agents/226-transaction-boundary.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 11,
+      "en": "Execution Log",
+      "zh": "执行日志",
+      "path": "wiki/ai-agents/227-execution-log.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Agent Evaluation",
+      "zh": "智能体评测",
+      "path": "wiki/ai-agents/228-agent-evaluation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Benchmark",
+      "zh": "评测基准",
+      "path": "wiki/ai-agents/229-benchmark.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Evaluation Dataset (Eval Set)",
+      "zh": "评测集",
+      "path": "wiki/ai-agents/230-evaluation-dataset.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Task Success Rate",
+      "zh": "任务成功率",
+      "path": "wiki/ai-agents/231-task-success-rate.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "End-to-end Success Rate",
+      "zh": "端到端成功率",
+      "path": "wiki/ai-agents/232-end-to-end-success-rate.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Tool-call Accuracy",
+      "zh": "工具调用正确率",
+      "path": "wiki/ai-agents/233-tool-call-accuracy.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Action Success Rate",
+      "zh": "动作成功率",
+      "path": "wiki/ai-agents/234-action-success-rate.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Trajectory Evaluation",
+      "zh": "轨迹评测",
+      "path": "wiki/ai-agents/235-trajectory-evaluation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Trajectory",
+      "zh": "轨迹",
+      "path": "wiki/ai-agents/236-trajectory.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Outcome Evaluation",
+      "zh": "结果评测",
+      "path": "wiki/ai-agents/237-outcome-evaluation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Process Evaluation",
+      "zh": "过程评测",
+      "path": "wiki/ai-agents/238-process-evaluation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Faithfulness",
+      "zh": "忠实度",
+      "path": "wiki/ai-agents/239-faithfulness.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Factual Accuracy",
+      "zh": "事实准确性",
+      "path": "wiki/ai-agents/240-factual-accuracy.md"
     }
   ]
 }

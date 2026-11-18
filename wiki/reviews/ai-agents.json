@@ -842,6 +842,126 @@
     {
       "path": "wiki/ai-agents/210-checkpoint.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/211-checkpointing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/212-persistence.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/213-durable-execution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/214-interrupt.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/215-resume-execution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/216-human-in-the-loop.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/217-human-review.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/218-human-approval.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/219-recoverable-error.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/220-retry-policy.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/221-exponential-backoff.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/222-timeout.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/223-deadline.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/224-failover.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/225-compensating-action.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/226-transaction-boundary.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/227-execution-log.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/228-agent-evaluation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/229-benchmark.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/230-evaluation-dataset.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/231-task-success-rate.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/232-end-to-end-success-rate.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/233-tool-call-accuracy.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/234-action-success-rate.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/235-trajectory-evaluation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/236-trajectory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/237-outcome-evaluation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/238-process-evaluation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/239-faithfulness.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/240-factual-accuracy.md",
+      "status": "pending"
     }
   ]
 }

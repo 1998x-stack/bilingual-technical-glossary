@@ -25,8 +25,8 @@
 | 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | drafted_in_pr |
 | 09 | 161–180 | 多智能体协作 / MCP：模型上下文协议 | 20 | drafted_in_pr |
 | 10 | 181–200 | MCP：模型上下文协议 / A2A：智能体间协议 | 20 | drafted_in_pr |
-| 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | 部分 drafted_in_pr（201–210），211–220 planned |
-| 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | planned |
+| 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | drafted_in_pr |
+| 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | drafted_in_pr |
 | 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | planned |
 | 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | planned |
 | 15 | 281–300 | 智能体攻击与风险 / 工程化、成本与可观测性 | 20 | planned |
@@ -304,9 +304,9 @@
 199. [A2A Message（A2A 消息）](199-a2a-message.md)
 200. [Message Part（消息片段）](200-message-part.md)
 
-## 第 11 批（201–220 · 已完成前 10 篇）
+## 第 11 批（201–220 · 完整 20 篇）
 
-[第 11 批学习路径：A2A Artifact 与任务生命周期 → 状态机/检查点](BATCH-11.md)：本轮仅完成 201–210；**211–220 仍 planned，不应标记 ready**。保留 canonical 20 条/批结构。
+[第 11 批学习路径：A2A Artifact → 状态机、持久执行与人工审批](BATCH-11.md)：本轮补齐 211–220，20 篇候审稿已完整成稿，专家审核仍 pending。
 
 201. [Artifact（任务产物）](201-artifact.md)
 202. [Task State（任务状态）](202-task-state.md)
@@ -318,6 +318,44 @@
 208. [Task Delegation Protocol（任务委派协议）](208-task-delegation-protocol.md)
 209. [State Machine（状态机）](209-state-machine.md)
 210. [Checkpoint（检查点）](210-checkpoint.md)
+
+### 第 11 批本轮补齐（211–220）
+
+211. [Checkpointing（检查点保存）](211-checkpointing.md)
+212. [Persistence（持久化）](212-persistence.md)
+213. [Durable Execution（持久执行）](213-durable-execution.md)
+214. [Interrupt（中断）](214-interrupt.md)
+215. [Resume Execution（恢复执行）](215-resume-execution.md)
+216. [Human-in-the-loop (HITL)（人工介入）](216-human-in-the-loop.md)
+217. [Human Review（人工审核）](217-human-review.md)
+218. [Human Approval（人工批准）](218-human-approval.md)
+219. [Recoverable Error（可恢复错误）](219-recoverable-error.md)
+220. [Retry Policy（重试策略）](220-retry-policy.md)
+
+## 第 12 批（221–240 · 完整 20 篇）
+
+[第 12 批学习路径：恢复机制与评测基准](BATCH-12.md)：涵盖重试、事务/日志、Agent 评测、轨迹、忠实度和事实准确性；本批 20 篇长文全部候审。
+
+221. [Exponential Backoff（指数退避）](221-exponential-backoff.md)
+222. [Timeout（超时）](222-timeout.md)
+223. [Deadline（截止期限）](223-deadline.md)
+224. [Failover（故障转移）](224-failover.md)
+225. [Compensating Action（补偿操作）](225-compensating-action.md)
+226. [Transaction Boundary（事务边界）](226-transaction-boundary.md)
+227. [Execution Log（执行日志）](227-execution-log.md)
+228. [Agent Evaluation（智能体评测）](228-agent-evaluation.md)
+229. [Benchmark（评测基准）](229-benchmark.md)
+230. [Evaluation Dataset (Eval Set)（评测集）](230-evaluation-dataset.md)
+231. [Task Success Rate（任务成功率）](231-task-success-rate.md)
+232. [End-to-end Success Rate（端到端成功率）](232-end-to-end-success-rate.md)
+233. [Tool-call Accuracy（工具调用正确率）](233-tool-call-accuracy.md)
+234. [Action Success Rate（动作成功率）](234-action-success-rate.md)
+235. [Trajectory Evaluation（轨迹评测）](235-trajectory-evaluation.md)
+236. [Trajectory（轨迹）](236-trajectory.md)
+237. [Outcome Evaluation（结果评测）](237-outcome-evaluation.md)
+238. [Process Evaluation（过程评测）](238-process-evaluation.md)
+239. [Faithfulness（忠实度）](239-faithfulness.md)
+240. [Factual Accuracy（事实准确性）](240-factual-accuracy.md)
 
 ## 人工审稿要求
 
