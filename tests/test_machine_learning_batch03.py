@@ -59,7 +59,7 @@ class MLBatch03Tests(unittest.TestCase):
         self.assertAlmostEqual((.9 - .5) / (1 - .5), .8)             # 052 kappa
         self.assertEqual(1000 - 40, 960)                            # 053 cleaning
         self.assertEqual((1 + 3 + 8) / 3, 4)                         # 059 impute
-        self.assertAlmostEqual(10 / math.sqrt(200 / 3), 1.224745)  # 060 standard
+        self.assertAlmostEqual(10 / math.sqrt(200 / 3), math.sqrt(3 / 2), places=10)  # 060 exact identity
         self.assertEqual((25 - 10) / (30 - 10), .75)                 # 062 min max
         self.assertEqual((98 - 10) / (14 - 6), 11)                   # 063 robust
         self.assertAlmostEqual((2 * .5 + 3 * .2) / (2 + 3), .32)    # 066 target
