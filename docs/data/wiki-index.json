@@ -1134,6 +1134,146 @@
       "en": "Observation",
       "zh": "观察",
       "path": "wiki/ai-agents/020-observation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Action",
+      "zh": "动作",
+      "path": "wiki/ai-agents/021-action.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 1,
+      "en": "Termination Condition",
+      "zh": "终止条件",
+      "path": "wiki/ai-agents/022-termination-condition.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Reasoning Model",
+      "zh": "推理模型",
+      "path": "wiki/ai-agents/023-reasoning-model.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Model Invocation",
+      "zh": "模型调用",
+      "path": "wiki/ai-agents/024-model-invocation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Inference-time Compute",
+      "zh": "推理时计算",
+      "path": "wiki/ai-agents/025-inference-time-compute.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Test-time Compute",
+      "zh": "测试时计算",
+      "path": "wiki/ai-agents/026-test-time-compute.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Context Window",
+      "zh": "上下文窗口",
+      "path": "wiki/ai-agents/027-context-window.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Token",
+      "zh": "词元",
+      "path": "wiki/ai-agents/028-token.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Token Budget",
+      "zh": "词元预算",
+      "path": "wiki/ai-agents/029-token-budget.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Temperature",
+      "zh": "温度参数",
+      "path": "wiki/ai-agents/030-temperature.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Structured Output",
+      "zh": "结构化输出",
+      "path": "wiki/ai-agents/031-structured-output.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Constrained Decoding",
+      "zh": "约束解码",
+      "path": "wiki/ai-agents/032-constrained-decoding.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Function Calling",
+      "zh": "函数调用",
+      "path": "wiki/ai-agents/033-function-calling.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Chain of Thought (CoT)",
+      "zh": "链式思维",
+      "path": "wiki/ai-agents/034-chain-of-thought.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Tree of Thoughts (ToT)",
+      "zh": "思维树",
+      "path": "wiki/ai-agents/035-tree-of-thoughts.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Self-Consistency",
+      "zh": "自洽性采样",
+      "path": "wiki/ai-agents/036-self-consistency.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Reasoning and Acting (ReAct)",
+      "zh": "推理与行动协同",
+      "path": "wiki/ai-agents/037-reasoning-and-acting.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Reflection",
+      "zh": "反思",
+      "path": "wiki/ai-agents/038-reflection.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Self-Correction",
+      "zh": "自我纠错",
+      "path": "wiki/ai-agents/039-self-correction.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 2,
+      "en": "Hallucination",
+      "zh": "幻觉",
+      "path": "wiki/ai-agents/040-hallucination.md"
     }
   ]
 }
