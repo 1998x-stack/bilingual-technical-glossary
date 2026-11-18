@@ -602,6 +602,106 @@
     {
       "path": "wiki/machine-learning/150-gbdt.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/151-xgboost.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/152-lightgbm.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/153-catboost.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/154-stacking.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/155-voting-ensemble.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/156-out-of-bag-error.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/157-feature-importance.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/158-support-vector-machine.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/159-support-vector.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/160-margin.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/161-maximum-margin-classifier.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/162-hinge-loss.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/163-soft-margin.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/164-kernel-trick.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/165-kernel-function.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/166-linear-kernel.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/167-polynomial-kernel.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/168-rbf-kernel-gaussian-kernel.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/169-support-vector-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/170-k-nearest-neighbors.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/171-nearest-neighbor-search.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/172-distance-metric.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/173-euclidean-distance.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/174-manhattan-distance.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/175-cosine-similarity.md",
+      "status": "pending"
     }
   ]
 }

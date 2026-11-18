@@ -2,7 +2,7 @@
   "title": "Machine Learning · 深度 Wiki",
   "total": 447,
   "batchSize": 25,
-  "readyInPr": 150,
+  "readyInPr": 175,
   "topics": [
     "基础概念与学习范式",
     "数据、样本与数据集划分",
@@ -24,7 +24,7 @@
     "机器学习工程与生产部署",
     "可解释性、公平性与安全"
   ],
-  "readyArticles": 150,
+  "readyArticles": 175,
   "terms": [
     {
       "n": 1,
@@ -1684,7 +1684,7 @@
       "abbr": "",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "151-xgboost.md"
     },
     {
@@ -1695,7 +1695,7 @@
       "abbr": "",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "152-lightgbm.md"
     },
     {
@@ -1706,7 +1706,7 @@
       "abbr": "",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "153-catboost.md"
     },
     {
@@ -1717,7 +1717,7 @@
       "abbr": "",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "154-stacking.md"
     },
     {
@@ -1728,7 +1728,7 @@
       "abbr": "",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "155-voting-ensemble.md"
     },
     {
@@ -1739,7 +1739,7 @@
       "abbr": "OOB",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "156-out-of-bag-error.md"
     },
     {
@@ -1750,7 +1750,7 @@
       "abbr": "",
       "topic": "树模型与集成学习",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "157-feature-importance.md"
     },
     {
@@ -1761,7 +1761,7 @@
       "abbr": "SVM",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "158-support-vector-machine.md"
     },
     {
@@ -1772,7 +1772,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "159-support-vector.md"
     },
     {
@@ -1783,7 +1783,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "160-margin.md"
     },
     {
@@ -1794,7 +1794,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "161-maximum-margin-classifier.md"
     },
     {
@@ -1805,7 +1805,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "162-hinge-loss.md"
     },
     {
@@ -1816,7 +1816,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "163-soft-margin.md"
     },
     {
@@ -1827,7 +1827,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "164-kernel-trick.md"
     },
     {
@@ -1838,7 +1838,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "165-kernel-function.md"
     },
     {
@@ -1849,7 +1849,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "166-linear-kernel.md"
     },
     {
@@ -1860,7 +1860,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "167-polynomial-kernel.md"
     },
     {
@@ -1871,7 +1871,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "168-rbf-kernel-gaussian-kernel.md"
     },
     {
@@ -1882,7 +1882,7 @@
       "abbr": "SVR",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "169-support-vector-regression.md"
     },
     {
@@ -1893,7 +1893,7 @@
       "abbr": "KNN",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "170-k-nearest-neighbors.md"
     },
     {
@@ -1904,7 +1904,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "171-nearest-neighbor-search.md"
     },
     {
@@ -1915,7 +1915,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "172-distance-metric.md"
     },
     {
@@ -1926,7 +1926,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "173-euclidean-distance.md"
     },
     {
@@ -1937,7 +1937,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "174-manhattan-distance.md"
     },
     {
@@ -1948,7 +1948,7 @@
       "abbr": "",
       "topic": "支持向量机、核方法与近邻",
       "batch": 7,
-      "ready": false,
+      "ready": true,
       "file": "175-cosine-similarity.md"
     },
     {

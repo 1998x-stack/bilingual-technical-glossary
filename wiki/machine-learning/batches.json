@@ -1348,7 +1348,7 @@
         "回归、分类与线性模型",
         "树模型与集成学习"
       ],
-      "status": "drafted_in_pr",
+      "status": "merged",
       "terms": [
         {
           "no": 126,
@@ -1357,7 +1357,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/126-decision-function.md"
         },
         {
@@ -1367,7 +1367,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/127-logit.md"
         },
         {
@@ -1377,7 +1377,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/128-sigmoid-function.md"
         },
         {
@@ -1387,7 +1387,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/129-softmax-function.md"
         },
         {
@@ -1397,7 +1397,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/130-residual.md"
         },
         {
@@ -1407,7 +1407,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/131-coefficient.md"
         },
         {
@@ -1417,7 +1417,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/132-intercept.md"
         },
         {
@@ -1427,7 +1427,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/133-multicollinearity.md"
         },
         {
@@ -1437,7 +1437,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/134-decision-tree.md"
         },
         {
@@ -1447,7 +1447,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/135-root-node.md"
         },
         {
@@ -1457,7 +1457,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/136-internal-node.md"
         },
         {
@@ -1467,7 +1467,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/137-leaf-node.md"
         },
         {
@@ -1477,7 +1477,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/138-tree-depth.md"
         },
         {
@@ -1487,7 +1487,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/139-split-criterion.md"
         },
         {
@@ -1497,7 +1497,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/140-gini-impurity.md"
         },
         {
@@ -1507,7 +1507,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/141-information-gain.md"
         },
         {
@@ -1517,7 +1517,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/142-tree-pruning.md"
         },
         {
@@ -1527,7 +1527,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/143-bagging.md"
         },
         {
@@ -1537,7 +1537,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/144-bootstrap-sampling.md"
         },
         {
@@ -1547,7 +1547,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/145-random-forest.md"
         },
         {
@@ -1557,7 +1557,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/146-extra-trees.md"
         },
         {
@@ -1567,7 +1567,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/147-boosting.md"
         },
         {
@@ -1577,7 +1577,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/148-adaboost.md"
         },
         {
@@ -1587,7 +1587,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/149-gradient-boosting.md"
         },
         {
@@ -1597,7 +1597,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/150-gbdt.md"
         }
       ]
@@ -1611,7 +1611,7 @@
         "树模型与集成学习",
         "支持向量机、核方法与近邻"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 151,
@@ -1620,7 +1620,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/151-xgboost.md"
         },
         {
@@ -1630,7 +1630,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/152-lightgbm.md"
         },
         {
@@ -1640,7 +1640,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/153-catboost.md"
         },
         {
@@ -1650,7 +1650,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/154-stacking.md"
         },
         {
@@ -1660,7 +1660,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/155-voting-ensemble.md"
         },
         {
@@ -1670,7 +1670,7 @@
           "abbr": "OOB",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/156-out-of-bag-error.md"
         },
         {
@@ -1680,7 +1680,7 @@
           "abbr": "",
           "chapter": 6,
           "topic": "树模型与集成学习",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/157-feature-importance.md"
         },
         {
@@ -1690,7 +1690,7 @@
           "abbr": "SVM",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/158-support-vector-machine.md"
         },
         {
@@ -1700,7 +1700,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/159-support-vector.md"
         },
         {
@@ -1710,7 +1710,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/160-margin.md"
         },
         {
@@ -1720,7 +1720,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/161-maximum-margin-classifier.md"
         },
         {
@@ -1730,7 +1730,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/162-hinge-loss.md"
         },
         {
@@ -1740,7 +1740,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/163-soft-margin.md"
         },
         {
@@ -1750,7 +1750,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/164-kernel-trick.md"
         },
         {
@@ -1760,7 +1760,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/165-kernel-function.md"
         },
         {
@@ -1770,7 +1770,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/166-linear-kernel.md"
         },
         {
@@ -1780,7 +1780,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/167-polynomial-kernel.md"
         },
         {
@@ -1790,7 +1790,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/168-rbf-kernel-gaussian-kernel.md"
         },
         {
@@ -1800,7 +1800,7 @@
           "abbr": "SVR",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/169-support-vector-regression.md"
         },
         {
@@ -1810,7 +1810,7 @@
           "abbr": "KNN",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/170-k-nearest-neighbors.md"
         },
         {
@@ -1820,7 +1820,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/171-nearest-neighbor-search.md"
         },
         {
@@ -1830,7 +1830,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/172-distance-metric.md"
         },
         {
@@ -1840,7 +1840,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/173-euclidean-distance.md"
         },
         {
@@ -1850,7 +1850,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/174-manhattan-distance.md"
         },
         {
@@ -1860,7 +1860,7 @@
           "abbr": "",
           "chapter": 7,
           "topic": "支持向量机、核方法与近邻",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/175-cosine-similarity.md"
         }
       ]

@@ -4368,6 +4368,181 @@
       "en": "GBDT",
       "zh": "梯度提升决策树",
       "path": "wiki/machine-learning/150-gbdt.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "XGBoost",
+      "zh": "极端梯度提升",
+      "path": "wiki/machine-learning/151-xgboost.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "LightGBM",
+      "zh": "轻量级梯度提升机",
+      "path": "wiki/machine-learning/152-lightgbm.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "CatBoost",
+      "zh": "类别提升",
+      "path": "wiki/machine-learning/153-catboost.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Stacking",
+      "zh": "堆叠集成",
+      "path": "wiki/machine-learning/154-stacking.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Voting Ensemble",
+      "zh": "投票集成",
+      "path": "wiki/machine-learning/155-voting-ensemble.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Out-of-bag Error (OOB)",
+      "zh": "袋外误差",
+      "path": "wiki/machine-learning/156-out-of-bag-error.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 6,
+      "en": "Feature Importance",
+      "zh": "特征重要性",
+      "path": "wiki/machine-learning/157-feature-importance.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Support Vector Machine (SVM)",
+      "zh": "支持向量机",
+      "path": "wiki/machine-learning/158-support-vector-machine.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Support Vector",
+      "zh": "支持向量",
+      "path": "wiki/machine-learning/159-support-vector.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Margin",
+      "zh": "间隔",
+      "path": "wiki/machine-learning/160-margin.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Maximum Margin Classifier",
+      "zh": "最大间隔分类器",
+      "path": "wiki/machine-learning/161-maximum-margin-classifier.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Hinge Loss",
+      "zh": "合页损失",
+      "path": "wiki/machine-learning/162-hinge-loss.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Soft Margin",
+      "zh": "软间隔",
+      "path": "wiki/machine-learning/163-soft-margin.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Kernel Trick",
+      "zh": "核技巧",
+      "path": "wiki/machine-learning/164-kernel-trick.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Kernel Function",
+      "zh": "核函数",
+      "path": "wiki/machine-learning/165-kernel-function.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Linear Kernel",
+      "zh": "线性核",
+      "path": "wiki/machine-learning/166-linear-kernel.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Polynomial Kernel",
+      "zh": "多项式核",
+      "path": "wiki/machine-learning/167-polynomial-kernel.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "RBF Kernel / Gaussian Kernel",
+      "zh": "径向基核／高斯核",
+      "path": "wiki/machine-learning/168-rbf-kernel-gaussian-kernel.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Support Vector Regression (SVR)",
+      "zh": "支持向量回归",
+      "path": "wiki/machine-learning/169-support-vector-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "K-nearest Neighbors (KNN)",
+      "zh": "K 近邻算法",
+      "path": "wiki/machine-learning/170-k-nearest-neighbors.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Nearest Neighbor Search",
+      "zh": "最近邻搜索",
+      "path": "wiki/machine-learning/171-nearest-neighbor-search.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Distance Metric",
+      "zh": "距离度量",
+      "path": "wiki/machine-learning/172-distance-metric.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Euclidean Distance",
+      "zh": "欧氏距离",
+      "path": "wiki/machine-learning/173-euclidean-distance.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Manhattan Distance",
+      "zh": "曼哈顿距离",
+      "path": "wiki/machine-learning/174-manhattan-distance.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 7,
+      "en": "Cosine Similarity",
+      "zh": "余弦相似度",
+      "path": "wiki/machine-learning/175-cosine-similarity.md"
     }
   ]
 }
