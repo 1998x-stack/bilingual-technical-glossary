@@ -8,7 +8,7 @@ from scripts.verify_machine_learning_wiki import ROOT, source_terms, validate
 
 class MachineLearningWikiBatch01Test(unittest.TestCase):
     def test_corpus_mapping_and_all_pages(self):
-        self.assertEqual(validate(ROOT), 25)
+        self.assertGreaterEqual(validate(ROOT), 25)
         self.assertEqual(len(source_terms(ROOT)), 447)
 
     def test_first_batch_crosses_chapter_boundary(self):
@@ -19,9 +19,9 @@ class MachineLearningWikiBatch01Test(unittest.TestCase):
     def test_review_ledger_unattested(self):
         import json
         ledger = json.loads((ROOT / "wiki/reviews/machine-learning.json").read_text("utf-8"))
-        self.assertEqual(len(ledger["articles"]), 25)
-        self.assertEqual({x["status"] for x in ledger["articles"]}, {"pending"})
-        self.assertTrue(all(not x.get("reviewer") for x in ledger["articles"]))
+        self.assertGreaterEqual(len(ledger["articles"]), 25)
+        self.assertEqual({x["status"] for x in ledger["articles"][:25]}, {"pending"})
+        self.assertTrue(all(not x.get("reviewer") for x in ledger["articles"][:25]))
 
     def test_independent_math_examples(self):
         cases = {

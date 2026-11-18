@@ -6,8 +6,8 @@
 
 | 批次 | 全局编号 | 覆盖主题 | 术语数 | 生产状态 |
 |---|---|---|---:|---|
-| 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | drafted_in_pr |
-| 02 | 026–050 | 数据、样本与数据集划分 | 25 | planned |
+| 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | merged |
+| 02 | 026–050 | 数据、样本与数据集划分 | 25 | drafted_in_pr |
 | 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | planned |
 | 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | planned |
 | 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | planned |
@@ -32,7 +32,7 @@
 - 公共入口仍为 [Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/?category=machine-learning#explorer) → 术语详情，不暴露批次计划。
 - `python3 scripts/build_wiki_index.py --check`、`python3 scripts/verify_wiki_reviews.py --check`、整库测试、Chromium E2E；审稿和 CI 分开记录。
 
-## 第一批 001–025（候审稿完成，尚未合并）
+## 第一批 001–025（已合并 main）
 
 覆盖“基础概念与学习范式”24 条，以及第二个专题“数据、样本与数据集划分”第 1 条 **Dataset**。不要误将第二章局部编号 1 当作全局编号 1。
 
@@ -93,4 +93,37 @@
 24. [Foundation Model（基础模型）](024-foundation-model.md)
 25. [Dataset（数据集）](025-dataset.md)
 
-> 本批仅是待评审 PR；不把自动结构检验当作人类领域专家签核，也不在公共 Explorer 显示批次计划。
+> 第一批已合并 main；专业审稿仍为 pending，批次生产状态不在公共站点展示。
+
+
+## 第二批 026–050（25 篇候审稿）
+
+本批全属于「数据、样本与数据集划分」，学习路径参见 [BATCH-02](BATCH-02.md)。
+
+26. [Sample / Instance（样本／实例）](026-sample-instance.md)
+27. [Observation（观测）](027-observation.md)
+28. [Feature（特征）](028-feature.md)
+29. [Target / Label（目标变量／标签）](029-target-label.md)
+30. [Ground Truth（真实标注／参考真值）](030-ground-truth.md)
+31. [Feature Matrix (X)（特征矩阵）](031-feature-matrix.md)
+32. [Target Vector (y)（目标向量）](032-target-vector.md)
+33. [Training Set（训练集）](033-training-set.md)
+34. [Validation Set（验证集）](034-validation-set.md)
+35. [Test Set（测试集）](035-test-set.md)
+36. [Holdout Set（留出集）](036-holdout-set.md)
+37. [Train–Test Split（训练测试划分）](037-train-test-split.md)
+38. [Stratified Sampling（分层抽样）](038-stratified-sampling.md)
+39. [Group Split（分组划分）](039-group-split.md)
+40. [Temporal Split（时间划分）](040-temporal-split.md)
+41. [Cross-validation (CV)（交叉验证）](041-cross-validation.md)
+42. [K-fold Cross-validation（K 折交叉验证）](042-k-fold-cross-validation.md)
+43. [Stratified K-fold（分层 K 折交叉验证）](043-stratified-k-fold.md)
+44. [Leave-one-out CV (LOOCV)（留一交叉验证）](044-leave-one-out-cv.md)
+45. [Out-of-fold Prediction (OOF)（折外预测）](045-out-of-fold-prediction.md)
+46. [Data Leakage（数据泄漏）](046-data-leakage.md)
+47. [Label Leakage（标签泄漏）](047-label-leakage.md)
+48. [Sampling Bias（抽样偏差）](048-sampling-bias.md)
+49. [Class Imbalance（类别不平衡）](049-class-imbalance.md)
+50. [Missing Value（缺失值）](050-missing-value.md)
+
+> 第二批在 PR 合并前不应声称已对公众发布；独立专家审稿 pending。

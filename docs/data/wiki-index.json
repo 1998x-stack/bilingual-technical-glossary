@@ -3493,6 +3493,181 @@
       "en": "Dataset",
       "zh": "数据集",
       "path": "wiki/machine-learning/025-dataset.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Sample / Instance",
+      "zh": "样本／实例",
+      "path": "wiki/machine-learning/026-sample-instance.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Observation",
+      "zh": "观测",
+      "path": "wiki/machine-learning/027-observation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Feature",
+      "zh": "特征",
+      "path": "wiki/machine-learning/028-feature.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Target / Label",
+      "zh": "目标变量／标签",
+      "path": "wiki/machine-learning/029-target-label.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Ground Truth",
+      "zh": "真实标注／参考真值",
+      "path": "wiki/machine-learning/030-ground-truth.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Feature Matrix (X)",
+      "zh": "特征矩阵",
+      "path": "wiki/machine-learning/031-feature-matrix.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Target Vector (y)",
+      "zh": "目标向量",
+      "path": "wiki/machine-learning/032-target-vector.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Training Set",
+      "zh": "训练集",
+      "path": "wiki/machine-learning/033-training-set.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Validation Set",
+      "zh": "验证集",
+      "path": "wiki/machine-learning/034-validation-set.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Test Set",
+      "zh": "测试集",
+      "path": "wiki/machine-learning/035-test-set.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Holdout Set",
+      "zh": "留出集",
+      "path": "wiki/machine-learning/036-holdout-set.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Train–Test Split",
+      "zh": "训练测试划分",
+      "path": "wiki/machine-learning/037-train-test-split.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Stratified Sampling",
+      "zh": "分层抽样",
+      "path": "wiki/machine-learning/038-stratified-sampling.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Group Split",
+      "zh": "分组划分",
+      "path": "wiki/machine-learning/039-group-split.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Temporal Split",
+      "zh": "时间划分",
+      "path": "wiki/machine-learning/040-temporal-split.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Cross-validation (CV)",
+      "zh": "交叉验证",
+      "path": "wiki/machine-learning/041-cross-validation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "K-fold Cross-validation",
+      "zh": "K 折交叉验证",
+      "path": "wiki/machine-learning/042-k-fold-cross-validation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Stratified K-fold",
+      "zh": "分层 K 折交叉验证",
+      "path": "wiki/machine-learning/043-stratified-k-fold.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Leave-one-out CV (LOOCV)",
+      "zh": "留一交叉验证",
+      "path": "wiki/machine-learning/044-leave-one-out-cv.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Out-of-fold Prediction (OOF)",
+      "zh": "折外预测",
+      "path": "wiki/machine-learning/045-out-of-fold-prediction.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Data Leakage",
+      "zh": "数据泄漏",
+      "path": "wiki/machine-learning/046-data-leakage.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Label Leakage",
+      "zh": "标签泄漏",
+      "path": "wiki/machine-learning/047-label-leakage.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Sampling Bias",
+      "zh": "抽样偏差",
+      "path": "wiki/machine-learning/048-sampling-bias.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Class Imbalance",
+      "zh": "类别不平衡",
+      "path": "wiki/machine-learning/049-class-imbalance.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Missing Value",
+      "zh": "缺失值",
+      "path": "wiki/machine-learning/050-missing-value.md"
     }
   ]
 }
