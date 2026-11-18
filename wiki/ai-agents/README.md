@@ -21,8 +21,8 @@
 | 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | drafted_in_pr |
 | 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | drafted_in_pr |
 | 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | drafted_in_pr |
-| 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | planned |
-| 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | planned |
+| 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | drafted_in_pr |
+| 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | 部分 drafted_in_pr（141–150），151–160 planned |
 | 09 | 161–180 | 多智能体协作 / MCP：模型上下文协议 | 20 | planned |
 | 10 | 181–200 | MCP：模型上下文协议 / A2A：智能体间协议 | 20 | planned |
 | 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | planned |
@@ -194,6 +194,50 @@
 118. [Hybrid Search（混合检索）](118-hybrid-search.md)
 119. [Reranking（重排序）](119-reranking.md)
 120. [Query Rewriting（查询改写）](120-query-rewriting.md)
+
+## 第 7 批知识路径（121–140 · 20 篇）
+
+[第 7 批：多跳检索、证据链与工作流编排](BATCH-07.md)：已完整完成第 7 批的 20 篇候审稿。第 8 批前 10 篇同属本次用户指定的 30 篇增量。
+
+### 已完成候审稿（121–140）
+
+121. [Multi-hop Retrieval（多跳检索）](121-multi-hop-retrieval.md)
+122. [Knowledge Graph (KG)（知识图谱）](122-knowledge-graph.md)
+123. [Source Attribution（来源归因）](123-source-attribution.md)
+124. [Evidence Chain（证据链）](124-evidence-chain.md)
+125. [Workflow（工作流）](125-workflow.md)
+126. [Agent Orchestration（智能体编排）](126-agent-orchestration.md)
+127. [Chaining（链式处理）](127-chaining.md)
+128. [Prompt Chaining（提示链）](128-prompt-chaining.md)
+129. [Routing Pattern（路由模式）](129-routing-pattern.md)
+130. [Parallelization（并行化）](130-parallelization.md)
+131. [Aggregation Pattern（汇总模式）](131-aggregation-pattern.md)
+132. [Orchestrator–Workers（编排者—工作者模式）](132-orchestrator-workers.md)
+133. [Evaluator–Optimizer（评估者—优化者模式）](133-evaluator-optimizer.md)
+134. [Plan-and-Execute（计划后执行）](134-plan-and-execute.md)
+135. [Reactive Execution（反应式执行）](135-reactive-execution.md)
+136. [Sequential Execution（顺序执行）](136-sequential-execution.md)
+137. [Conditional Branch（条件分支）](137-conditional-branch.md)
+138. [Control Flow（控制流）](138-control-flow.md)
+139. [Data Flow（数据流）](139-data-flow.md)
+140. [Directed Acyclic Graph (DAG)（有向无环图）](140-directed-acyclic-graph.md)
+
+## 第 8 批知识路径（141–160 · 已完成前 10 篇）
+
+[第 8 批：状态图、扇出扇入与多 Agent](BATCH-08.md)：目前 141–150 已完成候审稿；151–160 仍 planned、未写作，不应标记 ready 或宣称整批完成。
+
+### 已完成候审稿（141–150）
+
+141. [State Graph（状态图）](141-state-graph.md)
+142. [Loop Node（循环节点）](142-loop-node.md)
+143. [Fan-out（扇出）](143-fan-out.md)
+144. [Fan-in（扇入）](144-fan-in.md)
+145. [Gate Check（门控检查）](145-gate-check.md)
+146. [Multi-Agent System (MAS)（多智能体系统）](146-multi-agent-system.md)
+147. [Specialist Agent（专业智能体）](147-specialist-agent.md)
+148. [Generalist Agent（通用智能体）](148-generalist-agent.md)
+149. [Manager Agent（管理者智能体）](149-manager-agent.md)
+150. [Coordinator Agent（协调者智能体）](150-coordinator-agent.md)
 
 ## 人工审稿要求
 

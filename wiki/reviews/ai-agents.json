@@ -482,6 +482,126 @@
     {
       "path": "wiki/ai-agents/120-query-rewriting.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/121-multi-hop-retrieval.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/122-knowledge-graph.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/123-source-attribution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/124-evidence-chain.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/125-workflow.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/126-agent-orchestration.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/127-chaining.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/128-prompt-chaining.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/129-routing-pattern.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/130-parallelization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/131-aggregation-pattern.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/132-orchestrator-workers.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/133-evaluator-optimizer.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/134-plan-and-execute.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/135-reactive-execution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/136-sequential-execution.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/137-conditional-branch.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/138-control-flow.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/139-data-flow.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/140-directed-acyclic-graph.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/141-state-graph.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/142-loop-node.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/143-fan-out.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/144-fan-in.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/145-gate-check.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/146-multi-agent-system.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/147-specialist-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/148-generalist-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/149-manager-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/150-coordinator-agent.md",
+      "status": "pending"
     }
   ]
 }
