@@ -22,7 +22,7 @@
 |---|---:|---:|---:|---|
 | [AI Infra](ai-infrastructure/README.md) | 142 | 8 | 142 | 已并入 main；独立专家复核仍 pending |
 | [AI Agents](ai-agents/README.md) | 332 | 17 | 332 | 15 个堆叠 PR 已合并至 main；专业审稿仍 pending，需确认 Pages 部署 |
-| [Machine Learning](machine-learning/README.md) | 447 | 18 | 0 | 已规划每批 25（末批 22），逐批撰写与评审 |
+| [Machine Learning](machine-learning/README.md) | 447 | 18 | 25 | 第 1 批 001–025 候审稿已提交，专业审稿 pending，尚未合并 main |
 
 其他学科以真实权威源规划批次，不以简明词条的数量冒充已完成的长文数量。
 
