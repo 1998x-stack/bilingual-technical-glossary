@@ -202,6 +202,106 @@
     {
       "path": "wiki/machine-learning/050-missing-value.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/051-outlier.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/052-data-annotation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/053-data-cleaning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/054-data-preprocessing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/055-feature-engineering.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/056-feature-extraction.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/057-feature-selection.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/058-imputation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/059-mean-imputation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/060-standardization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/061-normalization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/062-min-max-scaling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/063-robust-scaling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/064-one-hot-encoding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/065-ordinal-encoding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/066-target-encoding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/067-label-encoding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/068-binning-discretization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/069-polynomial-features.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/070-interaction-feature.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/071-log-transformation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/072-box-cox-transformation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/073-feature-hashing.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/074-bag-of-words.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/075-tf-idf.md",
+      "status": "pending"
     }
   ]
 }

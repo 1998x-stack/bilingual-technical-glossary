@@ -3668,6 +3668,181 @@
       "en": "Missing Value",
       "zh": "缺失值",
       "path": "wiki/machine-learning/050-missing-value.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Outlier",
+      "zh": "离群点",
+      "path": "wiki/machine-learning/051-outlier.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Data Annotation",
+      "zh": "数据标注",
+      "path": "wiki/machine-learning/052-data-annotation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Data Cleaning",
+      "zh": "数据清洗",
+      "path": "wiki/machine-learning/053-data-cleaning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Data Preprocessing",
+      "zh": "数据预处理",
+      "path": "wiki/machine-learning/054-data-preprocessing.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Feature Engineering",
+      "zh": "特征工程",
+      "path": "wiki/machine-learning/055-feature-engineering.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Feature Extraction",
+      "zh": "特征提取",
+      "path": "wiki/machine-learning/056-feature-extraction.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Feature Selection",
+      "zh": "特征选择",
+      "path": "wiki/machine-learning/057-feature-selection.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Imputation",
+      "zh": "缺失值填补",
+      "path": "wiki/machine-learning/058-imputation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Mean Imputation",
+      "zh": "均值填补",
+      "path": "wiki/machine-learning/059-mean-imputation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Standardization",
+      "zh": "标准化",
+      "path": "wiki/machine-learning/060-standardization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Normalization",
+      "zh": "归一化",
+      "path": "wiki/machine-learning/061-normalization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Min–Max Scaling",
+      "zh": "最小最大缩放",
+      "path": "wiki/machine-learning/062-min-max-scaling.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Robust Scaling",
+      "zh": "稳健缩放",
+      "path": "wiki/machine-learning/063-robust-scaling.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "One-hot Encoding",
+      "zh": "独热编码",
+      "path": "wiki/machine-learning/064-one-hot-encoding.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Ordinal Encoding",
+      "zh": "序数编码",
+      "path": "wiki/machine-learning/065-ordinal-encoding.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Target Encoding",
+      "zh": "目标编码",
+      "path": "wiki/machine-learning/066-target-encoding.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Label Encoding",
+      "zh": "标签编码",
+      "path": "wiki/machine-learning/067-label-encoding.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Binning / Discretization",
+      "zh": "分箱／离散化",
+      "path": "wiki/machine-learning/068-binning-discretization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Polynomial Features",
+      "zh": "多项式特征",
+      "path": "wiki/machine-learning/069-polynomial-features.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Interaction Feature",
+      "zh": "交互特征",
+      "path": "wiki/machine-learning/070-interaction-feature.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Log Transformation",
+      "zh": "对数变换",
+      "path": "wiki/machine-learning/071-log-transformation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Box–Cox Transformation",
+      "zh": "Box–Cox 变换",
+      "path": "wiki/machine-learning/072-box-cox-transformation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Feature Hashing",
+      "zh": "特征哈希",
+      "path": "wiki/machine-learning/073-feature-hashing.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Bag of Words (BoW)",
+      "zh": "词袋模型",
+      "path": "wiki/machine-learning/074-bag-of-words.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "TF–IDF",
+      "zh": "词频-逆文档频率",
+      "path": "wiki/machine-learning/075-tf-idf.md"
     }
   ]
 }

@@ -296,7 +296,7 @@
       "topics": [
         "数据、样本与数据集划分"
       ],
-      "status": "drafted_in_pr",
+      "status": "merged",
       "terms": [
         {
           "no": 26,
@@ -305,7 +305,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/026-sample-instance.md"
         },
         {
@@ -315,7 +315,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/027-observation.md"
         },
         {
@@ -325,7 +325,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/028-feature.md"
         },
         {
@@ -335,7 +335,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/029-target-label.md"
         },
         {
@@ -345,7 +345,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/030-ground-truth.md"
         },
         {
@@ -355,7 +355,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/031-feature-matrix.md"
         },
         {
@@ -365,7 +365,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/032-target-vector.md"
         },
         {
@@ -375,7 +375,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/033-training-set.md"
         },
         {
@@ -385,7 +385,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/034-validation-set.md"
         },
         {
@@ -395,7 +395,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/035-test-set.md"
         },
         {
@@ -405,7 +405,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/036-holdout-set.md"
         },
         {
@@ -415,7 +415,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/037-train-test-split.md"
         },
         {
@@ -425,7 +425,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/038-stratified-sampling.md"
         },
         {
@@ -435,7 +435,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/039-group-split.md"
         },
         {
@@ -445,7 +445,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/040-temporal-split.md"
         },
         {
@@ -455,7 +455,7 @@
           "abbr": "CV",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/041-cross-validation.md"
         },
         {
@@ -465,7 +465,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/042-k-fold-cross-validation.md"
         },
         {
@@ -475,7 +475,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/043-stratified-k-fold.md"
         },
         {
@@ -485,7 +485,7 @@
           "abbr": "LOOCV",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/044-leave-one-out-cv.md"
         },
         {
@@ -495,7 +495,7 @@
           "abbr": "OOF",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/045-out-of-fold-prediction.md"
         },
         {
@@ -505,7 +505,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/046-data-leakage.md"
         },
         {
@@ -515,7 +515,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/047-label-leakage.md"
         },
         {
@@ -525,7 +525,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/048-sampling-bias.md"
         },
         {
@@ -535,7 +535,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/049-class-imbalance.md"
         },
         {
@@ -545,7 +545,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/050-missing-value.md"
         }
       ]
@@ -559,7 +559,7 @@
         "数据、样本与数据集划分",
         "数据预处理与特征工程"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 51,
@@ -568,7 +568,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/051-outlier.md"
         },
         {
@@ -578,7 +578,7 @@
           "abbr": "",
           "chapter": 2,
           "topic": "数据、样本与数据集划分",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/052-data-annotation.md"
         },
         {
@@ -588,7 +588,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/053-data-cleaning.md"
         },
         {
@@ -598,7 +598,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/054-data-preprocessing.md"
         },
         {
@@ -608,7 +608,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/055-feature-engineering.md"
         },
         {
@@ -618,7 +618,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/056-feature-extraction.md"
         },
         {
@@ -628,7 +628,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/057-feature-selection.md"
         },
         {
@@ -638,7 +638,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/058-imputation.md"
         },
         {
@@ -648,7 +648,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/059-mean-imputation.md"
         },
         {
@@ -658,7 +658,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/060-standardization.md"
         },
         {
@@ -668,7 +668,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/061-normalization.md"
         },
         {
@@ -678,7 +678,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/062-min-max-scaling.md"
         },
         {
@@ -688,7 +688,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/063-robust-scaling.md"
         },
         {
@@ -698,7 +698,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/064-one-hot-encoding.md"
         },
         {
@@ -708,7 +708,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/065-ordinal-encoding.md"
         },
         {
@@ -718,7 +718,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/066-target-encoding.md"
         },
         {
@@ -728,7 +728,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/067-label-encoding.md"
         },
         {
@@ -738,7 +738,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/068-binning-discretization.md"
         },
         {
@@ -748,7 +748,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/069-polynomial-features.md"
         },
         {
@@ -758,7 +758,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/070-interaction-feature.md"
         },
         {
@@ -768,7 +768,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/071-log-transformation.md"
         },
         {
@@ -778,7 +778,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/072-box-cox-transformation.md"
         },
         {
@@ -788,7 +788,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/073-feature-hashing.md"
         },
         {
@@ -798,7 +798,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/074-bag-of-words.md"
         },
         {
@@ -808,7 +808,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/075-tf-idf.md"
         }
       ]
