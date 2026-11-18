@@ -3843,6 +3843,181 @@
       "en": "TF–IDF",
       "zh": "词频-逆文档频率",
       "path": "wiki/machine-learning/075-tf-idf.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Embedding",
+      "zh": "嵌入向量",
+      "path": "wiki/machine-learning/076-embedding.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Sparse Feature",
+      "zh": "稀疏特征",
+      "path": "wiki/machine-learning/077-sparse-feature.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Dense Feature",
+      "zh": "稠密特征",
+      "path": "wiki/machine-learning/078-dense-feature.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Data Augmentation",
+      "zh": "数据增强",
+      "path": "wiki/machine-learning/079-data-augmentation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Resampling",
+      "zh": "重采样",
+      "path": "wiki/machine-learning/080-resampling.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "SMOTE",
+      "zh": "合成少数类过采样技术",
+      "path": "wiki/machine-learning/081-smote.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 3,
+      "en": "Pipeline",
+      "zh": "流水线",
+      "path": "wiki/machine-learning/082-pipeline.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Empirical Risk",
+      "zh": "经验风险",
+      "path": "wiki/machine-learning/083-empirical-risk.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Expected Risk",
+      "zh": "期望风险",
+      "path": "wiki/machine-learning/084-expected-risk.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Empirical Risk Minimization (ERM)",
+      "zh": "经验风险最小化",
+      "path": "wiki/machine-learning/085-empirical-risk-minimization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Structural Risk Minimization (SRM)",
+      "zh": "结构风险最小化",
+      "path": "wiki/machine-learning/086-structural-risk-minimization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Generalization",
+      "zh": "泛化",
+      "path": "wiki/machine-learning/087-generalization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Generalization Gap",
+      "zh": "泛化差距",
+      "path": "wiki/machine-learning/088-generalization-gap.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Overfitting",
+      "zh": "过拟合",
+      "path": "wiki/machine-learning/089-overfitting.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Underfitting",
+      "zh": "欠拟合",
+      "path": "wiki/machine-learning/090-underfitting.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Bias–Variance Tradeoff",
+      "zh": "偏差-方差权衡",
+      "path": "wiki/machine-learning/091-bias-variance-tradeoff.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Inductive Bias",
+      "zh": "归纳偏置",
+      "path": "wiki/machine-learning/092-inductive-bias.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Regularization",
+      "zh": "正则化",
+      "path": "wiki/machine-learning/093-regularization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "L1 Regularization",
+      "zh": "L1 正则化",
+      "path": "wiki/machine-learning/094-l1-regularization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "L2 Regularization",
+      "zh": "L2 正则化",
+      "path": "wiki/machine-learning/095-l2-regularization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Elastic Net Regularization",
+      "zh": "弹性网络正则化",
+      "path": "wiki/machine-learning/096-elastic-net-regularization.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Model Complexity",
+      "zh": "模型复杂度",
+      "path": "wiki/machine-learning/097-model-complexity.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Capacity",
+      "zh": "模型容量",
+      "path": "wiki/machine-learning/098-capacity.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "VC Dimension",
+      "zh": "VC 维",
+      "path": "wiki/machine-learning/099-vc-dimension.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "PAC Learning",
+      "zh": "概率近似正确学习",
+      "path": "wiki/machine-learning/100-pac-learning.md"
     }
   ]
 }

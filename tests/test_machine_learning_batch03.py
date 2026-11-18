@@ -18,8 +18,8 @@ class MLBatch03Tests(unittest.TestCase):
 
     def test_mirror_sections_questions_references(self):
         m = json.loads((ROOT / "docs/wiki/machine-learning/manifest.json").read_text("utf-8"))
-        self.assertEqual(m["readyArticles"], 75)
-        self.assertEqual(m["readyInPr"], 75)
+        self.assertGreaterEqual(m["readyArticles"], 75)
+        self.assertGreaterEqual(m["readyInPr"], 75)
         for t in m["terms"][50:75]:
             with self.subTest(term=t["n"]):
                 self.assertEqual(t["batch"], 3)
@@ -46,13 +46,13 @@ class MLBatch03Tests(unittest.TestCase):
         index = json.loads((ROOT / "docs/data/wiki-index.json").read_text("utf-8"))["articles"]
         ledger = json.loads((ROOT / "wiki/reviews/machine-learning.json").read_text("utf-8"))["articles"]
         ml = [x for x in index if x["category"] == "machine-learning"]
-        self.assertEqual(len(ml), 75)
-        self.assertEqual(len(index), 142 + 332 + 75)
-        self.assertEqual(len(ledger), 75)
-        self.assertEqual([x["path"] for x in ml],
+        self.assertGreaterEqual(len(ml), 75)
+        self.assertGreaterEqual(len(index), 142 + 332 + 75)
+        self.assertGreaterEqual(len(ledger), 75)
+        self.assertEqual([x["path"] for x in ml[:75]],
                          ["wiki/machine-learning/" + t["file"] for t in m["terms"][:75]])
         self.assertTrue(all(x["status"] == "pending" and not x.get("reviewer")
-                            for x in ledger))
+                            for x in ledger[:75]))
 
     def test_independent_numeric_examples(self):
         self.assertEqual(sorted(abs(x - 2) for x in [1, 2, 2, 3, 12])[2], 1)
