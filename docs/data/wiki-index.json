@@ -2674,6 +2674,216 @@
       "en": "Factual Accuracy",
       "zh": "事实准确性",
       "path": "wiki/ai-agents/240-factual-accuracy.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Robustness",
+      "zh": "鲁棒性",
+      "path": "wiki/ai-agents/241-robustness.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Reproducibility",
+      "zh": "可复现性",
+      "path": "wiki/ai-agents/242-reproducibility.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "LLM-as-a-Judge",
+      "zh": "评判模型",
+      "path": "wiki/ai-agents/243-llm-as-a-judge.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Ground Truth",
+      "zh": "黄金答案",
+      "path": "wiki/ai-agents/244-ground-truth.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Human Annotation",
+      "zh": "人工标注",
+      "path": "wiki/ai-agents/245-human-annotation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Regression Test",
+      "zh": "回归测试",
+      "path": "wiki/ai-agents/246-regression-test.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Scenario-based Evaluation",
+      "zh": "基于场景的评测",
+      "path": "wiki/ai-agents/247-scenario-based-evaluation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "GAIA",
+      "zh": "GAIA 基准",
+      "path": "wiki/ai-agents/248-gaia.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "SWE-bench",
+      "zh": "SWE-bench",
+      "path": "wiki/ai-agents/249-swe-bench.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "WebArena",
+      "zh": "WebArena",
+      "path": "wiki/ai-agents/250-webarena.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "OSWorld",
+      "zh": "OSWorld",
+      "path": "wiki/ai-agents/251-osworld.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "tau-bench",
+      "zh": "τ-bench",
+      "path": "wiki/ai-agents/252-tau-bench.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 12,
+      "en": "Berkeley Function Calling Leaderboard (BFCL)",
+      "zh": "伯克利函数调用榜单",
+      "path": "wiki/ai-agents/253-berkeley-function-calling-leaderboard.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Guardrail",
+      "zh": "护栏",
+      "path": "wiki/ai-agents/254-guardrail.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Policy Constraint",
+      "zh": "策略约束",
+      "path": "wiki/ai-agents/255-policy-constraint.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Principle of Least Privilege (PoLP)",
+      "zh": "最小权限原则",
+      "path": "wiki/ai-agents/256-principle-of-least-privilege.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Permission Scope",
+      "zh": "权限范围",
+      "path": "wiki/ai-agents/257-permission-scope.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Access Control",
+      "zh": "访问控制",
+      "path": "wiki/ai-agents/258-access-control.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Authentication (AuthN)",
+      "zh": "身份认证",
+      "path": "wiki/ai-agents/259-authentication.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Authorization (AuthZ)",
+      "zh": "访问授权",
+      "path": "wiki/ai-agents/260-authorization.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Sandbox",
+      "zh": "沙箱",
+      "path": "wiki/ai-agents/261-sandbox.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Safety Confirmation",
+      "zh": "安全确认",
+      "path": "wiki/ai-agents/262-safety-confirmation.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Human Oversight",
+      "zh": "人类监督",
+      "path": "wiki/ai-agents/263-human-oversight.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Refusal",
+      "zh": "拒绝执行",
+      "path": "wiki/ai-agents/264-refusal.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Safe Fallback",
+      "zh": "安全回退",
+      "path": "wiki/ai-agents/265-safe-fallback.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Audit Trail",
+      "zh": "审计跟踪",
+      "path": "wiki/ai-agents/266-audit-trail.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Security Boundary",
+      "zh": "安全边界",
+      "path": "wiki/ai-agents/267-security-boundary.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Trust Boundary",
+      "zh": "信任边界",
+      "path": "wiki/ai-agents/268-trust-boundary.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 13,
+      "en": "Data Minimization",
+      "zh": "数据最小化",
+      "path": "wiki/ai-agents/269-data-minimization.md"
+    },
+    {
+      "category": "ai-agents",
+      "chapter": 14,
+      "en": "Prompt Injection",
+      "zh": "提示词注入",
+      "path": "wiki/ai-agents/270-prompt-injection.md"
     }
   ]
 }
