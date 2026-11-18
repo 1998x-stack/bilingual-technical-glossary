@@ -7,8 +7,8 @@
 | 批次 | 全局编号 | 覆盖主题 | 术语数 | 生产状态 |
 |---|---|---|---:|---|
 | 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | merged |
-| 02 | 026–050 | 数据、样本与数据集划分 | 25 | drafted_in_pr |
-| 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | planned |
+| 02 | 026–050 | 数据、样本与数据集划分 | 25 | merged |
+| 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | drafted_in_pr |
 | 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | planned |
 | 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | planned |
 | 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | planned |
@@ -96,7 +96,7 @@
 > 第一批已合并 main；专业审稿仍为 pending，批次生产状态不在公共站点展示。
 
 
-## 第二批 026–050（25 篇候审稿）
+## 第二批 026–050（已合并 main）
 
 本批全属于「数据、样本与数据集划分」，学习路径参见 [BATCH-02](BATCH-02.md)。
 
@@ -126,4 +126,37 @@
 49. [Class Imbalance（类别不平衡）](049-class-imbalance.md)
 50. [Missing Value（缺失值）](050-missing-value.md)
 
-> 第二批在 PR 合并前不应声称已对公众发布；独立专家审稿 pending。
+> 第二批已合并 main，Pages 发布验证成功；专家独立审稿仍 pending。
+
+
+## 第三批 051–075（25 篇候审稿，尚未合并）
+
+覆盖第二专题末尾 2 篇和第三专题前 23 篇。重要技术主线：**源数据质量 → 预处理与填补 → 尺度变换 → 类别编码 → 非线性交互 → 文本向量化**。详见 [第三批学习路径](BATCH-03.md)。
+
+51. [Outlier（离群点）](051-outlier.md)
+52. [Data Annotation（数据标注）](052-data-annotation.md)
+53. [Data Cleaning（数据清洗）](053-data-cleaning.md)
+54. [Data Preprocessing（数据预处理）](054-data-preprocessing.md)
+55. [Feature Engineering（特征工程）](055-feature-engineering.md)
+56. [Feature Extraction（特征提取）](056-feature-extraction.md)
+57. [Feature Selection（特征选择）](057-feature-selection.md)
+58. [Imputation（缺失值填补）](058-imputation.md)
+59. [Mean Imputation（均值填补）](059-mean-imputation.md)
+60. [Standardization（标准化）](060-standardization.md)
+61. [Normalization（归一化）](061-normalization.md)
+62. [Min–Max Scaling（最小最大缩放）](062-min-max-scaling.md)
+63. [Robust Scaling（稳健缩放）](063-robust-scaling.md)
+64. [One-hot Encoding（独热编码）](064-one-hot-encoding.md)
+65. [Ordinal Encoding（序数编码）](065-ordinal-encoding.md)
+66. [Target Encoding（目标编码）](066-target-encoding.md)
+67. [Label Encoding（标签编码）](067-label-encoding.md)
+68. [Binning / Discretization（分箱／离散化）](068-binning-discretization.md)
+69. [Polynomial Features（多项式特征）](069-polynomial-features.md)
+70. [Interaction Feature（交互特征）](070-interaction-feature.md)
+71. [Log Transformation（对数变换）](071-log-transformation.md)
+72. [Box–Cox Transformation（Box–Cox 变换）](072-box-cox-transformation.md)
+73. [Feature Hashing（特征哈希）](073-feature-hashing.md)
+74. [Bag of Words (BoW)（词袋模型）](074-bag-of-words.md)
+75. [TF–IDF（词频-逆文档频率）](075-tf-idf.md)
+
+> 本批正文已准备，尚需 PR CI、合并及 Pages 部署。专业审核全部 pending；用户界面不展示批次。

@@ -2,7 +2,7 @@
   "title": "Machine Learning · 深度 Wiki",
   "total": 447,
   "batchSize": 25,
-  "readyInPr": 50,
+  "readyInPr": 75,
   "topics": [
     "基础概念与学习范式",
     "数据、样本与数据集划分",
@@ -24,7 +24,7 @@
     "机器学习工程与生产部署",
     "可解释性、公平性与安全"
   ],
-  "readyArticles": 50,
+  "readyArticles": 75,
   "terms": [
     {
       "n": 1,
@@ -584,7 +584,7 @@
       "abbr": "",
       "topic": "数据、样本与数据集划分",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "051-outlier.md"
     },
     {
@@ -595,7 +595,7 @@
       "abbr": "",
       "topic": "数据、样本与数据集划分",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "052-data-annotation.md"
     },
     {
@@ -606,7 +606,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "053-data-cleaning.md"
     },
     {
@@ -617,7 +617,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "054-data-preprocessing.md"
     },
     {
@@ -628,7 +628,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "055-feature-engineering.md"
     },
     {
@@ -639,7 +639,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "056-feature-extraction.md"
     },
     {
@@ -650,7 +650,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "057-feature-selection.md"
     },
     {
@@ -661,7 +661,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "058-imputation.md"
     },
     {
@@ -672,7 +672,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "059-mean-imputation.md"
     },
     {
@@ -683,7 +683,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "060-standardization.md"
     },
     {
@@ -694,7 +694,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "061-normalization.md"
     },
     {
@@ -705,7 +705,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "062-min-max-scaling.md"
     },
     {
@@ -716,7 +716,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "063-robust-scaling.md"
     },
     {
@@ -727,7 +727,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "064-one-hot-encoding.md"
     },
     {
@@ -738,7 +738,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "065-ordinal-encoding.md"
     },
     {
@@ -749,7 +749,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "066-target-encoding.md"
     },
     {
@@ -760,7 +760,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "067-label-encoding.md"
     },
     {
@@ -771,7 +771,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "068-binning-discretization.md"
     },
     {
@@ -782,7 +782,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "069-polynomial-features.md"
     },
     {
@@ -793,7 +793,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "070-interaction-feature.md"
     },
     {
@@ -804,7 +804,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "071-log-transformation.md"
     },
     {
@@ -815,7 +815,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "072-box-cox-transformation.md"
     },
     {
@@ -826,7 +826,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "073-feature-hashing.md"
     },
     {
@@ -837,7 +837,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "074-bag-of-words.md"
     },
     {
@@ -848,7 +848,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 3,
-      "ready": false,
+      "ready": true,
       "file": "075-tf-idf.md"
     },
     {
