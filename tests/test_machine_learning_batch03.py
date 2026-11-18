@@ -66,7 +66,7 @@ class MLBatch03Tests(unittest.TestCase):
         self.assertEqual(math.comb(5, 2) - 1, 9)                   # 069 degree 2
         self.assertEqual((4**1 - 1) / 1, 3)                         # 072 Box-Cox
         self.assertEqual(13 % 8, 21 % 8)                            # 073 collision
-        self.assertAlmostEqual(math.log(10 / 2) + 1, 2.609438)     # 075 IDF
+        self.assertAlmostEqual(math.log(10 / 2) + 1, 2.609438, places=6)  # 075 rounded IDF
 
 
 if __name__ == "__main__":
