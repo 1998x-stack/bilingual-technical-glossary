@@ -10,8 +10,8 @@
 | 02 | 026–050 | 数据、样本与数据集划分 | 25 | merged |
 | 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | merged |
 | 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | merged |
-| 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | drafted_in_pr |
-| 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | planned |
+| 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | merged |
+| 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | drafted_in_pr |
 | 07 | 151–175 | 树模型与集成学习 / 支持向量机、核方法与近邻 | 25 | planned |
 | 08 | 176–200 | 支持向量机、核方法与近邻 / 概率模型与统计推断 | 25 | planned |
 | 09 | 201–225 | 概率模型与统计推断 / 无监督学习与聚类 | 25 | planned |
@@ -195,7 +195,7 @@
 > 第四批已完成 PR CI、main 合并及 Pages 发布；专业人工审稿仍为 pending。
 
 
-## 第五批 101–125（25 篇深度候审稿）
+## 第五批 101–125（已合并 main 并发布 Pages）
 
 本批从 Sample Complexity 到 Decision Boundary，覆盖第四专题最后 7 个学习理论/分布偏移术语，以及第五专题前 18 个分类与回归模型。每篇均有 2 道中等面试问答和 2 道中等考试题及解析；详细交叉术语学习路径见 [BATCH-05.md](BATCH-05.md)。
 
@@ -225,4 +225,37 @@
 124. [Robust Regression（稳健回归）](124-robust-regression.md)
 125. [Decision Boundary（决策边界）](125-decision-boundary.md)
 
-> 第 5 批暂为 PR 候审，须以真实 CI 结果、合并及 Pages 部署为准。独立专业审稿仍 pending。
+> 第五批已通过 PR CI 并合并至 main，Pages 发布成功；独立专业审稿仍 pending。
+
+
+## 第六批 126–150（25 篇深度候审稿）
+
+承接第五专题“回归、分类与线性模型”最后 8 个术语，再进入第六专题“树模型与集成学习”17 个术语，从决策函数、Logit/Sigmoid/Softmax、残差/截距/共线性过渡到树结构、Gini/Information Gain、剪枝、Bagging/Bootstrap、RandomForest/ExtraTrees、Boosting/AdaBoost/GBDT。综合学习路径见 [BATCH-06.md](BATCH-06.md)。
+
+126. [Decision Function（决策函数）](126-decision-function.md)
+127. [Logit（对数几率）](127-logit.md)
+128. [Sigmoid Function（Sigmoid 函数）](128-sigmoid-function.md)
+129. [Softmax Function（Softmax 函数）](129-softmax-function.md)
+130. [Residual（残差）](130-residual.md)
+131. [Coefficient（回归系数）](131-coefficient.md)
+132. [Intercept（截距）](132-intercept.md)
+133. [Multicollinearity（多重共线性）](133-multicollinearity.md)
+134. [Decision Tree（决策树）](134-decision-tree.md)
+135. [Root Node（根节点）](135-root-node.md)
+136. [Internal Node（内部节点）](136-internal-node.md)
+137. [Leaf Node（叶节点）](137-leaf-node.md)
+138. [Tree Depth（树深度）](138-tree-depth.md)
+139. [Split Criterion（划分准则）](139-split-criterion.md)
+140. [Gini Impurity（基尼不纯度）](140-gini-impurity.md)
+141. [Information Gain（信息增益）](141-information-gain.md)
+142. [Tree Pruning（决策树剪枝）](142-tree-pruning.md)
+143. [Bagging (Bootstrap Aggregating)（自助聚合）](143-bagging.md)
+144. [Bootstrap Sampling（自助采样）](144-bootstrap-sampling.md)
+145. [Random Forest（随机森林）](145-random-forest.md)
+146. [Extra Trees（极端随机树）](146-extra-trees.md)
+147. [Boosting（提升法）](147-boosting.md)
+148. [AdaBoost（自适应提升）](148-adaboost.md)
+149. [Gradient Boosting（梯度提升）](149-gradient-boosting.md)
+150. [GBDT（梯度提升决策树）](150-gbdt.md)
+
+> 第 6 批候审稿不等于正式合并发布；必须通过 PR CI、合并并复核 Pages。独立专家审核状态均 pending。

@@ -502,6 +502,106 @@
     {
       "path": "wiki/machine-learning/125-decision-boundary.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/126-decision-function.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/127-logit.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/128-sigmoid-function.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/129-softmax-function.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/130-residual.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/131-coefficient.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/132-intercept.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/133-multicollinearity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/134-decision-tree.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/135-root-node.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/136-internal-node.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/137-leaf-node.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/138-tree-depth.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/139-split-criterion.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/140-gini-impurity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/141-information-gain.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/142-tree-pruning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/143-bagging.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/144-bootstrap-sampling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/145-random-forest.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/146-extra-trees.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/147-boosting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/148-adaboost.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/149-gradient-boosting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/150-gbdt.md",
+      "status": "pending"
     }
   ]
 }
