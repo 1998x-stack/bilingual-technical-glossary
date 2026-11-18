@@ -19,7 +19,7 @@
 | 02 | 021–040 | 基础概念与角色 / 模型能力与推理 | 20 | drafted_in_pr |
 | 03 | 041–060 | 模型能力与推理 / 任务规划与决策 | 20 | drafted_in_pr |
 | 04 | 061–080 | 任务规划与决策 / 工具使用与环境交互 | 20 | drafted_in_pr |
-| 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | planned |
+| 05 | 081–100 | 工具使用与环境交互 / 上下文、记忆与状态 | 20 | drafted_in_pr |
 | 06 | 101–120 | 上下文、记忆与状态 / 检索与知识增强 | 20 | planned |
 | 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | planned |
 | 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | planned |
@@ -140,6 +140,33 @@
 78. [Command-line Tool (CLI)（命令行工具）](078-command-line-tool.md)
 79. [Application Programming Interface (API)（应用程序接口）](079-application-programming-interface.md)
 80. [Tool Adapter（工具适配器）](080-tool-adapter.md)
+
+## 第 5 批知识路径
+
+[第 5 批：外部工具恢复、上下文工程与记忆体系](BATCH-05.md)：从 Environment Feedback、Tool Retry 和幂等性出发，跨入 Context Engineering、会话状态及语义/情景/程序性长期记忆与检索，重点检验时效、证据与权限边界。
+
+### 已完成候审稿（081–100）
+
+81. [Environment Feedback（环境反馈）](081-environment-feedback.md)
+82. [Tool Retry（工具调用重试）](082-tool-retry.md)
+83. [Side Effect（副作用）](083-side-effect.md)
+84. [Idempotent Operation（幂等操作）](084-idempotent-operation.md)
+85. [Sensitive Action（敏感操作）](085-sensitive-action.md)
+86. [Context（上下文）](086-context.md)
+87. [Context Engineering（上下文工程）](087-context-engineering.md)
+88. [Prompt Engineering（提示词工程）](088-prompt-engineering.md)
+89. [Context Injection（上下文注入）](089-context-injection.md)
+90. [Context Compression（上下文压缩）](090-context-compression.md)
+91. [Conversation History（对话历史）](091-conversation-history.md)
+92. [Session（会话）](092-session.md)
+93. [Session State（会话状态）](093-session-state.md)
+94. [Working Memory（工作记忆）](094-working-memory.md)
+95. [Short-term Memory（短期记忆）](095-short-term-memory.md)
+96. [Long-term Memory（长期记忆）](096-long-term-memory.md)
+97. [Episodic Memory（情景记忆）](097-episodic-memory.md)
+98. [Semantic Memory（语义记忆）](098-semantic-memory.md)
+99. [Procedural Memory（程序性记忆）](099-procedural-memory.md)
+100. [Memory Retrieval（记忆检索）](100-memory-retrieval.md)
 
 ## 人工审稿要求
 

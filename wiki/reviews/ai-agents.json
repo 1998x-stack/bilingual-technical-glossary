@@ -322,6 +322,86 @@
     {
       "path": "wiki/ai-agents/080-tool-adapter.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/081-environment-feedback.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/082-tool-retry.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/083-side-effect.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/084-idempotent-operation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/085-sensitive-action.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/086-context.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/087-context-engineering.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/088-prompt-engineering.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/089-context-injection.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/090-context-compression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/091-conversation-history.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/092-session.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/093-session-state.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/094-working-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/095-short-term-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/096-long-term-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/097-episodic-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/098-semantic-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/099-procedural-memory.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/100-memory-retrieval.md",
+      "status": "pending"
     }
   ]
 }

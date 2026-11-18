@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 80,
-  "readyArticles": 80,
+  "readyInPr": 100,
+  "readyArticles": 100,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -830,8 +830,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "081-environment-feedback.md"
     },
     {
       "n": 82,
@@ -840,8 +840,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "082-tool-retry.md"
     },
     {
       "n": 83,
@@ -850,8 +850,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "083-side-effect.md"
     },
     {
       "n": 84,
@@ -860,8 +860,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "084-idempotent-operation.md"
     },
     {
       "n": 85,
@@ -870,8 +870,8 @@
       "abbr": "",
       "topic": "工具使用与环境交互",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "085-sensitive-action.md"
     },
     {
       "n": 86,
@@ -880,8 +880,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "086-context.md"
     },
     {
       "n": 87,
@@ -890,8 +890,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "087-context-engineering.md"
     },
     {
       "n": 88,
@@ -900,8 +900,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "088-prompt-engineering.md"
     },
     {
       "n": 89,
@@ -910,8 +910,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "089-context-injection.md"
     },
     {
       "n": 90,
@@ -920,8 +920,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "090-context-compression.md"
     },
     {
       "n": 91,
@@ -930,8 +930,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "091-conversation-history.md"
     },
     {
       "n": 92,
@@ -940,8 +940,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "092-session.md"
     },
     {
       "n": 93,
@@ -950,8 +950,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "093-session-state.md"
     },
     {
       "n": 94,
@@ -960,8 +960,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "094-working-memory.md"
     },
     {
       "n": 95,
@@ -970,8 +970,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "095-short-term-memory.md"
     },
     {
       "n": 96,
@@ -980,8 +980,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "096-long-term-memory.md"
     },
     {
       "n": 97,
@@ -990,8 +990,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "097-episodic-memory.md"
     },
     {
       "n": 98,
@@ -1000,8 +1000,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "098-semantic-memory.md"
     },
     {
       "n": 99,
@@ -1010,8 +1010,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "099-procedural-memory.md"
     },
     {
       "n": 100,
@@ -1020,8 +1020,8 @@
       "abbr": "",
       "topic": "上下文、记忆与状态",
       "batch": 5,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "100-memory-retrieval.md"
     },
     {
       "n": 101,
