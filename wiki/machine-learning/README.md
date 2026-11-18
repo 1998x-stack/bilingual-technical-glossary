@@ -9,8 +9,8 @@
 | 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | merged |
 | 02 | 026–050 | 数据、样本与数据集划分 | 25 | merged |
 | 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | merged |
-| 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | drafted_in_pr |
-| 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | planned |
+| 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | merged |
+| 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | drafted_in_pr |
 | 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | planned |
 | 07 | 151–175 | 树模型与集成学习 / 支持向量机、核方法与近邻 | 25 | planned |
 | 08 | 176–200 | 支持向量机、核方法与近邻 / 概率模型与统计推断 | 25 | planned |
@@ -162,7 +162,7 @@
 > 第三批已通过 PR CI 并发布至 Pages；专业人工审核仍 pending。
 
 
-## 第四批 076–100（25 篇深度候审稿）
+## 第四批 076–100（已合并 main 并发布 Pages）
 
 本批延续第三专题最后 7 条（Embedding–Pipeline），并进入第四专题统计学习与泛化理论 18 条（Empirical Risk–PAC Learning）。含理论公式、工程适用边界、两道中等面试问答和两道中等考试题及解析。知识路径详见 [BATCH-04.md](BATCH-04.md)。
 
@@ -192,4 +192,37 @@
 99. [VC Dimension（VC 维）](099-vc-dimension.md)
 100. [PAC Learning（概率近似正确学习）](100-pac-learning.md)
 
-> 当前为第 4 批 PR 候审状态；直到实际 PR 合并与 Pages 成功不得声称第 4 批正式发布。所有领域专家审稿仍为 pending。
+> 第四批已完成 PR CI、main 合并及 Pages 发布；专业人工审稿仍为 pending。
+
+
+## 第五批 101–125（25 篇深度候审稿）
+
+本批从 Sample Complexity 到 Decision Boundary，覆盖第四专题最后 7 个学习理论/分布偏移术语，以及第五专题前 18 个分类与回归模型。每篇均有 2 道中等面试问答和 2 道中等考试题及解析；详细交叉术语学习路径见 [BATCH-05.md](BATCH-05.md)。
+
+101. [Sample Complexity（样本复杂度）](101-sample-complexity.md)
+102. [Learning Curve（学习曲线）](102-learning-curve.md)
+103. [Validation Curve（验证曲线）](103-validation-curve.md)
+104. [Distribution Shift（分布偏移）](104-distribution-shift.md)
+105. [Covariate Shift（协变量偏移）](105-covariate-shift.md)
+106. [Label Shift / Prior Shift（标签偏移／先验偏移）](106-label-shift-prior-shift.md)
+107. [Concept Drift（概念漂移）](107-concept-drift.md)
+108. [Regression（回归）](108-regression.md)
+109. [Classification（分类）](109-classification.md)
+110. [Binary Classification（二分类）](110-binary-classification.md)
+111. [Multiclass Classification（多类别分类）](111-multiclass-classification.md)
+112. [Multilabel Classification（多标签分类）](112-multilabel-classification.md)
+113. [Multioutput Prediction（多输出预测）](113-multioutput-prediction.md)
+114. [Linear Regression（线性回归）](114-linear-regression.md)
+115. [Ordinary Least Squares (OLS)（普通最小二乘法）](115-ordinary-least-squares.md)
+116. [Ridge Regression（岭回归）](116-ridge-regression.md)
+117. [Lasso Regression（套索回归）](117-lasso-regression.md)
+118. [Elastic Net（弹性网络）](118-elastic-net.md)
+119. [Logistic Regression（逻辑回归）](119-logistic-regression.md)
+120. [Softmax Regression（Softmax 回归）](120-softmax-regression.md)
+121. [Generalized Linear Model (GLM)（广义线性模型）](121-generalized-linear-model.md)
+122. [Poisson Regression（泊松回归）](122-poisson-regression.md)
+123. [Quantile Regression（分位数回归）](123-quantile-regression.md)
+124. [Robust Regression（稳健回归）](124-robust-regression.md)
+125. [Decision Boundary（决策边界）](125-decision-boundary.md)
+
+> 第 5 批暂为 PR 候审，须以真实 CI 结果、合并及 Pages 部署为准。独立专业审稿仍 pending。

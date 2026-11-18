@@ -4018,6 +4018,181 @@
       "en": "PAC Learning",
       "zh": "概率近似正确学习",
       "path": "wiki/machine-learning/100-pac-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Sample Complexity",
+      "zh": "样本复杂度",
+      "path": "wiki/machine-learning/101-sample-complexity.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Learning Curve",
+      "zh": "学习曲线",
+      "path": "wiki/machine-learning/102-learning-curve.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Validation Curve",
+      "zh": "验证曲线",
+      "path": "wiki/machine-learning/103-validation-curve.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Distribution Shift",
+      "zh": "分布偏移",
+      "path": "wiki/machine-learning/104-distribution-shift.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Covariate Shift",
+      "zh": "协变量偏移",
+      "path": "wiki/machine-learning/105-covariate-shift.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Label Shift / Prior Shift",
+      "zh": "标签偏移／先验偏移",
+      "path": "wiki/machine-learning/106-label-shift-prior-shift.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 4,
+      "en": "Concept Drift",
+      "zh": "概念漂移",
+      "path": "wiki/machine-learning/107-concept-drift.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Regression",
+      "zh": "回归",
+      "path": "wiki/machine-learning/108-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Classification",
+      "zh": "分类",
+      "path": "wiki/machine-learning/109-classification.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Binary Classification",
+      "zh": "二分类",
+      "path": "wiki/machine-learning/110-binary-classification.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Multiclass Classification",
+      "zh": "多类别分类",
+      "path": "wiki/machine-learning/111-multiclass-classification.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Multilabel Classification",
+      "zh": "多标签分类",
+      "path": "wiki/machine-learning/112-multilabel-classification.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Multioutput Prediction",
+      "zh": "多输出预测",
+      "path": "wiki/machine-learning/113-multioutput-prediction.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Linear Regression",
+      "zh": "线性回归",
+      "path": "wiki/machine-learning/114-linear-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Ordinary Least Squares (OLS)",
+      "zh": "普通最小二乘法",
+      "path": "wiki/machine-learning/115-ordinary-least-squares.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Ridge Regression",
+      "zh": "岭回归",
+      "path": "wiki/machine-learning/116-ridge-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Lasso Regression",
+      "zh": "套索回归",
+      "path": "wiki/machine-learning/117-lasso-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Elastic Net",
+      "zh": "弹性网络",
+      "path": "wiki/machine-learning/118-elastic-net.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Logistic Regression",
+      "zh": "逻辑回归",
+      "path": "wiki/machine-learning/119-logistic-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Softmax Regression",
+      "zh": "Softmax 回归",
+      "path": "wiki/machine-learning/120-softmax-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Generalized Linear Model (GLM)",
+      "zh": "广义线性模型",
+      "path": "wiki/machine-learning/121-generalized-linear-model.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Poisson Regression",
+      "zh": "泊松回归",
+      "path": "wiki/machine-learning/122-poisson-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Quantile Regression",
+      "zh": "分位数回归",
+      "path": "wiki/machine-learning/123-quantile-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Robust Regression",
+      "zh": "稳健回归",
+      "path": "wiki/machine-learning/124-robust-regression.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 5,
+      "en": "Decision Boundary",
+      "zh": "决策边界",
+      "path": "wiki/machine-learning/125-decision-boundary.md"
     }
   ]
 }
