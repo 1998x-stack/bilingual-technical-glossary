@@ -24,8 +24,8 @@
 | 07 | 121–140 | 检索与知识增强 / 工作流与编排模式 | 20 | drafted_in_pr |
 | 08 | 141–160 | 工作流与编排模式 / 多智能体协作 | 20 | drafted_in_pr |
 | 09 | 161–180 | 多智能体协作 / MCP：模型上下文协议 | 20 | drafted_in_pr |
-| 10 | 181–200 | MCP：模型上下文协议 / A2A：智能体间协议 | 20 | planned |
-| 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | planned |
+| 10 | 181–200 | MCP：模型上下文协议 / A2A：智能体间协议 | 20 | drafted_in_pr |
+| 11 | 201–220 | A2A：智能体间协议 / 执行状态、持久化与恢复 | 20 | 部分 drafted_in_pr（201–210），211–220 planned |
 | 12 | 221–240 | 执行状态、持久化与恢复 / 评测体系与常见基准 | 20 | planned |
 | 13 | 241–260 | 评测体系与常见基准 / 安全防护与治理 | 20 | planned |
 | 14 | 261–280 | 安全防护与治理 / 智能体攻击与风险 | 20 | planned |
@@ -278,6 +278,46 @@
 178. [Protocol Version Negotiation（协议版本协商）](178-protocol-version-negotiation.md)
 179. [JSON-RPC（JSON 远程过程调用）](179-json-rpc.md)
 180. [Standard Input/Output Transport (stdio)（标准输入输出传输）](180-standard-input-output-transport.md)
+
+## 第 10 批（181–200 · 完整 20 篇）
+
+[第 10 批学习路径：MCP 2026 传输与扩展 → A2A Agent Card、Task、Message](BATCH-10.md)：来源优先核验 2026-07-28 MCP 与 A2A 正式规范，区分 Sampling/Roots 弃用状态及 Elicitation MRTR。
+
+181. [Streamable HTTP Transport（流式 HTTP 传输）](181-streamable-http-transport.md)
+182. [Sampling（采样请求）](182-sampling.md)
+183. [Elicitation（用户信息征询）](183-elicitation.md)
+184. [Roots（根目录）](184-roots.md)
+185. [Completion（参数自动补全）](185-completion.md)
+186. [Progress Notification（进度通知）](186-progress-notification.md)
+187. [Cancellation Notification（取消通知）](187-cancellation-notification.md)
+188. [Authorization（授权）](188-authorization.md)
+189. [MCP Extension（MCP 扩展）](189-mcp-extension.md)
+190. [MCP Apps（MCP 应用）](190-mcp-apps.md)
+191. [Agent2Agent Protocol (A2A)（智能体间协议）](191-agent2agent-protocol.md)
+192. [A2A Client（A2A 客户端）](192-a2a-client.md)
+193. [A2A Server（A2A 服务器）](193-a2a-server.md)
+194. [Remote Agent（远程智能体）](194-remote-agent.md)
+195. [Agent Card（智能体名片）](195-agent-card.md)
+196. [Agent Discovery（智能体发现）](196-agent-discovery.md)
+197. [Agent Skill（智能体技能）](197-agent-skill.md)
+198. [A2A Task（A2A 任务）](198-a2a-task.md)
+199. [A2A Message（A2A 消息）](199-a2a-message.md)
+200. [Message Part（消息片段）](200-message-part.md)
+
+## 第 11 批（201–220 · 已完成前 10 篇）
+
+[第 11 批学习路径：A2A Artifact 与任务生命周期 → 状态机/检查点](BATCH-11.md)：本轮仅完成 201–210；**211–220 仍 planned，不应标记 ready**。保留 canonical 20 条/批结构。
+
+201. [Artifact（任务产物）](201-artifact.md)
+202. [Task State（任务状态）](202-task-state.md)
+203. [Task Lifecycle（任务生命周期）](203-task-lifecycle.md)
+204. [Streaming Update（流式更新）](204-streaming-update.md)
+205. [Push Notification（推送通知）](205-push-notification.md)
+206. [Interoperability（互操作性）](206-interoperability.md)
+207. [Capability Declaration（能力声明）](207-capability-declaration.md)
+208. [Task Delegation Protocol（任务委派协议）](208-task-delegation-protocol.md)
+209. [State Machine（状态机）](209-state-machine.md)
+210. [Checkpoint（检查点）](210-checkpoint.md)
 
 ## 人工审稿要求
 

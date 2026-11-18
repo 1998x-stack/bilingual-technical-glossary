@@ -722,6 +722,126 @@
     {
       "path": "wiki/ai-agents/180-standard-input-output-transport.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/181-streamable-http-transport.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/182-sampling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/183-elicitation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/184-roots.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/185-completion.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/186-progress-notification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/187-cancellation-notification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/188-authorization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/189-mcp-extension.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/190-mcp-apps.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/191-agent2agent-protocol.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/192-a2a-client.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/193-a2a-server.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/194-remote-agent.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/195-agent-card.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/196-agent-discovery.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/197-agent-skill.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/198-a2a-task.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/199-a2a-message.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/200-message-part.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/201-artifact.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/202-task-state.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/203-task-lifecycle.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/204-streaming-update.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/205-push-notification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/206-interoperability.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/207-capability-declaration.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/208-task-delegation-protocol.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/209-state-machine.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/210-checkpoint.md",
+      "status": "pending"
     }
   ]
 }
