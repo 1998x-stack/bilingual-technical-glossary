@@ -39,6 +39,6 @@ Label Shift 假设 P(X|Y) 不变；Covariate Shift 假设 P(Y|X) 不变；Concep
 ## 8. 权威来源与延伸阅读
 
 - [Lipton Wang Smola：Detecting and Correcting for Label Shift](https://proceedings.mlr.press/v80/lipton18a.html)：核对正式理论、定义、假设或 API 实现。
-- [Saerens 等 2002 EM prior adjustment 原论文 DOI](https://doi.org/10.1016/S0893-6080(02)00066-2)：核对正式理论、定义、假设或 API 实现。
+- [Saerens 等 2002 EM prior adjustment 原论文 DOI](https://doi.org/10.1162/089976602753284446)：核对正式理论、定义、假设或 API 实现。
 
 > 题中数值为明确的教学设定，非生产性能数据；专家独立技术审校状态为 pending。
