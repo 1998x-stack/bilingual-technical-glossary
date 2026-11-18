@@ -52,7 +52,8 @@ class TestAgents321332(unittest.TestCase):
     def test_full_index_and_reviews(self):
         articles = [a for a in self.i["articles"] if a["category"] == "ai-agents"]
         self.assertEqual(len(articles), 332)
-        self.assertEqual(len(self.i["articles"]), 474)
+        self.assertGreaterEqual(len(self.i["articles"]), 474)  # other Wiki domains may be added
+        self.assertEqual(sum(a["category"] == "ai-infrastructure" for a in self.i["articles"]), 142)
         self.assertEqual(len(self.r["articles"]), 332)
         self.assertEqual([x["en"] for x in articles], [x["en"] for x in self.m["terms"]])
         self.assertEqual(len(set(x["path"] for x in articles)), 332)
