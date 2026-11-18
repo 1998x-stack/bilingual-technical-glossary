@@ -2,7 +2,7 @@
   "title": "Machine Learning · 深度 Wiki",
   "total": 447,
   "batchSize": 25,
-  "readyInPr": 75,
+  "readyInPr": 100,
   "topics": [
     "基础概念与学习范式",
     "数据、样本与数据集划分",
@@ -24,7 +24,7 @@
     "机器学习工程与生产部署",
     "可解释性、公平性与安全"
   ],
-  "readyArticles": 75,
+  "readyArticles": 100,
   "terms": [
     {
       "n": 1,
@@ -859,7 +859,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "076-embedding.md"
     },
     {
@@ -870,7 +870,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "077-sparse-feature.md"
     },
     {
@@ -881,7 +881,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "078-dense-feature.md"
     },
     {
@@ -892,7 +892,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "079-data-augmentation.md"
     },
     {
@@ -903,7 +903,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "080-resampling.md"
     },
     {
@@ -914,7 +914,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "081-smote.md"
     },
     {
@@ -925,7 +925,7 @@
       "abbr": "",
       "topic": "数据预处理与特征工程",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "082-pipeline.md"
     },
     {
@@ -936,7 +936,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "083-empirical-risk.md"
     },
     {
@@ -947,7 +947,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "084-expected-risk.md"
     },
     {
@@ -958,7 +958,7 @@
       "abbr": "ERM",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "085-empirical-risk-minimization.md"
     },
     {
@@ -969,7 +969,7 @@
       "abbr": "SRM",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "086-structural-risk-minimization.md"
     },
     {
@@ -980,7 +980,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "087-generalization.md"
     },
     {
@@ -991,7 +991,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "088-generalization-gap.md"
     },
     {
@@ -1002,7 +1002,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "089-overfitting.md"
     },
     {
@@ -1013,7 +1013,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "090-underfitting.md"
     },
     {
@@ -1024,7 +1024,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "091-bias-variance-tradeoff.md"
     },
     {
@@ -1035,7 +1035,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "092-inductive-bias.md"
     },
     {
@@ -1046,7 +1046,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "093-regularization.md"
     },
     {
@@ -1057,7 +1057,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "094-l1-regularization.md"
     },
     {
@@ -1068,7 +1068,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "095-l2-regularization.md"
     },
     {
@@ -1079,7 +1079,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "096-elastic-net-regularization.md"
     },
     {
@@ -1090,7 +1090,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "097-model-complexity.md"
     },
     {
@@ -1101,7 +1101,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "098-capacity.md"
     },
     {
@@ -1112,7 +1112,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "099-vc-dimension.md"
     },
     {
@@ -1123,7 +1123,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 4,
-      "ready": false,
+      "ready": true,
       "file": "100-pac-learning.md"
     },
     {

@@ -302,6 +302,106 @@
     {
       "path": "wiki/machine-learning/075-tf-idf.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/076-embedding.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/077-sparse-feature.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/078-dense-feature.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/079-data-augmentation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/080-resampling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/081-smote.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/082-pipeline.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/083-empirical-risk.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/084-expected-risk.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/085-empirical-risk-minimization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/086-structural-risk-minimization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/087-generalization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/088-generalization-gap.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/089-overfitting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/090-underfitting.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/091-bias-variance-tradeoff.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/092-inductive-bias.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/093-regularization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/094-l1-regularization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/095-l2-regularization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/096-elastic-net-regularization.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/097-model-complexity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/098-capacity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/099-vc-dimension.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/100-pac-learning.md",
+      "status": "pending"
     }
   ]
 }

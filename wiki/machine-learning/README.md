@@ -8,8 +8,8 @@
 |---|---|---|---:|---|
 | 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | merged |
 | 02 | 026–050 | 数据、样本与数据集划分 | 25 | merged |
-| 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | drafted_in_pr |
-| 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | planned |
+| 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | merged |
+| 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | drafted_in_pr |
 | 05 | 101–125 | 统计学习与泛化理论 / 回归、分类与线性模型 | 25 | planned |
 | 06 | 126–150 | 回归、分类与线性模型 / 树模型与集成学习 | 25 | planned |
 | 07 | 151–175 | 树模型与集成学习 / 支持向量机、核方法与近邻 | 25 | planned |
@@ -129,7 +129,7 @@
 > 第二批已合并 main，Pages 发布验证成功；专家独立审稿仍 pending。
 
 
-## 第三批 051–075（25 篇候审稿，尚未合并）
+## 第三批 051–075（已合并 main 并发布 Pages）
 
 覆盖第二专题末尾 2 篇和第三专题前 23 篇。重要技术主线：**源数据质量 → 预处理与填补 → 尺度变换 → 类别编码 → 非线性交互 → 文本向量化**。详见 [第三批学习路径](BATCH-03.md)。
 
@@ -159,4 +159,37 @@
 74. [Bag of Words (BoW)（词袋模型）](074-bag-of-words.md)
 75. [TF–IDF（词频-逆文档频率）](075-tf-idf.md)
 
-> 本批正文已准备，尚需 PR CI、合并及 Pages 部署。专业审核全部 pending；用户界面不展示批次。
+> 第三批已通过 PR CI 并发布至 Pages；专业人工审核仍 pending。
+
+
+## 第四批 076–100（25 篇深度候审稿）
+
+本批延续第三专题最后 7 条（Embedding–Pipeline），并进入第四专题统计学习与泛化理论 18 条（Empirical Risk–PAC Learning）。含理论公式、工程适用边界、两道中等面试问答和两道中等考试题及解析。知识路径详见 [BATCH-04.md](BATCH-04.md)。
+
+76. [Embedding（嵌入向量）](076-embedding.md)
+77. [Sparse Feature（稀疏特征）](077-sparse-feature.md)
+78. [Dense Feature（稠密特征）](078-dense-feature.md)
+79. [Data Augmentation（数据增强）](079-data-augmentation.md)
+80. [Resampling（重采样）](080-resampling.md)
+81. [SMOTE（合成少数类过采样技术）](081-smote.md)
+82. [Pipeline（流水线）](082-pipeline.md)
+83. [Empirical Risk（经验风险）](083-empirical-risk.md)
+84. [Expected Risk（期望风险）](084-expected-risk.md)
+85. [Empirical Risk Minimization (ERM)（经验风险最小化）](085-empirical-risk-minimization.md)
+86. [Structural Risk Minimization (SRM)（结构风险最小化）](086-structural-risk-minimization.md)
+87. [Generalization（泛化）](087-generalization.md)
+88. [Generalization Gap（泛化差距）](088-generalization-gap.md)
+89. [Overfitting（过拟合）](089-overfitting.md)
+90. [Underfitting（欠拟合）](090-underfitting.md)
+91. [Bias–Variance Tradeoff（偏差-方差权衡）](091-bias-variance-tradeoff.md)
+92. [Inductive Bias（归纳偏置）](092-inductive-bias.md)
+93. [Regularization（正则化）](093-regularization.md)
+94. [L1 Regularization（L1 正则化）](094-l1-regularization.md)
+95. [L2 Regularization（L2 正则化）](095-l2-regularization.md)
+96. [Elastic Net Regularization（弹性网络正则化）](096-elastic-net-regularization.md)
+97. [Model Complexity（模型复杂度）](097-model-complexity.md)
+98. [Capacity（模型容量）](098-capacity.md)
+99. [VC Dimension（VC 维）](099-vc-dimension.md)
+100. [PAC Learning（概率近似正确学习）](100-pac-learning.md)
+
+> 当前为第 4 批 PR 候审状态；直到实际 PR 合并与 Pages 成功不得声称第 4 批正式发布。所有领域专家审稿仍为 pending。
