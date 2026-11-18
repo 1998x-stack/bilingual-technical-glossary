@@ -162,6 +162,86 @@
     {
       "path": "wiki/ai-agents/040-hallucination.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/041-uncertainty.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/042-confidence-calibration.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/043-planning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/044-task-decomposition.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/045-hierarchical-planning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/046-high-level-plan.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/047-action-plan.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/048-adaptive-planning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/049-plan-revision.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/050-task-dependency.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/051-task-priority.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/052-decision-point.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/053-action-space.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/054-state-space.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/055-policy.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/056-utility-function.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/057-reward-signal.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/058-search-space.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/059-heuristic-search.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/ai-agents/060-lookahead-search.md",
+      "status": "pending"
     }
   ]
 }
