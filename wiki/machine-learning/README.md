@@ -6,7 +6,7 @@
 
 | 批次 | 全局编号 | 覆盖主题 | 术语数 | 生产状态 |
 |---|---|---|---:|---|
-| 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | planned |
+| 01 | 001–025 | 基础概念与学习范式 / 数据、样本与数据集划分 | 25 | drafted_in_pr |
 | 02 | 026–050 | 数据、样本与数据集划分 | 25 | planned |
 | 03 | 051–075 | 数据、样本与数据集划分 / 数据预处理与特征工程 | 25 | planned |
 | 04 | 076–100 | 数据预处理与特征工程 / 统计学习与泛化理论 | 25 | planned |
@@ -32,7 +32,7 @@
 - 公共入口仍为 [Explorer](https://1998x-stack.github.io/bilingual-technical-glossary/?category=machine-learning#explorer) → 术语详情，不暴露批次计划。
 - `python3 scripts/build_wiki_index.py --check`、`python3 scripts/verify_wiki_reviews.py --check`、整库测试、Chromium E2E；审稿和 CI 分开记录。
 
-## 第一批 001–025
+## 第一批 001–025（候审稿完成，尚未合并）
 
 覆盖“基础概念与学习范式”24 条，以及第二个专题“数据、样本与数据集划分”第 1 条 **Dataset**。不要误将第二章局部编号 1 当作全局编号 1。
 
@@ -61,3 +61,36 @@
 23. Representation Learning（表征学习）
 24. Foundation Model（基础模型）
 25. Dataset（数据集）
+
+
+**第一批知识路径：**[BATCH-01.md](BATCH-01.md)。
+
+**25 篇候审稿：**
+
+1. [Machine Learning (ML)（机器学习）](001-machine-learning.md)
+2. [Artificial Intelligence (AI)（人工智能）](002-artificial-intelligence.md)
+3. [Statistical Learning（统计学习）](003-statistical-learning.md)
+4. [Supervised Learning（监督学习）](004-supervised-learning.md)
+5. [Unsupervised Learning（无监督学习）](005-unsupervised-learning.md)
+6. [Semi-supervised Learning（半监督学习）](006-semi-supervised-learning.md)
+7. [Self-supervised Learning（自监督学习）](007-self-supervised-learning.md)
+8. [Reinforcement Learning (RL)（强化学习）](008-reinforcement-learning.md)
+9. [Online Learning（在线学习）](009-online-learning.md)
+10. [Offline Learning / Batch Learning（离线学习／批量学习）](010-offline-learning-batch-learning.md)
+11. [Active Learning（主动学习）](011-active-learning.md)
+12. [Transfer Learning（迁移学习）](012-transfer-learning.md)
+13. [Multi-task Learning（多任务学习）](013-multi-task-learning.md)
+14. [Meta-learning（元学习）](014-meta-learning.md)
+15. [Few-shot Learning（少样本学习）](015-few-shot-learning.md)
+16. [Zero-shot Learning（零样本学习）](016-zero-shot-learning.md)
+17. [Domain Adaptation（领域自适应）](017-domain-adaptation.md)
+18. [Inductive Learning（归纳学习）](018-inductive-learning.md)
+19. [Transductive Learning（直推学习）](019-transductive-learning.md)
+20. [Generative Model（生成模型）](020-generative-model.md)
+21. [Discriminative Model（判别模型）](021-discriminative-model.md)
+22. [Predictive Modeling（预测建模）](022-predictive-modeling.md)
+23. [Representation Learning（表征学习）](023-representation-learning.md)
+24. [Foundation Model（基础模型）](024-foundation-model.md)
+25. [Dataset（数据集）](025-dataset.md)
+
+> 本批仅是待评审 PR；不把自动结构检验当作人类领域专家签核，也不在公共 Explorer 显示批次计划。

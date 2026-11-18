@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "domain": "machine-learning",
+  "description": "Machine Learning articles awaiting independent technical review; no synthetic reviewer attestations.",
+  "articles": [
+    {
+      "path": "wiki/machine-learning/001-machine-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/002-artificial-intelligence.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/003-statistical-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/004-supervised-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/005-unsupervised-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/006-semi-supervised-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/007-self-supervised-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/008-reinforcement-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/009-online-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/010-offline-learning-batch-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/011-active-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/012-transfer-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/013-multi-task-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/014-meta-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/015-few-shot-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/016-zero-shot-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/017-domain-adaptation.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/018-inductive-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/019-transductive-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/020-generative-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/021-discriminative-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/022-predictive-modeling.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/023-representation-learning.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/024-foundation-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/025-dataset.md",
+      "status": "pending"
+    }
+  ]
+}

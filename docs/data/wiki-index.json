@@ -3318,6 +3318,181 @@
       "en": "Continuous Delivery (CD)",
       "zh": "持续交付",
       "path": "wiki/ai-agents/332-continuous-delivery.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Machine Learning (ML)",
+      "zh": "机器学习",
+      "path": "wiki/machine-learning/001-machine-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Artificial Intelligence (AI)",
+      "zh": "人工智能",
+      "path": "wiki/machine-learning/002-artificial-intelligence.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Statistical Learning",
+      "zh": "统计学习",
+      "path": "wiki/machine-learning/003-statistical-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Supervised Learning",
+      "zh": "监督学习",
+      "path": "wiki/machine-learning/004-supervised-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Unsupervised Learning",
+      "zh": "无监督学习",
+      "path": "wiki/machine-learning/005-unsupervised-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Semi-supervised Learning",
+      "zh": "半监督学习",
+      "path": "wiki/machine-learning/006-semi-supervised-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Self-supervised Learning",
+      "zh": "自监督学习",
+      "path": "wiki/machine-learning/007-self-supervised-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Reinforcement Learning (RL)",
+      "zh": "强化学习",
+      "path": "wiki/machine-learning/008-reinforcement-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Online Learning",
+      "zh": "在线学习",
+      "path": "wiki/machine-learning/009-online-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Offline Learning / Batch Learning",
+      "zh": "离线学习／批量学习",
+      "path": "wiki/machine-learning/010-offline-learning-batch-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Active Learning",
+      "zh": "主动学习",
+      "path": "wiki/machine-learning/011-active-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Transfer Learning",
+      "zh": "迁移学习",
+      "path": "wiki/machine-learning/012-transfer-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Multi-task Learning",
+      "zh": "多任务学习",
+      "path": "wiki/machine-learning/013-multi-task-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Meta-learning",
+      "zh": "元学习",
+      "path": "wiki/machine-learning/014-meta-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Few-shot Learning",
+      "zh": "少样本学习",
+      "path": "wiki/machine-learning/015-few-shot-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Zero-shot Learning",
+      "zh": "零样本学习",
+      "path": "wiki/machine-learning/016-zero-shot-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Domain Adaptation",
+      "zh": "领域自适应",
+      "path": "wiki/machine-learning/017-domain-adaptation.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Inductive Learning",
+      "zh": "归纳学习",
+      "path": "wiki/machine-learning/018-inductive-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Transductive Learning",
+      "zh": "直推学习",
+      "path": "wiki/machine-learning/019-transductive-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Generative Model",
+      "zh": "生成模型",
+      "path": "wiki/machine-learning/020-generative-model.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Discriminative Model",
+      "zh": "判别模型",
+      "path": "wiki/machine-learning/021-discriminative-model.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Predictive Modeling",
+      "zh": "预测建模",
+      "path": "wiki/machine-learning/022-predictive-modeling.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Representation Learning",
+      "zh": "表征学习",
+      "path": "wiki/machine-learning/023-representation-learning.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 1,
+      "en": "Foundation Model",
+      "zh": "基础模型",
+      "path": "wiki/machine-learning/024-foundation-model.md"
+    },
+    {
+      "category": "machine-learning",
+      "chapter": 2,
+      "en": "Dataset",
+      "zh": "数据集",
+      "path": "wiki/machine-learning/025-dataset.md"
     }
   ]
 }
