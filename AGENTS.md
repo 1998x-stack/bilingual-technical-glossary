@@ -27,7 +27,7 @@
 - **PDFs**: original `pdf/` publications and `docs/pdf/` mirrors are not disposable regenerated data. Edit a matching original manuscript first, render intentionally, inspect page output, and only then replace.
 
 ## Wiki batch acceptance policy
-- Scope a batch to at most **20 consecutive entries** in current source order; final batch may be smaller. Keep stable numeric IDs, slugs, source order, and topic labels.
+- Scope a batch to at most **20 consecutive entries** by default; **Machine Learning uses 25 consecutive terms per batch (final batch 22)** under the dedicated 2026-11-18 project instruction. Keep source order; final batch may be smaller. Keep stable numeric IDs, slugs, source order, and topic labels.
 - Each finished page needs a precise bilingual definition, intuitive analogy with limits, actual mechanism, engineering example and trade-offs, concept distinctions, at least two intermediate interview Q&A, at least two worked exam Q&A, and traceable primary references.
 - Never invent official references, experimental benchmark numbers, product capabilities, or exact documentation version. State assumptions and units for every numeric exercise.
 - Update source Wiki, Pages mirror, batch state, site manifest, site reader, and study index **as one consistent change**. Track `planned`, `drafted_in_pr`, and merged/published separately; status must not overclaim deployment.

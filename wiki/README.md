@@ -12,16 +12,17 @@
 
 编辑依据：[正文模板](TEMPLATE.md) · [专业审稿](EDITORIAL_REVIEW.md) · [维护者指南](../docs/MAINTAINERS_GUIDE.md)。
 
-## 分批制度（每批 20）
+## 分批制度（默认每批 20；机器学习每批 25）
 
-每批连续 20 条，末批不足 20 按余数。过程为：核对源词表及现有 PR → 一手来源调研 → 20 篇正文 → 题解与链接复核 → 完整镜像与索引 → CI → 人工审核 → PR 合并 → Pages 抽测。
+默认每批连续 20 条；机器学习专题固定每批 25 条，末批 22 条。过程为：核对源词表及现有 PR → 一手来源调研 → 对应批量正文 → 题解与链接复核 → 完整镜像与索引 → CI → 人工审核 → PR 合并 → Pages 抽测。
 
 ## 当前各领域进展
 
 | 领域 | 总条数 | 批数 | 完整文章 | 当前状态 |
 |---|---:|---:|---:|---|
 | [AI Infra](ai-infrastructure/README.md) | 142 | 8 | 142 | 已并入 main；独立专家复核仍 pending |
-| [AI Agents](ai-agents/README.md) | 332 | 17 | 332 | 原始 17 批全部完成 332 篇候审稿（堆叠 PR，未合并 main）；待整库 CI/E2E 验收与独立专家技术审稿 pending |
+| [AI Agents](ai-agents/README.md) | 332 | 17 | 332 | 15 个堆叠 PR 已合并至 main；专业审稿仍 pending，需确认 Pages 部署 |
+| [Machine Learning](machine-learning/README.md) | 447 | 18 | 0 | 已规划每批 25（末批 22），逐批撰写与评审 |
 
 其他学科以真实权威源规划批次，不以简明词条的数量冒充已完成的长文数量。
 
