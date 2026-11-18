@@ -2,7 +2,7 @@
   "title": "Machine Learning · 深度 Wiki",
   "total": 447,
   "batchSize": 25,
-  "readyInPr": 100,
+  "readyInPr": 125,
   "topics": [
     "基础概念与学习范式",
     "数据、样本与数据集划分",
@@ -24,7 +24,7 @@
     "机器学习工程与生产部署",
     "可解释性、公平性与安全"
   ],
-  "readyArticles": 100,
+  "readyArticles": 125,
   "terms": [
     {
       "n": 1,
@@ -1134,7 +1134,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "101-sample-complexity.md"
     },
     {
@@ -1145,7 +1145,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "102-learning-curve.md"
     },
     {
@@ -1156,7 +1156,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "103-validation-curve.md"
     },
     {
@@ -1167,7 +1167,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "104-distribution-shift.md"
     },
     {
@@ -1178,7 +1178,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "105-covariate-shift.md"
     },
     {
@@ -1189,7 +1189,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "106-label-shift-prior-shift.md"
     },
     {
@@ -1200,7 +1200,7 @@
       "abbr": "",
       "topic": "统计学习与泛化理论",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "107-concept-drift.md"
     },
     {
@@ -1211,7 +1211,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "108-regression.md"
     },
     {
@@ -1222,7 +1222,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "109-classification.md"
     },
     {
@@ -1233,7 +1233,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "110-binary-classification.md"
     },
     {
@@ -1244,7 +1244,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "111-multiclass-classification.md"
     },
     {
@@ -1255,7 +1255,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "112-multilabel-classification.md"
     },
     {
@@ -1266,7 +1266,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "113-multioutput-prediction.md"
     },
     {
@@ -1277,7 +1277,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "114-linear-regression.md"
     },
     {
@@ -1288,7 +1288,7 @@
       "abbr": "OLS",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "115-ordinary-least-squares.md"
     },
     {
@@ -1299,7 +1299,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "116-ridge-regression.md"
     },
     {
@@ -1310,7 +1310,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "117-lasso-regression.md"
     },
     {
@@ -1321,7 +1321,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "118-elastic-net.md"
     },
     {
@@ -1332,7 +1332,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "119-logistic-regression.md"
     },
     {
@@ -1343,7 +1343,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "120-softmax-regression.md"
     },
     {
@@ -1354,7 +1354,7 @@
       "abbr": "GLM",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "121-generalized-linear-model.md"
     },
     {
@@ -1365,7 +1365,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "122-poisson-regression.md"
     },
     {
@@ -1376,7 +1376,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "123-quantile-regression.md"
     },
     {
@@ -1387,7 +1387,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "124-robust-regression.md"
     },
     {
@@ -1398,7 +1398,7 @@
       "abbr": "",
       "topic": "回归、分类与线性模型",
       "batch": 5,
-      "ready": false,
+      "ready": true,
       "file": "125-decision-boundary.md"
     },
     {

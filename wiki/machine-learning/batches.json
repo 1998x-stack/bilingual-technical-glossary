@@ -822,7 +822,7 @@
         "数据预处理与特征工程",
         "统计学习与泛化理论"
       ],
-      "status": "drafted_in_pr",
+      "status": "merged",
       "terms": [
         {
           "no": 76,
@@ -831,7 +831,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/076-embedding.md"
         },
         {
@@ -841,7 +841,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/077-sparse-feature.md"
         },
         {
@@ -851,7 +851,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/078-dense-feature.md"
         },
         {
@@ -861,7 +861,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/079-data-augmentation.md"
         },
         {
@@ -871,7 +871,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/080-resampling.md"
         },
         {
@@ -881,7 +881,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/081-smote.md"
         },
         {
@@ -891,7 +891,7 @@
           "abbr": "",
           "chapter": 3,
           "topic": "数据预处理与特征工程",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/082-pipeline.md"
         },
         {
@@ -901,7 +901,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/083-empirical-risk.md"
         },
         {
@@ -911,7 +911,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/084-expected-risk.md"
         },
         {
@@ -921,7 +921,7 @@
           "abbr": "ERM",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/085-empirical-risk-minimization.md"
         },
         {
@@ -931,7 +931,7 @@
           "abbr": "SRM",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/086-structural-risk-minimization.md"
         },
         {
@@ -941,7 +941,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/087-generalization.md"
         },
         {
@@ -951,7 +951,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/088-generalization-gap.md"
         },
         {
@@ -961,7 +961,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/089-overfitting.md"
         },
         {
@@ -971,7 +971,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/090-underfitting.md"
         },
         {
@@ -981,7 +981,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/091-bias-variance-tradeoff.md"
         },
         {
@@ -991,7 +991,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/092-inductive-bias.md"
         },
         {
@@ -1001,7 +1001,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/093-regularization.md"
         },
         {
@@ -1011,7 +1011,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/094-l1-regularization.md"
         },
         {
@@ -1021,7 +1021,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/095-l2-regularization.md"
         },
         {
@@ -1031,7 +1031,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/096-elastic-net-regularization.md"
         },
         {
@@ -1041,7 +1041,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/097-model-complexity.md"
         },
         {
@@ -1051,7 +1051,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/098-capacity.md"
         },
         {
@@ -1061,7 +1061,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/099-vc-dimension.md"
         },
         {
@@ -1071,7 +1071,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "drafted_in_pr",
+          "status": "merged",
           "wiki": "wiki/machine-learning/100-pac-learning.md"
         }
       ]
@@ -1085,7 +1085,7 @@
         "统计学习与泛化理论",
         "回归、分类与线性模型"
       ],
-      "status": "planned",
+      "status": "drafted_in_pr",
       "terms": [
         {
           "no": 101,
@@ -1094,7 +1094,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/101-sample-complexity.md"
         },
         {
@@ -1104,7 +1104,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/102-learning-curve.md"
         },
         {
@@ -1114,7 +1114,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/103-validation-curve.md"
         },
         {
@@ -1124,7 +1124,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/104-distribution-shift.md"
         },
         {
@@ -1134,7 +1134,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/105-covariate-shift.md"
         },
         {
@@ -1144,7 +1144,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/106-label-shift-prior-shift.md"
         },
         {
@@ -1154,7 +1154,7 @@
           "abbr": "",
           "chapter": 4,
           "topic": "统计学习与泛化理论",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/107-concept-drift.md"
         },
         {
@@ -1164,7 +1164,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/108-regression.md"
         },
         {
@@ -1174,7 +1174,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/109-classification.md"
         },
         {
@@ -1184,7 +1184,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/110-binary-classification.md"
         },
         {
@@ -1194,7 +1194,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/111-multiclass-classification.md"
         },
         {
@@ -1204,7 +1204,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/112-multilabel-classification.md"
         },
         {
@@ -1214,7 +1214,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/113-multioutput-prediction.md"
         },
         {
@@ -1224,7 +1224,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/114-linear-regression.md"
         },
         {
@@ -1234,7 +1234,7 @@
           "abbr": "OLS",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/115-ordinary-least-squares.md"
         },
         {
@@ -1244,7 +1244,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/116-ridge-regression.md"
         },
         {
@@ -1254,7 +1254,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/117-lasso-regression.md"
         },
         {
@@ -1264,7 +1264,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/118-elastic-net.md"
         },
         {
@@ -1274,7 +1274,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/119-logistic-regression.md"
         },
         {
@@ -1284,7 +1284,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/120-softmax-regression.md"
         },
         {
@@ -1294,7 +1294,7 @@
           "abbr": "GLM",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/121-generalized-linear-model.md"
         },
         {
@@ -1304,7 +1304,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/122-poisson-regression.md"
         },
         {
@@ -1314,7 +1314,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/123-quantile-regression.md"
         },
         {
@@ -1324,7 +1324,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/124-robust-regression.md"
         },
         {
@@ -1334,7 +1334,7 @@
           "abbr": "",
           "chapter": 5,
           "topic": "回归、分类与线性模型",
-          "status": "planned",
+          "status": "drafted_in_pr",
           "wiki": "wiki/machine-learning/125-decision-boundary.md"
         }
       ]

@@ -402,6 +402,106 @@
     {
       "path": "wiki/machine-learning/100-pac-learning.md",
       "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/101-sample-complexity.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/102-learning-curve.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/103-validation-curve.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/104-distribution-shift.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/105-covariate-shift.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/106-label-shift-prior-shift.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/107-concept-drift.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/108-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/109-classification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/110-binary-classification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/111-multiclass-classification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/112-multilabel-classification.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/113-multioutput-prediction.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/114-linear-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/115-ordinary-least-squares.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/116-ridge-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/117-lasso-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/118-elastic-net.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/119-logistic-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/120-softmax-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/121-generalized-linear-model.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/122-poisson-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/123-quantile-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/124-robust-regression.md",
+      "status": "pending"
+    },
+    {
+      "path": "wiki/machine-learning/125-decision-boundary.md",
+      "status": "pending"
     }
   ]
 }
