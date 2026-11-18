@@ -2,8 +2,8 @@
   "title": "AI Agents · 深度 Wiki",
   "total": 332,
   "batchSize": 20,
-  "readyInPr": 310,
-  "readyArticles": 310,
+  "readyInPr": 320,
+  "readyArticles": 320,
   "topics": [
     "基础概念与角色",
     "模型能力与推理",
@@ -3130,8 +3130,8 @@
       "abbr": "",
       "topic": "工程化、成本与可观测性",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "311-runbook.md"
     },
     {
       "n": 312,
@@ -3140,8 +3140,8 @@
       "abbr": "ADK",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "312-agent-development-kit.md"
     },
     {
       "n": 313,
@@ -3150,8 +3150,8 @@
       "abbr": "SDK",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "313-software-development-kit.md"
     },
     {
       "n": 314,
@@ -3160,8 +3160,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "314-skill-package.md"
     },
     {
       "n": 315,
@@ -3170,8 +3170,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "315-skill-discovery.md"
     },
     {
       "n": 316,
@@ -3180,8 +3180,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "316-skill-invocation.md"
     },
     {
       "n": 317,
@@ -3190,8 +3190,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "317-instruction-file.md"
     },
     {
       "n": 318,
@@ -3200,8 +3200,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "318-tool-manifest.md"
     },
     {
       "n": 319,
@@ -3210,8 +3210,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "319-schema-definition.md"
     },
     {
       "n": 320,
@@ -3220,8 +3220,8 @@
       "abbr": "",
       "topic": "开发实践与生态术语",
       "batch": 16,
-      "ready": false,
-      "file": null
+      "ready": true,
+      "file": "320-json-schema.md"
     },
     {
       "n": 321,
