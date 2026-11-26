@@ -1,0 +1,61 @@
+# 图论算法
+Graph|图||由顶点集合与顶点间边关系构成的离散结构。
+Vertex|顶点||图中表示实体或状态的基本节点。
+Edge|边||连接两个顶点或表示有向关联的对象。
+Directed Graph|有向图||边带方向、表示有序顶点对的图。
+Undirected Graph|无向图||边不区分两端方向的图。
+Weighted Graph|带权图||边或顶点附带数值权重的图。
+Adjacency List|邻接表||按顶点存储相邻顶点及边信息的图表示。
+Adjacency Matrix|邻接矩阵||用矩阵项表示任意顶点对是否相邻或其权值。
+Degree|度||无向图顶点的关联边数；有向图区分入度与出度。
+Path|路径||由连续相邻顶点与边构成的行走序列。
+Simple Path|简单路径||顶点不重复出现的路径。
+Cycle|环||起点与终点相同且内部顶点不重复的闭合路径。
+Connected Component|连通分量||无向图中极大的两两可达顶点集合。
+Strongly Connected Component|强连通分量|SCC|有向图中任意两点相互可达的极大顶点集合。
+Weakly Connected Component|弱连通分量||有向图忽略边方向后的连通分量。
+Breadth-first Search|广度优先搜索|BFS|按距起点边数从小到大遍历可达顶点。
+Depth-first Search|深度优先搜索|DFS|沿未访问邻接顶点深入，再回溯继续探索。
+DFS Tree|深度优先搜索树||DFS 首次访问顶点所经树边组成的树。
+BFS Tree|广度优先搜索树||BFS 首次发现顶点形成的最少边数层次树。
+Topological Sorting|拓扑排序||为有向无环图顶点建立满足所有有向边先后关系的线性序。
+Directed Acyclic Graph|有向无环图|DAG|不存在有向环的有向图。
+Kahn Algorithm|Kahn 算法||不断移除入度为零的顶点得到 DAG 拓扑序。
+Tarjan SCC Algorithm|Tarjan 强连通分量算法||通过 DFS 时间戳与 low-link 值分解有向图强连通分量。
+Kosaraju Algorithm|Kosaraju 算法||用原图与转置图两轮 DFS 求强连通分量。
+Low-link Value|最低可达时间戳|low|DFS 树中子树经返祖边能到达的最小发现时间。
+Articulation Point|割点||删除后使无向图连通分量数增加的顶点。
+Bridge|桥||删除后使无向图连通分量数增加的边。
+Biconnected Component|双连通分量||按指定顶点或边连通性定义的极大无割结构。
+Eulerian Trail|欧拉迹||恰好经过图的每条边一次的迹。
+Eulerian Circuit|欧拉回路||起点终点相同且经过每条边一次的闭合迹。
+Hierholzer Algorithm|Hierholzer 算法||通过拼接边不重复的回路构造欧拉迹或回路。
+Bipartite Graph|二分图||顶点能划为两部分且每条边跨两部分的图。
+Bipartite Checking|二分图判定||通过 BFS/DFS 二染色检测无向图是否二分。
+Graph Coloring|图着色||为顶点分配颜色并满足相邻顶点颜色不同的约束任务。
+Shortest Path|最短路径||在指定权重定义下总代价最小的起终点路径。
+Single-source Shortest Paths|单源最短路径|SSSP|计算一个源点到所有可达顶点的最短距离。
+All-pairs Shortest Paths|多源最短路径|APSP|计算所有顶点对之间的最短距离。
+Relaxation|松弛操作||用经过中间顶点的候选路径更新已知距离上界。
+Bellman–Ford Algorithm|Bellman–Ford 算法||反复松弛边求单源最短路并检测可达负环。
+Floyd–Warshall Algorithm|Floyd–Warshall 算法||按中间顶点范围递增求所有点对最短路。
+Johnson Algorithm|Johnson 算法||通过重赋权加多次 Dijkstra 求稀疏图全源最短路。
+A* Search|A* 搜索||以当前路径代价与启发估计之和优先扩展结点的搜索方法。
+Admissible Heuristic|可采纳启发函数||从不高估到目标真实剩余最优代价的启发估计。
+Consistent Heuristic|一致启发函数||满足三角不等式型单调条件的 A* 启发函数。
+Bidirectional Search|双向搜索||从起点和终点分别探索以缩小搜索区域。
+Zero-one BFS|0-1 BFS||使用双端队列求边权仅为 0 或 1 的最短路径。
+Shortest Path Tree|最短路径树||连接源点及可达顶点且树路径均为最短路径的树。
+Negative-weight Cycle|负权环||边权总和为负的有向环，使特定最短路问题无有限最优值。
+Graph Transpose|转置图||将有向图所有边方向反转所得的图。
+Graph Condensation|缩点图||把每个强连通分量收缩为单一顶点得到的 DAG。
+Minimum Cut|最小割||在给定容量下划分顶点集合使跨割容量最小。
+Spanning Tree|生成树||包含连通无向图全部顶点且无环的连通子图。
+Union-Find|并查集|DSU|维护互不相交集合的合并与代表元查询结构。
+Path Compression|路径压缩||查找集合代表元时直接连接祖先以缩短并查集路径。
+Union by Rank|按秩合并||将并查集较浅树挂在较深树之下的策略。
+Union by Size|按大小合并||将并查集较小集合挂到较大集合代表元之下。
+Minimum Spanning Forest|最小生成森林|MSF|不连通图中每个连通分量的最小生成树集合。
+Offline Connectivity|离线连通性||预先获得全部查询并通过重排操作高效回答连通关系。
+Dynamic Connectivity|动态连通性||在边增删变化下维护或查询顶点连通性的任务。
+Graph Diameter|图直径||所有可达顶点对最短距离的最大值，通常针对连通图定义。
