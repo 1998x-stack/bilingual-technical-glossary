@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Algorithms / 算法设计与分析 (standalone; not yet indexed)
+
+**500 terms · 15 chapters.** This original bilingual handbook covers analysis, sorting, divide-and-conquer, greedy algorithms, dynamic programming, graphs, strings, complexity theory, flow and advanced structures. Includes concise definitions, concept comparisons, self-check questions and references. [Markdown](glossaries/algorithms.md) · [PDF](pdf/algorithms.pdf) · [TSV](data/algorithms.tsv). Source chapters are in [data/algorithms/chapters/](data/algorithms/chapters/); run `node scripts/render_algorithms.mjs --check` to verify all generated mirrors. **This standalone handbook is not included in the searchable index/domain counts above.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
