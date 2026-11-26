@@ -1,0 +1,36 @@
+# 字符串算法
+String Matching|字符串匹配||在文本中寻找模式串全部或特定出现位置的任务。
+Pattern|模式串||需要在文本序列中检索的目标字符序列。
+Text|文本串||作为字符串匹配搜索范围的字符序列。
+Naive String Matching|朴素字符串匹配||在每个候选位置逐字符比较模式串的算法。
+Prefix Function|前缀函数||每个位置对应的最长真前缀且为后缀的长度。
+Knuth–Morris–Pratt Algorithm|KMP 算法|KMP|利用前后缀结构避免重复比较的线性时间字符串匹配算法。
+Failure Function|失配函数||在匹配失败时指示下一可复用状态的辅助函数。
+Z-function|Z 函数||记录每个后缀与原字符串最长公共前缀的长度。
+Z Algorithm|Z 算法||线性时间计算 Z 函数的字符串算法。
+Rabin–Karp Algorithm|Rabin–Karp 算法||通过滚动哈希筛选匹配窗口并处理哈希冲突。
+Rolling Hash|滚动哈希||根据已有窗口哈希快速计算相邻窗口哈希的技巧。
+Polynomial String Hash|多项式字符串哈希||把字符序列映射为模整数的多项式求值结果。
+Hash Collision|哈希碰撞||两个不同字符串取得相同哈希值的现象。
+Boyer–Moore Algorithm|Boyer–Moore 算法||从模式串尾部比较并利用失配规则跳过位置。
+Bad-character Rule|坏字符规则||依据失配字符在模式串中的位置确定跳跃距离。
+Good-suffix Rule|好后缀规则||利用已匹配后缀的重复结构计算移动距离。
+Aho–Corasick Automaton|AC 自动机|AC|结合 Trie 与失配链接实现多模式串同时匹配的自动机。
+Trie|字典树||按字符逐层存储字符串前缀的树形索引。
+Suffix Array|后缀数组|SA|按字典序排列文本所有后缀起始位置的数组。
+Suffix Tree|后缀树||将字符串全部后缀以压缩 Trie 表示的索引结构。
+Suffix Automaton|后缀自动机|SAM|识别某字符串全部子串的最小化有向无环确定自动机。
+Longest Common Prefix Array|最长公共前缀数组|LCP|记录后缀数组相邻后缀最长公共前缀长度的数组。
+Kasai Algorithm|Kasai 算法||在线性时间内利用后缀数组计算 LCP 数组的算法。
+Burrows–Wheeler Transform|Burrows–Wheeler 变换|BWT|通过旋转排序构造易于压缩和索引的字符串变换。
+FM-index|FM 索引||基于 BWT 与秩查询支持压缩全文检索的索引。
+Palindromic Substring|回文子串||正读与反读相同的连续字符片段。
+Manacher Algorithm|Manacher 算法||线性时间求字符串各中心最大回文半径的算法。
+Palindrome Tree|回文树|Eertree|在线维护全部不同回文子串及其后缀关系的结构。
+Longest Palindromic Substring|最长回文子串||寻找给定字符串中长度最大的连续回文片段。
+Lyndon Word|Lyndon 词||严格小于自身所有非平凡旋转的字符串。
+Duval Algorithm|Duval 算法||线性时间求字符串 Lyndon 分解的算法。
+Lexicographic Order|字典序||按首个不同字符的次序比较字符串的全序。
+String Period|字符串周期||使字符串在相应偏移位置重复一致的正整数。
+Minimal Rotation|最小表示法||寻找字符串所有循环旋转中字典序最小的一种表示。
+Booth Algorithm|Booth 算法||线性时间求字符串字典序最小循环表示的算法。
