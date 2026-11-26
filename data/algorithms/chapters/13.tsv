@@ -1,0 +1,36 @@
+# 计算复杂性理论
+Computational Complexity Theory|计算复杂性理论||研究不同计算问题所需资源与问题分类的理论。
+Decision Problem|判定问题||要求对每个输入实例回答是或否的问题。
+Optimization Problem|优化问题||在可行解集合中最小化或最大化目标函数的问题。
+Search Problem|搜索问题||要求构造满足条件的对象而不仅回答是否存在的问题。
+Complexity Class|复杂性类||依资源界限或计算模型定义的计算问题集合。
+Class P|P 类|P|可由确定性算法在多项式时间内解决的判定问题集合。
+Class NP|NP 类|NP|是实例具有可在多项式时间验证的证书的判定问题集合。
+Class co-NP|co-NP 类|co-NP|其补问题属于 NP 的判定问题集合。
+NP-hard|NP 困难||所有 NP 问题均可多项式时间归约到的问题的性质。
+NP-complete|NP 完全||同时属于 NP 且为 NP 困难的判定问题。
+Polynomial-time Reduction|多项式时间归约||在多项式时间内将一个问题的实例转化为另一个问题的实例。
+Many-one Reduction|多对一归约||通过单一计算变换将一个判定问题映射到另一问题。
+Turing Reduction|图灵归约||可通过调用目标问题求解器若干次来解原问题的归约。
+Karp Reduction|Karp 归约||判定问题间可多项式计算的多对一归约。
+Cook–Levin Theorem|Cook–Levin 定理||证明布尔可满足性问题是 NP 完全问题的定理。
+Boolean Satisfiability|布尔可满足性|SAT|判断布尔公式是否存在使其为真的赋值。
+3-SAT|三合取范式可满足性|3-SAT|判断每个子句至多三个文字的合取范式是否可满足。
+Clique Problem|团判定问题||判断图中是否存在至少 k 个顶点组成的完全子图。
+Independent Set Problem|独立集判定问题||判断图中是否存在大小至少 k 的两两不相邻顶点集。
+Vertex Cover Problem|顶点覆盖判定问题||判断图中是否存在至多 k 个顶点覆盖全部边。
+Hamiltonian Cycle Problem|哈密顿环判定问题||判断图中是否存在访问每个顶点一次的环。
+Traveling Salesperson Problem|旅行商问题|TSP|寻找访问指定城市并返回起点的最小代价巡回路线。
+Subset Sum Problem|子集和判定问题||判断给定整数集合是否有子集的和为目标值。
+P versus NP Problem|P 与 NP 问题||询问可高效验证的判定问题是否都能高效求解的开放问题。
+Polynomial Hierarchy|多项式层级|PH|通过交替存在与全称量词定义的一系列复杂性类。
+PSPACE|多项式空间类|PSPACE|可用多项式空间解决的判定问题集合。
+EXPTIME|指数时间类|EXPTIME|可由确定性算法在指数时间内求解的判定问题集合。
+Parameterized Complexity|参数化复杂性||将问题成本表示为实例规模与附加参数函数的研究框架。
+Fixed-parameter Tractability|固定参数可解性|FPT|可在 f(k)·n^O(1) 时间解决的参数化问题性质。
+W[1]-hardness|W[1] 困难性||参数化问题具有至少与 W[1] 类代表问题一样难的归约性质。
+Kernelization|核化||在多项式时间内将实例压缩为大小仅依赖参数的等价实例。
+Fine-grained Complexity|细粒度复杂性||研究多项式时间内部更精确的指数或幂次下界。
+Strong Exponential Time Hypothesis|强指数时间假设|SETH|关于 k-SAT 随子句宽度增长无法统一突破特定指数底数的假设。
+Exponential Time Hypothesis|指数时间假设|ETH|断言 3-SAT 不存在 2^o(n) 时间算法的常见复杂性假设。
+Communication Complexity|通信复杂性||研究多个参与者分布持有输入时计算函数所需通信量的理论。
