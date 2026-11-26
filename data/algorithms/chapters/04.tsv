@@ -1,0 +1,26 @@
+# 分治算法
+Divide and Conquer|分治法||把问题拆分为子问题、分别求解并合并结果的设计范式。
+Divide Step|划分步骤||把原实例分成规模较小子实例的过程。
+Conquer Step|求解步骤||递归或直接求解各子实例的过程。
+Combine Step|合并步骤||将子问题解组织为原问题解的过程。
+Balanced Partition|均衡划分||让子问题规模相近以降低递归深度的分解方式。
+Unbalanced Partition|非均衡划分||子问题规模悬殊的划分方式，可能加深递归。
+Divide-and-Conquer Recurrence|分治递推式||描述各子问题代价与合并成本的递推公式。
+Binary Divide and Conquer|二路分治||每层拆分成两个较小子问题的分治结构。
+Multiway Divide and Conquer|多路分治||每层拆分成三个或更多子问题的分治结构。
+Closest Pair of Points|最近点对||求欧氏平面上距离最小的两个点。
+Plane Sweep|扫描线算法||按坐标顺序处理事件并维护活跃集合的几何策略。
+Karatsuba Multiplication|Karatsuba 乘法||以三个半规模乘法代替四个来加速整数乘法。
+Strassen Algorithm|Strassen 矩阵乘法||通过七次子矩阵乘法减少递归乘法次数。
+Fast Fourier Transform|快速傅里叶变换|FFT|利用对称性及分治结构高效计算离散傅里叶变换。
+Cooley–Tukey Algorithm|Cooley–Tukey 算法||按因子分解变换规模的经典 FFT 算法。
+Recursive Bisection|递归二分||持续将搜索区间或问题区域分为两半。
+Fast Exponentiation|快速幂||通过指数二进制分解以对数次乘法计算整数幂。
+Exponentiation by Squaring|平方求幂||通过反复平方及条件乘法快速求幂。
+Block Decomposition|分块分解||将数据拆为固定大小块以加速批量计算或查询。
+Cache-Oblivious Algorithm|缓存无关算法||无需指定缓存大小与块大小仍优化多级存储访问的算法。
+Cache-Aware Algorithm|缓存感知算法||利用已知缓存容量和块大小设计访问模式。
+Parallel Divide and Conquer|并行分治||允许不同递归子问题并行求解的分治结构。
+Work|总工作量||并行计算中执行的所有操作的总数。
+Span|关键路径长度||并行计算的依赖图中最长串行路径的长度。
+Divide-and-Conquer Tree|分治树||展示递归分解层级、子问题规模与成本的树形表示。
