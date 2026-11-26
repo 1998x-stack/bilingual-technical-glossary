@@ -1,0 +1,31 @@
+# 贪心算法
+Greedy Algorithm|贪心算法||反复选择局部最优动作构造全局解的算法范式。
+Greedy Choice|贪心选择||基于当前状态作出不回退的局部决策。
+Greedy Choice Property|贪心选择性质||存在以某个局部最优选择开头的整体最优解。
+Optimal Substructure|最优子结构||最优解的组成部分也对应适当子问题的最优解。
+Exchange Argument|交换论证||将候选最优解调整为贪心解而不使目标变差的证明方法。
+Stays-ahead Argument|领先性论证||证明贪心部分解在每一步的评价指标不落后于任意解。
+Activity Selection|活动选择问题||从相互冲突的活动中选出最大数量的兼容活动。
+Interval Scheduling|区间调度||在时间区间资源冲突约束下选择任务的优化问题。
+Earliest Finish Time Rule|最早结束时间规则||优先选择最早结束的兼容区间以最大化区间数量。
+Interval Partitioning|区间划分||以尽可能少的资源容纳全部重叠区间。
+Fractional Knapsack|分数背包||允许取物品部分比例的背包优化问题。
+Huffman Coding|霍夫曼编码||反复合并最小权值节点构造最优前缀编码。
+Prefix-free Code|前缀无歧义编码||没有任何码字是另一完整码字前缀的编码集合。
+Optimal Merge Pattern|最优归并模式||通过优先合并代价最小的对象降低总合并成本。
+Matroid|拟阵||满足遗传与交换公理的独立集系统。
+Matroid Greedy Theorem|拟阵贪心定理||在拟阵上按权重贪心可求得最大权基的结论。
+Independence System|独立集系统||子集封闭的可行元素集合族。
+Graphic Matroid|图拟阵||以无环边集作为独立集构成的拟阵。
+Uniform Matroid|均匀拟阵||至多选择指定数量元素构成独立集的拟阵。
+Minimum Spanning Tree|最小生成树|MST|连接连通带权无向图全部顶点且边权和最小的生成树。
+Cut Property|割性质||跨某割的安全最轻边可纳入某棵最小生成树。
+Cycle Property|环性质||唯一最重边不会出现在任何最小生成树中。
+Kruskal Algorithm|Kruskal 算法||按边权从小到大选择不成环的边构造最小生成树。
+Prim Algorithm|Prim 算法||从已选顶点集合向外扩展最轻连接边构造最小生成树。
+Borůvka Algorithm|Borůvka 算法||每个连通分量反复选最轻外连边的最小生成树算法。
+Dijkstra Algorithm|Dijkstra 算法||在非负边权图中按最小暂定距离确定最短路。
+Shortest Processing Time|最短处理时间优先|SPT|在单机所有任务同时可用时最小化完成时间之和的排序规则。
+Earliest Deadline First|最早截止时间优先|EDF|按截止时间排序处理任务的调度策略。
+Job Sequencing with Deadlines|带截止时间的作业排序||在截止时间与收益约束下选择可完成作业的任务。
+Greedy Failure Counterexample|贪心失效反例||说明某局部规则不能保证整体最优的具体输入。
