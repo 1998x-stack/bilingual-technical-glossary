@@ -1,0 +1,26 @@
+# 回溯与分支限界
+Backtracking|回溯法||逐步扩展部分解，发现约束违反时撤销选择并探索其他分支。
+Search Tree|搜索树||表示部分解状态及其可能扩展的树结构。
+State-space Tree|状态空间树||把问题所有可能决策状态组织成树的模型。
+Partial Solution|部分解||尚未完成但已满足部分条件的候选决策。
+Feasibility Pruning|可行性剪枝||发现当前状态无法满足约束时停止探索。
+Optimality Pruning|最优性剪枝||用当前界判断分支不可能改进已知最优解。
+Branch and Bound|分支限界法||以可证上下界排除不可能产生最优解的分支。
+Branching Rule|分支规则||决定在当前结点选择哪个变量或决策拆分状态。
+Bounding Function|界函数||估计分支可达到的最优或最差目标值的函数。
+Incumbent Solution|当前最好解||搜索过程中已发现的最佳可行解。
+Depth-first Search with Backtracking|回溯深度优先搜索||沿一个决策路径探索到底后撤销选择回退。
+Best-first Branch and Bound|最佳优先分支限界||优先扩展界值最有希望的未处理状态。
+Pruning|剪枝||依据约束或界限提前舍弃部分搜索分支。
+Constraint Propagation|约束传播||利用已确定变量缩小其他变量可取值范围。
+Variable Ordering Heuristic|变量排序启发式||优先选择更易引起冲突或限制更强的变量。
+Value Ordering Heuristic|取值排序启发式||决定候选变量各取值的尝试先后顺序。
+N-Queens Problem|N 皇后问题||在棋盘放置 N 个皇后使其互不攻击的约束问题。
+Sudoku Solver|数独求解器||结合约束传播与搜索填写合法数独格局的算法。
+Exact Cover|精确覆盖||选择若干集合使每个目标元素恰好被覆盖一次的问题。
+Algorithm X|X 算法||Knuth 提出的精确覆盖递归回溯算法。
+Dancing Links|舞蹈链|DLX|支持快速删除与恢复行列的双向链接结构，用于精确覆盖搜索。
+Hamiltonian Cycle Search|哈密顿环搜索||寻找恰好访问所有顶点一次并回到起点的环的搜索任务。
+Subset Enumeration|子集枚举||按决策位系统遍历给定集合的全部子集。
+Permutation Generation|排列生成||系统生成给定元素集合所有排列的过程。
+Search Symmetry Breaking|搜索对称性破除||增加约束消除等价状态以避免重复搜索。
