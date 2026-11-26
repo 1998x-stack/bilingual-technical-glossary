@@ -142,3 +142,7 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 算法设计与分析（独立出版，暂未加入网站搜索）
+
+新增 **500 条术语 / 15 个章节**的《算法设计与分析专有名词中英文对照表》：[Markdown](glossaries/algorithms.md) · [PDF](pdf/algorithms.pdf) · [TSV](data/algorithms.tsv)。内容包括算法分析、排序、分治、贪心、动态规划、图论、字符串、复杂性理论、网络流和高级数据结构，并包含概念辨析与中等难度自测题。原始章节位于 [data/algorithms/chapters/](data/algorithms/chapters/)，可通过 `node scripts/render_algorithms.mjs --check` 核验生成产物。**本册暂未计入网站既有学科数、术语数与检索索引。**
