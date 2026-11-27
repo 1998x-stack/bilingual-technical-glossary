@@ -1,0 +1,26 @@
+# 线程层级、执行模型与硬件映射
+CUDA Thread|CUDA 线程||执行一次 Kernel 程序实例、具有独立寄存器状态的基本软件执行单位。
+Thread Block|线程块||可在同一 SM 上协作、共享片上内存并进行块内同步的线程集合。
+Grid|线程网格||一次常规 Kernel 启动所创建的全部线程块的集合。
+Warp|线程束|Warp|由 32 个连续线程组成、按 SIMT 硬件执行的调度与执行单位。
+Warp Size|线程束大小||CUDA 设备线程束中包含的线程数，当前 NVIDIA CUDA GPU 通常为 32。
+Lane|线程束通道||一个 warp 中编号从零开始的线程位置。
+SIMT|单指令多线程|SIMT|让不同线程实例在硬件上以线程束方式协调执行的模型。
+SIMD|单指令多数据|SIMD|单条指令对多个数据元素并行执行相同操作的处理模式。
+Thread Divergence|线程分歧||同一 warp 内线程因控制条件不同而执行不同路径的现象。
+Branch Reconvergence|分支再汇合||分歧线程执行不同分支后回到共同控制位置的过程。
+Independent Thread Scheduling|独立线程调度||部分 GPU 架构可更细粒度管理 warp 内线程执行状态的机制。
+Block Scheduler|线程块调度器||将可运行线程块分配到具备资源的 SM 的硬件调度机制。
+Warp Scheduler|线程束调度器||在 SM 内选择准备就绪的 warp 发射指令的硬件逻辑。
+Eligible Warp|可发射线程束||当前不存在阻塞其下一条指令的依赖、可被调度的 warp。
+Active Warp|活跃线程束||已驻留在 SM、占用相应硬件资源的 warp。
+Resident Block|驻留线程块||当前分配在某个 SM 上、尚未完成的线程块。
+Thread Block Cluster|线程块集群||在支持的 GPU 上将多个线程块组成可协作并访问分布式共享内存的层级。
+Cluster Scheduling|集群调度||将线程块集群作为具有特定协同约束的调度单位的执行机制。
+Grid Dimension|网格维度|gridDim|标识一次 Kernel 启动在各维上包含多少线程块的内建变量。
+Block Dimension|线程块维度|blockDim|标识单个线程块在各维上包含多少线程的内建变量。
+Block Index|线程块索引|blockIdx|标识线程块在网格中坐标的内建变量。
+Thread Index|线程索引|threadIdx|标识线程在线程块内坐标的内建变量。
+Global Thread Index|全局线程索引||利用块坐标与块内坐标计算出的逻辑一维线程编号。
+Thread Granularity|线程粒度||每个 CUDA 线程承担的计算任务大小及其资源权衡。
+Grid-stride Loop|网格步长循环||线程以全网格线程总数为步长迭代处理多个数据元素的编程模式。
