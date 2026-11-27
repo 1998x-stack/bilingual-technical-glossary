@@ -1,0 +1,107 @@
+# 机器人动力学、惯性与驱动系统
+Robot Dynamics|机器人动力学||研究机器人关节运动与力、力矩及惯性之间关系的理论。
+Mass Matrix|质量矩阵|M|在机器人动力学方程中将关节加速度映射为惯性广义力的矩阵。
+Inertia Tensor|惯性张量||描述刚体相对于参考点旋转惯性及轴间耦合的对称矩阵。
+Center of Mass|质心|CoM|按质量加权得到的刚体或系统等效质量中心位置。
+Coriolis Force|科里奥利项||在广义坐标动力学中与不同速度分量耦合相关的速度二次项。
+Centrifugal Force|离心项||在旋转运动坐标表示中由角速度引起的惯性效应项。
+Gravity Compensation|重力补偿||根据机构姿态估计并施加抵消重力负载的控制力矩。
+Joint Torque|关节力矩||驱动关节旋转所施加或由外部产生的广义转矩。
+Generalized Force|广义力||与广义坐标虚位移配对做功的力或力矩分量。
+Lagrangian Mechanics|拉格朗日力学||根据动能与势能构建运动方程的解析力学方法。
+Euler–Lagrange Equation|欧拉—拉格朗日方程||由拉格朗日量及广义力推导系统运动规律的微分方程。
+Newton–Euler Method|牛顿—欧拉方法||递推计算机构刚体速度、加速度与内外作用力的动力学方法。
+Recursive Newton–Euler Algorithm|递归牛顿—欧拉算法|RNEA|沿机构正反递推高效计算给定运动所需关节力矩的算法。
+Inverse Dynamics|逆动力学||给定位置、速度和加速度计算完成该运动所需驱动力的任务。
+Forward Dynamics|正动力学||给定系统状态及作用力计算关节加速度或状态演化的任务。
+Articulated Body Algorithm|关节体算法|ABA|利用递归关节体惯量高效求解树形机构正动力学的算法。
+Friction Model|摩擦模型||用数学关系近似关节或接触界面阻力随运动及载荷变化的规律。
+Coulomb Friction|库仑摩擦||将摩擦力幅度近似为与接触法向载荷成正比的理想化模型。
+Viscous Friction|黏性摩擦||将阻力近似为与运动速度成比例的摩擦模型。
+Backlash|传动间隙||机械传动中的松动区域可能导致换向迟滞与定位误差。
+Actuator|执行器||将电能、液压或气压等能量转换为机械运动与力的部件。
+Electric Servo Motor|电伺服电机||结合电机与反馈控制实现期望位置、速度或转矩的驱动单元。
+Gear Reduction|减速传动||通过传动比降低输出转速并相应改变可用转矩的机构。
+Torque Constant|转矩常数||在指定电机工作条件下描述输出转矩与电流关系的参数。
+Series Elastic Actuator|串联弹性执行器|SEA|在驱动机构中串入弹性元件以便估计力和改善柔顺交互的执行结构。
+
+# 经典控制、阻抗控制与最优控制
+Feedback Control|反馈控制||根据系统测量状态与目标偏差调整控制输入的闭环方法。
+Open-loop Control|开环控制||不依赖当前输出误差信号修正控制动作的策略。
+Closed-loop Control|闭环控制||持续利用传感反馈修正控制命令的控制结构。
+Proportional–Integral–Derivative Controller|比例积分微分控制器|PID|组合比例、积分与微分误差作用生成控制输入的经典控制器。
+Proportional Gain|比例增益|Kp|决定控制器对当前误差施加多大比例作用的参数。
+Integral Gain|积分增益|Ki|决定累计误差对控制输入贡献的参数。
+Derivative Gain|微分增益|Kd|决定误差变化率对控制输入贡献的参数。
+Feedforward Control|前馈控制||依据已知动力学、轨迹或扰动预先提供控制作用的方式。
+State Feedback|状态反馈||通过系统状态变量构造控制输入的反馈律。
+Trajectory Tracking|轨迹跟踪||让机器人状态随时间尽量接近期望时变轨迹的控制任务。
+Setpoint Regulation|设定点调节||控制系统收敛并维持在给定固定目标状态附近的任务。
+Computed Torque Control|计算力矩控制||利用逆动力学模型消除已知非线性并规定关节误差动力学的控制方法。
+Operational Space Control|操作空间控制||在末端任务空间组织运动与力控制，并映射为关节力矩的技术。
+Impedance Control|阻抗控制||使机器人在外力作用下呈现指定力与位移或速度动态关系的控制策略。
+Admittance Control|导纳控制||将测得外力映射为期望运动响应，再由运动控制器跟踪的控制架构。
+Force Control|力控制||依据接触力测量与目标约束调节机器人施力的控制任务。
+Hybrid Position–Force Control|位置力混合控制||在互补的接触约束方向分别执行位置与力控制的技术。
+Model Predictive Control|模型预测控制|MPC|反复求解有限时域优化问题并执行首段控制动作的闭环控制方法。
+Optimal Control|最优控制||在系统动力学与约束下选择最小化给定成本的控制序列的理论。
+Linear Quadratic Regulator|线性二次调节器|LQR|为线性系统和二次代价求最优状态反馈的控制方法。
+Linear Quadratic Gaussian Control|线性二次高斯控制|LQG|结合线性二次调节与高斯噪声状态估计的控制方案。
+Control Lyapunov Function|控制李雅普诺夫函数|CLF|用于证明或设计使系统趋向目标的稳定化控制律的函数。
+Control Barrier Function|控制屏障函数|CBF|通过状态约束不变性条件构造安全控制输入的函数。
+Actuator Saturation|执行器饱和||实际控制输出达到物理电流、速度或力矩上限的情况。
+Anti-windup|积分抗饱和||减少 PID 积分在执行器饱和时持续累积而导致超调的措施。
+
+# 移动机器人运动学、轮式底盘与步态
+Differential Drive|差速驱动||通过左右轮速差控制平面前进速度和角速度的移动底盘结构。
+Ackermann Steering|阿克曼转向||通过转向轮角度几何关系近似满足车辆纯滚动条件的转向机构。
+Omnidirectional Robot|全向移动机器人||可在平面内独立控制多个移动方向速度的机器人平台。
+Mecanum Wheel|麦克纳姆轮||通过倾斜自由滚轮组合实现平面全向运动的车轮结构。
+Omni Wheel|全向轮||在轮缘设置滚轮以允许侧向被动滑动的车轮。
+Tracked Robot|履带机器人||通过连续履带与地面接触获得推进和越障能力的移动平台。
+Legged Robot|足式机器人||依靠一条或多条腿与地面周期或非周期接触实现运动的系统。
+Bipedal Robot|双足机器人||主要由两条腿支持行走或动态平衡的机器人。
+Quadruped Robot|四足机器人||由四条腿形成支撑与推进运动的机器人平台。
+Unicycle Model|独轮车运动学模型||以平面位置、航向及前向速度和转向角速度描述移动的简化模型。
+Bicycle Model|自行车运动学模型||以等效前后轴和转向几何近似车辆平面运动的模型。
+Nonholonomic Constraint|非完整约束||不能单纯积分为位置坐标约束的速度层约束。
+Holonomic Motion|完整可积运动约束||由能够写为纯构型关系的可积约束定义的运动性质。
+No-slip Condition|无侧滑条件||理想车轮与地面接触时接触方向满足特定零相对切向速度的条件。
+Rolling Constraint|纯滚动约束||把车轮角速度与接触点平移速度关联的运动学关系。
+Wheel Odometry|车轮里程计||根据轮编码器与底盘运动学积分估计移动位姿的方法。
+Dead Reckoning|航位推算||从已知初始状态累积相对运动测量估计当前位置的方法。
+Gait|步态||足式机器人各腿接触、摆动及身体运动的时间协调模式。
+Support Polygon|支撑多边形||由接触支撑点在地面上的凸包形成的稳定性相关区域。
+Zero Moment Point|零力矩点|ZMP|地面接触合力矩在水平面内满足特定零分量条件的参考点。
+Capture Point|捕获点||在简化倒立摆动力学中通过适当落脚可能停止发散运动的地面位置。
+Center of Pressure|压力中心|CoP|接触压力合力的等效作用位置。
+Footstep Planning|落脚点规划||选择足式机器人未来足端接触位置及接触时序的过程。
+Body Velocity|机体速度||在机器人本体坐标系中表达的平移和角运动速度。
+Chassis Kinematics|底盘运动学||把轮速、转向角与车体平面运动关系联系起来的模型。
+
+# 机器人传感器、标定与时间同步
+Robot Perception|机器人感知||将传感器测量转化为机器人及周围环境有用状态信息的过程。
+Sensor Fusion|传感器融合||在明确噪声和时间关系下结合多个传感源提高状态估计可靠性的技术。
+Inertial Measurement Unit|惯性测量单元|IMU|通常同时测量三轴角速度和线加速度的传感模块。
+Accelerometer|加速度计||测量传感器比力、受重力和线加速度影响的惯性器件。
+Gyroscope|陀螺仪||测量机体绕各轴角速度的惯性传感器。
+Magnetometer|磁力计||测量局部磁场并可辅助估计航向的传感器。
+Wheel Encoder|车轮编码器||通过旋转计数或角位置信号推断车轮运动的传感器。
+Joint Encoder|关节编码器||测量机器人关节旋转角度或相对运动的传感器。
+Force–Torque Sensor|六维力力矩传感器|F/T|测量作用在指定结构上的三轴力和三轴力矩的装置。
+Tactile Sensor|触觉传感器||感知接触压力、剪切或接触位置等物理信息的传感组件。
+Proximity Sensor|接近传感器||在无需机械接触时检测邻近物体存在或距离的器件。
+Time-of-flight Sensor|飞行时间传感器|ToF|通过测量信号传播往返时间或相位推断目标距离的设备。
+LiDAR|激光雷达|LiDAR|通过发射激光并测距获取环境空间点或轮廓的传感技术。
+Depth Camera|深度相机||为成像像素提供场景距离或深度测量的摄像设备。
+Stereo Camera|双目相机||利用两个具有已知相对位姿的相机获取立体场景观测的系统。
+RGB-D Camera|彩色深度相机|RGB-D|同时获取彩色图像与空间对齐深度数据的成像设备。
+Event Camera|事件相机||在像素亮度变化达到阈值时异步输出事件的视觉传感器。
+Global Navigation Satellite System|全球卫星导航系统|GNSS|利用卫星信号估计接收机位置、时间和相关导航状态的技术。
+Real-time Kinematic GNSS|实时动态差分定位|RTK|利用载波相位观测与基准差分改进卫星定位精度的方法。
+Sensor Calibration|传感器标定||估计测量设备内参数、偏置、比例及安装关系的过程。
+Extrinsic Calibration|传感器外参标定||确定不同传感器或机器人坐标系之间刚体变换的过程。
+Hand–Eye Calibration|手眼标定||估计机械臂末端、相机和基座间固定变换关系的标定任务。
+Time Synchronization|时间同步||让不同数据来源的时间戳对应到统一时间基准的机制。
+Sensor Bias|传感器偏置||传感测量长期偏离真实值的系统性误差分量。
+Sensor Noise|传感器噪声||叠加于测量输出的随机扰动及相关统计不确定性。
