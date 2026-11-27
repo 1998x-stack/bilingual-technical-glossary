@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Natural Language Processing / 自然语言处理 (standalone; not yet indexed)
+
+**500 original bilingual NLP terms in 20 chapters.** Covers linguistics and annotated corpora, tokenization/BPE, morphology and parsing, semantics and discourse, N-grams/HMM/CRF, static/contextual embeddings, RNN/Transformer, BERT/GPT/T5 pretraining, PEFT/LoRA, NER and event extraction, QA/retrieval, machine translation, dialogue and speech, evaluation and production safeguards. Includes **16 concept contrasts, 12 intermediate interview Q&As and 12 worked exam questions**. [Markdown](glossaries/nlp.md) · [PDF](pdf/nlp.pdf) · [TSV](data/nlp.tsv) · [Academic sources and review notes](data/nlp/SOURCES.md). Reproducible verification: `node scripts/render_nlp.mjs --check`. **Standalone handbook, not yet included in the website term/domain index counts.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
