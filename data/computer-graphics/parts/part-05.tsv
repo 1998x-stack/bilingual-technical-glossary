@@ -1,0 +1,107 @@
+# 光线追踪加速结构、遍历与性能
+Acceleration Structure|求交加速结构||通过空间或对象层级组织减少光线与所有基元逐一求交的结构。
+Bounding Volume|包围体||用简单几何形状包裹复杂物体以支持快速相交排除测试的容器。
+Axis-aligned Bounding Box|轴对齐包围盒|AABB|各边与坐标轴平行的盒状包围体。
+Oriented Bounding Box|有向包围盒|OBB|允许按对象方向旋转、包裹几何的盒状包围体。
+Bounding Volume Hierarchy|包围体层次结构|BVH|以嵌套包围盒树层级组织场景基元以加速射线求交的结构。
+Binary BVH|二叉 BVH||每个内部节点具有两个子节点的包围体层次结构。
+Wide BVH|宽分支 BVH||每个内部节点允许多于两个子节点以提高并行遍历效率的结构。
+BVH Traversal|BVH 遍历||沿包围体树搜索与射线可能相交的叶子基元的过程。
+BVH Construction|BVH 构建||按空间划分和代价准则组织基元为树形包围结构的算法。
+BVH Refit|BVH 包围盒更新||在拓扑不变条件下重算变形几何的层级包围体的过程。
+Surface Area Heuristic|表面积启发式|SAH|以包围盒面积和预期遍历、求交成本选择 BVH 划分的准则。
+Spatial Split|空间分割||沿空间位置切分节点中的几何区域以改善包围体紧致性的技术。
+Object Split|对象划分||把基元分配到不同节点而不必切割原始基元的层次构建方法。
+k-d Tree|k-d 树||按坐标轴交替设置分割平面递归划分空间的二叉树结构。
+Uniform Grid Acceleration|均匀网格加速||将空间划为规则单元并存储相关基元以加速求交的方法。
+Octree|八叉树||递归把三维空间分成八个子体积的层次空间索引。
+Top-level Acceleration Structure|顶层加速结构|TLAS|在支持硬件光追的 API 中按实例组织底层几何加速结构的资源。
+Bottom-level Acceleration Structure|底层加速结构|BLAS|在硬件光追 API 中保存单一或多个几何对象求交组织的资源。
+Instance Acceleration|实例加速||利用同一几何数据与不同变换实例复用求交加速结构的技术。
+Ray Packet|射线包||把方向或来源相近的一组射线共同处理以提高相干性的方式。
+Ray Coherence|射线相干性||相邻射线在空间位置、方向或所访问加速节点上相似的性质。
+Stackless Traversal|无栈树遍历||利用节点链接或编码状态避免显式遍历栈的求交方法。
+Traversal Cost|遍历成本||访问加速结构节点并执行包围测试所耗费的计算开销。
+Intersection Cost|基元求交成本||计算射线与三角形或其他几何对象相交所需的运算开销。
+Ray Tracing Performance|光追性能||以每秒射线数、有效样本、耗时及图像质量共同评价光线追踪工作负载的性能。
+
+# 实时渲染架构、抗锯齿与性能优化
+Deferred Shading|延迟着色||先把场景几何属性写入中间缓冲、再在屏幕空间计算部分光照的架构。
+Forward Shading|前向着色||在绘制几何片段时直接计算材质与灯光颜色的渲染架构。
+Forward+ Rendering|Forward+ 渲染||把屏幕分块并为每块构建光源列表的前向着色优化方案。
+Clustered Shading|簇式着色||按屏幕位置及深度划分簇并为每簇维护光源集合的着色方法。
+G-buffer|几何缓冲|G-buffer|保存可见片段法线、材质、深度等信息供延迟着色使用的缓冲集合。
+Tiled Lighting|分块光照||把屏幕分成小块并为各块筛选相关光源的照明优化技术。
+Light Culling|光源剔除||在着色前排除不能影响某个区域或对象的光源的过程。
+Tiled Deferred Rendering|分块延迟渲染||结合屏幕 tile 与延迟材质数据计算可见表面光照的架构。
+Temporal Anti-aliasing|时间抗锯齿|TAA|通过抖动采样和历史帧重投影聚合降低空间锯齿的技术。
+Spatial Anti-aliasing|空间抗锯齿||仅使用单帧或空间邻域信息降低采样伪影的方法集合。
+Fast Approximate Anti-aliasing|快速近似抗锯齿|FXAA|基于亮度边缘分析执行局部图像平滑的后处理抗锯齿方法。
+Subpixel Morphological Anti-aliasing|子像素形态学抗锯齿|SMAA|结合边缘模式与子像素覆盖估计改善抗锯齿的算法。
+Temporal Upscaling|时间超分辨率||利用历史帧和运动信息重建高于内部渲染分辨率的输出画面的方法。
+Spatial Upscaling|空间升采样||利用当前帧的空间插值或重建提高图像输出分辨率的方法。
+Dynamic Resolution Scaling|动态分辨率调整|DRS|根据设备负载改变内部渲染分辨率以维持帧时间预算的策略。
+Motion Vector Buffer|运动向量缓冲||记录像素或物体跨帧屏幕位移以支持重投影的图像资源。
+History Buffer|历史帧缓冲||保存前一帧颜色或中间数据供时间累积复用的资源。
+Ghosting Artifact|时间拖影伪影||错误历史重投影或混合使运动物体留下残影的现象。
+Disocclusion|显露区域||由于观察角度或物体运动、当前帧中新出现且前帧被遮挡的区域。
+GPU Profiling|GPU 性能剖析||通过设备计数器和执行时间测量分析图形工作瓶颈的过程。
+Overdraw|重复像素绘制||同一像素或采样位置因多层几何被多次着色或覆盖的现象。
+Batching|绘制批处理||合并具有相容状态的对象命令以减少 CPU 提交和驱动管理成本的优化。
+Instanced Rendering|实例化渲染||一次提交多个共享几何而变换或属性不同的对象实例的技术。
+Level-of-detail Mesh|网格细节等级|Mesh LOD|按屏幕投影大小或距离切换不同复杂度几何的方案。
+Frame Pacing|帧节奏控制||控制帧提交与呈现时间间隔以减少画面卡顿的技术。
+
+# 神经图形学、可微渲染与新视角合成
+Neural Graphics|神经图形学||结合神经网络与图形学表示、渲染和编辑流程的研究方向。
+Neural Rendering|神经渲染||利用可学习场或基元模型合成图像和视角的渲染技术。
+Differentiable Rendering|可微渲染||允许渲染结果误差对场景参数计算梯度的算法与系统。
+Inverse Graphics|逆向图形学||根据图像观测估计场景几何、材质、光照和相机等潜在因素的任务。
+Inverse Rendering|逆向渲染||从目标图像反推可解释该图像的物理或神经场景参数的优化问题。
+Novel View Synthesis|新视角合成|NVS|根据已知视角及场景表示合成未观测相机位置图像的任务。
+Neural Radiance Field|神经辐射场|NeRF|用可学习连续函数表示密度和视角相关辐射并进行体渲染的场景模型。
+Neural Signed Distance Field|神经有符号距离场||以神经网络近似几何 SDF 函数的隐式表面表示方法。
+Positional Encoding|神经位置编码||把位置或方向输入映射为高维周期特征以表示细节的技术。
+Fourier Feature Mapping|傅里叶特征映射||通过正弦余弦频率变换坐标以帮助网络学习高频变化的方法。
+Hash Grid Encoding|哈希网格编码||用多尺度哈希表中的可训练特征对空间坐标编码的方法。
+Instant Neural Graphics Primitives|即时神经图形基元|Instant-NGP|利用高效多尺度编码和 GPU 内核加速神经场优化的方案。
+Radiance Field|辐射场||以空间位置和方向为自变量表示场景辐射或相关散射属性的函数。
+Volume Density Field|体密度场||为空间坐标赋予光学密度、用于体积累积与可见性估计的场。
+3D Gaussian Splatting|三维高斯泼溅|3DGS|用可优化三维高斯基元与投影混合高效表示和渲染场景的方法。
+Gaussian Primitive|高斯基元||具有三维均值、协方差、不透明度和外观参数的空间基元。
+Gaussian Covariance|高斯协方差||描述三维高斯基元尺度与方向的正定对称矩阵。
+Splat Rasterization|泼溅光栅化||将空间基元投影到图像平面并累积可见颜色的计算过程。
+Alpha Compositing|Alpha 合成||按不透明度与指定层级顺序组合多个颜色贡献的过程。
+Photometric Loss|光度损失||比较渲染图像与真实观测在颜色或光照上的误差的目标函数。
+Silhouette Loss|轮廓损失||利用渲染轮廓与参考分割轮廓差异约束场景形状的损失。
+Neural Texture|神经纹理||通过可训练特征纹理及解码网络表示材质或外观细节的技术。
+Neural Material Model|神经材质模型||通过学习函数近似复杂表面反射或其他材质光学特性的表示。
+Scene Parameter Optimization|场景参数优化||通过渲染误差迭代更新几何、材质、光照或相机参数的过程。
+Neural Reconstruction Artifact|神经重建伪影||由视角覆盖不足、训练或几何估计错误造成的场景渲染缺陷。
+
+# 格式资源、工具链、评测与生产工程
+glTF|GL 传输格式|glTF|Khronos 标准化的三维场景、材质、动画与资源交换格式。
+USD|通用场景描述|USD|支持分层组合、引用与协作场景组织的三维场景描述系统。
+OBJ File Format|Wavefront OBJ 网格格式|OBJ|使用文本存储几何顶点、面和部分属性的经典模型交换格式。
+FBX|FBX 三维资产格式|FBX|用于交换三维几何、骨骼和动画等资源的文件格式。
+Material Definition Language|材质定义语言|MDL|描述可组合物理材质外观的 NVIDIA 材质语言。
+Asset Pipeline|资产处理流水线||从建模、烘焙、压缩到打包和运行时加载图形资源的工作流程。
+Content Creation Tool|数字内容制作工具|DCC|用于创建三维模型、纹理、动画与特效的专业软件。
+Blender|Blender 三维创作软件||提供建模、动画、材质、渲染及合成能力的开源 DCC 软件。
+RenderDoc|RenderDoc 图形调试器||捕获图形帧并检查绘制命令、资源与着色器状态的工具。
+Nsight Graphics|Nsight Graphics 分析器||NVIDIA 提供的图形调试与 GPU 图形性能分析工具。
+GPU Frame Capture|GPU 帧捕获||记录单帧图形命令、状态与资源供离线调试的过程。
+Shader Profiling|着色器性能剖析||测量着色器执行耗时、指令和硬件等待的分析流程。
+Frame-time Budget|帧时间预算||为达到目标 FPS 可供单帧渲染管线使用的最大时间。
+CPU–GPU Synchronization|CPU—GPU 同步||协调主机线程与设备图形命令执行进度的机制。
+Resource Lifetime|资源生命周期||图形缓冲、图像和其他对象从创建到最后使用及销毁的有效时间范围。
+Resource Aliasing|资源内存别名||不同生命周期不重叠的图形资源复用同一物理内存区域的技术。
+Render Graph|渲染依赖图||描述渲染阶段资源读写依赖、调度和生命周期的有向图结构。
+Frame Graph|帧图||组织一帧内多次渲染通道及中间资源依赖的工程抽象。
+Transient Resource|临时渲染资源||仅在部分帧图阶段存在、可复用底层显存的短期对象。
+GPU Memory Budget|GPU 显存预算||为纹理、几何、缓冲和中间目标规定的设备内存容量上限。
+Image Quality Metric|图像质量指标||量化渲染结果与参考画面差异或视觉感知质量的度量。
+Peak Signal-to-noise Ratio|峰值信噪比|PSNR|根据像素均方误差与最大信号幅度计算的重建质量指标。
+Structural Similarity Index|结构相似度指标|SSIM|利用亮度、对比度和结构局部统计比较图像相似度的指标。
+Learned Perceptual Image Patch Similarity|学习型感知图像块相似度|LPIPS|利用预训练深度特征距离评估图像感知差异的指标。
+Visual Regression Testing|视觉回归测试||比较软件变更前后渲染画面或图像质量指标以发现异常的测试。
