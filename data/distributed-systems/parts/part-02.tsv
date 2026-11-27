@@ -1,0 +1,107 @@
+# 一致性模型与 CAP 理论
+Consistency Model|一致性模型||对并发读写历史允许出现哪些可观察结果的形式化约束。
+Linearizability|线性一致性||每个操作可视为在调用与响应之间的瞬间生效，并遵守真实时间先后关系。
+Sequential Consistency|顺序一致性||存在保留每个进程程序次序的全局串行执行，但不要求符合真实时间次序。
+Strict Serializability|严格可串行化||事务执行等价于某串行次序且遵守无重叠事务的真实时间先后。
+Serializability|可串行化||并发事务结果等价于某个合法串行事务执行。
+Snapshot Isolation|快照隔离|SI|事务读取一致快照并通常阻止并发写同一项，却可能发生写偏斜。
+Read Committed|读已提交|RC|每次读取不返回其他事务尚未提交的值的常见隔离级别。
+Repeatable Read|可重复读||事务内重复读取相同行时不受其他已提交修改影响的隔离语义，具体实现有差异。
+Eventual Consistency|最终一致性||在停止新更新且通信恢复后，副本最终收敛到相同可观察值的性质。
+Strong Consistency|强一致性||泛指较强读取保证的非精确术语，须明确具体模型才可验证。
+Causal Consistency|因果一致性||所有观察者须按因果先后关系感知相关操作更新。
+Causal+ Consistency|因果加一致性||在因果一致性基础上通常包含收敛等附加要求的一类模型。
+PRAM Consistency|PRAM 一致性||所有进程都以发送者程序顺序观察该发送者的写入。
+FIFO Consistency|FIFO 一致性||同一进程发出的写入按其发送顺序被其他参与者看到的模型。
+Read-your-writes Consistency|读己之写一致性||会话中后续读取至少看见该会话先前成功写入的效果。
+Monotonic Reads|单调读||同一会话后续读取不会看到早于其已观察版本的状态。
+Monotonic Writes|单调写||同一会话发出的写入在系统中保持先后次序。
+Writes-follow-reads|写遵循读||会话后续写入在因果上排在该会话已观察读取对应版本之后。
+Session Consistency|会话一致性||在客户端会话范围内提供读己之写等顺序性质的保证。
+Stale Read|陈旧读取||读取返回落后于某些已完成更新的旧版本。
+Read Repair|读修复||读请求发现副本不一致时将较新状态写回落后副本的机制。
+CAP Theorem|CAP 定理||发生网络分区时，具有线性一致性的读写服务不能同时保证所有请求都成功响应。
+Partition Tolerance|分区容忍性||系统在部分节点间网络不可达时仍按指定性质工作的能力。
+Availability in CAP|CAP 可用性||每个非故障节点收到的请求最终获得响应，不保证响应内容一定是最新值。
+PACELC Model|PACELC 模型||讨论分区时可用性与一致性的取舍，并讨论正常情况下延迟与一致性的权衡。
+
+# 副本、仲裁与冲突解决
+Replication|数据复制||在多个节点保存或传播相同逻辑数据以提升可用性或读吞吐。
+Replica|副本||在某节点维护的数据或状态机拷贝。
+Replication Factor|复制因子||为一份逻辑数据配置的副本数量。
+Leader-based Replication|基于主节点的复制||由主节点负责接受写入并向追随者传播的复制方式。
+Leaderless Replication|无主复制||客户端可将读写请求发送到多个副本并按策略汇聚结果。
+Multi-leader Replication|多主复制||允许多个节点接受写入并处理跨主节点传播与冲突的模式。
+Synchronous Replication|同步复制||在操作成功前等待约定数量的远端副本确认。
+Asynchronous Replication|异步复制||主节点可先确认写入，再向其他副本传播更新。
+Semi-synchronous Replication|半同步复制||等待部分副本满足确认条件、其余副本异步追赶的复制策略。
+Replication Lag|复制延迟||源副本产生更新与目标副本应用更新之间的时差或日志差距。
+Replica Catch-up|副本追赶||落后副本读取缺失日志或快照直至赶上目标进度。
+Anti-entropy|反熵同步||副本通过周期性比较与交换状态减少分歧的机制。
+Merkle Tree|默克尔树||利用分层哈希摘要高效比较大型数据集合差异的树结构。
+Quorum|仲裁集合||满足协议决策所需成员数量及交集要求的节点集合。
+Majority Quorum|多数派仲裁||包含严格超过半数投票成员的仲裁集合。
+Read Quorum|读仲裁||读取时需收集足够多副本结果的集合要求。
+Write Quorum|写仲裁||写入时需取得足够多副本确认的集合要求。
+Quorum Intersection|仲裁交集||不同仲裁集合之间共享成员，以支持一致性证明的条件。
+Sloppy Quorum|宽松仲裁||首选副本不可用时允许临时向其他节点写入的策略。
+Hinted Handoff|提示移交||临时承接数据的节点在目标副本恢复后将更新转交回去的机制。
+Conflict Resolution|冲突解决||对并发产生的不兼容版本选择、合并或人工处理的过程。
+Last-write-wins|最后写入胜出|LWW|按照某种时间戳或版本顺序保留一个获胜值的规则。
+Multi-value Register|多值寄存器|MV-register|保留多个因果并发写入值的复制数据类型。
+Read-modify-write|读取—修改—写入||先读取旧状态、计算新状态再写回的操作组合。
+Replica Divergence|副本分歧||同一逻辑数据在多个副本上出现不一致状态的现象。
+
+# 分布式共识、Paxos 与 Raft
+Distributed Consensus|分布式共识||节点在规定故障模型下就同一决策值达成一致的任务。
+Agreement Property|一致性性质||任意两个已决定的正确节点不会决定不同值。
+Validity Property|有效性性质||共识决策值满足协议规定的输入或提议约束。
+Termination Property|终止性性质||在规定网络与故障条件下正确参与者最终作出决定。
+Safety Property|安全性性质||系统始终不进入协议禁止状态的性质。
+Liveness Property|活性性质||满足约定公平性与环境假设时有益事件最终会发生的性质。
+FLP Impossibility|FLP 不可能性||完全异步网络下，允许一个崩溃进程时不存在保证总终止的确定性共识算法。
+Paxos|Paxos 共识算法||通过准备、接受阶段及交叉多数派保证决策安全性的协议族。
+Proposer|提议者||在 Paxos 中发起带编号提案并尝试使其被接受的角色。
+Acceptor|接受者||在 Paxos 中依据承诺规则接受或拒绝提案的角色。
+Learner|学习者||在 Paxos 中获知已被选定决策值的参与者角色。
+Ballot Number|选票编号||用于区分共识提议轮次并确定新旧优先关系的编号。
+Prepare Phase|准备阶段||Paxos 提议者获取接受者承诺及已接受值信息的阶段。
+Accept Phase|接受阶段||Paxos 提议者请求接受者接受选定提案的阶段。
+Multi-Paxos|Multi-Paxos||通过稳定领导者优化连续多个日志槽位共识的 Paxos 方案。
+Raft|Raft 共识算法||基于领导者、任期与复制日志管理状态机复制的共识协议。
+Leader Election|领导者选举||从候选节点中确定当前承担主职责节点的过程。
+Term Number|任期编号||Raft 中标识相继选举时期的单调递增编号。
+AppendEntries RPC|追加日志 RPC||Raft 主节点用于复制日志及发送心跳的远程调用。
+RequestVote RPC|请求投票 RPC||Raft 候选节点请求其他成员支持其竞选的调用。
+Log Matching Property|日志匹配性质||Raft 中同位置同任期条目相同意味着此前日志前缀相同。
+Commit Index|提交索引||已确认满足协议提交规则的日志最高索引。
+Leader Completeness|领导者完整性||已提交日志条目必须出现在后续任期领导者日志中的性质。
+Joint Consensus|联合共识||Raft 成员变更中让新旧配置投票规则在过渡期共同生效的方式。
+Replicated State Machine|复制状态机|RSM|各副本以同一确定顺序执行命令以维护一致状态的架构。
+
+# 分布式事务与并发控制
+Distributed Transaction|分布式事务||同时跨多个节点、分片或资源维护约定原子性与隔离语义的事务。
+Atomicity|原子性||事务内部操作要么共同生效要么共同撤销的性质。
+Consistency Constraint|一致性约束||数据库状态必须满足的业务或数据完整性规则。
+Isolation|隔离性||事务并发执行对彼此观察结果施加的规则。
+Durability|持久性||提交确认后变更在约定故障条件下不丢失的性质。
+Two-phase Commit|两阶段提交|2PC|协调者先收集参与者准备结果再统一发布提交或回滚决议的协议。
+Prepare-to-commit|准备提交||事务参与者持久记录待决状态并表态能否提交的阶段。
+Commit Decision|提交决议||协调者选择提交或中止事务的最终决定。
+Coordinator Blocking|协调者阻塞||2PC 参与者在无法获知最终决议时可能长期等待的现象。
+Three-phase Commit|三阶段提交|3PC|引入额外阶段以在较强故障与时间假设下减少阻塞的协议。
+Saga Pattern|Saga 模式||把长事务拆为本地事务和补偿操作的业务协调方式。
+Compensating Transaction|补偿事务||通过新操作抵消先前已提交业务动作影响的事务。
+Try-confirm-cancel|尝试—确认—取消|TCC|业务方显式提供预留、确认与取消接口的分布式事务模式。
+Outbox Pattern|事务发件箱模式||在同一本地事务内写业务数据与待发消息，再异步发布消息的模式。
+Inbox Pattern|事务收件箱模式||在消费端记录已处理消息以避免重复执行业务副作用的模式。
+Two-phase Locking|两阶段锁协议|2PL|事务先增长锁集合再释放锁、释放后不再获取新锁的并发控制规则。
+Strict Two-phase Locking|严格两阶段锁|S2PL|事务持有排他锁直到提交或中止的两阶段锁变体。
+Optimistic Concurrency Control|乐观并发控制|OCC|先并行执行、提交时验证冲突并决定是否重试的策略。
+Multiversion Concurrency Control|多版本并发控制|MVCC|维护多个已提交数据版本，使读写在不同快照上进行的机制。
+Write Skew|写偏斜||并发事务分别基于同一快照读取约束后修改不同对象，合并结果破坏约束。
+Lost Update|丢失更新||两个事务基于同一旧值更新，后写结果覆盖了先写效果的异常。
+Dirty Read|脏读||事务读取其他事务尚未提交的数据。
+Phantom Read|幻读||相同条件的两次查询因并发插入删除出现不同结果集合。
+Deadlock Detection|死锁检测||检查等待图等结构识别循环等待的机制。
+Distributed Deadlock|分布式死锁||跨节点锁或资源等待形成闭环而无法继续推进的状态。
