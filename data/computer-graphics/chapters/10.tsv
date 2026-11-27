@@ -1,0 +1,26 @@
+# 光线求交、路径追踪与蒙特卡洛积分
+Ray|射线||由起点和方向参数化的半无限直线。
+Primary Ray|主射线||从相机出发、寻找场景第一个可见表面的光线。
+Shadow Ray|阴影射线||连接着色点与光源采样点以测试遮挡关系的射线。
+Secondary Ray|次级射线||从表面散射或反射继续发出的后续追踪射线。
+Ray–Triangle Intersection|射线三角形求交||计算射线是否与三角形相交及其参数位置的算法。
+Möller–Trumbore Algorithm|Möller–Trumbore 求交算法||利用代数方法求射线与三角形交点及重心坐标的算法。
+Ray–Box Intersection|射线包围盒求交||判断射线是否经过轴对齐或其他类型包围盒的测试。
+Ray Marching|射线步进||沿射线逐步采样场或距离函数以求交或积分的方法。
+Sphere Tracing|球面追踪||利用有符号距离场的距离下界自适应推进射线求交的技术。
+Monte Carlo Integration|蒙特卡洛积分||用随机样本均值估计高维积分的数值方法。
+Monte Carlo Estimator|蒙特卡洛估计器||根据随机样本及其概率密度构造积分近似的统计量。
+Sampling Distribution|采样分布||决定随机样本在空间或方向域出现概率的分布。
+Probability Density Function|概率密度函数|PDF|描述连续随机变量在相应测度下的密度函数。
+Variance|方差||衡量随机估计结果围绕其期望波动大小的统计量。
+Bias|估计偏差||估计器期望与目标真值之间的差异。
+Stratified Sampling|分层采样||将采样域分成多个区域并分别抽取样本以改善覆盖的方法。
+Low-discrepancy Sequence|低差异序列||在采样空间中具有较均匀覆盖性质的确定性或随机化点序列。
+Quasi-Monte Carlo|拟蒙特卡洛||利用低差异序列替代纯随机样本进行数值积分的方法。
+Path Throughput|路径通量权重||沿随机光路累计散射函数、余弦和采样密度因子的权重。
+Russian Roulette|俄罗斯轮盘赌终止||按概率终止低贡献路径并适当放大存活路径权重的无偏终止技术。
+Next-event Estimation|下一事件估计|NEE|在路径顶点显式采样光源以估计直接照明的方法。
+Bidirectional Path Tracing|双向路径追踪|BDPT|分别从相机与光源构造子路径、再连接估计光传输的方法。
+Metropolis Light Transport|Metropolis 光传输|MLT|在路径空间以马尔可夫链采样高贡献路径的渲染技术。
+Denoising|渲染去噪||利用空间、时间或学习先验降低低样本渲染噪声的处理。
+Samples per Pixel|每像素样本数|SPP|单个像素用于统计估计颜色的光线或积分样本数量。
