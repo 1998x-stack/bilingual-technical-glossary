@@ -1,0 +1,26 @@
+# 消息队列、事件驱动与日志系统
+Message Queue|消息队列||用于缓存消息并解耦生产者与消费者的通信设施。
+Message Broker|消息代理||负责接收、路由、暂存并转发消息的服务组件。
+Producer|生产者||向消息系统发布记录或事件的应用角色。
+Consumer|消费者||从消息系统读取并处理记录或事件的应用角色。
+Publish-subscribe Pattern|发布—订阅模式|Pub/Sub|发布者按主题发送消息、订阅者接收相关消息的模式。
+Topic|主题||对消息进行逻辑分类并承载发布订阅关系的标识。
+Partitioned Log|分区日志||把顺序追加记录拆分为多个独立有序分区的日志结构。
+Offset|偏移量||记录在特定日志分区中的位置标识。
+Consumer Group|消费者组||多个消费者协调分配分区以共同处理消息的逻辑组。
+Consumer Lag|消费积压||消费者已处理位置落后于日志最新位置的差额。
+At-most-once Delivery|至多一次投递||消息不会被重复投递，但在故障时可能丢失的投递保证。
+At-least-once Delivery|至少一次投递||在规定条件下确保消息最终被投递，但可能发生重复投递。
+Exactly-once Delivery|恰好一次投递||对限定系统边界承诺每条消息的可观察交付效果恰好一次，须明确实现假设。
+Message Acknowledgment|消息确认|ACK|消费者或接收端表明消息已收到或处理完成的信号。
+Negative Acknowledgment|否定确认|NACK|接收端表明当前无法成功接受或处理消息的信号。
+Dead-letter Queue|死信队列|DLQ|保存超过重试上限或无法正常处理消息的隔离队列。
+Poison Message|毒消息||反复触发消费异常且不能靠普通重试解决的特定消息。
+Backpressure|背压||下游消费能力不足时向上游限制生产速率或缓冲规模的机制。
+Event-driven Architecture|事件驱动架构|EDA|组件通过发布与响应事件进行松耦合协作的架构。
+Event Sourcing|事件溯源||以不可变业务事件序列为主要状态来源，并通过重放推导当前状态的设计。
+Command Query Responsibility Segregation|命令查询职责分离|CQRS|将写入命令模型与读取查询模型分离以分别优化的架构模式。
+Transactional Messaging|事务消息||协调本地状态变更与消息发布，以减少两者不一致的机制。
+Log Compaction|日志压缩保留||按键保留较新记录、减少旧版本并控制日志存储的清理策略。
+Message Ordering|消息有序性||系统对消息交付与消费顺序提供的保证，通常限于特定分区或键。
+Replay|消息重放||重新读取历史日志记录以恢复状态、修复数据或重新计算的过程。
