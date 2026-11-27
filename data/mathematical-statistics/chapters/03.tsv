@@ -1,0 +1,26 @@
+# 样本统计量与抽样分布
+Sample Mean|样本均值||样本观测值的算术平均数。
+Sample Median|样本中位数||排序后位于样本位置中央的值或两中央值的平均。
+Sample Variance|样本方差||样本偏离均值平方和的标准化量，分母可取 n 或 n−1。
+Unbiased Sample Variance|无偏样本方差||以 n−1 为分母、在 IID 且方差有限时无偏估计总体方差的统计量。
+Sample Standard Deviation|样本标准差||样本方差的非负平方根。
+Sample Proportion|样本比例||样本中满足某项二元属性的单位所占比例。
+Order Statistic|次序统计量||将样本排序后指定秩位置的观测值。
+Sample Range|样本极差||样本最大值与最小值之差。
+Interquartile Range|四分位距|IQR|上四分位数与下四分位数之差。
+Sample Covariance|样本协方差||衡量两变量共同变化方向与幅度的样本中心化乘积统计量。
+Pearson Correlation Coefficient|皮尔逊相关系数||协方差除以两变量标准差后得到的线性相关度量。
+Spearman Rank Correlation|斯皮尔曼等级相关系数||对观测秩次计算相关性的单调关联度量。
+Sampling Distribution|抽样分布||在重复使用同一抽样方案时统计量取值的概率分布。
+Standard Error|标准误||估计量抽样分布的标准差。
+Degrees of Freedom|自由度||统计量或残差在约束下可独立变化的维数或参数。
+Pooled Variance|合并方差||在等方差假设下结合多组样本信息得到的共同方差估计。
+Coefficient of Variation|变异系数|CV|标准差与非零均值的比值，用于描述相对离散程度。
+Sample Skewness|样本偏度||以样本中心三阶矩刻画分布不对称性的统计量。
+Sample Kurtosis|样本峰度||基于四阶标准化中心矩描述尾部与峰形的统计量。
+Moment|矩||随机变量幂次或中心化幂次的期望，概括分布形状。
+Raw Moment|原点矩||随机变量 k 次幂的期望。
+Central Moment|中心矩||随机变量相对均值偏差的 k 次幂期望。
+Moment Generating Function|矩母函数|MGF|在存在的邻域内，用指数变换期望编码分布矩的函数。
+Characteristic Function|特征函数||复指数变换的期望，在全部实数自变量上存在。
+Probability Generating Function|概率母函数|PGF|用幂级数期望表征非负整数随机变量分布的函数。
