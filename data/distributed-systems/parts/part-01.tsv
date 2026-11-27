@@ -1,0 +1,107 @@
+# 分布式系统基础与体系结构
+Distributed System|分布式系统||由多个通过网络通信的计算节点协作、对外提供共同服务的系统。
+Distributed Computing|分布式计算||把计算任务安排到多个相互通信的节点执行的技术与研究领域。
+Node|节点||参与分布式协议或承载服务的独立计算实体。
+Process|进程||运行程序并拥有独立执行状态的操作系统抽象。
+Cluster|集群||通过网络组织的一组计算机或服务实例。
+Data Center|数据中心||集中承载服务器、网络、供电与存储设施的物理站点。
+Availability Zone|可用区||云环境中具有一定故障隔离能力的部署区域，具体边界由提供方定义。
+Region|区域||云服务商划定的地理部署范围，通常包括多个可用区。
+Shared-nothing Architecture|无共享架构||各节点独立拥有计算和存储资源，通过消息协作。
+Shared-disk Architecture|共享磁盘架构||多个计算节点共同访问存储设备的系统设计。
+Client-server Model|客户端—服务器模型||客户端发出请求，服务器承担处理与响应的交互模型。
+Peer-to-peer Architecture|对等网络架构|P2P|节点可同时作为服务消费者与提供者的分布式架构。
+Coordinator|协调者||为多方操作组织决策、调度或状态推进的参与者。
+Worker|工作节点||承担实际数据处理、执行任务或提供计算能力的节点。
+Control Plane|控制平面||负责配置、编排、成员与策略决策的组件集合。
+Data Plane|数据平面||实际承载用户流量、读写或计算操作的组件集合。
+Service Discovery|服务发现||通过注册信息或查询机制找到可用服务实例的过程。
+Service Registry|服务注册中心||保存服务实例地址、元数据及健康状态的组件。
+Horizontal Scaling|水平扩展||增加同类节点或实例以扩展处理能力。
+Vertical Scaling|垂直扩展||提高单节点计算、内存或存储资源的规模。
+Elasticity|弹性伸缩||根据负载变化增减资源的能力。
+Location Transparency|位置透明性||用户无需知道资源真实网络位置便可访问资源的特性。
+Replication Transparency|复制透明性||客户端不必管理服务内部多个副本的抽象。
+Failure Transparency|故障透明性||系统在一定故障范围内屏蔽故障细节并维持服务的能力。
+Distributed Middleware|分布式中间件||为跨节点通信、协调或数据访问提供通用能力的软件层。
+
+# 网络通信、RPC 与接口语义
+Remote Procedure Call|远程过程调用|RPC|将远端服务操作包装成类似本地函数调用的交互机制。
+Remote Method Invocation|远程方法调用|RMI|面向对象环境中对远程对象方法发起调用的机制。
+Request-response Pattern|请求—响应模式||由请求方发送请求并等待对应结果的交互方式。
+Message Passing|消息传递||节点通过发送与接收消息交换数据或协调状态的通信模型。
+Synchronous Communication|同步通信||发送方与接收方按特定时序阻塞或协同完成交互的模式。
+Asynchronous Communication|异步通信||交互发起后不要求调用方持续阻塞等待完成的模式。
+Unary RPC|一元 RPC||每次调用只发送一个请求并接收一个响应的 RPC 形态。
+Streaming RPC|流式 RPC||一次调用中持续交换多个消息的远程通信方式。
+Serialization|序列化||将结构化对象转换为可传输或存储的字节表示。
+Deserialization|反序列化||将编码后的数据还原为程序可处理的结构。
+Wire Protocol|线协议||规定网络消息的字节布局、字段编码与交互规则的协议。
+Interface Definition Language|接口定义语言|IDL|以独立于实现语言的方式声明跨系统服务接口。
+Protocol Buffers|协议缓冲区|Protobuf|使用模式定义消息并提供紧凑二进制编码的序列化技术。
+gRPC|gRPC 远程调用框架|gRPC|常基于 HTTP/2 与 Protobuf 提供多语言 RPC 的框架。
+HTTP/2 Multiplexing|HTTP/2 多路复用||允许多个逻辑流在同一连接上交错传输数据帧的能力。
+Connection Pooling|连接池||复用已建立的网络连接以降低连接创建成本的机制。
+Keepalive|保活机制||发送心跳或探测以维持连接或识别不可用对端的机制。
+Request Timeout|请求超时||请求在规定时间内未完成时终止等待的控制策略。
+Deadline Propagation|截止时间传播||跨多层服务传递剩余执行预算，避免下游无界等待。
+Retry Policy|重试策略||指定失败后是否重发请求、重试次数及间隔的规则。
+Exponential Backoff|指数退避||使连续重试间隔按指数增长以降低拥塞风险的机制。
+Retry Jitter|重试随机抖动||在退避间隔中加入随机变化以避免大量客户端同步重试。
+Idempotent Request|幂等请求||重复执行同一请求不会产生额外业务效果的请求语义。
+Request Identifier|请求标识符||用于关联调用、重试和去重的唯一或范围内唯一标记。
+Duplicate Suppression|重复请求抑制||根据请求标识或业务键避免重试导致重复执行的机制。
+
+# 故障模型与容错基础
+Fault|故障根因||造成组件偏离预期行为的缺陷、条件或外部扰动。
+Error State|错误状态||系统内部状态与正确状态发生偏离的情形。
+Failure|服务失效||系统对外行为不再满足规定服务契约的情况。
+Crash Failure|崩溃故障||节点停止执行或响应，但不继续发送任意错误消息的故障模型。
+Crash-stop Model|停止崩溃模型||节点一旦崩溃便不会在同一执行中恢复的模型。
+Crash-recovery Model|崩溃恢复模型||节点可能停止并重启，但部分持久状态可保留的模型。
+Omission Failure|遗漏故障||应当发送或接收的消息被漏掉的故障。
+Timing Failure|时序故障||节点或通信的响应时间超出模型允许边界的故障。
+Byzantine Failure|拜占庭故障||节点可能任意偏离协议甚至向不同参与者发送矛盾信息的故障模型。
+Network Partition|网络分区||节点群之间通信长期或暂时不可达、但局部节点仍可能运行的情况。
+Partial Failure|局部故障||系统部分组件失效而其他部分继续工作的现象。
+Fail-stop Assumption|可检测停止假设||故障节点停止且其失败可被可靠识别的理想化模型假设。
+Failover|故障切换||将流量或主职责从失效实例转移到可用实例的过程。
+Failback|故障回切||原故障资源恢复后将职责或负载迁回的过程。
+Redundancy|冗余||部署额外组件或数据副本以抵抗故障的设计策略。
+Fault Tolerance|容错||组件发生限定类型故障时仍能维持规定正确性或服务目标的能力。
+Fault Isolation|故障隔离||限制故障影响范围以阻止错误传播的措施。
+Blast Radius|故障影响半径||一个故障可能波及的用户、组件或业务范围。
+Single Point of Failure|单点故障|SPOF|一个组件失效便足以导致整体关键能力不可用的依赖点。
+Failure Domain|故障域||共享某类失效风险的一组资源或节点。
+Graceful Degradation|优雅降级||资源不足或故障时保留核心功能并主动降低部分质量的策略。
+Self-healing|自愈||自动检测失效并重启、迁移或替换异常组件的能力。
+Split Brain|脑裂||原应唯一的协调者或主节点在不同分区中同时对外自认有效的情况。
+Fencing|隔离屏障||阻止旧持有者或失效主节点继续访问共享资源的技术。
+Fencing Token|隔离令牌||单调递增的访问世代编号，用于拒绝过期持有者的操作。
+
+# 时间、时钟与因果排序
+Physical Clock|物理时钟||尝试表示现实时间的计算机时钟。
+Wall Clock|墙上时钟||提供日期时间读数、可能因校时而跳变的时钟。
+Monotonic Clock|单调时钟||用于测量时间间隔且不会因墙上时钟调整而倒退的计时源。
+Clock Skew|时钟偏差||不同节点时钟在同一真实时刻的读数差异。
+Clock Drift|时钟漂移||时钟相对于参考时间的速率偏差随时间积累的现象。
+Clock Synchronization|时钟同步||通过协议减小不同节点时钟读数误差的过程。
+Network Time Protocol|网络时间协议|NTP|通过网络估算时钟偏差与往返延迟的时间同步协议。
+Precision Time Protocol|精确时间协议|PTP|利用网络硬件时间戳等机制进行高精度时钟同步的协议。
+Happens-before Relation|先发生关系||由进程内顺序与消息发送接收关系传递闭包定义的因果偏序。
+Concurrent Events|并发事件||在先发生关系下互不为因果先后的两个事件。
+Lamport Clock|Lamport 逻辑时钟||给事件分配满足因果先后蕴含时间戳递增的逻辑计数器。
+Logical Timestamp|逻辑时间戳||用于表示事件顺序而非精确现实时间的标记。
+Vector Clock|向量时钟||用多维计数器在固定进程集合中刻画事件因果偏序的机制。
+Version Vector|版本向量||利用每副本计数表示数据版本因果关系的向量。
+Dotted Version Vector|点式版本向量||以版本向量与单个事件标记精确表示更新因果上下文。
+Hybrid Logical Clock|混合逻辑时钟|HLC|结合物理时间近似值与逻辑计数保持可比较事件顺序的时钟。
+TrueTime|TrueTime 时间 API||以包含真实时间的误差区间表示时间估计的接口设计。
+Clock Uncertainty|时钟不确定性||时钟读数与真实时间之间可能误差的界限。
+Commit Wait|提交等待||提交操作等待时间不确定性窗口过去以确保特定外部顺序性质的机制。
+Global Snapshot|全局快照||描述多节点局部状态与在途消息的一致系统截面。
+Consistent Cut|一致切面||若截面包含某事件则也包含其所有因果前驱的事件集合。
+Chandy–Lamport Snapshot|Chandy–Lamport 快照算法||通过标记消息记录异步系统一致全局状态的算法。
+Causal Order|因果顺序||要求按先发生关系保持消息或操作的先后处理次序。
+Total Order|全序||任意两事件均可比较且满足传递性的顺序关系。
+Total-order Broadcast|全序广播||让所有正确参与者按相同顺序交付同一组消息的广播抽象。
