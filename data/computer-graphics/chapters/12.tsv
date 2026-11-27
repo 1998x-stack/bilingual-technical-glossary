@@ -1,0 +1,26 @@
+# 透明、体积渲染、色彩管理与后处理
+Alpha Blending|Alpha 混合||根据透明度权重组合源颜色与目标颜色的图像合成操作。
+Premultiplied Alpha|预乘 Alpha||在存储颜色时先把颜色通道乘以对应透明度的表示方法。
+Order-independent Transparency|顺序无关透明|OIT|减少透明物体绘制顺序对混合结果依赖的技术集合。
+Depth Peeling|深度剥离||分层提取可见深度表面、用于透明物体排序混合的方法。
+Weighted Blended OIT|加权混合顺序无关透明||用加权累积近似透明层合成、减少严格排序要求的方法。
+Refraction|折射||光经过不同折射率介质界面时传播方向发生变化的过程。
+Index of Refraction|折射率|IOR|描述介质中光相速度相对真空速度变化的物理量。
+Snell's Law|斯涅尔定律||规定折射光线方向与两介质折射率之间关系的定律。
+Total Internal Reflection|全内反射||光从高折射率向低折射率介质传播且入射角过大时无法发生传播透射的现象。
+Volume Rendering|体积渲染||根据体积介质内吸收、散射与发光沿射线积分生成图像的过程。
+Participating Media|参与介质||能在体积内吸收、发射或散射光线的雾、烟、云等介质。
+Extinction Coefficient|消光系数||描述单位传播距离内因吸收与外散射减少辐射的系数。
+Phase Function|相函数||描述介质内光散射方向概率分布的函数。
+Transmittance|透射率||光沿介质路径传播后未被消光的能量比例。
+Beer–Lambert Law|比尔—朗伯定律||在适用条件下描述均匀介质透射率随光程指数衰减的定律。
+Volumetric Fog|体积雾||通过体积散射模型渲染的雾气效果。
+Bloom|辉光效果||让高亮区域向邻域扩散产生视觉泛光的后处理效果。
+Tone Mapping|色调映射||将高动态范围辐亮度或图像值映射到显示设备较窄动态范围的过程。
+ACES Tone Mapping|ACES 色调映射||使用学院色彩编码系统相关变换处理高动态范围图像显示的流程。
+Gamma Encoding|伽马编码||通过非线性编码函数将线性光数值转换为适合存储或显示的值。
+Linear Color Space|线性光颜色空间||颜色数值按物理光强或三刺激值线性比例表示的空间。
+sRGB Transfer Function|sRGB 传递函数||规定线性 RGB 与 sRGB 非线性编码之间转换关系的函数。
+Color Grading|调色||通过曝光、曲线与颜色变换调整画面审美风格的后期处理。
+Depth of Field|景深||成像系统中目标距焦平面不同位置导致模糊程度变化的现象。
+Motion Blur|运动模糊||曝光时间内场景或相机移动在图像中造成的空间模糊效果。
