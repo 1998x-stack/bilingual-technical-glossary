@@ -142,3 +142,13 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 机器人学 Robotics（独立出版，尚未加入全站索引）
+
+新增《机器人学专有名词中英文对照表》：**500 条双语术语、20 章**。覆盖机构与 SE(3)、DH/PoE 正运动学、逆运动学与奇异性、动力学和 PID/阻抗/MPC、轮式和足式机器人、传感器与标定、EKF/UKF/粒子滤波、视觉及激光 SLAM、因子图、地图、A*/PRM/RRT*/轨迹优化、移动导航、抓取与接触、模仿学习/强化学习、具身 VLA、ROS 2、仿真与机器人安全。
+
+同时附有 **16 组核心概念辨析、12 道中等难度面试题、12 道带解析的考试题**。参考 *Modern Robotics*、*Probabilistic Robotics*、MIT Underactuated Robotics、ROS 2/MoveIt 2/Nav2/Gazebo 等资源。
+
+[Markdown 阅读](glossaries/robotics.md) · [PDF 查看](pdf/robotics.pdf) · [结构化 TSV](data/robotics.tsv) · [来源与审稿说明](data/robotics/SOURCES.md)
+
+原始词表：`data/robotics/chapters/`。执行 `node scripts/render_robotics.mjs --check` 验证出版物及网站镜像一致性。**本册独立出版，不计入现有网站搜索的学科数和术语总数。**
