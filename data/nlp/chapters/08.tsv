@@ -1,0 +1,26 @@
+# 特征工程、判别模型与序列分类
+Bag-of-words|词袋模型|BoW|忽略词序、用词频或二值特征表示文本的模型。
+Term Frequency|词频|TF|某个词项在文档中出现的次数或归一化次数。
+Inverse Document Frequency|逆文档频率|IDF|反映词项在文档集合中相对稀有程度的统计权重。
+TF–IDF|词频—逆文档频率|TF-IDF|结合文档词频与全语料稀有度构建词项权重的表示。
+Feature Extraction|特征提取||把文本变成可供统计模型处理的数值或符号特征的过程。
+Feature Hashing|特征哈希||使用哈希函数将高维离散特征映射到固定维度空间的方法。
+Character N-gram Feature|字符 N 元组特征||通过连续字符子串捕获词形与拼写信息的文本特征。
+Lexical Feature|词汇特征||基于词项、词形或词典匹配而构造的分类或标注输入特征。
+Contextual Feature|上下文特征||反映当前词元邻近词和其他上下文信息的模型特征。
+Naive Bayes Classifier|朴素贝叶斯分类器|NB|在给定类别时假设特征条件独立的概率分类模型。
+Multinomial Naive Bayes|多项式朴素贝叶斯||对词频或离散计数使用多项式生成假设的朴素贝叶斯模型。
+Bernoulli Naive Bayes|伯努利朴素贝叶斯||以特征是否出现的二元变量构造似然的朴素贝叶斯模型。
+Logistic Regression|逻辑回归||通过线性打分与 logistic 或 softmax 链接预测类别概率的模型。
+Linear Support Vector Machine|线性支持向量机|SVM|以最大间隔或软间隔准则学习线性分类边界的模型。
+Maximum Entropy Classifier|最大熵分类器|MaxEnt|在特征约束下选择最大熵条件分布的判别分类器，常等价于对数线性模型。
+Conditional Random Field|条件随机场|CRF|对给定输入条件下结构化标签联合分布建模的判别概率模型。
+Linear-chain CRF|线性链条件随机场||以相邻标签依赖和输入特征建模序列标签的 CRF 结构。
+Structured Prediction|结构化预测||输出标签、树或图等相互依赖对象而非单个类别的预测任务。
+Sequence Classification|序列分类||为整个句子、段落或其他序列预测单一类别的任务。
+Multilabel Classification|多标签分类||允许同一文本同时归属多个非互斥类别的分类任务。
+Hierarchical Classification|层次分类||在树或层级标签体系中预测一个或多个类别的分类任务。
+Class Imbalance|类别不平衡||训练或评估样本在不同标签上的数量分布明显不均的现象。
+Cost-sensitive Learning|代价敏感学习||在训练目标中对不同预测错误赋予不同成本的学习方法。
+Class Weighting|类别加权||按类别频率或重要性调整训练损失贡献的策略。
+Calibration|概率校准||使模型预测概率与相应样本真实发生频率相符合的性质或调整过程。
