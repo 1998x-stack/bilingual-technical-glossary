@@ -1,0 +1,26 @@
+# 经典控制、阻抗控制与最优控制
+Feedback Control|反馈控制||根据系统测量状态与目标偏差调整控制输入的闭环方法。
+Open-loop Control|开环控制||不依赖当前输出误差信号修正控制动作的策略。
+Closed-loop Control|闭环控制||持续利用传感反馈修正控制命令的控制结构。
+Proportional–Integral–Derivative Controller|比例积分微分控制器|PID|组合比例、积分与微分误差作用生成控制输入的经典控制器。
+Proportional Gain|比例增益|Kp|决定控制器对当前误差施加多大比例作用的参数。
+Integral Gain|积分增益|Ki|决定累计误差对控制输入贡献的参数。
+Derivative Gain|微分增益|Kd|决定误差变化率对控制输入贡献的参数。
+Feedforward Control|前馈控制||依据已知动力学、轨迹或扰动预先提供控制作用的方式。
+State Feedback|状态反馈||通过系统状态变量构造控制输入的反馈律。
+Trajectory Tracking|轨迹跟踪||让机器人状态随时间尽量接近期望时变轨迹的控制任务。
+Setpoint Regulation|设定点调节||控制系统收敛并维持在给定固定目标状态附近的任务。
+Computed Torque Control|计算力矩控制||利用逆动力学模型消除已知非线性并规定关节误差动力学的控制方法。
+Operational Space Control|操作空间控制||在末端任务空间组织运动与力控制，并映射为关节力矩的技术。
+Impedance Control|阻抗控制||使机器人在外力作用下呈现指定力与位移或速度动态关系的控制策略。
+Admittance Control|导纳控制||将测得外力映射为期望运动响应，再由运动控制器跟踪的控制架构。
+Force Control|力控制||依据接触力测量与目标约束调节机器人施力的控制任务。
+Hybrid Position–Force Control|位置力混合控制||在互补的接触约束方向分别执行位置与力控制的技术。
+Model Predictive Control|模型预测控制|MPC|反复求解有限时域优化问题并执行首段控制动作的闭环控制方法。
+Optimal Control|最优控制||在系统动力学与约束下选择最小化给定成本的控制序列的理论。
+Linear Quadratic Regulator|线性二次调节器|LQR|为线性系统和二次代价求最优状态反馈的控制方法。
+Linear Quadratic Gaussian Control|线性二次高斯控制|LQG|结合线性二次调节与高斯噪声状态估计的控制方案。
+Control Lyapunov Function|控制李雅普诺夫函数|CLF|用于证明或设计使系统趋向目标的稳定化控制律的函数。
+Control Barrier Function|控制屏障函数|CBF|通过状态约束不变性条件构造安全控制输入的函数。
+Actuator Saturation|执行器饱和||实际控制输出达到物理电流、速度或力矩上限的情况。
+Anti-windup|积分抗饱和||减少 PID 积分在执行器饱和时持续累积而导致超调的措施。
