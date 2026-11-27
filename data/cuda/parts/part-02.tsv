@@ -1,0 +1,107 @@
+# 共享内存、分块计算与协作
+Shared Memory Allocation|共享内存分配||为线程块提供静态或动态大小共享存储空间的机制。
+Static Shared Memory|静态共享内存||编译时声明固定大小、每个线程块拥有独立实例的共享数组。
+Dynamic Shared Memory|动态共享内存||在 Kernel 启动时指定容量的每块共享内存区域。
+Shared Memory Bank|共享内存存储体|Bank|共享内存为支持并行访问而划分的若干硬件存储体。
+Bank Conflict|存储体冲突||同一请求阶段多个不同地址映射到同一共享内存 bank 导致服务串行化的现象。
+Shared Memory Broadcast|共享内存广播||同一 bank 中多个线程访问同一位置时可由硬件广播数据的行为。
+Tiled Computation|分块计算||把大问题划为可在片上缓存复用的局部数据块进行处理。
+Tile|数据分块|Tile|为一次局部计算或搬运选取的数据子矩阵或子区域。
+Tile Size|分块尺寸||决定每个 tile 包含多少行列或元素的配置参数。
+Shared Memory Reuse|共享内存复用||将同一数据加载到共享内存后在多个算术操作中重复利用。
+Cooperative Loading|协同加载||块内线程分工把全局内存数据搬入共享内存的过程。
+Halo Region|边界扩展区|Halo|模板计算中为块内边缘元素准备的邻域数据。
+Stencil Computation|模板计算||每个输出依赖输入局部邻域值的一类规则计算。
+Double Buffering|双缓冲||交替利用两组存储空间重叠数据准备和计算的技术。
+Shared Memory Swizzling|共享内存重映射||通过改变数据到共享内存地址的映射减少 bank 冲突的策略。
+Padding for Banks|防 bank 冲突填充||给共享数组行或维度附加填充元素以调整 bank 映射的技巧。
+Thread Block Cluster Shared Access|块集群共享内存访问||集群中线程块对其他块共享内存执行受支持访问的行为。
+Cluster Synchronization|集群同步||在线程块集群范围内协调多个线程块完成指定阶段的同步。
+Cluster Barrier|集群屏障||使集群成员在满足参与条件后共同越过某个同步点的机制。
+Cluster Dimension|集群维度||一次支持集群启动中每个线程块集群的块数配置。
+Tensor Memory Accelerator|张量内存加速器|TMA|部分 NVIDIA GPU 上用于高效执行多维数据搬运的硬件机制。
+Asynchronous Copy|异步数据复制||发起内存传输后允许相关线程继续执行其他操作的搬运方式。
+Copy–Compute Overlap|复制与计算重叠||通过异步搬运和同步协调让数据传输与算术工作并发推进。
+Software Pipelining|软件流水线||交错安排不同迭代阶段的读写与计算以提高硬件利用率。
+Producer–Consumer Buffering|生产者—消费者缓冲||将数据预取者与计算消费者通过片上队列或多缓冲协调的模式。
+
+# 同步、原子操作与内存一致性
+Synchronization|同步||协调多个 GPU 执行参与者的执行进度或内存可见性的机制。
+Block Barrier|线程块屏障||使块内参与线程在指定点满足共同到达条件的同步操作。
+__syncthreads()|块级同步函数|__syncthreads()|让线程块内线程完成规定同步，并对相应共享及全局内存访问建立可见性次序的内建函数。
+__syncwarp()|线程束同步函数|__syncwarp()|按指定成员掩码同步同一 warp 中参与线程的内建函数。
+Warp-level Primitive|线程束级原语||在 warp 线程间实现投票、数据交换或同步的硬件相关操作。
+Shuffle Instruction|线程束数据交换|SHFL|允许 warp 线程直接读取另一指定 lane 寄存器数据的指令机制。
+__shfl_sync()|同步线程束交换函数|__shfl_sync()|在指定 warp 成员之间按源 lane 编号交换寄存器值的内建接口。
+Warp Vote|线程束投票||聚合同一 warp 中各线程布尔谓词结果的指令操作。
+__ballot_sync()|线程束位掩码投票|__ballot_sync()|为指定活动参与线程的布尔判断生成 lane 位掩码的函数。
+__activemask()|活动线程掩码|__activemask()|获取执行该指令时当前 warp 活动 lane 集合的位掩码。
+Atomic Operation|原子操作||对指定存储位置以不可分割的读改写语义执行的操作。
+Atomic Add|原子加法|atomicAdd|对共享或全局存储位置原子地增加数值的操作。
+Compare and Swap|比较并交换|CAS|在存储值符合预期时原子写入新值的同步原语。
+Atomic Exchange|原子交换||将新值写入目标位置并原子返回原值的操作。
+Memory Fence|内存栅栏||对指定作用域的内存操作建立必要的排序与可见性约束的机制。
+__threadfence()|设备作用域线程栅栏|__threadfence()|按 CUDA 内存模型为设备范围内内存操作建立次序的内建函数。
+__threadfence_block()|块作用域线程栅栏|__threadfence_block()|只在当前线程块作用域建立指定内存排序约束的函数。
+__threadfence_system()|系统作用域线程栅栏|__threadfence_system()|在受支持环境中扩展到系统作用域的内存排序栅栏函数。
+Memory Ordering|内存排序||规定并发访问之间何时必须保持先后可见关系的语义。
+Memory Scope|内存作用域||约束原子操作和同步语义覆盖线程块、设备或系统参与者的范围。
+Acquire Semantics|获取语义|Acquire|阻止后续内存操作越过相应同步获取点的排序约束。
+Release Semantics|释放语义|Release|阻止此前内存操作越过相应同步释放点的排序约束。
+Race Condition|竞态条件||程序结果依赖未受恰当协调的并发执行相对次序的现象。
+Data Race|数据竞争||多个执行者冲突访问同一内存位置且未形成所需同步关系的未定义或错误并发情形。
+Cooperative Groups|协作组|CG|以显式线程组对象组织同步、集体操作和协作的 CUDA 编程接口。
+
+# Stream、事件与 CUDA Graph
+CUDA Stream|CUDA 流|Stream|设备工作提交的有序序列，不同流之间可在条件允许时并发执行。
+Default Stream|默认流||未显式指定流时采用的 CUDA 流，其与其他流交互受默认流模式影响。
+Legacy Default Stream|传统默认流||采用特定隐式同步语义的默认流配置模式。
+Per-thread Default Stream|逐主机线程默认流|PTDS|让每个主机线程拥有独立默认流的配置模式。
+Nonblocking Stream|非阻塞流||创建时设置相应标志以减少与传统默认流隐式同步的 CUDA 流。
+Stream Synchronization|流同步||等待指定流先前提交的工作全部完成的操作。
+Device Synchronization|设备同步||等待当前设备上下文中的指定先前工作完成的同步行为。
+CUDA Event|CUDA 事件|Event|可在流中记录完成点并用于查询、等待或时间测量的对象。
+Event Recording|事件记录||把事件完成标记提交到指定流当前位置的操作。
+Event Query|事件查询||非阻塞检查事件关联工作是否已经完成的操作。
+Event Synchronization|事件同步||在主机端等待记录事件完成的操作。
+Stream Wait Event|流等待事件||在一条流中引入对另一事件完成的依赖关系的操作。
+Asynchronous Kernel Launch|异步核函数启动||主机提交 Kernel 后通常立即继续执行而不等待设备计算结束。
+Asynchronous Memory Copy|异步内存复制||向指定流提交数据搬运，使主机或其他可并发工作继续推进的机制。
+Concurrent Kernel Execution|并发核函数执行||在硬件资源与依赖允许时多个 Kernel 在 GPU 上时间重叠的现象。
+Copy Engine|复制引擎||GPU 用于在适用条件下独立执行主机与设备之间数据搬运的硬件单元。
+Stream Priority|流优先级||影响不同流待调度工作相对优先程度的提示配置，不保证严格抢占。
+CUDA Graph|CUDA 执行图|Graph|用有向无环依赖图描述多个设备操作及其执行约束的 CUDA 对象。
+Graph Node|执行图节点||代表 Kernel、内存操作、事件或其他受支持任务的图中执行单元。
+Graph Dependency|图依赖||限制一个图节点在指定前置操作完成后才能执行的先后关系。
+Graph Instantiation|执行图实例化||把图定义转换为可提交运行的图执行实例的准备步骤。
+Graph Launch|执行图启动||在指定流上提交已实例化 CUDA Graph 执行的操作。
+Stream Capture|流捕获||记录流中的受支持操作及其依赖以构造 CUDA Graph 的过程。
+Graph Update|执行图更新||在满足约束时修改已实例化图的节点参数或拓扑的能力。
+Graph Replay|执行图重放||多次提交同一已实例化图以减少重复启动管理开销的实践。
+
+# 显存分配、传输与统一内存
+cudaMalloc()|设备内存分配函数|cudaMalloc|通过 Runtime API 在当前设备上分配指定大小内存的接口。
+cudaFree()|设备内存释放函数|cudaFree|释放通过兼容 CUDA 分配接口取得设备内存的 API。
+cudaMallocAsync()|异步设备内存分配|cudaMallocAsync|提交与流顺序关联的设备内存分配操作，通常由内存池支持。
+cudaFreeAsync()|异步设备内存释放|cudaFreeAsync|把设备内存释放与指定流中的操作顺序关联的 API。
+Memory Pool|内存池|MemPool|复用 GPU 内存分配以降低频繁申请和释放成本的管理机制。
+cudaMemcpy()|同步内存复制|cudaMemcpy|执行指定来源和目的内存之间拷贝的 Runtime API，具体同步行为依参数和内存类型而异。
+cudaMemcpyAsync()|异步内存复制|cudaMemcpyAsync|将数据拷贝关联到指定流的 API，异步性与重叠效果受内存类型等条件约束。
+Host-to-Device Copy|主机到设备复制|H2D|将 CPU 可访问内存中的数据传送到 GPU 设备空间的操作。
+Device-to-Host Copy|设备到主机复制|D2H|将 GPU 设备数据传送到 CPU 可访问内存的操作。
+Device-to-Device Copy|设备到设备复制|D2D|在相同或不同设备存储区域之间传送数据的操作。
+Pinned Host Memory|页锁定主机内存|Pinned Memory|被锁定不允许分页换出的主机内存，可用于提升特定 DMA 传输效率。
+Pageable Host Memory|可分页主机内存||操作系统可按需换出物理页的一般主机内存。
+Mapped Host Memory|映射主机内存||在支持的环境中可经设备地址直接访问的页锁定主机内存。
+Zero-copy Access|零复制访问||设备直接访问可映射主机内存而不先显式复制到设备独立缓冲区的方式。
+Unified Virtual Addressing|统一虚拟寻址|UVA|在支持系统中让主机与设备使用协调的单一虚拟地址空间模型。
+Unified Memory|统一内存|UM|让 CPU 与 GPU 可通过共享管理的内存对象访问同一数据的 CUDA 能力。
+Managed Memory|托管内存||由 CUDA 统一内存机制管理迁移和访问的存储区域。
+cudaMallocManaged()|托管内存分配函数|cudaMallocManaged|在统一内存模型下分配托管内存的 Runtime API。
+Page Migration|内存页迁移||运行时或驱动根据访问需求在系统内存与 GPU 内存之间移动页面的过程。
+Page Fault|页面故障||访问地址尚未具备所需映射或驻留条件而触发内存管理处理的事件。
+Prefetching|内存预取||在实际访问前主动移动或准备数据以减少缺页与访存延迟。
+cudaMemPrefetchAsync()|异步内存预取|cudaMemPrefetchAsync|按目标位置请求在流中预取托管内存的 API，签名随 CUDA 版本演进。
+Memory Advice|内存使用建议||向统一内存管理系统提供访问倾向或优选位置等提示信息的机制。
+Memory Oversubscription|显存超额订阅||受管理数据总工作集超过 GPU 物理显存容量并依赖迁移与回收的情形。
+Peer-to-Peer Memory Access|对等设备内存访问|P2P|一个 GPU 在支持拓扑与权限条件下直接访问另一 GPU 内存的机制。
