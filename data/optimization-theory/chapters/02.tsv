@@ -1,0 +1,26 @@
+# 凸集合、凸函数与几何基础
+Convex Set|凸集||集合中任意两点的连线段都完全属于该集合。
+Convex Combination|凸组合||权重非负且和为一的点的线性组合。
+Convex Hull|凸包||包含给定点集的最小凸集。
+Affine Set|仿射集||包含其中任意两点的全部仿射组合的集合。
+Affine Combination|仿射组合||系数总和为一、但不要求每个系数非负的线性组合。
+Convex Cone|凸锥||同时满足凸性与对非负数乘法封闭性的集合。
+Proper Cone|正规锥||通常指闭、凸、尖且内部非空的锥。
+Dual Cone|对偶锥||对原锥中每个向量内积均非负的向量集合。
+Polar Cone|极锥||与给定锥中所有向量内积均非正的向量集合。
+Hyperplane|超平面||由一个非零法向量与固定内积值定义的仿射平面。
+Halfspace|半空间||满足某个线性不等式的一侧点集。
+Separating Hyperplane|分离超平面||将两个凸集置于两侧或不相交侧的超平面。
+Supporting Hyperplane|支撑超平面||经过凸集边界点且整个凸集位于一侧的超平面。
+Relative Interior|相对内部||集合相对于其仿射包的内部。
+Closure|闭包||包含集合本身及其全部极限点的最小闭集。
+Epigraph|上图集||由满足目标函数值不大于高度坐标的点构成的集合。
+Hypograph|下图集||由满足高度坐标不大于函数值的点构成的集合。
+Convex Function|凸函数||在凸定义域内函数值不大于端点函数值的凸组合。
+Strictly Convex Function|严格凸函数||对不同点及内部凸组合满足严格凸不等式的函数。
+Strongly Convex Function|强凸函数||减去适当正定二次项后仍为凸函数的函数。
+Concave Function|凹函数||取相反数后成为凸函数的函数。
+Quasiconvex Function|拟凸函数||每个次水平集都是凸集的函数。
+Log-convex Function|对数凸函数||正值函数的对数为凸函数的性质。
+Jensen Inequality|詹森不等式||凸函数作用于加权平均的值不超过函数值的加权平均。
+Perspective Function|透视函数||由函数 f 生成 t f(x/t) 的变换，凸性可在 t 大于零时保留。
