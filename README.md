@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Computer Graphics / 计算机图形学 (standalone; not yet indexed)
+
+**500 original bilingual terms in 20 chapters.** Covers 3D geometry, matrices and coordinate transforms, NURBS, graphics pipeline, clipping, rasterization, shader stages, texture sampling, microfacet BRDF/BSDF and PBR, radiometry, Monte Carlo path tracing, GI/shadows, animation and physical simulation, OpenGL/Vulkan/Direct3D/Metal, BVH acceleration, anti-aliasing and GPU optimization, NeRF/3D Gaussian Splatting, asset formats and quality testing. Includes **16 concept contrasts, 12 intermediate interview questions and 12 worked exam problems**. [Markdown](glossaries/computer-graphics.md) · [PDF](pdf/computer-graphics.pdf) · [TSV](data/computer-graphics.tsv) · [Sources and review status](data/computer-graphics/SOURCES.md). Reproducible verification: `node scripts/render_computer_graphics.mjs --check`. **Not yet integrated into the search index or its subject/term totals.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
