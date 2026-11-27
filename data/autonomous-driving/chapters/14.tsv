@@ -1,0 +1,26 @@
+# 交通安全约束、风险与应急策略
+Collision Risk Estimation|碰撞风险估计||根据主体位置、预测轨迹和不确定性评估可能碰撞的概率与严重性。
+Time to Collision|碰撞时间|TTC|在给定相对运动简化假设下估计两主体发生接触的剩余时间。
+Time Headway|车头时距|THW|自车到达前车当前参考位置所需时间的近似车距指标。
+Stopping Distance|停车距离||包含驾驶或系统反应时间和制动过程所需路程的总体距离。
+Braking Distance|制动距离||车辆实际开始制动后直至停止所行驶的距离。
+Safety Distance|安全间距||根据速度、反应时间、不确定性及规则设置的最小车间距离。
+Emergency Braking|紧急制动||当风险过高时施加较强制动力减速或停止车辆的操作。
+Automatic Emergency Braking|自动紧急制动|AEB|在即将发生碰撞时自动警告或制动以降低风险的辅助安全功能。
+Forward Collision Warning|前向碰撞预警|FCW|通过前方目标与相对运动判断可能追尾并警告驾驶者的功能。
+Lane Departure Warning|车道偏离预警|LDW|车辆无意跨越车道边界时向驾驶者发出提醒的功能。
+Lane Keeping Assist|车道保持辅助|LKA|在规定条件下通过转向辅助减少意外偏离车道的系统。
+Blind Spot Detection|盲区监测|BSD|检测车辆侧后方盲区内相关交通参与者并发出提示的功能。
+Minimum Risk Maneuver Planning|最小风险机动规划||在能力不足或关键故障时确定安全降速、靠边或停车策略的过程。
+Emergency Trajectory|应急轨迹||用于避险或风险缓解、并受车辆极限与周边交通约束的短期轨迹。
+Fail-safe Behavior|故障安全行为||检测故障后采取停止或其他降低风险措施的系统响应策略。
+Fail-operational Capability|故障后持续运行能力||在规定部分故障下仍能完成受限或全部功能的系统设计能力。
+Fallback Trajectory|后备轨迹||首选轨迹不可执行时可快速切换的保守运动计划。
+Safety Constraint|安全约束||在规划和控制过程中必须满足的碰撞、速度或最小距离限制。
+Control Barrier Function|控制屏障函数|CBF|通过不变性约束限制控制指令、防止状态进入危险集合的函数。
+Responsibility-sensitive Safety|责任敏感安全模型|RSS|以形式化安全距离和响应规则定义部分交通交互责任的模型框架。
+Reachable Set|可达状态集||在给定模型、控制限制与不确定性下未来可能到达的状态集合。
+Safe Set|安全状态集||按照预定义碰撞与约束条件被认为可接受的系统状态集合。
+Risk-aware Planning|风险感知规划||在优化目标和约束中加入碰撞概率、后果与模型不确定性的规划方法。
+Uncertainty-aware Control|不确定性感知控制||根据模型和观测可信度调整控制策略或安全裕度的技术。
+Safety Supervisor|安全监督模块||独立检查感知规划控制结果并在必要时阻断不安全命令的系统组件。
