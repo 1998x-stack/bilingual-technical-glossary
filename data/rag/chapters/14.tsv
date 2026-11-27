@@ -1,0 +1,26 @@
+# 生产工程、性能与持续优化
+Production RAG|生产级 RAG||满足可用性、安全、成本、监控及版本管理要求的线上检索增强系统。
+Retrieval Latency|检索延迟||从发起检索到获得候选结果之间的耗时。
+End-to-end Response Time|端到端响应时间||从收到用户请求到最终回答完成的总时间。
+Time to First Token|首 token 延迟|TTFT|从开始生成请求到模型输出第一个 token 所需的时间。
+Tail Latency|尾部延迟||响应时间分布高百分位、用于描述慢请求体验的指标。
+Throughput|吞吐量||系统单位时间内处理的查询或生成请求数量。
+Concurrency Limit|并发限制||为检索和生成服务设置同时处理请求数量的上界。
+Rate Limiting|速率限制||通过令牌桶等机制限制调用频率以控制负载的措施。
+Retrieval Cache|检索缓存||复用近期或相同查询的候选文档结果以减少计算的缓存。
+Embedding Cache|嵌入缓存||复用已计算查询或文档向量以节省嵌入推理成本的缓存。
+Semantic Cache|语义缓存||对含义接近的请求复用经验证结果的缓存策略。
+Cache Invalidation|缓存失效||在权限、数据版本或模型版本变化时使旧缓存不再使用的过程。
+Index Refresh|索引刷新||按数据变更或时效要求更新检索索引内容的操作。
+Blue–Green Index Deployment|蓝绿索引发布||并行维护新旧两套索引并在验证后切换查询流量的发布方式。
+Shadow Index Testing|影子索引测试||将真实查询并行送入候选新索引但不影响用户回答的验证方式。
+A/B Testing|A/B 测试||随机分配流量比较两种检索或生成策略对业务指标的影响。
+Canary Deployment|金丝雀发布||把少量流量先导入新方案以观察风险后逐步扩大的策略。
+Embedding Migration|嵌入模型迁移||更换编码器时对文档重新向量化、索引和切换查询的过程。
+Index Versioning|索引版本管理||记录索引配置、数据快照和构建时间以支持回滚的机制。
+Pipeline Observability|流水线可观测性||跟踪每阶段输入、耗时、错误与质量指标的运维能力。
+Retrieval Trace|检索链路追踪||记录查询改写、索引访问、候选得分与排序过程的调试轨迹。
+Cost per Query|单次查询成本||按检索、嵌入、重排和生成资源计算的平均请求成本。
+Quality–Cost Tradeoff|质量—成本权衡||在召回、答案质量与推理或基础设施开销之间选择平衡方案。
+Feedback-driven Improvement|反馈驱动改进||依据人工纠错、用户反馈及评测数据迭代优化检索与生成的流程。
+Retrieval Regression Test|检索回归测试||在数据、模型或索引修改后验证关键查询仍返回必要证据的测试。
