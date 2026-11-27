@@ -142,3 +142,11 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 最优化理论（独立出版，暂未加入网站搜索）
+
+新增《最优化理论专有名词中英文对照表》：**400 条双语术语，16 个专业章节**，包含凸优化、KKT、对偶理论、线性与整数规划、非线性数值方法、梯度与牛顿方法、近端算法、随机/在线/分布式优化、全局优化、多目标与鲁棒优化及最优控制；附 14 组概念辨析、10 道中等难度面试题和 10 道考试题及解析。
+
+[阅读全文（Markdown）](glossaries/optimization-theory.md) · [下载 PDF](pdf/optimization-theory.pdf) · [结构化 TSV](data/optimization-theory.tsv) · [参考来源和审稿说明](data/optimization-theory/SOURCES.md)
+
+原始数据：`data/optimization-theory/chapters/`。复现/检查命令：`node scripts/render_optimization_theory.mjs --check`。**本册暂未计入网站已索引学科数与术语数。**
