@@ -142,3 +142,12 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 分布式系统（独立出版，暂未索引）
+
+新增《分布式系统专有名词中英文对照表》：**400 条术语、16 个章节**，包含 CAP、一致性模型、Raft/Paxos、复制与事务、分布式存储、流处理、容错与形式化验证，并附 12 组概念对比、8 道中等难度面试题及 8 道考试题。
+
+- [阅读全文（Markdown）](glossaries/distributed-systems.md) · [下载 PDF](pdf/distributed-systems.pdf) · [结构化 TSV](data/distributed-systems.tsv)
+- [来源与审稿说明](data/distributed-systems/SOURCES.md)
+- 原始章节：`data/distributed-systems/chapters/`。校验：`node scripts/render_distributed_systems.mjs --check`。
+- **本册为独立出版物，暂不计入已索引的学科数与术语数。**
