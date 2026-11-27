@@ -1,0 +1,26 @@
+# 神经图形学、可微渲染与新视角合成
+Neural Graphics|神经图形学||结合神经网络与图形学表示、渲染和编辑流程的研究方向。
+Neural Rendering|神经渲染||利用可学习场或基元模型合成图像和视角的渲染技术。
+Differentiable Rendering|可微渲染||允许渲染结果误差对场景参数计算梯度的算法与系统。
+Inverse Graphics|逆向图形学||根据图像观测估计场景几何、材质、光照和相机等潜在因素的任务。
+Inverse Rendering|逆向渲染||从目标图像反推可解释该图像的物理或神经场景参数的优化问题。
+Novel View Synthesis|新视角合成|NVS|根据已知视角及场景表示合成未观测相机位置图像的任务。
+Neural Radiance Field|神经辐射场|NeRF|用可学习连续函数表示密度和视角相关辐射并进行体渲染的场景模型。
+Neural Signed Distance Field|神经有符号距离场||以神经网络近似几何 SDF 函数的隐式表面表示方法。
+Positional Encoding|神经位置编码||把位置或方向输入映射为高维周期特征以表示细节的技术。
+Fourier Feature Mapping|傅里叶特征映射||通过正弦余弦频率变换坐标以帮助网络学习高频变化的方法。
+Hash Grid Encoding|哈希网格编码||用多尺度哈希表中的可训练特征对空间坐标编码的方法。
+Instant Neural Graphics Primitives|即时神经图形基元|Instant-NGP|利用高效多尺度编码和 GPU 内核加速神经场优化的方案。
+Radiance Field|辐射场||以空间位置和方向为自变量表示场景辐射或相关散射属性的函数。
+Volume Density Field|体密度场||为空间坐标赋予光学密度、用于体积累积与可见性估计的场。
+3D Gaussian Splatting|三维高斯泼溅|3DGS|用可优化三维高斯基元与投影混合高效表示和渲染场景的方法。
+Gaussian Primitive|高斯基元||具有三维均值、协方差、不透明度和外观参数的空间基元。
+Gaussian Covariance|高斯协方差||描述三维高斯基元尺度与方向的正定对称矩阵。
+Splat Rasterization|泼溅光栅化||将空间基元投影到图像平面并累积可见颜色的计算过程。
+Alpha Compositing|Alpha 合成||按不透明度与指定层级顺序组合多个颜色贡献的过程。
+Photometric Loss|光度损失||比较渲染图像与真实观测在颜色或光照上的误差的目标函数。
+Silhouette Loss|轮廓损失||利用渲染轮廓与参考分割轮廓差异约束场景形状的损失。
+Neural Texture|神经纹理||通过可训练特征纹理及解码网络表示材质或外观细节的技术。
+Neural Material Model|神经材质模型||通过学习函数近似复杂表面反射或其他材质光学特性的表示。
+Scene Parameter Optimization|场景参数优化||通过渲染误差迭代更新几何、材质、光照或相机参数的过程。
+Neural Reconstruction Artifact|神经重建伪影||由视角覆盖不足、训练或几何估计错误造成的场景渲染缺陷。
