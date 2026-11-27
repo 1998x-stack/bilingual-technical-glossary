@@ -1,0 +1,26 @@
+# 一致性模型与 CAP 理论
+Consistency Model|一致性模型||对并发读写历史允许出现哪些可观察结果的形式化约束。
+Linearizability|线性一致性||每个操作可视为在调用与响应之间的瞬间生效，并遵守真实时间先后关系。
+Sequential Consistency|顺序一致性||存在保留每个进程程序次序的全局串行执行，但不要求符合真实时间次序。
+Strict Serializability|严格可串行化||事务执行等价于某串行次序且遵守无重叠事务的真实时间先后。
+Serializability|可串行化||并发事务结果等价于某个合法串行事务执行。
+Snapshot Isolation|快照隔离|SI|事务读取一致快照并通常阻止并发写同一项，却可能发生写偏斜。
+Read Committed|读已提交|RC|每次读取不返回其他事务尚未提交的值的常见隔离级别。
+Repeatable Read|可重复读||事务内重复读取相同行时不受其他已提交修改影响的隔离语义，具体实现有差异。
+Eventual Consistency|最终一致性||在停止新更新且通信恢复后，副本最终收敛到相同可观察值的性质。
+Strong Consistency|强一致性||泛指较强读取保证的非精确术语，须明确具体模型才可验证。
+Causal Consistency|因果一致性||所有观察者须按因果先后关系感知相关操作更新。
+Causal+ Consistency|因果加一致性||在因果一致性基础上通常包含收敛等附加要求的一类模型。
+PRAM Consistency|PRAM 一致性||所有进程都以发送者程序顺序观察该发送者的写入。
+FIFO Consistency|FIFO 一致性||同一进程发出的写入按其发送顺序被其他参与者看到的模型。
+Read-your-writes Consistency|读己之写一致性||会话中后续读取至少看见该会话先前成功写入的效果。
+Monotonic Reads|单调读||同一会话后续读取不会看到早于其已观察版本的状态。
+Monotonic Writes|单调写||同一会话发出的写入在系统中保持先后次序。
+Writes-follow-reads|写遵循读||会话后续写入在因果上排在该会话已观察读取对应版本之后。
+Session Consistency|会话一致性||在客户端会话范围内提供读己之写等顺序性质的保证。
+Stale Read|陈旧读取||读取返回落后于某些已完成更新的旧版本。
+Read Repair|读修复||读请求发现副本不一致时将较新状态写回落后副本的机制。
+CAP Theorem|CAP 定理||发生网络分区时，具有线性一致性的读写服务不能同时保证所有请求都成功响应。
+Partition Tolerance|分区容忍性||系统在部分节点间网络不可达时仍按指定性质工作的能力。
+Availability in CAP|CAP 可用性||每个非故障节点收到的请求最终获得响应，不保证响应内容一定是最新值。
+PACELC Model|PACELC 模型||讨论分区时可用性与一致性的取舍，并讨论正常情况下延迟与一致性的权衡。
