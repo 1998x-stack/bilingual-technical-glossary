@@ -1,0 +1,26 @@
+# 三维几何、拓扑与网格结构
+Polygon Mesh|多边形网格|Mesh|由顶点、边和多边形面构成的离散表面表示。
+Vertex|顶点||带有位置及可选法线、颜色和纹理坐标的几何采样点。
+Edge|边||连接两个网格顶点并构成面边界的几何元素。
+Face|面||由一组有序顶点组成的网格表面单元。
+Triangle Mesh|三角网格||所有面均为三角形的离散曲面表示。
+Quad Mesh|四边形网格||以四边形为主要面片的网格结构。
+Vertex Buffer|顶点缓冲区|VBO|在 GPU 或图形系统中存放顶点属性数据的缓冲资源。
+Index Buffer|索引缓冲区|IBO|存放顶点索引以复用顶点并组装几何基元的资源。
+Vertex Attribute|顶点属性||附着于顶点的位置、法线、切线或纹理坐标等数据。
+Primitive Topology|基元拓扑||规定连续顶点索引如何组成点、线或三角形的组织方式。
+Triangle Strip|三角形带||相邻三角形共享前后顶点、以较少索引描述连续表面的拓扑。
+Winding Order|顶点绕序||按顺时针或逆时针顺序排列面片顶点的约定。
+Face Normal|面法线||由面片顶点几何确定的垂直方向。
+Vertex Normal|顶点法线||用于平滑明暗插值的顶点法向属性。
+Tangent Space|切线空间||由表面切线、副切线和法线形成的局部坐标系。
+Half-edge Data Structure|半边数据结构||用成对有向半边高效表示网格顶点、面与邻接关系的结构。
+Manifold Mesh|流形网格||局部拓扑邻域符合二维流形性质的表面网格。
+Non-manifold Geometry|非流形几何||存在多面共享异常边或不符合二维曲面邻域条件的网格结构。
+Mesh Connectivity|网格连接关系||描述顶点、边和面之间邻接与关联的拓扑信息。
+Mesh Simplification|网格简化||在控制几何误差条件下减少网格顶点和面数量的过程。
+Edge Collapse|边折叠||合并边的两个端点以移除局部网格元素的简化操作。
+Subdivision Surface|细分曲面||通过重复细分控制网格并计算极限曲面得到平滑表面的技术。
+Catmull–Clark Subdivision|Catmull–Clark 细分||利用面点、边点和顶点规则细分多边形网格的经典算法。
+Loop Subdivision|Loop 三角网格细分||针对三角网格生成平滑极限曲面的细分算法。
+Constructive Solid Geometry|构造实体几何|CSG|通过实体并、交、差等布尔运算组合几何对象的表示方法。
