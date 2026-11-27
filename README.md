@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Mathematical Statistics / 数理统计 (standalone; not yet indexed)
+
+**400 original bilingual terms in 16 chapters**, covering probability models, sufficient statistics, estimation, confidence regions, hypothesis testing, asymptotics, likelihood inference, regression/ANOVA, nonparametrics, resampling, Bayesian inference and applied modern statistics. Also includes **14 topic contrasts, 12 medium interview questions, 12 exam questions with worked answers** and authoritative bibliographic references. [Markdown](glossaries/mathematical-statistics.md) · [PDF](pdf/mathematical-statistics.pdf) · [TSV](data/mathematical-statistics.tsv) · [Sources & review notes](data/mathematical-statistics/SOURCES.md). Rebuild verification: `node scripts/render_mathematical_statistics.mjs --check`. **This standalone publication is not included in the indexed-domain or term totals above.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
