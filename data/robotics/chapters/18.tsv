@@ -1,0 +1,26 @@
+# 具身智能、视觉语言动作模型与长时任务
+Embodied AI|具身人工智能||研究智能体通过身体与物理环境相互作用来感知、学习和完成任务的领域。
+Embodied Agent|具身智能体||拥有可操作的身体或仿真身体、能够观测和作用于环境的智能系统。
+Vision–Language–Action Model|视觉语言动作模型|VLA|联合利用视觉观测、语言目标和机器人动作数据训练的策略模型。
+Vision–Language Model|视觉语言模型|VLM|共同处理图像与语言信息以进行视觉语义理解或生成的模型。
+Robot Foundation Model|机器人基础模型||在多来源机器人数据上预训练、可迁移到多类具身任务的通用模型。
+Generalist Robot Policy|通用机器人策略||在一套共享参数下处理多个物体、场景或任务的机器人动作策略。
+Action Tokenization|动作词元化||把连续或离散控制动作映射成可供序列模型处理的符号单元。
+Action Chunking|动作块预测||一次预测未来若干时间步的动作序列以减少单步解码开销的策略。
+Diffusion Policy|扩散策略||通过条件扩散生成模型学习机器人连续动作分布的策略形式。
+Autoregressive Action Policy|自回归动作策略||以先前动作或动作词元为条件逐步生成后续动作的模型。
+Language-conditioned Policy|语言条件策略||依据自然语言任务描述和当前观测选择机器人动作的控制策略。
+Visual Goal Conditioning|视觉目标条件控制||使用目标图像或视觉特征作为机器人行为的任务条件。
+Goal-conditioned Policy|目标条件策略||根据指定目标状态或表征生成动作的策略。
+Hierarchical Policy|分层策略||以高层子目标或技能选择与低层控制相结合组织长期行为的策略。
+Task and Motion Planning|任务与运动联合规划|TAMP|联合推理离散任务顺序和连续几何运动约束的规划框架。
+Long-horizon Manipulation|长时程操作||需要多阶段物体交互、状态记忆与连续规划的机器人任务。
+Skill Library|技能库||保存预定义或学习得到的机器人操作原语及调用条件的集合。
+Skill Sequencing|技能编排||根据任务目标与执行状态选择技能并安排执行顺序的过程。
+Failure Recovery Policy|失败恢复策略||当动作未达目标时根据新观测选择重试、撤销或替代行为的策略。
+Language Grounding|语言语义落地||把自然语言指令中的对象、位置和关系对应到实际可感知与可执行元素的过程。
+Spatial Reasoning|空间推理||基于位置、朝向、距离与拓扑关系推断环境状态和行动需求的能力。
+Object-centric Representation|以物体为中心的表示||用对象及其属性和关系组织视觉或机器人任务状态的表示。
+World Model|世界模型||学习或构建环境状态转移与观测关系以支持预测和规划的内部模型。
+Action Affordance|动作可供性||某物体或场景结构对特定机器人动作的可实施性信息。
+Embodied Benchmark|具身任务基准||通过可复现环境、任务与成功规则评估机器人智能体能力的测试套件。
