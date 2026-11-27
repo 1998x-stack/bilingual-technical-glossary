@@ -1,0 +1,26 @@
+# 串联机器人正向运动学与连杆参数
+Forward Kinematics|正向运动学|FK|根据关节变量与连杆几何计算末端执行器位姿的映射。
+Joint Space|关节空间||由机器人可独立控制的关节坐标组成的配置参数空间。
+Task Space|任务空间||用末端位姿或操作目标变量描述机器人任务状态的空间。
+Configuration|机器人构型||完整指定机构所有独立广义坐标的状态描述。
+Joint Variable|关节变量||决定旋转关节角度或移动关节位移的独立参数。
+Revolute Joint|旋转关节||允许两个连杆绕固定相对轴线转动的单自由度关节。
+Prismatic Joint|移动关节||允许两个连杆沿固定相对方向滑动的单自由度关节。
+Spherical Joint|球形关节||理想情况下允许相对三维旋转的机构关节。
+Fixed Joint|固定关节||在运动学模型中不允许两连接部件之间相对运动的关节。
+Joint Limit|关节限位||由机械结构或安全策略规定的关节位置、速度或力矩范围。
+Link Length|连杆长度||机构参数化中描述关节轴或关节点之间几何距离的量。
+Link Offset|连杆偏距||在指定参数约定下描述相邻关节坐标系沿轴向距离的参数。
+Denavit–Hartenberg Parameters|丹纳维特—哈滕伯格参数|DH|通过连杆长度、扭转角、偏距和关节角描述串联运动链的参数体系。
+Standard DH Convention|标准 DH 约定||使用固定变换次序建立相邻连杆坐标系的经典 DH 定义。
+Modified DH Convention|修正 DH 约定||采用另一变换次序及坐标系放置规则的 DH 参数变体。
+Product of Exponentials|指数积公式|PoE|通过关节旋量指数映射的连乘描述机器人正向运动学的形式。
+Screw Axis|螺旋轴||将转动及平移运动统一描述为一个空间运动轴及其相关参数的概念。
+Home Configuration|零位构型||所有关节取参考值时末端执行器的固定位姿。
+Space Frame Kinematics|空间坐标运动学||以全局固定参考坐标系表达关节旋量与末端变换的建模方式。
+Body Frame Kinematics|本体坐标运动学||以末端固连坐标系表达关节旋量与运动学变换的方法。
+Kinematic Calibration|运动学校准||依据外部测量估计真实机构几何参数与名义模型差异的过程。
+Forward Kinematic Chain|正运动学变换链||按关节层级逐项相乘得到末端位姿的坐标变换序列。
+Tool Center Point|工具中心点|TCP|用于定义末端工具位置与姿态参考的固定点或坐标系。
+Base Frame|基座坐标系||固定于机器人底座、用于描述关节链几何关系的参考系。
+Kinematic Redundancy|运动学冗余||关节自由度多于完成指定任务所必需维数的机构性质。
