@@ -1,0 +1,107 @@
+# 拉格朗日对偶与灵敏度分析
+Lagrange Duality|拉格朗日对偶||通过对约束引入乘子构造可给出原问题目标界的对偶问题。
+Dual Function|对偶函数||对拉格朗日函数关于原始变量取下确界所得的函数。
+Dual Problem|对偶问题||最大化拉格朗日对偶函数并满足乘子约束的问题。
+Primal Problem|原始问题||相对于其拉格朗日对偶问题而言的原优化问题。
+Weak Duality|弱对偶性||对于最小化原问题，任意对偶可行目标值不超过原始可行目标值。
+Strong Duality|强对偶性||原始问题与对偶问题的最优值相等的性质。
+Duality Gap|对偶间隙||原始问题与对偶问题最优目标值的差。
+Primal-dual Pair|原始—对偶问题对||由同一优化建模关系联系的原始问题和对偶问题。
+Primal-dual Optimality|原始—对偶最优性||结合原始可行、对偶可行及目标值相等验证两边最优的性质。
+Saddle-point Condition|鞍点条件||拉格朗日函数在原始变量与乘子方向满足适当最小最大关系。
+Minimax Theorem|极小极大定理||在规定凸凹性与紧性等条件下交换最小与最大运算的结论。
+Fenchel Conjugate|芬切尔共轭||定义为变量线性内积与原函数之差的上确界的函数。
+Fenchel–Moreau Theorem|芬切尔—莫罗定理||适当下半连续真凸函数等于其双共轭的定理。
+Biconjugate|双共轭函数||对共轭函数再取一次共轭得到的函数。
+Fenchel Duality|芬切尔对偶||利用凸共轭构造复合凸优化问题的对偶表达。
+Sensitivity Analysis|灵敏度分析||研究模型参数变化引起最优值、最优解与活跃集变化的方法。
+Perturbation Function|扰动函数||用参数描述目标或约束变化后所得最优值的函数。
+Shadow Price|影子价格||在可微与正则条件下约束右端参数边际变化对最优值的影响率。
+Marginal Value|边际价值||某项参数增加一小单位时目标最优值的变化程度。
+Complementary Dual Variable|互补对偶变量||与原始约束互补关系对应的乘子变量。
+Dual Certificate|对偶证书||通过可行的对偶解与目标界验证优化质量或最优性的证明对象。
+Primal-dual Gap|原始—对偶差距||当前原始与对偶候选目标值之间的差额。
+Dual Ascent|对偶上升法||根据对偶函数的上梯度或梯度更新乘子的迭代方法。
+Lagrangian Relaxation|拉格朗日松弛||把部分约束移入目标并对其施加乘子罚项的优化方法。
+Dual Decomposition|对偶分解||通过共享约束的乘子把原问题拆成可并行子问题的策略。
+
+# 线性规划、几何与单纯形法
+Linear Programming|线性规划|LP|目标和约束均为线性或仿射表达式的优化问题。
+Standard Form LP|线性规划标准型||常写为最小化 cᵀx、满足 Ax=b 与 x≥0 的形式。
+Canonical Form LP|线性规划规范型||将不等式和变量符号按统一约定组织的线性规划表达。
+Basic Solution|基解||选取线性独立的基列并令非基变量为零所求得的候选解。
+Basic Feasible Solution|基本可行解|BFS|既是基解又满足所有线性规划约束的解。
+Basis Matrix|基矩阵||由选定基变量对应系数组成的可逆方阵。
+Nonbasic Variable|非基变量||在当前单纯形基解中固定为零的变量。
+Extreme Point|极点||无法表示为可行集合中两个不同点的非平凡凸组合的点。
+Polyhedron|多面体||有限个线性不等式或等式定义的集合。
+Polytope|凸多胞体||有界的凸多面体，亦可表示为有限点的凸包。
+Simplex Method|单纯形法||沿基本可行解对应的顶点或边进行换基改进目标的算法。
+Primal Simplex|原始单纯形法||保持原始可行性、逐步改善目标的换基算法。
+Dual Simplex|对偶单纯形法||保持对偶可行性、逐步消除原始不可行性的算法。
+Revised Simplex|修正单纯形法||通过矩阵分解与求解线性方程避免显式完整单纯形表的实现。
+Entering Variable|入基变量||单纯形换基步骤中从非基变量选入基的新变量。
+Leaving Variable|出基变量||单纯形换基步骤中被替换出基的旧变量。
+Pivot Operation|枢轴换基操作||通过改变基与非基变量身份移动到相邻基解的步骤。
+Reduced Cost|检验数／约化成本||衡量非基变量进入基后目标一阶改进可能性的系数。
+Degenerate Vertex|退化顶点||一个顶点对应多于维度所需的活跃约束或存在零基变量的情形。
+Cycling|循环换基||单纯形法反复回到之前某个基而不推进的罕见现象。
+Bland Rule|布兰德规则||按变量最小索引选入基与出基以避免单纯形循环的规则。
+Phase I Simplex|第一阶段单纯形法||通过人工变量辅助问题寻找原问题初始可行基的阶段。
+Phase II Simplex|第二阶段单纯形法||从可行基出发优化原始目标函数的阶段。
+Farkas Lemma|法卡斯引理||给出线性不等式可行性与不可行证书二择一关系的定理。
+Linear Programming Dual|线性规划对偶||与原始 LP 对应、使用乘子构成的另一个线性规划问题。
+
+# 整数规划与组合优化
+Integer Programming|整数规划|IP|要求部分或全部决策变量取整数值的优化问题。
+Mixed-integer Programming|混合整数规划|MIP|同时包含整数变量和连续变量的数学规划模型。
+Mixed-integer Linear Programming|混合整数线性规划|MILP|具有线性目标与约束、且部分变量为整数的优化问题。
+Binary Decision Variable|二元决策变量||只允许取 0 或 1 的决策变量。
+Linear Relaxation|线性松弛||去掉整数限制、保留线性约束所得的连续优化问题。
+Integrality Gap|整数性间隙||整数最优解与松弛问题最优值之间的差异或比值。
+Branch and Bound|分支限界法||依据当前目标界对搜索树分支剪枝并维护最优解的算法框架。
+Branch and Cut|分支割平面法||在分支限界搜索中动态加入有效不等式以加强松弛的策略。
+Cutting Plane|割平面||去除部分非整数松弛解而不排除任何整数可行解的有效不等式。
+Gomory Cut|戈莫里割||从单纯形表的分数结构推导、排除当前非整数解的割。
+Valid Inequality|有效不等式||所有整数可行解都满足的额外线性约束。
+Convex Relaxation|凸松弛||以较容易求解的凸可行域或凸目标近似原优化问题。
+Big-M Formulation|大 M 建模||使用足够大的常数 M 将逻辑蕴含与激活条件写成约束的技术。
+Indicator Constraint|指示约束||由二元变量控制某条约束是否必须成立的建模构造。
+Disjunctive Programming|析取规划||用多个可行集合的逻辑或关系描述决策约束的模型。
+Set Cover Problem|集合覆盖问题||选择最少或最低成本的集合覆盖全部需求元素的优化问题。
+Knapsack Problem|背包问题||在容量约束下选择物品使总价值最大化的问题。
+Assignment Problem|指派问题||为任务与资源建立一一对应关系并优化总成本的模型。
+Vehicle Routing Problem|车辆路径问题|VRP|在车辆容量、时间等条件下设计访问客户的配送路径。
+Facility Location Problem|设施选址问题||综合设施建设成本与用户分配成本选择设施位置的模型。
+Traveling Salesperson Problem|旅行商问题|TSP|寻找经过所有指定地点并回到起点的最低成本巡回路线。
+Column Generation|列生成||只维护部分变量并按约化成本按需生成新变量的大规模 LP 方法。
+Branch and Price|分支定价||把分支定界与列生成结合以求解大规模整数规划的框架。
+Primal Heuristic|原始启发式||快速寻找可行整数解以改善当前上界的搜索方法。
+Mixed-integer Optimality Gap|混合整数最优性差距||整数 incumbent 与求解器已证目标界之间的相对或绝对差。
+
+# 非线性规划与数值求解策略
+Nonlinear Programming|非线性规划|NLP|目标或约束至少一项为非线性函数的优化问题。
+Sequential Quadratic Programming|序列二次规划|SQP|通过一系列二次规划子问题近似求解非线性约束问题的方法。
+Sequential Linear Programming|序列线性规划|SLP|反复对非线性模型线性化并求解局部 LP 子问题的算法。
+Interior-point Method|内点法|IPM|在可行域内部或障碍路径附近求解优化问题的方法族。
+Primal-dual Interior-point Method|原始—对偶内点法||同时更新原始变量、对偶乘子及互补残差的内点算法。
+Central Path|中心路径||由不同障碍参数对应的最优或 KKT 解构成的轨迹。
+Barrier Parameter|障碍参数||调节障碍函数影响强度、通常逐步趋近于零的参数。
+Trust Region|信赖域||在当前迭代点附近限制局部模型有效范围的区域。
+Trust-region Method|信赖域法||依模型预测与实际下降的一致程度调整局部搜索区域的方法。
+Line Search|线搜索||在既定搜索方向上挑选满足下降条件的步长的过程。
+Armijo Condition|阿米霍条件||要求新目标值满足足够下降的步长接受准则。
+Wolfe Conditions|沃尔夫条件||组合足够下降与曲率要求的线搜索条件。
+Strong Wolfe Conditions|强沃尔夫条件||对方向导数绝对值施加上界的沃尔夫条件变体。
+Backtracking Line Search|回溯线搜索||反复缩小试探步长直至满足接受准则的策略。
+Merit Function|功绩函数||综合目标与约束违背程度用于评价受约束迭代进展的函数。
+Filter Method|过滤器方法||利用目标下降与约束违背下降之间的偏序判断试探点的策略。
+Restoration Phase|可行性恢复阶段||当正常优化步骤受阻时集中降低约束违反程度的阶段。
+Feasibility Restoration|可行性修复||通过调整候选解使不等式或等式约束重新满足的过程。
+Augmented Lagrangian Method|增广拉格朗日法|ALM|把拉格朗日乘子项与约束罚项组合以改进约束问题求解的方法。
+Method of Multipliers|乘子法||交替最小化增广拉格朗日函数并更新乘子的算法。
+Penalty Parameter|罚参数||控制约束违反惩罚程度的非负系数。
+Stopping Criterion|停止准则||根据梯度、残差、目标变化或迭代预算判断是否终止优化的规则。
+Primal Residual|原始残差||衡量候选变量未满足原始约束程度的量。
+Dual Residual|对偶残差||衡量当前乘子与优化条件不匹配程度的量。
+Karush–Kuhn–Tucker Residual|KKT 残差||综合驻点、可行性与互补性误差度量近似最优的指标。
