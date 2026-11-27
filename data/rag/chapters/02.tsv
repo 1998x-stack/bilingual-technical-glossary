@@ -1,0 +1,26 @@
+# 数据接入、文档解析与元数据
+Data Ingestion|数据摄入||将原始资料接入检索系统并转换为可处理形式的流程。
+Document Loader|文档加载器||从文件、网站或业务系统读取文档内容的组件。
+Content Connector|内容连接器||用于对接外部内容存储或 SaaS 数据源的集成接口。
+Document Parsing|文档解析||从文件格式中提取正文、表格、版式及其他结构信息的步骤。
+Optical Character Recognition|光学字符识别|OCR|将扫描图像中的字符识别为可搜索文本的技术。
+Layout-aware Parsing|版面感知解析||利用标题、栏位、段落位置和阅读顺序解析复杂文档的方法。
+Table Extraction|表格抽取||识别表格结构并提取单元格文本和行列关系的流程。
+PDF Text Extraction|PDF 文本提取||从 PDF 的文本层还原可处理字符及其位置的过程。
+Document Normalization|文档规范化||统一编码、空白、标点及表示形式以便后续索引的步骤。
+Text Cleaning|文本清洗||去除乱码、模板噪声与无关片段以提升检索质量的过程。
+Boilerplate Removal|模板噪声移除||移除网页导航、页脚或重复说明等非正文内容的技术。
+Deduplication|内容去重||识别并删除相同或高度重复文档、片段的处理。
+Near-duplicate Detection|近重复检测||识别经过少量编辑却基本相同的内容记录。
+Document Identifier|文档标识符||为每份来源文档分配稳定且可追踪的唯一标识。
+Chunk Identifier|片段标识符||为切分后的文本片段分配可引用的稳定标记。
+Source URI|来源统一资源标识符|URI|标识文档原始位置或逻辑资源地址的字符串。
+Document Metadata|文档元数据||描述文档标题、作者、权限、时间与类型等附属信息。
+Metadata Enrichment|元数据增强||抽取或推导主题、实体、标签等字段以改进过滤与排序。
+Ingestion Timestamp|摄入时间戳||记录数据首次进入或最近一次进入索引管线的时间。
+Document Version|文档版本||标识来源文档某次确定内容快照的版本信息。
+Change Data Capture|变更数据捕获|CDC|从数据库日志等机制检测并传播数据增删改事件的方式。
+Incremental Indexing|增量建索引||只处理新文档或变化部分，而不重建全部索引的过程。
+Reindexing|重新建索引||按新解析、切块或表示规则重新创建检索索引的操作。
+Data Lineage|数据血缘||记录检索片段与上游文件、转换及版本之间关联的可追踪关系。
+Provenance Metadata|来源溯源元数据||用于回答证据追踪的文档标识、位置和版本等信息。
