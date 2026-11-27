@@ -1,0 +1,26 @@
+# 机器人仿真、系统验证与安全部署
+Robot Simulation|机器人仿真||在计算环境中近似机器人动力学、传感器与环境交互的过程。
+Physics Engine|物理引擎||数值求解接触、刚体运动及部分柔体动力学的仿真软件组件。
+Gazebo Sim|Gazebo 机器人仿真器||提供物理环境、传感器和机器人模型仿真的开源软件平台。
+MuJoCo|MuJoCo 动力学模拟器||面向接触丰富控制与机器人学习的高效多体动力学仿真引擎。
+Isaac Sim|Isaac Sim 机器人仿真平台||基于 NVIDIA Omniverse 技术的机器人场景与传感器仿真平台。
+Digital Twin|数字孪生||根据实体设备或环境的数据维持对应数字模型以辅助分析和运维的系统。
+System Identification|系统辨识||从输入输出实验估计机器人动力学或传感模型参数的过程。
+Hardware-in-the-loop|硬件在环测试|HIL|把真实控制硬件连接到仿真对象以验证闭环行为的测试方式。
+Software-in-the-loop|软件在环测试|SIL|将真实软件控制逻辑接入仿真系统以测试行为和接口的方式。
+Simulation Fidelity|仿真保真度||仿真模型对现实运动、接触和感知现象再现程度的性质。
+Collision Margin|碰撞安全裕度||在机器人几何与障碍之间额外要求的最小距离或保守边界。
+Emergency Stop|紧急停止|E-stop|在危险事件下优先停止相关运动或驱动的安全功能。
+Protective Stop|保护性停止||当系统检测到安全条件不满足时按规定安全策略停止运动的功能。
+Safety-rated Monitoring|安全等级监控||使用满足相关功能安全要求的设备或逻辑监控危险状态。
+Functional Safety|功能安全||通过工程措施降低电气、电子或可编程控制系统故障引起的风险的领域。
+Risk Assessment|风险评估||识别机器人危险源并估计风险严重程度与发生可能性的过程。
+Safety Envelope|安全运行边界||机器人允许的速度、力、空间或操作状态组成的安全约束范围。
+Human Detection|人员检测||识别共享工作区域内人员位置、移动和占用状态的感知功能。
+Safety Validation|安全验证||依据规定场景和要求检验系统安全措施是否真正有效的过程。
+Robot Benchmarking|机器人基准测试||使用标准任务、测量规则和环境比较机器人性能的方法。
+Task Success Rate|任务成功率||在规定试验集合中满足任务成功判据的运行比例。
+Trajectory Error|轨迹误差||预计或执行轨迹与参考轨迹之间位置、姿态或时间偏差的度量。
+Mean Time Between Failures|平均故障间隔|MTBF|衡量可修复系统两次故障之间平均正常运行时间的可靠性指标。
+Robustness Testing|鲁棒性测试||通过扰动、传感退化和场景变化检查机器人行为稳定性的测试流程。
+Deployment Monitoring|部署运行监控||持续记录机器人健康、控制偏差、失败事件和环境变化的运行治理过程。
