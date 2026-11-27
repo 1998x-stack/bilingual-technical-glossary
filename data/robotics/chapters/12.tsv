@@ -1,0 +1,26 @@
+# 路径搜索、配置空间与经典运动规划
+Configuration Space|构型空间|C-space|所有满足机构配置参数定义的点组成的空间。
+Configuration Obstacle|构型障碍空间|C-obs|导致机器人与障碍碰撞的关节或位姿配置集合。
+Free Configuration Space|自由构型空间|C-free|不发生碰撞并满足规定几何约束的构型集合。
+Collision Checking|碰撞检测||判断候选机器人构型或连续运动路径是否与环境几何冲突的过程。
+Self-collision Checking|自碰撞检测||识别机器人自身不同连杆或部件之间不允许的几何相交。
+Collision Geometry|碰撞几何||为快速距离和求交运算使用的简化或原始几何模型。
+Distance Query|几何距离查询||计算两个物体或构型之间的最近距离及关联几何信息的操作。
+Graph Search|图搜索||在节点和边描述的离散空间中寻找满足目标的可达路径的方法。
+Breadth-first Search|广度优先搜索|BFS|按离起点的边数逐层扩展图节点、可求无权最短路的算法。
+Dijkstra Algorithm|迪杰斯特拉算法||在非负边权图中按当前最小累计代价扩展节点的最短路径算法。
+A-star Search|A 星搜索|A*|使用已付出代价与到目标启发式估计之和决定搜索优先级的算法。
+Heuristic Function|启发式函数||估计搜索状态到目标剩余代价以指导扩展顺序的函数。
+Admissible Heuristic|可采纳启发式||对最小剩余代价始终不高估的启发式估计。
+Consistent Heuristic|一致启发式||满足图边三角型不等式条件的启发式函数。
+Grid-based Planning|栅格规划||将空间离散为栅格单元并在邻接关系图上搜索路径的方法。
+Visibility Graph|可见图||用障碍物顶点等关键点和无碰撞直连边组成的规划图。
+Voronoi Roadmap|Voronoi 路网||通过障碍物之间相对等距的几何骨架构建可通行路径网络的技术。
+Wavefront Planner|波前规划||从目标向外传播离散代价或距离并沿梯度回溯路径的算法。
+Potential Field Method|人工势场法||将目标吸引和障碍排斥建模为势能或速度场引导运动的方法。
+Local Minimum Trap|局部极小值陷阱||人工势场等局部规划方法停留在非目标稳定点的现象。
+Path Smoothing|路径平滑||减少离散路径折角并改善几何连续性和可执行性的后处理。
+Shortest Path|最短路径||在给定长度或权重定义下累计代价最小的可行路径。
+Path Clearance|路径净空||路径与最近障碍物之间的最小几何距离。
+Homotopy Class|同伦类||在不穿过障碍的连续变形意义下属于同一类型的路径集合。
+Completeness|规划完备性||在满足算法假设时若存在可行解则最终能够找到的保证性质。
