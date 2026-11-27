@@ -1,0 +1,26 @@
+# Runtime API、Driver API 与错误处理
+CUDA Context|CUDA 上下文|Context|保存设备执行状态、模块、内存与其他资源关联关系的运行环境抽象。
+Primary Context|主上下文||由 CUDA Runtime 通常复用并由 Driver API 管理的每设备上下文机制。
+Context Switching|上下文切换||在不同设备上下文之间切换当前执行与资源管理状态的过程。
+cudaGetDeviceCount()|查询 CUDA 设备数|cudaGetDeviceCount|返回当前环境可用 CUDA 设备数量的 Runtime API。
+cudaSetDevice()|选择当前设备|cudaSetDevice|在调用主机线程中设置当前 CUDA 设备的运行时函数。
+cudaGetDeviceProperties()|查询设备属性|cudaGetDeviceProperties|获取设备线程限制、内存与硬件能力等属性的 Runtime API。
+cudaDeviceSynchronize()|设备同步函数|cudaDeviceSynchronize|等待当前设备上下文相关先前工作完成并报告部分异步错误的 API。
+cudaStreamCreate()|创建 CUDA 流|cudaStreamCreate|创建可用于设备任务排序与并发执行的流对象的 Runtime API。
+cudaStreamDestroy()|销毁 CUDA 流|cudaStreamDestroy|释放流对象资源，已提交的异步操作仍按 API 语义处理的函数。
+cudaEventCreate()|创建 CUDA 事件|cudaEventCreate|创建用于记录进度或测量时间的事件对象的函数。
+cudaEventElapsedTime()|计算 CUDA 事件耗时|cudaEventElapsedTime|根据两个已记录的事件返回近似毫秒间隔的 API。
+cudaGetLastError()|获取并清除最后 CUDA 错误|cudaGetLastError|返回并重置当前主机线程维护的 Runtime 最近错误状态的 API。
+cudaPeekAtLastError()|查看最后 CUDA 错误|cudaPeekAtLastError|返回最近 Runtime 错误状态但不清除该状态的函数。
+cudaError_t|CUDA 错误码类型|cudaError_t|表示 CUDA Runtime API 调用状态的枚举类型。
+cudaSuccess|CUDA 成功状态|cudaSuccess|表示 Runtime API 操作返回成功的状态值。
+CUDA_ERROR_INVALID_VALUE|CUDA Driver 参数错误|CUDA_ERROR_INVALID_VALUE|Driver API 中表示传入参数无效的错误码之一。
+CUresult|Driver API 返回状态类型|CUresult|表示 CUDA Driver API 操作成功或失败状态的枚举类型。
+CUdevice|Driver API 设备句柄|CUdevice|标识 CUDA Driver API 中特定设备的整数句柄类型。
+CUcontext|Driver API 上下文句柄|CUcontext|表示 CUDA 上下文对象的 Driver API 句柄。
+CUmodule|Driver API 模块句柄|CUmodule|标识已加载设备模块的 Driver API 不透明句柄。
+CUfunction|Driver API 核函数句柄|CUfunction|表示模块中可调用设备 Kernel 的不透明函数句柄。
+cuLaunchKernel()|Driver API 核函数启动|cuLaunchKernel|使用显式网格、块尺寸及参数等信息提交 Kernel 的 Driver API。
+cuModuleLoad()|加载设备代码模块|cuModuleLoad|从文件加载 CUDA 模块的 Driver API。
+cuCtxSetCurrent()|设置当前 CUDA 上下文|cuCtxSetCurrent|将指定上下文设置为当前主机线程所用上下文的 Driver API。
+Runtime–Driver Interoperability|运行时与驱动接口互操作||在同一程序中协调 CUDA Runtime API 和 Driver API 管理资源与上下文的能力。
