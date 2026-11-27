@@ -1,0 +1,26 @@
+# 传统视觉：边缘、形态学与区域分割
+Edge Detection|边缘检测||识别图像强度或颜色出现显著空间变化的位置的任务。
+Image Gradient|图像梯度||描述图像亮度在水平和垂直方向变化率的向量。
+Sobel Operator|Sobel 算子||使用离散差分卷积核估计图像梯度的经典边缘算子。
+Scharr Operator|Scharr 算子||改善小核离散梯度方向近似的图像微分算子。
+Canny Edge Detector|Canny 边缘检测||结合高斯平滑、梯度、非极大值抑制和双阈值连接的边缘算法。
+Laplacian Operator|拉普拉斯算子||对图像计算二阶空间导数以突出快速变化区域的算子。
+Laplacian of Gaussian|高斯拉普拉斯|LoG|先用高斯平滑再应用拉普拉斯算子的边缘或斑点检测方法。
+Difference of Gaussians|高斯差分|DoG|通过不同尺度高斯模糊图相减近似尺度空间中的响应。
+Non-maximum Suppression for Edges|边缘非极大值抑制||沿梯度方向保留局部响应峰值以细化边缘的步骤。
+Hysteresis Thresholding|滞后阈值法||通过高低阈值及连通性保留可靠边缘的处理。
+Binary Thresholding|二值阈值分割||按照像素值与阈值比较将图像分为两个类别的方法。
+Otsu Thresholding|大津阈值法|Otsu|根据最大化类间方差原则自动选择灰度二值化阈值的技术。
+Adaptive Thresholding|自适应阈值||依据局部区域统计而非单一全局阈值进行图像二值化的策略。
+Mathematical Morphology|数学形态学||使用结构元素对二值或灰度图像形状执行集合式运算的理论。
+Erosion|腐蚀||在结构元素作用下收缩前景区域或取局部下界的形态学操作。
+Dilation|膨胀||在结构元素作用下扩展前景区域或取局部上界的形态学操作。
+Opening|开运算||先腐蚀再膨胀、常用于去除小前景结构的形态学操作。
+Closing|闭运算||先膨胀再腐蚀、常用于填补小背景空隙的形态学操作。
+Structuring Element|结构元素||规定形态学操作考察邻域形状和尺度的模板。
+Connected-component Labeling|连通域标记||为二值图中彼此连通的像素集合分配不同标识的算法。
+Watershed Segmentation|分水岭分割||将图像看作拓扑表面并从种子区域构造分割边界的方法。
+Region Growing|区域生长||从初始种子开始按相似性规则逐步合并邻接像素的分割方法。
+GrabCut|GrabCut 图割分割||结合前景背景颜色模型和图割优化交互分离目标的算法。
+Hough Transform|霍夫变换||把图像点映射到参数空间以检测满足直线或圆形等几何关系的结构。
+Contour Extraction|轮廓提取||从分割结果或边缘集合中恢复目标边界曲线的过程。
