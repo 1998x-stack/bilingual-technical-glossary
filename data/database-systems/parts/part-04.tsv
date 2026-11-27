@@ -1,0 +1,107 @@
+# 预写日志、检查点与故障恢复
+Write-ahead Logging|预写日志|WAL|数据页修改持久化之前先把相应日志记录持久化的恢复协议。
+Log Sequence Number|日志序列号|LSN|为日志记录分配的单调位置或编号，常用于重做及恢复排序。
+Log Record|日志记录||记录事务更新、控制事件或恢复状态的持久化日志条目。
+Redo Log|重做日志||用于重放已发生修改使存储页恢复到应有状态的日志信息。
+Undo Log|撤销日志||用于抵消未提交事务修改或恢复旧数据版本的记录。
+Physiological Logging|生理日志||同时指定物理页面和该页面内部逻辑操作的日志记录方式。
+Physical Logging|物理日志||描述具体字节位置与修改前后映像等物理变更的日志方式。
+Logical Logging|逻辑日志||记录可在数据库逻辑对象层面重新执行的操作而非全部字节差异。
+PageLSN|页日志序列号|PageLSN|表示某数据页已经应用到哪个日志位置的页头元数据。
+Checkpoint|检查点||记录恢复所需系统状态并缩短故障后日志处理工作量的机制。
+Fuzzy Checkpoint|模糊检查点||允许正常事务继续运行而在并发修改中记录恢复起始状态的检查点。
+Dirty Page Table|脏页表|DPT|记录可能尚未刷盘页面及其最早相关日志位置的恢复元数据。
+Transaction Table|事务表||在恢复分析中跟踪活动事务状态和最近日志位置的表。
+ARIES|ARIES 恢复算法|ARIES|采用分析、重做、撤销阶段并支持 WAL 与补偿日志的经典恢复方案。
+Analysis Phase|恢复分析阶段||根据日志与检查点重建活动事务及脏页表的阶段。
+Redo Phase|恢复重做阶段||对需要的已记录操作重新应用以恢复崩溃前数据库页面状态的阶段。
+Undo Phase|恢复撤销阶段||撤销未完成事务影响并记录补偿操作的阶段。
+Compensation Log Record|补偿日志记录|CLR|记录已经执行撤销操作、帮助崩溃后重复恢复的专用日志。
+Write-ahead Rule|日志先行规则||包含数据页修改的日志必须在该数据页写入持久介质前先持久化的要求。
+Commit Log Record|提交日志记录||表示事务完成提交决定并可用于恢复判定的日志条目。
+Crash Recovery|崩溃恢复||系统异常停止后依靠日志与持久数据重建正确状态的过程。
+Media Recovery|介质恢复||存储设备损坏时从备份与归档日志等材料恢复数据库的过程。
+Point-in-time Recovery|时间点恢复|PITR|从备份和连续日志恢复到指定历史时间点的机制。
+Log Truncation|日志截断||在确认某段日志不再被恢复或复制需要后安全移除或复用的操作。
+Recovery Testing|恢复测试||模拟进程或系统故障并验证事务原子性、持久性和恢复时间的实验。
+
+# 复制、分片与分布式数据一致性
+Database Replication|数据库复制||把逻辑数据或日志传播到多个节点以提升可靠性与服务能力的机制。
+Primary–Replica Replication|主从副本复制||由主副本接收主要写入并向其他副本传播更新的复制架构。
+Multi-primary Replication|多主复制||允许多个节点接受写入、需要处理传播顺序与冲突的架构。
+Synchronous Replication|同步复制||在写入成功确认前等待满足配置规则的副本完成指定同步步骤。
+Asynchronous Replication|异步复制||写入可先向客户端确认，再在后台传播至其他副本。
+Replication Lag|复制滞后||源副本进度与目标副本已应用更新之间的时间或日志位置差。
+Change Data Capture|变更数据捕获|CDC|从数据库日志或其他变更来源持续提取增删改事件的机制。
+Log Shipping|日志传送||把主节点持久日志传递并应用到其他节点以维护副本的技术。
+Read Replica|只读副本||主要承担读请求而通常不接受普通业务写入的数据库副本。
+Replica Failover|副本故障切换||在当前主副本失效时选择另一副本接管服务的过程。
+Database Sharding|数据库分片||按键、哈希或范围把逻辑数据水平划分并分布到多个节点的技术。
+Shard Key|分片键||用于决定记录归属哪个数据分片的字段或字段组合。
+Range Partitioning|范围分区||根据键区间划分数据，以支持顺序范围查询和数据局部性。
+Hash Partitioning|哈希分区||通过键的哈希值将数据均匀映射到若干分区的策略。
+Consistent Hashing|一致性哈希||把键与节点映射到环形空间、降低成员变化时重分配量的分布方法。
+Shard Rebalancing|分片重平衡||随着节点或负载变化迁移分片以改善容量分配的过程。
+Hot Shard|热点分片||承担远超平均请求量或存储负担的分片。
+Distributed Query Execution|分布式查询执行||把单个查询划分成跨节点计算阶段并交换中间数据的处理过程。
+Distributed Transaction|分布式事务||跨多个分片或资源协调原子提交与隔离规则的事务。
+Two-phase Commit|两阶段提交|2PC|协调者先收集参与方准备状态，再宣布统一提交或回滚决议的协议。
+Distributed Consensus|分布式共识||节点在指定故障与网络假设下就同一决定达成一致的任务。
+Raft Replication|Raft 日志复制||通过领导者任期、复制日志和仲裁规则维护一致复制状态的协议机制。
+Quorum Read|仲裁读||从满足指定仲裁规则的副本集合读取数据以支持目标读取语义的操作。
+Quorum Write|仲裁写||将写入提交到满足指定仲裁规则的副本集合的操作。
+Consistency–Availability Tradeoff|一致性—可用性权衡||分区等故障条件下不同数据一致性保证与请求可响应性之间的取舍。
+
+# OLTP、OLAP、列存与实时分析
+Online Transaction Processing|联机事务处理|OLTP|面向大量较短且高并发读写事务的数据库工作负载。
+Online Analytical Processing|联机分析处理|OLAP|面向复杂聚合、扫描和历史数据分析的数据库工作负载。
+Hybrid Transactional and Analytical Processing|事务分析混合处理|HTAP|在一个或紧密协同的架构中兼顾事务写入和分析查询的能力。
+Analytical Query|分析型查询||通常扫描较多数据、进行多表关联及聚合计算的查询。
+Transactional Query|事务型查询||通常涉及少量记录、对响应时间和事务正确性要求较高的请求。
+Row-oriented Storage|行式存储||把一条记录的多数属性值相邻存放的物理布局。
+Column-oriented Storage|列式存储||把同列大量记录值连续或成组存放的物理布局。
+Column Segment|列段||把一列数据分批保存并独立压缩与读取的持久化数据单元。
+Column Pruning|列裁剪||在执行扫描前跳过查询不需要读取的列。
+Zone Map|区域映射||记录数据块每列的最小最大值以跳过不满足过滤条件的块。
+Data Skipping|数据跳读||利用块级统计或索引跳过不可能满足条件的数据区域。
+Dictionary Encoding|字典编码||用短代码替换重复值、另存代码到原值映射的压缩方式。
+Run-length Encoding|游程编码|RLE|把连续相同数据压缩为值与重复长度的编码方式。
+Bit Packing|位打包||按实际取值范围使用尽可能少位数密集存放数值的压缩方法。
+Delta Encoding|差分编码||存储相邻数值之间的差而非完整原值的编码方式。
+Materialized View|物化视图||预先计算并持久保存某个查询结果以便复用的数据对象。
+Materialized View Maintenance|物化视图维护||在底层数据变化后更新已持久化查询结果的流程。
+Incremental View Maintenance|增量视图维护|IVM|只根据新增、删除或修改记录计算视图差异的维护技术。
+Star Schema|星型模式||以事实表为中心连接多个维度表的数据仓库模型。
+Fact Table|事实表||保存业务事件度量值及指向维度实体键的数据仓库表。
+Dimension Table|维度表||保存分析维度属性、供事实表关联筛选的数据仓库表。
+Data Cube|数据立方体||按多个维度汇总数值指标、支持不同切片与钻取的分析结构。
+MPP Database|大规模并行数据库|MPP|把分析任务分布到多个计算节点并行处理的数据库架构。
+Data Lakehouse|数据湖仓一体||结合数据湖文件开放性与仓库管理及事务能力的数据平台架构。
+Vectorized Column Scan|列式向量扫描||批量读取压缩或解码列数据并以向量化算子处理的执行方式。
+
+# 性能调优、安全、运维与系统测试
+Query Latency|查询延迟||从数据库收到请求到向调用方返回结果所花费的时间。
+Transaction Throughput|事务吞吐量||数据库单位时间内成功完成的事务数量。
+Transactions per Second|每秒事务数|TPS|衡量事务处理吞吐的常用指标。
+Tail Latency|尾部延迟||请求延迟分布中 P95、P99 等高百分位响应时间。
+Connection Pool|连接池||复用客户端到数据库的连接以控制建立连接与并发管理成本的组件。
+Prepared Statement|预编译语句||将语句准备和参数绑定分开、可能复用解析或计划结果的执行接口。
+Plan Cache|执行计划缓存||保存查询解析或优化后的执行计划供后续重复使用的缓存结构。
+Parameter Sniffing|参数嗅探||优化器以初次或特定绑定参数值选择计划、可能不适应其他参数分布的现象。
+Query Profiling|查询性能剖析||记录算子耗时、扫描行数、缓冲命中及其他指标定位性能瓶颈的过程。
+EXPLAIN Plan|执行计划解释|EXPLAIN|显示查询优化器所选访问路径和物理执行算子的诊断输出。
+EXPLAIN ANALYZE|实测执行计划|EXPLAIN ANALYZE|执行查询并展示实际耗时、行数等指标的分析方式，具体语义依 DBMS 而异。
+Index Tuning|索引调优||依据查询与写入负载选择索引键、顺序和覆盖字段的优化过程。
+Slow Query Log|慢查询日志||记录超过时间阈值或其他条件查询的诊断日志。
+Database Monitoring|数据库监控||持续采集数据库可用性、查询、内存、I/O 与复制状态指标的实践。
+Backup|数据库备份||创建可用于数据恢复的独立持久副本的操作。
+Full Backup|全量备份||复制选定恢复范围内全部所需数据状态的备份方式。
+Incremental Backup|增量备份||只保存相对参考备份或时间点发生变化的数据部分的方式。
+Recovery Point Objective|恢复点目标|RPO|业务允许灾难恢复后最多丢失的数据时间跨度。
+Recovery Time Objective|恢复时间目标|RTO|业务允许数据库服务在故障后恢复的最长时间目标。
+Database Authentication|数据库身份认证||核实用户、服务或应用对数据库访问身份的过程。
+Role-based Access Control|基于角色的访问控制|RBAC|根据预定义角色分配数据库操作和对象权限的授权模型。
+Row-level Security|行级安全|RLS|依据当前调用者或策略为数据库查询限制可见记录的能力。
+Encryption at Rest|静态数据加密||对数据库持久存储或备份中的信息进行加密保护。
+SQL Injection|SQL 注入||攻击者把恶意 SQL 片段插入未正确参数化的查询以改变执行语义的漏洞。
+Fault Injection Testing|故障注入测试||主动制造节点崩溃、磁盘故障或网络分区以验证数据库恢复和一致性的测试。
