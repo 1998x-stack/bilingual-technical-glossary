@@ -63,7 +63,7 @@ Micro Averaging|微平均||先汇总各类别 TP、FP、FN 再计算总体指标
 Weighted Averaging|加权平均||按类别样本量等预定权重求类别指标平均值的方式。
 Confusion Matrix|混淆矩阵||按真实类别和预测类别交叉统计样本数量的矩阵。
 Exact Match|完全匹配率|EM|预测答案与参考答案在约定规范化下完全一致的样本比例。
-BLEU|双语评估替换指标|BLEU|基于修改后 N-gram 精确率和长度惩罚的机器翻译自动评价指标。
+BLEU|机器翻译评分指标|BLEU|基于修改后 N-gram 精确率和长度惩罚的机器翻译自动评价指标。
 ROUGE|面向摘要的召回指标族|ROUGE|根据与参考摘要重合的 N-gram 或最长公共子序列评价文本摘要的指标族。
 METEOR|METEOR 翻译评价指标|METEOR|利用词形、同义及序列对齐信息衡量候选译文与参考的指标。
 chrF|字符 N 元 F 分数|chrF|以字符 N-gram 精确率和召回率计算机器翻译质量的指标。
