@@ -9,7 +9,7 @@ cuRAND|CUDA 随机数生成库|cuRAND|在 GPU 或主机接口上提供伪随机�
 NCCL|NVIDIA 集合通信库|NCCL|优化多个 GPU 或多个节点间 AllReduce 等集合通信操作的库。
 NVSHMEM|NVIDIA 共享内存编程库|NVSHMEM|提供跨 GPU 对称内存和单边通信语义的并行编程库。
 Thrust|Thrust 并行算法库|Thrust|提供类似 C++ STL 的并行容器和算法模板的 CUDA 生态库。
-CUB|CUDA 无约束块级原语库|CUB|提供设备、线程块与线程束层级归约、扫描和排序等模板算法的库。
+CUB|CUDA 并行算法原语库|CUB|为设备、线程块和线程束层级提供归约、扫描、排序等可复用并行原语的模板库。
 NPP|NVIDIA 性能原语库|NPP|提供图像处理、信号处理和其他基础数值运算的 GPU 优化函数。
 CUTLASS|CUDA 矩阵乘法模板库|CUTLASS|面向 GEMM 和相关算子的可组合 CUDA C++ 模板组件集合。
 cuTENSOR|CUDA 张量线性代数库|cuTENSOR|为张量收缩、置换与归约等操作提供高性能实现的 CUDA 库。
