@@ -1,0 +1,26 @@
+# 访存合并、带宽与数据移动优化
+Memory Coalescing|内存访问合并||warp 中相邻或适当分布的全局访存访问被硬件组合为较少内存事务的行为。
+Coalesced Access|合并访问||使 warp 的全局内存请求高效映射到少量存储事务的访问模式。
+Strided Access|跨步访问||相邻逻辑线程或元素以大于一个元素的间隔访问内存的模式。
+Uncoalesced Access|非合并访问||因地址分布分散导致实际内存事务远多于有效数据需要的访问模式。
+Memory Bandwidth|内存带宽||存储系统单位时间可传输的数据量。
+Effective Bandwidth|有效带宽||根据程序实际有用数据字节数与运行时间计算出的数据吞吐率。
+Peak Bandwidth|峰值带宽||按硬件规格估计的理论最大数据传输速率。
+Bandwidth Utilization|带宽利用率||测得数据吞吐与某个峰值或参考带宽的比例。
+Memory Latency|内存访问延迟||从发出内存请求到相关数据可用于后续计算的时间。
+Cache Hit Rate|缓存命中率||访问请求在指定缓存层找到所需数据的比例。
+Cache Line|缓存行||缓存系统存储与管理的一段连续数据基本单元。
+Cache Residency|缓存驻留||特定数据在某级缓存中保持可供命中的状态。
+L2 Persistence|L2 缓存持留||在支持硬件上为特定工作集设置 L2 缓存保留倾向的优化能力。
+Read-only Data Cache|只读数据缓存||用于加速只读访存路径的数据缓存机制，行为依 GPU 架构变化。
+Global Load Efficiency|全局加载效率||衡量有用加载字节与实际传输开销关系的一类分析指标。
+Memory Throughput|内存吞吐率||统计期间通过指定内存层级的实际读写字节速率。
+Address Calculation|地址计算||为全局或共享内存访存计算指针偏移和索引的指令操作。
+Vectorized Load|向量化加载||单条指令从内存读取多个连续标量元素的访问模式。
+Vectorized Store|向量化写入||单条指令向内存存放多个连续标量元素的访问模式。
+Data Reuse|数据复用||对已加载数据执行多次计算以减少重复访存的优化策略。
+Operational Intensity|运算强度||对特定工作负载的每字节数据移动所执行运算数量，常用于性能建模。
+Memory Prefetch|内存预取||在使用数据前提前发起或建议访存以隐藏后续延迟的策略。
+Warp Access Pattern|线程束访问模式||同一 warp 中各 lane 对地址空间的相对访问关系。
+Load Balancing Across Warps|线程束间负载均衡||在 warp 之间合理分配数据和工作以降低等待与尾部不均衡。
+Cache Thrashing|缓存抖动||工作集互相驱逐导致同一数据被反复从较慢存储层重新加载的现象。
