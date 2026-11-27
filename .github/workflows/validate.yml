@@ -23,6 +23,8 @@ jobs:
           node --check site/term.js
           node --check docs/app.js
           node --check docs/term.js
+      - name: Verify Computer Vision source and publication mirrors
+        run: node scripts/render_computer_vision.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
