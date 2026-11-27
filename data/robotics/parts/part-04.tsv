@@ -1,0 +1,107 @@
+# 采样式规划、轨迹优化与动力学可行性
+Sampling-based Planning|采样式运动规划||通过随机或确定性采样探索高维构型空间连通性的规划方法。
+Probabilistic Roadmap|概率路图法|PRM|对自由构型采样、连接邻近节点并在路图上查询路径的方法。
+Rapidly-exploring Random Tree|快速探索随机树|RRT|通过向随机状态扩展树结构逐步探索高维可行空间的算法。
+RRT-star|渐近最优随机树|RRT*|通过重连改善树路径代价并在假设下渐近达到最优的采样规划算法。
+Bidirectional RRT|双向快速随机树||从起点和终点分别扩展随机树并尝试连接的规划方式。
+Informed RRT-star|启发采样 RRT*|Informed RRT*|在已有路径成本上界限定的潜在改进区域内重点采样的算法。
+Kinodynamic Planning|运动动力学约束规划||同时考虑状态演化与控制输入约束寻找可执行轨迹的规划任务。
+State Lattice|状态格图||在离散状态与预先生成运动原语上搜索可行路径的规划结构。
+Motion Primitive|运动原语||可复用的短时可执行运动或控制片段。
+Trajectory|轨迹||带有时间参数、规定机器人状态随时间演化的函数或离散序列。
+Path|路径||仅描述配置或位置经过的空间曲线、通常不规定到达时刻。
+Time Parameterization|路径时间参数化||为已有几何路径分配速度、加速度和时间关系的步骤。
+Trajectory Optimization|轨迹优化||在动力学与碰撞约束下最小化轨迹代价的数值优化问题。
+CHOMP|协变哈密顿优化运动规划|CHOMP|通过平滑与障碍代价梯度迭代改进机器人轨迹的算法。
+STOMP|随机轨迹优化运动规划|STOMP|在轨迹周围采样噪声扰动并按成本更新的规划算法。
+TrajOpt|轨迹优化规划器|TrajOpt|将碰撞等约束局部凸化并迭代求解的机器人轨迹规划框架。
+Direct Collocation|直接配点法||在离散时间节点同时优化状态和控制并约束动力学缺陷的最优控制离散化方法。
+Direct Shooting|直接打靶法||以控制参数为决策变量、通过前向动力学积分求解轨迹优化的方法。
+Minimum-jerk Trajectory|最小加加速度轨迹||通过最小化 jerk 的平方积分获得较平滑运动的轨迹设计。
+Jerk Constraint|加加速度约束||限制加速度随时间变化率大小以降低机械冲击的轨迹限制。
+Velocity Constraint|速度约束||限制关节或移动平台运动速度大小的条件。
+Acceleration Constraint|加速度约束||限制机器人状态二阶时间变化率的运动条件。
+Torque Constraint|力矩约束||限制执行器实际可产生或安全可用关节力矩的条件。
+Chance Constraint|机会约束||要求在给定随机不确定性下约束违反概率不超过指定阈值的条件。
+Trajectory Feasibility|轨迹可行性||轨迹满足关节限位、碰撞、动力学和输入约束的性质。
+
+# 自主导航、局部规划与动态避障
+Autonomous Navigation|自主导航||让机器人基于环境感知和目标位置规划并控制安全移动的系统能力。
+Global Planner|全局规划器||根据地图与目标在较大环境范围内生成全局参考路径的组件。
+Local Planner|局部规划器||根据近场障碍和当前状态持续调整短期运动指令的算法。
+Global Path|全局路径||基于较大地图和目标生成的粗粒度导航参考路线。
+Local Trajectory|局部轨迹||结合即时环境约束和运动学限制生成的短期带时间运动计划。
+Reactive Obstacle Avoidance|反应式避障||根据即时传感测量快速调整动作以躲避障碍的策略。
+Dynamic Window Approach|动态窗口法|DWA|在短时可达速度空间中采样并评价候选局部运动轨迹的方法。
+Dynamic Window Based Planner|动态窗口规划器|DWB|将速度采样轨迹与模块化评价函数结合的局部控制方案。
+Timed Elastic Band|时间弹性带|TEB|联合优化离散路径点及其时间间隔以满足动态约束的局部规划方法。
+Pure Pursuit Controller|纯跟踪控制器||根据路径上预瞄点计算移动平台转向或曲率指令的几何控制法。
+Regulated Pure Pursuit|约束纯跟踪||根据障碍距离、曲率与目标接近程度调节跟踪速度的纯跟踪变体。
+Stanley Controller|斯坦利路径跟踪控制器||结合横向偏差和航向误差生成车辆转向控制的算法。
+Model Predictive Path Integral|模型预测路径积分控制|MPPI|以随机控制序列采样和代价加权更新有限时域动作的控制算法。
+Elastic Band Planner|弹性带规划器||把路径表示成可变形节点链并根据障碍和光滑约束调整的算法。
+Velocity Obstacle|速度障碍|VO|描述在给定时间范围可能导致与移动障碍碰撞的相对速度集合。
+Reciprocal Velocity Obstacle|互惠速度障碍|RVO|假定多个移动体共同承担避碰速度变化的多智能体避障框架。
+Optimal Reciprocal Collision Avoidance|最优互惠碰撞规避|ORCA|使用速度空间半平面约束计算局部互惠无碰撞速度的算法。
+Dynamic Obstacle|动态障碍物||位置或运动状态随时间发生变化、需要预测的环境障碍。
+Collision Prediction|碰撞预测||根据机器人和其他物体未来运动估计可能发生接触的时间或位置。
+Navigation Goal|导航目标||机器人需要到达的目标位姿或允许终止的空间区域。
+Goal Tolerance|目标容差||判定已到达目标时允许的位置与角度误差范围。
+Path Following|路径跟随||在未严格要求时间轨迹情况下沿给定几何路线移动的控制任务。
+Recovery Behavior|导航恢复行为||当规划或控制失败时执行清障、旋转、后退等受限恢复动作的策略。
+Behavior Tree Navigator|行为树导航器||通过行为树组织规划、控制、恢复与任务终止逻辑的导航组件。
+Waypoint Following|航点跟随||按顺序前往多个预定义中间目标的导航任务。
+
+# 机器人操作、抓取规划与灵巧手
+Robotic Manipulation|机器人操作||使用机械臂或多指机构改变物体位姿、状态或关系的任务领域。
+Grasp|抓取||通过接触及施力约束控制目标物体相对机器人运动的操作。
+Grasp Planning|抓取规划||根据目标几何、摩擦与机构能力选择抓取姿态和接触配置的过程。
+Grasp Pose|抓取位姿||描述手爪或末端执行器在成功接触时所需的位置和朝向。
+Pre-grasp Pose|预抓取位姿||用于接近物体、尚未发生主要抓取接触的末端参考姿态。
+Gripper|夹持器||通过手指、平行爪或其他机构对物体施加约束和作用力的末端工具。
+Parallel-jaw Gripper|平行夹爪||通过两爪沿相对平行路径开合夹持物体的抓手。
+Suction Gripper|真空吸附抓手||通过负压及密封接触固定物体的末端执行器。
+Multi-finger Hand|多指灵巧手||具有多个可控手指、可执行复杂抓取和物内操作的机械手。
+Finger Gaiting|指尖换步||通过依次释放并重建手指接触以改变物体抓持状态的操作策略。
+In-hand Manipulation|手内操作||在物体仍被手掌或手指控制时改变其姿态或接触关系的行为。
+Pick-and-place|抓取放置||把物体从一个位置抓起、移动并放到指定目标位置的任务。
+Grasp Stability|抓取稳定性||抓取接触在规定外力和扰动下保持物体受控的性质。
+Force Closure|力封闭||在满足接触力锥约束时可平衡任意方向外部广义力的理想抓取性质。
+Form Closure|形封闭||仅凭几何接触约束阻止物体所有无穷小允许运动的性质。
+Grasp Wrench Space|抓取力旋量空间|GWS|所有可由接触力组合产生的物体广义力矩集合。
+Grasp Quality Metric|抓取质量指标||量化抓取抗扰动、裕量或可操作性等性质的评分函数。
+Contact Point|接触点||机器人表面与物体或环境发生机械作用的位置。
+Contact Normal|接触法线||在接触处定义法向压缩或分离方向的表面单位向量。
+Friction Cone|摩擦锥||在库仑摩擦假设下接触点可产生的切向与法向力集合。
+Grasp Affordance|抓取可供性||物体局部形状或功能对特定抓取方式的可实现性提示。
+Task-oriented Grasping|任务导向抓取||不仅要求抓稳，还考虑后续操作目标及工具功能的抓取规划。
+Bimanual Manipulation|双臂协同操作||通过两条机械臂共同接触、搬运或调整物体的操作方式。
+Handover|物体交接||在人与机器人或两个机器人之间安全转移物体控制权的动作。
+Placement Planning|放置规划||选择物体目标位姿及释放路径以满足稳定性与任务约束的过程。
+
+# 接触动力学、柔顺性与力觉交互
+Contact Dynamics|接触动力学||分析机器人与环境碰撞、持续接触及摩擦作用下运动的力学模型。
+Contact Force|接触力||接触表面间通过法向压缩和切向摩擦产生的作用力。
+Normal Force|法向力||垂直于接触面的接触力分量。
+Tangential Force|切向力||沿接触切平面方向施加的摩擦或剪切力。
+Contact Complementarity|接触互补条件||描述接触间隙与法向力不能同时为正的数学约束关系。
+Unilateral Constraint|单侧约束||只允许一个方向受限、例如接触不能相互穿透的机械约束。
+Coulomb Friction Cone|库仑摩擦锥||满足切向力范数不超过摩擦系数乘法向压力的接触力集合。
+Stick–Slip Transition|黏滑转换||接触由无相对滑动转变为滑动或反向变化的动力学现象。
+Contact Mode|接触模式||说明特定接触点处于分离、粘着或滑动等状态的离散变量。
+Rigid Contact Approximation|刚性接触近似||假定接触点无明显局部弹性变形并直接满足几何约束的模型。
+Compliant Contact Model|柔性接触模型||利用接触刚度、阻尼等参数描述穿透近似与作用力关系的模型。
+Contact Stiffness|接触刚度||描述接触压缩变形与反力变化之间局部关系的参数。
+Contact Damping|接触阻尼||描述接触力对相对运动速度依赖的耗散系数。
+Passivity|无源性||系统无法从零储能条件下净产生超出输入的能量的性质。
+Backdrivability|反向驱动能力||外部作用力能否较容易通过机械传动使执行器输出端运动的性质。
+Compliance|机械柔顺性||机构在外力作用下产生可控形变或位移的能力。
+Stiffness Control|刚度控制||调节期望位移与产生接触力之间关系的控制技术。
+Variable Impedance|可变阻抗||在任务过程中改变机器人等效刚度、阻尼或惯量的控制策略。
+Force Feedback|力反馈||将测得接触力或环境作用用于控制动作或操作员交互的机制。
+Haptic Feedback|触觉力觉反馈||通过机械或触觉装置向操作者传递力、振动或接触信息的技术。
+Haptic Teleoperation|力觉遥操作||在远程机器人控制中向人类操作者反馈接触力与运动状态的系统。
+Bilateral Control|双向力位控制||在主从端同时交换运动与作用力信息以协调交互的控制框架。
+Assembly Task|装配任务||通过受约束接触和精细运动将零件插接、配合或固定的机器人任务。
+Peg-in-hole|销孔装配任务||将轴状物体对准并插入孔洞的典型接触丰富操作场景。
+Contact-rich Manipulation|接触丰富操作||包含持续、多点或模式切换接触、必须显式考虑接触动力学的机器人操作。
