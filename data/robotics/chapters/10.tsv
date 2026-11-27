@@ -1,0 +1,26 @@
+# SLAM、视觉里程计与因子图优化
+Simultaneous Localization and Mapping|即时定位与建图|SLAM|在未知环境中根据观测联合估计机器人位姿及环境地图的问题。
+Localization|机器人定位||给定地图或参考信息估计机器人当前位姿的任务。
+Mapping|环境建图||把传感数据整合成可用于定位、规划或理解的环境表示的过程。
+Odometry|里程计||根据相对运动测量累积估计机器人位姿变化的方法或输出。
+Visual Odometry|视觉里程计|VO|从连续相机图像中估计相机相对运动的过程。
+LiDAR Odometry|激光里程计||通过连续点云匹配或特征跟踪估计传感器运动的方法。
+Visual–Inertial Odometry|视觉惯性里程计|VIO|结合相机观测与 IMU 测量估计连续位姿和运动状态的技术。
+Visual SLAM|视觉 SLAM||主要依靠相机图像执行定位、数据关联及地图构建的 SLAM 系统。
+LiDAR SLAM|激光 SLAM||主要使用激光距离点云估计位姿与环境结构的 SLAM 方法。
+Loop Closure|回环闭合||识别机器人重新访问旧地点并在位姿图中施加跨时刻约束的过程。
+Place Recognition|地点识别||根据视觉、几何或其他感知特征识别此前访问地点的任务。
+Scan Matching|扫描匹配||寻找不同激光扫描或点云之间最优空间对齐关系的过程。
+Iterative Closest Point|迭代最近点|ICP|交替建立点集最近邻关系并估计刚体变换的配准算法。
+Generalized ICP|广义迭代最近点|GICP|结合点云局部协方差信息构造匹配代价的 ICP 变体。
+Normal Distributions Transform|正态分布变换|NDT|以网格化局部高斯分布表达参考点云并求扫描对齐的方法。
+Feature-based SLAM|特征式 SLAM||利用角点、关键点或稀疏几何特征建立测量约束的 SLAM 方案。
+Direct Visual SLAM|直接法视觉 SLAM||通过图像像素灰度或光度误差直接约束相机运动的 SLAM 方法。
+Keyframe Selection|关键帧选择||挑选具有足够视角或时间差异的观测帧参与建图与优化的过程。
+Factor Graph|因子图||用变量节点与局部约束因子分解概率或优化目标的图形表示。
+Pose Graph|位姿图||以机器人不同时刻位姿为节点、相对位姿约束为边的图结构。
+Pose Graph Optimization|位姿图优化||联合调整位姿节点以减小里程计和回环等约束残差的优化问题。
+Bundle Adjustment|光束法平差|BA|同时优化相机位姿与三维地图点以减小多视图重投影误差的技术。
+Sliding-window Optimization|滑动窗口优化||只联合优化最近一段时间内的状态与关联观测的估计方法。
+Marginalization|边缘化||从联合概率分布或优化问题中消去不再显式维护的状态变量的过程。
+Gauge Freedom|规范自由度||在缺少绝对参考约束时全局平移、旋转或尺度等变换不改变相对测量的性质。
