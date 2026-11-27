@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Retrieval-Augmented Generation / RAG (standalone, not yet indexed)
+
+**350 original bilingual terms in 14 chapters.** Covers knowledge sources, document ingestion and chunking, embeddings, BM25, ANN/vector databases, hybrid and late-interaction ranking, query rewriting, evidence citations, Agentic RAG, GraphRAG, RAGAS/ARES evaluation, data security and production operations. Includes **14 concept contrasts, 10 medium interview questions, 10 medium exam questions with solutions** and primary references. [Markdown](glossaries/rag.md) · [PDF](pdf/rag.pdf) · [TSV](data/rag.tsv) · [Editorial sources](data/rag/SOURCES.md). To verify deterministic exports: `node scripts/render_rag.mjs --check`. **Not yet included in the indexed-domain or term counts above.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
