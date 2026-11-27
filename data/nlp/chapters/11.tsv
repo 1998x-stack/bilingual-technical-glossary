@@ -1,0 +1,26 @@
+# 注意力机制与 Transformer 结构
+Attention Mechanism|注意力机制||按查询与键的匹配为多个值向量分配权重并聚合信息的计算结构。
+Self-attention|自注意力||同一输入序列中各位置相互计算注意力权重的机制。
+Cross-attention|交叉注意力||查询来自一个序列、键和值来自另一序列的注意力机制。
+Scaled Dot-product Attention|缩放点积注意力||计算查询键点积，经维度缩放和 Softmax 后加权值向量的注意力方法。
+Query Vector|查询向量|Q|注意力机制中用于匹配键向量的线性投影表示。
+Key Vector|键向量|K|注意力机制中用于与查询计算匹配分数的向量。
+Value Vector|值向量|V|在注意力权重确定后被加权求和的信息向量。
+Multi-head Attention|多头注意力|MHA|用多个投影头并行学习不同关系并拼接融合输出的注意力结构。
+Attention Head|注意力头||由一组独立查询、键和值投影定义的注意力计算分支。
+Attention Mask|注意力掩码||限制哪些序列位置可以相互注意的矩阵或逻辑规则。
+Causal Mask|因果掩码||阻止自回归预测位置访问未来 token 的注意力掩码。
+Padding Mask|填充掩码||阻止模型把无效填充位置当作真实输入参与注意力的掩码。
+Transformer|Transformer 模型||基于注意力、前馈网络、残差连接和归一化构建的序列处理架构。
+Transformer Encoder|Transformer 编码器||通常使用双向自注意力获得上下文化输入表示的 Transformer 部分。
+Transformer Decoder|Transformer 解码器||使用因果自注意力及可选交叉注意力生成序列的 Transformer 部分。
+Position-wise Feed-forward Network|逐位置前馈网络|FFN|在每个 token 位置独立应用共享参数的多层非线性变换。
+Residual Connection|残差连接||将层输入与变换输出相加以改善深层网络信息与梯度传递的结构。
+Layer Normalization|层归一化|LayerNorm|在指定特征维度上按均值与方差标准化激活值的方法。
+Positional Encoding|位置编码||向序列表示注入 token 顺序或相对位置关系的机制。
+Absolute Position Embedding|绝对位置嵌入||为每个序列位置学习或计算与其绝对索引相关的表示。
+Relative Position Bias|相对位置偏置||根据查询与键位置之间相对距离调整注意力打分的方式。
+Rotary Position Embedding|旋转位置嵌入|RoPE|通过对查询和键向量实施位置相关旋转编码相对位置信息的技术。
+Attention Complexity|注意力计算复杂度||衡量注意力随序列长度及隐藏维度变化的运算量和存储成本。
+FlashAttention|FlashAttention 高效注意力||通过 IO 感知分块与重计算减少高带宽存储访问的精确注意力算法族。
+Key–Value Cache|键值缓存|KV Cache|自回归生成时缓存已计算注意力键和值以减少重复运算的结构。
