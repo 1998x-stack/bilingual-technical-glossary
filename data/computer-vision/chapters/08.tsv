@@ -1,0 +1,26 @@
+# 视频分析、光流、目标运动与时序模型
+Video Frame|视频帧||视频序列在某一时间采样点获得的图像。
+Frame Rate|帧率|FPS|每秒采集或显示的视频帧数量。
+Temporal Sampling|时间采样||按照一定时间间隔从连续动态场景获取帧或特征的过程。
+Optical Flow|光流||描述图像亮度或纹理模式在相邻时间帧间表观位移的二维向量场。
+Dense Optical Flow|稠密光流||为图像中的大部分或所有有效像素估计表观运动向量的任务。
+Sparse Optical Flow|稀疏光流||仅为选定关键点或少量位置估计帧间运动的任务。
+Lucas–Kanade Tracker|Lucas–Kanade 光流跟踪|LK|利用局部亮度一致与小运动近似估计图像块位移的算法。
+Horn–Schunck Method|Horn–Schunck 光流法||将亮度一致和空间平滑约束联合优化的经典稠密光流算法。
+Brightness Constancy|亮度恒定假设||假定同一可见场景点在短时间运动前后图像亮度近似不变的条件。
+Aperture Problem|孔径问题||局部边缘观测只能约束垂直于边缘方向运动、导致运动估计不唯一的现象。
+Motion Estimation|运动估计||根据图像变化或其他传感器数据推断物体或相机运动状态的任务。
+Motion Compensation|运动补偿||依据估计运动把相邻帧内容映射对齐或预测的过程。
+Frame Interpolation|视频插帧||在已知相邻帧之间合成新的中间时刻图像的技术。
+Video Stabilization|视频防抖||估计并校正不希望的相机运动以平滑视频画面的处理。
+Background Subtraction|背景减除||用背景统计模型识别前景运动对象或发生变化区域的方法。
+Temporal Consistency|时间一致性||视觉预测在相邻视频帧之间随真实变化保持稳定的性质。
+Spatiotemporal Feature|时空特征||同时编码图像空间模式及其随时间演化的信息表示。
+3D Convolution|三维卷积||沿时间与二维空间维度共同进行局部核聚合的卷积运算。
+Two-stream Network|双流网络||利用 RGB 外观和运动表示等两个输入分支进行视频分析的架构。
+Video Classification|视频分类||对视频片段预测动作、事件或其他整体类别的任务。
+Action Recognition|动作识别||根据视频或连续图像判断人物或物体所执行动作类别的任务。
+Temporal Action Localization|时序动作定位||在视频中同时识别动作类别及其发生的起止时间。
+Video Object Segmentation|视频目标分割|VOS|在连续视频帧中分割并保持目标身份对应关系的任务。
+Shot Boundary Detection|镜头边界检测||识别视频中不同镜头片段切换位置的任务。
+Visual Tracking|视觉跟踪||在多帧中持续定位指定目标并维护其身份或轨迹的任务。
