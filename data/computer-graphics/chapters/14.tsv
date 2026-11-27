@@ -1,0 +1,26 @@
+# 物理仿真、粒子、布料与流体
+Physics Simulation|物理仿真||通过数值方法近似计算刚体、柔体或流体随时间演化的过程。
+Rigid Body|刚体||理想化为内部点间距离保持不变的物理对象。
+Rigid Body Dynamics|刚体动力学||根据质量、惯性和外力计算刚体平移及旋转运动的方法。
+Soft Body|软体||能够发生连续弹性或塑性变形的可模拟对象。
+Mass–Spring System|质点弹簧系统||用质量节点与弹簧约束近似模拟可变形几何的模型。
+Cloth Simulation|布料模拟||通过粒子、网格或连续体方法近似计算布面褶皱与运动的过程。
+Collision Detection|碰撞检测||判断两个几何对象是否接触、穿透或将发生碰撞的计算任务。
+Broad Phase Collision|碰撞粗检测||通过简单包围结构快速筛除不可能碰撞的对象对。
+Narrow Phase Collision|碰撞精检测||对粗检测候选对计算精确接触点、法线和穿透信息的阶段。
+Contact Manifold|接触流形||用多个接触点及法线近似表示两个物体的接触关系。
+Impulse-based Solver|冲量式求解器||通过约束冲量修正碰撞速度和接触条件的数值方法。
+Constraint Solver|约束求解器||迭代求解接触、关节及其他物理运动限制的算法模块。
+Verlet Integration|Verlet 积分||使用位置及历史状态推进运动方程的数值积分族。
+Semi-implicit Euler|半隐式欧拉积分||先更新速度再用新速度更新位置的时间积分方法。
+Time Step|仿真时间步||数值模拟中一次状态更新对应的物理时间间隔。
+Substepping|子时间步||把一个较大仿真间隔划分为若干较短更新步以提高稳定性的技术。
+Particle System|粒子系统||用大量独立或相互作用粒子表示烟雾、火焰或碎屑的视觉模拟框架。
+Particle Emitter|粒子发射器||规定粒子生成位置、速率、初始速度和寿命的组件。
+Smoothed Particle Hydrodynamics|光滑粒子流体动力学|SPH|以核函数平滑的粒子邻域近似求解流体连续方程的方法。
+Position Based Dynamics|基于位置的动力学|PBD|直接投影位置约束以实现稳定交互式物理模拟的方法。
+Extended Position Based Dynamics|扩展位置动力学|XPBD|引入柔度等机制改善 PBD 对时间步和迭代次数敏感性的算法。
+Navier–Stokes Equations|纳维—斯托克斯方程||描述连续介质流体动量守恒和黏性作用的微分方程。
+Advection|对流输运||物理量随流体速度场移动的过程。
+Fluid Grid|流体网格||用于离散存储压力、速度或密度等流体场的空间格点结构。
+Smoke Simulation|烟雾模拟||通过流体速度、密度和光散射近似生成烟雾动态效果的技术。
