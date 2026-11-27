@@ -1,0 +1,26 @@
+# 相机标定、射影几何与多视图约束
+Camera Calibration|相机标定||根据已知场景几何或多视图数据估计相机内外参数与畸变的过程。
+Calibration Pattern|标定图案||具有已知几何结构、用于相机参数估计的目标板或图形。
+Checkerboard Calibration|棋盘格标定||利用已知棋盘交点坐标估计相机参数的标定方法。
+Radial Distortion|径向畸变||由镜头光学特性造成、随距主点半径变化的成像坐标偏移。
+Tangential Distortion|切向畸变||由镜头装配等非理想因素造成的非径向像素位移。
+Undistortion|畸变校正||依据估计畸变参数把观测像素映射回理想相机模型的处理。
+Projective Geometry|射影几何||研究透视投影下点、直线和交比等不变量的几何理论。
+Homogeneous Coordinates|齐次坐标||通过增加尺度自由度在统一线性形式下表示射影点与变换的坐标。
+Projection Matrix|投影矩阵||将三维齐次点映射到二维图像齐次坐标的矩阵。
+Perspective Projection|透视投影||三维点经投影中心形成图像、远物通常呈现更小尺寸的成像映射。
+Orthographic Projection|正交投影||以相互平行的投影射线生成二维坐标的成像模型。
+Weak Perspective|弱透视近似||在景深变化相对平均距离较小时以尺度化正交投影近似透视成像。
+Camera Pose|相机位姿||描述相机相对于参考坐标系的空间位置及旋转方向。
+Rotation Matrix|旋转矩阵||保持长度与方向的正交矩阵，用于表示三维刚体旋转。
+Translation Vector|平移向量||描述两个坐标系原点相对位移的三维向量。
+Rigid Transformation|刚体变换||由旋转和平移构成、保持空间点间距离的几何变换。
+SE(3)|三维特殊欧氏群|SE(3)|表示三维刚体旋转和平移组成的六自由度李群。
+SO(3)|三维特殊正交群|SO(3)|由行列式为一的三维正交旋转矩阵组成的群。
+Epipolar Geometry|对极几何||描述同一三维点在两个相机视图中的投影约束关系的理论。
+Epipolar Line|对极线||由另一视图某一点及双目相机几何确定的候选对应点所在直线。
+Essential Matrix|本质矩阵|E|对已标定相机之间的旋转和平移方向编码对极约束的矩阵。
+Fundamental Matrix|基础矩阵|F|在像素坐标中描述未必已知内参的双视图对极约束的矩阵。
+Eight-point Algorithm|八点法||通过至少八组对应点线性估计基础矩阵或本质矩阵的方法。
+Perspective-n-Point|透视 n 点位姿估计|PnP|利用三维点与二维投影对应关系估计相机位姿的问题。
+Bundle Adjustment|光束法平差|BA|联合优化相机参数和三维点使多视图重投影误差减小的非线性优化。
