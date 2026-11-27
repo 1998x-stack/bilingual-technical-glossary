@@ -1,0 +1,26 @@
+# 文本生成、摘要、对话与解码控制
+Text Generation|文本生成||根据提示、输入结构或上下文自动生成自然语言序列的任务。
+Conditional Generation|条件文本生成||在给定问题、文档或控制变量条件下生成目标文本的机制。
+Unconditional Generation|无条件文本生成||在不提供特定内容上下文时从语言模型先验分布生成文本的过程。
+Greedy Decoding|贪心解码||每一步选择当前条件概率最高 token 的生成算法。
+Top-k Sampling|前 k 候选采样||每步从概率最高的 k 个 token 中按重归一化概率抽样的解码方法。
+Nucleus Sampling|核采样|Top-p|每步从累计概率达到阈值 p 的最小高概率候选集合采样的策略。
+Temperature Scaling|温度缩放||在 Softmax 前调整 logits 尺度以控制生成分布尖锐程度的方法。
+Repetition Penalty|重复惩罚||降低已经生成内容再次被选择概率的采样或评分机制。
+Stop Sequence|终止序列||一旦在生成文本中匹配到便提前停止输出的指定字符或 token 模式。
+Maximum Generation Length|最大生成长度||对单次解码最多可产生的 token 数量施加的上界。
+Minimum Generation Length|最小生成长度||在生成达到预定长度前限制或抑制结束操作的控制条件。
+Extractive Summarization|抽取式摘要||直接选择原文中的句子或片段组成摘要的任务形式。
+Abstractive Summarization|生成式摘要||用新表述压缩和整合原文信息而不局限于原句的摘要形式。
+Query-focused Summarization|面向查询的摘要||根据用户问题或指定信息需求选择摘要重点的方法。
+Multi-document Summarization|多文档摘要||把多篇相关来源整合为一个覆盖共同或互补信息的摘要。
+Summary Faithfulness|摘要忠实性||摘要的事实陈述与原文证据保持一致、不引入不支持信息的性质。
+Factual Consistency|事实一致性||生成文本中的事实是否与给定来源或已验证事实相符的性质。
+Dialogue State Tracking|对话状态跟踪|DST|根据多轮交互持续更新用户目标、槽位值和上下文状态的任务。
+Dialogue Act|对话行为||对语句执行的提问、确认、告知或请求等交际功能的标注类别。
+Intent Detection|意图识别||从用户话语推断请求、目标或操作类别的任务。
+Slot Filling for Dialogue|对话槽位填充||提取预定业务槽位所对应实体或参数值的任务。
+Response Generation|回复生成||依据对话历史、状态或知识生成系统下一轮话语的过程。
+Turn-taking|话轮交替||对话参与者在连续交互中控制说话时机与轮次的机制。
+Context Carryover|上下文继承||在后续轮次中继续使用此前确认的实体、条件与约束的能力。
+Dialogue Evaluation|对话系统评估||结合任务成功、响应质量、事实支持和用户体验衡量对话系统的流程。
