@@ -1,0 +1,26 @@
+# 机器翻译、跨语言迁移与多语建模
+Neural Machine Translation|神经机器翻译|NMT|利用神经编码器解码器或 Transformer 学习源到目标语言映射的翻译方法。
+Statistical Machine Translation|统计机器翻译|SMT|通过概率翻译模型和语言模型构造翻译决策的历史技术体系。
+Rule-based Machine Translation|基于规则的机器翻译|RBMT|利用手工构建的词典、语法和转换规则生成译文的系统。
+Phrase-based Machine Translation|基于短语的机器翻译|PBMT|将词组片段作为基本翻译映射单位的统计机器翻译方法。
+Word Alignment|词语对齐||识别源语和目标语中哪些词项相互对应的任务。
+Sentence Alignment|句子对齐||在双语文档中匹配互为翻译的句子或段落的过程。
+Parallel Sentence Pair|平行句对||表达相同内容的两个不同语言句子的训练或评测单位。
+Translation Memory|翻译记忆库|TM|保存历史原文译文配对供人工或机器翻译检索复用的资源。
+Beam Search|束搜索||每个生成步骤保留得分最高的有限数量候选序列进行近似搜索的算法。
+Beam Width|束宽||束搜索每步最多保留的候选假设数量。
+Length Penalty|长度惩罚||在候选序列评分中调整长度偏好以避免系统性短句偏置的机制。
+Coverage Penalty|覆盖惩罚||鼓励解码过程充分关注源文本内容的候选评分修正项。
+Terminology Constraint|术语约束||要求译文保留或使用指定专业词汇的翻译条件。
+Constrained Decoding|受约束解码||在生成中强制满足特定词项、结构或格式要求的搜索策略。
+Back-translation|回译数据增强||把目标语言单语句翻译回源语以构造伪平行训练数据的技术。
+Pivot Translation|枢轴语言翻译||先转为中间语言再翻译到目标语言的跨语言转换策略。
+Multilingual Machine Translation|多语言机器翻译||单一模型支持多个源语言与目标语言翻译方向的系统。
+Zero-shot Translation|零样本翻译||在训练中缺少直接源目标语言句对条件下完成该语言方向翻译的任务。
+Cross-lingual Transfer|跨语言迁移||将一种语言中学到的表示或任务知识应用到另一语言的过程。
+Cross-lingual Alignment|跨语言对齐||让不同语言中的词、句向量或结构在共享空间中可比较的技术。
+Code-switching|语码转换||一段话语中交替使用两种或多种语言的现象。
+Low-resource Language|低资源语言||相对于任务需要，可用标注数据、语料或工具资源较少的语言。
+Morphologically Rich Language|形态丰富语言||具有多样屈折和派生词形、词型稀疏性明显的语言。
+Language Identification|语言识别|LID|判断文本或音频属于何种语言或语言组合的任务。
+Translation Quality Estimation|翻译质量估计|QE|在没有人工参考译文或无需完整参考译文时估计译文质量的任务。
