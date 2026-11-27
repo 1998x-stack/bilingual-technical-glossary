@@ -1,0 +1,26 @@
+# 约束优化与 KKT 条件
+Constrained Optimization|约束优化||在等式或不等式条件限制下优化目标函数的任务。
+Equality Constraint|等式约束||要求某表达式严格等于指定值的可行性条件。
+Inequality Constraint|不等式约束||要求表达式满足上界或下界的可行性条件。
+Active Constraint|活跃约束||在当前候选点取等号的不等式约束。
+Inactive Constraint|非活跃约束||在当前候选点严格留有余量的不等式约束。
+Constraint Qualification|约束资格条件||保证乘子存在或最优性条件适用的约束正则性假设。
+LICQ|线性无关约束资格条件|LICQ|活跃不等式与等式约束的梯度在候选点线性无关。
+MFCQ|Mangasarian–Fromovitz 约束资格条件|MFCQ|等式梯度线性无关且存在能严格改善活跃不等式的可行方向。
+Slater Condition|斯莱特条件||凸问题存在满足等式并严格满足相关不等式约束的点的条件。
+Karush–Kuhn–Tucker Conditions|卡鲁什—库恩—塔克条件|KKT|在适当正则性下最优解满足的驻点、可行性、对偶可行性与互补条件。
+Lagrangian Function|拉格朗日函数||把目标函数与约束函数按乘子加权合并的函数。
+Lagrange Multiplier|拉格朗日乘子||为约束配备的系数，在正则条件下可反映边际最优值变化。
+Primal Feasibility|原始可行性||决策变量满足优化问题所有原始约束的条件。
+Dual Feasibility|对偶可行性||对偶变量满足符号及其他对偶约束的要求。
+Complementary Slackness|互补松弛性||不等式约束的松弛量与其对应乘子的乘积为零。
+Stationarity Condition|驻点条件||拉格朗日函数对原始变量的梯度或广义梯度满足零条件。
+Normal Cone|法锥||以支持不等式刻画凸集边界处外法向方向的集合。
+Tangent Cone|切锥||描述可行集合在指定点可沿哪些极限方向移动的锥。
+Feasible Direction|可行方向||沿该方向从候选点做足够小步长仍可保持可行的方向。
+Linearized Constraint|线性化约束||用一阶导数把非线性约束局部近似为线性关系。
+Constraint Violation|约束违反量||度量候选解超出约束允许范围程度的数值。
+Penalty Function|罚函数||把违反约束的代价附加到目标函数上的辅助函数。
+Exact Penalty|精确罚函数||在足够大但有限的罚系数下可与原问题局部解一致的罚函数形式。
+Barrier Function|障碍函数||在可行域边界附近急剧增大、限制迭代越界的函数。
+Interior Feasible Point|严格内部可行点||严格满足所有相关不等式约束的点。
