@@ -1,0 +1,26 @@
+# 神经序列模型、编码器与解码器
+Neural Language Model|神经语言模型||使用神经网络预测语言 token 概率或学习序列表示的模型。
+Recurrent Neural Network|循环神经网络|RNN|通过共享递归状态逐位置处理可变长度序列的神经网络。
+Long Short-term Memory|长短期记忆网络|LSTM|通过门控记忆单元缓解普通 RNN 长距离依赖训练困难的结构。
+Gated Recurrent Unit|门控循环单元|GRU|用更新门和重置门控制循环状态的门控神经网络单元。
+Hidden State|隐状态||循环或状态空间模型在时间步之间传递的内部表示。
+Encoder|编码器||将输入序列映射到隐藏表示或中间语义状态的模型组件。
+Decoder|解码器||根据中间表示及已有输出预测目标序列后续内容的组件。
+Encoder–Decoder Architecture|编码器—解码器架构||由输入编码网络和输出生成网络组成的序列映射结构。
+Sequence-to-sequence Learning|序列到序列学习|Seq2Seq|学习可变长度输入序列到输出序列映射的任务框架。
+Teacher Forcing|教师强制||训练自回归解码器时以真实上一输出作为下一步输入的策略。
+Exposure Bias|暴露偏差||训练依赖真实历史、推理依赖自身预测导致输入历史分布不一致的问题。
+Scheduled Sampling|计划采样||训练时按调度混合使用真实历史与模型预测历史的技术。
+Bidirectional RNN|双向循环神经网络|BiRNN|分别从前向和后向处理序列并融合上下文表示的模型。
+Bidirectional LSTM|双向长短期记忆网络|BiLSTM|以两个方向 LSTM 捕获前后文的序列表示结构。
+Convolutional Text Encoder|卷积式文本编码器||通过一维卷积和局部聚合提取 N-gram 等文本特征的模型。
+Sequence Transduction|序列变换||将输入序列转换为另一个相关符号序列的任务。
+Autoregressive Decoding|自回归解码||每一步以上一阶段生成 token 为条件预测后续 token 的过程。
+Non-autoregressive Decoding|非自回归解码||尝试并行预测部分或全部输出位置、降低逐 token 串行依赖的生成方式。
+Latent Representation|潜在表示||模型在中间层学习的连续或离散内部状态特征。
+Context Vector|上下文向量||概括输入序列信息、供解码器条件生成的向量。
+Sequence Padding Mask|序列填充掩码||标记 PAD 位置并阻止注意力或损失把填充当成有效内容的掩码。
+Packed Sequence|打包序列||按真实样本长度组织 RNN 计算以减少不必要填充开销的数据结构。
+Gradient Clipping|梯度裁剪||限制梯度范数或幅值以缓和神经网络训练不稳定性的技术。
+Vanishing Gradient|梯度消失||深层或长序列反向传播中梯度持续缩小、难以更新早期参数的现象。
+Exploding Gradient|梯度爆炸||反向传播中梯度过大导致训练更新发散或数值不稳定的现象。
