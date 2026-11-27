@@ -1,0 +1,26 @@
+# 下游适配、监督微调与迁移学习
+Transfer Learning|迁移学习||把在源任务或语料学到的表示用于新任务的学习方法。
+Fine-tuning|微调||在预训练模型基础上用下游任务数据继续优化参数的过程。
+Full-parameter Fine-tuning|全参数微调||对模型中全部或大部分权重进行下游训练更新的方式。
+Parameter-efficient Fine-tuning|参数高效微调|PEFT|只训练少量附加或选定参数以降低任务适配成本的方法。
+Adapter Layer|适配器层||插入预训练网络中的小型可训练模块，用于低成本任务调整。
+Low-rank Adaptation|低秩适配|LoRA|用低秩矩阵表示权重增量、冻结原权重的参数高效微调方法。
+Prefix Tuning|前缀调优||训练可学习的连续前缀状态以引导预训练模型生成的技术。
+Prompt Tuning|软提示调优||优化少量输入提示嵌入而不全面更新模型参数的方法。
+Instruction Tuning|指令微调||用任务指令和示范回答训练模型遵循自然语言要求的过程。
+Supervised Fine-tuning|监督微调|SFT|通过人工或其他来源的输入输出配对示例优化模型的训练阶段。
+Task-specific Head|任务专用预测头||在通用表示模型上附加用于分类、回归或序列标注的预测层。
+Sequence Classification Head|序列分类头||把整个序列表示映射为类别分数的模型输出层。
+Token Classification Head|词元分类头||把各个 token 隐状态映射为相应标签分数的输出层。
+Feature-based Transfer|基于特征的迁移||冻结预训练表示网络、用抽取的向量训练下游模型的方案。
+Feature Extraction Mode|特征抽取模式||仅把模型用作固定编码器而不对其参数执行任务更新的使用方式。
+Zero-shot Learning|零样本学习||在无目标任务直接标注示例条件下依说明或迁移知识完成预测。
+Few-shot Learning|少样本学习||依靠少量示例适配或提示模型完成新任务的范式。
+In-context Learning|上下文学习|ICL|在模型输入中给出指令和示例以改变预测行为、但不更新模型权重的方式。
+Domain Adaptation|领域适应||降低训练数据领域与目标应用领域分布差异的方法集合。
+Task Adaptation|任务适配||将通用模型能力调整到特定输出格式、标签或目标任务的过程。
+Catastrophic Forgetting|灾难性遗忘||继续训练新任务后模型在旧任务或知识上性能显著下降的现象。
+Regularization|正则化||通过约束、惩罚或数据策略抑制过拟合并改善泛化的技术。
+Early Stopping|提前停止||依据验证集表现终止训练以避免过度拟合的策略。
+Hyperparameter Search|超参数搜索||比较学习率、批大小和正则强度等训练配置以选择方案的过程。
+Evaluation Protocol|评测协议||规定训练、验证、测试划分以及指标计算和重复实验规则的规范。
