@@ -45,6 +45,8 @@ jobs:
         run: node scripts/render_computer_graphics.mjs --check
       - name: Verify Robotics source and synchronized publications
         run: node scripts/render_robotics.mjs --check
+      - name: Verify Autonomous Driving source and publication mirrors
+        run: node scripts/render_autonomous_driving.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
