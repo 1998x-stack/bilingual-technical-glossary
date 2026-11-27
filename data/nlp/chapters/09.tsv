@@ -1,0 +1,26 @@
+# 词向量、分布式语义与表示学习
+Distributional Hypothesis|分布式语义假说||语境分布相似的词通常具有相关语义特征的假说。
+Distributional Semantics|分布式语义学||通过词语在语料中的共现上下文学习或分析词义的理论与方法。
+Word Embedding|词嵌入||把词或子词映射到低维连续向量空间的表示。
+Static Word Embedding|静态词向量||对同一词项在不同上下文中使用相同基本向量的表示。
+Contextualized Word Representation|上下文化词表示||根据具体上下文动态为同一词项生成不同表示的机制。
+Word2Vec|Word2Vec 词向量模型||通过预测词与上下文共现关系学习连续词表示的模型族。
+Continuous Bag-of-words|连续词袋模型|CBOW|通过邻近上下文词预测中心词的 Word2Vec 训练结构。
+Skip-gram Model|Skip-gram 模型||通过中心词预测上下文词来学习词表示的结构。
+Negative Sampling|负采样||通过区分真实共现对和采样噪声对近似训练表示模型的策略。
+Noise-contrastive Estimation|噪声对比估计|NCE|将概率密度学习转化为数据与噪声来源区分任务的估计方法。
+Hierarchical Softmax|层次 Softmax||通过树形类别分解减少大词表概率计算开销的技术。
+Global Vectors for Word Representation|全局词向量|GloVe|利用词共现统计矩阵加权回归学习词向量的方法。
+FastText|fastText 子词表示模型||利用字符 N-gram 共享信息学习词表示及文本分类模型的工具和方法。
+Subword Embedding|子词嵌入||为词内符号片段学习向量并组合形成词或文本表示的技术。
+Co-occurrence Matrix|共现矩阵||统计词项与上下文项共同出现次数或权重的矩阵。
+Pointwise Mutual Information|点互信息|PMI|衡量词项联合出现概率相对独立假设增益的关联度。
+Positive PMI|正点互信息|PPMI|将 PMI 的负值截断为零的共现关联表示。
+Singular Value Decomposition|奇异值分解|SVD|把矩阵分解成正交向量与奇异值，用于共现矩阵低秩表示。
+Embedding Space|嵌入空间||向量表示所在的几何空间及其相似关系结构。
+Cosine Similarity|余弦相似度||通过两个非零向量夹角余弦衡量方向接近程度的指标。
+Vector Analogy|向量类比||利用表示空间中的向量偏移尝试刻画词汇关系的技术。
+Semantic Relatedness|语义相关性||衡量词汇或文本在主题、用途等意义维度上相互联系的程度。
+Embedding Alignment|嵌入空间对齐||学习映射使不同语言或不同模型的向量能够比较的过程。
+Embedding Anisotropy|词向量各向异性||表示向量集中在某些方向、难以均匀覆盖向量空间的现象。
+Representation Collapse|表示坍缩||训练后不同输入的向量过度相似而失去区分能力的现象。
