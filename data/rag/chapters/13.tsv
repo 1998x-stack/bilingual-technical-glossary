@@ -1,0 +1,26 @@
+# 数据安全、访问控制与可信治理
+Retrieval Security|检索安全||保障知识库查询、索引和证据传递免受未授权访问或篡改的措施。
+Document-level Access Control|文档级访问控制||按用户或角色限制可读取哪些来源文档的权限规则。
+Chunk-level Authorization|片段级授权||在检索片段粒度检查请求者是否有权获取该内容。
+Access Control List|访问控制列表|ACL|记录主体对资源允许或拒绝操作的授权规则。
+Role-based Access Control|基于角色的访问控制|RBAC|按预先定义的角色集合决定资源访问权限的机制。
+Attribute-based Access Control|基于属性的访问控制|ABAC|依据用户、资源与环境属性进行权限判定的模型。
+Tenant Isolation|租户隔离||防止共享平台中不同租户的数据或检索结果互相泄漏的边界。
+Row-level Security|行级安全|RLS|数据库依据调用者身份或策略过滤可读取记录的功能。
+Pre-filtering|检索前过滤||在近邻或全文检索前先用权限或元数据约束候选集合的方法。
+Post-filtering|检索后过滤||检索之后对候选结果再执行授权或条件过滤的步骤。
+Permission-aware Retrieval|权限感知检索||在召回过程及结果输出中执行用户权限校验的架构。
+Sensitive Information|敏感信息||需要按照法律、合同或组织策略限制访问和传播的数据。
+Personally Identifiable Information|可识别个人身份信息|PII|能够直接或结合其他信息识别自然人的数据。
+Data Redaction|数据脱敏遮盖||从检索或展示内容中隐藏特定敏感字段的处理。
+Secret Leakage|机密信息泄漏||密钥、凭证或不应公开的信息通过检索或生成被意外暴露的事件。
+Prompt Injection|提示注入||恶意内容通过输入或外部资料诱导模型违背更高优先级指令的攻击。
+Indirect Prompt Injection|间接提示注入||攻击指令藏在被检索文档或工具输出等较低信任内容中的攻击。
+Trust Boundary|信任边界||区分高可信指令和低可信外部证据及权限范围的逻辑界线。
+Source Trust Scoring|来源可信度评分||依据出处、签名、审核状态等信息评估来源可靠性的机制。
+Content Poisoning|内容投毒||攻击者通过操控可检索文档使召回或生成产生误导结果的行为。
+Index Poisoning|索引投毒||攻击者向搜索索引插入或操纵条目影响检索结果的攻击。
+Cited-source Spoofing|引用来源伪造||构造虚假来源标识或引文诱骗系统采信错误资料的行为。
+Audit Logging|审计日志记录||记录索引、授权、检索和回答事件以支持安全追溯的机制。
+Data Retention Policy|数据保留策略||规定知识内容和日志应保存多久及如何到期删除的规则。
+Right-to-deletion Workflow|删除请求执行流程||将合法删除请求传播到原文、缓存、向量索引和备份的治理程序。
