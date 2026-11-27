@@ -58,6 +58,12 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 **400 bilingual terms in 16 chapters**, covering network communication, fault models, causality, CAP and consistency, replication, Raft/Paxos, transactions, sharding, data processing, stream systems, membership, SRE, security, performance and verification. Includes 12 concept comparisons, 8 medium interview questions, 8 exam questions and primary references. [Markdown](glossaries/distributed-systems.md) · [PDF](pdf/distributed-systems.pdf) · [TSV](data/distributed-systems.tsv) · [Source evidence](data/distributed-systems/SOURCES.md). Run `node scripts/render_distributed_systems.mjs --check` for deterministic artifact validation. **Not yet included in searchable domain or term totals.**
 
+### Optimization Theory / 最优化理论 (standalone; not yet indexed)
+
+**400 original bilingual terms · 16 chapters**, covering convex analysis, KKT, duality, linear and integer programming, first/second-order methods, proximal and stochastic optimization, distributed/online methods, global and multiobjective optimization, robustness and optimal control. Includes 14 concept contrasts, 10 intermediate interview questions, 10 exam problems with explanations, and source references. [Markdown](glossaries/optimization-theory.md) · [PDF](pdf/optimization-theory.pdf) · [TSV](data/optimization-theory.tsv) · [Sources](data/optimization-theory/SOURCES.md). Reproducibility: `node scripts/render_optimization_theory.mjs --check`.
+
+**This is a standalone handbook, NOT part of the current indexed-domain and term totals.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |

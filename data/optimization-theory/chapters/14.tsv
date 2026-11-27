@@ -1,0 +1,26 @@
+# 全局、黑箱与无导数优化
+Global Optimization|全局优化||旨在寻找整个可行域上的最好目标值而非仅局部最优的求解领域。
+Nonconvex Optimization|非凸优化||目标或可行域不满足凸优化结构的优化问题。
+Black-box Optimization|黑箱优化||只能通过函数评估、而不依赖显式解析表达式来求解的问题。
+Derivative-free Optimization|无导数优化|DFO|不直接使用目标函数解析梯度或海森信息的优化方法。
+Direct Search|直接搜索法||通过对若干试探点的函数值比较决定下一步搜索的方法。
+Pattern Search|模式搜索||依据预定方向模式逐步试探并调整网格尺度的无导数优化算法。
+Nelder–Mead Method|Nelder–Mead 单纯形法||在若干顶点构成的几何单纯形上执行反射、扩张等操作的无导数方法。
+Trust-region Derivative-free Method|无导数信赖域法||从采样点建立局部替代模型并在信赖域内更新的算法。
+Surrogate Model|代理模型||利用已评估样本近似昂贵目标函数的计算模型。
+Response Surface Methodology|响应面方法||通过局部统计建模分析输入因素与目标响应关系的优化方法。
+Bayesian Optimization|贝叶斯优化|BO|利用概率代理模型及采集函数选择下一次昂贵函数评估的策略。
+Gaussian Process Surrogate|高斯过程代理模型|GP|用高斯过程对黑箱函数及其不确定性进行建模。
+Acquisition Function|采集函数||综合潜在改进与不确定性选择下一次评估位置的函数。
+Expected Improvement|期望改进|EI|以目标函数改进幅度的期望作为采集准则。
+Probability of Improvement|改进概率|PI|用候选点超过当前最好值的概率选择评估位置的准则。
+Upper Confidence Bound|上置信界|UCB|基于预测均值与不确定性加权组合进行探索的策略。
+Exploration–Exploitation Tradeoff|探索—利用权衡||在尝试未知区域与利用已知较好区域之间平衡资源分配。
+Random Search|随机搜索||按照给定分布随机生成候选配置并评估目标的方法。
+Simulated Annealing|模拟退火|SA|借助随温度降低的概率接受较差解以逃离局部极值的启发式算法。
+Genetic Algorithm|遗传算法|GA|通过选择、交叉和变异演化候选解种群的随机搜索算法。
+Differential Evolution|差分进化|DE|利用个体差分构造变异向量并迭代选择的群体优化算法。
+Particle Swarm Optimization|粒子群优化|PSO|通过个体历史最好解与群体最好信息更新粒子速度和位置的方法。
+CMA-ES|协方差矩阵自适应进化策略|CMA-ES|通过更新高斯采样分布协方差和步长进行无导数连续优化的方法。
+Multimodal Optimization|多峰优化||目标函数具有多个局部极值或若干分离良好解区域的优化问题。
+Branch-and-bound Global Optimization|全局分支定界||对连续区域建立可证目标界并递归分割以搜索全局最优的策略。

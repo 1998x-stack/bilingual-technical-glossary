@@ -1,0 +1,26 @@
+# 非线性规划与数值求解策略
+Nonlinear Programming|非线性规划|NLP|目标或约束至少一项为非线性函数的优化问题。
+Sequential Quadratic Programming|序列二次规划|SQP|通过一系列二次规划子问题近似求解非线性约束问题的方法。
+Sequential Linear Programming|序列线性规划|SLP|反复对非线性模型线性化并求解局部 LP 子问题的算法。
+Interior-point Method|内点法|IPM|在可行域内部或障碍路径附近求解优化问题的方法族。
+Primal-dual Interior-point Method|原始—对偶内点法||同时更新原始变量、对偶乘子及互补残差的内点算法。
+Central Path|中心路径||由不同障碍参数对应的最优或 KKT 解构成的轨迹。
+Barrier Parameter|障碍参数||调节障碍函数影响强度、通常逐步趋近于零的参数。
+Trust Region|信赖域||在当前迭代点附近限制局部模型有效范围的区域。
+Trust-region Method|信赖域法||依模型预测与实际下降的一致程度调整局部搜索区域的方法。
+Line Search|线搜索||在既定搜索方向上挑选满足下降条件的步长的过程。
+Armijo Condition|阿米霍条件||要求新目标值满足足够下降的步长接受准则。
+Wolfe Conditions|沃尔夫条件||组合足够下降与曲率要求的线搜索条件。
+Strong Wolfe Conditions|强沃尔夫条件||对方向导数绝对值施加上界的沃尔夫条件变体。
+Backtracking Line Search|回溯线搜索||反复缩小试探步长直至满足接受准则的策略。
+Merit Function|功绩函数||综合目标与约束违背程度用于评价受约束迭代进展的函数。
+Filter Method|过滤器方法||利用目标下降与约束违背下降之间的偏序判断试探点的策略。
+Restoration Phase|可行性恢复阶段||当正常优化步骤受阻时集中降低约束违反程度的阶段。
+Feasibility Restoration|可行性修复||通过调整候选解使不等式或等式约束重新满足的过程。
+Augmented Lagrangian Method|增广拉格朗日法|ALM|把拉格朗日乘子项与约束罚项组合以改进约束问题求解的方法。
+Method of Multipliers|乘子法||交替最小化增广拉格朗日函数并更新乘子的算法。
+Penalty Parameter|罚参数||控制约束违反惩罚程度的非负系数。
+Stopping Criterion|停止准则||根据梯度、残差、目标变化或迭代预算判断是否终止优化的规则。
+Primal Residual|原始残差||衡量候选变量未满足原始约束程度的量。
+Dual Residual|对偶残差||衡量当前乘子与优化条件不匹配程度的量。
+Karush–Kuhn–Tucker Residual|KKT 残差||综合驻点、可行性与互补性误差度量近似最优的指标。

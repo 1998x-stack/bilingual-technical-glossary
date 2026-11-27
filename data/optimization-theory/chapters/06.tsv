@@ -1,0 +1,26 @@
+# 线性规划、几何与单纯形法
+Linear Programming|线性规划|LP|目标和约束均为线性或仿射表达式的优化问题。
+Standard Form LP|线性规划标准型||常写为最小化 cᵀx、满足 Ax=b 与 x≥0 的形式。
+Canonical Form LP|线性规划规范型||将不等式和变量符号按统一约定组织的线性规划表达。
+Basic Solution|基解||选取线性独立的基列并令非基变量为零所求得的候选解。
+Basic Feasible Solution|基本可行解|BFS|既是基解又满足所有线性规划约束的解。
+Basis Matrix|基矩阵||由选定基变量对应系数组成的可逆方阵。
+Nonbasic Variable|非基变量||在当前单纯形基解中固定为零的变量。
+Extreme Point|极点||无法表示为可行集合中两个不同点的非平凡凸组合的点。
+Polyhedron|多面体||有限个线性不等式或等式定义的集合。
+Polytope|凸多胞体||有界的凸多面体，亦可表示为有限点的凸包。
+Simplex Method|单纯形法||沿基本可行解对应的顶点或边进行换基改进目标的算法。
+Primal Simplex|原始单纯形法||保持原始可行性、逐步改善目标的换基算法。
+Dual Simplex|对偶单纯形法||保持对偶可行性、逐步消除原始不可行性的算法。
+Revised Simplex|修正单纯形法||通过矩阵分解与求解线性方程避免显式完整单纯形表的实现。
+Entering Variable|入基变量||单纯形换基步骤中从非基变量选入基的新变量。
+Leaving Variable|出基变量||单纯形换基步骤中被替换出基的旧变量。
+Pivot Operation|枢轴换基操作||通过改变基与非基变量身份移动到相邻基解的步骤。
+Reduced Cost|检验数／约化成本||衡量非基变量进入基后目标一阶改进可能性的系数。
+Degenerate Vertex|退化顶点||一个顶点对应多于维度所需的活跃约束或存在零基变量的情形。
+Cycling|循环换基||单纯形法反复回到之前某个基而不推进的罕见现象。
+Bland Rule|布兰德规则||按变量最小索引选入基与出基以避免单纯形循环的规则。
+Phase I Simplex|第一阶段单纯形法||通过人工变量辅助问题寻找原问题初始可行基的阶段。
+Phase II Simplex|第二阶段单纯形法||从可行基出发优化原始目标函数的阶段。
+Farkas Lemma|法卡斯引理||给出线性不等式可行性与不可行证书二择一关系的定理。
+Linear Programming Dual|线性规划对偶||与原始 LP 对应、使用乘子构成的另一个线性规划问题。

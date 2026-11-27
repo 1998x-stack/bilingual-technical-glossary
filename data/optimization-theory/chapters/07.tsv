@@ -1,0 +1,26 @@
+# 整数规划与组合优化
+Integer Programming|整数规划|IP|要求部分或全部决策变量取整数值的优化问题。
+Mixed-integer Programming|混合整数规划|MIP|同时包含整数变量和连续变量的数学规划模型。
+Mixed-integer Linear Programming|混合整数线性规划|MILP|具有线性目标与约束、且部分变量为整数的优化问题。
+Binary Decision Variable|二元决策变量||只允许取 0 或 1 的决策变量。
+Linear Relaxation|线性松弛||去掉整数限制、保留线性约束所得的连续优化问题。
+Integrality Gap|整数性间隙||整数最优解与松弛问题最优值之间的差异或比值。
+Branch and Bound|分支限界法||依据当前目标界对搜索树分支剪枝并维护最优解的算法框架。
+Branch and Cut|分支割平面法||在分支限界搜索中动态加入有效不等式以加强松弛的策略。
+Cutting Plane|割平面||去除部分非整数松弛解而不排除任何整数可行解的有效不等式。
+Gomory Cut|戈莫里割||从单纯形表的分数结构推导、排除当前非整数解的割。
+Valid Inequality|有效不等式||所有整数可行解都满足的额外线性约束。
+Convex Relaxation|凸松弛||以较容易求解的凸可行域或凸目标近似原优化问题。
+Big-M Formulation|大 M 建模||使用足够大的常数 M 将逻辑蕴含与激活条件写成约束的技术。
+Indicator Constraint|指示约束||由二元变量控制某条约束是否必须成立的建模构造。
+Disjunctive Programming|析取规划||用多个可行集合的逻辑或关系描述决策约束的模型。
+Set Cover Problem|集合覆盖问题||选择最少或最低成本的集合覆盖全部需求元素的优化问题。
+Knapsack Problem|背包问题||在容量约束下选择物品使总价值最大化的问题。
+Assignment Problem|指派问题||为任务与资源建立一一对应关系并优化总成本的模型。
+Vehicle Routing Problem|车辆路径问题|VRP|在车辆容量、时间等条件下设计访问客户的配送路径。
+Facility Location Problem|设施选址问题||综合设施建设成本与用户分配成本选择设施位置的模型。
+Traveling Salesperson Problem|旅行商问题|TSP|寻找经过所有指定地点并回到起点的最低成本巡回路线。
+Column Generation|列生成||只维护部分变量并按约化成本按需生成新变量的大规模 LP 方法。
+Branch and Price|分支定价||把分支定界与列生成结合以求解大规模整数规划的框架。
+Primal Heuristic|原始启发式||快速寻找可行整数解以改善当前上界的搜索方法。
+Mixed-integer Optimality Gap|混合整数最优性差距||整数 incumbent 与求解器已证目标界之间的相对或绝对差。

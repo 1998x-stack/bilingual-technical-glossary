@@ -1,0 +1,26 @@
+# 分布式、在线与大规模优化
+Distributed Optimization|分布式优化||通过多个节点协作求解共同目标或耦合约束的优化方法。
+Alternating Direction Method of Multipliers|交替方向乘子法|ADMM|结合变量分裂、增广拉格朗日与交替更新的优化算法。
+Consensus Optimization|一致性优化||各工作节点维护局部变量并通过一致性约束逼近共同解的优化模型。
+Consensus ADMM|一致性 ADMM||把多节点局部变量约束到全局共享变量的 ADMM 形式。
+Parameter Server|参数服务器||集中或分层管理模型参数并提供梯度聚合与分发的架构。
+Data-parallel Optimization|数据并行优化||将样本划分到多个设备并合并各自梯度的训练方式。
+Model-parallel Optimization|模型并行优化||把同一模型的参数或计算分布到多个设备并协同求解的方式。
+Synchronous SGD|同步随机梯度下降||多个工作节点完成一轮梯度计算后统一更新模型参数的算法。
+Asynchronous SGD|异步随机梯度下降||工作节点无需等待全部同伴即可使用或提交梯度的更新方式。
+Gradient Staleness|陈旧梯度||某个梯度基于已过期参数版本计算，可能影响收敛的现象。
+Gradient Compression|梯度压缩||通过量化、稀疏化或编码减少梯度通信量的方法。
+Communication Complexity|通信复杂度||分布式优化完成目标精度所需数据传输量或通信轮次数。
+All-reduce|全归约|AllReduce|跨多个设备聚合数据并将相同聚合结果返回全部参与者的通信原语。
+Decentralized Optimization|去中心化优化||节点通过邻居通信而不依赖单一中央参数服务器求解目标。
+Gossip Averaging|流言平均||节点反复与邻居交换并平均局部值以趋向全局共识的过程。
+Federated Optimization|联邦优化||训练数据保留在各参与端、通过模型更新协作优化的框架。
+Federated Averaging|联邦平均算法|FedAvg|各参与方本地训练多步后加权平均模型参数的联邦方法。
+Client Drift|客户端漂移||联邦本地更新因数据异质性而偏离全局优化方向的现象。
+Online Optimization|在线优化||决策按时间到来、在获知当前损失全部信息前依次作出的优化框架。
+Online Gradient Descent|在线梯度下降|OGD|每轮依据已观察损失梯度更新后续决策的在线算法。
+Regret|遗憾值||算法累计损失与某个固定或动态基准策略累计损失的差。
+Static Regret|静态遗憾||与事后最优的单一固定决策比较产生的累计损失差。
+Dynamic Regret|动态遗憾||与每轮允许变化的比较决策序列之间的累计损失差。
+Mirror Descent|镜像下降法||在一般几何下用 Bregman 散度代替欧氏距离构造更新的算法。
+Bregman Divergence|Bregman 散度||由严格凸可微函数生成、一般不对称的广义差异度量。

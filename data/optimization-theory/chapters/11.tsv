@@ -1,0 +1,26 @@
+# 非光滑优化、次梯度与近端算法
+Nonsmooth Optimization|非光滑优化||目标或约束含不可微点的优化问题及其求解方法。
+Subgradient|次梯度||对凸函数提供全局仿射下界的线性系数向量。
+Subdifferential|次微分||某点所有凸次梯度组成的集合。
+Clarke Generalized Gradient|Clarke 广义梯度||通过附近梯度极限的凸包定义局部 Lipschitz 函数的广义导数。
+Subgradient Method|次梯度法||用合法次梯度替代普通梯度迭代求解非光滑凸问题的算法。
+Proximal Operator|近端算子|prox|使函数值与到输入点平方距离之和最小的映射。
+Proximal Point Algorithm|近端点算法|PPA|通过连续求解带二次正则项的子问题逼近优化解的方法。
+Proximal Gradient Method|近端梯度法||对光滑项作梯度步、对非光滑项作近端步的复合优化算法。
+Forward-backward Splitting|前向—后向分裂||对一个算子显式更新、另一个算子使用近端或隐式步骤的分裂方法。
+FISTA|快速迭代收缩阈值算法|FISTA|以加速近端梯度策略求解复合凸目标的算法。
+Soft Thresholding|软阈值算子||对数值按阈值缩小绝对值，并将小数值置零的算子。
+Hard Thresholding|硬阈值算子||保留超出阈值的数值、将其他值直接置零的非连续算子。
+L1 Regularization|L1 正则化||将参数绝对值和作为惩罚以鼓励稀疏解。
+Elastic Net Regularization|弹性网络正则化||同时包含 L1 与 L2 惩罚的正则化方案。
+Group Lasso|组套索||对预定义变量组施加组范数惩罚，以促进整组稀疏性。
+Total Variation Regularization|全变差正则化|TV|惩罚相邻值变化或图像梯度，以鼓励分段平滑或常值结构。
+Moreau Envelope|莫罗包络||用二次距离惩罚平滑原函数并保留其最优值结构的构造。
+Moreau Decomposition|莫罗分解||将向量与凸函数及其共轭的近端映射联系起来的恒等式。
+Indicator Function of a Set|集合指示函数||在集合内为零、集合外为正无穷的扩展实值函数。
+Projection Operator|投影算子||把点映射到闭凸集合中距离最近点的算子。
+Douglas–Rachford Splitting|Douglas–Rachford 分裂||通过交替近端反射求解单调算子和的分裂迭代方法。
+Primal-dual Hybrid Gradient|原始—对偶混合梯度|PDHG|交替更新原始与对偶变量、用于鞍点结构问题的算法。
+Chambolle–Pock Algorithm|Chambolle–Pock 算法||对一类凸凹鞍点问题进行外推与近端更新的原始—对偶算法。
+Monotone Operator|单调算子||任意两图点的输出差与输入差内积非负的算子。
+Maximal Monotone Operator|极大单调算子||其图无法在保持单调性的同时进一步扩大的单调算子。

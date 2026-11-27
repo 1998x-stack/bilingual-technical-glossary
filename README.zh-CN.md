@@ -155,3 +155,11 @@ python3 -m unittest discover -s tests -v
 - [来源与审稿说明](data/distributed-systems/SOURCES.md)
 - 原始章节：`data/distributed-systems/chapters/`。校验：`node scripts/render_distributed_systems.mjs --check`。
 - **本册为独立出版物，暂不计入已索引的学科数与术语数。**
+
+## 最优化理论（独立出版，暂未加入网站搜索）
+
+新增《最优化理论专有名词中英文对照表》：**400 条双语术语，16 个专业章节**，包含凸优化、KKT、对偶理论、线性与整数规划、非线性数值方法、梯度与牛顿方法、近端算法、随机/在线/分布式优化、全局优化、多目标与鲁棒优化及最优控制；附 14 组概念辨析、10 道中等难度面试题和 10 道考试题及解析。
+
+[阅读全文（Markdown）](glossaries/optimization-theory.md) · [下载 PDF](pdf/optimization-theory.pdf) · [结构化 TSV](data/optimization-theory.tsv) · [参考来源和审稿说明](data/optimization-theory/SOURCES.md)
+
+原始数据：`data/optimization-theory/chapters/`。复现/检查命令：`node scripts/render_optimization_theory.mjs --check`。**本册暂未计入网站已索引学科数与术语数。**

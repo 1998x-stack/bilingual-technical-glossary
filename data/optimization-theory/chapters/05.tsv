@@ -1,0 +1,26 @@
+# 拉格朗日对偶与灵敏度分析
+Lagrange Duality|拉格朗日对偶||通过对约束引入乘子构造可给出原问题目标界的对偶问题。
+Dual Function|对偶函数||对拉格朗日函数关于原始变量取下确界所得的函数。
+Dual Problem|对偶问题||最大化拉格朗日对偶函数并满足乘子约束的问题。
+Primal Problem|原始问题||相对于其拉格朗日对偶问题而言的原优化问题。
+Weak Duality|弱对偶性||对于最小化原问题，任意对偶可行目标值不超过原始可行目标值。
+Strong Duality|强对偶性||原始问题与对偶问题的最优值相等的性质。
+Duality Gap|对偶间隙||原始问题与对偶问题最优目标值的差。
+Primal-dual Pair|原始—对偶问题对||由同一优化建模关系联系的原始问题和对偶问题。
+Primal-dual Optimality|原始—对偶最优性||结合原始可行、对偶可行及目标值相等验证两边最优的性质。
+Saddle-point Condition|鞍点条件||拉格朗日函数在原始变量与乘子方向满足适当最小最大关系。
+Minimax Theorem|极小极大定理||在规定凸凹性与紧性等条件下交换最小与最大运算的结论。
+Fenchel Conjugate|芬切尔共轭||定义为变量线性内积与原函数之差的上确界的函数。
+Fenchel–Moreau Theorem|芬切尔—莫罗定理||适当下半连续真凸函数等于其双共轭的定理。
+Biconjugate|双共轭函数||对共轭函数再取一次共轭得到的函数。
+Fenchel Duality|芬切尔对偶||利用凸共轭构造复合凸优化问题的对偶表达。
+Sensitivity Analysis|灵敏度分析||研究模型参数变化引起最优值、最优解与活跃集变化的方法。
+Perturbation Function|扰动函数||用参数描述目标或约束变化后所得最优值的函数。
+Shadow Price|影子价格||在可微与正则条件下约束右端参数边际变化对最优值的影响率。
+Marginal Value|边际价值||某项参数增加一小单位时目标最优值的变化程度。
+Complementary Dual Variable|互补对偶变量||与原始约束互补关系对应的乘子变量。
+Dual Certificate|对偶证书||通过可行的对偶解与目标界验证优化质量或最优性的证明对象。
+Primal-dual Gap|原始—对偶差距||当前原始与对偶候选目标值之间的差额。
+Dual Ascent|对偶上升法||根据对偶函数的上梯度或梯度更新乘子的迭代方法。
+Lagrangian Relaxation|拉格朗日松弛||把部分约束移入目标并对其施加乘子罚项的优化方法。
+Dual Decomposition|对偶分解||通过共享约束的乘子把原问题拆成可并行子问题的策略。

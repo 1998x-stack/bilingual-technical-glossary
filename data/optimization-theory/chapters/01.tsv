@@ -1,0 +1,26 @@
+# 最优化基础与数学建模
+Optimization|最优化||在约束条件下寻找使目标函数达到最小或最大的决策过程。
+Optimization Problem|优化问题||由决策变量、目标函数与可行性约束共同定义的数学任务。
+Mathematical Programming|数学规划||使用数学表达式描述并求解优化决策的研究领域。
+Decision Variable|决策变量||由求解过程选择取值、决定方案的未知量。
+Objective Function|目标函数||衡量候选方案成本、效用或质量的数值函数。
+Minimization Problem|最小化问题||寻找使目标函数取值尽可能小的可行解。
+Maximization Problem|最大化问题||寻找使目标函数取值尽可能大的可行解。
+Feasible Set|可行域||满足全部问题约束的决策变量集合。
+Feasible Solution|可行解||属于可行域、满足全部约束的候选方案。
+Infeasible Problem|不可行问题||不存在任何满足所有约束的决策变量的优化问题。
+Unbounded Problem|无界优化问题||在可行域上目标值可沿优化方向无限改进的问题。
+Optimal Solution|最优解||达到问题定义的最优目标值的可行方案。
+Optimal Value|最优值||目标函数在全体可行解上的最小值或最大值。
+Global Minimum|全局最小值||函数在整个考虑域内取得的最小值。
+Local Minimum|局部最小值||函数在某个邻域内取得的最小值。
+Strict Local Minimum|严格局部极小值||邻域中除该点外所有可行点目标值都严格更大的局部解。
+Infimum|下确界||所有函数值下界中的最大者，不要求被某点实际取得。
+Supremum|上确界||所有函数值上界中的最小者，不要求被某点实际取得。
+Argmin|最小化解集合|argmin|所有达到最小目标值的自变量组成的集合或其取值操作。
+Argmax|最大化解集合|argmax|所有达到最大目标值的自变量组成的集合或其取值操作。
+Optimization Landscape|优化地形||目标函数随决策变量变化形成的局部谷地、峰值与鞍点结构。
+Multi-start Optimization|多起点优化||从多个不同初值独立运行局部优化器以寻找更好解的策略。
+Optimization Modeling|优化建模||将现实决策、成本和限制转写为目标与约束的过程。
+Model Assumption|模型假设||为简化或确定优化问题而事先规定的条件。
+Solver|优化求解器||针对特定问题类别计算可行解或最优解的软件或算法。

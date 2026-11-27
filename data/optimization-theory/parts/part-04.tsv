@@ -1,0 +1,107 @@
+# 分布式、在线与大规模优化
+Distributed Optimization|分布式优化||通过多个节点协作求解共同目标或耦合约束的优化方法。
+Alternating Direction Method of Multipliers|交替方向乘子法|ADMM|结合变量分裂、增广拉格朗日与交替更新的优化算法。
+Consensus Optimization|一致性优化||各工作节点维护局部变量并通过一致性约束逼近共同解的优化模型。
+Consensus ADMM|一致性 ADMM||把多节点局部变量约束到全局共享变量的 ADMM 形式。
+Parameter Server|参数服务器||集中或分层管理模型参数并提供梯度聚合与分发的架构。
+Data-parallel Optimization|数据并行优化||将样本划分到多个设备并合并各自梯度的训练方式。
+Model-parallel Optimization|模型并行优化||把同一模型的参数或计算分布到多个设备并协同求解的方式。
+Synchronous SGD|同步随机梯度下降||多个工作节点完成一轮梯度计算后统一更新模型参数的算法。
+Asynchronous SGD|异步随机梯度下降||工作节点无需等待全部同伴即可使用或提交梯度的更新方式。
+Gradient Staleness|陈旧梯度||某个梯度基于已过期参数版本计算，可能影响收敛的现象。
+Gradient Compression|梯度压缩||通过量化、稀疏化或编码减少梯度通信量的方法。
+Communication Complexity|通信复杂度||分布式优化完成目标精度所需数据传输量或通信轮次数。
+All-reduce|全归约|AllReduce|跨多个设备聚合数据并将相同聚合结果返回全部参与者的通信原语。
+Decentralized Optimization|去中心化优化||节点通过邻居通信而不依赖单一中央参数服务器求解目标。
+Gossip Averaging|流言平均||节点反复与邻居交换并平均局部值以趋向全局共识的过程。
+Federated Optimization|联邦优化||训练数据保留在各参与端、通过模型更新协作优化的框架。
+Federated Averaging|联邦平均算法|FedAvg|各参与方本地训练多步后加权平均模型参数的联邦方法。
+Client Drift|客户端漂移||联邦本地更新因数据异质性而偏离全局优化方向的现象。
+Online Optimization|在线优化||决策按时间到来、在获知当前损失全部信息前依次作出的优化框架。
+Online Gradient Descent|在线梯度下降|OGD|每轮依据已观察损失梯度更新后续决策的在线算法。
+Regret|遗憾值||算法累计损失与某个固定或动态基准策略累计损失的差。
+Static Regret|静态遗憾||与事后最优的单一固定决策比较产生的累计损失差。
+Dynamic Regret|动态遗憾||与每轮允许变化的比较决策序列之间的累计损失差。
+Mirror Descent|镜像下降法||在一般几何下用 Bregman 散度代替欧氏距离构造更新的算法。
+Bregman Divergence|Bregman 散度||由严格凸可微函数生成、一般不对称的广义差异度量。
+
+# 全局、黑箱与无导数优化
+Global Optimization|全局优化||旨在寻找整个可行域上的最好目标值而非仅局部最优的求解领域。
+Nonconvex Optimization|非凸优化||目标或可行域不满足凸优化结构的优化问题。
+Black-box Optimization|黑箱优化||只能通过函数评估、而不依赖显式解析表达式来求解的问题。
+Derivative-free Optimization|无导数优化|DFO|不直接使用目标函数解析梯度或海森信息的优化方法。
+Direct Search|直接搜索法||通过对若干试探点的函数值比较决定下一步搜索的方法。
+Pattern Search|模式搜索||依据预定方向模式逐步试探并调整网格尺度的无导数优化算法。
+Nelder–Mead Method|Nelder–Mead 单纯形法||在若干顶点构成的几何单纯形上执行反射、扩张等操作的无导数方法。
+Trust-region Derivative-free Method|无导数信赖域法||从采样点建立局部替代模型并在信赖域内更新的算法。
+Surrogate Model|代理模型||利用已评估样本近似昂贵目标函数的计算模型。
+Response Surface Methodology|响应面方法||通过局部统计建模分析输入因素与目标响应关系的优化方法。
+Bayesian Optimization|贝叶斯优化|BO|利用概率代理模型及采集函数选择下一次昂贵函数评估的策略。
+Gaussian Process Surrogate|高斯过程代理模型|GP|用高斯过程对黑箱函数及其不确定性进行建模。
+Acquisition Function|采集函数||综合潜在改进与不确定性选择下一次评估位置的函数。
+Expected Improvement|期望改进|EI|以目标函数改进幅度的期望作为采集准则。
+Probability of Improvement|改进概率|PI|用候选点超过当前最好值的概率选择评估位置的准则。
+Upper Confidence Bound|上置信界|UCB|基于预测均值与不确定性加权组合进行探索的策略。
+Exploration–Exploitation Tradeoff|探索—利用权衡||在尝试未知区域与利用已知较好区域之间平衡资源分配。
+Random Search|随机搜索||按照给定分布随机生成候选配置并评估目标的方法。
+Simulated Annealing|模拟退火|SA|借助随温度降低的概率接受较差解以逃离局部极值的启发式算法。
+Genetic Algorithm|遗传算法|GA|通过选择、交叉和变异演化候选解种群的随机搜索算法。
+Differential Evolution|差分进化|DE|利用个体差分构造变异向量并迭代选择的群体优化算法。
+Particle Swarm Optimization|粒子群优化|PSO|通过个体历史最好解与群体最好信息更新粒子速度和位置的方法。
+CMA-ES|协方差矩阵自适应进化策略|CMA-ES|通过更新高斯采样分布协方差和步长进行无导数连续优化的方法。
+Multimodal Optimization|多峰优化||目标函数具有多个局部极值或若干分离良好解区域的优化问题。
+Branch-and-bound Global Optimization|全局分支定界||对连续区域建立可证目标界并递归分割以搜索全局最优的策略。
+
+# 多目标、鲁棒与风险优化
+Multiobjective Optimization|多目标优化||同时考虑两个或更多可能冲突目标函数的优化框架。
+Pareto Optimality|帕累托最优性||不存在其他可行方案能不损害任何目标而严格改善至少一个目标的性质。
+Pareto Frontier|帕累托前沿||所有非支配方案在目标空间中形成的边界集合。
+Dominance Relation|支配关系||一个候选解在所有目标上不差且至少一个目标严格更好的偏序关系。
+Nondominated Solution|非支配解||在指定解集合内不存在其他解支配它的候选解。
+Weighted Sum Method|加权和法||通过非负权重将多个目标合成为单一标量目标的方法。
+Epsilon-constraint Method|ε 约束法||把部分目标变成阈值约束、优化剩余主目标的多目标方法。
+Lexicographic Optimization|字典序优化||按预定优先级依次优化目标并保留高优先级最优性的策略。
+Goal Programming|目标规划||使多个目标偏离指定期望水平的加权或分级偏差最小化的模型。
+Scalarization|标量化||把向量目标转为单个目标以应用常规优化算法的过程。
+Robust Optimization|鲁棒优化||在规定不确定性集合中保证约束及最坏情形目标表现的优化框架。
+Uncertainty Set|不确定性集合||表示未知参数可能取值范围的集合。
+Robust Counterpart|鲁棒对应问题||将含不确定参数的约束改写为对所有允许参数都成立的确定性问题。
+Worst-case Optimization|最坏情形优化||以不确定情形中最不利结果作为优化准则的方法。
+Distributionally Robust Optimization|分布鲁棒优化|DRO|在某个概率分布集合内优化最坏期望损失的框架。
+Ambiguity Set|分布模糊集合||分布鲁棒优化中允许考虑的概率分布集合。
+Chance-constrained Programming|机会约束规划||要求某些随机约束以至少指定概率成立的优化建模方式。
+Scenario Optimization|场景优化||通过抽样产生的有限情景近似随机或鲁棒约束的优化方法。
+Stochastic Programming|随机规划||在模型中显式引入随机参数及概率分布的数学规划方法。
+Two-stage Stochastic Programming|两阶段随机规划||先作初始决策、观察随机结果后再做补救决策的模型。
+Recourse Decision|补救决策||在不确定事件实现后根据观测结果调整的后续决策。
+Conditional Value at Risk|条件风险价值|CVaR|在给定置信水平下描述分布尾部平均损失的风险度量。
+Value at Risk|风险价值|VaR|在给定置信水平下损失分布的分位数风险度量。
+Mean-variance Optimization|均值—方差优化||综合期望收益或成本与波动方差进行决策的模型。
+Risk-averse Optimization|风险厌恶优化||在期望目标之外明确惩罚或约束不利随机结果的优化策略。
+
+# 动态规划、最优控制与应用
+Dynamic Optimization|动态优化||决策随时间演进并受状态转移或时间耦合影响的优化问题。
+Optimal Control|最优控制||在动力学约束下选择时间变化的控制输入以优化累计代价的理论。
+State Variable|状态变量||描述动态系统当前状态并决定后续演化的变量。
+Control Input|控制输入||可由控制器选择、用于影响系统动力学的决策量。
+State Transition Equation|状态转移方程||描述下一状态如何由当前状态与控制输入决定的关系。
+Cost-to-go Function|剩余代价函数||从某个状态和时刻开始所能达到的最小未来累计成本。
+Bellman Optimality Principle|贝尔曼最优性原理||最优策略的后续决策对于到达状态必须构成相应子问题的最优策略。
+Value Function|价值函数||把系统状态映射到某个策略或最优策略预期累计回报或成本的函数。
+Bellman Equation|贝尔曼方程||把某状态的价值表示为即时成本或奖励与后续价值的递推方程。
+Dynamic Programming|动态规划|DP|通过求解相互依赖的阶段性子问题计算全局最优策略的方法。
+Hamilton–Jacobi–Bellman Equation|哈密顿—雅可比—贝尔曼方程|HJB|连续时间最优控制中描述价值函数的偏微分方程。
+Pontryagin Maximum Principle|庞特里亚金极大值原理|PMP|最优控制轨迹需满足的伴随方程和哈密顿量极值条件。
+Costate Variable|协态变量||最优控制中描述状态约束边际价值的伴随变量。
+Control Hamiltonian|控制哈密顿量||由即时运行成本与协态和动力学内积构成的控制理论函数。
+Transversality Condition|横截条件||最优控制在终端时刻或边界满足的额外必要条件。
+Model Predictive Control|模型预测控制|MPC|反复求解有限时域最优控制并只执行当前第一步控制的策略。
+Receding Horizon Control|滚动时域控制||随着时间推进持续更新有限预测窗口并重新优化控制的方案。
+Finite-horizon Optimization|有限时域优化||在固定有限时间或阶段长度内优化动态决策的模型。
+Infinite-horizon Optimization|无限时域优化||在无限时间范围内考虑折现或长期平均累计成本的模型。
+Trajectory Optimization|轨迹优化||把状态轨迹和控制序列作为决策变量直接优化动态系统性能。
+Direct Collocation|直接配点法||在时间网格上离散动力学并联合优化状态与控制变量的方法。
+Shooting Method|打靶法||通过选择初始控制或协态变量、积分动力学满足终端约束的技术。
+Differential Dynamic Programming|微分动态规划|DDP|利用局部二阶近似和时间反向递推改进控制轨迹的算法。
+Linear Quadratic Regulator|线性二次调节器|LQR|针对线性动力学与二次成本求最优状态反馈控制律的方法。
+Optimal Transport|最优传输|OT|在给定边缘分布约束下最小化将质量从源分布搬运至目标分布成本的问题。

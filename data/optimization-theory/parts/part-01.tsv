@@ -1,0 +1,107 @@
+# 最优化基础与数学建模
+Optimization|最优化||在约束条件下寻找使目标函数达到最小或最大的决策过程。
+Optimization Problem|优化问题||由决策变量、目标函数与可行性约束共同定义的数学任务。
+Mathematical Programming|数学规划||使用数学表达式描述并求解优化决策的研究领域。
+Decision Variable|决策变量||由求解过程选择取值、决定方案的未知量。
+Objective Function|目标函数||衡量候选方案成本、效用或质量的数值函数。
+Minimization Problem|最小化问题||寻找使目标函数取值尽可能小的可行解。
+Maximization Problem|最大化问题||寻找使目标函数取值尽可能大的可行解。
+Feasible Set|可行域||满足全部问题约束的决策变量集合。
+Feasible Solution|可行解||属于可行域、满足全部约束的候选方案。
+Infeasible Problem|不可行问题||不存在任何满足所有约束的决策变量的优化问题。
+Unbounded Problem|无界优化问题||在可行域上目标值可沿优化方向无限改进的问题。
+Optimal Solution|最优解||达到问题定义的最优目标值的可行方案。
+Optimal Value|最优值||目标函数在全体可行解上的最小值或最大值。
+Global Minimum|全局最小值||函数在整个考虑域内取得的最小值。
+Local Minimum|局部最小值||函数在某个邻域内取得的最小值。
+Strict Local Minimum|严格局部极小值||邻域中除该点外所有可行点目标值都严格更大的局部解。
+Infimum|下确界||所有函数值下界中的最大者，不要求被某点实际取得。
+Supremum|上确界||所有函数值上界中的最小者，不要求被某点实际取得。
+Argmin|最小化解集合|argmin|所有达到最小目标值的自变量组成的集合或其取值操作。
+Argmax|最大化解集合|argmax|所有达到最大目标值的自变量组成的集合或其取值操作。
+Optimization Landscape|优化地形||目标函数随决策变量变化形成的局部谷地、峰值与鞍点结构。
+Multi-start Optimization|多起点优化||从多个不同初值独立运行局部优化器以寻找更好解的策略。
+Optimization Modeling|优化建模||将现实决策、成本和限制转写为目标与约束的过程。
+Model Assumption|模型假设||为简化或确定优化问题而事先规定的条件。
+Solver|优化求解器||针对特定问题类别计算可行解或最优解的软件或算法。
+
+# 凸集合、凸函数与几何基础
+Convex Set|凸集||集合中任意两点的连线段都完全属于该集合。
+Convex Combination|凸组合||权重非负且和为一的点的线性组合。
+Convex Hull|凸包||包含给定点集的最小凸集。
+Affine Set|仿射集||包含其中任意两点的全部仿射组合的集合。
+Affine Combination|仿射组合||系数总和为一、但不要求每个系数非负的线性组合。
+Convex Cone|凸锥||同时满足凸性与对非负数乘法封闭性的集合。
+Proper Cone|正规锥||通常指闭、凸、尖且内部非空的锥。
+Dual Cone|对偶锥||对原锥中每个向量内积均非负的向量集合。
+Polar Cone|极锥||与给定锥中所有向量内积均非正的向量集合。
+Hyperplane|超平面||由一个非零法向量与固定内积值定义的仿射平面。
+Halfspace|半空间||满足某个线性不等式的一侧点集。
+Separating Hyperplane|分离超平面||将两个凸集置于两侧或不相交侧的超平面。
+Supporting Hyperplane|支撑超平面||经过凸集边界点且整个凸集位于一侧的超平面。
+Relative Interior|相对内部||集合相对于其仿射包的内部。
+Closure|闭包||包含集合本身及其全部极限点的最小闭集。
+Epigraph|上图集||由满足目标函数值不大于高度坐标的点构成的集合。
+Hypograph|下图集||由满足高度坐标不大于函数值的点构成的集合。
+Convex Function|凸函数||在凸定义域内函数值不大于端点函数值的凸组合。
+Strictly Convex Function|严格凸函数||对不同点及内部凸组合满足严格凸不等式的函数。
+Strongly Convex Function|强凸函数||减去适当正定二次项后仍为凸函数的函数。
+Concave Function|凹函数||取相反数后成为凸函数的函数。
+Quasiconvex Function|拟凸函数||每个次水平集都是凸集的函数。
+Log-convex Function|对数凸函数||正值函数的对数为凸函数的性质。
+Jensen Inequality|詹森不等式||凸函数作用于加权平均的值不超过函数值的加权平均。
+Perspective Function|透视函数||由函数 f 生成 t f(x/t) 的变换，凸性可在 t 大于零时保留。
+
+# 无约束优化与最优性条件
+Unconstrained Optimization|无约束优化||仅优化目标函数而没有显式可行性约束的任务。
+Differentiable Function|可微函数||在指定点具有线性一阶近似的函数。
+Gradient|梯度||多元标量函数对各决策变量偏导数组成的向量。
+Directional Derivative|方向导数||函数沿给定方向变化的瞬时变化率。
+Hessian Matrix|海森矩阵||二阶连续可微函数全部二阶偏导数组成的矩阵。
+Critical Point|临界点||导数不存在或满足指定一阶驻点条件的候选点。
+Stationary Point|驻点||对于可微无约束函数，梯度为零的点。
+First-order Necessary Condition|一阶必要条件||可微内点局部最优解必须满足梯度为零的条件。
+Second-order Necessary Condition|二阶必要条件||二阶可微内点局部最小值的海森矩阵必须半正定。
+Second-order Sufficient Condition|二阶充分条件||梯度为零且海森矩阵正定可保证严格局部极小值。
+Positive Definite Matrix|正定矩阵||对任意非零向量二次型值严格为正的对称矩阵。
+Positive Semidefinite Matrix|半正定矩阵||对任意向量二次型值非负的对称矩阵。
+Indefinite Hessian|不定海森矩阵||二次型既能取正值又能取负值的海森矩阵。
+Saddle Point|鞍点||在相邻方向上呈现不同增减行为、不是局部极值的驻点。
+Descent Direction|下降方向||目标函数沿该方向的方向导数为负的方向。
+Ascent Direction|上升方向||目标函数沿该方向的方向导数为正的方向。
+Level Set|等值集||函数取同一固定目标值的全部点的集合。
+Sublevel Set|次水平集||函数值小于或等于某阈值的点的集合。
+Lipschitz Continuity|利普希茨连续性||函数值变化量受自变量距离的常数倍约束。
+Lipschitz Gradient|梯度利普希茨连续||梯度变化量受自变量距离常数倍约束的光滑性假设。
+Condition Number|条件数||衡量问题对输入扰动敏感程度的量；二次问题常与特征值比有关。
+Well-conditioned Problem|良态问题||较小输入扰动通常只引起可控解或目标变化的问题。
+Ill-conditioned Problem|病态问题||细小输入或数值误差可能引起较大解变化的问题。
+Local Optimality|局部最优性||候选解在指定邻域内不被其他可行点改进的性质。
+Global Optimality|全局最优性||候选解在整个可行域内不被任何可行点改进的性质。
+
+# 约束优化与 KKT 条件
+Constrained Optimization|约束优化||在等式或不等式条件限制下优化目标函数的任务。
+Equality Constraint|等式约束||要求某表达式严格等于指定值的可行性条件。
+Inequality Constraint|不等式约束||要求表达式满足上界或下界的可行性条件。
+Active Constraint|活跃约束||在当前候选点取等号的不等式约束。
+Inactive Constraint|非活跃约束||在当前候选点严格留有余量的不等式约束。
+Constraint Qualification|约束资格条件||保证乘子存在或最优性条件适用的约束正则性假设。
+LICQ|线性无关约束资格条件|LICQ|活跃不等式与等式约束的梯度在候选点线性无关。
+MFCQ|Mangasarian–Fromovitz 约束资格条件|MFCQ|等式梯度线性无关且存在能严格改善活跃不等式的可行方向。
+Slater Condition|斯莱特条件||凸问题存在满足等式并严格满足相关不等式约束的点的条件。
+Karush–Kuhn–Tucker Conditions|卡鲁什—库恩—塔克条件|KKT|在适当正则性下最优解满足的驻点、可行性、对偶可行性与互补条件。
+Lagrangian Function|拉格朗日函数||把目标函数与约束函数按乘子加权合并的函数。
+Lagrange Multiplier|拉格朗日乘子||为约束配备的系数，在正则条件下可反映边际最优值变化。
+Primal Feasibility|原始可行性||决策变量满足优化问题所有原始约束的条件。
+Dual Feasibility|对偶可行性||对偶变量满足符号及其他对偶约束的要求。
+Complementary Slackness|互补松弛性||不等式约束的松弛量与其对应乘子的乘积为零。
+Stationarity Condition|驻点条件||拉格朗日函数对原始变量的梯度或广义梯度满足零条件。
+Normal Cone|法锥||以支持不等式刻画凸集边界处外法向方向的集合。
+Tangent Cone|切锥||描述可行集合在指定点可沿哪些极限方向移动的锥。
+Feasible Direction|可行方向||沿该方向从候选点做足够小步长仍可保持可行的方向。
+Linearized Constraint|线性化约束||用一阶导数把非线性约束局部近似为线性关系。
+Constraint Violation|约束违反量||度量候选解超出约束允许范围程度的数值。
+Penalty Function|罚函数||把违反约束的代价附加到目标函数上的辅助函数。
+Exact Penalty|精确罚函数||在足够大但有限的罚系数下可与原问题局部解一致的罚函数形式。
+Barrier Function|障碍函数||在可行域边界附近急剧增大、限制迭代越界的函数。
+Interior Feasible Point|严格内部可行点||严格满足所有相关不等式约束的点。

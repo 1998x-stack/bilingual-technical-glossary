@@ -1,0 +1,26 @@
+# 随机优化与机器学习训练
+Stochastic Optimization|随机优化||目标、约束或观测含随机性的优化问题及方法。
+Stochastic Gradient Descent|随机梯度下降|SGD|使用单个样本或随机小批量估计梯度并更新参数的算法。
+Mini-batch Gradient|小批量梯度||用一组随机选取样本计算的平均梯度估计。
+Full-batch Gradient|全批量梯度||使用整个训练数据集计算的目标梯度。
+Stochastic Approximation|随机逼近||基于含噪观测递推逼近方程根或最优解的方法族。
+Robbins–Monro Algorithm|Robbins–Monro 算法||通过递减步长与随机观测寻找期望响应函数零点的随机逼近算法。
+Gradient Noise|梯度噪声||随机梯度估计相对真实期望梯度的随机偏差。
+Unbiased Gradient Estimator|无偏梯度估计||在适当条件下估计量期望等于目标真实梯度的估计。
+Gradient Variance|梯度方差||描述随机梯度估计围绕其期望波动程度的统计量。
+Variance Reduction|方差缩减||利用控制变量或历史信息降低梯度估计噪声的技术。
+SVRG|随机方差缩减梯度|SVRG|结合周期性全梯度和局部修正项减少随机梯度方差的方法。
+SAGA|SAGA 方差缩减算法|SAGA|维护历史梯度信息并构造低方差无偏更新的随机优化方法。
+AdaGrad|自适应梯度算法|AdaGrad|按历史梯度平方和调整各坐标学习率的优化器。
+RMSProp|均方根传播优化器|RMSProp|利用梯度平方的指数移动平均缩放坐标更新的算法。
+Adam|自适应矩估计优化器|Adam|结合梯度一阶与二阶矩指数移动平均更新参数的优化算法。
+AdamW|解耦权重衰减 Adam|AdamW|将权重衰减从自适应梯度更新中分离的 Adam 变体。
+AMSGrad|AMSGrad 优化算法|AMSGrad|通过非递减二阶矩尺度修正 Adam 收敛性质的变体。
+Learning Rate Schedule|学习率调度||随训练进度调整优化步长的预设或自适应规则。
+Warmup Schedule|学习率预热||训练初期逐步提高学习率以减轻更新不稳定的策略。
+Cosine Annealing|余弦退火||按余弦曲线周期性或单次降低学习率的调度方式。
+Gradient Accumulation|梯度累积||跨多个小批次累加梯度后执行一次参数更新的做法。
+Weight Decay|权重衰减||在优化更新中使参数向零缩小的正则化机制。
+Stochastic Objective|随机目标函数||依赖随机样本或随机扰动的损失或回报函数。
+Empirical Risk Minimization|经验风险最小化|ERM|通过最小化训练样本平均损失选择模型参数的方法。
+Generalization Error|泛化误差||模型在目标数据分布上预测损失的期望水平。

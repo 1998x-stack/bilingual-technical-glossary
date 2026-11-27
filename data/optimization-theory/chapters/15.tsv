@@ -1,0 +1,26 @@
+# 多目标、鲁棒与风险优化
+Multiobjective Optimization|多目标优化||同时考虑两个或更多可能冲突目标函数的优化框架。
+Pareto Optimality|帕累托最优性||不存在其他可行方案能不损害任何目标而严格改善至少一个目标的性质。
+Pareto Frontier|帕累托前沿||所有非支配方案在目标空间中形成的边界集合。
+Dominance Relation|支配关系||一个候选解在所有目标上不差且至少一个目标严格更好的偏序关系。
+Nondominated Solution|非支配解||在指定解集合内不存在其他解支配它的候选解。
+Weighted Sum Method|加权和法||通过非负权重将多个目标合成为单一标量目标的方法。
+Epsilon-constraint Method|ε 约束法||把部分目标变成阈值约束、优化剩余主目标的多目标方法。
+Lexicographic Optimization|字典序优化||按预定优先级依次优化目标并保留高优先级最优性的策略。
+Goal Programming|目标规划||使多个目标偏离指定期望水平的加权或分级偏差最小化的模型。
+Scalarization|标量化||把向量目标转为单个目标以应用常规优化算法的过程。
+Robust Optimization|鲁棒优化||在规定不确定性集合中保证约束及最坏情形目标表现的优化框架。
+Uncertainty Set|不确定性集合||表示未知参数可能取值范围的集合。
+Robust Counterpart|鲁棒对应问题||将含不确定参数的约束改写为对所有允许参数都成立的确定性问题。
+Worst-case Optimization|最坏情形优化||以不确定情形中最不利结果作为优化准则的方法。
+Distributionally Robust Optimization|分布鲁棒优化|DRO|在某个概率分布集合内优化最坏期望损失的框架。
+Ambiguity Set|分布模糊集合||分布鲁棒优化中允许考虑的概率分布集合。
+Chance-constrained Programming|机会约束规划||要求某些随机约束以至少指定概率成立的优化建模方式。
+Scenario Optimization|场景优化||通过抽样产生的有限情景近似随机或鲁棒约束的优化方法。
+Stochastic Programming|随机规划||在模型中显式引入随机参数及概率分布的数学规划方法。
+Two-stage Stochastic Programming|两阶段随机规划||先作初始决策、观察随机结果后再做补救决策的模型。
+Recourse Decision|补救决策||在不确定事件实现后根据观测结果调整的后续决策。
+Conditional Value at Risk|条件风险价值|CVaR|在给定置信水平下描述分布尾部平均损失的风险度量。
+Value at Risk|风险价值|VaR|在给定置信水平下损失分布的分位数风险度量。
+Mean-variance Optimization|均值—方差优化||综合期望收益或成本与波动方差进行决策的模型。
+Risk-averse Optimization|风险厌恶优化||在期望目标之外明确惩罚或约束不利随机结果的优化策略。
