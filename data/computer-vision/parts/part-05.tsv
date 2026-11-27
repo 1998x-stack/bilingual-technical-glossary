@@ -1,0 +1,107 @@
+# 图像生成、扩散模型与图像编辑
+Image Generation|图像生成||根据文本、结构条件或随机变量生成新图像的任务。
+Generative Adversarial Network|生成对抗网络|GAN|通过生成器与判别器对抗训练学习数据分布的生成模型框架。
+Generator Network|生成器网络||将噪声或条件表示转换为合成图像的模型组件。
+Discriminator Network|判别器网络||在 GAN 中判断输入来自真实数据还是生成模型的网络。
+Variational Autoencoder|变分自编码器|VAE|利用概率潜变量与变分推断训练编码生成模型的框架。
+Latent Space|潜在空间||由学习表示变量组织的低维或抽象图像编码空间。
+Diffusion Model|扩散生成模型||通过学习反向去噪过程从噪声逐步生成样本的概率生成模型。
+Forward Diffusion Process|正向扩散过程||在训练构造中逐步向图像或潜变量加入噪声的随机过程。
+Reverse Denoising Process|反向去噪过程||依据学习的转移规律从噪声逐步恢复数据样本的生成过程。
+Denoising Score Matching|去噪得分匹配||训练模型估计噪声扰动分布对数密度梯度的目标方法。
+Noise Schedule|噪声调度||决定扩散过程中各时间步加入或去除噪声强度的函数或离散序列。
+DDPM|去噪扩散概率模型|DDPM|利用参数化反向马尔可夫链学习数据生成分布的扩散模型。
+DDIM|去噪扩散隐式模型|DDIM|可在相同训练目标下使用非马尔可夫采样过程加速扩散生成的方法。
+Latent Diffusion Model|潜空间扩散模型|LDM|先把图像压缩到潜空间、在潜变量上执行扩散生成的模型。
+Text-to-image Generation|文本到图像生成|T2I|根据自然语言描述生成符合语义的图像的任务。
+Image-to-image Translation|图像到图像转换||把输入图像转换到另一视觉风格、域或结构表示的任务。
+Image Inpainting|图像修复填充||根据图像可见区域与条件重建缺失或遮蔽部分的任务。
+Image Outpainting|图像画布扩展||在已有图像边界外合成连续合理内容的生成任务。
+Super-resolution|图像超分辨率|SR|从低分辨率观测恢复或生成更高分辨率图像的任务。
+Conditional Generation|条件图像生成||按照类别、语义图、深度、姿态或文本等条件生成图像的方式。
+Classifier-free Guidance|无分类器引导|CFG|在扩散采样中融合有条件与无条件预测以控制条件遵循程度的技术。
+ControlNet|ControlNet 条件控制网络||给预训练扩散模型增加结构化视觉条件控制分支的模型方案。
+Style Transfer|风格迁移||改变图像纹理和视觉风格、同时尽量保留指定内容结构的技术。
+CycleGAN|循环一致性生成对抗网络|CycleGAN|利用双向图像转换和循环一致性损失处理非配对图像域转换的方法。
+Generative Artifact|生成伪影||图像生成过程中出现的结构不合理、重复纹理或局部失真现象。
+
+# 视觉语言模型、跨模态理解与开放词表视觉
+Vision–Language Model|视觉语言模型|VLM|联合处理图像与文本、支持视觉语义理解或生成的模型。
+Multimodal Learning|多模态学习||从图像、文本、音频等不同模态联合学习表示或任务映射的方法。
+Vision Encoder|视觉编码器||把原始图像转换为特征向量或视觉 token 的模型组件。
+Text Encoder|文本编码器||把自然语言输入映射为语义向量或 token 表示的组件。
+Cross-modal Alignment|跨模态对齐||让图像和文字中描述相同内容的表示建立对应关系的过程。
+Contrastive Language–Image Pretraining|对比式图文预训练|CLIP|通过图像文本配对的对比学习获得跨模态表示的模型方法。
+Image–Text Retrieval|图文检索||以图片搜索相关文本或以文本搜索匹配图片的任务。
+Visual Question Answering|视觉问答|VQA|根据图像内容和自然语言问题生成或选择答案的任务。
+Image Captioning|图像描述生成||把图像中的主要对象、动作与场景转写为自然语言描述的任务。
+Visual Grounding|视觉定位锚定||将语言表达对应到图像中的物体区域或空间位置的任务。
+Referring Expression Comprehension|指代表达理解||根据自然语言描述定位其指向的特定图像目标的任务。
+Phrase Grounding|短语视觉锚定||把语言中的名词短语与图像区域建立细粒度对应的任务。
+Open-vocabulary Detection|开放词表目标检测||能够依据训练时未固定列出的文本类别名称检测目标的任务。
+Zero-shot Image Classification|零样本图像分类||利用语义描述或迁移表示分类训练时未有直接标注的目标类别。
+Few-shot Visual Learning|少样本视觉学习||借助少量目标类别或任务标注样本适应新视觉识别问题的方法。
+Multimodal Instruction Tuning|多模态指令微调||用图文指令与回答配对训练视觉语言模型遵循任务要求的过程。
+Visual Token|视觉词元||将图像 patch、区域或压缩特征转换成供多模态模型处理的序列元素。
+Vision–Language Projector|视觉语言投影模块||把视觉编码器输出映射到语言模型可接收表示空间的组件。
+Cross-attention Fusion|交叉注意力融合||让一个模态的查询根据另一模态键和值整合信息的机制。
+Early Fusion|早期多模态融合||在网络较早阶段联合处理不同模态输入或特征的方式。
+Late Fusion|后期多模态融合||各模态独立提取表示、在预测阶段组合输出或特征的方法。
+OCR-aware VLM|文字感知视觉语言模型||专门提高对图像中文字识别与理解能力的视觉语言模型。
+Document Visual Question Answering|文档视觉问答|DocVQA|依据包含版面与文字的文档图像回答自然语言问题的任务。
+Visual Hallucination|视觉幻觉||视觉语言模型描述图像中并不存在的对象、属性或关系的错误。
+Grounding Verification|视觉证据核验||检查图像区域或其他可观察证据是否支持模型陈述的步骤。
+
+# 数据集、标注、训练与视觉评测指标
+Computer Vision Dataset|计算机视觉数据集||用于训练或评估视觉算法的图像、视频及标签集合。
+ImageNet|ImageNet 图像数据集||以大规模分类标注推动视觉表示学习与模型基准比较的数据集。
+COCO Dataset|COCO 通用物体数据集|COCO|包含复杂场景图像及检测、分割和关键点等标注的数据集。
+Pascal VOC|PASCAL VOC 视觉挑战数据集|VOC|用于物体分类、检测和分割等任务的经典基准。
+Cityscapes Dataset|Cityscapes 街景数据集||面向城市道路场景语义与实例理解的像素标注数据集。
+KITTI Benchmark|KITTI 自动驾驶基准||面向立体视觉、光流、定位与三维目标检测等任务的道路数据集。
+Open Images Dataset|Open Images 数据集||包含多类别图像及检测框、关系等标注的大规模视觉数据资源。
+Annotation Format|视觉标注格式||规定边界框、掩码、关键点与类别标签如何编码的结构模式。
+Polygon Annotation|多边形标注||通过有序顶点序列近似目标区域轮廓的标注方式。
+Instance ID|实例标识符||在同一图像或视频中区分不同目标实例的标签编号。
+Bounding Box Format|检测框坐标格式||使用 xyxy、xywh 或归一化中心坐标等方式表示矩形的约定。
+Data Augmentation|数据增强||通过保持标签语义的图像变换增加训练样本多样性的策略。
+Random Crop|随机裁剪||从输入图像随机截取子区域构造训练样本的增强操作。
+Random Horizontal Flip|随机水平翻转||按概率将图像及相应标注左右镜像的增强方法。
+Color Jitter|颜色扰动||对亮度、对比度、饱和度等颜色属性执行随机变换的增强操作。
+MixUp|线性混合增强|MixUp|线性组合两张训练图像及相应软标签的数据增强方法。
+CutMix|区域拼贴增强|CutMix|将一张图像局部区域替换为另一图像内容并调整标签权重的增强方法。
+Mosaic Augmentation|马赛克拼图增强||将多张图像重新缩放并拼成一张训练图的增强策略。
+Average Precision|平均精度|AP|依据精确率召回率曲线对某个类别或评测条件计算面积的检测指标。
+Mean Average Precision|平均 AP|mAP|按照规定类别和可选 IoU 阈值对 AP 求平均的评测指标。
+COCO AP|COCO 平均精度|AP@[.50:.95]|在多个 IoU 阈值从 0.50 到 0.95 间平均计算的检测评价指标。
+AP50|IoU 0.50 的平均精度|AP50|使用交并比阈值 0.50 判定检测匹配时的 AP 指标。
+Precision–Recall Curve|精确率—召回率曲线|PR|随检测分数阈值改变展示精确率与召回率关系的曲线。
+Mean Intersection over Union|平均交并比|Mean IoU|对分割任务中的各类别交并比计算平均的指标。
+Dataset Leakage|数据集泄漏||训练和测试之间有重复样本或相互可推断信息导致成绩虚高的现象。
+
+# 部署优化、鲁棒性、隐私与视觉系统工程
+Model Deployment|视觉模型部署||将训练后的视觉网络集成到设备、服务或边缘系统提供推理的过程。
+Inference Latency|推理延迟||从输入图像进入模型到获得预测结果所需的处理时间。
+Inference Throughput|推理吞吐量||系统单位时间内完成视觉模型推理的图像或帧数量。
+Frames per Second|每秒处理帧数|FPS|衡量视频处理管线或视觉推理速度的常用吞吐指标。
+Batch Inference|批量视觉推理||将多张图像组合执行模型计算以提升硬件利用率的方式。
+Model Quantization|视觉模型量化||将浮点权重或激活映射为更低位宽表示以降低存储和计算成本的方法。
+Post-training Quantization|训练后量化|PTQ|在不进行完整重新训练的情况下利用校准或统计把模型转换为低精度表示的技术。
+Quantization-aware Training|量化感知训练|QAT|在训练过程中模拟或纳入量化误差以改善低精度部署效果的方法。
+Model Pruning|模型剪枝||删去部分参数、通道或计算结构以压缩视觉模型的技术。
+Knowledge Distillation|知识蒸馏||使用大型教师模型的输出或表示指导较小学生模型训练的方法。
+ONNX|开放神经网络交换格式|ONNX|用于表示和交换神经网络计算图的开放模型格式。
+TensorRT|TensorRT 推理优化器||NVIDIA 用于神经网络推理图优化、精度选择和引擎执行的软件工具。
+OpenCV|开源计算机视觉库|OpenCV|提供图像处理、几何视觉、视频分析及多种视觉算法接口的开源库。
+Torchvision|PyTorch 视觉扩展库|torchvision|提供视觉数据集、图像变换及常用预训练模型等组件的软件包。
+Edge AI|边缘人工智能||将视觉模型推理部署到摄像机、机器人或其他靠近数据来源设备的方式。
+Real-time Constraint|实时性约束||要求视觉系统在确定时间预算内完成关键处理或响应的工程条件。
+Perception Stack|感知软件栈||融合图像采集、预处理、检测、跟踪和场景状态估计的系统组件集合。
+Robustness Evaluation|视觉鲁棒性评估||检验模型在遮挡、噪声、光照、模糊和分布变化时性能稳定性的过程。
+Out-of-distribution Detection|分布外检测|OOD|识别与训练场景统计明显不同的图像输入或目标的任务。
+Adversarial Patch|对抗贴片||通过局部特定图案干扰视觉模型预测的对抗输入形式。
+Visual Privacy|视觉隐私||在图像采集、处理和保存中保护人脸、身份及其他敏感视觉信息的要求。
+Face Anonymization|人脸匿名化||通过模糊、遮挡或生成替换降低图像中身份可识别性的处理。
+Dataset Bias|数据集偏差||训练数据采集、人群或场景覆盖不均导致模型预测存在系统性偏差的现象。
+Model Monitoring|视觉模型监控||持续观察线上数据分布、延迟、错误和模型质量的运维过程。
+Failure Analysis|视觉失效分析||分类排查漏检、误检、光照变化、标注问题等视觉系统故障根因的过程。
