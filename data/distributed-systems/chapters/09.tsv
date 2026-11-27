@@ -1,0 +1,26 @@
+# 分片、存储与分布式数据库
+Partitioning|数据分区||把数据集按规则拆分成可独立管理的多个部分。
+Sharding|数据库分片||将逻辑数据库数据分散存储到多个物理分片的机制。
+Shard|分片||分布式数据集中按路由规则管理的一部分数据。
+Partition Key|分区键||确定记录应归属哪个分片的字段或字段组合。
+Hash Partitioning|哈希分区||使用分区键哈希值把记录映射到目标分片的策略。
+Range Partitioning|范围分区||按键值区间划分并分布数据的方法。
+Consistent Hashing|一致性哈希||将键与节点映射到环形空间，减少成员变化时迁移数据量的技术。
+Virtual Node|虚拟节点||在哈希环中为物理节点设置多个逻辑位置以改善负载分布。
+Rendezvous Hashing|最高随机权重哈希|HRW|为每个键计算候选节点得分并选择得分最高节点的映射方法。
+Hot Partition|热点分区||承载不成比例请求量或数据流量的分区。
+Hot Key|热点键||被大量重复访问、容易导致单节点负载集中的键。
+Rebalancing|重平衡||将分片或任务从高负载节点迁移到低负载节点的过程。
+Resharding|重新分片||根据容量或访问特征调整数据分片数量及边界。
+Scatter-gather Query|散射—收集查询||把查询发送到多个分片再合并各节点结果的处理方式。
+Secondary Index|二级索引||按非主键字段建立的检索结构，在分片环境下可能本地或全局维护。
+Global Secondary Index|全局二级索引|GSI|跨多个数据分片提供非主键检索能力的索引结构。
+Distributed Key-value Store|分布式键值存储||在多节点保存键值数据并提供基于键访问接口的系统。
+Log-structured Merge Tree|日志结构合并树|LSM Tree|通过内存结构、顺序写和分层合并优化写入的存储引擎结构。
+Write-ahead Log|预写日志|WAL|在更新数据页或状态前先持久记录变更的恢复日志。
+Immutable SSTable|不可变有序字符串表|SSTable|LSM 存储中按键排序且落盘后不原位修改的文件。
+Compaction|存储压实||合并有序文件、删除过期版本并整理数据布局的过程。
+Tombstone|墓碑标记||代表逻辑删除、供复制和压实处理的删除记录。
+Distributed File System|分布式文件系统|DFS|将文件块及元数据分布在多个服务器并提供统一文件接口的系统。
+Object Storage|对象存储||用对象键与元数据管理非结构化数据并通过服务 API 访问的存储方式。
+Erasure Coding|纠删码||将数据编码为含冗余的分片，以少于全部分片重建原数据的容错技术。
