@@ -1,0 +1,26 @@
+# 辐射度量、光传输与渲染方程
+Radiant Flux|辐射通量||单位时间传输的辐射能量，单位为瓦。
+Radiant Intensity|辐射强度||单位立体角方向上的辐射通量，单位瓦每球面度。
+Irradiance|辐照度||单位表面面积接收到的辐射通量，单位瓦每平方米。
+Radiance|辐亮度||单位投影面积和单位立体角内的辐射通量密度。
+Solid Angle|立体角||以单位球面所截面积度量的三维方向区域大小。
+Spectral Radiance|光谱辐亮度||按波长或频率描述辐亮度分布的物理量。
+Visible Spectrum|可见光谱||人眼能够感知的电磁波波长范围及其光谱成分。
+Rendering Equation|渲染方程||由自发光项与所有入射方向反射贡献积分组成的光传输平衡方程。
+Light Transport|光传输||光子或辐射在场景中传播、反射、透射与吸收的过程。
+Incident Radiance|入射辐亮度||从指定方向到达表面点的辐射亮度。
+Outgoing Radiance|出射辐亮度||由表面点沿给定方向离开的辐射亮度。
+Surface Scattering|表面散射||光与材料界面相互作用后发生反射或透射的过程。
+Hemispherical Integral|半球积分||对表面法线方向半球内所有入射光方向进行积分的操作。
+Cosine Foreshortening|余弦投影因子||辐照能量按入射方向与表面法线夹角余弦缩减的几何因子。
+Visibility Function|可见性函数||判断两点之间光路是否被场景几何遮挡的函数。
+Light Source|光源||向场景辐射能量并影响物体外观的对象或环境。
+Point Light|点光源||在单一位置向外发射辐射的理想化光源。
+Directional Light|方向光||以几乎平行的光线方向近似远处光源的模型。
+Area Light|面光源||具有有限发光表面积、可产生软阴影的光源。
+Spotlight|聚光灯||向有限角度锥形区域发射光线的光源模型。
+Environment Light|环境光源||按空间方向定义远处入射辐射的照明模型。
+Inverse-square Law|平方反比定律||理想点源辐射在均匀空间中的照度随距离平方倒数衰减。
+Light Sampling|光源采样||从光源分布选择位置或方向以估计光照贡献的随机过程。
+Importance Sampling|重要性采样||按与积分被积函数贡献相关的概率分布采样以降低方差的方法。
+Multiple Importance Sampling|多重重要性采样|MIS|组合多种采样策略并按权重融合以降低渲染积分估计方差的方法。
