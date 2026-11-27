@@ -1,0 +1,26 @@
+# 功能安全、SOTIF、网络安全与验证论证
+Functional Safety|功能安全||控制电气电子系统失效引发不合理风险的工程活动和要求体系。
+ISO 26262|道路车辆功能安全标准|ISO 26262|面向道路车辆电气电子系统生命周期功能安全的国际标准系列。
+ISO 21448|预期功能安全标准|ISO 21448|针对系统功能不足或可预见误用引起风险的预期功能安全指导标准。
+Safety of the Intended Functionality|预期功能安全|SOTIF|针对无明显系统故障也可能因感知和决策能力不足产生的风险开展安全分析的领域。
+Automotive Safety Integrity Level|汽车安全完整性等级|ASIL|依据危险严重度、暴露概率及可控性确定的汽车功能安全风险等级。
+Hazard Analysis and Risk Assessment|危害分析与风险评估|HARA|识别可能危险事件并确定必要功能安全要求的工程流程。
+Functional Safety Concept|功能安全概念||把安全目标细化为车辆级功能安全要求的架构描述。
+Technical Safety Concept|技术安全概念||把功能安全要求分配到系统硬件和软件设计中的技术方案。
+Safety Goal|安全目标||为减轻特定危险事件风险定义的最高层安全要求。
+Safety Requirement|安全要求||为预防、检测或控制危险事件而必须满足的系统性能或行为约束。
+Safety Case|安全论证案卷||以主张、证据和推理结构论证系统在规定条件下满足安全要求的资料集合。
+Safety Argument|安全论证||把具体安全主张与支持证据通过逻辑关系关联的推理。
+Hazardous Event|危险事件||危险源与特定运行情境组合后可能对人员或环境造成损害的事件。
+Risk Classification|风险分类||依据严重度、发生可能性和可控性等准则划分风险等级的过程。
+SOTIF Triggering Condition|SOTIF 触发条件||使预期功能不足暴露并可能引发危险行为的特定场景或输入条件。
+Known Unsafe Scenario|已知不安全场景||已识别系统能力不足且存在不能接受风险的运行情景。
+Unknown Unsafe Scenario|未知不安全场景||在设计和验证阶段尚未识别、但实际可能引发风险的场景类别。
+Operational Safety Monitor|运行安全监视器||在车辆执行中持续检查安全前提、感知健康和控制边界的独立或半独立组件。
+Fault Detection and Isolation|故障检测与隔离|FDI|识别故障存在及定位相关部件或信号来源的技术。
+Fault Tolerance|容错||在部分组件故障发生后仍能保持规定安全或服务能力的系统性质。
+Freedom from Interference|免受相互干扰||保证一个软件或硬件组件不会意外破坏另一关键组件的安全要求的设计原则。
+Cybersecurity Engineering|车辆网络安全工程||识别并控制车辆通信、软件更新和计算接口攻击风险的活动。
+ISO/SAE 21434|道路车辆网络安全工程标准|ISO/SAE 21434|规定道路车辆网络安全风险管理与产品生命周期工程活动的国际标准。
+Threat Analysis and Risk Assessment|威胁分析与风险评估|TARA|识别可能攻击路径及损害后果并确定网络安全保护优先级的过程。
+Verification and Validation|验证与确认|V&V|分别检查系统是否符合规定要求和是否满足预期实际使用需求的工程过程。
