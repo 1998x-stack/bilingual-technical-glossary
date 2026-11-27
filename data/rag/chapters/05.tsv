@@ -1,0 +1,26 @@
+# 稀疏检索与传统信息检索
+Information Retrieval|信息检索|IR|根据查询从文档集合中查找相关信息的理论与技术。
+Lexical Retrieval|词法检索||基于查询与文档词项匹配的召回方式。
+Full-text Search|全文搜索||在文档正文上建立索引并支持词项条件查找的方法。
+Inverted Index|倒排索引||从词项映射到包含该词的文档及位置列表的索引结构。
+Posting List|倒排记录表||存储某词项出现的文档标识、频次或位置信息的列表。
+Term Frequency|词频|TF|词项在指定文档中出现的次数或加权次数。
+Document Frequency|文档频率|DF|包含某个词项的文档数量。
+Inverse Document Frequency|逆文档频率|IDF|对高频通用词赋予较小权重的全局词项稀有度指标。
+TF–IDF|词频—逆文档频率|TF-IDF|结合文档内词频与语料内稀有程度衡量词项重要性的权重。
+BM25|BM25 排序函数|BM25|结合词频饱和、逆文档频率和文档长度归一化的经典词法相关性评分。
+BM25F|字段加权 BM25|BM25F|对标题、正文等字段分别加权的 BM25 扩展。
+Tokenization|词元化||把自然语言文本分解为检索词项或子词单元的步骤。
+Stop-word Removal|停用词移除||过滤对检索区分度贡献有限的常见词项的预处理。
+Stemming|词干提取||按词形规则把词语变体简化为词干的处理。
+Lemmatization|词形还原||根据语言规则将词语归一化为词典基本形式。
+Phrase Search|短语搜索||要求多个词项按指定顺序及相邻关系出现的检索方式。
+Proximity Search|邻近搜索||对词项在文档中的相对距离设置限制的检索操作。
+Boolean Retrieval|布尔检索||利用与、或、非等逻辑运算组合词项匹配条件的方法。
+Fielded Search|字段检索||只针对标题、作者或指定元数据字段执行检索的方式。
+Fuzzy Matching|模糊匹配||允许一定字符编辑差异的词项检索方式。
+Edit Distance|编辑距离||将一个字符串变为另一个字符串所需编辑操作的最小成本。
+Character N-gram|字符 N 元组||由连续 N 个字符组成、用于索引或近似匹配的文本片段。
+Synonym Expansion|同义词扩展||把查询词映射到相关近义词以扩大召回的策略。
+Exact Match Retrieval|精确匹配检索||要求标识符或关键字段与查询完全一致的检索模式。
+Vocabulary Mismatch|词汇不匹配||查询和相关文档使用不同措辞导致词法检索失败的现象。
