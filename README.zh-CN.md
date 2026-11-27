@@ -142,3 +142,13 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## CUDA（独立出版，暂未加入全站术语索引）
+
+新增《CUDA 专有名词中英文对照表》：**400 条双语术语、16 个专业章节**。主题包括 CUDA 编程模型、线程层级、Kernel 启动、Global/Shared/Local Memory、同步和原子操作、Stream/CUDA Graph、统一内存、Occupancy、访存合并、Tensor Core 与混合精度、nvcc/PTX/SASS、Runtime/Driver API、cuBLAS/cuDNN/NCCL/CUTLASS、Nsight 分析与多 GPU。
+
+附 **14 组概念辨析、10 道中等难度面试题、10 道中等难度考试题及解析**。
+
+[Markdown 阅读](glossaries/cuda.md) · [PDF 下载](pdf/cuda.pdf) · [结构化 TSV](data/cuda.tsv) · [官方文档与审稿说明](data/cuda/SOURCES.md)
+
+原始词表位于 `data/cuda/chapters/`，执行 `node scripts/render_cuda.mjs --check` 可核对生成文件。**这是独立出版物，尚未计入网站已索引的学科数与术语数。**
