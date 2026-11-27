@@ -1,0 +1,26 @@
+# 动画、骨骼蒙皮与角色运动
+Computer Animation|计算机动画||随时间改变场景对象的几何、位姿或材质以生成连续运动的技术。
+Keyframe Animation|关键帧动画||在离散时间设置控制参数并通过插值生成中间动画状态的方法。
+Animation Curve|动画曲线||定义对象某个属性随时间变化的参数函数或控制曲线。
+Interpolation Curve|插值曲线||在给定控制时间点之间构造连续属性数值的曲线。
+Linear Interpolation|线性插值|Lerp|按参数对两个数值或向量进行加权线性组合的操作。
+Spherical Linear Interpolation|球面线性插值|Slerp|沿单位四元数球面最短弧插值旋转的技术。
+Quaternion|四元数||由一个实部和三个虚部组成、常用于表示与插值三维旋转的代数对象。
+Euler Angles|欧拉角||按指定旋转轴序和三个角度表示三维旋转的一组参数。
+Gimbal Lock|万向锁||欧拉角参数化中两个旋转轴重合而丢失自由度的奇异现象。
+Skeletal Animation|骨骼动画||通过关节层级变换驱动角色网格形变的动画方法。
+Joint|关节||骨骼层级中定义局部旋转、平移或其他自由度的连接位置。
+Bone|骨骼节点||构成角色绑定层级并影响网格顶点变换的结构元素。
+Rigging|角色绑定||建立骨架、控制器及其与网格变形关联的过程。
+Skinning|蒙皮||根据骨骼变换和权重计算角色表面顶点变形的方法。
+Linear Blend Skinning|线性混合蒙皮|LBS|对多个骨骼变换结果按权重线性组合顶点位置的技术。
+Dual Quaternion Skinning|对偶四元数蒙皮|DQS|用对偶四元数插值刚体变换以降低部分 LBS 形变伪影的方法。
+Blend Shape|混合形状||通过加权组合预设目标网格形状实现面部或局部变形的技术。
+Morph Target|形态目标||为网格指定另一组顶点位置以支持渐变形变的目标形状。
+Forward Kinematics|正向运动学|FK|由关节角度和层级变换推算末端对象位姿的过程。
+Inverse Kinematics|逆向运动学|IK|根据目标末端位姿求解满足约束的关节配置的任务。
+Motion Capture|动作捕捉|MoCap|通过传感器或视觉估计真实人物或物体运动并转换为动画的技术。
+Animation Blending|动画混合||按权重或状态规则组合多个动画片段输出角色姿态的技术。
+Animation State Machine|动画状态机||根据行为状态与转换条件组织动画片段播放的控制结构。
+Retargeting|动作重定向||把一个角色骨骼或动作数据映射到另一角色的动画技术。
+Root Motion|根节点运动||由动画序列中的根骨骼或角色根节点定义整体位移与旋转的运动信息。
