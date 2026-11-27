@@ -1,0 +1,107 @@
+# 文本生成、摘要、对话与解码控制
+Text Generation|文本生成||根据提示、输入结构或上下文自动生成自然语言序列的任务。
+Conditional Generation|条件文本生成||在给定问题、文档或控制变量条件下生成目标文本的机制。
+Unconditional Generation|无条件文本生成||在不提供特定内容上下文时从语言模型先验分布生成文本的过程。
+Greedy Decoding|贪心解码||每一步选择当前条件概率最高 token 的生成算法。
+Top-k Sampling|前 k 候选采样||每步从概率最高的 k 个 token 中按重归一化概率抽样的解码方法。
+Nucleus Sampling|核采样|Top-p|每步从累计概率达到阈值 p 的最小高概率候选集合采样的策略。
+Temperature Scaling|温度缩放||在 Softmax 前调整 logits 尺度以控制生成分布尖锐程度的方法。
+Repetition Penalty|重复惩罚||降低已经生成内容再次被选择概率的采样或评分机制。
+Stop Sequence|终止序列||一旦在生成文本中匹配到便提前停止输出的指定字符或 token 模式。
+Maximum Generation Length|最大生成长度||对单次解码最多可产生的 token 数量施加的上界。
+Minimum Generation Length|最小生成长度||在生成达到预定长度前限制或抑制结束操作的控制条件。
+Extractive Summarization|抽取式摘要||直接选择原文中的句子或片段组成摘要的任务形式。
+Abstractive Summarization|生成式摘要||用新表述压缩和整合原文信息而不局限于原句的摘要形式。
+Query-focused Summarization|面向查询的摘要||根据用户问题或指定信息需求选择摘要重点的方法。
+Multi-document Summarization|多文档摘要||把多篇相关来源整合为一个覆盖共同或互补信息的摘要。
+Summary Faithfulness|摘要忠实性||摘要的事实陈述与原文证据保持一致、不引入不支持信息的性质。
+Factual Consistency|事实一致性||生成文本中的事实是否与给定来源或已验证事实相符的性质。
+Dialogue State Tracking|对话状态跟踪|DST|根据多轮交互持续更新用户目标、槽位值和上下文状态的任务。
+Dialogue Act|对话行为||对语句执行的提问、确认、告知或请求等交际功能的标注类别。
+Intent Detection|意图识别||从用户话语推断请求、目标或操作类别的任务。
+Slot Filling for Dialogue|对话槽位填充||提取预定业务槽位所对应实体或参数值的任务。
+Response Generation|回复生成||依据对话历史、状态或知识生成系统下一轮话语的过程。
+Turn-taking|话轮交替||对话参与者在连续交互中控制说话时机与轮次的机制。
+Context Carryover|上下文继承||在后续轮次中继续使用此前确认的实体、条件与约束的能力。
+Dialogue Evaluation|对话系统评估||结合任务成功、响应质量、事实支持和用户体验衡量对话系统的流程。
+
+# 语音语言接口与多模态 NLP
+Automatic Speech Recognition|自动语音识别|ASR|将语音音频信号转换为文本词序列的技术。
+Speech-to-text|语音转文本|STT|把录制或实时语音解码为文字结果的系统能力。
+Text-to-speech|文本转语音|TTS|根据输入文本合成自然语音波形的任务。
+Speech Synthesis|语音合成||通过模型生成声学特征或波形以表达指定语言内容的过程。
+Phoneme|音位||语言音系中能够区别词义的抽象声音单位。
+Grapheme|字素||书写系统中区别文字形式的基本图形单位。
+Grapheme-to-phoneme Conversion|字素转音位|G2P|将书面形式映射为发音音位序列的任务。
+Acoustic Model|声学模型||对音频特征与发音或语言单位之间统计关系建模的组件。
+Pronunciation Lexicon|发音词典||记录词语与其对应音位或发音序列的资源。
+Connectionist Temporal Classification|连接时序分类|CTC|对输入输出对齐未知的序列任务求和多条路径概率的训练目标。
+RNN Transducer|循环神经网络转导器|RNN-T|联合声学与输出历史预测符号、适合流式语音识别的转导结构。
+End-to-end ASR|端到端语音识别||通过统一神经网络从声学输入直接预测文字或语言单位的框架。
+Streaming ASR|流式语音识别||在持续接收音频时增量输出识别结果的系统模式。
+Word Error Rate|词错误率|WER|以替换、删除和插入词数之和除以参考词数的语音识别指标。
+Character Error Rate|字符错误率|CER|以字符层编辑错误数除以参考字符数的识别指标。
+Speaker Diarization|说话人分离标注||判断录音中不同时间段由哪位说话人发声的任务。
+Voice Activity Detection|语音活动检测|VAD|识别音频中包含人声或语音的时间区间的任务。
+Forced Alignment|强制对齐||在已知文字或音位序列条件下确定其在音频中的时间边界。
+Prosody Modeling|韵律建模||对语音节奏、重音、停顿与音调等超音段特征建模的过程。
+Speech Translation|语音翻译||把一种语言语音转换为另一语言文本或语音的任务。
+Multimodal NLP|多模态自然语言处理||联合文本与图像、音频或视频等模态完成语言理解和生成的领域。
+Vision–Language Model|视觉—语言模型|VLM|联合处理视觉内容与文本语义的模型架构。
+Image Captioning|图像描述生成||根据图片内容自动生成自然语言说明的任务。
+Visual Question Answering|视觉问答|VQA|结合图像及文字问题推断并生成答案的任务。
+Document Understanding|文档智能理解||综合 OCR、版面结构、表格和语言语义理解复杂文档内容的任务。
+
+# NLP 指标、基准与误差分析
+Evaluation Metric|评测指标||将模型任务质量量化为明确数值规则的度量。
+Accuracy|准确率|Accuracy|分类预测正确样本数占总样本数的比例。
+Precision|精确率|Precision|预测为正样本中实际为正的比例。
+Recall|召回率|Recall|真实正样本中被正确预测为正的比例。
+F1 Score|F1 分数|F1|精确率与召回率的调和均值。
+Macro Averaging|宏平均||分别计算各类别指标后不按类别频数加权平均的方式。
+Micro Averaging|微平均||先汇总各类别 TP、FP、FN 再计算总体指标的方式。
+Weighted Averaging|加权平均||按类别样本量等预定权重求类别指标平均值的方式。
+Confusion Matrix|混淆矩阵||按真实类别和预测类别交叉统计样本数量的矩阵。
+Exact Match|完全匹配率|EM|预测答案与参考答案在约定规范化下完全一致的样本比例。
+BLEU|双语评估替换指标|BLEU|基于修改后 N-gram 精确率和长度惩罚的机器翻译自动评价指标。
+ROUGE|面向摘要的召回指标族|ROUGE|根据与参考摘要重合的 N-gram 或最长公共子序列评价文本摘要的指标族。
+METEOR|METEOR 翻译评价指标|METEOR|利用词形、同义及序列对齐信息衡量候选译文与参考的指标。
+chrF|字符 N 元 F 分数|chrF|以字符 N-gram 精确率和召回率计算机器翻译质量的指标。
+BERTScore|BERTScore 语义相似指标||用上下文化词向量匹配候选与参考 token 计算文本生成相似度的指标。
+COMET|COMET 翻译质量评测模型||利用神经网络对源文、候选译文和可选参考译文预测翻译质量的评价框架。
+Human Evaluation|人工评估||由评审者根据任务指南检查模型输出正确性、自然度和有用性的流程。
+Inter-rater Reliability|评审者间可靠性||量化不同人工评审者作出相近评分或决策程度的性质。
+Benchmark Dataset|基准数据集||用固定评测示例与指标比较不同模型能力的数据资源。
+GLUE Benchmark|GLUE 语言理解基准|GLUE|包含多个英语分类与自然语言推断任务的模型评测基准。
+SuperGLUE Benchmark|SuperGLUE 语言理解基准|SuperGLUE|设计用于挑战语言理解模型的一组更困难任务与评测指标。
+SQuAD|斯坦福问答数据集|SQuAD|以维基百科段落和问题构建的阅读理解数据集。
+Error Analysis|误差分析||按任务类型、语言现象或输入子群检查模型错误原因的过程。
+Statistical Significance Test|统计显著性检验||在明确零假设与抽样机制下评估观测差异偶然性的方法。
+Bootstrap Confidence Interval|Bootstrap 置信区间||通过对样本重新抽样估计指标的不确定性区间的方法。
+
+# 可靠性、数据治理与生产部署
+Hallucination|模型幻觉||语言模型输出看似合理但缺少依据或与可核验事实冲突的内容。
+Grounded Response|证据支持的回复||主要事实陈述能从明确提供的资料或可信工具输出中找到依据的回答。
+Abstention|拒绝无证据作答||当资料不足时明确承认无法确认而非猜测事实的响应策略。
+Uncertainty Estimation|不确定性估计||分析模型预测可靠性、置信程度及潜在错误风险的方法。
+Out-of-distribution Detection|分布外检测|OOD|识别与训练数据分布明显不同的输入或任务情形的技术。
+Robustness Evaluation|鲁棒性评估||检验模型在噪声、拼写变化、对抗输入或领域变化下性能稳定性的过程。
+Adversarial Example|对抗样本||经过特意设计的输入扰动，可诱导模型作出错误预测的例子。
+Prompt Injection|提示注入||攻击者通过输入或外部内容诱导模型违背更高优先级指令的行为。
+Indirect Prompt Injection|间接提示注入||把恶意指令隐藏在检索文档、网页或工具输出等低信任内容中的攻击。
+Data Privacy|数据隐私||按合法授权与处理目的控制文本中的个人或敏感信息使用的原则。
+Personally Identifiable Information|可识别个人身份信息|PII|可单独或结合其他信息识别个人身份的数据。
+Data Anonymization|数据匿名化||通过技术与治理措施降低记录再识别风险、使其不再对应可识别个人的过程。
+De-identification|去标识化||删除或替换直接标识符并降低身份关联风险的数据处理方式。
+Bias Evaluation|偏差评估||检查模型对不同人口群体、语言变体或主题的错误和不公平差异的过程。
+Fairness Metric|公平性指标||用明确数学规则衡量模型在不同群体间表现差异的指标。
+Toxicity Detection|有害语言检测||识别文本中骚扰、仇恨、攻击性或其他有害语言类别的任务。
+Content Moderation|内容审核||根据约定政策对文本进行允许、限制、标记或人工复核的流程。
+Model Serving|模型服务化||将训练模型部署为可被请求调用的推理接口或批量服务的过程。
+Inference Latency|推理延迟||从服务接收输入到返回预测或生成结果所需的时间。
+Batch Inference|批量推理||一次对多条独立输入执行模型计算以提高硬件利用率的方式。
+Streaming Generation|流式生成||在输出序列尚未完成前持续传送已生成 token 或文本的服务模式。
+Quantization|模型量化||将权重或激活表示映射为较低位宽数值以降低存储或计算成本的技术。
+Model Distillation|模型蒸馏||利用较大教师模型信号训练较小学生模型的模型压缩技术。
+Monitoring Drift|模型漂移监控||监测线上语言数据分布、输出或任务指标随时间变化的机制。
+Human-in-the-loop Review|人在回路中的审核|HITL|在自动系统处理过程中安排人工复核、纠错或决策的协同模式。
