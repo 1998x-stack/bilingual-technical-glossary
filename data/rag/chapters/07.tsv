@@ -1,0 +1,26 @@
+# 混合检索、多阶段排序与重排序
+Hybrid Retrieval|混合检索||结合词法、向量或其他信号共同生成候选结果的检索方案。
+Sparse–Dense Fusion|稀疏—稠密融合||合并稀疏词项评分与稠密向量相似度的排序策略。
+Score Fusion|分数融合||对不同检索器的数值评分进行校准和组合的方法。
+Rank Fusion|名次融合||根据多个结果列表中的排序位置综合候选排序的方法。
+Reciprocal Rank Fusion|倒数名次融合|RRF|将候选在各列表中排名的倒数形式相加进行排序的算法。
+Weighted Rank Fusion|加权名次融合||为不同检索器的排序贡献设置权重的融合方法。
+Score Normalization|检索分数归一化||将不同来源分数变换到可比较尺度的预处理。
+Candidate Generation|候选生成||以高召回为目标快速产生可能相关文档集合的第一阶段。
+First-stage Retrieval|首阶段检索||在大规模库中使用低成本方法召回潜在相关结果的环节。
+Second-stage Ranking|第二阶段排序||对首阶段少量候选使用更昂贵模型重新计算排序的环节。
+Reranker|重排序器||对检索候选逐项或成组重新评估其与查询相关性的模型。
+Cross-encoder Reranking|交叉编码器重排序||联合输入查询与文档、计算精细相关分数的重排序方法。
+Pairwise Ranking|成对排序||通过比较两个候选的相对偏好学习或判断排序的方法。
+Listwise Ranking|列表排序||在整个候选列表层面定义损失或预测其排列的排序方法。
+Learning to Rank|排序学习|LTR|利用标注相关性或行为信号训练排序模型的技术。
+Late Interaction|后期交互||分别编码查询与文档 token 后再聚合细粒度匹配分数的结构。
+ColBERT|ColBERT 检索模型|ColBERT|使用 token 级向量及 MaxSim 交互评分的神经检索模型族。
+MaxSim|最大相似度聚合|MaxSim|为每个查询 token 取其与文档 token 的最大相似度后汇总的机制。
+Multi-vector Retrieval|多向量检索||为一份文档保存多个向量并利用它们联合计算相关性的方式。
+Diversity-aware Ranking|多样性感知排序||在相关性之外约束结果列表覆盖不同信息方面的排序策略。
+Maximal Marginal Relevance|最大边际相关性|MMR|平衡候选与查询相关性及与已选结果冗余程度的选择策略。
+Result Deduplication|结果去重||对同一文档或重复内容的多个候选进行合并的步骤。
+Ranking Calibration|排序分数校准||将模型评分转换为更稳定、可解释或跨查询可比较尺度的方法。
+Retrieval Score Threshold|检索评分阈值||依据相关性分数过滤低质量候选的判定界限。
+Top-k Reranking|前 k 候选重排序||只对初始排名靠前的固定数量候选使用重排序器的技术。
