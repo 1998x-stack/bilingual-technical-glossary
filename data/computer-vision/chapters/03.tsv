@@ -1,0 +1,26 @@
+# 图像预处理、滤波与几何变换
+Image Preprocessing|图像预处理||在模型或视觉算法前执行的尺度、颜色、去噪与标准化处理。
+Image Resizing|图像缩放||重新采样图像使其具有指定输出宽度与高度。
+Interpolation|插值||根据已知采样点估计非整数图像坐标处像素值的方法。
+Nearest-neighbor Interpolation|最近邻插值||以距离目标坐标最近的采样点数值填充新像素的算法。
+Bilinear Interpolation|双线性插值||在两个坐标方向对邻近四个采样点执行线性插值的方法。
+Bicubic Interpolation|双三次插值||使用更大邻域及三次多项式插值估计图像值的方法。
+Image Convolution|图像卷积||使用空间核函数对局部像素邻域执行加权聚合的运算。
+Convolution Kernel|卷积核||定义局部滤波权重及空间支持范围的系数矩阵。
+Gaussian Blur|高斯模糊||以高斯权重平滑像素值以降低高频噪声的滤波。
+Median Filter|中值滤波||用局部像素中位数替换中心像素、常用于抑制脉冲噪声的处理。
+Bilateral Filter|双边滤波||结合空间距离与像素值差异权重进行保边平滑的算法。
+Non-local Means|非局部均值去噪|NLM|根据相似图像块之间的匹配进行加权去噪的方法。
+Image Denoising|图像去噪||估计并减少成像噪声、同时尽量保留真实结构的任务。
+Image Sharpening|图像锐化||增强局部亮度变化或边缘对比以提高视觉清晰程度的过程。
+Unsharp Masking|反锐化掩模||通过原图与模糊图的差异增强高频细节的锐化方法。
+Histogram Equalization|直方图均衡化||根据灰度累计分布重新映射像素值以改善全局对比度的技术。
+CLAHE|限制对比度自适应直方图均衡化|CLAHE|在局部区域进行直方图调整并限制噪声放大的对比度增强方法。
+Image Normalization|图像数值归一化||按固定尺度或统计量变换像素值范围与分布的处理。
+Standardization|标准化||通过减去均值并除以标准差等方式调整数值尺度的变换。
+Affine Transformation|仿射变换||由线性变换和平移构成、保持平行关系的二维或三维坐标映射。
+Perspective Transformation|透视变换||利用射影矩阵模拟平面在不同视角间投影关系的变换。
+Homography|单应矩阵|H|描述同一平面在两个射影视图之间对应关系的非奇异三乘三矩阵。
+Image Warping|图像几何变形||按几何映射把源图像采样到新的空间坐标的过程。
+Image Registration|图像配准||估计不同图像之间空间对应关系并将其对齐的任务。
+Anti-aliasing Filter|抗混叠滤波||在降采样前抑制超出新采样频率可表示范围的空间高频成分。
