@@ -1,0 +1,26 @@
+# 整车电子电气、车辆接口与执行机构
+Vehicle Platform|车辆平台||集成车身、底盘、动力、制动、转向及电子电气系统的整车基础。
+Drive-by-wire|线控驾驶||通过电子控制信号而非直接机械连接执行驱动、制动或转向的架构。
+Steer-by-wire|线控转向||将转向命令转换为转向执行机构动作的电子控制系统。
+Brake-by-wire|线控制动||通过电子指令协调制动压力或制动力的执行系统。
+Throttle-by-wire|电子节气门控制||由电子控制器根据驾驶需求调节发动机节气门开度的技术。
+Electronic Control Unit|电子控制单元|ECU|负责执行特定车辆功能的嵌入式计算控制节点。
+Domain Controller|域控制器||把相关车辆功能的计算和接口集中到同一电子控制平台的架构。
+Central Vehicle Computer|中央车辆计算机||集中承担多项车载计算功能的高性能处理平台。
+Vehicle Control Unit|整车控制单元|VCU|协调动力系统与整车模式、安全及执行指令的控制器。
+Electronic Stability Control|车身电子稳定控制|ESC|通过车轮制动等干预帮助车辆维持期望稳定状态的系统。
+Anti-lock Braking System|防抱死制动系统|ABS|通过调节制动压力减少车轮制动时锁死风险的系统。
+Electric Power Steering|电动助力转向|EPS|利用电机提供转向助力或执行转向控制的机构。
+Actuator Command|执行器命令||传递给转向、驱动或制动控制器的目标控制量。
+Actuator Feedback|执行器反馈||由执行器报告的实际位置、速度、力矩或工作状态数据。
+Controller Area Network|控制器局域网络|CAN|广泛用于车辆控制节点间通信的串行总线协议。
+CAN FD|灵活数据速率 CAN|CAN FD|支持更大数据负载与较高速率数据段的 CAN 扩展协议。
+Automotive Ethernet|车载以太网||支持车载高带宽传感与计算通信的以太网技术集合。
+Time-sensitive Networking|时间敏感网络|TSN|为以太网提供时间同步、确定性时延和流量调度能力的标准族。
+Automotive Middleware|车载软件中间件||为车内功能提供通信、发现、数据序列化及生命周期管理的软件层。
+AUTOSAR|汽车开放系统架构|AUTOSAR|定义汽车软件组件、接口及运行平台的行业协作标准体系。
+Service-oriented Architecture|面向服务的车载架构|SOA|通过可发现的服务接口组织车载功能和数据交换的设计方式。
+Vehicle State Interface|车辆状态接口||向自动驾驶软件提供车速、档位、转向角等车辆状态的数据契约。
+Control Command Gateway|控制命令网关||将自动驾驶控制输出转化为具体底盘消息并执行授权检查的组件。
+Vehicle Health Monitor|车辆健康监控||监测关键执行器、供电和通信状态并报告异常的机制。
+Redundant Actuation|冗余执行系统||提供额外制动、转向或控制通路以应对单点故障的设计。
