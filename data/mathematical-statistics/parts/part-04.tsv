@@ -1,0 +1,107 @@
+# 非参数统计与经验过程
+Nonparametric Statistics|非参数统计||不预先限定为有限维参数分布族、利用数据推断结构的统计方法领域。
+Distribution-free Test|分布无关检验||零假设下统计量分布不依赖某些未知总体分布形式的检验。
+Sign Test|符号检验||依据配对差值正负号检验位置或中位数条件的非参数方法。
+Wilcoxon Signed-rank Test|Wilcoxon 符号秩检验||利用配对差值绝对值秩及符号检验对称位置偏移的程序。
+Mann–Whitney U Test|Mann–Whitney U 检验||通过两组观测相对秩次比较独立样本分布的检验。
+Kruskal–Wallis Test|Kruskal–Wallis 检验||用合并秩次比较三个及以上独立组分布的检验。
+Friedman Test|Friedman 检验||利用区组内秩次比较多个配对处理条件的非参数检验。
+Kendall Tau|肯德尔秩相关系数|τ|依据两个变量观测对的一致与不一致排序衡量单调关联的统计量。
+Theil–Sen Estimator|Theil–Sen 估计量||使用成对斜率中位数估计直线斜率的稳健非参数方法。
+Hodges–Lehmann Estimator|Hodges–Lehmann 估计量||利用 Walsh 平均或成对差值中位数构造稳健位置估计。
+Empirical Distribution Function|经验分布函数|ECDF|样本中不大于指定值的观测比例所形成的阶梯函数。
+Glivenko–Cantelli Theorem|格利文科—坎泰利定理||经验分布函数对真实分布函数一致收敛的结果。
+Dvoretzky–Kiefer–Wolfowitz Inequality|DKW 不等式|DKW|对经验分布函数最大偏差给出分布无关指数尾界的不等式。
+Kernel Density Estimation|核密度估计|KDE|在样本点周围叠加缩放核函数估计连续概率密度的方法。
+Bandwidth|带宽||平滑估计中控制邻域宽度与偏差方差权衡的参数。
+Histogram Density Estimate|直方图密度估计||通过固定数据分箱内频数和箱宽估计概率密度的方法。
+Local Polynomial Regression|局部多项式回归||在预测点附近加权拟合低次多项式以估计条件均值的技术。
+LOESS|局部加权散点平滑|LOESS|在每个目标位置采用近邻加权局部回归的平滑方法。
+Spline Regression|样条回归||使用分段多项式基函数及连续性约束建立灵活回归曲线的方法。
+Quantile Regression|分位数回归||通过分位数损失估计响应变量指定条件分位数的回归方法。
+Median Regression|中位数回归||将条件响应中位数作为预测目标的分位数回归特例。
+Isotonic Regression|保序回归||在预测值必须满足单调性限制下拟合数据的回归方法。
+Empirical Process|经验过程||以函数类索引的样本均值偏差随机函数集合。
+Functional Delta Method|泛函 Delta 方法||通过函数空间中的可微性推导复杂统计泛函的极限分布。
+Rank-based Inference|基于秩的推断||依靠观测次序而非原始数值开展参数或分布推断的方法。
+
+# 重抽样、多重检验与研究可信度
+Bootstrap Resampling|Bootstrap 重抽样||从观测数据重新抽取伪样本以近似统计量抽样分布的方法。
+Nonparametric Bootstrap|非参数 Bootstrap||从经验分布中有放回抽样并重新计算统计量的重抽样程序。
+Parametric Bootstrap|参数 Bootstrap||从拟合的参数分布中模拟新数据并重算统计量的程序。
+Block Bootstrap|分块 Bootstrap||以时间或空间相邻观测块为单位抽样、保留局部依赖结构的方法。
+Wild Bootstrap|野 Bootstrap||通过对残差乘随机权重生成伪样本以处理异方差等结构的方法。
+Bootstrap Standard Error|Bootstrap 标准误||用多次重抽样估计值的样本标准差估计原估计量标准误。
+Jackknife|刀切法||系统删除观测子集并重算统计量以估计偏差和方差的方法。
+Delete-one Jackknife|逐一删除刀切法||每轮从样本中删除一个观测并重算统计量的 Jackknife 特例。
+Permutation Test|置换检验||在零假设可交换性条件下置换标签并比较统计量的检验。
+Randomization Inference|随机化推断||依据实验实际随机分配机制计算统计量参考分布的推断框架。
+Cross-validation|交叉验证|CV|反复分割训练与验证数据以评估拟合模型预测表现的方法。
+K-fold Cross-validation|K 折交叉验证||将样本划分为 K 份、逐轮留一份验证其余份拟合的方法。
+Leave-one-out Cross-validation|留一交叉验证|LOOCV|每次留出一个观测作为验证、其余观测用于拟合的程序。
+Multiple Hypothesis Testing|多重假设检验||在同一研究中同时检验多个假设并控制联合错误的统计问题。
+Family-wise Error Rate|族错误率|FWER|一个假设族中至少错误拒绝一个真原假设的概率。
+False Discovery Rate|错误发现率|FDR|被拒绝假设中假阳性比例的期望，零拒绝时通常定义为零。
+Benjamini–Hochberg Procedure|Benjamini–Hochberg 程序|BH|在独立或特定正依赖条件下控制 FDR 的逐步检验规则。
+Bonferroni Correction|Bonferroni 校正||通过将每个检验的显著性水平除以检验数控制族错误率的方法。
+Holm Procedure|Holm 逐步校正||按排序 p 值逐步比较调整阈值以控制 FWER 的方法。
+Šidák Correction|Šidák 校正||在独立检验条件下按联合概率调整单次检验阈值的方法。
+Westfall–Young Adjustment|Westfall–Young 校正||借助重抽样联合零分布进行多重比较调整的方法。
+Selective Inference|选择性推断||在考虑数据驱动选择过程之后评估估计或检验误差的推断方法。
+Post-selection Inference|模型选择后推断||对使用同一数据挑选模型后的参数推断进行校正的研究领域。
+P-hacking|p 值操纵||通过反复试验分析决策并选择性报告获得显著结果的研究行为。
+Preregistration|预注册||在观察研究结果前记录主要假设、分析方案与决策规则的实践。
+
+# 贝叶斯推断与计算方法
+Bayesian Inference|贝叶斯推断||利用先验和似然通过贝叶斯定理计算参数后验分布的推断框架。
+Bayes Theorem|贝叶斯定理||把条件概率与先验概率联系起来的概率恒等式。
+Prior Distribution|先验分布||在分析当前数据之前为未知参数赋予的概率分布。
+Posterior Distribution|后验分布||结合观察数据后依据贝叶斯定理得到的参数条件分布。
+Posterior Predictive Distribution|后验预测分布||对参数后验分布积分所得未来观测的预测概率分布。
+Prior Predictive Distribution|先验预测分布||对参数先验分布积分所得尚未观察数据的预测分布。
+Conjugate Prior|共轭先验||更新指定似然后后验仍属于同一分布族的先验选择。
+Hyperparameter|超参数||控制先验或层级模型形状、并可固定或进一步建模的参数。
+Maximum a Posteriori Estimate|最大后验估计|MAP|选择后验密度达到最大值的参数点估计。
+Posterior Mean|后验均值||参数后验分布的期望，平方损失下常为贝叶斯最优点估计。
+Posterior Median|后验中位数||参数后验分布的中位数，绝对误差损失下常为贝叶斯最优点估计。
+Credible Interval|可信区间||在给定数据与先验模型后，后验概率达到指定水平的参数区间。
+Highest Posterior Density Region|最高后验密度区域|HPD|包含指定后验概率质量且优先选择高后验密度点的集合。
+Bayes Factor|贝叶斯因子|BF|两个假设或模型对应边际似然之比。
+Posterior Odds|后验优势||两个假设后验概率的比值，等于先验优势乘贝叶斯因子。
+Hierarchical Bayesian Model|层级贝叶斯模型||为多层群组参数及超参数指定条件概率结构的模型。
+Posterior Predictive Check|后验预测检验||将模型后验预测复制数据与实际数据比较以评估模型适配的程序。
+Prior Sensitivity Analysis|先验敏感性分析||比较不同合理先验设定对后验推断结果影响的评估。
+Markov Chain Monte Carlo|马尔可夫链蒙特卡洛|MCMC|构造以目标后验为平稳分布的马尔可夫链进行近似采样的计算方法。
+Gibbs Sampling|吉布斯采样||通过逐个从参数条件后验分布采样构造马尔可夫链的方法。
+Metropolis–Hastings Algorithm|Metropolis–Hastings 算法|MH|使用提议分布和接受概率构造目标平稳分布马尔可夫链的算法。
+Hamiltonian Monte Carlo|哈密顿蒙特卡洛|HMC|引入动量并模拟哈密顿动力学以高效采样连续参数的算法。
+Variational Inference|变分推断|VI|通过优化可计算近似分布与目标后验的差异来进行贝叶斯近似推断。
+Evidence Lower Bound|证据下界|ELBO|由变分分布构造的边际对数似然下界，常用作变分优化目标。
+Bayesian Decision Rule|贝叶斯决策规则||选择后验期望损失最小的行动或估计规则。
+
+# 多元、时间序列、生存与因果推断
+Covariance Matrix|协方差矩阵||随机向量各分量之间方差与协方差组成的对称半正定矩阵。
+Principal Component Analysis|主成分分析|PCA|寻找正交方向使投影方差依次最大的线性降维方法。
+Factor Analysis|因子分析||用少量潜在公共因子解释多变量协方差结构的统计模型。
+Linear Discriminant Analysis|线性判别分析|LDA|在类别条件协方差共享等假设下构建线性分类判别规则的方法。
+Multivariate Analysis of Variance|多元方差分析|MANOVA|联合检验多个响应变量处理均值向量差异的分析方法。
+Canonical Correlation Analysis|典型相关分析|CCA|寻找两组变量线性组合间最大相关性的多元方法。
+Survival Analysis|生存分析||处理事件发生时间及未完全观察事件时间的统计方法。
+Censoring|删失||仅部分获知事件时间或其他响应变量真实取值的观测机制。
+Right Censoring|右删失||已知事件发生时间大于某个观察终止时点的删失形式。
+Kaplan–Meier Estimator|Kaplan–Meier 估计量||利用事件时刻与风险集乘积极限估计生存函数的非参数方法。
+Hazard Function|风险函数／危险率函数||给定已存活至某时间时事件在随后瞬间发生的条件速率。
+Cox Proportional Hazards Model|Cox 比例风险模型||通过协变量对数线性作用刻画事件危险率比的半参数回归模型。
+Log-rank Test|Log-rank 检验||在风险集基础上比较多个群组生存曲线的检验。
+Accelerated Failure Time Model|加速失效时间模型|AFT|通过协变量线性模型描述对数生存时间或时间尺度的回归框架。
+Causal Inference|因果推断||从实验或观察数据识别和估计干预对结果影响的统计研究领域。
+Potential Outcomes Framework|潜在结果框架||为每种处理条件定义个体可能结果并以其差异描述因果效应的框架。
+Average Treatment Effect|平均处理效应|ATE|目标总体中接受处理与不接受处理潜在结果差的平均。
+Propensity Score|倾向得分||在给定已观测协变量条件下个体获得处理的概率。
+Inverse Probability Weighting|逆概率加权|IPW|按处理分配或抽样概率倒数加权以估计目标量的方法。
+Difference-in-Differences|双重差分|DiD|通过处理组与对照组随时间变化差异估计处理效果的设计。
+Instrumental Variable|工具变量|IV|用于识别内生解释变量因果效应、需满足相关性与排除等条件的变量。
+Stationary Time Series|平稳时间序列||统计性质不随时间平移而变化的序列，须说明严格或弱平稳含义。
+Autocorrelation Function|自相关函数|ACF|描述同一时间序列不同时间间隔观测值线性相关的函数。
+Autoregressive Integrated Moving Average|自回归差分移动平均模型|ARIMA|结合自回归、差分与移动平均成分描述时间序列的模型族。
+Heteroskedasticity and Autocorrelation Consistent Standard Error|异方差与自相关稳健标准误|HAC|在一定条件下对异方差及序列相关稳健的协方差估计构造。
