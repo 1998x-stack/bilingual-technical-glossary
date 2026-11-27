@@ -1,0 +1,26 @@
+# 光栅化流水线、片段处理与采样
+Vertex Processing|顶点处理||将顶点属性经变换和可编程处理后输出给基元组装的阶段。
+Primitive Assembly|基元组装||依据顶点数据和拓扑关系形成三角形、线或点的操作。
+Vertex Shader|顶点着色器||逐顶点执行、通常输出裁剪坐标和待插值属性的可编程着色阶段。
+Tessellation Control Shader|曲面细分控制着色器||在支持的图形管线中确定细分等级和控制点信息的着色阶段。
+Tessellation Evaluation Shader|曲面细分计算着色器||在细分生成的参数位置评价曲面并输出顶点的阶段。
+Geometry Shader|几何着色器||在部分图形 API 中以完整基元为输入并可产生新基元的着色阶段。
+Fragment Shader|片段着色器||为光栅化产生的片段计算颜色、深度或其他输出的可编程阶段。
+Fragment|片段||光栅化基元在像素或采样位置生成的待测试候选记录。
+Pixel Sample|像素采样点||在像素内指定位置进行覆盖或着色评估的采样位置。
+Triangle Rasterization|三角形光栅化||根据三角形顶点与屏幕覆盖规则生成片段的过程。
+Barycentric Coordinates|重心坐标||以三角形顶点加权组合表示平面内点位置的坐标形式。
+Attribute Interpolation|顶点属性插值||根据片段位置由三角形顶点属性计算片段对应值的过程。
+Perspective-correct Interpolation|透视校正插值||利用齐次 w 调整属性插值以符合透视投影的几何关系。
+Screen-space Derivatives|屏幕空间偏导数||估算相邻片段间变量变化率、常用于纹理 LOD 选择的运算。
+Early-Z Test|提前深度测试|Early-Z|在片段着色前尝试执行深度测试以省去被遮挡片段计算的优化。
+Late-Z Test|延迟深度测试|Late-Z|在片段着色后按管线语义执行深度检查的方式。
+Alpha Test|Alpha 阈值测试||根据透明度或遮罩阈值丢弃部分片段的技术。
+Discard Operation|片段丢弃||在片段着色阶段终止当前片段后续处理的操作。
+Color Attachment|颜色附件||在渲染通道中接收颜色输出的图像资源。
+Render Target|渲染目标||供图形流水线写入最终或中间像素结果的图像。
+Framebuffer|帧缓冲||关联一组颜色、深度或模板附件的渲染对象或资源集合。
+Multisample Anti-aliasing|多重采样抗锯齿|MSAA|在像素内保存多个覆盖或深度采样以改善几何边缘的抗锯齿技术。
+Coverage Mask|覆盖掩码||描述像素内部哪些多重采样点被基元覆盖的位集合。
+Sample Shading|逐采样着色||允许针对多个采样位置分别执行片段着色的渲染配置。
+Resolve Operation|多采样解析||把多重采样渲染目标转换为单采样图像的过程。
