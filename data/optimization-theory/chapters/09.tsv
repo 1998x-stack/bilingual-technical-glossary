@@ -1,0 +1,26 @@
+# 一阶方法、步长与加速理论
+First-order Method|一阶优化方法||主要利用函数值与一阶梯度信息更新决策变量的算法族。
+Gradient Descent|梯度下降法|GD|沿当前负梯度方向迭代更新以减小目标值的算法。
+Steepest Descent|最速下降法||在选定范数下取单位约束内局部下降最快方向的算法。
+Projected Gradient Descent|投影梯度下降|PGD|先进行梯度更新，再投影到可行集合的算法。
+Gradient Mapping|梯度映射||以当前点与投影梯度更新后的差表征约束最优性的方法。
+Fixed Step Size|固定步长||整个迭代过程使用预定不变学习率的更新方式。
+Diminishing Step Size|递减步长||根据迭代次数逐步缩小步长的策略。
+Adaptive Step Size|自适应步长||根据局部几何、历史变化或反馈动态设定步长的方法。
+Momentum Method|动量法||结合当前梯度与历史更新方向抑制震荡、加速移动的算法。
+Heavy-ball Method|重球法||Polyak 提出的将上一迭代位移加进当前梯度更新的动量方法。
+Nesterov Accelerated Gradient|Nesterov 加速梯度|NAG|通过前瞻与特定动量系数实现凸光滑优化加速的算法族。
+Accelerated Gradient Method|加速梯度法||在特定凸性条件下取得优于普通梯度下降收敛率的一阶方法。
+Convergence Rate|收敛速率||描述迭代误差或目标差距随步数减小速度的渐近界。
+Sublinear Convergence|次线性收敛||误差按迭代次数的幂次或更慢速度缩小的收敛方式。
+Linear Convergence|线性收敛||误差在充分后期每轮以固定小于一的比例缩小的收敛方式。
+Superlinear Convergence|超线性收敛||相邻误差比在极限中趋向零的收敛方式。
+Iteration Complexity|迭代复杂度||达到目标误差精度所需要的迭代次数上界。
+Oracle Complexity|一阶预言机复杂度||基于查询函数值或梯度次数刻画求解问题所需计算量。
+Smoothness Constant|光滑常数||梯度 Lipschitz 不等式中的上界常数。
+Strong Convexity Parameter|强凸参数||为强凸性二次下界提供系数的非负参数。
+Polyak–Łojasiewicz Condition|Polyak–Łojasiewicz 条件|PL|用梯度范数平方下界控制目标函数最优值差距的条件。
+Error Bound Condition|误差界条件||通过残差或梯度大小控制到最优解集合距离的性质。
+Restart Scheme|重启策略||周期性或按条件清空动量等历史状态以改善优化稳定性的做法。
+Gradient Clipping|梯度裁剪||在梯度范数或分量过大时限制其幅度以避免不稳定更新。
+Numerical Stagnation|数值停滞||受精度、条件数或步长影响而出现迭代几乎不再改善的现象。
