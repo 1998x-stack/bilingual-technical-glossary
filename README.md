@@ -50,6 +50,12 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Database Systems / 数据库系统 (standalone; not yet indexed)
+
+**400 original bilingual terms in 16 chapters.** This DBMS internals volume complements the existing [SQL Database handbook](glossaries/sql-database.md) rather than reproducing its SQL syntax reference. Focus areas: relational theory, page storage, buffer pools, B+ tree and LSM, relational algebra, query execution and cost-based optimization, transactions, locking, MVCC, ARIES/WAL, distributed replication, OLTP/OLAP/HTAP, performance and recovery. Includes **14 concept contrasts, 10 intermediate interview Q&As and 10 exam questions with worked answers**. [Markdown](glossaries/database-systems.md) · [PDF](pdf/database-systems.pdf) · [TSV](data/database-systems.tsv) · [Sources](data/database-systems/SOURCES.md). Verify all derived publications with `node scripts/render_database_systems.mjs --check`.
+
+**Standalone publication:** this subject is not yet added to the website search index or included in indexed totals.
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
