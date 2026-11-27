@@ -1,0 +1,26 @@
+# 句法分析、依存结构与语法表示
+Syntactic Parsing|句法分析||根据语法规则推断句子的组成关系或词间依存结构的任务。
+Constituency Parsing|成分句法分析||把句子组织为嵌套短语节点的树形结构分析。
+Dependency Parsing|依存句法分析||预测词与词之间以中心词和依存关系构成的结构。
+Constituency Tree|成分句法树||以短语非终结符与词项终结符表示句子层级结构的树。
+Dependency Tree|依存句法树||以词为节点、依存边表示语法支配关系的树结构。
+Head Word|中心词||在短语或依存结构中决定主要句法性质的词。
+Dependent|依存词||在依存分析中通过语法边连接到中心词的词元。
+Dependency Relation|依存关系标签||表示词与中心词之间主语、宾语、修饰等语法关系的类别。
+Dependency Arc|依存弧||从一个中心词指向其依存词的有向语法边。
+Projective Dependency Tree|投射依存树||在词序上依存边能够满足特定不交叉条件的依存树。
+Non-projective Dependency Tree|非投射依存树||含有跨越结构、无法用简单投射树表示的依存结构。
+Transition-based Parsing|基于转移的句法分析||通过堆栈、缓冲区和一系列转移动作构建句法树的方法。
+Graph-based Parsing|基于图的句法分析||在候选语法边或结构的评分空间中搜索最佳句法树的方法。
+Context-free Grammar|上下文无关文法|CFG|产生式左侧只有一个非终结符的形式文法。
+Probabilistic Context-free Grammar|概率上下文无关文法|PCFG|为 CFG 产生式赋予概率并推断解析树的文法模型。
+Production Rule|产生式规则||说明非终结符可替换为哪些符号序列的形式语法规则。
+Nonterminal Symbol|非终结符||表示可继续展开的语法类别或短语类别的文法符号。
+Terminal Symbol|终结符||形式文法中不再由产生式展开的基本符号。
+Parse Chart|解析图表||保存子串或跨度解析结果以避免重复计算的动态规划结构。
+CKY Algorithm|CKY 句法分析算法|CKY|在适当文法范式下利用区间动态规划寻找成分解析结构的算法。
+Earley Parser|Earley 解析器||使用预测、扫描和完成操作处理上下文无关文法的图表解析算法。
+Head-driven Phrase Structure Grammar|中心词驱动短语结构语法|HPSG|结合特征结构与类型约束描述词汇和句法的形式语法理论。
+Combinatory Categorial Grammar|组合范畴语法|CCG|用词汇范畴和组合规则统一描述句法与语义组合的语法理论。
+Grammatical Agreement|语法一致关系||词语在数、性、人称等语法特征上满足一致约束的现象。
+Syntactic Ambiguity|句法歧义||同一句子能够获得多个合理句法结构或附着关系的现象。
