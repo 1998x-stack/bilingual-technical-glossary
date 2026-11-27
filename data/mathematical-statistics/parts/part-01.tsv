@@ -1,0 +1,107 @@
+# 统计推断基础与数据生成
+Mathematical Statistics|数理统计||利用概率论研究从随机数据推断未知总体特征的方法与理论。
+Statistical Inference|统计推断||基于观察数据对总体参数、分布或科学假设作出推断的过程。
+Population|总体||研究目标所对应的全部单位或随机生成机制。
+Sample|样本||从总体或数据生成过程获得的一组观测。
+Observation|观测值||对单个研究对象或事件记录的变量取值。
+Sampling Unit|抽样单位||在抽样设计中被选取的最基本对象或集合。
+Statistical Unit|统计单位||实际测量属性或结果的分析对象。
+Parameter|参数||描述统计模型或总体特征的未知常数。
+Statistic|统计量||只依赖样本观测而不含未知参数的可计算函数。
+Estimator|估计量||用于推断未知参数的样本函数。
+Estimate|估计值||估计量在某次实际样本上计算得到的数值。
+Sampling Design|抽样设计||规定样本如何从目标总体被选择的概率或程序规则。
+Simple Random Sampling|简单随机抽样|SRS|使规定大小的每个单位子集有相同被选概率的抽样方法。
+Stratified Sampling|分层抽样||按已知特征划分层并在每层独立抽样的方法。
+Cluster Sampling|整群抽样||首先抽取群组，再调查群内全部或部分单位的设计。
+Systematic Sampling|系统抽样||在随机起点后按固定间隔选取总体单位的方法。
+Sampling Frame|抽样框||可用于实施抽样的目标单位名单或覆盖结构。
+Selection Bias|选择偏倚||样本进入机制使观测分布系统性偏离研究目标的偏倚。
+Nonresponse Bias|无应答偏倚||未回答单位与回答单位系统性不同而造成的估计偏差。
+Measurement Error|测量误差||记录值与真实目标量之间因仪器或过程产生的差异。
+Confounding Variable|混杂变量||同时关联解释因素与结局、可能扭曲两者关系的变量。
+Independent and Identically Distributed|独立同分布|IID|样本分量相互独立且具有相同概率分布的假设。
+Random Sample|随机样本||通常指从同一分布独立抽取的一组随机变量。
+Statistical Model|统计模型||为数据生成分布指定的概率分布族。
+Model Misspecification|模型设定错误||假设的分布族或结构不能充分描述真实数据机制的情形。
+
+# 概率分布与参数族
+Probability Distribution|概率分布||为随机变量可能取值或事件分配概率的数学规律。
+Probability Mass Function|概率质量函数|PMF|为离散随机变量每个可能取值给出概率的函数。
+Probability Density Function|概率密度函数|PDF|连续变量在区间上积分得到概率的非负函数。
+Cumulative Distribution Function|累积分布函数|CDF|给出随机变量不大于某个阈值概率的函数。
+Survival Function|生存函数||给出随机变量大于某阈值概率的函数。
+Quantile Function|分位数函数||把概率水平映射为分布阈值的广义反函数。
+Bernoulli Distribution|伯努利分布||描述一次成功或失败试验的二点离散分布。
+Binomial Distribution|二项分布||描述固定次数独立伯努利试验成功总数的分布。
+Poisson Distribution|泊松分布||以单个速率参数描述单位区间独立事件计数的离散分布。
+Geometric Distribution|几何分布||描述首次成功所需试验次数或之前失败次数的分布。
+Negative Binomial Distribution|负二项分布||描述达到指定成功次数前失败数等计数的分布。
+Hypergeometric Distribution|超几何分布||有限总体不放回抽样中成功单位数量的分布。
+Discrete Uniform Distribution|离散均匀分布||在有限离散取值集合上分配相同概率的分布。
+Continuous Uniform Distribution|连续均匀分布||在有限区间具有常数密度的分布。
+Normal Distribution|正态分布||由均值与方差确定、密度呈钟形的连续分布。
+Standard Normal Distribution|标准正态分布||均值为零且方差为一的正态分布。
+Student t Distribution|学生 t 分布||正态变量与独立卡方变量标准化比值产生的分布。
+Chi-square Distribution|卡方分布||若干独立标准正态变量平方和所服从的分布。
+F Distribution|F 分布||两个独立卡方变量分别除以其自由度所得比值的分布。
+Exponential Distribution|指数分布||具有无记忆性质的连续非负等待时间分布。
+Gamma Distribution|伽马分布||可描述多个独立指数等待时间和的非负连续分布族。
+Beta Distribution|贝塔分布||定义在零到一区间、由两个形状参数控制的连续分布。
+Weibull Distribution|威布尔分布||用于寿命分析、可产生不同危险率形状的正值分布。
+Lognormal Distribution|对数正态分布||对数服从正态分布的正值随机变量分布。
+Multivariate Normal Distribution|多元正态分布||由均值向量及协方差矩阵刻画的联合正态分布。
+
+# 样本统计量与抽样分布
+Sample Mean|样本均值||样本观测值的算术平均数。
+Sample Median|样本中位数||排序后位于样本位置中央的值或两中央值的平均。
+Sample Variance|样本方差||样本偏离均值平方和的标准化量，分母可取 n 或 n−1。
+Unbiased Sample Variance|无偏样本方差||以 n−1 为分母、在 IID 且方差有限时无偏估计总体方差的统计量。
+Sample Standard Deviation|样本标准差||样本方差的非负平方根。
+Sample Proportion|样本比例||样本中满足某项二元属性的单位所占比例。
+Order Statistic|次序统计量||将样本排序后指定秩位置的观测值。
+Sample Range|样本极差||样本最大值与最小值之差。
+Interquartile Range|四分位距|IQR|上四分位数与下四分位数之差。
+Sample Covariance|样本协方差||衡量两变量共同变化方向与幅度的样本中心化乘积统计量。
+Pearson Correlation Coefficient|皮尔逊相关系数||协方差除以两变量标准差后得到的线性相关度量。
+Spearman Rank Correlation|斯皮尔曼等级相关系数||对观测秩次计算相关性的单调关联度量。
+Sampling Distribution|抽样分布||在重复使用同一抽样方案时统计量取值的概率分布。
+Standard Error|标准误||估计量抽样分布的标准差。
+Degrees of Freedom|自由度||统计量或残差在约束下可独立变化的维数或参数。
+Pooled Variance|合并方差||在等方差假设下结合多组样本信息得到的共同方差估计。
+Coefficient of Variation|变异系数|CV|标准差与非零均值的比值，用于描述相对离散程度。
+Sample Skewness|样本偏度||以样本中心三阶矩刻画分布不对称性的统计量。
+Sample Kurtosis|样本峰度||基于四阶标准化中心矩描述尾部与峰形的统计量。
+Moment|矩||随机变量幂次或中心化幂次的期望，概括分布形状。
+Raw Moment|原点矩||随机变量 k 次幂的期望。
+Central Moment|中心矩||随机变量相对均值偏差的 k 次幂期望。
+Moment Generating Function|矩母函数|MGF|在存在的邻域内，用指数变换期望编码分布矩的函数。
+Characteristic Function|特征函数||复指数变换的期望，在全部实数自变量上存在。
+Probability Generating Function|概率母函数|PGF|用幂级数期望表征非负整数随机变量分布的函数。
+
+# 数据约简、充分性与指数族
+Data Reduction|数据约简||通过提取统计量减少原始数据维度并保留推断信息的过程。
+Sufficient Statistic|充分统计量||在给定该统计量后，样本条件分布与未知参数无关的统计量。
+Minimal Sufficient Statistic|最小充分统计量||能由任何其他充分统计量确定的充分统计量。
+Factorization Theorem|因子分解定理||利用似然密度或质量函数的分解判定统计量充分性的定理。
+Likelihood Factorization|似然因子分解||将联合样本概率表示为参数依赖部分与参数无关部分乘积的形式。
+Complete Statistic|完全统计量||任何期望恒为零的统计量函数几乎必然为零的统计量。
+Boundedly Complete Statistic|有界完全统计量||完全性的判定只要求有界可测函数满足零期望性质。
+Ancillary Statistic|辅助统计量||其抽样分布不依赖未知参数的统计量。
+Basu Theorem|巴苏定理||完全充分统计量与辅助统计量相互独立的经典结论。
+Rao–Blackwell Theorem|拉奥—布莱克威尔定理||对估计量条件化于充分统计量可使凸损失风险不增的定理。
+Lehmann–Scheffé Theorem|莱曼—谢费定理||完全充分统计量的无偏函数在通常条件下为唯一 UMVU 估计量。
+Exponential Family|指数族||概率密度可表示为统计量与自然参数内积的指数形式的分布族。
+Natural Parameter|自然参数||指数族表达式中与充分统计量直接内积的参数。
+Natural Statistic|自然统计量||指数族表达式中与自然参数耦合的样本函数。
+Log-partition Function|对数配分函数||使指数族密度归一化的指数归一化常数的对数。
+Canonical Form|规范参数形式||用指数族自然参数与自然统计量表示分布的形式。
+Full Exponential Family|完全指数族||自然参数空间覆盖所允许区域而非受额外低维限制的指数族。
+Curved Exponential Family|曲指数族||自然参数被约束在低维曲面上的指数族。
+Parameter Space|参数空间||统计模型允许未知参数取得的全部值的集合。
+Nuisance Parameter|干扰参数||虽影响数据分布、但不是当前推断目标的未知参数。
+Parameter of Interest|目标参数||研究所希望估计或检验的参数分量或函数。
+Identifiability|可识别性||不同参数值对应不同可观测分布的模型性质。
+Nonidentifiability|不可识别性||存在不同参数值产生同一观测分布而无法由数据区分的现象。
+Invariant Statistic|不变统计量||在指定变换群作用下保持取值不变的统计量。
+Maximal Invariant|极大不变统计量||能区分变换群各不同轨道的不变统计量。
