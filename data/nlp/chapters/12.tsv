@@ -1,0 +1,26 @@
+# 预训练语言模型与自监督目标
+Pretrained Language Model|预训练语言模型|PLM|先在大规模文本上学习通用语言表示、再用于下游任务的模型。
+Self-supervised Learning|自监督学习||从未人工标注数据中构造训练目标并学习特征的机器学习方式。
+Masked Language Modeling|掩码语言建模|MLM|根据周围上下文预测被遮蔽输入 token 的预训练目标。
+Causal Language Modeling|因果语言建模|CLM|根据此前 token 预测序列后续 token 的自回归训练目标。
+Denoising Autoencoding|去噪自编码||把被破坏的输入还原为原始内容以学习表示的训练任务。
+Span Corruption|片段破坏恢复||遮蔽或替换连续 token 片段并训练模型复原其内容的目标。
+Next Sentence Prediction|下一句预测|NSP|判断两段输入是否在原文中具有特定相邻关系的预训练任务。
+Sentence Order Prediction|句序预测|SOP|判断两段句子顺序是否符合语料顺序的训练目标。
+Bidirectional Encoder Representations from Transformers|BERT 双向编码表示|BERT|通过掩码语言建模等目标预训练双向 Transformer 编码器的模型。
+Robustly Optimized BERT Pretraining Approach|RoBERTa 预训练方法|RoBERTa|调整训练数据、规模及策略以改进 BERT 类编码器预训练的方案。
+Generative Pretrained Transformer|生成式预训练 Transformer|GPT|基于 Transformer 自回归语言建模训练的生成模型系列称谓。
+Text-to-text Transfer Transformer|文本到文本迁移 Transformer|T5|将多种 NLP 任务统一写为文本输入到文本输出的编码器—解码器模型。
+Bidirectional and Auto-regressive Transformers|BART 去噪生成模型|BART|通过去噪序列重建预训练的 Transformer 编码器—解码器模型。
+Embeddings from Language Models|语言模型上下文化表示|ELMo|利用双向语言模型生成上下文化词表示的方法。
+Permutation Language Modeling|排列语言建模||按采样的预测顺序训练模型建模 token 条件依赖的目标。
+Replaced Token Detection|替换词元检测||判断输入各位置是否被替换成生成器候选 token 的预训练任务。
+ELECTRA|ELECTRA 预训练框架||通过判别 token 是否被替换以提高表示学习样本效率的方法。
+Representation Pretraining|表示预训练||通过通用目标学习能够迁移到多种下游任务的中间特征。
+Instruction Pretraining|指令式预训练||在大规模训练中加入任务说明与响应结构以提高指令理解能力的训练方式。
+Pretraining Corpus|预训练语料||用于通用语言模型初始学习的大规模文本集合。
+Training Objective|训练目标||用于确定预训练参数更新方向的损失或优化准则。
+Next-token Prediction|下一词元预测||在给定历史上下文后预测下一个离散 token 的任务。
+Teacher–Student Distillation|教师—学生蒸馏||训练学生模型匹配教师模型的分布、表示或输出的知识迁移过程。
+DistilBERT|DistilBERT 压缩编码器||通过知识蒸馏获得较小 BERT 类语言模型的预训练方案。
+Domain-adaptive Pretraining|领域自适应预训练|DAPT|继续使用目标领域未标注文本训练通用语言模型的策略。
