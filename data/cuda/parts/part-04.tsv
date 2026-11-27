@@ -1,0 +1,107 @@
+# Runtime API、Driver API 与错误处理
+CUDA Context|CUDA 上下文|Context|保存设备执行状态、模块、内存与其他资源关联关系的运行环境抽象。
+Primary Context|主上下文||由 CUDA Runtime 通常复用并由 Driver API 管理的每设备上下文机制。
+Context Switching|上下文切换||在不同设备上下文之间切换当前执行与资源管理状态的过程。
+cudaGetDeviceCount()|查询 CUDA 设备数|cudaGetDeviceCount|返回当前环境可用 CUDA 设备数量的 Runtime API。
+cudaSetDevice()|选择当前设备|cudaSetDevice|在调用主机线程中设置当前 CUDA 设备的运行时函数。
+cudaGetDeviceProperties()|查询设备属性|cudaGetDeviceProperties|获取设备线程限制、内存与硬件能力等属性的 Runtime API。
+cudaDeviceSynchronize()|设备同步函数|cudaDeviceSynchronize|等待当前设备上下文相关先前工作完成并报告部分异步错误的 API。
+cudaStreamCreate()|创建 CUDA 流|cudaStreamCreate|创建可用于设备任务排序与并发执行的流对象的 Runtime API。
+cudaStreamDestroy()|销毁 CUDA 流|cudaStreamDestroy|释放流对象资源，已提交的异步操作仍按 API 语义处理的函数。
+cudaEventCreate()|创建 CUDA 事件|cudaEventCreate|创建用于记录进度或测量时间的事件对象的函数。
+cudaEventElapsedTime()|计算 CUDA 事件耗时|cudaEventElapsedTime|根据两个已记录的事件返回近似毫秒间隔的 API。
+cudaGetLastError()|获取并清除最后 CUDA 错误|cudaGetLastError|返回并重置当前主机线程维护的 Runtime 最近错误状态的 API。
+cudaPeekAtLastError()|查看最后 CUDA 错误|cudaPeekAtLastError|返回最近 Runtime 错误状态但不清除该状态的函数。
+cudaError_t|CUDA 错误码类型|cudaError_t|表示 CUDA Runtime API 调用状态的枚举类型。
+cudaSuccess|CUDA 成功状态|cudaSuccess|表示 Runtime API 操作返回成功的状态值。
+CUDA_ERROR_INVALID_VALUE|CUDA Driver 参数错误|CUDA_ERROR_INVALID_VALUE|Driver API 中表示传入参数无效的错误码之一。
+CUresult|Driver API 返回状态类型|CUresult|表示 CUDA Driver API 操作成功或失败状态的枚举类型。
+CUdevice|Driver API 设备句柄|CUdevice|标识 CUDA Driver API 中特定设备的整数句柄类型。
+CUcontext|Driver API 上下文句柄|CUcontext|表示 CUDA 上下文对象的 Driver API 句柄。
+CUmodule|Driver API 模块句柄|CUmodule|标识已加载设备模块的 Driver API 不透明句柄。
+CUfunction|Driver API 核函数句柄|CUfunction|表示模块中可调用设备 Kernel 的不透明函数句柄。
+cuLaunchKernel()|Driver API 核函数启动|cuLaunchKernel|使用显式网格、块尺寸及参数等信息提交 Kernel 的 Driver API。
+cuModuleLoad()|加载设备代码模块|cuModuleLoad|从文件加载 CUDA 模块的 Driver API。
+cuCtxSetCurrent()|设置当前 CUDA 上下文|cuCtxSetCurrent|将指定上下文设置为当前主机线程所用上下文的 Driver API。
+Runtime–Driver Interoperability|运行时与驱动接口互操作||在同一程序中协调 CUDA Runtime API 和 Driver API 管理资源与上下文的能力。
+
+# CUDA 数值库、算法库与通信框架
+cuBLAS|CUDA 基础线性代数库|cuBLAS|在 NVIDIA GPU 上提供 BLAS 级向量、矩阵运算的数值库。
+cuBLASLt|CUDA 轻量矩阵乘法库|cuBLASLt|提供灵活矩阵乘法描述、算法选择与部分融合选项的 CUDA 库。
+cuDNN|CUDA 深度神经网络库|cuDNN|提供卷积、归一化、注意力等深度学习高性能算子的 NVIDIA 库。
+cuFFT|CUDA 快速傅里叶变换库|cuFFT|为 GPU 上一维及多维 FFT 计算提供实现的 CUDA 库。
+cuSPARSE|CUDA 稀疏矩阵计算库|cuSPARSE|提供稀疏矩阵乘法与稀疏线性代数操作的 CUDA 数值库。
+cuSOLVER|CUDA 线性代数求解库|cuSOLVER|提供稠密和稀疏矩阵分解与线性系统求解功能的 CUDA 库。
+cuRAND|CUDA 随机数生成库|cuRAND|在 GPU 或主机接口上提供伪随机及部分准随机序列生成能力的库。
+NCCL|NVIDIA 集合通信库|NCCL|优化多个 GPU 或多个节点间 AllReduce 等集合通信操作的库。
+NVSHMEM|NVIDIA 共享内存编程库|NVSHMEM|提供跨 GPU 对称内存和单边通信语义的并行编程库。
+Thrust|Thrust 并行算法库|Thrust|提供类似 C++ STL 的并行容器和算法模板的 CUDA 生态库。
+CUB|CUDA 无约束块级原语库|CUB|提供设备、线程块与线程束层级归约、扫描和排序等模板算法的库。
+NPP|NVIDIA 性能原语库|NPP|提供图像处理、信号处理和其他基础数值运算的 GPU 优化函数。
+CUTLASS|CUDA 矩阵乘法模板库|CUTLASS|面向 GEMM 和相关算子的可组合 CUDA C++ 模板组件集合。
+cuTENSOR|CUDA 张量线性代数库|cuTENSOR|为张量收缩、置换与归约等操作提供高性能实现的 CUDA 库。
+cuFile|GPU Direct Storage 文件接口|cuFile|面向 GPUDirect Storage 数据通路提供文件 I/O 能力的 API。
+cuBLAS Handle|cuBLAS 库句柄|cublasHandle_t|保存 cuBLAS 运行状态、流及其他配置的库句柄。
+cuDNN Handle|cuDNN 库句柄|cudnnHandle_t|保存 cuDNN 调用上下文与相关配置的不透明句柄。
+GEMM|通用矩阵乘法|GEMM|计算 C←αAB+βC 及其变体的基础线性代数操作。
+Batched GEMM|批量矩阵乘法||在一次调用中执行多个独立小矩阵乘法的运算模式。
+Strided Batched GEMM|固定步长批量矩阵乘法||按固定内存步长定位批内各矩阵的 GEMM 接口类型。
+AllReduce|全归约|AllReduce|把多个参与 GPU 的数值按操作合并并将相同结果分发给所有参与者的集体通信。
+ReduceScatter|规约分散|ReduceScatter|先合并各参与者数据，再把规约结果的不同分块分发至各参与者的通信操作。
+AllGather|全收集|AllGather|把每个参与者的局部数据复制并拼接提供给全部参与者的通信原语。
+Library Workspace|库工作空间||数值库为执行选定算法临时申请的辅助存储区域。
+Autotuning|自动性能调优||根据输入规模和硬件实测或启发式选择最适算子算法或配置的过程。
+
+# 性能剖析、调试与正确性验证
+Nsight Systems|Nsight Systems 系统性能分析器||展示 CPU、GPU、流、传输及系统时间线的 NVIDIA 采样与追踪工具。
+Nsight Compute|Nsight Compute 内核分析器||提供 GPU Kernel 指标、硬件计数器及源码级性能分析的 NVIDIA 工具。
+CUDA-GDB|CUDA GDB 调试器||支持在 CUDA GPU 上检查线程状态、断点与设备代码的调试工具。
+Compute Sanitizer|CUDA 计算检测工具||用于发现部分设备内存错误、竞争条件和同步缺陷的 NVIDIA 工具集合。
+memcheck|CUDA 内存检查器|memcheck|Compute Sanitizer 中检测越界、未对齐和部分非法访问的工具。
+racecheck|CUDA 共享内存竞争检查器|racecheck|Compute Sanitizer 中检测共享内存数据访问危险的工具。
+initcheck|CUDA 初始化检查器|initcheck|Compute Sanitizer 中检测设备全局内存未初始化读取的工具。
+synccheck|CUDA 同步检查器|synccheck|Compute Sanitizer 中检测部分同步原语使用错误的工具。
+GPU Profiling|GPU 性能剖析||通过设备活动事件、计数器和采样分析 Kernel 性能瓶颈的过程。
+Kernel Timeline|核函数时间线||按时间显示各流上的 Kernel、复制及同步操作的可视化记录。
+NVTX|NVIDIA 工具扩展接口|NVTX|允许程序插入命名范围和标记，辅助性能工具关联应用阶段的注释 API。
+CUPTI|CUDA 分析工具接口|CUPTI|提供设备执行活动、硬件性能计数器与事件采集能力的底层接口。
+PC Sampling|程序计数器采样|PC Sampling|按执行采样点统计设备指令位置及停顿信息的分析方法。
+Source Correlation|源码关联||把 GPU 执行指标映射到具体源码行或 SASS 指令的性能分析功能。
+Hardware Counter|硬件性能计数器||由 GPU 记录缓存事务、指令发射及其他执行事件的统计寄存器或指标。
+Warp Stall Reason|线程束停顿原因||Nsight 等工具将 warp 无法发射指令的情况归类的指标。
+Memory Access Error|内存访问错误||设备代码访问非法、未对齐或不允许的内存地址的缺陷。
+Illegal Memory Access|非法内存访问||Kernel 对无效设备地址或受保护区域进行内存操作的错误。
+Race Detection|竞态检测||通过动态检测或分析寻找并发内存访问冲突的过程。
+Synchronization Hazard|同步危险||因缺少必要屏障、参与掩码不匹配或错误时序产生的并发风险。
+Asynchronous Error Reporting|异步错误报告||设备故障可能在后续同步或 API 调用时才被观察到的错误传播机制。
+cuda-memcheck|旧版 CUDA 内存检查工具|cuda-memcheck|NVIDIA 较早提供的设备内存错误检测工具，后由 Compute Sanitizer 替代。
+Occupancy Analysis|占用率分析||检查寄存器、共享内存和线程资源如何限制 SM 活跃 warp 的过程。
+Microbenchmark|微基准测试||隔离单一 Kernel 或硬件操作、测量其延迟或吞吐的实验。
+Performance Regression|性能回归||软件变更后在可比负载及环境条件下出现吞吐下降或延迟增加的现象。
+
+# 多 GPU、互连、部署与前沿机制
+Multi-GPU Programming|多 GPU 编程||协调多个 GPU 设备分配计算、同步与数据通信的编程方式。
+GPU Peer Access|GPU 对等访问||在支持的互连与权限配置下，一个 GPU 可访问另一 GPU 的设备内存。
+cudaDeviceCanAccessPeer()|检查设备对等访问|cudaDeviceCanAccessPeer|查询两个 GPU 是否支持直接对等内存访问的 Runtime API。
+cudaDeviceEnablePeerAccess()|启用对等设备访问|cudaDeviceEnablePeerAccess|在支持的设备与上下文条件下建立设备对等访问能力的 API。
+NVLink|NVIDIA 高速互连|NVLink|用于 GPU 与 GPU 或其他支持设备之间高速数据传输的互连技术。
+NVSwitch|NVIDIA GPU 交换互连|NVSwitch|构建多 GPU 高带宽互连拓扑的专用交换芯片或系统组件。
+PCI Express|外围组件高速互连|PCIe|主机与 GPU 等外设之间进行高速数据通信的标准总线。
+GPUDirect RDMA|GPU 直接远程内存访问|GPUDirect RDMA|在受支持硬件及驱动下使网卡等设备直接访问 GPU 内存的数据通路技术。
+GPUDirect Storage|GPU 直接存储|GDS|在支持平台上减少存储 I/O 经 CPU 缓冲开销的 GPU 数据传输方案。
+Multi-instance GPU|多实例 GPU|MIG|在支持 GPU 上将部分计算、缓存和显存资源隔离划为多个实例的功能。
+Multi-process Service|多进程服务|MPS|用于改善多个 CUDA 进程共享 GPU 执行资源的 NVIDIA 服务。
+CUDA-aware MPI|CUDA 感知消息传递接口|CUDA-aware MPI|支持将 GPU 设备缓冲区作为 MPI 通信参数的消息传递实现能力。
+Inter-GPU Communication|GPU 间通信||不同 GPU 之间传输数据、同步或交换部分结果的操作。
+Collective Communication|集合通信||多个参与 GPU 联合执行广播、归约、收集或散播等通信操作。
+Ring AllReduce|环形全归约||按逻辑环拓扑执行分块规约和数据分发的 AllReduce 算法。
+Communication–Computation Overlap|通信与计算重叠||同时推进通信和可独立计算以缩短整体执行时间的技术。
+GPU Topology|GPU 拓扑||描述不同 GPU、CPU、网卡和互连之间连接关系及带宽层级的结构。
+NUMA Affinity|非统一内存访问亲和性|NUMA|将主机线程和内存分配安排到更接近目标 GPU 的 CPU 内存域的策略。
+GPU Virtualization|GPU 虚拟化||将物理 GPU 计算资源以共享或隔离的逻辑设备形式呈现给多个工作负载。
+CUDA Container Runtime|CUDA 容器运行环境||在容器中暴露 GPU 设备和必要驱动库以运行 CUDA 应用的部署配置。
+NVIDIA Container Toolkit|NVIDIA 容器工具包||支持容器运行时配置 NVIDIA GPU 设备、驱动能力及可见性的组件集合。
+GPU Device Plugin|GPU 设备插件||在 Kubernetes 等编排系统中向调度器公布 GPU 资源并分配给工作负载的插件。
+CUDA Compatibility Matrix|CUDA 兼容性矩阵||用于核对 GPU 架构、驱动和 Toolkit 组合是否受到支持的版本关系。
+GPU Fault Isolation|GPU 故障隔离||限制设备错误、进程崩溃或资源争用对其他 GPU 工作负载影响的机制。
+CUDA Deployment Validation|CUDA 部署验证||检查驱动、设备可见性、Kernel 功能与性能基线是否满足生产运行要求的流程。
