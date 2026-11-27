@@ -1,0 +1,26 @@
+# CUDA 数值库、算法库与通信框架
+cuBLAS|CUDA 基础线性代数库|cuBLAS|在 NVIDIA GPU 上提供 BLAS 级向量、矩阵运算的数值库。
+cuBLASLt|CUDA 轻量矩阵乘法库|cuBLASLt|提供灵活矩阵乘法描述、算法选择与部分融合选项的 CUDA 库。
+cuDNN|CUDA 深度神经网络库|cuDNN|提供卷积、归一化、注意力等深度学习高性能算子的 NVIDIA 库。
+cuFFT|CUDA 快速傅里叶变换库|cuFFT|为 GPU 上一维及多维 FFT 计算提供实现的 CUDA 库。
+cuSPARSE|CUDA 稀疏矩阵计算库|cuSPARSE|提供稀疏矩阵乘法与稀疏线性代数操作的 CUDA 数值库。
+cuSOLVER|CUDA 线性代数求解库|cuSOLVER|提供稠密和稀疏矩阵分解与线性系统求解功能的 CUDA 库。
+cuRAND|CUDA 随机数生成库|cuRAND|在 GPU 或主机接口上提供伪随机及部分准随机序列生成能力的库。
+NCCL|NVIDIA 集合通信库|NCCL|优化多个 GPU 或多个节点间 AllReduce 等集合通信操作的库。
+NVSHMEM|NVIDIA 共享内存编程库|NVSHMEM|提供跨 GPU 对称内存和单边通信语义的并行编程库。
+Thrust|Thrust 并行算法库|Thrust|提供类似 C++ STL 的并行容器和算法模板的 CUDA 生态库。
+CUB|CUDA 无约束块级原语库|CUB|提供设备、线程块与线程束层级归约、扫描和排序等模板算法的库。
+NPP|NVIDIA 性能原语库|NPP|提供图像处理、信号处理和其他基础数值运算的 GPU 优化函数。
+CUTLASS|CUDA 矩阵乘法模板库|CUTLASS|面向 GEMM 和相关算子的可组合 CUDA C++ 模板组件集合。
+cuTENSOR|CUDA 张量线性代数库|cuTENSOR|为张量收缩、置换与归约等操作提供高性能实现的 CUDA 库。
+cuFile|GPU Direct Storage 文件接口|cuFile|面向 GPUDirect Storage 数据通路提供文件 I/O 能力的 API。
+cuBLAS Handle|cuBLAS 库句柄|cublasHandle_t|保存 cuBLAS 运行状态、流及其他配置的库句柄。
+cuDNN Handle|cuDNN 库句柄|cudnnHandle_t|保存 cuDNN 调用上下文与相关配置的不透明句柄。
+GEMM|通用矩阵乘法|GEMM|计算 C←αAB+βC 及其变体的基础线性代数操作。
+Batched GEMM|批量矩阵乘法||在一次调用中执行多个独立小矩阵乘法的运算模式。
+Strided Batched GEMM|固定步长批量矩阵乘法||按固定内存步长定位批内各矩阵的 GEMM 接口类型。
+AllReduce|全归约|AllReduce|把多个参与 GPU 的数值按操作合并并将相同结果分发给所有参与者的集体通信。
+ReduceScatter|规约分散|ReduceScatter|先合并各参与者数据，再把规约结果的不同分块分发至各参与者的通信操作。
+AllGather|全收集|AllGather|把每个参与者的局部数据复制并拼接提供给全部参与者的通信原语。
+Library Workspace|库工作空间||数值库为执行选定算法临时申请的辅助存储区域。
+Autotuning|自动性能调优||根据输入规模和硬件实测或启发式选择最适算子算法或配置的过程。
