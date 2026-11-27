@@ -142,3 +142,11 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 数理统计（独立出版，暂未加入全站索引）
+
+新增《数理统计专有名词中英文对照表》：**400 条术语、16 个专业章节**。内容覆盖统计推断、抽样分布、充分性、点估计、区间估计、假设检验、Fisher 信息与大样本理论、回归和方差分析、非参数与 Bootstrap、贝叶斯统计及因果与生存分析。附 14 组概念辨析、12 道中等难度面试题、12 道考试题与参考解析。
+
+[阅读 Markdown](glossaries/mathematical-statistics.md) · [查看 PDF](pdf/mathematical-statistics.pdf) · [结构化 TSV](data/mathematical-statistics.tsv) · [参考来源与审核状态](data/mathematical-statistics/SOURCES.md)
+
+原始章节：`data/mathematical-statistics/chapters/`；校验：`node scripts/render_mathematical_statistics.mjs --check`。**这是一册独立出版物，暂不计入站点学科及术语搜索总数。**
