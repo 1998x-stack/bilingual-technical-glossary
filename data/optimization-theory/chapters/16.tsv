@@ -1,0 +1,26 @@
+# 动态规划、最优控制与应用
+Dynamic Optimization|动态优化||决策随时间演进并受状态转移或时间耦合影响的优化问题。
+Optimal Control|最优控制||在动力学约束下选择时间变化的控制输入以优化累计代价的理论。
+State Variable|状态变量||描述动态系统当前状态并决定后续演化的变量。
+Control Input|控制输入||可由控制器选择、用于影响系统动力学的决策量。
+State Transition Equation|状态转移方程||描述下一状态如何由当前状态与控制输入决定的关系。
+Cost-to-go Function|剩余代价函数||从某个状态和时刻开始所能达到的最小未来累计成本。
+Bellman Optimality Principle|贝尔曼最优性原理||最优策略的后续决策对于到达状态必须构成相应子问题的最优策略。
+Value Function|价值函数||把系统状态映射到某个策略或最优策略预期累计回报或成本的函数。
+Bellman Equation|贝尔曼方程||把某状态的价值表示为即时成本或奖励与后续价值的递推方程。
+Dynamic Programming|动态规划|DP|通过求解相互依赖的阶段性子问题计算全局最优策略的方法。
+Hamilton–Jacobi–Bellman Equation|哈密顿—雅可比—贝尔曼方程|HJB|连续时间最优控制中描述价值函数的偏微分方程。
+Pontryagin Maximum Principle|庞特里亚金极大值原理|PMP|最优控制轨迹需满足的伴随方程和哈密顿量极值条件。
+Costate Variable|协态变量||最优控制中描述状态约束边际价值的伴随变量。
+Control Hamiltonian|控制哈密顿量||由即时运行成本与协态和动力学内积构成的控制理论函数。
+Transversality Condition|横截条件||最优控制在终端时刻或边界满足的额外必要条件。
+Model Predictive Control|模型预测控制|MPC|反复求解有限时域最优控制并只执行当前第一步控制的策略。
+Receding Horizon Control|滚动时域控制||随着时间推进持续更新有限预测窗口并重新优化控制的方案。
+Finite-horizon Optimization|有限时域优化||在固定有限时间或阶段长度内优化动态决策的模型。
+Infinite-horizon Optimization|无限时域优化||在无限时间范围内考虑折现或长期平均累计成本的模型。
+Trajectory Optimization|轨迹优化||把状态轨迹和控制序列作为决策变量直接优化动态系统性能。
+Direct Collocation|直接配点法||在时间网格上离散动力学并联合优化状态与控制变量的方法。
+Shooting Method|打靶法||通过选择初始控制或协态变量、积分动力学满足终端约束的技术。
+Differential Dynamic Programming|微分动态规划|DDP|利用局部二阶近似和时间反向递推改进控制轨迹的算法。
+Linear Quadratic Regulator|线性二次调节器|LQR|针对线性动力学与二次成本求最优状态反馈控制律的方法。
+Optimal Transport|最优传输|OT|在给定边缘分布约束下最小化将质量从源分布搬运至目标分布成本的问题。
