@@ -1,0 +1,26 @@
+# NLP 指标、基准与误差分析
+Evaluation Metric|评测指标||将模型任务质量量化为明确数值规则的度量。
+Accuracy|准确率|Accuracy|分类预测正确样本数占总样本数的比例。
+Precision|精确率|Precision|预测为正样本中实际为正的比例。
+Recall|召回率|Recall|真实正样本中被正确预测为正的比例。
+F1 Score|F1 分数|F1|精确率与召回率的调和均值。
+Macro Averaging|宏平均||分别计算各类别指标后不按类别频数加权平均的方式。
+Micro Averaging|微平均||先汇总各类别 TP、FP、FN 再计算总体指标的方式。
+Weighted Averaging|加权平均||按类别样本量等预定权重求类别指标平均值的方式。
+Confusion Matrix|混淆矩阵||按真实类别和预测类别交叉统计样本数量的矩阵。
+Exact Match|完全匹配率|EM|预测答案与参考答案在约定规范化下完全一致的样本比例。
+BLEU|双语评估替换指标|BLEU|基于修改后 N-gram 精确率和长度惩罚的机器翻译自动评价指标。
+ROUGE|面向摘要的召回指标族|ROUGE|根据与参考摘要重合的 N-gram 或最长公共子序列评价文本摘要的指标族。
+METEOR|METEOR 翻译评价指标|METEOR|利用词形、同义及序列对齐信息衡量候选译文与参考的指标。
+chrF|字符 N 元 F 分数|chrF|以字符 N-gram 精确率和召回率计算机器翻译质量的指标。
+BERTScore|BERTScore 语义相似指标||用上下文化词向量匹配候选与参考 token 计算文本生成相似度的指标。
+COMET|COMET 翻译质量评测模型||利用神经网络对源文、候选译文和可选参考译文预测翻译质量的评价框架。
+Human Evaluation|人工评估||由评审者根据任务指南检查模型输出正确性、自然度和有用性的流程。
+Inter-rater Reliability|评审者间可靠性||量化不同人工评审者作出相近评分或决策程度的性质。
+Benchmark Dataset|基准数据集||用固定评测示例与指标比较不同模型能力的数据资源。
+GLUE Benchmark|GLUE 语言理解基准|GLUE|包含多个英语分类与自然语言推断任务的模型评测基准。
+SuperGLUE Benchmark|SuperGLUE 语言理解基准|SuperGLUE|设计用于挑战语言理解模型的一组更困难任务与评测指标。
+SQuAD|斯坦福问答数据集|SQuAD|以维基百科段落和问题构建的阅读理解数据集。
+Error Analysis|误差分析||按任务类型、语言现象或输入子群检查模型错误原因的过程。
+Statistical Significance Test|统计显著性检验||在明确零假设与抽样机制下评估观测差异偶然性的方法。
+Bootstrap Confidence Interval|Bootstrap 置信区间||通过对样本重新抽样估计指标的不确定性区间的方法。
