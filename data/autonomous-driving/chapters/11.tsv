@@ -1,0 +1,26 @@
+# 行为决策、交通规则与路口博弈
+Behavior Planning|驾驶行为规划||决定跟车、让行、变道、超车或停车等离散驾驶行为的过程。
+Decision Making|自动驾驶决策||根据目标、规则、场景及风险从可选驾驶策略中选择行动的过程。
+Finite-state Machine|有限状态机|FSM|以离散状态及事件触发转移组织驾驶逻辑的模型。
+Behavior Tree|行为树|BT|用层级选择、顺序和条件节点组织可执行驾驶行为的结构。
+Rule-based Planning|基于规则的行为规划||利用显式交通规范和手工条件决定驾驶行为的方法。
+Rule Compliance|交通规则遵循||驾驶行为在指定道路交通法规与局部约束下保持合规的性质。
+Route Following|路线跟随||根据给定路网目标持续选择能够保持全局路线的驾驶行为。
+Lane Keeping|车道保持||控制车辆继续沿当前有效行驶车道移动的驾驶行为。
+Lane Change Decision|变道决策||判断何时以及向哪条车道安全转移的规划步骤。
+Gap Acceptance|交通间隙接受||在合流、变道或穿越路口时评估可用交通时间或空间间隙的决策。
+Merge Decision|合流决策||在汇入主路或邻接车道时确定通行顺序和加减速策略的过程。
+Overtaking Decision|超车决策||综合路线、前车速度及交通规则判断能否绕过慢车的规划任务。
+Yield Decision|让行决策||根据优先权与预测冲突判断自车应等待还是继续行驶的决策。
+Stop Decision|停车决策||确定必须制动至静止的位置、时机及触发规则的过程。
+Intersection Negotiation|路口通行协商||依据优先权、车流与主体交互选择安全穿越路口时机的过程。
+Unprotected Left Turn|无保护左转||在缺少专用通行保护时需判断对向车辆和行人间隙的左转场景。
+Roundabout Navigation|环岛通行||根据环形道路的车道、入口让行与出口关系规划的驾驶任务。
+Four-way Stop|四向停车路口||多入口存在停牌控制、需根据到达和优先权规则协调通行的场景。
+Traffic Signal Compliance|交通信号遵循||根据车辆所受信号灯状态决定停止、等待或通行的能力。
+Right-of-way Reasoning|通行优先权推理||在特定路口和车道交通规则下判断各主体优先关系的过程。
+Occluded Intersection Handling|遮挡路口处理||在交叉口视野被遮挡时采取减速、观察和保守规划的策略。
+Decision Hysteresis|决策滞回||通过改变切换阈值或保持状态减少驾驶行为频繁抖动的机制。
+Commitment to Maneuver|机动承诺机制||在满足安全条件时维持已选择的变道或通过行为、减少无谓反复的策略。
+Contingency Planning|应急备选规划||预先保留无法完成首选机动时可立即执行的替代策略。
+Traffic Negotiation|交通交互协商||通过车速、间隙和运动意图与其他道路使用者形成可通行关系的过程。
