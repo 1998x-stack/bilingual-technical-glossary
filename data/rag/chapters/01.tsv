@@ -1,0 +1,26 @@
+# RAG 基础、架构与知识来源
+Retrieval-Augmented Generation|检索增强生成|RAG|生成模型在回答时检索外部资料，并利用检索内容辅助生成的架构。
+Knowledge-intensive Task|知识密集型任务||需要大量事实、领域知识或可更新外部信息才能完成的任务。
+Parametric Knowledge|参数化知识||模型在训练中学习并编码在权重中的信息。
+Non-parametric Memory|非参数化记忆||模型权重之外、可由检索访问的文本或数据知识集合。
+Knowledge Base|知识库|KB|为查询、检索和回答提供结构化或非结构化知识的存储集合。
+Retrieval Corpus|检索语料库||被建立索引并可供检索的文档或记录集合。
+Retriever|检索器||根据查询从候选集合中找到相关内容的系统组件。
+Generator|生成器||根据用户输入和检索上下文生成自然语言回答的模型。
+Retriever–Generator Pipeline|检索—生成流水线||依次执行问题处理、证据检索和生成回答的工作流。
+Open-domain Question Answering|开放域问答|ODQA|从广泛主题的知识来源中回答自然语言问题的任务。
+Closed-domain Question Answering|封闭域问答||仅针对约定文档集或专门领域回答问题的任务。
+Grounded Generation|有依据生成||要求模型输出能够由指定来源、证据或约束支持的生成方式。
+Knowledge Grounding|知识锚定||将生成结果与可核对的外部知识联系起来的过程。
+Retrieval-time Augmentation|检索时增强||在推理期间实时获取资料并补充模型输入的方案。
+Index-time Processing|建索引阶段处理||在用户查询前完成解析、清洗、切块与索引构建的离线流程。
+Query-time Processing|查询阶段处理||收到请求后执行查询理解、检索、排序和回答的在线流程。
+RAG Pipeline|RAG 流水线||组织数据导入、索引、召回、证据加工与生成的一系列步骤。
+Naive RAG|基础 RAG||通常按切块、向量检索和直接拼接上下文实现的简单 RAG 结构。
+Advanced RAG|增强型 RAG||在基础流程中加入查询优化、混合检索、重排序等改进的架构概称。
+Modular RAG|模块化 RAG||将检索、路由、记忆、重写和生成等功能组成可替换模块的设计。
+Retrieval-Augmented Language Model|检索增强语言模型||把语言建模与可检索外部信息结合的模型体系。
+RAG-Sequence|RAG-Sequence||Lewis 等人提出的对整段输出采用统一检索文档潜变量的 RAG 形式。
+RAG-Token|RAG-Token||Lewis 等人提出的允许各输出位置依赖不同检索文档潜变量的 RAG 形式。
+Knowledge Freshness|知识时效性||知识来源相对于现实变化保持准确和更新的程度。
+Evidence-backed Answer|证据支持的回答||关键事实声明能够对应明确检索证据的输出。
