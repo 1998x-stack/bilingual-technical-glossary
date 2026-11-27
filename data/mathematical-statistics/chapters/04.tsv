@@ -1,0 +1,26 @@
+# 数据约简、充分性与指数族
+Data Reduction|数据约简||通过提取统计量减少原始数据维度并保留推断信息的过程。
+Sufficient Statistic|充分统计量||在给定该统计量后，样本条件分布与未知参数无关的统计量。
+Minimal Sufficient Statistic|最小充分统计量||能由任何其他充分统计量确定的充分统计量。
+Factorization Theorem|因子分解定理||利用似然密度或质量函数的分解判定统计量充分性的定理。
+Likelihood Factorization|似然因子分解||将联合样本概率表示为参数依赖部分与参数无关部分乘积的形式。
+Complete Statistic|完全统计量||任何期望恒为零的统计量函数几乎必然为零的统计量。
+Boundedly Complete Statistic|有界完全统计量||完全性的判定只要求有界可测函数满足零期望性质。
+Ancillary Statistic|辅助统计量||其抽样分布不依赖未知参数的统计量。
+Basu Theorem|巴苏定理||完全充分统计量与辅助统计量相互独立的经典结论。
+Rao–Blackwell Theorem|拉奥—布莱克威尔定理||对估计量条件化于充分统计量可使凸损失风险不增的定理。
+Lehmann–Scheffé Theorem|莱曼—谢费定理||完全充分统计量的无偏函数在通常条件下为唯一 UMVU 估计量。
+Exponential Family|指数族||概率密度可表示为统计量与自然参数内积的指数形式的分布族。
+Natural Parameter|自然参数||指数族表达式中与充分统计量直接内积的参数。
+Natural Statistic|自然统计量||指数族表达式中与自然参数耦合的样本函数。
+Log-partition Function|对数配分函数||使指数族密度归一化的指数归一化常数的对数。
+Canonical Form|规范参数形式||用指数族自然参数与自然统计量表示分布的形式。
+Full Exponential Family|完全指数族||自然参数空间覆盖所允许区域而非受额外低维限制的指数族。
+Curved Exponential Family|曲指数族||自然参数被约束在低维曲面上的指数族。
+Parameter Space|参数空间||统计模型允许未知参数取得的全部值的集合。
+Nuisance Parameter|干扰参数||虽影响数据分布、但不是当前推断目标的未知参数。
+Parameter of Interest|目标参数||研究所希望估计或检验的参数分量或函数。
+Identifiability|可识别性||不同参数值对应不同可观测分布的模型性质。
+Nonidentifiability|不可识别性||存在不同参数值产生同一观测分布而无法由数据区分的现象。
+Invariant Statistic|不变统计量||在指定变换群作用下保持取值不变的统计量。
+Maximal Invariant|极大不变统计量||能区分变换群各不同轨道的不变统计量。
