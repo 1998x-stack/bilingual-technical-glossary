@@ -1,0 +1,107 @@
+# 机器人学基础、系统架构与任务概念
+Robotics|机器人学||研究具身机械系统的感知、运动、决策、控制及与物理环境交互的交叉领域。
+Robot|机器人||由传感、计算和执行组件构成并能够在物理环境中执行受控动作的系统。
+Robot System|机器人系统||包括机械机构、驱动器、传感器、控制器、软件与外部环境接口的完整系统。
+Robot Manipulator|机器人机械臂||通过串联或并联关节操纵末端执行器位置与姿态的机器人机构。
+Mobile Robot|移动机器人||依靠轮、履带、腿或其他推进方式在环境中移动的机器人。
+Humanoid Robot|人形机器人||结构或运动设计借鉴人类身体形态的机器人。
+Collaborative Robot|协作机器人|Cobot|设计用于在规定安全条件下与人员共享工作区域的工业机器人。
+Autonomous Robot|自主机器人||能够根据观测与目标在一定范围内自主制定并执行行动的机器人。
+Teleoperated Robot|遥操作机器人||由远端操作员通过通信链路直接或间接操纵的机器人。
+Degrees of Freedom|自由度|DoF|描述机构配置所需的独立广义坐标数量。
+Degree of Mobility|机构活动度||机构在满足几何约束后允许独立运动的维数。
+Joint|关节||连接相邻连杆并允许某些相对运动的机械约束结构。
+Link|连杆||在机器人运动学模型中按刚体处理、连接不同关节的机构组成部分。
+Kinematic Chain|运动链||由连杆和关节按连接关系组成的机械运动结构。
+Serial Manipulator|串联机械臂||连杆沿单一主链依次由关节连接至末端执行器的机械臂。
+Parallel Manipulator|并联机构机器人||通过多个闭合运动链共同约束或驱动末端平台的机器人机构。
+End Effector|末端执行器||直接与目标物体或环境执行操作的机械臂末端工具。
+Workspace|工作空间||末端执行器在机构约束下可达到的位置或位姿集合。
+Reachability|可达性||给定目标状态能否在机器人运动及约束条件下实现的性质。
+Robot Task|机器人任务||规定机器人需要实现的状态变化、操作结果或行为目标。
+Robot Skill|机器人技能||可复用的感知动作过程，通常带有前置条件与完成判据。
+Task Planning|任务规划||把高层目标分解为具有逻辑约束的行动序列或操作结构的过程。
+Motion Planning|运动规划||在碰撞、动力学及其他约束下寻找机器人运动路径或轨迹的任务。
+Robot Autonomy Stack|机器人自主系统栈||将感知、估计、规划和控制等功能组织成可协同工作的软件系统。
+Human–Robot Interaction|人机交互|HRI|研究人与机器人之间的通信、协作、安全和交互体验的领域。
+
+# 刚体运动、旋转表示与李群
+Rigid Body|刚体||任意两点之间距离在运动中保持不变的理想化物体。
+Rigid Transformation|刚体变换||由旋转和平移组成并保持物体内部距离与角度的空间映射。
+Reference Frame|参考坐标系||定义位置、方向及运动测量的原点和坐标轴集合。
+Body Frame|本体坐标系||固连于机器人或其某个刚体连杆的局部坐标系。
+World Frame|世界坐标系||用于描述环境中物体和机器人状态的公共参考坐标系。
+Rotation Matrix|旋转矩阵||行列式为一的正交矩阵，用于描述保持长度的空间旋转。
+Homogeneous Transformation Matrix|齐次变换矩阵||以四乘四分块矩阵联合表示三维旋转与平移的变换。
+Special Orthogonal Group|特殊正交群|SO(3)|由三维旋转矩阵及矩阵乘法构成的李群。
+Special Euclidean Group|特殊欧氏群|SE(3)|由三维刚体位姿变换与其复合运算构成的李群。
+Lie Group|李群||同时具备可微流形结构和光滑群运算的数学对象。
+Lie Algebra|李代数||描述李群单位元邻域无穷小变换及括号运算的切空间代数结构。
+Skew-symmetric Matrix|反对称矩阵||满足矩阵转置等于其相反数的矩阵，常用于叉积表示。
+Hat Operator|帽映射||把向量映射成对应的反对称矩阵或刚体运动李代数矩阵的运算。
+Vee Operator|逆帽映射||从李代数矩阵恢复对应向量坐标的映射。
+Exponential Map|指数映射||把李代数中的局部运动参数映射到对应李群元素的函数。
+Logarithm Map|对数映射||在适当分支下将李群变换映射回李代数坐标的函数。
+Axis–Angle Representation|轴角表示||以单位旋转轴和旋转角描述三维旋转的方法。
+Rodrigues Formula|罗德里格斯旋转公式||利用旋转轴反对称矩阵计算三维旋转矩阵的公式。
+Unit Quaternion|单位四元数||模长为一的四元数，可在双重覆盖意义下表示三维旋转。
+Euler Angles|欧拉角||按选定旋转轴顺序用三个角度参数化三维姿态的方法。
+Gimbal Lock|万向节锁||部分欧拉角参数化在奇异姿态处失去独立角度描述能力的现象。
+Twist|旋量速度|Twist|以角速度和线速度分量联合描述刚体瞬时运动的六维量。
+Wrench|力旋量|Wrench|以力矩和力分量联合描述刚体所受广义作用的六维量。
+Adjoint Representation|伴随表示||描述刚体坐标变换对旋量速度或相关李代数量的线性作用。
+Pose Composition|位姿复合||按规定顺序组合多个相对坐标变换获得整体位姿的运算。
+
+# 串联机器人正向运动学与连杆参数
+Forward Kinematics|正向运动学|FK|根据关节变量与连杆几何计算末端执行器位姿的映射。
+Joint Space|关节空间||由机器人可独立控制的关节坐标组成的配置参数空间。
+Task Space|任务空间||用末端位姿或操作目标变量描述机器人任务状态的空间。
+Configuration|机器人构型||完整指定机构所有独立广义坐标的状态描述。
+Joint Variable|关节变量||决定旋转关节角度或移动关节位移的独立参数。
+Revolute Joint|旋转关节||允许两个连杆绕固定相对轴线转动的单自由度关节。
+Prismatic Joint|移动关节||允许两个连杆沿固定相对方向滑动的单自由度关节。
+Spherical Joint|球形关节||理想情况下允许相对三维旋转的机构关节。
+Fixed Joint|固定关节||在运动学模型中不允许两连接部件之间相对运动的关节。
+Joint Limit|关节限位||由机械结构或安全策略规定的关节位置、速度或力矩范围。
+Link Length|连杆长度||机构参数化中描述关节轴或关节点之间几何距离的量。
+Link Offset|连杆偏距||在指定参数约定下描述相邻关节坐标系沿轴向距离的参数。
+Denavit–Hartenberg Parameters|丹纳维特—哈滕伯格参数|DH|通过连杆长度、扭转角、偏距和关节角描述串联运动链的参数体系。
+Standard DH Convention|标准 DH 约定||使用固定变换次序建立相邻连杆坐标系的经典 DH 定义。
+Modified DH Convention|修正 DH 约定||采用另一变换次序及坐标系放置规则的 DH 参数变体。
+Product of Exponentials|指数积公式|PoE|通过关节旋量指数映射的连乘描述机器人正向运动学的形式。
+Screw Axis|螺旋轴||将转动及平移运动统一描述为一个空间运动轴及其相关参数的概念。
+Home Configuration|零位构型||所有关节取参考值时末端执行器的固定位姿。
+Space Frame Kinematics|空间坐标运动学||以全局固定参考坐标系表达关节旋量与末端变换的建模方式。
+Body Frame Kinematics|本体坐标运动学||以末端固连坐标系表达关节旋量与运动学变换的方法。
+Kinematic Calibration|运动学校准||依据外部测量估计真实机构几何参数与名义模型差异的过程。
+Forward Kinematic Chain|正运动学变换链||按关节层级逐项相乘得到末端位姿的坐标变换序列。
+Tool Center Point|工具中心点|TCP|用于定义末端工具位置与姿态参考的固定点或坐标系。
+Base Frame|基座坐标系||固定于机器人底座、用于描述关节链几何关系的参考系。
+Kinematic Redundancy|运动学冗余||关节自由度多于完成指定任务所必需维数的机构性质。
+
+# 逆运动学、雅可比、奇异性与冗余
+Inverse Kinematics|逆运动学|IK|根据目标末端位姿求满足机构约束的关节配置的问题。
+Analytical Inverse Kinematics|解析逆运动学||通过几何与代数推导直接构造关节解的求解方法。
+Numerical Inverse Kinematics|数值逆运动学||通过迭代优化逐步减小末端位姿误差的求解方式。
+Inverse Kinematic Branch|逆运动学解分支||同一末端目标对应不同离散机构姿态类别的一组关节解。
+Jacobian Matrix|机器人雅可比矩阵|J|将关节速度映射为末端空间速度的一阶线性化矩阵。
+Space Jacobian|空间雅可比||以固定世界或空间参考系表达末端速度的雅可比。
+Body Jacobian|本体雅可比||以末端本体参考系表达末端速度的雅可比。
+Jacobian Singularity|雅可比奇异性||雅可比秩下降、末端某些运动或力传递能力退化的构型性质。
+Manipulator Singularity|机械臂奇异位形||使末端瞬时运动或力映射出现秩亏的机器人姿态。
+Jacobian Pseudoinverse|雅可比伪逆||通过 Moore–Penrose 伪逆得到最小范数或最小二乘关节速度解的方法。
+Damped Least Squares|阻尼最小二乘|DLS|在逆运动学求解中加入正则化缓解奇异附近数值不稳定的方法。
+Jacobian Transpose Method|雅可比转置方法||利用雅可比转置将任务误差转换为关节更新方向的迭代 IK 方法。
+Null Space|零空间||线性映射作用后结果为零的向量集合。
+Null-space Projection|零空间投影||把次级目标更新投影到不影响主任务一阶运动的关节方向。
+Redundancy Resolution|冗余自由度分配||在满足末端主任务的同时选择额外关节运动以优化其他目标的策略。
+Manipulability|可操作度||衡量关节速度可映射出的末端速度方向集合特征的指标族。
+Manipulability Ellipsoid|可操作度椭球||由雅可比对单位关节速度球的映射形成的末端速度椭球。
+Condition Number|条件数||反映雅可比等矩阵数值敏感性与方向尺度不均衡程度的量。
+Joint-limit Avoidance|关节限位规避||通过优化或零空间运动使关节远离危险或不可达边界的策略。
+Collision-aware IK|避碰逆运动学||在满足末端目标时把自碰撞与环境碰撞约束加入 IK 求解。
+Pose Error|位姿误差||目标位姿与当前位姿之间按指定坐标约定计算的平移及旋转差异。
+Orientation Error|姿态误差||目标朝向与当前朝向之间的旋转差，通常用李代数或四元数表示。
+Closed-chain Kinematics|闭链运动学||处理具有闭合约束环路的机器人机构关节几何关系的理论。
+Differential Inverse Kinematics|微分逆运动学||根据期望末端速度和雅可比求解关节速度控制量的任务。
+Resolved-rate Control|速度解析控制||使用微分逆运动学将末端速度指令转换为关节速度指令的控制方式。
