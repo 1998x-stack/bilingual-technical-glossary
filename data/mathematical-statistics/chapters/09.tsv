@@ -1,0 +1,26 @@
+# 大样本理论与渐近推断
+Asymptotic Statistics|渐近统计||研究样本量趋于无穷时估计量与检验统计量性质的理论。
+Convergence in Probability|依概率收敛||估计误差超过任意固定正阈值的概率趋于零的收敛方式。
+Almost Sure Convergence|几乎处处收敛||随机变量序列在概率为一的事件上逐点收敛。
+Convergence in Distribution|依分布收敛||随机变量分布函数在极限分布连续点收敛的性质。
+Convergence in Mean Square|均方收敛||随机变量与极限之间平方差的期望趋于零的收敛方式。
+Weak Law of Large Numbers|弱大数定律|WLLN|在适当条件下样本均值依概率趋向总体期望的定理。
+Strong Law of Large Numbers|强大数定律|SLLN|在适当条件下样本均值几乎处处收敛到总体期望的定理。
+Central Limit Theorem|中心极限定理|CLT|在相应条件下标准化随机变量和趋近正态分布的定理族。
+Lindeberg Condition|林德伯格条件||用于三角阵中心极限定理、控制单项大偏差贡献的条件。
+Lyapunov Condition|李雅普诺夫条件||通过高阶矩上界确保一类独立变量中心极限定理成立的充分条件。
+Slutsky Theorem|斯卢茨基定理||将依分布收敛与依概率收敛的随机量组合得到极限分布的定理。
+Continuous Mapping Theorem|连续映射定理||在适当连续性条件下收敛随机变量经函数映射仍收敛的定理。
+Delta Method|Delta 方法||借助泰勒展开推导可微变换后估计量渐近分布的方法。
+Multivariate Delta Method|多元 Delta 方法||以函数雅可比矩阵传播多元估计量渐近协方差的方法。
+Asymptotic Normality|渐近正态性||经适当中心化和缩放的统计量依分布趋向正态分布的性质。
+Asymptotic Variance|渐近方差||估计量标准化极限分布的方差参数。
+Asymptotic Bias|渐近偏差||大样本尺度上估计量期望相对真值的系统差异。
+Asymptotic Efficiency|渐近效率||根据极限方差或局部风险比较估计程序效率的性质。
+Asymptotic Relative Efficiency|渐近相对效率|ARE|达到相同精度所需样本量或极限方差的比较指标。
+Stochastic Order|随机阶记号||用概率界刻画随机变量序列规模的符号。
+Big O in Probability|依概率有界阶|Op|表示随机量按给定尺度缩放后在概率意义下有界。
+Little o in Probability|依概率小阶|op|表示随机量按给定尺度缩放后依概率趋向零。
+Contiguity|相邻连续性||一个概率测度序列的零概率极限事件也被另一序列赋予渐近零概率的关系。
+Local Asymptotic Normality|局部渐近正态性|LAN|局部参数扰动下对数似然比近似高斯移位结构的性质。
+Berry–Esseen Bound|贝里—埃塞恩界||在矩条件下量化标准化独立变量和与正态分布之间最大误差的上界。

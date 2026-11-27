@@ -1,0 +1,107 @@
+# CUDA 平台、架构与开发环境
+CUDA|统一计算设备架构|CUDA|NVIDIA 的并行计算平台和编程模型，用于在受支持的 GPU 上执行通用计算。
+CUDA Toolkit|CUDA 工具包||包含 CUDA 编译器、运行库、开发工具及相关头文件的软件开发套件。
+CUDA Programming Model|CUDA 编程模型||以主机与设备协作、线程层级和内存层级组织 GPU 程序的抽象。
+General-purpose GPU Computing|GPU 通用计算|GPGPU|利用图形处理器执行不局限于图形渲染的计算任务。
+Host|主机端||CUDA 程序中通常由 CPU 执行并控制设备工作的计算环境。
+Device|设备端||运行 CUDA Kernel 的 GPU 或其他受支持计算设备。
+GPU|图形处理器|GPU|具有大量并行运算单元及分层存储系统的加速处理器。
+CPU|中央处理器|CPU|主要承担通用程序控制与主机侧任务的处理器。
+Discrete GPU|独立 GPU||具有独立设备资源、通常经 PCIe 等互连与主机连接的 GPU。
+Integrated GPU|集成 GPU||与 CPU 或系统其他部件集成并可能共享物理内存的 GPU。
+Streaming Multiprocessor|流式多处理器|SM|CUDA GPU 中执行线程块并提供计算、寄存器与片上资源的硬件单元。
+CUDA Core|CUDA 算术核心||NVIDIA GPU SM 内执行部分整数或浮点运算的硬件计算单元的通称。
+Compute Capability|计算能力版本||标识 CUDA GPU 所支持硬件功能集合的主要和次要架构编号。
+CUDA Architecture|CUDA 硬件架构||定义 GPU 计算功能、执行资源与内存行为的一代硬件设计。
+Device Properties|设备属性||描述 GPU 线程限制、SM 数量、内存容量等能力的运行时查询结果。
+CUDA Runtime|CUDA 运行时||提供设备管理、内存操作、Kernel 启动与流控制等高级 API 的库层。
+CUDA Driver|CUDA 驱动程序||管理 GPU 设备并提供 CUDA Driver API 等底层执行能力的软件。
+CUDA Driver API|CUDA 驱动 API||以 CU 前缀接口显式管理 CUDA 上下文、模块、内存和执行的编程接口。
+CUDA Runtime API|CUDA 运行时 API||以 cuda 前缀接口封装常见 GPU 计算操作的高级编程接口。
+CUDA C++|CUDA C++ 语言扩展||通过函数限定符、内建索引与启动语法扩展 C++ 的设备编程方式。
+CUDA Samples|CUDA 示例程序||展示编程模型、API 功能与优化方法的 NVIDIA 示例代码集合。
+Compatibility|兼容性||CUDA Toolkit、驱动、GPU 架构与运行二进制之间满足可执行条件的性质。
+Forward Compatibility|前向兼容性||在特定受支持条件下让新 Toolkit 应用使用较旧部署环境的兼容机制。
+Binary Compatibility|二进制兼容性||编译后的设备代码能在目标硬件或软件环境中被接受并执行的能力。
+GPU Accelerated Computing|GPU 加速计算||将适合并行执行的工作卸载至 GPU 以提高吞吐或降低延迟的计算方式。
+
+# 线程层级、执行模型与硬件映射
+CUDA Thread|CUDA 线程||执行一次 Kernel 程序实例、具有独立寄存器状态的基本软件执行单位。
+Thread Block|线程块||可在同一 SM 上协作、共享片上内存并进行块内同步的线程集合。
+Grid|线程网格||一次常规 Kernel 启动所创建的全部线程块的集合。
+Warp|线程束|Warp|由 32 个连续线程组成、按 SIMT 硬件执行的调度与执行单位。
+Warp Size|线程束大小||CUDA 设备线程束中包含的线程数，当前 NVIDIA CUDA GPU 通常为 32。
+Lane|线程束通道||一个 warp 中编号从零开始的线程位置。
+SIMT|单指令多线程|SIMT|让不同线程实例在硬件上以线程束方式协调执行的模型。
+SIMD|单指令多数据|SIMD|单条指令对多个数据元素并行执行相同操作的处理模式。
+Thread Divergence|线程分歧||同一 warp 内线程因控制条件不同而执行不同路径的现象。
+Branch Reconvergence|分支再汇合||分歧线程执行不同分支后回到共同控制位置的过程。
+Independent Thread Scheduling|独立线程调度||部分 GPU 架构可更细粒度管理 warp 内线程执行状态的机制。
+Block Scheduler|线程块调度器||将可运行线程块分配到具备资源的 SM 的硬件调度机制。
+Warp Scheduler|线程束调度器||在 SM 内选择准备就绪的 warp 发射指令的硬件逻辑。
+Eligible Warp|可发射线程束||当前不存在阻塞其下一条指令的依赖、可被调度的 warp。
+Active Warp|活跃线程束||已驻留在 SM、占用相应硬件资源的 warp。
+Resident Block|驻留线程块||当前分配在某个 SM 上、尚未完成的线程块。
+Thread Block Cluster|线程块集群||在支持的 GPU 上将多个线程块组成可协作并访问分布式共享内存的层级。
+Cluster Scheduling|集群调度||将线程块集群作为具有特定协同约束的调度单位的执行机制。
+Grid Dimension|网格维度|gridDim|标识一次 Kernel 启动在各维上包含多少线程块的内建变量。
+Block Dimension|线程块维度|blockDim|标识单个线程块在各维上包含多少线程的内建变量。
+Block Index|线程块索引|blockIdx|标识线程块在网格中坐标的内建变量。
+Thread Index|线程索引|threadIdx|标识线程在线程块内坐标的内建变量。
+Global Thread Index|全局线程索引||利用块坐标与块内坐标计算出的逻辑一维线程编号。
+Thread Granularity|线程粒度||每个 CUDA 线程承担的计算任务大小及其资源权衡。
+Grid-stride Loop|网格步长循环||线程以全网格线程总数为步长迭代处理多个数据元素的编程模式。
+
+# Kernel、设备函数与启动配置
+CUDA Kernel|CUDA 核函数||由主机或受支持设备机制启动、在 GPU 上由多个线程实例执行的函数。
+Kernel Launch|核函数启动||指定执行网格、线程块及其他参数后提交设备计算的操作。
+Execution Configuration|执行配置||Kernel 启动使用的网格维度、线程块维度、共享内存和流配置。
+Triple-chevron Syntax|三尖括号启动语法|<<<>>>|CUDA C++ 用于指定 Kernel 执行配置的特殊函数调用语法。
+Global Function Qualifier|全局函数限定符|__global__|声明可作为 CUDA Kernel 入口的设备执行函数的限定符。
+Device Function Qualifier|设备函数限定符|__device__|声明在设备上执行且可由设备代码调用的函数限定符。
+Host Function Qualifier|主机函数限定符|__host__|声明在主机端执行的 C++ 函数限定符。
+Host-device Function|主机与设备双端函数||使用相应限定符分别生成主机与设备可调用版本的函数。
+Dynamic Shared Memory Argument|动态共享内存启动参数||Kernel 启动时为每个块指定额外动态共享内存字节数的参数。
+Launch Stream Argument|启动流参数||指定 Kernel 提交到哪个 CUDA Stream 的启动配置参数。
+Launch Bounds|启动界限|__launch_bounds__|向编译器声明线程块大小及可选驻留约束以影响资源分配的属性。
+Grid-stride Kernel|网格步长核函数||通过循环让有限线程网格覆盖任意长度数据集的 Kernel。
+Kernel Argument|核函数实参||在 Kernel 启动时从调用方传入设备函数的标量或指针等参数。
+Kernel Parameter Buffer|核函数参数缓冲区||运行时为设备 Kernel 传递实参值使用的参数存储区域。
+Kernel Launch Overhead|核函数启动开销||主机调度、运行时与设备提交引入的非计算时间成本。
+Device Function Inlining|设备函数内联||编译器将设备函数调用替换为调用点指令以优化执行的变换。
+CUDA Built-in Variables|CUDA 内建变量||包括线程索引、块索引和网格维度等执行环境变量。
+Bounds Checking|边界检查||线程在访问数组前判断逻辑索引是否位于合法数据范围的保护。
+Kernel Fusion|核函数融合||将原本多个 Kernel 的操作组合到一次启动以减少中间访存或调度成本。
+Kernel Fission|核函数拆分||把一个复杂 Kernel 划分为多个 Kernel 以简化同步、资源需求或调度。
+Persistent Kernel|持久化核函数||由少量长期驻留线程块持续领取任务而非按任务反复启动的实现模式。
+Cooperative Kernel Launch|协作式核函数启动||以支持跨线程块协同操作要求的方式启动 Kernel 的机制。
+Dynamic Parallelism|动态并行||受支持设备代码在 GPU 上发起新的 Kernel 执行的功能。
+Device-side Kernel Launch|设备端核函数启动||由 GPU 设备代码而不是普通主机控制路径提交子 Kernel 的操作。
+Kernel Specialization|核函数特化||针对固定尺寸、数据类型或硬件特征生成更适配的设备代码。
+
+# 内存空间、缓存与数据布局
+Memory Hierarchy|内存层次结构||GPU 中寄存器、共享内存、缓存和设备内存等不同延迟容量层级的组合。
+Global Memory|全局内存||GPU 所有线程可通过有效地址访问、主要位于设备 DRAM 的内存空间。
+Device Memory|设备内存||由 GPU 地址空间管理、用于存储计算输入输出和状态的内存资源。
+Register File|寄存器文件||每个 SM 提供、按线程分配寄存器的片上存储资源。
+Register|寄存器||供单个线程保存临时数据与计算状态的高速存储单位。
+Local Memory|局部内存||具有线程私有寻址语义、物理上通常存放于设备内存并经缓存访问的空间。
+Shared Memory|共享内存||线程块内线程可共同访问并通过同步协调的低延迟片上存储。
+Distributed Shared Memory|分布式共享内存|DSM|在支持线程块集群的设备上跨集群中线程块访问各自共享内存的机制。
+Constant Memory|常量内存||由设备端只读且可利用专用缓存路径访问的 CUDA 内存空间。
+Texture Memory|纹理内存||通过纹理对象与相关缓存机制访问数据的只读采样路径。
+Surface Memory|表面内存||通过表面对象对 CUDA 数组进行读写访问的内存路径。
+L1 Cache|一级缓存|L1|靠近 SM 的片上缓存层，具体功能和共享内存分配依架构而异。
+L2 Cache|二级缓存|L2|供多个 SM 共享、位于设备 DRAM 之前的缓存层。
+DRAM|动态随机存取存储器|DRAM|GPU 板载或封装的主要大容量易失性存储介质。
+High Bandwidth Memory|高带宽存储器|HBM|通过宽接口与堆叠封装提供较高带宽的 GPU 内存技术。
+Memory Alignment|内存对齐||数据地址满足指定字节边界约束的属性。
+Aligned Access|对齐访问||指令访问地址满足其大小或硬件事务对齐要求的访存方式。
+Memory Transaction|内存事务||硬件缓存或内存系统执行的数据读写传输单位。
+Structure of Arrays|数组结构|SoA|将同一字段各对象值连续存放的多数组数据布局。
+Array of Structures|结构数组|AoS|将每个对象的多个字段连续存放的复合结构布局。
+Array of Structures of Arrays|数组结构混合布局|AoSoA|将对象分块、在块内按字段数组组织数据的混合布局。
+Memory Padding|内存填充||在数据布局中插入额外字节或元素以改善对齐、步长或冲突。
+Pitch|行跨度||二维线性存储中相邻行起始地址间的字节距离。
+Pitched Allocation|带行跨度的内存分配||为二维或三维数据分配具有对齐行跨度的设备内存方式。
+CUDA Array|CUDA 数组||支持纹理或表面等特定硬件访问模式的特殊设备存储对象。

@@ -1,0 +1,26 @@
+# 区间估计与置信集合
+Interval Estimation|区间估计||用依数据而变的区间表达未知参数估计不确定性的方式。
+Confidence Interval|置信区间|CI|按预定覆盖率构造、在重复抽样中包含固定真参数的随机区间。
+Confidence Level|置信水平||置信区间构造程序预先设定的覆盖概率下界或标称值。
+Coverage Probability|覆盖概率||给定真实参数时随机置信集合覆盖该参数的概率。
+Confidence Set|置信集合||用随机集合而不局限于数轴区间表达参数不确定性的推断结果。
+Two-sided Confidence Interval|双侧置信区间||同时具有下界与上界的随机区间。
+One-sided Confidence Bound|单侧置信界||仅提供参数上界或下界的置信推断结果。
+Margin of Error|误差限||置信区间中心至端点的半宽度，适用于对称区间表达。
+Pivotal Quantity|枢轴量||抽样分布不依赖未知参数的样本与参数函数。
+Pivot Method|枢轴法||反演枢轴量分位数不等式构造置信区间的方法。
+Normal Approximation Interval|正态近似区间||利用估计量近似正态分布构造的置信区间。
+Student t Confidence Interval|学生 t 置信区间||利用 t 抽样分布估计正态总体均值的区间。
+Wald Confidence Interval|Wald 置信区间||用参数估计值及其标准误构成的渐近正态区间。
+Score Confidence Interval|得分置信区间||通过反演得分检验获得的参数区间。
+Likelihood-ratio Confidence Region|似然比置信域||通过反演似然比检验得到的参数集合。
+Wilson Score Interval|Wilson 得分区间||反演二项比例得分检验得到的比例置信区间。
+Clopper–Pearson Interval|Clopper–Pearson 区间||通过反演精确二项检验构造的保守比例区间。
+Bootstrap Percentile Interval|Bootstrap 百分位区间||取重抽样估计量分布分位数作为区间端点的方法。
+Bootstrap-t Interval|学生化 Bootstrap 区间||通过重抽样学生化统计量的分位数反演构造的区间。
+BCa Bootstrap Interval|偏差校正加速 Bootstrap 区间|BCa|利用偏差校正和加速因子调整重抽样分位数的区间。
+Profile Likelihood Interval|剖面似然区间||在每个目标参数值下优化干扰参数后反演似然比的区间。
+Prediction Interval|预测区间||为未来单个观测或指定预测量提供覆盖保证的随机区间。
+Tolerance Interval|容忍区间||以指定置信度覆盖总体中至少给定比例个体的区间。
+Simultaneous Confidence Interval|同时置信区间||控制一组参数区间同时覆盖真值概率的推断程序。
+Multiplicity-adjusted Interval|多重性校正区间||针对多个比较调整覆盖要求以控制总体错误率的置信区间。

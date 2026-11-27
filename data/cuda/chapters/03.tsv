@@ -1,0 +1,26 @@
+# Kernel、设备函数与启动配置
+CUDA Kernel|CUDA 核函数||由主机或受支持设备机制启动、在 GPU 上由多个线程实例执行的函数。
+Kernel Launch|核函数启动||指定执行网格、线程块及其他参数后提交设备计算的操作。
+Execution Configuration|执行配置||Kernel 启动使用的网格维度、线程块维度、共享内存和流配置。
+Triple-chevron Syntax|三尖括号启动语法|<<<>>>|CUDA C++ 用于指定 Kernel 执行配置的特殊函数调用语法。
+Global Function Qualifier|全局函数限定符|__global__|声明可作为 CUDA Kernel 入口的设备执行函数的限定符。
+Device Function Qualifier|设备函数限定符|__device__|声明在设备上执行且可由设备代码调用的函数限定符。
+Host Function Qualifier|主机函数限定符|__host__|声明在主机端执行的 C++ 函数限定符。
+Host-device Function|主机与设备双端函数||使用相应限定符分别生成主机与设备可调用版本的函数。
+Dynamic Shared Memory Argument|动态共享内存启动参数||Kernel 启动时为每个块指定额外动态共享内存字节数的参数。
+Launch Stream Argument|启动流参数||指定 Kernel 提交到哪个 CUDA Stream 的启动配置参数。
+Launch Bounds|启动界限|__launch_bounds__|向编译器声明线程块大小及可选驻留约束以影响资源分配的属性。
+Grid-stride Kernel|网格步长核函数||通过循环让有限线程网格覆盖任意长度数据集的 Kernel。
+Kernel Argument|核函数实参||在 Kernel 启动时从调用方传入设备函数的标量或指针等参数。
+Kernel Parameter Buffer|核函数参数缓冲区||运行时为设备 Kernel 传递实参值使用的参数存储区域。
+Kernel Launch Overhead|核函数启动开销||主机调度、运行时与设备提交引入的非计算时间成本。
+Device Function Inlining|设备函数内联||编译器将设备函数调用替换为调用点指令以优化执行的变换。
+CUDA Built-in Variables|CUDA 内建变量||包括线程索引、块索引和网格维度等执行环境变量。
+Bounds Checking|边界检查||线程在访问数组前判断逻辑索引是否位于合法数据范围的保护。
+Kernel Fusion|核函数融合||将原本多个 Kernel 的操作组合到一次启动以减少中间访存或调度成本。
+Kernel Fission|核函数拆分||把一个复杂 Kernel 划分为多个 Kernel 以简化同步、资源需求或调度。
+Persistent Kernel|持久化核函数||由少量长期驻留线程块持续领取任务而非按任务反复启动的实现模式。
+Cooperative Kernel Launch|协作式核函数启动||以支持跨线程块协同操作要求的方式启动 Kernel 的机制。
+Dynamic Parallelism|动态并行||受支持设备代码在 GPU 上发起新的 Kernel 执行的功能。
+Device-side Kernel Launch|设备端核函数启动||由 GPU 设备代码而不是普通主机控制路径提交子 Kernel 的操作。
+Kernel Specialization|核函数特化||针对固定尺寸、数据类型或硬件特征生成更适配的设备代码。

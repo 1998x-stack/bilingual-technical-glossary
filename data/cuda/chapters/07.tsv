@@ -1,0 +1,26 @@
+# Stream、事件与 CUDA Graph
+CUDA Stream|CUDA 流|Stream|设备工作提交的有序序列，不同流之间可在条件允许时并发执行。
+Default Stream|默认流||未显式指定流时采用的 CUDA 流，其与其他流交互受默认流模式影响。
+Legacy Default Stream|传统默认流||采用特定隐式同步语义的默认流配置模式。
+Per-thread Default Stream|逐主机线程默认流|PTDS|让每个主机线程拥有独立默认流的配置模式。
+Nonblocking Stream|非阻塞流||创建时设置相应标志以减少与传统默认流隐式同步的 CUDA 流。
+Stream Synchronization|流同步||等待指定流先前提交的工作全部完成的操作。
+Device Synchronization|设备同步||等待当前设备上下文中的指定先前工作完成的同步行为。
+CUDA Event|CUDA 事件|Event|可在流中记录完成点并用于查询、等待或时间测量的对象。
+Event Recording|事件记录||把事件完成标记提交到指定流当前位置的操作。
+Event Query|事件查询||非阻塞检查事件关联工作是否已经完成的操作。
+Event Synchronization|事件同步||在主机端等待记录事件完成的操作。
+Stream Wait Event|流等待事件||在一条流中引入对另一事件完成的依赖关系的操作。
+Asynchronous Kernel Launch|异步核函数启动||主机提交 Kernel 后通常立即继续执行而不等待设备计算结束。
+Asynchronous Memory Copy|异步内存复制||向指定流提交数据搬运，使主机或其他可并发工作继续推进的机制。
+Concurrent Kernel Execution|并发核函数执行||在硬件资源与依赖允许时多个 Kernel 在 GPU 上时间重叠的现象。
+Copy Engine|复制引擎||GPU 用于在适用条件下独立执行主机与设备之间数据搬运的硬件单元。
+Stream Priority|流优先级||影响不同流待调度工作相对优先程度的提示配置，不保证严格抢占。
+CUDA Graph|CUDA 执行图|Graph|用有向无环依赖图描述多个设备操作及其执行约束的 CUDA 对象。
+Graph Node|执行图节点||代表 Kernel、内存操作、事件或其他受支持任务的图中执行单元。
+Graph Dependency|图依赖||限制一个图节点在指定前置操作完成后才能执行的先后关系。
+Graph Instantiation|执行图实例化||把图定义转换为可提交运行的图执行实例的准备步骤。
+Graph Launch|执行图启动||在指定流上提交已实例化 CUDA Graph 执行的操作。
+Stream Capture|流捕获||记录流中的受支持操作及其依赖以构造 CUDA Graph 的过程。
+Graph Update|执行图更新||在满足约束时修改已实例化图的节点参数或拓扑的能力。
+Graph Replay|执行图重放||多次提交同一已实例化图以减少重复启动管理开销的实践。

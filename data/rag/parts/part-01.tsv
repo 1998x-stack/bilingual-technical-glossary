@@ -1,0 +1,107 @@
+# RAG 基础、架构与知识来源
+Retrieval-Augmented Generation|检索增强生成|RAG|生成模型在回答时检索外部资料，并利用检索内容辅助生成的架构。
+Knowledge-intensive Task|知识密集型任务||需要大量事实、领域知识或可更新外部信息才能完成的任务。
+Parametric Knowledge|参数化知识||模型在训练中学习并编码在权重中的信息。
+Non-parametric Memory|非参数化记忆||模型权重之外、可由检索访问的文本或数据知识集合。
+Knowledge Base|知识库|KB|为查询、检索和回答提供结构化或非结构化知识的存储集合。
+Retrieval Corpus|检索语料库||被建立索引并可供检索的文档或记录集合。
+Retriever|检索器||根据查询从候选集合中找到相关内容的系统组件。
+Generator|生成器||根据用户输入和检索上下文生成自然语言回答的模型。
+Retriever–Generator Pipeline|检索—生成流水线||依次执行问题处理、证据检索和生成回答的工作流。
+Open-domain Question Answering|开放域问答|ODQA|从广泛主题的知识来源中回答自然语言问题的任务。
+Closed-domain Question Answering|封闭域问答||仅针对约定文档集或专门领域回答问题的任务。
+Grounded Generation|有依据生成||要求模型输出能够由指定来源、证据或约束支持的生成方式。
+Knowledge Grounding|知识锚定||将生成结果与可核对的外部知识联系起来的过程。
+Retrieval-time Augmentation|检索时增强||在推理期间实时获取资料并补充模型输入的方案。
+Index-time Processing|建索引阶段处理||在用户查询前完成解析、清洗、切块与索引构建的离线流程。
+Query-time Processing|查询阶段处理||收到请求后执行查询理解、检索、排序和回答的在线流程。
+RAG Pipeline|RAG 流水线||组织数据导入、索引、召回、证据加工与生成的一系列步骤。
+Naive RAG|基础 RAG||通常按切块、向量检索和直接拼接上下文实现的简单 RAG 结构。
+Advanced RAG|增强型 RAG||在基础流程中加入查询优化、混合检索、重排序等改进的架构概称。
+Modular RAG|模块化 RAG||将检索、路由、记忆、重写和生成等功能组成可替换模块的设计。
+Retrieval-Augmented Language Model|检索增强语言模型||把语言建模与可检索外部信息结合的模型体系。
+RAG-Sequence|RAG-Sequence||Lewis 等人提出的对整段输出采用统一检索文档潜变量的 RAG 形式。
+RAG-Token|RAG-Token||Lewis 等人提出的允许各输出位置依赖不同检索文档潜变量的 RAG 形式。
+Knowledge Freshness|知识时效性||知识来源相对于现实变化保持准确和更新的程度。
+Evidence-backed Answer|证据支持的回答||关键事实声明能够对应明确检索证据的输出。
+
+# 数据接入、文档解析与元数据
+Data Ingestion|数据摄入||将原始资料接入检索系统并转换为可处理形式的流程。
+Document Loader|文档加载器||从文件、网站或业务系统读取文档内容的组件。
+Content Connector|内容连接器||用于对接外部内容存储或 SaaS 数据源的集成接口。
+Document Parsing|文档解析||从文件格式中提取正文、表格、版式及其他结构信息的步骤。
+Optical Character Recognition|光学字符识别|OCR|将扫描图像中的字符识别为可搜索文本的技术。
+Layout-aware Parsing|版面感知解析||利用标题、栏位、段落位置和阅读顺序解析复杂文档的方法。
+Table Extraction|表格抽取||识别表格结构并提取单元格文本和行列关系的流程。
+PDF Text Extraction|PDF 文本提取||从 PDF 的文本层还原可处理字符及其位置的过程。
+Document Normalization|文档规范化||统一编码、空白、标点及表示形式以便后续索引的步骤。
+Text Cleaning|文本清洗||去除乱码、模板噪声与无关片段以提升检索质量的过程。
+Boilerplate Removal|模板噪声移除||移除网页导航、页脚或重复说明等非正文内容的技术。
+Deduplication|内容去重||识别并删除相同或高度重复文档、片段的处理。
+Near-duplicate Detection|近重复检测||识别经过少量编辑却基本相同的内容记录。
+Document Identifier|文档标识符||为每份来源文档分配稳定且可追踪的唯一标识。
+Chunk Identifier|片段标识符||为切分后的文本片段分配可引用的稳定标记。
+Source URI|来源统一资源标识符|URI|标识文档原始位置或逻辑资源地址的字符串。
+Document Metadata|文档元数据||描述文档标题、作者、权限、时间与类型等附属信息。
+Metadata Enrichment|元数据增强||抽取或推导主题、实体、标签等字段以改进过滤与排序。
+Ingestion Timestamp|摄入时间戳||记录数据首次进入或最近一次进入索引管线的时间。
+Document Version|文档版本||标识来源文档某次确定内容快照的版本信息。
+Change Data Capture|变更数据捕获|CDC|从数据库日志等机制检测并传播数据增删改事件的方式。
+Incremental Indexing|增量建索引||只处理新文档或变化部分，而不重建全部索引的过程。
+Reindexing|重新建索引||按新解析、切块或表示规则重新创建检索索引的操作。
+Data Lineage|数据血缘||记录检索片段与上游文件、转换及版本之间关联的可追踪关系。
+Provenance Metadata|来源溯源元数据||用于回答证据追踪的文档标识、位置和版本等信息。
+
+# 文本切块、上下文单位与结构保留
+Text Chunking|文本切块||将长文档划分为适合索引与检索的较小文本单元。
+Chunk Size|片段大小||每个文本块允许的字数、字符数或 token 数量。
+Chunk Overlap|片段重叠||相邻块重复包含的部分，用来减轻边界信息断裂。
+Fixed-size Chunking|固定长度切块||按预设字符或 token 数量切分文档的技术。
+Recursive Chunking|递归切块||按段落、句子等层级分隔符逐级拆分超长文本的方式。
+Sentence-based Chunking|按句切块||以完整句子为基本边界组织索引片段的方法。
+Paragraph-based Chunking|按段落切块||尽量保持原始段落连续性的切块策略。
+Semantic Chunking|语义切块||依据内容主题变化或向量相似度选择切块边界的方法。
+Structure-aware Chunking|结构感知切块||依据标题、列表、表格及章节层级划分内容的方法。
+Hierarchical Chunking|分层切块||同时保存文档、章节和细粒度片段等多个层级的结构。
+Parent–Child Retrieval|父子片段检索||先定位子片段，再返回其上级较大语境用于生成的策略。
+Small-to-big Retrieval|由小到大检索||使用较小单元精准召回，再扩展到周围大段上下文的策略。
+Sliding-window Chunking|滑动窗口切块||通过固定长度窗口及滑动步长产生重叠片段的方式。
+Boundary Preservation|边界保持||切分时避免打断句子、代码块、标题或表格结构的约束。
+Section Heading Propagation|章节标题继承||将上级章节标题附着在子片段上以保留主题信息。
+Contextual Chunking|上下文化切块||为独立片段补充文档标题或周边摘要以消除歧义的策略。
+Contextual Retrieval|上下文检索增强||在索引前为片段生成解释其文档背景的上下文并参与检索的方法。
+Chunk Granularity|片段粒度||检索单元包含信息的细致程度及其跨度。
+Chunk Boundary Error|切块边界错误||关键信息被拆开或错误拼接导致检索证据不足的情况。
+Overlap Redundancy|重叠冗余||重叠切块使相似内容在候选结果中重复出现的现象。
+Token Budget|token 预算||请求允许分配给检索证据、提示和生成输出的 token 数量。
+Context Window|上下文窗口||语言模型单次推理可接收或处理的 token 范围。
+Context Packing|上下文装箱||在给定 token 预算下选择并排列证据片段的过程。
+Chunk-to-document Mapping|片段—文档映射||记录每个切块对应原文档及偏移位置的关联信息。
+Lossless Source Linking|无损来源定位||确保片段可以回溯到未经改写的原始文档位置的机制。
+
+# 文本表示、Embedding 与编码器
+Embedding|嵌入表示||把文本、图片或其他对象映射为可计算相似度的向量表示。
+Text Embedding|文本嵌入||用向量编码词句或文档语义及检索特征的表示。
+Sentence Embedding|句向量||为整个句子生成单一向量的表示方式。
+Document Embedding|文档向量||为文档或文档片段生成向量以支持相似度搜索的结果。
+Query Embedding|查询向量||将用户查询转换为检索向量的表示。
+Dense Embedding|稠密嵌入||大部分维度为非零连续值的向量表示。
+Sparse Embedding|稀疏嵌入||大部分维度为零、常保留词项维度信息的表示。
+Bi-encoder|双塔编码器||分别编码查询与文档并使用向量相似度匹配的检索模型。
+Dual Encoder|双编码器||为两个输入分支独立生成表示并通过匹配函数评分的模型架构。
+Cross-encoder|交叉编码器||联合编码查询与文档对并直接输出相关性得分的模型。
+Embedding Dimension|嵌入维度||检索向量的元素数量。
+Vector Norm|向量范数||衡量向量大小的函数，常用于归一化与相似度计算。
+L2 Normalization|L2 归一化||把非零向量除以欧氏范数使其长度为一的变换。
+Cosine Similarity|余弦相似度||两个非零向量夹角余弦对应的相似度度量。
+Dot-product Similarity|点积相似度||以两个向量内积衡量匹配程度的评分方式。
+Euclidean Distance|欧氏距离||由向量分量差平方和开方得到的距离。
+Metric Learning|度量学习||学习使相关样本接近且无关样本远离的特征表示或距离函数。
+Contrastive Learning|对比学习||通过正负样本关系训练表示空间的学习方法。
+In-batch Negatives|批内负样本||将同一训练批次中的其他候选作为对比学习负例的策略。
+Hard Negative Mining|困难负样本挖掘||选择与查询较相近却不相关的候选增强检索训练的方法。
+Embedding Drift|嵌入漂移||模型版本或数据分布变化导致向量分布发生改变的现象。
+Embedding Model Version|嵌入模型版本||标记用于构建索引或查询向量的编码器权重与配置版本。
+Embedding Compatibility|嵌入兼容性||查询与文档向量能否在同一表征空间中有效比较的条件。
+Multilingual Embedding|多语言嵌入||支持不同语言文本在相近语义向量空间匹配的表示模型。
+Multimodal Embedding|多模态嵌入||把文本、图像等不同模态映射到可比较表示空间的技术。

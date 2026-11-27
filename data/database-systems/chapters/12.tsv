@@ -1,0 +1,26 @@
+# MVCC、时间戳与乐观并发控制
+Multiversion Concurrency Control|多版本并发控制|MVCC|为记录维护多个版本以允许读写根据可见性规则并发执行的机制。
+Version Chain|版本链||把同一逻辑记录的多个历史版本通过指针或标识串联的结构。
+Tuple Visibility|元组可见性||判定某个事务或快照可以读取哪一条记录版本的规则。
+Snapshot|数据库快照||按选定逻辑时间或事务集合定义的一致数据可见状态。
+Snapshot Timestamp|快照时间戳||标识读事务所使用版本边界的逻辑或物理时间值。
+Transaction Timestamp|事务时间戳||为事务确定排序或可见性规则的编号或时间标识。
+Begin Timestamp|版本开始时间戳||表示某个记录版本何时开始对相应快照可见的元数据。
+End Timestamp|版本结束时间戳||表示某个记录版本何时不再对后续快照可见的元数据。
+Transaction ID|事务标识符|XID|唯一标识一次数据库事务并用于可见性、日志或锁管理的编号。
+Undo Version Chain|撤销日志版本链||通过旧值与回滚记录重建先前数据版本的 MVCC 实现方式。
+Append-only Version Storage|追加式版本存储||通过追加新记录版本而非覆盖旧版本实现多版本读取的存储方式。
+Version Garbage Collection|旧版本垃圾回收||删除不再被任何有效快照需要的历史版本的后台操作。
+Vacuum|数据库清理回收|VACUUM|对失效行版本或页面空间进行回收整理的维护操作名称。
+Oldest Active Transaction|最早活动事务||确定哪些历史版本仍可能被长期快照读取的事务边界。
+Long-running Transaction|长事务||持续占用快照、锁或资源较长时间的事务。
+Timestamp Ordering|时间戳排序||按事务预定时间戳决定读写冲突次序的并发控制方法。
+Basic Timestamp Ordering|基本时间戳排序||使用记录最后读写时间戳拒绝违反顺序的事务操作的协议。
+Thomas Write Rule|Thomas 写规则||允许忽略已过时的写入而非必定中止事务的时间戳协议变体。
+Optimistic Concurrency Control|乐观并发控制|OCC|先执行读写、提交前验证冲突再决定提交或重试的并发控制。
+Validation Phase|验证阶段||乐观事务提交前检查读写集合或版本是否与并发修改冲突的阶段。
+Read Set|读取集合||记录事务曾经访问的逻辑对象或版本集合。
+Write Set|写入集合||记录事务计划修改或已经修改的数据对象集合。
+Serialization Graph|串行化图||用事务冲突或读写依赖边分析能否串行执行的有向图。
+Serializable Snapshot Isolation|可串行化快照隔离|SSI|检测特定读写依赖结构来阻止快照隔离异常、提供可串行化的技术。
+Predicate Read Tracking|谓词读取追踪||记录事务对范围或谓词的读取依赖，以便检查后续并发写入冲突的机制。

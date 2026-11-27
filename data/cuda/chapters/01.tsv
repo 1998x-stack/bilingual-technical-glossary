@@ -1,0 +1,26 @@
+# CUDA 平台、架构与开发环境
+CUDA|统一计算设备架构|CUDA|NVIDIA 的并行计算平台和编程模型，用于在受支持的 GPU 上执行通用计算。
+CUDA Toolkit|CUDA 工具包||包含 CUDA 编译器、运行库、开发工具及相关头文件的软件开发套件。
+CUDA Programming Model|CUDA 编程模型||以主机与设备协作、线程层级和内存层级组织 GPU 程序的抽象。
+General-purpose GPU Computing|GPU 通用计算|GPGPU|利用图形处理器执行不局限于图形渲染的计算任务。
+Host|主机端||CUDA 程序中通常由 CPU 执行并控制设备工作的计算环境。
+Device|设备端||运行 CUDA Kernel 的 GPU 或其他受支持计算设备。
+GPU|图形处理器|GPU|具有大量并行运算单元及分层存储系统的加速处理器。
+CPU|中央处理器|CPU|主要承担通用程序控制与主机侧任务的处理器。
+Discrete GPU|独立 GPU||具有独立设备资源、通常经 PCIe 等互连与主机连接的 GPU。
+Integrated GPU|集成 GPU||与 CPU 或系统其他部件集成并可能共享物理内存的 GPU。
+Streaming Multiprocessor|流式多处理器|SM|CUDA GPU 中执行线程块并提供计算、寄存器与片上资源的硬件单元。
+CUDA Core|CUDA 算术核心||NVIDIA GPU SM 内执行部分整数或浮点运算的硬件计算单元的通称。
+Compute Capability|计算能力版本||标识 CUDA GPU 所支持硬件功能集合的主要和次要架构编号。
+CUDA Architecture|CUDA 硬件架构||定义 GPU 计算功能、执行资源与内存行为的一代硬件设计。
+Device Properties|设备属性||描述 GPU 线程限制、SM 数量、内存容量等能力的运行时查询结果。
+CUDA Runtime|CUDA 运行时||提供设备管理、内存操作、Kernel 启动与流控制等高级 API 的库层。
+CUDA Driver|CUDA 驱动程序||管理 GPU 设备并提供 CUDA Driver API 等底层执行能力的软件。
+CUDA Driver API|CUDA 驱动 API||以 CU 前缀接口显式管理 CUDA 上下文、模块、内存和执行的编程接口。
+CUDA Runtime API|CUDA 运行时 API||以 cuda 前缀接口封装常见 GPU 计算操作的高级编程接口。
+CUDA C++|CUDA C++ 语言扩展||通过函数限定符、内建索引与启动语法扩展 C++ 的设备编程方式。
+CUDA Samples|CUDA 示例程序||展示编程模型、API 功能与优化方法的 NVIDIA 示例代码集合。
+Compatibility|兼容性||CUDA Toolkit、驱动、GPU 架构与运行二进制之间满足可执行条件的性质。
+Forward Compatibility|前向兼容性||在特定受支持条件下让新 Toolkit 应用使用较旧部署环境的兼容机制。
+Binary Compatibility|二进制兼容性||编译后的设备代码能在目标硬件或软件环境中被接受并执行的能力。
+GPU Accelerated Computing|GPU 加速计算||将适合并行执行的工作卸载至 GPU 以提高吞吐或降低延迟的计算方式。

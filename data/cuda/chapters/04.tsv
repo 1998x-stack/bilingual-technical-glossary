@@ -1,0 +1,26 @@
+# 内存空间、缓存与数据布局
+Memory Hierarchy|内存层次结构||GPU 中寄存器、共享内存、缓存和设备内存等不同延迟容量层级的组合。
+Global Memory|全局内存||GPU 所有线程可通过有效地址访问、主要位于设备 DRAM 的内存空间。
+Device Memory|设备内存||由 GPU 地址空间管理、用于存储计算输入输出和状态的内存资源。
+Register File|寄存器文件||每个 SM 提供、按线程分配寄存器的片上存储资源。
+Register|寄存器||供单个线程保存临时数据与计算状态的高速存储单位。
+Local Memory|局部内存||具有线程私有寻址语义、物理上通常存放于设备内存并经缓存访问的空间。
+Shared Memory|共享内存||线程块内线程可共同访问并通过同步协调的低延迟片上存储。
+Distributed Shared Memory|分布式共享内存|DSM|在支持线程块集群的设备上跨集群中线程块访问各自共享内存的机制。
+Constant Memory|常量内存||由设备端只读且可利用专用缓存路径访问的 CUDA 内存空间。
+Texture Memory|纹理内存||通过纹理对象与相关缓存机制访问数据的只读采样路径。
+Surface Memory|表面内存||通过表面对象对 CUDA 数组进行读写访问的内存路径。
+L1 Cache|一级缓存|L1|靠近 SM 的片上缓存层，具体功能和共享内存分配依架构而异。
+L2 Cache|二级缓存|L2|供多个 SM 共享、位于设备 DRAM 之前的缓存层。
+DRAM|动态随机存取存储器|DRAM|GPU 板载或封装的主要大容量易失性存储介质。
+High Bandwidth Memory|高带宽存储器|HBM|通过宽接口与堆叠封装提供较高带宽的 GPU 内存技术。
+Memory Alignment|内存对齐||数据地址满足指定字节边界约束的属性。
+Aligned Access|对齐访问||指令访问地址满足其大小或硬件事务对齐要求的访存方式。
+Memory Transaction|内存事务||硬件缓存或内存系统执行的数据读写传输单位。
+Structure of Arrays|数组结构|SoA|将同一字段各对象值连续存放的多数组数据布局。
+Array of Structures|结构数组|AoS|将每个对象的多个字段连续存放的复合结构布局。
+Array of Structures of Arrays|数组结构混合布局|AoSoA|将对象分块、在块内按字段数组组织数据的混合布局。
+Memory Padding|内存填充||在数据布局中插入额外字节或元素以改善对齐、步长或冲突。
+Pitch|行跨度||二维线性存储中相邻行起始地址间的字节距离。
+Pitched Allocation|带行跨度的内存分配||为二维或三维数据分配具有对齐行跨度的设备内存方式。
+CUDA Array|CUDA 数组||支持纹理或表面等特定硬件访问模式的特殊设备存储对象。

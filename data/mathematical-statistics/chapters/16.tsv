@@ -1,0 +1,26 @@
+# 多元、时间序列、生存与因果推断
+Covariance Matrix|协方差矩阵||随机向量各分量之间方差与协方差组成的对称半正定矩阵。
+Principal Component Analysis|主成分分析|PCA|寻找正交方向使投影方差依次最大的线性降维方法。
+Factor Analysis|因子分析||用少量潜在公共因子解释多变量协方差结构的统计模型。
+Linear Discriminant Analysis|线性判别分析|LDA|在类别条件协方差共享等假设下构建线性分类判别规则的方法。
+Multivariate Analysis of Variance|多元方差分析|MANOVA|联合检验多个响应变量处理均值向量差异的分析方法。
+Canonical Correlation Analysis|典型相关分析|CCA|寻找两组变量线性组合间最大相关性的多元方法。
+Survival Analysis|生存分析||处理事件发生时间及未完全观察事件时间的统计方法。
+Censoring|删失||仅部分获知事件时间或其他响应变量真实取值的观测机制。
+Right Censoring|右删失||已知事件发生时间大于某个观察终止时点的删失形式。
+Kaplan–Meier Estimator|Kaplan–Meier 估计量||利用事件时刻与风险集乘积极限估计生存函数的非参数方法。
+Hazard Function|风险函数／危险率函数||给定已存活至某时间时事件在随后瞬间发生的条件速率。
+Cox Proportional Hazards Model|Cox 比例风险模型||通过协变量对数线性作用刻画事件危险率比的半参数回归模型。
+Log-rank Test|Log-rank 检验||在风险集基础上比较多个群组生存曲线的检验。
+Accelerated Failure Time Model|加速失效时间模型|AFT|通过协变量线性模型描述对数生存时间或时间尺度的回归框架。
+Causal Inference|因果推断||从实验或观察数据识别和估计干预对结果影响的统计研究领域。
+Potential Outcomes Framework|潜在结果框架||为每种处理条件定义个体可能结果并以其差异描述因果效应的框架。
+Average Treatment Effect|平均处理效应|ATE|目标总体中接受处理与不接受处理潜在结果差的平均。
+Propensity Score|倾向得分||在给定已观测协变量条件下个体获得处理的概率。
+Inverse Probability Weighting|逆概率加权|IPW|按处理分配或抽样概率倒数加权以估计目标量的方法。
+Difference-in-Differences|双重差分|DiD|通过处理组与对照组随时间变化差异估计处理效果的设计。
+Instrumental Variable|工具变量|IV|用于识别内生解释变量因果效应、需满足相关性与排除等条件的变量。
+Stationary Time Series|平稳时间序列||统计性质不随时间平移而变化的序列，须说明严格或弱平稳含义。
+Autocorrelation Function|自相关函数|ACF|描述同一时间序列不同时间间隔观测值线性相关的函数。
+Autoregressive Integrated Moving Average|自回归差分移动平均模型|ARIMA|结合自回归、差分与移动平均成分描述时间序列的模型族。
+Heteroskedasticity and Autocorrelation Consistent Standard Error|异方差与自相关稳健标准误|HAC|在一定条件下对异方差及序列相关稳健的协方差估计构造。

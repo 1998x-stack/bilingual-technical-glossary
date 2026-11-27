@@ -1,0 +1,26 @@
+# 非参数统计与经验过程
+Nonparametric Statistics|非参数统计||不预先限定为有限维参数分布族、利用数据推断结构的统计方法领域。
+Distribution-free Test|分布无关检验||零假设下统计量分布不依赖某些未知总体分布形式的检验。
+Sign Test|符号检验||依据配对差值正负号检验位置或中位数条件的非参数方法。
+Wilcoxon Signed-rank Test|Wilcoxon 符号秩检验||利用配对差值绝对值秩及符号检验对称位置偏移的程序。
+Mann–Whitney U Test|Mann–Whitney U 检验||通过两组观测相对秩次比较独立样本分布的检验。
+Kruskal–Wallis Test|Kruskal–Wallis 检验||用合并秩次比较三个及以上独立组分布的检验。
+Friedman Test|Friedman 检验||利用区组内秩次比较多个配对处理条件的非参数检验。
+Kendall Tau|肯德尔秩相关系数|τ|依据两个变量观测对的一致与不一致排序衡量单调关联的统计量。
+Theil–Sen Estimator|Theil–Sen 估计量||使用成对斜率中位数估计直线斜率的稳健非参数方法。
+Hodges–Lehmann Estimator|Hodges–Lehmann 估计量||利用 Walsh 平均或成对差值中位数构造稳健位置估计。
+Empirical Distribution Function|经验分布函数|ECDF|样本中不大于指定值的观测比例所形成的阶梯函数。
+Glivenko–Cantelli Theorem|格利文科—坎泰利定理||经验分布函数对真实分布函数一致收敛的结果。
+Dvoretzky–Kiefer–Wolfowitz Inequality|DKW 不等式|DKW|对经验分布函数最大偏差给出分布无关指数尾界的不等式。
+Kernel Density Estimation|核密度估计|KDE|在样本点周围叠加缩放核函数估计连续概率密度的方法。
+Bandwidth|带宽||平滑估计中控制邻域宽度与偏差方差权衡的参数。
+Histogram Density Estimate|直方图密度估计||通过固定数据分箱内频数和箱宽估计概率密度的方法。
+Local Polynomial Regression|局部多项式回归||在预测点附近加权拟合低次多项式以估计条件均值的技术。
+LOESS|局部加权散点平滑|LOESS|在每个目标位置采用近邻加权局部回归的平滑方法。
+Spline Regression|样条回归||使用分段多项式基函数及连续性约束建立灵活回归曲线的方法。
+Quantile Regression|分位数回归||通过分位数损失估计响应变量指定条件分位数的回归方法。
+Median Regression|中位数回归||将条件响应中位数作为预测目标的分位数回归特例。
+Isotonic Regression|保序回归||在预测值必须满足单调性限制下拟合数据的回归方法。
+Empirical Process|经验过程||以函数类索引的样本均值偏差随机函数集合。
+Functional Delta Method|泛函 Delta 方法||通过函数空间中的可微性推导复杂统计泛函的极限分布。
+Rank-based Inference|基于秩的推断||依靠观测次序而非原始数值开展参数或分布推断的方法。

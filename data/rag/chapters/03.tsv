@@ -1,0 +1,26 @@
+# 文本切块、上下文单位与结构保留
+Text Chunking|文本切块||将长文档划分为适合索引与检索的较小文本单元。
+Chunk Size|片段大小||每个文本块允许的字数、字符数或 token 数量。
+Chunk Overlap|片段重叠||相邻块重复包含的部分，用来减轻边界信息断裂。
+Fixed-size Chunking|固定长度切块||按预设字符或 token 数量切分文档的技术。
+Recursive Chunking|递归切块||按段落、句子等层级分隔符逐级拆分超长文本的方式。
+Sentence-based Chunking|按句切块||以完整句子为基本边界组织索引片段的方法。
+Paragraph-based Chunking|按段落切块||尽量保持原始段落连续性的切块策略。
+Semantic Chunking|语义切块||依据内容主题变化或向量相似度选择切块边界的方法。
+Structure-aware Chunking|结构感知切块||依据标题、列表、表格及章节层级划分内容的方法。
+Hierarchical Chunking|分层切块||同时保存文档、章节和细粒度片段等多个层级的结构。
+Parent–Child Retrieval|父子片段检索||先定位子片段，再返回其上级较大语境用于生成的策略。
+Small-to-big Retrieval|由小到大检索||使用较小单元精准召回，再扩展到周围大段上下文的策略。
+Sliding-window Chunking|滑动窗口切块||通过固定长度窗口及滑动步长产生重叠片段的方式。
+Boundary Preservation|边界保持||切分时避免打断句子、代码块、标题或表格结构的约束。
+Section Heading Propagation|章节标题继承||将上级章节标题附着在子片段上以保留主题信息。
+Contextual Chunking|上下文化切块||为独立片段补充文档标题或周边摘要以消除歧义的策略。
+Contextual Retrieval|上下文检索增强||在索引前为片段生成解释其文档背景的上下文并参与检索的方法。
+Chunk Granularity|片段粒度||检索单元包含信息的细致程度及其跨度。
+Chunk Boundary Error|切块边界错误||关键信息被拆开或错误拼接导致检索证据不足的情况。
+Overlap Redundancy|重叠冗余||重叠切块使相似内容在候选结果中重复出现的现象。
+Token Budget|token 预算||请求允许分配给检索证据、提示和生成输出的 token 数量。
+Context Window|上下文窗口||语言模型单次推理可接收或处理的 token 范围。
+Context Packing|上下文装箱||在给定 token 预算下选择并排列证据片段的过程。
+Chunk-to-document Mapping|片段—文档映射||记录每个切块对应原文档及偏移位置的关联信息。
+Lossless Source Linking|无损来源定位||确保片段可以回溯到未经改写的原始文档位置的机制。

@@ -1,0 +1,433 @@
+# 数据库系统 / Database Systems
+# Canonical source: data/database-systems/chapters/*.tsv
+# 01. 数据库系统概述与体系结构
+Database System|数据库系统||由数据、数据库管理软件、应用及运行基础设施构成的信息管理整体。
+Database Management System|数据库管理系统|DBMS|负责数据持久化、查询执行、事务与恢复的软件系统。
+Database Engine|数据库引擎||实现查询、存储和事务处理等核心功能的内部组件集合。
+Storage Engine|存储引擎||负责记录布局、读写访问、索引及底层持久化机制的数据库子系统。
+Query Processor|查询处理器||将查询语句解析为可执行操作并产生结果的模块。
+Transaction Manager|事务管理器||组织事务状态、提交回滚及与并发控制交互的组件。
+Recovery Manager|恢复管理器||通过日志、检查点和重做撤销使数据库故障后恢复一致状态的模块。
+Catalog Manager|系统目录管理器||维护表结构、索引、统计和其他数据库元数据的组件。
+Buffer Pool Manager|缓冲池管理器||管理内存页缓存、页替换和脏页刷盘的存储子系统。
+Relational DBMS|关系数据库管理系统|RDBMS|基于关系模型、使用关系运算处理数据的数据库系统。
+Key-value Database|键值数据库||主要通过键定位与操作值的数据管理系统。
+Document Database|文档数据库||以 JSON 或类似文档为常见数据组织单位的数据库系统。
+Graph Database|图数据库||以节点、边及属性组织数据并优化图遍历查询的数据库。
+Columnar Database|列式数据库||主要按列组织数据以优化分析型扫描与压缩的系统。
+Embedded Database|嵌入式数据库||作为应用程序库运行而不要求独立服务器进程的数据库实现。
+Client–Server Database|客户端—服务器数据库||通过客户端请求与服务端执行协作提供数据管理的部署架构。
+Shared-nothing Database|无共享数据库||各计算节点独立拥有内存和存储、通过网络协作的架构。
+Shared-disk Database|共享磁盘数据库||多个计算节点访问共同持久存储并协调缓存一致性的架构。
+Shared-memory Database|共享内存数据库架构||多个执行单元共享同一地址空间与内存数据结构的数据库组织方式。
+Database Instance|数据库实例||正在运行的数据库进程、内存与附属资源集合。
+Database Schema|数据库模式||定义表、列、约束和其他数据库逻辑对象的结构描述。
+System Catalog|系统目录||保存数据库结构、权限与统计信息的元数据表集合。
+Data Dictionary|数据字典||描述数据库对象、字段含义及依赖关系的元数据设施。
+Database Workload|数据库负载||对数据库发出的请求类型、并发度、读写比和数据访问分布。
+Database Benchmark|数据库基准测试||用标准化数据集和事务或查询评估系统吞吐、延迟及成本的测试。
+
+# 02. 关系模型、数据建模与模式设计
+Relational Model|关系模型||把数据表示为关系并以数学运算定义查询与约束的理论模型。
+Relation|关系||由相同属性模式的元组组成的数学集合。
+Tuple|元组||关系中由多个属性值组成的一条记录。
+Attribute|属性||关系模式中的命名字段及其取值域。
+Domain|属性域||某个属性可以取得的合法值的集合。
+Relation Schema|关系模式||关系名称、属性及其域的结构定义。
+Candidate Key|候选键||可唯一标识关系中元组且没有多余属性的最小超键。
+Primary Key|主键||从候选键中选定用于主要标识元组的键。
+Foreign Key|外键||要求字段组合引用另一关系候选键或特定唯一键的完整性约束。
+Superkey|超键||可唯一识别元组、但可能含冗余属性的属性集合。
+Functional Dependency|函数依赖|FD|某属性集合的相同取值必决定另一属性集合相同取值的约束。
+Multivalued Dependency|多值依赖|MVD|一组属性决定另一组属性值集合、与剩余属性可独立组合的依赖。
+Join Dependency|连接依赖||要求关系等于若干投影自然连接结果的完整性依赖。
+First Normal Form|第一范式|1NF|关系属性值按所采用关系模型处理为不可再分的数据值的范式。
+Second Normal Form|第二范式|2NF|满足第一范式且非主属性不存在对候选键真子集的部分函数依赖。
+Third Normal Form|第三范式|3NF|对非平凡函数依赖，决定项为超键或被决定属性为主属性的范式条件。
+Boyce–Codd Normal Form|巴斯—科德范式|BCNF|每个非平凡函数依赖的决定项都是超键的关系范式。
+Fourth Normal Form|第四范式|4NF|每个非平凡多值依赖的决定项均为超键的范式。
+Lossless Join Decomposition|无损连接分解||分解后的关系投影自然连接不会产生伪元组且能恢复原关系。
+Dependency Preservation|依赖保持||关系分解后可通过各子关系约束联合检验原函数依赖的性质。
+Denormalization|反规范化||为提高特定查询性能而有意引入冗余或预计算数据的设计。
+Surrogate Key|代理键||人工引入、通常不具有业务含义的唯一实体标识。
+Natural Key|自然键||由业务数据中已有的属性构成的候选键。
+Entity–Relationship Model|实体—联系模型|ER|通过实体、属性与联系表达概念数据结构的模型。
+Schema Evolution|模式演化||随着应用变化对数据库结构进行兼容或不兼容修改的过程。
+
+# 03. 物理存储、页与记录布局
+Disk Page|磁盘页||数据库存储和缓存管理中的固定或受约束大小的数据传输单位。
+Page Identifier|页面标识符|Page ID|在文件或表空间中唯一定位物理或逻辑存储页的编号。
+Slotted Page|槽式页||通过页头与槽目录管理可变长度记录位置的页面布局。
+Slot Directory|槽目录||记录页面内各条记录偏移及其状态的索引数组。
+Page Header|页头||保存页面类型、空闲空间、校验信息和其他控制元数据的结构。
+Tuple Header|元组头||保存记录可见性、长度、版本或标志位的内部字段集合。
+Record Identifier|记录标识符|RID|用于定位物理记录的页编号和槽位等组合标记。
+Heap File|堆文件||不按某个搜索键排序存放记录的数据库数据文件。
+Heap-organized Table|堆组织表||将表记录放在无固定键排序的堆页中的物理表结构。
+Clustered Table|聚簇表||表中记录的物理或主要存储顺序与指定键组织密切关联的结构。
+Tablespace|表空间||逻辑组织数据库文件、页面与存储资源的管理单元。
+Database File|数据库数据文件||存储表、索引或其他持久数据库页面的操作系统文件。
+Extent|区段||由连续或逻辑连续的多个页面组成、用于成批管理的存储分配单位。
+Free-space Map|空闲空间映射||记录页面剩余可用空间以帮助插入选择目标页的元数据。
+Allocation Bitmap|分配位图||用位标记哪些页或区段已分配的存储管理结构。
+Variable-length Record|变长记录||字段长度或可空情况使每条记录所占字节数不固定的布局。
+Fixed-length Record|定长记录||所有记录按预定字节布局占用相同长度的结构。
+Tuple Serialization|元组序列化||将记录及字段值编码为存储页字节表示的过程。
+Null Bitmap|空值位图||按位标记记录中哪些字段为 NULL 的内部存储结构。
+Record Tombstone|记录墓碑标记||代表某条记录已逻辑删除但尚待物理清理的标记。
+Overflow Page|溢出页||用于存放超出普通页容量的记录内容或链式扩展数据的页面。
+Large Object Storage|大对象存储|LOB|面向大型文本或二进制字段的专门数据存储机制。
+Page Checksum|页面校验和||用于在读盘时检测页面静默损坏的校验值。
+Write Amplification|写入放大||物理存储写入字节量超过应用逻辑写入量的现象。
+Physical Data Layout|物理数据布局||记录字段、页面和索引在磁盘或 SSD 上的实际组织方式。
+
+# 04. 缓冲池、磁盘 I/O 与持久化
+Buffer Pool|缓冲池||缓存数据页并协调页锁定、修改及写回的数据库内存区域。
+Buffer Frame|缓冲帧||缓冲池中容纳一个数据库页面的固定大小内存槽位。
+Page Table|缓冲页表||将数据库页标识映射到其缓冲帧位置的内存索引。
+Buffer Pin|页面固定||增加页面引用或固定计数以防止当前使用中的缓冲帧被驱逐。
+Pin Count|固定计数||记录当前仍在使用该页面的执行者数量的计数。
+Dirty Page|脏页||相对于持久磁盘版本已在内存中发生修改的缓存页。
+Dirty Bit|脏标志||表明缓冲页存在尚未持久化修改的标记。
+Page Eviction|页面驱逐||为腾出缓冲帧而将不再需要的缓存页移出的操作。
+Buffer Replacement Policy|缓冲替换策略||决定缓存空间不足时应驱逐哪些页的算法。
+Least Recently Used|最近最少使用|LRU|优先淘汰距离最近访问时间最久缓存项的策略。
+Clock Replacement|时钟替换算法|Clock|利用环形指针和引用位近似低成本 LRU 的策略。
+LRU-K|LRU-K 缓存策略|LRU-K|根据页面最近 K 次引用的历史估计其访问频率的缓存替换算法。
+Scan Resistance|扫描抗污染性||缓存策略不被大型顺序扫描挤走热点页的能力。
+Read-ahead|预读||在应用明确请求页面前按访问模式提前从存储加载数据的机制。
+Prefetching|数据预取||依据预测或已知访问顺序在需要前把数据移入缓存的过程。
+Background Writer|后台写入器||异步将脏页刷回持久介质以平滑写入负载的进程或线程。
+Page Flush|页面刷盘||将内存页面内容写向持久化存储的操作。
+Force Policy|强制写页策略||事务提交前要求其修改的数据页全部持久化的恢复策略。
+No-force Policy|非强制写页策略||允许事务提交时部分修改页仍未刷盘的恢复策略。
+Steal Policy|可提前淘汰脏页策略||允许未提交事务修改的脏页被写到磁盘的缓冲管理策略。
+No-steal Policy|禁止提前淘汰脏页策略||不允许未提交修改写入持久化数据页的策略。
+Direct I/O|直接 I/O||在支持环境中绕过部分操作系统页面缓存的数据传输方式。
+fsync|文件同步操作|fsync|请求将相关文件数据及必要元数据同步到持久化设备的系统接口。
+Group Commit|组提交||把多个事务的日志同步操作合并以分摊持久化开销的技术。
+I/O Scheduler|输入输出调度器||决定存储请求发出顺序与并发程度的系统组件。
+
+# 05. 索引结构、B+ 树与哈希访问
+Database Index|数据库索引||用额外数据结构加速按键或其他条件访问记录的设施。
+Index Key|索引键||决定索引条目排序或哈希位置的一个或多个字段值。
+B+ Tree|B+ 树||在平衡多路树叶节点保存有序键及记录定位信息或实际记录、适合范围查询的索引结构。
+B-tree|B 树||保持树高平衡并可在内部节点保存键及关联数据的多路搜索树。
+B+ Tree Leaf Node|B+ 树叶节点||存放实际索引条目、通常通过兄弟指针支持范围扫描的树节点。
+B+ Tree Internal Node|B+ 树内部节点||包含分隔键及子节点指针、用于导航搜索路径的树节点。
+B+ Tree Split|B+ 树节点分裂||节点容量不足时拆成两个节点并更新父节点分隔键的操作。
+B+ Tree Merge|B+ 树节点合并||删除造成节点稀疏时合并相邻节点以维持树结构的操作。
+B+ Tree Latch Coupling|B+ 树锁闩耦合||沿树路径持有父子节点短期闩锁以安全并发导航的技术。
+Fence Key|边界键||标示 B 树节点允许键范围、辅助并发查找与结构修改的分隔值。
+B-link Tree|B-link 树||在 B+ 树节点增加侧向链接和高键以便并发结构修改的变体。
+Hash Index|哈希索引||通过键的哈希值定位桶或记录的索引，适合等值访问。
+Hash Bucket|哈希桶||保存散列到同一哈希地址的索引条目集合。
+Extendible Hashing|可扩展哈希||通过目录与桶的局部深度动态扩展哈希索引的方法。
+Linear Hashing|线性哈希||不使用全局指数目录、按分裂指针逐步扩展桶数量的动态哈希技术。
+Cuckoo Hashing|布谷鸟哈希||使用多候选位置及冲突搬移保证高效查找的哈希方法。
+Index-only Scan|仅索引扫描||查询所需字段可从索引返回而不必访问基表记录的访问方式。
+Covering Index|覆盖索引||包含指定查询全部必要列、可减少回表访问的索引。
+Composite Index|复合索引||以多个字段共同组成搜索键的索引。
+Partial Index|部分索引||只为满足特定谓词的记录建立的索引。
+Bitmap Index|位图索引||按取值维护位集合、适合部分低基数字段和分析型查询的索引。
+Inverted Index|倒排索引||从词项或属性值反向定位包含这些值的文档或记录的索引。
+Secondary Index|二级索引||以非主存储顺序字段提供记录查找路径的索引结构。
+Index Selectivity|索引选择率||谓词过滤后保留数据比例的性质，常影响索引方案成本。
+Index Maintenance|索引维护||插入、更新与删除时同步修改相关索引结构的操作。
+
+# 06. LSM、日志结构存储与键值引擎
+Log-structured Merge Tree|日志结构合并树|LSM Tree|通过内存写缓冲、顺序磁盘文件及后台合并支持高写入吞吐的存储结构。
+MemTable|内存表|MemTable|LSM 引擎在内存中保存近期有序键值更新的可变结构。
+Immutable MemTable|不可变内存表||停止写入、等待刷入磁盘的冻结内存表。
+Sorted String Table|有序字符串表|SSTable|持久化的按键排序、通常写成后不再原位修改的文件。
+Compaction|压实合并||合并多个排序文件、丢弃可安全删除的旧版本并减少读放大的后台任务。
+Leveled Compaction|分层压实||将磁盘 SST 文件组织为容量递增的层级并控制层内键区间重叠的策略。
+Tiered Compaction|分级压实||先保留多个同级排序文件、按阈值成批合并以改善写入放大的策略。
+Size-tiered Compaction|尺寸分级压实||按文件大小或组别选择相近文件参与合并的压实方式。
+Universal Compaction|通用压实策略||按累计文件尺寸比例选择合并集合的 LSM 压实方式。
+Bloom Filter|布隆过滤器||用位图及哈希函数判断元素可能存在或一定不存在的概率型过滤器。
+False Positive Rate|假阳性率||布隆过滤器对实际不存在键错误报告可能存在的比例。
+Block Cache|数据块缓存||缓存 SSTable 等文件的数据块以减少反复从磁盘读取的内存设施。
+Write Batch|批量写入||将多个键值更新组成一个按引擎语义共同提交或记录的批次。
+WAL-backed MemTable|预写日志保护的内存表||先记录可恢复写入日志再更新内存表的 LSM 写路径。
+Flush to SSTable|刷写有序表文件||把不可变内存表转换为新的磁盘有序文件的操作。
+Merge Iterator|合并迭代器||按键顺序联合读取多个有序数据流并选取可见版本的迭代组件。
+Point Lookup|单点查找||按完整键读取一条或一组匹配记录的操作。
+Range Scan|范围扫描||按有序键区间顺序访问多条记录的操作。
+Read Amplification|读取放大||执行一次逻辑读取需要额外读取多个物理块或文件的程度。
+Space Amplification|空间放大||存储系统物理占用相对于有效逻辑数据量的额外比例。
+Compaction Debt|压实债务||积累的待合并数据工作量，可能导致写入限速或延迟上升。
+Tombstone|删除墓碑||记录键已被删除、允许合并或复制传播删除语义的特殊标记。
+Sequence Number|序列编号||用于为存储记录或操作建立先后次序的单调逻辑编号。
+Manifest File|清单文件||描述当前 LSM 文件集合、层级与版本状态的元数据文件。
+Key-value Iterator|键值迭代器||提供顺序前进、定位键及读取当前键值等接口的存储访问抽象。
+
+# 07. 关系代数、查询解析与逻辑计划
+Query Parsing|查询解析||将 SQL 输入转换为可供语义检查和计划生成的语法结构的过程。
+SQL Lexer|SQL 词法分析器||把 SQL 字符流分解为关键词、标识符、字面量和符号的组件。
+Parser|语法分析器||根据语法规则将 token 序列构造成解析树的程序。
+Abstract Syntax Tree|抽象语法树|AST|保留查询语义结构而省略部分语法细节的树形表示。
+Binder|名称绑定器||把列名、表别名和函数引用解析为确定数据库对象的模块。
+Semantic Analysis|语义分析||检查类型、名称、聚合规则和权限等查询合法条件的阶段。
+Query Rewriting|查询改写||在保持规定结果语义的前提下对查询表达式进行等价或安全变换。
+Relational Algebra|关系代数||以选择、投影、连接和集合运算形式化描述关系查询的运算体系。
+Selection Operator|选择算子|σ|按布尔谓词筛选关系元组的关系代数操作。
+Projection Operator|投影算子|π|只保留选定属性并在纯关系模型中消除重复元组的操作。
+Cartesian Product|笛卡尔积|×|把两个关系中所有元组两两组合的关系运算。
+Natural Join|自然连接|⋈|按同名属性相等条件组合两关系并合并公共属性的连接。
+Theta Join|θ 连接||按任意给定布尔条件匹配两个输入关系元组的连接。
+Equijoin|等值连接||连接条件由一个或多个字段相等谓词组成的连接操作。
+Semijoin|半连接||只返回左侧匹配元组而不附带右侧字段的关系运算。
+Antijoin|反连接||只返回左侧未找到右侧满足条件匹配的元组。
+Aggregation|聚合算子||按组或全局将多个输入元组汇总为计数、求和等结果的运算。
+Grouping Operator|分组算子||依据一个或多个键把输入元组划分为聚合分组的操作。
+Logical Query Plan|逻辑查询计划||用关系运算节点及依赖结构描述查询处理步骤的抽象计划。
+Predicate Pushdown|谓词下推||把过滤条件移近数据读取位置以减少中间数据量的优化。
+Projection Pushdown|投影下推||提前删除不需要的列以减少 I/O、内存和数据传输的优化。
+Subquery Decorrelation|子查询去相关||把引用外层变量的子查询转换为连接或其他较易优化结构的变换。
+Common Subexpression Elimination|公共子表达式消除||复用重复表达式或公共计算结果以避免多次执行的优化。
+Logical Equivalence|逻辑等价||两个查询计划在约定的 NULL、重复值及顺序语义下产生相同结果的性质。
+Query Normalization|查询规范化||将语法不同但语义相近的查询转换为标准内部形式的步骤。
+
+# 08. 物理执行、连接算法与算子模型
+Physical Query Plan|物理查询计划||明确选择扫描、连接、排序及具体算法的可执行算子计划。
+Table Scan|表扫描||逐页或逐列访问表数据并按条件筛选记录的访问方法。
+Sequential Scan|顺序扫描||按物理存储顺序读取表页或块的扫描方式。
+Index Scan|索引扫描||利用索引键定位候选记录并读取必要字段的访问操作。
+Index Range Scan|索引范围扫描||沿有序索引定位起点并连续遍历满足范围条件的条目。
+Nested Loop Join|嵌套循环连接|NLJ|对一个输入的每条记录遍历或查找另一输入匹配行的连接算法。
+Block Nested Loop Join|分块嵌套循环连接|BNLJ|以缓冲块为单位批量比较两个输入、减少重复 I/O 的连接策略。
+Index Nested Loop Join|索引嵌套循环连接|INLJ|以外表记录的连接键驱动内表索引查找的连接算法。
+Hash Join|哈希连接||先为一侧等值连接键建立哈希表，再用另一侧进行匹配的连接算法。
+Grace Hash Join|Grace 哈希连接||先将两个输入按哈希值分区，再在对应分区执行哈希连接的算法。
+Sort–Merge Join|排序合并连接||按连接键排序两侧输入后通过归并扫描求匹配行的算法。
+External Sort|外部排序||数据超出内存时通过磁盘分段排序和多路归并完成排序的算法。
+Top-N Operator|前 N 名算子||通过有界堆等方法返回指定排序的最前 N 个结果。
+Hash Aggregation|哈希聚合||用哈希表维护按分组键划分的聚合状态的执行算法。
+Sort Aggregation|排序聚合||先按分组键排序再顺序计算组聚合的算法。
+Materialization|物化||将中间结果完整保存到内存或临时存储供后续算子消费。
+Pipelined Execution|流水线执行||算子边产生记录边向下游传递而不必完整物化全部结果。
+Iterator Model|迭代器执行模型||以每次调用 Next 获取下一条记录的 Volcano 式算子接口。
+Vectorized Execution|向量化执行||以批量列向量而非单行作为计算单位减少解释与函数调度开销。
+Batch-at-a-time Processing|批次处理模型||执行算子每次交换固定或可变数量元组的处理方式。
+Operator Fusion|算子融合||把多个相邻执行算子编译或组合以减少中间结果和调用开销。
+Late Materialization|延迟物化||尽量保持列式数据与行位置索引，仅在必要时组合完整记录。
+Predicate Evaluation|谓词计算||执行查询过滤条件并产生布尔或三值逻辑结果的计算过程。
+Tuple-at-a-time Processing|逐元组处理||每次只传递和处理一条记录的算子执行风格。
+Spill to Disk|溢写磁盘||当内存不足时将中间数据或哈希表分区写到外部存储的行为。
+
+# 09. 查询优化器、统计信息与代价模型
+Query Optimizer|查询优化器||在可替换的等价或可接受计划中选取预计执行成本较低方案的组件。
+Cost-based Optimization|基于代价的优化|CBO|依据数据统计与硬件成本模型估计并比较执行计划的策略。
+Rule-based Optimization|基于规则的优化||根据预定义规则或启发式顺序选择查询变换及物理操作的方法。
+Cardinality Estimation|基数估计||预测中间或最终查询算子会输出多少条记录的过程。
+Selectivity Estimation|选择率估计||预测某个过滤条件保留输入记录比例的过程。
+Column Statistics|列统计信息||描述列值分布、不同值数量及 NULL 比例等信息的元数据。
+Histogram|频率直方图||用分桶记录列值分布、帮助估计查询谓词选择率的统计结构。
+Equi-depth Histogram|等深直方图||使每个桶大致包含相同数量样本的列值分布统计。
+Equi-width Histogram|等宽直方图||按照数值范围宽度相等的桶统计列值分布的方法。
+Most Common Values|高频取值统计|MCV|专门保存列中出现频率最高取值及其频率的统计信息。
+Distinct Value Count|不同值个数|NDV|列或列组合中不同取值数量的统计指标。
+Correlation Statistics|相关性统计||描述多列值分布依赖关系、避免简单独立假设误估的统计信息。
+Independence Assumption|列独立性假设||在缺乏联合分布统计时把多个谓词选择率相乘的近似假设。
+Join Cardinality Estimation|连接基数估计||预测连接两个输入关系后会产生多少匹配行的过程。
+Cost Model|代价模型||将 CPU、I/O、网络和内存开销组合估算计划成本的定量规则。
+Access Path Selection|访问路径选择||在全表扫描、索引访问等读取方式中选择执行方案的过程。
+Join Order Optimization|连接顺序优化||在多个表的连接序列或树结构中搜索低成本顺序的技术。
+Dynamic Programming Optimizer|动态规划式优化器||缓存子计划最优成本并组合表集合求取低成本连接计划的优化器。
+Volcano Optimizer|Volcano 优化框架||以等价表达式集合和搜索规则组织查询优化的经典框架。
+Cascades Optimizer|Cascades 优化框架||基于 Memo、规则变换与物理属性搜索优化执行计划的框架。
+Memo Structure|优化器 Memo||保存逻辑等价组、候选表达式及优化结果的共享数据结构。
+Interesting Order|有价值的排序||可被上层排序或连接算子复用、因此需要纳入计划搜索的中间结果顺序。
+Plan Enumeration|执行计划枚举||产生和比较多个可能物理执行方案的搜索过程。
+Adaptive Query Processing|自适应查询处理||执行过程中依据实际数据规模或反馈改变执行策略的方法。
+Reoptimization|执行计划重新优化||发现统计失准或运行环境变化后重新选择后续执行计划的技术。
+
+# 10. 事务语义、ACID 与隔离异常
+Database Transaction|数据库事务||将多个数据库操作组成按约定原子性与隔离语义提交的逻辑工作单元。
+Atomicity|原子性||事务内修改对外表现为全部提交或全部不生效的性质。
+Consistency Property|事务一致性属性||事务执行在所要求前置条件满足时保持数据库声明的完整性约束。
+Isolation|隔离性||规定并发事务彼此可见的读写结果及其允许执行历史的语义。
+Durability|持久性||事务成功提交后在约定故障模型下其效果能够被保留的性质。
+ACID|ACID 事务属性|ACID|原子性、一致性、隔离性和持久性的组合简称。
+Transaction Boundary|事务边界||定义一组操作从开始到提交或回滚的作用范围。
+Commit|提交||使事务修改成为已完成结果并满足约定持久与可见条件的操作。
+Rollback|回滚||撤销事务中未提交的修改或恢复到指定保存点的操作。
+Savepoint|保存点||在事务内记录可局部回退而不结束整个事务的恢复位置。
+Autocommit|自动提交||在无需显式 BEGIN 的情况下将单条语句作为独立事务提交的模式。
+Serializability|可串行化||并发事务历史等价于某种合法的串行事务执行的性质。
+Conflict Serializability|冲突可串行化||可通过交换不冲突操作转换为串行历史的并发执行性质。
+View Serializability|视图可串行化||与某串行历史具有相同读来源关系及最终写入效果的性质。
+Strict Serializability|严格可串行化||同时满足可串行化及无重叠事务真实时间先后关系的性质。
+Dirty Read|脏读||读取其他事务尚未提交的数据的现象。
+Non-repeatable Read|不可重复读||同一事务内相同记录两次读取因并发修改而值不同的现象。
+Phantom Read|幻读||重复执行范围谓词查询时因并发变更出现新增或消失匹配记录的现象。
+Lost Update|丢失更新||两个并发修改操作使一方写入效果被另一方覆盖的异常。
+Write Skew|写偏斜||并发事务读取相同约束信息却写入不同记录、联合结果破坏跨记录约束的异常。
+Read Skew|读偏斜||事务在不同时间观察到跨记录不一致版本组合的读取异常。
+Dirty Write|脏写||一个事务覆盖另一个尚未提交事务的写入。
+Read Committed|读已提交|RC|通常保证不读取其他事务未提交修改的隔离等级，具体实现细节各异。
+Repeatable Read|可重复读|RR|在事务中重复读同一数据时提供稳定性保证的隔离等级，具体并发异常依实现而异。
+Snapshot Isolation|快照隔离|SI|事务基于一致快照读取并限制写写冲突、但可能允许写偏斜的隔离模型。
+
+# 11. 锁、闩锁与基于锁的并发控制
+Concurrency Control|并发控制||协调同时执行的事务以满足指定隔离语义和正确性要求的机制。
+Lock|事务锁||对逻辑记录、键范围或对象授予带兼容规则的访问权限的机制。
+Latch|闩锁||保护短时间内存数据结构修改与访问的轻量同步原语。
+Shared Lock|共享锁|S-lock|通常允许多个读取者并存、但与排他修改锁冲突的锁类型。
+Exclusive Lock|排他锁|X-lock|阻止不兼容读取或写入者同时访问受保护资源的锁。
+Intention Lock|意向锁||在较高层级声明事务准备在下级对象持有何种锁的多粒度锁模式。
+Update Lock|更新锁||为将来可能升级为排他锁的读取操作预先协调竞争的锁模式。
+Lock Compatibility Matrix|锁兼容矩阵||描述不同锁模式是否可以同时授予同一资源的规则表。
+Two-phase Locking|两阶段锁协议|2PL|事务先获取锁、后释放锁且一旦释放便不再获取新锁的协议。
+Strict Two-phase Locking|严格两阶段锁协议|S2PL|通常要求排他锁持有到事务结束的两阶段锁方案。
+Rigorous Two-phase Locking|严谨两阶段锁协议||要求全部共享与排他锁直到事务结束才释放的两阶段锁变体。
+Lock Granularity|锁粒度||锁保护数据单元的大小，如行、页、表或键区间。
+Multi-granularity Locking|多粒度锁定||在表、页、行等层级采用意向锁和细粒度锁协调访问。
+Lock Escalation|锁升级粒度提升||用较粗粒度锁替换大量细粒度锁以降低锁管理开销的过程。
+Lock Upgrade|锁模式升级||将已持有锁从较弱模式转换为更强模式的操作。
+Lock Table|锁表||记录资源当前持锁事务、等待队列及锁类型的数据结构。
+Wait-for Graph|等待图||以事务为顶点、等待另一事务释放资源为边的依赖图。
+Deadlock|死锁||多个事务形成循环等待、彼此无法继续执行的状态。
+Deadlock Detection|死锁检测||通过等待图环路或其他机制识别死锁的过程。
+Deadlock Prevention|死锁预防||通过获取顺序或事务优先级规则避免形成死锁的机制。
+Wait–Die Scheme|等待—死亡策略||以事务时间戳决定等待或回滚，防止等待环形成的死锁预防方法。
+Wound–Wait Scheme|抢占—等待策略||较老事务可使较新持锁事务回滚、较新事务等待较老事务的策略。
+Predicate Lock|谓词锁||对满足某个谓词的逻辑记录集合施加事务级锁保护的机制。
+Next-key Lock|临键锁||结合索引记录与相邻键间隙保护、防止特定范围幻读的锁机制。
+Lock Timeout|锁等待超时||等待锁超过配置时长后终止或报错的并发控制措施。
+
+# 12. MVCC、时间戳与乐观并发控制
+Multiversion Concurrency Control|多版本并发控制|MVCC|为记录维护多个版本以允许读写根据可见性规则并发执行的机制。
+Version Chain|版本链||把同一逻辑记录的多个历史版本通过指针或标识串联的结构。
+Tuple Visibility|元组可见性||判定某个事务或快照可以读取哪一条记录版本的规则。
+Snapshot|数据库快照||按选定逻辑时间或事务集合定义的一致数据可见状态。
+Snapshot Timestamp|快照时间戳||标识读事务所使用版本边界的逻辑或物理时间值。
+Transaction Timestamp|事务时间戳||为事务确定排序或可见性规则的编号或时间标识。
+Begin Timestamp|版本开始时间戳||表示某个记录版本何时开始对相应快照可见的元数据。
+End Timestamp|版本结束时间戳||表示某个记录版本何时不再对后续快照可见的元数据。
+Transaction ID|事务标识符|XID|唯一标识一次数据库事务并用于可见性、日志或锁管理的编号。
+Undo Version Chain|撤销日志版本链||通过旧值与回滚记录重建先前数据版本的 MVCC 实现方式。
+Append-only Version Storage|追加式版本存储||通过追加新记录版本而非覆盖旧版本实现多版本读取的存储方式。
+Version Garbage Collection|旧版本垃圾回收||删除不再被任何有效快照需要的历史版本的后台操作。
+Vacuum|数据库清理回收|VACUUM|对失效行版本或页面空间进行回收整理的维护操作名称。
+Oldest Active Transaction|最早活动事务||确定哪些历史版本仍可能被长期快照读取的事务边界。
+Long-running Transaction|长事务||持续占用快照、锁或资源较长时间的事务。
+Timestamp Ordering|时间戳排序||按事务预定时间戳决定读写冲突次序的并发控制方法。
+Basic Timestamp Ordering|基本时间戳排序||使用记录最后读写时间戳拒绝违反顺序的事务操作的协议。
+Thomas Write Rule|Thomas 写规则||允许忽略已过时的写入而非必定中止事务的时间戳协议变体。
+Optimistic Concurrency Control|乐观并发控制|OCC|先执行读写、提交前验证冲突再决定提交或重试的并发控制。
+Validation Phase|验证阶段||乐观事务提交前检查读写集合或版本是否与并发修改冲突的阶段。
+Read Set|读取集合||记录事务曾经访问的逻辑对象或版本集合。
+Write Set|写入集合||记录事务计划修改或已经修改的数据对象集合。
+Serialization Graph|串行化图||用事务冲突或读写依赖边分析能否串行执行的有向图。
+Serializable Snapshot Isolation|可串行化快照隔离|SSI|检测特定读写依赖结构来阻止快照隔离异常、提供可串行化的技术。
+Predicate Read Tracking|谓词读取追踪||记录事务对范围或谓词的读取依赖，以便检查后续并发写入冲突的机制。
+
+# 13. 预写日志、检查点与故障恢复
+Write-ahead Logging|预写日志|WAL|数据页修改持久化之前先把相应日志记录持久化的恢复协议。
+Log Sequence Number|日志序列号|LSN|为日志记录分配的单调位置或编号，常用于重做及恢复排序。
+Log Record|日志记录||记录事务更新、控制事件或恢复状态的持久化日志条目。
+Redo Log|重做日志||用于重放已发生修改使存储页恢复到应有状态的日志信息。
+Undo Log|撤销日志||用于抵消未提交事务修改或恢复旧数据版本的记录。
+Physiological Logging|生理日志||同时指定物理页面和该页面内部逻辑操作的日志记录方式。
+Physical Logging|物理日志||描述具体字节位置与修改前后映像等物理变更的日志方式。
+Logical Logging|逻辑日志||记录可在数据库逻辑对象层面重新执行的操作而非全部字节差异。
+PageLSN|页日志序列号|PageLSN|表示某数据页已经应用到哪个日志位置的页头元数据。
+Checkpoint|检查点||记录恢复所需系统状态并缩短故障后日志处理工作量的机制。
+Fuzzy Checkpoint|模糊检查点||允许正常事务继续运行而在并发修改中记录恢复起始状态的检查点。
+Dirty Page Table|脏页表|DPT|记录可能尚未刷盘页面及其最早相关日志位置的恢复元数据。
+Transaction Table|事务表||在恢复分析中跟踪活动事务状态和最近日志位置的表。
+ARIES|ARIES 恢复算法|ARIES|采用分析、重做、撤销阶段并支持 WAL 与补偿日志的经典恢复方案。
+Analysis Phase|恢复分析阶段||根据日志与检查点重建活动事务及脏页表的阶段。
+Redo Phase|恢复重做阶段||对需要的已记录操作重新应用以恢复崩溃前数据库页面状态的阶段。
+Undo Phase|恢复撤销阶段||撤销未完成事务影响并记录补偿操作的阶段。
+Compensation Log Record|补偿日志记录|CLR|记录已经执行撤销操作、帮助崩溃后重复恢复的专用日志。
+Write-ahead Rule|日志先行规则||包含数据页修改的日志必须在该数据页写入持久介质前先持久化的要求。
+Commit Log Record|提交日志记录||表示事务完成提交决定并可用于恢复判定的日志条目。
+Crash Recovery|崩溃恢复||系统异常停止后依靠日志与持久数据重建正确状态的过程。
+Media Recovery|介质恢复||存储设备损坏时从备份与归档日志等材料恢复数据库的过程。
+Point-in-time Recovery|时间点恢复|PITR|从备份和连续日志恢复到指定历史时间点的机制。
+Log Truncation|日志截断||在确认某段日志不再被恢复或复制需要后安全移除或复用的操作。
+Recovery Testing|恢复测试||模拟进程或系统故障并验证事务原子性、持久性和恢复时间的实验。
+
+# 14. 复制、分片与分布式数据一致性
+Database Replication|数据库复制||把逻辑数据或日志传播到多个节点以提升可靠性与服务能力的机制。
+Primary–Replica Replication|主从副本复制||由主副本接收主要写入并向其他副本传播更新的复制架构。
+Multi-primary Replication|多主复制||允许多个节点接受写入、需要处理传播顺序与冲突的架构。
+Synchronous Replication|同步复制||在写入成功确认前等待满足配置规则的副本完成指定同步步骤。
+Asynchronous Replication|异步复制||写入可先向客户端确认，再在后台传播至其他副本。
+Replication Lag|复制滞后||源副本进度与目标副本已应用更新之间的时间或日志位置差。
+Change Data Capture|变更数据捕获|CDC|从数据库日志或其他变更来源持续提取增删改事件的机制。
+Log Shipping|日志传送||把主节点持久日志传递并应用到其他节点以维护副本的技术。
+Read Replica|只读副本||主要承担读请求而通常不接受普通业务写入的数据库副本。
+Replica Failover|副本故障切换||在当前主副本失效时选择另一副本接管服务的过程。
+Database Sharding|数据库分片||按键、哈希或范围把逻辑数据水平划分并分布到多个节点的技术。
+Shard Key|分片键||用于决定记录归属哪个数据分片的字段或字段组合。
+Range Partitioning|范围分区||根据键区间划分数据，以支持顺序范围查询和数据局部性。
+Hash Partitioning|哈希分区||通过键的哈希值将数据均匀映射到若干分区的策略。
+Consistent Hashing|一致性哈希||把键与节点映射到环形空间、降低成员变化时重分配量的分布方法。
+Shard Rebalancing|分片重平衡||随着节点或负载变化迁移分片以改善容量分配的过程。
+Hot Shard|热点分片||承担远超平均请求量或存储负担的分片。
+Distributed Query Execution|分布式查询执行||把单个查询划分成跨节点计算阶段并交换中间数据的处理过程。
+Distributed Transaction|分布式事务||跨多个分片或资源协调原子提交与隔离规则的事务。
+Two-phase Commit|两阶段提交|2PC|协调者先收集参与方准备状态，再宣布统一提交或回滚决议的协议。
+Distributed Consensus|分布式共识||节点在指定故障与网络假设下就同一决定达成一致的任务。
+Raft Replication|Raft 日志复制||通过领导者任期、复制日志和仲裁规则维护一致复制状态的协议机制。
+Quorum Read|仲裁读||从满足指定仲裁规则的副本集合读取数据以支持目标读取语义的操作。
+Quorum Write|仲裁写||将写入提交到满足指定仲裁规则的副本集合的操作。
+Consistency–Availability Tradeoff|一致性—可用性权衡||分区等故障条件下不同数据一致性保证与请求可响应性之间的取舍。
+
+# 15. OLTP、OLAP、列存与实时分析
+Online Transaction Processing|联机事务处理|OLTP|面向大量较短且高并发读写事务的数据库工作负载。
+Online Analytical Processing|联机分析处理|OLAP|面向复杂聚合、扫描和历史数据分析的数据库工作负载。
+Hybrid Transactional and Analytical Processing|事务分析混合处理|HTAP|在一个或紧密协同的架构中兼顾事务写入和分析查询的能力。
+Analytical Query|分析型查询||通常扫描较多数据、进行多表关联及聚合计算的查询。
+Transactional Query|事务型查询||通常涉及少量记录、对响应时间和事务正确性要求较高的请求。
+Row-oriented Storage|行式存储||把一条记录的多数属性值相邻存放的物理布局。
+Column-oriented Storage|列式存储||把同列大量记录值连续或成组存放的物理布局。
+Column Segment|列段||把一列数据分批保存并独立压缩与读取的持久化数据单元。
+Column Pruning|列裁剪||在执行扫描前跳过查询不需要读取的列。
+Zone Map|区域映射||记录数据块每列的最小最大值以跳过不满足过滤条件的块。
+Data Skipping|数据跳读||利用块级统计或索引跳过不可能满足条件的数据区域。
+Dictionary Encoding|字典编码||用短代码替换重复值、另存代码到原值映射的压缩方式。
+Run-length Encoding|游程编码|RLE|把连续相同数据压缩为值与重复长度的编码方式。
+Bit Packing|位打包||按实际取值范围使用尽可能少位数密集存放数值的压缩方法。
+Delta Encoding|差分编码||存储相邻数值之间的差而非完整原值的编码方式。
+Materialized View|物化视图||预先计算并持久保存某个查询结果以便复用的数据对象。
+Materialized View Maintenance|物化视图维护||在底层数据变化后更新已持久化查询结果的流程。
+Incremental View Maintenance|增量视图维护|IVM|只根据新增、删除或修改记录计算视图差异的维护技术。
+Star Schema|星型模式||以事实表为中心连接多个维度表的数据仓库模型。
+Fact Table|事实表||保存业务事件度量值及指向维度实体键的数据仓库表。
+Dimension Table|维度表||保存分析维度属性、供事实表关联筛选的数据仓库表。
+Data Cube|数据立方体||按多个维度汇总数值指标、支持不同切片与钻取的分析结构。
+MPP Database|大规模并行数据库|MPP|把分析任务分布到多个计算节点并行处理的数据库架构。
+Data Lakehouse|数据湖仓一体||结合数据湖文件开放性与仓库管理及事务能力的数据平台架构。
+Vectorized Column Scan|列式向量扫描||批量读取压缩或解码列数据并以向量化算子处理的执行方式。
+
+# 16. 性能调优、安全、运维与系统测试
+Query Latency|查询延迟||从数据库收到请求到向调用方返回结果所花费的时间。
+Transaction Throughput|事务吞吐量||数据库单位时间内成功完成的事务数量。
+Transactions per Second|每秒事务数|TPS|衡量事务处理吞吐的常用指标。
+Tail Latency|尾部延迟||请求延迟分布中 P95、P99 等高百分位响应时间。
+Connection Pool|连接池||复用客户端到数据库的连接以控制建立连接与并发管理成本的组件。
+Prepared Statement|预编译语句||将语句准备和参数绑定分开、可能复用解析或计划结果的执行接口。
+Plan Cache|执行计划缓存||保存查询解析或优化后的执行计划供后续重复使用的缓存结构。
+Parameter Sniffing|参数嗅探||优化器以初次或特定绑定参数值选择计划、可能不适应其他参数分布的现象。
+Query Profiling|查询性能剖析||记录算子耗时、扫描行数、缓冲命中及其他指标定位性能瓶颈的过程。
+EXPLAIN Plan|执行计划解释|EXPLAIN|显示查询优化器所选访问路径和物理执行算子的诊断输出。
+EXPLAIN ANALYZE|实测执行计划|EXPLAIN ANALYZE|执行查询并展示实际耗时、行数等指标的分析方式，具体语义依 DBMS 而异。
+Index Tuning|索引调优||依据查询与写入负载选择索引键、顺序和覆盖字段的优化过程。
+Slow Query Log|慢查询日志||记录超过时间阈值或其他条件查询的诊断日志。
+Database Monitoring|数据库监控||持续采集数据库可用性、查询、内存、I/O 与复制状态指标的实践。
+Backup|数据库备份||创建可用于数据恢复的独立持久副本的操作。
+Full Backup|全量备份||复制选定恢复范围内全部所需数据状态的备份方式。
+Incremental Backup|增量备份||只保存相对参考备份或时间点发生变化的数据部分的方式。
+Recovery Point Objective|恢复点目标|RPO|业务允许灾难恢复后最多丢失的数据时间跨度。
+Recovery Time Objective|恢复时间目标|RTO|业务允许数据库服务在故障后恢复的最长时间目标。
+Database Authentication|数据库身份认证||核实用户、服务或应用对数据库访问身份的过程。
+Role-based Access Control|基于角色的访问控制|RBAC|根据预定义角色分配数据库操作和对象权限的授权模型。
+Row-level Security|行级安全|RLS|依据当前调用者或策略为数据库查询限制可见记录的能力。
+Encryption at Rest|静态数据加密||对数据库持久存储或备份中的信息进行加密保护。
+SQL Injection|SQL 注入||攻击者把恶意 SQL 片段插入未正确参数化的查询以改变执行语义的漏洞。
+Fault Injection Testing|故障注入测试||主动制造节点崩溃、磁盘故障或网络分区以验证数据库恢复和一致性的测试。

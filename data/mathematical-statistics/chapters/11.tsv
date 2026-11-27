@@ -1,0 +1,26 @@
+# 线性回归与广义线性模型
+Linear Regression|线性回归||将响应变量条件均值表示为解释变量线性组合的建模方法。
+Simple Linear Regression|一元线性回归||使用一个解释变量和截距拟合响应变量的线性模型。
+Multiple Linear Regression|多元线性回归||同时用多个解释变量解释响应均值的线性模型。
+Ordinary Least Squares|普通最小二乘|OLS|通过最小化残差平方和估计线性模型系数的方法。
+Generalized Least Squares|广义最小二乘|GLS|在误差协方差已知或可建模时用逆协方差加权估计系数。
+Weighted Least Squares|加权最小二乘|WLS|以不同观测的非负权重最小化平方残差和的估计方法。
+Regression Coefficient|回归系数||控制其他模型变量时，解释变量单位变化对应的模型参数。
+Intercept|截距||当全部解释变量为零时模型线性预测器的常数项。
+Residual|残差||观测响应减去模型预测响应的差值。
+Fitted Value|拟合值||依据估计模型与观测解释变量计算的预测响应值。
+Hat Matrix|帽子矩阵||在线性最小二乘中把响应向量映射为拟合值的投影矩阵。
+Leverage|杠杆值||量化观测解释变量在回归设计空间中异常程度的帽子矩阵对角元。
+Influential Observation|有影响观测||删除或改变该观测会显著影响拟合系数或预测的样本。
+Cook Distance|库克距离||衡量删除某观测对整体回归拟合影响程度的诊断量。
+Coefficient of Determination|决定系数|R²|描述回归模型相对基准解释响应变化程度的统计量。
+Adjusted R-squared|调整决定系数||考虑解释变量数量与样本量对 R² 做自由度调整的指标。
+Multicollinearity|多重共线性||多个解释变量高度线性关联使部分系数估计不稳定的现象。
+Variance Inflation Factor|方差膨胀因子|VIF|衡量解释变量与其他解释变量线性相关引起系数方差膨胀的指标。
+Heteroskedasticity|异方差性||模型误差的条件方差随解释变量或样本单位变化的性质。
+Homoskedasticity|同方差性||误差条件方差在给定设计范围内保持常数的假设。
+Generalized Linear Model|广义线性模型|GLM|利用指数族响应分布和连接函数建立条件均值模型的框架。
+Link Function|连接函数||把响应变量条件均值映射到线性预测器尺度的函数。
+Logistic Regression|逻辑回归||通过 logit 连接函数对二元响应概率进行建模的广义线性模型。
+Poisson Regression|泊松回归||常用对数连接函数建模计数条件均值的广义线性模型。
+Deviance|偏差统计量||由饱和模型与拟合模型最大对数似然差构造的拟合度量。

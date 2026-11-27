@@ -1,0 +1,26 @@
+# 性能剖析、调试与正确性验证
+Nsight Systems|Nsight Systems 系统性能分析器||展示 CPU、GPU、流、传输及系统时间线的 NVIDIA 采样与追踪工具。
+Nsight Compute|Nsight Compute 内核分析器||提供 GPU Kernel 指标、硬件计数器及源码级性能分析的 NVIDIA 工具。
+CUDA-GDB|CUDA GDB 调试器||支持在 CUDA GPU 上检查线程状态、断点与设备代码的调试工具。
+Compute Sanitizer|CUDA 计算检测工具||用于发现部分设备内存错误、竞争条件和同步缺陷的 NVIDIA 工具集合。
+memcheck|CUDA 内存检查器|memcheck|Compute Sanitizer 中检测越界、未对齐和部分非法访问的工具。
+racecheck|CUDA 共享内存竞争检查器|racecheck|Compute Sanitizer 中检测共享内存数据访问危险的工具。
+initcheck|CUDA 初始化检查器|initcheck|Compute Sanitizer 中检测设备全局内存未初始化读取的工具。
+synccheck|CUDA 同步检查器|synccheck|Compute Sanitizer 中检测部分同步原语使用错误的工具。
+GPU Profiling|GPU 性能剖析||通过设备活动事件、计数器和采样分析 Kernel 性能瓶颈的过程。
+Kernel Timeline|核函数时间线||按时间显示各流上的 Kernel、复制及同步操作的可视化记录。
+NVTX|NVIDIA 工具扩展接口|NVTX|允许程序插入命名范围和标记，辅助性能工具关联应用阶段的注释 API。
+CUPTI|CUDA 分析工具接口|CUPTI|提供设备执行活动、硬件性能计数器与事件采集能力的底层接口。
+PC Sampling|程序计数器采样|PC Sampling|按执行采样点统计设备指令位置及停顿信息的分析方法。
+Source Correlation|源码关联||把 GPU 执行指标映射到具体源码行或 SASS 指令的性能分析功能。
+Hardware Counter|硬件性能计数器||由 GPU 记录缓存事务、指令发射及其他执行事件的统计寄存器或指标。
+Warp Stall Reason|线程束停顿原因||Nsight 等工具将 warp 无法发射指令的情况归类的指标。
+Memory Access Error|内存访问错误||设备代码访问非法、未对齐或不允许的内存地址的缺陷。
+Illegal Memory Access|非法内存访问||Kernel 对无效设备地址或受保护区域进行内存操作的错误。
+Race Detection|竞态检测||通过动态检测或分析寻找并发内存访问冲突的过程。
+Synchronization Hazard|同步危险||因缺少必要屏障、参与掩码不匹配或错误时序产生的并发风险。
+Asynchronous Error Reporting|异步错误报告||设备故障可能在后续同步或 API 调用时才被观察到的错误传播机制。
+cuda-memcheck|旧版 CUDA 内存检查工具|cuda-memcheck|NVIDIA 较早提供的设备内存错误检测工具，后由 Compute Sanitizer 替代。
+Occupancy Analysis|占用率分析||检查寄存器、共享内存和线程资源如何限制 SM 活跃 warp 的过程。
+Microbenchmark|微基准测试||隔离单一 Kernel 或硬件操作、测量其延迟或吞吐的实验。
+Performance Regression|性能回归||软件变更后在可比负载及环境条件下出现吞吐下降或延迟增加的现象。

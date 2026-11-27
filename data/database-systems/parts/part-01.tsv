@@ -1,0 +1,107 @@
+# 数据库系统概述与体系结构
+Database System|数据库系统||由数据、数据库管理软件、应用及运行基础设施构成的信息管理整体。
+Database Management System|数据库管理系统|DBMS|负责数据持久化、查询执行、事务与恢复的软件系统。
+Database Engine|数据库引擎||实现查询、存储和事务处理等核心功能的内部组件集合。
+Storage Engine|存储引擎||负责记录布局、读写访问、索引及底层持久化机制的数据库子系统。
+Query Processor|查询处理器||将查询语句解析为可执行操作并产生结果的模块。
+Transaction Manager|事务管理器||组织事务状态、提交回滚及与并发控制交互的组件。
+Recovery Manager|恢复管理器||通过日志、检查点和重做撤销使数据库故障后恢复一致状态的模块。
+Catalog Manager|系统目录管理器||维护表结构、索引、统计和其他数据库元数据的组件。
+Buffer Pool Manager|缓冲池管理器||管理内存页缓存、页替换和脏页刷盘的存储子系统。
+Relational DBMS|关系数据库管理系统|RDBMS|基于关系模型、使用关系运算处理数据的数据库系统。
+Key-value Database|键值数据库||主要通过键定位与操作值的数据管理系统。
+Document Database|文档数据库||以 JSON 或类似文档为常见数据组织单位的数据库系统。
+Graph Database|图数据库||以节点、边及属性组织数据并优化图遍历查询的数据库。
+Columnar Database|列式数据库||主要按列组织数据以优化分析型扫描与压缩的系统。
+Embedded Database|嵌入式数据库||作为应用程序库运行而不要求独立服务器进程的数据库实现。
+Client–Server Database|客户端—服务器数据库||通过客户端请求与服务端执行协作提供数据管理的部署架构。
+Shared-nothing Database|无共享数据库||各计算节点独立拥有内存和存储、通过网络协作的架构。
+Shared-disk Database|共享磁盘数据库||多个计算节点访问共同持久存储并协调缓存一致性的架构。
+Shared-memory Database|共享内存数据库架构||多个执行单元共享同一地址空间与内存数据结构的数据库组织方式。
+Database Instance|数据库实例||正在运行的数据库进程、内存与附属资源集合。
+Database Schema|数据库模式||定义表、列、约束和其他数据库逻辑对象的结构描述。
+System Catalog|系统目录||保存数据库结构、权限与统计信息的元数据表集合。
+Data Dictionary|数据字典||描述数据库对象、字段含义及依赖关系的元数据设施。
+Database Workload|数据库负载||对数据库发出的请求类型、并发度、读写比和数据访问分布。
+Database Benchmark|数据库基准测试||用标准化数据集和事务或查询评估系统吞吐、延迟及成本的测试。
+
+# 关系模型、数据建模与模式设计
+Relational Model|关系模型||把数据表示为关系并以数学运算定义查询与约束的理论模型。
+Relation|关系||由相同属性模式的元组组成的数学集合。
+Tuple|元组||关系中由多个属性值组成的一条记录。
+Attribute|属性||关系模式中的命名字段及其取值域。
+Domain|属性域||某个属性可以取得的合法值的集合。
+Relation Schema|关系模式||关系名称、属性及其域的结构定义。
+Candidate Key|候选键||可唯一标识关系中元组且没有多余属性的最小超键。
+Primary Key|主键||从候选键中选定用于主要标识元组的键。
+Foreign Key|外键||要求字段组合引用另一关系候选键或特定唯一键的完整性约束。
+Superkey|超键||可唯一识别元组、但可能含冗余属性的属性集合。
+Functional Dependency|函数依赖|FD|某属性集合的相同取值必决定另一属性集合相同取值的约束。
+Multivalued Dependency|多值依赖|MVD|一组属性决定另一组属性值集合、与剩余属性可独立组合的依赖。
+Join Dependency|连接依赖||要求关系等于若干投影自然连接结果的完整性依赖。
+First Normal Form|第一范式|1NF|关系属性值按所采用关系模型处理为不可再分的数据值的范式。
+Second Normal Form|第二范式|2NF|满足第一范式且非主属性不存在对候选键真子集的部分函数依赖。
+Third Normal Form|第三范式|3NF|对非平凡函数依赖，决定项为超键或被决定属性为主属性的范式条件。
+Boyce–Codd Normal Form|巴斯—科德范式|BCNF|每个非平凡函数依赖的决定项都是超键的关系范式。
+Fourth Normal Form|第四范式|4NF|每个非平凡多值依赖的决定项均为超键的范式。
+Lossless Join Decomposition|无损连接分解||分解后的关系投影自然连接不会产生伪元组且能恢复原关系。
+Dependency Preservation|依赖保持||关系分解后可通过各子关系约束联合检验原函数依赖的性质。
+Denormalization|反规范化||为提高特定查询性能而有意引入冗余或预计算数据的设计。
+Surrogate Key|代理键||人工引入、通常不具有业务含义的唯一实体标识。
+Natural Key|自然键||由业务数据中已有的属性构成的候选键。
+Entity–Relationship Model|实体—联系模型|ER|通过实体、属性与联系表达概念数据结构的模型。
+Schema Evolution|模式演化||随着应用变化对数据库结构进行兼容或不兼容修改的过程。
+
+# 物理存储、页与记录布局
+Disk Page|磁盘页||数据库存储和缓存管理中的固定或受约束大小的数据传输单位。
+Page Identifier|页面标识符|Page ID|在文件或表空间中唯一定位物理或逻辑存储页的编号。
+Slotted Page|槽式页||通过页头与槽目录管理可变长度记录位置的页面布局。
+Slot Directory|槽目录||记录页面内各条记录偏移及其状态的索引数组。
+Page Header|页头||保存页面类型、空闲空间、校验信息和其他控制元数据的结构。
+Tuple Header|元组头||保存记录可见性、长度、版本或标志位的内部字段集合。
+Record Identifier|记录标识符|RID|用于定位物理记录的页编号和槽位等组合标记。
+Heap File|堆文件||不按某个搜索键排序存放记录的数据库数据文件。
+Heap-organized Table|堆组织表||将表记录放在无固定键排序的堆页中的物理表结构。
+Clustered Table|聚簇表||表中记录的物理或主要存储顺序与指定键组织密切关联的结构。
+Tablespace|表空间||逻辑组织数据库文件、页面与存储资源的管理单元。
+Database File|数据库数据文件||存储表、索引或其他持久数据库页面的操作系统文件。
+Extent|区段||由连续或逻辑连续的多个页面组成、用于成批管理的存储分配单位。
+Free-space Map|空闲空间映射||记录页面剩余可用空间以帮助插入选择目标页的元数据。
+Allocation Bitmap|分配位图||用位标记哪些页或区段已分配的存储管理结构。
+Variable-length Record|变长记录||字段长度或可空情况使每条记录所占字节数不固定的布局。
+Fixed-length Record|定长记录||所有记录按预定字节布局占用相同长度的结构。
+Tuple Serialization|元组序列化||将记录及字段值编码为存储页字节表示的过程。
+Null Bitmap|空值位图||按位标记记录中哪些字段为 NULL 的内部存储结构。
+Record Tombstone|记录墓碑标记||代表某条记录已逻辑删除但尚待物理清理的标记。
+Overflow Page|溢出页||用于存放超出普通页容量的记录内容或链式扩展数据的页面。
+Large Object Storage|大对象存储|LOB|面向大型文本或二进制字段的专门数据存储机制。
+Page Checksum|页面校验和||用于在读盘时检测页面静默损坏的校验值。
+Write Amplification|写入放大||物理存储写入字节量超过应用逻辑写入量的现象。
+Physical Data Layout|物理数据布局||记录字段、页面和索引在磁盘或 SSD 上的实际组织方式。
+
+# 缓冲池、磁盘 I/O 与持久化
+Buffer Pool|缓冲池||缓存数据页并协调页锁定、修改及写回的数据库内存区域。
+Buffer Frame|缓冲帧||缓冲池中容纳一个数据库页面的固定大小内存槽位。
+Page Table|缓冲页表||将数据库页标识映射到其缓冲帧位置的内存索引。
+Buffer Pin|页面固定||增加页面引用或固定计数以防止当前使用中的缓冲帧被驱逐。
+Pin Count|固定计数||记录当前仍在使用该页面的执行者数量的计数。
+Dirty Page|脏页||相对于持久磁盘版本已在内存中发生修改的缓存页。
+Dirty Bit|脏标志||表明缓冲页存在尚未持久化修改的标记。
+Page Eviction|页面驱逐||为腾出缓冲帧而将不再需要的缓存页移出的操作。
+Buffer Replacement Policy|缓冲替换策略||决定缓存空间不足时应驱逐哪些页的算法。
+Least Recently Used|最近最少使用|LRU|优先淘汰距离最近访问时间最久缓存项的策略。
+Clock Replacement|时钟替换算法|Clock|利用环形指针和引用位近似低成本 LRU 的策略。
+LRU-K|LRU-K 缓存策略|LRU-K|根据页面最近 K 次引用的历史估计其访问频率的缓存替换算法。
+Scan Resistance|扫描抗污染性||缓存策略不被大型顺序扫描挤走热点页的能力。
+Read-ahead|预读||在应用明确请求页面前按访问模式提前从存储加载数据的机制。
+Prefetching|数据预取||依据预测或已知访问顺序在需要前把数据移入缓存的过程。
+Background Writer|后台写入器||异步将脏页刷回持久介质以平滑写入负载的进程或线程。
+Page Flush|页面刷盘||将内存页面内容写向持久化存储的操作。
+Force Policy|强制写页策略||事务提交前要求其修改的数据页全部持久化的恢复策略。
+No-force Policy|非强制写页策略||允许事务提交时部分修改页仍未刷盘的恢复策略。
+Steal Policy|可提前淘汰脏页策略||允许未提交事务修改的脏页被写到磁盘的缓冲管理策略。
+No-steal Policy|禁止提前淘汰脏页策略||不允许未提交修改写入持久化数据页的策略。
+Direct I/O|直接 I/O||在支持环境中绕过部分操作系统页面缓存的数据传输方式。
+fsync|文件同步操作|fsync|请求将相关文件数据及必要元数据同步到持久化设备的系统接口。
+Group Commit|组提交||把多个事务的日志同步操作合并以分摊持久化开销的技术。
+I/O Scheduler|输入输出调度器||决定存储请求发出顺序与并发程度的系统组件。

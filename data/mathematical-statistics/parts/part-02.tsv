@@ -1,0 +1,107 @@
+# 点估计、损失与估计量性质
+Point Estimation|点估计||使用单个统计量数值推测未知参数的推断方式。
+Bias of an Estimator|估计量偏差||估计量期望与真实目标参数之间的差。
+Unbiased Estimator|无偏估计量||在参数空间内期望等于目标参数的估计量。
+Asymptotically Unbiased Estimator|渐近无偏估计量||样本量增大时偏差趋于零的估计量。
+Consistent Estimator|相合估计量||样本量增大时依概率收敛到真实参数的估计量。
+Mean Squared Error|均方误差|MSE|估计量与目标参数之差的平方期望。
+Variance of an Estimator|估计量方差||估计量围绕其期望值抽样波动程度的平方量。
+Bias–Variance Decomposition|偏差—方差分解||平方损失风险可拆成估计量方差与偏差平方之和。
+Efficiency of an Estimator|估计效率||相对于理论下界或另一估计量衡量抽样方差的性质。
+Relative Efficiency|相对效率||比较两个估计量方差或风险表现的比值。
+Maximum Likelihood Estimator|极大似然估计量|MLE|选择使观测数据似然达到最大值的参数估计量。
+Method of Moments|矩估计法|MoM|以样本矩匹配理论矩来求解未知参数的估计方法。
+Generalized Method of Moments|广义矩估计法|GMM|通过一组矩条件构造加权二次目标并估计参数。
+Minimum Variance Unbiased Estimator|最小方差无偏估计量|MVUE|在无偏估计量类中具有最低方差的估计量。
+Uniformly Minimum Variance Unbiased Estimator|一致最小方差无偏估计量|UMVUE|对所有允许参数均达到无偏类最小方差的估计量。
+Best Linear Unbiased Estimator|最佳线性无偏估计量|BLUE|在线性无偏估计量类中协方差最小的估计量。
+Loss Function|损失函数||量化估计行动与真实参数之间代价的函数。
+Quadratic Loss|平方损失||估计误差的平方，常用于推导均方误差最优估计。
+Absolute Error Loss|绝对误差损失||估计值与目标之间差值绝对值构成的损失。
+Risk Function|风险函数||给定真实参数时，估计规则损失的期望。
+Admissible Estimator|容许估计量||不存在在所有参数上风险不高且至少一处更低的其他估计量。
+Minimax Estimator|极小极大估计量||使参数空间内最大风险达到最小的估计量。
+Shrinkage Estimator|收缩估计量||将初始估计朝某个中心或结构压缩以改善平均风险的估计方法。
+James–Stein Estimator|James–Stein 估计量||在维度至少为三的正态均值估计中可支配通常样本均值的收缩估计量。
+Empirical Bayes Estimator|经验贝叶斯估计量||用观测样本估计先验超参数后构造贝叶斯型估计的规则。
+
+# 区间估计与置信集合
+Interval Estimation|区间估计||用依数据而变的区间表达未知参数估计不确定性的方式。
+Confidence Interval|置信区间|CI|按预定覆盖率构造、在重复抽样中包含固定真参数的随机区间。
+Confidence Level|置信水平||置信区间构造程序预先设定的覆盖概率下界或标称值。
+Coverage Probability|覆盖概率||给定真实参数时随机置信集合覆盖该参数的概率。
+Confidence Set|置信集合||用随机集合而不局限于数轴区间表达参数不确定性的推断结果。
+Two-sided Confidence Interval|双侧置信区间||同时具有下界与上界的随机区间。
+One-sided Confidence Bound|单侧置信界||仅提供参数上界或下界的置信推断结果。
+Margin of Error|误差限||置信区间中心至端点的半宽度，适用于对称区间表达。
+Pivotal Quantity|枢轴量||抽样分布不依赖未知参数的样本与参数函数。
+Pivot Method|枢轴法||反演枢轴量分位数不等式构造置信区间的方法。
+Normal Approximation Interval|正态近似区间||利用估计量近似正态分布构造的置信区间。
+Student t Confidence Interval|学生 t 置信区间||利用 t 抽样分布估计正态总体均值的区间。
+Wald Confidence Interval|Wald 置信区间||用参数估计值及其标准误构成的渐近正态区间。
+Score Confidence Interval|得分置信区间||通过反演得分检验获得的参数区间。
+Likelihood-ratio Confidence Region|似然比置信域||通过反演似然比检验得到的参数集合。
+Wilson Score Interval|Wilson 得分区间||反演二项比例得分检验得到的比例置信区间。
+Clopper–Pearson Interval|Clopper–Pearson 区间||通过反演精确二项检验构造的保守比例区间。
+Bootstrap Percentile Interval|Bootstrap 百分位区间||取重抽样估计量分布分位数作为区间端点的方法。
+Bootstrap-t Interval|学生化 Bootstrap 区间||通过重抽样学生化统计量的分位数反演构造的区间。
+BCa Bootstrap Interval|偏差校正加速 Bootstrap 区间|BCa|利用偏差校正和加速因子调整重抽样分位数的区间。
+Profile Likelihood Interval|剖面似然区间||在每个目标参数值下优化干扰参数后反演似然比的区间。
+Prediction Interval|预测区间||为未来单个观测或指定预测量提供覆盖保证的随机区间。
+Tolerance Interval|容忍区间||以指定置信度覆盖总体中至少给定比例个体的区间。
+Simultaneous Confidence Interval|同时置信区间||控制一组参数区间同时覆盖真值概率的推断程序。
+Multiplicity-adjusted Interval|多重性校正区间||针对多个比较调整覆盖要求以控制总体错误率的置信区间。
+
+# 假设检验原理与决策理论
+Statistical Hypothesis|统计假设||关于总体分布、参数或随机机制的可检验命题。
+Null Hypothesis|原假设|H0|检验中作为基准或待反驳的假设集合。
+Alternative Hypothesis|备择假设|H1|原假设之外、研究希望获得证据支持的参数或分布集合。
+Simple Hypothesis|简单假设||完全指定一个概率分布的统计假设。
+Composite Hypothesis|复合假设||包含两个或更多可能概率分布的统计假设。
+Test Statistic|检验统计量||从样本计算并用于判断是否拒绝原假设的函数。
+Rejection Region|拒绝域||统计量落入后决定拒绝原假设的结果集合。
+Acceptance Region|不拒绝域||检验规则不拒绝原假设的观测结果集合。
+Significance Level|显著性水平|α|事先规定的最大允许第一类错误概率，通常针对原假设取上确界。
+Type I Error|第一类错误||原假设为真时错误拒绝它。
+Type II Error|第二类错误||备择假设为真时未拒绝原假设。
+Power Function|功效函数||随参数值变化的拒绝原假设概率函数。
+Statistical Power|检验功效||在指定备择参数或效应下正确拒绝原假设的概率。
+P-value|p 值||在原假设成立下，检验统计量至少同样极端的尾部概率或相应复合零假设上界。
+Critical Value|临界值||将统计量取值划分为拒绝和不拒绝区域的阈值。
+One-sided Test|单侧检验||备择强调参数向单一方向偏离的检验。
+Two-sided Test|双侧检验||备择允许参数朝两个方向偏离的检验。
+Most Powerful Test|最强力检验||在给定显著性水平下，对指定备择具有最大功效的检验。
+Uniformly Most Powerful Test|一致最强力检验|UMP|在整个备择参数集合上均具有最大功效的检验。
+Neyman–Pearson Lemma|奈曼—皮尔逊引理||对两个简单假设，以似然比阈值构造最强力检验的定理。
+Likelihood Ratio Test|似然比检验|LRT|比较受限与不受限参数空间内的最大似然值的检验。
+Wald Test|Wald 检验||利用参数估计值与其估计协方差衡量偏离原假设的检验。
+Score Test|得分检验||在原假设限制下依据对数似然一阶导数检测偏离的检验。
+Test Inversion|检验反演||收集所有未被对应假设检验拒绝的参数值构造置信集合。
+Equivalence Test|等效性检验||检验效应是否落入预先规定的等效范围，而非是否精确为零。
+
+# 经典参数检验与列联分析
+One-sample t Test|单样本 t 检验||在正态或适当大样本条件下检验总体均值是否等于指定值。
+Two-sample t Test|双样本 t 检验||对两个独立样本均值差进行推断的参数检验。
+Paired t Test|配对 t 检验||对成对观测的差值均值进行的单样本 t 检验。
+Welch t Test|Welch t 检验||不假设两总体方差相同的独立双样本均值检验。
+Z Test|Z 检验||用标准正态参考分布对参数或标准化统计量作检验。
+Chi-square Goodness-of-fit Test|卡方拟合优度检验||用观测与期望频数差异检验分类分布拟合程度的方法。
+Pearson Chi-square Test|皮尔逊卡方检验||使用 Pearson 卡方统计量检验分类变量关系或拟合情况的检验。
+Chi-square Test of Independence|卡方独立性检验||判断列联表两个分类变量是否独立的渐近检验。
+Fisher Exact Test|Fisher 精确检验||通过条件超几何分布对列联表关联作精确概率检验。
+McNemar Test|McNemar 检验||对配对二元结果的非对角频数比较边际同质性。
+Binomial Test|二项检验||基于确切二项分布检验成功概率的程序。
+Poisson Rate Test|泊松率检验||依据泊松计数及暴露时间检验事件发生率的程序。
+Variance Ratio Test|方差比检验||在独立正态总体假设下用 F 分布检验方差比。
+Bartlett Test|Bartlett 方差齐性检验||在近似正态前提下检验多个总体方差相等的统计方法。
+Levene Test|Levene 方差齐性检验||利用组内绝对偏差检验不同组方差是否相等。
+Brown–Forsythe Test|Brown–Forsythe 检验||基于组内对中位数绝对偏差的稳健方差齐性检验。
+Shapiro–Wilk Test|Shapiro–Wilk 正态性检验||比较样本有序值与正态期望次序结构的正态性检验。
+Kolmogorov–Smirnov Test|Kolmogorov–Smirnov 检验|KS|用经验分布函数与参考分布的最大偏差作拟合或两样本检验。
+Anderson–Darling Test|Anderson–Darling 检验||对经验分布与理论分布偏差赋予尾部更大权重的拟合检验。
+Jarque–Bera Test|Jarque–Bera 检验||基于样本偏度与峰度检验正态性的大样本方法。
+Odds Ratio|优势比|OR|比较两组事件优势的比值，常用于二元结局关联分析。
+Risk Ratio|风险比|RR|两组事件发生概率的比值，亦称相对风险。
+Risk Difference|风险差|RD|两组事件发生概率相减得到的绝对效应量。
+Contingency Table|列联表||按两个或更多分类变量联合频数交叉汇总的数据表。
+Expected Cell Count|期望单元格频数||在给定零假设下列联表各单元格的理论期望计数。

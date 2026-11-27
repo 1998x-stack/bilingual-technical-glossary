@@ -1,0 +1,26 @@
+# 离线评测、指标与基准测试
+RAG Evaluation|RAG 系统评测||分别量化检索质量、证据忠实性、回答相关性与端到端体验的过程。
+Retrieval Evaluation|检索评测||利用标注的相关文档判断召回和排序质量的测试。
+Generation Evaluation|生成评测||分析模型回答正确性、流畅性、引用支持及任务达成程度的评估。
+End-to-end Evaluation|端到端评测||从真实问题输入到最终答案联合衡量 RAG 流程的评价。
+Golden Dataset|黄金评测数据集||包含预期答案和必要证据标注、用于回归测试的高质量样本集合。
+Relevance Judgment|相关性标注||由人工或约定规则判断文档是否满足查询信息需求的标签。
+Ground Truth|参考真值||作为评测依据的经核对答案、相关文档或事实集合。
+Recall at k|前 k 项召回率|Recall@k|前 k 个检索结果覆盖全部标注相关项的比例。
+Precision at k|前 k 项精确率|Precision@k|前 k 个结果中被标注为相关项所占比例。
+Hit Rate at k|前 k 项命中率|Hit@k|前 k 项内是否至少包含一个相关结果的比例或查询平均值。
+Mean Reciprocal Rank|平均倒数排名|MRR|对各查询首个相关结果排名倒数取平均的指标。
+Mean Average Precision|平均平均精确率|MAP|将各查询相关结果位置处精确率求均值后再跨查询平均的指标。
+Normalized Discounted Cumulative Gain|归一化折损累计增益|NDCG|按排名位置折损相关度增益并用理想排序归一化的指标。
+Context Precision|上下文精确率||衡量所提供检索上下文中有用证据位置与比例的指标族。
+Context Recall|上下文召回率||衡量参考答案必要事实能否从检索上下文中找到的评测维度。
+Faithfulness Metric|忠实性指标||测量回答声明受所给证据支持程度的指标。
+Answer Relevance|答案相关性||衡量回答是否直接满足用户查询意图的程度。
+Answer Correctness|答案正确性||根据参考事实或标准答案判断生成回答对错的指标。
+Citation Accuracy|引用准确率||检查引用的来源是否真正支持所对应事实陈述的指标。
+Claim-level Evaluation|断言级评测||将回答分解为单条事实主张并逐条核验的方法。
+LLM-as-a-Judge|大模型裁判||使用另一语言模型按评分标准评估检索证据或回答的方法。
+Human Evaluation|人工评测||由受训标注人员对回答质量与错误类型作出判断的过程。
+RAGAS|RAGAS 评测框架|RAGAS|用于评估 RAG 中检索上下文与答案质量的自动化评测工具体系。
+ARES|ARES RAG 评测框架|ARES|结合训练式判别模型与人工标注校准评估 RAG 质量的方法。
+Evaluation Leakage|评测泄漏||测试答案或标签混入训练、索引或提示而导致指标虚高的情况。

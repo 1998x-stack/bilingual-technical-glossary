@@ -1,0 +1,26 @@
+# GraphRAG、图索引与结构化检索
+GraphRAG|图检索增强生成|GraphRAG|结合实体关系图与文本证据检索以支持关联推理或全局概述的 RAG 方法族。
+Knowledge Graph|知识图谱|KG|用实体、关系及属性构成结构化知识网络的表示。
+Entity Node|实体节点||知识图中代表特定人、机构、概念或对象的节点。
+Relation Edge|关系边||连接两个实体、表示二者语义联系的有向或无向边。
+Knowledge Triple|知识三元组||以主体、谓词和客体描述一条结构化事实的表示。
+Graph Extraction|知识图谱抽取||从文档中识别实体及关系并转化为图结构的过程。
+Entity Resolution|实体消歧与合并||判断不同名称或记录是否指向同一真实实体并合并的步骤。
+Graph Index|图索引||用于按节点、边或路径快速访问知识图结构的存储组织。
+Community Detection|图社区发现||识别连接相对紧密的子图群组的算法任务。
+Community Summary|社区摘要||对知识图某个实体关系群组的主要主题与事实生成的概述。
+Community Report|社区报告||对图社区形成可用于问答的结构化描述或总结文档。
+Graph Traversal|图遍历||沿知识图节点与边递归或迭代访问相关结构的过程。
+Neighborhood Expansion|邻域扩展||从命中实体向一跳或多跳邻接节点扩充证据的策略。
+Graph Path Retrieval|图路径检索||通过实体间路径查询建立跨文档关系证据的方式。
+Subgraph Retrieval|子图检索||按查询目标抽取局部相关节点、边及属性集合的过程。
+Local Graph Search|图局部搜索||以具体实体为中心在邻域中查找相关知识的模式。
+Global Graph Search|图全局搜索||依据社区摘要或全局结构回答语料整体性问题的模式。
+Entity-centric Retrieval|实体中心检索||从查询涉及的实体出发收集相关记录与关系的策略。
+Relation-aware Retrieval|关系感知检索||显式使用实体关系信息判断候选证据相关性的技术。
+Graph Embedding|图嵌入||将图节点、边或子图映射为向量表示以支持检索或预测的方法。
+Graph Database|图数据库||面向节点、边、属性与图遍历操作的数据管理系统。
+Text-to-Cypher|文本转 Cypher||将自然语言请求转换为图数据库 Cypher 查询的技术。
+Text-to-SQL|文本转 SQL||将自然语言查询映射为关系数据库 SQL 语句的技术。
+Structured Retrieval|结构化检索||通过模式、字段和查询语言访问表格或图等结构化数据的方式。
+Graph–Text Alignment|图文对齐||把图中实体关系与其原始文档证据位置建立对应的机制。

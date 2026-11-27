@@ -1,0 +1,641 @@
+# CUDA 专有名词中英文对照表
+
+> CUDA · Bilingual Technical Glossary | NVIDIA GPU 并行编程与优化
+
+**400 条专业术语 · 16 个章节 · 2026-11-27**
+
+本册面向 CUDA 开发工程师、GPU Kernel 优化、AI Infra、HPC 和计算机体系结构学习者。涵盖线程层次、Kernel、内存模型、同步、Stream、CUDA Graph、性能建模、浮点精度、编译链路、CUDA API、数值库、Nsight 和多 GPU。
+
+**适用条件：**具体 API、硬件能力、精度模式、线程块集群和内存排序语义随 CUDA Toolkit 与 GPU 计算能力而变化；请以正在使用版本的 NVIDIA 官方文档为准。
+
+**审稿状态：**已检查结构、章节数量及英文主术语重复，尚未声称通过独立专家逐条审稿或所有 GPU 架构上的实验验证。
+
+## 目录
+
+- 01. CUDA 平台、架构与开发环境（25 条）
+- 02. 线程层级、执行模型与硬件映射（25 条）
+- 03. Kernel、设备函数与启动配置（25 条）
+- 04. 内存空间、缓存与数据布局（25 条）
+- 05. 共享内存、分块计算与协作（25 条）
+- 06. 同步、原子操作与内存一致性（25 条）
+- 07. Stream、事件与 CUDA Graph（25 条）
+- 08. 显存分配、传输与统一内存（25 条）
+- 09. 占用率、调度与性能建模（25 条）
+- 10. 访存合并、带宽与数据移动优化（25 条）
+- 11. 数值精度、张量计算与数学运算（25 条）
+- 12. 编译器、PTX、SASS 与设备代码（25 条）
+- 13. Runtime API、Driver API 与错误处理（25 条）
+- 14. CUDA 数值库、算法库与通信框架（25 条）
+- 15. 性能剖析、调试与正确性验证（25 条）
+- 16. 多 GPU、互连、部署与前沿机制（25 条）
+
+---
+
+## 01. CUDA 平台、架构与开发环境
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | CUDA | 统一计算设备架构 | CUDA | NVIDIA 的并行计算平台和编程模型，用于在受支持的 GPU 上执行通用计算。 |
+| 2 | CUDA Toolkit | CUDA 工具包 |  | 包含 CUDA 编译器、运行库、开发工具及相关头文件的软件开发套件。 |
+| 3 | CUDA Programming Model | CUDA 编程模型 |  | 以主机与设备协作、线程层级和内存层级组织 GPU 程序的抽象。 |
+| 4 | General-purpose GPU Computing | GPU 通用计算 | GPGPU | 利用图形处理器执行不局限于图形渲染的计算任务。 |
+| 5 | Host | 主机端 |  | CUDA 程序中通常由 CPU 执行并控制设备工作的计算环境。 |
+| 6 | Device | 设备端 |  | 运行 CUDA Kernel 的 GPU 或其他受支持计算设备。 |
+| 7 | GPU | 图形处理器 | GPU | 具有大量并行运算单元及分层存储系统的加速处理器。 |
+| 8 | CPU | 中央处理器 | CPU | 主要承担通用程序控制与主机侧任务的处理器。 |
+| 9 | Discrete GPU | 独立 GPU |  | 具有独立设备资源、通常经 PCIe 等互连与主机连接的 GPU。 |
+| 10 | Integrated GPU | 集成 GPU |  | 与 CPU 或系统其他部件集成并可能共享物理内存的 GPU。 |
+| 11 | Streaming Multiprocessor | 流式多处理器 | SM | CUDA GPU 中执行线程块并提供计算、寄存器与片上资源的硬件单元。 |
+| 12 | CUDA Core | CUDA 算术核心 |  | NVIDIA GPU SM 内执行部分整数或浮点运算的硬件计算单元的通称。 |
+| 13 | Compute Capability | 计算能力版本 |  | 标识 CUDA GPU 所支持硬件功能集合的主要和次要架构编号。 |
+| 14 | CUDA Architecture | CUDA 硬件架构 |  | 定义 GPU 计算功能、执行资源与内存行为的一代硬件设计。 |
+| 15 | Device Properties | 设备属性 |  | 描述 GPU 线程限制、SM 数量、内存容量等能力的运行时查询结果。 |
+| 16 | CUDA Runtime | CUDA 运行时 |  | 提供设备管理、内存操作、Kernel 启动与流控制等高级 API 的库层。 |
+| 17 | CUDA Driver | CUDA 驱动程序 |  | 管理 GPU 设备并提供 CUDA Driver API 等底层执行能力的软件。 |
+| 18 | CUDA Driver API | CUDA 驱动 API |  | 以 CU 前缀接口显式管理 CUDA 上下文、模块、内存和执行的编程接口。 |
+| 19 | CUDA Runtime API | CUDA 运行时 API |  | 以 cuda 前缀接口封装常见 GPU 计算操作的高级编程接口。 |
+| 20 | CUDA C++ | CUDA C++ 语言扩展 |  | 通过函数限定符、内建索引与启动语法扩展 C++ 的设备编程方式。 |
+| 21 | CUDA Samples | CUDA 示例程序 |  | 展示编程模型、API 功能与优化方法的 NVIDIA 示例代码集合。 |
+| 22 | Compatibility | 兼容性 |  | CUDA Toolkit、驱动、GPU 架构与运行二进制之间满足可执行条件的性质。 |
+| 23 | Forward Compatibility | 前向兼容性 |  | 在特定受支持条件下让新 Toolkit 应用使用较旧部署环境的兼容机制。 |
+| 24 | Binary Compatibility | 二进制兼容性 |  | 编译后的设备代码能在目标硬件或软件环境中被接受并执行的能力。 |
+| 25 | GPU Accelerated Computing | GPU 加速计算 |  | 将适合并行执行的工作卸载至 GPU 以提高吞吐或降低延迟的计算方式。 |
+
+## 02. 线程层级、执行模型与硬件映射
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | CUDA Thread | CUDA 线程 |  | 执行一次 Kernel 程序实例、具有独立寄存器状态的基本软件执行单位。 |
+| 2 | Thread Block | 线程块 |  | 可在同一 SM 上协作、共享片上内存并进行块内同步的线程集合。 |
+| 3 | Grid | 线程网格 |  | 一次常规 Kernel 启动所创建的全部线程块的集合。 |
+| 4 | Warp | 线程束 | Warp | 由 32 个连续线程组成、按 SIMT 硬件执行的调度与执行单位。 |
+| 5 | Warp Size | 线程束大小 |  | CUDA 设备线程束中包含的线程数，当前 NVIDIA CUDA GPU 通常为 32。 |
+| 6 | Lane | 线程束通道 |  | 一个 warp 中编号从零开始的线程位置。 |
+| 7 | SIMT | 单指令多线程 | SIMT | 让不同线程实例在硬件上以线程束方式协调执行的模型。 |
+| 8 | SIMD | 单指令多数据 | SIMD | 单条指令对多个数据元素并行执行相同操作的处理模式。 |
+| 9 | Thread Divergence | 线程分歧 |  | 同一 warp 内线程因控制条件不同而执行不同路径的现象。 |
+| 10 | Branch Reconvergence | 分支再汇合 |  | 分歧线程执行不同分支后回到共同控制位置的过程。 |
+| 11 | Independent Thread Scheduling | 独立线程调度 |  | 部分 GPU 架构可更细粒度管理 warp 内线程执行状态的机制。 |
+| 12 | Block Scheduler | 线程块调度器 |  | 将可运行线程块分配到具备资源的 SM 的硬件调度机制。 |
+| 13 | Warp Scheduler | 线程束调度器 |  | 在 SM 内选择准备就绪的 warp 发射指令的硬件逻辑。 |
+| 14 | Eligible Warp | 可发射线程束 |  | 当前不存在阻塞其下一条指令的依赖、可被调度的 warp。 |
+| 15 | Active Warp | 活跃线程束 |  | 已驻留在 SM、占用相应硬件资源的 warp。 |
+| 16 | Resident Block | 驻留线程块 |  | 当前分配在某个 SM 上、尚未完成的线程块。 |
+| 17 | Thread Block Cluster | 线程块集群 |  | 在支持的 GPU 上将多个线程块组成可协作并访问分布式共享内存的层级。 |
+| 18 | Cluster Scheduling | 集群调度 |  | 将线程块集群作为具有特定协同约束的调度单位的执行机制。 |
+| 19 | Grid Dimension | 网格维度 | gridDim | 标识一次 Kernel 启动在各维上包含多少线程块的内建变量。 |
+| 20 | Block Dimension | 线程块维度 | blockDim | 标识单个线程块在各维上包含多少线程的内建变量。 |
+| 21 | Block Index | 线程块索引 | blockIdx | 标识线程块在网格中坐标的内建变量。 |
+| 22 | Thread Index | 线程索引 | threadIdx | 标识线程在线程块内坐标的内建变量。 |
+| 23 | Global Thread Index | 全局线程索引 |  | 利用块坐标与块内坐标计算出的逻辑一维线程编号。 |
+| 24 | Thread Granularity | 线程粒度 |  | 每个 CUDA 线程承担的计算任务大小及其资源权衡。 |
+| 25 | Grid-stride Loop | 网格步长循环 |  | 线程以全网格线程总数为步长迭代处理多个数据元素的编程模式。 |
+
+## 03. Kernel、设备函数与启动配置
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | CUDA Kernel | CUDA 核函数 |  | 由主机或受支持设备机制启动、在 GPU 上由多个线程实例执行的函数。 |
+| 2 | Kernel Launch | 核函数启动 |  | 指定执行网格、线程块及其他参数后提交设备计算的操作。 |
+| 3 | Execution Configuration | 执行配置 |  | Kernel 启动使用的网格维度、线程块维度、共享内存和流配置。 |
+| 4 | Triple-chevron Syntax | 三尖括号启动语法 | <<<>>> | CUDA C++ 用于指定 Kernel 执行配置的特殊函数调用语法。 |
+| 5 | Global Function Qualifier | 全局函数限定符 | __global__ | 声明可作为 CUDA Kernel 入口的设备执行函数的限定符。 |
+| 6 | Device Function Qualifier | 设备函数限定符 | __device__ | 声明在设备上执行且可由设备代码调用的函数限定符。 |
+| 7 | Host Function Qualifier | 主机函数限定符 | __host__ | 声明在主机端执行的 C++ 函数限定符。 |
+| 8 | Host-device Function | 主机与设备双端函数 |  | 使用相应限定符分别生成主机与设备可调用版本的函数。 |
+| 9 | Dynamic Shared Memory Argument | 动态共享内存启动参数 |  | Kernel 启动时为每个块指定额外动态共享内存字节数的参数。 |
+| 10 | Launch Stream Argument | 启动流参数 |  | 指定 Kernel 提交到哪个 CUDA Stream 的启动配置参数。 |
+| 11 | Launch Bounds | 启动界限 | __launch_bounds__ | 向编译器声明线程块大小及可选驻留约束以影响资源分配的属性。 |
+| 12 | Grid-stride Kernel | 网格步长核函数 |  | 通过循环让有限线程网格覆盖任意长度数据集的 Kernel。 |
+| 13 | Kernel Argument | 核函数实参 |  | 在 Kernel 启动时从调用方传入设备函数的标量或指针等参数。 |
+| 14 | Kernel Parameter Buffer | 核函数参数缓冲区 |  | 运行时为设备 Kernel 传递实参值使用的参数存储区域。 |
+| 15 | Kernel Launch Overhead | 核函数启动开销 |  | 主机调度、运行时与设备提交引入的非计算时间成本。 |
+| 16 | Device Function Inlining | 设备函数内联 |  | 编译器将设备函数调用替换为调用点指令以优化执行的变换。 |
+| 17 | CUDA Built-in Variables | CUDA 内建变量 |  | 包括线程索引、块索引和网格维度等执行环境变量。 |
+| 18 | Bounds Checking | 边界检查 |  | 线程在访问数组前判断逻辑索引是否位于合法数据范围的保护。 |
+| 19 | Kernel Fusion | 核函数融合 |  | 将原本多个 Kernel 的操作组合到一次启动以减少中间访存或调度成本。 |
+| 20 | Kernel Fission | 核函数拆分 |  | 把一个复杂 Kernel 划分为多个 Kernel 以简化同步、资源需求或调度。 |
+| 21 | Persistent Kernel | 持久化核函数 |  | 由少量长期驻留线程块持续领取任务而非按任务反复启动的实现模式。 |
+| 22 | Cooperative Kernel Launch | 协作式核函数启动 |  | 以支持跨线程块协同操作要求的方式启动 Kernel 的机制。 |
+| 23 | Dynamic Parallelism | 动态并行 |  | 受支持设备代码在 GPU 上发起新的 Kernel 执行的功能。 |
+| 24 | Device-side Kernel Launch | 设备端核函数启动 |  | 由 GPU 设备代码而不是普通主机控制路径提交子 Kernel 的操作。 |
+| 25 | Kernel Specialization | 核函数特化 |  | 针对固定尺寸、数据类型或硬件特征生成更适配的设备代码。 |
+
+## 04. 内存空间、缓存与数据布局
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Memory Hierarchy | 内存层次结构 |  | GPU 中寄存器、共享内存、缓存和设备内存等不同延迟容量层级的组合。 |
+| 2 | Global Memory | 全局内存 |  | GPU 所有线程可通过有效地址访问、主要位于设备 DRAM 的内存空间。 |
+| 3 | Device Memory | 设备内存 |  | 由 GPU 地址空间管理、用于存储计算输入输出和状态的内存资源。 |
+| 4 | Register File | 寄存器文件 |  | 每个 SM 提供、按线程分配寄存器的片上存储资源。 |
+| 5 | Register | 寄存器 |  | 供单个线程保存临时数据与计算状态的高速存储单位。 |
+| 6 | Local Memory | 局部内存 |  | 具有线程私有寻址语义、物理上通常存放于设备内存并经缓存访问的空间。 |
+| 7 | Shared Memory | 共享内存 |  | 线程块内线程可共同访问并通过同步协调的低延迟片上存储。 |
+| 8 | Distributed Shared Memory | 分布式共享内存 | DSM | 在支持线程块集群的设备上跨集群中线程块访问各自共享内存的机制。 |
+| 9 | Constant Memory | 常量内存 |  | 由设备端只读且可利用专用缓存路径访问的 CUDA 内存空间。 |
+| 10 | Texture Memory | 纹理内存 |  | 通过纹理对象与相关缓存机制访问数据的只读采样路径。 |
+| 11 | Surface Memory | 表面内存 |  | 通过表面对象对 CUDA 数组进行读写访问的内存路径。 |
+| 12 | L1 Cache | 一级缓存 | L1 | 靠近 SM 的片上缓存层，具体功能和共享内存分配依架构而异。 |
+| 13 | L2 Cache | 二级缓存 | L2 | 供多个 SM 共享、位于设备 DRAM 之前的缓存层。 |
+| 14 | DRAM | 动态随机存取存储器 | DRAM | GPU 板载或封装的主要大容量易失性存储介质。 |
+| 15 | High Bandwidth Memory | 高带宽存储器 | HBM | 通过宽接口与堆叠封装提供较高带宽的 GPU 内存技术。 |
+| 16 | Memory Alignment | 内存对齐 |  | 数据地址满足指定字节边界约束的属性。 |
+| 17 | Aligned Access | 对齐访问 |  | 指令访问地址满足其大小或硬件事务对齐要求的访存方式。 |
+| 18 | Memory Transaction | 内存事务 |  | 硬件缓存或内存系统执行的数据读写传输单位。 |
+| 19 | Structure of Arrays | 数组结构 | SoA | 将同一字段各对象值连续存放的多数组数据布局。 |
+| 20 | Array of Structures | 结构数组 | AoS | 将每个对象的多个字段连续存放的复合结构布局。 |
+| 21 | Array of Structures of Arrays | 数组结构混合布局 | AoSoA | 将对象分块、在块内按字段数组组织数据的混合布局。 |
+| 22 | Memory Padding | 内存填充 |  | 在数据布局中插入额外字节或元素以改善对齐、步长或冲突。 |
+| 23 | Pitch | 行跨度 |  | 二维线性存储中相邻行起始地址间的字节距离。 |
+| 24 | Pitched Allocation | 带行跨度的内存分配 |  | 为二维或三维数据分配具有对齐行跨度的设备内存方式。 |
+| 25 | CUDA Array | CUDA 数组 |  | 支持纹理或表面等特定硬件访问模式的特殊设备存储对象。 |
+
+## 05. 共享内存、分块计算与协作
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Shared Memory Allocation | 共享内存分配 |  | 为线程块提供静态或动态大小共享存储空间的机制。 |
+| 2 | Static Shared Memory | 静态共享内存 |  | 编译时声明固定大小、每个线程块拥有独立实例的共享数组。 |
+| 3 | Dynamic Shared Memory | 动态共享内存 |  | 在 Kernel 启动时指定容量的每块共享内存区域。 |
+| 4 | Shared Memory Bank | 共享内存存储体 | Bank | 共享内存为支持并行访问而划分的若干硬件存储体。 |
+| 5 | Bank Conflict | 存储体冲突 |  | 同一请求阶段多个不同地址映射到同一共享内存 bank 导致服务串行化的现象。 |
+| 6 | Shared Memory Broadcast | 共享内存广播 |  | 同一 bank 中多个线程访问同一位置时可由硬件广播数据的行为。 |
+| 7 | Tiled Computation | 分块计算 |  | 把大问题划为可在片上缓存复用的局部数据块进行处理。 |
+| 8 | Tile | 数据分块 | Tile | 为一次局部计算或搬运选取的数据子矩阵或子区域。 |
+| 9 | Tile Size | 分块尺寸 |  | 决定每个 tile 包含多少行列或元素的配置参数。 |
+| 10 | Shared Memory Reuse | 共享内存复用 |  | 将同一数据加载到共享内存后在多个算术操作中重复利用。 |
+| 11 | Cooperative Loading | 协同加载 |  | 块内线程分工把全局内存数据搬入共享内存的过程。 |
+| 12 | Halo Region | 边界扩展区 | Halo | 模板计算中为块内边缘元素准备的邻域数据。 |
+| 13 | Stencil Computation | 模板计算 |  | 每个输出依赖输入局部邻域值的一类规则计算。 |
+| 14 | Double Buffering | 双缓冲 |  | 交替利用两组存储空间重叠数据准备和计算的技术。 |
+| 15 | Shared Memory Swizzling | 共享内存重映射 |  | 通过改变数据到共享内存地址的映射减少 bank 冲突的策略。 |
+| 16 | Padding for Banks | 防 bank 冲突填充 |  | 给共享数组行或维度附加填充元素以调整 bank 映射的技巧。 |
+| 17 | Thread Block Cluster Shared Access | 块集群共享内存访问 |  | 集群中线程块对其他块共享内存执行受支持访问的行为。 |
+| 18 | Cluster Synchronization | 集群同步 |  | 在线程块集群范围内协调多个线程块完成指定阶段的同步。 |
+| 19 | Cluster Barrier | 集群屏障 |  | 使集群成员在满足参与条件后共同越过某个同步点的机制。 |
+| 20 | Cluster Dimension | 集群维度 |  | 一次支持集群启动中每个线程块集群的块数配置。 |
+| 21 | Tensor Memory Accelerator | 张量内存加速器 | TMA | 部分 NVIDIA GPU 上用于高效执行多维数据搬运的硬件机制。 |
+| 22 | Asynchronous Copy | 异步数据复制 |  | 发起内存传输后允许相关线程继续执行其他操作的搬运方式。 |
+| 23 | Copy–Compute Overlap | 复制与计算重叠 |  | 通过异步搬运和同步协调让数据传输与算术工作并发推进。 |
+| 24 | Software Pipelining | 软件流水线 |  | 交错安排不同迭代阶段的读写与计算以提高硬件利用率。 |
+| 25 | Producer–Consumer Buffering | 生产者—消费者缓冲 |  | 将数据预取者与计算消费者通过片上队列或多缓冲协调的模式。 |
+
+## 06. 同步、原子操作与内存一致性
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Synchronization | 同步 |  | 协调多个 GPU 执行参与者的执行进度或内存可见性的机制。 |
+| 2 | Block Barrier | 线程块屏障 |  | 使块内参与线程在指定点满足共同到达条件的同步操作。 |
+| 3 | __syncthreads() | 块级同步函数 | __syncthreads() | 让线程块内线程完成规定同步，并对相应共享及全局内存访问建立可见性次序的内建函数。 |
+| 4 | __syncwarp() | 线程束同步函数 | __syncwarp() | 按指定成员掩码同步同一 warp 中参与线程的内建函数。 |
+| 5 | Warp-level Primitive | 线程束级原语 |  | 在 warp 线程间实现投票、数据交换或同步的硬件相关操作。 |
+| 6 | Shuffle Instruction | 线程束数据交换 | SHFL | 允许 warp 线程直接读取另一指定 lane 寄存器数据的指令机制。 |
+| 7 | __shfl_sync() | 同步线程束交换函数 | __shfl_sync() | 在指定 warp 成员之间按源 lane 编号交换寄存器值的内建接口。 |
+| 8 | Warp Vote | 线程束投票 |  | 聚合同一 warp 中各线程布尔谓词结果的指令操作。 |
+| 9 | __ballot_sync() | 线程束位掩码投票 | __ballot_sync() | 为指定活动参与线程的布尔判断生成 lane 位掩码的函数。 |
+| 10 | __activemask() | 活动线程掩码 | __activemask() | 获取执行该指令时当前 warp 活动 lane 集合的位掩码。 |
+| 11 | Atomic Operation | 原子操作 |  | 对指定存储位置以不可分割的读改写语义执行的操作。 |
+| 12 | Atomic Add | 原子加法 | atomicAdd | 对共享或全局存储位置原子地增加数值的操作。 |
+| 13 | Compare and Swap | 比较并交换 | CAS | 在存储值符合预期时原子写入新值的同步原语。 |
+| 14 | Atomic Exchange | 原子交换 |  | 将新值写入目标位置并原子返回原值的操作。 |
+| 15 | Memory Fence | 内存栅栏 |  | 对指定作用域的内存操作建立必要的排序与可见性约束的机制。 |
+| 16 | __threadfence() | 设备作用域线程栅栏 | __threadfence() | 按 CUDA 内存模型为设备范围内内存操作建立次序的内建函数。 |
+| 17 | __threadfence_block() | 块作用域线程栅栏 | __threadfence_block() | 只在当前线程块作用域建立指定内存排序约束的函数。 |
+| 18 | __threadfence_system() | 系统作用域线程栅栏 | __threadfence_system() | 在受支持环境中扩展到系统作用域的内存排序栅栏函数。 |
+| 19 | Memory Ordering | 内存排序 |  | 规定并发访问之间何时必须保持先后可见关系的语义。 |
+| 20 | Memory Scope | 内存作用域 |  | 约束原子操作和同步语义覆盖线程块、设备或系统参与者的范围。 |
+| 21 | Acquire Semantics | 获取语义 | Acquire | 阻止后续内存操作越过相应同步获取点的排序约束。 |
+| 22 | Release Semantics | 释放语义 | Release | 阻止此前内存操作越过相应同步释放点的排序约束。 |
+| 23 | Race Condition | 竞态条件 |  | 程序结果依赖未受恰当协调的并发执行相对次序的现象。 |
+| 24 | Data Race | 数据竞争 |  | 多个执行者冲突访问同一内存位置且未形成所需同步关系的未定义或错误并发情形。 |
+| 25 | Cooperative Groups | 协作组 | CG | 以显式线程组对象组织同步、集体操作和协作的 CUDA 编程接口。 |
+
+## 07. Stream、事件与 CUDA Graph
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | CUDA Stream | CUDA 流 | Stream | 设备工作提交的有序序列，不同流之间可在条件允许时并发执行。 |
+| 2 | Default Stream | 默认流 |  | 未显式指定流时采用的 CUDA 流，其与其他流交互受默认流模式影响。 |
+| 3 | Legacy Default Stream | 传统默认流 |  | 采用特定隐式同步语义的默认流配置模式。 |
+| 4 | Per-thread Default Stream | 逐主机线程默认流 | PTDS | 让每个主机线程拥有独立默认流的配置模式。 |
+| 5 | Nonblocking Stream | 非阻塞流 |  | 创建时设置相应标志以减少与传统默认流隐式同步的 CUDA 流。 |
+| 6 | Stream Synchronization | 流同步 |  | 等待指定流先前提交的工作全部完成的操作。 |
+| 7 | Device Synchronization | 设备同步 |  | 等待当前设备上下文中的指定先前工作完成的同步行为。 |
+| 8 | CUDA Event | CUDA 事件 | Event | 可在流中记录完成点并用于查询、等待或时间测量的对象。 |
+| 9 | Event Recording | 事件记录 |  | 把事件完成标记提交到指定流当前位置的操作。 |
+| 10 | Event Query | 事件查询 |  | 非阻塞检查事件关联工作是否已经完成的操作。 |
+| 11 | Event Synchronization | 事件同步 |  | 在主机端等待记录事件完成的操作。 |
+| 12 | Stream Wait Event | 流等待事件 |  | 在一条流中引入对另一事件完成的依赖关系的操作。 |
+| 13 | Asynchronous Kernel Launch | 异步核函数启动 |  | 主机提交 Kernel 后通常立即继续执行而不等待设备计算结束。 |
+| 14 | Asynchronous Memory Copy | 异步内存复制 |  | 向指定流提交数据搬运，使主机或其他可并发工作继续推进的机制。 |
+| 15 | Concurrent Kernel Execution | 并发核函数执行 |  | 在硬件资源与依赖允许时多个 Kernel 在 GPU 上时间重叠的现象。 |
+| 16 | Copy Engine | 复制引擎 |  | GPU 用于在适用条件下独立执行主机与设备之间数据搬运的硬件单元。 |
+| 17 | Stream Priority | 流优先级 |  | 影响不同流待调度工作相对优先程度的提示配置，不保证严格抢占。 |
+| 18 | CUDA Graph | CUDA 执行图 | Graph | 用有向无环依赖图描述多个设备操作及其执行约束的 CUDA 对象。 |
+| 19 | Graph Node | 执行图节点 |  | 代表 Kernel、内存操作、事件或其他受支持任务的图中执行单元。 |
+| 20 | Graph Dependency | 图依赖 |  | 限制一个图节点在指定前置操作完成后才能执行的先后关系。 |
+| 21 | Graph Instantiation | 执行图实例化 |  | 把图定义转换为可提交运行的图执行实例的准备步骤。 |
+| 22 | Graph Launch | 执行图启动 |  | 在指定流上提交已实例化 CUDA Graph 执行的操作。 |
+| 23 | Stream Capture | 流捕获 |  | 记录流中的受支持操作及其依赖以构造 CUDA Graph 的过程。 |
+| 24 | Graph Update | 执行图更新 |  | 在满足约束时修改已实例化图的节点参数或拓扑的能力。 |
+| 25 | Graph Replay | 执行图重放 |  | 多次提交同一已实例化图以减少重复启动管理开销的实践。 |
+
+## 08. 显存分配、传输与统一内存
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | cudaMalloc() | 设备内存分配函数 | cudaMalloc | 通过 Runtime API 在当前设备上分配指定大小内存的接口。 |
+| 2 | cudaFree() | 设备内存释放函数 | cudaFree | 释放通过兼容 CUDA 分配接口取得设备内存的 API。 |
+| 3 | cudaMallocAsync() | 异步设备内存分配 | cudaMallocAsync | 提交与流顺序关联的设备内存分配操作，通常由内存池支持。 |
+| 4 | cudaFreeAsync() | 异步设备内存释放 | cudaFreeAsync | 把设备内存释放与指定流中的操作顺序关联的 API。 |
+| 5 | Memory Pool | 内存池 | MemPool | 复用 GPU 内存分配以降低频繁申请和释放成本的管理机制。 |
+| 6 | cudaMemcpy() | 同步内存复制 | cudaMemcpy | 执行指定来源和目的内存之间拷贝的 Runtime API，具体同步行为依参数和内存类型而异。 |
+| 7 | cudaMemcpyAsync() | 异步内存复制 | cudaMemcpyAsync | 将数据拷贝关联到指定流的 API，异步性与重叠效果受内存类型等条件约束。 |
+| 8 | Host-to-Device Copy | 主机到设备复制 | H2D | 将 CPU 可访问内存中的数据传送到 GPU 设备空间的操作。 |
+| 9 | Device-to-Host Copy | 设备到主机复制 | D2H | 将 GPU 设备数据传送到 CPU 可访问内存的操作。 |
+| 10 | Device-to-Device Copy | 设备到设备复制 | D2D | 在相同或不同设备存储区域之间传送数据的操作。 |
+| 11 | Pinned Host Memory | 页锁定主机内存 | Pinned Memory | 被锁定不允许分页换出的主机内存，可用于提升特定 DMA 传输效率。 |
+| 12 | Pageable Host Memory | 可分页主机内存 |  | 操作系统可按需换出物理页的一般主机内存。 |
+| 13 | Mapped Host Memory | 映射主机内存 |  | 在支持的环境中可经设备地址直接访问的页锁定主机内存。 |
+| 14 | Zero-copy Access | 零复制访问 |  | 设备直接访问可映射主机内存而不先显式复制到设备独立缓冲区的方式。 |
+| 15 | Unified Virtual Addressing | 统一虚拟寻址 | UVA | 在支持系统中让主机与设备使用协调的单一虚拟地址空间模型。 |
+| 16 | Unified Memory | 统一内存 | UM | 让 CPU 与 GPU 可通过共享管理的内存对象访问同一数据的 CUDA 能力。 |
+| 17 | Managed Memory | 托管内存 |  | 由 CUDA 统一内存机制管理迁移和访问的存储区域。 |
+| 18 | cudaMallocManaged() | 托管内存分配函数 | cudaMallocManaged | 在统一内存模型下分配托管内存的 Runtime API。 |
+| 19 | Page Migration | 内存页迁移 |  | 运行时或驱动根据访问需求在系统内存与 GPU 内存之间移动页面的过程。 |
+| 20 | Page Fault | 页面故障 |  | 访问地址尚未具备所需映射或驻留条件而触发内存管理处理的事件。 |
+| 21 | Prefetching | 内存预取 |  | 在实际访问前主动移动或准备数据以减少缺页与访存延迟。 |
+| 22 | cudaMemPrefetchAsync() | 异步内存预取 | cudaMemPrefetchAsync | 按目标位置请求在流中预取托管内存的 API，签名随 CUDA 版本演进。 |
+| 23 | Memory Advice | 内存使用建议 |  | 向统一内存管理系统提供访问倾向或优选位置等提示信息的机制。 |
+| 24 | Memory Oversubscription | 显存超额订阅 |  | 受管理数据总工作集超过 GPU 物理显存容量并依赖迁移与回收的情形。 |
+| 25 | Peer-to-Peer Memory Access | 对等设备内存访问 | P2P | 一个 GPU 在支持拓扑与权限条件下直接访问另一 GPU 内存的机制。 |
+
+## 09. 占用率、调度与性能建模
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Occupancy | 占用率 | Occupancy | SM 上活跃 warp 数量与架构允许最大活跃 warp 数量的比例。 |
+| 2 | Theoretical Occupancy | 理论占用率 |  | 根据线程块大小、寄存器和共享内存限制估算可实现的占用率。 |
+| 3 | Achieved Occupancy | 实际占用率 |  | 在实际执行中按活跃 warp 等指标测得的占用率。 |
+| 4 | Occupancy Calculator | 占用率计算器 |  | 依据 Kernel 资源需求和设备限制估算驻留数量及占用率的工具。 |
+| 5 | Register Pressure | 寄存器压力 |  | 每线程寄存器需求对可驻留线程数与性能产生的资源约束。 |
+| 6 | Register Spilling | 寄存器溢出 |  | 因寄存器不足而将部分临时值存放到线程局部内存的现象。 |
+| 7 | Shared Memory Pressure | 共享内存压力 |  | 每块共享内存需求限制 SM 同时驻留线程块数的现象。 |
+| 8 | Resident Warps per SM | 每 SM 驻留线程束数 |  | 某 SM 当前容纳但尚未完成的 warp 总量。 |
+| 9 | Blocks per SM | 每 SM 驻留块数 |  | 单个 SM 同时容纳线程块的数量，受多种硬件资源上限限制。 |
+| 10 | Thread Block Size | 线程块大小 |  | 单个 CUDA 线程块包含的线程总数。 |
+| 11 | Maximum Threads per Block | 每块最大线程数 |  | 特定计算能力设备允许单个线程块包含的线程数上界。 |
+| 12 | Launch Configuration Tuning | 启动配置调优 |  | 选择网格和块尺寸、资源参数以适配工作规模与 GPU 架构的过程。 |
+| 13 | Latency Hiding | 延迟隐藏 |  | 在某个 warp 等待访存或数据时调度其他可执行 warp 的技术。 |
+| 14 | Instruction-level Parallelism | 指令级并行 | ILP | 同一线程或执行流中不互相依赖指令可并发推进的程度。 |
+| 15 | Thread-level Parallelism | 线程级并行 | TLP | 由大量独立 CUDA 线程提供的并发执行机会。 |
+| 16 | Warp-level Parallelism | 线程束级并行 |  | SM 内多个 warp 交错执行以利用计算资源的能力。 |
+| 17 | Kernel Throughput | 核函数吞吐量 |  | 单位时间内 Kernel 完成的数据元素数、操作数或请求数。 |
+| 18 | Launch Latency | 启动延迟 |  | 从发起 CUDA 工作到设备实际开始处理相关任务之间的时间。 |
+| 19 | Scheduler Stalls | 调度停顿 |  | warp 因数据依赖、资源冲突或其他原因暂时无法发射下一指令的现象。 |
+| 20 | Memory-bound Kernel | 内存受限核函数 |  | 主要性能瓶颈是访存带宽或延迟而非算术吞吐的 Kernel。 |
+| 21 | Compute-bound Kernel | 计算受限核函数 |  | 主要性能瓶颈来自计算指令吞吐或执行资源的 Kernel。 |
+| 22 | Roofline Model | 屋顶线模型 |  | 以算术强度与峰值计算、内存带宽界估算工作负载性能上限的模型。 |
+| 23 | Arithmetic Intensity | 算术强度 |  | 计算操作数量与从指定存储层传输字节数的比率。 |
+| 24 | Performance Bottleneck | 性能瓶颈 |  | 对当前工作负载吞吐或延迟施加主要约束的资源或阶段。 |
+| 25 | Performance Portability | 性能可移植性 |  | 程序在不同 GPU 架构和规模上保持较高相对性能的能力。 |
+
+## 10. 访存合并、带宽与数据移动优化
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Memory Coalescing | 内存访问合并 |  | warp 中相邻或适当分布的全局访存访问被硬件组合为较少内存事务的行为。 |
+| 2 | Coalesced Access | 合并访问 |  | 使 warp 的全局内存请求高效映射到少量存储事务的访问模式。 |
+| 3 | Strided Access | 跨步访问 |  | 相邻逻辑线程或元素以大于一个元素的间隔访问内存的模式。 |
+| 4 | Uncoalesced Access | 非合并访问 |  | 因地址分布分散导致实际内存事务远多于有效数据需要的访问模式。 |
+| 5 | Memory Bandwidth | 内存带宽 |  | 存储系统单位时间可传输的数据量。 |
+| 6 | Effective Bandwidth | 有效带宽 |  | 根据程序实际有用数据字节数与运行时间计算出的数据吞吐率。 |
+| 7 | Peak Bandwidth | 峰值带宽 |  | 按硬件规格估计的理论最大数据传输速率。 |
+| 8 | Bandwidth Utilization | 带宽利用率 |  | 测得数据吞吐与某个峰值或参考带宽的比例。 |
+| 9 | Memory Latency | 内存访问延迟 |  | 从发出内存请求到相关数据可用于后续计算的时间。 |
+| 10 | Cache Hit Rate | 缓存命中率 |  | 访问请求在指定缓存层找到所需数据的比例。 |
+| 11 | Cache Line | 缓存行 |  | 缓存系统存储与管理的一段连续数据基本单元。 |
+| 12 | Cache Residency | 缓存驻留 |  | 特定数据在某级缓存中保持可供命中的状态。 |
+| 13 | L2 Persistence | L2 缓存持留 |  | 在支持硬件上为特定工作集设置 L2 缓存保留倾向的优化能力。 |
+| 14 | Read-only Data Cache | 只读数据缓存 |  | 用于加速只读访存路径的数据缓存机制，行为依 GPU 架构变化。 |
+| 15 | Global Load Efficiency | 全局加载效率 |  | 衡量有用加载字节与实际传输开销关系的一类分析指标。 |
+| 16 | Memory Throughput | 内存吞吐率 |  | 统计期间通过指定内存层级的实际读写字节速率。 |
+| 17 | Address Calculation | 地址计算 |  | 为全局或共享内存访存计算指针偏移和索引的指令操作。 |
+| 18 | Vectorized Load | 向量化加载 |  | 单条指令从内存读取多个连续标量元素的访问模式。 |
+| 19 | Vectorized Store | 向量化写入 |  | 单条指令向内存存放多个连续标量元素的访问模式。 |
+| 20 | Data Reuse | 数据复用 |  | 对已加载数据执行多次计算以减少重复访存的优化策略。 |
+| 21 | Operational Intensity | 运算强度 |  | 对特定工作负载的每字节数据移动所执行运算数量，常用于性能建模。 |
+| 22 | Memory Prefetch | 内存预取 |  | 在使用数据前提前发起或建议访存以隐藏后续延迟的策略。 |
+| 23 | Warp Access Pattern | 线程束访问模式 |  | 同一 warp 中各 lane 对地址空间的相对访问关系。 |
+| 24 | Load Balancing Across Warps | 线程束间负载均衡 |  | 在 warp 之间合理分配数据和工作以降低等待与尾部不均衡。 |
+| 25 | Cache Thrashing | 缓存抖动 |  | 工作集互相驱逐导致同一数据被反复从较慢存储层重新加载的现象。 |
+
+## 11. 数值精度、张量计算与数学运算
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Floating-point Precision | 浮点精度 |  | 浮点格式可表示数值细节与舍入误差的能力。 |
+| 2 | FP64 | 双精度浮点 | FP64 | 通常遵循 IEEE 754 binary64 格式的 64 位浮点数。 |
+| 3 | FP32 | 单精度浮点 | FP32 | 通常遵循 IEEE 754 binary32 格式的 32 位浮点数。 |
+| 4 | FP16 | 半精度浮点 | FP16 | 通常遵循 IEEE 754 binary16 格式的 16 位浮点数。 |
+| 5 | BF16 | 脑浮点 16 位格式 | BF16 | 指数位数较宽、尾数字段较短的 16 位浮点格式。 |
+| 6 | TF32 | TensorFloat-32 格式 | TF32 | 某些 NVIDIA Tensor Core 路径采用的混合精度运算格式。 |
+| 7 | FP8 | 8 位浮点 | FP8 | 用于部分 AI 加速硬件、具有多种指数和尾数配置的 8 位浮点格式。 |
+| 8 | Mixed Precision | 混合精度 |  | 在同一计算中组合不同数值精度以平衡速度、内存与误差的方法。 |
+| 9 | Automatic Mixed Precision | 自动混合精度 | AMP | 自动选择部分运算精度并辅助数值稳定性的训练或推理技术。 |
+| 10 | Loss Scaling | 损失缩放 |  | 训练中通过缩放损失和梯度减轻低精度梯度下溢的策略。 |
+| 11 | Floating-point Rounding | 浮点舍入 |  | 将精确实数运算结果映射到可表示浮点格式数值的过程。 |
+| 12 | Round-to-nearest-even | 最近偶数舍入 |  | 当结果恰在两个可表示数中间时选择尾数最低位为偶数的舍入规则。 |
+| 13 | Floating-point Overflow | 浮点上溢 |  | 数值超出格式可表示的有限最大范围的情况。 |
+| 14 | Floating-point Underflow | 浮点下溢 |  | 极小数的运算结果进入非规格化区或被舍入为零的现象。 |
+| 15 | Denormalized Number | 非规格化浮点数 | Subnormal | 低于最小正规格化数的可表示非零浮点数。 |
+| 16 | Flush-to-zero | 非规格化值归零 | FTZ | 在指定运算模式中把某些极小浮点结果视为零的行为。 |
+| 17 | Fused Multiply-add | 融合乘加 | FMA | 执行乘法与加法并按规定只进行一次最终舍入的算术操作。 |
+| 18 | Fast Math | 快速数学模式 |  | 允许部分精度或边界语义取舍以优化设备数学计算的编译配置。 |
+| 19 | Tensor Core | 张量核心 | Tensor Core | 支持高吞吐矩阵乘累加等张量运算的 NVIDIA GPU 计算单元。 |
+| 20 | Warp Matrix Multiply Accumulate | 线程束矩阵乘累加 | WMMA | 在 warp 协作层面执行分块矩阵乘累加的 CUDA 接口与操作。 |
+| 21 | Matrix Multiply Accumulate | 矩阵乘累加 | MMA | 将矩阵乘积加到累加矩阵的核心张量算术操作。 |
+| 22 | Accumulator | 累加器 |  | 存储部分求和或矩阵乘加中间结果的寄存器或计算状态。 |
+| 23 | Numerical Stability | 数值稳定性 |  | 算法对舍入、截断和有限精度误差的控制能力。 |
+| 24 | Reduction Error | 归约误差 |  | 浮点求和或其他聚合中因执行顺序与舍入产生的误差。 |
+| 25 | Determinism | 确定性 |  | 在指定输入及运行条件下重复执行产生相同结果的性质，需明确浮点与并发限制。 |
+
+## 12. 编译器、PTX、SASS 与设备代码
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | NVCC | NVIDIA CUDA 编译器驱动 | nvcc | 协调主机编译器与设备编译工具处理 CUDA C++ 源文件的工具。 |
+| 2 | CUDA Source File | CUDA 源文件 | .cu | 通常包含 CUDA C++ 主机与设备代码的源文件。 |
+| 3 | Host Compiler | 主机编译器 |  | 对 CUDA 程序中主机侧 C++ 代码进行编译的编译器。 |
+| 4 | Device Compiler | 设备编译器 |  | 将 CUDA 设备代码转换为中间表示或机器指令的编译组件。 |
+| 5 | Compilation Trajectory | 编译流水线 |  | CUDA 源码经预处理、分离、优化和代码生成得到目标程序的流程。 |
+| 6 | PTX | 并行线程执行中间表示 | PTX | NVIDIA 定义的用于描述设备并行指令和执行语义的虚拟 ISA。 |
+| 7 | SASS | 流处理器汇编指令 | SASS | 面向具体 NVIDIA GPU 架构执行的机器指令及其反汇编表示。 |
+| 8 | Cubin | CUDA 二进制代码对象 | cubin | 包含针对特定 GPU 架构编译的设备机器代码的文件形式。 |
+| 9 | Fat Binary | 多架构设备二进制 | Fatbin | 可以打包多个 GPU 架构代码版本及 PTX 的 CUDA 设备代码容器。 |
+| 10 | Just-in-time Compilation | 即时编译 | JIT | 在部署或运行时将 PTX 等表示编译为目标 GPU 可执行代码的机制。 |
+| 11 | Ahead-of-time Compilation | 预先编译 | AOT | 在程序部署之前提前生成目标硬件设备二进制的方式。 |
+| 12 | NVRTC | NVIDIA 运行时编译库 | NVRTC | 支持程序运行期间编译 CUDA C++ 源代码的库。 |
+| 13 | nvJitLink | NVIDIA 即时链接库 | nvJitLink | 在运行时或动态构建流程中链接设备代码的 CUDA 库。 |
+| 14 | Device Linker | 设备链接器 |  | 将不同编译单元中的设备函数及对象连接为可执行设备映像的工具。 |
+| 15 | Relocatable Device Code | 可重定位设备代码 | RDC | 允许跨 CUDA 编译单元链接设备函数与全局符号的编译形式。 |
+| 16 | CUDA Module | CUDA 模块 |  | Driver API 加载的设备代码及其函数、全局变量等符号集合。 |
+| 17 | Module Loading | 模块加载 |  | 将 PTX 或二进制设备代码加载进可执行 CUDA 上下文的操作。 |
+| 18 | Compute Target | 虚拟计算目标 |  | 指定设备代码编译时所假设特性与 PTX 目标等级的配置。 |
+| 19 | SM Target | SM 机器架构目标 |  | 指定要生成对应 GPU 架构机器代码的编译目标。 |
+| 20 | -gencode Flag | 代码生成选项 | -gencode | 为 nvcc 指定生成虚拟或实际架构代码变体的编译标志。 |
+| 21 | -arch Flag | 架构目标选项 | -arch | 为 CUDA 编译指定虚拟架构或受支持简化目标的参数。 |
+| 22 | Device Debug Symbols | 设备调试符号 |  | 为 GPU 二进制附带源位置与变量映射等调试信息的元数据。 |
+| 23 | Line Information | 行号映射信息 |  | 帮助性能和调试工具把设备机器指令对应回源码行的信息。 |
+| 24 | Device Link-time Optimization | 设备链接时优化 | LTO | 在设备代码链接阶段跨编译单元执行优化的技术。 |
+| 25 | CUDA ABI | CUDA 二进制接口约定 | ABI | 定义相关设备代码调用、参数传递与二进制互操作规则的约定。 |
+
+## 13. Runtime API、Driver API 与错误处理
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | CUDA Context | CUDA 上下文 | Context | 保存设备执行状态、模块、内存与其他资源关联关系的运行环境抽象。 |
+| 2 | Primary Context | 主上下文 |  | 由 CUDA Runtime 通常复用并由 Driver API 管理的每设备上下文机制。 |
+| 3 | Context Switching | 上下文切换 |  | 在不同设备上下文之间切换当前执行与资源管理状态的过程。 |
+| 4 | cudaGetDeviceCount() | 查询 CUDA 设备数 | cudaGetDeviceCount | 返回当前环境可用 CUDA 设备数量的 Runtime API。 |
+| 5 | cudaSetDevice() | 选择当前设备 | cudaSetDevice | 在调用主机线程中设置当前 CUDA 设备的运行时函数。 |
+| 6 | cudaGetDeviceProperties() | 查询设备属性 | cudaGetDeviceProperties | 获取设备线程限制、内存与硬件能力等属性的 Runtime API。 |
+| 7 | cudaDeviceSynchronize() | 设备同步函数 | cudaDeviceSynchronize | 等待当前设备上下文相关先前工作完成并报告部分异步错误的 API。 |
+| 8 | cudaStreamCreate() | 创建 CUDA 流 | cudaStreamCreate | 创建可用于设备任务排序与并发执行的流对象的 Runtime API。 |
+| 9 | cudaStreamDestroy() | 销毁 CUDA 流 | cudaStreamDestroy | 释放流对象资源，已提交的异步操作仍按 API 语义处理的函数。 |
+| 10 | cudaEventCreate() | 创建 CUDA 事件 | cudaEventCreate | 创建用于记录进度或测量时间的事件对象的函数。 |
+| 11 | cudaEventElapsedTime() | 计算 CUDA 事件耗时 | cudaEventElapsedTime | 根据两个已记录的事件返回近似毫秒间隔的 API。 |
+| 12 | cudaGetLastError() | 获取并清除最后 CUDA 错误 | cudaGetLastError | 返回并重置当前主机线程维护的 Runtime 最近错误状态的 API。 |
+| 13 | cudaPeekAtLastError() | 查看最后 CUDA 错误 | cudaPeekAtLastError | 返回最近 Runtime 错误状态但不清除该状态的函数。 |
+| 14 | cudaError_t | CUDA 错误码类型 | cudaError_t | 表示 CUDA Runtime API 调用状态的枚举类型。 |
+| 15 | cudaSuccess | CUDA 成功状态 | cudaSuccess | 表示 Runtime API 操作返回成功的状态值。 |
+| 16 | CUDA_ERROR_INVALID_VALUE | CUDA Driver 参数错误 | CUDA_ERROR_INVALID_VALUE | Driver API 中表示传入参数无效的错误码之一。 |
+| 17 | CUresult | Driver API 返回状态类型 | CUresult | 表示 CUDA Driver API 操作成功或失败状态的枚举类型。 |
+| 18 | CUdevice | Driver API 设备句柄 | CUdevice | 标识 CUDA Driver API 中特定设备的整数句柄类型。 |
+| 19 | CUcontext | Driver API 上下文句柄 | CUcontext | 表示 CUDA 上下文对象的 Driver API 句柄。 |
+| 20 | CUmodule | Driver API 模块句柄 | CUmodule | 标识已加载设备模块的 Driver API 不透明句柄。 |
+| 21 | CUfunction | Driver API 核函数句柄 | CUfunction | 表示模块中可调用设备 Kernel 的不透明函数句柄。 |
+| 22 | cuLaunchKernel() | Driver API 核函数启动 | cuLaunchKernel | 使用显式网格、块尺寸及参数等信息提交 Kernel 的 Driver API。 |
+| 23 | cuModuleLoad() | 加载设备代码模块 | cuModuleLoad | 从文件加载 CUDA 模块的 Driver API。 |
+| 24 | cuCtxSetCurrent() | 设置当前 CUDA 上下文 | cuCtxSetCurrent | 将指定上下文设置为当前主机线程所用上下文的 Driver API。 |
+| 25 | Runtime–Driver Interoperability | 运行时与驱动接口互操作 |  | 在同一程序中协调 CUDA Runtime API 和 Driver API 管理资源与上下文的能力。 |
+
+## 14. CUDA 数值库、算法库与通信框架
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | cuBLAS | CUDA 基础线性代数库 | cuBLAS | 在 NVIDIA GPU 上提供 BLAS 级向量、矩阵运算的数值库。 |
+| 2 | cuBLASLt | CUDA 轻量矩阵乘法库 | cuBLASLt | 提供灵活矩阵乘法描述、算法选择与部分融合选项的 CUDA 库。 |
+| 3 | cuDNN | CUDA 深度神经网络库 | cuDNN | 提供卷积、归一化、注意力等深度学习高性能算子的 NVIDIA 库。 |
+| 4 | cuFFT | CUDA 快速傅里叶变换库 | cuFFT | 为 GPU 上一维及多维 FFT 计算提供实现的 CUDA 库。 |
+| 5 | cuSPARSE | CUDA 稀疏矩阵计算库 | cuSPARSE | 提供稀疏矩阵乘法与稀疏线性代数操作的 CUDA 数值库。 |
+| 6 | cuSOLVER | CUDA 线性代数求解库 | cuSOLVER | 提供稠密和稀疏矩阵分解与线性系统求解功能的 CUDA 库。 |
+| 7 | cuRAND | CUDA 随机数生成库 | cuRAND | 在 GPU 或主机接口上提供伪随机及部分准随机序列生成能力的库。 |
+| 8 | NCCL | NVIDIA 集合通信库 | NCCL | 优化多个 GPU 或多个节点间 AllReduce 等集合通信操作的库。 |
+| 9 | NVSHMEM | NVIDIA 共享内存编程库 | NVSHMEM | 提供跨 GPU 对称内存和单边通信语义的并行编程库。 |
+| 10 | Thrust | Thrust 并行算法库 | Thrust | 提供类似 C++ STL 的并行容器和算法模板的 CUDA 生态库。 |
+| 11 | CUB | CUDA 并行算法原语库 | CUB | 为设备、线程块和线程束层级提供归约、扫描、排序等可复用并行原语的模板库。 |
+| 12 | NPP | NVIDIA 性能原语库 | NPP | 提供图像处理、信号处理和其他基础数值运算的 GPU 优化函数。 |
+| 13 | CUTLASS | CUDA 矩阵乘法模板库 | CUTLASS | 面向 GEMM 和相关算子的可组合 CUDA C++ 模板组件集合。 |
+| 14 | cuTENSOR | CUDA 张量线性代数库 | cuTENSOR | 为张量收缩、置换与归约等操作提供高性能实现的 CUDA 库。 |
+| 15 | cuFile | GPU Direct Storage 文件接口 | cuFile | 面向 GPUDirect Storage 数据通路提供文件 I/O 能力的 API。 |
+| 16 | cuBLAS Handle | cuBLAS 库句柄 | cublasHandle_t | 保存 cuBLAS 运行状态、流及其他配置的库句柄。 |
+| 17 | cuDNN Handle | cuDNN 库句柄 | cudnnHandle_t | 保存 cuDNN 调用上下文与相关配置的不透明句柄。 |
+| 18 | GEMM | 通用矩阵乘法 | GEMM | 计算 C←αAB+βC 及其变体的基础线性代数操作。 |
+| 19 | Batched GEMM | 批量矩阵乘法 |  | 在一次调用中执行多个独立小矩阵乘法的运算模式。 |
+| 20 | Strided Batched GEMM | 固定步长批量矩阵乘法 |  | 按固定内存步长定位批内各矩阵的 GEMM 接口类型。 |
+| 21 | AllReduce | 全归约 | AllReduce | 把多个参与 GPU 的数值按操作合并并将相同结果分发给所有参与者的集体通信。 |
+| 22 | ReduceScatter | 规约分散 | ReduceScatter | 先合并各参与者数据，再把规约结果的不同分块分发至各参与者的通信操作。 |
+| 23 | AllGather | 全收集 | AllGather | 把每个参与者的局部数据复制并拼接提供给全部参与者的通信原语。 |
+| 24 | Library Workspace | 库工作空间 |  | 数值库为执行选定算法临时申请的辅助存储区域。 |
+| 25 | Autotuning | 自动性能调优 |  | 根据输入规模和硬件实测或启发式选择最适算子算法或配置的过程。 |
+
+## 15. 性能剖析、调试与正确性验证
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Nsight Systems | Nsight Systems 系统性能分析器 |  | 展示 CPU、GPU、流、传输及系统时间线的 NVIDIA 采样与追踪工具。 |
+| 2 | Nsight Compute | Nsight Compute 内核分析器 |  | 提供 GPU Kernel 指标、硬件计数器及源码级性能分析的 NVIDIA 工具。 |
+| 3 | CUDA-GDB | CUDA GDB 调试器 |  | 支持在 CUDA GPU 上检查线程状态、断点与设备代码的调试工具。 |
+| 4 | Compute Sanitizer | CUDA 计算检测工具 |  | 用于发现部分设备内存错误、竞争条件和同步缺陷的 NVIDIA 工具集合。 |
+| 5 | memcheck | CUDA 内存检查器 | memcheck | Compute Sanitizer 中检测越界、未对齐和部分非法访问的工具。 |
+| 6 | racecheck | CUDA 共享内存竞争检查器 | racecheck | Compute Sanitizer 中检测共享内存数据访问危险的工具。 |
+| 7 | initcheck | CUDA 初始化检查器 | initcheck | Compute Sanitizer 中检测设备全局内存未初始化读取的工具。 |
+| 8 | synccheck | CUDA 同步检查器 | synccheck | Compute Sanitizer 中检测部分同步原语使用错误的工具。 |
+| 9 | GPU Profiling | GPU 性能剖析 |  | 通过设备活动事件、计数器和采样分析 Kernel 性能瓶颈的过程。 |
+| 10 | Kernel Timeline | 核函数时间线 |  | 按时间显示各流上的 Kernel、复制及同步操作的可视化记录。 |
+| 11 | NVTX | NVIDIA 工具扩展接口 | NVTX | 允许程序插入命名范围和标记，辅助性能工具关联应用阶段的注释 API。 |
+| 12 | CUPTI | CUDA 分析工具接口 | CUPTI | 提供设备执行活动、硬件性能计数器与事件采集能力的底层接口。 |
+| 13 | PC Sampling | 程序计数器采样 | PC Sampling | 按执行采样点统计设备指令位置及停顿信息的分析方法。 |
+| 14 | Source Correlation | 源码关联 |  | 把 GPU 执行指标映射到具体源码行或 SASS 指令的性能分析功能。 |
+| 15 | Hardware Counter | 硬件性能计数器 |  | 由 GPU 记录缓存事务、指令发射及其他执行事件的统计寄存器或指标。 |
+| 16 | Warp Stall Reason | 线程束停顿原因 |  | Nsight 等工具将 warp 无法发射指令的情况归类的指标。 |
+| 17 | Memory Access Error | 内存访问错误 |  | 设备代码访问非法、未对齐或不允许的内存地址的缺陷。 |
+| 18 | Illegal Memory Access | 非法内存访问 |  | Kernel 对无效设备地址或受保护区域进行内存操作的错误。 |
+| 19 | Race Detection | 竞态检测 |  | 通过动态检测或分析寻找并发内存访问冲突的过程。 |
+| 20 | Synchronization Hazard | 同步危险 |  | 因缺少必要屏障、参与掩码不匹配或错误时序产生的并发风险。 |
+| 21 | Asynchronous Error Reporting | 异步错误报告 |  | 设备故障可能在后续同步或 API 调用时才被观察到的错误传播机制。 |
+| 22 | cuda-memcheck | 旧版 CUDA 内存检查工具 | cuda-memcheck | NVIDIA 较早提供的设备内存错误检测工具，后由 Compute Sanitizer 替代。 |
+| 23 | Occupancy Analysis | 占用率分析 |  | 检查寄存器、共享内存和线程资源如何限制 SM 活跃 warp 的过程。 |
+| 24 | Microbenchmark | 微基准测试 |  | 隔离单一 Kernel 或硬件操作、测量其延迟或吞吐的实验。 |
+| 25 | Performance Regression | 性能回归 |  | 软件变更后在可比负载及环境条件下出现吞吐下降或延迟增加的现象。 |
+
+## 16. 多 GPU、互连、部署与前沿机制
+
+| # | English term | 中文译名 | Abbr. | 核心定义 |
+|---:|---|---|---|---|
+| 1 | Multi-GPU Programming | 多 GPU 编程 |  | 协调多个 GPU 设备分配计算、同步与数据通信的编程方式。 |
+| 2 | GPU Peer Access | GPU 对等访问 |  | 在支持的互连与权限配置下，一个 GPU 可访问另一 GPU 的设备内存。 |
+| 3 | cudaDeviceCanAccessPeer() | 检查设备对等访问 | cudaDeviceCanAccessPeer | 查询两个 GPU 是否支持直接对等内存访问的 Runtime API。 |
+| 4 | cudaDeviceEnablePeerAccess() | 启用对等设备访问 | cudaDeviceEnablePeerAccess | 在支持的设备与上下文条件下建立设备对等访问能力的 API。 |
+| 5 | NVLink | NVIDIA 高速互连 | NVLink | 用于 GPU 与 GPU 或其他支持设备之间高速数据传输的互连技术。 |
+| 6 | NVSwitch | NVIDIA GPU 交换互连 | NVSwitch | 构建多 GPU 高带宽互连拓扑的专用交换芯片或系统组件。 |
+| 7 | PCI Express | 外围组件高速互连 | PCIe | 主机与 GPU 等外设之间进行高速数据通信的标准总线。 |
+| 8 | GPUDirect RDMA | GPU 直接远程内存访问 | GPUDirect RDMA | 在受支持硬件及驱动下使网卡等设备直接访问 GPU 内存的数据通路技术。 |
+| 9 | GPUDirect Storage | GPU 直接存储 | GDS | 在支持平台上减少存储 I/O 经 CPU 缓冲开销的 GPU 数据传输方案。 |
+| 10 | Multi-instance GPU | 多实例 GPU | MIG | 在支持 GPU 上将部分计算、缓存和显存资源隔离划为多个实例的功能。 |
+| 11 | Multi-process Service | 多进程服务 | MPS | 用于改善多个 CUDA 进程共享 GPU 执行资源的 NVIDIA 服务。 |
+| 12 | CUDA-aware MPI | CUDA 感知消息传递接口 | CUDA-aware MPI | 支持将 GPU 设备缓冲区作为 MPI 通信参数的消息传递实现能力。 |
+| 13 | Inter-GPU Communication | GPU 间通信 |  | 不同 GPU 之间传输数据、同步或交换部分结果的操作。 |
+| 14 | Collective Communication | 集合通信 |  | 多个参与 GPU 联合执行广播、归约、收集或散播等通信操作。 |
+| 15 | Ring AllReduce | 环形全归约 |  | 按逻辑环拓扑执行分块规约和数据分发的 AllReduce 算法。 |
+| 16 | Communication–Computation Overlap | 通信与计算重叠 |  | 同时推进通信和可独立计算以缩短整体执行时间的技术。 |
+| 17 | GPU Topology | GPU 拓扑 |  | 描述不同 GPU、CPU、网卡和互连之间连接关系及带宽层级的结构。 |
+| 18 | NUMA Affinity | 非统一内存访问亲和性 | NUMA | 将主机线程和内存分配安排到更接近目标 GPU 的 CPU 内存域的策略。 |
+| 19 | GPU Virtualization | GPU 虚拟化 |  | 将物理 GPU 计算资源以共享或隔离的逻辑设备形式呈现给多个工作负载。 |
+| 20 | CUDA Container Runtime | CUDA 容器运行环境 |  | 在容器中暴露 GPU 设备和必要驱动库以运行 CUDA 应用的部署配置。 |
+| 21 | NVIDIA Container Toolkit | NVIDIA 容器工具包 |  | 支持容器运行时配置 NVIDIA GPU 设备、驱动能力及可见性的组件集合。 |
+| 22 | GPU Device Plugin | GPU 设备插件 |  | 在 Kubernetes 等编排系统中向调度器公布 GPU 资源并分配给工作负载的插件。 |
+| 23 | CUDA Compatibility Matrix | CUDA 兼容性矩阵 |  | 用于核对 GPU 架构、驱动和 Toolkit 组合是否受到支持的版本关系。 |
+| 24 | GPU Fault Isolation | GPU 故障隔离 |  | 限制设备错误、进程崩溃或资源争用对其他 GPU 工作负载影响的机制。 |
+| 25 | CUDA Deployment Validation | CUDA 部署验证 |  | 检查驱动、设备可见性、Kernel 功能与性能基线是否满足生产运行要求的流程。 |
+
+## 关键概念辨析
+
+| 对比主题 | 技术要点 |
+|---|---|
+| CUDA Thread、Warp 与 Thread Block | Thread 是逻辑执行实例；warp 通常由 32 条相邻线程组成；block 是可共享内存并执行块内同步的线程集合，三者不是同一调度层级。 |
+| SM、CUDA Core 与 Tensor Core | SM 是包含多类计算单元与片上资源的硬件执行单元；CUDA Core 面向部分标量算术；Tensor Core 主要加速特定矩阵运算。 |
+| Global、Local 与 Shared Memory | global 具有设备级可寻址语义；local 为线程私有但通常位于设备 DRAM；shared 为块内协作的片上存储。 |
+| Occupancy 与 GPU 利用率 | occupancy 衡量驻留 warp 相对硬件上限的比例，不等于有用算术吞吐；高占用率并非所有 Kernel 的最优目标。 |
+| __syncthreads() 与 __syncwarp() | 前者协调整个线程块中的合法参与线程，后者针对显式掩码指定的 warp 成员；不能任意互相替代。 |
+| 原子操作与内存栅栏 | 原子操作为指定位置提供不可分割的操作及所选顺序语义；内存栅栏约束其他访存的可见顺序，本身不充当线程屏障。 |
+| cudaMemcpy 与 cudaMemcpyAsync | 两者的主机阻塞与设备流行为取决于传输方向、存储类型及使用模式；Async 名称并不保证传输与计算一定重叠。 |
+| Pinned Memory 与 Unified Memory | pinned 是不可换出的主机页，常支持高效 DMA；Unified Memory 允许 CPU/GPU 协同访问托管数据并由运行时处理迁移。 |
+| Stream 与 CUDA Graph | Stream 为线性有序任务提交序列；Graph 显式声明节点依赖以复用调度结构并降低重复发射开销。 |
+| PTX、SASS 与 Cubin | PTX 是虚拟设备指令表示，SASS 是具体 GPU 机器指令；cubin 包含目标架构已编译的设备代码。 |
+| FP16、BF16、TF32 与 FP32 | 它们的指数位与尾数精度不同，TF32 尤其是特定 Tensor Core 计算模式而非通用 32 位存储数据类型的同义词。 |
+| Memory Coalescing 与 Bank Conflict | coalescing 针对 warp 的全局访存事务效率；bank conflict 针对共享内存存储体竞争，优化对象不同。 |
+| cudaMalloc 与 cudaMallocAsync | 前者执行普通设备分配；后者把内存分配与流顺序关联并可由内存池复用资源，正确性依赖分配使用与释放的顺序。 |
+| Nsight Systems 与 Nsight Compute | Nsight Systems 观察端到端 CPU/GPU 时序与并发，Nsight Compute 深入分析单个 Kernel 的硬件指标与执行瓶颈。 |
+
+## 中等难度技术面试题
+
+以下回答为可追溯的答题思路，具体实现仍以计算能力、运行时和设备指标为准。
+
+### 面试 1：为何将线程块大小设为 1024 不一定比 256 更快？
+
+**参考答案：**更大块可能因寄存器、共享内存和驻留块数限制降低并发；还需考虑工作量、边界浪费和硬件延迟隐藏，必须基于真实负载测量。
+
+### 面试 2：同一 warp 的线程访问连续 float 数组为什么往往更高效？
+
+**参考答案：**相邻 lane 的地址若对齐且集中，可通过较少内存事务服务更多有效字节；具体事务粒度依 GPU 架构。
+
+### 面试 3：Shared Memory 的访问一定比 Global Memory 快吗？
+
+**参考答案：**不一定。shared 需要数据搬运与同步，也可能出现 bank 冲突；当数据复用不足或占用率降低时总时间反而增加。
+
+### 面试 4：为什么 cudaMemcpyAsync 不总能与计算重叠？
+
+**参考答案：**取决于是否使用支持的主机内存、不同流的依赖、GPU 复制引擎及设备能力；同流顺序或隐式同步也会阻止重叠。
+
+### 面试 5：如何判断一个 Kernel 是计算瓶颈还是访存瓶颈？
+
+**参考答案：**用 Nsight Compute 分析相关吞吐与停顿，结合 Roofline 的算术强度、峰值内存带宽和计算吞吐估计性能上界。
+
+### 面试 6：为什么原子加法不能替代 __syncthreads()？
+
+**参考答案：**原子加只保护指定地址的读改写操作，不表示全部线程已完成其他写入；块内阶段性协作需要适当屏障或明确同步协议。
+
+### 面试 7：为什么寄存器溢出会影响 CUDA Kernel 性能？
+
+**参考答案：**溢出临时值通常转到 local memory，该空间一般经设备 DRAM 与缓存访问，可能增加额外访存并影响吞吐。
+
+### 面试 8：CUDA Graph 适用于哪类工作负载？
+
+**参考答案：**重复提交结构相似且任务依赖稳定的多 Kernel 工作流，可减少主机启动开销；需要处理图更新和捕获限制。
+
+### 面试 9：如果换成新 Embedding 或矩阵数据类型，CUDA 精度正确性怎样验证？
+
+**参考答案：**建立高精度参考结果、误差容忍度和输入边界测试，记录混合精度、归约次序和硬件架构；不能只依赖 bitwise 相等。
+
+### 面试 10：设备端发生非法访问却在下一次 API 调用才报错，为什么？
+
+**参考答案：**CUDA 工作通常异步提交，设备执行错误可能延迟到同步或后续 Runtime API 被检查时才向主机报告。
+
+## 中等难度考试题与解析
+
+### 考试 1：一维网格 80 个 block、每 block 256 个线程，理论总线程数是多少？
+
+**解析：**80×256=20,480 个线程。实际只有通过边界判断且被分配数据的线程会执行有效工作。
+
+### 考试 2：对于 n=1,000,000、每 block 256 线程，使用向上取整启动至少需要多少个 block？
+
+**解析：**ceil(1,000,000/256)=3,907 个 block；网格可能包含 3,907×256=1,000,192 个线程。
+
+### 考试 3：一个 block 共有 256 个线程，warp size 为 32，包含多少个 warp？
+
+**解析：**256/32=8 个 warp。
+
+### 考试 4：每个 block 占用 48 KiB shared memory，SM 可用于此资源的预算为 96 KiB，单由这一资源最多驻留几个 block？
+
+**解析：**floor(96/48)=2 个；实际还受寄存器、线程数量和架构驻留块上限约束。
+
+### 考试 5：访存 Kernel 处理 1 GiB 有效数据，耗时 20 ms，有效带宽约是多少？
+
+**解析：**1 GiB/0.02 s≈53.69 GB/s（十进制 GB/s），需说明字节单位及读写总量假设。
+
+### 考试 6：一段 Kernel 进行 4×10^9 次 FLOP，搬运 2×10^9 字节，其算术强度是多少？
+
+**解析：**I=4×10^9/2×10^9=2 FLOP/byte。
+
+### 考试 7：某 Kernel 运行 5 ms，CUDA Graph 优化后 4 ms，吞吐相同，速度提升倍数是多少？
+
+**解析：**5/4=1.25×；运行时间缩短 20%。
+
+### 考试 8：对于 3,200 个元素、128 线程/block、grid-stride 循环，不考虑循环体，至少需要几个 block 覆盖每个元素一次？
+
+**解析：**ceil(3,200/128)=25；但 grid-stride 也允许更少 block 通过多次迭代处理全部元素。
+
+### 考试 9：某 warp 中 32 个线程各计算一份浮点结果，并共同累加到一个全局位置，应使用什么避免数据竞争？
+
+**解析：**可以使用与该类型和架构兼容的原子累加，或先 warp/block 归约再由一个线程执行原子更新。
+
+### 考试 10：一个 GPU 上同时运行两个流，是否可以直接断言两个 Kernel 一定并行执行？
+
+**解析：**不能。流允许潜在并发，但实际重叠还取决于资源、依赖、隐式同步及调度机制。
+
+## NVIDIA 官方技术来源
+
+参考资料以 NVIDIA 官方指南、API 参考和工具文档为主，链接并不表示 NVIDIA 参与审稿或对全部译名作出认可。
+
+1. [NVIDIA CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
+2. [NVIDIA CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/)
+3. [CUDA Runtime API Reference](https://docs.nvidia.com/cuda/cuda-runtime-api/)
+4. [CUDA Driver API Reference](https://docs.nvidia.com/cuda/cuda-driver-api/)
+5. [Parallel Thread Execution ISA](https://docs.nvidia.com/cuda/parallel-thread-execution/)
+6. [Nsight Compute Profiling Guide](https://docs.nvidia.com/nsight-compute/ProfilingGuide/)
+7. [Nsight Systems Documentation](https://docs.nvidia.com/nsight-systems/)
+8. [Compute Sanitizer Documentation](https://docs.nvidia.com/compute-sanitizer/)
+9. [NVIDIA CUDA Libraries](https://developer.nvidia.com/gpu-accelerated-libraries)
+10. [NCCL User Guide](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/)
+11. [NVIDIA CUTLASS Documentation](https://docs.nvidia.com/cutlass/)
+12. [NVIDIA CUDA Compatibility Guide](https://docs.nvidia.com/deploy/cuda-compatibility/)
+
+## 版本、审稿与维护
+
+- Canonical source：`data/cuda/chapters/*.tsv`，字段为 `English|中文|abbr|definition`。
+- 编译输出：`data/cuda.tsv`、`glossaries/cuda.md`、`pdf/cuda.pdf` 及对应 `docs/` 镜像。
+- 单学科可复现校验：`node scripts/render_cuda.mjs --check`。
+- 本册为独立出版的中英术语手册，**尚未纳入全站搜索索引**，不代表 400 篇深度 Wiki。

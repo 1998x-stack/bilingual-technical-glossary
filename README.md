@@ -64,6 +64,24 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 **This is a standalone handbook, NOT part of the current indexed-domain and term totals.**
 
+### Mathematical Statistics / 数理统计 (standalone; not yet indexed)
+
+**400 original bilingual terms in 16 chapters**, covering probability models, sufficient statistics, estimation, confidence regions, hypothesis testing, asymptotics, likelihood inference, regression/ANOVA, nonparametrics, resampling, Bayesian inference and applied modern statistics. Also includes **14 topic contrasts, 12 medium interview questions, 12 exam questions with worked answers** and authoritative bibliographic references. [Markdown](glossaries/mathematical-statistics.md) · [PDF](pdf/mathematical-statistics.pdf) · [TSV](data/mathematical-statistics.tsv) · [Sources & review notes](data/mathematical-statistics/SOURCES.md). Rebuild verification: `node scripts/render_mathematical_statistics.mjs --check`. **This standalone publication is not included in the indexed-domain or term totals above.**
+
+### Retrieval-Augmented Generation / RAG (standalone, not yet indexed)
+
+**350 original bilingual terms in 14 chapters.** Covers knowledge sources, document ingestion and chunking, embeddings, BM25, ANN/vector databases, hybrid and late-interaction ranking, query rewriting, evidence citations, Agentic RAG, GraphRAG, RAGAS/ARES evaluation, data security and production operations. Includes **14 concept contrasts, 10 medium interview questions, 10 medium exam questions with solutions** and primary references. [Markdown](glossaries/rag.md) · [PDF](pdf/rag.pdf) · [TSV](data/rag.tsv) · [Editorial sources](data/rag/SOURCES.md). To verify deterministic exports: `node scripts/render_rag.mjs --check`. **Not yet included in the indexed-domain or term counts above.**
+
+### CUDA / CUDA GPU Programming (standalone; not yet indexed)
+
+**400 original bilingual terms across 16 chapters**, covering the CUDA programming model, grids/blocks/warps, Kernel launch, memory hierarchy, synchronization and atomic operations, Stream/CUDA Graph, managed memory, occupancy and Roofline, memory coalescing, mixed precision and Tensor Cores, nvcc/PTX/SASS, Runtime/Driver APIs, cuBLAS/cuDNN/NCCL/CUTLASS, Nsight tools and multi-GPU deployment. Includes **14 concept contrasts, 10 medium-level interview Q&As and 10 medium-level exam problems with worked solutions**. [Markdown](glossaries/cuda.md) · [PDF](pdf/cuda.pdf) · [TSV](data/cuda.tsv) · [NVIDIA official references / editorial notes](data/cuda/SOURCES.md). Deterministic artifact verification: `node scripts/render_cuda.mjs --check`. **This independent handbook is not included in indexed subject or term counts.**
+
+### Database Systems / 数据库系统 (standalone; not yet indexed)
+
+**400 original bilingual terms in 16 chapters.** This DBMS internals volume complements the existing [SQL Database handbook](glossaries/sql-database.md) rather than reproducing its SQL syntax reference. Focus areas: relational theory, page storage, buffer pools, B+ tree and LSM, relational algebra, query execution and cost-based optimization, transactions, locking, MVCC, ARIES/WAL, distributed replication, OLTP/OLAP/HTAP, performance and recovery. Includes **14 concept contrasts, 10 intermediate interview Q&As and 10 exam questions with worked answers**. [Markdown](glossaries/database-systems.md) · [PDF](pdf/database-systems.pdf) · [TSV](data/database-systems.tsv) · [Sources](data/database-systems/SOURCES.md). Verify all derived publications with `node scripts/render_database_systems.mjs --check`.
+
+**Standalone publication:** this subject is not yet added to the website search index or included in indexed totals.
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |

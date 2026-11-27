@@ -1,0 +1,26 @@
+# 假设检验原理与决策理论
+Statistical Hypothesis|统计假设||关于总体分布、参数或随机机制的可检验命题。
+Null Hypothesis|原假设|H0|检验中作为基准或待反驳的假设集合。
+Alternative Hypothesis|备择假设|H1|原假设之外、研究希望获得证据支持的参数或分布集合。
+Simple Hypothesis|简单假设||完全指定一个概率分布的统计假设。
+Composite Hypothesis|复合假设||包含两个或更多可能概率分布的统计假设。
+Test Statistic|检验统计量||从样本计算并用于判断是否拒绝原假设的函数。
+Rejection Region|拒绝域||统计量落入后决定拒绝原假设的结果集合。
+Acceptance Region|不拒绝域||检验规则不拒绝原假设的观测结果集合。
+Significance Level|显著性水平|α|事先规定的最大允许第一类错误概率，通常针对原假设取上确界。
+Type I Error|第一类错误||原假设为真时错误拒绝它。
+Type II Error|第二类错误||备择假设为真时未拒绝原假设。
+Power Function|功效函数||随参数值变化的拒绝原假设概率函数。
+Statistical Power|检验功效||在指定备择参数或效应下正确拒绝原假设的概率。
+P-value|p 值||在原假设成立下，检验统计量至少同样极端的尾部概率或相应复合零假设上界。
+Critical Value|临界值||将统计量取值划分为拒绝和不拒绝区域的阈值。
+One-sided Test|单侧检验||备择强调参数向单一方向偏离的检验。
+Two-sided Test|双侧检验||备择允许参数朝两个方向偏离的检验。
+Most Powerful Test|最强力检验||在给定显著性水平下，对指定备择具有最大功效的检验。
+Uniformly Most Powerful Test|一致最强力检验|UMP|在整个备择参数集合上均具有最大功效的检验。
+Neyman–Pearson Lemma|奈曼—皮尔逊引理||对两个简单假设，以似然比阈值构造最强力检验的定理。
+Likelihood Ratio Test|似然比检验|LRT|比较受限与不受限参数空间内的最大似然值的检验。
+Wald Test|Wald 检验||利用参数估计值与其估计协方差衡量偏离原假设的检验。
+Score Test|得分检验||在原假设限制下依据对数似然一阶导数检测偏离的检验。
+Test Inversion|检验反演||收集所有未被对应假设检验拒绝的参数值构造置信集合。
+Equivalence Test|等效性检验||检验效应是否落入预先规定的等效范围，而非是否精确为零。

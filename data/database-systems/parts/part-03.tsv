@@ -1,0 +1,107 @@
+# 查询优化器、统计信息与代价模型
+Query Optimizer|查询优化器||在可替换的等价或可接受计划中选取预计执行成本较低方案的组件。
+Cost-based Optimization|基于代价的优化|CBO|依据数据统计与硬件成本模型估计并比较执行计划的策略。
+Rule-based Optimization|基于规则的优化||根据预定义规则或启发式顺序选择查询变换及物理操作的方法。
+Cardinality Estimation|基数估计||预测中间或最终查询算子会输出多少条记录的过程。
+Selectivity Estimation|选择率估计||预测某个过滤条件保留输入记录比例的过程。
+Column Statistics|列统计信息||描述列值分布、不同值数量及 NULL 比例等信息的元数据。
+Histogram|频率直方图||用分桶记录列值分布、帮助估计查询谓词选择率的统计结构。
+Equi-depth Histogram|等深直方图||使每个桶大致包含相同数量样本的列值分布统计。
+Equi-width Histogram|等宽直方图||按照数值范围宽度相等的桶统计列值分布的方法。
+Most Common Values|高频取值统计|MCV|专门保存列中出现频率最高取值及其频率的统计信息。
+Distinct Value Count|不同值个数|NDV|列或列组合中不同取值数量的统计指标。
+Correlation Statistics|相关性统计||描述多列值分布依赖关系、避免简单独立假设误估的统计信息。
+Independence Assumption|列独立性假设||在缺乏联合分布统计时把多个谓词选择率相乘的近似假设。
+Join Cardinality Estimation|连接基数估计||预测连接两个输入关系后会产生多少匹配行的过程。
+Cost Model|代价模型||将 CPU、I/O、网络和内存开销组合估算计划成本的定量规则。
+Access Path Selection|访问路径选择||在全表扫描、索引访问等读取方式中选择执行方案的过程。
+Join Order Optimization|连接顺序优化||在多个表的连接序列或树结构中搜索低成本顺序的技术。
+Dynamic Programming Optimizer|动态规划式优化器||缓存子计划最优成本并组合表集合求取低成本连接计划的优化器。
+Volcano Optimizer|Volcano 优化框架||以等价表达式集合和搜索规则组织查询优化的经典框架。
+Cascades Optimizer|Cascades 优化框架||基于 Memo、规则变换与物理属性搜索优化执行计划的框架。
+Memo Structure|优化器 Memo||保存逻辑等价组、候选表达式及优化结果的共享数据结构。
+Interesting Order|有价值的排序||可被上层排序或连接算子复用、因此需要纳入计划搜索的中间结果顺序。
+Plan Enumeration|执行计划枚举||产生和比较多个可能物理执行方案的搜索过程。
+Adaptive Query Processing|自适应查询处理||执行过程中依据实际数据规模或反馈改变执行策略的方法。
+Reoptimization|执行计划重新优化||发现统计失准或运行环境变化后重新选择后续执行计划的技术。
+
+# 事务语义、ACID 与隔离异常
+Database Transaction|数据库事务||将多个数据库操作组成按约定原子性与隔离语义提交的逻辑工作单元。
+Atomicity|原子性||事务内修改对外表现为全部提交或全部不生效的性质。
+Consistency Property|事务一致性属性||事务执行在所要求前置条件满足时保持数据库声明的完整性约束。
+Isolation|隔离性||规定并发事务彼此可见的读写结果及其允许执行历史的语义。
+Durability|持久性||事务成功提交后在约定故障模型下其效果能够被保留的性质。
+ACID|ACID 事务属性|ACID|原子性、一致性、隔离性和持久性的组合简称。
+Transaction Boundary|事务边界||定义一组操作从开始到提交或回滚的作用范围。
+Commit|提交||使事务修改成为已完成结果并满足约定持久与可见条件的操作。
+Rollback|回滚||撤销事务中未提交的修改或恢复到指定保存点的操作。
+Savepoint|保存点||在事务内记录可局部回退而不结束整个事务的恢复位置。
+Autocommit|自动提交||在无需显式 BEGIN 的情况下将单条语句作为独立事务提交的模式。
+Serializability|可串行化||并发事务历史等价于某种合法的串行事务执行的性质。
+Conflict Serializability|冲突可串行化||可通过交换不冲突操作转换为串行历史的并发执行性质。
+View Serializability|视图可串行化||与某串行历史具有相同读来源关系及最终写入效果的性质。
+Strict Serializability|严格可串行化||同时满足可串行化及无重叠事务真实时间先后关系的性质。
+Dirty Read|脏读||读取其他事务尚未提交的数据的现象。
+Non-repeatable Read|不可重复读||同一事务内相同记录两次读取因并发修改而值不同的现象。
+Phantom Read|幻读||重复执行范围谓词查询时因并发变更出现新增或消失匹配记录的现象。
+Lost Update|丢失更新||两个并发修改操作使一方写入效果被另一方覆盖的异常。
+Write Skew|写偏斜||并发事务读取相同约束信息却写入不同记录、联合结果破坏跨记录约束的异常。
+Read Skew|读偏斜||事务在不同时间观察到跨记录不一致版本组合的读取异常。
+Dirty Write|脏写||一个事务覆盖另一个尚未提交事务的写入。
+Read Committed|读已提交|RC|通常保证不读取其他事务未提交修改的隔离等级，具体实现细节各异。
+Repeatable Read|可重复读|RR|在事务中重复读同一数据时提供稳定性保证的隔离等级，具体并发异常依实现而异。
+Snapshot Isolation|快照隔离|SI|事务基于一致快照读取并限制写写冲突、但可能允许写偏斜的隔离模型。
+
+# 锁、闩锁与基于锁的并发控制
+Concurrency Control|并发控制||协调同时执行的事务以满足指定隔离语义和正确性要求的机制。
+Lock|事务锁||对逻辑记录、键范围或对象授予带兼容规则的访问权限的机制。
+Latch|闩锁||保护短时间内存数据结构修改与访问的轻量同步原语。
+Shared Lock|共享锁|S-lock|通常允许多个读取者并存、但与排他修改锁冲突的锁类型。
+Exclusive Lock|排他锁|X-lock|阻止不兼容读取或写入者同时访问受保护资源的锁。
+Intention Lock|意向锁||在较高层级声明事务准备在下级对象持有何种锁的多粒度锁模式。
+Update Lock|更新锁||为将来可能升级为排他锁的读取操作预先协调竞争的锁模式。
+Lock Compatibility Matrix|锁兼容矩阵||描述不同锁模式是否可以同时授予同一资源的规则表。
+Two-phase Locking|两阶段锁协议|2PL|事务先获取锁、后释放锁且一旦释放便不再获取新锁的协议。
+Strict Two-phase Locking|严格两阶段锁协议|S2PL|通常要求排他锁持有到事务结束的两阶段锁方案。
+Rigorous Two-phase Locking|严谨两阶段锁协议||要求全部共享与排他锁直到事务结束才释放的两阶段锁变体。
+Lock Granularity|锁粒度||锁保护数据单元的大小，如行、页、表或键区间。
+Multi-granularity Locking|多粒度锁定||在表、页、行等层级采用意向锁和细粒度锁协调访问。
+Lock Escalation|锁升级粒度提升||用较粗粒度锁替换大量细粒度锁以降低锁管理开销的过程。
+Lock Upgrade|锁模式升级||将已持有锁从较弱模式转换为更强模式的操作。
+Lock Table|锁表||记录资源当前持锁事务、等待队列及锁类型的数据结构。
+Wait-for Graph|等待图||以事务为顶点、等待另一事务释放资源为边的依赖图。
+Deadlock|死锁||多个事务形成循环等待、彼此无法继续执行的状态。
+Deadlock Detection|死锁检测||通过等待图环路或其他机制识别死锁的过程。
+Deadlock Prevention|死锁预防||通过获取顺序或事务优先级规则避免形成死锁的机制。
+Wait–Die Scheme|等待—死亡策略||以事务时间戳决定等待或回滚，防止等待环形成的死锁预防方法。
+Wound–Wait Scheme|抢占—等待策略||较老事务可使较新持锁事务回滚、较新事务等待较老事务的策略。
+Predicate Lock|谓词锁||对满足某个谓词的逻辑记录集合施加事务级锁保护的机制。
+Next-key Lock|临键锁||结合索引记录与相邻键间隙保护、防止特定范围幻读的锁机制。
+Lock Timeout|锁等待超时||等待锁超过配置时长后终止或报错的并发控制措施。
+
+# MVCC、时间戳与乐观并发控制
+Multiversion Concurrency Control|多版本并发控制|MVCC|为记录维护多个版本以允许读写根据可见性规则并发执行的机制。
+Version Chain|版本链||把同一逻辑记录的多个历史版本通过指针或标识串联的结构。
+Tuple Visibility|元组可见性||判定某个事务或快照可以读取哪一条记录版本的规则。
+Snapshot|数据库快照||按选定逻辑时间或事务集合定义的一致数据可见状态。
+Snapshot Timestamp|快照时间戳||标识读事务所使用版本边界的逻辑或物理时间值。
+Transaction Timestamp|事务时间戳||为事务确定排序或可见性规则的编号或时间标识。
+Begin Timestamp|版本开始时间戳||表示某个记录版本何时开始对相应快照可见的元数据。
+End Timestamp|版本结束时间戳||表示某个记录版本何时不再对后续快照可见的元数据。
+Transaction ID|事务标识符|XID|唯一标识一次数据库事务并用于可见性、日志或锁管理的编号。
+Undo Version Chain|撤销日志版本链||通过旧值与回滚记录重建先前数据版本的 MVCC 实现方式。
+Append-only Version Storage|追加式版本存储||通过追加新记录版本而非覆盖旧版本实现多版本读取的存储方式。
+Version Garbage Collection|旧版本垃圾回收||删除不再被任何有效快照需要的历史版本的后台操作。
+Vacuum|数据库清理回收|VACUUM|对失效行版本或页面空间进行回收整理的维护操作名称。
+Oldest Active Transaction|最早活动事务||确定哪些历史版本仍可能被长期快照读取的事务边界。
+Long-running Transaction|长事务||持续占用快照、锁或资源较长时间的事务。
+Timestamp Ordering|时间戳排序||按事务预定时间戳决定读写冲突次序的并发控制方法。
+Basic Timestamp Ordering|基本时间戳排序||使用记录最后读写时间戳拒绝违反顺序的事务操作的协议。
+Thomas Write Rule|Thomas 写规则||允许忽略已过时的写入而非必定中止事务的时间戳协议变体。
+Optimistic Concurrency Control|乐观并发控制|OCC|先执行读写、提交前验证冲突再决定提交或重试的并发控制。
+Validation Phase|验证阶段||乐观事务提交前检查读写集合或版本是否与并发修改冲突的阶段。
+Read Set|读取集合||记录事务曾经访问的逻辑对象或版本集合。
+Write Set|写入集合||记录事务计划修改或已经修改的数据对象集合。
+Serialization Graph|串行化图||用事务冲突或读写依赖边分析能否串行执行的有向图。
+Serializable Snapshot Isolation|可串行化快照隔离|SSI|检测特定读写依赖结构来阻止快照隔离异常、提供可串行化的技术。
+Predicate Read Tracking|谓词读取追踪||记录事务对范围或谓词的读取依赖，以便检查后续并发写入冲突的机制。

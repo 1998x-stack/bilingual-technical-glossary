@@ -1,0 +1,26 @@
+# OLTP、OLAP、列存与实时分析
+Online Transaction Processing|联机事务处理|OLTP|面向大量较短且高并发读写事务的数据库工作负载。
+Online Analytical Processing|联机分析处理|OLAP|面向复杂聚合、扫描和历史数据分析的数据库工作负载。
+Hybrid Transactional and Analytical Processing|事务分析混合处理|HTAP|在一个或紧密协同的架构中兼顾事务写入和分析查询的能力。
+Analytical Query|分析型查询||通常扫描较多数据、进行多表关联及聚合计算的查询。
+Transactional Query|事务型查询||通常涉及少量记录、对响应时间和事务正确性要求较高的请求。
+Row-oriented Storage|行式存储||把一条记录的多数属性值相邻存放的物理布局。
+Column-oriented Storage|列式存储||把同列大量记录值连续或成组存放的物理布局。
+Column Segment|列段||把一列数据分批保存并独立压缩与读取的持久化数据单元。
+Column Pruning|列裁剪||在执行扫描前跳过查询不需要读取的列。
+Zone Map|区域映射||记录数据块每列的最小最大值以跳过不满足过滤条件的块。
+Data Skipping|数据跳读||利用块级统计或索引跳过不可能满足条件的数据区域。
+Dictionary Encoding|字典编码||用短代码替换重复值、另存代码到原值映射的压缩方式。
+Run-length Encoding|游程编码|RLE|把连续相同数据压缩为值与重复长度的编码方式。
+Bit Packing|位打包||按实际取值范围使用尽可能少位数密集存放数值的压缩方法。
+Delta Encoding|差分编码||存储相邻数值之间的差而非完整原值的编码方式。
+Materialized View|物化视图||预先计算并持久保存某个查询结果以便复用的数据对象。
+Materialized View Maintenance|物化视图维护||在底层数据变化后更新已持久化查询结果的流程。
+Incremental View Maintenance|增量视图维护|IVM|只根据新增、删除或修改记录计算视图差异的维护技术。
+Star Schema|星型模式||以事实表为中心连接多个维度表的数据仓库模型。
+Fact Table|事实表||保存业务事件度量值及指向维度实体键的数据仓库表。
+Dimension Table|维度表||保存分析维度属性、供事实表关联筛选的数据仓库表。
+Data Cube|数据立方体||按多个维度汇总数值指标、支持不同切片与钻取的分析结构。
+MPP Database|大规模并行数据库|MPP|把分析任务分布到多个计算节点并行处理的数据库架构。
+Data Lakehouse|数据湖仓一体||结合数据湖文件开放性与仓库管理及事务能力的数据平台架构。
+Vectorized Column Scan|列式向量扫描||批量读取压缩或解码列数据并以向量化算子处理的执行方式。

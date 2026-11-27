@@ -1,0 +1,80 @@
+# 离线评测、指标与基准测试
+RAG Evaluation|RAG 系统评测||分别量化检索质量、证据忠实性、回答相关性与端到端体验的过程。
+Retrieval Evaluation|检索评测||利用标注的相关文档判断召回和排序质量的测试。
+Generation Evaluation|生成评测||分析模型回答正确性、流畅性、引用支持及任务达成程度的评估。
+End-to-end Evaluation|端到端评测||从真实问题输入到最终答案联合衡量 RAG 流程的评价。
+Golden Dataset|黄金评测数据集||包含预期答案和必要证据标注、用于回归测试的高质量样本集合。
+Relevance Judgment|相关性标注||由人工或约定规则判断文档是否满足查询信息需求的标签。
+Ground Truth|参考真值||作为评测依据的经核对答案、相关文档或事实集合。
+Recall at k|前 k 项召回率|Recall@k|前 k 个检索结果覆盖全部标注相关项的比例。
+Precision at k|前 k 项精确率|Precision@k|前 k 个结果中被标注为相关项所占比例。
+Hit Rate at k|前 k 项命中率|Hit@k|前 k 项内是否至少包含一个相关结果的比例或查询平均值。
+Mean Reciprocal Rank|平均倒数排名|MRR|对各查询首个相关结果排名倒数取平均的指标。
+Mean Average Precision|平均平均精确率|MAP|将各查询相关结果位置处精确率求均值后再跨查询平均的指标。
+Normalized Discounted Cumulative Gain|归一化折损累计增益|NDCG|按排名位置折损相关度增益并用理想排序归一化的指标。
+Context Precision|上下文精确率||衡量所提供检索上下文中有用证据位置与比例的指标族。
+Context Recall|上下文召回率||衡量参考答案必要事实能否从检索上下文中找到的评测维度。
+Faithfulness Metric|忠实性指标||测量回答声明受所给证据支持程度的指标。
+Answer Relevance|答案相关性||衡量回答是否直接满足用户查询意图的程度。
+Answer Correctness|答案正确性||根据参考事实或标准答案判断生成回答对错的指标。
+Citation Accuracy|引用准确率||检查引用的来源是否真正支持所对应事实陈述的指标。
+Claim-level Evaluation|断言级评测||将回答分解为单条事实主张并逐条核验的方法。
+LLM-as-a-Judge|大模型裁判||使用另一语言模型按评分标准评估检索证据或回答的方法。
+Human Evaluation|人工评测||由受训标注人员对回答质量与错误类型作出判断的过程。
+RAGAS|RAGAS 评测框架|RAGAS|用于评估 RAG 中检索上下文与答案质量的自动化评测工具体系。
+ARES|ARES RAG 评测框架|ARES|结合训练式判别模型与人工标注校准评估 RAG 质量的方法。
+Evaluation Leakage|评测泄漏||测试答案或标签混入训练、索引或提示而导致指标虚高的情况。
+
+# 数据安全、访问控制与可信治理
+Retrieval Security|检索安全||保障知识库查询、索引和证据传递免受未授权访问或篡改的措施。
+Document-level Access Control|文档级访问控制||按用户或角色限制可读取哪些来源文档的权限规则。
+Chunk-level Authorization|片段级授权||在检索片段粒度检查请求者是否有权获取该内容。
+Access Control List|访问控制列表|ACL|记录主体对资源允许或拒绝操作的授权规则。
+Role-based Access Control|基于角色的访问控制|RBAC|按预先定义的角色集合决定资源访问权限的机制。
+Attribute-based Access Control|基于属性的访问控制|ABAC|依据用户、资源与环境属性进行权限判定的模型。
+Tenant Isolation|租户隔离||防止共享平台中不同租户的数据或检索结果互相泄漏的边界。
+Row-level Security|行级安全|RLS|数据库依据调用者身份或策略过滤可读取记录的功能。
+Pre-filtering|检索前过滤||在近邻或全文检索前先用权限或元数据约束候选集合的方法。
+Post-filtering|检索后过滤||检索之后对候选结果再执行授权或条件过滤的步骤。
+Permission-aware Retrieval|权限感知检索||在召回过程及结果输出中执行用户权限校验的架构。
+Sensitive Information|敏感信息||需要按照法律、合同或组织策略限制访问和传播的数据。
+Personally Identifiable Information|可识别个人身份信息|PII|能够直接或结合其他信息识别自然人的数据。
+Data Redaction|数据脱敏遮盖||从检索或展示内容中隐藏特定敏感字段的处理。
+Secret Leakage|机密信息泄漏||密钥、凭证或不应公开的信息通过检索或生成被意外暴露的事件。
+Prompt Injection|提示注入||恶意内容通过输入或外部资料诱导模型违背更高优先级指令的攻击。
+Indirect Prompt Injection|间接提示注入||攻击指令藏在被检索文档或工具输出等较低信任内容中的攻击。
+Trust Boundary|信任边界||区分高可信指令和低可信外部证据及权限范围的逻辑界线。
+Source Trust Scoring|来源可信度评分||依据出处、签名、审核状态等信息评估来源可靠性的机制。
+Content Poisoning|内容投毒||攻击者通过操控可检索文档使召回或生成产生误导结果的行为。
+Index Poisoning|索引投毒||攻击者向搜索索引插入或操纵条目影响检索结果的攻击。
+Cited-source Spoofing|引用来源伪造||构造虚假来源标识或引文诱骗系统采信错误资料的行为。
+Audit Logging|审计日志记录||记录索引、授权、检索和回答事件以支持安全追溯的机制。
+Data Retention Policy|数据保留策略||规定知识内容和日志应保存多久及如何到期删除的规则。
+Right-to-deletion Workflow|删除请求执行流程||将合法删除请求传播到原文、缓存、向量索引和备份的治理程序。
+
+# 生产工程、性能与持续优化
+Production RAG|生产级 RAG||满足可用性、安全、成本、监控及版本管理要求的线上检索增强系统。
+Retrieval Latency|检索延迟||从发起检索到获得候选结果之间的耗时。
+End-to-end Response Time|端到端响应时间||从收到用户请求到最终回答完成的总时间。
+Time to First Token|首 token 延迟|TTFT|从开始生成请求到模型输出第一个 token 所需的时间。
+Tail Latency|尾部延迟||响应时间分布高百分位、用于描述慢请求体验的指标。
+Throughput|吞吐量||系统单位时间内处理的查询或生成请求数量。
+Concurrency Limit|并发限制||为检索和生成服务设置同时处理请求数量的上界。
+Rate Limiting|速率限制||通过令牌桶等机制限制调用频率以控制负载的措施。
+Retrieval Cache|检索缓存||复用近期或相同查询的候选文档结果以减少计算的缓存。
+Embedding Cache|嵌入缓存||复用已计算查询或文档向量以节省嵌入推理成本的缓存。
+Semantic Cache|语义缓存||对含义接近的请求复用经验证结果的缓存策略。
+Cache Invalidation|缓存失效||在权限、数据版本或模型版本变化时使旧缓存不再使用的过程。
+Index Refresh|索引刷新||按数据变更或时效要求更新检索索引内容的操作。
+Blue–Green Index Deployment|蓝绿索引发布||并行维护新旧两套索引并在验证后切换查询流量的发布方式。
+Shadow Index Testing|影子索引测试||将真实查询并行送入候选新索引但不影响用户回答的验证方式。
+A/B Testing|A/B 测试||随机分配流量比较两种检索或生成策略对业务指标的影响。
+Canary Deployment|金丝雀发布||把少量流量先导入新方案以观察风险后逐步扩大的策略。
+Embedding Migration|嵌入模型迁移||更换编码器时对文档重新向量化、索引和切换查询的过程。
+Index Versioning|索引版本管理||记录索引配置、数据快照和构建时间以支持回滚的机制。
+Pipeline Observability|流水线可观测性||跟踪每阶段输入、耗时、错误与质量指标的运维能力。
+Retrieval Trace|检索链路追踪||记录查询改写、索引访问、候选得分与排序过程的调试轨迹。
+Cost per Query|单次查询成本||按检索、嵌入、重排和生成资源计算的平均请求成本。
+Quality–Cost Tradeoff|质量—成本权衡||在召回、答案质量与推理或基础设施开销之间选择平衡方案。
+Feedback-driven Improvement|反馈驱动改进||依据人工纠错、用户反馈及评测数据迭代优化检索与生成的流程。
+Retrieval Regression Test|检索回归测试||在数据、模型或索引修改后验证关键查询仍返回必要证据的测试。

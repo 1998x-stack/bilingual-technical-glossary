@@ -1,0 +1,26 @@
+# 同步、原子操作与内存一致性
+Synchronization|同步||协调多个 GPU 执行参与者的执行进度或内存可见性的机制。
+Block Barrier|线程块屏障||使块内参与线程在指定点满足共同到达条件的同步操作。
+__syncthreads()|块级同步函数|__syncthreads()|让线程块内线程完成规定同步，并对相应共享及全局内存访问建立可见性次序的内建函数。
+__syncwarp()|线程束同步函数|__syncwarp()|按指定成员掩码同步同一 warp 中参与线程的内建函数。
+Warp-level Primitive|线程束级原语||在 warp 线程间实现投票、数据交换或同步的硬件相关操作。
+Shuffle Instruction|线程束数据交换|SHFL|允许 warp 线程直接读取另一指定 lane 寄存器数据的指令机制。
+__shfl_sync()|同步线程束交换函数|__shfl_sync()|在指定 warp 成员之间按源 lane 编号交换寄存器值的内建接口。
+Warp Vote|线程束投票||聚合同一 warp 中各线程布尔谓词结果的指令操作。
+__ballot_sync()|线程束位掩码投票|__ballot_sync()|为指定活动参与线程的布尔判断生成 lane 位掩码的函数。
+__activemask()|活动线程掩码|__activemask()|获取执行该指令时当前 warp 活动 lane 集合的位掩码。
+Atomic Operation|原子操作||对指定存储位置以不可分割的读改写语义执行的操作。
+Atomic Add|原子加法|atomicAdd|对共享或全局存储位置原子地增加数值的操作。
+Compare and Swap|比较并交换|CAS|在存储值符合预期时原子写入新值的同步原语。
+Atomic Exchange|原子交换||将新值写入目标位置并原子返回原值的操作。
+Memory Fence|内存栅栏||对指定作用域的内存操作建立必要的排序与可见性约束的机制。
+__threadfence()|设备作用域线程栅栏|__threadfence()|按 CUDA 内存模型为设备范围内内存操作建立次序的内建函数。
+__threadfence_block()|块作用域线程栅栏|__threadfence_block()|只在当前线程块作用域建立指定内存排序约束的函数。
+__threadfence_system()|系统作用域线程栅栏|__threadfence_system()|在受支持环境中扩展到系统作用域的内存排序栅栏函数。
+Memory Ordering|内存排序||规定并发访问之间何时必须保持先后可见关系的语义。
+Memory Scope|内存作用域||约束原子操作和同步语义覆盖线程块、设备或系统参与者的范围。
+Acquire Semantics|获取语义|Acquire|阻止后续内存操作越过相应同步获取点的排序约束。
+Release Semantics|释放语义|Release|阻止此前内存操作越过相应同步释放点的排序约束。
+Race Condition|竞态条件||程序结果依赖未受恰当协调的并发执行相对次序的现象。
+Data Race|数据竞争||多个执行者冲突访问同一内存位置且未形成所需同步关系的未定义或错误并发情形。
+Cooperative Groups|协作组|CG|以显式线程组对象组织同步、集体操作和协作的 CUDA 编程接口。

@@ -1,0 +1,26 @@
+# 共享内存、分块计算与协作
+Shared Memory Allocation|共享内存分配||为线程块提供静态或动态大小共享存储空间的机制。
+Static Shared Memory|静态共享内存||编译时声明固定大小、每个线程块拥有独立实例的共享数组。
+Dynamic Shared Memory|动态共享内存||在 Kernel 启动时指定容量的每块共享内存区域。
+Shared Memory Bank|共享内存存储体|Bank|共享内存为支持并行访问而划分的若干硬件存储体。
+Bank Conflict|存储体冲突||同一请求阶段多个不同地址映射到同一共享内存 bank 导致服务串行化的现象。
+Shared Memory Broadcast|共享内存广播||同一 bank 中多个线程访问同一位置时可由硬件广播数据的行为。
+Tiled Computation|分块计算||把大问题划为可在片上缓存复用的局部数据块进行处理。
+Tile|数据分块|Tile|为一次局部计算或搬运选取的数据子矩阵或子区域。
+Tile Size|分块尺寸||决定每个 tile 包含多少行列或元素的配置参数。
+Shared Memory Reuse|共享内存复用||将同一数据加载到共享内存后在多个算术操作中重复利用。
+Cooperative Loading|协同加载||块内线程分工把全局内存数据搬入共享内存的过程。
+Halo Region|边界扩展区|Halo|模板计算中为块内边缘元素准备的邻域数据。
+Stencil Computation|模板计算||每个输出依赖输入局部邻域值的一类规则计算。
+Double Buffering|双缓冲||交替利用两组存储空间重叠数据准备和计算的技术。
+Shared Memory Swizzling|共享内存重映射||通过改变数据到共享内存地址的映射减少 bank 冲突的策略。
+Padding for Banks|防 bank 冲突填充||给共享数组行或维度附加填充元素以调整 bank 映射的技巧。
+Thread Block Cluster Shared Access|块集群共享内存访问||集群中线程块对其他块共享内存执行受支持访问的行为。
+Cluster Synchronization|集群同步||在线程块集群范围内协调多个线程块完成指定阶段的同步。
+Cluster Barrier|集群屏障||使集群成员在满足参与条件后共同越过某个同步点的机制。
+Cluster Dimension|集群维度||一次支持集群启动中每个线程块集群的块数配置。
+Tensor Memory Accelerator|张量内存加速器|TMA|部分 NVIDIA GPU 上用于高效执行多维数据搬运的硬件机制。
+Asynchronous Copy|异步数据复制||发起内存传输后允许相关线程继续执行其他操作的搬运方式。
+Copy–Compute Overlap|复制与计算重叠||通过异步搬运和同步协调让数据传输与算术工作并发推进。
+Software Pipelining|软件流水线||交错安排不同迭代阶段的读写与计算以提高硬件利用率。
+Producer–Consumer Buffering|生产者—消费者缓冲||将数据预取者与计算消费者通过片上队列或多缓冲协调的模式。

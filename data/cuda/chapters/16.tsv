@@ -1,0 +1,26 @@
+# 多 GPU、互连、部署与前沿机制
+Multi-GPU Programming|多 GPU 编程||协调多个 GPU 设备分配计算、同步与数据通信的编程方式。
+GPU Peer Access|GPU 对等访问||在支持的互连与权限配置下，一个 GPU 可访问另一 GPU 的设备内存。
+cudaDeviceCanAccessPeer()|检查设备对等访问|cudaDeviceCanAccessPeer|查询两个 GPU 是否支持直接对等内存访问的 Runtime API。
+cudaDeviceEnablePeerAccess()|启用对等设备访问|cudaDeviceEnablePeerAccess|在支持的设备与上下文条件下建立设备对等访问能力的 API。
+NVLink|NVIDIA 高速互连|NVLink|用于 GPU 与 GPU 或其他支持设备之间高速数据传输的互连技术。
+NVSwitch|NVIDIA GPU 交换互连|NVSwitch|构建多 GPU 高带宽互连拓扑的专用交换芯片或系统组件。
+PCI Express|外围组件高速互连|PCIe|主机与 GPU 等外设之间进行高速数据通信的标准总线。
+GPUDirect RDMA|GPU 直接远程内存访问|GPUDirect RDMA|在受支持硬件及驱动下使网卡等设备直接访问 GPU 内存的数据通路技术。
+GPUDirect Storage|GPU 直接存储|GDS|在支持平台上减少存储 I/O 经 CPU 缓冲开销的 GPU 数据传输方案。
+Multi-instance GPU|多实例 GPU|MIG|在支持 GPU 上将部分计算、缓存和显存资源隔离划为多个实例的功能。
+Multi-process Service|多进程服务|MPS|用于改善多个 CUDA 进程共享 GPU 执行资源的 NVIDIA 服务。
+CUDA-aware MPI|CUDA 感知消息传递接口|CUDA-aware MPI|支持将 GPU 设备缓冲区作为 MPI 通信参数的消息传递实现能力。
+Inter-GPU Communication|GPU 间通信||不同 GPU 之间传输数据、同步或交换部分结果的操作。
+Collective Communication|集合通信||多个参与 GPU 联合执行广播、归约、收集或散播等通信操作。
+Ring AllReduce|环形全归约||按逻辑环拓扑执行分块规约和数据分发的 AllReduce 算法。
+Communication–Computation Overlap|通信与计算重叠||同时推进通信和可独立计算以缩短整体执行时间的技术。
+GPU Topology|GPU 拓扑||描述不同 GPU、CPU、网卡和互连之间连接关系及带宽层级的结构。
+NUMA Affinity|非统一内存访问亲和性|NUMA|将主机线程和内存分配安排到更接近目标 GPU 的 CPU 内存域的策略。
+GPU Virtualization|GPU 虚拟化||将物理 GPU 计算资源以共享或隔离的逻辑设备形式呈现给多个工作负载。
+CUDA Container Runtime|CUDA 容器运行环境||在容器中暴露 GPU 设备和必要驱动库以运行 CUDA 应用的部署配置。
+NVIDIA Container Toolkit|NVIDIA 容器工具包||支持容器运行时配置 NVIDIA GPU 设备、驱动能力及可见性的组件集合。
+GPU Device Plugin|GPU 设备插件||在 Kubernetes 等编排系统中向调度器公布 GPU 资源并分配给工作负载的插件。
+CUDA Compatibility Matrix|CUDA 兼容性矩阵||用于核对 GPU 架构、驱动和 Toolkit 组合是否受到支持的版本关系。
+GPU Fault Isolation|GPU 故障隔离||限制设备错误、进程崩溃或资源争用对其他 GPU 工作负载影响的机制。
+CUDA Deployment Validation|CUDA 部署验证||检查驱动、设备可见性、Kernel 功能与性能基线是否满足生产运行要求的流程。

@@ -1,0 +1,26 @@
+# 重抽样、多重检验与研究可信度
+Bootstrap Resampling|Bootstrap 重抽样||从观测数据重新抽取伪样本以近似统计量抽样分布的方法。
+Nonparametric Bootstrap|非参数 Bootstrap||从经验分布中有放回抽样并重新计算统计量的重抽样程序。
+Parametric Bootstrap|参数 Bootstrap||从拟合的参数分布中模拟新数据并重算统计量的程序。
+Block Bootstrap|分块 Bootstrap||以时间或空间相邻观测块为单位抽样、保留局部依赖结构的方法。
+Wild Bootstrap|野 Bootstrap||通过对残差乘随机权重生成伪样本以处理异方差等结构的方法。
+Bootstrap Standard Error|Bootstrap 标准误||用多次重抽样估计值的样本标准差估计原估计量标准误。
+Jackknife|刀切法||系统删除观测子集并重算统计量以估计偏差和方差的方法。
+Delete-one Jackknife|逐一删除刀切法||每轮从样本中删除一个观测并重算统计量的 Jackknife 特例。
+Permutation Test|置换检验||在零假设可交换性条件下置换标签并比较统计量的检验。
+Randomization Inference|随机化推断||依据实验实际随机分配机制计算统计量参考分布的推断框架。
+Cross-validation|交叉验证|CV|反复分割训练与验证数据以评估拟合模型预测表现的方法。
+K-fold Cross-validation|K 折交叉验证||将样本划分为 K 份、逐轮留一份验证其余份拟合的方法。
+Leave-one-out Cross-validation|留一交叉验证|LOOCV|每次留出一个观测作为验证、其余观测用于拟合的程序。
+Multiple Hypothesis Testing|多重假设检验||在同一研究中同时检验多个假设并控制联合错误的统计问题。
+Family-wise Error Rate|族错误率|FWER|一个假设族中至少错误拒绝一个真原假设的概率。
+False Discovery Rate|错误发现率|FDR|被拒绝假设中假阳性比例的期望，零拒绝时通常定义为零。
+Benjamini–Hochberg Procedure|Benjamini–Hochberg 程序|BH|在独立或特定正依赖条件下控制 FDR 的逐步检验规则。
+Bonferroni Correction|Bonferroni 校正||通过将每个检验的显著性水平除以检验数控制族错误率的方法。
+Holm Procedure|Holm 逐步校正||按排序 p 值逐步比较调整阈值以控制 FWER 的方法。
+Šidák Correction|Šidák 校正||在独立检验条件下按联合概率调整单次检验阈值的方法。
+Westfall–Young Adjustment|Westfall–Young 校正||借助重抽样联合零分布进行多重比较调整的方法。
+Selective Inference|选择性推断||在考虑数据驱动选择过程之后评估估计或检验误差的推断方法。
+Post-selection Inference|模型选择后推断||对使用同一数据挑选模型后的参数推断进行校正的研究领域。
+P-hacking|p 值操纵||通过反复试验分析决策并选择性报告获得显著结果的研究行为。
+Preregistration|预注册||在观察研究结果前记录主要假设、分析方案与决策规则的实践。

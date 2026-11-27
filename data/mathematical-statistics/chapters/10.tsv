@@ -1,0 +1,26 @@
+# 似然理论、Fisher 信息与推断
+Likelihood Function|似然函数||把观测数据固定后视为未知参数函数的概率密度或质量函数。
+Log-likelihood|对数似然||似然函数取对数后得到、便于求导和数值计算的目标函数。
+Score Function|得分函数||对数似然函数对模型参数的一阶导数或梯度。
+Observed Information|观测信息||观测数据对应负对数似然海森矩阵的值。
+Fisher Information|费舍尔信息||在正则条件下等于得分方差或负期望海森矩阵的信息量。
+Information Matrix|信息矩阵||多参数模型中以得分协方差刻画参数局部可辨程度的矩阵。
+Cramér–Rao Lower Bound|克拉美—罗下界|CRLB|在正则条件下对无偏估计量方差给出的信息论下界。
+Information Inequality|信息不等式||把无偏估计量方差与 Fisher 信息联系起来的不等式。
+Regularity Conditions|正则性条件||允许微积分、期望交换与渐近展开等操作成立的模型假设。
+Likelihood Principle|似然原则||主张固定观测数据的似然函数承载关于参数的全部相关证据的原则。
+Profile Likelihood|剖面似然||对干扰参数取最大化后得到的目标参数似然函数。
+Marginal Likelihood|边际似然||对未观察变量或参数按指定概率分布积分所得的数据似然。
+Partial Likelihood|偏似然||只利用部分联合样本分布结构构建的推断似然。
+Composite Likelihood|复合似然||组合低维边际或条件似然以近似完整联合似然的方法。
+Penalized Likelihood|惩罚似然||从似然目标中减去复杂度或参数惩罚项的估计准则。
+Likelihood Ratio Statistic|似然比统计量||以受限与非受限最大似然值之比构成的检验量。
+Wilks Theorem|威尔克斯定理||在正则嵌套模型下负二倍对数似然比渐近服从卡方分布的结果。
+Information Criterion|信息准则||以拟合优度和模型复杂度惩罚比较统计模型的分数。
+Akaike Information Criterion|赤池信息准则|AIC|用负二倍最大对数似然加参数数目的两倍比较模型。
+Bayesian Information Criterion|贝叶斯信息准则|BIC|用负二倍最大对数似然加参数数目乘样本量对数的准则。
+Cross-entropy|交叉熵||按一个分布对另一分布的对数概率取负期望的量。
+Kullback–Leibler Divergence|库尔贝克—莱布勒散度|KL|衡量两个概率分布相对信息差异的非对称函数。
+Hellinger Distance|海林格距离||由两个分布平方根密度差定义的对称概率距离。
+Total Variation Distance|全变差距离||两个概率分布对所有事件赋予概率差的最大绝对值。
+Identified Set|可识别集合||与所观察数据分布相容的全部目标参数值集合。

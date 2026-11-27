@@ -1,0 +1,26 @@
+# 关系模型、数据建模与模式设计
+Relational Model|关系模型||把数据表示为关系并以数学运算定义查询与约束的理论模型。
+Relation|关系||由相同属性模式的元组组成的数学集合。
+Tuple|元组||关系中由多个属性值组成的一条记录。
+Attribute|属性||关系模式中的命名字段及其取值域。
+Domain|属性域||某个属性可以取得的合法值的集合。
+Relation Schema|关系模式||关系名称、属性及其域的结构定义。
+Candidate Key|候选键||可唯一标识关系中元组且没有多余属性的最小超键。
+Primary Key|主键||从候选键中选定用于主要标识元组的键。
+Foreign Key|外键||要求字段组合引用另一关系候选键或特定唯一键的完整性约束。
+Superkey|超键||可唯一识别元组、但可能含冗余属性的属性集合。
+Functional Dependency|函数依赖|FD|某属性集合的相同取值必决定另一属性集合相同取值的约束。
+Multivalued Dependency|多值依赖|MVD|一组属性决定另一组属性值集合、与剩余属性可独立组合的依赖。
+Join Dependency|连接依赖||要求关系等于若干投影自然连接结果的完整性依赖。
+First Normal Form|第一范式|1NF|关系属性值按所采用关系模型处理为不可再分的数据值的范式。
+Second Normal Form|第二范式|2NF|满足第一范式且非主属性不存在对候选键真子集的部分函数依赖。
+Third Normal Form|第三范式|3NF|对非平凡函数依赖，决定项为超键或被决定属性为主属性的范式条件。
+Boyce–Codd Normal Form|巴斯—科德范式|BCNF|每个非平凡函数依赖的决定项都是超键的关系范式。
+Fourth Normal Form|第四范式|4NF|每个非平凡多值依赖的决定项均为超键的范式。
+Lossless Join Decomposition|无损连接分解||分解后的关系投影自然连接不会产生伪元组且能恢复原关系。
+Dependency Preservation|依赖保持||关系分解后可通过各子关系约束联合检验原函数依赖的性质。
+Denormalization|反规范化||为提高特定查询性能而有意引入冗余或预计算数据的设计。
+Surrogate Key|代理键||人工引入、通常不具有业务含义的唯一实体标识。
+Natural Key|自然键||由业务数据中已有的属性构成的候选键。
+Entity–Relationship Model|实体—联系模型|ER|通过实体、属性与联系表达概念数据结构的模型。
+Schema Evolution|模式演化||随着应用变化对数据库结构进行兼容或不兼容修改的过程。

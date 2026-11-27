@@ -1,0 +1,26 @@
+# 数据库系统概述与体系结构
+Database System|数据库系统||由数据、数据库管理软件、应用及运行基础设施构成的信息管理整体。
+Database Management System|数据库管理系统|DBMS|负责数据持久化、查询执行、事务与恢复的软件系统。
+Database Engine|数据库引擎||实现查询、存储和事务处理等核心功能的内部组件集合。
+Storage Engine|存储引擎||负责记录布局、读写访问、索引及底层持久化机制的数据库子系统。
+Query Processor|查询处理器||将查询语句解析为可执行操作并产生结果的模块。
+Transaction Manager|事务管理器||组织事务状态、提交回滚及与并发控制交互的组件。
+Recovery Manager|恢复管理器||通过日志、检查点和重做撤销使数据库故障后恢复一致状态的模块。
+Catalog Manager|系统目录管理器||维护表结构、索引、统计和其他数据库元数据的组件。
+Buffer Pool Manager|缓冲池管理器||管理内存页缓存、页替换和脏页刷盘的存储子系统。
+Relational DBMS|关系数据库管理系统|RDBMS|基于关系模型、使用关系运算处理数据的数据库系统。
+Key-value Database|键值数据库||主要通过键定位与操作值的数据管理系统。
+Document Database|文档数据库||以 JSON 或类似文档为常见数据组织单位的数据库系统。
+Graph Database|图数据库||以节点、边及属性组织数据并优化图遍历查询的数据库。
+Columnar Database|列式数据库||主要按列组织数据以优化分析型扫描与压缩的系统。
+Embedded Database|嵌入式数据库||作为应用程序库运行而不要求独立服务器进程的数据库实现。
+Client–Server Database|客户端—服务器数据库||通过客户端请求与服务端执行协作提供数据管理的部署架构。
+Shared-nothing Database|无共享数据库||各计算节点独立拥有内存和存储、通过网络协作的架构。
+Shared-disk Database|共享磁盘数据库||多个计算节点访问共同持久存储并协调缓存一致性的架构。
+Shared-memory Database|共享内存数据库架构||多个执行单元共享同一地址空间与内存数据结构的数据库组织方式。
+Database Instance|数据库实例||正在运行的数据库进程、内存与附属资源集合。
+Database Schema|数据库模式||定义表、列、约束和其他数据库逻辑对象的结构描述。
+System Catalog|系统目录||保存数据库结构、权限与统计信息的元数据表集合。
+Data Dictionary|数据字典||描述数据库对象、字段含义及依赖关系的元数据设施。
+Database Workload|数据库负载||对数据库发出的请求类型、并发度、读写比和数据访问分布。
+Database Benchmark|数据库基准测试||用标准化数据集和事务或查询评估系统吞吐、延迟及成本的测试。

@@ -1,0 +1,26 @@
+# 占用率、调度与性能建模
+Occupancy|占用率|Occupancy|SM 上活跃 warp 数量与架构允许最大活跃 warp 数量的比例。
+Theoretical Occupancy|理论占用率||根据线程块大小、寄存器和共享内存限制估算可实现的占用率。
+Achieved Occupancy|实际占用率||在实际执行中按活跃 warp 等指标测得的占用率。
+Occupancy Calculator|占用率计算器||依据 Kernel 资源需求和设备限制估算驻留数量及占用率的工具。
+Register Pressure|寄存器压力||每线程寄存器需求对可驻留线程数与性能产生的资源约束。
+Register Spilling|寄存器溢出||因寄存器不足而将部分临时值存放到线程局部内存的现象。
+Shared Memory Pressure|共享内存压力||每块共享内存需求限制 SM 同时驻留线程块数的现象。
+Resident Warps per SM|每 SM 驻留线程束数||某 SM 当前容纳但尚未完成的 warp 总量。
+Blocks per SM|每 SM 驻留块数||单个 SM 同时容纳线程块的数量，受多种硬件资源上限限制。
+Thread Block Size|线程块大小||单个 CUDA 线程块包含的线程总数。
+Maximum Threads per Block|每块最大线程数||特定计算能力设备允许单个线程块包含的线程数上界。
+Launch Configuration Tuning|启动配置调优||选择网格和块尺寸、资源参数以适配工作规模与 GPU 架构的过程。
+Latency Hiding|延迟隐藏||在某个 warp 等待访存或数据时调度其他可执行 warp 的技术。
+Instruction-level Parallelism|指令级并行|ILP|同一线程或执行流中不互相依赖指令可并发推进的程度。
+Thread-level Parallelism|线程级并行|TLP|由大量独立 CUDA 线程提供的并发执行机会。
+Warp-level Parallelism|线程束级并行||SM 内多个 warp 交错执行以利用计算资源的能力。
+Kernel Throughput|核函数吞吐量||单位时间内 Kernel 完成的数据元素数、操作数或请求数。
+Launch Latency|启动延迟||从发起 CUDA 工作到设备实际开始处理相关任务之间的时间。
+Scheduler Stalls|调度停顿||warp 因数据依赖、资源冲突或其他原因暂时无法发射下一指令的现象。
+Memory-bound Kernel|内存受限核函数||主要性能瓶颈是访存带宽或延迟而非算术吞吐的 Kernel。
+Compute-bound Kernel|计算受限核函数||主要性能瓶颈来自计算指令吞吐或执行资源的 Kernel。
+Roofline Model|屋顶线模型||以算术强度与峰值计算、内存带宽界估算工作负载性能上限的模型。
+Arithmetic Intensity|算术强度||计算操作数量与从指定存储层传输字节数的比率。
+Performance Bottleneck|性能瓶颈||对当前工作负载吞吐或延迟施加主要约束的资源或阶段。
+Performance Portability|性能可移植性||程序在不同 GPU 架构和规模上保持较高相对性能的能力。

@@ -1,0 +1,26 @@
+# 自适应、递归与 Agentic RAG
+Agentic RAG|智能体式 RAG||由规划或智能体逻辑决定检索动作、工具顺序与后续生成的 RAG 架构。
+Iterative Retrieval|迭代检索||根据已获证据或中间答案反复构造新查询继续检索的策略。
+Multi-hop Retrieval|多跳检索||为建立跨实体或文档关系而连续执行多个证据查找步骤的过程。
+Multi-hop Question Answering|多跳问答||答案需组合两个或更多事实链路的问答任务。
+Decomposed Question Answering|分解式问答||先拆分复杂问题并解决子问题，再整合最终答案的方式。
+Tool-augmented Retrieval|工具增强检索||在文本检索之外调用数据库、搜索 API 或其他工具获取证据。
+Web Search Augmentation|网络搜索增强||将网页检索结果引入专有知识库检索与生成过程的策略。
+Self-RAG|Self-RAG 自反思检索增强生成|Self-RAG|通过学习的反思 token 控制检索和评判生成内容的方案。
+Corrective RAG|纠错式 RAG|CRAG|根据检索质量评估采取修正检索或外部搜索等补救步骤的方案。
+Retrieval Reflection|检索反思||根据中间检索证据评估当前路径是否需要修正的过程。
+Self-critique|自我评判||模型检查自身候选回答或证据使用是否符合要求的步骤。
+Retrieval Feedback Loop|检索反馈循环||将生成或评估结果反馈到下一轮检索的闭环。
+Evidence Gap Detection|证据缺口检测||识别当前资料无法回答的子问题或条件的过程。
+Follow-up Search|后续检索||针对证据缺口补充执行的新查询。
+Search Budget|检索预算||允许使用的检索调用次数、时间或计算成本额度。
+Tool-call Budget|工具调用预算||对单个请求的外部工具执行次数或成本施加的限制。
+Stopping Rule|停止规则||当证据充分、预算耗尽或无进展时终止检索的判定条件。
+Planner–Executor Pattern|规划—执行模式||一个模块决定检索计划、另一模块执行并回报结果的架构。
+Reflection Loop|反思循环||多轮检查与修订中间状态以改善最终答案的控制结构。
+Retrieval Policy|检索策略||根据请求状态选择下一检索动作或不检索的决策规则。
+Contextual Bandit Routing|上下文赌博机路由||基于请求特征与反馈学习选择检索方案的在线决策策略。
+Active Retrieval|主动检索||模型在生成过程中根据当前不确定性主动获取外部证据的方式。
+Search Tool Orchestration|检索工具编排||协调不同索引、搜索服务和数据库调用顺序与依赖的过程。
+Knowledge Gap Recovery|知识缺口恢复||发现库内缺失关键事实后通过追加来源或安全拒答修复流程的策略。
+Iterative Answer Refinement|迭代答案修订||在获取新证据后重新组织、纠正或补充生成回答的过程。

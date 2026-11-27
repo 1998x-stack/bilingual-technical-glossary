@@ -163,3 +163,39 @@ python3 -m unittest discover -s tests -v
 [阅读全文（Markdown）](glossaries/optimization-theory.md) · [下载 PDF](pdf/optimization-theory.pdf) · [结构化 TSV](data/optimization-theory.tsv) · [参考来源和审稿说明](data/optimization-theory/SOURCES.md)
 
 原始数据：`data/optimization-theory/chapters/`。复现/检查命令：`node scripts/render_optimization_theory.mjs --check`。**本册暂未计入网站已索引学科数与术语数。**
+
+## 数理统计（独立出版，暂未加入全站索引）
+
+新增《数理统计专有名词中英文对照表》：**400 条术语、16 个专业章节**。内容覆盖统计推断、抽样分布、充分性、点估计、区间估计、假设检验、Fisher 信息与大样本理论、回归和方差分析、非参数与 Bootstrap、贝叶斯统计及因果与生存分析。附 14 组概念辨析、12 道中等难度面试题、12 道考试题与参考解析。
+
+[阅读 Markdown](glossaries/mathematical-statistics.md) · [查看 PDF](pdf/mathematical-statistics.pdf) · [结构化 TSV](data/mathematical-statistics.tsv) · [参考来源与审核状态](data/mathematical-statistics/SOURCES.md)
+
+原始章节：`data/mathematical-statistics/chapters/`；校验：`node scripts/render_mathematical_statistics.mjs --check`。**这是一册独立出版物，暂不计入站点学科及术语搜索总数。**
+
+## 检索增强生成 RAG（独立出版，暂未加入全站检索）
+
+新增《检索增强生成专有名词中英文对照表》：**350 条术语、14 章**，覆盖基础架构、文档解析、文本切块、Embedding、BM25、向量数据库、HNSW、混合检索与 ColBERT、查询改写、答案引用、Agentic RAG、GraphRAG、RAGAS、数据安全以及生产级系统优化。附 14 组概念辨析、10 道中等难度面试题、10 道中等难度考试题及参考答案。
+
+[Markdown 在线阅读](glossaries/rag.md) · [PDF 查看](pdf/rag.pdf) · [TSV 源数据](data/rag.tsv) · [参考论文和审稿说明](data/rag/SOURCES.md)
+
+原始章节：`data/rag/chapters/`。校验命令：`node scripts/render_rag.mjs --check`。**本册暂不计入网站已索引学科数和术语总数。**
+
+## CUDA（独立出版，暂未加入全站术语索引）
+
+新增《CUDA 专有名词中英文对照表》：**400 条双语术语、16 个专业章节**。主题包括 CUDA 编程模型、线程层级、Kernel 启动、Global/Shared/Local Memory、同步和原子操作、Stream/CUDA Graph、统一内存、Occupancy、访存合并、Tensor Core 与混合精度、nvcc/PTX/SASS、Runtime/Driver API、cuBLAS/cuDNN/NCCL/CUTLASS、Nsight 分析与多 GPU。
+
+附 **14 组概念辨析、10 道中等难度面试题、10 道中等难度考试题及解析**。
+
+[Markdown 阅读](glossaries/cuda.md) · [PDF 下载](pdf/cuda.pdf) · [结构化 TSV](data/cuda.tsv) · [官方文档与审稿说明](data/cuda/SOURCES.md)
+
+原始词表位于 `data/cuda/chapters/`，执行 `node scripts/render_cuda.mjs --check` 可核对生成文件。**这是独立出版物，尚未计入网站已索引的学科数与术语数。**
+
+## 数据库系统（独立出版，尚未加入全站搜索）
+
+新增《数据库系统专有名词中英文对照表》：**400 条双语术语、16 个专业章节**。区别于已有《SQL 数据库》语法手册，本册围绕 DBMS 底层原理与实现组织，包括物理存储页、缓冲池、B+ 树、LSM、查询执行器、查询优化器、ACID、2PL、MVCC、WAL/ARIES、复制与分片、OLTP/OLAP/HTAP、运维和安全。
+
+附 **14 组概念辨析、10 道中等难度面试题、10 道中等难度考试题与解析**，配合 CMU 15-445、PostgreSQL、SQLite、RocksDB 和 ARIES 原始论文等来源。
+
+[Markdown 在线阅读](glossaries/database-systems.md) · [PDF 查看](pdf/database-systems.pdf) · [结构化 TSV](data/database-systems.tsv) · [审稿说明与来源](data/database-systems/SOURCES.md)
+
+原始数据：`data/database-systems/chapters/`；可复现校验：`node scripts/render_database_systems.mjs --check`。**尚未计入网站已索引学科数与术语总数。**

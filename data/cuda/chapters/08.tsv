@@ -1,0 +1,26 @@
+# 显存分配、传输与统一内存
+cudaMalloc()|设备内存分配函数|cudaMalloc|通过 Runtime API 在当前设备上分配指定大小内存的接口。
+cudaFree()|设备内存释放函数|cudaFree|释放通过兼容 CUDA 分配接口取得设备内存的 API。
+cudaMallocAsync()|异步设备内存分配|cudaMallocAsync|提交与流顺序关联的设备内存分配操作，通常由内存池支持。
+cudaFreeAsync()|异步设备内存释放|cudaFreeAsync|把设备内存释放与指定流中的操作顺序关联的 API。
+Memory Pool|内存池|MemPool|复用 GPU 内存分配以降低频繁申请和释放成本的管理机制。
+cudaMemcpy()|同步内存复制|cudaMemcpy|执行指定来源和目的内存之间拷贝的 Runtime API，具体同步行为依参数和内存类型而异。
+cudaMemcpyAsync()|异步内存复制|cudaMemcpyAsync|将数据拷贝关联到指定流的 API，异步性与重叠效果受内存类型等条件约束。
+Host-to-Device Copy|主机到设备复制|H2D|将 CPU 可访问内存中的数据传送到 GPU 设备空间的操作。
+Device-to-Host Copy|设备到主机复制|D2H|将 GPU 设备数据传送到 CPU 可访问内存的操作。
+Device-to-Device Copy|设备到设备复制|D2D|在相同或不同设备存储区域之间传送数据的操作。
+Pinned Host Memory|页锁定主机内存|Pinned Memory|被锁定不允许分页换出的主机内存，可用于提升特定 DMA 传输效率。
+Pageable Host Memory|可分页主机内存||操作系统可按需换出物理页的一般主机内存。
+Mapped Host Memory|映射主机内存||在支持的环境中可经设备地址直接访问的页锁定主机内存。
+Zero-copy Access|零复制访问||设备直接访问可映射主机内存而不先显式复制到设备独立缓冲区的方式。
+Unified Virtual Addressing|统一虚拟寻址|UVA|在支持系统中让主机与设备使用协调的单一虚拟地址空间模型。
+Unified Memory|统一内存|UM|让 CPU 与 GPU 可通过共享管理的内存对象访问同一数据的 CUDA 能力。
+Managed Memory|托管内存||由 CUDA 统一内存机制管理迁移和访问的存储区域。
+cudaMallocManaged()|托管内存分配函数|cudaMallocManaged|在统一内存模型下分配托管内存的 Runtime API。
+Page Migration|内存页迁移||运行时或驱动根据访问需求在系统内存与 GPU 内存之间移动页面的过程。
+Page Fault|页面故障||访问地址尚未具备所需映射或驻留条件而触发内存管理处理的事件。
+Prefetching|内存预取||在实际访问前主动移动或准备数据以减少缺页与访存延迟。
+cudaMemPrefetchAsync()|异步内存预取|cudaMemPrefetchAsync|按目标位置请求在流中预取托管内存的 API，签名随 CUDA 版本演进。
+Memory Advice|内存使用建议||向统一内存管理系统提供访问倾向或优选位置等提示信息的机制。
+Memory Oversubscription|显存超额订阅||受管理数据总工作集超过 GPU 物理显存容量并依赖迁移与回收的情形。
+Peer-to-Peer Memory Access|对等设备内存访问|P2P|一个 GPU 在支持拓扑与权限条件下直接访问另一 GPU 内存的机制。

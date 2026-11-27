@@ -1,0 +1,26 @@
+# 查询理解、改写与动态路由
+Query Understanding|查询理解||分析请求意图、实体、时效与约束以决定检索策略的过程。
+Query Rewriting|查询改写||将原始问题转写为更适合检索的查询表达。
+Query Expansion|查询扩展||加入同义词、上下位词或相关概念提升潜在召回的技术。
+Query Decomposition|查询分解||把多条件复杂问题拆成多个可独立检索的子问题。
+Multi-query Retrieval|多查询检索||为一个用户问题生成多个查询变体并合并结果的策略。
+Hypothetical Document Embeddings|假设文档嵌入|HyDE|先生成与问题匹配的假设答案文档，再用其向量检索真实文档的方法。
+Step-back Prompting|后退提问||先将具体问题泛化为较高层背景问题，以检索基础概念的策略。
+Query Intent Classification|查询意图分类||识别查事实、求比较、找操作步骤等不同任务类型的分类步骤。
+Entity Extraction|实体抽取||从查询中识别机构、人名、产品、时间或其他实体的过程。
+Entity Linking|实体链接||将文本提及映射到知识库中唯一实体标识的步骤。
+Named Entity Recognition|命名实体识别|NER|识别文本中人、组织、地点等预定义类型实体的模型任务。
+Query Routing|查询路由||根据查询特征选择数据源、索引或检索器的策略。
+Domain Routing|领域路由||把请求分发到相应专业知识域或专用数据集的方法。
+Source Selection|数据源选择||在多个知识库中确定最值得访问的来源集合的步骤。
+Retrieval Planning|检索规划||为复杂请求决定查询序列、检索工具与停止条件的过程。
+Adaptive Retrieval|自适应检索||根据问题难度或中间结果动态调整是否检索以及检索次数的方式。
+Retrieval Gating|检索门控||根据判定信号决定是否启用外部检索的机制。
+Clarification Question|澄清性问题||当用户意图或关键约束不足时请求补充信息的问题。
+Conversational Query Reformulation|对话查询重构||把依赖上文的省略句转换为可独立检索的完整查询。
+Coreference Resolution|指代消解||确定代词或省略表达与此前实体之间对应关系的步骤。
+Temporal Query Interpretation|时间查询解释||理解“去年”“最新”等时间表达并约束检索时间范围的过程。
+Freshness-aware Routing|时效感知路由||根据知识更新速度或请求时间要求选择实时或离线索引的策略。
+Query Complexity Estimation|查询复杂度估计||判断问题需要单跳查找、多跳推理或聚合分析的过程。
+Answerability Estimation|可回答性估计||估计当前证据是否足够支持可靠回答的过程。
+Query Execution Plan|查询执行计划||规定各子查询、数据源和结果融合次序的执行方案。

@@ -1,0 +1,26 @@
+# 贝叶斯推断与计算方法
+Bayesian Inference|贝叶斯推断||利用先验和似然通过贝叶斯定理计算参数后验分布的推断框架。
+Bayes Theorem|贝叶斯定理||把条件概率与先验概率联系起来的概率恒等式。
+Prior Distribution|先验分布||在分析当前数据之前为未知参数赋予的概率分布。
+Posterior Distribution|后验分布||结合观察数据后依据贝叶斯定理得到的参数条件分布。
+Posterior Predictive Distribution|后验预测分布||对参数后验分布积分所得未来观测的预测概率分布。
+Prior Predictive Distribution|先验预测分布||对参数先验分布积分所得尚未观察数据的预测分布。
+Conjugate Prior|共轭先验||更新指定似然后后验仍属于同一分布族的先验选择。
+Hyperparameter|超参数||控制先验或层级模型形状、并可固定或进一步建模的参数。
+Maximum a Posteriori Estimate|最大后验估计|MAP|选择后验密度达到最大值的参数点估计。
+Posterior Mean|后验均值||参数后验分布的期望，平方损失下常为贝叶斯最优点估计。
+Posterior Median|后验中位数||参数后验分布的中位数，绝对误差损失下常为贝叶斯最优点估计。
+Credible Interval|可信区间||在给定数据与先验模型后，后验概率达到指定水平的参数区间。
+Highest Posterior Density Region|最高后验密度区域|HPD|包含指定后验概率质量且优先选择高后验密度点的集合。
+Bayes Factor|贝叶斯因子|BF|两个假设或模型对应边际似然之比。
+Posterior Odds|后验优势||两个假设后验概率的比值，等于先验优势乘贝叶斯因子。
+Hierarchical Bayesian Model|层级贝叶斯模型||为多层群组参数及超参数指定条件概率结构的模型。
+Posterior Predictive Check|后验预测检验||将模型后验预测复制数据与实际数据比较以评估模型适配的程序。
+Prior Sensitivity Analysis|先验敏感性分析||比较不同合理先验设定对后验推断结果影响的评估。
+Markov Chain Monte Carlo|马尔可夫链蒙特卡洛|MCMC|构造以目标后验为平稳分布的马尔可夫链进行近似采样的计算方法。
+Gibbs Sampling|吉布斯采样||通过逐个从参数条件后验分布采样构造马尔可夫链的方法。
+Metropolis–Hastings Algorithm|Metropolis–Hastings 算法|MH|使用提议分布和接受概率构造目标平稳分布马尔可夫链的算法。
+Hamiltonian Monte Carlo|哈密顿蒙特卡洛|HMC|引入动量并模拟哈密顿动力学以高效采样连续参数的算法。
+Variational Inference|变分推断|VI|通过优化可计算近似分布与目标后验的差异来进行贝叶斯近似推断。
+Evidence Lower Bound|证据下界|ELBO|由变分分布构造的边际对数似然下界，常用作变分优化目标。
+Bayesian Decision Rule|贝叶斯决策规则||选择后验期望损失最小的行动或估计规则。

@@ -1,0 +1,26 @@
+# 查询优化器、统计信息与代价模型
+Query Optimizer|查询优化器||在可替换的等价或可接受计划中选取预计执行成本较低方案的组件。
+Cost-based Optimization|基于代价的优化|CBO|依据数据统计与硬件成本模型估计并比较执行计划的策略。
+Rule-based Optimization|基于规则的优化||根据预定义规则或启发式顺序选择查询变换及物理操作的方法。
+Cardinality Estimation|基数估计||预测中间或最终查询算子会输出多少条记录的过程。
+Selectivity Estimation|选择率估计||预测某个过滤条件保留输入记录比例的过程。
+Column Statistics|列统计信息||描述列值分布、不同值数量及 NULL 比例等信息的元数据。
+Histogram|频率直方图||用分桶记录列值分布、帮助估计查询谓词选择率的统计结构。
+Equi-depth Histogram|等深直方图||使每个桶大致包含相同数量样本的列值分布统计。
+Equi-width Histogram|等宽直方图||按照数值范围宽度相等的桶统计列值分布的方法。
+Most Common Values|高频取值统计|MCV|专门保存列中出现频率最高取值及其频率的统计信息。
+Distinct Value Count|不同值个数|NDV|列或列组合中不同取值数量的统计指标。
+Correlation Statistics|相关性统计||描述多列值分布依赖关系、避免简单独立假设误估的统计信息。
+Independence Assumption|列独立性假设||在缺乏联合分布统计时把多个谓词选择率相乘的近似假设。
+Join Cardinality Estimation|连接基数估计||预测连接两个输入关系后会产生多少匹配行的过程。
+Cost Model|代价模型||将 CPU、I/O、网络和内存开销组合估算计划成本的定量规则。
+Access Path Selection|访问路径选择||在全表扫描、索引访问等读取方式中选择执行方案的过程。
+Join Order Optimization|连接顺序优化||在多个表的连接序列或树结构中搜索低成本顺序的技术。
+Dynamic Programming Optimizer|动态规划式优化器||缓存子计划最优成本并组合表集合求取低成本连接计划的优化器。
+Volcano Optimizer|Volcano 优化框架||以等价表达式集合和搜索规则组织查询优化的经典框架。
+Cascades Optimizer|Cascades 优化框架||基于 Memo、规则变换与物理属性搜索优化执行计划的框架。
+Memo Structure|优化器 Memo||保存逻辑等价组、候选表达式及优化结果的共享数据结构。
+Interesting Order|有价值的排序||可被上层排序或连接算子复用、因此需要纳入计划搜索的中间结果顺序。
+Plan Enumeration|执行计划枚举||产生和比较多个可能物理执行方案的搜索过程。
+Adaptive Query Processing|自适应查询处理||执行过程中依据实际数据规模或反馈改变执行策略的方法。
+Reoptimization|执行计划重新优化||发现统计失准或运行环境变化后重新选择后续执行计划的技术。

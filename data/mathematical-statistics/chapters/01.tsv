@@ -1,0 +1,26 @@
+# 统计推断基础与数据生成
+Mathematical Statistics|数理统计||利用概率论研究从随机数据推断未知总体特征的方法与理论。
+Statistical Inference|统计推断||基于观察数据对总体参数、分布或科学假设作出推断的过程。
+Population|总体||研究目标所对应的全部单位或随机生成机制。
+Sample|样本||从总体或数据生成过程获得的一组观测。
+Observation|观测值||对单个研究对象或事件记录的变量取值。
+Sampling Unit|抽样单位||在抽样设计中被选取的最基本对象或集合。
+Statistical Unit|统计单位||实际测量属性或结果的分析对象。
+Parameter|参数||描述统计模型或总体特征的未知常数。
+Statistic|统计量||只依赖样本观测而不含未知参数的可计算函数。
+Estimator|估计量||用于推断未知参数的样本函数。
+Estimate|估计值||估计量在某次实际样本上计算得到的数值。
+Sampling Design|抽样设计||规定样本如何从目标总体被选择的概率或程序规则。
+Simple Random Sampling|简单随机抽样|SRS|使规定大小的每个单位子集有相同被选概率的抽样方法。
+Stratified Sampling|分层抽样||按已知特征划分层并在每层独立抽样的方法。
+Cluster Sampling|整群抽样||首先抽取群组，再调查群内全部或部分单位的设计。
+Systematic Sampling|系统抽样||在随机起点后按固定间隔选取总体单位的方法。
+Sampling Frame|抽样框||可用于实施抽样的目标单位名单或覆盖结构。
+Selection Bias|选择偏倚||样本进入机制使观测分布系统性偏离研究目标的偏倚。
+Nonresponse Bias|无应答偏倚||未回答单位与回答单位系统性不同而造成的估计偏差。
+Measurement Error|测量误差||记录值与真实目标量之间因仪器或过程产生的差异。
+Confounding Variable|混杂变量||同时关联解释因素与结局、可能扭曲两者关系的变量。
+Independent and Identically Distributed|独立同分布|IID|样本分量相互独立且具有相同概率分布的假设。
+Random Sample|随机样本||通常指从同一分布独立抽取的一组随机变量。
+Statistical Model|统计模型||为数据生成分布指定的概率分布族。
+Model Misspecification|模型设定错误||假设的分布族或结构不能充分描述真实数据机制的情形。

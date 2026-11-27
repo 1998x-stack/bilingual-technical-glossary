@@ -1,0 +1,26 @@
+# 性能调优、安全、运维与系统测试
+Query Latency|查询延迟||从数据库收到请求到向调用方返回结果所花费的时间。
+Transaction Throughput|事务吞吐量||数据库单位时间内成功完成的事务数量。
+Transactions per Second|每秒事务数|TPS|衡量事务处理吞吐的常用指标。
+Tail Latency|尾部延迟||请求延迟分布中 P95、P99 等高百分位响应时间。
+Connection Pool|连接池||复用客户端到数据库的连接以控制建立连接与并发管理成本的组件。
+Prepared Statement|预编译语句||将语句准备和参数绑定分开、可能复用解析或计划结果的执行接口。
+Plan Cache|执行计划缓存||保存查询解析或优化后的执行计划供后续重复使用的缓存结构。
+Parameter Sniffing|参数嗅探||优化器以初次或特定绑定参数值选择计划、可能不适应其他参数分布的现象。
+Query Profiling|查询性能剖析||记录算子耗时、扫描行数、缓冲命中及其他指标定位性能瓶颈的过程。
+EXPLAIN Plan|执行计划解释|EXPLAIN|显示查询优化器所选访问路径和物理执行算子的诊断输出。
+EXPLAIN ANALYZE|实测执行计划|EXPLAIN ANALYZE|执行查询并展示实际耗时、行数等指标的分析方式，具体语义依 DBMS 而异。
+Index Tuning|索引调优||依据查询与写入负载选择索引键、顺序和覆盖字段的优化过程。
+Slow Query Log|慢查询日志||记录超过时间阈值或其他条件查询的诊断日志。
+Database Monitoring|数据库监控||持续采集数据库可用性、查询、内存、I/O 与复制状态指标的实践。
+Backup|数据库备份||创建可用于数据恢复的独立持久副本的操作。
+Full Backup|全量备份||复制选定恢复范围内全部所需数据状态的备份方式。
+Incremental Backup|增量备份||只保存相对参考备份或时间点发生变化的数据部分的方式。
+Recovery Point Objective|恢复点目标|RPO|业务允许灾难恢复后最多丢失的数据时间跨度。
+Recovery Time Objective|恢复时间目标|RTO|业务允许数据库服务在故障后恢复的最长时间目标。
+Database Authentication|数据库身份认证||核实用户、服务或应用对数据库访问身份的过程。
+Role-based Access Control|基于角色的访问控制|RBAC|根据预定义角色分配数据库操作和对象权限的授权模型。
+Row-level Security|行级安全|RLS|依据当前调用者或策略为数据库查询限制可见记录的能力。
+Encryption at Rest|静态数据加密||对数据库持久存储或备份中的信息进行加密保护。
+SQL Injection|SQL 注入||攻击者把恶意 SQL 片段插入未正确参数化的查询以改变执行语义的漏洞。
+Fault Injection Testing|故障注入测试||主动制造节点崩溃、磁盘故障或网络分区以验证数据库恢复和一致性的测试。

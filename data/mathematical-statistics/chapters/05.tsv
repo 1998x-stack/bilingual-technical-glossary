@@ -1,0 +1,26 @@
+# 点估计、损失与估计量性质
+Point Estimation|点估计||使用单个统计量数值推测未知参数的推断方式。
+Bias of an Estimator|估计量偏差||估计量期望与真实目标参数之间的差。
+Unbiased Estimator|无偏估计量||在参数空间内期望等于目标参数的估计量。
+Asymptotically Unbiased Estimator|渐近无偏估计量||样本量增大时偏差趋于零的估计量。
+Consistent Estimator|相合估计量||样本量增大时依概率收敛到真实参数的估计量。
+Mean Squared Error|均方误差|MSE|估计量与目标参数之差的平方期望。
+Variance of an Estimator|估计量方差||估计量围绕其期望值抽样波动程度的平方量。
+Bias–Variance Decomposition|偏差—方差分解||平方损失风险可拆成估计量方差与偏差平方之和。
+Efficiency of an Estimator|估计效率||相对于理论下界或另一估计量衡量抽样方差的性质。
+Relative Efficiency|相对效率||比较两个估计量方差或风险表现的比值。
+Maximum Likelihood Estimator|极大似然估计量|MLE|选择使观测数据似然达到最大值的参数估计量。
+Method of Moments|矩估计法|MoM|以样本矩匹配理论矩来求解未知参数的估计方法。
+Generalized Method of Moments|广义矩估计法|GMM|通过一组矩条件构造加权二次目标并估计参数。
+Minimum Variance Unbiased Estimator|最小方差无偏估计量|MVUE|在无偏估计量类中具有最低方差的估计量。
+Uniformly Minimum Variance Unbiased Estimator|一致最小方差无偏估计量|UMVUE|对所有允许参数均达到无偏类最小方差的估计量。
+Best Linear Unbiased Estimator|最佳线性无偏估计量|BLUE|在线性无偏估计量类中协方差最小的估计量。
+Loss Function|损失函数||量化估计行动与真实参数之间代价的函数。
+Quadratic Loss|平方损失||估计误差的平方，常用于推导均方误差最优估计。
+Absolute Error Loss|绝对误差损失||估计值与目标之间差值绝对值构成的损失。
+Risk Function|风险函数||给定真实参数时，估计规则损失的期望。
+Admissible Estimator|容许估计量||不存在在所有参数上风险不高且至少一处更低的其他估计量。
+Minimax Estimator|极小极大估计量||使参数空间内最大风险达到最小的估计量。
+Shrinkage Estimator|收缩估计量||将初始估计朝某个中心或结构压缩以改善平均风险的估计方法。
+James–Stein Estimator|James–Stein 估计量||在维度至少为三的正态均值估计中可支配通常样本均值的收缩估计量。
+Empirical Bayes Estimator|经验贝叶斯估计量||用观测样本估计先验超参数后构造贝叶斯型估计的规则。

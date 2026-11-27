@@ -29,6 +29,14 @@ jobs:
         run: node scripts/render_distributed_systems.mjs --check
       - name: Verify Optimization Theory publication and source mirrors
         run: node scripts/render_optimization_theory.mjs --check
+      - name: Verify Mathematical Statistics source, PDF and mirrored publications
+        run: node scripts/render_mathematical_statistics.mjs --check
+      - name: Verify RAG glossary source, PDF and Markdown mirrors
+        run: node scripts/render_rag.mjs --check
+      - name: Verify CUDA chapter sources and generated publication mirrors
+        run: node scripts/render_cuda.mjs --check
+      - name: Verify Database Systems sources and publication mirrors
+        run: node scripts/render_database_systems.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
