@@ -1,0 +1,26 @@
+# 网络通信、RPC 与接口语义
+Remote Procedure Call|远程过程调用|RPC|将远端服务操作包装成类似本地函数调用的交互机制。
+Remote Method Invocation|远程方法调用|RMI|面向对象环境中对远程对象方法发起调用的机制。
+Request-response Pattern|请求—响应模式||由请求方发送请求并等待对应结果的交互方式。
+Message Passing|消息传递||节点通过发送与接收消息交换数据或协调状态的通信模型。
+Synchronous Communication|同步通信||发送方与接收方按特定时序阻塞或协同完成交互的模式。
+Asynchronous Communication|异步通信||交互发起后不要求调用方持续阻塞等待完成的模式。
+Unary RPC|一元 RPC||每次调用只发送一个请求并接收一个响应的 RPC 形态。
+Streaming RPC|流式 RPC||一次调用中持续交换多个消息的远程通信方式。
+Serialization|序列化||将结构化对象转换为可传输或存储的字节表示。
+Deserialization|反序列化||将编码后的数据还原为程序可处理的结构。
+Wire Protocol|线协议||规定网络消息的字节布局、字段编码与交互规则的协议。
+Interface Definition Language|接口定义语言|IDL|以独立于实现语言的方式声明跨系统服务接口。
+Protocol Buffers|协议缓冲区|Protobuf|使用模式定义消息并提供紧凑二进制编码的序列化技术。
+gRPC|gRPC 远程调用框架|gRPC|常基于 HTTP/2 与 Protobuf 提供多语言 RPC 的框架。
+HTTP/2 Multiplexing|HTTP/2 多路复用||允许多个逻辑流在同一连接上交错传输数据帧的能力。
+Connection Pooling|连接池||复用已建立的网络连接以降低连接创建成本的机制。
+Keepalive|保活机制||发送心跳或探测以维持连接或识别不可用对端的机制。
+Request Timeout|请求超时||请求在规定时间内未完成时终止等待的控制策略。
+Deadline Propagation|截止时间传播||跨多层服务传递剩余执行预算，避免下游无界等待。
+Retry Policy|重试策略||指定失败后是否重发请求、重试次数及间隔的规则。
+Exponential Backoff|指数退避||使连续重试间隔按指数增长以降低拥塞风险的机制。
+Retry Jitter|重试随机抖动||在退避间隔中加入随机变化以避免大量客户端同步重试。
+Idempotent Request|幂等请求||重复执行同一请求不会产生额外业务效果的请求语义。
+Request Identifier|请求标识符||用于关联调用、重试和去重的唯一或范围内唯一标记。
+Duplicate Suppression|重复请求抑制||根据请求标识或业务键避免重试导致重复执行的机制。
