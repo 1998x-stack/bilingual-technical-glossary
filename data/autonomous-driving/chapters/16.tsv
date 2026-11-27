@@ -1,0 +1,26 @@
+# 车路协同、V2X 与智能交通基础设施
+Vehicle-to-everything Communication|车联网通信|V2X|车辆与其他车辆、道路设施、行人设备或网络之间的信息交换技术。
+Vehicle-to-vehicle Communication|车车通信|V2V|车辆之间直接或间接交换位置、速度和协同信息的通信方式。
+Vehicle-to-infrastructure Communication|车路通信|V2I|车辆与路侧单元或交通设施之间的数据交换机制。
+Vehicle-to-pedestrian Communication|车人通信|V2P|车辆与行人或骑行者设备间共享存在和潜在风险信息的方式。
+Vehicle-to-network Communication|车网通信|V2N|车辆通过蜂窝等网络连接云端和服务平台的通信模式。
+Roadside Unit|路侧通信单元|RSU|安装在道路基础设施处用于车路信息交换的通信设备。
+On-board Unit|车载通信单元|OBU|集成在车辆内支持 V2X 消息接收和发送的设备。
+Cellular V2X|蜂窝车联网|C-V2X|基于蜂窝无线技术支持车端与周边或网络信息交换的通信标准体系。
+Dedicated Short-range Communication|专用短程通信|DSRC|面向车用场景的一类短距离无线通信技术。
+Basic Safety Message|基本安全消息|BSM|用于广播车辆位置、速度和其他安全相关状态的消息类型。
+Cooperative Awareness Message|协作感知通告|CAM|在部分车联网标准中广播车辆运动及基础状态的消息。
+Decentralized Environmental Notification Message|分布式环境事件消息|DENM|用于发布道路危险事件与相关地理、时间信息的协作消息。
+Signal Phase and Timing|信号相位与剩余时间|SPaT|描述交通信号状态及预测切换时间的结构化消息内容。
+MAP Message|路口地图消息|MAP|在 V2X 生态中描述交叉口几何和车道连接关系的数据消息。
+Cooperative Perception|协同感知||结合车辆与路侧或其他车辆的观测扩大环境可感知范围的技术。
+Collective Perception Message|集体感知消息|CPM|传送协同检测对象及传感信息的标准化消息类别。
+Infrastructure Perception|路侧基础设施感知||通过部署在道路上的传感器检测交通目标和环境状态的系统能力。
+Intersection Management|交叉口协同管理||依据多个车辆意图与信号控制优化路口通行顺序的方法。
+Platooning|车辆编队行驶||多辆车通过协同控制以较小间距成队运行的交通方式。
+Cooperative Adaptive Cruise Control|协同自适应巡航|CACC|结合车辆间通信与传感数据改善跟车速度控制的技术。
+Cooperative Lane Change|协同变道||多车交换意图或状态并协调安全变道时机的驾驶行为。
+V2X Latency|车联网通信延迟||从消息生成到接收并用于决策之间的时间差。
+V2X Trust Management|车联网信任管理||验证车路消息发送方身份及数据完整性的安全处理机制。
+Misbehavior Detection|异常车联网消息检测||识别伪造、不一致或恶意车路消息的安全能力。
+Edge-assisted Driving|边缘协助驾驶||利用道路边缘计算为车端提供环境感知或交通协调辅助的模式。
