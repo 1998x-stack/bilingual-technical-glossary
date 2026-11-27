@@ -1,0 +1,26 @@
+# 视觉 Transformer、预训练与自监督学习
+Vision Transformer|视觉 Transformer|ViT|把图像切为 patch token 并利用 Transformer 建模空间关系的视觉架构。
+Image Patch|图像块|Patch|将图像按固定或自适应窗口划分的局部区域。
+Patch Embedding|图像块嵌入||把图像 patch 投影到模型隐藏维度的特征表示。
+Class Token|分类词元|CLS|在部分视觉 Transformer 中聚合全局信息以用于分类的特殊 token。
+Positional Embedding|位置嵌入||向视觉 token 添加空间位置信息的可训练或固定表示。
+Self-attention|自注意力||序列中每个 token 与其他 token 计算权重并聚合其特征的机制。
+Multi-head Self-attention|多头自注意力|MHSA|在多个投影子空间并行计算视觉 token 注意力的结构。
+Window-based Attention|窗口注意力||把自注意力限制在局部空间窗口内以降低计算成本的机制。
+Shifted Window Attention|移位窗口注意力||通过交替移动局部窗口让不同窗口间传递信息的注意力方式。
+Swin Transformer|Swin Transformer||采用分层 patch 表示和移位窗口注意力的视觉骨干架构。
+Hierarchical Vision Transformer|层次视觉 Transformer||通过逐级降采样与多尺度 token 表示建立视觉特征层级的模型。
+Masked Image Modeling|掩码图像建模|MIM|遮蔽部分视觉 token 或图像区域并训练模型重建或预测其内容的预训练方式。
+Masked Autoencoder|掩码自编码器|MAE|仅编码可见图像 patch 并重建被遮蔽像素的视觉预训练方案。
+Contrastive Learning|对比学习||通过正负样本关系优化视觉特征空间的自监督或弱监督学习方法。
+SimCLR|SimCLR 对比学习||利用数据增强视图和对比损失学习无标签图像表示的框架。
+MoCo|动量对比学习|MoCo|利用动量编码器与负样本队列实现对比学习的框架。
+BYOL|自举式表示学习|BYOL|利用在线和目标网络的一致性学习特征、无需显式负样本的自监督方案。
+DINO|无标签自蒸馏视觉学习|DINO|借助教师学生自蒸馏学习视觉表示的自监督方法。
+DINOv2|DINOv2 视觉表征模型||利用大规模无标签视觉数据学习通用视觉特征的模型方案。
+Vision Pretraining|视觉预训练||在大规模图像或视频数据上先学习可迁移视觉表示的过程。
+Self-supervised Vision Learning|视觉自监督学习||从图像自身或增强视图自动构建学习信号的视觉表示学习范式。
+Linear Probe|线性探测评测||冻结编码器后训练线性分类头测量特征可分性的方法。
+ImageNet Pretraining|ImageNet 预训练||使用 ImageNet 图像分类数据学习初始视觉特征的常见训练方案。
+Feature Distillation|视觉特征蒸馏||让学生模型匹配教师模型的图像中间表示或输出分布的训练方法。
+Token Pruning|视觉词元剪枝||根据重要性删除部分视觉 token 以降低计算和内存成本的技术。
