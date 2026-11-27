@@ -1,0 +1,26 @@
+# 物理存储、页与记录布局
+Disk Page|磁盘页||数据库存储和缓存管理中的固定或受约束大小的数据传输单位。
+Page Identifier|页面标识符|Page ID|在文件或表空间中唯一定位物理或逻辑存储页的编号。
+Slotted Page|槽式页||通过页头与槽目录管理可变长度记录位置的页面布局。
+Slot Directory|槽目录||记录页面内各条记录偏移及其状态的索引数组。
+Page Header|页头||保存页面类型、空闲空间、校验信息和其他控制元数据的结构。
+Tuple Header|元组头||保存记录可见性、长度、版本或标志位的内部字段集合。
+Record Identifier|记录标识符|RID|用于定位物理记录的页编号和槽位等组合标记。
+Heap File|堆文件||不按某个搜索键排序存放记录的数据库数据文件。
+Heap-organized Table|堆组织表||将表记录放在无固定键排序的堆页中的物理表结构。
+Clustered Table|聚簇表||表中记录的物理或主要存储顺序与指定键组织密切关联的结构。
+Tablespace|表空间||逻辑组织数据库文件、页面与存储资源的管理单元。
+Database File|数据库数据文件||存储表、索引或其他持久数据库页面的操作系统文件。
+Extent|区段||由连续或逻辑连续的多个页面组成、用于成批管理的存储分配单位。
+Free-space Map|空闲空间映射||记录页面剩余可用空间以帮助插入选择目标页的元数据。
+Allocation Bitmap|分配位图||用位标记哪些页或区段已分配的存储管理结构。
+Variable-length Record|变长记录||字段长度或可空情况使每条记录所占字节数不固定的布局。
+Fixed-length Record|定长记录||所有记录按预定字节布局占用相同长度的结构。
+Tuple Serialization|元组序列化||将记录及字段值编码为存储页字节表示的过程。
+Null Bitmap|空值位图||按位标记记录中哪些字段为 NULL 的内部存储结构。
+Record Tombstone|记录墓碑标记||代表某条记录已逻辑删除但尚待物理清理的标记。
+Overflow Page|溢出页||用于存放超出普通页容量的记录内容或链式扩展数据的页面。
+Large Object Storage|大对象存储|LOB|面向大型文本或二进制字段的专门数据存储机制。
+Page Checksum|页面校验和||用于在读盘时检测页面静默损坏的校验值。
+Write Amplification|写入放大||物理存储写入字节量超过应用逻辑写入量的现象。
+Physical Data Layout|物理数据布局||记录字段、页面和索引在磁盘或 SSD 上的实际组织方式。
