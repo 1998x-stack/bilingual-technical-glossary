@@ -1,0 +1,26 @@
+# 目标检测、候选框与检测器架构
+Object Detection|目标检测||为图像中的物体预测类别与边界框位置的任务。
+Object Localization|物体定位||估计特定目标在图像中的位置或边界范围的任务。
+Detection Head|检测预测头||把视觉特征转换为类别分数及边界框参数的模型组件。
+Objectness Score|目标存在置信分数||表示候选区域是否包含任何目标的模型评分。
+Region Proposal|候选区域||可能包含目标、供后续分类或精细定位的图像区域。
+Region Proposal Network|区域建议网络|RPN|在特征图上预测候选框及目标存在分数的神经模块。
+Anchor Box|先验锚框|Anchor|在多个位置以预定义尺寸和宽高比构造的候选参考框。
+Anchor-free Detector|无锚框检测器||无需固定锚框集合、直接从点或其他表示回归目标位置的检测方案。
+Two-stage Detector|两阶段检测器||先生成候选区域、再细化分类和定位的检测架构。
+One-stage Detector|单阶段检测器||在特征图上直接预测类别与目标位置的检测架构。
+R-CNN|区域卷积神经网络|R-CNN|对候选区域提取 CNN 特征并分类的早期检测架构。
+Fast R-CNN|Fast R-CNN||共享整图特征计算、再按候选区域池化并预测的检测模型。
+Faster R-CNN|Faster R-CNN||利用 RPN 联合候选区域生成与区域检测的两阶段架构。
+Mask R-CNN|Mask R-CNN||在 Faster R-CNN 类检测器基础上增加实例掩码预测分支的架构。
+YOLO|你只看一次检测器|YOLO|一系列通过单次前向传播完成检测的实时目标检测模型。
+SSD|单次多框检测器|SSD|利用多尺度特征图上的默认框直接预测类别和框的检测器。
+RetinaNet|RetinaNet 检测器||引入 Focal Loss 改善密集单阶段目标检测训练的架构。
+DETR|检测 Transformer|DETR|把目标检测形式化为集合预测、采用 Transformer 与二分图匹配损失的模型。
+Deformable DETR|可变形 DETR||利用稀疏多尺度可变形注意力提升 DETR 训练和检测效率的架构。
+Bounding Box Regression|边界框回归||学习连续参数以修正或直接预测物体框位置与尺度的任务。
+Intersection over Union|交并比|IoU|预测区域与真实区域交集面积除以并集面积的重叠指标。
+Non-maximum Suppression|非极大值抑制|NMS|根据候选检测分数与重叠程度移除冗余框的后处理算法。
+Soft-NMS|软化非极大值抑制||根据检测框重叠连续降低候选分数而非直接删除的策略。
+Focal Loss|焦点损失||降低容易样本损失权重、强调难分类样本的分类目标函数。
+Bipartite Matching Loss|二分图匹配损失||通过一对一匹配预测集合与真实目标集合定义训练损失的方案。
