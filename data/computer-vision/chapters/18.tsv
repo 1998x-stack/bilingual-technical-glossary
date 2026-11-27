@@ -1,0 +1,26 @@
+# 视觉语言模型、跨模态理解与开放词表视觉
+Vision–Language Model|视觉语言模型|VLM|联合处理图像与文本、支持视觉语义理解或生成的模型。
+Multimodal Learning|多模态学习||从图像、文本、音频等不同模态联合学习表示或任务映射的方法。
+Vision Encoder|视觉编码器||把原始图像转换为特征向量或视觉 token 的模型组件。
+Text Encoder|文本编码器||把自然语言输入映射为语义向量或 token 表示的组件。
+Cross-modal Alignment|跨模态对齐||让图像和文字中描述相同内容的表示建立对应关系的过程。
+Contrastive Language–Image Pretraining|对比式图文预训练|CLIP|通过图像文本配对的对比学习获得跨模态表示的模型方法。
+Image–Text Retrieval|图文检索||以图片搜索相关文本或以文本搜索匹配图片的任务。
+Visual Question Answering|视觉问答|VQA|根据图像内容和自然语言问题生成或选择答案的任务。
+Image Captioning|图像描述生成||把图像中的主要对象、动作与场景转写为自然语言描述的任务。
+Visual Grounding|视觉定位锚定||将语言表达对应到图像中的物体区域或空间位置的任务。
+Referring Expression Comprehension|指代表达理解||根据自然语言描述定位其指向的特定图像目标的任务。
+Phrase Grounding|短语视觉锚定||把语言中的名词短语与图像区域建立细粒度对应的任务。
+Open-vocabulary Detection|开放词表目标检测||能够依据训练时未固定列出的文本类别名称检测目标的任务。
+Zero-shot Image Classification|零样本图像分类||利用语义描述或迁移表示分类训练时未有直接标注的目标类别。
+Few-shot Visual Learning|少样本视觉学习||借助少量目标类别或任务标注样本适应新视觉识别问题的方法。
+Multimodal Instruction Tuning|多模态指令微调||用图文指令与回答配对训练视觉语言模型遵循任务要求的过程。
+Visual Token|视觉词元||将图像 patch、区域或压缩特征转换成供多模态模型处理的序列元素。
+Vision–Language Projector|视觉语言投影模块||把视觉编码器输出映射到语言模型可接收表示空间的组件。
+Cross-attention Fusion|交叉注意力融合||让一个模态的查询根据另一模态键和值整合信息的机制。
+Early Fusion|早期多模态融合||在网络较早阶段联合处理不同模态输入或特征的方式。
+Late Fusion|后期多模态融合||各模态独立提取表示、在预测阶段组合输出或特征的方法。
+OCR-aware VLM|文字感知视觉语言模型||专门提高对图像中文字识别与理解能力的视觉语言模型。
+Document Visual Question Answering|文档视觉问答|DocVQA|依据包含版面与文字的文档图像回答自然语言问题的任务。
+Visual Hallucination|视觉幻觉||视觉语言模型描述图像中并不存在的对象、属性或关系的错误。
+Grounding Verification|视觉证据核验||检查图像区域或其他可观察证据是否支持模型陈述的步骤。
