@@ -50,6 +50,12 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Optimization Theory / 最优化理论 (standalone; not yet indexed)
+
+**400 original bilingual terms · 16 chapters**, covering convex analysis, KKT, duality, linear and integer programming, first/second-order methods, proximal and stochastic optimization, distributed/online methods, global and multiobjective optimization, robustness and optimal control. Includes 14 concept contrasts, 10 intermediate interview questions, 10 exam problems with explanations, and source references. [Markdown](glossaries/optimization-theory.md) · [PDF](pdf/optimization-theory.pdf) · [TSV](data/optimization-theory.tsv) · [Sources](data/optimization-theory/SOURCES.md). Reproducibility: `node scripts/render_optimization_theory.mjs --check`.
+
+**This is a standalone handbook, NOT part of the current indexed-domain and term totals.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
