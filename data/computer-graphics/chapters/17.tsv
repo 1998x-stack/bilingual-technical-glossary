@@ -1,0 +1,26 @@
+# 光线追踪加速结构、遍历与性能
+Acceleration Structure|求交加速结构||通过空间或对象层级组织减少光线与所有基元逐一求交的结构。
+Bounding Volume|包围体||用简单几何形状包裹复杂物体以支持快速相交排除测试的容器。
+Axis-aligned Bounding Box|轴对齐包围盒|AABB|各边与坐标轴平行的盒状包围体。
+Oriented Bounding Box|有向包围盒|OBB|允许按对象方向旋转、包裹几何的盒状包围体。
+Bounding Volume Hierarchy|包围体层次结构|BVH|以嵌套包围盒树层级组织场景基元以加速射线求交的结构。
+Binary BVH|二叉 BVH||每个内部节点具有两个子节点的包围体层次结构。
+Wide BVH|宽分支 BVH||每个内部节点允许多于两个子节点以提高并行遍历效率的结构。
+BVH Traversal|BVH 遍历||沿包围体树搜索与射线可能相交的叶子基元的过程。
+BVH Construction|BVH 构建||按空间划分和代价准则组织基元为树形包围结构的算法。
+BVH Refit|BVH 包围盒更新||在拓扑不变条件下重算变形几何的层级包围体的过程。
+Surface Area Heuristic|表面积启发式|SAH|以包围盒面积和预期遍历、求交成本选择 BVH 划分的准则。
+Spatial Split|空间分割||沿空间位置切分节点中的几何区域以改善包围体紧致性的技术。
+Object Split|对象划分||把基元分配到不同节点而不必切割原始基元的层次构建方法。
+k-d Tree|k-d 树||按坐标轴交替设置分割平面递归划分空间的二叉树结构。
+Uniform Grid Acceleration|均匀网格加速||将空间划为规则单元并存储相关基元以加速求交的方法。
+Octree|八叉树||递归把三维空间分成八个子体积的层次空间索引。
+Top-level Acceleration Structure|顶层加速结构|TLAS|在支持硬件光追的 API 中按实例组织底层几何加速结构的资源。
+Bottom-level Acceleration Structure|底层加速结构|BLAS|在硬件光追 API 中保存单一或多个几何对象求交组织的资源。
+Instance Acceleration|实例加速||利用同一几何数据与不同变换实例复用求交加速结构的技术。
+Ray Packet|射线包||把方向或来源相近的一组射线共同处理以提高相干性的方式。
+Ray Coherence|射线相干性||相邻射线在空间位置、方向或所访问加速节点上相似的性质。
+Stackless Traversal|无栈树遍历||利用节点链接或编码状态避免显式遍历栈的求交方法。
+Traversal Cost|遍历成本||访问加速结构节点并执行包围测试所耗费的计算开销。
+Intersection Cost|基元求交成本||计算射线与三角形或其他几何对象相交所需的运算开销。
+Ray Tracing Performance|光追性能||以每秒射线数、有效样本、耗时及图像质量共同评价光线追踪工作负载的性能。
