@@ -1,0 +1,26 @@
+# 接触动力学、柔顺性与力觉交互
+Contact Dynamics|接触动力学||分析机器人与环境碰撞、持续接触及摩擦作用下运动的力学模型。
+Contact Force|接触力||接触表面间通过法向压缩和切向摩擦产生的作用力。
+Normal Force|法向力||垂直于接触面的接触力分量。
+Tangential Force|切向力||沿接触切平面方向施加的摩擦或剪切力。
+Contact Complementarity|接触互补条件||描述接触间隙与法向力不能同时为正的数学约束关系。
+Unilateral Constraint|单侧约束||只允许一个方向受限、例如接触不能相互穿透的机械约束。
+Coulomb Friction Cone|库仑摩擦锥||满足切向力范数不超过摩擦系数乘法向压力的接触力集合。
+Stick–Slip Transition|黏滑转换||接触由无相对滑动转变为滑动或反向变化的动力学现象。
+Contact Mode|接触模式||说明特定接触点处于分离、粘着或滑动等状态的离散变量。
+Rigid Contact Approximation|刚性接触近似||假定接触点无明显局部弹性变形并直接满足几何约束的模型。
+Compliant Contact Model|柔性接触模型||利用接触刚度、阻尼等参数描述穿透近似与作用力关系的模型。
+Contact Stiffness|接触刚度||描述接触压缩变形与反力变化之间局部关系的参数。
+Contact Damping|接触阻尼||描述接触力对相对运动速度依赖的耗散系数。
+Passivity|无源性||系统无法从零储能条件下净产生超出输入的能量的性质。
+Backdrivability|反向驱动能力||外部作用力能否较容易通过机械传动使执行器输出端运动的性质。
+Compliance|机械柔顺性||机构在外力作用下产生可控形变或位移的能力。
+Stiffness Control|刚度控制||调节期望位移与产生接触力之间关系的控制技术。
+Variable Impedance|可变阻抗||在任务过程中改变机器人等效刚度、阻尼或惯量的控制策略。
+Force Feedback|力反馈||将测得接触力或环境作用用于控制动作或操作员交互的机制。
+Haptic Feedback|触觉力觉反馈||通过机械或触觉装置向操作者传递力、振动或接触信息的技术。
+Haptic Teleoperation|力觉遥操作||在远程机器人控制中向人类操作者反馈接触力与运动状态的系统。
+Bilateral Control|双向力位控制||在主从端同时交换运动与作用力信息以协调交互的控制框架。
+Assembly Task|装配任务||通过受约束接触和精细运动将零件插接、配合或固定的机器人任务。
+Peg-in-hole|销孔装配任务||将轴状物体对准并插入孔洞的典型接触丰富操作场景。
+Contact-rich Manipulation|接触丰富操作||包含持续、多点或模式切换接触、必须显式考虑接触动力学的机器人操作。
