@@ -142,3 +142,13 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 计算机视觉 Computer Vision（独立出版，尚未加入全站索引）
+
+新增《计算机视觉专有名词中英文对照表》：**500 条术语、20 个专业章节**，涵盖成像、相机模型、滤波和形态学、局部特征、射影几何、立体视觉与 SLAM、光流、CNN/ViT、自监督预训练、目标检测、语义/实例/全景分割、人体姿态和多目标跟踪、三维重建、NeRF/3D Gaussian Splatting、扩散生成、CLIP/VLM、评测数据集以及工程部署与安全。
+
+另附 **16 组核心概念辨析、12 道中等难度面试题、12 道中等难度考试题及解析**。体系参考 Szeliski、Stanford CS231n、OpenCV/Torchvision、COCO 标准及代表性论文。
+
+[Markdown 在线阅读](glossaries/computer-vision.md) · [查看 PDF](pdf/computer-vision.pdf) · [结构化 TSV](data/computer-vision.tsv) · [参考资料与审稿记录](data/computer-vision/SOURCES.md)
+
+原始章节位于 `data/computer-vision/chapters/`，运行 `node scripts/render_computer_vision.mjs --check` 可验证所有出版文件的内容一致性。**本册为独立出版物，未计入网站已索引的学科和术语数量。**
