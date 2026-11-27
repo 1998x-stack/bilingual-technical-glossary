@@ -1,0 +1,107 @@
+# 多传感器融合、占据网络与世界表示
+Sensor Fusion|多传感器融合||把不同传感器的互补测量联合推断为一致环境或车辆状态的过程。
+Early Fusion|早期融合||在较底层数据或特征阶段融合不同感知模态的策略。
+Late Fusion|后期融合||分别获得各模态预测后再对决策或目标结果进行融合的方法。
+Feature-level Fusion|特征级融合||在深度网络中将不同传感器编码特征进行聚合的机制。
+Decision-level Fusion|决策级融合||依据多传感器各自的检测或分类结果生成联合结论的方式。
+BEV Feature Fusion|鸟瞰特征融合||把多相机、激光等传感器信息映射到共同鸟瞰平面后整合的技术。
+Bird's-eye View Representation|鸟瞰场景表示|BEV|以车辆周围地面坐标组织空间语义与目标特征的表示。
+Multi-camera BEV|多相机鸟瞰表征||由不同方向相机图像共同构建自车周围空间特征的技术。
+Lift–Splat–Shoot|提升泼溅推理结构|LSS|先将图像特征关联深度、投影到 BEV，再进行下游预测的架构。
+Occupancy Grid|占据栅格||用离散网格值表示空间单元是否被物体占据的结构。
+3D Occupancy Prediction|三维占据预测||预测三维体素中被物体占据的概率及可选语义的感知任务。
+Semantic Occupancy|语义占据||为占据空间单元同时分配车辆、道路或障碍类别的表示。
+Free-space Occupancy|空闲空间占据状态||表达未被测得障碍占用且可供空间推理的体素或栅格状态。
+Unknown Space|未知空间||因传感覆盖不足无法可靠判断空闲或占据的环境区域。
+Occupancy Flow|占据流||描述空间占据状态随时间变化及运动趋势的动态场表示。
+Dynamic Occupancy|动态占据||同时表示当前位置和未来可能运动变化的空间占据状态。
+Sensor Confidence|传感置信度||表示特定模态或观测在当前环境条件下可靠性的数值或等级。
+Measurement Covariance|测量协方差||描述传感器输出误差方差与分量间相关性的统计矩阵。
+Cross-modal Attention|跨模态注意力||通过查询键值相关性让不同感知模态交换信息的神经网络机制。
+Temporal Feature Fusion|时序特征融合||结合相邻时刻特征改善被遮挡目标识别和状态估计的方法。
+Ego-motion Compensation|自车运动补偿||校正车辆自身位姿变化对不同时间感知测量的影响。
+Spatial Alignment|空间对齐||将不同传感器观测转换到统一坐标系以建立几何对应的过程。
+Uncertainty-aware Fusion|不确定性感知融合||根据不同观测噪声和置信程度调整融合权重或估计方式的方法。
+World Representation|环境世界表示||对道路几何、物体、自由空间及可预测动态的结构化内部表达。
+Perception Failure Detection|感知故障检测||识别传感器缺失、模型异常或感知输出不可信事件的处理机制。
+
+# 交通参与者运动预测与多智能体交互
+Motion Prediction|运动预测||推断周围交通参与者在未来若干时间内可能行驶轨迹的任务。
+Trajectory Forecasting|轨迹预测||根据历史状态和道路信息估计未来位置序列的任务。
+Behavior Prediction|行为预测||判断其他车辆或行人可能执行的让行、转弯或变道行为。
+Intention Recognition|交通意图识别||推断目标主体潜在目标车道、行进方向或行为计划的过程。
+Multi-modal Prediction|多模态轨迹预测||输出多个不同的合理未来轨迹及其相应概率的预测方式。
+Unimodal Forecast|单模态预测||以一个主要未来结果或单峰状态分布描述运动趋势的预测方式。
+Prediction Horizon|预测时间范围||轨迹预测从当前时刻向未来延伸的时长。
+Historical Context Window|历史上下文窗口||输入预测模型的过去若干时刻轨迹与感知状态数据。
+Social Interaction Modeling|交通交互建模||在预测中显式考虑主体间让行、跟车、合流等相互影响的机制。
+Agent Interaction Graph|交通主体交互图||以车辆、行人节点和交互边组织多主体关系的图结构。
+Social Pooling|社会交互特征聚合||从邻近主体状态中聚合交互信息用于轨迹预测的技术。
+Lane-conditioned Prediction|车道条件轨迹预测||以道路拓扑和可行车道约束生成主体未来轨迹的预测方法。
+Map-aware Prediction|地图感知运动预测||结合车道几何、路权与交通信号信息推断未来行为的技术。
+Goal-based Prediction|目标驱动预测||先推断主体可能目的位置或区域，再产生对应轨迹的方案。
+Scene-conditioned Prediction|场景条件预测||根据全部相关交通参与者及静动态场景特征预测未来运动的方法。
+Joint Motion Prediction|联合运动预测||同时建模多个主体未来轨迹之间相互依赖的预测问题。
+Marginal Motion Prediction|边际轨迹预测||分别为单个主体输出未来轨迹分布、未显式生成联合结果的方式。
+Trajectory Probability|轨迹候选概率||表示一个未来轨迹模式在模型分布下相对可能性的权重。
+Prediction Calibration|预测概率校准||检查预测轨迹分布的置信水平与真实发生频率相符合的性质。
+Average Displacement Error|平均位移误差|ADE|对预测与真实轨迹对应时间点的空间距离求平均的指标。
+Final Displacement Error|最终位移误差|FDE|计算预测终点与真实终点之间空间距离的指标。
+Miss Rate|轨迹预测漏中率|MR|真实轨迹未落入预测候选容差区域的样本比例。
+Collision Prediction|潜在碰撞预测||根据未来运动估计主体之间可能产生空间重叠的情形。
+Yield Behavior Prediction|让行行为预测||判断其他交通主体是否准备减速、等待或放弃优先通行的任务。
+Interaction-aware Forecast|交互感知预测||允许主体预测随其他参与者和自车计划改变而调整的模型。
+
+# 行为决策、交通规则与路口博弈
+Behavior Planning|驾驶行为规划||决定跟车、让行、变道、超车或停车等离散驾驶行为的过程。
+Decision Making|自动驾驶决策||根据目标、规则、场景及风险从可选驾驶策略中选择行动的过程。
+Finite-state Machine|有限状态机|FSM|以离散状态及事件触发转移组织驾驶逻辑的模型。
+Behavior Tree|行为树|BT|用层级选择、顺序和条件节点组织可执行驾驶行为的结构。
+Rule-based Planning|基于规则的行为规划||利用显式交通规范和手工条件决定驾驶行为的方法。
+Rule Compliance|交通规则遵循||驾驶行为在指定道路交通法规与局部约束下保持合规的性质。
+Route Following|路线跟随||根据给定路网目标持续选择能够保持全局路线的驾驶行为。
+Lane Keeping|车道保持||控制车辆继续沿当前有效行驶车道移动的驾驶行为。
+Lane Change Decision|变道决策||判断何时以及向哪条车道安全转移的规划步骤。
+Gap Acceptance|交通间隙接受||在合流、变道或穿越路口时评估可用交通时间或空间间隙的决策。
+Merge Decision|合流决策||在汇入主路或邻接车道时确定通行顺序和加减速策略的过程。
+Overtaking Decision|超车决策||综合路线、前车速度及交通规则判断能否绕过慢车的规划任务。
+Yield Decision|让行决策||根据优先权与预测冲突判断自车应等待还是继续行驶的决策。
+Stop Decision|停车决策||确定必须制动至静止的位置、时机及触发规则的过程。
+Intersection Negotiation|路口通行协商||依据优先权、车流与主体交互选择安全穿越路口时机的过程。
+Unprotected Left Turn|无保护左转||在缺少专用通行保护时需判断对向车辆和行人间隙的左转场景。
+Roundabout Navigation|环岛通行||根据环形道路的车道、入口让行与出口关系规划的驾驶任务。
+Four-way Stop|四向停车路口||多入口存在停牌控制、需根据到达和优先权规则协调通行的场景。
+Traffic Signal Compliance|交通信号遵循||根据车辆所受信号灯状态决定停止、等待或通行的能力。
+Right-of-way Reasoning|通行优先权推理||在特定路口和车道交通规则下判断各主体优先关系的过程。
+Occluded Intersection Handling|遮挡路口处理||在交叉口视野被遮挡时采取减速、观察和保守规划的策略。
+Decision Hysteresis|决策滞回||通过改变切换阈值或保持状态减少驾驶行为频繁抖动的机制。
+Commitment to Maneuver|机动承诺机制||在满足安全条件时维持已选择的变道或通过行为、减少无谓反复的策略。
+Contingency Planning|应急备选规划||预先保留无法完成首选机动时可立即执行的替代策略。
+Traffic Negotiation|交通交互协商||通过车速、间隙和运动意图与其他道路使用者形成可通行关系的过程。
+
+# 轨迹生成、速度规划与约束优化
+Trajectory Planning|轨迹规划||在道路、障碍和车辆动力学约束下生成带时间参数的驾驶状态序列。
+Frenet Coordinate System|弗雷内路径坐标系||用沿参考路径弧长和横向偏移描述车辆位置的曲线坐标系。
+Cartesian Trajectory|笛卡尔轨迹||在世界或局部欧氏坐标系中表示车辆时变位置与朝向的轨迹。
+Reference Line|参考线||沿车道中心或规划路线生成、供轨迹优化依托的空间曲线。
+Reference Path Smoothing|参考路径平滑||降低地图离散中心线曲率突变以提高轨迹可跟踪性的过程。
+Path–Speed Decoupling|路径速度解耦||先确定几何路径、再独立计算沿路径速度随时间变化的规划方法。
+Joint Space–Time Planning|时空联合规划||在同一优化过程中联合决定车辆空间路径与到达时间的技术。
+Speed Profile|速度曲线||描述沿时间或路径弧长变化的期望车速序列。
+Acceleration Profile|加速度曲线||描述期望纵向加速度随时间或路径位置变化的函数。
+Jerk Profile|加加速度曲线||描述加速度时间变化率并用于舒适性约束的轨迹量。
+Curvature Profile|曲率曲线||表示路径上各位置曲率变化的函数。
+Curvature Constraint|曲率约束||限制车辆可实现路径弯曲程度的几何约束。
+Lateral Acceleration Limit|横向加速度限制||根据速度和路径曲率设置允许侧向加速度上限的条件。
+Vehicle Kinematic Feasibility|车辆运动学可行性||规划轨迹符合转向几何和速度层级运动约束的性质。
+Dynamic Feasibility|车辆动力学可行性||规划状态与控制符合轮胎附着、惯性及执行器动力学限制的性质。
+Obstacle Avoidance Constraint|障碍避让约束||要求自车车身及运动轨迹与预测障碍占据区域保持规定间隔的限制。
+Space–Time Graph|路径时间图|ST Graph|以路径弧长和时间为轴表达障碍物运动与可行速度区间的表示。
+Quadratic Programming|二次规划|QP|以二次目标与线性约束求解路径或控制优化变量的优化问题。
+Nonlinear Programming|非线性规划|NLP|目标或约束包含非线性函数的轨迹优化问题。
+Sequential Quadratic Programming|序列二次规划|SQP|通过反复求解局部二次子问题处理非线性规划的算法族。
+Model Predictive Planning|模型预测式规划||在滚动有限时间窗口内重复优化车辆未来轨迹的策略。
+Spline Trajectory|样条轨迹||使用分段多项式及连续性约束表示平滑车辆运动的轨迹。
+Quintic Polynomial Trajectory|五次多项式轨迹||可通过位置、速度和加速度端点条件构建的五次参数曲线。
+Trajectory Replanning|轨迹重规划||根据新感知和预测结果定期更新已有未来轨迹的过程。
+Trajectory Validation|轨迹有效性检查||在执行前检查候选轨迹碰撞、限速、曲率和动态约束是否满足的步骤。
