@@ -23,6 +23,8 @@ jobs:
           node --check site/term.js
           node --check docs/app.js
           node --check docs/term.js
+      - name: Verify Mathematical Statistics source, PDF and mirrored publications
+        run: node scripts/render_mathematical_statistics.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
