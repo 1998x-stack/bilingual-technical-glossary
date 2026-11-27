@@ -1,0 +1,26 @@
+# 副本、仲裁与冲突解决
+Replication|数据复制||在多个节点保存或传播相同逻辑数据以提升可用性或读吞吐。
+Replica|副本||在某节点维护的数据或状态机拷贝。
+Replication Factor|复制因子||为一份逻辑数据配置的副本数量。
+Leader-based Replication|基于主节点的复制||由主节点负责接受写入并向追随者传播的复制方式。
+Leaderless Replication|无主复制||客户端可将读写请求发送到多个副本并按策略汇聚结果。
+Multi-leader Replication|多主复制||允许多个节点接受写入并处理跨主节点传播与冲突的模式。
+Synchronous Replication|同步复制||在操作成功前等待约定数量的远端副本确认。
+Asynchronous Replication|异步复制||主节点可先确认写入，再向其他副本传播更新。
+Semi-synchronous Replication|半同步复制||等待部分副本满足确认条件、其余副本异步追赶的复制策略。
+Replication Lag|复制延迟||源副本产生更新与目标副本应用更新之间的时差或日志差距。
+Replica Catch-up|副本追赶||落后副本读取缺失日志或快照直至赶上目标进度。
+Anti-entropy|反熵同步||副本通过周期性比较与交换状态减少分歧的机制。
+Merkle Tree|默克尔树||利用分层哈希摘要高效比较大型数据集合差异的树结构。
+Quorum|仲裁集合||满足协议决策所需成员数量及交集要求的节点集合。
+Majority Quorum|多数派仲裁||包含严格超过半数投票成员的仲裁集合。
+Read Quorum|读仲裁||读取时需收集足够多副本结果的集合要求。
+Write Quorum|写仲裁||写入时需取得足够多副本确认的集合要求。
+Quorum Intersection|仲裁交集||不同仲裁集合之间共享成员，以支持一致性证明的条件。
+Sloppy Quorum|宽松仲裁||首选副本不可用时允许临时向其他节点写入的策略。
+Hinted Handoff|提示移交||临时承接数据的节点在目标副本恢复后将更新转交回去的机制。
+Conflict Resolution|冲突解决||对并发产生的不兼容版本选择、合并或人工处理的过程。
+Last-write-wins|最后写入胜出|LWW|按照某种时间戳或版本顺序保留一个获胜值的规则。
+Multi-value Register|多值寄存器|MV-register|保留多个因果并发写入值的复制数据类型。
+Read-modify-write|读取—修改—写入||先读取旧状态、计算新状态再写回的操作组合。
+Replica Divergence|副本分歧||同一逻辑数据在多个副本上出现不一致状态的现象。
