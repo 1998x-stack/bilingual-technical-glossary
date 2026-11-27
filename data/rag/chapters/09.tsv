@@ -1,0 +1,26 @@
+# 证据组织、提示构建与可信回答
+Context Assembly|上下文组装||将多份检索证据组合成生成模型可处理的输入。
+Evidence Selection|证据选择||从候选片段中筛出最能支持回答的内容。
+Evidence Aggregation|证据聚合||将不同来源的互补事实整合为有条理的证据集合。
+Evidence Attribution|证据归属||标明某条陈述可追溯至哪些具体资料。
+Citation Generation|引文生成||为回答内容产生指向来源文档或片段的引用标记。
+Citation Span|引用片段||支持某项回答陈述的最小或指定来源文本范围。
+Source Grounding|来源锚定||要求生成文本的事实与可验证来源保持对应的约束。
+Answer Synthesis|答案综合||综合多个检索结果生成面向问题的连贯回答。
+Answer Faithfulness|答案忠实性||答案中的事实主张是否能由指定证据直接支持的性质。
+Unsupported Claim|无证据支持的断言||输出中无法由提供的资料合理推出的事实陈述。
+Hallucination|幻觉||生成模型输出看似可信却缺乏事实依据或与依据矛盾的内容。
+Abstention|拒绝猜答||证据不足时明确说明无法确认而不生成无根据结论的行为。
+Unanswerable Query|不可回答查询||在指定知识库和证据限制下无法可靠回答的问题。
+Grounding Instruction|证据约束指令||要求模型仅根据可用资料回答并说明不确定性的提示约束。
+Prompt Template|提示模板||将用户问题、系统要求与来源证据组织为固定输入格式的结构。
+Context Delimiter|上下文分隔符||将可信指令、用户问题和外部资料明确划分的边界标记。
+Source-aware Prompting|来源感知提示||在上下文中保留来源标识、标题与时间等元数据的提示方式。
+Evidence Ordering|证据排序||按相关性、可靠性或位置影响调整引用片段顺序的过程。
+Lost-in-the-middle Effect|中间位置忽视现象||部分模型在长上下文中对位于中间的关键信息利用不足的观察现象。
+Context Compression|上下文压缩||减少冗余或低相关 token、保留关键证据的处理。
+Extractive Compression|抽取式压缩||仅选择原文支持句段而不重写证据的上下文精简方式。
+Abstractive Compression|生成式压缩||用模型重写或总结证据以缩短输入，可能引入信息损失。
+Token Truncation|token 截断||因上下文长度限制而删除或裁剪部分文本的过程。
+Citation Verification|引用核验||检查每项回答断言是否由所标注来源内容实际支持的步骤。
+Evidence Conflict|证据冲突||不同来源在相同实体、时间或条件下给出不一致结论的情况。
