@@ -1,0 +1,26 @@
+# 分布式事务与并发控制
+Distributed Transaction|分布式事务||同时跨多个节点、分片或资源维护约定原子性与隔离语义的事务。
+Atomicity|原子性||事务内部操作要么共同生效要么共同撤销的性质。
+Consistency Constraint|一致性约束||数据库状态必须满足的业务或数据完整性规则。
+Isolation|隔离性||事务并发执行对彼此观察结果施加的规则。
+Durability|持久性||提交确认后变更在约定故障条件下不丢失的性质。
+Two-phase Commit|两阶段提交|2PC|协调者先收集参与者准备结果再统一发布提交或回滚决议的协议。
+Prepare-to-commit|准备提交||事务参与者持久记录待决状态并表态能否提交的阶段。
+Commit Decision|提交决议||协调者选择提交或中止事务的最终决定。
+Coordinator Blocking|协调者阻塞||2PC 参与者在无法获知最终决议时可能长期等待的现象。
+Three-phase Commit|三阶段提交|3PC|引入额外阶段以在较强故障与时间假设下减少阻塞的协议。
+Saga Pattern|Saga 模式||把长事务拆为本地事务和补偿操作的业务协调方式。
+Compensating Transaction|补偿事务||通过新操作抵消先前已提交业务动作影响的事务。
+Try-confirm-cancel|尝试—确认—取消|TCC|业务方显式提供预留、确认与取消接口的分布式事务模式。
+Outbox Pattern|事务发件箱模式||在同一本地事务内写业务数据与待发消息，再异步发布消息的模式。
+Inbox Pattern|事务收件箱模式||在消费端记录已处理消息以避免重复执行业务副作用的模式。
+Two-phase Locking|两阶段锁协议|2PL|事务先增长锁集合再释放锁、释放后不再获取新锁的并发控制规则。
+Strict Two-phase Locking|严格两阶段锁|S2PL|事务持有排他锁直到提交或中止的两阶段锁变体。
+Optimistic Concurrency Control|乐观并发控制|OCC|先并行执行、提交时验证冲突并决定是否重试的策略。
+Multiversion Concurrency Control|多版本并发控制|MVCC|维护多个已提交数据版本，使读写在不同快照上进行的机制。
+Write Skew|写偏斜||并发事务分别基于同一快照读取约束后修改不同对象，合并结果破坏约束。
+Lost Update|丢失更新||两个事务基于同一旧值更新，后写结果覆盖了先写效果的异常。
+Dirty Read|脏读||事务读取其他事务尚未提交的数据。
+Phantom Read|幻读||相同条件的两次查询因并发插入删除出现不同结果集合。
+Deadlock Detection|死锁检测||检查等待图等结构识别循环等待的机制。
+Distributed Deadlock|分布式死锁||跨节点锁或资源等待形成闭环而无法继续推进的状态。
