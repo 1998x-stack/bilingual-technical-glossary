@@ -1,0 +1,26 @@
+# 时间、时钟与因果排序
+Physical Clock|物理时钟||尝试表示现实时间的计算机时钟。
+Wall Clock|墙上时钟||提供日期时间读数、可能因校时而跳变的时钟。
+Monotonic Clock|单调时钟||用于测量时间间隔且不会因墙上时钟调整而倒退的计时源。
+Clock Skew|时钟偏差||不同节点时钟在同一真实时刻的读数差异。
+Clock Drift|时钟漂移||时钟相对于参考时间的速率偏差随时间积累的现象。
+Clock Synchronization|时钟同步||通过协议减小不同节点时钟读数误差的过程。
+Network Time Protocol|网络时间协议|NTP|通过网络估算时钟偏差与往返延迟的时间同步协议。
+Precision Time Protocol|精确时间协议|PTP|利用网络硬件时间戳等机制进行高精度时钟同步的协议。
+Happens-before Relation|先发生关系||由进程内顺序与消息发送接收关系传递闭包定义的因果偏序。
+Concurrent Events|并发事件||在先发生关系下互不为因果先后的两个事件。
+Lamport Clock|Lamport 逻辑时钟||给事件分配满足因果先后蕴含时间戳递增的逻辑计数器。
+Logical Timestamp|逻辑时间戳||用于表示事件顺序而非精确现实时间的标记。
+Vector Clock|向量时钟||用多维计数器在固定进程集合中刻画事件因果偏序的机制。
+Version Vector|版本向量||利用每副本计数表示数据版本因果关系的向量。
+Dotted Version Vector|点式版本向量||以版本向量与单个事件标记精确表示更新因果上下文。
+Hybrid Logical Clock|混合逻辑时钟|HLC|结合物理时间近似值与逻辑计数保持可比较事件顺序的时钟。
+TrueTime|TrueTime 时间 API||以包含真实时间的误差区间表示时间估计的接口设计。
+Clock Uncertainty|时钟不确定性||时钟读数与真实时间之间可能误差的界限。
+Commit Wait|提交等待||提交操作等待时间不确定性窗口过去以确保特定外部顺序性质的机制。
+Global Snapshot|全局快照||描述多节点局部状态与在途消息的一致系统截面。
+Consistent Cut|一致切面||若截面包含某事件则也包含其所有因果前驱的事件集合。
+Chandy–Lamport Snapshot|Chandy–Lamport 快照算法||通过标记消息记录异步系统一致全局状态的算法。
+Causal Order|因果顺序||要求按先发生关系保持消息或操作的先后处理次序。
+Total Order|全序||任意两事件均可比较且满足传递性的顺序关系。
+Total-order Broadcast|全序广播||让所有正确参与者按相同顺序交付同一组消息的广播抽象。

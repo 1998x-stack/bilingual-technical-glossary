@@ -1,0 +1,26 @@
+# 分布式共识、Paxos 与 Raft
+Distributed Consensus|分布式共识||节点在规定故障模型下就同一决策值达成一致的任务。
+Agreement Property|一致性性质||任意两个已决定的正确节点不会决定不同值。
+Validity Property|有效性性质||共识决策值满足协议规定的输入或提议约束。
+Termination Property|终止性性质||在规定网络与故障条件下正确参与者最终作出决定。
+Safety Property|安全性性质||系统始终不进入协议禁止状态的性质。
+Liveness Property|活性性质||满足约定公平性与环境假设时有益事件最终会发生的性质。
+FLP Impossibility|FLP 不可能性||完全异步网络下，允许一个崩溃进程时不存在保证总终止的确定性共识算法。
+Paxos|Paxos 共识算法||通过准备、接受阶段及交叉多数派保证决策安全性的协议族。
+Proposer|提议者||在 Paxos 中发起带编号提案并尝试使其被接受的角色。
+Acceptor|接受者||在 Paxos 中依据承诺规则接受或拒绝提案的角色。
+Learner|学习者||在 Paxos 中获知已被选定决策值的参与者角色。
+Ballot Number|选票编号||用于区分共识提议轮次并确定新旧优先关系的编号。
+Prepare Phase|准备阶段||Paxos 提议者获取接受者承诺及已接受值信息的阶段。
+Accept Phase|接受阶段||Paxos 提议者请求接受者接受选定提案的阶段。
+Multi-Paxos|Multi-Paxos||通过稳定领导者优化连续多个日志槽位共识的 Paxos 方案。
+Raft|Raft 共识算法||基于领导者、任期与复制日志管理状态机复制的共识协议。
+Leader Election|领导者选举||从候选节点中确定当前承担主职责节点的过程。
+Term Number|任期编号||Raft 中标识相继选举时期的单调递增编号。
+AppendEntries RPC|追加日志 RPC||Raft 主节点用于复制日志及发送心跳的远程调用。
+RequestVote RPC|请求投票 RPC||Raft 候选节点请求其他成员支持其竞选的调用。
+Log Matching Property|日志匹配性质||Raft 中同位置同任期条目相同意味着此前日志前缀相同。
+Commit Index|提交索引||已确认满足协议提交规则的日志最高索引。
+Leader Completeness|领导者完整性||已提交日志条目必须出现在后续任期领导者日志中的性质。
+Joint Consensus|联合共识||Raft 成员变更中让新旧配置投票规则在过渡期共同生效的方式。
+Replicated State Machine|复制状态机|RSM|各副本以同一确定顺序执行命令以维护一致状态的架构。

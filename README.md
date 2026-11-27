@@ -54,6 +54,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 **500 terms · 15 chapters.** This original bilingual handbook covers analysis, sorting, divide-and-conquer, greedy algorithms, dynamic programming, graphs, strings, complexity theory, flow and advanced structures. Includes concise definitions, concept comparisons, self-check questions and references. [Markdown](glossaries/algorithms.md) · [PDF](pdf/algorithms.pdf) · [TSV](data/algorithms.tsv). Source chapters are in [data/algorithms/chapters/](data/algorithms/chapters/); run `node scripts/render_algorithms.mjs --check` to verify all generated mirrors. **This standalone handbook is not included in the searchable index/domain counts above.**
 
+### Distributed Systems / 分布式系统 (standalone; not yet indexed)
+
+**400 bilingual terms in 16 chapters**, covering network communication, fault models, causality, CAP and consistency, replication, Raft/Paxos, transactions, sharding, data processing, stream systems, membership, SRE, security, performance and verification. Includes 12 concept comparisons, 8 medium interview questions, 8 exam questions and primary references. [Markdown](glossaries/distributed-systems.md) · [PDF](pdf/distributed-systems.pdf) · [TSV](data/distributed-systems.tsv) · [Source evidence](data/distributed-systems/SOURCES.md). Run `node scripts/render_distributed_systems.mjs --check` for deterministic artifact validation. **Not yet included in searchable domain or term totals.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |

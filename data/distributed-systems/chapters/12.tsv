@@ -1,0 +1,26 @@
+# 成员管理、发现与协调服务
+Group Membership|组成员关系||记录哪些节点属于特定服务组及其成员状态的机制。
+Membership View|成员视图||某节点当前认可的参与者集合与版本信息。
+Failure Detector|故障检测器||根据超时或探测输出节点可疑或可达判断的协议抽象。
+Perfect Failure Detector|完美故障检测器||既不错误怀疑正确节点，又最终检测所有崩溃节点的理想化故障检测器。
+Eventually Perfect Failure Detector|最终完美故障检测器||允许早期误判，但某时刻之后不再误判并检测故障的抽象。
+Heartbeat|心跳||节点周期性发送以展示自身存活或可达性的轻量消息。
+Gossip Protocol|流言协议||通过节点间周期性随机交换信息传播状态的协议族。
+SWIM Protocol|SWIM 成员协议|SWIM|通过直接及间接探测实现可扩展弱一致成员管理的协议。
+Phi Accrual Failure Detector|Phi 累积故障检测器|φ|根据心跳到达统计分布输出故障可疑程度的检测机制。
+Lease|租约||赋予某方在限定时间内持有某项职责或资源访问权的协议。
+Distributed Lock|分布式锁||跨节点协调同一逻辑资源互斥访问的机制。
+Lock Expiration|锁过期||租约或锁在限定时间后不再有效的状态转移。
+Leader Lease|领导者租约||授予某节点一段时间内履行主职责的权利并约束旧主操作。
+Ephemeral Node|临时节点||与会话绑定、会话失效后自动删除的协调服务数据节点。
+Watch Notification|观察通知||协调服务对已注册数据或成员变更发出的事件提示。
+ZooKeeper|ZooKeeper 协调服务||提供分层命名、顺序更新及观察机制的分布式协调系统。
+etcd|etcd 键值协调服务||基于 Raft 提供强一致键值操作的分布式协调存储。
+Consul|Consul 服务发现系统||提供服务注册、健康检查及协调等功能的基础设施软件。
+Service Mesh|服务网格||将服务间流量管理、身份与策略能力放入基础设施层的架构。
+Sidecar Proxy|边车代理||与应用实例共同部署、代理其网络通信的辅助进程。
+DNS-based Discovery|基于 DNS 的服务发现||用 DNS 查询将逻辑服务名解析为当前实例地址的方式。
+Health Check|健康检查||通过主动请求或被动信号判断实例能否正常服务的探测机制。
+Leader Lock|领导者锁||依赖共享锁或租约协调唯一领导者身份的做法。
+Membership Churn|成员抖动||节点频繁加入、退出或被误判造成成员集合不断变化的现象。
+Configuration Epoch|配置世代||用于识别集群配置版本并拒绝旧配置操作的单调版本标识。

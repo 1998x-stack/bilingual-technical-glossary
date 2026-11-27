@@ -146,3 +146,12 @@ python3 -m unittest discover -s tests -v
 ## 算法设计与分析（独立出版，暂未加入网站搜索）
 
 新增 **500 条术语 / 15 个章节**的《算法设计与分析专有名词中英文对照表》：[Markdown](glossaries/algorithms.md) · [PDF](pdf/algorithms.pdf) · [TSV](data/algorithms.tsv)。内容包括算法分析、排序、分治、贪心、动态规划、图论、字符串、复杂性理论、网络流和高级数据结构，并包含概念辨析与中等难度自测题。原始章节位于 [data/algorithms/chapters/](data/algorithms/chapters/)，可通过 `node scripts/render_algorithms.mjs --check` 核验生成产物。**本册暂未计入网站既有学科数、术语数与检索索引。**
+
+## 分布式系统（独立出版，暂未索引）
+
+新增《分布式系统专有名词中英文对照表》：**400 条术语、16 个章节**，包含 CAP、一致性模型、Raft/Paxos、复制与事务、分布式存储、流处理、容错与形式化验证，并附 12 组概念对比、8 道中等难度面试题及 8 道考试题。
+
+- [阅读全文（Markdown）](glossaries/distributed-systems.md) · [下载 PDF](pdf/distributed-systems.pdf) · [结构化 TSV](data/distributed-systems.tsv)
+- [来源与审稿说明](data/distributed-systems/SOURCES.md)
+- 原始章节：`data/distributed-systems/chapters/`。校验：`node scripts/render_distributed_systems.mjs --check`。
+- **本册为独立出版物，暂不计入已索引的学科数与术语数。**

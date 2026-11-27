@@ -25,6 +25,8 @@ jobs:
           node --check docs/term.js
       - name: Verify algorithms glossary source and PDF mirrors
         run: node scripts/render_algorithms.mjs --check
+      - name: Verify Distributed Systems source and publication mirrors
+        run: node scripts/render_distributed_systems.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki

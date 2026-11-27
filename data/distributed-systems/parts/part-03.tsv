@@ -1,0 +1,107 @@
+# 分片、存储与分布式数据库
+Partitioning|数据分区||把数据集按规则拆分成可独立管理的多个部分。
+Sharding|数据库分片||将逻辑数据库数据分散存储到多个物理分片的机制。
+Shard|分片||分布式数据集中按路由规则管理的一部分数据。
+Partition Key|分区键||确定记录应归属哪个分片的字段或字段组合。
+Hash Partitioning|哈希分区||使用分区键哈希值把记录映射到目标分片的策略。
+Range Partitioning|范围分区||按键值区间划分并分布数据的方法。
+Consistent Hashing|一致性哈希||将键与节点映射到环形空间，减少成员变化时迁移数据量的技术。
+Virtual Node|虚拟节点||在哈希环中为物理节点设置多个逻辑位置以改善负载分布。
+Rendezvous Hashing|最高随机权重哈希|HRW|为每个键计算候选节点得分并选择得分最高节点的映射方法。
+Hot Partition|热点分区||承载不成比例请求量或数据流量的分区。
+Hot Key|热点键||被大量重复访问、容易导致单节点负载集中的键。
+Rebalancing|重平衡||将分片或任务从高负载节点迁移到低负载节点的过程。
+Resharding|重新分片||根据容量或访问特征调整数据分片数量及边界。
+Scatter-gather Query|散射—收集查询||把查询发送到多个分片再合并各节点结果的处理方式。
+Secondary Index|二级索引||按非主键字段建立的检索结构，在分片环境下可能本地或全局维护。
+Global Secondary Index|全局二级索引|GSI|跨多个数据分片提供非主键检索能力的索引结构。
+Distributed Key-value Store|分布式键值存储||在多节点保存键值数据并提供基于键访问接口的系统。
+Log-structured Merge Tree|日志结构合并树|LSM Tree|通过内存结构、顺序写和分层合并优化写入的存储引擎结构。
+Write-ahead Log|预写日志|WAL|在更新数据页或状态前先持久记录变更的恢复日志。
+Immutable SSTable|不可变有序字符串表|SSTable|LSM 存储中按键排序且落盘后不原位修改的文件。
+Compaction|存储压实||合并有序文件、删除过期版本并整理数据布局的过程。
+Tombstone|墓碑标记||代表逻辑删除、供复制和压实处理的删除记录。
+Distributed File System|分布式文件系统|DFS|将文件块及元数据分布在多个服务器并提供统一文件接口的系统。
+Object Storage|对象存储||用对象键与元数据管理非结构化数据并通过服务 API 访问的存储方式。
+Erasure Coding|纠删码||将数据编码为含冗余的分片，以少于全部分片重建原数据的容错技术。
+
+# 批处理、流处理与分布式计算
+MapReduce|MapReduce 编程模型||将任务组织为 Map 产生键值对、Shuffle 分组和 Reduce 聚合的分布式批处理模型。
+Map Function|映射函数||把一条输入记录转换为零个或多个中间键值对的处理步骤。
+Reduce Function|归约函数||对同键的中间结果进行聚合的处理步骤。
+Shuffle|数据洗牌||根据键或分区规则跨工作节点传输并重新分组数据的过程。
+Combiner|本地合并器||在数据洗牌前对可安全组合的中间结果执行局部聚合的优化。
+Data Parallelism|数据并行||把同一操作应用于不同数据分区的并行执行方式。
+Task Parallelism|任务并行||把相互独立或可并发的不同计算任务分配至多个工作节点。
+Directed Acyclic Graph Execution|有向无环图执行|DAG|以无环依赖图描述任务执行顺序和数据流的调度方式。
+Execution Stage|执行阶段||具有共同调度或数据依赖边界的一组计算任务。
+Task Scheduler|任务调度器||将计算任务映射到工作节点并管理资源与重试的组件。
+Work Stealing|工作窃取||空闲工作线程或节点从繁忙执行者队列获取待处理任务的策略。
+Speculative Execution|推测执行||为缓慢任务启动冗余副本、优先采用先完成结果的策略。
+Straggler|拖尾任务||显著慢于同批其他任务、延迟整体作业完成的任务。
+Checkpointing|检查点||周期性持久化计算状态以便故障后恢复或重算的机制。
+Stateful Stream Processing|有状态流处理||在连续事件上维护跨记录累计状态的流计算模式。
+Stateless Stream Processing|无状态流处理||每条输入可独立处理而无需跨事件保存业务状态的模式。
+Event Time|事件时间||事件在数据源实际发生的时间，而非被系统接收处理的时间。
+Processing Time|处理时间||算子所在计算系统处理事件时的本地时间。
+Ingestion Time|摄入时间||记录进入流处理系统的时间。
+Watermark|水位线||对事件时间进度的估计，用于触发窗口计算并管理迟到数据。
+Tumbling Window|滚动窗口||时间范围不重叠、按固定时长切分的窗口。
+Sliding Window|滑动窗口||按固定步长移动且可能互相重叠的时间窗口。
+Session Window|会话窗口||根据事件间空闲时间间隔划定的动态长度窗口。
+Late-arriving Data|迟到数据||事件时间早于当前水位线或窗口关账点才到达的数据。
+Exactly-once State Processing|状态恰好一次处理||在特定故障与恢复条件下确保状态更新效果不会因重放重复生效的处理保证。
+
+# 消息队列、事件驱动与日志系统
+Message Queue|消息队列||用于缓存消息并解耦生产者与消费者的通信设施。
+Message Broker|消息代理||负责接收、路由、暂存并转发消息的服务组件。
+Producer|生产者||向消息系统发布记录或事件的应用角色。
+Consumer|消费者||从消息系统读取并处理记录或事件的应用角色。
+Publish-subscribe Pattern|发布—订阅模式|Pub/Sub|发布者按主题发送消息、订阅者接收相关消息的模式。
+Topic|主题||对消息进行逻辑分类并承载发布订阅关系的标识。
+Partitioned Log|分区日志||把顺序追加记录拆分为多个独立有序分区的日志结构。
+Offset|偏移量||记录在特定日志分区中的位置标识。
+Consumer Group|消费者组||多个消费者协调分配分区以共同处理消息的逻辑组。
+Consumer Lag|消费积压||消费者已处理位置落后于日志最新位置的差额。
+At-most-once Delivery|至多一次投递||消息不会被重复投递，但在故障时可能丢失的投递保证。
+At-least-once Delivery|至少一次投递||在规定条件下确保消息最终被投递，但可能发生重复投递。
+Exactly-once Delivery|恰好一次投递||对限定系统边界承诺每条消息的可观察交付效果恰好一次，须明确实现假设。
+Message Acknowledgment|消息确认|ACK|消费者或接收端表明消息已收到或处理完成的信号。
+Negative Acknowledgment|否定确认|NACK|接收端表明当前无法成功接受或处理消息的信号。
+Dead-letter Queue|死信队列|DLQ|保存超过重试上限或无法正常处理消息的隔离队列。
+Poison Message|毒消息||反复触发消费异常且不能靠普通重试解决的特定消息。
+Backpressure|背压||下游消费能力不足时向上游限制生产速率或缓冲规模的机制。
+Event-driven Architecture|事件驱动架构|EDA|组件通过发布与响应事件进行松耦合协作的架构。
+Event Sourcing|事件溯源||以不可变业务事件序列为主要状态来源，并通过重放推导当前状态的设计。
+Command Query Responsibility Segregation|命令查询职责分离|CQRS|将写入命令模型与读取查询模型分离以分别优化的架构模式。
+Transactional Messaging|事务消息||协调本地状态变更与消息发布，以减少两者不一致的机制。
+Log Compaction|日志压缩保留||按键保留较新记录、减少旧版本并控制日志存储的清理策略。
+Message Ordering|消息有序性||系统对消息交付与消费顺序提供的保证，通常限于特定分区或键。
+Replay|消息重放||重新读取历史日志记录以恢复状态、修复数据或重新计算的过程。
+
+# 成员管理、发现与协调服务
+Group Membership|组成员关系||记录哪些节点属于特定服务组及其成员状态的机制。
+Membership View|成员视图||某节点当前认可的参与者集合与版本信息。
+Failure Detector|故障检测器||根据超时或探测输出节点可疑或可达判断的协议抽象。
+Perfect Failure Detector|完美故障检测器||既不错误怀疑正确节点，又最终检测所有崩溃节点的理想化故障检测器。
+Eventually Perfect Failure Detector|最终完美故障检测器||允许早期误判，但某时刻之后不再误判并检测故障的抽象。
+Heartbeat|心跳||节点周期性发送以展示自身存活或可达性的轻量消息。
+Gossip Protocol|流言协议||通过节点间周期性随机交换信息传播状态的协议族。
+SWIM Protocol|SWIM 成员协议|SWIM|通过直接及间接探测实现可扩展弱一致成员管理的协议。
+Phi Accrual Failure Detector|Phi 累积故障检测器|φ|根据心跳到达统计分布输出故障可疑程度的检测机制。
+Lease|租约||赋予某方在限定时间内持有某项职责或资源访问权的协议。
+Distributed Lock|分布式锁||跨节点协调同一逻辑资源互斥访问的机制。
+Lock Expiration|锁过期||租约或锁在限定时间后不再有效的状态转移。
+Leader Lease|领导者租约||授予某节点一段时间内履行主职责的权利并约束旧主操作。
+Ephemeral Node|临时节点||与会话绑定、会话失效后自动删除的协调服务数据节点。
+Watch Notification|观察通知||协调服务对已注册数据或成员变更发出的事件提示。
+ZooKeeper|ZooKeeper 协调服务||提供分层命名、顺序更新及观察机制的分布式协调系统。
+etcd|etcd 键值协调服务||基于 Raft 提供强一致键值操作的分布式协调存储。
+Consul|Consul 服务发现系统||提供服务注册、健康检查及协调等功能的基础设施软件。
+Service Mesh|服务网格||将服务间流量管理、身份与策略能力放入基础设施层的架构。
+Sidecar Proxy|边车代理||与应用实例共同部署、代理其网络通信的辅助进程。
+DNS-based Discovery|基于 DNS 的服务发现||用 DNS 查询将逻辑服务名解析为当前实例地址的方式。
+Health Check|健康检查||通过主动请求或被动信号判断实例能否正常服务的探测机制。
+Leader Lock|领导者锁||依赖共享锁或租约协调唯一领导者身份的做法。
+Membership Churn|成员抖动||节点频繁加入、退出或被误判造成成员集合不断变化的现象。
+Configuration Epoch|配置世代||用于识别集群配置版本并拒绝旧配置操作的单调版本标识。

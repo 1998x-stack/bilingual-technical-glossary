@@ -1,0 +1,26 @@
+# 分布式测试、验证与形式化方法
+Distributed Tracing|分布式追踪||通过跨服务上下文把一次请求的多个处理片段关联起来的技术。
+Trace|调用链||描述某个请求在多个组件间传播和执行的端到端轨迹。
+Span|追踪片段||记录一个局部操作的起止时间、属性和上下文的追踪单元。
+Trace Context Propagation|追踪上下文传播||通过请求头或消息元数据传递链路标识和父子关系的机制。
+Correlation ID|关联标识符||用于关联同一业务请求在不同系统中的日志或事件的标记。
+Structured Logging|结构化日志||以字段化格式记录事件以方便搜索和自动分析的日志方式。
+Metrics Cardinality|指标基数||监控维度标签不同组合数量，过高会增加时序数据库负担。
+Prometheus|Prometheus 监控系统||通过采集时序指标和查询语言支持监控告警的开源系统。
+OpenTelemetry|OpenTelemetry 可观测性标准||为指标、追踪与日志提供接口、语义约定和数据传输组件的标准项目。
+Jepsen Testing|Jepsen 一致性测试||通过故障注入和操作历史分析检查分布式系统一致性的测试方法。
+Linearizability Checking|线性一致性检查||验证并发操作历史是否能映射为遵守真实时间顺序的合法串行历史。
+History Recording|操作历史记录||记录调用、响应、异常及时间关系以分析并发行为的过程。
+Model Checking|模型检验||穷举或系统搜索有限状态空间以验证形式化性质的方法。
+Formal Specification|形式化规格说明||用数学语言精确定义系统状态、行为和不变量的文档。
+TLA+|TLA+ 规约语言||以时序逻辑和状态动作描述并验证并发及分布式系统的形式化语言。
+PlusCal|PlusCal 算法语言||可翻译为 TLA+ 规格的类伪代码并发算法描述语言。
+Invariant|不变量||系统所有允许执行路径中始终必须成立的状态性质。
+Liveness Verification|活性验证||检查在环境假设下系统是否能最终完成规定进展的验证活动。
+Fault-tolerance Testing|容错测试||主动触发节点或链路故障并验证服务目标的测试。
+Partition Testing|网络分区测试||隔离节点间网络流量以验证一致性、可用性与恢复行为的实验。
+Deterministic Simulation|确定性模拟||用可控调度与事件序列复现实例间竞争和网络行为的测试方法。
+Property-based Testing|基于性质的测试||自动生成多类输入并检查普适不变量或业务性质的测试技术。
+Fuzz Testing|模糊测试||自动构造大量异常或随机输入寻找协议与实现缺陷的测试方法。
+Rolling Upgrade Testing|滚动升级测试||验证集群新旧版本混合运行和逐步替换时协议兼容性的测试。
+Disaster Recovery Drill|灾难恢复演练||模拟重大故障并验证恢复步骤、RTO、RPO 与组织响应的演习。

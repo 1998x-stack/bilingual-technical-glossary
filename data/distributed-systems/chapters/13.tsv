@@ -1,0 +1,26 @@
+# 可靠性工程、韧性与运维
+Reliability|可靠性||系统在规定环境和时间范围内持续提供正确服务的能力。
+Availability|可用性||服务在某段观察时间内能够响应有效请求的程度。
+Service Level Indicator|服务等级指标|SLI|用于量化用户感知服务质量的具体测量指标。
+Service Level Objective|服务等级目标|SLO|对某个 SLI 在统计窗口内规定的目标范围。
+Service Level Agreement|服务等级协议|SLA|服务提供方与客户约定的可用性、性能及责任条款。
+Error Budget|错误预算||由 SLO 允许的失败比例或故障时间推导的可消耗额度。
+Mean Time to Recovery|平均恢复时间|MTTR|故障后恢复服务所需时间的统计均值。
+Mean Time Between Failures|平均故障间隔|MTBF|连续两次失效之间正常工作时间的统计均值。
+Recovery Time Objective|恢复时间目标|RTO|业务要求灾难发生后恢复服务所容许的最长时间。
+Recovery Point Objective|恢复点目标|RPO|业务容许灾难恢复后最多丢失多长时间内数据的目标。
+High Availability|高可用|HA|通过冗余、检测与切换降低关键服务停机时间的设计。
+Disaster Recovery|灾难恢复|DR|发生严重故障后恢复业务系统与数据能力的计划和操作。
+Active-active Deployment|双活部署||多个站点或实例同时承载生产业务流量的部署模式。
+Active-passive Deployment|主备部署||主节点服务、备用节点通常待命并在故障时接管的模式。
+Health-based Routing|基于健康状态的路由||根据后端健康检测结果选择流量目标的策略。
+Circuit Breaker|熔断器||错误或超时达到阈值时暂时阻断对不健康依赖调用的机制。
+Bulkhead Isolation|舱壁隔离||将线程池、连接池或资源划分独立配额以阻断故障连锁反应。
+Rate Limiting|速率限制||控制单位时间允许请求量或操作频率的机制。
+Load Shedding|负载卸载||系统过载时主动拒绝部分请求以保护关键服务的策略。
+Hedged Requests|对冲请求||对慢请求延迟发起冗余请求以减少尾部延迟的技术。
+Chaos Engineering|混沌工程||在受控环境主动注入故障以检验系统韧性的工程实践。
+Fault Injection|故障注入||人为模拟节点失败、延迟或资源不足等条件的测试手段。
+Runbook|操作手册||描述常见故障排查与恢复步骤的标准化文档。
+Postmortem|故障复盘||分析事件时间线、技术原因、影响及改进措施的回顾过程。
+Observability|可观测性||通过日志、指标与追踪等外部信号理解系统内部状态的能力。
