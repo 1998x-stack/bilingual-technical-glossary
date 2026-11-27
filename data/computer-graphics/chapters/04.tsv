@@ -1,0 +1,26 @@
+# 曲线曲面、参数化与几何建模
+Parametric Curve|参数曲线||用连续参数映射生成一维空间轨迹的几何表示。
+Bézier Curve|贝塞尔曲线||由控制点和伯恩斯坦基函数定义的多项式参数曲线。
+Bézier Surface|贝塞尔曲面||通过二维参数和控制点网格构造的张量积曲面。
+B-spline Curve|B 样条曲线||使用局部支撑基函数和节点序列定义的分段多项式曲线。
+NURBS|非均匀有理 B 样条|NURBS|用有理基函数和非均匀节点精确或近似描述曲线与曲面的表示。
+Control Point|控制点||决定参数曲线或曲面形状的几何参数点。
+Control Polygon|控制多边形||按顺序连接曲线控制点形成的辅助几何折线。
+Bernstein Polynomial|伯恩斯坦多项式||用于贝塞尔曲线和曲面构造的多项式基函数。
+de Casteljau Algorithm|德卡斯特里奥算法||以递归线性插值稳定计算贝塞尔曲线上点的方法。
+Knot Vector|节点向量||B 样条及 NURBS 中定义分段参数域和连续性结构的序列。
+Curve Continuity|曲线连续性||描述相邻曲线段位置、切线和高阶导数连接程度的性质。
+G1 Continuity|一阶几何连续性|G1|两段曲线在连接点切线方向一致的几何平滑条件。
+C1 Continuity|一阶参数连续性|C1|两段曲线在连接点位置和一阶导数连续的条件。
+Parametric Surface|参数曲面||利用两个参数连续映射到三维位置的曲面表示。
+Implicit Surface|隐式曲面||由满足标量函数等于指定值的点集定义的表面。
+Signed Distance Function|有符号距离函数|SDF|以到表面的有向距离描述几何内部与外部的连续函数。
+Level Set|水平集||由标量函数达到固定值所确定的点集或曲面。
+Surface of Revolution|旋转曲面||将平面轮廓绕某条轴旋转形成的曲面。
+Extrusion|拉伸建模||沿指定方向或路径移动二维截面生成三维几何。
+Sweep Surface|扫掠曲面||让截面沿空间曲线运动形成的曲面。
+Boolean Modeling|布尔建模||通过并集、交集和差集编辑封闭实体形状的方法。
+Tessellation|曲面镶嵌||把连续或粗糙表面进一步离散为多边形基元的过程。
+UV Parameterization|UV 参数化||建立网格表面位置到二维纹理坐标的映射。
+Surface Distortion|曲面参数畸变||曲面到二维展开时在面积、角度或长度上产生的变形。
+Retopology|网格重拓扑||在保持外形的同时重新设计表面网格边流和面分布的过程。
