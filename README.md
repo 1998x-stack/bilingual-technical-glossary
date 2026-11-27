@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Robotics / 机器人学 (standalone; not yet indexed)
+
+**500 original bilingual Robotics terms in 20 chapters**, spanning robots and rigid-body transforms, SE(3), DH/PoE kinematics, Jacobians/IK/singularities, manipulator dynamics, PID/impedance/MPC, mobile robot mechanisms, sensors and calibration, EKF/UKF/particle filters, LiDAR/visual SLAM and factor graphs, maps, A*/PRM/RRT*/trajectory optimization, navigation, manipulation and grasping, contact and haptics, imitation learning and reinforcement learning, embodied VLA policies, ROS 2 communication and software, simulation and safety validation. Includes **16 conceptual contrasts, 12 medium-level interview Q&As and 12 worked exam problems**. [Markdown](glossaries/robotics.md) · [PDF](pdf/robotics.pdf) · [TSV](data/robotics.tsv) · [Source references and review notes](data/robotics/SOURCES.md). Verify deterministic publications: `node scripts/render_robotics.mjs --check`. **Independent handbook; not yet added to the website search index.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
