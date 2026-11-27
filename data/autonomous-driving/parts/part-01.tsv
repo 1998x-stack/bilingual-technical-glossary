@@ -1,0 +1,107 @@
+# 自动驾驶体系、SAE 等级与运行设计域
+Autonomous Driving|自动驾驶||车辆在指定条件下利用感知、决策与控制执行部分或全部驾驶任务的技术领域。
+Automated Driving System|自动驾驶系统|ADS|能够在其设计运行条件下持续执行完整动态驾驶任务的软硬件系统。
+Advanced Driver Assistance System|高级驾驶辅助系统|ADAS|辅助驾驶员完成部分转向或速度控制等任务、仍依赖规定人工监督的系统。
+SAE J3016 Taxonomy|SAE 驾驶自动化分级标准|J3016|用动态驾驶任务、监督与后备责任区分零至五级驾驶自动化的术语体系。
+Level 0 Driving Automation|零级驾驶自动化|L0|车辆未持续执行转向或纵向控制的驾驶自动化等级。
+Level 1 Driving Automation|一级驾驶自动化|L1|系统持续辅助转向或纵向速度控制之一且驾驶员持续监督的等级。
+Level 2 Driving Automation|二级驾驶自动化|L2|系统持续协同控制转向和纵向速度、驾驶员持续监督的等级。
+Level 3 Driving Automation|三级驾驶自动化|L3|系统在定义条件下执行动态驾驶任务、必要时要求后备用户接管的等级。
+Level 4 Driving Automation|四级驾驶自动化|L4|系统在定义运行条件下可自行执行驾驶任务及相关后备响应的等级。
+Level 5 Driving Automation|五级驾驶自动化|L5|在可由人驾驶的全部道路条件下无需驾驶员执行驾驶任务的等级。
+Operational Design Domain|运行设计域|ODD|规定自动驾驶功能允许运行的道路、地理、环境、速度与时间等条件集合。
+ODD Boundary|运行设计域边界||区分系统支持与不支持运行条件的约束边界。
+Operational Design Condition|运行设计条件||运行设计域中影响系统允许启用的具体道路、天气或交通条件。
+Dynamic Driving Task|动态驾驶任务|DDT|驾驶所需的持续横纵向运动控制及目标事件感知响应等实时操作集合。
+DDT Fallback|动态驾驶任务后备响应||在系统无法继续完成 DDT 或离开 ODD 时执行的规定响应。
+Fallback-ready User|可执行后备响应的用户||在特定驾驶自动化级别下预期可响应系统接管请求的人员。
+Minimal Risk Condition|最小风险状态|MRC|经后备操作使车辆及其他道路参与者风险尽可能降低的稳定状态。
+Minimal Risk Maneuver|最小风险机动|MRM|系统为达到最小风险状态而执行的受控驾驶操作。
+Driver Monitoring System|驾驶员监测系统|DMS|根据摄像头或其他测量分析驾驶员注意力、状态或接管准备度的系统。
+Driver Engagement|驾驶员参与程度||驾驶员在监督与执行驾驶任务中投入注意力和控制的状态。
+Takeover Request|接管请求|TOR|自动化功能向可用的人类驾驶者发出恢复驾驶控制的提示。
+Transition Demand|控制权转换要求||系统要求后备用户在规定条件下接管动态驾驶任务的通知。
+Automation Disengagement|自动化退出||驾驶自动化功能停止持续承担规定驾驶控制职责的事件。
+Human–Machine Interface|人机界面|HMI|向驾驶员或乘员呈现系统状态、警告和控制输入的交互接口。
+Fallback Strategy|后备策略||在故障、能力限制或域退出时保障车辆安全退化的系统计划。
+
+# 整车电子电气、车辆接口与执行机构
+Vehicle Platform|车辆平台||集成车身、底盘、动力、制动、转向及电子电气系统的整车基础。
+Drive-by-wire|线控驾驶||通过电子控制信号而非直接机械连接执行驱动、制动或转向的架构。
+Steer-by-wire|线控转向||将转向命令转换为转向执行机构动作的电子控制系统。
+Brake-by-wire|线控制动||通过电子指令协调制动压力或制动力的执行系统。
+Throttle-by-wire|电子节气门控制||由电子控制器根据驾驶需求调节发动机节气门开度的技术。
+Electronic Control Unit|电子控制单元|ECU|负责执行特定车辆功能的嵌入式计算控制节点。
+Domain Controller|域控制器||把相关车辆功能的计算和接口集中到同一电子控制平台的架构。
+Central Vehicle Computer|中央车辆计算机||集中承担多项车载计算功能的高性能处理平台。
+Vehicle Control Unit|整车控制单元|VCU|协调动力系统与整车模式、安全及执行指令的控制器。
+Electronic Stability Control|车身电子稳定控制|ESC|通过车轮制动等干预帮助车辆维持期望稳定状态的系统。
+Anti-lock Braking System|防抱死制动系统|ABS|通过调节制动压力减少车轮制动时锁死风险的系统。
+Electric Power Steering|电动助力转向|EPS|利用电机提供转向助力或执行转向控制的机构。
+Actuator Command|执行器命令||传递给转向、驱动或制动控制器的目标控制量。
+Actuator Feedback|执行器反馈||由执行器报告的实际位置、速度、力矩或工作状态数据。
+Controller Area Network|控制器局域网络|CAN|广泛用于车辆控制节点间通信的串行总线协议。
+CAN FD|灵活数据速率 CAN|CAN FD|支持更大数据负载与较高速率数据段的 CAN 扩展协议。
+Automotive Ethernet|车载以太网||支持车载高带宽传感与计算通信的以太网技术集合。
+Time-sensitive Networking|时间敏感网络|TSN|为以太网提供时间同步、确定性时延和流量调度能力的标准族。
+Automotive Middleware|车载软件中间件||为车内功能提供通信、发现、数据序列化及生命周期管理的软件层。
+AUTOSAR|汽车开放系统架构|AUTOSAR|定义汽车软件组件、接口及运行平台的行业协作标准体系。
+Service-oriented Architecture|面向服务的车载架构|SOA|通过可发现的服务接口组织车载功能和数据交换的设计方式。
+Vehicle State Interface|车辆状态接口||向自动驾驶软件提供车速、档位、转向角等车辆状态的数据契约。
+Control Command Gateway|控制命令网关||将自动驾驶控制输出转化为具体底盘消息并执行授权检查的组件。
+Vehicle Health Monitor|车辆健康监控||监测关键执行器、供电和通信状态并报告异常的机制。
+Redundant Actuation|冗余执行系统||提供额外制动、转向或控制通路以应对单点故障的设计。
+
+# 环境传感器、采集链与时间空间标定
+Automotive Sensor Suite|车载传感器组||由摄像头、激光雷达、雷达、定位和惯性设备组成的车辆感知配置。
+Surround-view Camera|环视摄像头||安装于车辆不同方向以覆盖周边视野的摄像设备。
+Front-facing Camera|前视摄像头||主要观测车辆行进方向道路、车道与交通参与者的成像设备。
+Fisheye Camera|鱼眼摄像头||利用超广角镜头获取近场大视角图像的设备。
+Camera Intrinsic Calibration|相机内参标定||估计焦距、主点和镜头畸变等相机内部投影参数的过程。
+Camera Extrinsic Calibration|相机外参标定||确定相机与车体或其他传感器间相对位置姿态的过程。
+LiDAR|激光雷达|LiDAR|利用激光测距获得场景三维距离点的主动传感器。
+Spinning LiDAR|旋转式激光雷达||通过扫描结构改变激光测距方向以覆盖一定空间范围的设备。
+Solid-state LiDAR|固态激光雷达||不依赖传统整体机械旋转扫描的激光测距器件类别。
+Automotive Radar|车载雷达||利用无线电反射测量目标距离、速度及部分方位信息的传感器。
+Millimeter-wave Radar|毫米波雷达||工作于毫米波频段、常用于车载目标测距测速的雷达设备。
+Frequency-modulated Continuous-wave Radar|调频连续波雷达|FMCW|通过连续发射频率变化信号并分析回波差频进行测距测速的雷达方案。
+Imaging Radar|成像雷达||提供较丰富角分辨率或空间结构观测的高分辨率雷达系统。
+Ultrasonic Sensor|超声波传感器||利用声波往返传播估计近距离目标距离的设备。
+Global Navigation Satellite System|全球卫星导航系统|GNSS|通过多个导航卫星信号求解接收机位置和时间的系统。
+Inertial Measurement Unit|惯性测量单元|IMU|提供角速度与比力等惯性测量的传感组件。
+Wheel Speed Sensor|轮速传感器||测量单个车轮旋转速度以支持运动估计或稳定控制的设备。
+Sensor Timestamp|传感器时间戳||记录测量采集时间或其他规定时间基准的元数据。
+Hardware Time Synchronization|硬件时间同步||通过硬件时钟、触发线或同步协议协调多传感器采样时间的方法。
+Precision Time Protocol|精确时间协议|PTP|为网络设备时钟提供高精度同步的通信协议族。
+Synchronization Offset|同步时间偏移||两个传感器或系统时钟之间的估计时间差。
+Sensor Frame|传感器坐标系||固定于某一感知设备、用于表达测量方向和位置的参考系。
+Ego-vehicle Frame|自车坐标系||固定在车辆特定参考点的坐标系，用于表达车体附近的运动与目标。
+Hand–Eye Calibration|手眼形式外参标定||通过多次相对运动观测求解两个固定坐标系之间变换的标定问题。
+Sensor Data Pipeline|传感数据处理流水线||包含采集、解码、时间校准、质量检查与分发的连续处理链。
+
+# 视觉道路感知、车道线与可行驶区域
+Road Scene Understanding|道路场景理解||根据视觉或融合观测解释道路结构、交通设施及参与者关系的任务。
+Lane Detection|车道线检测||在图像或空间表示中识别车道边界标记及其几何位置的任务。
+Lane Marking|车道标线||绘制在路面的线条、箭头等引导交通的物理标记。
+Lane Centerline|车道中心线||用于描述车道行驶方向和局部几何的参考曲线。
+Lane Boundary|车道边界||定义一个车道允许行驶区域左右界限的几何曲线。
+Drivable Area Segmentation|可行驶区域分割||按像素或空间区域预测车辆可能合法及物理可通行范围的任务。
+Road Surface Segmentation|路面分割||在图像中识别与道路表面对应的语义区域的任务。
+Semantic Segmentation|语义分割||为图像每个像素分配道路、人行道、车辆等语义类别的预测任务。
+Instance Segmentation|实例分割||区分同类不同车辆或行人个体并生成像素掩码的视觉任务。
+Panoptic Segmentation|全景分割||为所有像素赋语义类别并为可数目标区分实例身份的任务。
+Traffic Light Recognition|交通信号灯识别||检测交通信号灯并判断颜色、方向和控制含义的过程。
+Traffic Sign Recognition|交通标志识别||定位并分类限速、停车和其他道路交通标志的任务。
+Traffic Sign Localization|交通标志空间定位||确定交通标志在车辆相机或地图坐标系中的位置的过程。
+Stop Line Detection|停止线检测||识别路面停止线及其相对自车空间位置的任务。
+Crosswalk Detection|人行横道检测||识别道路上的人行横道区域或标线几何的过程。
+Curb Detection|路缘检测||从图像、深度或点云中确定路沿空间位置的任务。
+Free-space Estimation|自由空间估计||估计车体附近无明显障碍、可用于候选运动的空间区域。
+Vanishing Point|消失点||空间平行线经透视投影在图像中趋于汇聚的点。
+Inverse Perspective Mapping|逆透视映射|IPM|在地面平面假设下把相机图像转换为俯视几何表示的方法。
+Bird's-eye-view Transformation|鸟瞰变换|BEV|把多视角或三维观测映射至车辆周围地面坐标平面的表示过程。
+Lane Topology Estimation|车道拓扑估计||推断不同车道段连接、分岔与合流关系的任务。
+Road Edge Detection|道路边缘检测||识别路面可行驶区域外轮廓或边界位置的任务。
+Road Hazard Detection|道路危险物检测||识别落物、坑洞或异常可撞击对象等路面危险的任务。
+Occlusion Reasoning|遮挡推理||基于可见几何及场景关系推断被遮挡区域潜在物体或空间结构的方法。
+Visibility Range Estimation|可视距离估计||判断当前环境与传感器条件下能可靠观测的前方距离范围的任务。
