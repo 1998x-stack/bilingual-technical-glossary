@@ -1,0 +1,107 @@
+# 大样本理论与渐近推断
+Asymptotic Statistics|渐近统计||研究样本量趋于无穷时估计量与检验统计量性质的理论。
+Convergence in Probability|依概率收敛||估计误差超过任意固定正阈值的概率趋于零的收敛方式。
+Almost Sure Convergence|几乎处处收敛||随机变量序列在概率为一的事件上逐点收敛。
+Convergence in Distribution|依分布收敛||随机变量分布函数在极限分布连续点收敛的性质。
+Convergence in Mean Square|均方收敛||随机变量与极限之间平方差的期望趋于零的收敛方式。
+Weak Law of Large Numbers|弱大数定律|WLLN|在适当条件下样本均值依概率趋向总体期望的定理。
+Strong Law of Large Numbers|强大数定律|SLLN|在适当条件下样本均值几乎处处收敛到总体期望的定理。
+Central Limit Theorem|中心极限定理|CLT|在相应条件下标准化随机变量和趋近正态分布的定理族。
+Lindeberg Condition|林德伯格条件||用于三角阵中心极限定理、控制单项大偏差贡献的条件。
+Lyapunov Condition|李雅普诺夫条件||通过高阶矩上界确保一类独立变量中心极限定理成立的充分条件。
+Slutsky Theorem|斯卢茨基定理||将依分布收敛与依概率收敛的随机量组合得到极限分布的定理。
+Continuous Mapping Theorem|连续映射定理||在适当连续性条件下收敛随机变量经函数映射仍收敛的定理。
+Delta Method|Delta 方法||借助泰勒展开推导可微变换后估计量渐近分布的方法。
+Multivariate Delta Method|多元 Delta 方法||以函数雅可比矩阵传播多元估计量渐近协方差的方法。
+Asymptotic Normality|渐近正态性||经适当中心化和缩放的统计量依分布趋向正态分布的性质。
+Asymptotic Variance|渐近方差||估计量标准化极限分布的方差参数。
+Asymptotic Bias|渐近偏差||大样本尺度上估计量期望相对真值的系统差异。
+Asymptotic Efficiency|渐近效率||根据极限方差或局部风险比较估计程序效率的性质。
+Asymptotic Relative Efficiency|渐近相对效率|ARE|达到相同精度所需样本量或极限方差的比较指标。
+Stochastic Order|随机阶记号||用概率界刻画随机变量序列规模的符号。
+Big O in Probability|依概率有界阶|Op|表示随机量按给定尺度缩放后在概率意义下有界。
+Little o in Probability|依概率小阶|op|表示随机量按给定尺度缩放后依概率趋向零。
+Contiguity|相邻连续性||一个概率测度序列的零概率极限事件也被另一序列赋予渐近零概率的关系。
+Local Asymptotic Normality|局部渐近正态性|LAN|局部参数扰动下对数似然比近似高斯移位结构的性质。
+Berry–Esseen Bound|贝里—埃塞恩界||在矩条件下量化标准化独立变量和与正态分布之间最大误差的上界。
+
+# 似然理论、Fisher 信息与推断
+Likelihood Function|似然函数||把观测数据固定后视为未知参数函数的概率密度或质量函数。
+Log-likelihood|对数似然||似然函数取对数后得到、便于求导和数值计算的目标函数。
+Score Function|得分函数||对数似然函数对模型参数的一阶导数或梯度。
+Observed Information|观测信息||观测数据对应负对数似然海森矩阵的值。
+Fisher Information|费舍尔信息||在正则条件下等于得分方差或负期望海森矩阵的信息量。
+Information Matrix|信息矩阵||多参数模型中以得分协方差刻画参数局部可辨程度的矩阵。
+Cramér–Rao Lower Bound|克拉美—罗下界|CRLB|在正则条件下对无偏估计量方差给出的信息论下界。
+Information Inequality|信息不等式||把无偏估计量方差与 Fisher 信息联系起来的不等式。
+Regularity Conditions|正则性条件||允许微积分、期望交换与渐近展开等操作成立的模型假设。
+Likelihood Principle|似然原则||主张固定观测数据的似然函数承载关于参数的全部相关证据的原则。
+Profile Likelihood|剖面似然||对干扰参数取最大化后得到的目标参数似然函数。
+Marginal Likelihood|边际似然||对未观察变量或参数按指定概率分布积分所得的数据似然。
+Partial Likelihood|偏似然||只利用部分联合样本分布结构构建的推断似然。
+Composite Likelihood|复合似然||组合低维边际或条件似然以近似完整联合似然的方法。
+Penalized Likelihood|惩罚似然||从似然目标中减去复杂度或参数惩罚项的估计准则。
+Likelihood Ratio Statistic|似然比统计量||以受限与非受限最大似然值之比构成的检验量。
+Wilks Theorem|威尔克斯定理||在正则嵌套模型下负二倍对数似然比渐近服从卡方分布的结果。
+Information Criterion|信息准则||以拟合优度和模型复杂度惩罚比较统计模型的分数。
+Akaike Information Criterion|赤池信息准则|AIC|用负二倍最大对数似然加参数数目的两倍比较模型。
+Bayesian Information Criterion|贝叶斯信息准则|BIC|用负二倍最大对数似然加参数数目乘样本量对数的准则。
+Cross-entropy|交叉熵||按一个分布对另一分布的对数概率取负期望的量。
+Kullback–Leibler Divergence|库尔贝克—莱布勒散度|KL|衡量两个概率分布相对信息差异的非对称函数。
+Hellinger Distance|海林格距离||由两个分布平方根密度差定义的对称概率距离。
+Total Variation Distance|全变差距离||两个概率分布对所有事件赋予概率差的最大绝对值。
+Identified Set|可识别集合||与所观察数据分布相容的全部目标参数值集合。
+
+# 线性回归与广义线性模型
+Linear Regression|线性回归||将响应变量条件均值表示为解释变量线性组合的建模方法。
+Simple Linear Regression|一元线性回归||使用一个解释变量和截距拟合响应变量的线性模型。
+Multiple Linear Regression|多元线性回归||同时用多个解释变量解释响应均值的线性模型。
+Ordinary Least Squares|普通最小二乘|OLS|通过最小化残差平方和估计线性模型系数的方法。
+Generalized Least Squares|广义最小二乘|GLS|在误差协方差已知或可建模时用逆协方差加权估计系数。
+Weighted Least Squares|加权最小二乘|WLS|以不同观测的非负权重最小化平方残差和的估计方法。
+Regression Coefficient|回归系数||控制其他模型变量时，解释变量单位变化对应的模型参数。
+Intercept|截距||当全部解释变量为零时模型线性预测器的常数项。
+Residual|残差||观测响应减去模型预测响应的差值。
+Fitted Value|拟合值||依据估计模型与观测解释变量计算的预测响应值。
+Hat Matrix|帽子矩阵||在线性最小二乘中把响应向量映射为拟合值的投影矩阵。
+Leverage|杠杆值||量化观测解释变量在回归设计空间中异常程度的帽子矩阵对角元。
+Influential Observation|有影响观测||删除或改变该观测会显著影响拟合系数或预测的样本。
+Cook Distance|库克距离||衡量删除某观测对整体回归拟合影响程度的诊断量。
+Coefficient of Determination|决定系数|R²|描述回归模型相对基准解释响应变化程度的统计量。
+Adjusted R-squared|调整决定系数||考虑解释变量数量与样本量对 R² 做自由度调整的指标。
+Multicollinearity|多重共线性||多个解释变量高度线性关联使部分系数估计不稳定的现象。
+Variance Inflation Factor|方差膨胀因子|VIF|衡量解释变量与其他解释变量线性相关引起系数方差膨胀的指标。
+Heteroskedasticity|异方差性||模型误差的条件方差随解释变量或样本单位变化的性质。
+Homoskedasticity|同方差性||误差条件方差在给定设计范围内保持常数的假设。
+Generalized Linear Model|广义线性模型|GLM|利用指数族响应分布和连接函数建立条件均值模型的框架。
+Link Function|连接函数||把响应变量条件均值映射到线性预测器尺度的函数。
+Logistic Regression|逻辑回归||通过 logit 连接函数对二元响应概率进行建模的广义线性模型。
+Poisson Regression|泊松回归||常用对数连接函数建模计数条件均值的广义线性模型。
+Deviance|偏差统计量||由饱和模型与拟合模型最大对数似然差构造的拟合度量。
+
+# 方差分析、实验设计与随机化
+Analysis of Variance|方差分析|ANOVA|以组间与组内变异分解检验均值或因素效应的模型方法。
+One-way ANOVA|单因素方差分析||研究单一分类因素不同水平对均值影响的方差分析。
+Two-way ANOVA|双因素方差分析||同时考察两个分类因素主效应及可选交互效应的分析。
+Factorial Design|析因设计||在实验中系统组合多个因素水平以估计效应与交互作用的设计。
+Factor|实验因素||研究者操纵或记录、可能影响响应的实验变量。
+Treatment|处理||实验中施加给研究单位的具体干预条件或因素组合。
+Control Group|对照组||在实验中不接受目标处理或接受基准处理的比较组。
+Random Assignment|随机分配||按已知随机机制将研究单位分配至不同处理组的过程。
+Blocking|区组设计||将相似实验单位先分组，再在区组内进行处理比较的策略。
+Randomized Complete Block Design|随机完全区组设计|RCBD|每个区组包含全部处理并在区组内随机分配的实验设计。
+Latin Square Design|拉丁方设计||用行列双重区组控制两个干扰因素的平衡设计。
+Interaction Effect|交互效应||一个因素对响应的影响随另一因素水平变化的现象。
+Main Effect|主效应||对其他因素水平平均后的某因素水平变化效应。
+Sum of Squares|平方和|SS|对一组偏差平方求和，用于量化不同来源的变异。
+Residual Sum of Squares|残差平方和|RSS|观测响应与拟合值差的平方之和。
+Mean Square|均方|MS|平方和除以相应自由度得到的方差类统计量。
+F Statistic|F 统计量||在适当零假设与误差条件下比较两个均方的比值统计量。
+Balanced Design|平衡设计||各处理组合或分类单元包含相等观测数的实验设计。
+Unbalanced Design|非平衡设计||处理组合之间样本量不同的实验设计。
+Repeated Measures Design|重复测量设计||同一实验单位在多个条件或时间点上被反复观测的设计。
+Mixed-effects Model|混合效应模型||同时包含总体固定效应与随机效应的统计模型。
+Random Effect|随机效应||把某些组别或单位差异视为来自随机分布的模型效应。
+Fixed Effect|固定效应||作为待估固定系数处理的因素水平或解释变量效应。
+Power Analysis|统计功效分析||根据效应量、样本量、显著性水平与误差变化推导检验功效的分析。
+Sample Size Calculation|样本量计算||根据目标精度或检验功效及模型假设确定所需观测数量的过程。
