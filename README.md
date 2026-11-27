@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### CUDA / CUDA GPU Programming (standalone; not yet indexed)
+
+**400 original bilingual terms across 16 chapters**, covering the CUDA programming model, grids/blocks/warps, Kernel launch, memory hierarchy, synchronization and atomic operations, Stream/CUDA Graph, managed memory, occupancy and Roofline, memory coalescing, mixed precision and Tensor Cores, nvcc/PTX/SASS, Runtime/Driver APIs, cuBLAS/cuDNN/NCCL/CUTLASS, Nsight tools and multi-GPU deployment. Includes **14 concept contrasts, 10 medium-level interview Q&As and 10 medium-level exam problems with worked solutions**. [Markdown](glossaries/cuda.md) · [PDF](pdf/cuda.pdf) · [TSV](data/cuda.tsv) · [NVIDIA official references / editorial notes](data/cuda/SOURCES.md). Deterministic artifact verification: `node scripts/render_cuda.mjs --check`. **This independent handbook is not included in indexed subject or term counts.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
