@@ -1,0 +1,26 @@
+# 二阶方法与拟牛顿算法
+Second-order Method|二阶优化方法||利用海森矩阵、曲率近似或二阶信息构造更新的优化方法。
+Newton Method|牛顿法||通过解海森矩阵与梯度构成的线性系统确定局部更新方向。
+Damped Newton Method|阻尼牛顿法||给牛顿方向配合线搜索或步长限制提高全局收敛稳健性的方法。
+Newton Decrement|牛顿减量||由梯度与海森逆矩阵构成的局部最优性尺度指标。
+Modified Newton Method|修正牛顿法||调整海森矩阵使搜索方向满足所需下降或正定性的算法。
+Quasi-Newton Method|拟牛顿法||用迭代更新的矩阵近似海森矩阵或其逆的算法。
+Secant Equation|割线方程||要求曲率近似满足参数步长与梯度差的关系。
+BFGS Algorithm|BFGS 算法|BFGS|依据割线关系更新正定曲率近似的经典拟牛顿方法。
+L-BFGS Algorithm|有限内存 BFGS|L-BFGS|只储存少量历史梯度差和步长对的拟牛顿方法。
+DFP Algorithm|DFP 算法|DFP|Davidon–Fletcher–Powell 提出的拟牛顿矩阵更新方式。
+SR1 Update|对称秩一更新|SR1|利用秩一修正更新对称海森近似矩阵的方法。
+Gauss–Newton Method|高斯—牛顿法||利用残差雅可比构成近似海森矩阵求解非线性最小二乘。
+Levenberg–Marquardt Algorithm|列文伯格—马夸尔特算法|LM|通过阻尼调整高斯—牛顿线性系统处理非线性最小二乘。
+Jacobian Matrix|雅可比矩阵||向量值函数各分量对输入变量偏导数构成的矩阵。
+Hessian-vector Product|海森向量积|HVP|计算海森矩阵作用于向量的结果而无须显式形成整矩阵。
+Matrix-free Optimization|无矩阵优化||利用矩阵向量积等操作求解而避免存储大型矩阵的数值方法。
+Conjugate Gradient Method|共轭梯度法|CG|利用共轭方向求解对称正定线性系统的迭代算法。
+Truncated Newton Method|截断牛顿法||用内层迭代近似求解牛顿方程并提前停止的优化方法。
+Inexact Newton Method|非精确牛顿法||允许牛顿线性系统只求得满足一定残差条件的近似解。
+Preconditioning|预条件化||通过变量或线性系统变换改善迭代求解器的数值条件。
+Cholesky Factorization|乔列斯基分解||将对称正定矩阵表示为三角矩阵与其转置乘积。
+LDLᵀ Factorization|LDLᵀ 分解||将对称矩阵分解为下三角矩阵、对角或块对角矩阵及转置。
+Curvature Condition|曲率条件||拟牛顿更新保持正定等性质时要求步长与梯度差满足的条件。
+Trust-region Subproblem|信赖域子问题||在局部二次模型与步长范数约束下求最优搜索步的子问题。
+Cauchy Point|柯西点||信赖域内沿最速下降方向最小化局部模型所得的近似步。
