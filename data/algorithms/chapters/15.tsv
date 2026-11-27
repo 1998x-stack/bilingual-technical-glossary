@@ -1,0 +1,31 @@
+# 高级数据结构与算法优化
+Segment Tree|线段树||用树形层次组织区间聚合信息并支持更新与查询。
+Lazy Propagation|懒标记下传||把区间更新延后记录、在需要访问子树时再传播的技巧。
+Fenwick Tree|树状数组|BIT|以二进制最低位结构维护前缀可加总信息的数据结构。
+Sparse Table|稀疏表||预处理固定区间的幂次长度答案以快速回答幂等区间查询。
+Range Minimum Query|区间最小值查询|RMQ|查询数组指定区间中最小元素的任务。
+Range Sum Query|区间求和查询||计算数组某个连续索引区间数值和的任务。
+Persistent Data Structure|持久化数据结构||修改后仍可访问历史版本的数据结构。
+Persistent Segment Tree|可持久化线段树||通过共享未变化节点保存多版本区间信息的线段树。
+Heavy-light Decomposition|树链剖分|HLD|把树的路径划成对数条重链以进行区间查询。
+Lowest Common Ancestor|最近公共祖先|LCA|根树中两个顶点共同祖先里深度最大的节点。
+Binary Lifting|倍增法||预先维护 2 的幂次跳跃祖先以快速上跳或求 LCA。
+Euler Tour Technique|欧拉序技巧||利用 DFS 进出时刻将树的子树映射到连续区间。
+Centroid Decomposition|点分治||反复选择重心把树划分为较小子树以处理路径性质。
+Tree Diameter|树的直径||树中任意两顶点之间最长简单路径的长度。
+Monotonic Stack|单调栈||维护栈内元素单调性以快速求相邻更大或更小元素。
+Monotonic Deque|单调双端队列||维护窗口候选元素单调性以快速求滑动最值。
+Sliding Window|滑动窗口||维护随序列移动的连续区间及其统计信息。
+Two Pointers|双指针||通过移动两个位置指针减少枚举或查找成本的技巧。
+Offline Algorithm|离线算法||在已知全部输入或查询时重新排序处理以改善复杂度。
+Online Algorithm|在线算法||在未来输入未知时按到达顺序即时进行计算或决策。
+Mo Algorithm|莫队算法||按区间端点分块排序离线查询以减少窗口调整次数。
+Square Root Decomposition|平方根分解||按约为 √n 的块大小平衡更新与查询成本。
+Disjoint Sparse Table|不交稀疏表||预处理跨分块的前后缀合并值实现静态结合操作区间查询。
+Cartesian Tree|笛卡尔树||同时满足原序列中序遍历次序与堆序性质的二叉树。
+Treap|树堆||同时满足二叉搜索树键顺序和随机优先级堆性质的树。
+Splay Tree|伸展树||通过旋转将近期访问元素移动至根并提供摊还对数操作的数据结构。
+Link-cut Tree|动态树|LCT|用辅助伸展树维护动态森林路径聚合的结构。
+Binary Indexed Trie|二进制字典树||按整数位组织键值，支持异或等按位查询的字典树。
+Li Chao Segment Tree|李超线段树||维护一组直线或函数并回答指定横坐标极值查询的结构。
+Fractional Cascading|分数级联||在相关有序表中共享定位信息以加速连续搜索的技巧。

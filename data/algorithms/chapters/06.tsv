@@ -1,0 +1,41 @@
+# 动态规划
+Dynamic Programming|动态规划|DP|通过记录重叠子问题的解避免重复计算的优化范式。
+Overlapping Subproblems|重叠子问题||不同递归路径反复遇到相同状态的性质。
+State|动态规划状态||完整表示一个子问题所需的信息。
+State Transition|状态转移||根据较小或前置状态的答案推导当前状态答案。
+Transition Equation|状态转移方程||用数学表达式描述状态间的求解关系。
+Base Case|基础状态||无需继续分解即可直接确定的子问题答案。
+Memoization|记忆化搜索||按需递归求解并缓存已计算状态。
+Tabulation|表格法||按依赖顺序自底向上填写状态表。
+Top-down DP|自顶向下动态规划||通过递归及缓存只访问需求驱动状态的方式。
+Bottom-up DP|自底向上动态规划||按拓扑顺序迭代计算所有必需状态的方式。
+State Space|状态空间||算法可能访问的全部状态集合。
+State Compression|状态压缩||用更紧凑的表示减少 DP 内存或状态数量。
+Rolling Array|滚动数组||只保留最近若干层状态以降低存储量。
+Bitmask DP|状态压缩动态规划||用位掩码表示元素集合并进行状态转移。
+Interval DP|区间动态规划||以子区间边界为状态组织转移。
+Tree DP|树形动态规划||利用树的父子依赖关系计算子树状态。
+Digit DP|数位动态规划||按数字位、边界紧致状态等计数满足条件的整数。
+Profile DP|轮廓线动态规划||记录网格扫描边界的局部占用状态以减少维度。
+Knapsack DP|背包动态规划||以容量及物品处理阶段定义优化状态。
+Zero-one Knapsack|零一背包||每件物品最多选一次的容量约束价值最大化问题。
+Unbounded Knapsack|完全背包||每类物品可重复选择任意次的背包问题。
+Bounded Knapsack|多重背包||每类物品最多选择指定次数的背包问题。
+Subset Sum|子集和问题||判断是否存在元素子集使其数值和等于目标值。
+Coin Change|零钱兑换||按面额集合求最少硬币数或组合数的经典 DP 问题。
+Longest Common Subsequence|最长公共子序列|LCS|两个序列中保持相对次序的最长共同子序列。
+Longest Increasing Subsequence|最长递增子序列|LIS|从序列中抽取严格递增且长度最大的子序列。
+Edit Distance|编辑距离||通过允许的编辑操作把一个字符串变为另一字符串的最小成本。
+Matrix Chain Multiplication|矩阵链乘法||选择矩阵乘法括号顺序以最小化标量乘法次数。
+Optimal Binary Search Tree|最优二叉搜索树||在给定查询频率下优化期望查找代价的树结构。
+Weighted Interval Scheduling|加权区间调度||选取不重叠区间使权重总和最大化的问题。
+Bellman Optimality Principle|贝尔曼最优性原理||最优策略后续决策对相应状态仍需最优的原理。
+Optimal Value Function|最优价值函数||给出每个状态可达到的最优目标值的函数。
+Decision Reconstruction|决策路径恢复||根据转移记录从 DP 结果还原实际选择序列。
+Parent Pointer|前驱指针||记录某状态最优转移来源的辅助信息。
+Monotone Queue Optimization|单调队列优化||利用窗口最值维护加速特定 DP 转移。
+Convex Hull Trick|凸包优化|CHT|维护若干直线下包络以加速线性形式的最值查询。
+Divide-and-Conquer DP Optimization|分治 DP 优化||在决策点单调性等条件下缩小转移搜索范围。
+Knuth Optimization|Knuth 优化||利用区间决策点单调性和四边形不等式优化 DP。
+Quadrangle Inequality|四边形不等式||一类区间成本矩阵满足的次模式不等式条件。
+Aliens Trick|Alien 优化||通过拉格朗日惩罚调节选择数量等约束并结合 DP 求最优值。

@@ -1,0 +1,36 @@
+# 时间复杂度与空间复杂度
+Time Complexity|时间复杂度||计算步骤数量随输入规模增长的量级。
+Space Complexity|空间复杂度||算法占用的内存随输入规模增长的量级。
+Auxiliary Space|辅助空间||除输入与输出存储外额外使用的工作空间。
+Worst-case Complexity|最坏情况复杂度||同规模全部输入中资源消耗的上界。
+Average-case Complexity|平均情况复杂度||在指定输入分布下的期望资源消耗。
+Best-case Complexity|最好情况复杂度||同规模允许输入中所需资源的最小值。
+Asymptotic Analysis|渐近分析||忽略低阶项与常数系数研究大规模增长趋势。
+Big O Notation|大 O 记号|O|给出函数增长的渐近上界。
+Big Omega Notation|大 Ω 记号|Ω|给出函数增长的渐近下界。
+Big Theta Notation|大 Θ 记号|Θ|给出函数增长的紧渐近界。
+Little o Notation|小 o 记号|o|描述严格小于另一函数的渐近增长。
+Little Omega Notation|小 ω 记号|ω|描述严格大于另一函数的渐近增长。
+Constant Time|常数时间||操作成本与输入规模无关的量级。
+Logarithmic Time|对数时间||时间随输入规模的对数增长。
+Linear Time|线性时间||时间与输入规模成正比增长。
+Linearithmic Time|线性对数时间||时间通常为 n log n 量级。
+Quadratic Time|平方时间||时间通常随输入规模平方增长。
+Cubic Time|立方时间||时间通常随输入规模立方增长。
+Polynomial Time|多项式时间||时间由输入规模的某个固定次数多项式界定。
+Pseudopolynomial Time|伪多项式时间||对输入数值大小多项式、但对其二进制编码长度可能指数级。
+Exponential Time|指数时间||时间随输入规模按固定底数指数增长。
+Factorial Time|阶乘时间||运行步骤随输入规模约呈阶乘增长。
+Recurrence Relation|递推关系||用更小规模问题的成本表示当前规模成本。
+Master Theorem|主定理||求解常见分治递推 T(n)=aT(n/b)+f(n) 的渐近界。
+Recursion Tree|递归树||把递归调用及每层工作量展开成树进行求和。
+Substitution Method|代入法||猜测递推边界并通过数学归纳验证。
+Akra–Bazzi Method|Akra–Bazzi 方法||分析规模不均匀分治递推的一种通用定理。
+Amortized Analysis|摊还分析||对操作序列证明平均每次成本上界，不依赖随机输入。
+Aggregate Method|聚合法||先界定整段操作的总成本，再按次数平均。
+Accounting Method|记账法||给便宜操作记信用，以支付未来昂贵操作的摊还分析方法。
+Potential Method|势能法||借助状态势能变化分摊多次操作成本的方法。
+Potential Function|势函数||衡量数据结构状态中预存工作量的非负函数。
+Lower Bound|下界||任何满足模型限制的算法都不能突破的资源消耗界。
+Upper Bound|上界||特定算法或算法族资源消耗不超过的界。
+Tight Bound|紧界||上下界在渐近量级上相匹配的界。

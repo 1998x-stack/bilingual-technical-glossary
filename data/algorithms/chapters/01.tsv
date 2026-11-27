@@ -1,0 +1,31 @@
+# 算法基础与计算模型
+Algorithm|算法||用于解决一类问题的有限、明确且可执行的步骤序列。
+Algorithm Design|算法设计||构造满足正确性与资源约束的求解步骤。
+Algorithm Analysis|算法分析||研究算法的正确性、时间与空间资源需求。
+Computational Problem|计算问题||把输入实例映射到要求的输出或判定结果的任务。
+Problem Instance|问题实例||给定问题的一组具体输入。
+Input Size|输入规模||衡量实例大小的参数，如元素数或编码位数。
+Problem Specification|问题规格||明确合法输入、期望输出和约束的形式描述。
+Precondition|前置条件||算法开始前必须满足的输入条件。
+Postcondition|后置条件||算法结束后应成立的输出性质。
+Correctness|正确性||算法对规定输入产生符合规格结果的性质。
+Partial Correctness|部分正确性||在算法终止的前提下，输出满足后置条件。
+Total Correctness|完全正确性||算法会终止且结果符合规格。
+Termination|终止性||算法对允许的输入能在有限步骤内结束。
+Loop Invariant|循环不变式||每轮循环开始或结束时持续成立的断言。
+Inductive Proof|归纳证明||由基础情形与归纳步骤证明所有规模的性质。
+Proof by Contradiction|反证法||假定结论不成立并推出矛盾的证明方法。
+Proof by Exchange|交换论证||通过交换局部选择证明另一解不劣的技巧。
+Counterexample|反例||否定某个全称命题的具体实例。
+Pseudocode|伪代码||忽略语言细节、突出算法控制逻辑的表示方法。
+Abstract Machine|抽象机器||以有限操作与状态刻画计算过程的理论模型。
+Random-Access Machine|随机访问机器|RAM|把基本访存及算术操作视为定成本的分析模型。
+Word-RAM Model|字长 RAM 模型||在固定字长机器字上执行基本操作的计算模型。
+Comparison Model|比较模型||算法只通过元素间比较来获取顺序信息的模型。
+Decision Tree Model|决策树模型||把比较结果分支组织为树以推导算法下界的模型。
+Deterministic Algorithm|确定性算法||相同输入与状态总是遵循相同计算路径的算法。
+Nondeterministic Algorithm|非确定性算法||理论上可在多个计算分支中选择成功路径的模型。
+Recursive Algorithm|递归算法||通过求解规模更小的同类实例解决原问题。
+Iterative Algorithm|迭代算法||通过循环反复更新状态完成计算的算法。
+In-place Algorithm|原地算法||通常只使用常数级额外工作空间修改输入的算法。
+Stable Algorithm|稳定算法||在排序语境中保持相等关键字元素原先相对顺序的算法。

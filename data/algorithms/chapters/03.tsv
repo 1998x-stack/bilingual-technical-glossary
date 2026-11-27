@@ -1,0 +1,41 @@
+# 排序与查找算法
+Sorting|排序||按关键字将元素重新排列为非降或非升序的任务。
+Comparison Sort|比较排序||仅依据元素两两比较决定相对次序的排序算法。
+Non-comparison Sort|非比较排序||利用关键字的结构或取值范围实现排序。
+Insertion Sort|插入排序||逐一把当前元素插入已排序前缀的适当位置。
+Selection Sort|选择排序||反复选取未排序部分的最小元素放入目标位置。
+Bubble Sort|冒泡排序||不断比较并交换相邻逆序元素的排序方法。
+Merge Sort|归并排序||递归划分序列并线性合并有序子序列。
+Quick Sort|快速排序||围绕枢轴分区后递归排序各分区。
+Heap Sort|堆排序||构建堆并反复取出极值完成排序。
+Shell Sort|希尔排序||按递减间隔进行分组插入排序。
+Counting Sort|计数排序||按有限整数关键字频次计算输出位置的稳定排序方法。
+Radix Sort|基数排序||按关键字的数字位依次进行稳定排序。
+Bucket Sort|桶排序||将元素分配到若干桶并分别排序后合并。
+TimSort|TimSort 排序||结合已排序运行段与归并策略的自适应稳定排序。
+IntroSort|内省排序||快速排序递归过深时切换堆排序以控制最坏复杂度。
+External Sorting|外部排序||数据不能完整放入内存时通过外存归并完成排序。
+K-way Merge|多路归并||同时合并 k 个有序序列的过程。
+Stable Sorting|稳定排序||相等关键字元素在排序后维持原有先后关系。
+Adaptive Sorting|自适应排序||利用输入现有有序程度降低工作量的排序策略。
+Comparison Lower Bound|比较排序下界||比较排序在最坏情况下需要 Ω(n log n) 次比较。
+Pivot|枢轴||快速排序中用于划分较小与较大元素的参考元素。
+Partition|划分操作||按照指定条件原地或非原地重排数据的步骤。
+Lomuto Partition|Lomuto 分区||常用单向扫描边界的快速排序分区方案。
+Hoare Partition|Hoare 分区||通过双向扫描交换不在对应分区元素的方案。
+Three-way Partition|三路划分||将元素分为小于、等于和大于枢轴的三部分。
+Order Statistic|顺序统计量||排序后第 k 个位置的元素值。
+Selection Problem|选择问题||不必完整排序就找出第 k 小元素的任务。
+Quickselect|快速选择||借助分区仅递归目标一侧寻找顺序统计量。
+Median of Medians|中位数的中位数||通过分组选择良好枢轴以实现线性最坏时间选择。
+Binary Search|二分查找||在有序搜索空间通过中点判定反复折半。
+Linear Search|线性查找||逐项检查元素是否满足目标条件。
+Interpolation Search|插值查找||基于关键字数值分布估计查询位置的查找算法。
+Exponential Search|指数查找||指数扩大候选范围后再做二分查找。
+Jump Search|跳跃查找||按固定块跳跃定位范围后进行局部线性查找。
+Lower Bound Search|下界查找||在有序数组中查找首个不小于给定值的位置。
+Upper Bound Search|上界查找||在有序数组中查找首个大于给定值的位置。
+Binary Search on Answer|答案二分||通过单调可行性谓词二分求满足条件的最优阈值。
+Inversion Count|逆序对计数||统计满足 i 小于 j 且 A[i] 大于 A[j] 的元素对。
+Coordinate Compression|坐标压缩||保留相对大小关系并把离散值映射为连续整数。
+Partial Sorting|部分排序||仅确定最小 k 个或某些目标位置的排序结果。

@@ -1,0 +1,31 @@
+# 数论算法
+Greatest Common Divisor|最大公约数|GCD|同时整除两个整数的最大正整数。
+Least Common Multiple|最小公倍数|LCM|同时为两个整数倍数的最小正整数。
+Euclidean Algorithm|欧几里得算法||通过反复取余求最大公约数。
+Extended Euclidean Algorithm|扩展欧几里得算法||同时求 gcd 与贝祖等式的整数系数。
+Bézout Identity|贝祖等式||整数 a,b 的最大公约数可表示为 ax+by。
+Modular Arithmetic|模运算||按给定模数的同余类执行整数计算。
+Congruence Relation|同余关系||两个整数之差可被给定模数整除的关系。
+Modular Inverse|模逆元||满足 a×x 同余 1 的 x，仅在 gcd(a,m)=1 时存在。
+Modular Exponentiation|模幂运算||高效计算大整数幂对指定模数取余的算法。
+Chinese Remainder Theorem|中国剩余定理|CRT|在模数两两互素时合并同余约束并给出唯一同余类。
+Prime Number|素数||恰有 1 与自身两个正因数的大于 1 的整数。
+Composite Number|合数||大于 1 且存在非平凡因数的整数。
+Prime Factorization|质因数分解||将正整数表示为若干素数幂的乘积。
+Trial Division|试除法||枚举候选因数以判断素性或寻找因子。
+Sieve of Eratosthenes|埃拉托斯特尼筛法||通过标记素数倍数找出范围内全部素数。
+Linear Sieve|线性筛||使每个合数按最小素因子处理一次的筛法。
+Segmented Sieve|分段筛||分批标记区间内合数以减小筛法内存开销。
+Euler Totient Function|欧拉函数|φ|统计 1 到 n 中与 n 互素的正整数个数。
+Euler Theorem|欧拉定理||在 a 与 n 互素时 a^φ(n) 对 n 同余于 1。
+Fermat Little Theorem|费马小定理||若 p 为素数且 p 不整除 a，则 a^(p−1) 对 p 同余于 1。
+Miller–Rabin Primality Test|Miller–Rabin 素性检验||通过随机或选定底数检测强伪素数的算法。
+Probabilistic Primality Test|概率素性检验||允许受控误判概率的素数判定方法。
+Pollard Rho Algorithm|Pollard Rho 分解算法||利用伪随机迭代及最大公约数寻找非平凡因子。
+Discrete Logarithm|离散对数||在有限群中求使 g^x 等于目标元素的指数 x。
+Baby-step Giant-step|大步小步算法|BSGS|利用时间空间折中求解离散对数。
+Modular Square Root|模平方根||求满足 x² 同余 a（模 m）的整数同余类。
+Tonelli–Shanks Algorithm|Tonelli–Shanks 算法||在奇素数模数下求二次剩余平方根的算法。
+Multiplicative Order|乘法阶||元素的幂首次回到单位元时的最小正指数。
+Mobius Function|莫比乌斯函数|μ|基于整数素因子平方自由性定义的数论函数。
+Mobius Inversion|莫比乌斯反演||由因子和形式恢复原算术函数的反演公式。

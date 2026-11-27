@@ -1,0 +1,26 @@
+# 近似算法
+Approximation Algorithm|近似算法||在多项式时间内寻找具有可证近似质量的可行解的算法。
+Approximation Ratio|近似比||近似解目标值相对最优值的最坏质量保证指标。
+Approximation Guarantee|近似保证||算法对所有合法输入给出的解质量下界或上界承诺。
+Constant-factor Approximation|常数因子近似||近似比被与输入规模无关的常数界定。
+Polynomial-time Approximation Scheme|多项式时间近似方案|PTAS|对每个固定精度参数可在多项式时间达到相应近似比的算法族。
+Fully Polynomial-time Approximation Scheme|完全多项式时间近似方案|FPTAS|运行时间对输入规模与精度倒数均为多项式的近似方案。
+Vertex Cover Approximation|顶点覆盖近似||为覆盖所有边选择顶点集合并保证相对于最优规模的上界。
+Set Cover Approximation|集合覆盖近似||通过贪心等方法选择覆盖全部元素的近似最少集合。
+Metric TSP Approximation|度量旅行商近似||利用三角不等式为最短巡回路线提供近似保证。
+Metric Space|度量空间||配备非负、对称且满足三角不等式距离函数的集合。
+Triangle Inequality|三角不等式||两点间距离不超过经任意第三点绕行的距离。
+Christofides Algorithm|Christofides 算法||对对称度量 TSP 给出 3/2 近似比的经典算法。
+Primal-dual Method|原始—对偶方法||联合维护原问题和对偶问题的可行性或界以构造近似解。
+LP Relaxation|线性规划松弛||放宽离散变量限制得到可多项式求解的线性规划。
+Integrality Gap|整数性间隙||整数最优值与松弛最优值之间的最坏比值。
+Randomized Rounding|随机舍入||按松弛解导出的概率将分数变量转化为离散决策。
+Deterministic Rounding|确定性舍入||按确定规则将连续松弛解转换为离散可行解。
+Conditional Expectation Method|条件期望法||通过逐项固定随机选择以保持期望目标界的去随机化技巧。
+Local Search Approximation|局部搜索近似||反复改进局部邻域，并利用局部最优结构证明近似质量。
+Approximation-preserving Reduction|保近似归约||将问题实例变换并控制近似解质量关系的归约。
+Max-Cut Approximation|最大割近似||寻找跨割边权和接近最优的图划分算法。
+Submodular Function|次模函数||满足边际收益递减性质的集合函数。
+Monotone Submodular Maximization|单调次模最大化||在预算等约束下最大化非降次模集合函数的任务。
+Budgeted Maximum Coverage|预算最大覆盖||在选择成本限制下尽可能覆盖最多加权元素。
+Bicriteria Approximation|双准则近似||同时放松目标函数表现及约束满足程度的近似保证。

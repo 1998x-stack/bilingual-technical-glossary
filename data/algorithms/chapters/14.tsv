@@ -1,0 +1,36 @@
+# 网络流与匹配算法
+Flow Network|流网络||边具有容量的有向图，通常指定源点与汇点。
+Flow|网络流||满足容量限制和内部结点流量守恒的边上数值分配。
+Capacity|容量||一条网络边允许通过的最大流量。
+Source Vertex|源点||流从中进入网络的指定起始顶点。
+Sink Vertex|汇点||流最终离开网络的指定终止顶点。
+Flow Conservation|流量守恒||除源汇外每个顶点流入总量等于流出总量。
+Residual Network|残量网络||表示沿边还能增加或撤回多少流量的网络。
+Residual Capacity|残量容量||在给定流下沿残量边可额外推送的流量。
+Augmenting Path|增广路径||残量网络中从源到汇的正残量路径。
+Ford–Fulkerson Method|Ford–Fulkerson 方法||反复沿增广路径增加流量直至无增广路的方法。
+Edmonds–Karp Algorithm|Edmonds–Karp 算法||通过 BFS 选最少边数增广路径求最大流。
+Dinic Algorithm|Dinic 算法||利用层次网络和阻塞流迭代求最大流。
+Level Graph|层次图||按残量网络最短层数保留向下一层的可用边所得图。
+Blocking Flow|阻塞流||使层次网络中不再存在源汇增广路径的流。
+Push–Relabel Algorithm|推送重标记算法||通过预流、局部推送与高度标签求最大流。
+Preflow|预流||允许内部顶点入流大于出流的中间流量配置。
+Maximum Flow|最大流||在容量和守恒约束下可达到的最大源汇流量。
+Max-flow Min-cut Theorem|最大流最小割定理||最大可行流量等于最小源汇割容量。
+Cut Capacity|割容量||从割的源侧指向汇侧的全部边容量之和。
+Minimum-cost Flow|最小费用流||在指定流量与容量约束下使运输成本最小的流。
+Successive Shortest Path Algorithm|逐次最短路算法||反复在残量网络沿最小费用路径增广流量。
+Flow with Lower Bounds|有下界网络流||对每条边同时给定允许流量下界与上界的流问题。
+Circulation|循环流||没有净源汇、每个顶点满足流量守恒的可行流。
+Bipartite Matching|二分图匹配||在二分图中选择顶点不重复的边集合。
+Maximum Matching|最大匹配||在图中包含最多边的匹配。
+Perfect Matching|完美匹配||覆盖图中所有顶点的匹配。
+Kőnig Theorem|Kőnig 定理||二分图的最大匹配边数等于最小顶点覆盖大小。
+Hall Marriage Theorem|Hall 婚配定理||二分图存在覆盖某侧全部顶点的匹配的充要条件。
+Hopcroft–Karp Algorithm|Hopcroft–Karp 算法||通过分层寻找多个最短增广路径求二分图最大匹配。
+Hungarian Algorithm|匈牙利算法||利用势标与增广路径求解二分图加权指派问题。
+Assignment Problem|指派问题||将任务与资源一一匹配并优化总成本的组合优化问题。
+Blossom Algorithm|花算法||通过收缩奇环求一般无向图最大匹配。
+Alternating Path|交替路||匹配边与非匹配边交替出现的路径。
+Matching Augmentation|匹配增广||沿以未匹配顶点为端点的交替路翻转边成员提升匹配规模。
+Minimum Vertex Cover|最小顶点覆盖||用最少顶点使每条边至少一个端点被选中的问题。

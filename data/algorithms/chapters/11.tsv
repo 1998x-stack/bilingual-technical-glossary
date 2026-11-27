@@ -1,0 +1,26 @@
+# 随机化算法
+Randomized Algorithm|随机化算法||在计算过程中使用随机比特或随机选择的算法。
+Las Vegas Algorithm|拉斯维加斯算法||始终给出正确结果但运行时间受随机性影响的算法。
+Monte Carlo Algorithm|蒙特卡洛算法||以受控错误概率换取确定计算预算的随机算法。
+Expected Running Time|期望运行时间||对算法内部随机性或输入分布取平均的运行成本。
+Randomized Quick Sort|随机化快速排序||随机选择枢轴以降低特定输入导致极端划分的风险。
+Randomized Selection|随机选择算法||以随机枢轴反复划分寻找顺序统计量。
+Reservoir Sampling|蓄水池抽样||从长度未知的数据流中等概率抽取固定数量样本。
+Fisher–Yates Shuffle|Fisher–Yates 洗牌||通过逐步均匀交换生成等概率随机排列。
+Random Permutation|随机排列||从给定元素全部排列中按指定分布抽取一种排列。
+Pairwise Independent Hashing|两两独立哈希||不同键的哈希值对满足成对独立条件的哈希族。
+Universal Hashing|全域哈希||随机选择哈希函数以限制不同键碰撞概率的方法。
+Hash Family|哈希函数族||可按规则选取的多个哈希映射的集合。
+Bloom Filter|布隆过滤器||以少量位和多个哈希函数实现可能误报但不漏报的成员查询结构。
+Count–Min Sketch|Count–Min Sketch||用多个哈希计数数组近似统计频次并给出单侧误差的流式概要。
+HyperLogLog|HyperLogLog||利用哈希值前导零统计估计不同元素个数的算法。
+Skip List|跳表||通过随机化多层索引提供期望对数查询与更新的数据结构。
+Random Walk|随机游走||根据随机转移规则逐步移动状态的过程。
+Markov Chain|马尔可夫链||下一状态分布只依赖当前状态的随机过程。
+MCMC|马尔可夫链蒙特卡洛|MCMC|构造马尔可夫链以近似从复杂分布中采样的方法。
+Rejection Sampling|拒绝采样||从易采样分布提议并按接受概率获得目标分布样本的方法。
+Importance Sampling|重要性采样||从提议分布采样后通过权重估计目标分布期望。
+Chernoff Bound|Chernoff 界||给出独立随机变量和偏离期望的指数型尾概率界。
+Hoeffding Inequality|Hoeffding 不等式||控制有界独立随机变量均值偏差的概率上界。
+Probability Amplification|概率放大||通过独立重复与投票降低随机算法错误概率。
+Random Seed|随机种子||初始化伪随机数生成器状态以控制可复现序列的值。
