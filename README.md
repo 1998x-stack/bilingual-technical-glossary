@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Distributed Systems / 分布式系统 (standalone; not yet indexed)
+
+**400 bilingual terms in 16 chapters**, covering network communication, fault models, causality, CAP and consistency, replication, Raft/Paxos, transactions, sharding, data processing, stream systems, membership, SRE, security, performance and verification. Includes 12 concept comparisons, 8 medium interview questions, 8 exam questions and primary references. [Markdown](glossaries/distributed-systems.md) · [PDF](pdf/distributed-systems.pdf) · [TSV](data/distributed-systems.tsv) · [Source evidence](data/distributed-systems/SOURCES.md). Run `node scripts/render_distributed_systems.mjs --check` for deterministic artifact validation. **Not yet included in searchable domain or term totals.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
