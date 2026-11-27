@@ -1,0 +1,107 @@
+# 计算机视觉基础与图像表示
+Computer Vision|计算机视觉|CV|使计算系统从图像或视频中分析场景、估计结构并完成视觉任务的研究领域。
+Image|图像||由采样空间位置及其颜色或亮度值构成的二维视觉信号。
+Digital Image|数字图像||把连续视觉信号在空间和数值幅度上离散化后的表示。
+Pixel|像素||数字图像中对应一个采样位置及其通道数值的基本元素。
+Image Resolution|图像分辨率||描述图像在宽、高方向的像素数量或空间细节采样能力。
+Aspect Ratio|宽高比||图像宽度与高度的比值。
+Image Channel|图像通道||图像张量中对应亮度、颜色或其他测量量的一个分量。
+Grayscale Image|灰度图像||每个空间位置以单个亮度或强度数值表示的图像。
+RGB Image|RGB 图像||用红、绿、蓝三个颜色分量共同表示像素的图像。
+Alpha Channel|透明度通道||表示像素不透明程度或混合权重的额外图像通道。
+Image Tensor|图像张量||将图像数据组织为带空间、通道和可选批次维度的多维数组。
+Channel-first Layout|通道在前布局|CHW|以通道、高度、宽度顺序存储图像张量的布局。
+Channel-last Layout|通道在后布局|HWC|以高度、宽度、通道顺序存储图像张量的布局。
+Batch Dimension|批次维度||用于同时组织多张图像输入的张量轴。
+Spatial Dimension|空间维度||描述图像宽度与高度等位置坐标的维度。
+Image Coordinate System|图像坐标系||以像素位置及约定原点和方向表达图像中点位的坐标框架。
+Pixel Center Convention|像素中心约定||规定整数坐标或半整数坐标对应像素中心的几何约定。
+Bounding Box|边界框|BBox|用矩形坐标近似表示目标在图像中位置与范围的标注。
+Region of Interest|感兴趣区域|ROI|图像中需要单独处理或评估的局部空间区域。
+Image Pyramid|图像金字塔||以多个空间分辨率组织同一图像以支持多尺度分析的结构。
+Multi-scale Representation|多尺度表示||同时捕获图像细粒度与大范围上下文信息的特征组织方式。
+Spatial Frequency|空间频率||描述图像亮度或颜色随空间位置变化快慢的频率量。
+Texture|纹理||由局部灰度、颜色或结构重复模式形成的视觉外观特征。
+Visual Recognition|视觉识别||从图像或视频中判断物体、场景、属性或事件类别的任务集合。
+Scene Understanding|场景理解||识别图像中对象、布局、关系及三维语义结构的综合任务。
+
+# 摄像机、成像、颜色与光度学
+Pinhole Camera Model|针孔相机模型||利用光线经过单个投影中心描述三维点到二维成像平面的理想几何模型。
+Camera Intrinsics|相机内参数|K|定义焦距、主点和可选倾斜等像素投影关系的参数。
+Camera Extrinsics|相机外参数||描述世界坐标系与相机坐标系相对旋转和平移的参数。
+Focal Length|焦距||相机成像几何中影响视角与投影缩放的光学参数。
+Principal Point|主点||相机光轴与理想成像平面的交点在图像中的坐标。
+Field of View|视场角|FOV|相机成像系统能够覆盖的空间角度范围。
+Aperture|光圈||镜头中控制入射光线通道大小的开口。
+Shutter Speed|快门速度||图像传感器累计入射光照的曝光时间。
+Exposure|曝光||成像器件在给定时间内接收光的过程及其控制设置。
+ISO Sensitivity|ISO 感光度||相机对信号增益与成像亮度相关的标称设置，不能直接等同于物理入射光量。
+Image Sensor|图像传感器||将入射光转换为可测量电信号的光电器件。
+CMOS Sensor|CMOS 图像传感器|CMOS|采用互补金属氧化物半导体工艺实现像素读出的成像器件。
+Bayer Filter|拜耳滤色阵列||在传感器像素上交替排列颜色滤镜以采样不同颜色通道的结构。
+Demosaicing|去马赛克||从颜色滤镜阵列采样值重建完整彩色图像的过程。
+White Balance|白平衡||根据照明条件调整颜色通道增益以改善中性色还原的处理。
+Color Space|颜色空间||以定义的坐标和转换规则表达颜色的数学表示系统。
+sRGB|标准 RGB 色彩空间|sRGB|具有特定色域、白点和传递函数的常用图像编码颜色空间。
+CIELAB|CIELAB 颜色空间|Lab|用亮度与两个对立颜色坐标描述色彩的感知相关颜色空间。
+HSV Color Space|HSV 色彩空间|HSV|以色相、饱和度和值组织颜色的变换表示。
+Gamma Correction|伽马校正||利用非线性传递函数调整编码数值与线性光强关系的处理。
+High Dynamic Range Imaging|高动态范围成像|HDR|表示或融合较宽光照范围以保留明暗细节的技术。
+Radiance|辐亮度||单位投影面积和单位立体角方向上的辐射通量密度。
+Reflectance|反射率||描述表面将入射光能反射为出射辐射的材料光学性质。
+Lens Distortion|镜头畸变||实际光学投影相对于理想针孔投影产生的空间形变。
+Rolling Shutter|卷帘快门||传感器不同图像行在不同时间采集而造成的时空采样机制。
+
+# 图像预处理、滤波与几何变换
+Image Preprocessing|图像预处理||在模型或视觉算法前执行的尺度、颜色、去噪与标准化处理。
+Image Resizing|图像缩放||重新采样图像使其具有指定输出宽度与高度。
+Interpolation|插值||根据已知采样点估计非整数图像坐标处像素值的方法。
+Nearest-neighbor Interpolation|最近邻插值||以距离目标坐标最近的采样点数值填充新像素的算法。
+Bilinear Interpolation|双线性插值||在两个坐标方向对邻近四个采样点执行线性插值的方法。
+Bicubic Interpolation|双三次插值||使用更大邻域及三次多项式插值估计图像值的方法。
+Image Convolution|图像卷积||使用空间核函数对局部像素邻域执行加权聚合的运算。
+Convolution Kernel|卷积核||定义局部滤波权重及空间支持范围的系数矩阵。
+Gaussian Blur|高斯模糊||以高斯权重平滑像素值以降低高频噪声的滤波。
+Median Filter|中值滤波||用局部像素中位数替换中心像素、常用于抑制脉冲噪声的处理。
+Bilateral Filter|双边滤波||结合空间距离与像素值差异权重进行保边平滑的算法。
+Non-local Means|非局部均值去噪|NLM|根据相似图像块之间的匹配进行加权去噪的方法。
+Image Denoising|图像去噪||估计并减少成像噪声、同时尽量保留真实结构的任务。
+Image Sharpening|图像锐化||增强局部亮度变化或边缘对比以提高视觉清晰程度的过程。
+Unsharp Masking|反锐化掩模||通过原图与模糊图的差异增强高频细节的锐化方法。
+Histogram Equalization|直方图均衡化||根据灰度累计分布重新映射像素值以改善全局对比度的技术。
+CLAHE|限制对比度自适应直方图均衡化|CLAHE|在局部区域进行直方图调整并限制噪声放大的对比度增强方法。
+Image Normalization|图像数值归一化||按固定尺度或统计量变换像素值范围与分布的处理。
+Standardization|标准化||通过减去均值并除以标准差等方式调整数值尺度的变换。
+Affine Transformation|仿射变换||由线性变换和平移构成、保持平行关系的二维或三维坐标映射。
+Perspective Transformation|透视变换||利用射影矩阵模拟平面在不同视角间投影关系的变换。
+Homography|单应矩阵|H|描述同一平面在两个射影视图之间对应关系的非奇异三乘三矩阵。
+Image Warping|图像几何变形||按几何映射把源图像采样到新的空间坐标的过程。
+Image Registration|图像配准||估计不同图像之间空间对应关系并将其对齐的任务。
+Anti-aliasing Filter|抗混叠滤波||在降采样前抑制超出新采样频率可表示范围的空间高频成分。
+
+# 传统视觉：边缘、形态学与区域分割
+Edge Detection|边缘检测||识别图像强度或颜色出现显著空间变化的位置的任务。
+Image Gradient|图像梯度||描述图像亮度在水平和垂直方向变化率的向量。
+Sobel Operator|Sobel 算子||使用离散差分卷积核估计图像梯度的经典边缘算子。
+Scharr Operator|Scharr 算子||改善小核离散梯度方向近似的图像微分算子。
+Canny Edge Detector|Canny 边缘检测||结合高斯平滑、梯度、非极大值抑制和双阈值连接的边缘算法。
+Laplacian Operator|拉普拉斯算子||对图像计算二阶空间导数以突出快速变化区域的算子。
+Laplacian of Gaussian|高斯拉普拉斯|LoG|先用高斯平滑再应用拉普拉斯算子的边缘或斑点检测方法。
+Difference of Gaussians|高斯差分|DoG|通过不同尺度高斯模糊图相减近似尺度空间中的响应。
+Non-maximum Suppression for Edges|边缘非极大值抑制||沿梯度方向保留局部响应峰值以细化边缘的步骤。
+Hysteresis Thresholding|滞后阈值法||通过高低阈值及连通性保留可靠边缘的处理。
+Binary Thresholding|二值阈值分割||按照像素值与阈值比较将图像分为两个类别的方法。
+Otsu Thresholding|大津阈值法|Otsu|根据最大化类间方差原则自动选择灰度二值化阈值的技术。
+Adaptive Thresholding|自适应阈值||依据局部区域统计而非单一全局阈值进行图像二值化的策略。
+Mathematical Morphology|数学形态学||使用结构元素对二值或灰度图像形状执行集合式运算的理论。
+Erosion|腐蚀||在结构元素作用下收缩前景区域或取局部下界的形态学操作。
+Dilation|膨胀||在结构元素作用下扩展前景区域或取局部上界的形态学操作。
+Opening|开运算||先腐蚀再膨胀、常用于去除小前景结构的形态学操作。
+Closing|闭运算||先膨胀再腐蚀、常用于填补小背景空隙的形态学操作。
+Structuring Element|结构元素||规定形态学操作考察邻域形状和尺度的模板。
+Connected-component Labeling|连通域标记||为二值图中彼此连通的像素集合分配不同标识的算法。
+Watershed Segmentation|分水岭分割||将图像看作拓扑表面并从种子区域构造分割边界的方法。
+Region Growing|区域生长||从初始种子开始按相似性规则逐步合并邻接像素的分割方法。
+GrabCut|GrabCut 图割分割||结合前景背景颜色模型和图割优化交互分离目标的算法。
+Hough Transform|霍夫变换||把图像点映射到参数空间以检测满足直线或圆形等几何关系的结构。
+Contour Extraction|轮廓提取||从分割结果或边缘集合中恢复目标边界曲线的过程。
