@@ -142,3 +142,13 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 数据库系统（独立出版，尚未加入全站搜索）
+
+新增《数据库系统专有名词中英文对照表》：**400 条双语术语、16 个专业章节**。区别于已有《SQL 数据库》语法手册，本册围绕 DBMS 底层原理与实现组织，包括物理存储页、缓冲池、B+ 树、LSM、查询执行器、查询优化器、ACID、2PL、MVCC、WAL/ARIES、复制与分片、OLTP/OLAP/HTAP、运维和安全。
+
+附 **14 组概念辨析、10 道中等难度面试题、10 道中等难度考试题与解析**，配合 CMU 15-445、PostgreSQL、SQLite、RocksDB 和 ARIES 原始论文等来源。
+
+[Markdown 在线阅读](glossaries/database-systems.md) · [PDF 查看](pdf/database-systems.pdf) · [结构化 TSV](data/database-systems.tsv) · [审稿说明与来源](data/database-systems/SOURCES.md)
+
+原始数据：`data/database-systems/chapters/`；可复现校验：`node scripts/render_database_systems.mjs --check`。**尚未计入网站已索引学科数与术语总数。**
