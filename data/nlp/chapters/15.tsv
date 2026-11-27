@@ -1,0 +1,26 @@
+# 问答、文档检索与文本匹配
+Reading Comprehension|机器阅读理解||根据给定文章回答问题并推断文本包含信息的任务。
+Extractive Question Answering|抽取式问答||通过定位上下文中的连续文本跨度输出答案的问答形式。
+Abstractive Question Answering|生成式问答||根据问题及证据自行生成答案而非直接复制原文片段的任务。
+Open-domain Question Answering|开放域问答|ODQA|利用宽领域语料和检索机制回答不预限主题问题的任务。
+Closed-book Question Answering|闭卷问答||不提供实时外部知识库、仅根据模型内部表示回答问题的设定。
+Retrieval-Augmented Generation|检索增强生成|RAG|在生成答案时利用外部检索资料补充语言模型上下文的架构。
+Document Retrieval|文档检索||根据查询从语料库中挑选相关文档的任务。
+Passage Retrieval|段落检索||根据查询从文档短片段或段落集合中召回相关内容的任务。
+Lexical Retrieval|词法检索||通过词项匹配、倒排索引或词频评分查找候选内容的方法。
+Dense Passage Retrieval|稠密段落检索|DPR|分别编码问题和段落向量、通过相似度进行召回的模型方案。
+BM25|BM25 相关性评分|BM25|结合词频饱和、文档长度和词项逆文档频率的排序函数族。
+Dual Encoder|双编码器||分别计算两个输入的向量表示并以匹配函数评分的模型架构。
+Cross Encoder|交叉编码器||将两个输入联合编码、直接预测它们的相关或匹配程度的架构。
+Semantic Search|语义搜索||利用词向量或语言模型表示寻找语义相关内容的检索方式。
+Text Matching|文本匹配||预测两个文本在语义、意图或关系上是否符合某种匹配准则的任务。
+Paraphrase Detection|复述识别||判断两个不同表述是否传达基本相同含义的任务。
+Question Similarity|问题相似度||衡量不同自然语言问题的语义目标或可互答程度的指标或任务。
+Reranking|重排序||对首轮召回的较少候选采用更精细模型重新排列的检索步骤。
+Multi-hop Question Answering|多跳问答||需要串联多个事实、实体或文档才能回答的问题类型。
+Answer Span|答案跨度||抽取式问答中位于上下文起止 token 之间的连续文本区域。
+Answerability Prediction|可回答性判定||根据证据或任务定义判断当前问题是否存在可支持答案的模型任务。
+Evidence Retrieval|证据检索||获取支持回答中关键事实或推理步骤的相关文本片段的过程。
+Citation Attribution|引用归属||将答案中的事实陈述映射到对应来源文档或证据片段的过程。
+Answer Grounding|答案锚定||约束答案事实必须能从指定上下文或外部资料中得到支持的做法。
+Unanswerable Question|不可回答问题||在指定证据与约束下缺乏可靠答案的输入问题。

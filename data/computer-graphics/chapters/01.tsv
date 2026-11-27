@@ -1,0 +1,26 @@
+# 图形学概论、渲染系统与图像合成
+Computer Graphics|计算机图形学|CG|研究用计算方法表示、处理和合成二维或三维视觉内容的领域。
+Rendering|渲染||根据几何、材质、光照和相机生成图像的计算过程。
+Image Synthesis|图像合成||从场景数据或算法构建目标图像的技术。
+Real-time Rendering|实时渲染||在交互时限内持续生成图像帧的渲染方式。
+Offline Rendering|离线渲染||允许较长计算时间追求高质量图像的渲染流程。
+Rendering Pipeline|渲染流水线||将场景数据依阶段转换为图像结果的处理架构。
+Scene|场景||包含对象、几何、材质、光源、相机和层级关系的描述集合。
+Scene Graph|场景图||通过层级节点组织对象变换、属性和渲染关系的数据结构。
+Graphics Primitive|图形基元||点、线段、三角形等可由图形系统直接处理的基本几何元素。
+Draw Call|绘制调用||向图形 API 提交一次指定几何和状态的绘制命令。
+Render Pass|渲染通道||按规定附件、操作和依赖组织的一段渲染工作。
+Frame|渲染帧||动画或交互序列中在特定时间生成的一幅图像。
+Frame Rate|帧率|FPS|每秒完成或显示的图像帧数量。
+Frame Time|帧时间||生成或显示单帧所需的时间。
+Latency|渲染延迟||从输入或提交到可见画面输出之间经历的时间。
+Rasterization|光栅化||将连续几何基元转换为离散像素或采样覆盖的过程。
+Ray Tracing|光线追踪||通过沿射线求交场景几何模拟可见性与部分光传播的渲染方法。
+Path Tracing|路径追踪||以随机采样光路估计渲染方程积分的蒙特卡洛方法。
+Hybrid Rendering|混合渲染||结合光栅化、光线追踪或其他技术生成画面的方法。
+Photorealistic Rendering|照片级真实感渲染||追求成像结果在光学与视觉感知上接近真实照片的渲染。
+Non-photorealistic Rendering|非真实感渲染|NPR|通过艺术化线条、色块或笔触表现视觉内容的技术。
+Physically Based Rendering|基于物理的渲染|PBR|依据光传输与材质散射近似构建光照计算的渲染方法。
+Graphics API|图形应用程序接口||应用程序调用 GPU 绘图资源和命令的编程接口。
+Graphics Driver|图形驱动||将图形 API 命令转换为硬件可执行操作的软件层。
+Graphics Debugging|图形调试||定位渲染管线、资源、着色器或图像输出错误的过程。

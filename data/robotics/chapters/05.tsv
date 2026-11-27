@@ -1,0 +1,26 @@
+# 机器人动力学、惯性与驱动系统
+Robot Dynamics|机器人动力学||研究机器人关节运动与力、力矩及惯性之间关系的理论。
+Mass Matrix|质量矩阵|M|在机器人动力学方程中将关节加速度映射为惯性广义力的矩阵。
+Inertia Tensor|惯性张量||描述刚体相对于参考点旋转惯性及轴间耦合的对称矩阵。
+Center of Mass|质心|CoM|按质量加权得到的刚体或系统等效质量中心位置。
+Coriolis Force|科里奥利项||在广义坐标动力学中与不同速度分量耦合相关的速度二次项。
+Centrifugal Force|离心项||在旋转运动坐标表示中由角速度引起的惯性效应项。
+Gravity Compensation|重力补偿||根据机构姿态估计并施加抵消重力负载的控制力矩。
+Joint Torque|关节力矩||驱动关节旋转所施加或由外部产生的广义转矩。
+Generalized Force|广义力||与广义坐标虚位移配对做功的力或力矩分量。
+Lagrangian Mechanics|拉格朗日力学||根据动能与势能构建运动方程的解析力学方法。
+Euler–Lagrange Equation|欧拉—拉格朗日方程||由拉格朗日量及广义力推导系统运动规律的微分方程。
+Newton–Euler Method|牛顿—欧拉方法||递推计算机构刚体速度、加速度与内外作用力的动力学方法。
+Recursive Newton–Euler Algorithm|递归牛顿—欧拉算法|RNEA|沿机构正反递推高效计算给定运动所需关节力矩的算法。
+Inverse Dynamics|逆动力学||给定位置、速度和加速度计算完成该运动所需驱动力的任务。
+Forward Dynamics|正动力学||给定系统状态及作用力计算关节加速度或状态演化的任务。
+Articulated Body Algorithm|关节体算法|ABA|利用递归关节体惯量高效求解树形机构正动力学的算法。
+Friction Model|摩擦模型||用数学关系近似关节或接触界面阻力随运动及载荷变化的规律。
+Coulomb Friction|库仑摩擦||将摩擦力幅度近似为与接触法向载荷成正比的理想化模型。
+Viscous Friction|黏性摩擦||将阻力近似为与运动速度成比例的摩擦模型。
+Backlash|传动间隙||机械传动中的松动区域可能导致换向迟滞与定位误差。
+Actuator|执行器||将电能、液压或气压等能量转换为机械运动与力的部件。
+Electric Servo Motor|电伺服电机||结合电机与反馈控制实现期望位置、速度或转矩的驱动单元。
+Gear Reduction|减速传动||通过传动比降低输出转速并相应改变可用转矩的机构。
+Torque Constant|转矩常数||在指定电机工作条件下描述输出转矩与电流关系的参数。
+Series Elastic Actuator|串联弹性执行器|SEA|在驱动机构中串入弹性元件以便估计力和改善柔顺交互的执行结构。

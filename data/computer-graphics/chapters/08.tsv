@@ -1,0 +1,26 @@
+# 光照、BRDF 与材质着色基础
+Lighting Model|光照模型||近似或物理建模光源、表面与观察方向之间关系的计算规则。
+Shading|着色||根据表面位置、法线、材质与光照计算可见外观的过程。
+Flat Shading|平面着色||以单个面法线或面级结果生成多边形统一明暗的方式。
+Gouraud Shading|高洛德着色||在顶点处计算光照并将颜色沿基元插值到片段的方法。
+Phong Shading|Phong 逐像素着色||在片段位置插值法向再计算光照的着色方式。
+Lambertian Reflection|朗伯反射||出射辐亮度不随观察方向变化的理想漫反射模型。
+Diffuse Reflection|漫反射||光在粗糙或散射表面向多个方向分布出射的反射过程。
+Specular Reflection|镜面反射||光沿与镜面方向相关的集中方向反射的行为。
+Blinn–Phong Model|Blinn–Phong 光照模型||利用半角向量与法线夹角计算经验镜面高光的着色模型。
+Bidirectional Reflectance Distribution Function|双向反射分布函数|BRDF|描述入射方向辐照度对特定出射方向辐亮度贡献的函数。
+Bidirectional Scattering Distribution Function|双向散射分布函数|BSDF|统一描述表面反射和透射方向散射的函数。
+Microfacet Model|微表面模型||将粗糙表面视为微小镜面单元分布以计算反射的模型。
+Normal Distribution Function|微法线分布函数|NDF|描述微表面法线方向统计分布的函数。
+GGX Distribution|GGX 微表面分布||具有较长反射尾部的常用 Trowbridge–Reitz 微表面法线分布。
+Fresnel Equations|菲涅耳方程||描述光在介质界面反射与透射比例随角度和折射率变化的公式。
+Schlick Approximation|Schlick 菲涅耳近似||用简单多项式近似角度相关反射率的技术。
+Geometric Shadowing Function|微表面遮蔽函数||描述微表面相互遮挡和掩蔽对可见反射贡献影响的函数。
+Roughness|表面粗糙度||控制微表面分布宽窄及反射高光形状的材质参数。
+Metallic Parameter|金属度参数||在常见金属度工作流中控制材质按金属或电介质方式近似的参数。
+Base Color|基色||材质基础颜色参数，其对金属和非金属散射的含义随工作流变化。
+Albedo|反照率||衡量表面反射入射辐射能量比例或反射底色的量，需声明具体定义。
+Energy Conservation|能量守恒||要求散射出的总能量不超过相应入射能量的物理约束。
+Emissive Material|自发光材质||在着色模型中主动向环境发射辐射的表面材质。
+Normal Map Tangent Basis|法线贴图切线基||用于把纹理空间法向转换为场景空间的切线、副切线与法线坐标框架。
+Material Parameterization|材质参数化||用一组可编辑数值、贴图和模型定义表面光学行为的过程。

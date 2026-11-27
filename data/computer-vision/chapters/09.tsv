@@ -1,0 +1,26 @@
+# 视觉机器学习、图像分类与特征学习
+Image Classification|图像分类||给整张图像预测一个或多个语义类别的机器学习任务。
+Fine-grained Classification|细粒度图像分类||区分外观相似且同属大类的子类别或实例的分类任务。
+Multi-label Image Classification|多标签图像分类||允许一张图像同时具有多个非互斥类别标签的任务。
+Visual Feature Extraction|视觉特征提取||将原始像素转换成可用于分类、匹配或其他任务的表示。
+Handcrafted Feature|手工设计视觉特征||通过人工确定的图像算子和几何规则提取的特征。
+Learned Feature|学习型视觉特征||通过数据驱动优化模型参数获得的图像表示。
+Feature Vector|特征向量||用固定长度数值序列表示图像或局部区域的特征。
+Feature Map|特征图||神经网络中带空间位置与通道的中间激活张量。
+Representation Learning|表示学习||通过训练模型获得有利于下游视觉任务的中间特征的方法。
+K-nearest Neighbors|K 近邻分类|KNN|按照训练集中最近 K 个特征样本决定类别的分类算法。
+Linear Classifier|线性分类器||通过输入特征线性组合生成类别分数的模型。
+Softmax Classifier|Softmax 分类器||把类别 logits 经 Softmax 归一化为概率分布的分类器。
+Cross-entropy Loss|交叉熵损失||根据目标类别对模型概率预测取负对数的分类训练损失。
+Hinge Loss|合页损失||对类别间隔不足的预测施加线性惩罚的分类目标函数。
+Class Imbalance|类别不平衡||不同视觉类别训练或测试样本数量严重不均衡的现象。
+Class Weighting|类别权重调整||对不同类别的训练损失赋予差异权重以缓解不平衡的策略。
+Label Smoothing|标签平滑||把严格 one-hot 目标分布改为含少量其他类别概率的正则化方法。
+Top-1 Accuracy|Top-1 准确率||最高预测分数类别与参考标签相同的样本比例。
+Top-5 Accuracy|Top-5 准确率||参考类别位于预测排名前五的样本比例。
+Transfer Learning|迁移学习||把在源视觉数据或任务学到的特征用于新视觉任务的技术。
+Fine-tuning|模型微调||基于已预训练的视觉模型继续用目标数据更新参数的过程。
+Frozen Backbone|冻结骨干网络||保持视觉特征主干参数不更新、仅训练下游预测组件的方式。
+Domain Adaptation|领域适应||降低训练与应用数据在外观、采集设备或场景分布上差异的方法。
+Data-centric AI|数据中心人工智能||优先通过数据质量、标注与覆盖改善模型可靠性的开发理念。
+Open-set Recognition|开放集识别||在推断时识别某些输入不属于已知训练类别集合的任务。

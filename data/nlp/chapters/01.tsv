@@ -1,0 +1,26 @@
+# NLP 领域概述与语言处理层次
+Natural Language Processing|自然语言处理|NLP|研究计算机理解、分析与生成人类语言的方法及应用。
+Computational Linguistics|计算语言学|CL|使用计算模型研究语言结构、使用与处理的交叉学科。
+Language Understanding|语言理解|NLU|从文本或语音中推断语义、意图及相关信息的任务集合。
+Natural Language Generation|自然语言生成|NLG|把数据、结构或语义表示转换为自然语言表达的任务。
+Language Technology|语言技术||用于语言信息处理、翻译、检索和交互的软件与模型技术总称。
+Text Analytics|文本分析||从非结构化文本中抽取统计、主题、关系和其他可用信息的过程。
+Speech and Language Processing|语音与语言处理||联合研究语音信号与语言形式及意义的计算领域。
+Linguistic Level|语言分析层次||把语言现象划分为语音、形态、句法、语义和语用等不同研究层级的概念。
+Phonetics|语音学||研究语音声音的物理产生、传播和感知的学科。
+Phonology|音系学||研究语言中区别意义的语音组织规则及音位系统的学科。
+Morphology|形态学||研究词的内部构成及词形变化规则的语言学分支。
+Syntax|句法学||研究词语如何组合为短语和句子的结构与规则。
+Semantics|语义学||研究词语、短语和句子的语言意义及其组合关系。
+Pragmatics|语用学||研究话语在特定情境中如何传达超出字面形式的交际意义。
+Discourse Analysis|篇章分析||分析跨句子结构、衔接与交际目的的语言研究方法。
+Corpus Linguistics|语料库语言学||利用大量真实语言材料统计研究语言规律的方法。
+Language Modeling|语言建模||为词元序列及其条件延续分配概率或预测分数的任务。
+Text Classification|文本分类||把文本映射到预定义类别或标签集合的任务。
+Sequence Labeling|序列标注||为输入序列各个位置预测相应标签的任务。
+Machine Translation|机器翻译|MT|把源语言的内容自动转换为目标语言表达的任务。
+Question Answering|问答|QA|根据问题和可用知识或证据生成或抽取答案的任务。
+Information Extraction|信息抽取|IE|从文本中识别实体、事件、属性及关系并形成结构化结果的任务。
+Dialogue System|对话系统||通过多轮语言交互理解用户并产生回应的系统。
+Text Summarization|文本摘要||将一篇或多篇文本压缩为保留关键信息的简要表达的任务。
+Multilingual NLP|多语言自然语言处理||研究跨多种语言构建、训练和评估语言处理模型的方法。

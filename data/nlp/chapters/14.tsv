@@ -1,0 +1,26 @@
+# 实体识别、序列标注与信息抽取
+Named Entity Recognition|命名实体识别|NER|识别文本中组织、人名、地点等命名实体提及及其类别的任务。
+Entity Boundary Detection|实体边界检测||定位文本中实体提及的开始与结束位置的过程。
+Entity Typing|实体类型判定||为实体提及分配人、地点、组织或细粒度类别的任务。
+BIO Tagging Scheme|BIO 序列标签方案|BIO|使用 B 表开始、I 表内部、O 表非实体的词元级跨度标注规则。
+BIOES Tagging Scheme|BIOES 标签方案|BIOES|增加单词实体 S 和实体结尾 E 标签的序列标注格式。
+Span-based NER|基于跨度的实体识别||枚举或提议文本片段并对每个片段判断实体边界和类型的方法。
+Nested Named Entity Recognition|嵌套命名实体识别||识别多个实体跨度之间可存在包含关系的实体抽取任务。
+Discontinuous Entity Recognition|非连续实体识别||识别文本中由多个不相邻片段组成的实体提及的任务。
+Relation Extraction|关系抽取|RE|识别文本中实体之间语义关系及其类别的任务。
+Entity Linking|实体链接|EL|把文本中实体提及映射到知识库具体唯一标识的任务。
+Entity Disambiguation|实体消歧||根据上下文区分同名提及所指不同实体的过程。
+Event Extraction|事件抽取|EE|识别事件触发词、事件类型和参与者信息的任务。
+Event Trigger|事件触发词||文本中表示某种事件发生或状态改变的词语片段。
+Event Argument|事件论元||参与事件并承担时间、地点、施事等语义角色的实体或片段。
+Event Coreference|事件共指||判断不同事件提及是否描述同一具体事件的任务。
+Open Information Extraction|开放信息抽取|OpenIE|在不预先限定完整关系模式的条件下从句子抽取关系三元组的方法。
+Slot Filling|槽位填充||为指定实体或任务结构补齐预定义属性值的过程。
+Template Filling|模板填充||把文本信息填入预先定义的事件或事实模板字段的任务。
+Relation Triple|关系三元组||以主体、谓词与客体表示结构化关系事实的形式。
+Knowledge Base Population|知识库自动填充|KBP|从文本中抽取并链接实体属性和关系、更新知识库的过程。
+Distant Supervision|远程监督||利用已有知识库对语料中的实体对自动生成弱标注关系标签的策略。
+Weak Supervision|弱监督||利用启发式规则、不精确标签或间接信号构建训练数据的方法。
+Span-level F1|跨度级 F1||以预测片段与参考片段完全匹配的精确率和召回率计算的调和均值。
+Entity-level Evaluation|实体级评估||根据完整实体边界及类别是否正确衡量抽取质量的评测方式。
+Boundary Error|边界错误||预测的实体或答案片段起止位置与参考标注不一致的错误。

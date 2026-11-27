@@ -199,3 +199,43 @@ python3 -m unittest discover -s tests -v
 [Markdown 在线阅读](glossaries/database-systems.md) · [PDF 查看](pdf/database-systems.pdf) · [结构化 TSV](data/database-systems.tsv) · [审稿说明与来源](data/database-systems/SOURCES.md)
 
 原始数据：`data/database-systems/chapters/`；可复现校验：`node scripts/render_database_systems.mjs --check`。**尚未计入网站已索引学科数与术语总数。**
+
+## 自然语言处理 NLP（独立出版，尚未加入全站索引）
+
+新增《自然语言处理专有名词中英文对照表》：**500 条双语术语、20 章**。由语言学层次、语料库与词元化开始，覆盖词形、句法、语义、统计 NLP、词嵌入、序列模型、Transformer、BERT/GPT/T5 预训练、LoRA、NER、问答和 RAG、机器翻译、摘要对话、语音语言、多语言评测与模型治理。
+
+另附 **16 组专业概念辨析、12 道中等难度面试题、12 道中等难度考试题及解析**，并参考 Jurafsky & Martin、Stanford IR、Universal Dependencies、Transformer/BERT 等原始资料。
+
+[Markdown 在线阅读](glossaries/nlp.md) · [PDF 阅读](pdf/nlp.pdf) · [结构化 TSV](data/nlp.tsv) · [教材论文与审稿记录](data/nlp/SOURCES.md)
+
+原始数据：`data/nlp/chapters/`。执行 `node scripts/render_nlp.mjs --check` 可核对出版镜像。**本册为独立出版，未计入现有网站学科及术语搜索总数。**
+
+## 计算机视觉 Computer Vision（独立出版，尚未加入全站索引）
+
+新增《计算机视觉专有名词中英文对照表》：**500 条术语、20 个专业章节**，涵盖成像、相机模型、滤波和形态学、局部特征、射影几何、立体视觉与 SLAM、光流、CNN/ViT、自监督预训练、目标检测、语义/实例/全景分割、人体姿态和多目标跟踪、三维重建、NeRF/3D Gaussian Splatting、扩散生成、CLIP/VLM、评测数据集以及工程部署与安全。
+
+另附 **16 组核心概念辨析、12 道中等难度面试题、12 道中等难度考试题及解析**。体系参考 Szeliski、Stanford CS231n、OpenCV/Torchvision、COCO 标准及代表性论文。
+
+[Markdown 在线阅读](glossaries/computer-vision.md) · [查看 PDF](pdf/computer-vision.pdf) · [结构化 TSV](data/computer-vision.tsv) · [参考资料与审稿记录](data/computer-vision/SOURCES.md)
+
+原始章节位于 `data/computer-vision/chapters/`，运行 `node scripts/render_computer_vision.mjs --check` 可验证所有出版文件的内容一致性。**本册为独立出版物，未计入网站已索引的学科和术语数量。**
+
+## 计算机图形学 Computer Graphics（独立出版，尚未加入全站索引）
+
+新增《计算机图形学专有名词中英文对照表》：**500 条中英文术语、20 个专业章节**。主题涵盖三维几何、仿射和射影变换、NURBS、光栅化、纹理、微表面 BRDF/BSDF、PBR、辐射度量、路径追踪、全局光照、动画和物理仿真、OpenGL/Vulkan、Mesh Shader、BVH、实时渲染、NeRF、3D Gaussian Splatting 及资产管线。
+
+除术语外，附 **16 组核心概念辨析、12 道中等难度面试问答、12 道带解析的考试题**。参考 *Physically Based Rendering*（第 4 版）、Scratchapixel、Khronos 官方规范和研究原始论文。
+
+[Markdown 阅读](glossaries/computer-graphics.md) · [PDF 查看](pdf/computer-graphics.pdf) · [结构化 TSV](data/computer-graphics.tsv) · [参考资料与审稿说明](data/computer-graphics/SOURCES.md)
+
+原始条目位于 `data/computer-graphics/chapters/`，可运行 `node scripts/render_computer_graphics.mjs --check` 验证出版文件和网站镜像一致。**本册独立出版，暂不计入网站索引的学科数量和术语总数。**
+
+## 机器人学 Robotics（独立出版，尚未加入全站索引）
+
+新增《机器人学专有名词中英文对照表》：**500 条双语术语、20 章**。覆盖机构与 SE(3)、DH/PoE 正运动学、逆运动学与奇异性、动力学和 PID/阻抗/MPC、轮式和足式机器人、传感器与标定、EKF/UKF/粒子滤波、视觉及激光 SLAM、因子图、地图、A*/PRM/RRT*/轨迹优化、移动导航、抓取与接触、模仿学习/强化学习、具身 VLA、ROS 2、仿真与机器人安全。
+
+同时附有 **16 组核心概念辨析、12 道中等难度面试题、12 道带解析的考试题**。参考 *Modern Robotics*、*Probabilistic Robotics*、MIT Underactuated Robotics、ROS 2/MoveIt 2/Nav2/Gazebo 等资源。
+
+[Markdown 阅读](glossaries/robotics.md) · [PDF 查看](pdf/robotics.pdf) · [结构化 TSV](data/robotics.tsv) · [来源与审稿说明](data/robotics/SOURCES.md)
+
+原始词表：`data/robotics/chapters/`。执行 `node scripts/render_robotics.mjs --check` 验证出版物及网站镜像一致性。**本册独立出版，不计入现有网站搜索的学科数和术语总数。**

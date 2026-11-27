@@ -1,0 +1,26 @@
+# 三维视觉、点云、体素与场景重建
+3D Reconstruction|三维重建||从图像、深度或其他观测估计场景几何及外观的任务。
+Multi-view Stereo|多视图立体重建|MVS|利用多张已定位图像恢复稠密场景深度或表面的技术。
+Surface Reconstruction|表面重建||从离散点、深度或隐式场估计连续物体表面的过程。
+3D Point Registration|三维点云配准||估计不同点云间的旋转、平移或其他空间对应关系的任务。
+Iterative Closest Point|迭代最近点|ICP|交替建立点集对应并求解配准变换的经典算法。
+Voxel|体素||对三维空间按网格划分的基本体积单元。
+Voxel Grid|体素网格||将三维空间离散为规则体积单元的数据表示。
+Occupancy Grid|占据栅格||为每个空间网格单元表示被物体占据概率或状态的地图。
+Signed Distance Function|有符号距离函数|SDF|按点到表面的有向距离表示三维几何形状的函数。
+Truncated Signed Distance Function|截断有符号距离函数|TSDF|将表面距离截断到局部带宽内、便于多帧深度融合的场表示。
+Mesh|三角网格||通过顶点、边和面片近似三维物体表面的几何表示。
+Mesh Vertex|网格顶点||定义三角网格位置和可选属性的三维点。
+Mesh Face|网格面片||由若干顶点构成、用于覆盖曲面的几何多边形单元。
+Surface Normal|表面法向||描述三维表面某点局部垂直方向的单位向量。
+PointNet|PointNet 点云模型||利用共享点特征提取和对称聚合处理无序点集的神经网络。
+PointNet++|PointNet++ 层次点云网络||在 PointNet 基础上分层采样局部邻域学习几何特征的模型。
+Point Cloud Segmentation|点云分割||为三维点云的每个点预测语义类别或实例标签的任务。
+3D Object Detection|三维目标检测||估计目标在三维空间中位置、尺度、朝向及类别的任务。
+Bird's-eye View|俯视图表示|BEV|把三维环境投影到地面平面组织空间特征的表示。
+LiDAR|激光雷达|LiDAR|通过激光测距获取场景空间点或深度信息的传感技术。
+Depth Fusion|深度融合||把多帧或多传感器深度观测组合为更稳定三维表示的过程。
+Volumetric Fusion|体积融合||将多个视角测量整合进 TSDF 等三维体积场的重建方法。
+Implicit Surface Representation|隐式表面表示||以连续函数零水平集或占据概率描述三维物体表面的方式。
+Chamfer Distance|Chamfer 距离||用双向最近点距离统计比较两个点集几何差异的指标族。
+Earth Mover's Distance|推土机距离|EMD|求解两个点集或分布质量重新匹配的最小运输代价的距离。

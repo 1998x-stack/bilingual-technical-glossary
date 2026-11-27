@@ -1,0 +1,26 @@
+# 部署优化、鲁棒性、隐私与视觉系统工程
+Model Deployment|视觉模型部署||将训练后的视觉网络集成到设备、服务或边缘系统提供推理的过程。
+Inference Latency|推理延迟||从输入图像进入模型到获得预测结果所需的处理时间。
+Inference Throughput|推理吞吐量||系统单位时间内完成视觉模型推理的图像或帧数量。
+Frames per Second|每秒处理帧数|FPS|衡量视频处理管线或视觉推理速度的常用吞吐指标。
+Batch Inference|批量视觉推理||将多张图像组合执行模型计算以提升硬件利用率的方式。
+Model Quantization|视觉模型量化||将浮点权重或激活映射为更低位宽表示以降低存储和计算成本的方法。
+Post-training Quantization|训练后量化|PTQ|在不进行完整重新训练的情况下利用校准或统计把模型转换为低精度表示的技术。
+Quantization-aware Training|量化感知训练|QAT|在训练过程中模拟或纳入量化误差以改善低精度部署效果的方法。
+Model Pruning|模型剪枝||删去部分参数、通道或计算结构以压缩视觉模型的技术。
+Knowledge Distillation|知识蒸馏||使用大型教师模型的输出或表示指导较小学生模型训练的方法。
+ONNX|开放神经网络交换格式|ONNX|用于表示和交换神经网络计算图的开放模型格式。
+TensorRT|TensorRT 推理优化器||NVIDIA 用于神经网络推理图优化、精度选择和引擎执行的软件工具。
+OpenCV|开源计算机视觉库|OpenCV|提供图像处理、几何视觉、视频分析及多种视觉算法接口的开源库。
+Torchvision|PyTorch 视觉扩展库|torchvision|提供视觉数据集、图像变换及常用预训练模型等组件的软件包。
+Edge AI|边缘人工智能||将视觉模型推理部署到摄像机、机器人或其他靠近数据来源设备的方式。
+Real-time Constraint|实时性约束||要求视觉系统在确定时间预算内完成关键处理或响应的工程条件。
+Perception Stack|感知软件栈||融合图像采集、预处理、检测、跟踪和场景状态估计的系统组件集合。
+Robustness Evaluation|视觉鲁棒性评估||检验模型在遮挡、噪声、光照、模糊和分布变化时性能稳定性的过程。
+Out-of-distribution Detection|分布外检测|OOD|识别与训练场景统计明显不同的图像输入或目标的任务。
+Adversarial Patch|对抗贴片||通过局部特定图案干扰视觉模型预测的对抗输入形式。
+Visual Privacy|视觉隐私||在图像采集、处理和保存中保护人脸、身份及其他敏感视觉信息的要求。
+Face Anonymization|人脸匿名化||通过模糊、遮挡或生成替换降低图像中身份可识别性的处理。
+Dataset Bias|数据集偏差||训练数据采集、人群或场景覆盖不均导致模型预测存在系统性偏差的现象。
+Model Monitoring|视觉模型监控||持续观察线上数据分布、延迟、错误和模型质量的运维过程。
+Failure Analysis|视觉失效分析||分类排查漏检、误检、光照变化、标注问题等视觉系统故障根因的过程。

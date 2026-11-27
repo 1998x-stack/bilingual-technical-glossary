@@ -1,0 +1,26 @@
+# 逆运动学、雅可比、奇异性与冗余
+Inverse Kinematics|逆运动学|IK|根据目标末端位姿求满足机构约束的关节配置的问题。
+Analytical Inverse Kinematics|解析逆运动学||通过几何与代数推导直接构造关节解的求解方法。
+Numerical Inverse Kinematics|数值逆运动学||通过迭代优化逐步减小末端位姿误差的求解方式。
+Inverse Kinematic Branch|逆运动学解分支||同一末端目标对应不同离散机构姿态类别的一组关节解。
+Jacobian Matrix|机器人雅可比矩阵|J|将关节速度映射为末端空间速度的一阶线性化矩阵。
+Space Jacobian|空间雅可比||以固定世界或空间参考系表达末端速度的雅可比。
+Body Jacobian|本体雅可比||以末端本体参考系表达末端速度的雅可比。
+Jacobian Singularity|雅可比奇异性||雅可比秩下降、末端某些运动或力传递能力退化的构型性质。
+Manipulator Singularity|机械臂奇异位形||使末端瞬时运动或力映射出现秩亏的机器人姿态。
+Jacobian Pseudoinverse|雅可比伪逆||通过 Moore–Penrose 伪逆得到最小范数或最小二乘关节速度解的方法。
+Damped Least Squares|阻尼最小二乘|DLS|在逆运动学求解中加入正则化缓解奇异附近数值不稳定的方法。
+Jacobian Transpose Method|雅可比转置方法||利用雅可比转置将任务误差转换为关节更新方向的迭代 IK 方法。
+Null Space|零空间||线性映射作用后结果为零的向量集合。
+Null-space Projection|零空间投影||把次级目标更新投影到不影响主任务一阶运动的关节方向。
+Redundancy Resolution|冗余自由度分配||在满足末端主任务的同时选择额外关节运动以优化其他目标的策略。
+Manipulability|可操作度||衡量关节速度可映射出的末端速度方向集合特征的指标族。
+Manipulability Ellipsoid|可操作度椭球||由雅可比对单位关节速度球的映射形成的末端速度椭球。
+Condition Number|条件数||反映雅可比等矩阵数值敏感性与方向尺度不均衡程度的量。
+Joint-limit Avoidance|关节限位规避||通过优化或零空间运动使关节远离危险或不可达边界的策略。
+Collision-aware IK|避碰逆运动学||在满足末端目标时把自碰撞与环境碰撞约束加入 IK 求解。
+Pose Error|位姿误差||目标位姿与当前位姿之间按指定坐标约定计算的平移及旋转差异。
+Orientation Error|姿态误差||目标朝向与当前朝向之间的旋转差，通常用李代数或四元数表示。
+Closed-chain Kinematics|闭链运动学||处理具有闭合约束环路的机器人机构关节几何关系的理论。
+Differential Inverse Kinematics|微分逆运动学||根据期望末端速度和雅可比求解关节速度控制量的任务。
+Resolved-rate Control|速度解析控制||使用微分逆运动学将末端速度指令转换为关节速度指令的控制方式。

@@ -1,0 +1,26 @@
+# 语音语言接口与多模态 NLP
+Automatic Speech Recognition|自动语音识别|ASR|将语音音频信号转换为文本词序列的技术。
+Speech-to-text|语音转文本|STT|把录制或实时语音解码为文字结果的系统能力。
+Text-to-speech|文本转语音|TTS|根据输入文本合成自然语音波形的任务。
+Speech Synthesis|语音合成||通过模型生成声学特征或波形以表达指定语言内容的过程。
+Phoneme|音位||语言音系中能够区别词义的抽象声音单位。
+Grapheme|字素||书写系统中区别文字形式的基本图形单位。
+Grapheme-to-phoneme Conversion|字素转音位|G2P|将书面形式映射为发音音位序列的任务。
+Acoustic Model|声学模型||对音频特征与发音或语言单位之间统计关系建模的组件。
+Pronunciation Lexicon|发音词典||记录词语与其对应音位或发音序列的资源。
+Connectionist Temporal Classification|连接时序分类|CTC|对输入输出对齐未知的序列任务求和多条路径概率的训练目标。
+RNN Transducer|循环神经网络转导器|RNN-T|联合声学与输出历史预测符号、适合流式语音识别的转导结构。
+End-to-end ASR|端到端语音识别||通过统一神经网络从声学输入直接预测文字或语言单位的框架。
+Streaming ASR|流式语音识别||在持续接收音频时增量输出识别结果的系统模式。
+Word Error Rate|词错误率|WER|以替换、删除和插入词数之和除以参考词数的语音识别指标。
+Character Error Rate|字符错误率|CER|以字符层编辑错误数除以参考字符数的识别指标。
+Speaker Diarization|说话人分离标注||判断录音中不同时间段由哪位说话人发声的任务。
+Voice Activity Detection|语音活动检测|VAD|识别音频中包含人声或语音的时间区间的任务。
+Forced Alignment|强制对齐||在已知文字或音位序列条件下确定其在音频中的时间边界。
+Prosody Modeling|韵律建模||对语音节奏、重音、停顿与音调等超音段特征建模的过程。
+Speech Translation|语音翻译||把一种语言语音转换为另一语言文本或语音的任务。
+Multimodal NLP|多模态自然语言处理||联合文本与图像、音频或视频等模态完成语言理解和生成的领域。
+Vision–Language Model|视觉—语言模型|VLM|联合处理视觉内容与文本语义的模型架构。
+Image Captioning|图像描述生成||根据图片内容自动生成自然语言说明的任务。
+Visual Question Answering|视觉问答|VQA|结合图像及文字问题推断并生成答案的任务。
+Document Understanding|文档智能理解||综合 OCR、版面结构、表格和语言语义理解复杂文档内容的任务。

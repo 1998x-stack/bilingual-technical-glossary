@@ -1,0 +1,26 @@
+# 状态估计、概率滤波与不确定性
+State Estimation|状态估计||根据系统模型与传感观测推断不可直接测量的机器人内部状态的过程。
+State Vector|状态向量||把机器人位置、速度、姿态等待估变量组织为数值向量的表示。
+Observation Model|观测模型||描述给定隐藏状态下传感器测量如何产生的概率或确定性关系。
+Motion Model|运动模型||描述机器人状态在动作和扰动作用下如何随时间变化的数学模型。
+Process Noise|过程噪声||描述运动模型未能完全解释的随机状态变化。
+Measurement Noise|测量噪声||描述传感观测与真实测量量之间随机偏差的扰动。
+Covariance Matrix|协方差矩阵||表示状态变量不确定性及不同分量线性相关性的矩阵。
+Gaussian Distribution|高斯分布||由均值与协方差参数确定的连续多元概率分布。
+Bayes Filter|贝叶斯滤波||通过预测和测量更新递归估计状态后验分布的方法。
+Prediction Step|滤波预测步骤||使用上一时刻后验与运动模型推算当前状态先验的步骤。
+Measurement Update|测量更新步骤||将当前观测似然与预测先验结合得到状态后验的过程。
+Kalman Filter|卡尔曼滤波器|KF|对线性高斯状态空间模型递归计算最优均方误差估计的滤波方法。
+Extended Kalman Filter|扩展卡尔曼滤波|EKF|对非线性模型在当前估计附近线性化并更新高斯状态的滤波方法。
+Unscented Kalman Filter|无迹卡尔曼滤波|UKF|通过确定性采样点传播非线性分布近似的高斯滤波方法。
+Information Filter|信息滤波||使用逆协方差及信息向量表示高斯后验的递归估计方法。
+Particle Filter|粒子滤波|PF|用带权随机样本近似非高斯后验状态分布的序贯蒙特卡洛方法。
+Importance Weight|重要性权重||用于校正粒子采样分布与目标后验差异的非负样本权重。
+Resampling|粒子重采样||根据归一化权重重新选择粒子以减少无效低权重样本的过程。
+Particle Degeneracy|粒子退化||粒子权重逐渐集中到极少数样本、降低有效粒子多样性的现象。
+Effective Sample Size|有效样本量|ESS|衡量粒子权重分布相当于多少独立等权样本的指标。
+Innovation|滤波新息||实际测量与基于预测状态所预期测量之间的残差。
+Mahalanobis Distance|马氏距离||根据协方差逆矩阵对观测误差进行尺度与相关性归一化的距离。
+Data Association|数据关联||判断当前传感器观测对应哪个已知目标或地图特征的过程。
+Outlier Rejection|离群观测剔除||根据统计或几何一致性识别并排除异常测量的策略。
+Observability|可观测性||系统内部状态是否能够根据一定时间范围的输入输出历史唯一推断的性质。

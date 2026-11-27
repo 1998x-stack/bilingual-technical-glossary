@@ -82,6 +82,22 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 
 **Standalone publication:** this subject is not yet added to the website search index or included in indexed totals.
 
+### Natural Language Processing / 自然语言处理 (standalone; not yet indexed)
+
+**500 original bilingual NLP terms in 20 chapters.** Covers linguistics and annotated corpora, tokenization/BPE, morphology and parsing, semantics and discourse, N-grams/HMM/CRF, static/contextual embeddings, RNN/Transformer, BERT/GPT/T5 pretraining, PEFT/LoRA, NER and event extraction, QA/retrieval, machine translation, dialogue and speech, evaluation and production safeguards. Includes **16 concept contrasts, 12 intermediate interview Q&As and 12 worked exam questions**. [Markdown](glossaries/nlp.md) · [PDF](pdf/nlp.pdf) · [TSV](data/nlp.tsv) · [Academic sources and review notes](data/nlp/SOURCES.md). Reproducible verification: `node scripts/render_nlp.mjs --check`. **Standalone handbook, not yet included in the website term/domain index counts.**
+
+### Computer Vision / 计算机视觉 (standalone; not yet indexed)
+
+**500 original bilingual terms across 20 chapters**, spanning image representation and formation, cameras, image filters, SIFT/ORB and epipolar geometry, stereo depth, SfM/SLAM and optical flow, image classification/CNN/ViT/self-supervision, R-CNN/YOLO/DETR, segmentation and tracking, point clouds and 3D reconstruction, NeRF/3D Gaussian Splatting, diffusion/generative vision, CLIP/VLM, COCO benchmarks, production optimization and visual safety. Includes **16 conceptual contrasts, 12 intermediate interview questions and 12 worked exam problems**. [Markdown](glossaries/computer-vision.md) · [PDF](pdf/computer-vision.pdf) · [TSV](data/computer-vision.tsv) · [Technical sources and review notes](data/computer-vision/SOURCES.md). Source reproducibility: `node scripts/render_computer_vision.mjs --check`. **Standalone publication, not yet included in the indexed-domain or term totals.**
+
+### Computer Graphics / 计算机图形学 (standalone; not yet indexed)
+
+**500 original bilingual terms in 20 chapters.** Covers 3D geometry, matrices and coordinate transforms, NURBS, graphics pipeline, clipping, rasterization, shader stages, texture sampling, microfacet BRDF/BSDF and PBR, radiometry, Monte Carlo path tracing, GI/shadows, animation and physical simulation, OpenGL/Vulkan/Direct3D/Metal, BVH acceleration, anti-aliasing and GPU optimization, NeRF/3D Gaussian Splatting, asset formats and quality testing. Includes **16 concept contrasts, 12 intermediate interview questions and 12 worked exam problems**. [Markdown](glossaries/computer-graphics.md) · [PDF](pdf/computer-graphics.pdf) · [TSV](data/computer-graphics.tsv) · [Sources and review status](data/computer-graphics/SOURCES.md). Reproducible verification: `node scripts/render_computer_graphics.mjs --check`. **Not yet integrated into the search index or its subject/term totals.**
+
+### Robotics / 机器人学 (standalone; not yet indexed)
+
+**500 original bilingual Robotics terms in 20 chapters**, spanning robots and rigid-body transforms, SE(3), DH/PoE kinematics, Jacobians/IK/singularities, manipulator dynamics, PID/impedance/MPC, mobile robot mechanisms, sensors and calibration, EKF/UKF/particle filters, LiDAR/visual SLAM and factor graphs, maps, A*/PRM/RRT*/trajectory optimization, navigation, manipulation and grasping, contact and haptics, imitation learning and reinforcement learning, embodied VLA policies, ROS 2 communication and software, simulation and safety validation. Includes **16 conceptual contrasts, 12 medium-level interview Q&As and 12 worked exam problems**. [Markdown](glossaries/robotics.md) · [PDF](pdf/robotics.pdf) · [TSV](data/robotics.tsv) · [Source references and review notes](data/robotics/SOURCES.md). Verify deterministic publications: `node scripts/render_robotics.mjs --check`. **Independent handbook; not yet added to the website search index.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |

@@ -1,0 +1,26 @@
+# 神经渲染、NeRF 与三维高斯表示
+Neural Rendering|神经渲染||通过可学习神经表示合成图像、视角或光照变化的技术。
+Novel View Synthesis|新视角合成|NVS|根据已知视图和场景表示生成未观察相机位置图像的任务。
+Neural Radiance Field|神经辐射场|NeRF|用连续神经函数表示空间位置与视角相关的颜色及密度并通过体渲染合成图像的方法。
+Volume Rendering|体渲染||沿相机射线累积介质密度及辐射颜色形成像素的渲染过程。
+Ray Marching|光线步进||沿空间射线按步长采样并累积颜色、密度或距离信息的数值渲染方法。
+Ray Sampling|光线采样||选取相机射线上的空间点用于估计体渲染积分的过程。
+Positional Encoding for NeRF|NeRF 位置编码||通过多频率函数映射坐标以帮助网络表示高频细节的技术。
+Hierarchical Sampling|分层射线采样||利用粗采样估计重要区域，再分配精细采样点的策略。
+View-dependent Appearance|视角相关外观||表面颜色或反射亮度随观察方向变化的现象及其模型表达。
+Density Field|空间密度场||为三维坐标分配体积密度值、用于体渲染吸收与透射的连续函数。
+Transmittance|透射率||表示沿射线到指定深度仍未被介质遮挡或吸收的比例。
+Photometric Reconstruction Loss|光度重建损失||比较合成视图与参考图像像素颜色差异的优化目标。
+Instant-NGP|即时神经图形基元|Instant-NGP|利用多分辨率哈希编码与高效 GPU 实现加速神经场训练和查询的方法。
+Hash Grid Encoding|哈希网格编码||以多尺度可训练网格特征和哈希表编码空间坐标的技术。
+Tri-plane Representation|三平面表示||利用三个正交二维特征平面表示三维场景特征的紧凑结构。
+3D Gaussian Splatting|三维高斯泼溅|3DGS|用可优化三维高斯基元表示场景并通过屏幕空间投影合成新视角的方法。
+Gaussian Primitive|高斯基元||具有三维位置、协方差、颜色或不透明度参数的可渲染空间元素。
+Gaussian Covariance|高斯协方差矩阵||控制三维高斯基元形状、尺度与方向的对称正定矩阵。
+Splatting Rasterization|泼溅光栅化||将空间基元投影成屏幕覆盖斑块并进行颜色混合的渲染方式。
+Opacity Parameter|不透明度参数||控制空间基元对像素遮挡与颜色累积贡献的数值。
+Novel-view Consistency|新视角一致性||场景表示从不同相机位置渲染时保持合理几何和外观的性质。
+Differentiable Rendering|可微渲染||允许图像误差梯度反向传播至几何、材质或相机参数的渲染过程。
+Inverse Rendering|逆向渲染||根据观测图像反推场景几何、材质、照明或相机属性的任务。
+Radiance Field Compression|辐射场压缩||降低神经辐射场或空间基元存储与渲染成本的技术。
+View Synthesis Artifact|视角合成伪影||由几何估计、遮挡或采样不足造成的合成图像结构错误。

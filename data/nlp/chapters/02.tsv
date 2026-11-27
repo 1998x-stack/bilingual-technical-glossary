@@ -1,0 +1,26 @@
+# 语料库、数据标注与语言资源
+Text Corpus|文本语料库||用于统计分析、训练或评测的文本资料集合。
+Parallel Corpus|平行语料库||含不同语言间对应句段或文档配对的语料集合。
+Monolingual Corpus|单语语料库||主要包含同一种语言文本的语料集合。
+Comparable Corpus|可比语料库||不同语言或领域主题相似但未逐句对齐的文本集合。
+Annotated Corpus|标注语料库||包含实体、句法、情感等人工或程序标签的文本集合。
+Raw Corpus|原始语料库||尚未经过目标任务特定标注和深度清洗的语言数据集合。
+Treebank|句法树库||为句子标注成分树或依存关系等句法结构的语料资源。
+Universal Dependencies|通用依存关系框架|UD|提供跨语言词性、形态特征和依存句法标注规范的项目体系。
+CoNLL Format|CoNLL 数据格式||用于序列标注、句法分析等共享任务的若干结构化文本格式。
+CoNLL-U|通用依存关系文件格式|CoNLL-U|用于 UD 标注的以行为词元、以列描述词性与依存关系的数据格式。
+Dataset Split|数据集划分||将样本分配到训练、验证和测试等用途的过程。
+Training Set|训练集||用于优化模型参数或学习统计模式的数据子集。
+Validation Set|验证集||用于模型选择、超参数调优与训练期间监控的独立数据子集。
+Test Set|测试集||用于训练完成后估计泛化性能的保留评估数据子集。
+Annotation Guideline|标注指南||规定标签定义、边界判断和例外处理的一套标注规则。
+Annotation Schema|标注模式||定义任务标签种类、层级、关系与数据结构的规范。
+Inter-annotator Agreement|标注者间一致性||衡量不同标注者对相同语料标注结果一致程度的指标。
+Cohen Kappa|科恩 Kappa 系数|κ|对两个标注者分类一致程度进行机会一致性校正的统计量。
+Fleiss Kappa|弗莱斯 Kappa 系数||对多个标注者的分类一致程度进行机会校正的统计量。
+Krippendorff Alpha|克里彭多夫 Alpha 系数|α|可用于多名标注者和多种测量尺度的一致性指标。
+Annotation Adjudication|标注仲裁||对存在分歧的标签进行复核并确定最终参考标签的流程。
+Data Provenance|数据来源溯源||记录语料出处、许可、采集方式和修改历史的元数据。
+Data Contamination|数据污染||训练数据包含测试答案或其他本不应泄漏内容导致评测失真的现象。
+Domain Shift|领域分布偏移||训练和实际应用中语言主题、风格或数据来源发生变化的现象。
+Corpus Sampling|语料抽样||按明确采样方案从目标语言材料中选择文本作为数据集的过程。

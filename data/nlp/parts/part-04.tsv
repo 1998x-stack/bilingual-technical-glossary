@@ -1,0 +1,107 @@
+# 下游适配、监督微调与迁移学习
+Transfer Learning|迁移学习||把在源任务或语料学到的表示用于新任务的学习方法。
+Fine-tuning|微调||在预训练模型基础上用下游任务数据继续优化参数的过程。
+Full-parameter Fine-tuning|全参数微调||对模型中全部或大部分权重进行下游训练更新的方式。
+Parameter-efficient Fine-tuning|参数高效微调|PEFT|只训练少量附加或选定参数以降低任务适配成本的方法。
+Adapter Layer|适配器层||插入预训练网络中的小型可训练模块，用于低成本任务调整。
+Low-rank Adaptation|低秩适配|LoRA|用低秩矩阵表示权重增量、冻结原权重的参数高效微调方法。
+Prefix Tuning|前缀调优||训练可学习的连续前缀状态以引导预训练模型生成的技术。
+Prompt Tuning|软提示调优||优化少量输入提示嵌入而不全面更新模型参数的方法。
+Instruction Tuning|指令微调||用任务指令和示范回答训练模型遵循自然语言要求的过程。
+Supervised Fine-tuning|监督微调|SFT|通过人工或其他来源的输入输出配对示例优化模型的训练阶段。
+Task-specific Head|任务专用预测头||在通用表示模型上附加用于分类、回归或序列标注的预测层。
+Sequence Classification Head|序列分类头||把整个序列表示映射为类别分数的模型输出层。
+Token Classification Head|词元分类头||把各个 token 隐状态映射为相应标签分数的输出层。
+Feature-based Transfer|基于特征的迁移||冻结预训练表示网络、用抽取的向量训练下游模型的方案。
+Feature Extraction Mode|特征抽取模式||仅把模型用作固定编码器而不对其参数执行任务更新的使用方式。
+Zero-shot Learning|零样本学习||在无目标任务直接标注示例条件下依说明或迁移知识完成预测。
+Few-shot Learning|少样本学习||依靠少量示例适配或提示模型完成新任务的范式。
+In-context Learning|上下文学习|ICL|在模型输入中给出指令和示例以改变预测行为、但不更新模型权重的方式。
+Domain Adaptation|领域适应||降低训练数据领域与目标应用领域分布差异的方法集合。
+Task Adaptation|任务适配||将通用模型能力调整到特定输出格式、标签或目标任务的过程。
+Catastrophic Forgetting|灾难性遗忘||继续训练新任务后模型在旧任务或知识上性能显著下降的现象。
+Regularization|正则化||通过约束、惩罚或数据策略抑制过拟合并改善泛化的技术。
+Early Stopping|提前停止||依据验证集表现终止训练以避免过度拟合的策略。
+Hyperparameter Search|超参数搜索||比较学习率、批大小和正则强度等训练配置以选择方案的过程。
+Evaluation Protocol|评测协议||规定训练、验证、测试划分以及指标计算和重复实验规则的规范。
+
+# 实体识别、序列标注与信息抽取
+Named Entity Recognition|命名实体识别|NER|识别文本中组织、人名、地点等命名实体提及及其类别的任务。
+Entity Boundary Detection|实体边界检测||定位文本中实体提及的开始与结束位置的过程。
+Entity Typing|实体类型判定||为实体提及分配人、地点、组织或细粒度类别的任务。
+BIO Tagging Scheme|BIO 序列标签方案|BIO|使用 B 表开始、I 表内部、O 表非实体的词元级跨度标注规则。
+BIOES Tagging Scheme|BIOES 标签方案|BIOES|增加单词实体 S 和实体结尾 E 标签的序列标注格式。
+Span-based NER|基于跨度的实体识别||枚举或提议文本片段并对每个片段判断实体边界和类型的方法。
+Nested Named Entity Recognition|嵌套命名实体识别||识别多个实体跨度之间可存在包含关系的实体抽取任务。
+Discontinuous Entity Recognition|非连续实体识别||识别文本中由多个不相邻片段组成的实体提及的任务。
+Relation Extraction|关系抽取|RE|识别文本中实体之间语义关系及其类别的任务。
+Entity Linking|实体链接|EL|把文本中实体提及映射到知识库具体唯一标识的任务。
+Entity Disambiguation|实体消歧||根据上下文区分同名提及所指不同实体的过程。
+Event Extraction|事件抽取|EE|识别事件触发词、事件类型和参与者信息的任务。
+Event Trigger|事件触发词||文本中表示某种事件发生或状态改变的词语片段。
+Event Argument|事件论元||参与事件并承担时间、地点、施事等语义角色的实体或片段。
+Event Coreference|事件共指||判断不同事件提及是否描述同一具体事件的任务。
+Open Information Extraction|开放信息抽取|OpenIE|在不预先限定完整关系模式的条件下从句子抽取关系三元组的方法。
+Slot Filling|槽位填充||为指定实体或任务结构补齐预定义属性值的过程。
+Template Filling|模板填充||把文本信息填入预先定义的事件或事实模板字段的任务。
+Relation Triple|关系三元组||以主体、谓词与客体表示结构化关系事实的形式。
+Knowledge Base Population|知识库自动填充|KBP|从文本中抽取并链接实体属性和关系、更新知识库的过程。
+Distant Supervision|远程监督||利用已有知识库对语料中的实体对自动生成弱标注关系标签的策略。
+Weak Supervision|弱监督||利用启发式规则、不精确标签或间接信号构建训练数据的方法。
+Span-level F1|跨度级 F1||以预测片段与参考片段完全匹配的精确率和召回率计算的调和均值。
+Entity-level Evaluation|实体级评估||根据完整实体边界及类别是否正确衡量抽取质量的评测方式。
+Boundary Error|边界错误||预测的实体或答案片段起止位置与参考标注不一致的错误。
+
+# 问答、文档检索与文本匹配
+Reading Comprehension|机器阅读理解||根据给定文章回答问题并推断文本包含信息的任务。
+Extractive Question Answering|抽取式问答||通过定位上下文中的连续文本跨度输出答案的问答形式。
+Abstractive Question Answering|生成式问答||根据问题及证据自行生成答案而非直接复制原文片段的任务。
+Open-domain Question Answering|开放域问答|ODQA|利用宽领域语料和检索机制回答不预限主题问题的任务。
+Closed-book Question Answering|闭卷问答||不提供实时外部知识库、仅根据模型内部表示回答问题的设定。
+Retrieval-Augmented Generation|检索增强生成|RAG|在生成答案时利用外部检索资料补充语言模型上下文的架构。
+Document Retrieval|文档检索||根据查询从语料库中挑选相关文档的任务。
+Passage Retrieval|段落检索||根据查询从文档短片段或段落集合中召回相关内容的任务。
+Lexical Retrieval|词法检索||通过词项匹配、倒排索引或词频评分查找候选内容的方法。
+Dense Passage Retrieval|稠密段落检索|DPR|分别编码问题和段落向量、通过相似度进行召回的模型方案。
+BM25|BM25 相关性评分|BM25|结合词频饱和、文档长度和词项逆文档频率的排序函数族。
+Dual Encoder|双编码器||分别计算两个输入的向量表示并以匹配函数评分的模型架构。
+Cross Encoder|交叉编码器||将两个输入联合编码、直接预测它们的相关或匹配程度的架构。
+Semantic Search|语义搜索||利用词向量或语言模型表示寻找语义相关内容的检索方式。
+Text Matching|文本匹配||预测两个文本在语义、意图或关系上是否符合某种匹配准则的任务。
+Paraphrase Detection|复述识别||判断两个不同表述是否传达基本相同含义的任务。
+Question Similarity|问题相似度||衡量不同自然语言问题的语义目标或可互答程度的指标或任务。
+Reranking|重排序||对首轮召回的较少候选采用更精细模型重新排列的检索步骤。
+Multi-hop Question Answering|多跳问答||需要串联多个事实、实体或文档才能回答的问题类型。
+Answer Span|答案跨度||抽取式问答中位于上下文起止 token 之间的连续文本区域。
+Answerability Prediction|可回答性判定||根据证据或任务定义判断当前问题是否存在可支持答案的模型任务。
+Evidence Retrieval|证据检索||获取支持回答中关键事实或推理步骤的相关文本片段的过程。
+Citation Attribution|引用归属||将答案中的事实陈述映射到对应来源文档或证据片段的过程。
+Answer Grounding|答案锚定||约束答案事实必须能从指定上下文或外部资料中得到支持的做法。
+Unanswerable Question|不可回答问题||在指定证据与约束下缺乏可靠答案的输入问题。
+
+# 机器翻译、跨语言迁移与多语建模
+Neural Machine Translation|神经机器翻译|NMT|利用神经编码器解码器或 Transformer 学习源到目标语言映射的翻译方法。
+Statistical Machine Translation|统计机器翻译|SMT|通过概率翻译模型和语言模型构造翻译决策的历史技术体系。
+Rule-based Machine Translation|基于规则的机器翻译|RBMT|利用手工构建的词典、语法和转换规则生成译文的系统。
+Phrase-based Machine Translation|基于短语的机器翻译|PBMT|将词组片段作为基本翻译映射单位的统计机器翻译方法。
+Word Alignment|词语对齐||识别源语和目标语中哪些词项相互对应的任务。
+Sentence Alignment|句子对齐||在双语文档中匹配互为翻译的句子或段落的过程。
+Parallel Sentence Pair|平行句对||表达相同内容的两个不同语言句子的训练或评测单位。
+Translation Memory|翻译记忆库|TM|保存历史原文译文配对供人工或机器翻译检索复用的资源。
+Beam Search|束搜索||每个生成步骤保留得分最高的有限数量候选序列进行近似搜索的算法。
+Beam Width|束宽||束搜索每步最多保留的候选假设数量。
+Length Penalty|长度惩罚||在候选序列评分中调整长度偏好以避免系统性短句偏置的机制。
+Coverage Penalty|覆盖惩罚||鼓励解码过程充分关注源文本内容的候选评分修正项。
+Terminology Constraint|术语约束||要求译文保留或使用指定专业词汇的翻译条件。
+Constrained Decoding|受约束解码||在生成中强制满足特定词项、结构或格式要求的搜索策略。
+Back-translation|回译数据增强||把目标语言单语句翻译回源语以构造伪平行训练数据的技术。
+Pivot Translation|枢轴语言翻译||先转为中间语言再翻译到目标语言的跨语言转换策略。
+Multilingual Machine Translation|多语言机器翻译||单一模型支持多个源语言与目标语言翻译方向的系统。
+Zero-shot Translation|零样本翻译||在训练中缺少直接源目标语言句对条件下完成该语言方向翻译的任务。
+Cross-lingual Transfer|跨语言迁移||将一种语言中学到的表示或任务知识应用到另一语言的过程。
+Cross-lingual Alignment|跨语言对齐||让不同语言中的词、句向量或结构在共享空间中可比较的技术。
+Code-switching|语码转换||一段话语中交替使用两种或多种语言的现象。
+Low-resource Language|低资源语言||相对于任务需要，可用标注数据、语料或工具资源较少的语言。
+Morphologically Rich Language|形态丰富语言||具有多样屈折和派生词形、词型稀疏性明显的语言。
+Language Identification|语言识别|LID|判断文本或音频属于何种语言或语言组合的任务。
+Translation Quality Estimation|翻译质量估计|QE|在没有人工参考译文或无需完整参考译文时估计译文质量的任务。

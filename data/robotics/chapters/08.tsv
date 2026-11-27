@@ -1,0 +1,26 @@
+# 机器人传感器、标定与时间同步
+Robot Perception|机器人感知||将传感器测量转化为机器人及周围环境有用状态信息的过程。
+Sensor Fusion|传感器融合||在明确噪声和时间关系下结合多个传感源提高状态估计可靠性的技术。
+Inertial Measurement Unit|惯性测量单元|IMU|通常同时测量三轴角速度和线加速度的传感模块。
+Accelerometer|加速度计||测量传感器比力、受重力和线加速度影响的惯性器件。
+Gyroscope|陀螺仪||测量机体绕各轴角速度的惯性传感器。
+Magnetometer|磁力计||测量局部磁场并可辅助估计航向的传感器。
+Wheel Encoder|车轮编码器||通过旋转计数或角位置信号推断车轮运动的传感器。
+Joint Encoder|关节编码器||测量机器人关节旋转角度或相对运动的传感器。
+Force–Torque Sensor|六维力力矩传感器|F/T|测量作用在指定结构上的三轴力和三轴力矩的装置。
+Tactile Sensor|触觉传感器||感知接触压力、剪切或接触位置等物理信息的传感组件。
+Proximity Sensor|接近传感器||在无需机械接触时检测邻近物体存在或距离的器件。
+Time-of-flight Sensor|飞行时间传感器|ToF|通过测量信号传播往返时间或相位推断目标距离的设备。
+LiDAR|激光雷达|LiDAR|通过发射激光并测距获取环境空间点或轮廓的传感技术。
+Depth Camera|深度相机||为成像像素提供场景距离或深度测量的摄像设备。
+Stereo Camera|双目相机||利用两个具有已知相对位姿的相机获取立体场景观测的系统。
+RGB-D Camera|彩色深度相机|RGB-D|同时获取彩色图像与空间对齐深度数据的成像设备。
+Event Camera|事件相机||在像素亮度变化达到阈值时异步输出事件的视觉传感器。
+Global Navigation Satellite System|全球卫星导航系统|GNSS|利用卫星信号估计接收机位置、时间和相关导航状态的技术。
+Real-time Kinematic GNSS|实时动态差分定位|RTK|利用载波相位观测与基准差分改进卫星定位精度的方法。
+Sensor Calibration|传感器标定||估计测量设备内参数、偏置、比例及安装关系的过程。
+Extrinsic Calibration|传感器外参标定||确定不同传感器或机器人坐标系之间刚体变换的过程。
+Hand–Eye Calibration|手眼标定||估计机械臂末端、相机和基座间固定变换关系的标定任务。
+Time Synchronization|时间同步||让不同数据来源的时间戳对应到统一时间基准的机制。
+Sensor Bias|传感器偏置||传感测量长期偏离真实值的系统性误差分量。
+Sensor Noise|传感器噪声||叠加于测量输出的随机扰动及相关统计不确定性。

@@ -37,6 +37,14 @@ jobs:
         run: node scripts/render_cuda.mjs --check
       - name: Verify Database Systems sources and publication mirrors
         run: node scripts/render_database_systems.mjs --check
+      - name: Verify NLP source terms, PDF and Markdown mirrors
+        run: node scripts/render_nlp.mjs --check
+      - name: Verify Computer Vision source and publication mirrors
+        run: node scripts/render_computer_vision.mjs --check
+      - name: Verify Computer Graphics source and publication mirrors
+        run: node scripts/render_computer_graphics.mjs --check
+      - name: Verify Robotics source and synchronized publications
+        run: node scripts/render_robotics.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki

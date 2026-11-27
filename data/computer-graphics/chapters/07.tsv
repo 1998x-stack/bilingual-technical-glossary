@@ -1,0 +1,26 @@
+# 纹理映射、过滤与纹理资源
+Texture Mapping|纹理映射||依据表面坐标将图像或程序生成信号附着到几何表面的技术。
+Texture Coordinate|纹理坐标|UV|确定模型表面位置对应二维或三维纹理位置的参数。
+UV Unwrapping|UV 展开||将三维表面划分并映射到二维纹理域的过程。
+Texture Atlas|纹理图集||将多个纹理区域打包进一张较大图像以便资源管理的技术。
+Mipmap|多级渐远纹理|Mipmap|为纹理预计算逐级降低分辨率的图像金字塔。
+Level of Detail|纹理细节等级|LOD|根据投影尺寸选择采样纹理层级的参数。
+Texture Filtering|纹理过滤||依据纹理坐标从离散纹素生成连续采样结果的过程。
+Nearest Filtering|最近邻纹理过滤||选取最接近目标坐标的纹素值作为结果的方式。
+Bilinear Filtering|双线性纹理过滤||在同一级纹理图像中由相邻四个纹素做二维线性插值的方法。
+Trilinear Filtering|三线性纹理过滤||在相邻 mipmap 层各做双线性采样后按 LOD 插值的方法。
+Anisotropic Filtering|各向异性过滤||考虑投影纹理采样足迹方向差异、降低斜视表面模糊的过滤技术。
+Texture Sampler|纹理采样器||定义过滤模式、寻址模式与 LOD 限制的图形资源。
+Texel|纹素||纹理图像中某个离散采样位置的像素样本。
+Texture Address Mode|纹理寻址模式||定义纹理坐标超出有效范围时采用重复、夹取或镜像等行为的配置。
+Wrap Mode|重复纹理模式||将超范围纹理坐标周期性映射回纹理域的寻址方式。
+Clamp Mode|夹取纹理模式||把超范围纹理坐标限制到纹理边界或边界色的采样方式。
+Normal Mapping|法线贴图||从纹理读取法向扰动以改变表面光照细节的技术。
+Bump Mapping|凹凸映射||利用高度变化扰动表面法线、模拟细节而不真正改变几何轮廓的方法。
+Displacement Mapping|位移贴图||按高度或位移信号实际改变几何表面位置的技术。
+Parallax Mapping|视差贴图||根据视线方向偏移纹理采样坐标以模拟表面深度的技术。
+Environment Mapping|环境贴图||利用方向相关纹理近似场景远处环境辐射或反射的技术。
+Cubemap|立方体贴图|Cubemap|以六个方向面纹理表示环绕三维方向空间的图像结构。
+Texture Compression|纹理压缩||以专门块编码减少图形纹理的存储占用和带宽需求的技术。
+Sparse Texture|稀疏纹理||允许纹理虚拟地址范围大于实际已驻留物理页面的资源形式。
+Virtual Texturing|虚拟纹理||按需把巨大纹理的局部页加载到显存、实现细节分块管理的技术。

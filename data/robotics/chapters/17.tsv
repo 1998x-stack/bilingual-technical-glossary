@@ -1,0 +1,26 @@
+# 机器人学习、模仿学习与强化学习
+Robot Learning|机器人学习||利用数据、交互或优化方法学习机器人感知、控制和操作策略的领域。
+Imitation Learning|模仿学习|IL|通过专家动作示例或轨迹学习机器人行为策略的技术。
+Behavior Cloning|行为克隆|BC|把专家观测到动作的映射作为监督学习问题训练策略的方法。
+Learning from Demonstration|示教学习|LfD|依据人工或机器人演示推断可执行技能或控制策略的范式。
+Inverse Reinforcement Learning|逆强化学习|IRL|从专家行为推断其隐含奖励函数或任务目标的学习方法。
+Reinforcement Learning|强化学习|RL|通过状态、动作与奖励的交互学习最大化累积回报的策略。
+Markov Decision Process|马尔可夫决策过程|MDP|由状态、动作、转移概率、奖励与折扣等要素构成的决策模型。
+Partially Observable Markov Decision Process|部分可观测马尔可夫决策过程|POMDP|智能体只能通过不完全观测维护状态信念并作决策的模型。
+Policy|策略||给定观测或状态选择动作或动作分布的函数。
+Value Function|价值函数||预测从给定状态或状态动作出发可获得累积回报的函数。
+Reward Function|奖励函数||给机器人状态、动作或状态转移赋予任务反馈标量的规则。
+Reward Shaping|奖励塑形||调整或添加中间奖励信号以改善学习效率的技术。
+Exploration|探索||为获取未知状态、动作效果或奖励信息而尝试新行为的过程。
+Sample Efficiency|样本效率||学习方法用有限交互或轨迹数据获得任务性能的能力。
+Offline Reinforcement Learning|离线强化学习|Offline RL|不再与环境主动交互、仅从固定历史数据学习策略的强化学习方式。
+Online Reinforcement Learning|在线强化学习||通过持续执行动作、收集新数据并更新策略的学习方式。
+Domain Randomization|领域随机化||在仿真训练时随机改变材质、质量、动力学与传感参数提升迁移能力的技术。
+Sim-to-real Transfer|仿真到现实迁移|Sim2Real|把在模拟环境中学得的模型或策略应用于真实机器人的过程。
+Reality Gap|仿真现实差距||仿真与真实系统在感知、接触及动力学等方面的建模偏差。
+Residual Reinforcement Learning|残差强化学习||在已有基础控制器输出之上学习附加修正动作的策略。
+Safe Reinforcement Learning|安全强化学习||在学习与探索时显式考虑碰撞、约束违反和风险限制的强化学习领域。
+Policy Distillation|策略蒸馏||让学生策略模仿教师策略的动作分布或行为以降低部署成本的方法。
+Curriculum Learning|课程学习||按难度或依赖关系逐步安排训练任务和环境条件的学习策略。
+Multi-task Robot Learning|多任务机器人学习||使用共享模型学习完成多类机器人目标或技能的技术。
+Generalization to Novel Objects|新物体泛化||机器人策略面对未见过的物体几何与外观仍能完成目标任务的能力。

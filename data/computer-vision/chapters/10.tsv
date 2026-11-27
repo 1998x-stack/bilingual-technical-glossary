@@ -1,0 +1,26 @@
+# 卷积神经网络、骨干网络与特征金字塔
+Convolutional Neural Network|卷积神经网络|CNN|通过局部权重共享卷积操作提取图像层级特征的神经网络。
+Convolutional Layer|卷积层||以可训练卷积核在空间邻域聚合输入张量的神经网络层。
+Kernel Size|卷积核尺寸||局部卷积模板的高度和宽度。
+Stride|卷积步幅||卷积或池化窗口在空间方向的移动间距。
+Padding|卷积填充||在输入边缘补充数值以控制输出尺寸和边界处理的方法。
+Convolution Dilation Rate|空洞卷积扩张率||通过扩大卷积核采样间隔增加感受野的配置。
+Receptive Field|感受野||输出某位置受输入图像中哪些空间区域影响的范围。
+Pooling Layer|池化层||通过局部聚合降低空间尺寸或增强位置鲁棒性的网络层。
+Max Pooling|最大池化||取局部窗口最大激活值作为输出的池化方法。
+Average Pooling|平均池化||计算局部窗口激活均值的池化方法。
+Global Average Pooling|全局平均池化|GAP|对整张特征图各通道的空间位置求平均得到向量的操作。
+Depthwise Convolution|逐通道卷积||对每个输入通道分别应用空间卷积核的运算。
+Pointwise Convolution|逐点卷积||常用一乘一卷积组合各位置通道特征的运算。
+Depthwise Separable Convolution|深度可分离卷积||将逐通道空间卷积与逐点通道混合分开执行的结构。
+Residual Block|残差块||在变换分支与恒等或投影捷径之间建立残差相加的网络模块。
+Skip Connection|跳跃连接||让较早层特征绕过中间变换与后续层直接连接的结构。
+Batch Normalization|批归一化|BN|用小批次统计或运行统计对中间激活归一化的技术。
+AlexNet|AlexNet 网络||在 ImageNet 图像分类中推动深度卷积网络广泛应用的经典架构。
+VGG Network|VGG 网络||以连续小卷积核和较深堆叠构建视觉特征的 CNN 架构。
+ResNet|残差网络|ResNet|通过恒等或投影捷径改善深层卷积网络优化的架构族。
+DenseNet|密集连接网络|DenseNet|让后续层连接并复用更早层输出特征的卷积网络。
+EfficientNet|高效卷积网络|EfficientNet|通过复合缩放等设计平衡网络宽度、深度与输入分辨率的架构。
+ConvNeXt|现代化卷积网络|ConvNeXt|吸收现代训练和架构设计经验的纯卷积骨干模型。
+Feature Pyramid Network|特征金字塔网络|FPN|结合不同分辨率特征图以支持多尺度目标识别的网络。
+Backbone Network|骨干特征网络|Backbone|负责从输入图像提取通用分层特征的视觉模型主体。

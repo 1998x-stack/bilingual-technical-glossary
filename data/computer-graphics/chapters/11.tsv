@@ -1,0 +1,26 @@
+# 阴影、环境遮蔽与全局光照
+Direct Illumination|直接照明||光源未经过其他场景表面反弹而直接到达着色点的光照。
+Indirect Illumination|间接照明||经一次或多次表面反射或透射后到达着色点的光照。
+Global Illumination|全局光照|GI|考虑场景间多次光传输对可见外观影响的渲染方法集合。
+Ambient Occlusion|环境光遮蔽|AO|近似衡量着色点附近半球方向被几何阻挡程度的技术。
+Screen-space Ambient Occlusion|屏幕空间环境遮蔽|SSAO|基于深度与法线缓冲估计可见表面邻近遮挡的近似方法。
+Horizon-based Ambient Occlusion|地平线环境遮蔽|HBAO|按局部视方向地平线角度估计屏幕空间遮挡的技术。
+Screen-space Reflections|屏幕空间反射|SSR|利用屏幕可见深度与颜色近似追踪反射的技术。
+Shadow Mapping|阴影贴图||从光源视角渲染深度并在着色时比较以判断阴影的技术。
+Shadow Map|阴影深度图||保存光源视角下最近可见表面深度的纹理资源。
+Percentage-closer Filtering|百分比渐近过滤|PCF|对多个阴影比较采样结果过滤以平滑阴影边界的技术。
+Variance Shadow Mapping|方差阴影贴图|VSM|利用深度矩估计遮挡概率的阴影过滤方法。
+Cascaded Shadow Maps|级联阴影贴图|CSM|将相机视锥划分为距离段、分别使用阴影贴图提高远近分辨率的技术。
+Soft Shadow|软阴影||有限面积光源形成随遮挡几何变化的半影与柔和边界。
+Hard Shadow|硬阴影||理想点光源或方向光通常产生的清晰阴影边界。
+Penumbra|半影||部分光源被遮挡而导致照明强度逐渐变化的区域。
+Radiosity|辐射度法||假定近似漫反射表面并通过面片间能量交换求解全局照明的算法。
+Lightmap|光照贴图||预计算或烘焙到纹理中的场景照明数据。
+Light Baking|光照烘焙||离线求取静态表面照明并存为贴图或探针的过程。
+Light Probe|光照探针||在离散空间位置记录环境照明信息以供插值的采样设施。
+Irradiance Volume|辐照度体积||在三维网格中存储和插值间接照明的光照表示。
+Reflection Probe|反射探针||在局部空间存储环境反射贴图以近似材质反射的资源。
+Voxel Cone Tracing|体素锥追踪||通过体素场中扩展锥形积分近似间接光照的技术。
+Screen-space Global Illumination|屏幕空间全局光照|SSGI|利用当前帧深度、法线和颜色估计部分间接照明的方法。
+Radiance Cache|辐亮度缓存||保存可重复使用的场景辐亮度估计以降低多次求解开销的结构。
+Temporal Reprojection|时间重投影||利用运动信息把前一帧结果映射到当前帧位置复用历史数据的技术。

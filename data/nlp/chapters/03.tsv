@@ -1,0 +1,26 @@
+# 文本规范化、分词与子词编码
+Text Normalization|文本规范化||把文本中编码、数字、缩写或书写变体转换为一致表示的过程。
+Sentence Segmentation|句子切分||识别文本中的句子或语句边界的处理。
+Word Segmentation|词语切分||将连续文本划分为语言词语单位的任务，在中文等语言中尤为重要。
+Tokenization|词元化||依据词表或规则将字符串分解为模型处理的 token 序列。
+Token|词元|Token|文本编码器定义的离散处理单元，可为词、子词、字符或特殊符号。
+Tokenizer|词元切分器||把文本映射为 token 或 token ID 序列的规则或模型。
+Subword Tokenization|子词切分||把文本划分为比完整词更细且可重用的子词单位的编码方式。
+Byte Pair Encoding|字节对编码|BPE|通过迭代合并高频相邻符号学习子词词表的编码算法族。
+WordPiece|WordPiece 子词算法|WordPiece|依据训练目标或统计准则学习子词词表的词元化方法。
+Unigram Language Model Tokenization|一元语言模型子词切分|Unigram|从候选子词词表中按概率模型选择切分的编码方法。
+SentencePiece|SentencePiece 词元化工具||直接处理原始文本并支持 BPE 与 Unigram 等编码方法的子词框架。
+Byte-level Tokenization|字节级词元化||以 UTF-8 字节等低层编码单元表示文本并构建词元序列的方案。
+Character-level Tokenization|字符级词元化||以 Unicode 字符或相近字符单位作为基本编码单元的方法。
+Whitespace Tokenization|空白符切分||利用空格和制表符等分隔符划分词元的简单规则。
+Vocabulary|词表||编码器允许表示的 token 与特殊符号的有限集合。
+Vocabulary Size|词表大小||词元编码系统中可使用的不同 token 数量。
+Token ID|词元编号||将某个词元映射到模型词表中的整数索引。
+Out-of-vocabulary Word|词表外词|OOV|在当前词表中没有对应完整条目的词或符号。
+Unknown Token|未知词元|UNK|某些编码器用于代表未收录词或符号的特殊 token。
+Special Token|特殊词元||表示开始、结束、填充或任务控制等非普通文字含义的词元。
+Padding Token|填充词元|PAD|把不同长度样本补齐为统一张量尺寸时使用的占位 token。
+Beginning-of-sequence Token|序列起始词元|BOS|标记输入或生成序列开始位置的特殊 token。
+End-of-sequence Token|序列结束词元|EOS|标记序列结束、可用于终止生成的特殊 token。
+Unicode Normalization|Unicode 规范化||按照 NFC、NFKC 等规则统一等价字符编码表示的过程。
+Detokenization|逆词元化||把生成或标注的词元序列还原为可阅读文本的过程。

@@ -1,0 +1,26 @@
+# 统计语言模型、N-gram 与概率推断
+N-gram|N 元语法片段|N-gram|由连续 N 个词元构成的序列特征。
+Unigram Model|一元语言模型||把词元独立或按边际频率建模的简单概率模型。
+Bigram Model|二元语言模型||使用前一个词元预测当前词元概率的语言模型。
+Trigram Model|三元语言模型||使用前两个词元预测当前词元的语言模型。
+Markov Assumption|马尔可夫假设||假定当前状态或词元仅依赖有限历史状态的近似条件。
+Chain Rule of Probability|概率链式法则||将序列联合概率表示为各位置条件概率乘积的恒等式。
+Conditional Probability|条件概率||在给定某事件或上下文条件下另一事件成立的概率。
+Maximum Likelihood Estimation|极大似然估计|MLE|选择使观察语料概率达到最大值的模型参数估计原则。
+Count-based Language Model|计数型语言模型||通过统计离散词元和上下文共现次数估计序列概率的模型。
+Sparse Data Problem|数据稀疏问题||训练样本中大量可能的词序列未出现、使概率估计不稳的现象。
+Smoothing|概率平滑||重新分配计数模型概率质量以处理未见或低频事件的方法。
+Add-one Smoothing|加一平滑|Laplace|为每种词项计数加一的简单平滑估计技术。
+Add-k Smoothing|加 k 平滑||为每个事件计数加入正伪计数 k 的估计方法。
+Good–Turing Estimation|古德—图灵估计||依据事件频次的频次数目调整低频与未见事件概率的技术。
+Backoff Language Model|回退语言模型||高阶上下文统计不足时退回低阶语言模型估计的策略。
+Interpolation|概率插值||通过加权组合不同阶数或不同来源的概率估计缓解稀疏性的方法。
+Kneser–Ney Smoothing|克内瑟—内伊平滑||利用折扣和不同历史上下文多样性构造高质量 N-gram 平滑概率的方法。
+Modified Kneser–Ney|改进 Kneser–Ney 平滑||根据计数大小采用不同折扣的 Kneser–Ney 估计变体。
+Discounting|计数折扣||从已见事件计数中扣除部分概率质量以分配给其他事件的方法。
+Perplexity|困惑度|PPL|模型在给定 tokenization 下平均负对数似然的指数，用于评价预测不确定性。
+Cross Entropy|交叉熵||按真实分布或数据样本对模型对数概率取负期望的量。
+Entropy Rate|熵率||随机过程每个新符号在无限历史条件下的平均信息量。
+Hidden Markov Model|隐马尔可夫模型|HMM|通过潜在状态转移与观测发射概率建模序列的概率模型。
+Viterbi Algorithm|维特比算法||对状态序列概率模型用动态规划寻找概率最大路径的算法。
+Forward–Backward Algorithm|前向—后向算法||通过双向动态规划计算 HMM 等模型隐状态边际概率的算法。

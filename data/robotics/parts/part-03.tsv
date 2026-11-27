@@ -1,0 +1,107 @@
+# 状态估计、概率滤波与不确定性
+State Estimation|状态估计||根据系统模型与传感观测推断不可直接测量的机器人内部状态的过程。
+State Vector|状态向量||把机器人位置、速度、姿态等待估变量组织为数值向量的表示。
+Observation Model|观测模型||描述给定隐藏状态下传感器测量如何产生的概率或确定性关系。
+Motion Model|运动模型||描述机器人状态在动作和扰动作用下如何随时间变化的数学模型。
+Process Noise|过程噪声||描述运动模型未能完全解释的随机状态变化。
+Measurement Noise|测量噪声||描述传感观测与真实测量量之间随机偏差的扰动。
+Covariance Matrix|协方差矩阵||表示状态变量不确定性及不同分量线性相关性的矩阵。
+Gaussian Distribution|高斯分布||由均值与协方差参数确定的连续多元概率分布。
+Bayes Filter|贝叶斯滤波||通过预测和测量更新递归估计状态后验分布的方法。
+Prediction Step|滤波预测步骤||使用上一时刻后验与运动模型推算当前状态先验的步骤。
+Measurement Update|测量更新步骤||将当前观测似然与预测先验结合得到状态后验的过程。
+Kalman Filter|卡尔曼滤波器|KF|对线性高斯状态空间模型递归计算最优均方误差估计的滤波方法。
+Extended Kalman Filter|扩展卡尔曼滤波|EKF|对非线性模型在当前估计附近线性化并更新高斯状态的滤波方法。
+Unscented Kalman Filter|无迹卡尔曼滤波|UKF|通过确定性采样点传播非线性分布近似的高斯滤波方法。
+Information Filter|信息滤波||使用逆协方差及信息向量表示高斯后验的递归估计方法。
+Particle Filter|粒子滤波|PF|用带权随机样本近似非高斯后验状态分布的序贯蒙特卡洛方法。
+Importance Weight|重要性权重||用于校正粒子采样分布与目标后验差异的非负样本权重。
+Resampling|粒子重采样||根据归一化权重重新选择粒子以减少无效低权重样本的过程。
+Particle Degeneracy|粒子退化||粒子权重逐渐集中到极少数样本、降低有效粒子多样性的现象。
+Effective Sample Size|有效样本量|ESS|衡量粒子权重分布相当于多少独立等权样本的指标。
+Innovation|滤波新息||实际测量与基于预测状态所预期测量之间的残差。
+Mahalanobis Distance|马氏距离||根据协方差逆矩阵对观测误差进行尺度与相关性归一化的距离。
+Data Association|数据关联||判断当前传感器观测对应哪个已知目标或地图特征的过程。
+Outlier Rejection|离群观测剔除||根据统计或几何一致性识别并排除异常测量的策略。
+Observability|可观测性||系统内部状态是否能够根据一定时间范围的输入输出历史唯一推断的性质。
+
+# SLAM、视觉里程计与因子图优化
+Simultaneous Localization and Mapping|即时定位与建图|SLAM|在未知环境中根据观测联合估计机器人位姿及环境地图的问题。
+Localization|机器人定位||给定地图或参考信息估计机器人当前位姿的任务。
+Mapping|环境建图||把传感数据整合成可用于定位、规划或理解的环境表示的过程。
+Odometry|里程计||根据相对运动测量累积估计机器人位姿变化的方法或输出。
+Visual Odometry|视觉里程计|VO|从连续相机图像中估计相机相对运动的过程。
+LiDAR Odometry|激光里程计||通过连续点云匹配或特征跟踪估计传感器运动的方法。
+Visual–Inertial Odometry|视觉惯性里程计|VIO|结合相机观测与 IMU 测量估计连续位姿和运动状态的技术。
+Visual SLAM|视觉 SLAM||主要依靠相机图像执行定位、数据关联及地图构建的 SLAM 系统。
+LiDAR SLAM|激光 SLAM||主要使用激光距离点云估计位姿与环境结构的 SLAM 方法。
+Loop Closure|回环闭合||识别机器人重新访问旧地点并在位姿图中施加跨时刻约束的过程。
+Place Recognition|地点识别||根据视觉、几何或其他感知特征识别此前访问地点的任务。
+Scan Matching|扫描匹配||寻找不同激光扫描或点云之间最优空间对齐关系的过程。
+Iterative Closest Point|迭代最近点|ICP|交替建立点集最近邻关系并估计刚体变换的配准算法。
+Generalized ICP|广义迭代最近点|GICP|结合点云局部协方差信息构造匹配代价的 ICP 变体。
+Normal Distributions Transform|正态分布变换|NDT|以网格化局部高斯分布表达参考点云并求扫描对齐的方法。
+Feature-based SLAM|特征式 SLAM||利用角点、关键点或稀疏几何特征建立测量约束的 SLAM 方案。
+Direct Visual SLAM|直接法视觉 SLAM||通过图像像素灰度或光度误差直接约束相机运动的 SLAM 方法。
+Keyframe Selection|关键帧选择||挑选具有足够视角或时间差异的观测帧参与建图与优化的过程。
+Factor Graph|因子图||用变量节点与局部约束因子分解概率或优化目标的图形表示。
+Pose Graph|位姿图||以机器人不同时刻位姿为节点、相对位姿约束为边的图结构。
+Pose Graph Optimization|位姿图优化||联合调整位姿节点以减小里程计和回环等约束残差的优化问题。
+Bundle Adjustment|光束法平差|BA|同时优化相机位姿与三维地图点以减小多视图重投影误差的技术。
+Sliding-window Optimization|滑动窗口优化||只联合优化最近一段时间内的状态与关联观测的估计方法。
+Marginalization|边缘化||从联合概率分布或优化问题中消去不再显式维护的状态变量的过程。
+Gauge Freedom|规范自由度||在缺少绝对参考约束时全局平移、旋转或尺度等变换不改变相对测量的性质。
+
+# 地图表示、环境感知与定位融合
+Occupancy Grid Map|占据栅格地图||将空间离散为单元并表示各单元被障碍物占据概率的地图。
+Log-odds Occupancy|对数几率占据表示||以概率几率的对数形式累计传感器对栅格占据的证据。
+Costmap|代价地图||为地图位置分配运动风险或通行成本、辅助规划的空间表示。
+Inflation Layer|障碍物膨胀层||按机器人外形及安全距离增加障碍物附近导航代价的地图处理层。
+Signed Distance Field|有符号距离场|SDF|按到障碍表面距离及内外符号表达空间几何的连续或离散场。
+Euclidean Signed Distance Field|欧氏有符号距离场|ESDF|以欧氏最近表面距离作为空间场数值的地图表示。
+Truncated Signed Distance Field|截断有符号距离场|TSDF|仅在表面附近保留截断距离值以融合深度测量的体积地图。
+Voxel Map|体素地图||使用三维离散空间单元组织环境占据或语义信息的地图。
+Octree Map|八叉树地图||通过递归八分空间建立可变分辨率三维地图的结构。
+Point Cloud Map|点云地图||以大量空间测量点及其属性保存环境几何的地图。
+Semantic Map|语义地图||在几何结构上附加物体类别、区域功能或任务属性的环境表示。
+Topological Map|拓扑地图||以地点节点及其可达关系边抽象环境连接结构的地图。
+Metric Map|度量地图||以有实际距离意义的坐标与几何测量描述环境结构的地图。
+Landmark|地图地标||可被重复观测、用于定位和图优化的稳定环境特征。
+Landmark Association|地标关联||确定新的测量是否对应地图内已有地标的判别过程。
+Map Resolution|地图分辨率||每个栅格或体素在真实空间中所代表的物理尺寸。
+Map Origin|地图原点||定义栅格索引或坐标数值对应实际位置的固定参考点。
+Map Frame|地图坐标系||在地图范围内稳定描述机器人和环境位置的参考坐标系。
+Odometry Frame|里程计坐标系||通常保持局部运动连续、但允许长期累计漂移的定位坐标系。
+Transform Tree|坐标变换树||组织机器人各坐标系父子关系并可查询时变变换的树形结构。
+Multi-sensor Extrinsics|多传感器外参||描述激光雷达、摄像头、IMU 等固定安装坐标系相对位姿的参数。
+Obstacle Detection|障碍物检测||从感知数据中识别可能阻挡机器人运动的实体或区域的过程。
+Free-space Detection|可通行空间识别||估计当前环境中可安全通行或可用于规划的空间区域。
+Terrain Traversability|地形可通行性||根据坡度、粗糙度和地表性质判断移动机器人能否安全通过的属性。
+Map Consistency|地图一致性||不同时间或视角的环境观测在统一坐标与几何结构中相容的性质。
+
+# 路径搜索、配置空间与经典运动规划
+Configuration Space|构型空间|C-space|所有满足机构配置参数定义的点组成的空间。
+Configuration Obstacle|构型障碍空间|C-obs|导致机器人与障碍碰撞的关节或位姿配置集合。
+Free Configuration Space|自由构型空间|C-free|不发生碰撞并满足规定几何约束的构型集合。
+Collision Checking|碰撞检测||判断候选机器人构型或连续运动路径是否与环境几何冲突的过程。
+Self-collision Checking|自碰撞检测||识别机器人自身不同连杆或部件之间不允许的几何相交。
+Collision Geometry|碰撞几何||为快速距离和求交运算使用的简化或原始几何模型。
+Distance Query|几何距离查询||计算两个物体或构型之间的最近距离及关联几何信息的操作。
+Graph Search|图搜索||在节点和边描述的离散空间中寻找满足目标的可达路径的方法。
+Breadth-first Search|广度优先搜索|BFS|按离起点的边数逐层扩展图节点、可求无权最短路的算法。
+Dijkstra Algorithm|迪杰斯特拉算法||在非负边权图中按当前最小累计代价扩展节点的最短路径算法。
+A-star Search|A 星搜索|A*|使用已付出代价与到目标启发式估计之和决定搜索优先级的算法。
+Heuristic Function|启发式函数||估计搜索状态到目标剩余代价以指导扩展顺序的函数。
+Admissible Heuristic|可采纳启发式||对最小剩余代价始终不高估的启发式估计。
+Consistent Heuristic|一致启发式||满足图边三角型不等式条件的启发式函数。
+Grid-based Planning|栅格规划||将空间离散为栅格单元并在邻接关系图上搜索路径的方法。
+Visibility Graph|可见图||用障碍物顶点等关键点和无碰撞直连边组成的规划图。
+Voronoi Roadmap|Voronoi 路网||通过障碍物之间相对等距的几何骨架构建可通行路径网络的技术。
+Wavefront Planner|波前规划||从目标向外传播离散代价或距离并沿梯度回溯路径的算法。
+Potential Field Method|人工势场法||将目标吸引和障碍排斥建模为势能或速度场引导运动的方法。
+Local Minimum Trap|局部极小值陷阱||人工势场等局部规划方法停留在非目标稳定点的现象。
+Path Smoothing|路径平滑||减少离散路径折角并改善几何连续性和可执行性的后处理。
+Shortest Path|最短路径||在给定长度或权重定义下累计代价最小的可行路径。
+Path Clearance|路径净空||路径与最近障碍物之间的最小几何距离。
+Homotopy Class|同伦类||在不穿过障碍的连续变形意义下属于同一类型的路径集合。
+Completeness|规划完备性||在满足算法假设时若存在可行解则最终能够找到的保证性质。

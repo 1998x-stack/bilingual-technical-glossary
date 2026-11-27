@@ -1,0 +1,107 @@
+# 语义、实例与全景图像分割
+Image Segmentation|图像分割||为像素或图像区域分配类别、实例或其他一致性标签的任务。
+Semantic Segmentation|语义分割||预测每个像素所属语义类别、通常不区分同类不同实例的任务。
+Instance Segmentation|实例分割||同时识别每个物体实例并输出其像素级掩码的任务。
+Panoptic Segmentation|全景分割||为所有像素分配语义标签，同时为可数物体区分实例身份的任务。
+Binary Segmentation|二值分割||将图像像素划分为前景和背景两个类别的任务。
+Segmentation Mask|分割掩码||记录像素类别、目标实例或区域归属的二维标签表示。
+Pixel-wise Classification|逐像素分类||将每个图像像素作为预测单位分配类别标签的方法。
+Fully Convolutional Network|全卷积网络|FCN|利用全卷积层实现任意尺寸输入的稠密空间预测的架构。
+U-Net|U-Net 分割网络||采用对称编码解码路径与跳跃连接的图像分割架构。
+Encoder–Decoder Segmentation|编码器—解码器分割||先压缩图像特征再逐步恢复空间分辨率的稠密预测结构。
+Skip Fusion|跳跃特征融合||把编码器高分辨率特征与解码器特征合并以恢复精细边界的技术。
+Atrous Convolution|空洞卷积|Atrous|通过在卷积核元素间插入采样间隔扩大感受野而不同比例降低分辨率的运算。
+Atrous Spatial Pyramid Pooling|空洞空间金字塔池化|ASPP|并行采用不同空洞率卷积聚合多尺度上下文的模块。
+DeepLab|DeepLab 分割模型||结合空洞卷积和多尺度上下文的语义分割架构系列。
+Pyramid Pooling Module|金字塔池化模块|PPM|在多个空间尺度对特征进行池化和聚合的网络组件。
+Mask Head|掩码预测头||将区域或像素特征映射为目标分割概率图的网络分支。
+Mask IoU|掩码交并比||预测实例像素掩码与参考掩码交集与并集的比值。
+Mean IoU|平均交并比|mIoU|对类别交并比分别计算后再取算术平均的分割指标。
+Dice Coefficient|Dice 相似系数|Dice|以两倍交集规模除以两个区域规模之和衡量掩码重叠的指标。
+Dice Loss|Dice 损失||由 Dice 重叠度构造、常用于医学等前景不平衡分割的损失。
+Boundary-aware Loss|边界感知损失||对分割边缘位置施加额外约束以改善区域轮廓的训练目标。
+Interactive Segmentation|交互式分割||结合用户点击、框或其他提示进行像素区域划分的任务。
+Segment Anything Model|通用提示式分割模型|SAM|通过点、框等提示预测分割掩码的视觉基础模型方案。
+Promptable Segmentation|可提示分割||根据外部空间或语义提示决定需要分割对象的模型机制。
+Open-vocabulary Segmentation|开放词表分割||使用自由文本类别或开放概念定义执行像素级识别的任务。
+
+# 人体姿态、关键点与多目标跟踪
+Human Pose Estimation|人体姿态估计||根据图像估计人体关节位置及骨架结构的任务。
+2D Keypoint Detection|二维关键点检测||预测关节、面部或物体关键部位在图像平面中的坐标。
+3D Human Pose Estimation|三维人体姿态估计||推断人体关键点在三维坐标系中的位置及骨架构型。
+Pose Heatmap|姿态热力图||为每个关键点生成空间概率或响应分布的模型输出。
+Skeleton Representation|骨架表示||用关节节点及其连接边描述人体或物体关节结构的表示。
+Top-down Pose Estimation|自顶向下姿态估计||先检测人体区域，再在每个区域内预测关节位置的策略。
+Bottom-up Pose Estimation|自底向上姿态估计||先检测全图关节，再把它们分组为不同人体实例的方法。
+Part Affinity Field|部件亲和场|PAF|用方向向量场描述不同人体关节间关联的姿态估计表示。
+OpenPose|OpenPose 姿态估计||使用部件亲和场组装多人关键点的经典实时姿态估计框架。
+COCO Keypoints|COCO 人体关键点标注||COCO 数据集采用的标准人体关节位置与可见性标注体系。
+Object Tracking|目标跟踪||在连续视频帧中估计目标位置并尽量保持身份的一类任务。
+Single Object Tracking|单目标跟踪|SOT|给定初始目标后在后续视频帧持续定位它的任务。
+Multiple Object Tracking|多目标跟踪|MOT|在视频中检测多个目标并维护其跨帧身份一致性的任务。
+Tracklet|短轨迹||视频序列中连续若干帧的局部目标关联结果。
+Data Association|数据关联||在不同帧或传感器观测间判断哪些检测属于同一目标的过程。
+Kalman Filter|卡尔曼滤波器|KF|在线性高斯状态空间模型下递推估计隐状态及其协方差的方法。
+Hungarian Algorithm|匈牙利匹配算法||求解二分图指派问题最小总代价匹配的组合优化算法。
+SORT|简单在线实时跟踪|SORT|组合检测框、卡尔曼滤波和匹配进行多目标跟踪的系统。
+DeepSORT|深度关联 SORT|DeepSORT|引入外观特征辅助跨帧数据关联的多目标跟踪方案。
+ByteTrack|ByteTrack 跟踪器||同时利用高分与低分检测框关联轨迹的多目标跟踪方法。
+Track ID|轨迹身份编号||为视频中同一目标跨帧观测赋予的标识符。
+ID Switch|身份切换|IDSW|跟踪器把同一真实目标错误关联到不同轨迹身份的现象。
+Occlusion Handling|遮挡处理||目标被其他物体部分或全部挡住时维持定位及身份的策略。
+Re-identification|目标重识别|ReID|跨不同时间或相机判断两个外观观测是否对应同一身份的任务。
+Multi-object Tracking Accuracy|多目标跟踪准确率|MOTA|综合漏检、误检与身份切换等误差的经典跟踪指标。
+
+# 三维视觉、点云、体素与场景重建
+3D Reconstruction|三维重建||从图像、深度或其他观测估计场景几何及外观的任务。
+Multi-view Stereo|多视图立体重建|MVS|利用多张已定位图像恢复稠密场景深度或表面的技术。
+Surface Reconstruction|表面重建||从离散点、深度或隐式场估计连续物体表面的过程。
+3D Point Registration|三维点云配准||估计不同点云间的旋转、平移或其他空间对应关系的任务。
+Iterative Closest Point|迭代最近点|ICP|交替建立点集对应并求解配准变换的经典算法。
+Voxel|体素||对三维空间按网格划分的基本体积单元。
+Voxel Grid|体素网格||将三维空间离散为规则体积单元的数据表示。
+Occupancy Grid|占据栅格||为每个空间网格单元表示被物体占据概率或状态的地图。
+Signed Distance Function|有符号距离函数|SDF|按点到表面的有向距离表示三维几何形状的函数。
+Truncated Signed Distance Function|截断有符号距离函数|TSDF|将表面距离截断到局部带宽内、便于多帧深度融合的场表示。
+Mesh|三角网格||通过顶点、边和面片近似三维物体表面的几何表示。
+Mesh Vertex|网格顶点||定义三角网格位置和可选属性的三维点。
+Mesh Face|网格面片||由若干顶点构成、用于覆盖曲面的几何多边形单元。
+Surface Normal|表面法向||描述三维表面某点局部垂直方向的单位向量。
+PointNet|PointNet 点云模型||利用共享点特征提取和对称聚合处理无序点集的神经网络。
+PointNet++|PointNet++ 层次点云网络||在 PointNet 基础上分层采样局部邻域学习几何特征的模型。
+Point Cloud Segmentation|点云分割||为三维点云的每个点预测语义类别或实例标签的任务。
+3D Object Detection|三维目标检测||估计目标在三维空间中位置、尺度、朝向及类别的任务。
+Bird's-eye View|俯视图表示|BEV|把三维环境投影到地面平面组织空间特征的表示。
+LiDAR|激光雷达|LiDAR|通过激光测距获取场景空间点或深度信息的传感技术。
+Depth Fusion|深度融合||把多帧或多传感器深度观测组合为更稳定三维表示的过程。
+Volumetric Fusion|体积融合||将多个视角测量整合进 TSDF 等三维体积场的重建方法。
+Implicit Surface Representation|隐式表面表示||以连续函数零水平集或占据概率描述三维物体表面的方式。
+Chamfer Distance|Chamfer 距离||用双向最近点距离统计比较两个点集几何差异的指标族。
+Earth Mover's Distance|推土机距离|EMD|求解两个点集或分布质量重新匹配的最小运输代价的距离。
+
+# 神经渲染、NeRF 与三维高斯表示
+Neural Rendering|神经渲染||通过可学习神经表示合成图像、视角或光照变化的技术。
+Novel View Synthesis|新视角合成|NVS|根据已知视图和场景表示生成未观察相机位置图像的任务。
+Neural Radiance Field|神经辐射场|NeRF|用连续神经函数表示空间位置与视角相关的颜色及密度并通过体渲染合成图像的方法。
+Volume Rendering|体渲染||沿相机射线累积介质密度及辐射颜色形成像素的渲染过程。
+Ray Marching|光线步进||沿空间射线按步长采样并累积颜色、密度或距离信息的数值渲染方法。
+Ray Sampling|光线采样||选取相机射线上的空间点用于估计体渲染积分的过程。
+Positional Encoding for NeRF|NeRF 位置编码||通过多频率函数映射坐标以帮助网络表示高频细节的技术。
+Hierarchical Sampling|分层射线采样||利用粗采样估计重要区域，再分配精细采样点的策略。
+View-dependent Appearance|视角相关外观||表面颜色或反射亮度随观察方向变化的现象及其模型表达。
+Density Field|空间密度场||为三维坐标分配体积密度值、用于体渲染吸收与透射的连续函数。
+Transmittance|透射率||表示沿射线到指定深度仍未被介质遮挡或吸收的比例。
+Photometric Reconstruction Loss|光度重建损失||比较合成视图与参考图像像素颜色差异的优化目标。
+Instant-NGP|即时神经图形基元|Instant-NGP|利用多分辨率哈希编码与高效 GPU 实现加速神经场训练和查询的方法。
+Hash Grid Encoding|哈希网格编码||以多尺度可训练网格特征和哈希表编码空间坐标的技术。
+Tri-plane Representation|三平面表示||利用三个正交二维特征平面表示三维场景特征的紧凑结构。
+3D Gaussian Splatting|三维高斯泼溅|3DGS|用可优化三维高斯基元表示场景并通过屏幕空间投影合成新视角的方法。
+Gaussian Primitive|高斯基元||具有三维位置、协方差、颜色或不透明度参数的可渲染空间元素。
+Gaussian Covariance|高斯协方差矩阵||控制三维高斯基元形状、尺度与方向的对称正定矩阵。
+Splatting Rasterization|泼溅光栅化||将空间基元投影成屏幕覆盖斑块并进行颜色混合的渲染方式。
+Opacity Parameter|不透明度参数||控制空间基元对像素遮挡与颜色累积贡献的数值。
+Novel-view Consistency|新视角一致性||场景表示从不同相机位置渲染时保持合理几何和外观的性质。
+Differentiable Rendering|可微渲染||允许图像误差梯度反向传播至几何、材质或相机参数的渲染过程。
+Inverse Rendering|逆向渲染||根据观测图像反推场景几何、材质、照明或相机属性的任务。
+Radiance Field Compression|辐射场压缩||降低神经辐射场或空间基元存储与渲染成本的技术。
+View Synthesis Artifact|视角合成伪影||由几何估计、遮挡或采样不足造成的合成图像结构错误。

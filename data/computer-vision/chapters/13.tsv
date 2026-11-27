@@ -1,0 +1,26 @@
+# 语义、实例与全景图像分割
+Image Segmentation|图像分割||为像素或图像区域分配类别、实例或其他一致性标签的任务。
+Semantic Segmentation|语义分割||预测每个像素所属语义类别、通常不区分同类不同实例的任务。
+Instance Segmentation|实例分割||同时识别每个物体实例并输出其像素级掩码的任务。
+Panoptic Segmentation|全景分割||为所有像素分配语义标签，同时为可数物体区分实例身份的任务。
+Binary Segmentation|二值分割||将图像像素划分为前景和背景两个类别的任务。
+Segmentation Mask|分割掩码||记录像素类别、目标实例或区域归属的二维标签表示。
+Pixel-wise Classification|逐像素分类||将每个图像像素作为预测单位分配类别标签的方法。
+Fully Convolutional Network|全卷积网络|FCN|利用全卷积层实现任意尺寸输入的稠密空间预测的架构。
+U-Net|U-Net 分割网络||采用对称编码解码路径与跳跃连接的图像分割架构。
+Encoder–Decoder Segmentation|编码器—解码器分割||先压缩图像特征再逐步恢复空间分辨率的稠密预测结构。
+Skip Fusion|跳跃特征融合||把编码器高分辨率特征与解码器特征合并以恢复精细边界的技术。
+Atrous Convolution|空洞卷积|Atrous|通过在卷积核元素间插入采样间隔扩大感受野而不同比例降低分辨率的运算。
+Atrous Spatial Pyramid Pooling|空洞空间金字塔池化|ASPP|并行采用不同空洞率卷积聚合多尺度上下文的模块。
+DeepLab|DeepLab 分割模型||结合空洞卷积和多尺度上下文的语义分割架构系列。
+Pyramid Pooling Module|金字塔池化模块|PPM|在多个空间尺度对特征进行池化和聚合的网络组件。
+Mask Head|掩码预测头||将区域或像素特征映射为目标分割概率图的网络分支。
+Mask IoU|掩码交并比||预测实例像素掩码与参考掩码交集与并集的比值。
+Mean IoU|平均交并比|mIoU|对类别交并比分别计算后再取算术平均的分割指标。
+Dice Coefficient|Dice 相似系数|Dice|以两倍交集规模除以两个区域规模之和衡量掩码重叠的指标。
+Dice Loss|Dice 损失||由 Dice 重叠度构造、常用于医学等前景不平衡分割的损失。
+Boundary-aware Loss|边界感知损失||对分割边缘位置施加额外约束以改善区域轮廓的训练目标。
+Interactive Segmentation|交互式分割||结合用户点击、框或其他提示进行像素区域划分的任务。
+Segment Anything Model|通用提示式分割模型|SAM|通过点、框等提示预测分割掩码的视觉基础模型方案。
+Promptable Segmentation|可提示分割||根据外部空间或语义提示决定需要分割对象的模型机制。
+Open-vocabulary Segmentation|开放词表分割||使用自由文本类别或开放概念定义执行像素级识别的任务。

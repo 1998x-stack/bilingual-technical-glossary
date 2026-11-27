@@ -1,0 +1,107 @@
+# 句法分析、依存结构与语法表示
+Syntactic Parsing|句法分析||根据语法规则推断句子的组成关系或词间依存结构的任务。
+Constituency Parsing|成分句法分析||把句子组织为嵌套短语节点的树形结构分析。
+Dependency Parsing|依存句法分析||预测词与词之间以中心词和依存关系构成的结构。
+Constituency Tree|成分句法树||以短语非终结符与词项终结符表示句子层级结构的树。
+Dependency Tree|依存句法树||以词为节点、依存边表示语法支配关系的树结构。
+Head Word|中心词||在短语或依存结构中决定主要句法性质的词。
+Dependent|依存词||在依存分析中通过语法边连接到中心词的词元。
+Dependency Relation|依存关系标签||表示词与中心词之间主语、宾语、修饰等语法关系的类别。
+Dependency Arc|依存弧||从一个中心词指向其依存词的有向语法边。
+Projective Dependency Tree|投射依存树||在词序上依存边能够满足特定不交叉条件的依存树。
+Non-projective Dependency Tree|非投射依存树||含有跨越结构、无法用简单投射树表示的依存结构。
+Transition-based Parsing|基于转移的句法分析||通过堆栈、缓冲区和一系列转移动作构建句法树的方法。
+Graph-based Parsing|基于图的句法分析||在候选语法边或结构的评分空间中搜索最佳句法树的方法。
+Context-free Grammar|上下文无关文法|CFG|产生式左侧只有一个非终结符的形式文法。
+Probabilistic Context-free Grammar|概率上下文无关文法|PCFG|为 CFG 产生式赋予概率并推断解析树的文法模型。
+Production Rule|产生式规则||说明非终结符可替换为哪些符号序列的形式语法规则。
+Nonterminal Symbol|非终结符||表示可继续展开的语法类别或短语类别的文法符号。
+Terminal Symbol|终结符||形式文法中不再由产生式展开的基本符号。
+Parse Chart|解析图表||保存子串或跨度解析结果以避免重复计算的动态规划结构。
+CKY Algorithm|CKY 句法分析算法|CKY|在适当文法范式下利用区间动态规划寻找成分解析结构的算法。
+Earley Parser|Earley 解析器||使用预测、扫描和完成操作处理上下文无关文法的图表解析算法。
+Head-driven Phrase Structure Grammar|中心词驱动短语结构语法|HPSG|结合特征结构与类型约束描述词汇和句法的形式语法理论。
+Combinatory Categorial Grammar|组合范畴语法|CCG|用词汇范畴和组合规则统一描述句法与语义组合的语法理论。
+Grammatical Agreement|语法一致关系||词语在数、性、人称等语法特征上满足一致约束的现象。
+Syntactic Ambiguity|句法歧义||同一句子能够获得多个合理句法结构或附着关系的现象。
+
+# 语义表示、语用与篇章理解
+Compositional Semantics|组合语义||通过子表达式意义及其组合方式计算整体意义的理论。
+Semantic Parsing|语义解析||把自然语言转换为逻辑形式、程序或其他结构化语义表示的任务。
+Logical Form|逻辑形式||使用符号表达式描述话语真值条件或关系结构的表示。
+Predicate–Argument Structure|谓词—论元结构||描述事件或状态谓词及其参与实体语义角色的结构。
+Semantic Role Labeling|语义角色标注|SRL|识别谓词关联参与者并分配施事、受事等语义角色的任务。
+Agent Role|施事角色||语义角色体系中主动发起或控制事件的参与者。
+Patient Role|受事角色||在事件中受到动作影响或状态改变的参与者。
+Thematic Role|题元角色||用来表征事件参与者语义功能的角色类别。
+Coreference Resolution|共指消解||识别文本中哪些提及指向同一实体的任务。
+Anaphora Resolution|回指消解||确定代词或其他回指表达与先前语言单位对应关系的任务。
+Entity Mention|实体提及||文本中指向某个实体的一个词语或连续片段。
+Discourse Relation|篇章关系||表示句段之间因果、对比、解释和条件等连贯关系的语义关系。
+Discourse Coherence|篇章连贯性||文本不同部分在主题、指代和逻辑组织上形成整体意义的性质。
+Discourse Representation Theory|篇章表示理论|DRT|利用篇章表示结构描述量词、指代和跨句语义的理论。
+Presupposition|预设||话语中被当作背景已知或默认成立的命题内容。
+Implicature|会话含义||说话者借助语境和交际原则传递、未直接编码的附加意义。
+Entailment|语义蕴含||一个命题成立时能够逻辑保证另一命题成立的关系。
+Contradiction|语义矛盾||两个命题在同一解释条件下不可能同时为真的关系。
+Natural Language Inference|自然语言推断|NLI|判断前提对假设构成蕴含、矛盾或中立关系的任务。
+Textual Entailment|文本蕴含||判断一个文本陈述能否支持另一个陈述成立的语义推断问题。
+Semantic Similarity|语义相似度||衡量两个文本片段意义接近程度的数值或等级。
+Semantic Textual Similarity|语义文本相似度|STS|为两个文本的语义等价或接近程度预测连续评分的任务。
+Semantic Frame|语义框架||以事件或情境及其角色组织词汇意义的知识表示。
+FrameNet|FrameNet 语义框架资源||按语义框架与框架元素标注词汇使用的语言知识库。
+Pragmatic Context|语用语境||影响话语解释的说话者意图、对话历史和社会情境信息。
+
+# 统计语言模型、N-gram 与概率推断
+N-gram|N 元语法片段|N-gram|由连续 N 个词元构成的序列特征。
+Unigram Model|一元语言模型||把词元独立或按边际频率建模的简单概率模型。
+Bigram Model|二元语言模型||使用前一个词元预测当前词元概率的语言模型。
+Trigram Model|三元语言模型||使用前两个词元预测当前词元的语言模型。
+Markov Assumption|马尔可夫假设||假定当前状态或词元仅依赖有限历史状态的近似条件。
+Chain Rule of Probability|概率链式法则||将序列联合概率表示为各位置条件概率乘积的恒等式。
+Conditional Probability|条件概率||在给定某事件或上下文条件下另一事件成立的概率。
+Maximum Likelihood Estimation|极大似然估计|MLE|选择使观察语料概率达到最大值的模型参数估计原则。
+Count-based Language Model|计数型语言模型||通过统计离散词元和上下文共现次数估计序列概率的模型。
+Sparse Data Problem|数据稀疏问题||训练样本中大量可能的词序列未出现、使概率估计不稳的现象。
+Smoothing|概率平滑||重新分配计数模型概率质量以处理未见或低频事件的方法。
+Add-one Smoothing|加一平滑|Laplace|为每种词项计数加一的简单平滑估计技术。
+Add-k Smoothing|加 k 平滑||为每个事件计数加入正伪计数 k 的估计方法。
+Good–Turing Estimation|古德—图灵估计||依据事件频次的频次数目调整低频与未见事件概率的技术。
+Backoff Language Model|回退语言模型||高阶上下文统计不足时退回低阶语言模型估计的策略。
+Interpolation|概率插值||通过加权组合不同阶数或不同来源的概率估计缓解稀疏性的方法。
+Kneser–Ney Smoothing|克内瑟—内伊平滑||利用折扣和不同历史上下文多样性构造高质量 N-gram 平滑概率的方法。
+Modified Kneser–Ney|改进 Kneser–Ney 平滑||根据计数大小采用不同折扣的 Kneser–Ney 估计变体。
+Discounting|计数折扣||从已见事件计数中扣除部分概率质量以分配给其他事件的方法。
+Perplexity|困惑度|PPL|模型在给定 tokenization 下平均负对数似然的指数，用于评价预测不确定性。
+Cross Entropy|交叉熵||按真实分布或数据样本对模型对数概率取负期望的量。
+Entropy Rate|熵率||随机过程每个新符号在无限历史条件下的平均信息量。
+Hidden Markov Model|隐马尔可夫模型|HMM|通过潜在状态转移与观测发射概率建模序列的概率模型。
+Viterbi Algorithm|维特比算法||对状态序列概率模型用动态规划寻找概率最大路径的算法。
+Forward–Backward Algorithm|前向—后向算法||通过双向动态规划计算 HMM 等模型隐状态边际概率的算法。
+
+# 特征工程、判别模型与序列分类
+Bag-of-words|词袋模型|BoW|忽略词序、用词频或二值特征表示文本的模型。
+Term Frequency|词频|TF|某个词项在文档中出现的次数或归一化次数。
+Inverse Document Frequency|逆文档频率|IDF|反映词项在文档集合中相对稀有程度的统计权重。
+TF–IDF|词频—逆文档频率|TF-IDF|结合文档词频与全语料稀有度构建词项权重的表示。
+Feature Extraction|特征提取||把文本变成可供统计模型处理的数值或符号特征的过程。
+Feature Hashing|特征哈希||使用哈希函数将高维离散特征映射到固定维度空间的方法。
+Character N-gram Feature|字符 N 元组特征||通过连续字符子串捕获词形与拼写信息的文本特征。
+Lexical Feature|词汇特征||基于词项、词形或词典匹配而构造的分类或标注输入特征。
+Contextual Feature|上下文特征||反映当前词元邻近词和其他上下文信息的模型特征。
+Naive Bayes Classifier|朴素贝叶斯分类器|NB|在给定类别时假设特征条件独立的概率分类模型。
+Multinomial Naive Bayes|多项式朴素贝叶斯||对词频或离散计数使用多项式生成假设的朴素贝叶斯模型。
+Bernoulli Naive Bayes|伯努利朴素贝叶斯||以特征是否出现的二元变量构造似然的朴素贝叶斯模型。
+Logistic Regression|逻辑回归||通过线性打分与 logistic 或 softmax 链接预测类别概率的模型。
+Linear Support Vector Machine|线性支持向量机|SVM|以最大间隔或软间隔准则学习线性分类边界的模型。
+Maximum Entropy Classifier|最大熵分类器|MaxEnt|在特征约束下选择最大熵条件分布的判别分类器，常等价于对数线性模型。
+Conditional Random Field|条件随机场|CRF|对给定输入条件下结构化标签联合分布建模的判别概率模型。
+Linear-chain CRF|线性链条件随机场||以相邻标签依赖和输入特征建模序列标签的 CRF 结构。
+Structured Prediction|结构化预测||输出标签、树或图等相互依赖对象而非单个类别的预测任务。
+Sequence Classification|序列分类||为整个句子、段落或其他序列预测单一类别的任务。
+Multilabel Classification|多标签分类||允许同一文本同时归属多个非互斥类别的分类任务。
+Hierarchical Classification|层次分类||在树或层级标签体系中预测一个或多个类别的分类任务。
+Class Imbalance|类别不平衡||训练或评估样本在不同标签上的数量分布明显不均的现象。
+Cost-sensitive Learning|代价敏感学习||在训练目标中对不同预测错误赋予不同成本的学习方法。
+Class Weighting|类别加权||按类别频率或重要性调整训练损失贡献的策略。
+Calibration|概率校准||使模型预测概率与相应样本真实发生频率相符合的性质或调整过程。

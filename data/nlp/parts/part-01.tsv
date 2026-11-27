@@ -1,0 +1,107 @@
+# NLP 领域概述与语言处理层次
+Natural Language Processing|自然语言处理|NLP|研究计算机理解、分析与生成人类语言的方法及应用。
+Computational Linguistics|计算语言学|CL|使用计算模型研究语言结构、使用与处理的交叉学科。
+Language Understanding|语言理解|NLU|从文本或语音中推断语义、意图及相关信息的任务集合。
+Natural Language Generation|自然语言生成|NLG|把数据、结构或语义表示转换为自然语言表达的任务。
+Language Technology|语言技术||用于语言信息处理、翻译、检索和交互的软件与模型技术总称。
+Text Analytics|文本分析||从非结构化文本中抽取统计、主题、关系和其他可用信息的过程。
+Speech and Language Processing|语音与语言处理||联合研究语音信号与语言形式及意义的计算领域。
+Linguistic Level|语言分析层次||把语言现象划分为语音、形态、句法、语义和语用等不同研究层级的概念。
+Phonetics|语音学||研究语音声音的物理产生、传播和感知的学科。
+Phonology|音系学||研究语言中区别意义的语音组织规则及音位系统的学科。
+Morphology|形态学||研究词的内部构成及词形变化规则的语言学分支。
+Syntax|句法学||研究词语如何组合为短语和句子的结构与规则。
+Semantics|语义学||研究词语、短语和句子的语言意义及其组合关系。
+Pragmatics|语用学||研究话语在特定情境中如何传达超出字面形式的交际意义。
+Discourse Analysis|篇章分析||分析跨句子结构、衔接与交际目的的语言研究方法。
+Corpus Linguistics|语料库语言学||利用大量真实语言材料统计研究语言规律的方法。
+Language Modeling|语言建模||为词元序列及其条件延续分配概率或预测分数的任务。
+Text Classification|文本分类||把文本映射到预定义类别或标签集合的任务。
+Sequence Labeling|序列标注||为输入序列各个位置预测相应标签的任务。
+Machine Translation|机器翻译|MT|把源语言的内容自动转换为目标语言表达的任务。
+Question Answering|问答|QA|根据问题和可用知识或证据生成或抽取答案的任务。
+Information Extraction|信息抽取|IE|从文本中识别实体、事件、属性及关系并形成结构化结果的任务。
+Dialogue System|对话系统||通过多轮语言交互理解用户并产生回应的系统。
+Text Summarization|文本摘要||将一篇或多篇文本压缩为保留关键信息的简要表达的任务。
+Multilingual NLP|多语言自然语言处理||研究跨多种语言构建、训练和评估语言处理模型的方法。
+
+# 语料库、数据标注与语言资源
+Text Corpus|文本语料库||用于统计分析、训练或评测的文本资料集合。
+Parallel Corpus|平行语料库||含不同语言间对应句段或文档配对的语料集合。
+Monolingual Corpus|单语语料库||主要包含同一种语言文本的语料集合。
+Comparable Corpus|可比语料库||不同语言或领域主题相似但未逐句对齐的文本集合。
+Annotated Corpus|标注语料库||包含实体、句法、情感等人工或程序标签的文本集合。
+Raw Corpus|原始语料库||尚未经过目标任务特定标注和深度清洗的语言数据集合。
+Treebank|句法树库||为句子标注成分树或依存关系等句法结构的语料资源。
+Universal Dependencies|通用依存关系框架|UD|提供跨语言词性、形态特征和依存句法标注规范的项目体系。
+CoNLL Format|CoNLL 数据格式||用于序列标注、句法分析等共享任务的若干结构化文本格式。
+CoNLL-U|通用依存关系文件格式|CoNLL-U|用于 UD 标注的以行为词元、以列描述词性与依存关系的数据格式。
+Dataset Split|数据集划分||将样本分配到训练、验证和测试等用途的过程。
+Training Set|训练集||用于优化模型参数或学习统计模式的数据子集。
+Validation Set|验证集||用于模型选择、超参数调优与训练期间监控的独立数据子集。
+Test Set|测试集||用于训练完成后估计泛化性能的保留评估数据子集。
+Annotation Guideline|标注指南||规定标签定义、边界判断和例外处理的一套标注规则。
+Annotation Schema|标注模式||定义任务标签种类、层级、关系与数据结构的规范。
+Inter-annotator Agreement|标注者间一致性||衡量不同标注者对相同语料标注结果一致程度的指标。
+Cohen Kappa|科恩 Kappa 系数|κ|对两个标注者分类一致程度进行机会一致性校正的统计量。
+Fleiss Kappa|弗莱斯 Kappa 系数||对多个标注者的分类一致程度进行机会校正的统计量。
+Krippendorff Alpha|克里彭多夫 Alpha 系数|α|可用于多名标注者和多种测量尺度的一致性指标。
+Annotation Adjudication|标注仲裁||对存在分歧的标签进行复核并确定最终参考标签的流程。
+Data Provenance|数据来源溯源||记录语料出处、许可、采集方式和修改历史的元数据。
+Data Contamination|数据污染||训练数据包含测试答案或其他本不应泄漏内容导致评测失真的现象。
+Domain Shift|领域分布偏移||训练和实际应用中语言主题、风格或数据来源发生变化的现象。
+Corpus Sampling|语料抽样||按明确采样方案从目标语言材料中选择文本作为数据集的过程。
+
+# 文本规范化、分词与子词编码
+Text Normalization|文本规范化||把文本中编码、数字、缩写或书写变体转换为一致表示的过程。
+Sentence Segmentation|句子切分||识别文本中的句子或语句边界的处理。
+Word Segmentation|词语切分||将连续文本划分为语言词语单位的任务，在中文等语言中尤为重要。
+Tokenization|词元化||依据词表或规则将字符串分解为模型处理的 token 序列。
+Token|词元|Token|文本编码器定义的离散处理单元，可为词、子词、字符或特殊符号。
+Tokenizer|词元切分器||把文本映射为 token 或 token ID 序列的规则或模型。
+Subword Tokenization|子词切分||把文本划分为比完整词更细且可重用的子词单位的编码方式。
+Byte Pair Encoding|字节对编码|BPE|通过迭代合并高频相邻符号学习子词词表的编码算法族。
+WordPiece|WordPiece 子词算法|WordPiece|依据训练目标或统计准则学习子词词表的词元化方法。
+Unigram Language Model Tokenization|一元语言模型子词切分|Unigram|从候选子词词表中按概率模型选择切分的编码方法。
+SentencePiece|SentencePiece 词元化工具||直接处理原始文本并支持 BPE 与 Unigram 等编码方法的子词框架。
+Byte-level Tokenization|字节级词元化||以 UTF-8 字节等低层编码单元表示文本并构建词元序列的方案。
+Character-level Tokenization|字符级词元化||以 Unicode 字符或相近字符单位作为基本编码单元的方法。
+Whitespace Tokenization|空白符切分||利用空格和制表符等分隔符划分词元的简单规则。
+Vocabulary|词表||编码器允许表示的 token 与特殊符号的有限集合。
+Vocabulary Size|词表大小||词元编码系统中可使用的不同 token 数量。
+Token ID|词元编号||将某个词元映射到模型词表中的整数索引。
+Out-of-vocabulary Word|词表外词|OOV|在当前词表中没有对应完整条目的词或符号。
+Unknown Token|未知词元|UNK|某些编码器用于代表未收录词或符号的特殊 token。
+Special Token|特殊词元||表示开始、结束、填充或任务控制等非普通文字含义的词元。
+Padding Token|填充词元|PAD|把不同长度样本补齐为统一张量尺寸时使用的占位 token。
+Beginning-of-sequence Token|序列起始词元|BOS|标记输入或生成序列开始位置的特殊 token。
+End-of-sequence Token|序列结束词元|EOS|标记序列结束、可用于终止生成的特殊 token。
+Unicode Normalization|Unicode 规范化||按照 NFC、NFKC 等规则统一等价字符编码表示的过程。
+Detokenization|逆词元化||把生成或标注的词元序列还原为可阅读文本的过程。
+
+# 词形学、词汇语义与词典资源
+Morpheme|语素||语言中携带意义或语法功能的最小构词单位。
+Morphological Analysis|词形分析||把词分解为词根、词缀和词形特征等内部结构的过程。
+Lemma|词元基本形||词典中代表某一词形变化集合的规范词形。
+Lemmatization|词形还原||根据词汇和形态规则把屈折词形转换为基本形的处理。
+Stemming|词干提取||通过截断或规则把词形变体简化为共同词干的处理。
+Inflection|屈折变化||表达时态、数、格等语法信息而通常不改变词项类别的词形变化。
+Derivation|派生构词||通过词缀或其他手段产生具有新词汇意义的词的过程。
+Prefix|前缀||附着在词根前、改变词义或语法功能的构词单位。
+Suffix|后缀||附着在词根后、表达构词或屈折信息的构词单位。
+Compound Word|复合词||由两个或更多词根或词构成的词汇单位。
+Part-of-speech|词性|POS|按照词的句法与形态行为划分的名词、动词等语法类别。
+Lexeme|词位||将词形变体归为同一抽象词汇单位的语言学概念。
+Lexicon|词典知识库||记录词项形式、语义、词性和其他词汇特征的数据资源。
+Word Sense|词义项||多义词在特定语境下表达的一种可区分意义。
+Polysemy|一词多义||同一个词形承载多个相关意义的语言现象。
+Homonymy|同形同音异义||相同书写或发音形式对应彼此无关意义的现象。
+Synonymy|同义关系||不同词项在一定语境中意义相同或接近的语义关系。
+Antonymy|反义关系||两个词项在某一语义维度上表达对立意义的关系。
+Hypernymy|上位词关系||较一般概念包含较具体概念实例的词汇语义关系。
+Hyponymy|下位词关系||较具体概念属于某较一般概念类别的语义关系。
+Meronymy|部分—整体关系||一个实体或概念是另一整体组成部分的语义关系。
+WordNet|WordNet 词汇语义网络||以同义词集及语义关系组织英文词汇知识的语言资源。
+Synset|同义词集|Synset|WordNet 等资源中共同指向一个词义概念的词集合。
+Word Sense Disambiguation|词义消歧|WSD|根据上下文判断多义词所用具体词义的任务。
+Morphological Tagging|形态特征标注||为词元预测数、性、格、时态等语法形态属性的任务。

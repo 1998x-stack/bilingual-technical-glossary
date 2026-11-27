@@ -1,0 +1,107 @@
+# 视觉机器学习、图像分类与特征学习
+Image Classification|图像分类||给整张图像预测一个或多个语义类别的机器学习任务。
+Fine-grained Classification|细粒度图像分类||区分外观相似且同属大类的子类别或实例的分类任务。
+Multi-label Image Classification|多标签图像分类||允许一张图像同时具有多个非互斥类别标签的任务。
+Visual Feature Extraction|视觉特征提取||将原始像素转换成可用于分类、匹配或其他任务的表示。
+Handcrafted Feature|手工设计视觉特征||通过人工确定的图像算子和几何规则提取的特征。
+Learned Feature|学习型视觉特征||通过数据驱动优化模型参数获得的图像表示。
+Feature Vector|特征向量||用固定长度数值序列表示图像或局部区域的特征。
+Feature Map|特征图||神经网络中带空间位置与通道的中间激活张量。
+Representation Learning|表示学习||通过训练模型获得有利于下游视觉任务的中间特征的方法。
+K-nearest Neighbors|K 近邻分类|KNN|按照训练集中最近 K 个特征样本决定类别的分类算法。
+Linear Classifier|线性分类器||通过输入特征线性组合生成类别分数的模型。
+Softmax Classifier|Softmax 分类器||把类别 logits 经 Softmax 归一化为概率分布的分类器。
+Cross-entropy Loss|交叉熵损失||根据目标类别对模型概率预测取负对数的分类训练损失。
+Hinge Loss|合页损失||对类别间隔不足的预测施加线性惩罚的分类目标函数。
+Class Imbalance|类别不平衡||不同视觉类别训练或测试样本数量严重不均衡的现象。
+Class Weighting|类别权重调整||对不同类别的训练损失赋予差异权重以缓解不平衡的策略。
+Label Smoothing|标签平滑||把严格 one-hot 目标分布改为含少量其他类别概率的正则化方法。
+Top-1 Accuracy|Top-1 准确率||最高预测分数类别与参考标签相同的样本比例。
+Top-5 Accuracy|Top-5 准确率||参考类别位于预测排名前五的样本比例。
+Transfer Learning|迁移学习||把在源视觉数据或任务学到的特征用于新视觉任务的技术。
+Fine-tuning|模型微调||基于已预训练的视觉模型继续用目标数据更新参数的过程。
+Frozen Backbone|冻结骨干网络||保持视觉特征主干参数不更新、仅训练下游预测组件的方式。
+Domain Adaptation|领域适应||降低训练与应用数据在外观、采集设备或场景分布上差异的方法。
+Data-centric AI|数据中心人工智能||优先通过数据质量、标注与覆盖改善模型可靠性的开发理念。
+Open-set Recognition|开放集识别||在推断时识别某些输入不属于已知训练类别集合的任务。
+
+# 卷积神经网络、骨干网络与特征金字塔
+Convolutional Neural Network|卷积神经网络|CNN|通过局部权重共享卷积操作提取图像层级特征的神经网络。
+Convolutional Layer|卷积层||以可训练卷积核在空间邻域聚合输入张量的神经网络层。
+Kernel Size|卷积核尺寸||局部卷积模板的高度和宽度。
+Stride|卷积步幅||卷积或池化窗口在空间方向的移动间距。
+Padding|卷积填充||在输入边缘补充数值以控制输出尺寸和边界处理的方法。
+Convolution Dilation Rate|空洞卷积扩张率||通过扩大卷积核采样间隔增加感受野的配置。
+Receptive Field|感受野||输出某位置受输入图像中哪些空间区域影响的范围。
+Pooling Layer|池化层||通过局部聚合降低空间尺寸或增强位置鲁棒性的网络层。
+Max Pooling|最大池化||取局部窗口最大激活值作为输出的池化方法。
+Average Pooling|平均池化||计算局部窗口激活均值的池化方法。
+Global Average Pooling|全局平均池化|GAP|对整张特征图各通道的空间位置求平均得到向量的操作。
+Depthwise Convolution|逐通道卷积||对每个输入通道分别应用空间卷积核的运算。
+Pointwise Convolution|逐点卷积||常用一乘一卷积组合各位置通道特征的运算。
+Depthwise Separable Convolution|深度可分离卷积||将逐通道空间卷积与逐点通道混合分开执行的结构。
+Residual Block|残差块||在变换分支与恒等或投影捷径之间建立残差相加的网络模块。
+Skip Connection|跳跃连接||让较早层特征绕过中间变换与后续层直接连接的结构。
+Batch Normalization|批归一化|BN|用小批次统计或运行统计对中间激活归一化的技术。
+AlexNet|AlexNet 网络||在 ImageNet 图像分类中推动深度卷积网络广泛应用的经典架构。
+VGG Network|VGG 网络||以连续小卷积核和较深堆叠构建视觉特征的 CNN 架构。
+ResNet|残差网络|ResNet|通过恒等或投影捷径改善深层卷积网络优化的架构族。
+DenseNet|密集连接网络|DenseNet|让后续层连接并复用更早层输出特征的卷积网络。
+EfficientNet|高效卷积网络|EfficientNet|通过复合缩放等设计平衡网络宽度、深度与输入分辨率的架构。
+ConvNeXt|现代化卷积网络|ConvNeXt|吸收现代训练和架构设计经验的纯卷积骨干模型。
+Feature Pyramid Network|特征金字塔网络|FPN|结合不同分辨率特征图以支持多尺度目标识别的网络。
+Backbone Network|骨干特征网络|Backbone|负责从输入图像提取通用分层特征的视觉模型主体。
+
+# 视觉 Transformer、预训练与自监督学习
+Vision Transformer|视觉 Transformer|ViT|把图像切为 patch token 并利用 Transformer 建模空间关系的视觉架构。
+Image Patch|图像块|Patch|将图像按固定或自适应窗口划分的局部区域。
+Patch Embedding|图像块嵌入||把图像 patch 投影到模型隐藏维度的特征表示。
+Class Token|分类词元|CLS|在部分视觉 Transformer 中聚合全局信息以用于分类的特殊 token。
+Positional Embedding|位置嵌入||向视觉 token 添加空间位置信息的可训练或固定表示。
+Self-attention|自注意力||序列中每个 token 与其他 token 计算权重并聚合其特征的机制。
+Multi-head Self-attention|多头自注意力|MHSA|在多个投影子空间并行计算视觉 token 注意力的结构。
+Window-based Attention|窗口注意力||把自注意力限制在局部空间窗口内以降低计算成本的机制。
+Shifted Window Attention|移位窗口注意力||通过交替移动局部窗口让不同窗口间传递信息的注意力方式。
+Swin Transformer|Swin Transformer||采用分层 patch 表示和移位窗口注意力的视觉骨干架构。
+Hierarchical Vision Transformer|层次视觉 Transformer||通过逐级降采样与多尺度 token 表示建立视觉特征层级的模型。
+Masked Image Modeling|掩码图像建模|MIM|遮蔽部分视觉 token 或图像区域并训练模型重建或预测其内容的预训练方式。
+Masked Autoencoder|掩码自编码器|MAE|仅编码可见图像 patch 并重建被遮蔽像素的视觉预训练方案。
+Contrastive Learning|对比学习||通过正负样本关系优化视觉特征空间的自监督或弱监督学习方法。
+SimCLR|SimCLR 对比学习||利用数据增强视图和对比损失学习无标签图像表示的框架。
+MoCo|动量对比学习|MoCo|利用动量编码器与负样本队列实现对比学习的框架。
+BYOL|自举式表示学习|BYOL|利用在线和目标网络的一致性学习特征、无需显式负样本的自监督方案。
+DINO|无标签自蒸馏视觉学习|DINO|借助教师学生自蒸馏学习视觉表示的自监督方法。
+DINOv2|DINOv2 视觉表征模型||利用大规模无标签视觉数据学习通用视觉特征的模型方案。
+Vision Pretraining|视觉预训练||在大规模图像或视频数据上先学习可迁移视觉表示的过程。
+Self-supervised Vision Learning|视觉自监督学习||从图像自身或增强视图自动构建学习信号的视觉表示学习范式。
+Linear Probe|线性探测评测||冻结编码器后训练线性分类头测量特征可分性的方法。
+ImageNet Pretraining|ImageNet 预训练||使用 ImageNet 图像分类数据学习初始视觉特征的常见训练方案。
+Feature Distillation|视觉特征蒸馏||让学生模型匹配教师模型的图像中间表示或输出分布的训练方法。
+Token Pruning|视觉词元剪枝||根据重要性删除部分视觉 token 以降低计算和内存成本的技术。
+
+# 目标检测、候选框与检测器架构
+Object Detection|目标检测||为图像中的物体预测类别与边界框位置的任务。
+Object Localization|物体定位||估计特定目标在图像中的位置或边界范围的任务。
+Detection Head|检测预测头||把视觉特征转换为类别分数及边界框参数的模型组件。
+Objectness Score|目标存在置信分数||表示候选区域是否包含任何目标的模型评分。
+Region Proposal|候选区域||可能包含目标、供后续分类或精细定位的图像区域。
+Region Proposal Network|区域建议网络|RPN|在特征图上预测候选框及目标存在分数的神经模块。
+Anchor Box|先验锚框|Anchor|在多个位置以预定义尺寸和宽高比构造的候选参考框。
+Anchor-free Detector|无锚框检测器||无需固定锚框集合、直接从点或其他表示回归目标位置的检测方案。
+Two-stage Detector|两阶段检测器||先生成候选区域、再细化分类和定位的检测架构。
+One-stage Detector|单阶段检测器||在特征图上直接预测类别与目标位置的检测架构。
+R-CNN|区域卷积神经网络|R-CNN|对候选区域提取 CNN 特征并分类的早期检测架构。
+Fast R-CNN|Fast R-CNN||共享整图特征计算、再按候选区域池化并预测的检测模型。
+Faster R-CNN|Faster R-CNN||利用 RPN 联合候选区域生成与区域检测的两阶段架构。
+Mask R-CNN|Mask R-CNN||在 Faster R-CNN 类检测器基础上增加实例掩码预测分支的架构。
+YOLO|你只看一次检测器|YOLO|一系列通过单次前向传播完成检测的实时目标检测模型。
+SSD|单次多框检测器|SSD|利用多尺度特征图上的默认框直接预测类别和框的检测器。
+RetinaNet|RetinaNet 检测器||引入 Focal Loss 改善密集单阶段目标检测训练的架构。
+DETR|检测 Transformer|DETR|把目标检测形式化为集合预测、采用 Transformer 与二分图匹配损失的模型。
+Deformable DETR|可变形 DETR||利用稀疏多尺度可变形注意力提升 DETR 训练和检测效率的架构。
+Bounding Box Regression|边界框回归||学习连续参数以修正或直接预测物体框位置与尺度的任务。
+Intersection over Union|交并比|IoU|预测区域与真实区域交集面积除以并集面积的重叠指标。
+Non-maximum Suppression|非极大值抑制|NMS|根据候选检测分数与重叠程度移除冗余框的后处理算法。
+Soft-NMS|软化非极大值抑制||根据检测框重叠连续降低候选分数而非直接删除的策略。
+Focal Loss|焦点损失||降低容易样本损失权重、强调难分类样本的分类目标函数。
+Bipartite Matching Loss|二分图匹配损失||通过一对一匹配预测集合与真实目标集合定义训练损失的方案。

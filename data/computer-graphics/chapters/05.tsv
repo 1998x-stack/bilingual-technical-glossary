@@ -1,0 +1,26 @@
+# 相机、投影、裁剪与可见性
+Virtual Camera|虚拟相机||渲染场景中定义观察位置、方向、视角和成像参数的抽象设备。
+Camera Coordinate System|相机坐标系||以虚拟相机为参考原点和轴向的三维坐标系。
+Perspective Projection|透视投影||通过投影中心将三维点映射到二维平面、产生近大远小效果的几何变换。
+Orthographic Projection|正交投影||以相互平行投影射线把三维点映射到二维平面的方式。
+Field of View|视场角|FOV|虚拟相机在水平或垂直方向覆盖的角度范围。
+Near Clipping Plane|近裁剪面||限制可见视锥中距离相机最近范围的裁剪平面。
+Far Clipping Plane|远裁剪面||限制可见视锥最远空间范围的裁剪平面。
+View Frustum|观察视锥||透视相机中由视场与近远裁剪面确定的可见空间体。
+Frustum Culling|视锥剔除||在绘制前跳过完全位于观察视锥之外物体的优化。
+Back-face Culling|背面剔除||根据面片朝向与正反面约定跳过不可见朝向的三角形。
+Occlusion Culling|遮挡剔除||跳过被其他几何完全遮挡、不会影响可见结果的对象。
+Clipping|几何裁剪||将超出指定裁剪空间的基元截断或丢弃的过程。
+Homogeneous Clipping|齐次裁剪||在透视除法之前利用齐次坐标边界裁剪几何基元的步骤。
+Perspective Divide|透视除法||将裁剪空间坐标除以齐次 w 分量得到归一化设备坐标的操作。
+Depth Buffer|深度缓冲|Z-buffer|为每个像素或采样位置保存深度以比较遮挡关系的资源。
+Depth Test|深度测试||依据预设比较规则判断新片段是否能通过深度可见性检查的操作。
+Depth Write|深度写入||在满足规则时更新深度缓冲数值的操作。
+Reversed-Z|反向 Z 深度映射||让近处深度取较大值以改善部分浮点深度分布精度的技术。
+Depth Precision|深度精度||深度缓冲能够区分相近表面深度数值的能力。
+Z-fighting|深度闪烁||两个深度值接近的表面因深度量化误差交替覆盖的伪影。
+Screen Space|屏幕空间||经投影和视口变换后按像素位置描述的二维坐标系。
+Scissor Test|剪裁矩形测试||将片段处理限制在指定屏幕矩形内的测试。
+Stencil Buffer|模板缓冲||每个片段位置保存整数标记、用于遮罩或多阶段渲染的资源。
+Stencil Test|模板测试||根据模板缓冲中的整数值决定片段是否保留的测试。
+Visibility Buffer|可见性缓冲||存储可见基元标识或局部坐标供后续着色阶段使用的缓冲结构。

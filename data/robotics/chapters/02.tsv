@@ -1,0 +1,26 @@
+# 刚体运动、旋转表示与李群
+Rigid Body|刚体||任意两点之间距离在运动中保持不变的理想化物体。
+Rigid Transformation|刚体变换||由旋转和平移组成并保持物体内部距离与角度的空间映射。
+Reference Frame|参考坐标系||定义位置、方向及运动测量的原点和坐标轴集合。
+Body Frame|本体坐标系||固连于机器人或其某个刚体连杆的局部坐标系。
+World Frame|世界坐标系||用于描述环境中物体和机器人状态的公共参考坐标系。
+Rotation Matrix|旋转矩阵||行列式为一的正交矩阵，用于描述保持长度的空间旋转。
+Homogeneous Transformation Matrix|齐次变换矩阵||以四乘四分块矩阵联合表示三维旋转与平移的变换。
+Special Orthogonal Group|特殊正交群|SO(3)|由三维旋转矩阵及矩阵乘法构成的李群。
+Special Euclidean Group|特殊欧氏群|SE(3)|由三维刚体位姿变换与其复合运算构成的李群。
+Lie Group|李群||同时具备可微流形结构和光滑群运算的数学对象。
+Lie Algebra|李代数||描述李群单位元邻域无穷小变换及括号运算的切空间代数结构。
+Skew-symmetric Matrix|反对称矩阵||满足矩阵转置等于其相反数的矩阵，常用于叉积表示。
+Hat Operator|帽映射||把向量映射成对应的反对称矩阵或刚体运动李代数矩阵的运算。
+Vee Operator|逆帽映射||从李代数矩阵恢复对应向量坐标的映射。
+Exponential Map|指数映射||把李代数中的局部运动参数映射到对应李群元素的函数。
+Logarithm Map|对数映射||在适当分支下将李群变换映射回李代数坐标的函数。
+Axis–Angle Representation|轴角表示||以单位旋转轴和旋转角描述三维旋转的方法。
+Rodrigues Formula|罗德里格斯旋转公式||利用旋转轴反对称矩阵计算三维旋转矩阵的公式。
+Unit Quaternion|单位四元数||模长为一的四元数，可在双重覆盖意义下表示三维旋转。
+Euler Angles|欧拉角||按选定旋转轴顺序用三个角度参数化三维姿态的方法。
+Gimbal Lock|万向节锁||部分欧拉角参数化在奇异姿态处失去独立角度描述能力的现象。
+Twist|旋量速度|Twist|以角速度和线速度分量联合描述刚体瞬时运动的六维量。
+Wrench|力旋量|Wrench|以力矩和力分量联合描述刚体所受广义作用的六维量。
+Adjoint Representation|伴随表示||描述刚体坐标变换对旋量速度或相关李代数量的线性作用。
+Pose Composition|位姿复合||按规定顺序组合多个相对坐标变换获得整体位姿的运算。

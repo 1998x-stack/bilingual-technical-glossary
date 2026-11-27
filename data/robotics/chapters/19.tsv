@@ -1,0 +1,26 @@
+# ROS 2、中间件、机器人描述与软件架构
+Robot Operating System 2|机器人操作系统 2|ROS 2|提供消息通信、组件、工具与生态库的开源机器人软件框架。
+ROS Graph|ROS 通信图||描述当前 ROS 2 节点以及其话题、服务和动作连接关系的图结构。
+ROS Node|ROS 节点||在 ROS 2 中执行特定计算并通过通信接口交换数据的进程内组件。
+Topic|话题|Topic|ROS 2 中用于异步发布订阅数据流的命名消息通道。
+Publisher|发布者||向指定话题发送类型化消息的 ROS 通信实体。
+Subscription|订阅者||从指定话题接收类型化消息的 ROS 通信实体。
+Service|服务|Service|ROS 2 中适合短时请求响应交互的通信机制。
+Action|动作接口|Action|ROS 2 中管理较长时间任务、提供目标、反馈和结果并支持取消的接口。
+Quality of Service|服务质量配置|QoS|规定通信可靠性、历史缓存、持久性和时间限制等策略的参数集合。
+Reliability Policy|可靠性策略||决定 DDS 或 ROS 2 消息传输尽力而为或可靠交付等行为的配置。
+Durability Policy|持久性策略||控制晚加入订阅者能否接收此前发布样本等行为的 QoS 规则。
+Deadline QoS|截止期 QoS||定义预期消息更新频率上界并报告失约事件的 QoS 策略。
+Data Distribution Service|数据分发服务|DDS|ROS 2 常用的基于发布订阅的数据交换中间件规范。
+ROS 2 Executor|ROS 2 执行器||调度节点回调函数、计时器和通信事件的运行时组件。
+Callback Group|回调组||规定 ROS 2 节点不同回调之间是否允许并行执行的调度分组。
+Composable Node|可组合节点||可被装载进相同进程容器以减少进程间通信开销的 ROS 2 组件。
+Lifecycle Node|生命周期节点||通过明确状态转换管理配置、激活、停用和关闭的节点形式。
+ROS Parameter|ROS 参数||节点运行时可声明、查询或更新的类型化配置值。
+Launch File|启动描述文件||定义多个 ROS 2 节点、参数、命名空间和依赖启动流程的配置。
+rosbag2|ROS 2 数据录制工具|rosbag2|用于记录、回放 ROS 2 话题消息的数据工具与格式设施。
+tf2|ROS 变换库|tf2|缓存并查询机器人不同坐标系在指定时刻相对变换的库。
+Unified Robot Description Format|统一机器人描述格式|URDF|以 XML 描述连杆、关节及机器人视觉或碰撞模型的格式。
+Semantic Robot Description Format|语义机器人描述格式|SRDF|补充机器人运动组、末端工具和禁用碰撞对等语义配置的格式。
+ros2_control|ROS 2 控制框架|ros2_control|为硬件接口、控制器管理与运动控制提供标准化组件的 ROS 2 框架。
+Robot Middleware|机器人中间件||连接机器人软件模块并提供通信、发现或运行时管理功能的基础设施。

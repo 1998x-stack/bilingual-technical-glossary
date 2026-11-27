@@ -1,0 +1,26 @@
+# 实时渲染架构、抗锯齿与性能优化
+Deferred Shading|延迟着色||先把场景几何属性写入中间缓冲、再在屏幕空间计算部分光照的架构。
+Forward Shading|前向着色||在绘制几何片段时直接计算材质与灯光颜色的渲染架构。
+Forward+ Rendering|Forward+ 渲染||把屏幕分块并为每块构建光源列表的前向着色优化方案。
+Clustered Shading|簇式着色||按屏幕位置及深度划分簇并为每簇维护光源集合的着色方法。
+G-buffer|几何缓冲|G-buffer|保存可见片段法线、材质、深度等信息供延迟着色使用的缓冲集合。
+Tiled Lighting|分块光照||把屏幕分成小块并为各块筛选相关光源的照明优化技术。
+Light Culling|光源剔除||在着色前排除不能影响某个区域或对象的光源的过程。
+Tiled Deferred Rendering|分块延迟渲染||结合屏幕 tile 与延迟材质数据计算可见表面光照的架构。
+Temporal Anti-aliasing|时间抗锯齿|TAA|通过抖动采样和历史帧重投影聚合降低空间锯齿的技术。
+Spatial Anti-aliasing|空间抗锯齿||仅使用单帧或空间邻域信息降低采样伪影的方法集合。
+Fast Approximate Anti-aliasing|快速近似抗锯齿|FXAA|基于亮度边缘分析执行局部图像平滑的后处理抗锯齿方法。
+Subpixel Morphological Anti-aliasing|子像素形态学抗锯齿|SMAA|结合边缘模式与子像素覆盖估计改善抗锯齿的算法。
+Temporal Upscaling|时间超分辨率||利用历史帧和运动信息重建高于内部渲染分辨率的输出画面的方法。
+Spatial Upscaling|空间升采样||利用当前帧的空间插值或重建提高图像输出分辨率的方法。
+Dynamic Resolution Scaling|动态分辨率调整|DRS|根据设备负载改变内部渲染分辨率以维持帧时间预算的策略。
+Motion Vector Buffer|运动向量缓冲||记录像素或物体跨帧屏幕位移以支持重投影的图像资源。
+History Buffer|历史帧缓冲||保存前一帧颜色或中间数据供时间累积复用的资源。
+Ghosting Artifact|时间拖影伪影||错误历史重投影或混合使运动物体留下残影的现象。
+Disocclusion|显露区域||由于观察角度或物体运动、当前帧中新出现且前帧被遮挡的区域。
+GPU Profiling|GPU 性能剖析||通过设备计数器和执行时间测量分析图形工作瓶颈的过程。
+Overdraw|重复像素绘制||同一像素或采样位置因多层几何被多次着色或覆盖的现象。
+Batching|绘制批处理||合并具有相容状态的对象命令以减少 CPU 提交和驱动管理成本的优化。
+Instanced Rendering|实例化渲染||一次提交多个共享几何而变换或属性不同的对象实例的技术。
+Level-of-detail Mesh|网格细节等级|Mesh LOD|按屏幕投影大小或距离切换不同复杂度几何的方案。
+Frame Pacing|帧节奏控制||控制帧提交与呈现时间间隔以减少画面卡顿的技术。

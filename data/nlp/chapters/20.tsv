@@ -1,0 +1,26 @@
+# 可靠性、数据治理与生产部署
+Hallucination|模型幻觉||语言模型输出看似合理但缺少依据或与可核验事实冲突的内容。
+Grounded Response|证据支持的回复||主要事实陈述能从明确提供的资料或可信工具输出中找到依据的回答。
+Abstention|拒绝无证据作答||当资料不足时明确承认无法确认而非猜测事实的响应策略。
+Uncertainty Estimation|不确定性估计||分析模型预测可靠性、置信程度及潜在错误风险的方法。
+Out-of-distribution Detection|分布外检测|OOD|识别与训练数据分布明显不同的输入或任务情形的技术。
+Robustness Evaluation|鲁棒性评估||检验模型在噪声、拼写变化、对抗输入或领域变化下性能稳定性的过程。
+Adversarial Example|对抗样本||经过特意设计的输入扰动，可诱导模型作出错误预测的例子。
+Prompt Injection|提示注入||攻击者通过输入或外部内容诱导模型违背更高优先级指令的行为。
+Indirect Prompt Injection|间接提示注入||把恶意指令隐藏在检索文档、网页或工具输出等低信任内容中的攻击。
+Data Privacy|数据隐私||按合法授权与处理目的控制文本中的个人或敏感信息使用的原则。
+Personally Identifiable Information|可识别个人身份信息|PII|可单独或结合其他信息识别个人身份的数据。
+Data Anonymization|数据匿名化||通过技术与治理措施降低记录再识别风险、使其不再对应可识别个人的过程。
+De-identification|去标识化||删除或替换直接标识符并降低身份关联风险的数据处理方式。
+Bias Evaluation|偏差评估||检查模型对不同人口群体、语言变体或主题的错误和不公平差异的过程。
+Fairness Metric|公平性指标||用明确数学规则衡量模型在不同群体间表现差异的指标。
+Toxicity Detection|有害语言检测||识别文本中骚扰、仇恨、攻击性或其他有害语言类别的任务。
+Content Moderation|内容审核||根据约定政策对文本进行允许、限制、标记或人工复核的流程。
+Model Serving|模型服务化||将训练模型部署为可被请求调用的推理接口或批量服务的过程。
+Inference Latency|推理延迟||从服务接收输入到返回预测或生成结果所需的时间。
+Batch Inference|批量推理||一次对多条独立输入执行模型计算以提高硬件利用率的方式。
+Streaming Generation|流式生成||在输出序列尚未完成前持续传送已生成 token 或文本的服务模式。
+Quantization|模型量化||将权重或激活表示映射为较低位宽数值以降低存储或计算成本的技术。
+Model Distillation|模型蒸馏||利用较大教师模型信号训练较小学生模型的模型压缩技术。
+Monitoring Drift|模型漂移监控||监测线上语言数据分布、输出或任务指标随时间变化的机制。
+Human-in-the-loop Review|人在回路中的审核|HITL|在自动系统处理过程中安排人工复核、纠错或决策的协同模式。

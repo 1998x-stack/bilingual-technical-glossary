@@ -1,0 +1,107 @@
+# 图形学概论、渲染系统与图像合成
+Computer Graphics|计算机图形学|CG|研究用计算方法表示、处理和合成二维或三维视觉内容的领域。
+Rendering|渲染||根据几何、材质、光照和相机生成图像的计算过程。
+Image Synthesis|图像合成||从场景数据或算法构建目标图像的技术。
+Real-time Rendering|实时渲染||在交互时限内持续生成图像帧的渲染方式。
+Offline Rendering|离线渲染||允许较长计算时间追求高质量图像的渲染流程。
+Rendering Pipeline|渲染流水线||将场景数据依阶段转换为图像结果的处理架构。
+Scene|场景||包含对象、几何、材质、光源、相机和层级关系的描述集合。
+Scene Graph|场景图||通过层级节点组织对象变换、属性和渲染关系的数据结构。
+Graphics Primitive|图形基元||点、线段、三角形等可由图形系统直接处理的基本几何元素。
+Draw Call|绘制调用||向图形 API 提交一次指定几何和状态的绘制命令。
+Render Pass|渲染通道||按规定附件、操作和依赖组织的一段渲染工作。
+Frame|渲染帧||动画或交互序列中在特定时间生成的一幅图像。
+Frame Rate|帧率|FPS|每秒完成或显示的图像帧数量。
+Frame Time|帧时间||生成或显示单帧所需的时间。
+Latency|渲染延迟||从输入或提交到可见画面输出之间经历的时间。
+Rasterization|光栅化||将连续几何基元转换为离散像素或采样覆盖的过程。
+Ray Tracing|光线追踪||通过沿射线求交场景几何模拟可见性与部分光传播的渲染方法。
+Path Tracing|路径追踪||以随机采样光路估计渲染方程积分的蒙特卡洛方法。
+Hybrid Rendering|混合渲染||结合光栅化、光线追踪或其他技术生成画面的方法。
+Photorealistic Rendering|照片级真实感渲染||追求成像结果在光学与视觉感知上接近真实照片的渲染。
+Non-photorealistic Rendering|非真实感渲染|NPR|通过艺术化线条、色块或笔触表现视觉内容的技术。
+Physically Based Rendering|基于物理的渲染|PBR|依据光传输与材质散射近似构建光照计算的渲染方法。
+Graphics API|图形应用程序接口||应用程序调用 GPU 绘图资源和命令的编程接口。
+Graphics Driver|图形驱动||将图形 API 命令转换为硬件可执行操作的软件层。
+Graphics Debugging|图形调试||定位渲染管线、资源、着色器或图像输出错误的过程。
+
+# 线性代数、空间变换与坐标系统
+Vector|向量||表示具有多个坐标分量的数学对象，常用于位置、方向与颜色。
+Point|点||表示空间位置、在仿射变换下受平移影响的几何对象。
+Direction Vector|方向向量||表示空间朝向、通常不受平移影响的向量。
+Normal Vector|法向量||与曲面切平面垂直、常用于光照计算的方向。
+Dot Product|点积||计算向量分量乘积之和，用于夹角和投影。
+Cross Product|叉积||对三维向量产生与二者垂直的向量的运算。
+Vector Normalization|向量归一化||将非零向量缩放到单位长度的操作。
+Matrix|矩阵||用于表示线性映射、坐标变换和其他多维运算的数值数组。
+Matrix Multiplication|矩阵乘法||按行列内积复合线性映射或变换的运算。
+Homogeneous Coordinates|齐次坐标||在增加尺度分量后统一表示仿射与射影变换的坐标形式。
+Affine Transformation|仿射变换||由线性变换和平移构成并保持平行性的几何映射。
+Translation|平移||给空间点增加位移向量的变换。
+Rotation|旋转||在保持欧氏长度和角度条件下改变方向的变换。
+Scaling|缩放||沿一个或多个坐标轴改变几何尺寸的操作。
+Shearing|错切||使坐标轴方向发生线性倾斜但保持平行关系的变换。
+Model Matrix|模型矩阵||把对象局部坐标映射至世界坐标的矩阵。
+View Matrix|视图矩阵||把世界坐标映射至相机或观察坐标系的矩阵。
+Projection Matrix|投影矩阵||把观察空间坐标转换到裁剪坐标的矩阵。
+Model–View–Projection Matrix|模型视图投影矩阵|MVP|将局部顶点逐级转换到裁剪空间的组合变换矩阵。
+World Space|世界空间||场景对象共享的全局参考坐标系。
+Object Space|对象局部空间||以单个模型自身原点和坐标轴定义的坐标系。
+View Space|观察空间||以相机位置和朝向为参考的坐标系。
+Clip Space|裁剪空间||顶点经投影变换后、透视除法之前所在的齐次坐标空间。
+Normalized Device Coordinates|归一化设备坐标|NDC|透视除法后映射到规定标准立方体范围的坐标。
+Viewport Transform|视口变换||把标准化设备坐标映射到窗口或渲染目标像素区域的转换。
+
+# 三维几何、拓扑与网格结构
+Polygon Mesh|多边形网格|Mesh|由顶点、边和多边形面构成的离散表面表示。
+Vertex|顶点||带有位置及可选法线、颜色和纹理坐标的几何采样点。
+Edge|边||连接两个网格顶点并构成面边界的几何元素。
+Face|面||由一组有序顶点组成的网格表面单元。
+Triangle Mesh|三角网格||所有面均为三角形的离散曲面表示。
+Quad Mesh|四边形网格||以四边形为主要面片的网格结构。
+Vertex Buffer|顶点缓冲区|VBO|在 GPU 或图形系统中存放顶点属性数据的缓冲资源。
+Index Buffer|索引缓冲区|IBO|存放顶点索引以复用顶点并组装几何基元的资源。
+Vertex Attribute|顶点属性||附着于顶点的位置、法线、切线或纹理坐标等数据。
+Primitive Topology|基元拓扑||规定连续顶点索引如何组成点、线或三角形的组织方式。
+Triangle Strip|三角形带||相邻三角形共享前后顶点、以较少索引描述连续表面的拓扑。
+Winding Order|顶点绕序||按顺时针或逆时针顺序排列面片顶点的约定。
+Face Normal|面法线||由面片顶点几何确定的垂直方向。
+Vertex Normal|顶点法线||用于平滑明暗插值的顶点法向属性。
+Tangent Space|切线空间||由表面切线、副切线和法线形成的局部坐标系。
+Half-edge Data Structure|半边数据结构||用成对有向半边高效表示网格顶点、面与邻接关系的结构。
+Manifold Mesh|流形网格||局部拓扑邻域符合二维流形性质的表面网格。
+Non-manifold Geometry|非流形几何||存在多面共享异常边或不符合二维曲面邻域条件的网格结构。
+Mesh Connectivity|网格连接关系||描述顶点、边和面之间邻接与关联的拓扑信息。
+Mesh Simplification|网格简化||在控制几何误差条件下减少网格顶点和面数量的过程。
+Edge Collapse|边折叠||合并边的两个端点以移除局部网格元素的简化操作。
+Subdivision Surface|细分曲面||通过重复细分控制网格并计算极限曲面得到平滑表面的技术。
+Catmull–Clark Subdivision|Catmull–Clark 细分||利用面点、边点和顶点规则细分多边形网格的经典算法。
+Loop Subdivision|Loop 三角网格细分||针对三角网格生成平滑极限曲面的细分算法。
+Constructive Solid Geometry|构造实体几何|CSG|通过实体并、交、差等布尔运算组合几何对象的表示方法。
+
+# 曲线曲面、参数化与几何建模
+Parametric Curve|参数曲线||用连续参数映射生成一维空间轨迹的几何表示。
+Bézier Curve|贝塞尔曲线||由控制点和伯恩斯坦基函数定义的多项式参数曲线。
+Bézier Surface|贝塞尔曲面||通过二维参数和控制点网格构造的张量积曲面。
+B-spline Curve|B 样条曲线||使用局部支撑基函数和节点序列定义的分段多项式曲线。
+NURBS|非均匀有理 B 样条|NURBS|用有理基函数和非均匀节点精确或近似描述曲线与曲面的表示。
+Control Point|控制点||决定参数曲线或曲面形状的几何参数点。
+Control Polygon|控制多边形||按顺序连接曲线控制点形成的辅助几何折线。
+Bernstein Polynomial|伯恩斯坦多项式||用于贝塞尔曲线和曲面构造的多项式基函数。
+de Casteljau Algorithm|德卡斯特里奥算法||以递归线性插值稳定计算贝塞尔曲线上点的方法。
+Knot Vector|节点向量||B 样条及 NURBS 中定义分段参数域和连续性结构的序列。
+Curve Continuity|曲线连续性||描述相邻曲线段位置、切线和高阶导数连接程度的性质。
+G1 Continuity|一阶几何连续性|G1|两段曲线在连接点切线方向一致的几何平滑条件。
+C1 Continuity|一阶参数连续性|C1|两段曲线在连接点位置和一阶导数连续的条件。
+Parametric Surface|参数曲面||利用两个参数连续映射到三维位置的曲面表示。
+Implicit Surface|隐式曲面||由满足标量函数等于指定值的点集定义的表面。
+Signed Distance Function|有符号距离函数|SDF|以到表面的有向距离描述几何内部与外部的连续函数。
+Level Set|水平集||由标量函数达到固定值所确定的点集或曲面。
+Surface of Revolution|旋转曲面||将平面轮廓绕某条轴旋转形成的曲面。
+Extrusion|拉伸建模||沿指定方向或路径移动二维截面生成三维几何。
+Sweep Surface|扫掠曲面||让截面沿空间曲线运动形成的曲面。
+Boolean Modeling|布尔建模||通过并集、交集和差集编辑封闭实体形状的方法。
+Tessellation|曲面镶嵌||把连续或粗糙表面进一步离散为多边形基元的过程。
+UV Parameterization|UV 参数化||建立网格表面位置到二维纹理坐标的映射。
+Surface Distortion|曲面参数畸变||曲面到二维展开时在面积、角度或长度上产生的变形。
+Retopology|网格重拓扑||在保持外形的同时重新设计表面网格边流和面分布的过程。

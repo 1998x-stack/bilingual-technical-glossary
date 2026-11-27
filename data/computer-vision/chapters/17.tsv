@@ -1,0 +1,26 @@
+# 图像生成、扩散模型与图像编辑
+Image Generation|图像生成||根据文本、结构条件或随机变量生成新图像的任务。
+Generative Adversarial Network|生成对抗网络|GAN|通过生成器与判别器对抗训练学习数据分布的生成模型框架。
+Generator Network|生成器网络||将噪声或条件表示转换为合成图像的模型组件。
+Discriminator Network|判别器网络||在 GAN 中判断输入来自真实数据还是生成模型的网络。
+Variational Autoencoder|变分自编码器|VAE|利用概率潜变量与变分推断训练编码生成模型的框架。
+Latent Space|潜在空间||由学习表示变量组织的低维或抽象图像编码空间。
+Diffusion Model|扩散生成模型||通过学习反向去噪过程从噪声逐步生成样本的概率生成模型。
+Forward Diffusion Process|正向扩散过程||在训练构造中逐步向图像或潜变量加入噪声的随机过程。
+Reverse Denoising Process|反向去噪过程||依据学习的转移规律从噪声逐步恢复数据样本的生成过程。
+Denoising Score Matching|去噪得分匹配||训练模型估计噪声扰动分布对数密度梯度的目标方法。
+Noise Schedule|噪声调度||决定扩散过程中各时间步加入或去除噪声强度的函数或离散序列。
+DDPM|去噪扩散概率模型|DDPM|利用参数化反向马尔可夫链学习数据生成分布的扩散模型。
+DDIM|去噪扩散隐式模型|DDIM|可在相同训练目标下使用非马尔可夫采样过程加速扩散生成的方法。
+Latent Diffusion Model|潜空间扩散模型|LDM|先把图像压缩到潜空间、在潜变量上执行扩散生成的模型。
+Text-to-image Generation|文本到图像生成|T2I|根据自然语言描述生成符合语义的图像的任务。
+Image-to-image Translation|图像到图像转换||把输入图像转换到另一视觉风格、域或结构表示的任务。
+Image Inpainting|图像修复填充||根据图像可见区域与条件重建缺失或遮蔽部分的任务。
+Image Outpainting|图像画布扩展||在已有图像边界外合成连续合理内容的生成任务。
+Super-resolution|图像超分辨率|SR|从低分辨率观测恢复或生成更高分辨率图像的任务。
+Conditional Generation|条件图像生成||按照类别、语义图、深度、姿态或文本等条件生成图像的方式。
+Classifier-free Guidance|无分类器引导|CFG|在扩散采样中融合有条件与无条件预测以控制条件遵循程度的技术。
+ControlNet|ControlNet 条件控制网络||给预训练扩散模型增加结构化视觉条件控制分支的模型方案。
+Style Transfer|风格迁移||改变图像纹理和视觉风格、同时尽量保留指定内容结构的技术。
+CycleGAN|循环一致性生成对抗网络|CycleGAN|利用双向图像转换和循环一致性损失处理非配对图像域转换的方法。
+Generative Artifact|生成伪影||图像生成过程中出现的结构不合理、重复纹理或局部失真现象。

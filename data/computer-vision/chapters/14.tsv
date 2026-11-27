@@ -1,0 +1,26 @@
+# 人体姿态、关键点与多目标跟踪
+Human Pose Estimation|人体姿态估计||根据图像估计人体关节位置及骨架结构的任务。
+2D Keypoint Detection|二维关键点检测||预测关节、面部或物体关键部位在图像平面中的坐标。
+3D Human Pose Estimation|三维人体姿态估计||推断人体关键点在三维坐标系中的位置及骨架构型。
+Pose Heatmap|姿态热力图||为每个关键点生成空间概率或响应分布的模型输出。
+Skeleton Representation|骨架表示||用关节节点及其连接边描述人体或物体关节结构的表示。
+Top-down Pose Estimation|自顶向下姿态估计||先检测人体区域，再在每个区域内预测关节位置的策略。
+Bottom-up Pose Estimation|自底向上姿态估计||先检测全图关节，再把它们分组为不同人体实例的方法。
+Part Affinity Field|部件亲和场|PAF|用方向向量场描述不同人体关节间关联的姿态估计表示。
+OpenPose|OpenPose 姿态估计||使用部件亲和场组装多人关键点的经典实时姿态估计框架。
+COCO Keypoints|COCO 人体关键点标注||COCO 数据集采用的标准人体关节位置与可见性标注体系。
+Object Tracking|目标跟踪||在连续视频帧中估计目标位置并尽量保持身份的一类任务。
+Single Object Tracking|单目标跟踪|SOT|给定初始目标后在后续视频帧持续定位它的任务。
+Multiple Object Tracking|多目标跟踪|MOT|在视频中检测多个目标并维护其跨帧身份一致性的任务。
+Tracklet|短轨迹||视频序列中连续若干帧的局部目标关联结果。
+Data Association|数据关联||在不同帧或传感器观测间判断哪些检测属于同一目标的过程。
+Kalman Filter|卡尔曼滤波器|KF|在线性高斯状态空间模型下递推估计隐状态及其协方差的方法。
+Hungarian Algorithm|匈牙利匹配算法||求解二分图指派问题最小总代价匹配的组合优化算法。
+SORT|简单在线实时跟踪|SORT|组合检测框、卡尔曼滤波和匹配进行多目标跟踪的系统。
+DeepSORT|深度关联 SORT|DeepSORT|引入外观特征辅助跨帧数据关联的多目标跟踪方案。
+ByteTrack|ByteTrack 跟踪器||同时利用高分与低分检测框关联轨迹的多目标跟踪方法。
+Track ID|轨迹身份编号||为视频中同一目标跨帧观测赋予的标识符。
+ID Switch|身份切换|IDSW|跟踪器把同一真实目标错误关联到不同轨迹身份的现象。
+Occlusion Handling|遮挡处理||目标被其他物体部分或全部挡住时维持定位及身份的策略。
+Re-identification|目标重识别|ReID|跨不同时间或相机判断两个外观观测是否对应同一身份的任务。
+Multi-object Tracking Accuracy|多目标跟踪准确率|MOTA|综合漏检、误检与身份切换等误差的经典跟踪指标。

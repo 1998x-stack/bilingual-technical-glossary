@@ -1,0 +1,26 @@
+# 采样式规划、轨迹优化与动力学可行性
+Sampling-based Planning|采样式运动规划||通过随机或确定性采样探索高维构型空间连通性的规划方法。
+Probabilistic Roadmap|概率路图法|PRM|对自由构型采样、连接邻近节点并在路图上查询路径的方法。
+Rapidly-exploring Random Tree|快速探索随机树|RRT|通过向随机状态扩展树结构逐步探索高维可行空间的算法。
+RRT-star|渐近最优随机树|RRT*|通过重连改善树路径代价并在假设下渐近达到最优的采样规划算法。
+Bidirectional RRT|双向快速随机树||从起点和终点分别扩展随机树并尝试连接的规划方式。
+Informed RRT-star|启发采样 RRT*|Informed RRT*|在已有路径成本上界限定的潜在改进区域内重点采样的算法。
+Kinodynamic Planning|运动动力学约束规划||同时考虑状态演化与控制输入约束寻找可执行轨迹的规划任务。
+State Lattice|状态格图||在离散状态与预先生成运动原语上搜索可行路径的规划结构。
+Motion Primitive|运动原语||可复用的短时可执行运动或控制片段。
+Trajectory|轨迹||带有时间参数、规定机器人状态随时间演化的函数或离散序列。
+Path|路径||仅描述配置或位置经过的空间曲线、通常不规定到达时刻。
+Time Parameterization|路径时间参数化||为已有几何路径分配速度、加速度和时间关系的步骤。
+Trajectory Optimization|轨迹优化||在动力学与碰撞约束下最小化轨迹代价的数值优化问题。
+CHOMP|协变哈密顿优化运动规划|CHOMP|通过平滑与障碍代价梯度迭代改进机器人轨迹的算法。
+STOMP|随机轨迹优化运动规划|STOMP|在轨迹周围采样噪声扰动并按成本更新的规划算法。
+TrajOpt|轨迹优化规划器|TrajOpt|将碰撞等约束局部凸化并迭代求解的机器人轨迹规划框架。
+Direct Collocation|直接配点法||在离散时间节点同时优化状态和控制并约束动力学缺陷的最优控制离散化方法。
+Direct Shooting|直接打靶法||以控制参数为决策变量、通过前向动力学积分求解轨迹优化的方法。
+Minimum-jerk Trajectory|最小加加速度轨迹||通过最小化 jerk 的平方积分获得较平滑运动的轨迹设计。
+Jerk Constraint|加加速度约束||限制加速度随时间变化率大小以降低机械冲击的轨迹限制。
+Velocity Constraint|速度约束||限制关节或移动平台运动速度大小的条件。
+Acceleration Constraint|加速度约束||限制机器人状态二阶时间变化率的运动条件。
+Torque Constraint|力矩约束||限制执行器实际可产生或安全可用关节力矩的条件。
+Chance Constraint|机会约束||要求在给定随机不确定性下约束违反概率不超过指定阈值的条件。
+Trajectory Feasibility|轨迹可行性||轨迹满足关节限位、碰撞、动力学和输入约束的性质。

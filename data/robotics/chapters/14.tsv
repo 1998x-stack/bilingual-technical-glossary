@@ -1,0 +1,26 @@
+# 自主导航、局部规划与动态避障
+Autonomous Navigation|自主导航||让机器人基于环境感知和目标位置规划并控制安全移动的系统能力。
+Global Planner|全局规划器||根据地图与目标在较大环境范围内生成全局参考路径的组件。
+Local Planner|局部规划器||根据近场障碍和当前状态持续调整短期运动指令的算法。
+Global Path|全局路径||基于较大地图和目标生成的粗粒度导航参考路线。
+Local Trajectory|局部轨迹||结合即时环境约束和运动学限制生成的短期带时间运动计划。
+Reactive Obstacle Avoidance|反应式避障||根据即时传感测量快速调整动作以躲避障碍的策略。
+Dynamic Window Approach|动态窗口法|DWA|在短时可达速度空间中采样并评价候选局部运动轨迹的方法。
+Dynamic Window Based Planner|动态窗口规划器|DWB|将速度采样轨迹与模块化评价函数结合的局部控制方案。
+Timed Elastic Band|时间弹性带|TEB|联合优化离散路径点及其时间间隔以满足动态约束的局部规划方法。
+Pure Pursuit Controller|纯跟踪控制器||根据路径上预瞄点计算移动平台转向或曲率指令的几何控制法。
+Regulated Pure Pursuit|约束纯跟踪||根据障碍距离、曲率与目标接近程度调节跟踪速度的纯跟踪变体。
+Stanley Controller|斯坦利路径跟踪控制器||结合横向偏差和航向误差生成车辆转向控制的算法。
+Model Predictive Path Integral|模型预测路径积分控制|MPPI|以随机控制序列采样和代价加权更新有限时域动作的控制算法。
+Elastic Band Planner|弹性带规划器||把路径表示成可变形节点链并根据障碍和光滑约束调整的算法。
+Velocity Obstacle|速度障碍|VO|描述在给定时间范围可能导致与移动障碍碰撞的相对速度集合。
+Reciprocal Velocity Obstacle|互惠速度障碍|RVO|假定多个移动体共同承担避碰速度变化的多智能体避障框架。
+Optimal Reciprocal Collision Avoidance|最优互惠碰撞规避|ORCA|使用速度空间半平面约束计算局部互惠无碰撞速度的算法。
+Dynamic Obstacle|动态障碍物||位置或运动状态随时间发生变化、需要预测的环境障碍。
+Collision Prediction|碰撞预测||根据机器人和其他物体未来运动估计可能发生接触的时间或位置。
+Navigation Goal|导航目标||机器人需要到达的目标位姿或允许终止的空间区域。
+Goal Tolerance|目标容差||判定已到达目标时允许的位置与角度误差范围。
+Path Following|路径跟随||在未严格要求时间轨迹情况下沿给定几何路线移动的控制任务。
+Recovery Behavior|导航恢复行为||当规划或控制失败时执行清障、旋转、后退等受限恢复动作的策略。
+Behavior Tree Navigator|行为树导航器||通过行为树组织规划、控制、恢复与任务终止逻辑的导航组件。
+Waypoint Following|航点跟随||按顺序前往多个预定义中间目标的导航任务。

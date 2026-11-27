@@ -1,0 +1,26 @@
+# 特征点、局部描述子与图像匹配
+Interest Point|兴趣点||在图像中具有显著局部结构、便于重复定位和匹配的位置。
+Corner Detection|角点检测||寻找两个或更多方向上图像强度均显著变化的位置的过程。
+Harris Corner Detector|Harris 角点检测器||利用局部梯度二阶矩矩阵判断角点响应的算法。
+Shi–Tomasi Detector|Shi–Tomasi 检测器||利用结构张量最小特征值选择适合跟踪的角点的方法。
+FAST Detector|FAST 角点检测器|FAST|比较候选像素周围圆周亮度实现高速角点判断的算法。
+Scale-space|尺度空间||对图像采用不同平滑或缩放尺度构成的多尺度表示。
+Scale-space Extrema|尺度空间极值||在空间和尺度邻域中找到局部响应极大或极小的检测点。
+SIFT|尺度不变特征变换|SIFT|通过尺度空间关键点、方向归一化与局部梯度直方图构造特征的算法。
+SURF|加速稳健特征|SURF|利用积分图和近似 Hessian 响应快速检测描述局部特征的方法。
+ORB|定向 FAST 与旋转 BRIEF|ORB|结合 FAST 角点、方向估计和二值 BRIEF 描述子的局部特征方法。
+BRIEF Descriptor|二值稳健独立基本特征|BRIEF|通过局部像素强度比较生成二进制描述子的技术。
+HOG Descriptor|方向梯度直方图|HOG|统计局部单元内梯度方向分布并归一化的视觉特征。
+LBP Descriptor|局部二值模式|LBP|比较邻域像素与中心像素大小形成纹理编码的描述子。
+Keypoint Descriptor|关键点描述子||对关键点附近局部图像模式形成的可比较特征向量。
+Feature Matching|特征匹配||根据描述子距离和几何条件建立两张图像关键点对应关系的过程。
+Descriptor Distance|描述子距离||量化两个局部特征向量或二值编码差异的数值函数。
+Hamming Distance|汉明距离||统计等长二进制编码中不相同位数量的距离。
+Lowe Ratio Test|Lowe 比值检验||比较最近与次近邻描述子距离以过滤模糊匹配的启发式条件。
+Cross-check Matching|双向一致匹配||仅保留两张图像互为最佳匹配关系的特征对应。
+Outlier Correspondence|异常对应点||不符合真实图像间几何或物体关系的错误匹配。
+RANSAC|随机采样一致性算法|RANSAC|反复抽取最小样本拟合模型并选择具有最多一致内点方案的稳健估计方法。
+Inlier|内点||在设定误差阈值下与当前几何模型一致的观测或匹配。
+Reprojection Error|重投影误差||三维估计或几何模型预测图像坐标与实测坐标之间的差异。
+Feature Track|特征轨迹||同一视觉特征在多帧或多张图像中的对应观测序列。
+Image Correspondence|图像对应关系||在不同图像中定位同一场景点或语义实体的匹配关系。
