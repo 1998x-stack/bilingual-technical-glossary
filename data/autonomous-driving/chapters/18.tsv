@@ -10,8 +10,8 @@ Object Detection Average Precision|目标检测平均精度|AP|按精确率召�
 Mean Average Precision|检测平均精度均值|mAP|按规定类别及评价条件对多个 AP 数值求平均的指标。
 3D Intersection over Union|三维交并比|3D IoU|预测三维物体框与真实框交集体积除以并集体积的几何指标。
 Center Distance Error|中心位置误差||预测物体中心与参考中心之间的空间距离偏差。
-Average Displacement Error|平均位移误差|ADE|沿预测时域平均计算未来轨迹与真值位置的欧氏距离。
-Final Displacement Error|终点位移误差|FDE|用预测时域末端位置与真实位置的差异衡量预测误差。
+Orientation Error|朝向估计误差||预测目标航向与参考航向之间经角度周期归一化计算的偏差。
+Velocity Estimation Error|速度估计误差||模型估计目标速度与参考速度在规定坐标系及时间点之间的差异。
 Minimum ADE|最小平均位移误差|minADE|从多个候选未来轨迹中选择平均位移误差最小者作为评分的指标。
 Minimum FDE|最小终点位移误差|minFDE|从多个候选轨迹中选取终点误差最小值的评价指标。
 Collision Rate|碰撞率||在规定驾驶任务和测试分布下发生碰撞的次数或运行比例。
