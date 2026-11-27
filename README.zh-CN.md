@@ -142,3 +142,13 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 自然语言处理 NLP（独立出版，尚未加入全站索引）
+
+新增《自然语言处理专有名词中英文对照表》：**500 条双语术语、20 章**。由语言学层次、语料库与词元化开始，覆盖词形、句法、语义、统计 NLP、词嵌入、序列模型、Transformer、BERT/GPT/T5 预训练、LoRA、NER、问答和 RAG、机器翻译、摘要对话、语音语言、多语言评测与模型治理。
+
+另附 **16 组专业概念辨析、12 道中等难度面试题、12 道中等难度考试题及解析**，并参考 Jurafsky & Martin、Stanford IR、Universal Dependencies、Transformer/BERT 等原始资料。
+
+[Markdown 在线阅读](glossaries/nlp.md) · [PDF 阅读](pdf/nlp.pdf) · [结构化 TSV](data/nlp.tsv) · [教材论文与审稿记录](data/nlp/SOURCES.md)
+
+原始数据：`data/nlp/chapters/`。执行 `node scripts/render_nlp.mjs --check` 可核对出版镜像。**本册为独立出版，未计入现有网站学科及术语搜索总数。**
