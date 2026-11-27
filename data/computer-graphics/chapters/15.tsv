@@ -1,0 +1,26 @@
+# 图形 API、命令提交与显存资源
+OpenGL|开放图形库|OpenGL|Khronos 维护的跨平台图形 API，具有状态机式命令接口。
+Vulkan|Vulkan 显式图形 API|Vulkan|由 Khronos 标准化、强调显式资源和同步控制的图形与计算 API。
+Direct3D|Direct3D 图形 API|D3D|Microsoft DirectX 家族中面向 GPU 图形渲染的接口。
+Metal|Metal 图形与计算 API|Metal|Apple 平台提供的 GPU 图形和计算编程接口。
+Shader Module|着色器模块||存储可供图形管线使用的已编译着色器代码的对象。
+Graphics Pipeline State|图形管线状态|PSO|封装着色阶段、顶点输入、光栅化和混合规则等配置的状态对象。
+Descriptor Set|描述符集合||在 Vulkan 等 API 中把着色器所需缓冲和图像资源绑定到命令的机制。
+Descriptor Binding|描述符绑定||规定着色器资源位于哪个描述符集合和绑定槽位的接口约定。
+Uniform Buffer|统一参数缓冲|UBO|保存多个着色阶段共享读取的较小常量数据的 GPU 缓冲资源。
+Storage Buffer|存储缓冲|SSBO|允许着色器按权限读取或写入较大结构化数据的缓冲资源。
+Push Constant|推送常量||在支持图形 API 中向管线快速提供少量可更新常量数据的机制。
+Command Buffer|命令缓冲||记录 GPU 绘制、复制和同步命令以待提交的对象。
+Command Queue|命令队列||接收待执行 GPU 命令并按相应调度语义推进的队列。
+Graphics Queue|图形队列||支持图形相关绘制和可用其他命令的设备执行队列。
+Compute Queue|计算队列||用于执行通用 GPU 计算派发的设备队列。
+Transfer Queue|传输队列||支持数据复制或资源传输命令的设备队列。
+Synchronization Barrier|同步屏障||在 GPU 命令间声明执行顺序或内存可见性依赖的机制。
+Pipeline Barrier|管线屏障||在部分图形 API 中规定阶段与访问依赖的同步命令。
+Semaphore|信号量||用于设备队列之间或主机与设备之间协调操作完成的同步资源。
+Fence|完成栅栏||允许主机等待或查询设备命令提交是否完成的同步对象。
+Swapchain|交换链||管理供屏幕显示的多张可交换图像及其呈现流程的资源集合。
+Present Operation|图像呈现||把完成渲染的交换链图像提交给显示系统的操作。
+Staging Buffer|暂存缓冲||用于在主机可访问内存与设备优化资源之间搬运数据的中间缓冲。
+Image Layout Transition|图像布局转换||在显式图形 API 中改变图像的允许访问用途或布局状态的过程。
+GPU Memory Allocation|GPU 显存分配||为缓冲区或图像资源绑定设备内存的管理操作。
