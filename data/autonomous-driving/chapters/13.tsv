@@ -1,0 +1,26 @@
+# 车辆动力学、横纵向控制与执行跟踪
+Vehicle Dynamics|车辆动力学||研究车辆质量、轮胎力、惯性与驾驶输入如何决定运动状态的理论。
+Bicycle Model|自行车模型||将左右车轮对合并为等效前后车轮的简化车辆运动学或动力学模型。
+Kinematic Bicycle Model|运动学自行车模型||在低侧滑近似下依据轴距、转向角及车速计算车辆平面运动的模型。
+Dynamic Bicycle Model|动力学自行车模型||进一步考虑侧偏角、轮胎侧向力和车辆横摆惯性等效应的车辆模型。
+Wheelbase|轴距||车辆前后车轴参考中心之间的纵向距离。
+Track Width|轮距||车辆同一车轴左右车轮参考中心之间的横向距离。
+Steering Angle|转向角||车轮或等效前轮相对车体纵轴的旋转角。
+Yaw Rate|横摆角速度||车辆绕垂直轴旋转的角速度。
+Sideslip Angle|车辆侧偏角||车辆速度方向与车体纵向轴之间的夹角。
+Tire Slip Angle|轮胎侧偏角||车轮指向与接触点实际平面运动方向之间的夹角。
+Cornering Stiffness|轮胎侧偏刚度||在线性近似范围内轮胎横向力对侧偏角变化的局部斜率。
+Friction Circle|轮胎附着圆||描述纵向和横向轮胎力合成受可用路面摩擦限制的近似边界。
+Longitudinal Control|纵向控制||通过驱动与制动调整车辆速度、跟车距离和停车位置的控制任务。
+Lateral Control|横向控制||通过转向等输入使车辆跟踪期望道路位置和航向的控制任务。
+Cruise Control|巡航速度控制|CC|维持车辆目标行驶速度的反馈控制功能。
+Adaptive Cruise Control|自适应巡航控制|ACC|根据前车距离和相对速度调节车速的驾驶辅助控制功能。
+Proportional–Integral–Derivative Control|比例积分微分控制|PID|组合当前、累计和变化率误差生成控制量的经典方法。
+Pure Pursuit|纯跟踪控制||通过参考路径上的预瞄点计算车辆转向曲率的几何跟踪算法。
+Stanley Controller|Stanley 路径跟踪控制||基于横向位置误差与航向误差构建转向输入的控制方法。
+Linear Quadratic Regulator|线性二次调节器|LQR|对线性系统和二次性能目标求解最优状态反馈的方法。
+Model Predictive Control|模型预测控制|MPC|在滚动时间窗口内求解有约束预测优化并实施首段控制的策略。
+Feedforward Steering|前馈转向||根据参考路径曲率和车辆模型预先产生转向分量的控制方式。
+Feedback Steering|反馈转向||依据实际轨迹跟踪误差实时修正方向控制输入的方法。
+Actuator Delay Compensation|执行器延迟补偿||在控制规划中预测转向或制动指令到生效之间的时间滞后。
+Control Saturation|控制饱和||转向、驱动或制动力命令达到执行器上下限而不能继续增加的现象。
