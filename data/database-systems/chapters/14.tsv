@@ -1,0 +1,26 @@
+# 复制、分片与分布式数据一致性
+Database Replication|数据库复制||把逻辑数据或日志传播到多个节点以提升可靠性与服务能力的机制。
+Primary–Replica Replication|主从副本复制||由主副本接收主要写入并向其他副本传播更新的复制架构。
+Multi-primary Replication|多主复制||允许多个节点接受写入、需要处理传播顺序与冲突的架构。
+Synchronous Replication|同步复制||在写入成功确认前等待满足配置规则的副本完成指定同步步骤。
+Asynchronous Replication|异步复制||写入可先向客户端确认，再在后台传播至其他副本。
+Replication Lag|复制滞后||源副本进度与目标副本已应用更新之间的时间或日志位置差。
+Change Data Capture|变更数据捕获|CDC|从数据库日志或其他变更来源持续提取增删改事件的机制。
+Log Shipping|日志传送||把主节点持久日志传递并应用到其他节点以维护副本的技术。
+Read Replica|只读副本||主要承担读请求而通常不接受普通业务写入的数据库副本。
+Replica Failover|副本故障切换||在当前主副本失效时选择另一副本接管服务的过程。
+Database Sharding|数据库分片||按键、哈希或范围把逻辑数据水平划分并分布到多个节点的技术。
+Shard Key|分片键||用于决定记录归属哪个数据分片的字段或字段组合。
+Range Partitioning|范围分区||根据键区间划分数据，以支持顺序范围查询和数据局部性。
+Hash Partitioning|哈希分区||通过键的哈希值将数据均匀映射到若干分区的策略。
+Consistent Hashing|一致性哈希||把键与节点映射到环形空间、降低成员变化时重分配量的分布方法。
+Shard Rebalancing|分片重平衡||随着节点或负载变化迁移分片以改善容量分配的过程。
+Hot Shard|热点分片||承担远超平均请求量或存储负担的分片。
+Distributed Query Execution|分布式查询执行||把单个查询划分成跨节点计算阶段并交换中间数据的处理过程。
+Distributed Transaction|分布式事务||跨多个分片或资源协调原子提交与隔离规则的事务。
+Two-phase Commit|两阶段提交|2PC|协调者先收集参与方准备状态，再宣布统一提交或回滚决议的协议。
+Distributed Consensus|分布式共识||节点在指定故障与网络假设下就同一决定达成一致的任务。
+Raft Replication|Raft 日志复制||通过领导者任期、复制日志和仲裁规则维护一致复制状态的协议机制。
+Quorum Read|仲裁读||从满足指定仲裁规则的副本集合读取数据以支持目标读取语义的操作。
+Quorum Write|仲裁写||将写入提交到满足指定仲裁规则的副本集合的操作。
+Consistency–Availability Tradeoff|一致性—可用性权衡||分区等故障条件下不同数据一致性保证与请求可响应性之间的取舍。
