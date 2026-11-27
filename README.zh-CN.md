@@ -142,3 +142,13 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 计算机图形学 Computer Graphics（独立出版，尚未加入全站索引）
+
+新增《计算机图形学专有名词中英文对照表》：**500 条中英文术语、20 个专业章节**。主题涵盖三维几何、仿射和射影变换、NURBS、光栅化、纹理、微表面 BRDF/BSDF、PBR、辐射度量、路径追踪、全局光照、动画和物理仿真、OpenGL/Vulkan、Mesh Shader、BVH、实时渲染、NeRF、3D Gaussian Splatting 及资产管线。
+
+除术语外，附 **16 组核心概念辨析、12 道中等难度面试问答、12 道带解析的考试题**。参考 *Physically Based Rendering*（第 4 版）、Scratchapixel、Khronos 官方规范和研究原始论文。
+
+[Markdown 阅读](glossaries/computer-graphics.md) · [PDF 查看](pdf/computer-graphics.pdf) · [结构化 TSV](data/computer-graphics.tsv) · [参考资料与审稿说明](data/computer-graphics/SOURCES.md)
+
+原始条目位于 `data/computer-graphics/chapters/`，可运行 `node scripts/render_computer_graphics.mjs --check` 验证出版文件和网站镜像一致。**本册独立出版，暂不计入网站索引的学科数量和术语总数。**
