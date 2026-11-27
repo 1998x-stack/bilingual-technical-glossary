@@ -1,0 +1,26 @@
+# 批处理、流处理与分布式计算
+MapReduce|MapReduce 编程模型||将任务组织为 Map 产生键值对、Shuffle 分组和 Reduce 聚合的分布式批处理模型。
+Map Function|映射函数||把一条输入记录转换为零个或多个中间键值对的处理步骤。
+Reduce Function|归约函数||对同键的中间结果进行聚合的处理步骤。
+Shuffle|数据洗牌||根据键或分区规则跨工作节点传输并重新分组数据的过程。
+Combiner|本地合并器||在数据洗牌前对可安全组合的中间结果执行局部聚合的优化。
+Data Parallelism|数据并行||把同一操作应用于不同数据分区的并行执行方式。
+Task Parallelism|任务并行||把相互独立或可并发的不同计算任务分配至多个工作节点。
+Directed Acyclic Graph Execution|有向无环图执行|DAG|以无环依赖图描述任务执行顺序和数据流的调度方式。
+Execution Stage|执行阶段||具有共同调度或数据依赖边界的一组计算任务。
+Task Scheduler|任务调度器||将计算任务映射到工作节点并管理资源与重试的组件。
+Work Stealing|工作窃取||空闲工作线程或节点从繁忙执行者队列获取待处理任务的策略。
+Speculative Execution|推测执行||为缓慢任务启动冗余副本、优先采用先完成结果的策略。
+Straggler|拖尾任务||显著慢于同批其他任务、延迟整体作业完成的任务。
+Checkpointing|检查点||周期性持久化计算状态以便故障后恢复或重算的机制。
+Stateful Stream Processing|有状态流处理||在连续事件上维护跨记录累计状态的流计算模式。
+Stateless Stream Processing|无状态流处理||每条输入可独立处理而无需跨事件保存业务状态的模式。
+Event Time|事件时间||事件在数据源实际发生的时间，而非被系统接收处理的时间。
+Processing Time|处理时间||算子所在计算系统处理事件时的本地时间。
+Ingestion Time|摄入时间||记录进入流处理系统的时间。
+Watermark|水位线||对事件时间进度的估计，用于触发窗口计算并管理迟到数据。
+Tumbling Window|滚动窗口||时间范围不重叠、按固定时长切分的窗口。
+Sliding Window|滑动窗口||按固定步长移动且可能互相重叠的时间窗口。
+Session Window|会话窗口||根据事件间空闲时间间隔划定的动态长度窗口。
+Late-arriving Data|迟到数据||事件时间早于当前水位线或窗口关账点才到达的数据。
+Exactly-once State Processing|状态恰好一次处理||在特定故障与恢复条件下确保状态更新效果不会因重放重复生效的处理保证。
