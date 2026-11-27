@@ -1,0 +1,26 @@
+# 数据集、标注、训练与视觉评测指标
+Computer Vision Dataset|计算机视觉数据集||用于训练或评估视觉算法的图像、视频及标签集合。
+ImageNet|ImageNet 图像数据集||以大规模分类标注推动视觉表示学习与模型基准比较的数据集。
+COCO Dataset|COCO 通用物体数据集|COCO|包含复杂场景图像及检测、分割和关键点等标注的数据集。
+Pascal VOC|PASCAL VOC 视觉挑战数据集|VOC|用于物体分类、检测和分割等任务的经典基准。
+Cityscapes Dataset|Cityscapes 街景数据集||面向城市道路场景语义与实例理解的像素标注数据集。
+KITTI Benchmark|KITTI 自动驾驶基准||面向立体视觉、光流、定位与三维目标检测等任务的道路数据集。
+Open Images Dataset|Open Images 数据集||包含多类别图像及检测框、关系等标注的大规模视觉数据资源。
+Annotation Format|视觉标注格式||规定边界框、掩码、关键点与类别标签如何编码的结构模式。
+Polygon Annotation|多边形标注||通过有序顶点序列近似目标区域轮廓的标注方式。
+Instance ID|实例标识符||在同一图像或视频中区分不同目标实例的标签编号。
+Bounding Box Format|检测框坐标格式||使用 xyxy、xywh 或归一化中心坐标等方式表示矩形的约定。
+Data Augmentation|数据增强||通过保持标签语义的图像变换增加训练样本多样性的策略。
+Random Crop|随机裁剪||从输入图像随机截取子区域构造训练样本的增强操作。
+Random Horizontal Flip|随机水平翻转||按概率将图像及相应标注左右镜像的增强方法。
+Color Jitter|颜色扰动||对亮度、对比度、饱和度等颜色属性执行随机变换的增强操作。
+MixUp|线性混合增强|MixUp|线性组合两张训练图像及相应软标签的数据增强方法。
+CutMix|区域拼贴增强|CutMix|将一张图像局部区域替换为另一图像内容并调整标签权重的增强方法。
+Mosaic Augmentation|马赛克拼图增强||将多张图像重新缩放并拼成一张训练图的增强策略。
+Average Precision|平均精度|AP|依据精确率召回率曲线对某个类别或评测条件计算面积的检测指标。
+Mean Average Precision|平均 AP|mAP|按照规定类别和可选 IoU 阈值对 AP 求平均的评测指标。
+COCO AP|COCO 平均精度|AP@[.50:.95]|在多个 IoU 阈值从 0.50 到 0.95 间平均计算的检测评价指标。
+AP50|IoU 0.50 的平均精度|AP50|使用交并比阈值 0.50 判定检测匹配时的 AP 指标。
+Precision–Recall Curve|精确率—召回率曲线|PR|随检测分数阈值改变展示精确率与召回率关系的曲线。
+Mean Intersection over Union|平均交并比|Mean IoU|对分割任务中的各类别交并比计算平均的指标。
+Dataset Leakage|数据集泄漏||训练和测试之间有重复样本或相互可推断信息导致成绩虚高的现象。
