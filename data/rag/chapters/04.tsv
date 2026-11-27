@@ -1,0 +1,26 @@
+# 文本表示、Embedding 与编码器
+Embedding|嵌入表示||把文本、图片或其他对象映射为可计算相似度的向量表示。
+Text Embedding|文本嵌入||用向量编码词句或文档语义及检索特征的表示。
+Sentence Embedding|句向量||为整个句子生成单一向量的表示方式。
+Document Embedding|文档向量||为文档或文档片段生成向量以支持相似度搜索的结果。
+Query Embedding|查询向量||将用户查询转换为检索向量的表示。
+Dense Embedding|稠密嵌入||大部分维度为非零连续值的向量表示。
+Sparse Embedding|稀疏嵌入||大部分维度为零、常保留词项维度信息的表示。
+Bi-encoder|双塔编码器||分别编码查询与文档并使用向量相似度匹配的检索模型。
+Dual Encoder|双编码器||为两个输入分支独立生成表示并通过匹配函数评分的模型架构。
+Cross-encoder|交叉编码器||联合编码查询与文档对并直接输出相关性得分的模型。
+Embedding Dimension|嵌入维度||检索向量的元素数量。
+Vector Norm|向量范数||衡量向量大小的函数，常用于归一化与相似度计算。
+L2 Normalization|L2 归一化||把非零向量除以欧氏范数使其长度为一的变换。
+Cosine Similarity|余弦相似度||两个非零向量夹角余弦对应的相似度度量。
+Dot-product Similarity|点积相似度||以两个向量内积衡量匹配程度的评分方式。
+Euclidean Distance|欧氏距离||由向量分量差平方和开方得到的距离。
+Metric Learning|度量学习||学习使相关样本接近且无关样本远离的特征表示或距离函数。
+Contrastive Learning|对比学习||通过正负样本关系训练表示空间的学习方法。
+In-batch Negatives|批内负样本||将同一训练批次中的其他候选作为对比学习负例的策略。
+Hard Negative Mining|困难负样本挖掘||选择与查询较相近却不相关的候选增强检索训练的方法。
+Embedding Drift|嵌入漂移||模型版本或数据分布变化导致向量分布发生改变的现象。
+Embedding Model Version|嵌入模型版本||标记用于构建索引或查询向量的编码器权重与配置版本。
+Embedding Compatibility|嵌入兼容性||查询与文档向量能否在同一表征空间中有效比较的条件。
+Multilingual Embedding|多语言嵌入||支持不同语言文本在相近语义向量空间匹配的表示模型。
+Multimodal Embedding|多模态嵌入||把文本、图像等不同模态映射到可比较表示空间的技术。
