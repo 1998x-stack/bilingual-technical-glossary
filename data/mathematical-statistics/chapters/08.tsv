@@ -1,0 +1,26 @@
+# 经典参数检验与列联分析
+One-sample t Test|单样本 t 检验||在正态或适当大样本条件下检验总体均值是否等于指定值。
+Two-sample t Test|双样本 t 检验||对两个独立样本均值差进行推断的参数检验。
+Paired t Test|配对 t 检验||对成对观测的差值均值进行的单样本 t 检验。
+Welch t Test|Welch t 检验||不假设两总体方差相同的独立双样本均值检验。
+Z Test|Z 检验||用标准正态参考分布对参数或标准化统计量作检验。
+Chi-square Goodness-of-fit Test|卡方拟合优度检验||用观测与期望频数差异检验分类分布拟合程度的方法。
+Pearson Chi-square Test|皮尔逊卡方检验||使用 Pearson 卡方统计量检验分类变量关系或拟合情况的检验。
+Chi-square Test of Independence|卡方独立性检验||判断列联表两个分类变量是否独立的渐近检验。
+Fisher Exact Test|Fisher 精确检验||通过条件超几何分布对列联表关联作精确概率检验。
+McNemar Test|McNemar 检验||对配对二元结果的非对角频数比较边际同质性。
+Binomial Test|二项检验||基于确切二项分布检验成功概率的程序。
+Poisson Rate Test|泊松率检验||依据泊松计数及暴露时间检验事件发生率的程序。
+Variance Ratio Test|方差比检验||在独立正态总体假设下用 F 分布检验方差比。
+Bartlett Test|Bartlett 方差齐性检验||在近似正态前提下检验多个总体方差相等的统计方法。
+Levene Test|Levene 方差齐性检验||利用组内绝对偏差检验不同组方差是否相等。
+Brown–Forsythe Test|Brown–Forsythe 检验||基于组内对中位数绝对偏差的稳健方差齐性检验。
+Shapiro–Wilk Test|Shapiro–Wilk 正态性检验||比较样本有序值与正态期望次序结构的正态性检验。
+Kolmogorov–Smirnov Test|Kolmogorov–Smirnov 检验|KS|用经验分布函数与参考分布的最大偏差作拟合或两样本检验。
+Anderson–Darling Test|Anderson–Darling 检验||对经验分布与理论分布偏差赋予尾部更大权重的拟合检验。
+Jarque–Bera Test|Jarque–Bera 检验||基于样本偏度与峰度检验正态性的大样本方法。
+Odds Ratio|优势比|OR|比较两组事件优势的比值，常用于二元结局关联分析。
+Risk Ratio|风险比|RR|两组事件发生概率的比值，亦称相对风险。
+Risk Difference|风险差|RD|两组事件发生概率相减得到的绝对效应量。
+Contingency Table|列联表||按两个或更多分类变量联合频数交叉汇总的数据表。
+Expected Cell Count|期望单元格频数||在给定零假设下列联表各单元格的理论期望计数。
