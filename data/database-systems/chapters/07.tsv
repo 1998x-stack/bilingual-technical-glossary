@@ -1,0 +1,26 @@
+# 关系代数、查询解析与逻辑计划
+Query Parsing|查询解析||将 SQL 输入转换为可供语义检查和计划生成的语法结构的过程。
+SQL Lexer|SQL 词法分析器||把 SQL 字符流分解为关键词、标识符、字面量和符号的组件。
+Parser|语法分析器||根据语法规则将 token 序列构造成解析树的程序。
+Abstract Syntax Tree|抽象语法树|AST|保留查询语义结构而省略部分语法细节的树形表示。
+Binder|名称绑定器||把列名、表别名和函数引用解析为确定数据库对象的模块。
+Semantic Analysis|语义分析||检查类型、名称、聚合规则和权限等查询合法条件的阶段。
+Query Rewriting|查询改写||在保持规定结果语义的前提下对查询表达式进行等价或安全变换。
+Relational Algebra|关系代数||以选择、投影、连接和集合运算形式化描述关系查询的运算体系。
+Selection Operator|选择算子|σ|按布尔谓词筛选关系元组的关系代数操作。
+Projection Operator|投影算子|π|只保留选定属性并在纯关系模型中消除重复元组的操作。
+Cartesian Product|笛卡尔积|×|把两个关系中所有元组两两组合的关系运算。
+Natural Join|自然连接|⋈|按同名属性相等条件组合两关系并合并公共属性的连接。
+Theta Join|θ 连接||按任意给定布尔条件匹配两个输入关系元组的连接。
+Equijoin|等值连接||连接条件由一个或多个字段相等谓词组成的连接操作。
+Semijoin|半连接||只返回左侧匹配元组而不附带右侧字段的关系运算。
+Antijoin|反连接||只返回左侧未找到右侧满足条件匹配的元组。
+Aggregation|聚合算子||按组或全局将多个输入元组汇总为计数、求和等结果的运算。
+Grouping Operator|分组算子||依据一个或多个键把输入元组划分为聚合分组的操作。
+Logical Query Plan|逻辑查询计划||用关系运算节点及依赖结构描述查询处理步骤的抽象计划。
+Predicate Pushdown|谓词下推||把过滤条件移近数据读取位置以减少中间数据量的优化。
+Projection Pushdown|投影下推||提前删除不需要的列以减少 I/O、内存和数据传输的优化。
+Subquery Decorrelation|子查询去相关||把引用外层变量的子查询转换为连接或其他较易优化结构的变换。
+Common Subexpression Elimination|公共子表达式消除||复用重复表达式或公共计算结果以避免多次执行的优化。
+Logical Equivalence|逻辑等价||两个查询计划在约定的 NULL、重复值及顺序语义下产生相同结果的性质。
+Query Normalization|查询规范化||将语法不同但语义相近的查询转换为标准内部形式的步骤。
