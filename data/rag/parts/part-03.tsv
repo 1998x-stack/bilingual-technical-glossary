@@ -1,0 +1,80 @@
+# 证据组织、提示构建与可信回答
+Context Assembly|上下文组装||将多份检索证据组合成生成模型可处理的输入。
+Evidence Selection|证据选择||从候选片段中筛出最能支持回答的内容。
+Evidence Aggregation|证据聚合||将不同来源的互补事实整合为有条理的证据集合。
+Evidence Attribution|证据归属||标明某条陈述可追溯至哪些具体资料。
+Citation Generation|引文生成||为回答内容产生指向来源文档或片段的引用标记。
+Citation Span|引用片段||支持某项回答陈述的最小或指定来源文本范围。
+Source Grounding|来源锚定||要求生成文本的事实与可验证来源保持对应的约束。
+Answer Synthesis|答案综合||综合多个检索结果生成面向问题的连贯回答。
+Answer Faithfulness|答案忠实性||答案中的事实主张是否能由指定证据直接支持的性质。
+Unsupported Claim|无证据支持的断言||输出中无法由提供的资料合理推出的事实陈述。
+Hallucination|幻觉||生成模型输出看似可信却缺乏事实依据或与依据矛盾的内容。
+Abstention|拒绝猜答||证据不足时明确说明无法确认而不生成无根据结论的行为。
+Unanswerable Query|不可回答查询||在指定知识库和证据限制下无法可靠回答的问题。
+Grounding Instruction|证据约束指令||要求模型仅根据可用资料回答并说明不确定性的提示约束。
+Prompt Template|提示模板||将用户问题、系统要求与来源证据组织为固定输入格式的结构。
+Context Delimiter|上下文分隔符||将可信指令、用户问题和外部资料明确划分的边界标记。
+Source-aware Prompting|来源感知提示||在上下文中保留来源标识、标题与时间等元数据的提示方式。
+Evidence Ordering|证据排序||按相关性、可靠性或位置影响调整引用片段顺序的过程。
+Lost-in-the-middle Effect|中间位置忽视现象||部分模型在长上下文中对位于中间的关键信息利用不足的观察现象。
+Context Compression|上下文压缩||减少冗余或低相关 token、保留关键证据的处理。
+Extractive Compression|抽取式压缩||仅选择原文支持句段而不重写证据的上下文精简方式。
+Abstractive Compression|生成式压缩||用模型重写或总结证据以缩短输入，可能引入信息损失。
+Token Truncation|token 截断||因上下文长度限制而删除或裁剪部分文本的过程。
+Citation Verification|引用核验||检查每项回答断言是否由所标注来源内容实际支持的步骤。
+Evidence Conflict|证据冲突||不同来源在相同实体、时间或条件下给出不一致结论的情况。
+
+# 自适应、递归与 Agentic RAG
+Agentic RAG|智能体式 RAG||由规划或智能体逻辑决定检索动作、工具顺序与后续生成的 RAG 架构。
+Iterative Retrieval|迭代检索||根据已获证据或中间答案反复构造新查询继续检索的策略。
+Multi-hop Retrieval|多跳检索||为建立跨实体或文档关系而连续执行多个证据查找步骤的过程。
+Multi-hop Question Answering|多跳问答||答案需组合两个或更多事实链路的问答任务。
+Decomposed Question Answering|分解式问答||先拆分复杂问题并解决子问题，再整合最终答案的方式。
+Tool-augmented Retrieval|工具增强检索||在文本检索之外调用数据库、搜索 API 或其他工具获取证据。
+Web Search Augmentation|网络搜索增强||将网页检索结果引入专有知识库检索与生成过程的策略。
+Self-RAG|Self-RAG 自反思检索增强生成|Self-RAG|通过学习的反思 token 控制检索和评判生成内容的方案。
+Corrective RAG|纠错式 RAG|CRAG|根据检索质量评估采取修正检索或外部搜索等补救步骤的方案。
+Retrieval Reflection|检索反思||根据中间检索证据评估当前路径是否需要修正的过程。
+Self-critique|自我评判||模型检查自身候选回答或证据使用是否符合要求的步骤。
+Retrieval Feedback Loop|检索反馈循环||将生成或评估结果反馈到下一轮检索的闭环。
+Evidence Gap Detection|证据缺口检测||识别当前资料无法回答的子问题或条件的过程。
+Follow-up Search|后续检索||针对证据缺口补充执行的新查询。
+Search Budget|检索预算||允许使用的检索调用次数、时间或计算成本额度。
+Tool-call Budget|工具调用预算||对单个请求的外部工具执行次数或成本施加的限制。
+Stopping Rule|停止规则||当证据充分、预算耗尽或无进展时终止检索的判定条件。
+Planner–Executor Pattern|规划—执行模式||一个模块决定检索计划、另一模块执行并回报结果的架构。
+Reflection Loop|反思循环||多轮检查与修订中间状态以改善最终答案的控制结构。
+Retrieval Policy|检索策略||根据请求状态选择下一检索动作或不检索的决策规则。
+Contextual Bandit Routing|上下文赌博机路由||基于请求特征与反馈学习选择检索方案的在线决策策略。
+Active Retrieval|主动检索||模型在生成过程中根据当前不确定性主动获取外部证据的方式。
+Search Tool Orchestration|检索工具编排||协调不同索引、搜索服务和数据库调用顺序与依赖的过程。
+Knowledge Gap Recovery|知识缺口恢复||发现库内缺失关键事实后通过追加来源或安全拒答修复流程的策略。
+Iterative Answer Refinement|迭代答案修订||在获取新证据后重新组织、纠正或补充生成回答的过程。
+
+# GraphRAG、图索引与结构化检索
+GraphRAG|图检索增强生成|GraphRAG|结合实体关系图与文本证据检索以支持关联推理或全局概述的 RAG 方法族。
+Knowledge Graph|知识图谱|KG|用实体、关系及属性构成结构化知识网络的表示。
+Entity Node|实体节点||知识图中代表特定人、机构、概念或对象的节点。
+Relation Edge|关系边||连接两个实体、表示二者语义联系的有向或无向边。
+Knowledge Triple|知识三元组||以主体、谓词和客体描述一条结构化事实的表示。
+Graph Extraction|知识图谱抽取||从文档中识别实体及关系并转化为图结构的过程。
+Entity Resolution|实体消歧与合并||判断不同名称或记录是否指向同一真实实体并合并的步骤。
+Graph Index|图索引||用于按节点、边或路径快速访问知识图结构的存储组织。
+Community Detection|图社区发现||识别连接相对紧密的子图群组的算法任务。
+Community Summary|社区摘要||对知识图某个实体关系群组的主要主题与事实生成的概述。
+Community Report|社区报告||对图社区形成可用于问答的结构化描述或总结文档。
+Graph Traversal|图遍历||沿知识图节点与边递归或迭代访问相关结构的过程。
+Neighborhood Expansion|邻域扩展||从命中实体向一跳或多跳邻接节点扩充证据的策略。
+Graph Path Retrieval|图路径检索||通过实体间路径查询建立跨文档关系证据的方式。
+Subgraph Retrieval|子图检索||按查询目标抽取局部相关节点、边及属性集合的过程。
+Local Graph Search|图局部搜索||以具体实体为中心在邻域中查找相关知识的模式。
+Global Graph Search|图全局搜索||依据社区摘要或全局结构回答语料整体性问题的模式。
+Entity-centric Retrieval|实体中心检索||从查询涉及的实体出发收集相关记录与关系的策略。
+Relation-aware Retrieval|关系感知检索||显式使用实体关系信息判断候选证据相关性的技术。
+Graph Embedding|图嵌入||将图节点、边或子图映射为向量表示以支持检索或预测的方法。
+Graph Database|图数据库||面向节点、边、属性与图遍历操作的数据管理系统。
+Text-to-Cypher|文本转 Cypher||将自然语言请求转换为图数据库 Cypher 查询的技术。
+Text-to-SQL|文本转 SQL||将自然语言查询映射为关系数据库 SQL 语句的技术。
+Structured Retrieval|结构化检索||通过模式、字段和查询语言访问表格或图等结构化数据的方式。
+Graph–Text Alignment|图文对齐||把图中实体关系与其原始文档证据位置建立对应的机制。
