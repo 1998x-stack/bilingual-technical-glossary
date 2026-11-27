@@ -1,0 +1,26 @@
+# LSM、日志结构存储与键值引擎
+Log-structured Merge Tree|日志结构合并树|LSM Tree|通过内存写缓冲、顺序磁盘文件及后台合并支持高写入吞吐的存储结构。
+MemTable|内存表|MemTable|LSM 引擎在内存中保存近期有序键值更新的可变结构。
+Immutable MemTable|不可变内存表||停止写入、等待刷入磁盘的冻结内存表。
+Sorted String Table|有序字符串表|SSTable|持久化的按键排序、通常写成后不再原位修改的文件。
+Compaction|压实合并||合并多个排序文件、丢弃可安全删除的旧版本并减少读放大的后台任务。
+Leveled Compaction|分层压实||将磁盘 SST 文件组织为容量递增的层级并控制层内键区间重叠的策略。
+Tiered Compaction|分级压实||先保留多个同级排序文件、按阈值成批合并以改善写入放大的策略。
+Size-tiered Compaction|尺寸分级压实||按文件大小或组别选择相近文件参与合并的压实方式。
+Universal Compaction|通用压实策略||按累计文件尺寸比例选择合并集合的 LSM 压实方式。
+Bloom Filter|布隆过滤器||用位图及哈希函数判断元素可能存在或一定不存在的概率型过滤器。
+False Positive Rate|假阳性率||布隆过滤器对实际不存在键错误报告可能存在的比例。
+Block Cache|数据块缓存||缓存 SSTable 等文件的数据块以减少反复从磁盘读取的内存设施。
+Write Batch|批量写入||将多个键值更新组成一个按引擎语义共同提交或记录的批次。
+WAL-backed MemTable|预写日志保护的内存表||先记录可恢复写入日志再更新内存表的 LSM 写路径。
+Flush to SSTable|刷写有序表文件||把不可变内存表转换为新的磁盘有序文件的操作。
+Merge Iterator|合并迭代器||按键顺序联合读取多个有序数据流并选取可见版本的迭代组件。
+Point Lookup|单点查找||按完整键读取一条或一组匹配记录的操作。
+Range Scan|范围扫描||按有序键区间顺序访问多条记录的操作。
+Read Amplification|读取放大||执行一次逻辑读取需要额外读取多个物理块或文件的程度。
+Space Amplification|空间放大||存储系统物理占用相对于有效逻辑数据量的额外比例。
+Compaction Debt|压实债务||积累的待合并数据工作量，可能导致写入限速或延迟上升。
+Tombstone|删除墓碑||记录键已被删除、允许合并或复制传播删除语义的特殊标记。
+Sequence Number|序列编号||用于为存储记录或操作建立先后次序的单调逻辑编号。
+Manifest File|清单文件||描述当前 LSM 文件集合、层级与版本状态的元数据文件。
+Key-value Iterator|键值迭代器||提供顺序前进、定位键及读取当前键值等接口的存储访问抽象。
