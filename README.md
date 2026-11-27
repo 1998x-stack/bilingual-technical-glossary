@@ -50,6 +50,10 @@ TERM/ATLAS is a Chinese–English terminology reference for students, researcher
 | Numerical Computing | 数值计算 | 259 | 17 | [Read](glossaries/numerical-computing.md) | [Download](pdf/numerical-computing.pdf) |
 | **Total** | **26 domains** | **9,148** | **398** | | |
 
+### Computer Vision / 计算机视觉 (standalone; not yet indexed)
+
+**500 original bilingual terms across 20 chapters**, spanning image representation and formation, cameras, image filters, SIFT/ORB and epipolar geometry, stereo depth, SfM/SLAM and optical flow, image classification/CNN/ViT/self-supervision, R-CNN/YOLO/DETR, segmentation and tracking, point clouds and 3D reconstruction, NeRF/3D Gaussian Splatting, diffusion/generative vision, CLIP/VLM, COCO benchmarks, production optimization and visual safety. Includes **16 conceptual contrasts, 12 intermediate interview questions and 12 worked exam problems**. [Markdown](glossaries/computer-vision.md) · [PDF](pdf/computer-vision.pdf) · [TSV](data/computer-vision.tsv) · [Technical sources and review notes](data/computer-vision/SOURCES.md). Source reproducibility: `node scripts/render_computer_vision.mjs --check`. **Standalone publication, not yet included in the indexed-domain or term totals.**
+
 ### Additional standalone handbook (not yet indexed)
 
 | Subject | Chinese subject | Glossary terms | Chapters | Markdown | PDF |
