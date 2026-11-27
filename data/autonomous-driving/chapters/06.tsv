@@ -1,0 +1,26 @@
+# 三维目标检测、运动目标跟踪与场景实体
+3D Object Detection|三维目标检测||预测车辆、行人或其他目标的三维位置、尺寸、朝向及类别的任务。
+3D Bounding Box|三维边界框||用中心、尺寸和朝向描述物体近似空间范围的标注。
+Oriented Bounding Box|有向包围盒|OBB|允许相对参考坐标轴旋转的三维目标包围框。
+Axis-aligned Bounding Box|轴对齐包围盒|AABB|所有边保持与坐标轴平行的三维空间矩形盒。
+Multi-object Tracking|多目标跟踪|MOT|在连续帧中估计多个目标状态并维护跨时刻身份的任务。
+Tracking-by-detection|先检测后跟踪||以逐帧检测目标为输入、通过时间关联生成目标轨迹的方法。
+Track Association|轨迹关联||判断新的检测观测应该更新哪个已有目标轨迹的过程。
+Kalman Tracking|卡尔曼目标跟踪||利用状态预测、测量残差与协方差更新目标轨迹的技术。
+Joint Probabilistic Data Association|联合概率数据关联|JPDA|在关联不确定时按多种候选测量归属概率更新目标状态的方法。
+Multiple Hypothesis Tracking|多假设跟踪|MHT|维护并延迟决定不同目标测量关联假设的多目标跟踪方法。
+Appearance Embedding|外观嵌入||将目标图像区域编码为向量以辅助跨帧身份匹配的表示。
+Track ID|轨迹身份标识||对同一物理对象跨时间的观测保持一致的编号。
+Track Fragmentation|轨迹碎裂||同一真实物体被拆成多个短轨迹段的跟踪错误。
+Identity Switch|跟踪身份切换|IDSW|对同一真实对象错误分配新身份或与其他目标交换身份的事件。
+Track Confidence|轨迹置信度||表示目标轨迹当前存在概率、观测质量或模型可靠性的评分。
+Occlusion Handling|目标遮挡处理||目标短时被其他物体挡住时维持轨迹预测和身份的机制。
+Object Existence Probability|目标存在概率||估计一个检测或轨迹确实对应真实物理对象的概率。
+Object Velocity Estimation|目标速度估计||结合时间序列观测推断其他道路参与者速度的任务。
+Object Acceleration Estimation|目标加速度估计||根据运动状态及多帧观测推断目标速度变化率的过程。
+Static Object Classification|静态目标识别||区分固定路边设施和可移动交通参与者的目标状态识别任务。
+Vulnerable Road User|弱势道路使用者|VRU|包括行人和骑行者等在碰撞中较缺乏物理防护的交通参与者类别。
+Pedestrian Detection|行人检测||在道路场景中定位并识别人类行人的视觉或融合感知任务。
+Cyclist Detection|骑行者检测||识别骑自行车或其他二轮非机动车道路参与者的目标检测任务。
+Occupancy-aware Detection|占据感知检测||结合周围空间占据表征辅助目标定位及可见性判断的感知方法。
+Scene Entity Graph|场景实体关系图||以检测对象为节点、空间与交互关系为边组织交通场景状态的图表示。

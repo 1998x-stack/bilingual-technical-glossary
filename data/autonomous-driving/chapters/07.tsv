@@ -1,0 +1,26 @@
+# 高精定位、惯导融合与地图匹配
+Vehicle Localization|车辆定位||根据感知、地图和运动测量估计自车在参考坐标系中位姿的任务。
+Absolute Localization|绝对定位||将车辆位姿锚定到全球或已知地图坐标框架的状态估计。
+Relative Localization|相对定位||估计车辆相对过去位置、局部地图或其他主体的运动位姿。
+GNSS Positioning|卫星导航定位||利用多颗导航卫星观测计算接收器位置的技术。
+Real-time Kinematic Positioning|实时动态载波差分定位|RTK|通过基准站修正和载波相位提升卫星定位精度的方法。
+Precise Point Positioning|精密单点定位|PPP|利用精密卫星轨道与钟差等数据改善单站卫星定位的技术。
+Inertial Navigation System|惯性导航系统|INS|通过积分惯性传感器测量估计姿态、速度和位置的系统。
+GNSS–INS Fusion|卫星惯导融合||将 GNSS 位置或速度测量与惯性传播模型联合估计车辆状态的方法。
+Wheel Odometry|车轮里程计||根据轮速和运动学模型推算车辆相对位移的估计方法。
+Dead Reckoning|航位推算||从已知初始状态积分速度、航向或惯性信息计算后续位置的方法。
+Map Matching|地图匹配||把估计位置和运动轨迹对应到道路或车道地图结构的技术。
+Lane-level Localization|车道级定位||估计自车处于哪条车道及其在车道内的相对位置的任务。
+LiDAR Map Localization|点云地图定位||把当前激光扫描与预建三维地图配准以求车辆位姿的方法。
+Visual Localization|视觉定位||利用当前图像与地图、特征或参考图像确定车辆位置的方法。
+Visual–Inertial Odometry|视觉惯性里程计|VIO|将相机与 IMU 结合估计连续运动状态的算法。
+Graph-based Localization|图优化式定位||通过多时刻状态和测量因子联合优化车辆轨迹的定位方法。
+Pose Graph Optimization|位姿图优化||依据相对运动和绝对观测等约束调整多个位姿的数值优化过程。
+Extended Kalman Filter|扩展卡尔曼滤波|EKF|以非线性模型一阶线性化递推更新高斯状态估计的算法。
+Unscented Kalman Filter|无迹卡尔曼滤波|UKF|通过 sigma 点传播非线性模型近似计算均值与协方差的滤波算法。
+Particle Localization|粒子定位||通过带权随机样本近似非高斯车辆位姿后验分布的方法。
+Covariance Propagation|协方差传播||根据运动模型与噪声统计更新定位不确定性矩阵的过程。
+Localization Drift|定位漂移||估计位置或朝向误差随时间积累而逐渐偏离真实状态的现象。
+Yaw Angle|航向角||描述车辆车体相对于参考坐标的水平转动方向的角度。
+Heading Error|航向误差||车辆当前方向与参考路径或目标方向之间的角度差。
+Localization Integrity|定位完整性||及时识别定位结果不可信并向下游报告风险的能力。

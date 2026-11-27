@@ -1,0 +1,107 @@
+# 自动驾驶仿真、场景标准与数字孪生
+Autonomous Driving Simulation|自动驾驶仿真||在虚拟交通环境中重现传感、车辆运动及交通交互以测试驾驶系统的过程。
+CARLA Simulator|CARLA 自动驾驶仿真器|CARLA|用于自动驾驶感知、规划和闭环评测的开源城市道路仿真平台。
+Scenario-based Testing|场景化测试||围绕明确道路条件、交通主体和事件组合评估系统行为的方法。
+Test Scenario|测试场景||规定道路、主体、行为、初始条件与评价目标的结构化测试案例。
+Logical Scenario|逻辑场景||以参数范围和约束而非单一固定数值定义的一类测试情况。
+Concrete Scenario|具体场景||为逻辑场景参数指定确定数值后得到的可执行案例。
+Functional Scenario|功能场景||以自然语言或高层语义概括道路情境和预期驾驶任务的场景定义。
+Scenario Parameterization|场景参数化||用车速、道路几何、天气及主体行为等变量控制测试环境的方法。
+Scenario Coverage|场景覆盖度||量化测试集合覆盖预定环境、风险和交通交互条件的程度。
+Scenario Generation|场景生成||通过采样、规则或优化生成新的交通仿真测试案例的技术。
+Scenario Mutation|场景变异||系统改变既有场景参数以探索失败边界的测试策略。
+Adversarial Scenario Search|对抗场景搜索||有目的地优化交通主体或环境条件以触发系统薄弱行为的测试方法。
+ASAM OpenDRIVE|ASAM 道路网络描述标准|OpenDRIVE|对道路几何、车道与相关交通基础设施进行结构化描述的开放标准。
+ASAM OpenSCENARIO|ASAM 动态驾驶场景标准|OpenSCENARIO|描述交通参与者行为、时序和场景测试条件的标准体系。
+ASAM OpenCRG|ASAM 道路表面网格标准|OpenCRG|用于精细描述道路表面高程或粗糙度等特征的开放数据标准。
+OpenSCENARIO DSL|OpenSCENARIO 场景描述语言|OSC DSL|用于以领域特定语言形式定义参数化交通场景与行为的方式。
+Simulation Time Step|仿真时间步||每次虚拟物理状态更新对应的离散模拟时间间隔。
+Synchronous Simulation|同步仿真||所有参与组件按统一步长或时钟协调推进模拟状态的模式。
+Asynchronous Simulation|异步仿真||不同模拟组件按各自时间调度执行并交换数据的运行模式。
+Sensor Simulation|传感器仿真||根据虚拟场景生成相机、激光、雷达等设备近似测量的过程。
+Vehicle Dynamics Simulation|车辆动力学仿真||利用轮胎、悬架和车体力学模型计算模拟车辆运动的过程。
+Closed-loop Simulation|闭环仿真||将被测驾驶策略动作反馈到场景中、影响后续观测的评测方式。
+Open-loop Replay|开环数据回放||按记录数据固定播放历史观测、模型输出不影响后续输入的测试方式。
+Digital Twin for Driving|驾驶系统数字孪生||根据道路或车辆真实数据维持相应数字模型以辅助调试与评测的框架。
+Simulation-to-reality Gap|仿真现实差距||仿真中的外观、动力学及交通行为与真实部署分布之间的偏差。
+
+# 驾驶数据集、基准指标与系统性误差分析
+Autonomous Driving Dataset|自动驾驶数据集||包含道路传感观测、车辆状态、标注与可选未来轨迹的研究数据集合。
+Waymo Open Dataset|Waymo 开放数据集||面向自动驾驶感知、运动预测和端到端研究的数据资源系列。
+nuScenes Dataset|nuScenes 数据集||包含多传感器都市道路数据及三维目标、地图等标注的自动驾驶数据集。
+KITTI Vision Benchmark|KITTI 视觉基准||提供车载视觉、激光和定位等任务评测的道路场景数据集。
+Argoverse Dataset|Argoverse 数据集||面向交通感知、地图及主体运动预测的自动驾驶数据资源。
+BDD100K Dataset|BDD100K 驾驶视觉数据集||覆盖多样时段天气和道路场景的视频与图像标注数据集。
+Sensor Calibration Metadata|传感器标定元数据||记录相机内外参、激光安装关系及采样设备配置的数据字段。
+Object Detection Average Precision|目标检测平均精度|AP|按精确率召回率曲线汇总一类目标检测结果质量的指标。
+Mean Average Precision|检测平均精度均值|mAP|按规定类别及评价条件对多个 AP 数值求平均的指标。
+3D Intersection over Union|三维交并比|3D IoU|预测三维物体框与真实框交集体积除以并集体积的几何指标。
+Center Distance Error|中心位置误差||预测物体中心与参考中心之间的空间距离偏差。
+Orientation Error|朝向估计误差||预测目标航向与参考航向之间经角度周期归一化计算的偏差。
+Velocity Estimation Error|速度估计误差||模型估计目标速度与参考速度在规定坐标系及时间点之间的差异。
+Minimum ADE|最小平均位移误差|minADE|从多个候选未来轨迹中选择平均位移误差最小者作为评分的指标。
+Minimum FDE|最小终点位移误差|minFDE|从多个候选轨迹中选取终点误差最小值的评价指标。
+Collision Rate|碰撞率||在规定驾驶任务和测试分布下发生碰撞的次数或运行比例。
+Route Completion|路线完成率||衡量车辆按指定路线到达进度或完成比例的任务指标。
+Intervention Rate|接管干预率||在规定行驶距离、时间或场景数中人类干预自动化行为的频率。
+Disengagement Rate|自动驾驶退出率||按规定计量单位统计自动驾驶功能意外或人工退出的频率。
+Traffic Rule Violation Rate|交通规则违规率||按统一规则判定的驾驶违规事件占总运行单位的比例。
+Driving Comfort Metric|驾驶舒适性指标||通过纵横向加速度、加加速度等量评价乘坐平顺性的指标。
+Closed-loop Driving Score|闭环驾驶综合评分||根据闭环仿真中的任务完成、安全、效率等结果构建的聚合评分。
+Counterfactual Evaluation|反事实评测||估计车辆采取未实际执行动作时可能产生的系统结果的方法。
+Error Taxonomy|驾驶错误分类体系||把漏检、误判、轨迹冲突、控制抖动等失败按根因组织的分析结构。
+Data Leakage|数据泄漏||训练数据包含测试场景或可推断答案的信息导致评测结果虚高的现象。
+
+# 功能安全、SOTIF、网络安全与验证论证
+Functional Safety|功能安全||控制电气电子系统失效引发不合理风险的工程活动和要求体系。
+ISO 26262|道路车辆功能安全标准|ISO 26262|面向道路车辆电气电子系统生命周期功能安全的国际标准系列。
+ISO 21448|预期功能安全标准|ISO 21448|针对系统功能不足或可预见误用引起风险的预期功能安全指导标准。
+Safety of the Intended Functionality|预期功能安全|SOTIF|针对无明显系统故障也可能因感知和决策能力不足产生的风险开展安全分析的领域。
+Automotive Safety Integrity Level|汽车安全完整性等级|ASIL|依据危险严重度、暴露概率及可控性确定的汽车功能安全风险等级。
+Hazard Analysis and Risk Assessment|危害分析与风险评估|HARA|识别可能危险事件并确定必要功能安全要求的工程流程。
+Functional Safety Concept|功能安全概念||把安全目标细化为车辆级功能安全要求的架构描述。
+Technical Safety Concept|技术安全概念||把功能安全要求分配到系统硬件和软件设计中的技术方案。
+Safety Goal|安全目标||为减轻特定危险事件风险定义的最高层安全要求。
+Safety Requirement|安全要求||为预防、检测或控制危险事件而必须满足的系统性能或行为约束。
+Safety Case|安全论证案卷||以主张、证据和推理结构论证系统在规定条件下满足安全要求的资料集合。
+Safety Argument|安全论证||把具体安全主张与支持证据通过逻辑关系关联的推理。
+Hazardous Event|危险事件||危险源与特定运行情境组合后可能对人员或环境造成损害的事件。
+Risk Classification|风险分类||依据严重度、发生可能性和可控性等准则划分风险等级的过程。
+SOTIF Triggering Condition|SOTIF 触发条件||使预期功能不足暴露并可能引发危险行为的特定场景或输入条件。
+Known Unsafe Scenario|已知不安全场景||已识别系统能力不足且存在不能接受风险的运行情景。
+Unknown Unsafe Scenario|未知不安全场景||在设计和验证阶段尚未识别、但实际可能引发风险的场景类别。
+Operational Safety Monitor|运行安全监视器||在车辆执行中持续检查安全前提、感知健康和控制边界的独立或半独立组件。
+Fault Detection and Isolation|故障检测与隔离|FDI|识别故障存在及定位相关部件或信号来源的技术。
+Fault Tolerance|容错||在部分组件故障发生后仍能保持规定安全或服务能力的系统性质。
+Freedom from Interference|免受相互干扰||保证一个软件或硬件组件不会意外破坏另一关键组件的安全要求的设计原则。
+Cybersecurity Engineering|车辆网络安全工程||识别并控制车辆通信、软件更新和计算接口攻击风险的活动。
+ISO/SAE 21434|道路车辆网络安全工程标准|ISO/SAE 21434|规定道路车辆网络安全风险管理与产品生命周期工程活动的国际标准。
+Threat Analysis and Risk Assessment|威胁分析与风险评估|TARA|识别可能攻击路径及损害后果并确定网络安全保护优先级的过程。
+Verification and Validation|验证与确认|V&V|分别检查系统是否符合规定要求和是否满足预期实际使用需求的工程过程。
+
+# 部署运行、远程协助与数据闭环工程
+Autonomous Fleet Operations|自动驾驶车队运营||管理多辆自动驾驶车辆的任务调度、状态监控、运维及应急流程的体系。
+Fleet Management|车队管理||协调车辆任务、位置、服务能力与维护资源的运营功能。
+Remote Assistance|远程协助||在车辆无法独立完成特定问题时由远端人员提供高层指导或支持的机制。
+Remote Operation|远程操作||远端人员通过通信链路直接控制或规定车辆动作的操作模式。
+Teleoperation|远程驾驶操控||远程操作者连续承担部分或全部车辆运动控制的交互方式。
+Fleet Dispatching|车队派单调度||根据服务请求、车辆位置及能力分配运输或运营任务的过程。
+Operational Monitoring|运行监控||持续收集车辆健康、场景状态和安全事件以支持运营的机制。
+Vehicle Telemetry|车辆遥测||由车端传回速度、位置、健康、网络等运行状态数据的机制。
+Health Check|健康检查||按既定规则检测车辆、传感器和计算服务是否处于可用状态的操作。
+Heartbeat Message|心跳消息||用于周期性报告系统进程或控制节点存活状态的消息。
+Watchdog Timer|看门狗定时器||在软件或硬件未按时响应时触发故障处理的监控机制。
+Over-the-air Update|空中软件更新|OTA|通过无线网络向车辆分发、验证和安装软件或配置的升级方式。
+Rollback Strategy|升级回滚策略||当软件更新失效时将系统恢复至已验证版本的部署方案。
+Shadow Mode|影子模式||让候选自动驾驶模型并行计算但不直接控制车辆、以便比较行为的评测方式。
+Canary Deployment|金丝雀部署||先在少量受控车辆或场景启用新版本以监测问题的发布策略。
+Data Logging|车端数据记录||按规定条件持续保存传感器、控制输出及事件元数据的过程。
+Event-triggered Logging|事件触发日志||只在预定异常、接管或关键场景发生时重点保存相关数据的策略。
+Data Curation|驾驶数据整理||对采集的驾驶数据去重、标注、质量检查和筛选的流程。
+Active Learning|主动学习||利用模型不确定性或样本价值选择下一批人工标注数据的方法。
+Hard Case Mining|困难场景挖掘||从大量记录中识别稀有、错误高发或模型不确定驾驶片段的技术。
+Data Flywheel|数据闭环飞轮||用线上失败数据持续改进标注、训练、评测和部署的循环体系。
+Model Registry|模型注册中心||集中管理模型版本、元数据、验证结果与发布状态的系统组件。
+Continuous Integration for ADS|自动驾驶持续集成||自动执行驾驶软件构建、模块测试和数据一致性校验的工程流程。
+Continuous Validation|持续验证||对新代码、模型或数据更新重复执行规定场景和安全相关检查的流程。
+Release Gate|发布门禁||在车端部署前要求指定质量、安全和评测条件全部满足的控制点。

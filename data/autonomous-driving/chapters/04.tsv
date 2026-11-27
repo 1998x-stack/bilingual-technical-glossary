@@ -1,0 +1,26 @@
+# 视觉道路感知、车道线与可行驶区域
+Road Scene Understanding|道路场景理解||根据视觉或融合观测解释道路结构、交通设施及参与者关系的任务。
+Lane Detection|车道线检测||在图像或空间表示中识别车道边界标记及其几何位置的任务。
+Lane Marking|车道标线||绘制在路面的线条、箭头等引导交通的物理标记。
+Lane Centerline|车道中心线||用于描述车道行驶方向和局部几何的参考曲线。
+Lane Boundary|车道边界||定义一个车道允许行驶区域左右界限的几何曲线。
+Drivable Area Segmentation|可行驶区域分割||按像素或空间区域预测车辆可能合法及物理可通行范围的任务。
+Road Surface Segmentation|路面分割||在图像中识别与道路表面对应的语义区域的任务。
+Semantic Segmentation|语义分割||为图像每个像素分配道路、人行道、车辆等语义类别的预测任务。
+Instance Segmentation|实例分割||区分同类不同车辆或行人个体并生成像素掩码的视觉任务。
+Panoptic Segmentation|全景分割||为所有像素赋语义类别并为可数目标区分实例身份的任务。
+Traffic Light Recognition|交通信号灯识别||检测交通信号灯并判断颜色、方向和控制含义的过程。
+Traffic Sign Recognition|交通标志识别||定位并分类限速、停车和其他道路交通标志的任务。
+Traffic Sign Localization|交通标志空间定位||确定交通标志在车辆相机或地图坐标系中的位置的过程。
+Stop Line Detection|停止线检测||识别路面停止线及其相对自车空间位置的任务。
+Crosswalk Detection|人行横道检测||识别道路上的人行横道区域或标线几何的过程。
+Curb Detection|路缘检测||从图像、深度或点云中确定路沿空间位置的任务。
+Free-space Estimation|自由空间估计||估计车体附近无明显障碍、可用于候选运动的空间区域。
+Vanishing Point|消失点||空间平行线经透视投影在图像中趋于汇聚的点。
+Inverse Perspective Mapping|逆透视映射|IPM|在地面平面假设下把相机图像转换为俯视几何表示的方法。
+Bird's-eye-view Transformation|鸟瞰变换|BEV|把多视角或三维观测映射至车辆周围地面坐标平面的表示过程。
+Lane Topology Estimation|车道拓扑估计||推断不同车道段连接、分岔与合流关系的任务。
+Road Edge Detection|道路边缘检测||识别路面可行驶区域外轮廓或边界位置的任务。
+Road Hazard Detection|道路危险物检测||识别落物、坑洞或异常可撞击对象等路面危险的任务。
+Occlusion Reasoning|遮挡推理||基于可见几何及场景关系推断被遮挡区域潜在物体或空间结构的方法。
+Visibility Range Estimation|可视距离估计||判断当前环境与传感器条件下能可靠观测的前方距离范围的任务。

@@ -1,0 +1,26 @@
+# 驾驶数据集、基准指标与系统性误差分析
+Autonomous Driving Dataset|自动驾驶数据集||包含道路传感观测、车辆状态、标注与可选未来轨迹的研究数据集合。
+Waymo Open Dataset|Waymo 开放数据集||面向自动驾驶感知、运动预测和端到端研究的数据资源系列。
+nuScenes Dataset|nuScenes 数据集||包含多传感器都市道路数据及三维目标、地图等标注的自动驾驶数据集。
+KITTI Vision Benchmark|KITTI 视觉基准||提供车载视觉、激光和定位等任务评测的道路场景数据集。
+Argoverse Dataset|Argoverse 数据集||面向交通感知、地图及主体运动预测的自动驾驶数据资源。
+BDD100K Dataset|BDD100K 驾驶视觉数据集||覆盖多样时段天气和道路场景的视频与图像标注数据集。
+Sensor Calibration Metadata|传感器标定元数据||记录相机内外参、激光安装关系及采样设备配置的数据字段。
+Object Detection Average Precision|目标检测平均精度|AP|按精确率召回率曲线汇总一类目标检测结果质量的指标。
+Mean Average Precision|检测平均精度均值|mAP|按规定类别及评价条件对多个 AP 数值求平均的指标。
+3D Intersection over Union|三维交并比|3D IoU|预测三维物体框与真实框交集体积除以并集体积的几何指标。
+Center Distance Error|中心位置误差||预测物体中心与参考中心之间的空间距离偏差。
+Orientation Error|朝向估计误差||预测目标航向与参考航向之间经角度周期归一化计算的偏差。
+Velocity Estimation Error|速度估计误差||模型估计目标速度与参考速度在规定坐标系及时间点之间的差异。
+Minimum ADE|最小平均位移误差|minADE|从多个候选未来轨迹中选择平均位移误差最小者作为评分的指标。
+Minimum FDE|最小终点位移误差|minFDE|从多个候选轨迹中选取终点误差最小值的评价指标。
+Collision Rate|碰撞率||在规定驾驶任务和测试分布下发生碰撞的次数或运行比例。
+Route Completion|路线完成率||衡量车辆按指定路线到达进度或完成比例的任务指标。
+Intervention Rate|接管干预率||在规定行驶距离、时间或场景数中人类干预自动化行为的频率。
+Disengagement Rate|自动驾驶退出率||按规定计量单位统计自动驾驶功能意外或人工退出的频率。
+Traffic Rule Violation Rate|交通规则违规率||按统一规则判定的驾驶违规事件占总运行单位的比例。
+Driving Comfort Metric|驾驶舒适性指标||通过纵横向加速度、加加速度等量评价乘坐平顺性的指标。
+Closed-loop Driving Score|闭环驾驶综合评分||根据闭环仿真中的任务完成、安全、效率等结果构建的聚合评分。
+Counterfactual Evaluation|反事实评测||估计车辆采取未实际执行动作时可能产生的系统结果的方法。
+Error Taxonomy|驾驶错误分类体系||把漏检、误判、轨迹冲突、控制抖动等失败按根因组织的分析结构。
+Data Leakage|数据泄漏||训练数据包含测试场景或可推断答案的信息导致评测结果虚高的现象。

@@ -1,0 +1,26 @@
+# 交通参与者运动预测与多智能体交互
+Motion Prediction|运动预测||推断周围交通参与者在未来若干时间内可能行驶轨迹的任务。
+Trajectory Forecasting|轨迹预测||根据历史状态和道路信息估计未来位置序列的任务。
+Behavior Prediction|行为预测||判断其他车辆或行人可能执行的让行、转弯或变道行为。
+Intention Recognition|交通意图识别||推断目标主体潜在目标车道、行进方向或行为计划的过程。
+Multi-modal Prediction|多模态轨迹预测||输出多个不同的合理未来轨迹及其相应概率的预测方式。
+Unimodal Forecast|单模态预测||以一个主要未来结果或单峰状态分布描述运动趋势的预测方式。
+Prediction Horizon|预测时间范围||轨迹预测从当前时刻向未来延伸的时长。
+Historical Context Window|历史上下文窗口||输入预测模型的过去若干时刻轨迹与感知状态数据。
+Social Interaction Modeling|交通交互建模||在预测中显式考虑主体间让行、跟车、合流等相互影响的机制。
+Agent Interaction Graph|交通主体交互图||以车辆、行人节点和交互边组织多主体关系的图结构。
+Social Pooling|社会交互特征聚合||从邻近主体状态中聚合交互信息用于轨迹预测的技术。
+Lane-conditioned Prediction|车道条件轨迹预测||以道路拓扑和可行车道约束生成主体未来轨迹的预测方法。
+Map-aware Prediction|地图感知运动预测||结合车道几何、路权与交通信号信息推断未来行为的技术。
+Goal-based Prediction|目标驱动预测||先推断主体可能目的位置或区域，再产生对应轨迹的方案。
+Scene-conditioned Prediction|场景条件预测||根据全部相关交通参与者及静动态场景特征预测未来运动的方法。
+Joint Motion Prediction|联合运动预测||同时建模多个主体未来轨迹之间相互依赖的预测问题。
+Marginal Motion Prediction|边际轨迹预测||分别为单个主体输出未来轨迹分布、未显式生成联合结果的方式。
+Trajectory Probability|轨迹候选概率||表示一个未来轨迹模式在模型分布下相对可能性的权重。
+Prediction Calibration|预测概率校准||检查预测轨迹分布的置信水平与真实发生频率相符合的性质。
+Average Displacement Error|平均位移误差|ADE|对预测与真实轨迹对应时间点的空间距离求平均的指标。
+Final Displacement Error|最终位移误差|FDE|计算预测终点与真实终点之间空间距离的指标。
+Miss Rate|轨迹预测漏中率|MR|真实轨迹未落入预测候选容差区域的样本比例。
+Collision Prediction|潜在碰撞预测||根据未来运动估计主体之间可能产生空间重叠的情形。
+Yield Behavior Prediction|让行行为预测||判断其他交通主体是否准备减速、等待或放弃优先通行的任务。
+Interaction-aware Forecast|交互感知预测||允许主体预测随其他参与者和自车计划改变而调整的模型。

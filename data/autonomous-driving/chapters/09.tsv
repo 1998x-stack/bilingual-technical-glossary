@@ -1,0 +1,26 @@
+# 多传感器融合、占据网络与世界表示
+Sensor Fusion|多传感器融合||把不同传感器的互补测量联合推断为一致环境或车辆状态的过程。
+Early Fusion|早期融合||在较底层数据或特征阶段融合不同感知模态的策略。
+Late Fusion|后期融合||分别获得各模态预测后再对决策或目标结果进行融合的方法。
+Feature-level Fusion|特征级融合||在深度网络中将不同传感器编码特征进行聚合的机制。
+Decision-level Fusion|决策级融合||依据多传感器各自的检测或分类结果生成联合结论的方式。
+BEV Feature Fusion|鸟瞰特征融合||把多相机、激光等传感器信息映射到共同鸟瞰平面后整合的技术。
+Bird's-eye View Representation|鸟瞰场景表示|BEV|以车辆周围地面坐标组织空间语义与目标特征的表示。
+Multi-camera BEV|多相机鸟瞰表征||由不同方向相机图像共同构建自车周围空间特征的技术。
+Lift–Splat–Shoot|提升泼溅推理结构|LSS|先将图像特征关联深度、投影到 BEV，再进行下游预测的架构。
+Occupancy Grid|占据栅格||用离散网格值表示空间单元是否被物体占据的结构。
+3D Occupancy Prediction|三维占据预测||预测三维体素中被物体占据的概率及可选语义的感知任务。
+Semantic Occupancy|语义占据||为占据空间单元同时分配车辆、道路或障碍类别的表示。
+Free-space Occupancy|空闲空间占据状态||表达未被测得障碍占用且可供空间推理的体素或栅格状态。
+Unknown Space|未知空间||因传感覆盖不足无法可靠判断空闲或占据的环境区域。
+Occupancy Flow|占据流||描述空间占据状态随时间变化及运动趋势的动态场表示。
+Dynamic Occupancy|动态占据||同时表示当前位置和未来可能运动变化的空间占据状态。
+Sensor Confidence|传感置信度||表示特定模态或观测在当前环境条件下可靠性的数值或等级。
+Measurement Covariance|测量协方差||描述传感器输出误差方差与分量间相关性的统计矩阵。
+Cross-modal Attention|跨模态注意力||通过查询键值相关性让不同感知模态交换信息的神经网络机制。
+Temporal Feature Fusion|时序特征融合||结合相邻时刻特征改善被遮挡目标识别和状态估计的方法。
+Ego-motion Compensation|自车运动补偿||校正车辆自身位姿变化对不同时间感知测量的影响。
+Spatial Alignment|空间对齐||将不同传感器观测转换到统一坐标系以建立几何对应的过程。
+Uncertainty-aware Fusion|不确定性感知融合||根据不同观测噪声和置信程度调整融合权重或估计方式的方法。
+World Representation|环境世界表示||对道路几何、物体、自由空间及可预测动态的结构化内部表达。
+Perception Failure Detection|感知故障检测||识别传感器缺失、模型异常或感知输出不可信事件的处理机制。

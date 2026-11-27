@@ -1,0 +1,26 @@
+# 激光雷达、毫米波雷达与三维点云处理
+Point Cloud|点云||由空间三维采样点及可选反射率、时间和语义属性组成的数据集合。
+Point Cloud Preprocessing|点云预处理||对原始测距点执行时间校正、过滤、降采样和坐标变换的过程。
+Motion Distortion|运动畸变||传感器在一次扫描期间运动使各采样点不对应同一瞬时姿态的现象。
+LiDAR Deskewing|激光点云去运动畸变||利用扫描时序和车辆运动估计校正不同点采集时的姿态差异。
+Ground Point Removal|地面点去除||识别并分离点云中属于路面或地形的测量点的处理。
+Ground Plane Estimation|地面平面估计||根据点云局部几何拟合道路或近似水平接触平面的任务。
+Voxel Downsampling|体素降采样||将空间分为体素并用代表点减少点云规模的方法。
+Radius Outlier Removal|半径离群点滤除||根据给定距离内邻点数量移除孤立点的点云过滤方法。
+Statistical Outlier Removal|统计离群点滤除||通过邻域距离分布识别可能异常点的点云清洗方法。
+Point Cloud Clustering|点云聚类||依据空间距离、密度或特征把测量点分成候选目标集合的过程。
+Euclidean Cluster Extraction|欧氏距离聚类||根据点间欧氏邻接关系提取连通点簇的算法。
+Point Cloud Registration|点云配准||估计两个点云之间旋转与平移使其空间结构对齐的任务。
+Iterative Closest Point|迭代最近点|ICP|交替建立对应点并估计刚体变换的点集配准算法。
+Normal Distributions Transform|正态分布变换|NDT|将参考点云表示为局部高斯栅格以优化扫描对齐的算法。
+LiDAR Reflectivity|激光反射强度||由物体材质、距离及传感器等因素共同决定的测距回波强度属性。
+Range Image|距离图||按扫描角度索引组织每条射线测得距离的二维图像表示。
+Radar Range|雷达距离||由雷达回波传播时延或等效测量过程得到的目标径向距离。
+Radial Velocity|径向速度||目标相对雷达沿视线方向的速度分量。
+Doppler Shift|多普勒频移||由物体与传感器相对径向运动导致接收信号频率偏移的现象。
+Range–Doppler Map|距离多普勒图||雷达处理链按距离和径向速度维度组织回波能量的表示。
+Radar Cross Section|雷达散射截面|RCS|描述目标在特定条件下对雷达信号散射强度的等效面积量。
+Radar Detection|雷达目标检测||从回波噪声和杂波中判断候选目标是否存在的信号处理过程。
+Constant False Alarm Rate|恒虚警率检测|CFAR|按周边背景估计调整检测阈值以控制虚警水平的方法。
+Radar Ghost Target|雷达虚假目标||由多径反射或处理歧义等造成的不存在目标的测量假象。
+Radar–LiDAR Fusion|雷达激光融合||结合雷达速度优势与激光空间几何信息估计目标状态的技术。

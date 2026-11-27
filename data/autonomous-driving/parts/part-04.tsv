@@ -1,0 +1,107 @@
+# 车辆动力学、横纵向控制与执行跟踪
+Vehicle Dynamics|车辆动力学||研究车辆质量、轮胎力、惯性与驾驶输入如何决定运动状态的理论。
+Bicycle Model|自行车模型||将左右车轮对合并为等效前后车轮的简化车辆运动学或动力学模型。
+Kinematic Bicycle Model|运动学自行车模型||在低侧滑近似下依据轴距、转向角及车速计算车辆平面运动的模型。
+Dynamic Bicycle Model|动力学自行车模型||进一步考虑侧偏角、轮胎侧向力和车辆横摆惯性等效应的车辆模型。
+Wheelbase|轴距||车辆前后车轴参考中心之间的纵向距离。
+Track Width|轮距||车辆同一车轴左右车轮参考中心之间的横向距离。
+Steering Angle|转向角||车轮或等效前轮相对车体纵轴的旋转角。
+Yaw Rate|横摆角速度||车辆绕垂直轴旋转的角速度。
+Sideslip Angle|车辆侧偏角||车辆速度方向与车体纵向轴之间的夹角。
+Tire Slip Angle|轮胎侧偏角||车轮指向与接触点实际平面运动方向之间的夹角。
+Cornering Stiffness|轮胎侧偏刚度||在线性近似范围内轮胎横向力对侧偏角变化的局部斜率。
+Friction Circle|轮胎附着圆||描述纵向和横向轮胎力合成受可用路面摩擦限制的近似边界。
+Longitudinal Control|纵向控制||通过驱动与制动调整车辆速度、跟车距离和停车位置的控制任务。
+Lateral Control|横向控制||通过转向等输入使车辆跟踪期望道路位置和航向的控制任务。
+Cruise Control|巡航速度控制|CC|维持车辆目标行驶速度的反馈控制功能。
+Adaptive Cruise Control|自适应巡航控制|ACC|根据前车距离和相对速度调节车速的驾驶辅助控制功能。
+Proportional–Integral–Derivative Control|比例积分微分控制|PID|组合当前、累计和变化率误差生成控制量的经典方法。
+Pure Pursuit|纯跟踪控制||通过参考路径上的预瞄点计算车辆转向曲率的几何跟踪算法。
+Stanley Controller|Stanley 路径跟踪控制||基于横向位置误差与航向误差构建转向输入的控制方法。
+Linear Quadratic Regulator|线性二次调节器|LQR|对线性系统和二次性能目标求解最优状态反馈的方法。
+Model Predictive Control|模型预测控制|MPC|在滚动时间窗口内求解有约束预测优化并实施首段控制的策略。
+Feedforward Steering|前馈转向||根据参考路径曲率和车辆模型预先产生转向分量的控制方式。
+Feedback Steering|反馈转向||依据实际轨迹跟踪误差实时修正方向控制输入的方法。
+Actuator Delay Compensation|执行器延迟补偿||在控制规划中预测转向或制动指令到生效之间的时间滞后。
+Control Saturation|控制饱和||转向、驱动或制动力命令达到执行器上下限而不能继续增加的现象。
+
+# 交通安全约束、风险与应急策略
+Collision Risk Estimation|碰撞风险估计||根据主体位置、预测轨迹和不确定性评估可能碰撞的概率与严重性。
+Time to Collision|碰撞时间|TTC|在给定相对运动简化假设下估计两主体发生接触的剩余时间。
+Time Headway|车头时距|THW|自车到达前车当前参考位置所需时间的近似车距指标。
+Stopping Distance|停车距离||包含驾驶或系统反应时间和制动过程所需路程的总体距离。
+Braking Distance|制动距离||车辆实际开始制动后直至停止所行驶的距离。
+Safety Distance|安全间距||根据速度、反应时间、不确定性及规则设置的最小车间距离。
+Emergency Braking|紧急制动||当风险过高时施加较强制动力减速或停止车辆的操作。
+Automatic Emergency Braking|自动紧急制动|AEB|在即将发生碰撞时自动警告或制动以降低风险的辅助安全功能。
+Forward Collision Warning|前向碰撞预警|FCW|通过前方目标与相对运动判断可能追尾并警告驾驶者的功能。
+Lane Departure Warning|车道偏离预警|LDW|车辆无意跨越车道边界时向驾驶者发出提醒的功能。
+Lane Keeping Assist|车道保持辅助|LKA|在规定条件下通过转向辅助减少意外偏离车道的系统。
+Blind Spot Detection|盲区监测|BSD|检测车辆侧后方盲区内相关交通参与者并发出提示的功能。
+Minimum Risk Maneuver Planning|最小风险机动规划||在能力不足或关键故障时确定安全降速、靠边或停车策略的过程。
+Emergency Trajectory|应急轨迹||用于避险或风险缓解、并受车辆极限与周边交通约束的短期轨迹。
+Fail-safe Behavior|故障安全行为||检测故障后采取停止或其他降低风险措施的系统响应策略。
+Fail-operational Capability|故障后持续运行能力||在规定部分故障下仍能完成受限或全部功能的系统设计能力。
+Fallback Trajectory|后备轨迹||首选轨迹不可执行时可快速切换的保守运动计划。
+Safety Constraint|安全约束||在规划和控制过程中必须满足的碰撞、速度或最小距离限制。
+Control Barrier Function|控制屏障函数|CBF|通过不变性约束限制控制指令、防止状态进入危险集合的函数。
+Responsibility-sensitive Safety|责任敏感安全模型|RSS|以形式化安全距离和响应规则定义部分交通交互责任的模型框架。
+Reachable Set|可达状态集||在给定模型、控制限制与不确定性下未来可能到达的状态集合。
+Safe Set|安全状态集||按照预定义碰撞与约束条件被认为可接受的系统状态集合。
+Risk-aware Planning|风险感知规划||在优化目标和约束中加入碰撞概率、后果与模型不确定性的规划方法。
+Uncertainty-aware Control|不确定性感知控制||根据模型和观测可信度调整控制策略或安全裕度的技术。
+Safety Supervisor|安全监督模块||独立检查感知规划控制结果并在必要时阻断不安全命令的系统组件。
+
+# 端到端自动驾驶、模仿学习与世界模型
+End-to-end Driving|端到端驾驶||使用可学习模型直接从传感表示或图像生成驾驶行为或轨迹的技术范式。
+Modular Autonomous Driving|模块化自动驾驶||将感知、定位、预测、规划及控制组织为显式接口子系统的架构。
+Imitation Learning|模仿学习|IL|根据人类或专家驾驶轨迹学习动作或策略的机器学习方法。
+Behavior Cloning|行为克隆|BC|把专家示范的观测动作配对作为监督训练策略的方案。
+Closed-loop Learning|闭环驾驶学习||在模型动作影响后续观测的环境交互中优化驾驶策略的方法。
+Open-loop Training|开环轨迹训练||根据固定离线数据拟合动作或轨迹、不在训练中执行预测反馈的方式。
+Distribution Shift|数据分布偏移||模型实际运行观测与训练数据分布不同导致泛化困难的现象。
+Covariate Shift in Imitation|模仿学习观测偏移||模型动作偏差逐渐引导车辆进入示范数据中少见状态的误差累积现象。
+Dataset Aggregation|数据集聚合|DAgger|通过迭代收集当前策略状态和专家标签降低模仿学习状态偏移的方法。
+Multi-camera Policy|多相机驾驶策略||联合使用车身周边多个图像视角预测车辆未来行为的模型。
+Temporal Driving Model|时序驾驶模型||利用历史图像和车辆状态推断当前决策或未来轨迹的模型。
+Bird's-eye-view Transformer|鸟瞰 Transformer||通过注意力把多视角视觉特征转换为统一鸟瞰空间表示的架构。
+Vectorized Scene Representation|向量化场景表示||以车道折线、对象状态和关系替代完整栅格描述驾驶场景的表示。
+Occupancy-centric Planning|占据中心规划||把未来空间占据预测作为轨迹避障和驾驶选择的重要输入的技术。
+World Model|驾驶世界模型||学习交通环境动态变化并可对候选动作结果进行预测的环境模型。
+Latent Dynamics Model|潜在动力学模型||在学习到的紧凑隐变量空间中预测未来交通状态的模型。
+Action-conditioned Prediction|动作条件场景预测||根据自车候选动作预测周边主体或场景随后变化的模型任务。
+Generative Trajectory Model|生成式轨迹模型||使用概率生成模型输出多个条件驾驶轨迹候选的架构。
+Diffusion Planner|扩散式轨迹规划器||通过扩散去噪过程生成符合场景约束的车辆未来轨迹的方法。
+Vision–Language–Action Driving|视觉语言动作驾驶模型|VLA|联合视觉、语言提示及驾驶动作学习决策的多模态策略方向。
+Language-conditioned Driving|语言条件驾驶||根据自然语言目标或语义提示影响行驶决策和轨迹的技术。
+Driving Foundation Model|驾驶基础模型||利用大规模多场景驾驶数据预训练、可迁移到多种车辆任务的共享模型。
+Teacher–Student Distillation|教师学生蒸馏||通过高容量教师输出或表示训练轻量化车载学生模型的方法。
+Policy Uncertainty Estimation|策略不确定性估计||衡量学习型驾驶策略对特定动作选择可信程度的模型技术。
+Hybrid Learned Planner|混合学习规划器||将学习型轨迹评分或生成与规则及可行性约束结合的驾驶规划方式。
+
+# 车路协同、V2X 与智能交通基础设施
+Vehicle-to-everything Communication|车联网通信|V2X|车辆与其他车辆、道路设施、行人设备或网络之间的信息交换技术。
+Vehicle-to-vehicle Communication|车车通信|V2V|车辆之间直接或间接交换位置、速度和协同信息的通信方式。
+Vehicle-to-infrastructure Communication|车路通信|V2I|车辆与路侧单元或交通设施之间的数据交换机制。
+Vehicle-to-pedestrian Communication|车人通信|V2P|车辆与行人或骑行者设备间共享存在和潜在风险信息的方式。
+Vehicle-to-network Communication|车网通信|V2N|车辆通过蜂窝等网络连接云端和服务平台的通信模式。
+Roadside Unit|路侧通信单元|RSU|安装在道路基础设施处用于车路信息交换的通信设备。
+On-board Unit|车载通信单元|OBU|集成在车辆内支持 V2X 消息接收和发送的设备。
+Cellular V2X|蜂窝车联网|C-V2X|基于蜂窝无线技术支持车端与周边或网络信息交换的通信标准体系。
+Dedicated Short-range Communication|专用短程通信|DSRC|面向车用场景的一类短距离无线通信技术。
+Basic Safety Message|基本安全消息|BSM|用于广播车辆位置、速度和其他安全相关状态的消息类型。
+Cooperative Awareness Message|协作感知通告|CAM|在部分车联网标准中广播车辆运动及基础状态的消息。
+Decentralized Environmental Notification Message|分布式环境事件消息|DENM|用于发布道路危险事件与相关地理、时间信息的协作消息。
+Signal Phase and Timing|信号相位与剩余时间|SPaT|描述交通信号状态及预测切换时间的结构化消息内容。
+MAP Message|路口地图消息|MAP|在 V2X 生态中描述交叉口几何和车道连接关系的数据消息。
+Cooperative Perception|协同感知||结合车辆与路侧或其他车辆的观测扩大环境可感知范围的技术。
+Collective Perception Message|集体感知消息|CPM|传送协同检测对象及传感信息的标准化消息类别。
+Infrastructure Perception|路侧基础设施感知||通过部署在道路上的传感器检测交通目标和环境状态的系统能力。
+Intersection Management|交叉口协同管理||依据多个车辆意图与信号控制优化路口通行顺序的方法。
+Platooning|车辆编队行驶||多辆车通过协同控制以较小间距成队运行的交通方式。
+Cooperative Adaptive Cruise Control|协同自适应巡航|CACC|结合车辆间通信与传感数据改善跟车速度控制的技术。
+Cooperative Lane Change|协同变道||多车交换意图或状态并协调安全变道时机的驾驶行为。
+V2X Latency|车联网通信延迟||从消息生成到接收并用于决策之间的时间差。
+V2X Trust Management|车联网信任管理||验证车路消息发送方身份及数据完整性的安全处理机制。
+Misbehavior Detection|异常车联网消息检测||识别伪造、不一致或恶意车路消息的安全能力。
+Edge-assisted Driving|边缘协助驾驶||利用道路边缘计算为车端提供环境感知或交通协调辅助的模式。

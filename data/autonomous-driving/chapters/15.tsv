@@ -1,0 +1,26 @@
+# 端到端自动驾驶、模仿学习与世界模型
+End-to-end Driving|端到端驾驶||使用可学习模型直接从传感表示或图像生成驾驶行为或轨迹的技术范式。
+Modular Autonomous Driving|模块化自动驾驶||将感知、定位、预测、规划及控制组织为显式接口子系统的架构。
+Imitation Learning|模仿学习|IL|根据人类或专家驾驶轨迹学习动作或策略的机器学习方法。
+Behavior Cloning|行为克隆|BC|把专家示范的观测动作配对作为监督训练策略的方案。
+Closed-loop Learning|闭环驾驶学习||在模型动作影响后续观测的环境交互中优化驾驶策略的方法。
+Open-loop Training|开环轨迹训练||根据固定离线数据拟合动作或轨迹、不在训练中执行预测反馈的方式。
+Distribution Shift|数据分布偏移||模型实际运行观测与训练数据分布不同导致泛化困难的现象。
+Covariate Shift in Imitation|模仿学习观测偏移||模型动作偏差逐渐引导车辆进入示范数据中少见状态的误差累积现象。
+Dataset Aggregation|数据集聚合|DAgger|通过迭代收集当前策略状态和专家标签降低模仿学习状态偏移的方法。
+Multi-camera Policy|多相机驾驶策略||联合使用车身周边多个图像视角预测车辆未来行为的模型。
+Temporal Driving Model|时序驾驶模型||利用历史图像和车辆状态推断当前决策或未来轨迹的模型。
+Bird's-eye-view Transformer|鸟瞰 Transformer||通过注意力把多视角视觉特征转换为统一鸟瞰空间表示的架构。
+Vectorized Scene Representation|向量化场景表示||以车道折线、对象状态和关系替代完整栅格描述驾驶场景的表示。
+Occupancy-centric Planning|占据中心规划||把未来空间占据预测作为轨迹避障和驾驶选择的重要输入的技术。
+World Model|驾驶世界模型||学习交通环境动态变化并可对候选动作结果进行预测的环境模型。
+Latent Dynamics Model|潜在动力学模型||在学习到的紧凑隐变量空间中预测未来交通状态的模型。
+Action-conditioned Prediction|动作条件场景预测||根据自车候选动作预测周边主体或场景随后变化的模型任务。
+Generative Trajectory Model|生成式轨迹模型||使用概率生成模型输出多个条件驾驶轨迹候选的架构。
+Diffusion Planner|扩散式轨迹规划器||通过扩散去噪过程生成符合场景约束的车辆未来轨迹的方法。
+Vision–Language–Action Driving|视觉语言动作驾驶模型|VLA|联合视觉、语言提示及驾驶动作学习决策的多模态策略方向。
+Language-conditioned Driving|语言条件驾驶||根据自然语言目标或语义提示影响行驶决策和轨迹的技术。
+Driving Foundation Model|驾驶基础模型||利用大规模多场景驾驶数据预训练、可迁移到多种车辆任务的共享模型。
+Teacher–Student Distillation|教师学生蒸馏||通过高容量教师输出或表示训练轻量化车载学生模型的方法。
+Policy Uncertainty Estimation|策略不确定性估计||衡量学习型驾驶策略对特定动作选择可信程度的模型技术。
+Hybrid Learned Planner|混合学习规划器||将学习型轨迹评分或生成与规则及可行性约束结合的驾驶规划方式。

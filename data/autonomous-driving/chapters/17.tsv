@@ -1,0 +1,26 @@
+# 自动驾驶仿真、场景标准与数字孪生
+Autonomous Driving Simulation|自动驾驶仿真||在虚拟交通环境中重现传感、车辆运动及交通交互以测试驾驶系统的过程。
+CARLA Simulator|CARLA 自动驾驶仿真器|CARLA|用于自动驾驶感知、规划和闭环评测的开源城市道路仿真平台。
+Scenario-based Testing|场景化测试||围绕明确道路条件、交通主体和事件组合评估系统行为的方法。
+Test Scenario|测试场景||规定道路、主体、行为、初始条件与评价目标的结构化测试案例。
+Logical Scenario|逻辑场景||以参数范围和约束而非单一固定数值定义的一类测试情况。
+Concrete Scenario|具体场景||为逻辑场景参数指定确定数值后得到的可执行案例。
+Functional Scenario|功能场景||以自然语言或高层语义概括道路情境和预期驾驶任务的场景定义。
+Scenario Parameterization|场景参数化||用车速、道路几何、天气及主体行为等变量控制测试环境的方法。
+Scenario Coverage|场景覆盖度||量化测试集合覆盖预定环境、风险和交通交互条件的程度。
+Scenario Generation|场景生成||通过采样、规则或优化生成新的交通仿真测试案例的技术。
+Scenario Mutation|场景变异||系统改变既有场景参数以探索失败边界的测试策略。
+Adversarial Scenario Search|对抗场景搜索||有目的地优化交通主体或环境条件以触发系统薄弱行为的测试方法。
+ASAM OpenDRIVE|ASAM 道路网络描述标准|OpenDRIVE|对道路几何、车道与相关交通基础设施进行结构化描述的开放标准。
+ASAM OpenSCENARIO|ASAM 动态驾驶场景标准|OpenSCENARIO|描述交通参与者行为、时序和场景测试条件的标准体系。
+ASAM OpenCRG|ASAM 道路表面网格标准|OpenCRG|用于精细描述道路表面高程或粗糙度等特征的开放数据标准。
+OpenSCENARIO DSL|OpenSCENARIO 场景描述语言|OSC DSL|用于以领域特定语言形式定义参数化交通场景与行为的方式。
+Simulation Time Step|仿真时间步||每次虚拟物理状态更新对应的离散模拟时间间隔。
+Synchronous Simulation|同步仿真||所有参与组件按统一步长或时钟协调推进模拟状态的模式。
+Asynchronous Simulation|异步仿真||不同模拟组件按各自时间调度执行并交换数据的运行模式。
+Sensor Simulation|传感器仿真||根据虚拟场景生成相机、激光、雷达等设备近似测量的过程。
+Vehicle Dynamics Simulation|车辆动力学仿真||利用轮胎、悬架和车体力学模型计算模拟车辆运动的过程。
+Closed-loop Simulation|闭环仿真||将被测驾驶策略动作反馈到场景中、影响后续观测的评测方式。
+Open-loop Replay|开环数据回放||按记录数据固定播放历史观测、模型输出不影响后续输入的测试方式。
+Digital Twin for Driving|驾驶系统数字孪生||根据道路或车辆真实数据维持相应数字模型以辅助调试与评测的框架。
+Simulation-to-reality Gap|仿真现实差距||仿真中的外观、动力学及交通行为与真实部署分布之间的偏差。

@@ -1,0 +1,26 @@
+# 高精地图、道路拓扑与车道语义
+High-definition Map|高精地图|HD Map|含有车道级拓扑、道路几何与交通语义的结构化地图。
+Lanelet|车道片段|Lanelet|用左右边界及方向规则定义的可路由道路片段数据单元。
+Lanelet2|Lanelet2 地图框架||以 lanelet、关系和交通规则构建可供路径规划使用的地图数据模型。
+Lane Graph|车道连接图||用车道段为节点及可达转移为边表示道路拓扑的图。
+Road Topology|道路拓扑||描述路段、车道、交叉口及其连通关系的离散结构。
+Lane Boundary Geometry|车道边界几何||用离散点、样条或其他曲线参数描述车道物理边界的表示。
+Lane Centerline Geometry|车道中心线几何||沿车道可行驶方向定义平滑参考路线的空间曲线。
+Road Segment|道路片段||具有规定几何和道路属性的相邻路径区间。
+Intersection Geometry|交叉口几何||描述交叉口内车道连接和可行驶区域形状的地图元素。
+Junction Connectivity|路口连接关系||规定进入路口车道与可合法驶出的车道之间的关系。
+Lane Change Permission|车道变换许可||由交通规则和车道线属性定义是否允许跨车道的地图语义。
+Speed Limit Attribute|限速属性||表示道路或车道允许最高速度的结构化地图字段。
+Stop Sign Association|停车标志关联||把交通停车标志或停车规则对应到受其约束道路区段的关系。
+Traffic Signal Group|信号灯控制组||关联一个或多个路口通行流与特定信号灯控制逻辑的地图对象。
+Crosswalk Geometry|人行横道几何||用多边形或边界集合描述行人过街区域的地图实体。
+Yield Rule|让行规则||规定在特定冲突交通情形下谁应先行或避让的交通约束。
+Right-of-way|通行优先权||在特定交通规则条件下某条交通流或主体具有优先通行资格的关系。
+Route Network|道路路由网络||用于计算起点至目标连通路线的道路拓扑图。
+Route Planning|道路路线规划||在车道或路网图上选择连接出发地和目的地的行驶路线的任务。
+Map Tile|地图分片||按地理区域切割管理和更新的局部地图数据单元。
+Map Versioning|地图版本管理||追踪地图几何、语义字段和道路变化的历史版本机制。
+Map Change Detection|地图变化检测||识别真实道路结构与已有地图表示不一致的过程。
+Online Map Construction|在线地图构建||根据实时感知推断局部车道、边界和交通语义的技术。
+Mapless Driving|弱地图依赖驾驶||在不依赖完整预建高精地图条件下进行环境理解和驾驶决策的方案。
+Map Confidence|地图信息置信度||评估当前地图元素是否与现实道路环境一致的可靠度指标。

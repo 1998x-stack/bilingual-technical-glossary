@@ -1,0 +1,26 @@
+# 轨迹生成、速度规划与约束优化
+Trajectory Planning|轨迹规划||在道路、障碍和车辆动力学约束下生成带时间参数的驾驶状态序列。
+Frenet Coordinate System|弗雷内路径坐标系||用沿参考路径弧长和横向偏移描述车辆位置的曲线坐标系。
+Cartesian Trajectory|笛卡尔轨迹||在世界或局部欧氏坐标系中表示车辆时变位置与朝向的轨迹。
+Reference Line|参考线||沿车道中心或规划路线生成、供轨迹优化依托的空间曲线。
+Reference Path Smoothing|参考路径平滑||降低地图离散中心线曲率突变以提高轨迹可跟踪性的过程。
+Path–Speed Decoupling|路径速度解耦||先确定几何路径、再独立计算沿路径速度随时间变化的规划方法。
+Joint Space–Time Planning|时空联合规划||在同一优化过程中联合决定车辆空间路径与到达时间的技术。
+Speed Profile|速度曲线||描述沿时间或路径弧长变化的期望车速序列。
+Acceleration Profile|加速度曲线||描述期望纵向加速度随时间或路径位置变化的函数。
+Jerk Profile|加加速度曲线||描述加速度时间变化率并用于舒适性约束的轨迹量。
+Curvature Profile|曲率曲线||表示路径上各位置曲率变化的函数。
+Curvature Constraint|曲率约束||限制车辆可实现路径弯曲程度的几何约束。
+Lateral Acceleration Limit|横向加速度限制||根据速度和路径曲率设置允许侧向加速度上限的条件。
+Vehicle Kinematic Feasibility|车辆运动学可行性||规划轨迹符合转向几何和速度层级运动约束的性质。
+Dynamic Feasibility|车辆动力学可行性||规划状态与控制符合轮胎附着、惯性及执行器动力学限制的性质。
+Obstacle Avoidance Constraint|障碍避让约束||要求自车车身及运动轨迹与预测障碍占据区域保持规定间隔的限制。
+Space–Time Graph|路径时间图|ST Graph|以路径弧长和时间为轴表达障碍物运动与可行速度区间的表示。
+Quadratic Programming|二次规划|QP|以二次目标与线性约束求解路径或控制优化变量的优化问题。
+Nonlinear Programming|非线性规划|NLP|目标或约束包含非线性函数的轨迹优化问题。
+Sequential Quadratic Programming|序列二次规划|SQP|通过反复求解局部二次子问题处理非线性规划的算法族。
+Model Predictive Planning|模型预测式规划||在滚动有限时间窗口内重复优化车辆未来轨迹的策略。
+Spline Trajectory|样条轨迹||使用分段多项式及连续性约束表示平滑车辆运动的轨迹。
+Quintic Polynomial Trajectory|五次多项式轨迹||可通过位置、速度和加速度端点条件构建的五次参数曲线。
+Trajectory Replanning|轨迹重规划||根据新感知和预测结果定期更新已有未来轨迹的过程。
+Trajectory Validation|轨迹有效性检查||在执行前检查候选轨迹碰撞、限速、曲率和动态约束是否满足的步骤。

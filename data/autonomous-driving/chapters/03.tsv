@@ -1,0 +1,26 @@
+# 环境传感器、采集链与时间空间标定
+Automotive Sensor Suite|车载传感器组||由摄像头、激光雷达、雷达、定位和惯性设备组成的车辆感知配置。
+Surround-view Camera|环视摄像头||安装于车辆不同方向以覆盖周边视野的摄像设备。
+Front-facing Camera|前视摄像头||主要观测车辆行进方向道路、车道与交通参与者的成像设备。
+Fisheye Camera|鱼眼摄像头||利用超广角镜头获取近场大视角图像的设备。
+Camera Intrinsic Calibration|相机内参标定||估计焦距、主点和镜头畸变等相机内部投影参数的过程。
+Camera Extrinsic Calibration|相机外参标定||确定相机与车体或其他传感器间相对位置姿态的过程。
+LiDAR|激光雷达|LiDAR|利用激光测距获得场景三维距离点的主动传感器。
+Spinning LiDAR|旋转式激光雷达||通过扫描结构改变激光测距方向以覆盖一定空间范围的设备。
+Solid-state LiDAR|固态激光雷达||不依赖传统整体机械旋转扫描的激光测距器件类别。
+Automotive Radar|车载雷达||利用无线电反射测量目标距离、速度及部分方位信息的传感器。
+Millimeter-wave Radar|毫米波雷达||工作于毫米波频段、常用于车载目标测距测速的雷达设备。
+Frequency-modulated Continuous-wave Radar|调频连续波雷达|FMCW|通过连续发射频率变化信号并分析回波差频进行测距测速的雷达方案。
+Imaging Radar|成像雷达||提供较丰富角分辨率或空间结构观测的高分辨率雷达系统。
+Ultrasonic Sensor|超声波传感器||利用声波往返传播估计近距离目标距离的设备。
+Global Navigation Satellite System|全球卫星导航系统|GNSS|通过多个导航卫星信号求解接收机位置和时间的系统。
+Inertial Measurement Unit|惯性测量单元|IMU|提供角速度与比力等惯性测量的传感组件。
+Wheel Speed Sensor|轮速传感器||测量单个车轮旋转速度以支持运动估计或稳定控制的设备。
+Sensor Timestamp|传感器时间戳||记录测量采集时间或其他规定时间基准的元数据。
+Hardware Time Synchronization|硬件时间同步||通过硬件时钟、触发线或同步协议协调多传感器采样时间的方法。
+Precision Time Protocol|精确时间协议|PTP|为网络设备时钟提供高精度同步的通信协议族。
+Synchronization Offset|同步时间偏移||两个传感器或系统时钟之间的估计时间差。
+Sensor Frame|传感器坐标系||固定于某一感知设备、用于表达测量方向和位置的参考系。
+Ego-vehicle Frame|自车坐标系||固定在车辆特定参考点的坐标系，用于表达车体附近的运动与目标。
+Hand–Eye Calibration|手眼形式外参标定||通过多次相对运动观测求解两个固定坐标系之间变换的标定问题。
+Sensor Data Pipeline|传感数据处理流水线||包含采集、解码、时间校准、质量检查与分发的连续处理链。
