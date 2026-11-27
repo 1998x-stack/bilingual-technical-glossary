@@ -142,3 +142,11 @@ python3 -m unittest discover -s tests -v
 ## 数值计算专题
 
 新增 **259 条术语、17 个专题、15 组易混概念辨析**，覆盖浮点数与 IEEE 754、前后向误差、条件数、线性代数、求根、插值、求积、稀疏求解、优化、常微分与偏微分方程、随机计算与科学计算软件。对应的 [TSV](data/numerical-computing.tsv)、[Markdown](glossaries/numerical-computing.md)、[PDF](pdf/numerical-computing.pdf) 与网页检索索引同步收录。独立专家逐条校对仍待开展。
+
+## 检索增强生成 RAG（独立出版，暂未加入全站检索）
+
+新增《检索增强生成专有名词中英文对照表》：**350 条术语、14 章**，覆盖基础架构、文档解析、文本切块、Embedding、BM25、向量数据库、HNSW、混合检索与 ColBERT、查询改写、答案引用、Agentic RAG、GraphRAG、RAGAS、数据安全以及生产级系统优化。附 14 组概念辨析、10 道中等难度面试题、10 道中等难度考试题及参考答案。
+
+[Markdown 在线阅读](glossaries/rag.md) · [PDF 查看](pdf/rag.pdf) · [TSV 源数据](data/rag.tsv) · [参考论文和审稿说明](data/rag/SOURCES.md)
+
+原始章节：`data/rag/chapters/`。校验命令：`node scripts/render_rag.mjs --check`。**本册暂不计入网站已索引学科数和术语总数。**
