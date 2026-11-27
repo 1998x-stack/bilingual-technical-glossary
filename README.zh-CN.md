@@ -239,3 +239,13 @@ python3 -m unittest discover -s tests -v
 [Markdown 阅读](glossaries/robotics.md) · [PDF 查看](pdf/robotics.pdf) · [结构化 TSV](data/robotics.tsv) · [来源与审稿说明](data/robotics/SOURCES.md)
 
 原始词表：`data/robotics/chapters/`。执行 `node scripts/render_robotics.mjs --check` 验证出版物及网站镜像一致性。**本册独立出版，不计入现有网站搜索的学科数和术语总数。**
+
+## 自动驾驶系统 Autonomous Driving（独立出版，尚未加入全站索引）
+
+新增《自动驾驶系统专有名词中英文对照表》：**500 条中英文术语、20 个专业章节**，涵盖 SAE J3016_202609 驾驶自动化等级、ODD、线控底盘、相机/激光/毫米波雷达、BEV 与 Occupancy、三维目标检测与跟踪、定位和高精地图、轨迹预测、行为决策、车辆规划控制、TTC 与 AEB、端到端驾驶、V2X、CARLA、OpenDRIVE/OpenSCENARIO、Waymo/nuScenes 评测、ISO 26262 / SOTIF、车队运营及数据闭环。
+
+附 **16 组易混概念辨析、12 道中等难度面试题、12 道带参考答案的考试题**。参考 SAE、Autoware、ASAM、CARLA、ISO 和开放数据集原始资料。
+
+[Markdown 阅读](glossaries/autonomous-driving.md) · [PDF 查看](pdf/autonomous-driving.pdf) · [结构化 TSV](data/autonomous-driving.tsv) · [专业参考资料和审稿说明](data/autonomous-driving/SOURCES.md)
+
+规范章节：`data/autonomous-driving/chapters/`，可运行 `node scripts/render_autonomous_driving.mjs --check` 比对 Markdown、PDF 及镜像产物。**这是教育性独立出版的简明术语手册，未计入网站当前索引学科和术语总数，也不代表实际道路安全认证。**
