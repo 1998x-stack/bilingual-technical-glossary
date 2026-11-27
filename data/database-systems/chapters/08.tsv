@@ -1,0 +1,26 @@
+# 物理执行、连接算法与算子模型
+Physical Query Plan|物理查询计划||明确选择扫描、连接、排序及具体算法的可执行算子计划。
+Table Scan|表扫描||逐页或逐列访问表数据并按条件筛选记录的访问方法。
+Sequential Scan|顺序扫描||按物理存储顺序读取表页或块的扫描方式。
+Index Scan|索引扫描||利用索引键定位候选记录并读取必要字段的访问操作。
+Index Range Scan|索引范围扫描||沿有序索引定位起点并连续遍历满足范围条件的条目。
+Nested Loop Join|嵌套循环连接|NLJ|对一个输入的每条记录遍历或查找另一输入匹配行的连接算法。
+Block Nested Loop Join|分块嵌套循环连接|BNLJ|以缓冲块为单位批量比较两个输入、减少重复 I/O 的连接策略。
+Index Nested Loop Join|索引嵌套循环连接|INLJ|以外表记录的连接键驱动内表索引查找的连接算法。
+Hash Join|哈希连接||先为一侧等值连接键建立哈希表，再用另一侧进行匹配的连接算法。
+Grace Hash Join|Grace 哈希连接||先将两个输入按哈希值分区，再在对应分区执行哈希连接的算法。
+Sort–Merge Join|排序合并连接||按连接键排序两侧输入后通过归并扫描求匹配行的算法。
+External Sort|外部排序||数据超出内存时通过磁盘分段排序和多路归并完成排序的算法。
+Top-N Operator|前 N 名算子||通过有界堆等方法返回指定排序的最前 N 个结果。
+Hash Aggregation|哈希聚合||用哈希表维护按分组键划分的聚合状态的执行算法。
+Sort Aggregation|排序聚合||先按分组键排序再顺序计算组聚合的算法。
+Materialization|物化||将中间结果完整保存到内存或临时存储供后续算子消费。
+Pipelined Execution|流水线执行||算子边产生记录边向下游传递而不必完整物化全部结果。
+Iterator Model|迭代器执行模型||以每次调用 Next 获取下一条记录的 Volcano 式算子接口。
+Vectorized Execution|向量化执行||以批量列向量而非单行作为计算单位减少解释与函数调度开销。
+Batch-at-a-time Processing|批次处理模型||执行算子每次交换固定或可变数量元组的处理方式。
+Operator Fusion|算子融合||把多个相邻执行算子编译或组合以减少中间结果和调用开销。
+Late Materialization|延迟物化||尽量保持列式数据与行位置索引，仅在必要时组合完整记录。
+Predicate Evaluation|谓词计算||执行查询过滤条件并产生布尔或三值逻辑结果的计算过程。
+Tuple-at-a-time Processing|逐元组处理||每次只传递和处理一条记录的算子执行风格。
+Spill to Disk|溢写磁盘||当内存不足时将中间数据或哈希表分区写到外部存储的行为。
