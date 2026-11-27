@@ -1,0 +1,107 @@
+# 可靠性工程、韧性与运维
+Reliability|可靠性||系统在规定环境和时间范围内持续提供正确服务的能力。
+Availability|可用性||服务在某段观察时间内能够响应有效请求的程度。
+Service Level Indicator|服务等级指标|SLI|用于量化用户感知服务质量的具体测量指标。
+Service Level Objective|服务等级目标|SLO|对某个 SLI 在统计窗口内规定的目标范围。
+Service Level Agreement|服务等级协议|SLA|服务提供方与客户约定的可用性、性能及责任条款。
+Error Budget|错误预算||由 SLO 允许的失败比例或故障时间推导的可消耗额度。
+Mean Time to Recovery|平均恢复时间|MTTR|故障后恢复服务所需时间的统计均值。
+Mean Time Between Failures|平均故障间隔|MTBF|连续两次失效之间正常工作时间的统计均值。
+Recovery Time Objective|恢复时间目标|RTO|业务要求灾难发生后恢复服务所容许的最长时间。
+Recovery Point Objective|恢复点目标|RPO|业务容许灾难恢复后最多丢失多长时间内数据的目标。
+High Availability|高可用|HA|通过冗余、检测与切换降低关键服务停机时间的设计。
+Disaster Recovery|灾难恢复|DR|发生严重故障后恢复业务系统与数据能力的计划和操作。
+Active-active Deployment|双活部署||多个站点或实例同时承载生产业务流量的部署模式。
+Active-passive Deployment|主备部署||主节点服务、备用节点通常待命并在故障时接管的模式。
+Health-based Routing|基于健康状态的路由||根据后端健康检测结果选择流量目标的策略。
+Circuit Breaker|熔断器||错误或超时达到阈值时暂时阻断对不健康依赖调用的机制。
+Bulkhead Isolation|舱壁隔离||将线程池、连接池或资源划分独立配额以阻断故障连锁反应。
+Rate Limiting|速率限制||控制单位时间允许请求量或操作频率的机制。
+Load Shedding|负载卸载||系统过载时主动拒绝部分请求以保护关键服务的策略。
+Hedged Requests|对冲请求||对慢请求延迟发起冗余请求以减少尾部延迟的技术。
+Chaos Engineering|混沌工程||在受控环境主动注入故障以检验系统韧性的工程实践。
+Fault Injection|故障注入||人为模拟节点失败、延迟或资源不足等条件的测试手段。
+Runbook|操作手册||描述常见故障排查与恢复步骤的标准化文档。
+Postmortem|故障复盘||分析事件时间线、技术原因、影响及改进措施的回顾过程。
+Observability|可观测性||通过日志、指标与追踪等外部信号理解系统内部状态的能力。
+
+# 分布式安全、身份与信任
+Mutual TLS|双向传输层安全|mTLS|客户端与服务端通过证书互相认证的 TLS 通信方式。
+Transport Layer Security|传输层安全|TLS|为网络通信提供认证、机密性和完整性保护的标准协议。
+Public Key Infrastructure|公钥基础设施|PKI|管理证书、信任链、签发与吊销的体系。
+Certificate Authority|证书颁发机构|CA|对公钥与主体身份绑定关系进行签名证明的实体。
+Workload Identity|工作负载身份||为运行中的服务或任务赋予可验证的机器身份。
+Service Account|服务账号||代表非人类程序或服务执行操作的身份主体。
+Authentication|身份认证||核实通信对端或调用方身份声明是否真实的过程。
+Authorization|授权||依据策略决定已认证主体是否可以执行某项操作。
+Least Privilege|最小权限原则||只赋予主体完成任务所需最小权限的安全策略。
+Zero Trust|零信任||不因网络位置默认信任，持续校验身份、设备及访问条件的安全理念。
+Access Control List|访问控制列表|ACL|列明哪些主体被允许或拒绝访问资源的规则表。
+Role-based Access Control|基于角色的访问控制|RBAC|根据主体承担的角色集合分配资源权限的模型。
+Attribute-based Access Control|基于属性的访问控制|ABAC|综合主体、资源、动作和环境属性评估授权的模型。
+Secrets Management|机密信息管理||安全存储、分发、轮换和审计凭证或密钥的机制。
+Key Rotation|密钥轮换||定期或在风险事件后替换加密或签名密钥的过程。
+Envelope Encryption|信封加密||用数据密钥加密内容，再由主密钥封装数据密钥的方案。
+Encryption at Rest|静态数据加密||对磁盘或对象存储中的持久化数据进行加密保护。
+Encryption in Transit|传输中加密||保护数据在网络链路上传送时的机密性。
+Token-based Authentication|基于令牌的认证||使用短期或签名令牌代表已认证主体及声明的方案。
+JSON Web Token|JSON Web 令牌|JWT|以紧凑格式传递声明、可签名或加密的标准令牌结构。
+Replay Attack|重放攻击||攻击者重复发送合法请求或认证材料以引发非预期执行的攻击。
+Nonce|一次性随机数||用于挑战或协议消息新鲜度验证的只用一次的值。
+Distributed Denial of Service|分布式拒绝服务|DDoS|通过大量来源同时消耗服务资源致使合法请求受影响的攻击。
+Byzantine Fault Tolerance|拜占庭容错|BFT|在部分参与者发送任意错误或恶意消息时仍满足共识安全条件的协议能力。
+Quorum Certificate|法定人数证书|QC|由满足阈值的多方签名或投票组成的可验证决策证明。
+
+# 性能、容量与资源调度
+Latency|延迟||从操作发起到获得结果经历的时间。
+Throughput|吞吐量||单位时间内系统成功完成的请求、字节或事件数量。
+Tail Latency|尾部延迟||请求延迟分布高百分位处的响应时间。
+P99 Latency|第 99 百分位延迟|P99|在样本分布中约 99% 请求不超过的响应时间。
+Service Time|服务时间||请求实际占用执行资源进行处理的时间。
+Queueing Delay|排队延迟||请求在待处理队列中等待获得服务资源的时间。
+End-to-end Latency|端到端延迟||用户请求跨越全部依赖链路直至完成的总时长。
+Fan-out|请求扇出||一个请求同时触发多个下游服务调用的结构。
+Fan-in|结果扇入||多个并行下游计算或请求结果汇聚到一个节点的结构。
+Critical Path|关键路径||依赖图中决定整体完成时间的最长串行路径。
+Amdahl Law|阿姆达尔定律||描述固定工作量中可并行部分限制总体加速比的规律。
+Little Law|利特尔定律||稳定系统中平均在系统请求数等于到达率乘平均停留时间的关系。
+Queueing Theory|排队论||研究随机到达、服务能力与等待时间关系的数学理论。
+Utilization|资源利用率||计算或存储资源在统计时间内实际被占用的比例。
+Saturation|资源饱和||资源负载接近或超出可持续处理能力的状态。
+Autoscaling|自动伸缩||根据负载、资源指标或预测结果自动调整实例数量的机制。
+Load Balancing|负载均衡||将请求流量分配到多个后端以提升处理能力与稳定性的机制。
+Round-robin Scheduling|轮询调度||按固定循环顺序选择后端实例的负载分配方式。
+Least-connections Routing|最少连接路由||优先将新连接交给当前连接数较少的后端。
+Consistent Hash Routing|一致性哈希路由||按键的哈希位置将请求稳定映射到节点的路由方式。
+Data Locality|数据局部性||尽量在数据所在节点或邻近位置执行计算以降低网络传输的原则。
+Resource Scheduling|资源调度||为任务分配 CPU、内存、存储、网络等受限资源的过程。
+Bin Packing|装箱分配||将不同资源需求的任务放入尽可能少的节点或满足容量约束的节点的优化问题。
+Capacity Planning|容量规划||估计未来负载与资源需求并预留适当系统容量的活动。
+Hotspot Mitigation|热点缓解||通过拆分、缓存、复制或限流减轻负载过于集中的措施。
+
+# 分布式测试、验证与形式化方法
+Distributed Tracing|分布式追踪||通过跨服务上下文把一次请求的多个处理片段关联起来的技术。
+Trace|调用链||描述某个请求在多个组件间传播和执行的端到端轨迹。
+Span|追踪片段||记录一个局部操作的起止时间、属性和上下文的追踪单元。
+Trace Context Propagation|追踪上下文传播||通过请求头或消息元数据传递链路标识和父子关系的机制。
+Correlation ID|关联标识符||用于关联同一业务请求在不同系统中的日志或事件的标记。
+Structured Logging|结构化日志||以字段化格式记录事件以方便搜索和自动分析的日志方式。
+Metrics Cardinality|指标基数||监控维度标签不同组合数量，过高会增加时序数据库负担。
+Prometheus|Prometheus 监控系统||通过采集时序指标和查询语言支持监控告警的开源系统。
+OpenTelemetry|OpenTelemetry 可观测性标准||为指标、追踪与日志提供接口、语义约定和数据传输组件的标准项目。
+Jepsen Testing|Jepsen 一致性测试||通过故障注入和操作历史分析检查分布式系统一致性的测试方法。
+Linearizability Checking|线性一致性检查||验证并发操作历史是否能映射为遵守真实时间顺序的合法串行历史。
+History Recording|操作历史记录||记录调用、响应、异常及时间关系以分析并发行为的过程。
+Model Checking|模型检验||穷举或系统搜索有限状态空间以验证形式化性质的方法。
+Formal Specification|形式化规格说明||用数学语言精确定义系统状态、行为和不变量的文档。
+TLA+|TLA+ 规约语言||以时序逻辑和状态动作描述并验证并发及分布式系统的形式化语言。
+PlusCal|PlusCal 算法语言||可翻译为 TLA+ 规格的类伪代码并发算法描述语言。
+Invariant|不变量||系统所有允许执行路径中始终必须成立的状态性质。
+Liveness Verification|活性验证||检查在环境假设下系统是否能最终完成规定进展的验证活动。
+Fault-tolerance Testing|容错测试||主动触发节点或链路故障并验证服务目标的测试。
+Partition Testing|网络分区测试||隔离节点间网络流量以验证一致性、可用性与恢复行为的实验。
+Deterministic Simulation|确定性模拟||用可控调度与事件序列复现实例间竞争和网络行为的测试方法。
+Property-based Testing|基于性质的测试||自动生成多类输入并检查普适不变量或业务性质的测试技术。
+Fuzz Testing|模糊测试||自动构造大量异常或随机输入寻找协议与实现缺陷的测试方法。
+Rolling Upgrade Testing|滚动升级测试||验证集群新旧版本混合运行和逐步替换时协议兼容性的测试。
+Disaster Recovery Drill|灾难恢复演练||模拟重大故障并验证恢复步骤、RTO、RPO 与组织响应的演习。
