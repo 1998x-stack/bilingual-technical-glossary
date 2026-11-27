@@ -23,6 +23,8 @@ jobs:
           node --check site/term.js
           node --check docs/app.js
           node --check docs/term.js
+      - name: Verify Optimization Theory publication and source mirrors
+        run: node scripts/render_optimization_theory.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
