@@ -1,0 +1,26 @@
+# GPU 着色语言、计算着色与高级管线
+Shader|着色器||在 GPU 图形或计算管线中执行的可编程函数或程序阶段。
+GLSL|OpenGL 着色语言|GLSL|用于 OpenGL 等环境并可编译为相关中间表示的着色语言。
+HLSL|高级着色语言|HLSL|由 Microsoft 发展、常用于 Direct3D 生态的 GPU 着色语言。
+SPIR-V|标准可移植中间表示|SPIR-V|Khronos 定义的用于图形与并行计算着色器的中间语言格式。
+Shader Compilation|着色器编译||把高级着色源代码转换为中间表示或 GPU 机器代码的过程。
+Shader Reflection|着色器反射||查询着色器使用的资源、输入输出变量和布局等元数据的功能。
+Compute Shader|计算着色器||用于通用并行任务、以线程组方式执行的可编程 GPU 阶段。
+Workgroup|工作组||计算着色器中允许共享组内存并执行组内同步的线程集合。
+Workgroup Size|工作组尺寸||决定单个计算工作组在各维度包含多少调用实例的配置。
+Dispatch Call|计算派发调用||指定工作组数量并提交计算着色器执行的命令。
+Shared Workgroup Memory|工作组共享内存||同一计算工作组内调用实例可共同访问的片上或逻辑共享存储。
+Subgroup|子组||硬件可高效执行投票和交换等集体操作的一组 shader 调用实例。
+Wave Intrinsic|波前内建操作||在相关 GPU 着色语言中对子组内线程执行集体操作的原语。
+Derivative Instruction|屏幕导数指令||估计相邻片段间值变化以支持纹理 LOD 等操作的 GPU 指令。
+Geometry Amplification|几何扩增||由一个输入基元产生多个输出基元或细分结果的管线能力。
+Mesh Shader|网格着色器||在支持硬件与 API 上以工作组直接生成网格基元的可编程阶段。
+Task Shader|任务着色器||在某些网格着色管线中决定后续网格工作负载并传递负载数据的阶段。
+Amplification Shader|放大着色器||在部分图形 API 中控制网格着色工作组派发的可编程阶段。
+Ray Generation Shader|光线生成着色器||在硬件光线追踪管线中发射初始射线并组织结果的着色阶段。
+Closest-hit Shader|最近命中着色器||处理射线与场景最近有效交点结果的可编程阶段。
+Any-hit Shader|任意命中着色器||允许检查候选光线交点并决定忽略或接受的着色阶段。
+Miss Shader|未命中着色器||在射线没有命中场景几何时提供环境或默认结果的阶段。
+Callable Shader|可调用着色器||供光线追踪着色器调用执行特定逻辑的可编程函数阶段。
+Shader Binding Table|着色器绑定表|SBT|将光线追踪着色器组与各类几何命中记录关联的数据结构。
+Specialization Constant|特化常量||允许在管线创建或编译特化阶段固定着色器常量的参数机制。
