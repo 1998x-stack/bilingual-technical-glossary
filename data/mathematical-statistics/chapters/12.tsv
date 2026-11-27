@@ -1,0 +1,26 @@
+# 方差分析、实验设计与随机化
+Analysis of Variance|方差分析|ANOVA|以组间与组内变异分解检验均值或因素效应的模型方法。
+One-way ANOVA|单因素方差分析||研究单一分类因素不同水平对均值影响的方差分析。
+Two-way ANOVA|双因素方差分析||同时考察两个分类因素主效应及可选交互效应的分析。
+Factorial Design|析因设计||在实验中系统组合多个因素水平以估计效应与交互作用的设计。
+Factor|实验因素||研究者操纵或记录、可能影响响应的实验变量。
+Treatment|处理||实验中施加给研究单位的具体干预条件或因素组合。
+Control Group|对照组||在实验中不接受目标处理或接受基准处理的比较组。
+Random Assignment|随机分配||按已知随机机制将研究单位分配至不同处理组的过程。
+Blocking|区组设计||将相似实验单位先分组，再在区组内进行处理比较的策略。
+Randomized Complete Block Design|随机完全区组设计|RCBD|每个区组包含全部处理并在区组内随机分配的实验设计。
+Latin Square Design|拉丁方设计||用行列双重区组控制两个干扰因素的平衡设计。
+Interaction Effect|交互效应||一个因素对响应的影响随另一因素水平变化的现象。
+Main Effect|主效应||对其他因素水平平均后的某因素水平变化效应。
+Sum of Squares|平方和|SS|对一组偏差平方求和，用于量化不同来源的变异。
+Residual Sum of Squares|残差平方和|RSS|观测响应与拟合值差的平方之和。
+Mean Square|均方|MS|平方和除以相应自由度得到的方差类统计量。
+F Statistic|F 统计量||在适当零假设与误差条件下比较两个均方的比值统计量。
+Balanced Design|平衡设计||各处理组合或分类单元包含相等观测数的实验设计。
+Unbalanced Design|非平衡设计||处理组合之间样本量不同的实验设计。
+Repeated Measures Design|重复测量设计||同一实验单位在多个条件或时间点上被反复观测的设计。
+Mixed-effects Model|混合效应模型||同时包含总体固定效应与随机效应的统计模型。
+Random Effect|随机效应||把某些组别或单位差异视为来自随机分布的模型效应。
+Fixed Effect|固定效应||作为待估固定系数处理的因素水平或解释变量效应。
+Power Analysis|统计功效分析||根据效应量、样本量、显著性水平与误差变化推导检验功效的分析。
+Sample Size Calculation|样本量计算||根据目标精度或检验功效及模型假设确定所需观测数量的过程。
