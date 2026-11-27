@@ -1,0 +1,26 @@
+# 数值精度、张量计算与数学运算
+Floating-point Precision|浮点精度||浮点格式可表示数值细节与舍入误差的能力。
+FP64|双精度浮点|FP64|通常遵循 IEEE 754 binary64 格式的 64 位浮点数。
+FP32|单精度浮点|FP32|通常遵循 IEEE 754 binary32 格式的 32 位浮点数。
+FP16|半精度浮点|FP16|通常遵循 IEEE 754 binary16 格式的 16 位浮点数。
+BF16|脑浮点 16 位格式|BF16|指数位数较宽、尾数字段较短的 16 位浮点格式。
+TF32|TensorFloat-32 格式|TF32|某些 NVIDIA Tensor Core 路径采用的混合精度运算格式。
+FP8|8 位浮点|FP8|用于部分 AI 加速硬件、具有多种指数和尾数配置的 8 位浮点格式。
+Mixed Precision|混合精度||在同一计算中组合不同数值精度以平衡速度、内存与误差的方法。
+Automatic Mixed Precision|自动混合精度|AMP|自动选择部分运算精度并辅助数值稳定性的训练或推理技术。
+Loss Scaling|损失缩放||训练中通过缩放损失和梯度减轻低精度梯度下溢的策略。
+Floating-point Rounding|浮点舍入||将精确实数运算结果映射到可表示浮点格式数值的过程。
+Round-to-nearest-even|最近偶数舍入||当结果恰在两个可表示数中间时选择尾数最低位为偶数的舍入规则。
+Floating-point Overflow|浮点上溢||数值超出格式可表示的有限最大范围的情况。
+Floating-point Underflow|浮点下溢||极小数的运算结果进入非规格化区或被舍入为零的现象。
+Denormalized Number|非规格化浮点数|Subnormal|低于最小正规格化数的可表示非零浮点数。
+Flush-to-zero|非规格化值归零|FTZ|在指定运算模式中把某些极小浮点结果视为零的行为。
+Fused Multiply-add|融合乘加|FMA|执行乘法与加法并按规定只进行一次最终舍入的算术操作。
+Fast Math|快速数学模式||允许部分精度或边界语义取舍以优化设备数学计算的编译配置。
+Tensor Core|张量核心|Tensor Core|支持高吞吐矩阵乘累加等张量运算的 NVIDIA GPU 计算单元。
+Warp Matrix Multiply Accumulate|线程束矩阵乘累加|WMMA|在 warp 协作层面执行分块矩阵乘累加的 CUDA 接口与操作。
+Matrix Multiply Accumulate|矩阵乘累加|MMA|将矩阵乘积加到累加矩阵的核心张量算术操作。
+Accumulator|累加器||存储部分求和或矩阵乘加中间结果的寄存器或计算状态。
+Numerical Stability|数值稳定性||算法对舍入、截断和有限精度误差的控制能力。
+Reduction Error|归约误差||浮点求和或其他聚合中因执行顺序与舍入产生的误差。
+Determinism|确定性||在指定输入及运行条件下重复执行产生相同结果的性质，需明确浮点与并发限制。
