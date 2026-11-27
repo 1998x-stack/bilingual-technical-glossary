@@ -1,0 +1,107 @@
+# 词向量、分布式语义与表示学习
+Distributional Hypothesis|分布式语义假说||语境分布相似的词通常具有相关语义特征的假说。
+Distributional Semantics|分布式语义学||通过词语在语料中的共现上下文学习或分析词义的理论与方法。
+Word Embedding|词嵌入||把词或子词映射到低维连续向量空间的表示。
+Static Word Embedding|静态词向量||对同一词项在不同上下文中使用相同基本向量的表示。
+Contextualized Word Representation|上下文化词表示||根据具体上下文动态为同一词项生成不同表示的机制。
+Word2Vec|Word2Vec 词向量模型||通过预测词与上下文共现关系学习连续词表示的模型族。
+Continuous Bag-of-words|连续词袋模型|CBOW|通过邻近上下文词预测中心词的 Word2Vec 训练结构。
+Skip-gram Model|Skip-gram 模型||通过中心词预测上下文词来学习词表示的结构。
+Negative Sampling|负采样||通过区分真实共现对和采样噪声对近似训练表示模型的策略。
+Noise-contrastive Estimation|噪声对比估计|NCE|将概率密度学习转化为数据与噪声来源区分任务的估计方法。
+Hierarchical Softmax|层次 Softmax||通过树形类别分解减少大词表概率计算开销的技术。
+Global Vectors for Word Representation|全局词向量|GloVe|利用词共现统计矩阵加权回归学习词向量的方法。
+FastText|fastText 子词表示模型||利用字符 N-gram 共享信息学习词表示及文本分类模型的工具和方法。
+Subword Embedding|子词嵌入||为词内符号片段学习向量并组合形成词或文本表示的技术。
+Co-occurrence Matrix|共现矩阵||统计词项与上下文项共同出现次数或权重的矩阵。
+Pointwise Mutual Information|点互信息|PMI|衡量词项联合出现概率相对独立假设增益的关联度。
+Positive PMI|正点互信息|PPMI|将 PMI 的负值截断为零的共现关联表示。
+Singular Value Decomposition|奇异值分解|SVD|把矩阵分解成正交向量与奇异值，用于共现矩阵低秩表示。
+Embedding Space|嵌入空间||向量表示所在的几何空间及其相似关系结构。
+Cosine Similarity|余弦相似度||通过两个非零向量夹角余弦衡量方向接近程度的指标。
+Vector Analogy|向量类比||利用表示空间中的向量偏移尝试刻画词汇关系的技术。
+Semantic Relatedness|语义相关性||衡量词汇或文本在主题、用途等意义维度上相互联系的程度。
+Embedding Alignment|嵌入空间对齐||学习映射使不同语言或不同模型的向量能够比较的过程。
+Embedding Anisotropy|词向量各向异性||表示向量集中在某些方向、难以均匀覆盖向量空间的现象。
+Representation Collapse|表示坍缩||训练后不同输入的向量过度相似而失去区分能力的现象。
+
+# 神经序列模型、编码器与解码器
+Neural Language Model|神经语言模型||使用神经网络预测语言 token 概率或学习序列表示的模型。
+Recurrent Neural Network|循环神经网络|RNN|通过共享递归状态逐位置处理可变长度序列的神经网络。
+Long Short-term Memory|长短期记忆网络|LSTM|通过门控记忆单元缓解普通 RNN 长距离依赖训练困难的结构。
+Gated Recurrent Unit|门控循环单元|GRU|用更新门和重置门控制循环状态的门控神经网络单元。
+Hidden State|隐状态||循环或状态空间模型在时间步之间传递的内部表示。
+Encoder|编码器||将输入序列映射到隐藏表示或中间语义状态的模型组件。
+Decoder|解码器||根据中间表示及已有输出预测目标序列后续内容的组件。
+Encoder–Decoder Architecture|编码器—解码器架构||由输入编码网络和输出生成网络组成的序列映射结构。
+Sequence-to-sequence Learning|序列到序列学习|Seq2Seq|学习可变长度输入序列到输出序列映射的任务框架。
+Teacher Forcing|教师强制||训练自回归解码器时以真实上一输出作为下一步输入的策略。
+Exposure Bias|暴露偏差||训练依赖真实历史、推理依赖自身预测导致输入历史分布不一致的问题。
+Scheduled Sampling|计划采样||训练时按调度混合使用真实历史与模型预测历史的技术。
+Bidirectional RNN|双向循环神经网络|BiRNN|分别从前向和后向处理序列并融合上下文表示的模型。
+Bidirectional LSTM|双向长短期记忆网络|BiLSTM|以两个方向 LSTM 捕获前后文的序列表示结构。
+Convolutional Text Encoder|卷积式文本编码器||通过一维卷积和局部聚合提取 N-gram 等文本特征的模型。
+Sequence Transduction|序列变换||将输入序列转换为另一个相关符号序列的任务。
+Autoregressive Decoding|自回归解码||每一步以上一阶段生成 token 为条件预测后续 token 的过程。
+Non-autoregressive Decoding|非自回归解码||尝试并行预测部分或全部输出位置、降低逐 token 串行依赖的生成方式。
+Latent Representation|潜在表示||模型在中间层学习的连续或离散内部状态特征。
+Context Vector|上下文向量||概括输入序列信息、供解码器条件生成的向量。
+Sequence Padding Mask|序列填充掩码||标记 PAD 位置并阻止注意力或损失把填充当成有效内容的掩码。
+Packed Sequence|打包序列||按真实样本长度组织 RNN 计算以减少不必要填充开销的数据结构。
+Gradient Clipping|梯度裁剪||限制梯度范数或幅值以缓和神经网络训练不稳定性的技术。
+Vanishing Gradient|梯度消失||深层或长序列反向传播中梯度持续缩小、难以更新早期参数的现象。
+Exploding Gradient|梯度爆炸||反向传播中梯度过大导致训练更新发散或数值不稳定的现象。
+
+# 注意力机制与 Transformer 结构
+Attention Mechanism|注意力机制||按查询与键的匹配为多个值向量分配权重并聚合信息的计算结构。
+Self-attention|自注意力||同一输入序列中各位置相互计算注意力权重的机制。
+Cross-attention|交叉注意力||查询来自一个序列、键和值来自另一序列的注意力机制。
+Scaled Dot-product Attention|缩放点积注意力||计算查询键点积，经维度缩放和 Softmax 后加权值向量的注意力方法。
+Query Vector|查询向量|Q|注意力机制中用于匹配键向量的线性投影表示。
+Key Vector|键向量|K|注意力机制中用于与查询计算匹配分数的向量。
+Value Vector|值向量|V|在注意力权重确定后被加权求和的信息向量。
+Multi-head Attention|多头注意力|MHA|用多个投影头并行学习不同关系并拼接融合输出的注意力结构。
+Attention Head|注意力头||由一组独立查询、键和值投影定义的注意力计算分支。
+Attention Mask|注意力掩码||限制哪些序列位置可以相互注意的矩阵或逻辑规则。
+Causal Mask|因果掩码||阻止自回归预测位置访问未来 token 的注意力掩码。
+Padding Mask|填充掩码||阻止模型把无效填充位置当作真实输入参与注意力的掩码。
+Transformer|Transformer 模型||基于注意力、前馈网络、残差连接和归一化构建的序列处理架构。
+Transformer Encoder|Transformer 编码器||通常使用双向自注意力获得上下文化输入表示的 Transformer 部分。
+Transformer Decoder|Transformer 解码器||使用因果自注意力及可选交叉注意力生成序列的 Transformer 部分。
+Position-wise Feed-forward Network|逐位置前馈网络|FFN|在每个 token 位置独立应用共享参数的多层非线性变换。
+Residual Connection|残差连接||将层输入与变换输出相加以改善深层网络信息与梯度传递的结构。
+Layer Normalization|层归一化|LayerNorm|在指定特征维度上按均值与方差标准化激活值的方法。
+Positional Encoding|位置编码||向序列表示注入 token 顺序或相对位置关系的机制。
+Absolute Position Embedding|绝对位置嵌入||为每个序列位置学习或计算与其绝对索引相关的表示。
+Relative Position Bias|相对位置偏置||根据查询与键位置之间相对距离调整注意力打分的方式。
+Rotary Position Embedding|旋转位置嵌入|RoPE|通过对查询和键向量实施位置相关旋转编码相对位置信息的技术。
+Attention Complexity|注意力计算复杂度||衡量注意力随序列长度及隐藏维度变化的运算量和存储成本。
+FlashAttention|FlashAttention 高效注意力||通过 IO 感知分块与重计算减少高带宽存储访问的精确注意力算法族。
+Key–Value Cache|键值缓存|KV Cache|自回归生成时缓存已计算注意力键和值以减少重复运算的结构。
+
+# 预训练语言模型与自监督目标
+Pretrained Language Model|预训练语言模型|PLM|先在大规模文本上学习通用语言表示、再用于下游任务的模型。
+Self-supervised Learning|自监督学习||从未人工标注数据中构造训练目标并学习特征的机器学习方式。
+Masked Language Modeling|掩码语言建模|MLM|根据周围上下文预测被遮蔽输入 token 的预训练目标。
+Causal Language Modeling|因果语言建模|CLM|根据此前 token 预测序列后续 token 的自回归训练目标。
+Denoising Autoencoding|去噪自编码||把被破坏的输入还原为原始内容以学习表示的训练任务。
+Span Corruption|片段破坏恢复||遮蔽或替换连续 token 片段并训练模型复原其内容的目标。
+Next Sentence Prediction|下一句预测|NSP|判断两段输入是否在原文中具有特定相邻关系的预训练任务。
+Sentence Order Prediction|句序预测|SOP|判断两段句子顺序是否符合语料顺序的训练目标。
+Bidirectional Encoder Representations from Transformers|BERT 双向编码表示|BERT|通过掩码语言建模等目标预训练双向 Transformer 编码器的模型。
+Robustly Optimized BERT Pretraining Approach|RoBERTa 预训练方法|RoBERTa|调整训练数据、规模及策略以改进 BERT 类编码器预训练的方案。
+Generative Pretrained Transformer|生成式预训练 Transformer|GPT|基于 Transformer 自回归语言建模训练的生成模型系列称谓。
+Text-to-text Transfer Transformer|文本到文本迁移 Transformer|T5|将多种 NLP 任务统一写为文本输入到文本输出的编码器—解码器模型。
+Bidirectional and Auto-regressive Transformers|BART 去噪生成模型|BART|通过去噪序列重建预训练的 Transformer 编码器—解码器模型。
+Embeddings from Language Models|语言模型上下文化表示|ELMo|利用双向语言模型生成上下文化词表示的方法。
+Permutation Language Modeling|排列语言建模||按采样的预测顺序训练模型建模 token 条件依赖的目标。
+Replaced Token Detection|替换词元检测||判断输入各位置是否被替换成生成器候选 token 的预训练任务。
+ELECTRA|ELECTRA 预训练框架||通过判别 token 是否被替换以提高表示学习样本效率的方法。
+Representation Pretraining|表示预训练||通过通用目标学习能够迁移到多种下游任务的中间特征。
+Instruction Pretraining|指令式预训练||在大规模训练中加入任务说明与响应结构以提高指令理解能力的训练方式。
+Pretraining Corpus|预训练语料||用于通用语言模型初始学习的大规模文本集合。
+Training Objective|训练目标||用于确定预训练参数更新方向的损失或优化准则。
+Next-token Prediction|下一词元预测||在给定历史上下文后预测下一个离散 token 的任务。
+Teacher–Student Distillation|教师—学生蒸馏||训练学生模型匹配教师模型的分布、表示或输出的知识迁移过程。
+DistilBERT|DistilBERT 压缩编码器||通过知识蒸馏获得较小 BERT 类语言模型的预训练方案。
+Domain-adaptive Pretraining|领域自适应预训练|DAPT|继续使用目标领域未标注文本训练通用语言模型的策略。
