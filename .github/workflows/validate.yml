@@ -23,6 +23,8 @@ jobs:
           node --check site/term.js
           node --check docs/app.js
           node --check docs/term.js
+      - name: Verify CUDA chapter sources and generated publication mirrors
+        run: node scripts/render_cuda.mjs --check
       - name: Verify corpus, mirrors, and metadata
         run: python scripts/verify.py
       - name: Verify AI Infra Wiki
