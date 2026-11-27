@@ -1,0 +1,26 @@
+# 编译器、PTX、SASS 与设备代码
+NVCC|NVIDIA CUDA 编译器驱动|nvcc|协调主机编译器与设备编译工具处理 CUDA C++ 源文件的工具。
+CUDA Source File|CUDA 源文件|.cu|通常包含 CUDA C++ 主机与设备代码的源文件。
+Host Compiler|主机编译器||对 CUDA 程序中主机侧 C++ 代码进行编译的编译器。
+Device Compiler|设备编译器||将 CUDA 设备代码转换为中间表示或机器指令的编译组件。
+Compilation Trajectory|编译流水线||CUDA 源码经预处理、分离、优化和代码生成得到目标程序的流程。
+PTX|并行线程执行中间表示|PTX|NVIDIA 定义的用于描述设备并行指令和执行语义的虚拟 ISA。
+SASS|流处理器汇编指令|SASS|面向具体 NVIDIA GPU 架构执行的机器指令及其反汇编表示。
+Cubin|CUDA 二进制代码对象|cubin|包含针对特定 GPU 架构编译的设备机器代码的文件形式。
+Fat Binary|多架构设备二进制|Fatbin|可以打包多个 GPU 架构代码版本及 PTX 的 CUDA 设备代码容器。
+Just-in-time Compilation|即时编译|JIT|在部署或运行时将 PTX 等表示编译为目标 GPU 可执行代码的机制。
+Ahead-of-time Compilation|预先编译|AOT|在程序部署之前提前生成目标硬件设备二进制的方式。
+NVRTC|NVIDIA 运行时编译库|NVRTC|支持程序运行期间编译 CUDA C++ 源代码的库。
+nvJitLink|NVIDIA 即时链接库|nvJitLink|在运行时或动态构建流程中链接设备代码的 CUDA 库。
+Device Linker|设备链接器||将不同编译单元中的设备函数及对象连接为可执行设备映像的工具。
+Relocatable Device Code|可重定位设备代码|RDC|允许跨 CUDA 编译单元链接设备函数与全局符号的编译形式。
+CUDA Module|CUDA 模块||Driver API 加载的设备代码及其函数、全局变量等符号集合。
+Module Loading|模块加载||将 PTX 或二进制设备代码加载进可执行 CUDA 上下文的操作。
+Compute Target|虚拟计算目标||指定设备代码编译时所假设特性与 PTX 目标等级的配置。
+SM Target|SM 机器架构目标||指定要生成对应 GPU 架构机器代码的编译目标。
+-gencode Flag|代码生成选项|-gencode|为 nvcc 指定生成虚拟或实际架构代码变体的编译标志。
+-arch Flag|架构目标选项|-arch|为 CUDA 编译指定虚拟架构或受支持简化目标的参数。
+Device Debug Symbols|设备调试符号||为 GPU 二进制附带源位置与变量映射等调试信息的元数据。
+Line Information|行号映射信息||帮助性能和调试工具把设备机器指令对应回源码行的信息。
+Device Link-time Optimization|设备链接时优化|LTO|在设备代码链接阶段跨编译单元执行优化的技术。
+CUDA ABI|CUDA 二进制接口约定|ABI|定义相关设备代码调用、参数传递与二进制互操作规则的约定。
